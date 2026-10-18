@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<!-- SERUMS Map Explorer · © 2026 ZARCONT — Todos los derechos reservados · Licencia: LICENSE (en esta carpeta y en la raíz del repositorio) -->
+<meta name="author" content="ZARCONT">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>SERUMS Map Explorer — Plazas SERUMS Perú 2026-I</title>
+<meta name="description" content="Explora, filtra, compara y analiza las plazas SERUMS del Perú sobre Google Maps.">
+<script>try{var _t=localStorage.getItem('serums_theme');if(_t)document.documentElement.setAttribute('data-theme',JSON.parse(_t));}catch(e){}</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Michroma&family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=20261022">
+<!-- SheetJS para importar/exportar Excel -->
+<script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
+<!-- Clustering de marcadores (opcional) -->
+<script src="https://unpkg.com/@googlemaps/markerclusterer/dist/index.min.js"></script>
+</head>
+<body>
+<div id="app">
+
+  <!-- ====== BARRA LATERAL DE NAVEGACIÓN ====== -->
+  <nav class="rail" id="rail" aria-label="Navegación principal">
+    <div class="logo" aria-hidden="true">S</div>
+    <button type="button" data-nav="map" data-tip="Explorar mapa" class="on" aria-label="Explorar mapa">🗺</button>
+    <button type="button" data-nav="results" data-tip="Resultados" aria-label="Resultados">📋</button>
+    <button type="button" data-nav="stats" data-tip="Estadísticas" aria-label="Estadísticas">📊</button>
+    <button type="button" data-nav="datos" data-tip="Datos importados" aria-label="Datos importados">🗂</button>
+    <button type="button" data-nav="geo" data-tip="Geolocalización" aria-label="Geolocalización">🧭</button>
+    <button type="button" data-nav="favoritos" data-tip="Favoritos" aria-label="Favoritos">★<span class="bdg" id="favBadge">0</span></button>
+    <button type="button" data-nav="adjudicacion" data-tip="Adjudicación" aria-label="Adjudicación">✅<span class="bdg" id="adjBadge">0</span></button>
+    <button type="button" data-nav="comparador" data-tip="Comparador" aria-label="Comparador">⚖<span class="bdg" id="cmpBadge">0</span></button>
+    <span class="sp"></span>
+    <button type="button" data-nav="config" data-tip="Configuración" aria-label="Configuración">⚙</button>
+  </nav>
+
+  <!-- ====== BARRA SUPERIOR ====== -->
+  <header class="topbar" id="topbar">
+    <button class="id" id="brandHome" title="Ir al mapa">
+      <b>Serums · Map</b>
+      <small id="datasetBadge">Cargando datos…</small>
+    </button>
+    <span class="pill" id="recPill" title="Registros del conjunto activo">—</span>
+    <span class="pill" id="geoPill" title="Plazas geolocalizadas">—</span>
+    <span class="pill" id="apiBadge" title="Estado de la clave de Google Maps">Maps: …</span>
+    <span class="menuwrap">
+      <button class="btn sm primary" id="btnExport" aria-haspopup="true" aria-expanded="false">📤 Exportar ▾</button>
+      <span class="menu" id="exportMenu">
+        <small>Respeta filtros y orden actuales</small>
+        <button type="button" data-exp="xlsx">📗 Excel .xlsx</button>
+        <button type="button" data-exp="csv">📄 CSV completo</button>
+        <button type="button" data-exp="coords">🧭 CSV de coordenadas</button>
+      </span>
+    </span>
+    <button class="btn sm icon" id="btnImport" title="Importar Excel">📥</button>
+    <button class="btn sm icon" id="btnTheme" title="Cambiar tema claro / oscuro">🌙</button>
+    <button class="btn sm icon" id="btnNotif" title="Notificaciones y tareas">🔔<span class="bdg" id="notifBadge">0</span></button>
+    <button class="btn sm icon" id="btnKey" title="Configurar clave de Google Maps">🔑</button>
+  </header>
+
+  <!-- ====== ÁREA DE TRABAJO ====== -->
+  <div class="work" id="work">
+    <div class="center" id="center">
+
+      <!-- Mapa -->
+      <div id="mapView">
+        <div id="map"></div>
+        <div class="map-fallback" id="mapError"></div>
+
+        <div class="maptools">
+          <div class="grp">
+            <select id="selMapType" title="Estilo cartográfico" aria-label="Estilo cartográfico">
+              <option value="roadmap">Mapa</option>
+              <option value="satellite">Satélite</option>
+              <option value="hybrid">Híbrido</option>
+            </select>
+          </div>
+          <div class="grp">
+            <button class="btn sm" id="btnFit" title="Encuadrar resultados filtrados">⛶ Encuadrar</button>
+            <button class="btn sm" id="btnPeru" title="Volver a la vista de Perú">🇵🇪 Perú</button>
+          </div>
+          <div class="grp">
+            <span class="mini" style="padding-left:6px">Color</span>
+            <select id="selColorAttr" title="Atributo que determina el color del marcador" aria-label="Color de marcadores">
+              <option value="institucion">Institución</option>
+              <option value="dificultad">Dificultad</option>
+              <option value="geo">Geolocalización</option>
+            </select>
+          </div>
+          <div class="grp">
+            <label class="check mini" title="Mostrar también las plazas sin coordenadas en el listado"><input type="checkbox" id="chkNoCoord" checked> Sin coordenadas</label>
+            <label class="check mini" title="Agrupar marcadores próximos"><input type="checkbox" id="chkCluster" checked> Agrupar</label>
+            <label class="check mini" title="Auto-encuadrar el mapa al filtrar"><input type="checkbox" id="chkAutoFit" checked> Auto-encuadre</label>
+          </div>
+        </div>
+
+        <div class="selcard" id="selectedCard"></div>
+        <div class="legend" id="legend"></div>
+        <div class="counterbar" id="counterBar">Cargando plazas…</div>
+      </div>
+
+      <!-- Subvistas -->
+      <section class="subview" id="subStats" aria-label="Estadísticas">
+        <div class="wrap">
+          <h1>Panorama SERUMS</h1>
+          <div class="mini" id="statsScope">—</div>
+          <div class="statgrid" id="statsCards" style="margin-top:12px"></div>
+          <div class="mini" id="statsNote"></div>
+          <div class="grid2" style="margin-top:12px">
+            <div class="card"><h3>Plazas por región</h3><div class="mini">Clic en una fila para filtrar y volver al mapa · % sobre el total filtrado</div><div id="chartRegion"></div></div>
+            <div class="card"><h3>Plazas por profesión</h3><div class="mini">Clic para filtrar</div><div id="chartProf"></div></div>
+            <div class="card"><h3>Plazas por institución</h3><div class="mini">Clic para filtrar</div><div id="chartInst"></div></div>
+            <div class="card"><h3>Dificultad y accesibilidad</h3><div class="mini">GD-5 = mayor dificultad</div><div id="chartDif"></div></div>
+            <div class="card"><h3>Calidad de geolocalización</h3><div class="mini">Proporción de plazas ubicadas vs. pendientes</div><div id="chartGeo"></div></div>
+            <div class="card"><h3>Categoría y presupuesto</h3><div class="mini">Distribución de campos reales del archivo</div><div id="chartCat"></div></div>
+          </div>
+          <div class="card"><h3>Tabla por región</h3><div style="overflow:auto"><table class="dt" id="tblRegion"></table></div></div>
+          <div class="card"><h3>Tabla por provincia</h3><div class="mini">Top 20 del filtro actual</div><div style="overflow:auto"><table class="dt" id="tblProv"></table></div></div>
+        </div>
+      </section>
+
+      <section class="subview" id="subDatos" aria-label="Datos importados">
+        <div class="wrap">
+          <h1>Datos importados</h1>
+          <div class="mini">Conserva los datos originales del archivo y genera una estructura normalizada separada.</div>
+          <div id="datosBody"></div>
+        </div>
+      </section>
+
+      <section class="subview" id="subGeo" aria-label="Geolocalización">
+        <div class="wrap">
+          <h1>Gestión de geolocalización</h1>
+          <div class="mini">Las coordenadas provienen del cruce <b>RENIPRESS</b> por código de establecimiento. Solo las plazas pendientes usan Geocoding API, una vez y con caché local.</div>
+          <div class="statgrid" id="geoReport" style="margin-top:12px"></div>
+          <div class="card">
+            <div class="rowbtns">
+              <button class="btn primary" id="btnGeocodeBatch">🧭 Geocodificar pendientes (lote)</button>
+              <button class="btn" id="btnGeoExport">⬇ Exportar pendientes (CSV)</button>
+            </div>
+            <div class="mini" id="geoLog" style="margin-top:10px"></div>
+          </div>
+          <div class="card"><h3>Plazas pendientes</h3><div class="mini">Revisa y corrige coordenadas con interacción explícita en el mapa.</div>
+            <div style="overflow:auto;margin-top:10px"><table class="dt" id="geoTable"></table></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="subview" id="subFav" aria-label="Favoritos y adjudicadas">
+        <div class="wrap">
+          <h1>Favoritos y adjudicadas</h1>
+          <div class="mini">Tus marcas se guardan únicamente en este navegador (localStorage). No se sincronizan entre dispositivos.</div>
+          <div class="favtabs" id="favTabs" role="tablist"></div>
+          <div class="rowbtns" style="margin:12px 0"><button class="btn primary" id="btnFavMap">🗺 Ver en el mapa</button><button class="btn" id="btnFavClear">🗑 Quitar todas (pestaña activa)</button></div>
+          <div id="favBody"></div>
+        </div>
+      </section>
+
+      <section class="subview" id="subAdj" aria-label="Adjudicación">
+        <div class="wrap">
+          <div class="rowbtns" style="justify-content:space-between;align-items:center">
+            <h1 style="margin:0">✅ Centro de adjudicación</h1>
+            <button class="btn sm" id="adjToMap" title="Volver a la vista del mapa">🗺 Volver al mapa</button>
+          </div>
+          <div class="mini" id="adjSyncNote" style="margin-top:6px"></div>
+
+          <div class="statgrid" id="adjKpis" style="margin-top:12px"></div>
+
+          <div class="adjcollage">
+            <div class="card"><h3>Estado del seguimiento</h3><div id="adjDonut" role="img" aria-label="Distribución de estados de seguimiento"></div><div class="mini" id="adjDonutNote" style="margin-top:10px"></div></div>
+            <div class="card"><h3>Adjudicadas por profesión (tus marcas)</h3><div id="adjBars"></div></div>
+          </div>
+
+          <div class="adjtoolbar">
+            <input type="search" id="adjSearch" placeholder="🔎 Buscar: establecimiento, código RENIPRESS o profesión…" aria-label="Buscar plazas en el centro de adjudicación" style="flex:1;min-width:230px">
+            <select id="adjProfSel" aria-label="Filtrar por profesión" title="Filtrar por profesión"></select>
+            <select id="adjSort" aria-label="Orden del listado" title="Orden">
+              <option value="est">Orden: establecimiento A·Z</option>
+              <option value="estado">Orden: estado (bloqueadas/adjudicadas primero)</option>
+              <option value="region">Orden: región A·Z</option>
+            </select>
+          </div>
+
+          <div class="quickseg adjsegs" id="adjSegs" role="group" aria-label="Filtro rápido por estado"></div>
+
+          <div class="card" style="margin-top:10px">
+            <div id="adjList"></div>
+            <div class="rowbtns" id="adjPager" style="margin-top:10px"></div>
+          </div>
+
+          <details class="acc" id="adjRegBox" open style="margin-top:14px">
+            <summary>📝 Registrar una adjudicación (persona, fecha y hora, observaciones)</summary>
+            <div id="adjForm"></div>
+          </details>
+
+          <details class="acc" style="margin-top:10px">
+            <summary>🗂 Registro y control de adjudicaciones (historial, compartir y respaldo)</summary>
+            <div id="adjHist"></div>
+          </details>
+        </div>
+      </section>
+
+      <section class="subview" id="subCmp" aria-label="Comparador">
+        <div class="wrap">
+          <h1>Comparador de plazas</h1>
+          <div class="mini">Compara únicamente los campos disponibles en el archivo. No se generan recomendaciones sobre información ausente.</div>
+          <div class="rowbtns" style="margin:12px 0"><button class="btn" id="btnCmpClear">🗑 Vaciar comparador</button><button class="btn primary" id="btnCmpMap">🗺 Ubicar en el mapa</button></div>
+          <div id="cmpBody"></div>
+        </div>
+      </section>
+
+      <section class="subview" id="subConfig" aria-label="Configuración">
+        <div class="wrap">
+          <h1>Configuración</h1>
+          <div class="mini">Preferencias y conexión con Google Maps. Todo se guarda en este navegador.</div>
+          <div id="cfgBody" style="margin-top:12px"></div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ====== PANEL LATERAL CONTEXTUAL ====== -->
+    <aside id="side" aria-label="Filtros y resultados">
+      <div class="sidehead">
+        <div class="sidetabs" id="sideTabs">
+          <button type="button" data-tab="filters" class="on">Explorar plazas</button>
+          <button type="button" data-tab="results">Resultados</button>
+          <button type="button" class="btn sm" id="btnSide" title="Ocultar panel" style="flex:none">⇥</button>
+        </div>
+      </div>
+
+      <!-- Filtros -->
+      <div class="sidebody" id="sideFilters">
+        <div class="rowbtns">
+          <button class="btn sm" id="btnClear">🧹 Limpiar filtros</button>
+          <span class="mini" id="activeCount" style="align-self:center"></span>
+        </div>
+
+        <div class="sect">Estado de la plaza</div>
+        <div class="quickseg" id="quickSeg" role="group" aria-label="Filtro rápido por estado de la plaza"></div>
+        <div class="mini" id="quickHint">★ Favorita y ✅ Adjudicada son marcas tuyas, guardadas en este navegador; 🚫 Bloqueada impide seleccionarla. La <b>adjudicación oficial</b> del listado 2026-I se muestra en cada plaza.</div>
+
+        <div class="chips" id="activeChips"></div>
+        <input type="text" id="filterSearch" placeholder="🔎 Búsqueda opcional: establecimiento, código, distrito…" style="margin:10px 0">
+
+        <div class="sect">Profesión</div>
+        <div class="fgroup"><div class="opts" id="fProfesion"></div></div>
+
+        <div class="sect">Institución</div>
+        <div class="fgroup"><div class="opts" id="fInstitucion"></div></div>
+
+        <div class="sect">Grado de dificultad</div>
+        <div class="fgroup"><div class="opts" id="fDificultad"></div></div>
+
+        <div class="sect">Ubicación</div>
+        <div class="fgroup">
+          <div class="ft">🏔 Región / departamento</div>
+          <div class="opts" id="fRegion"></div>
+        </div>
+        <div class="fgroup">
+          <div class="ft" style="margin-bottom:6px">Provincia</div>
+          <select id="selProvincia"><option value="">Todas</option></select>
+          <div class="ft" style="margin:10px 0 6px">Distrito</div>
+          <select id="selDistrito"><option value="">Todos</option></select>
+        </div>
+
+        <details class="acc">
+          <summary>Más filtros</summary>
+          <div class="fgroup">
+            <div class="ft">Categoría del establecimiento</div>
+            <div class="opts" id="fCategoria"></div>
+          </div>
+          <div class="fgroup">
+            <div class="ft">Presupuesto</div>
+            <div class="opts" id="fPresupuesto"></div>
+          </div>
+          <div class="fgroup" style="display:grid;gap:8px">
+            <label class="mini">Bono ZAF <select id="fZaf"><option value="">Todos</option><option>SI</option><option>NO</option></select></label>
+            <label class="mini">Bono ZE (VRAEM) <select id="fZe"><option value="">Todos</option><option>SI</option><option>NO</option></select></label>
+            <label class="mini">Calidad de ubicación <select id="fGeo">
+              <option value="">Todas</option><option value="ubicada">Ubicadas en el mapa</option><option value="pendiente">Pendientes de geolocalización</option>
+            </select></label>
+          </div>
+          <div class="note">⚠ El archivo oficial no incluye <b>modalidad SERUMS, tipo de plaza ni remuneración</b>: esos filtros se ocultan al no existir datos.</div>
+        </details>
+
+        <div class="sect">Calidad de geolocalización</div>
+        <div class="mini" id="geoMini">—</div>
+        <div class="rowbtns" style="margin-top:8px"><button class="btn sm" id="btnGoGeo" data-nav="geo">⚙ Gestionar ubicaciones</button></div>
+      </div>
+
+      <!-- Resultados -->
+      <div class="sidebody" id="sideResults" style="display:none">
+        <div class="rowbtns" style="margin-bottom:8px">
+          <span class="mini" id="resCount" style="align-self:center"></span>
+          <select id="sortKey" style="flex:1" title="Ordenar por">
+            <option value="departamento">Región</option>
+            <option value="provincia">Provincia</option>
+            <option value="distrito">Distrito</option>
+            <option value="profesion">Profesión</option>
+            <option value="institucion">Institución</option>
+            <option value="dificultad">Dificultad</option>
+            <option value="n_plazas">Vacantes</option>
+            <option value="establecimiento">Establecimiento</option>
+          </select>
+          <button class="btn sm" id="sortDir" title="Cambiar dirección">↑</button>
+        </div>
+        <div id="resultsList"></div>
+        <div class="pager">
+          <button class="btn sm" id="btnPrev">‹ Anterior</button>
+          <span class="mini" id="pageInfo"></span>
+          <button class="btn sm" id="btnNext">Siguiente ›</button>
+        </div>
+      </div>
+    </aside>
+  </div>
+</div>
+<!-- ====== MODAL IMPORTAR ====== -->
+<div class="backdrop" id="importModal"><div class="modal">
+  <h2>📥 Importar Excel de plazas</h2>
+  <div class="mini">Archivos <b>.xlsx / .xls / .csv</b>. Se detectan hojas, encabezados y columnas automáticamente; puedes corregir todo antes de cargar.</div>
+  <div class="steps"><div class="step a" data-s="1">1 · Archivo</div><div class="step" data-s="2">2 · Columnas</div><div class="step" data-s="3">3 · Validación</div><div class="step" data-s="4">4 · Listo</div></div>
+  <div id="impBody"></div>
+  <div class="rowbtns" style="margin-top:14px;justify-content:flex-end">
+    <button class="btn" id="impClose">Cerrar</button>
+    <button class="btn" id="impBack">‹ Atrás</button>
+    <button class="btn primary" id="impNext">Continuar ›</button>
+  </div>
+</div></div>
+
+<!-- ====== MODAL CLAVE API ====== -->
+<div class="backdrop" id="keyModal"><div class="modal" style="max-width:560px">
+  <h2>🔑 Clave de Google Maps</h2>
+  <p class="mini">Se usa <b>Maps JavaScript API</b> para el mapa y, opcionalmente, <b>Geocoding API</b> para ubicar plazas sin coordenadas. La clave queda solo en tu navegador (localStorage).</p>
+  <input type="text" id="keyInput" placeholder="AIza…" autocomplete="off">
+  <div class="note">Clave de demostración incluida con cuota limitada. Para uso intensivo crea la tuya en <b>Google Cloud Console → APIs y servicios → Credenciales</b>, habilita <b>Maps JavaScript API</b> y <b>Geocoding API</b>, y restringe por sitio web (HTTP referrers) y por API.</div>
+  <div class="rowbtns" style="margin-top:14px;justify-content:flex-end">
+    <button class="btn" id="keyClose">Cerrar</button>
+    <button class="btn primary" id="keySave">Guardar y recargar mapa</button>
+  </div>
+</div></div>
+
+<!-- ====== MODAL FICHA DETALLADA ====== -->
+<div class="backdrop" id="detailModal"><div class="modal">
+  <h2 id="detailTitle">Ficha de plaza</h2>
+  <div id="detailBody"></div>
+  <div class="rowbtns" style="margin-top:14px;justify-content:flex-end"><button class="btn darkb" id="detailClose">Cerrar</button></div>
+</div></div>
+
+<!-- ====== MODAL EXPORTACIÓN ====== -->
+<div class="backdrop" id="exportModal"><div class="modal" style="max-width:560px">
+  <h2>📤 Exportación</h2>
+  <div id="exportSummary"></div>
+  <div class="rowbtns" style="margin-top:14px;justify-content:flex-end"><button class="btn darkb" id="exportClose">Cerrar</button></div>
+</div></div>
+
+<!-- ====== MODAL CONFIRMACIÓN ====== -->
+<div class="backdrop" id="confirmModal" role="dialog" aria-modal="true" aria-labelledby="confirmTitle"><div class="modal" style="max-width:480px">
+  <h2 id="confirmTitle">Confirmar</h2>
+  <div id="confirmBody"></div>
+  <div class="rowbtns" style="margin-top:14px;justify-content:flex-end">
+    <button class="btn" id="confirmCancel">Cancelar</button>
+    <button class="btn primary" id="confirmOk">Confirmar</button>
+  </div>
+</div></div>
+
+<!-- ====== CAJÓN DE NOTIFICACIONES ====== -->
+<div class="drawer" id="notifDrawer" aria-label="Notificaciones">
+  <div class="dh"><b>Centro de notificaciones</b><span class="sp" style="flex:1"></span>
+    <button class="btn sm" id="notifClear">Limpiar</button>
+    <button class="btn sm icon" id="notifClose" title="Cerrar">✕</button></div>
+  <div class="db" id="notifBody"></div>
+</div>
+
+<button class="btn darkb fab" id="fabF">☰ Filtros</button>
+<button class="btn primary fab" id="fabR">☰ Resultados</button>
+<div id="toast" role="status" aria-live="polite"></div>
+
+<script src="datos/datos_plazas.js?v=20261022"></script>
+<script src="datos/datos_adjudicados.js?v=20261022"></script>
+<script src="js/utils.js?v=20261022"></script>
+<script src="js/services.js?v=20261022"></script>
+<script src="js/filters.js?v=20261022"></script>
+<script src="js/mapview.js?v=20261022"></script>
+<script src="js/panels.js?v=20261022"></script>
+<script src="js/adjudicacion.js?v=20261022"></script>
+<script src="js/app.js?v=20261022"></script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+LICENCIA PROPIETARIA — ZARCONT
+==============================
+
+Copyright (c) 2026 ZARCONT. Todos los derechos reservados.
+
+Ámbito
+------
+Este repositorio («LAUNCHER SERUMS») y todos sus componentes originales —el lanzador
+SERUMS HUB, la aplicación Examen Studio (BANQUEAR), la aplicación SERUMS Map Explorer,
+su código fuente, diseño, documentación, identificadores de autoría y artefactos de
+datos generados— son propiedad intelectual de ZARCONT y están protegidos por la
+legislación aplicable de propiedad intelectual.
+
+Se permite, sin autorización previa por escrito:
+  1. El uso personal y privado del software, tal como se distribuye.
+  2. La consulta del código y la documentación con fines de aprendizaje personal.
+
+Queda prohibido, salvo autorización previa por escrito de ZARCONT:
+  1. Copiar, reproducir, distribuir, publicar o poner a disposición de terceros el
+     software o partes sustanciales de él, con o sin modificaciones.
+  2. Modificarlo, adaptarlo, descompilarlo o crear obras derivadas para su
+     redistribución.
+  3. Venderlo, alquilarlo, sublicenciarlo o explotarlo comercialmente.
+  4. Eliminar, ocultar o alterar los avisos de autoría y copyright, ni los archivos
+     de trazabilidad e integridad (AUTORIA.md, NOTICE.md, INTEGRITY.sha256).
+
+Componentes de terceros
+-----------------------
+Las librerías, fuentes tipográficas, servicios y conjuntos de datos de terceros
+utilizados conservan sus propias licencias y condiciones, que prevalecen para dichos
+componentes (ver NOTICE.md). La autoría del proyecto no se extiende a ellos.
+
+Garantía
+--------
+El software se proporciona «tal cual», sin garantía de ningún tipo, expresa o
+implícita. Las medidas documentadas en este repositorio (avisos de autoría, registro
+de versiones y manifiesto de integridad) tienen por objeto acreditar la procedencia
+del proyecto y detectar modificaciones; no constituyen un sistema anticopia y no
+garantizan por sí solas protección legal en todas las jurisdicciones.
+
+Contacto para licencias de uso comercial: titular del proyecto ZARCONT.

@@ -1,0 +1,1274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<!--
+  SERUMS HUB — Centro de aplicaciones (BANQUEAR + PLAZAS SERUMS)
+  © 2026 ZARCONT — Todos los derechos reservados · Licencia: LICENSE (raíz del repositorio)
+  Autoría, versiones y registro de cambios: AUTORIA.md · Terceros: NOTICE.md
+-->
+<meta name="author" content="ZARCONT">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script>document.documentElement.classList.add("js");</script>
+<meta name="color-scheme" content="dark">
+<meta name="theme-color" content="#080808">
+<meta name="description" content="SERUMS HUB — Centro de acceso a BANQUEAR (exámenes) y PLAZAS SERUMS (mapa de plazas).">
+<title>SERUMS HUB — Centro de aplicaciones</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Crect x='11' y='13' width='18' height='38' rx='7' fill='%23DF2531'/%3E%3Crect x='35' y='13' width='18' height='38' rx='7' fill='%23F2F2F2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Dots&display=swap" rel="stylesheet">
+<style>
+  /* ==================================================================
+     SERUMS HUB — Design tokens (única fuente de verdad)
+     Identidad: MOKOTO (negro / blanco / rojo) · HUB: Rome Explorer ·
+     Interfaces interiores: Steary. Ver DESIGN-SYSTEM.md
+     ================================================================== */
+  :root{
+    /* Color */
+    --black: #000000;
+    --bg: #080808;
+    --surface: #151515;
+    --white: #FFFFFF;
+    --red: #DF2531;
+    --red-dark: #741B1E;
+    --red-deep: #481416;
+    --gray: #8A8A8A;
+
+    /* Texto */
+    --text-1: #FFFFFF;
+    --text-2: #B8B8B8;
+    --text-3: #858585;
+
+    /* Superficies de cristal */
+    --glass: rgba(255, 255, 255, .07);
+    --glass-strong: rgba(255, 255, 255, .12);
+    --glass-dark: rgba(10, 10, 10, .72);
+    --border: rgba(255, 255, 255, .14);
+    --border-soft: rgba(255, 255, 255, .08);
+    --red-soft: rgba(223, 37, 49, .16);
+    --red-glow: rgba(223, 37, 49, .35);
+
+    /* Desenfoque */
+    --blur-sm: 12px;
+    --blur-md: 20px;
+    --blur-lg: 28px;
+
+    /* Radios */
+    --r-xs: 8px;
+    --r-sm: 10px;
+    --r-md: 16px;
+    --r-lg: 24px;
+    --r-xl: 32px;
+    --r-card: 28px;
+    --r-full: 999px;
+
+    /* Espaciado */
+    --sp-1: 4px;
+    --sp-2: 8px;
+    --sp-3: 12px;
+    --sp-4: 16px;
+    --sp-5: 24px;
+    --sp-6: 32px;
+    --sp-7: 48px;
+    --sp-8: 64px;
+
+    /* Tipografía */
+    --font-ui: "Inter", "Open Sans", ui-sans-serif, system-ui, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-display: "Zen Dots", "Segoe UI", ui-sans-serif, system-ui, sans-serif;
+    --fs-xs: 11px;
+    --fs-sm: 12.5px;
+    --fs-md: 14.5px;
+    --fs-lg: 16px;
+    --fs-xl: 20px;
+
+    /* Sombras */
+    --shadow-sm: 0 4px 16px rgba(0, 0, 0, .35);
+    --shadow-md: 0 12px 36px rgba(0, 0, 0, .45);
+    --shadow-lg: 0 28px 70px -18px rgba(0, 0, 0, .7);
+    --shadow-red: 0 16px 50px -16px var(--red-glow);
+
+    /* Controles */
+    --ctl-sm: 34px;
+    --ctl-md: 40px;
+    --ctl-lg: 46px;
+
+    /* Transiciones */
+    --t-fast: 160ms ease;
+    --t-base: 220ms cubic-bezier(.3, .7, .3, 1);
+    --t-slow: 520ms cubic-bezier(.22, 1, .36, 1);
+    --ease-out: cubic-bezier(.22, 1, .36, 1);
+
+    /* Tarjeta del carrusel */
+    --card-w: clamp(380px, 40vw, 540px);
+    --card-h: clamp(430px, 58vh, 560px);
+
+    /* Capas */
+    --z-dock: 35;
+    --z-bar: 40;
+    --z-tip: 60;
+    --z-overlay: 80;
+    --z-modal: 90;
+  }
+
+  *{ box-sizing: border-box; margin: 0; padding: 0; }
+  html{ color-scheme: dark; scrollbar-color: #2a2a2a transparent; }
+
+  body{
+    min-height: 100vh;
+    min-height: 100dvh;
+    background: var(--bg);
+    color: var(--text-1);
+    font-family: var(--font-ui);
+    font-size: var(--fs-md);
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden;
+  }
+
+  ::selection{ background: rgba(223, 37, 49, .35); }
+  a{ color: inherit; text-decoration: none; }
+  button{ font-family: inherit; }
+  ::-webkit-scrollbar{ width: 10px; }
+  ::-webkit-scrollbar-track{ background: transparent; }
+  ::-webkit-scrollbar-thumb{ background: #2a2a2a; border-radius: var(--r-full); border: 2px solid #0a0a0a; }
+
+  :focus-visible{ outline: 2px solid var(--red); outline-offset: 2px; }
+
+  /* ============ Fondo ambiental (estático, sin luces en movimiento) ============ */
+  .bg{ position: fixed; inset: 0; z-index: -1; overflow: hidden; background: var(--bg); }
+  .glow{ position: absolute; border-radius: 50%; filter: blur(90px); }
+  .glow-a{
+    width: 62vmax; height: 62vmax; left: -20vmax; top: -28vmax;
+    background: radial-gradient(circle, rgba(72, 20, 22, .55), transparent 62%);
+  }
+  .glow-b{
+    width: 66vmax; height: 66vmax; right: -24vmax; bottom: -30vmax;
+    background: radial-gradient(circle, rgba(116, 27, 30, .38), transparent 62%);
+  }
+  .glow-c{
+    width: 44vmax; height: 44vmax; left: 50%; top: -24vmax; transform: translateX(-50%);
+    background: radial-gradient(circle, rgba(223, 37, 49, .12), transparent 64%);
+  }
+  .grid{
+    position: absolute; inset: -1px;
+    background-image:
+      linear-gradient(rgba(255,255,255,.024) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255,255,255,.024) 1px, transparent 1px);
+    background-size: 46px 46px;
+    -webkit-mask-image: radial-gradient(ellipse 78% 60% at 50% 38%, #000 30%, transparent 74%);
+    mask-image: radial-gradient(ellipse 78% 60% at 50% 38%, #000 30%, transparent 74%);
+  }
+  .noise{
+    position: absolute; inset: 0; opacity: .05; mix-blend-mode: overlay;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
+    background-size: 180px 180px;
+  }
+  .vignette{
+    position: absolute; inset: 0;
+    background: radial-gradient(ellipse 92% 72% at 50% 36%, transparent 52%, rgba(0, 0, 0, .58) 100%);
+  }
+
+  /* ============ Barra superior flotante ============ */
+  .topbar{
+    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+    width: min(820px, calc(100vw - 28px)); height: 56px;
+    display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3);
+    padding: 0 10px 0 12px;
+    background: var(--glass-dark);
+    border: 1px solid var(--border-soft);
+    border-radius: 18px;
+    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    box-shadow: var(--shadow-md);
+    z-index: var(--z-bar);
+  }
+  .tb-left{ display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .logo{
+    width: 30px; height: 30px; border-radius: 9px; flex: none;
+    display: grid; place-items: center;
+    background: linear-gradient(140deg, var(--red), var(--red-dark));
+    box-shadow: 0 6px 18px -8px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, .25);
+  }
+  .logo svg{ width: 16px; height: 16px; display: block; }
+  .brand{ font-size: 12px; font-weight: 700; letter-spacing: .14em; white-space: nowrap; }
+  .tb-center{
+    position: absolute; left: 50%; transform: translateX(-50%);
+    display: flex; align-items: center; gap: 8px;
+    font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-3);
+    white-space: nowrap;
+  }
+  .dot-live{ width: 6px; height: 6px; border-radius: 50%; background: var(--red); box-shadow: 0 0 10px var(--red-glow); }
+  .tb-right{ display: flex; align-items: center; gap: 4px; }
+
+  /* Botón de icono genérico */
+  .icon-btn{
+    width: 38px; height: 38px; flex: none;
+    display: grid; place-items: center;
+    border-radius: 12px; border: 1px solid transparent; background: transparent;
+    color: var(--text-2); cursor: pointer;
+    transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+  }
+  .icon-btn:hover{ background: var(--glass); color: var(--text-1); border-color: var(--border-soft); }
+  .icon-btn svg{ width: 19px; height: 19px; display: block; }
+  .icon-btn .i-compress{ display: none; }
+  html.is-fs .icon-btn .i-expand{ display: none; }
+  html.is-fs .icon-btn .i-compress{ display: block; }
+
+  /* Tooltips */
+  [data-tip]{ position: relative; }
+  [data-tip]::after{
+    content: attr(data-tip);
+    position: absolute; top: calc(100% + 10px); left: 50%;
+    transform: translateX(-50%) translateY(-4px);
+    background: rgba(14, 14, 14, .94);
+    border: 1px solid var(--border-soft);
+    color: var(--text-2);
+    font-size: 11.5px; letter-spacing: .02em; font-weight: 500;
+    padding: 6px 10px; border-radius: var(--r-xs); white-space: nowrap;
+    opacity: 0; pointer-events: none;
+    transition: opacity var(--t-fast), transform var(--t-fast);
+    z-index: var(--z-tip);
+  }
+  [data-tip]:hover::after, [data-tip]:focus-visible::after{
+    opacity: 1; transform: translateX(-50%) translateY(0);
+  }
+  .dock [data-tip]::after{
+    top: 50%; left: calc(100% + 12px);
+    transform: translateY(-50%) translateX(-4px);
+  }
+  .dock [data-tip]:hover::after, .dock [data-tip]:focus-visible::after{
+    transform: translateY(-50%) translateX(0);
+  }
+
+  /* ============ Escenario principal ============ */
+  main{
+    min-height: 100vh;
+    min-height: 100dvh;
+    display: flex; flex-direction: column; align-items: center; justify-content: center;
+    gap: clamp(24px, 4.5vh, 40px);
+    padding: clamp(96px, 13vh, 122px) 20px clamp(112px, 16vh, 148px);
+  }
+
+  .hero{ display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+  .title{
+    font-family: var(--font-display);
+    font-weight: 400;
+    font-size: clamp(24px, 3.4vw, 40px);
+    letter-spacing: .03em;
+    line-height: 1.1;
+  }
+  .title .accent{ color: var(--red); }
+  .subtitle{ color: var(--text-2); font-size: var(--fs-md); font-weight: 450; letter-spacing: .01em; }
+
+  /* ============ Carrusel (deck) ============ */
+  .deck-wrap{ position: relative; display: grid; place-items: center; }
+
+  .deck{
+    position: relative;
+    width: var(--card-w);
+    height: var(--card-h);
+    perspective: 1400px;
+  }
+
+  .card{
+    /* Estado por defecto: activa/centrada */
+    --tx: 0%; --ty: 0px; --tz: 0px; --ry: 0deg; --sc: 1; --op: 1; --z: 2; --bri: 1;
+    --fullOp: 1; --miniOp: 0;
+
+    position: absolute; inset: 0;
+    display: block; overflow: hidden;
+    border-radius: var(--r-card);
+    background: linear-gradient(165deg, #171717, #0b0b0b 72%);
+    border: 1px solid var(--border-soft);
+    box-shadow: var(--shadow-lg);
+    color: inherit; cursor: pointer; user-select: none;
+    transform: translateX(var(--tx)) translateY(var(--ty)) translateZ(var(--tz)) rotateY(var(--ry)) scale(var(--sc));
+    opacity: var(--op);
+    filter: brightness(var(--bri));
+    z-index: var(--z);
+    will-change: transform, opacity;
+    transition:
+      transform var(--t-slow),
+      opacity 500ms ease,
+      filter 500ms ease,
+      border-color 500ms ease,
+      box-shadow 500ms ease;
+  }
+
+  /* Estado activo según la selección del deck */
+  .deck[data-current="banquear"] .card[data-app="banquear"],
+  .deck[data-current="plazas"] .card[data-app="plazas"]{
+    --tx: 0%; --ty: 0px; --tz: 0px; --ry: 0deg; --sc: 1; --op: 1; --z: 2; --bri: 1;
+    --fullOp: 1; --miniOp: 0;
+    border-color: rgba(255, 255, 255, .16);
+    box-shadow: 0 34px 90px -34px rgba(0, 0, 0, .9), 0 24px 70px -30px var(--red-glow);
+  }
+
+  /* Estado secundario: PLAZAS a la derecha cuando BANQUEAR es la activa */
+  .deck[data-current="banquear"] .card[data-app="plazas"]{
+    --tx: 42%; --ty: 0px; --tz: -150px; --ry: -13deg; --sc: .86; --op: .5; --z: 1; --bri: .7;
+    --fullOp: 0; --miniOp: 1;
+  }
+  /* Estado secundario: BANQUEAR a la izquierda cuando PLAZAS es la activa */
+  .deck[data-current="plazas"] .card[data-app="banquear"]{
+    --tx: -42%; --ty: 0px; --tz: -150px; --ry: 13deg; --sc: .86; --op: .5; --z: 1; --bri: .7;
+    --fullOp: 0; --miniOp: 1;
+  }
+
+  @media (hover: hover){
+    .deck[data-current="banquear"] .card[data-app="banquear"]:hover,
+    .deck[data-current="plazas"] .card[data-app="plazas"]:hover{ --ty: -5px; }
+    .deck[data-current="banquear"] .card[data-app="plazas"]:hover{ --tx: 44%; --ry: -7deg; --sc: .9; --op: .72; --bri: .88; }
+    .deck[data-current="plazas"] .card[data-app="banquear"]:hover{ --tx: -44%; --ry: 7deg; --sc: .9; --op: .72; --bri: .88; }
+  }
+
+  /* Arte decorativo de cada tarjeta */
+  .card-art{ position: absolute; inset: 0; display: block; }
+  .card-art svg{ width: 100%; height: 100%; display: block; }
+  .card-scrim{
+    position: absolute; inset: 0;
+    background: linear-gradient(180deg, rgba(5, 5, 5, 0) 34%, rgba(5, 5, 5, .55) 58%, rgba(5, 5, 5, .94) 100%);
+  }
+
+  .badge{
+    position: absolute; top: 16px; left: 16px;
+    display: inline-flex; align-items: center; gap: 7px;
+    padding: 5px 11px;
+    border-radius: var(--r-full);
+    background: rgba(8, 8, 8, .55);
+    border: 1px solid var(--border-soft);
+    -webkit-backdrop-filter: blur(var(--blur-sm));
+    backdrop-filter: blur(var(--blur-sm));
+    font-size: var(--fs-xs); font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
+    color: rgba(255, 255, 255, .82);
+  }
+  .badge-dot{ width: 5px; height: 5px; border-radius: 50%; background: var(--red); }
+
+  /* Contenido completo (tarjeta activa) */
+  .content-full{
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 22px 24px 24px;
+    display: flex; flex-direction: column; gap: 12px;
+    opacity: var(--fullOp, 1);
+    transform: translateY(calc((1 - var(--fullOp, 1)) * 14px));
+    transition: opacity 450ms ease, transform 450ms var(--ease-out);
+  }
+  .row-title{ display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
+  .row-title h2{ font-size: clamp(21px, 2vw, 27px); font-weight: 680; letter-spacing: .01em; }
+  .counter{ font-size: 12px; letter-spacing: .08em; color: var(--text-3); font-variant-numeric: tabular-nums; }
+  .desc{ font-size: var(--fs-md); line-height: 1.5; color: var(--text-2); max-width: 46ch; }
+  .meta{ list-style: none; display: flex; flex-direction: column; gap: 7px; }
+  .meta li{ display: flex; align-items: center; gap: 9px; font-size: var(--fs-sm); color: var(--text-3); }
+  .meta svg{ width: 15px; height: 15px; flex: none; color: rgba(255, 255, 255, .45); }
+  .row-cta{ margin-top: 4px; }
+  .btn-open{
+    display: inline-flex; align-items: center; gap: 9px;
+    padding: 12px 20px;
+    border-radius: var(--r-full);
+    background: var(--white); color: #0a0a0a;
+    font-size: var(--fs-md); font-weight: 650;
+    box-shadow: 0 10px 26px -10px rgba(0, 0, 0, .6);
+    transition: background var(--t-fast), box-shadow var(--t-fast);
+  }
+  .btn-open svg{ width: 15px; height: 15px; transition: transform var(--t-fast); }
+  .card:hover .btn-open{ background: #f1f1f1; box-shadow: var(--shadow-red); }
+  .card:hover .btn-open svg{ transform: translateX(2px); }
+
+  /* Contenido compacto (tarjeta secundaria) */
+  .content-mini{
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 18px 22px 20px;
+    display: flex; flex-direction: column; gap: 3px;
+    opacity: var(--miniOp, 0);
+    transform: translateY(calc((1 - var(--miniOp, 0)) * 10px));
+    transition: opacity 450ms ease, transform 450ms var(--ease-out);
+    pointer-events: none;
+  }
+  .content-mini strong{ font-size: 15px; font-weight: 650; letter-spacing: .04em; }
+  .content-mini span{ font-size: 12px; color: rgba(255, 255, 255, .55); }
+
+  /* ============ Dock lateral ============ */
+  .dock{
+    position: fixed; left: clamp(16px, 2.2vw, 30px); top: 50%;
+    transform: translateY(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+    padding: 10px 8px;
+    background: var(--glass-dark);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--r-lg);
+    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    box-shadow: var(--shadow-md);
+    z-index: var(--z-dock);
+  }
+  .dock-logo{
+    width: 34px; height: 34px; border-radius: 10px;
+    display: grid; place-items: center;
+    background: linear-gradient(140deg, var(--red), var(--red-dark));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
+  }
+  .dock-logo svg{ width: 16px; height: 16px; display: block; }
+  .dock-sep{ width: 22px; height: 1px; background: var(--border); margin: 4px 0; }
+  .dock-btn{
+    width: 42px; height: 42px;
+    display: grid; place-items: center;
+    border-radius: 12px; border: 1px solid transparent; background: transparent;
+    color: rgba(255, 255, 255, .55); cursor: pointer;
+    transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+  }
+  .dock-btn svg{ width: 19px; height: 19px; display: block; }
+  .dock-btn:hover{ background: var(--glass); color: var(--text-1); }
+  .dock-btn[aria-current="true"]{
+    background: var(--red-soft); color: var(--white);
+    border-color: rgba(223, 37, 49, .35);
+  }
+
+  /* ============ Barra de control inferior ============ */
+  .controls{
+    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
+    display: flex; flex-direction: column; align-items: center; gap: 10px;
+    z-index: var(--z-bar);
+  }
+  .dockbar{
+    display: flex; align-items: center; gap: 8px;
+    padding: 8px;
+    background: var(--glass-dark);
+    border: 1px solid var(--border-soft);
+    border-radius: var(--r-full);
+    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    backdrop-filter: blur(var(--blur-md)) saturate(140%);
+    box-shadow: var(--shadow-md);
+  }
+  .nav-btn{
+    width: 44px; height: 44px; flex: none;
+    display: grid; place-items: center;
+    border-radius: 50%;
+    background: var(--glass); border: 1px solid var(--border-soft);
+    color: var(--text-1); cursor: pointer;
+    transition: background var(--t-fast), transform var(--t-fast);
+  }
+  .nav-btn:hover{ background: var(--glass-strong); }
+  .nav-btn:active{ transform: scale(.94); }
+  .nav-btn svg{ width: 18px; height: 18px; display: block; }
+  .capsule{
+    display: flex; align-items: center; gap: 12px;
+    padding: 6px 20px 6px 8px;
+    min-width: 248px;
+    border-radius: var(--r-full);
+    background: rgba(255, 255, 255, .05);
+    border: 1px solid var(--border-soft);
+  }
+  .cap-icon{
+    width: 38px; height: 38px; flex: none;
+    display: grid; place-items: center;
+    border-radius: 12px;
+    background: linear-gradient(140deg, var(--red-soft), rgba(255, 255, 255, .04));
+    border: 1px solid rgba(255, 255, 255, .12);
+    color: var(--white);
+  }
+  .cap-icon svg{ width: 19px; height: 19px; display: block; }
+  .cap-text{ display: flex; flex-direction: column; min-width: 0; }
+  .cap-text strong{ font-size: 13.5px; font-weight: 650; letter-spacing: .06em; white-space: nowrap; }
+  .cap-text em{
+    font-style: normal; font-size: 11.5px; color: var(--text-3); white-space: nowrap;
+    overflow: hidden; text-overflow: ellipsis;
+  }
+  .dots{ display: flex; align-items: center; gap: 4px; }
+  .dot{
+    width: 26px; height: 22px; flex: none;
+    display: grid; place-items: center;
+    background: transparent; border: none; cursor: pointer; padding: 0;
+  }
+  .dot::before{
+    content: ""; width: 8px; height: 8px; border-radius: var(--r-full);
+    background: rgba(255, 255, 255, .22);
+    transition: width var(--t-base), background var(--t-base);
+  }
+  .dot:hover::before{ background: rgba(255, 255, 255, .4); }
+  .dot.is-on::before{ width: 22px; background: var(--red); }
+
+  /* ============ Modal de atajos ============ */
+  .scrim{
+    position: fixed; inset: 0; z-index: var(--z-modal);
+    background: rgba(0, 0, 0, .55);
+    -webkit-backdrop-filter: blur(4px);
+    backdrop-filter: blur(4px);
+    opacity: 0; visibility: hidden;
+    transition: opacity var(--t-base), visibility 0s linear var(--t-base);
+  }
+  .scrim.open{ opacity: 1; visibility: visible; transition-delay: 0s; }
+  .modal{
+    position: fixed; z-index: calc(var(--z-modal) + 1);
+    left: 50%; top: 50%;
+    width: min(380px, calc(100vw - 40px));
+    transform: translate(-50%, -48%) scale(.97);
+    background: rgba(14, 14, 14, .92);
+    border: 1px solid var(--border);
+    border-radius: var(--r-lg);
+    padding: 20px 22px;
+    box-shadow: var(--shadow-lg);
+    -webkit-backdrop-filter: blur(var(--blur-lg));
+    backdrop-filter: blur(var(--blur-lg));
+    opacity: 0; visibility: hidden;
+    transition: opacity var(--t-base), transform var(--t-base), visibility 0s linear var(--t-base);
+  }
+  .modal.open{ opacity: 1; visibility: visible; transform: translate(-50%, -50%) scale(1); transition-delay: 0s; }
+  .modal-head{ display: flex; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 14px; }
+  .modal-head h3{ font-size: 15px; font-weight: 650; letter-spacing: .04em; }
+  .modal-head .icon-btn{ width: 34px; height: 34px; }
+  .keys{ list-style: none; display: flex; flex-direction: column; gap: 10px; }
+  .keys li{ display: flex; align-items: center; justify-content: space-between; gap: 14px; font-size: 13px; color: var(--text-2); }
+  .k{ display: flex; gap: 4px; flex: none; }
+  kbd{
+    font: inherit; font-size: 11.5px; font-weight: 600;
+    padding: 3px 8px; border-radius: 7px;
+    border: 1px solid var(--border);
+    background: rgba(255, 255, 255, .06);
+    color: var(--text-1);
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .4);
+  }
+  .modal-note{ margin-top: 16px; font-size: 12px; color: var(--text-3); line-height: 1.5; }
+
+  /* ============ Overlay de apertura ============ */
+  body.launching{ overflow: hidden; }
+  body.launching .card,
+  body.launching .dock,
+  body.launching .controls,
+  body.launching .topbar{ pointer-events: none; }
+
+  .overlay{
+    position: fixed; inset: 0; z-index: var(--z-overlay);
+    display: grid; place-items: center; cursor: default;
+    background:
+      radial-gradient(58% 52% at 50% 46%, var(--red-soft), transparent 70%),
+      radial-gradient(140% 100% at 50% 0%, rgba(255, 255, 255, .04), transparent 55%),
+      #060606;
+    clip-path: inset(50% 50% 50% 50% round 30px);
+    visibility: hidden;
+    will-change: clip-path;
+    transition: clip-path 680ms cubic-bezier(.66, 0, .34, 1);
+  }
+  .overlay.animating{ visibility: visible; }
+  .overlay-inner{
+    display: flex; flex-direction: column; align-items: center; gap: 18px;
+    opacity: 0; transform: translateY(14px) scale(.98);
+    transition: opacity 500ms ease 180ms, transform 500ms var(--ease-out) 180ms;
+  }
+  .overlay.show .overlay-inner{ opacity: 1; transform: none; }
+  .overlay-icon{
+    width: 76px; height: 76px; border-radius: 22px;
+    display: grid; place-items: center;
+    color: var(--white);
+    background: linear-gradient(150deg, var(--red-soft), rgba(255, 255, 255, .04));
+    border: 1px solid rgba(255, 255, 255, .14);
+    box-shadow: 0 20px 60px -20px var(--red-glow);
+  }
+  .overlay-icon svg{ width: 34px; height: 34px; display: block; }
+  .overlay-name{ font-size: 22px; font-weight: 700; letter-spacing: .08em; }
+  .overlay-status{ display: inline-flex; align-items: center; gap: 10px; color: var(--text-2); font-size: 14px; }
+  .spinner{
+    width: 16px; height: 16px; border-radius: 50%;
+    border: 2px solid rgba(255, 255, 255, .16);
+    border-top-color: var(--red);
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin{ to{ transform: rotate(360deg); } }
+
+  /* ============ Marca ZARCONT ============ */
+  .corner-credit{
+    position: fixed; left: clamp(16px, 2.2vw, 30px); bottom: 16px;
+    font-size: 11px; letter-spacing: .08em; color: var(--text-3);
+    font-variant-numeric: tabular-nums;
+    pointer-events: none; user-select: none;
+    z-index: 1;
+  }
+  .about-brand{ display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .about-mark{
+    width: 46px; height: 46px; border-radius: 14px; flex: none;
+    display: grid; place-items: center;
+    background: linear-gradient(140deg, var(--red), var(--red-dark));
+    box-shadow: 0 10px 26px -12px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, .25);
+  }
+  .about-mark svg{ width: 21px; height: 21px; display: block; }
+  .about-id{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .about-wordmark{ font-family: var(--font-display); font-size: 19px; letter-spacing: .14em; }
+  .about-sub{ font-size: 12px; color: var(--text-3); }
+  .about-list li span:last-child{ color: var(--text-1); font-weight: 550; text-align: right; }
+  .overlay-brand{
+    font-family: var(--font-display);
+    font-size: 11px; letter-spacing: .34em; color: rgba(255, 255, 255, .38);
+  }
+
+  /* ============ Entrada (aparición al cargar) ============ */
+  .topbar, .title, .subtitle, .deck-wrap, .dock, .controls, .corner-credit{
+    transition: opacity 700ms ease, transform 700ms var(--ease-out);
+  }
+  /* Sin JS, todo permanece visible (degradación limpia) */
+  html.js .topbar{ opacity: 0; transform: translateX(-50%) translateY(-12px); }
+  html.js .title{ opacity: 0; transform: translateY(16px); }
+  html.js .subtitle{ opacity: 0; transform: translateY(16px); }
+  html.js .deck-wrap{ opacity: 0; transform: translateY(26px) scale(.985); }
+  html.js .dock{ opacity: 0; transform: translateY(-50%) translateX(-16px); }
+  html.js .controls{ opacity: 0; transform: translateX(-50%) translateY(16px); }
+  html.js .corner-credit{ opacity: 0; }
+
+  body.ready .topbar{ opacity: 1; transform: translateX(-50%); }
+  body.ready .title{ opacity: 1; transform: none; }
+  body.ready .subtitle{ opacity: 1; transform: none; }
+  body.ready .deck-wrap{ opacity: 1; transform: none; }
+  body.ready .dock{ opacity: 1; transform: translateY(-50%); }
+  body.ready .controls{ opacity: 1; transform: translateX(-50%); }
+  body.ready .corner-credit{ opacity: 1; }
+
+  .title{ transition-delay: 90ms; }
+  .subtitle{ transition-delay: 160ms; }
+  .deck-wrap{ transition-delay: 240ms; }
+  .dock{ transition-delay: 360ms; }
+  .controls{ transition-delay: 440ms; }
+  .corner-credit{ transition-delay: 560ms; }
+
+  /* ============ Responsive ============ */
+  @media (max-width: 900px){
+    .dock{ display: none; }
+  }
+
+  @media (max-width: 760px){
+    :root{
+      --card-w: min(88vw, 430px);
+      --card-h: clamp(470px, 62vh, 590px);
+    }
+    .corner-credit{ display: none; }
+    main{ padding-top: clamp(86px, 12vh, 100px); padding-bottom: clamp(108px, 15vh, 132px); }
+    .tb-center{ display: none; }
+    /* En móvil, la tarjeta secundaria espera oculta tras la activa */
+    .deck[data-current="banquear"] .card[data-app="plazas"],
+    .deck[data-current="plazas"] .card[data-app="banquear"]{
+      --tx: 5%; --tz: -240px; --ry: 0deg; --sc: .95; --op: 0;
+      pointer-events: none;
+    }
+    .capsule{ min-width: 0; padding-right: 16px; }
+    .cap-text em{ max-width: 150px; }
+  }
+
+  @media (max-width: 480px){
+    .brand{ letter-spacing: .1em; }
+    .nav-btn{ width: 40px; height: 40px; }
+  }
+
+  @media (max-height: 840px) and (min-width: 761px){
+    :root{ --card-h: clamp(400px, 52vh, 500px); }
+  }
+
+  /* ============ Accesibilidad: menos movimiento ============ */
+  @media (prefers-reduced-motion: reduce){
+    *, *::before, *::after{
+      animation-duration: .01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: .01ms !important;
+    }
+  }
+
+  /* Respaldo si el navegador no soporta backdrop-filter */
+  @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
+    .topbar, .dock, .dockbar, .modal, .badge{ background: rgba(12, 12, 12, .96); }
+  }
+</style>
+</head>
+<body>
+
+  <!-- Fondo ambiental -->
+  <div class="bg" aria-hidden="true">
+    <div class="glow glow-a"></div>
+    <div class="glow glow-b"></div>
+    <div class="glow glow-c"></div>
+    <div class="grid"></div>
+    <div class="noise"></div>
+    <div class="vignette"></div>
+  </div>
+
+  <!-- Barra superior -->
+  <header class="topbar">
+    <div class="tb-left">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3.5" y="4" width="7" height="16" rx="2.4" fill="#FFFFFF"/>
+          <rect x="13.5" y="4" width="7" height="16" rx="2.4" fill="rgba(255,255,255,.72)"/>
+        </svg>
+      </span>
+      <span class="brand">SERUMS HUB</span>
+    </div>
+    <div class="tb-center" role="status"><span class="dot-live"></span>2 aplicaciones</div>
+    <div class="tb-right">
+      <button class="icon-btn" id="btnFs" data-tip="Pantalla completa" aria-label="Pantalla completa">
+        <svg class="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
+          <path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
+        </svg>
+        <svg class="i-compress" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <path d="M8 3v3a2 2 0 0 1-2 2H3"/><path d="M21 8h-3a2 2 0 0 1-2-2V3"/>
+          <path d="M3 16h3a2 2 0 0 1 2 2v3"/><path d="M16 21v-3a2 2 0 0 1 2-2h3"/>
+        </svg>
+      </button>
+      <button class="icon-btn" id="btnHelp" data-tip="Atajos de teclado" aria-label="Atajos de teclado" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M9.4 9a2.6 2.6 0 1 1 4.2 2.1c-.9.7-1.6 1.2-1.6 2.4"/>
+          <circle cx="12" cy="17" r=".6" fill="currentColor"/>
+        </svg>
+      </button>
+      <button class="icon-btn" id="btnAbout" data-tip="Acerca de" aria-label="Acerca de" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="12" cy="12" r="9"/>
+          <path d="M12 11v5"/>
+          <circle cx="12" cy="8" r=".6" fill="currentColor"/>
+        </svg>
+      </button>
+    </div>
+  </header>
+
+  <!-- Escenario -->
+  <main id="stage">
+
+    <section class="hero">
+      <h1 class="title">SERUMS <span class="accent">HUB</span></h1>
+      <p class="subtitle">¿Qué quieres hacer hoy?</p>
+    </section>
+
+    <div class="deck-wrap">
+      <section class="deck" id="deck" data-current="banquear" aria-label="Aplicaciones disponibles">
+
+        <!-- BANQUEAR -->
+        <a class="card" data-app="banquear" aria-current="true" href="./EXAMEN STUDIO/Examen Studio.html">
+          <span class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 540 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <radialGradient id="artGlowB" cx="50%" cy="16%" r="72%">
+                  <stop offset="0%" stop-color="#DF2531" stop-opacity=".2"/>
+                  <stop offset="55%" stop-color="#DF2531" stop-opacity=".05"/>
+                  <stop offset="100%" stop-color="#DF2531" stop-opacity="0"/>
+                </radialGradient>
+              </defs>
+              <rect width="540" height="560" fill="url(#artGlowB)"/>
+              <g fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2">
+                <rect x="398" y="58" width="96" height="128" rx="16" transform="rotate(8 446 122)"/>
+                <rect x="376" y="84" width="96" height="128" rx="16" transform="rotate(3 424 148)"/>
+              </g>
+              <g transform="rotate(-5 250 300)">
+                <rect x="92" y="120" width="300" height="380" rx="26" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,.13)"/>
+                <g stroke="rgba(255,255,255,.1)" stroke-width="4" stroke-linecap="round">
+                  <line x1="152" y1="192" x2="352" y2="192"/>
+                  <line x1="152" y1="258" x2="352" y2="258"/>
+                  <line x1="152" y1="324" x2="352" y2="324"/>
+                  <line x1="152" y1="390" x2="300" y2="390"/>
+                </g>
+                <g fill="none" stroke="rgba(255,255,255,.2)" stroke-width="2.5">
+                  <circle cx="124" cy="192" r="10"/>
+                  <circle cx="124" cy="258" r="10"/>
+                  <circle cx="124" cy="324" r="10"/>
+                  <circle cx="124" cy="390" r="10"/>
+                </g>
+                <circle cx="124" cy="258" r="12" fill="#DF2531"/>
+                <path d="m119 258 3.5 3.5 7-7.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g transform="rotate(10 388 432)">
+                <circle cx="388" cy="432" r="52" fill="rgba(223,37,49,.14)" stroke="rgba(223,37,49,.55)" stroke-width="2"/>
+                <path d="m364 432 16 16 30-32" fill="none" stroke="#DF2531" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+              </g>
+              <g fill="none" stroke="rgba(255,255,255,.05)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(430 282) scale(4.4) translate(-12 -12)">
+                <rect x="8" y="2.5" width="8" height="4" rx="1.5"/>
+                <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
+              </g>
+            </svg>
+          </span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="badge"><span class="badge-dot"></span>Exámenes</span>
+
+          <div class="content-full">
+            <div class="row-title">
+              <h2>BANQUEAR</h2>
+              <span class="counter">1 / 2</span>
+            </div>
+            <p class="desc">Repasa, practica y resuelve exámenes SERUMS de años anteriores.</p>
+            <ul class="meta">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
+                <span>Importa PDFs con respuestas resaltadas</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2"/><path d="M9 2h6"/></svg>
+                <span>Cronómetro · Ranking · Historial</span>
+              </li>
+            </ul>
+            <div class="row-cta">
+              <span class="btn-open">Abrir aplicación
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="content-mini" aria-hidden="true">
+            <strong>BANQUEAR</strong>
+            <span>Exámenes · Práctica</span>
+          </div>
+        </a>
+
+        <!-- PLAZAS SERUMS -->
+        <a class="card" data-app="plazas" href="./serums map/serums-map-explorer/index.html">
+          <span class="card-art" aria-hidden="true">
+            <svg viewBox="0 0 540 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
+              <defs>
+                <radialGradient id="artGlowP" cx="72%" cy="14%" r="72%">
+                  <stop offset="0%" stop-color="#DF2531" stop-opacity=".18"/>
+                  <stop offset="55%" stop-color="#DF2531" stop-opacity=".05"/>
+                  <stop offset="100%" stop-color="#DF2531" stop-opacity="0"/>
+                </radialGradient>
+                <pattern id="artDots" width="26" height="26" patternUnits="userSpaceOnUse">
+                  <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,.1)"/>
+                </pattern>
+              </defs>
+              <rect width="540" height="560" fill="url(#artGlowP)"/>
+              <rect width="540" height="560" fill="url(#artDots)"/>
+              <g fill="none" stroke="rgba(255,255,255,.06)" stroke-width="2">
+                <path d="M-20 520 C 120 480 180 520 320 470"/>
+                <path d="M-20 556 C 140 510 220 556 380 500"/>
+              </g>
+              <path d="M 40 470 C 150 430 150 300 260 280 S 430 200 466 116" fill="none" stroke="rgba(223,37,49,.6)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 14"/>
+              <circle cx="118" cy="404" r="5" fill="rgba(255,255,255,.25)"/>
+              <circle cx="260" cy="280" r="5" fill="#DF2531" opacity=".85"/>
+              <circle cx="352" cy="238" r="5" fill="rgba(255,255,255,.25)"/>
+              <circle cx="466" cy="72" r="30" fill="none" stroke="rgba(223,37,49,.35)"/>
+              <circle cx="466" cy="72" r="52" fill="none" stroke="rgba(223,37,49,.16)"/>
+              <g transform="translate(466 96) scale(3.4) translate(-12 -21)">
+                <path d="M12 21.5s-7.5-6.8-7.5-11.5a7.5 7.5 0 0 1 15 0c0 4.7-7.5 11.5-7.5 11.5z" fill="#DF2531" stroke="rgba(255,255,255,.25)" stroke-width=".8"/>
+                <circle cx="12" cy="10" r="3" fill="#0d0d0d"/>
+              </g>
+            </svg>
+          </span>
+          <span class="card-scrim" aria-hidden="true"></span>
+          <span class="badge"><span class="badge-dot"></span>Mapa</span>
+
+          <div class="content-full">
+            <div class="row-title">
+              <h2>PLAZAS SERUMS</h2>
+              <span class="counter">2 / 2</span>
+            </div>
+            <p class="desc">Explora, filtra y consulta las plazas SERUMS disponibles.</p>
+            <ul class="meta">
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                <span>Mapa interactivo · Filtros y búsqueda</span>
+              </li>
+              <li>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 21V11"/><path d="M11 21V5"/><path d="M16 21v-8"/><path d="M21 21V8"/></svg>
+                <span>Adjudicación · Notas · Estadísticas</span>
+              </li>
+            </ul>
+            <div class="row-cta">
+              <span class="btn-open">Abrir aplicación
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+              </span>
+            </div>
+          </div>
+
+          <div class="content-mini" aria-hidden="true">
+            <strong>PLAZAS SERUMS</strong>
+            <span>Explorador de plazas</span>
+          </div>
+        </a>
+
+      </section>
+    </div>
+  </main>
+
+  <!-- Crédito de autoría (pie) -->
+  <div class="corner-credit">SERUMS HUB · © 2026 ZARCONT</div>
+
+  <!-- Dock lateral -->
+  <nav class="dock" aria-label="Navegación de aplicaciones">
+    <span class="dock-logo" aria-hidden="true">
+      <svg viewBox="0 0 24 24" aria-hidden="true">
+        <rect x="3.5" y="4" width="7" height="16" rx="2.4" fill="#FFFFFF"/>
+        <rect x="13.5" y="4" width="7" height="16" rx="2.4" fill="rgba(255,255,255,.72)"/>
+      </svg>
+    </span>
+    <span class="dock-sep" aria-hidden="true"></span>
+    <button class="dock-btn" data-app="banquear" data-tip="BANQUEAR" aria-label="Mostrar BANQUEAR" aria-current="true">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
+        <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
+        <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
+      </svg>
+    </button>
+    <button class="dock-btn" data-app="plazas" data-tip="PLAZAS SERUMS" aria-label="Mostrar PLAZAS SERUMS" aria-current="false">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+        <circle cx="12" cy="10" r="3"/>
+      </svg>
+    </button>
+  </nav>
+
+  <!-- Barra de control inferior -->
+  <div class="controls">
+    <div class="dockbar">
+      <button class="nav-btn" id="btnPrev" data-tip="Anterior" aria-label="Aplicación anterior">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
+      </button>
+      <div class="capsule">
+        <span class="cap-icon" id="capIcon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
+            <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
+            <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
+          </svg>
+        </span>
+        <span class="cap-text" aria-live="polite">
+          <strong id="capName">BANQUEAR</strong>
+          <em id="capTag">Exámenes · Práctica</em>
+        </span>
+      </div>
+      <button class="nav-btn" id="btnNext" data-tip="Siguiente" aria-label="Aplicación siguiente">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+      </button>
+    </div>
+    <div class="dots" role="group" aria-label="Selección de aplicación">
+      <button class="dot is-on" data-app="banquear" aria-label="Mostrar BANQUEAR" aria-current="true"></button>
+      <button class="dot" data-app="plazas" aria-label="Mostrar PLAZAS SERUMS" aria-current="false"></button>
+    </div>
+  </div>
+
+  <!-- Modal de atajos -->
+  <div class="scrim" id="helpScrim" aria-hidden="true"></div>
+  <div class="modal" id="helpModal" role="dialog" aria-modal="true" aria-labelledby="helpTitle" aria-hidden="true">
+    <div class="modal-head">
+      <h3 id="helpTitle">Atajos de teclado</h3>
+      <button class="icon-btn" id="helpClose" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <ul class="keys">
+      <li><span class="k"><kbd>←</kbd><kbd>→</kbd></span><span>Cambiar de aplicación</span></li>
+      <li><span class="k"><kbd>Enter</kbd></span><span>Abrir la aplicación seleccionada</span></li>
+      <li><span class="k"><kbd>1</kbd><kbd>2</kbd></span><span>Seleccionar aplicación directamente</span></li>
+      <li><span class="k"><kbd>Esc</kbd></span><span>Cerrar este panel</span></li>
+    </ul>
+    <p class="modal-note">También puedes hacer clic en las tarjetas o deslizar en pantallas táctiles.</p>
+  </div>
+
+  <!-- Modal «Acerca de» -->
+  <div class="scrim" id="aboutScrim" aria-hidden="true"></div>
+  <div class="modal" id="aboutModal" role="dialog" aria-modal="true" aria-labelledby="aboutTitle" aria-hidden="true">
+    <div class="modal-head">
+      <h3 id="aboutTitle">Acerca de</h3>
+      <button class="icon-btn" id="aboutClose" aria-label="Cerrar">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 6l12 12"/><path d="M18 6 6 18"/></svg>
+      </button>
+    </div>
+    <div class="about-brand">
+      <span class="about-mark" aria-hidden="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <rect x="3.5" y="4" width="7" height="16" rx="2.4" fill="#FFFFFF"/>
+          <rect x="13.5" y="4" width="7" height="16" rx="2.4" fill="rgba(255,255,255,.72)"/>
+        </svg>
+      </span>
+      <span class="about-id">
+        <span class="about-wordmark">ZARCONT</span>
+        <span class="about-sub">SERUMS HUB · <span id="aboutVersion">v1.0.0</span></span>
+      </span>
+    </div>
+    <ul class="keys about-list">
+      <li><span>Autoría</span><span>ZARCONT</span></li>
+      <li><span>Licencia</span><span>Propietaria — todos los derechos reservados</span></li>
+      <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-1.0.0</span></li>
+    </ul>
+    <p class="modal-note">Incluye <b>BANQUEAR</b> (Examen Studio) y <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v1.0.0). Datos de plazas: fuentes públicas oficiales. Las librerías de terceros conservan sus propias licencias.</p>
+  </div>
+
+  <!-- Overlay de apertura -->
+  <div class="overlay" id="overlay" role="status" aria-hidden="true">
+    <div class="overlay-inner">
+      <div class="overlay-icon" id="overlayIcon" aria-hidden="true"></div>
+      <div class="overlay-name" id="overlayName"></div>
+      <div class="overlay-status">
+        <span class="spinner" aria-hidden="true"></span>
+        <span>Abriendo…</span>
+      </div>
+      <div class="overlay-brand">ZARCONT</div>
+    </div>
+  </div>
+
+  <!-- Iconos reutilizables de las aplicaciones -->
+  <template id="tpl-icon-banquear">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
+      <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
+      <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
+    </svg>
+  </template>
+  <template id="tpl-icon-plazas">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
+      <circle cx="12" cy="10" r="3"/>
+    </svg>
+  </template>
+
+<script>
+/* © 2026 ZARCONT — SERUMS HUB · Identificador: ZARCONT-SRH-1.0.0 · Licencia propietaria (ver LICENSE) */
+(function(){
+  "use strict";
+
+  /* ==================================================================
+     CONFIGURACIÓN — Edita aquí las rutas de tus aplicaciones.
+     Las rutas son relativas a este archivo (index.html).
+     ================================================================== */
+  const CONFIG = {
+    apps: {
+      banquear: "./EXAMEN STUDIO/Examen Studio.html",
+      plazas:   "./serums map/serums-map-explorer/index.html"
+    },
+    duracionTransicion: 650,    // ms que dura la animación antes de abrir
+    abrirEnNuevaPestana: false, // true → abre la aplicación en una pestaña nueva
+    version: "1.0.0",           // versión del SERUMS HUB (marca: ZARCONT)
+    build: "ZARCONT-SRH-1.0.0"  // identificador de compilación
+  };
+  /* ================================================================== */
+
+  const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  const stage = document.getElementById("stage");
+  const deck = document.getElementById("deck");
+  const cards = Array.from(deck.querySelectorAll(".card"));
+  const order = cards.map(function(c){ return c.dataset.app; });
+  const dots = Array.from(document.querySelectorAll(".dot"));
+  const dockBtns = Array.from(document.querySelectorAll(".dock-btn"));
+  const capName = document.getElementById("capName");
+  const capTag = document.getElementById("capTag");
+  const capIcon = document.getElementById("capIcon");
+  const btnPrev = document.getElementById("btnPrev");
+  const btnNext = document.getElementById("btnNext");
+  const btnFs = document.getElementById("btnFs");
+  const btnHelp = document.getElementById("btnHelp");
+  const helpModal = document.getElementById("helpModal");
+  const helpScrim = document.getElementById("helpScrim");
+  const helpClose = document.getElementById("helpClose");
+  const btnAbout = document.getElementById("btnAbout");
+  const aboutModal = document.getElementById("aboutModal");
+  const aboutScrim = document.getElementById("aboutScrim");
+  const aboutClose = document.getElementById("aboutClose");
+  const overlay = document.getElementById("overlay");
+  const overlayIcon = document.getElementById("overlayIcon");
+  const overlayName = document.getElementById("overlayName");
+
+  const icon = function(id){ return document.getElementById("tpl-icon-" + id).innerHTML; };
+  const APPS = {
+    banquear: { name: "BANQUEAR",      tag: "Exámenes · Práctica",  icon: icon("banquear") },
+    plazas:   { name: "PLAZAS SERUMS", tag: "Explorador de plazas", icon: icon("plazas") }
+  };
+
+  // 1) Aplicar las URLs reales desde la configuración
+  cards.forEach(function(card){
+    const url = CONFIG.apps[card.dataset.app];
+    if (url) card.setAttribute("href", url);
+  });
+
+  // 2) Selección del carrusel
+  let current = 0;
+  function select(i){
+    current = ((i % order.length) + order.length) % order.length;
+    const id = order[current];
+    deck.dataset.current = id;
+    dots.forEach(function(d){
+      const on = d.dataset.app === id;
+      d.classList.toggle("is-on", on);
+      d.setAttribute("aria-current", on ? "true" : "false");
+    });
+    dockBtns.forEach(function(b){
+      b.setAttribute("aria-current", b.dataset.app === id ? "true" : "false");
+    });
+    cards.forEach(function(c){
+      c.setAttribute("aria-current", c.dataset.app === id ? "true" : "false");
+    });
+    const app = APPS[id];
+    capName.textContent = app.name;
+    capTag.textContent = app.tag;
+    capIcon.innerHTML = app.icon;
+  }
+  select(0);
+
+  // Relleno del panel «Acerca de» con versión e identificador
+  document.getElementById("aboutVersion").textContent = "v" + CONFIG.version;
+  document.getElementById("aboutBuild").textContent = CONFIG.build;
+
+  // 3) Aparición de la página
+  function start(){
+    let done = false;
+    function mark(){
+      if (done) return;
+      done = true;
+      document.body.classList.add("ready");
+    }
+    requestAnimationFrame(function(){ requestAnimationFrame(mark); });
+    window.setTimeout(mark, 350); // respaldo si la pestaña está en segundo plano
+  }
+  if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", start, { once: true });
+  } else {
+    start();
+  }
+
+  // 4) Tarjetas: secundaria selecciona, activa abre
+  cards.forEach(function(card){
+    card.addEventListener("click", function(e){
+      if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
+      const i = order.indexOf(card.dataset.app);
+      if (i !== current){ e.preventDefault(); select(i); return; }
+      e.preventDefault();
+      launch(card);
+    });
+  });
+
+  // 5) Controles de navegación
+  btnPrev.addEventListener("click", function(){ select(current - 1); });
+  btnNext.addEventListener("click", function(){ select(current + 1); });
+  dots.forEach(function(d){
+    d.addEventListener("click", function(){ select(order.indexOf(d.dataset.app)); });
+  });
+  dockBtns.forEach(function(b){
+    b.addEventListener("click", function(){ select(order.indexOf(b.dataset.app)); });
+  });
+
+  // 6) Gesto táctil para cambiar de aplicación
+  let sx = 0, sy = 0, swiping = false;
+  stage.addEventListener("pointerdown", function(e){
+    if (e.pointerType === "mouse") return;
+    swiping = true; sx = e.clientX; sy = e.clientY;
+  });
+  stage.addEventListener("pointerup", function(e){
+    if (!swiping) return;
+    swiping = false;
+    const dx = e.clientX - sx, dy = e.clientY - sy;
+    if (Math.abs(dx) > 48 && Math.abs(dy) < 64) select(current + (dx < 0 ? 1 : -1));
+  });
+
+  // 7) Teclado
+  document.addEventListener("keydown", function(e){
+    if (e.key === "Escape"){ if (openModalEl) closeModal(); return; }
+    if (openModalEl) return;
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (e.key === "ArrowLeft"){ e.preventDefault(); select(current - 1); }
+    else if (e.key === "ArrowRight"){ e.preventDefault(); select(current + 1); }
+    else if (e.key === "1"){ select(0); }
+    else if (e.key === "2"){ select(1); }
+    else if (e.key === "Enter"){
+      const ae = document.activeElement;
+      if (!ae || ae === document.body || ae === document.documentElement){
+        e.preventDefault();
+        launch(cards[current]);
+      }
+    }
+  });
+
+  // 8) Modales (atajos de teclado y «Acerca de»)
+  let openModalEl = null, lastFocus = null, openTrigger = null;
+  function openModal(modal, scrim, closeBtn, trigger){
+    if (openModalEl) closeModal();
+    openModalEl = modal;
+    lastFocus = document.activeElement;
+    openTrigger = trigger;
+    scrim.classList.add("open"); scrim.setAttribute("aria-hidden", "false");
+    modal.classList.add("open"); modal.setAttribute("aria-hidden", "false");
+    closeBtn.focus();
+  }
+  function closeModal(){
+    if (!openModalEl) return;
+    const scrim = (openModalEl === helpModal) ? helpScrim : aboutScrim;
+    openModalEl.classList.remove("open"); openModalEl.setAttribute("aria-hidden", "true");
+    scrim.classList.remove("open"); scrim.setAttribute("aria-hidden", "true");
+    openModalEl = null;
+    const back = (lastFocus && lastFocus !== document.body && typeof lastFocus.focus === "function") ? lastFocus : (openTrigger || btnHelp);
+    back.focus();
+  }
+  btnHelp.addEventListener("click", function(){ openModal(helpModal, helpScrim, helpClose, btnHelp); });
+  btnAbout.addEventListener("click", function(){ openModal(aboutModal, aboutScrim, aboutClose, btnAbout); });
+  helpClose.addEventListener("click", closeModal);
+  aboutClose.addEventListener("click", closeModal);
+  helpScrim.addEventListener("click", closeModal);
+  aboutScrim.addEventListener("click", closeModal);
+
+  // 9) Pantalla completa
+  if (!document.fullscreenEnabled){
+    btnFs.hidden = true;
+  } else {
+    btnFs.addEventListener("click", function(){
+      try {
+        if (document.fullscreenElement) document.exitFullscreen();
+        else document.documentElement.requestFullscreen();
+      } catch (err) { /* requiere gesto del usuario */ }
+    });
+    document.addEventListener("fullscreenchange", function(){
+      const on = !!document.fullscreenElement;
+      document.documentElement.classList.toggle("is-fs", on);
+      const label = on ? "Salir de pantalla completa" : "Pantalla completa";
+      btnFs.setAttribute("aria-label", label);
+      btnFs.dataset.tip = label;
+    });
+  }
+
+  // 10) Transición de apertura
+  let navigating = false;
+  function launch(card){
+    if (navigating) return;
+    const id = card.dataset.app;
+    const url = CONFIG.apps[id];
+    if (!url) return;
+    navigating = true;
+
+    try {
+      overlayIcon.innerHTML = APPS[id].icon;
+      overlayName.textContent = APPS[id].name;
+      document.body.classList.add("launching");
+      overlay.setAttribute("aria-hidden", "false");
+
+      const go = function(){
+        if (CONFIG.abrirEnNuevaPestana) window.open(url, "_blank", "noopener");
+        else window.location.assign(url);
+      };
+
+      if (REDUCED){
+        overlay.classList.add("animating", "show");
+        window.setTimeout(go, 80);
+        return;
+      }
+
+      // La capa se expande desde la tarjeta elegida
+      const r = card.getBoundingClientRect();
+      overlay.style.clipPath =
+        "inset(" + Math.round(r.top) + "px " +
+        Math.round(window.innerWidth - r.right) + "px " +
+        Math.round(window.innerHeight - r.bottom) + "px " +
+        Math.round(r.left) + "px round 28px)";
+      overlay.classList.add("animating", "show");
+      void overlay.offsetHeight; // fuerza el cálculo del estado inicial
+      const expand = function(){
+        overlay.style.clipPath = "inset(0px 0px 0px 0px round 0px)";
+      };
+      requestAnimationFrame(expand);
+      window.setTimeout(expand, 60); // respaldo en pestañas sin frames
+      window.setTimeout(go, CONFIG.duracionTransicion + 90);
+    } catch (err) {
+      window.location.assign(url); // respaldo: navegar directamente
+    }
+  }
+
+  // 11) Restaurar la interfaz si el usuario vuelve con "Atrás"
+  window.addEventListener("pageshow", function(){
+    navigating = false;
+    document.body.classList.remove("launching");
+    overlay.classList.remove("animating", "show");
+    overlay.setAttribute("aria-hidden", "true");
+    overlay.style.clipPath = "";
+  });
+})();
+</script>
+</body>
+</html>
