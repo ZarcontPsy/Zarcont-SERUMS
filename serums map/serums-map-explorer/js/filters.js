@@ -84,7 +84,7 @@ window.Filters = (function () {
   function chips() {
     var f = S.filters, c = [];
     if (S.quick && S.quick !== 'todas') {
-      c.push({ g: 'quick', v: S.quick, t: S.quick === 'favoritas' ? '★ Favoritas' : S.quick === 'adjudicadas' ? '✅ Adjudicadas (mías)' : S.quick === 'bloqueadas' ? '🚫 Bloqueadas' : '🟢 Disponibles' });
+      c.push({ g: 'quick', v: S.quick, t: S.quick === 'favoritas' ? '★ Favoritas' : S.quick === 'adjudicadas' ? '✓ Adjudicadas (mías)' : S.quick === 'bloqueadas' ? '✕ Bloqueadas' : '● Disponibles' });
     }
     f.profesiones.forEach(function (v) { c.push({ g: 'profesiones', v: v, t: v }); });
     f.instituciones.forEach(function (v) { c.push({ g: 'instituciones', v: v, t: v }); });

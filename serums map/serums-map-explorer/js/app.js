@@ -5,6 +5,8 @@
 'use strict';
 window.App = (function () {
   var DEMO_KEY = 'AIzaSyC7lmgW183evYiAW-pFNai1DKDSPeYt-Gc';
+  var ICO_SUN = '<svg class="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>';
+  var ICO_MOON = '<svg class="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A8.5 8.5 0 1 1 11.2 3a6.5 6.5 0 0 0 9.8 9.8Z"/></svg>';
   var SUB = { stats: 'subStats', datos: 'subDatos', geo: 'subGeo', favoritos: 'subFav', comparador: 'subCmp', config: 'subConfig', adjudicacion: 'subAdj' };
   var S = {
     plazas: [], filters: null, sort: { key: 'departamento', dir: 'asc' }, page: 1,
@@ -179,7 +181,8 @@ window.App = (function () {
   }
   function renderNotifs() {
     var a = window.Store.get('notifs', []);
-    document.getElementById('notifBadge').textContent = a.length;
+    var nb = document.getElementById('notifBadge');
+    if (nb) { nb.textContent = a.length; nb.hidden = !a.length; }
     document.getElementById('notifBody').innerHTML = a.length ? a.map(function (n) {
       return '<div class="notif ' + (n.kind === 'err' ? 'err' : n.kind === 'ok' ? 'ok' : '') + '">' +
         window.esc(n.msg) + '<br><time>' + new Date(n.at).toLocaleString('es-PE') + '</time></div>';
@@ -191,7 +194,8 @@ window.App = (function () {
     S.theme = window.Store.get('theme', 'dark');
     document.documentElement.setAttribute('data-theme', S.theme);
     var b = document.getElementById('btnTheme');
-    if (b) { b.textContent = S.theme === 'dark' ? '☀' : '🌙'; b.title = S.theme === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'; }
+    if (b) { b.innerHTML = ICO_SUN + ICO_MOON; b.title = S.theme === 'dark' ? 'Cambiar a tema claro' : 'Cambiar a tema oscuro'; }
+    if (window.MapView && window.MapView.setTheme) window.MapView.setTheme(S.theme);
   }
   function toggleTheme() {
     S.theme = S.theme === 'dark' ? 'light' : 'dark';
@@ -221,14 +225,14 @@ window.App = (function () {
     document.getElementById('recPill').innerHTML = '<b>' + window.fmtNum(list.length) + '</b> plazas';
     document.getElementById('geoPill').innerHTML = '<b>' + window.fmtNum(ubic) + '</b> ubicadas · ' + window.fmtNum(list.length - ubic) + ' pend.';
     document.getElementById('counterBar').innerHTML =
-      '<span>🔎 <b>' + window.fmtNum(list.length) + '</b> plazas encontradas</span>' +
-      '<span class="sep"></span><span>📍 <b>' + window.fmtNum(ubic) + '</b> ubicadas en el mapa</span>' +
-      '<span class="sep"></span><span>⏳ <b>' + window.fmtNum(list.length - ubic) + '</b> pendientes de geolocalización</span>' +
-      '<span class="sep"></span><span>💼 <b>' + window.fmtNum(vac) + '</b> vacantes</span>' +
-      '<span class="sep"></span><span>★ <b>' + window.fmtNum(fav) + '</b> favoritas</span>' +
-      '<span class="sep"></span><span>✅ <b>' + window.fmtNum(adj) + '</b> adjudicadas (mías)</span>' +
-      '<span class="sep"></span><span>🚫 <b>' + window.fmtNum(blo) + '</b> bloqueadas</span>' +
-      '<span class="sep"></span><span>🟢 <b>' + window.fmtNum(disp) + '</b> disponibles</span>';
+      '<span title="Plazas encontradas"><b>' + window.fmtNum(list.length) + '</b> plazas</span>' +
+      '<span class="sep"></span><span title="Plazas ubicadas en el mapa"><b>' + window.fmtNum(ubic) + '</b> ubicadas</span>' +
+      '<span class="sep"></span><span title="Pendientes de geolocalización"><b>' + window.fmtNum(list.length - ubic) + '</b> pend.</span>' +
+      '<span class="sep"></span><span title="Vacantes"><b>' + window.fmtNum(vac) + '</b> vacantes</span>' +
+      '<span class="sep"></span><span title="Favoritas"><span class="cb-star">★</span> <b>' + window.fmtNum(fav) + '</b> fav.</span>' +
+      '<span class="sep"></span><span title="Adjudicadas (mías)"><span class="cb-ok">✓</span> <b>' + window.fmtNum(adj) + '</b> adj.</span>' +
+      '<span class="sep"></span><span title="Bloqueadas"><span class="cb-off">✕</span> <b>' + window.fmtNum(blo) + '</b> bloq.</span>' +
+      '<span class="sep"></span><span title="Disponibles"><span class="cb-dot"></span> <b>' + window.fmtNum(disp) + '</b> disp.</span>';
   }
   /* ---------- filtros rápidos por estado (contadores en tiempo real) ---------- */
   function quickCounts() {
@@ -244,9 +248,9 @@ window.App = (function () {
     var opts = [
       { k: 'todas', t: 'Todas', n: c.total, h: 'Sin filtro de estado' },
       { k: 'favoritas', t: '★ Favoritas', n: c.favoritas, h: 'Plazas que marcaste con estrella' },
-      { k: 'adjudicadas', t: '✅ Adjudicadas', n: c.adjudicadas, h: 'Plazas que marcaste como adjudicadas (marca tuya)' },
-      { k: 'bloqueadas', t: '🚫 Bloqueadas', n: c.bloqueadas, h: 'Plazas que bloqueaste: no pueden seleccionarse' },
-      { k: 'disponibles', t: '🟢 Disponibles', n: c.disponibles, h: 'Plazas sin tu marca de adjudicación y sin bloqueo' }
+      { k: 'adjudicadas', t: '✓ Adjudicadas', n: c.adjudicadas, h: 'Plazas que marcaste como adjudicadas (marca tuya)' },
+      { k: 'bloqueadas', t: '✕ Bloqueadas', n: c.bloqueadas, h: 'Plazas que bloqueaste: no pueden seleccionarse' },
+      { k: 'disponibles', t: '● Disponibles', n: c.disponibles, h: 'Plazas sin tu marca de adjudicación y sin bloqueo' }
     ];
     el.innerHTML = opts.map(function (o) {
       return '<button type="button" class="qbtn' + (S.quick === o.k ? ' on' : '') + '" data-quick="' + o.k + '" title="' + window.esc(o.h) + '"' +
@@ -572,6 +576,30 @@ window.App = (function () {
     document.getElementById('sideResults').style.display = tab === 'results' ? 'block' : 'none';
     if (tab === 'filters') renderFilterOptions();
   }
+  function isMobileSide() {
+    return !!(window.matchMedia && window.matchMedia('(max-width:920px)').matches);
+  }
+  function syncSideButton() {
+    var w = document.getElementById('work'), b = document.getElementById('btnSide');
+    if (!w || !b) return;
+    var mobile = isMobileSide();
+    var closed = w.classList.contains('noside');
+    if (mobile) {
+      b.innerHTML = '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg>';
+      b.title = 'Cerrar panel';
+      b.setAttribute('aria-label', 'Cerrar panel');
+      b.setAttribute('aria-expanded', String(document.getElementById('side').classList.contains('open')));
+    } else {
+      b.innerHTML = closed
+        ? '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m13 17 5-5-5-5"/><path d="m6 17 5-5-5-5"/></svg>'
+        : '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m11 17-5-5 5-5"/><path d="m18 17-5-5 5-5"/></svg>';
+      b.title = closed ? 'Mostrar panel' : 'Ocultar panel';
+      b.setAttribute('aria-label', b.title);
+      b.setAttribute('aria-expanded', String(!closed));
+    }
+    var r = document.getElementById('btnSideRestore');
+    if (r) r.setAttribute('aria-expanded', String(!closed));
+  }
   function setView(nav) {
     S.view = nav;
     Array.prototype.forEach.call(document.querySelectorAll('#rail [data-nav]'), function (b) {
@@ -582,9 +610,20 @@ window.App = (function () {
     });
     var onMap = (nav === 'map' || nav === 'results');
     document.getElementById('mapView').style.display = onMap ? 'block' : 'none';
-    document.getElementById('counterBar').style.display = onMap ? 'flex' : 'none';
+    var cbw = document.getElementById('counterWrap');
+    if (cbw) cbw.style.display = onMap ? 'flex' : 'none';
+    if (cbw && !onMap) {
+      cbw.classList.remove('open');
+      document.body.classList.remove('status-open');
+      var ct = document.getElementById('counterTab');
+      if (ct) ct.setAttribute('aria-expanded', 'false');
+    }
     if (onMap) { window.MapView.resize(); /* relee estados tuyos (favoritas/adjudicadas/bloqueadas) al volver */ if (window.MapView.isReady()) window.MapView.updateIcons(); }
     document.getElementById('work').classList.toggle('noside', !onMap);
+    document.getElementById('work').classList.toggle('is-subview', !onMap);
+    document.body.classList.toggle('is-subview', !onMap);
+    if (isMobileSide()) document.getElementById('side').classList.remove('open');
+    syncSideButton();
     if (nav === 'map') setSideTab('filters');
     else if (nav === 'results') setSideTab('results');
     if (nav === 'stats') window.Stats.render();
@@ -681,7 +720,7 @@ window.App = (function () {
       return window.Results.card(p);
     }).join('') : '<div class="empty">' + vacio + '</div>';
     var btn = document.getElementById('btnFavClear');
-    if (btn) btn.textContent = which === 'adj' ? '🗑 Quitar todas las adjudicadas (' + window.fmtNum(nAdj) + ')' : '🗑 Vaciar favoritos (' + window.fmtNum(nFav) + ')';
+    if (btn) btn.textContent = which === 'adj' ? 'Quitar todas las adjudicadas (' + window.fmtNum(nAdj) + ')' : 'Vaciar favoritos (' + window.fmtNum(nFav) + ')';
   }
   function clearStateTab() {
     if (S.stateTab === 'adj') {
@@ -752,7 +791,9 @@ window.App = (function () {
         '<button class="btn" id="cfgKeyDemo">Usar clave de demostración</button></div>' +
         '<div class="mini" id="cfgKeyMsg" style="margin-top:8px"></div></div>' +
       '<div class="card"><h3>Apariencia</h3><div class="rowbtns">' +
-        '<button class="btn" id="cfgTheme">' + (S.theme === 'dark' ? '☀ Usar tema claro' : '🌙 Usar tema oscuro') + '</button></div></div>' +
+        '<button class="btn" id="cfgTheme">' + (S.theme === 'dark' ? 'Usar tema claro' : 'Usar tema oscuro') + '</button></div></div>' +
+      '<div class="card"><h3>Datos importados</h3><div class="mini">El conjunto activo y su estructura normalizada se revisan desde aquí, sin ocupar el dock principal.</div>' +
+        '<div class="rowbtns" style="margin-top:12px"><button class="btn" id="cfgDatos">Abrir datos importados</button></div></div>' +
       '<div class="card"><h3>Datos y almacenamiento local</h3><div class="mini">Favoritos, plazas adjudicadas (tus marcas), comparador, correcciones de ubicación y dataset importado se guardan en este navegador. No se sincronizan entre dispositivos.</div>' +
         '<label class="check mini" style="margin-top:10px;display:inline-flex"><input type="checkbox" id="cfgAdjConfirm"' + (adjConfirmOn() ? ' checked' : '') + '> Pedir confirmación antes de marcar una plaza como adjudicada</label>' +
         '<div class="rowbtns" style="margin-top:12px"><button class="btn" id="cfgResetFav">Vaciar favoritos (' + favs().length + ')</button>' +
@@ -760,7 +801,7 @@ window.App = (function () {
         '<button class="btn" id="cfgResetCmp">Vaciar comparador (' + cmp().length + ')</button>' +
         '<button class="btn" id="cfgResetOv">Borrar correcciones de ubicación</button>' +
         '<button class="btn" id="cfgResetAll">Restablecer preferencias</button></div></div>' +
-      '<div class="card"><h3>Acerca de</h3><div class="mini"><b>SERUMS Map Explorer</b> — exploración de plazas SERUMS del Perú.<br>' +
+      '<div class="card"><h3>Acerca de</h3><div class="mini"><b>SERUMS Map Explorer</b> — exploración de plazas SERUMS del Perú. <span class="tag">v2.0.0</span><br>' +
         'Datos oficiales 2026-I: ' + window.fmtNum(allPlazas().length) + ' plazas · coordenadas verificadas por cruce RENIPRESS (código de establecimiento).<br>' +
         'No se inventan coordenadas, remuneraciones ni atributos ausentes en el archivo.<br>' +
         '<b>© 2026 ZARCONT</b> — Todos los derechos reservados (licencia propietaria; ver LICENSE).</div></div>';
@@ -780,6 +821,7 @@ window.App = (function () {
       window.MapView.load(DEMO_KEY);
     };
     document.getElementById('cfgTheme').onclick = function () { toggleTheme(); renderConfig(); };
+    document.getElementById('cfgDatos').onclick = function () { go('datos'); };
     document.getElementById('cfgAdjConfirm').onchange = function (e) {
       setAdjConfirm(e.target.checked);
       window.toast(e.target.checked ? 'Se pedirá confirmación al adjudicar.' : 'No se pedirá confirmación al adjudicar.');
@@ -815,11 +857,43 @@ window.App = (function () {
     Array.prototype.forEach.call(document.querySelectorAll('#sideTabs [data-tab]'), function (b) {
       b.onclick = function () { setSideTab(b.getAttribute('data-tab')); };
     });
+    var work = document.getElementById('work');
     document.getElementById('btnSide').onclick = function () {
-      var w = document.getElementById('work');
-      w.classList.toggle('noside');
-      this.textContent = w.classList.contains('noside') ? '⇤' : '⇥';
+      if (isMobileSide()) {
+        document.getElementById('side').classList.remove('open');
+        syncSideButton();
+        return;
+      }
+      work.classList.toggle('noside');
+      syncSideButton();
+      if (window.MapView && window.MapView.resize) window.MapView.resize();
+      setTimeout(function () { if (window.MapView && window.MapView.resize) window.MapView.resize(); }, 240);
     };
+    var sideRestore = document.getElementById('btnSideRestore');
+    if (sideRestore) sideRestore.onclick = function () {
+      work.classList.remove('noside');
+      syncSideButton();
+      if (window.MapView && window.MapView.resize) window.MapView.resize();
+      setTimeout(function () { if (window.MapView && window.MapView.resize) window.MapView.resize(); }, 240);
+    };
+    window.addEventListener('resize', syncSideButton);
+    var counterTab = document.getElementById('counterTab');
+    if (counterTab) counterTab.onclick = function () {
+      var w = document.getElementById('counterWrap');
+      var open = w.classList.toggle('open');
+      counterTab.setAttribute('aria-expanded', String(open));
+      document.body.classList.toggle('status-open', open);
+    };
+    document.addEventListener('click', function (e) {
+      var w = document.getElementById('counterWrap');
+      if (!w || !w.classList.contains('open') || w.contains(e.target)) return;
+      w.classList.remove('open');
+      document.body.classList.remove('status-open');
+      var t = document.getElementById('counterTab');
+      if (t) t.setAttribute('aria-expanded', 'false');
+    });
+    var datosBack = document.getElementById('datosBack');
+    if (datosBack) datosBack.onclick = function () { go('config'); };
 
     /* búsqueda y filtros */
     var deb = window.debounce(function () { S.filters.search = document.getElementById('filterSearch').value; refresh(false); }, 300);
@@ -941,9 +1015,27 @@ window.App = (function () {
     document.addEventListener('keydown', function (e) { if (e.key === 'Escape') closeConfirm(); });
 
     /* cajones móvil */
-    function drawer(id) { document.getElementById(id).classList.toggle('open'); }
+    function drawer(id) {
+      var el = document.getElementById(id);
+      el.classList.toggle('open');
+      if (id === 'side') syncSideButton();
+    }
     document.getElementById('fabF').onclick = function () { setSideTab('filters'); drawer('side'); };
     document.getElementById('fabR').onclick = function () { setSideTab('results'); drawer('side'); };
+    document.addEventListener('click', function (e) {
+      if (!isMobileSide()) return;
+      var side = document.getElementById('side');
+      if (!side.classList.contains('open')) return;
+      if (side.contains(e.target)) return;
+      if (e.target.closest && e.target.closest('.fab')) return;
+      side.classList.remove('open');
+      syncSideButton();
+    });
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape' || !isMobileSide()) return;
+      var side = document.getElementById('side');
+      if (side.classList.contains('open')) { side.classList.remove('open'); syncSideButton(); }
+    });
 
     /* mapa */
     window.MapView.load(apiKey());

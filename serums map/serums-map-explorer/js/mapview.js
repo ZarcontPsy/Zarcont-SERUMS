@@ -5,6 +5,29 @@ window.MapView = (function () {
   var map = null, markers = [], cluster = null, info = null, ready = false, loadError = '';
   var PERU = { lat: -9.19, lng: -75.015 };
   var GEO_COLORS = { 'Exacta verificada': '#0e9f5d', 'Geolocalización de establecimiento': '#4b93e0', 'Aproximada': '#ef7d00', 'Pendiente': '#8a8f99' };
+  var DARK_STYLE = [
+    { elementType: 'geometry', stylers: [{ color: '#0b0b0b' }] },
+    { elementType: 'labels.text.stroke', stylers: [{ color: '#0b0b0b' }] },
+    { elementType: 'labels.text.fill', stylers: [{ color: '#8a8a8a' }] },
+    { featureType: 'administrative', elementType: 'geometry', stylers: [{ color: '#2a2a2a' }] },
+    { featureType: 'administrative.country', elementType: 'labels.text.fill', stylers: [{ color: '#b8b8b8' }] },
+    { featureType: 'administrative.locality', elementType: 'labels.text.fill', stylers: [{ color: '#d0d0d0' }] },
+    { featureType: 'poi', elementType: 'labels.text.fill', stylers: [{ color: '#9a9a9a' }] },
+    { featureType: 'poi.park', elementType: 'geometry', stylers: [{ color: '#101a12' }] },
+    { featureType: 'poi.park', elementType: 'labels.text.fill', stylers: [{ color: '#5a7a5f' }] },
+    { featureType: 'road', elementType: 'geometry', stylers: [{ color: '#262626' }] },
+    { featureType: 'road', elementType: 'geometry.stroke', stylers: [{ color: '#0b0b0b' }] },
+    { featureType: 'road', elementType: 'labels.text.fill', stylers: [{ color: '#7a7a7a' }] },
+    { featureType: 'road.highway', elementType: 'geometry', stylers: [{ color: '#3a2a2b' }] },
+    { featureType: 'road.highway', elementType: 'geometry.stroke', stylers: [{ color: '#1a1011' }] },
+    { featureType: 'road.highway', elementType: 'labels.text.fill', stylers: [{ color: '#b08a8c' }] },
+    { featureType: 'transit', elementType: 'geometry', stylers: [{ color: '#151515' }] },
+    { featureType: 'water', elementType: 'geometry', stylers: [{ color: '#071018' }] },
+    { featureType: 'water', elementType: 'labels.text.fill', stylers: [{ color: '#4f6a7a' }] }
+  ];
+  function currentStyle() {
+    return document.documentElement.getAttribute('data-theme') === 'light' ? [] : DARK_STYLE;
+  }
 
   function colorOf(p) {
     var mode = window.App.S.colorMode;
@@ -39,13 +62,14 @@ window.MapView = (function () {
     if (!el) return;
     el.innerHTML = html; el.style.display = 'grid';
     var ab = document.getElementById('apiBadge'); if (ab) ab.textContent = 'Maps: error';
-    if (window.App && window.App.notify) window.App.notify('Google Maps no se pudo cargar. Revisa la clave en Configuración (⚙) o 🔑.', 'err');
+    if (window.App && window.App.notify) window.App.notify('Google Maps no se pudo cargar. Revisa la clave en Configuración.', 'err');
   }
   window.initSerumsMap = function () {
     try {
       map = new google.maps.Map(document.getElementById('map'), {
         center: PERU, zoom: 6, mapTypeId: 'roadmap',
-        mapTypeControl: false, streetViewControl: false, fullscreenControl: true
+        styles: currentStyle(),
+        mapTypeControl: false, streetViewControl: false, fullscreenControl: false
       });
       info = new google.maps.InfoWindow();
       ready = true;
@@ -60,11 +84,11 @@ window.MapView = (function () {
     ready = false;
     var old = document.getElementById('gmapsScript'); if (old) old.remove();
     window._gmapsAuthFail = function () {
-      showError('<div style="max-width:520px"><b>⚠ Google Maps no se pudo cargar.</b><br>' +
+      showError('<div style="max-width:520px"><b>Google Maps no se pudo cargar.</b><br>' +
         'Causa probable: clave inválida, sin facturación o sin <b>Maps JavaScript API</b> habilitada.<br><br>' +
         '1) Ve a <b>Google Cloud Console → APIs y servicios → Biblioteca</b> y habilita <b>Maps JavaScript API</b> (y <b>Geocoding API</b> si geocodificas).<br>' +
         '2) En <b>Credenciales</b>, restringe la clave por <b>sitios web (HTTP referrers)</b> y por API.<br>' +
-        '3) Abre <b>⚙ Configuración</b> o <b>🔑</b> e ingresa una clave válida.<br><br>' +
+        '3) Abre <b>Configuración</b> e ingresa una clave válida.<br><br>' +
         'Los filtros, el listado, las estadísticas y la exportación siguen funcionando sin el mapa.</div>');
     };
     var s = document.createElement('script');
@@ -77,6 +101,38 @@ window.MapView = (function () {
     setTimeout(function () { if (!ready && document.getElementById('mapError') && !document.getElementById('mapError').innerHTML) window._gmapsAuthFail(); }, 15000);
   }
   function setMapType(v) { if (ready && map) { try { map.setMapTypeId(v); } catch (e) {} } }
+  function setTheme(theme) {
+    if (!ready || !map) return;
+    try { map.setOptions({ styles: theme === 'light' ? [] : DARK_STYLE }); } catch (e) {}
+  }
+  /* Clústeres con la identidad del sistema: cristal negro, anillo rojo y contador. */
+  function clusterIcon(count) {
+    var r = count > 999 ? 26 : count > 99 ? 23 : 20;
+    var fs = count > 999 ? 10 : count > 99 ? 11 : 12;
+    var d = r * 2;
+    var svg = "<svg xmlns='http://www.w3.org/2000/svg' width='" + d + "' height='" + d + "' viewBox='0 0 " + d + " " + d + "'>" +
+      "<circle cx='" + r + "' cy='" + r + "' r='" + (r - 1) + "' fill='rgba(10,10,10,.94)' stroke='#DF2531' stroke-width='2'/>" +
+      "<circle cx='" + r + "' cy='" + r + "' r='" + (r - 6) + "' fill='rgba(223,37,49,.16)'/>" +
+      "<text x='" + r + "' y='" + (r + 4) + "' text-anchor='middle' fill='#ffffff' " +
+      "font-family='Inter,Arial,sans-serif' font-size='" + fs + "' font-weight='700'>" + count + "</text></svg>";
+    return {
+      url: 'data:image/svg+xml;charset=UTF-8,' + encodeURIComponent(svg),
+      scaledSize: new google.maps.Size(d, d),
+      anchor: new google.maps.Point(r, r)
+    };
+  }
+  function clusterRenderer() {
+    return {
+      render: function (o) {
+        return new google.maps.Marker({
+          position: o.position,
+          icon: clusterIcon(o.count),
+          title: o.count + ' plazas',
+          zIndex: Number(google.maps.Marker.MAX_ZINDEX) + o.count
+        });
+      }
+    };
+  }
   function resize() { if (ready && map) { try { google.maps.event.trigger(map, 'resize'); } catch (e) {} } }
   if (typeof window !== 'undefined') {
     window.addEventListener('resize', function () { resize(); });
@@ -107,8 +163,10 @@ window.MapView = (function () {
     });
     if (useCluster && hasLib) {
       try {
-        cluster = new window.markerClusterer.MarkerClusterer({ map: map, markers: markers });
-      } catch (e) { markers.forEach(function (m) { m.setMap(map); }); }
+        cluster = new window.markerClusterer.MarkerClusterer({ map: map, markers: markers, renderer: clusterRenderer() });
+      } catch (e) {
+        markers.forEach(function (m) { m.setMap(map); });
+      }
     }
     if (document.getElementById('chkAutoFit').checked) fit(list);
     drawLegend();
@@ -168,11 +226,11 @@ window.MapView = (function () {
     var nb = window.App.allPlazas().filter(function (p) { return window.App.isBloq(p); }).length;
     rows += '<div class="li" style="margin-top:7px;padding-top:6px;border-top:1px dashed var(--border)">' +
       '<span class="dot" style="background:transparent;border:2.5px solid #f5b301;box-sizing:border-box"></span>★ Favorita (' + window.fmtNum(nf) + ')</div>' +
-      '<div class="li"><span class="dot" style="background:#8a8f99;opacity:.45"></span>✅ Adjudicada por ti (' + window.fmtNum(na) + ')</div>' +
-      '<div class="li"><span class="dot" style="background:#8a8f99;opacity:.45"></span>🚫 Bloqueada por ti (' + window.fmtNum(nb) + ')</div>';
+      '<div class="li"><span class="dot" style="background:#8a8f99;opacity:.45"></span>✓ Adjudicada por ti (' + window.fmtNum(na) + ')</div>' +
+      '<div class="li"><span class="dot" style="background:#8a8f99;opacity:.45"></span>✕ Bloqueada por ti (' + window.fmtNum(nb) + ')</div>';
     el.innerHTML = '<b>Leyenda · ' + title + '</b>' + rows;
   }
-  return { load: load, render: render, fit: fit, focus: focus, drawLegend: drawLegend, setMapType: setMapType, resize: resize,
+  return { load: load, render: render, fit: fit, focus: focus, drawLegend: drawLegend, setMapType: setMapType, setTheme: setTheme, resize: resize,
     updateIcons: updateIcons, _icon: icon, _markers: function () { return markers.length; },
     isReady: function () { return ready; }, showError: showError };
 })();

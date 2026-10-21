@@ -176,10 +176,10 @@ check("gestión sencilla: pestañas Favoritas/Adjudicadas y botones de vaciado",
 
 # ---------- 7. Centro de adjudicación (subvista del dock, sin mapa) ----------
 adj_js = (ROOT / "js" / "adjudicacion.js").read_text(encoding="utf-8")
-check("la subvista existe en el dock y trae sus contenedores",
-      all(x in html for x in ('id="subAdj"', 'data-nav="adjudicacion"', 'id="adjKpis"', 'id="adjDonut"',
-                              'id="adjBars"', 'id="adjSegs"', 'id="adjList"', 'id="adjPager"',
-                              'id="adjForm"', 'id="adjHist"', 'id="adjBadge"', 'id="adjToMap"')),
+check("el tablero de adjudicación vive en su vista y trae sus contenedores",
+      all(x in html for x in ('id="subAdj"', 'data-nav="adjudicacion"', 'id="adjKpis"',
+                              'id="adjSegs"', 'id="adjList"', 'id="adjPager"',
+                              'id="adjInspector"', 'id="adjForm"', 'id="adjHist"', 'id="adjBadge"', 'id="adjToMap"')),
       "faltan ids en index.html")
 check("el módulo del centro se carga con caché busting y no usa el mapa",
       'js/adjudicacion.js?v=' in html and 'MapView' not in adj_js and 'google.maps' not in adj_js)
@@ -194,10 +194,10 @@ check("el registro guarda persona, fecha y hora y observaciones",
       'id="adjPersona"' in adj_js and 'id="adjFecha"' in adj_js and 'id="adjObs"' in adj_js and
       'type="datetime-local"' in adj_js and "{ persona: persona, obs: obs, fecha: fecha }" in adj_js)
 check("evita duplicados y avisa si ya está adjudicada o bloqueada",
-      "Duplicado: esta plaza ya está adjudicada por ti" in adj_js and "ya está adjudicada por ti</b>" in adj_js and
-      "está <b>bloqueada</b>" in adj_js)
-check("buscador con autocompletado sobre el conjunto real",
-      "function sugerencias" in adj_js and 'id="adjSug"' in adj_js.replace("'adjSug'", '"adjSug"'))
+      "Esta plaza ya está adjudicada por ti" in adj_js and "Esta plaza está bloqueada" in adj_js and
+      "Ya adjudicada" in adj_js)
+check("buscador del tablero sobre el conjunto real",
+      "function listaFiltrada" in adj_js and 'id="adjSearch"' in html and "window.norm" in adj_js)
 check("KPIs del dashboard: total, disponibles, adjudicadas, bloqueadas, favoritas",
       all(x in adj_js for x in ("Total de plazas", "Disponibles", "Adjudicadas", "Bloqueadas", "Favoritas")))
 check("gráficos simples (dona + barras) reutilizando el lenguaje visual",
@@ -207,8 +207,8 @@ check("filtro rápido del centro: 5 estados con contadores propios",
       "data-af" in adj_js)
 check("paginación y orden del listado", "Página " in adj_js and "data-mp" in adj_js and "adjSort" in html)
 check("estado bloqueado claramente distinto (color + icono + borde discontinuo)",
-      ".tag.st-bloq" in css and ".adjitem.st-bloq" in css and "🚫 Bloqueada</span>" in adj_js and
-      "bloqtag" in app_js and "bloqtag" in css)
+      ".adjrowcard.is-bloq" in css and "border-style:dashed" in css and "✕ Bloqueada" in adj_js and
+      ".tag.warn" in css)
 check("mapa: bloqueada con barrera y leyenda; se mantienen favorita y adjudicada",
       "Bloqueada por ti (" in map_js and "#f5b301" in map_js and "stroke-linecap" in map_js and
       "Favorita (" in map_js and "Adjudicada por ti (" in map_js)
@@ -216,7 +216,7 @@ check("ficha: botón de bloqueo junto a favorita/adjudicada", 'data-det="bloq"' 
       "AdjCenter.toggleBloq" in app_js)
 check("el filtro rápido global suma bloqueadas y disponible = sin marcar y sin bloqueo",
       "'bloqueadas'" in app_js and "'bloqueadas'" in filt_js and "!!window" not in filt_js and
-      "!window.App.isAdj(p) && !window.App.isBloq(p)" in filt_js and "bloqueadas</span>" in app_js)
+      "!window.App.isAdj(p) && !window.App.isBloq(p)" in filt_js)
 check("sincronización: actualiza otras pestañas (evento storage) con nota honesta de local",
       "addEventListener('storage'" in adj_js and "no hay servidor integrado" in adj_js and
       "solo en este navegador" in adj_js)

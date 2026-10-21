@@ -34,6 +34,24 @@ listado de adjudicados y resultados finales). Se muestran tal como figuran en la
 fuentes: no se estiman ni inventan valores. El proyecto no reclama exclusividad sobre
 esos datos.
 
+### Contenido de Study
+
+El temario compartido de Study se sintetizó a partir de cinco documentos aportados:
+
+- **APS** — artículo académico de revisión sobre los atributos de la Atención Primaria
+  de Salud. Se identifica como referencia académica, no como norma del MINSA.
+- **MCI** — documento técnico del Ministerio de Salud del Perú.
+- **AUDIT** — manual de referencia de la Organización Mundial de la Salud sobre el
+  test de identificación de trastornos por consumo de alcohol.
+- **Salud materna** — norma técnica del Ministerio de Salud del Perú.
+- **Continuidad de cuidados** — guía técnica del Ministerio de Salud del Perú para
+  centros de salud mental comunitaria.
+
+Los PDFs se conservan en `study-data/fuentes/` sin modificaciones. Las fichas y
+flashcards son una **síntesis de estudio** con referencias al documento y página; no
+sustituyen la norma vigente ni el juicio clínico. El proyecto no reclama autoría sobre
+los documentos originales. No se inventaron claves, estadísticas ni contenido oficial.
+
 ## Notas operativas
 
 - La aplicación del mapa incluye una **clave de demostración de Google Maps** con cuota

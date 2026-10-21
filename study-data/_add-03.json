@@ -1,0 +1,1033 @@
+{
+  "sources": [
+    {
+      "id": "src-its",
+      "title": "Norma Técnica de Salud N.° 240-MINSA/DGIESP-2026 para la Prevención y Control de las Infecciones de Transmisión Sexual",
+      "short": "ITS",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 240-MINSA/DGIESP-2026).",
+      "file": "../study-data/fuentes/nt-prevencion-control-its.pdf"
+    },
+    {
+      "id": "src-vih",
+      "title": "Norma Técnica de Salud N.° 169-MINSA/2020/DGIESP de Atención Integral del Adulto con Infección por el Virus de la Inmunodeficiencia Humana (VIH)",
+      "short": "VIH adulto",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 169-MINSA/2020/DGIESP).",
+      "file": "../study-data/fuentes/nt-atencion-integral-adulto-vih.pdf"
+    },
+    {
+      "id": "src-prevencion-combinada",
+      "title": "Norma Técnica de Salud N.° 204-MINSA/DGIESP-2023 de Prevención Combinada del Virus de la Inmunodeficiencia Humana para Poblaciones en Alto Riesgo",
+      "short": "Prevención combinada",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 204-MINSA/DGIESP-2023).",
+      "file": "../study-data/fuentes/nt-prevencion-combinada-vih-alto-riesgo.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-itsvih",
+      "title": "ITS y VIH",
+      "short": "ITS/VIH",
+      "description": "Abordaje sindrómico de las ITS, prevención combinada, PrEP, PPE y atención integral del adulto con VIH.",
+      "accent": "#7FA8C9",
+      "icon": "link",
+      "sourceIds": [
+        "src-its",
+        "src-vih",
+        "src-prevencion-combinada"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-its-sindromes",
+      "title": "ITS: abordaje sindrómico",
+      "areaId": "area-itsvih",
+      "summary": "Reconocer síndromes, tratar el mismo día, prevenir complicaciones y ofrecer tamizaje y consejería.",
+      "keywords": [
+        "ITS",
+        "síndrome",
+        "ceftriaxona",
+        "doxiciclina",
+        "pareja"
+      ],
+      "sourceIds": [
+        "src-its"
+      ]
+    },
+    {
+      "id": "topic-vih-prevencion",
+      "title": "Prevención combinada del VIH",
+      "areaId": "area-itsvih",
+      "summary": "Medidas biomédicas, conductuales y estructurales; paquete de prevención, PrEP y PPE.",
+      "keywords": [
+        "prevención combinada",
+        "PrEP",
+        "PPE",
+        "preservativo"
+      ],
+      "sourceIds": [
+        "src-prevencion-combinada"
+      ]
+    },
+    {
+      "id": "topic-vih-atencion",
+      "title": "Atención integral del adulto con VIH",
+      "areaId": "area-itsvih",
+      "summary": "Diagnóstico, inicio temprano del TAR, esquema de primera línea, monitoreo y fracaso virológico.",
+      "keywords": [
+        "TAR",
+        "TDF/3TC/DTG",
+        "carga viral",
+        "CD4",
+        "adherencia"
+      ],
+      "sourceIds": [
+        "src-vih"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-its-01",
+      "title": "Abordaje sindrómico: tratar hoy, no esperar el laboratorio",
+      "kicker": "ITS · Abordaje",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "El abordaje sindrómico identifica un síndrome, trata de inmediato, ofrece consejería y controla a los 7 días. No espera el resultado de laboratorio para iniciar el tratamiento.",
+      "keyConcepts": [
+        "Se organiza por síndromes: descarga uretral, rectal, cervicitis, úlcera genital, flujo vaginal y dolor abdominal bajo.",
+        "El tratamiento es inmediato, integral y centrado en la persona; no es una simple receta.",
+        "Se ofrecen preservativos, consejería, tamizaje de VIH, sífilis y hepatitis B, y notificación de parejas.",
+        "El control se realiza a los 7 días; si no hay mejoría, se refiere para estudio etiológico."
+      ],
+      "sections": [
+        {
+          "title": "Qué es y por qué se usa",
+          "body": [
+            "El abordaje sindrómico permite resolver ITS en el primer nivel con recursos limitados. Se basa en la historia sexual, el examen clínico y un síndrome reconocible, sin exigir pruebas de laboratorio antes de tratar.",
+            "No sustituye el diagnóstico etiológico cuando está disponible: si el cuadro no mejora, recae o hay complicaciones, se amplía el estudio."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cinco pasos",
+          "bullets": [
+            "Historia sexual y evaluación de riesgo, en privado y sin juzgar.",
+            "Examen físico dirigido al síndrome y descarte de otras lesiones.",
+            "Tratamiento inmediato según el síndrome y el peso o la edad.",
+            "Consejería, preservativos, tamizaje de VIH, sífilis y hepatitis B, y oferta de vacunación.",
+            "Control a los 7 días y notificación o tratamiento de parejas."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Prevención y parejas",
+          "body": [
+            "Se entregan dos preservativos masculinos a toda persona que consulta por síntomas o signos de ITS; a las mujeres se les ofrecen preservativos femeninos, hasta 10 unidades según aceptación y disponibilidad.",
+            "La pareja sexual debe evaluarse y tratarse. El periodo de búsqueda depende del síndrome: 60 días para descarga uretral, rectal o cervicitis, y 90 días para úlcera genital."
+          ],
+          "callout": {
+            "title": "Regla de oro",
+            "text": "Si hay un síndrome compatible, se trata el mismo día. El laboratorio confirma, pero no debe retrasar el alivio ni la prevención de complicaciones.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7,
+            8,
+            14,
+            16,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-its-sindromes"
+    },
+    {
+      "id": "sheet-its-02",
+      "title": "Síndromes y esquemas de tratamiento",
+      "kicker": "ITS · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "Cada síndrome tiene un esquema de primera línea, una alternativa y un periodo de búsqueda de parejas. En gestación y lactancia hay fármacos que no se usan.",
+      "keyConcepts": [
+        "Descarga uretral, rectal y cervicitis: ceftriaxona 1 g IM + doxiciclina 100 mg cada 12 horas por 7 días.",
+        "Úlcera genital: penicilina benzatínica 2.4 millones UI + aciclovir 400 mg cada 12 horas por 5 días.",
+        "Flujo vaginal: metronidazol 500 mg (4 tabletas) + fluconazol 150 mg en dosis única.",
+        "Dolor abdominal bajo: ceftriaxona + doxiciclina + metronidazol por 14 días; hospitalizar si hay embarazo, gravedad o fracaso."
+      ],
+      "sections": [
+        {
+          "title": "Esquemas de primera línea",
+          "table": {
+            "headers": [
+              "Síndrome",
+              "Tratamiento inicial",
+              "Pareja"
+            ],
+            "rows": [
+              [
+                "Descarga uretral, rectal o cervicitis",
+                "Ceftriaxona 1 g IM dosis única + doxiciclina 100 mg VO cada 12 h por 7 días. Alternativa: azitromicina 500 mg, 2 tabletas VO dosis única.",
+                "60 días."
+              ],
+              [
+                "Úlcera genital",
+                "Penicilina benzatínica 2.4 millones UI IM dosis única + aciclovir 400 mg VO cada 12 h por 5 días. Alternativa: doxiciclina 100 mg cada 12 h por 14 días + aciclovir.",
+                "90 días."
+              ],
+              [
+                "Flujo vaginal",
+                "Metronidazol 500 mg, 4 tabletas VO dosis única + fluconazol 150 mg VO dosis única. Alternativa: metronidazol 500 mg cada 12 h por 7 días + clotrimazol 500 mg vaginal dosis única.",
+                "Según el agente y el caso."
+              ],
+              [
+                "Dolor abdominal bajo",
+                "Ceftriaxona 1 g IM + doxiciclina 100 mg cada 12 h + metronidazol 500 mg cada 12 h, todos por 14 días.",
+                "60 días."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Cuándo escalar",
+          "body": [
+            "Si no hay mejoría al control de 7 días, se amplía el estudio etiológico o se refiere. El dolor abdominal bajo requiere hospitalización si hay embarazo, signos de gravedad, absceso, fracaso tras 48–72 horas o incapacidad de manejar el tratamiento ambulatorio.",
+            "La úlcera genital puede ser sífilis, herpes o chancroide; el tratamiento inicial cubre las causas más frecuentes y el seguimiento confirma la respuesta."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Embarazo y lactancia",
+          "body": [
+            "Se usan penicilinas, cefalosporinas, azitromicina, metronidazol, fluconazol 150 mg y aciclovir. No se usan tetraciclinas como la doxiciclina ni aminoglucósidos como la gentamicina por sus riesgos para el feto.",
+            "Toda ITS en gestación requiere evaluación médica y tratamiento seguro para la madre y el feto; además se coordina con la prevención de transmisión maternoinfantil."
+          ],
+          "callout": {
+            "title": "No olvidar",
+            "text": "El tratamiento de la pareja es parte del tratamiento. Sin tratar a la pareja, la reinfección y la transmisión continúan.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-its-sindromes"
+    },
+    {
+      "id": "sheet-vih-01",
+      "title": "Prevención combinada: capas que se suman",
+      "kicker": "VIH · Prevención",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La prevención combinada suma medidas biomédicas, conductuales y socioestructurales. Ninguna reemplaza a la otra: se aplican juntas y según la población.",
+      "keyConcepts": [
+        "Las medidas biomédicas incluyen preservativos, pruebas, tratamiento de ITS, vacuna contra hepatitis B, TAR, PrEP y PPE.",
+        "Las medidas conductuales y socioestructurales abordan riesgo, estigma, discriminación y acceso.",
+        "El paquete se ofrece de forma gratuita en los establecimientos públicos.",
+        "La frecuencia varía: mensual o trimestral para consejería y preservativos; pruebas de VIH y sífilis según población; hepatitis B y C anual."
+      ],
+      "sections": [
+        {
+          "title": "Tres grupos de medidas",
+          "table": {
+            "headers": [
+              "Tipo",
+              "Ejemplos"
+            ],
+            "rows": [
+              [
+                "Biomédicas",
+                "Preservativos y lubricantes, pruebas de VIH, diagnóstico y tratamiento de ITS, vacuna contra hepatitis B, TAR, PrEP y PPE."
+              ],
+              [
+                "Conductuales",
+                "Consejería, educación sexual, reducción de riesgo, habilidades de negociación y adherencia."
+              ],
+              [
+                "Socioestructurales",
+                "Lucha contra estigma y discriminación, respeto a la identidad de género y orientación sexual, acceso y confidencialidad."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "El paquete en poblaciones de alto riesgo",
+          "body": [
+            "Se dirige a HSH, mujeres trans, trabajadoras sexuales y parejas serodiscordantes. La consejería y el acceso a preservativos son mensuales o trimestrales según la población; las pruebas de VIH y sífilis también tienen periodicidad propia.",
+            "En HSH, mujeres trans y trabajadoras sexuales se entregan 144 preservativos masculinos y 25 lubricantes al mes; a las trabajadoras sexuales se añaden preservativos femeninos según disponibilidad. Las parejas serodiscordantes reciben 20 preservativos y 5 lubricantes al mes."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Confidencialidad y derechos",
+          "body": [
+            "La atención es gratuita en los establecimientos públicos y debe proteger la confidencialidad de los resultados y de la causa de transmisión. El estigma y la discriminación son barreras de salud pública: se abordan con respeto y sin juzgar.",
+            "La prueba de VIH requiere consejería pre y postest, consentimiento informado y manejo emocional del resultado."
+          ],
+          "callout": {
+            "title": "Ninguna capa sola",
+            "text": "El preservativo, la PrEP o el TAR no se sustituyen entre sí. La prevención combinada funciona cuando las medidas se suman y se adaptan a la persona.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-prevencion"
+    },
+    {
+      "id": "sheet-vih-02",
+      "title": "PrEP y PPE: quién, cómo y hasta cuándo",
+      "kicker": "VIH · PrEP y PPE",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "La PrEP previene la infección antes de la exposición; la PPE se usa después de una exposición. Ambas requieren evaluación, adherencia y seguimiento.",
+      "keyConcepts": [
+        "La PrEP se ofrece a personas de 18 años o más de poblaciones de alto riesgo, sin VIH y sin exposición de riesgo en las últimas 72 horas.",
+        "La PrEP diaria es TDF/FTC 300/200 mg, una tableta al día; la PrEP a demanda solo se indica en HSH con dos o menos relaciones por semana.",
+        "La PrEP a demanda está contraindicada en hepatitis B crónica por el riesgo de exacerbación al suspender TDF.",
+        "La PPE se inicia dentro de las 72 horas y dura 28 días; el esquema preferido es TDF/3TC/DTG."
+      ],
+      "sections": [
+        {
+          "title": "PrEP: criterios y modalidades",
+          "body": [
+            "Antes de iniciar se descarta VIH y infección aguda, se revisa la exposición en las últimas 72 horas, la función renal y las contraindicaciones. Se solicita tamizaje de VIH y hepatitis B, creatinina, y se ofrecen sífilis, hepatitis C, ITS y prueba de embarazo.",
+            "La PrEP diaria usa TDF/FTC 300/200 mg. La PrEP a demanda solo se indica en HSH con dos o menos relaciones sexuales por semana: dos tabletas entre 2 y 24 horas antes, una 24 horas después de la primera toma y otra 24 horas después de la segunda."
+          ],
+          "table": {
+            "headers": [
+              "Situación",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "VIH confirmado o sospecha de infección aguda",
+                "No iniciar PrEP; evaluar y tratar VIH."
+              ],
+              [
+                "Exposición de riesgo en las últimas 72 horas",
+                "No iniciar PrEP; evaluar PPE."
+              ],
+              [
+                "Depuración de creatinina <60 ml/min",
+                "No iniciar PrEP."
+              ],
+              [
+                "Hepatitis B crónica",
+                "No usar PrEP a demanda; evitar interrupciones."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "PPE: después de la exposición",
+          "body": [
+            "La PPE se indica ante una exposición ocupacional o no ocupacional al VIH. Debe iniciarse lo antes posible y siempre dentro de las 72 horas, por 28 días.",
+            "El esquema preferido es TDF/3TC/DTG una tableta al día. Se ofrecen pruebas basales y seguimiento a las 6 semanas, 3 meses y 6 meses; sífilis a las 6 semanas y hepatitis C a los 3 meses."
+          ],
+          "bullets": [
+            "Evaluar el tipo de exposición y el estado del caso fuente.",
+            "Iniciar PPE sin esperar todos los resultados si está indicada.",
+            "Consejería, adherencia y manejo de efectos adversos.",
+            "Si el caso fuente es VIH negativo, no se indica PPE."
+          ],
+          "callout": {
+            "title": "Tiempo",
+            "text": "La PPE es una carrera contra el reloj: cuanto antes se inicia, mejor. Después de 72 horas ya no se indica como profilaxis.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-prevencion"
+    },
+    {
+      "id": "sheet-vih-03",
+      "title": "Diagnóstico y inicio temprano del TAR",
+      "kicker": "VIH · Atención",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "El diagnóstico se confirma con pruebas rápidas y una prueba confirmatoria. El TAR se inicia lo antes posible, sin esperar CD4 ni carga viral.",
+      "keyConcepts": [
+        "Se considera infección por VIH con dos pruebas rápidas reactivas de diferentes fabricantes o una prueba de cuarta generación reactiva más una confirmatoria.",
+        "La confirmación puede ser carga viral, IFI o inmunoblot; no debe retrasar el inicio del TAR cuando está indicado.",
+        "El TAR se indica a toda persona con VIH, independientemente del estadio clínico, CD4 o carga viral.",
+        "El esquema de primera línea es TDF/3TC/DTG una tableta al día."
+      ],
+      "sections": [
+        {
+          "title": "Cómo se confirma",
+          "body": [
+            "Se usan pruebas rápidas de anticuerpos de tercera generación de diferentes fabricantes, o una prueba de cuarta generación que detecta anticuerpos y antígeno. Todo caso reactivo requiere una prueba confirmatoria: carga viral, IFI o inmunoblot.",
+            "Los resultados reactivos de laboratorios o bancos de sangre se refieren a los servicios de VIH/ITS para evaluación y vinculación."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Evaluación basal antes o junto al TAR",
+          "bullets": [
+            "Hemograma completo, TGP, glucosa en ayunas y creatinina sérica.",
+            "Prueba de embarazo en mujeres en edad fértil.",
+            "Radiografía de tórax y baciloscopias si hay síntomas respiratorios.",
+            "HBsAg, anti-HBc total, anti-VHC y prueba de sífilis.",
+            "CD4 y carga viral basales.",
+            "Evaluación de adherencia, apoyo social, salud mental y violencia."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Primera línea y alternativas",
+          "table": {
+            "headers": [
+              "Situación",
+              "Esquema"
+            ],
+            "rows": [
+              [
+                "Primera línea",
+                "TDF/3TC/DTG 300/300/50 mg, una tableta al día."
+              ],
+              [
+                "Contraindicación o intolerancia a DTG",
+                "TDF/3TC/EFV 400 mg o TDF/FTC/EFV 600 mg."
+              ],
+              [
+                "Contraindicación de TDF",
+                "Abacavir, previa prueba HLA-B*5701 negativa."
+              ],
+              [
+                "Insuficiencia renal",
+                "Evitar coformulaciones con TDF; ajustar dosis según función renal."
+              ]
+            ]
+          },
+          "callout": {
+            "title": "No retrasar",
+            "text": "La evaluación se completa después de iniciar el TAR si es necesario. El CD4 y la carga viral no son requisitos para empezar.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-atencion"
+    },
+    {
+      "id": "sheet-vih-04",
+      "title": "Monitoreo, adherencia y fracaso virológico",
+      "kicker": "VIH · Seguimiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El seguimiento busca mantener la supresión viral, detectar fallas y resolver barreras. La carga viral es el marcador principal de efectividad.",
+      "keyConcepts": [
+        "Controles médicos: mensuales los primeros 3 meses, cada 3 meses hasta los 2 años y cada 6 meses desde el tercer año.",
+        "Carga viral: a los 3 meses del inicio, luego cada 6 meses el primer año y después anualmente.",
+        "Fracaso virológico: no lograr <1000 copias/ml a los 6 meses o rebote sostenido tras supresión.",
+        "Ante fracaso con carga viral ≥1000 copias/ml se solicita genotipificación y se evalúa cambio de esquema."
+      ],
+      "sections": [
+        {
+          "title": "Frecuencia de controles",
+          "table": {
+            "headers": [
+              "Control",
+              "Frecuencia"
+            ],
+            "rows": [
+              [
+                "Consulta médica",
+                "Mensual los primeros 3 meses; cada 3 meses hasta los 2 años; cada 6 meses desde el tercer año."
+              ],
+              [
+                "Carga viral",
+                "A los 3 meses del inicio; cada 6 meses el primer año; luego anual."
+              ],
+              [
+                "CD4",
+                "Al diagnóstico; cada 6 meses el primer año; luego anual. Puede espaciarse si CD4 >500 y carga viral suprimida."
+              ],
+              [
+                "Adherencia y efectos adversos",
+                "En cada visita; entrega de TAR y preservativos."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Fracaso virológico",
+          "body": [
+            "Se considera fracaso cuando no se logra suprimir la carga viral por debajo de 1000 copias/ml a los 6 meses de iniciado el TAR, o cuando una carga viral previamente indetectable vuelve a ser detectable en controles separados por 6–8 semanas.",
+            "Ante un fracaso con carga viral ≥1000 copias/ml se solicita genotipificación. Antes de cambiar el esquema se revisan adherencia, interacciones, tolerancia y barreras."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Adherencia y continuidad",
+          "bullets": [
+            "Explicar el objetivo de la supresión viral y el riesgo de resistencia.",
+            "Simplificar horarios y usar recordatorios; involucrar a la red de apoyo.",
+            "Preguntar por efectos adversos, salud mental, consumo de sustancias y violencia.",
+            "Coordinar con obstetricia, tuberculosis, hepatitis y salud mental.",
+            "Registrar y notificar el caso según la norma."
+          ],
+          "callout": {
+            "title": "La carga viral manda",
+            "text": "La adherencia se pregunta, pero se verifica con la carga viral. Una carga viral detectable no se atribuye automáticamente a falta de adherencia: hay que evaluar resistencia, interacciones y absorción.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            28,
+            29,
+            33,
+            34
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-atencion"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-its-01-1",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "concept",
+      "prompt": "¿Qué es el abordaje sindrómico de las ITS?",
+      "answer": "Es un enfoque que identifica un síndrome clínico, inicia tratamiento inmediato, ofrece consejería y controla a los 7 días, sin esperar pruebas de laboratorio.",
+      "explanation": "El abordaje sindrómico prioriza el tratamiento oportuno y la prevención de complicaciones; el estudio etiológico se reserva para casos que lo requieren.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "abordaje sindrómico"
+      ]
+    },
+    {
+      "id": "card-its-01-2",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "multiple",
+      "prompt": "¿Cuántos preservativos masculinos se entregan a una persona que consulta por síntomas de ITS?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanation": "Se entregan 2 preservativos masculinos a toda persona que consulta por síntomas o signos de ITS; a las mujeres se ofrecen además preservativos femeninos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "preservativos"
+      ]
+    },
+    {
+      "id": "card-its-01-3",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "application",
+      "prompt": "Un varón con descarga uretral acude al primer nivel y no hay laboratorio disponible. ¿Qué corresponde?",
+      "options": [
+        "Esperar el resultado de laboratorio.",
+        "Iniciar tratamiento sindrómico, consejería, tamizaje y control a los 7 días.",
+        "Indicar solo higiene local.",
+        "Derivarlo siempre al hospital."
+      ],
+      "correctIndex": 1,
+      "explanation": "El abordaje sindrómico permite tratar de inmediato en el primer nivel, ofrecer prevención y controlar a los 7 días; si no mejora, se refiere.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7,
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "card-its-02-1",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "concept",
+      "prompt": "¿Cuál es el esquema de primera línea para descarga uretral, rectal o cervicitis?",
+      "answer": "Ceftriaxona 1 g IM en dosis única + doxiciclina 100 mg VO cada 12 horas por 7 días.",
+      "explanation": "La alternativa es azitromicina 500 mg, 2 tabletas VO en dosis única. La pareja se busca por 60 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "ceftriaxona",
+        "doxiciclina"
+      ]
+    },
+    {
+      "id": "card-its-02-2",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "multiple",
+      "prompt": "¿Cuál es el tratamiento inicial de la úlcera genital?",
+      "options": [
+        "Ceftriaxona 1 g IM + doxiciclina por 7 días.",
+        "Penicilina benzatínica 2.4 millones UI + aciclovir 400 mg cada 12 h por 5 días.",
+        "Metronidazol 500 mg + fluconazol 150 mg.",
+        "Solo aciclovir tópico."
+      ],
+      "correctIndex": 1,
+      "explanation": "La úlcera genital se trata inicialmente con penicilina benzatínica y aciclovir; la alternativa incluye doxiciclina por 14 días. La pareja se busca por 90 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "úlcera genital"
+      ]
+    },
+    {
+      "id": "card-its-02-3",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "application",
+      "prompt": "Una gestante presenta flujo vaginal y se confirma tricomoniasis. ¿Qué fármaco debe evitarse?",
+      "options": [
+        "Metronidazol.",
+        "Doxiciclina.",
+        "Azitromicina.",
+        "Ceftriaxona."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las tetraciclinas como la doxiciclina no se usan en gestación ni lactancia. Metronidazol, azitromicina y ceftriaxona son opciones seguras según el caso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            18,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "embarazo",
+        "doxiciclina"
+      ]
+    },
+    {
+      "id": "card-vih-01-1",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "concept",
+      "prompt": "¿Qué es la prevención combinada del VIH?",
+      "answer": "Es la suma de medidas biomédicas, conductuales y socioestructurales que se aplican juntas y se adaptan a la población para reducir nuevas infecciones.",
+      "explanation": "Ninguna medida reemplaza a otra; la efectividad aumenta cuando se combinan y se mantiene el acceso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "prevención combinada"
+      ]
+    },
+    {
+      "id": "card-vih-01-2",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "multiple",
+      "prompt": "¿Cuántos preservativos masculinos y lubricantes recibe al mes la población HSH, MT o TS?",
+      "options": [
+        "20 y 5",
+        "50 y 10",
+        "144 y 25",
+        "10 y 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reciben 144 preservativos masculinos y 25 lubricantes al mes. Las parejas serodiscordantes reciben 20 preservativos y 5 lubricantes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "preservativos"
+      ]
+    },
+    {
+      "id": "card-vih-01-3",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "application",
+      "prompt": "Una mujer trans acude a un servicio de prevención. ¿Qué paquete mínimo debe ofrecerse?",
+      "options": [
+        "Solo consejería.",
+        "Consejería, preservativos y lubricantes, pruebas de VIH y sífilis, hepatitis B y C, manejo de ITS, vacunación y oferta de PrEP/PPE.",
+        "Solo prueba de VIH.",
+        "Derivación al hospital sin intervención."
+      ],
+      "correctIndex": 1,
+      "explanation": "La prevención combinada incluye todas las capas: consejería, preservativos, tamizajes, vacunación, manejo de ITS y PrEP/PPE según indicación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "paquete"
+      ]
+    },
+    {
+      "id": "card-vih-02-1",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "concept",
+      "prompt": "¿Quién puede recibir PrEP y cuál es el esquema diario?",
+      "answer": "Personas de 18 años o más de poblaciones de alto riesgo, sin VIH, sin infección aguda y sin exposición de riesgo en las últimas 72 horas. El esquema diario es TDF/FTC 300/200 mg, una tableta al día.",
+      "explanation": "La PrEP requiere evaluación renal, descarte de VIH y hepatitis B, y decisión voluntaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PrEP"
+      ]
+    },
+    {
+      "id": "card-vih-02-2",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "multiple",
+      "prompt": "¿En qué situación está contraindicada la PrEP a demanda?",
+      "options": [
+        "HSH con una relación sexual por semana.",
+        "Hepatitis B crónica.",
+        "Persona con VIH negativo.",
+        "Pareja serodiscordante."
+      ],
+      "correctIndex": 1,
+      "explanation": "La PrEP a demanda está contraindicada en hepatitis B crónica porque suspender TDF puede causar exacerbación hepática.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PrEP",
+        "hepatitis B"
+      ]
+    },
+    {
+      "id": "card-vih-02-3",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "application",
+      "prompt": "Una persona acude 48 horas después de una exposición sexual de riesgo. ¿Qué corresponde?",
+      "options": [
+        "Indicar PrEP diaria.",
+        "Evaluar PPE, iniciarla si está indicada y mantenerla 28 días.",
+        "Esperar 3 meses para la prueba.",
+        "Indicar solo preservativos."
+      ],
+      "correctIndex": 1,
+      "explanation": "La PPE se inicia dentro de las 72 horas y dura 28 días. La PrEP no se inicia después de una exposición reciente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PPE"
+      ]
+    },
+    {
+      "id": "card-vih-03-1",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "concept",
+      "prompt": "¿Cómo se confirma una infección por VIH?",
+      "answer": "Con dos pruebas rápidas reactivas de diferentes fabricantes, o una prueba de cuarta generación reactiva, más una prueba confirmatoria (carga viral, IFI o inmunoblot).",
+      "explanation": "La confirmación no debe retrasar el inicio del TAR cuando está indicado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-vih-03-2",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es el esquema de primera línea para un adulto sin tratamiento previo?",
+      "options": [
+        "TDF/3TC/DTG una tableta al día.",
+        "AZT/3TC/EFV.",
+        "TDF/FTC + darunavir/ritonavir.",
+        "Solo dolutegravir."
+      ],
+      "correctIndex": 0,
+      "explanation": "El esquema de elección es TDF/3TC/DTG en dosis fija combinada. Las alternativas se usan ante contraindicaciones o intolerancia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "TAR"
+      ]
+    },
+    {
+      "id": "card-vih-03-3",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "application",
+      "prompt": "Un paciente con VIH tiene CD4 de 850 y carga viral baja. ¿Debe iniciar TAR?",
+      "options": [
+        "No, porque el CD4 es alto.",
+        "Sí, el TAR se indica independientemente del CD4 y la carga viral.",
+        "Solo si presenta una infección oportunista.",
+        "Solo cuando la carga viral supere 1000 copias."
+      ],
+      "correctIndex": 1,
+      "explanation": "El TAR se indica a toda persona con VIH, sin importar el estadio clínico, el CD4 o la carga viral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "TAR",
+        "CD4"
+      ]
+    },
+    {
+      "id": "card-vih-04-1",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "concept",
+      "prompt": "¿Cuál es la frecuencia de control médico tras iniciar TAR?",
+      "answer": "Mensual los primeros 3 meses, cada 3 meses hasta los 2 años y cada 6 meses desde el tercer año, salvo indicación clínica.",
+      "explanation": "La frecuencia puede variar según adherencia, efectos adversos, comorbilidades y carga viral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-vih-04-2",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "multiple",
+      "prompt": "¿Cuándo se considera fracaso virológico?",
+      "options": [
+        "No lograr carga viral <1000 copias/ml a los 6 meses o rebote sostenido tras supresión.",
+        "Tener CD4 <500 en cualquier momento.",
+        "Una carga viral detectable aislada.",
+        "No asistir a una cita."
+      ],
+      "correctIndex": 0,
+      "explanation": "El fracaso se define por la falta de supresión a los 6 meses o por un rebote sostenido. Una detección aislada requiere confirmación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "fracaso virológico"
+      ]
+    },
+    {
+      "id": "card-vih-04-3",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "application",
+      "prompt": "Un paciente en TAR presenta carga viral de 1500 copias/ml tras 8 meses. ¿Cuál es el siguiente paso?",
+      "options": [
+        "Cambiar el esquema a ciegas.",
+        "Evaluar adherencia e interacciones y solicitar genotipificación.",
+        "Suspender el TAR.",
+        "Repetir la carga viral en 1 año."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ante fracaso con carga viral ≥1000 copias/ml se solicita genotipificación y se evalúan adherencia, interacciones y tolerancia antes de cambiar el esquema.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "genotipificación"
+      ]
+    }
+  ]
+}

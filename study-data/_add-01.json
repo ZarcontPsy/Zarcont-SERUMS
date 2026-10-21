@@ -1,0 +1,1784 @@
+{
+  "sources": [
+    {
+      "id": "src-adulto",
+      "title": "Norma Técnica de Salud para el Cuidado Integral de Salud de la Persona Adulta",
+      "short": "Adulto",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 229-MINSA/DGIESP-2025).",
+      "file": "../study-data/fuentes/cuidado-integral-persona-adulta.pdf"
+    },
+    {
+      "id": "src-depresion",
+      "title": "Guía de Práctica Clínica para el Tamizaje y el Manejo del Episodio Depresivo Leve en el Primer Nivel de Atención",
+      "short": "Depresión",
+      "authors": "Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI), EsSalud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía de práctica clínica de EsSalud/IETSI (GPC N.° 27). Su ámbito asistencial es el primer nivel de atención de EsSalud.",
+      "file": "../study-data/fuentes/gpc-episodio-depresivo-leve.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-adulto",
+      "title": "Cuidado integral del adulto",
+      "short": "Adulto",
+      "description": "Cuidado integral, prevención y continuidad para las personas de 30 a 59 años, desde la captación hasta el seguimiento.",
+      "accent": "#D9A066",
+      "icon": "heart",
+      "sourceIds": ["src-adulto"]
+    },
+    {
+      "id": "area-depresion",
+      "title": "Depresión en atención primaria",
+      "short": "Depresión",
+      "description": "Tamizaje, diagnóstico y manejo del episodio depresivo leve en el primer nivel, con criterios claros para derivar.",
+      "accent": "#A9B8E0",
+      "icon": "brain",
+      "sourceIds": ["src-depresion"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-adulto-cuidado",
+      "title": "Cuidado integral y ruta de entrada",
+      "areaId": "area-adulto",
+      "summary": "Población, enfoques, captación, admisión, triage y plan de cuidado: la puerta de entrada del adulto al sistema.",
+      "keywords": ["CISPA", "captación", "admisión", "triage", "enfoques"],
+      "sourceIds": ["src-adulto"]
+    },
+    {
+      "id": "topic-adulto-evaluacion",
+      "title": "Evaluación y paquete preventivo",
+      "areaId": "area-adulto",
+      "summary": "Evaluación anual, riesgo cardiometabólico, promoción, visita familiar y prestaciones del paquete de cuidado.",
+      "keywords": ["evaluación anual", "riesgo cardiovascular", "promoción", "PAIFAM"],
+      "sourceIds": ["src-adulto"]
+    },
+    {
+      "id": "topic-adulto-riesgos",
+      "title": "Cáncer, salud mental y otros riesgos",
+      "areaId": "area-adulto",
+      "summary": "Tamizajes de cáncer, depresión, consumo de alcohol, violencia, inmunizaciones y salud bucal.",
+      "keywords": ["cáncer", "PHQ-9", "AUDIT", "violencia", "inmunizaciones"],
+      "sourceIds": ["src-adulto"]
+    },
+    {
+      "id": "topic-adulto-continuidad",
+      "title": "Referencia y continuidad",
+      "areaId": "area-adulto",
+      "summary": "Plan de cuidado, referencia y contrarreferencia, modalidades de atención, financiamiento y organización.",
+      "keywords": ["referencia", "contrarreferencia", "telesalud", "SIS", "gestión"],
+      "sourceIds": ["src-adulto"]
+    },
+    {
+      "id": "topic-depresion-tamizaje",
+      "title": "Tamizaje y prevención",
+      "areaId": "area-depresion",
+      "summary": "PHQ-9 en grupos prioritarios, prevención selectiva y detección de la depresión bipolar.",
+      "keywords": ["PHQ-9", "tamizaje", "prevención", "bipolaridad"],
+      "sourceIds": ["src-depresion"]
+    },
+    {
+      "id": "topic-depresion-diagnostico",
+      "title": "Diagnóstico y gravedad",
+      "areaId": "area-depresion",
+      "summary": "Criterios CIE-10, bandas de severidad y señales que obligan a derivar.",
+      "keywords": ["CIE-10", "severidad", "derivación", "riesgo suicida"],
+      "sourceIds": ["src-depresion"]
+    },
+    {
+      "id": "topic-depresion-tratamiento",
+      "title": "Psicoterapia y estilos de vida",
+      "areaId": "area-depresion",
+      "summary": "TCC, resolución de problemas, duración, respuesta, remisión, alta y ejercicio físico.",
+      "keywords": ["TCC", "resolución de problemas", "remisión", "ejercicio"],
+      "sourceIds": ["src-depresion"]
+    },
+    {
+      "id": "topic-depresion-farmacos",
+      "title": "Farmacoterapia y seguimiento",
+      "areaId": "area-depresion",
+      "summary": "ISRS, ajuste de dosis, controles con PHQ-9, mantenimiento y criterios de derivación.",
+      "keywords": ["ISRS", "antidepresivos", "mantenimiento", "seguimiento"],
+      "sourceIds": ["src-depresion"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-adulto-01",
+      "title": "La persona adulta, una etapa con necesidades propias",
+      "kicker": "Cuidado integral · Población y enfoques",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "El CISPA abarca de 30 a 59 años, 11 meses y 29 días. La captación no depende del motivo de consulta: cualquier contacto es una oportunidad para iniciar el cuidado.",
+      "keyConcepts": [
+        "La población objetivo llega hasta los 59 años, 11 meses y 29 días.",
+        "CISPA significa cuidado integral de salud de la persona adulta.",
+        "Se capta en consulta, como acompañante, por referencia comunitaria o de otro establecimiento.",
+        "Los enfoques de derechos, género, interculturalidad, curso de vida y territorio orientan la atención."
+      ],
+      "sections": [
+        {
+          "title": "Quién es la persona adulta para la norma",
+          "body": [
+            "La norma delimita una población concreta: personas desde los 30 años hasta los 59 años, 11 meses y 29 días. No incluye a la persona adulta mayor, que tiene su propio cuidado integral.",
+            "El CISPA no es una lista de enfermedades. Es el conjunto de acciones e intervenciones que se brindan según las necesidades de salud y el riesgo sanitario, en el contexto de la familia y la comunidad."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cinco enfoques que cambian la práctica",
+          "body": [
+            "Los enfoques no son un adorno del documento: definen cómo se organiza la atención y qué desigualdades deben corregirse."
+          ],
+          "table": {
+            "headers": ["Enfoque", "Qué exige en la práctica"],
+            "rows": [
+              ["Derechos humanos", "Trato digno, igualdad y no discriminación; la persona es el centro de la acción del Estado."],
+              ["Equidad de género", "Reconocer roles y oportunidades diferenciadas; responder a necesidades específicas de mujeres y varones."],
+              ["Interculturalidad", "Servicios pertinentes culturalmente, con participación y diálogo entre saberes."],
+              ["Curso de vida", "Considerar cómo las exposiciones y decisiones de hoy influyen en la salud futura."],
+              ["Territorialidad", "Articular con actores del territorio para abordar los determinantes sociales."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Captar es abrir una puerta",
+          "body": [
+            "La captación puede ocurrir en una consulta, cuando la persona acompaña a otro usuario, cuando llega referida por un agente comunitario o cuando la refiere otro establecimiento. No se espera a que la persona pida una atención preventiva."
+          ],
+          "bullets": [
+            "Identificar a la persona y ofrecer el paquete de cuidado integral.",
+            "Concertar una cita para iniciar el cuidado, el mismo día o después.",
+            "Registrar la captación y asegurar que la persona sepa dónde y cuándo continuar."
+          ],
+          "callout": {
+            "title": "Idea para retener",
+            "text": "Captar no es esperar que la persona regrese: es identificar, ofrecer el paquete y concertar una cita.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [10, 18, 19, 20, 21, 22] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-cuidado"
+    },
+    {
+      "id": "sheet-adulto-02",
+      "title": "Admisión, triage y plan de cuidado",
+      "kicker": "Cuidado integral · Ruta de entrada",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La admisión verifica la afiliación, abre historia clínica y ficha familiar, entrega el carnet y orienta el flujo. El triage detecta signos de alarma y el plan organiza las prestaciones del año.",
+      "keyConcepts": [
+        "Si la persona no tiene seguro, se afilia al SIS.",
+        "Toda persona adulta requiere historia clínica individual y ficha familiar.",
+        "El triage incluye antropometría, signos vitales y cálculo del IMC.",
+        "El plan de cuidado integral se elabora en la primera consulta y programa las citas."
+      ],
+      "sections": [
+        {
+          "title": "Admisión sin barreras",
+          "body": [
+            "La admisión verifica la IAFAS y, si la persona no está afiliada, la afilia al SIS. Si su seguro no financia la prestación en ese establecimiento, se le informa sobre el cuidado integral y sus derechos.",
+            "Se abre la historia clínica individual y la ficha familiar, se entrega el carnet de cuidado integral y se orienta el flujo dentro del establecimiento."
+          ],
+          "bullets": [
+            "Datos mínimos: nombres, documento de identidad, fecha de nacimiento, dirección y teléfono.",
+            "Registro físico o electrónico, integrado a la historia clínica.",
+            "Orientación clara sobre el siguiente paso, sin dejar a la persona sin destino."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Triage y evaluación inicial",
+          "body": [
+            "El triage identifica signos y síntomas de alarma para decidir si la atención es ambulatoria o de urgencia. En la misma evaluación se toman medidas antropométricas y signos vitales."
+          ],
+          "table": {
+            "headers": ["Dato", "Para qué sirve"],
+            "rows": [
+              ["Peso, talla e IMC", "Determinar estado nutricional y riesgo metabólico."],
+              ["Perímetro abdominal", "Estimar riesgo cardiometabólico."],
+              ["Presión arterial", "Detectar hipertensión con equipos calibrados."],
+              ["Frecuencia cardiaca y respiratoria", "Completar la evaluación inicial y detectar gravedad."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Plan de cuidado integral",
+          "body": [
+            "El profesional que atiende en la primera consulta elabora el plan de cuidado integral según la condición de la persona. El plan programa las citas de las prestaciones que conforman el paquete y se registra en la historia clínica.",
+            "La evaluación integral se realiza una vez al año, priorizando los factores de riesgo de enfermedades no transmisibles y la salud mental."
+          ],
+          "callout": {
+            "title": "No confundir",
+            "text": "El plan no es una receta aislada: es la programación coordinada de promoción, prevención, recuperación y rehabilitación.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [22, 23, 24, 25, 42] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-cuidado"
+    },
+    {
+      "id": "sheet-adulto-03",
+      "title": "Evaluación integral: medir para prevenir",
+      "kicker": "Evaluación · Riesgo cardiometabólico",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Cada año se evalúan factores de riesgo con anamnesis, examen físico, presión arterial, perímetro abdominal, IMC, glucosa y perfil lipídico. El objetivo es detectar temprano, no esperar síntomas.",
+      "keyConcepts": [
+        "La evaluación integral del adulto se realiza una vez al año.",
+        "La presión arterial se mide con equipos calibrados y técnica estandarizada.",
+        "El perímetro abdominal y el IMC estiman riesgo metabólico y cardiovascular.",
+        "Si no hay capacidad para el perfil lipídico, se refiere al siguiente nivel."
+      ],
+      "sections": [
+        {
+          "title": "Qué se mide y por qué",
+          "body": [
+            "La evaluación clínica busca factores de riesgo de sobrepeso, obesidad, diabetes, hipertensión, salud mental y cáncer. Se apoya en la anamnesis, el examen físico y pruebas de laboratorio según la capacidad del establecimiento."
+          ],
+          "table": {
+            "headers": ["Medición", "Interpretación clínica"],
+            "rows": [
+              ["Presión arterial", "Identifica hipertensión y orienta confirmación y tratamiento."],
+              ["Perímetro abdominal", "Se relaciona con diabetes tipo 2, hipertensión y enfermedad cardiovascular."],
+              ["IMC", "Clasifica el estado nutricional y el riesgo asociado."],
+              ["Glucosa", "Detecta hiperglicemia mediante glucosa en ayunas, al azar o tolerancia oral."],
+              ["Perfil lipídico", "Detecta dislipidemias mediante colesterol total, HDL, triglicéridos y LDL calculado."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Cuando el resultado altera el plan",
+          "body": [
+            "Un valor alterado no se interpreta de forma aislada. Se confirma, se valora el riesgo global y se define si corresponde manejo en el primer nivel o referencia."
+          ],
+          "bullets": [
+            "Registrar el resultado y el plan en la historia clínica.",
+            "Educar y acordar metas realistas con la persona.",
+            "Programar control y adherencia al tratamiento.",
+            "Referir cuando el establecimiento no cuenta con la capacidad resolutiva necesaria."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Riesgo que no se ve en la consulta",
+          "body": [
+            "La evaluación también considera el contexto familiar, laboral y comunitario. La salud ocupacional, la vivienda, la alimentación y el acceso a servicios influyen en el riesgo y en la posibilidad real de cambiar."
+          ],
+          "callout": {
+            "title": "Mirada integral",
+            "text": "Medir sin preguntar por el contexto produce cifras correctas y planes imposibles de cumplir.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [24, 28, 29, 42] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-evaluacion"
+    },
+    {
+      "id": "sheet-adulto-04",
+      "title": "Promoción y prevención: el paquete del año",
+      "kicker": "Prevención · Paquete priorizado",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Promoción dos veces al año, con al menos tres meses de intervalo; visita familiar cuatro veces al año y PAIFAM. El paquete incluye tamizajes de cáncer, salud mental, planificación familiar, inmunizaciones y salud bucal.",
+      "keyConcepts": [
+        "Las actividades de promoción se brindan dos veces al año, con intervalo mínimo de tres meses.",
+        "La visita familiar integral se realiza cuatro veces al año.",
+        "El PAIFAM se completa con la evaluación integral de la familia.",
+        "El paquete puede ser priorizado o completo según la capacidad resolutiva."
+      ],
+      "sections": [
+        {
+          "title": "Promoción con frecuencia y contenido",
+          "body": [
+            "La promoción busca empoderar a la persona para que tome control de su salud. Se brinda de forma individual o grupal, en la vivienda, la comunidad, el centro laboral o la institución educativa."
+          ],
+          "bullets": [
+            "Actividad física, alimentación y estilos de vida saludable.",
+            "Prevención del consumo de alcohol, tabaco y sustancias psicoactivas.",
+            "Prevención de la violencia, buen trato y cultura de paz.",
+            "Salud sexual y reproductiva; seguridad vial; higiene y ambiente."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Prevención organizada por riesgos",
+          "body": [
+            "La prevención incluye tamizajes, control periódico y protección específica. No todas las prestaciones se realizan en todos los establecimientos: la capacidad resolutiva define si el paquete es priorizado o completo."
+          ],
+          "table": {
+            "headers": ["Componente", "Ejemplos del paquete"],
+            "rows": [
+              ["Riesgo cardiometabólico", "Presión arterial, perímetro abdominal, IMC, glucosa y perfil lipídico."],
+              ["Cáncer", "Cuello uterino, mama, próstata, colon y recto, piel."],
+              ["Salud mental", "PHQ-9, AUDIT y tamizaje de violencia."],
+              ["Salud sexual y reproductiva", "Consejería y métodos anticonceptivos."],
+              ["Protección específica", "Inmunizaciones según esquema y salud bucal."],
+              ["Salud ocupacional", "Identificación de factores de riesgo laborales."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Priorizado no significa incompleto para siempre",
+          "body": [
+            "Los establecimientos I-1 e I-2 brindan el paquete priorizado; los I-3 e I-4, el paquete completo. Si una prestación no está disponible, corresponde coordinar la referencia para que la persona no pierda el cuidado."
+          ],
+          "callout": {
+            "title": "Continuidad",
+            "text": "La capacidad resolutiva organiza la oferta, pero no justifica abandonar una necesidad detectada.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [26, 27, 28, 31, 33, 35, 37] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-evaluacion"
+    },
+    {
+      "id": "sheet-adulto-05",
+      "title": "Cáncer: tamizajes que no se improvisan",
+      "kicker": "Prevención · Cáncer",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El paquete incluye tamizaje de cuello uterino con VPH, IVAA o Papanicolaou; mama con examen clínico; próstata con tacto y PSA; colon y recto con sangre oculta; y piel con la regla ABCDE.",
+      "keyConcepts": [
+        "El tamizaje de cuello uterino puede usar prueba de VPH, IVAA o Papanicolaou.",
+        "El tamizaje de mama incluye examen clínico ordenado de mama y axila.",
+        "El tamizaje de próstata combina evaluación médica, tacto rectal y PSA.",
+        "El tamizaje de piel sigue la regla ABCDE."
+      ],
+      "sections": [
+        {
+          "title": "Cuello uterino y mama",
+          "body": [
+            "El tamizaje de cuello uterino busca lesiones premalignas. La prueba de VPH identifica virus de alto riesgo; la IVAA y el Papanicolaou permiten evaluar el cuello uterino según la norma vigente.",
+            "En mama, el examen clínico busca masas palpables y otros signos. La indicación de mamografía u otros estudios corresponde según la norma específica y la evaluación del riesgo."
+          ],
+          "table": {
+            "headers": ["Tamizaje", "Herramienta principal"],
+            "rows": [
+              ["Cuello uterino", "Prueba de VPH, IVAA o Papanicolaou."],
+              ["Mama", "Examen clínico de mama y axila."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Próstata, colon y piel",
+          "body": [
+            "En próstata se realiza evaluación médica con palpación digital y dosaje de PSA. En colon y recto se indica examen físico y sangre oculta en heces. En piel se evalúa asimetría, borde, color, diámetro y evolución."
+          ],
+          "table": {
+            "headers": ["Tamizaje", "Herramienta principal"],
+            "rows": [
+              ["Próstata", "Tacto rectal y PSA."],
+              ["Colon y recto", "Examen físico y sangre oculta en heces."],
+              ["Piel", "Evaluación física con regla ABCDE."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué hacer con un resultado",
+          "body": [
+            "Un tamizaje positivo no es un diagnóstico de cáncer. Debe confirmarse, registrarse y derivarse oportunamente según la norma específica, asegurando que la persona conozca el siguiente paso."
+          ],
+          "callout": {
+            "title": "Tamizar no es diagnosticar",
+            "text": "El valor del tamizaje está en detectar temprano y cerrar el circuito con confirmación y tratamiento.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [30] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-riesgos"
+    },
+    {
+      "id": "sheet-adulto-06",
+      "title": "Salud mental, violencia y consumo",
+      "kicker": "Prevención · Salud mental",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "El paquete incluye tamizaje de depresión, AUDIT para alcohol y drogas e indagación de violencia. La detección oportuna permite tratar y derivar, pero ningún tamizaje reemplaza la evaluación clínica.",
+      "keyConcepts": [
+        "El tamizaje de depresión se apoya en observación, entrevista y PHQ-9.",
+        "El AUDIT identifica consumo perjudicial de alcohol.",
+        "La violencia se explora con signos, actitudes y comportamientos, en un espacio seguro.",
+        "Un resultado positivo requiere confirmación y plan de cuidado."
+      ],
+      "sections": [
+        {
+          "title": "Tres tamizajes, tres preguntas",
+          "body": [
+            "El equipo de salud no busca etiquetas: busca necesidades que puedan estar ocultas detrás de un motivo de consulta físico."
+          ],
+          "table": {
+            "headers": ["Tamizaje", "Qué explora"],
+            "rows": [
+              ["Depresión", "Síntomas depresivos mediante observación, entrevista y PHQ-9."],
+              ["Alcohol y drogas", "Consumo perjudicial mediante AUDIT."],
+              ["Violencia", "Signos, actitudes y comportamientos asociados a violencia."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué hacer si sale positivo",
+          "body": [
+            "El resultado se interpreta con la entrevista y el contexto. Se informa a la persona, se brinda consejería y se define si corresponde manejo en el establecimiento o referencia."
+          ],
+          "bullets": [
+            "No comunicar un diagnóstico solo por el puntaje de un cuestionario.",
+            "Evaluar riesgo, redes de apoyo y necesidades inmediatas.",
+            "Registrar el hallazgo y el plan acordado.",
+            "Coordinar con salud mental cuando la complejidad lo requiera."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Violencia: preguntar con seguridad",
+          "body": [
+            "La indagación debe realizarse en privado, sin la pareja o acompañante, con escucha activa y sin juicios. La seguridad de la persona es parte de la evaluación."
+          ],
+          "callout": {
+            "title": "Primum non nocere",
+            "text": "Preguntar por violencia sin condiciones de privacidad puede aumentar el riesgo. Primero se asegura el espacio; después se pregunta.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [31] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-riesgos"
+    },
+    {
+      "id": "sheet-adulto-07",
+      "title": "Referencia, contrarreferencia y continuidad",
+      "kicker": "Continuidad · Redes",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "La referencia se hace cuando la capacidad resolutiva no alcanza; la contrarreferencia devuelve el caso con información para continuar el cuidado en el primer nivel.",
+      "keyConcepts": [
+        "Referir es trasladar el caso con información clínica suficiente.",
+        "La contrarreferencia devuelve hallazgos, tratamiento y plan de seguimiento.",
+        "La cita y el registro sostienen la continuidad.",
+        "Oferta fija, móvil y telesalud son modalidades complementarias."
+      ],
+      "sections": [
+        {
+          "title": "Derivar con información",
+          "body": [
+            "La referencia no es un abandono. Debe incluir el motivo, los hallazgos relevantes, el tratamiento recibido, los exámenes disponibles y la identificación de la persona."
+          ],
+          "bullets": [
+            "Registrar la referencia en la historia clínica.",
+            "Informar a la persona y a su familia sobre el destino y el motivo.",
+            "Coordinar la cita cuando el sistema lo permita.",
+            "Asegurar la contrarreferencia y el retorno al primer nivel."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Recibir de vuelta",
+          "body": [
+            "La contrarreferencia permite que el primer nivel retome el control, la adherencia y la vigilancia. Sin ella, la persona queda atrapada entre niveles y el cuidado se fragmenta."
+          ],
+          "callout": {
+            "title": "Cerrar el circuito",
+            "text": "Una referencia sin contrarreferencia es una derivación a medias.",
+            "tone": "info"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Modalidades que sostienen la continuidad",
+          "body": [
+            "La atención puede brindarse en oferta fija, oferta móvil o telesalud. La modalidad se elige según el territorio, la capacidad del establecimiento y las necesidades de la persona."
+          ],
+          "table": {
+            "headers": ["Modalidad", "Uso"],
+            "rows": [
+              ["Oferta fija", "Atención programada en el establecimiento."],
+              ["Oferta móvil", "Acercamiento a zonas de difícil acceso."],
+              ["Telesalud", "Teleorientación, telemonitoreo o teleconsulta cuando corresponde."]
+            ]
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [25, 40, 42] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-continuidad"
+    },
+    {
+      "id": "sheet-adulto-08",
+      "title": "Organización, financiamiento y vigilancia",
+      "kicker": "Gestión · CISPA",
+      "minutes": 5,
+      "level": "Avanzado",
+      "summary": "El CISPA se organiza por capacidad resolutiva, se financia por IAFAS y SIS y se registra en la historia clínica y los sistemas de información. La vigilancia permite medir cobertura y calidad.",
+      "keyConcepts": [
+        "El paquete es priorizado en I-1 e I-2 y completo en I-3 e I-4.",
+        "El financiamiento corresponde a las IAFAS, con cobertura mínima del PEAS.",
+        "El registro alimenta la continuidad y la vigilancia.",
+        "La organización incluye horarios, flujos y señalización."
+      ],
+      "sections": [
+        {
+          "title": "Quién hace qué",
+          "body": [
+            "Los establecimientos del primer nivel organizan un equipo de salud capacitado. Los niveles II y III conforman un equipo interdisciplinario y brindan el paquete completo."
+          ],
+          "table": {
+            "headers": ["Nivel", "Responsabilidad"],
+            "rows": [
+              ["I-1 e I-2", "Paquete priorizado según capacidad resolutiva."],
+              ["I-3 e I-4", "Paquete completo con equipo de salud."],
+              ["II y III", "Complementariedad, continuidad y atención especializada."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Financiamiento y registro",
+          "body": [
+            "Las intervenciones son financiadas por las IAFAS en el marco del aseguramiento universal. El SIS cubre a la población sin otro seguro. Todas las actividades programadas deben incorporarse al plan operativo institucional."
+          ],
+          "bullets": [
+            "Verificar la afiliación y afiliar al SIS cuando corresponda.",
+            "Registrar las atenciones en la historia clínica y en los sistemas institucionales.",
+            "Usar la información para programar citas y evaluar cobertura."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Vigilancia y mejora",
+          "body": [
+            "La vigilancia no es un trámite administrativo: permite saber si las personas captadas reciben el paquete, si los tamizajes se cierran y si las referencias retornan."
+          ],
+          "callout": {
+            "title": "Lo que no se registra no se puede cuidar",
+            "text": "El registro oportuno sostiene la continuidad, la evaluación y la toma de decisiones.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [37, 38, 40] }],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-continuidad"
+    },
+    {
+      "id": "sheet-depresion-01",
+      "title": "PHQ-9: tamizar no es diagnosticar",
+      "kicker": "Depresión · Tamizaje",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "En grupos prioritarios se recomienda tamizar con PHQ-9; un puntaje mayor o igual a 10 es positivo, pero el diagnóstico se confirma con los criterios CIE-10.",
+      "keyConcepts": [
+        "Los grupos prioritarios son adultos mayores, personas con enfermedades crónicas y mujeres en periodo de periparto.",
+        "Un PHQ-9 mayor o igual a 10 se considera positivo.",
+        "Cualquier personal de salud con oportunidad de atender puede aplicar el tamizaje.",
+        "Un tamizaje positivo no confirma el diagnóstico."
+      ],
+      "sections": [
+        {
+          "title": "A quién tamizar",
+          "body": [
+            "La recomendación es tamizar a los grupos prioritarios que acuden a consulta en el primer nivel. No se propone tamizar a toda la población sin criterio, sino concentrar el esfuerzo donde la probabilidad y el impacto son mayores."
+          ],
+          "bullets": [
+            "Adultos mayores.",
+            "Personas con enfermedades crónicas.",
+            "Mujeres en periodo de periparto.",
+            "Personas con síntomas depresivos que no cumplen criterios de episodio."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cómo interpretar el PHQ-9",
+          "body": [
+            "El PHQ-9 evalúa nueve síntomas durante las dos semanas previas. El punto de corte operativo para el tamizaje es 10; después de confirmar el episodio, el mismo puntaje ayuda a graduar la severidad."
+          ],
+          "table": {
+            "headers": ["Puntaje", "Lectura"],
+            "rows": [
+              ["0 a 9", "Tamizaje negativo."],
+              ["10 a 14", "Episodio depresivo leve."],
+              ["15 a 19", "Episodio depresivo moderado."],
+              ["20 a 27", "Episodio depresivo severo."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "El test no reemplaza la entrevista",
+          "body": [
+            "El PHQ-9 tiene buena sensibilidad y especificidad, pero puede clasificar erróneamente. Por eso, todo positivo se confirma con los criterios CIE-10 y con una evaluación clínica que descarte otras causas."
+          ],
+          "callout": {
+            "title": "Secuencia correcta",
+            "text": "Tamizar, confirmar y luego graduar. Nunca iniciar un tratamiento solo por el puntaje.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 20] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tamizaje"
+    },
+    {
+      "id": "sheet-depresion-02",
+      "title": "Prevenir y descartar bipolaridad",
+      "kicker": "Depresión · Prevención y diagnóstico diferencial",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La prevención se basa en intervenciones psicológicas y educativas, especialmente en grupos de riesgo. Antes de tratar, hay que descartar depresión bipolar.",
+      "keyConcepts": [
+        "La prevención puede incluir educación y estrategias cognitivo-conductuales.",
+        "Se prioriza a adultos mayores, personas con enfermedades crónicas y mujeres en periparto.",
+        "Una hipomanía dura cuatro días o más; una manía, una semana o más.",
+        "Si se sospecha bipolaridad, se refiere al psiquiatra."
+      ],
+      "sections": [
+        {
+          "title": "Prevención selectiva",
+          "body": [
+            "La GPC sugiere intervenciones preventivas psicológicas y educativas basadas en terapia cognitivo-conductual: inteligencia emocional, resolución de problemas y estrategias de afrontamiento."
+          ],
+          "bullets": [
+            "Se dirigen principalmente a grupos de riesgo.",
+            "También pueden ofrecerse a personas con síntomas depresivos que no cumplen criterios de episodio.",
+            "No reemplazan el tratamiento de un episodio ya establecido."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Bipolaridad: dos pistas temporales",
+          "body": [
+            "La sospecha de depresión bipolar cambia el tratamiento porque la monoterapia con antidepresivos puede desencadenar síntomas maníacos."
+          ],
+          "table": {
+            "headers": ["Episodio", "Duración mínima", "Qué se observa"],
+            "rows": [
+              ["Hipomanía", "4 días o más", "Elevación leve y persistente del ánimo, aumento de energía y actividad."],
+              ["Manía", "1 semana o más", "Humor elevado sin relación con las circunstancias, excitación, menor necesidad de sueño."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Por qué importa",
+          "body": [
+            "La prevalencia de depresión bipolar en pacientes tratados en atención primaria es relevante. No identificarla puede llevar a un tratamiento incorrecto y a un mayor riesgo de viraje maníaco."
+          ],
+          "callout": {
+            "title": "Antes del antidepresivo",
+            "text": "Preguntar por episodios de exaltación, irritabilidad o disminución de sueño no es un detalle: es seguridad clínica.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 21] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tamizaje"
+    },
+    {
+      "id": "sheet-depresion-03",
+      "title": "CIE-10: confirmar y graduar",
+      "kicker": "Depresión · Diagnóstico",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El episodio depresivo exige al menos dos semanas, dos síntomas característicos y un total de cuatro de diez. La gravedad se gradúa con el PHQ-9.",
+      "keyConcepts": [
+        "Duración mínima: dos semanas.",
+        "Se requieren al menos dos síntomas característicos.",
+        "El total debe sumar al menos cuatro de los diez síntomas.",
+        "La gravedad se clasifica con PHQ-9 en leve, moderada o severa."
+      ],
+      "sections": [
+        {
+          "title": "Los criterios",
+          "body": [
+            "El CIE-10 exige que el episodio dure al menos dos semanas y que estén presentes al menos dos síntomas característicos: ánimo deprimido, pérdida de interés o placer, o disminución de energía con fatigabilidad."
+          ],
+          "bullets": [
+            "Además de los característicos, debe haber al menos otro síntoma de la lista.",
+            "La suma total debe ser de cuatro o más de los diez síntomas.",
+            "Los síntomas deben generar malestar o deterioro clínicamente significativo."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Bandas de severidad",
+          "body": [
+            "Una vez confirmado el episodio y descartada la bipolaridad, el PHQ-9 permite asignar severidad y decidir el nivel de atención."
+          ],
+          "table": {
+            "headers": ["PHQ-9", "Severidad", "Conducta"],
+            "rows": [
+              ["10 a 14", "Leve", "Manejo en primer nivel según preferencias y recursos."],
+              ["15 a 19", "Moderado", "Referir al psiquiatra."],
+              ["20 a 27", "Severo", "Referir al psiquiatra."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué cambia con la gravedad",
+          "body": [
+            "El episodio leve puede manejarse en el primer nivel. El moderado o severo requiere evaluación especializada porque el riesgo, la complejidad y la necesidad de ajuste terapéutico aumentan."
+          ],
+          "callout": {
+            "title": "No sobrediagnosticar",
+            "text": "Un puntaje alto no reemplaza la entrevista: hay que confirmar criterios, descartar causas orgánicas y valorar el contexto.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 20, 21] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-diagnostico"
+    },
+    {
+      "id": "sheet-depresion-04",
+      "title": "Señales para no manejar en primer nivel",
+      "kicker": "Depresión · Derivación",
+      "minutes": 6,
+      "level": "Avanzado",
+      "summary": "Moderado o severo, sospecha de bipolaridad, psicosis, riesgo suicida o falta de respuesta obligan a replantear el manejo y derivar.",
+      "keyConcepts": [
+        "El episodio moderado o severo se refiere al psiquiatra.",
+        "La sospecha de bipolaridad se refiere para diagnóstico y manejo.",
+        "La ideación suicida es un síntoma que exige valoración urgente del riesgo.",
+        "La falta de respuesta debe hacer reconsiderar el diagnóstico y la adherencia."
+      ],
+      "sections": [
+        {
+          "title": "Criterios de derivación",
+          "body": [
+            "La derivación no es un fracaso del primer nivel: es una decisión clínica para garantizar seguridad y tratamiento adecuado."
+          ],
+          "bullets": [
+            "PHQ-9 de 15 o más o criterios de episodio moderado o severo.",
+            "Sospecha de depresión bipolar.",
+            "Psicosis, agitación grave o deterioro funcional marcado.",
+            "Riesgo suicida o autolesivo.",
+            "Falta de respuesta después de un tratamiento bien conducido."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Riesgo suicida",
+          "body": [
+            "Los pensamientos recurrentes de muerte o suicidio forman parte de los criterios diagnósticos. No se asume que son una llamada de atención ni se minimizan: se exploran y se activa una evaluación urgente del riesgo."
+          ],
+          "bullets": [
+            "Preguntar de forma directa y respetuosa.",
+            "Valorar plan, medios, intención y factores protectores.",
+            "No dejar sola a la persona si el riesgo es alto.",
+            "Coordinar con emergencia o salud mental según el nivel de riesgo."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Reevaluar antes de insistir",
+          "body": [
+            "Si el tratamiento no funciona, hay que revisar el diagnóstico, la adherencia, los efectos adversos, los factores psicosociales y la presencia de otra patología antes de aumentar dosis o cambiar de fármaco."
+          ],
+          "callout": {
+            "title": "Seguridad primero",
+            "text": "Ante riesgo suicida, psicosis o deterioro rápido, la prioridad no es completar un esquema: es proteger la vida y derivar.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 11, 12, 21] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-diagnostico"
+    },
+    {
+      "id": "sheet-depresion-05",
+      "title": "Psicoterapia: primera línea",
+      "kicker": "Depresión · Tratamiento",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La TCC es la psicoterapia recomendada; si no está disponible, terapia de resolución de problemas. Dura de 8 a 20 sesiones, una o dos por semana.",
+      "keyConcepts": [
+        "La terapia cognitivo-conductual tiene recomendación fuerte.",
+        "La terapia de resolución de problemas es la alternativa cuando no hay TCC.",
+        "La duración es de 8 a 20 sesiones, una o dos veces por semana.",
+        "La respuesta se mide con PHQ-9 al menos en la sexta sesión."
+      ],
+      "sections": [
+        {
+          "title": "Elección y formato",
+          "body": [
+            "En el episodio leve, la psicoterapia y la farmacoterapia son opciones iniciales. La elección considera contraindicaciones, preferencias de la persona y disponibilidad de recursos."
+          ],
+          "bullets": [
+            "TCC como primera opción.",
+            "Resolución de problemas si no hay TCC disponible.",
+            "Otras psicoterapias solo como complemento.",
+            "Terapia familiar si el entorno disfuncional refuerza los síntomas; terapia grupal para fortalecer redes."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Dosis y seguimiento",
+          "body": [
+            "La psicoterapia no es una conversación sin estructura. Tiene número de sesiones, objetivo y medición de respuesta."
+          ],
+          "table": {
+            "headers": ["Elemento", "Indicación"],
+            "rows": [
+              ["Duración", "8 a 20 sesiones."],
+              ["Frecuencia", "1 a 2 veces por semana."],
+              ["Línea base", "PHQ-9 antes de iniciar."],
+              ["Control", "PHQ-9 al menos en la sexta sesión."],
+              ["Respuesta", "Reducción de 50% o más del puntaje basal."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Otras terapias",
+          "body": [
+            "La activación conductual, la terapia psicodinámica y la interpersonal pueden considerarse como complemento de la TCC o de la resolución de problemas, no como sustituto automático."
+          ],
+          "callout": {
+            "title": "Medir para ajustar",
+            "text": "Si no hay respuesta en la sexta sesión, no se sigue igual por inercia: se reformula el plan.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [11, 12] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tratamiento"
+    },
+    {
+      "id": "sheet-depresion-06",
+      "title": "Respuesta, remisión y alta",
+      "kicker": "Depresión · Seguimiento",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Respuesta es reducir 50% o más; parcial, entre 20% y 49%; nula, 19% o menos. Remisión es ausencia de síntomas característicos por tres semanas, con hasta tres síntomas residuales.",
+      "keyConcepts": [
+        "Respuesta: reducción de 50% o más del PHQ-9 basal.",
+        "Respuesta parcial: reducción de 20% a 49%.",
+        "No respuesta: reducción de 19% o menos.",
+        "Remisión: tres semanas sin síntomas característicos, con hasta tres residuales."
+      ],
+      "sections": [
+        {
+          "title": "Tres formas de leer el cambio",
+          "body": [
+            "El mismo puntaje basal permite comparar y decidir. No basta con sentirse mejor: hay que medir el cambio y evaluar el funcionamiento."
+          ],
+          "table": {
+            "headers": ["Categoría", "Cambio en PHQ-9"],
+            "rows": [
+              ["Respuesta", "Disminución de 50% o más."],
+              ["Respuesta parcial", "Disminución de 20% a 49%."],
+              ["No respuesta", "Disminución de 19% o menos."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Remisión y alta",
+          "body": [
+            "La remisión exige ausencia de los síntomas característicos durante al menos tres semanas; pueden persistir hasta tres síntomas residuales. Si se alcanza, se puede dar de alta con plan de seguimiento."
+          ],
+          "bullets": [
+            "Evaluar remisión tres semanas después del término de la psicoterapia o del periodo de respuesta.",
+            "Reforzar señales de alarma y plan de recaída.",
+            "Mantener controles según riesgo y preferencias."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Ejercicio y prevención de recaídas",
+          "body": [
+            "La GPC recomienda ejercicio físico como parte del manejo. Una prescripción práctica es caminar, trotar o correr 30 minutos, tres veces por semana, adaptada a la condición física."
+          ],
+          "callout": {
+            "title": "Alta no es abandono",
+            "text": "El alta se acompaña de un plan claro: qué observar, a quién acudir y cuándo volver.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 12, 13] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tratamiento"
+    },
+    {
+      "id": "sheet-depresion-07",
+      "title": "ISRS: iniciar y ajustar",
+      "kicker": "Depresión · Farmacoterapia",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Si se opta por fármacos, el ISRS es la primera elección. No se inicia con clomipramina ni amitriptilina. La respuesta se evalúa entre la semana 4 y 6.",
+      "keyConcepts": [
+        "El ISRS es la primera elección farmacológica.",
+        "No se inicia con clomipramina ni amitriptilina.",
+        "La duración inicial es de 8 a 12 semanas.",
+        "La respuesta se evalúa entre la cuarta y sexta semana."
+      ],
+      "sections": [
+        {
+          "title": "Elección",
+          "body": [
+            "La recomendación es iniciar con un inhibidor selectivo de la recaptación de serotonina. La elección concreta considera comorbilidades, interacciones, efectos adversos y preferencias."
+          ],
+          "bullets": [
+            "No usar clomipramina ni amitriptilina como primera opción.",
+            "Si un ISRS no se tolera, cambiar a otro ISRS u otro grupo según el perfil clínico.",
+            "Explicar efectos adversos y adherencia desde la primera consulta."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Monitoreo",
+          "body": [
+            "La farmacoterapia tiene controles definidos. Si hay respuesta en la semana 4 a 6, se mantiene la dosis; si no, se incrementa y se continúa."
+          ],
+          "table": {
+            "headers": ["Momento", "Qué hacer"],
+            "rows": [
+              ["Antes de iniciar", "PHQ-9 basal y evaluación clínica."],
+              ["Semana 4 a 6", "Medir respuesta; mantener o incrementar dosis."],
+              ["Semana 8 a 12", "Reevaluar respuesta y remisión."],
+              ["Respuesta", "Continuar misma dosis tres semanas más."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Efectos adversos",
+          "body": [
+            "Los ISRS suelen ser mejor tolerados que los tricíclicos, pero no están exentos de efectos. La persona debe conocer qué observar y cuándo consultar."
+          ],
+          "callout": {
+            "title": "No cambiar a ciegas",
+            "text": "Antes de modificar el fármaco, revisar adherencia, dosis, interacciones, consumo de sustancias y diagnóstico.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-farmacos"
+    },
+    {
+      "id": "sheet-depresion-08",
+      "title": "Mantener, reducir y derivar",
+      "kicker": "Depresión · Curso clínico",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Si hay respuesta a las 8-12 semanas, se mantiene la misma dosis y se evalúa remisión tres semanas después. La farmacoterapia se mantiene al menos seis meses tras la remisión.",
+      "keyConcepts": [
+        "La respuesta se reevalúa entre la semana 8 y 12.",
+        "Si hay respuesta, se mantiene la dosis y se evalúa remisión tres semanas después.",
+        "Tras la remisión, la farmacoterapia se mantiene al menos seis meses.",
+        "Luego se reduce gradualmente la dosis hasta el cese."
+      ],
+      "sections": [
+        {
+          "title": "Qué hacer en cada control",
+          "body": [
+            "El seguimiento no es solo preguntar cómo se siente. Se mide el PHQ-9, se revisa adherencia, efectos adversos y funcionamiento, y se ajusta el plan."
+          ],
+          "table": {
+            "headers": ["Escenario", "Conducta"],
+            "rows": [
+              ["Respuesta en semana 4 a 6", "Mantener dosis y continuar."],
+              ["Sin respuesta en semana 4 a 6", "Incrementar dosis y continuar."],
+              ["Respuesta en semana 8 a 12", "Mantener dosis y evaluar remisión tres semanas después."],
+              ["Sin remisión o progresión", "Reconsiderar diagnóstico y derivar."]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Mantenimiento",
+          "body": [
+            "La remisión no es el final inmediato del tratamiento. La farmacoterapia se continúa durante al menos seis meses después de alcanzar la remisión y luego se reduce de forma gradual hasta suspenderla."
+          ],
+          "bullets": [
+            "No suspender bruscamente.",
+            "Programar controles durante la reducción.",
+            "Educar sobre signos de recaída."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cuando el plan no funciona",
+          "body": [
+            "Si no hay remisión después de 8 a 12 semanas, hay que evaluar una patología subyacente y la progresión a moderado o severo. En ese caso, la derivación al psiquiatra es la conducta segura."
+          ],
+          "callout": {
+            "title": "No insistir sin revisar",
+            "text": "Aumentar dosis sin reevaluar el diagnóstico solo retrasa el tratamiento correcto.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12, 13] }],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-farmacos"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-adulto-01-1",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la población objetivo del cuidado integral de la persona adulta?",
+      "answer": "Las personas desde los 30 años hasta los 59 años, 11 meses y 29 días.",
+      "explanation": "La norma separa esta etapa de la adultez mayor. El límite superior es preciso: 59 años, 11 meses y 29 días.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [18] }],
+      "tags": ["Adulto", "población"]
+    },
+    {
+      "id": "card-adulto-01-2",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "multiple",
+      "prompt": "¿En cuál de estas situaciones se puede captar a una persona adulta para el CISPA?",
+      "options": [
+        "Solo cuando acude por una enfermedad crónica.",
+        "Solo cuando el establecimiento la cita por carta.",
+        "Cuando acude a consulta, acompaña a otro usuario o llega referida por un agente comunitario.",
+        "Solo cuando tiene un seguro vigente."
+      ],
+      "correctIndex": 2,
+      "explanation": "La captación ocurre en cualquier contacto, independientemente del motivo y de la modalidad. Después se ofrece el paquete y se concierta una cita.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [22] }],
+      "tags": ["Adulto", "captación"]
+    },
+    {
+      "id": "card-adulto-01-3",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "application",
+      "prompt": "Una mujer de 58 años llega al establecimiento solo para acompañar a su madre. No refiere síntomas. ¿Qué debería hacer el equipo?",
+      "options": [
+        "No hacer nada porque no es la paciente de la consulta.",
+        "Identificarla, ofrecerle el paquete de cuidado integral y concertar una cita.",
+        "Enviarla a emergencia por protocolo.",
+        "Esperar a que cumpla 60 años para incluirla."
+      ],
+      "correctIndex": 1,
+      "explanation": "El acompañamiento es una oportunidad de captación. La persona está dentro del rango etario y puede iniciar su cuidado integral.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [18, 22] }],
+      "tags": ["Adulto", "aplicación", "captación"]
+    },
+    {
+      "id": "card-adulto-02-1",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "concept",
+      "prompt": "¿Qué documentos mínimos requiere toda persona adulta atendida?",
+      "answer": "Historia clínica individual y ficha familiar, además del carnet de cuidado integral de salud.",
+      "explanation": "La historia clínica y la ficha familiar permiten el cuidado individual y el abordaje del contexto familiar. El carnet identifica a la persona dentro del CISPA.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [23] }],
+      "tags": ["Adulto", "admisión"]
+    },
+    {
+      "id": "card-adulto-02-2",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "multiple",
+      "prompt": "¿Qué se evalúa en el triage de la persona adulta?",
+      "options": [
+        "Solo el motivo de consulta y la presión arterial.",
+        "Signos de alarma, medidas antropométricas, signos vitales y cálculo del IMC.",
+        "Únicamente los antecedentes familiares.",
+        "Solo la glucosa capilar."
+      ],
+      "correctIndex": 1,
+      "explanation": "El triage busca signos de alarma y establece prioridades de atención. También incluye antropometría, presión arterial, frecuencia cardiaca y respiratoria, y cálculo del IMC.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [24] }],
+      "tags": ["Adulto", "triage"]
+    },
+    {
+      "id": "card-adulto-02-3",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "application",
+      "prompt": "Una persona sin seguro llega por primera vez. El establecimiento no cuenta con su IAFAS. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Negar la atención hasta que regularice su seguro.",
+        "Afiliarla al SIS, abrir su historia clínica y orientar el flujo de atención.",
+        "Enviarla a otra región.",
+        "Registrarla solo en un cuaderno, sin historia clínica."
+      ],
+      "correctIndex": 1,
+      "explanation": "La admisión debe afiliar al SIS a quien no tiene seguro y garantizar el registro y la orientación dentro del establecimiento.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [22, 23] }],
+      "tags": ["Adulto", "aplicación", "admisión"]
+    },
+    {
+      "id": "card-adulto-03-1",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "concept",
+      "prompt": "¿Con qué frecuencia se realiza la evaluación integral de la persona adulta?",
+      "answer": "Una vez al año, priorizando los factores de riesgo de enfermedades no transmisibles y la salud mental.",
+      "explanation": "La evaluación anual organiza el paquete y permite detectar cambios en el riesgo. No se espera a que aparezcan síntomas.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [42] }],
+      "tags": ["Adulto", "evaluación"]
+    },
+    {
+      "id": "card-adulto-03-2",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "multiple",
+      "prompt": "¿Qué mide el perímetro abdominal en la evaluación del adulto?",
+      "options": [
+        "Solo la estatura.",
+        "El riesgo relacionado con diabetes tipo 2, hipertensión y enfermedad cardiovascular.",
+        "La saturación de oxígeno.",
+        "La agudeza visual."
+      ],
+      "correctIndex": 1,
+      "explanation": "El perímetro abdominal se interpreta junto con el IMC y otros factores para estimar riesgo cardiometabólico.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [29] }],
+      "tags": ["Adulto", "riesgo cardiometabólico"]
+    },
+    {
+      "id": "card-adulto-03-3",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "application",
+      "prompt": "El establecimiento no puede procesar perfil lipídico. Una persona tiene indicación de tamizaje. ¿Qué corresponde?",
+      "options": [
+        "Omitir el tamizaje y no registrar nada.",
+        "Referir al siguiente nivel para la medición y continuar el cuidado.",
+        "Dar tratamiento sin resultado.",
+        "Reemplazar el perfil lipídico por una radiografía de tórax."
+      ],
+      "correctIndex": 1,
+      "explanation": "Si no hay capacidad para el perfil lipídico, la norma indica referir al siguiente nivel. La falta de recurso local no elimina la necesidad.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [29] }],
+      "tags": ["Adulto", "aplicación", "referencia"]
+    },
+    {
+      "id": "card-adulto-04-1",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "concept",
+      "prompt": "¿Cuántas veces al año se brindan las actividades de promoción y con qué intervalo mínimo?",
+      "answer": "Dos veces al año, con un intervalo no menor de tres meses.",
+      "explanation": "La frecuencia busca sostener el proceso educativo, no cumplir una actividad aislada.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [26] }],
+      "tags": ["Adulto", "promoción"]
+    },
+    {
+      "id": "card-adulto-04-2",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "multiple",
+      "prompt": "¿Cuántas visitas familiares integrales al año contempla el paquete?",
+      "options": [
+        "Una.",
+        "Dos.",
+        "Cuatro.",
+        "Doce."
+      ],
+      "correctIndex": 2,
+      "explanation": "La norma establece cuatro visitas familiares integrales por año y la evaluación de la familia con llenado del PAIFAM.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [27] }],
+      "tags": ["Adulto", "visita familiar"]
+    },
+    {
+      "id": "card-adulto-04-3",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "application",
+      "prompt": "Un establecimiento I-2 detecta que una persona necesita una prestación que no está en su paquete priorizado. ¿Qué hacer?",
+      "options": [
+        "Decirle que no le corresponde por categoría.",
+        "Registrar la necesidad y coordinar la referencia para que reciba la prestación.",
+        "Sustituirla por una charla.",
+        "Esperar a que el establecimiento cambie de categoría."
+      ],
+      "correctIndex": 1,
+      "explanation": "La capacidad resolutiva organiza la oferta, pero una necesidad detectada debe cerrarse con referencia y seguimiento.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [37, 40] }],
+      "tags": ["Adulto", "aplicación", "paquete"]
+    },
+    {
+      "id": "card-adulto-05-1",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "concept",
+      "prompt": "¿Qué métodos contempla el tamizaje de cáncer de cuello uterino?",
+      "answer": "Prueba de VPH, inspección visual con ácido acético (IVAA) y Papanicolaou.",
+      "explanation": "La norma incluye las tres alternativas. La elección depende de la disponibilidad y de la norma específica vigente.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [30] }],
+      "tags": ["Adulto", "cáncer"]
+    },
+    {
+      "id": "card-adulto-05-2",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "multiple",
+      "prompt": "¿Qué combina el tamizaje de cáncer de próstata?",
+      "options": [
+        "Solo PSA.",
+        "Evaluación médica, palpación digital y PSA.",
+        "Solo ecografía.",
+        "Solo tacto rectal."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma describe una evaluación médica que incluye examen físico con palpación digital y dosaje de PSA.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [30] }],
+      "tags": ["Adulto", "próstata"]
+    },
+    {
+      "id": "card-adulto-05-3",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "application",
+      "prompt": "Una persona tiene sangre oculta en heces positiva. ¿Cuál es la interpretación correcta?",
+      "options": [
+        "Ya tiene cáncer de colon confirmado.",
+        "Es un tamizaje positivo que requiere confirmación y derivación oportuna.",
+        "No requiere ninguna acción.",
+        "Debe repetirse cada semana de por vida."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tamizaje detecta riesgo, no confirma cáncer. Un resultado positivo debe cerrarse con evaluación y seguimiento.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [30] }],
+      "tags": ["Adulto", "aplicación", "cáncer"]
+    },
+    {
+      "id": "card-adulto-06-1",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "concept",
+      "prompt": "¿Qué instrumentos incluye el tamizaje de salud mental del adulto?",
+      "answer": "PHQ-9 para depresión, AUDIT para consumo de alcohol y drogas, y tamizaje de violencia.",
+      "explanation": "El paquete busca detectar depresión, consumo perjudicial y violencia. Los resultados se integran a la entrevista clínica.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [31] }],
+      "tags": ["Adulto", "salud mental"]
+    },
+    {
+      "id": "card-adulto-06-2",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "multiple",
+      "prompt": "¿Qué actitud es correcta al indagar por violencia en la consulta?",
+      "options": [
+        "Preguntar frente a la pareja para confirmar la versión.",
+        "Asegurar privacidad, escuchar sin juzgar y no presionar.",
+        "Evitar el tema para no incomodar.",
+        "Concluir que no hay violencia si la persona no la menciona."
+      ],
+      "correctIndex": 1,
+      "explanation": "La seguridad y la confidencialidad son condiciones para preguntar. Un tamizaje negativo no descarta violencia.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [31] }],
+      "tags": ["Adulto", "violencia"]
+    },
+    {
+      "id": "card-adulto-06-3",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "application",
+      "prompt": "Un adulto mayor con diabetes responde el PHQ-9 con 12 puntos. ¿Qué significa ese resultado?",
+      "options": [
+        "Tiene depresión severa confirmada.",
+        "Es un tamizaje positivo que debe confirmarse con CIE-10 y evaluación clínica.",
+        "No requiere evaluación porque el puntaje es bajo.",
+        "Debe recibir un antidepresivo de inmediato."
+      ],
+      "correctIndex": 1,
+      "explanation": "El PHQ-9 es un tamizaje. Un puntaje de 12 es positivo y orienta a confirmar el episodio y graduar la severidad.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [31] }],
+      "tags": ["Adulto", "aplicación", "PHQ-9"]
+    },
+    {
+      "id": "card-adulto-07-1",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "concept",
+      "prompt": "¿Qué es la contrarreferencia?",
+      "answer": "Es la devolución del caso al establecimiento de origen con información sobre hallazgos, tratamiento y plan de seguimiento.",
+      "explanation": "La contrarreferencia cierra el circuito y permite que el primer nivel retome el cuidado.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [40] }],
+      "tags": ["Adulto", "contrarreferencia"]
+    },
+    {
+      "id": "card-adulto-07-2",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es una modalidad de atención del CISPA?",
+      "options": [
+        "Solo la consulta presencial en el establecimiento.",
+        "Oferta fija, oferta móvil y telesalud.",
+        "Únicamente la atención por emergencia.",
+        "Solo la visita domiciliaria."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma reconoce las tres modalidades y las combina según el territorio y las necesidades de la persona.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [42] }],
+      "tags": ["Adulto", "modalidades"]
+    },
+    {
+      "id": "card-adulto-07-3",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "application",
+      "prompt": "Una persona atendida en el hospital por una complicación vuelve a su centro de salud. No hay informe de contrarreferencia. ¿Qué corresponde?",
+      "options": [
+        "Reiniciar todo desde cero sin buscar información.",
+        "Solicitar el informe, registrar lo ocurrido y retomar el plan de cuidado.",
+        "Derivarla otra vez al hospital sin motivo.",
+        "Cerrar la historia clínica."
+      ],
+      "correctIndex": 1,
+      "explanation": "La continuidad exige recuperar la información y retomar el cuidado. La ausencia de contrarreferencia es una barrera que debe corregirse.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [40, 42] }],
+      "tags": ["Adulto", "aplicación", "continuidad"]
+    },
+    {
+      "id": "card-adulto-08-1",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "concept",
+      "prompt": "¿Qué diferencia el paquete priorizado del paquete completo?",
+      "answer": "El priorizado se brinda en establecimientos I-1 e I-2 según capacidad resolutiva; el completo, en I-3 e I-4 y niveles II y III.",
+      "explanation": "La categoría del establecimiento define la oferta, pero no elimina la obligación de referir lo que no se puede resolver.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [37] }],
+      "tags": ["Adulto", "gestión"]
+    },
+    {
+      "id": "card-adulto-08-2",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "multiple",
+      "prompt": "¿Cómo se financia el cuidado integral del adulto?",
+      "options": [
+        "Solo con donaciones.",
+        "Con las IAFAS, el SIS y el presupuesto institucional, en el marco del aseguramiento universal.",
+        "Únicamente con pago directo del usuario.",
+        "Solo con recursos municipales."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las IAFAS financian las prestaciones; el SIS cubre a quien no tiene otro seguro y las actividades se incorporan al plan operativo institucional.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [40] }],
+      "tags": ["Adulto", "financiamiento"]
+    },
+    {
+      "id": "card-adulto-08-3",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "application",
+      "prompt": "El equipo detecta que muchas personas captadas no vuelven a sus controles. ¿Qué acción fortalece la continuidad?",
+      "options": [
+        "Eliminar el registro de citas.",
+        "Usar el registro y la sectorización para buscar activamente a las personas y reprogramar.",
+        "Esperar que regresen por iniciativa propia.",
+        "Suspender el paquete preventivo."
+      ],
+      "correctIndex": 1,
+      "explanation": "La sectorización y el registro permiten identificar a las personas con riesgo o controles pendientes y actuar sobre las barreras de acceso.",
+      "sourceRefs": [{ "sourceId": "src-adulto", "pages": [21, 42] }],
+      "tags": ["Adulto", "aplicación", "continuidad"]
+    },
+    {
+      "id": "card-depresion-01-1",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son los grupos prioritarios para el tamizaje de depresión?",
+      "answer": "Adultos mayores, personas con enfermedades crónicas y mujeres en periodo de periparto.",
+      "explanation": "La GPC concentra el tamizaje en estos grupos, además de las personas con síntomas que no cumplen criterios de episodio.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10] }],
+      "tags": ["Depresión", "tamizaje"]
+    },
+    {
+      "id": "card-depresion-01-2",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "multiple",
+      "prompt": "¿Qué puntaje de PHQ-9 se considera positivo para el tamizaje?",
+      "options": [
+        "5 o más.",
+        "10 o más.",
+        "15 o más.",
+        "20 o más."
+      ],
+      "correctIndex": 1,
+      "explanation": "La GPC establece el punto de corte en 10 o más. Luego se confirma el episodio con CIE-10.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 20] }],
+      "tags": ["Depresión", "PHQ-9"]
+    },
+    {
+      "id": "card-depresion-01-3",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "application",
+      "prompt": "Una mujer en periparto obtiene 9 puntos en el PHQ-9. ¿Qué conducta es coherente con la GPC?",
+      "options": [
+        "Diagnosticar depresión leve y iniciar ISRS.",
+        "Considerar el tamizaje negativo y evaluar clínicamente si hay síntomas.",
+        "Referir de inmediato al psiquiatra.",
+        "Repetir el test hasta que supere 10."
+      ],
+      "correctIndex": 1,
+      "explanation": "Con el umbral de la GPC, 9 es negativo. Sin embargo, la evaluación clínica y el seguimiento siguen siendo necesarios si hay síntomas.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 20] }],
+      "tags": ["Depresión", "aplicación", "PHQ-9"]
+    },
+    {
+      "id": "card-depresion-02-1",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "concept",
+      "prompt": "¿Cuánto duran como mínimo los síntomas de una hipomanía y de una manía?",
+      "answer": "La hipomanía, cuatro días o más; la manía, una semana o más.",
+      "explanation": "La duración es una pista clave para diferenciar ambos episodios y sospechar depresión bipolar.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 21] }],
+      "tags": ["Depresión", "bipolaridad"]
+    },
+    {
+      "id": "card-depresion-02-2",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "multiple",
+      "prompt": "¿Qué se recomienda antes de iniciar tratamiento en un episodio depresivo confirmado?",
+      "options": [
+        "Iniciar un ISRS sin más evaluación.",
+        "Descartar depresión bipolar.",
+        "Indicar terapia electroconvulsiva.",
+        "Solicitar una resonancia magnética a todas las personas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La sospecha de bipolaridad debe evaluarse antes de tratar, porque la monoterapia con antidepresivos puede empeorar el curso.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 21] }],
+      "tags": ["Depresión", "bipolaridad"]
+    },
+    {
+      "id": "card-depresion-02-3",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "application",
+      "prompt": "Una persona con depresión refiere que hace meses tuvo una semana de euforia, poco sueño y actividad excesiva. ¿Qué corresponde?",
+      "options": [
+        "Ignorar el dato porque ya pasó.",
+        "Sospechar depresión bipolar y referir al psiquiatra.",
+        "Aumentar la dosis del antidepresivo.",
+        "Diagnosticar trastorno de ansiedad."
+      ],
+      "correctIndex": 1,
+      "explanation": "El antecedente de manía o hipomanía cambia el diagnóstico y el tratamiento. La derivación al psiquiatra es la conducta indicada.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 21] }],
+      "tags": ["Depresión", "aplicación", "bipolaridad"]
+    },
+    {
+      "id": "card-depresion-03-1",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "concept",
+      "prompt": "¿Cuántos síntomas como mínimo exige el CIE-10 para un episodio depresivo?",
+      "answer": "Al menos cuatro de los diez síntomas, incluyendo dos síntomas característicos, durante al menos dos semanas.",
+      "explanation": "Los característicos son ánimo deprimido, pérdida de interés o placer, y disminución de energía o fatigabilidad.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [20] }],
+      "tags": ["Depresión", "CIE-10"]
+    },
+    {
+      "id": "card-depresion-03-2",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "multiple",
+      "prompt": "Un PHQ-9 de 17 en una persona con episodio confirmado corresponde a:",
+      "options": [
+        "Episodio leve.",
+        "Episodio moderado.",
+        "Episodio severo.",
+        "Tamizaje negativo."
+      ],
+      "correctIndex": 1,
+      "explanation": "La banda 15 a 19 corresponde a episodio moderado. En ese caso se recomienda referir al psiquiatra.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 11] }],
+      "tags": ["Depresión", "severidad"]
+    },
+    {
+      "id": "card-depresion-03-3",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "application",
+      "prompt": "Una persona tiene ánimo triste y anhedonia, pero solo dos síntomas en total y duración de cinco días. ¿Qué corresponde?",
+      "options": [
+        "Diagnosticar episodio depresivo leve.",
+        "No cumple criterios de episodio depresivo; evaluar otras causas y seguimiento.",
+        "Iniciar psicoterapia de 20 sesiones.",
+        "Referir a emergencia psiquiátrica de inmediato."
+      ],
+      "correctIndex": 1,
+      "explanation": "Faltan la duración mínima y el número total de síntomas. No se confirma un episodio depresivo con esos datos.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [20] }],
+      "tags": ["Depresión", "aplicación", "diagnóstico"]
+    },
+    {
+      "id": "card-depresion-04-1",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "concept",
+      "prompt": "¿Qué severidades de depresión requieren referencia al psiquiatra?",
+      "answer": "El episodio moderado y el severo.",
+      "explanation": "El episodio leve puede manejarse en el primer nivel; el moderado o severo requiere evaluación especializada.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10, 11] }],
+      "tags": ["Depresión", "derivación"]
+    },
+    {
+      "id": "card-depresion-04-2",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "multiple",
+      "prompt": "¿Cuál de estas situaciones NO corresponde manejar inicialmente en el primer nivel?",
+      "options": [
+        "Episodio depresivo leve sin riesgo.",
+        "Sospecha de depresión bipolar.",
+        "Persona con síntomas leves que prefiere psicoterapia.",
+        "PHQ-9 de 12 sin criterios de gravedad."
+      ],
+      "correctIndex": 1,
+      "explanation": "La sospecha de bipolaridad exige evaluación psiquiátrica para diagnóstico y manejo.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [10] }],
+      "tags": ["Depresión", "derivación"]
+    },
+    {
+      "id": "card-depresion-04-3",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "application",
+      "prompt": "Una persona con depresión leve menciona querer morir y tener un plan. ¿Cuál es la prioridad?",
+      "options": [
+        "Continuar la psicoterapia semanal sin cambios.",
+        "Valorar el riesgo de forma urgente y activar la ruta de seguridad y derivación.",
+        "Aumentar el ejercicio a 60 minutos diarios.",
+        "Esperar la sexta sesión para reevaluar."
+      ],
+      "correctIndex": 1,
+      "explanation": "La ideación con plan es una señal de riesgo que no puede esperar el curso habitual del tratamiento. La seguridad es prioritaria.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12, 21] }],
+      "tags": ["Depresión", "aplicación", "riesgo suicida"]
+    },
+    {
+      "id": "card-depresion-05-1",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "concept",
+      "prompt": "¿Cuál es la psicoterapia de primera elección para el episodio depresivo leve?",
+      "answer": "La terapia cognitivo-conductual. Si no está disponible, la terapia de resolución de problemas.",
+      "explanation": "La TCC tiene recomendación fuerte. La resolución de problemas es la alternativa condicional cuando no hay TCC.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [11] }],
+      "tags": ["Depresión", "psicoterapia"]
+    },
+    {
+      "id": "card-depresion-05-2",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "multiple",
+      "prompt": "¿Cuál es la duración habitual de la psicoterapia en el episodio leve?",
+      "options": [
+        "2 a 4 sesiones.",
+        "8 a 20 sesiones, una o dos veces por semana.",
+        "Una sesión única.",
+        "Siempre 52 sesiones."
+      ],
+      "correctIndex": 1,
+      "explanation": "La GPC establece de 8 a 20 sesiones con frecuencia de una a dos veces por semana, ampliable según necesidad.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [11] }],
+      "tags": ["Depresión", "psicoterapia"]
+    },
+    {
+      "id": "card-depresion-05-3",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "application",
+      "prompt": "Una persona inició psicoterapia con PHQ-9 basal de 12. En la sexta sesión tiene 7. ¿Cómo se interpreta?",
+      "options": [
+        "Respuesta completa y alta inmediata.",
+        "Respuesta parcial, pues la reducción es de 42%.",
+        "No respuesta.",
+        "Empeoramiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La reducción es de 5 puntos sobre 12, aproximadamente 42%, que corresponde a respuesta parcial (20% a 49%).",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [11] }],
+      "tags": ["Depresión", "aplicación", "respuesta"]
+    },
+    {
+      "id": "card-depresion-06-1",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "concept",
+      "prompt": "¿Qué se considera remisión en el episodio depresivo leve?",
+      "answer": "Ausencia de los síntomas característicos durante al menos tres semanas, con hasta tres síntomas residuales.",
+      "explanation": "La remisión no exige ausencia total de cualquier síntoma, pero sí de los característicos durante tres semanas.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "remisión"]
+    },
+    {
+      "id": "card-depresion-06-2",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "multiple",
+      "prompt": "¿Qué reducción del PHQ-9 define una respuesta al tratamiento?",
+      "options": [
+        "10% o más.",
+        "20% o más.",
+        "50% o más.",
+        "80% o más."
+      ],
+      "correctIndex": 2,
+      "explanation": "Respuesta es una disminución de 50% o más del puntaje basal. Entre 20% y 49% es respuesta parcial.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [11] }],
+      "tags": ["Depresión", "respuesta"]
+    },
+    {
+      "id": "card-depresion-06-3",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "application",
+      "prompt": "Una persona alcanzó remisión con psicoterapia. ¿Qué corresponde?",
+      "options": [
+        "Alta con plan de seguimiento y educación sobre señales de recaída.",
+        "Continuar psicoterapia indefinidamente sin evaluación.",
+        "Iniciar un antidepresivo de por vida.",
+        "No volver a evaluar nunca."
+      ],
+      "correctIndex": 0,
+      "explanation": "Si se alcanza remisión, se puede dar de alta con un plan claro de seguimiento y signos de alarma.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "aplicación", "alta"]
+    },
+    {
+      "id": "card-depresion-07-1",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "concept",
+      "prompt": "¿Cuál es el antidepresivo de primera elección en el episodio depresivo leve?",
+      "answer": "Un inhibidor selectivo de la recaptación de serotonina (ISRS).",
+      "explanation": "La GPC sugiere iniciar con ISRS cuando se opta por farmacoterapia, considerando el perfil clínico.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "ISRS"]
+    },
+    {
+      "id": "card-depresion-07-2",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "multiple",
+      "prompt": "¿Qué antidepresivos NO se deben iniciar según la GPC?",
+      "options": [
+        "Sertralina y fluoxetina.",
+        "Clomipramina y amitriptilina.",
+        "Escitalopram y paroxetina.",
+        "Cualquier ISRS."
+      ],
+      "correctIndex": 1,
+      "explanation": "La GPC indica no iniciar con clomipramina o amitriptilina por baja aceptabilidad y riesgo de complicaciones cardíacas.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "antidepresivos"]
+    },
+    {
+      "id": "card-depresion-07-3",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "application",
+      "prompt": "Una persona inició ISRS hace cinco semanas y no muestra respuesta. ¿Qué corresponde?",
+      "options": [
+        "Suspender de inmediato sin evaluación.",
+        "Revisar adherencia y efectos adversos, e incrementar la dosis si corresponde.",
+        "Cambiar a clomipramina.",
+        "Esperar un año antes de ajustar."
+      ],
+      "correctIndex": 1,
+      "explanation": "Entre la semana 4 y 6 se evalúa la respuesta. Si no hay respuesta, se incrementa la dosis y se continúa, tras revisar adherencia y tolerancia.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "aplicación", "ISRS"]
+    },
+    {
+      "id": "card-depresion-08-1",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "concept",
+      "prompt": "¿Cuánto tiempo se mantiene la farmacoterapia después de alcanzar la remisión?",
+      "answer": "Al menos seis meses, y luego se reduce gradualmente hasta el cese.",
+      "explanation": "El mantenimiento busca prevenir recaídas. La suspensión debe ser gradual y con seguimiento.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [13] }],
+      "tags": ["Depresión", "mantenimiento"]
+    },
+    {
+      "id": "card-depresion-08-2",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "multiple",
+      "prompt": "Si hay respuesta en la semana 8 a 12, ¿qué se hace?",
+      "options": [
+        "Suspender el fármaco de inmediato.",
+        "Mantener la misma dosis y evaluar remisión tres semanas después.",
+        "Duplicar la dosis sin control.",
+        "Cambiar de diagnóstico."
+      ],
+      "correctIndex": 1,
+      "explanation": "La respuesta sostenida se consolida manteniendo la dosis. La remisión se evalúa tres semanas después.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12] }],
+      "tags": ["Depresión", "seguimiento"]
+    },
+    {
+      "id": "card-depresion-08-3",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "application",
+      "prompt": "Una persona completó 12 semanas de ISRS a dosis adecuada y no alcanza remisión. ¿Qué corresponde?",
+      "options": [
+        "Continuar igual indefinidamente.",
+        "Reevaluar patología subyacente, adherencia y severidad, y derivar al psiquiatra.",
+        "Suspender sin plan.",
+        "Iniciar amitriptilina."
+      ],
+      "correctIndex": 1,
+      "explanation": "La falta de remisión a las 12 semanas obliga a reconsiderar el diagnóstico y derivar. No se debe insistir sin reevaluar.",
+      "sourceRefs": [{ "sourceId": "src-depresion", "pages": [12, 13] }],
+      "tags": ["Depresión", "aplicación", "derivación"]
+    }
+  ]
+}

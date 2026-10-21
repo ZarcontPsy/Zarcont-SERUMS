@@ -24,7 +24,7 @@ window.Adj = (function () {
   function line(p) {
     var arr = of(p); if (!arr.length) return '';
     var a = arr[0];
-    return '<div class="mini adjmini">📋 <b>Adjudicación oficial:</b> ' + window.esc(a[0]) + ' · <b>' + window.esc(texto(a)) + '</b>' +
+    return '<div class="mini adjmini"><b>Adjudicación oficial:</b> ' + window.esc(a[0]) + ' · <b>' + window.esc(texto(a)) + '</b>' +
       (arr.length > 1 ? ' (+' + (arr.length - 1) + ' más)' : '') + '</div>';
   }
   function rows(p) {

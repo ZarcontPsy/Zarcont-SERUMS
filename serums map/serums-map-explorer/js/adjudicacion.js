@@ -7,7 +7,7 @@
 'use strict';
 window.AdjCenter = (function () {
   var S = { filtro: 'todas', q: '', prof: '', sort: 'est', page: 1, selId: null };
-  var PER = 50, wired = false;
+  var PER = 12, wired = false;
 
   /* ---------- utilidades ---------- */
   function all() { return window.App.allPlazas(); }
@@ -56,7 +56,7 @@ window.AdjCenter = (function () {
           window.App.setAdj(p, false);
           setBloq(p, true);
           window.App.stateChanged();
-          window.toast('Adjudicación revertida y plaza bloqueada 🚫.', 6000, { label: 'Deshacer', fn: function () { setBloq(p, false); window.App.setAdj(p, true); window.App.stateChanged(); } });
+          window.toast('Adjudicación revertida y plaza bloqueada.', 6000, { label: 'Deshacer', fn: function () { setBloq(p, false); window.App.setAdj(p, true); window.App.stateChanged(); } });
           window.App.notify('Revertida y bloqueada: ' + p.establecimiento);
         }
       });
@@ -64,7 +64,7 @@ window.AdjCenter = (function () {
     }
     setBloq(p, true);
     window.App.stateChanged();
-    window.toast('🚫 Plaza bloqueada: no puede ser seleccionada mientras siga bloqueada.', 6000, { label: 'Deshacer', fn: function () { setBloq(p, false); window.App.stateChanged(); } });
+    window.toast('Plaza bloqueada: no puede ser seleccionada mientras siga bloqueada.', 6000, { label: 'Deshacer', fn: function () { setBloq(p, false); window.App.stateChanged(); } });
     window.App.notify('Bloqueada: ' + p.establecimiento);
   }
 
@@ -204,94 +204,183 @@ window.AdjCenter = (function () {
   function elegirPlaza(p) {
     if (!p) { window.toast('Plaza no encontrada en el conjunto activo.'); return; }
     S.selId = p.id;
-    var q = document.getElementById('adjQ');
-    if (q) q.value = p.establecimiento + ' (' + p.codigo + ')';
     cierraSug();
-    selPlazaInfo();
     var per = document.getElementById('adjPersona');
-    if (per) per.focus();
+    if (per && !per.disabled && !per.value) per.value = window.Store.get('adj_persona', '') || '';
+    selPlazaInfo();
+    if (window.innerWidth <= 780) {
+      setTimeout(function () {
+        var ins = document.getElementById('adjInspector');
+        if (ins && ins.scrollIntoView) ins.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }, 40);
+    }
+  }
+
+  function current() { return S.selId == null ? null : window.App.byId(S.selId); }
+
+  function focusPersona() {
+    var f = document.getElementById('adjPersona');
+    if (f && !f.disabled) {
+      f.focus();
+      f.classList.add('need');
+      setTimeout(function () { f.classList.remove('need'); }, 1600);
+    }
   }
   function cierraSug() {
     var r = document.getElementById('adjSug');
     if (r) { r.classList.remove('open'); r.innerHTML = ''; }
   }
 
-  /* tarjeta de la plaza elegida dentro del formulario (avisos de duplicado/bloqueo) */
+  /* tarjeta de la plaza elegida dentro de la ficha (avisos de duplicado/bloqueo) */
   function selPlazaInfo() {
-    var box = document.getElementById('adjSelCard'); if (!box) return;
-    var p = S.selId == null ? null : window.App.byId(S.selId);
-    if (!p) { box.innerHTML = ''; S.selId = null; return; }
-    var adj = window.App.isAdj(p), blo = window.App.isBloq(p), info = window.App.adjInfo(p);
-    var aviso = '';
-    if (adj) {
-      aviso = '<div class="note" style="color:var(--warn)">⚠ Esta plaza <b>ya está adjudicada por ti</b>' +
-        (info && info.ts ? ' el ' + fmtDT(info.ts) : '') + (info && info.persona ? ' por <b>' + window.esc(info.persona) + '</b>' : '') +
-        '. Para volver a registrarla, revierte primero la adjudicación en el listado.</div>';
-    } else if (blo) {
-      aviso = '<div class="note" style="color:var(--warn)">⚠ Esta plaza está <b>bloqueada</b>. Al registrar la adjudicación se retirará el bloqueo (te pediremos confirmación).</div>';
+    var box = document.getElementById('adjSelCard');
+    var empty = document.getElementById('adjEmpty');
+    var body = document.getElementById('adjFormBody');
+    if (!box) return;
+    var p = current();
+    var ins = document.getElementById('adjInspector');
+    if (ins) ins.classList.toggle('has-sel', !!p);
+    if (!p) {
+      S.selId = null;
+      if (empty) empty.hidden = false;
+      if (body) body.hidden = true;
+      box.innerHTML = '';
+      return;
     }
-    box.innerHTML = '<div class="adjitem' + (adj ? ' st-adj' : blo ? ' st-bloq' : '') + '" style="margin:0">' +
-      '<div class="h"><b>' + window.esc(p.establecimiento) + '</b>' +
-      '<span class="mini">' + window.esc(p.profesion) + ' · código ' + window.esc(p.codigo) + '</span></div>' +
-      '<div class="meta">📍 ' + window.esc([p.distrito, p.provincia, p.departamento].filter(Boolean).join(' · ')) + estTagTxt(p) + '</div>' + aviso + '</div>';
-  }
-  function estTagTxt(p) {
-    if (window.App.isAdj(p)) return ' · ✅ Adjudicada por ti';
-    if (window.App.isBloq(p)) return ' · 🚫 Bloqueada';
-    return ' · 🟢 Disponible';
+    if (empty) empty.hidden = true;
+    if (body) body.hidden = false;
+    var adj = window.App.isAdj(p), blo = window.App.isBloq(p), fav = window.App.isFav(p), info = window.App.adjInfo(p);
+    var tag = adj ? '<span class="tag ok">✓ Adjudicada por ti</span>'
+      : blo ? '<span class="tag warn">✕ Bloqueada</span>'
+      : '<span class="tag">● Disponible</span>';
+    var loc = window.esc([p.distrito, p.provincia, p.departamento].filter(Boolean).join(' · ')) +
+      (p.lat == null ? ' · pendiente de geolocalización' : '');
+    var official = window.Adj.line(p);
+    if (!official) official = '<div class="mini adjmini">Sin registro en el listado oficial 2026-I.</div>';
+    var record = '';
+    if (adj) {
+      record = '<div class="adjrecord">' +
+        '<div class="adjrecordhead"><b>Tu registro</b><span class="mini">' + fmtDT(info && info.ts) + '</span></div>' +
+        '<div class="mini">Persona: <b>' + (info && info.persona ? window.esc(info.persona) : 'sin nombre registrado') + '</b>' +
+        (info && info.obs ? ' · ' + window.esc(info.obs) : '') + '</div>' +
+        '<button type="button" class="btn sm" data-arev="' + p.id + '">Revertir adjudicación</button></div>';
+    } else if (blo) {
+      record = '<div class="note adjnote">Esta plaza está bloqueada. Al registrar la adjudicación se retirará el bloqueo (se pedirá una confirmación).</div>';
+    }
+    box.innerHTML =
+      '<div class="adjinsp-head"><div class="adjinsp-title">' + tag +
+        '<h2>' + window.esc(p.establecimiento) + '</h2>' +
+        '<div class="mini">' + window.esc(p.profesion) + ' · código ' + window.esc(p.codigo) + '</div>' +
+      '</div></div>' +
+      '<div class="mini adjloc">' + loc + '</div>' +
+      '<div class="adjofficial">' + official + '</div>' + record;
+    var g = document.getElementById('adjGuardar');
+    if (g) {
+      g.disabled = adj;
+      g.textContent = adj ? 'Ya adjudicada' : (blo ? 'Desbloquear y adjudicar' : 'Registrar adjudicación');
+    }
+    var f = document.getElementById('adjFav');
+    if (f) {
+      f.classList.toggle('on', fav);
+      f.innerHTML = '<span aria-hidden="true">' + (fav ? '★' : '☆') + '</span> Favorita';
+      f.setAttribute('aria-pressed', String(fav));
+    }
+    var b = document.getElementById('adjBloq');
+    if (b) {
+      b.classList.toggle('on', blo);
+      b.innerHTML = '<span aria-hidden="true">✕</span> ' + (blo ? 'Desbloquear' : 'Bloquear');
+      b.setAttribute('aria-pressed', String(blo));
+    }
+    var pe = document.getElementById('adjPersona');
+    if (pe) {
+      pe.disabled = adj;
+      if (adj && info && info.persona) pe.value = info.persona;
+      else if (!pe.value) pe.value = window.Store.get('adj_persona', '') || '';
+    }
+    var rev = box.querySelector('[data-arev]');
+    if (rev) rev.onclick = function () { revertir(p); };
+    var rows = document.querySelectorAll('#adjList .adjrowcard[data-select]');
+    Array.prototype.forEach.call(rows, function (r) {
+      r.classList.toggle('sel', Number(r.getAttribute('data-select')) === p.id);
+    });
   }
 
-  /* ---------- registro: guardar ---------- */
+  /* ---------- registro: guardar en un paso ---------- */
   function registrar() {
-    var p = S.selId == null ? null : window.App.byId(S.selId);
+    var p = current();
     var msg = document.getElementById('adjMsg');
-    function fail(t) { if (msg) msg.innerHTML = '<span class="mini" style="color:var(--err)">' + window.esc(t) + '</span>'; window.toast(t); }
-    if (!p) { fail('Elige primero una plaza del buscador.'); return; }
-    var persona = (document.getElementById('adjPersona') || {}).value || '';
-    persona = String(persona).trim();
-    if (persona.length < 2) {
-      document.getElementById('adjPersona').focus();
-      fail('Indica el nombre de la persona que adjudica la plaza.');
+    function fail(t) {
+      if (msg) msg.innerHTML = '<span class="adjfail">' + window.esc(t) + '</span>';
+      window.toast(t);
+    }
+    if (!p) { fail('Selecciona una plaza del listado para empezar.'); return; }
+    var pe = document.getElementById('adjPersona');
+    var persona = String(pe ? pe.value : '').trim();
+    if (persona.length < 2) { focusPersona(); fail('Indica el nombre de la persona que adjudica la plaza.'); return; }
+    if (window.App.isAdj(p)) {
+      fail('Esta plaza ya está adjudicada por ti. Revierte la marca para registrarla de nuevo.');
+      selPlazaInfo();
       return;
     }
     var obs = String((document.getElementById('adjObs') || {}).value || '').trim();
     var fv = String((document.getElementById('adjFecha') || {}).value || '').trim();
     var fecha = fv ? new Date(fv).getTime() : Date.now();
-    var yaAdj = window.App.isAdj(p), blo = window.App.isBloq(p);
-    if (yaAdj) {
-      var ya = window.App.adjInfo(p);
-      fail('Duplicado: esta plaza ya está adjudicada por ti' +
-        (ya && ya.persona ? ' (por ' + ya.persona + ')' : '') + '. Revierte esa adjudicación en el listado antes de registrar otra.');
+    if (!fecha || isNaN(fecha)) fecha = Date.now();
+    var blo = window.App.isBloq(p);
+    function guardar() {
+      window.App.setAdj(p, true, { persona: persona, obs: obs, fecha: fecha });
+      if (window.App.isAdj(p)) {
+        window.Store.set('adj_persona', persona);
+        if (msg) msg.innerHTML = '<span class="adjok">✓ Registrada. El nombre queda listo para la siguiente plaza.</span>';
+        var ob = document.getElementById('adjObs'); if (ob) ob.value = '';
+        var fe = document.getElementById('adjFecha'); if (fe) fe.value = localDT();
+        selPlazaInfo();
+      } else {
+        fail('No se pudo registrar: la plaza cambió de estado (¿otra pestaña?). Revisa e reintenta.');
+      }
+    }
+    if (blo) {
+      window.App.askConfirm({
+        title: 'La plaza está bloqueada',
+        html: '<div class="mini"><b>' + window.esc(p.establecimiento) + '</b> · ' + window.esc(p.profesion) + '</div>' +
+          '<div class="note">Se retirará el bloqueo y se guardará la adjudicación con el nombre indicado.</div>',
+        ok: 'Sí, desbloquear y adjudicar',
+        onOk: function () {
+          setBloq(p, false);
+          window.App.stateChanged();
+          guardar();
+        }
+      });
       return;
     }
-    var html = '<div class="mini"><b>' + window.esc(p.establecimiento) + '</b> · ' + window.esc(p.profesion) + '<br>Código ' + window.esc(p.codigo) +
-      ' · 📍 ' + window.esc([p.distrito, p.departamento].filter(Boolean).join(', ')) + '</div>' +
-      '<div class="mini" style="margin-top:6px">Persona: <b>' + window.esc(persona) + '</b><br>Fecha y hora: <b>' + fmtDT(fecha) + '</b>' +
-      (obs ? '<br>Observaciones: ' + window.esc(obs) : '') + '</div>' +
-      (blo ? '<div class="note">La plaza está bloqueada: al registrar se retirará el bloqueo.</div>' : '') +
-      '<div class="note">Se guardará en este navegador y se reflejará en el mapa, tarjetas y esta sección.</div>';
-    window.App.askConfirm({
-      title: '¿Registrar la adjudicación?',
-      html: html,
-      ok: 'Sí, registrar adjudicación',
-      remember: true,
-      onOk: function () {
-        if (blo) setBloq(p, false);
-        window.App.setAdj(p, true, { persona: persona, obs: obs, fecha: fecha });
-        if (window.App.isAdj(p)) {
-          if (msg) msg.innerHTML = '';
-          window.toast('📝 Adjudicación registrada: ' + p.establecimiento + ' — ' + persona, 7000,
-            { label: 'Deshacer', fn: function () { window.App.setAdj(p, false); } });
-          window.App.notify('Adjudicación registrada: ' + p.establecimiento + ' — ' + persona, 'ok');
-          limpiarForm(true);
-        } else {
-          fail('No se pudo registrar: la plaza cambió de estado (¿otra pestaña?). Revisa la sección y reintenta.');
-        }
-      }
-    });
+    guardar();
   }
+
+  function quickAdj(p) {
+    if (!p) return;
+    if (window.App.isAdj(p)) { elegirPlaza(p); return; }
+    if (window.App.isBloq(p)) {
+      elegirPlaza(p);
+      window.toast('La plaza está bloqueada; desbloquéala desde la ficha para adjudicarla.');
+      return;
+    }
+    var pe = document.getElementById('adjPersona');
+    var persona = String(pe && !pe.disabled ? pe.value : '').trim() ||
+      String(window.Store.get('adj_persona', '') || '').trim();
+    if (!persona) {
+      elegirPlaza(p);
+      focusPersona();
+      window.toast('Escribe el nombre de la persona y pulsa Registrar adjudicación.');
+      return;
+    }
+    window.App.setAdj(p, true, { persona: persona, fecha: Date.now() });
+    if (window.App.isAdj(p)) {
+      window.Store.set('adj_persona', persona);
+      elegirPlaza(p);
+    }
+  }
+
   function limpiarForm(mantenerPersona) {
-    var q = document.getElementById('adjQ'); if (q) q.value = '';
     var pe = document.getElementById('adjPersona');
     if (pe && !mantenerPersona) pe.value = '';
     var fe = document.getElementById('adjFecha'); if (fe) fe.value = localDT();
@@ -335,9 +424,9 @@ window.AdjCenter = (function () {
     var c = counts();
     var opts = [
       { k: 'todas', t: 'Todas', n: c.total },
-      { k: 'disponibles', t: '🟢 Disponibles', n: c.disponibles },
-      { k: 'adjudicadas', t: '✅ Adjudicadas', n: c.adjudicadas },
-      { k: 'bloqueadas', t: '🚫 Bloqueadas', n: c.bloqueadas },
+      { k: 'disponibles', t: '● Disponibles', n: c.disponibles },
+      { k: 'adjudicadas', t: '✓ Adjudicadas', n: c.adjudicadas },
+      { k: 'bloqueadas', t: '✕ Bloqueadas', n: c.bloqueadas },
       { k: 'favoritas', t: '★ Favoritas', n: c.favoritas }
     ];
     el.innerHTML = opts.map(function (o) {
@@ -347,9 +436,9 @@ window.AdjCenter = (function () {
   }
 
   function tagEstado(p) {
-    if (window.App.isBloq(p)) return '<span class="tag st-bloq" title="Bloqueada: no puede ser seleccionada mientras siga bloqueada">🚫 Bloqueada</span>';
-    if (window.App.isAdj(p)) return '<span class="tag st-adj" title="Adjudicada por ti">✅ Adjudicada</span>';
-    return '<span class="tag st-disp" title="Todavía puede ser elegida">🟢 Disponible</span>';
+    if (window.App.isBloq(p)) return '<span class="tag warn" title="Bloqueada: no puede ser seleccionada mientras siga bloqueada">✕ Bloqueada</span>';
+    if (window.App.isAdj(p)) return '<span class="tag ok" title="Adjudicada por ti">✓ Adjudicada</span>';
+    return '<span class="tag" title="Todavía puede ser elegida">● Disponible</span>';
   }
 
   function renderList() {
@@ -360,9 +449,11 @@ window.AdjCenter = (function () {
     if (S.page > paginas) S.page = paginas;
     var ini = (S.page - 1) * PER;
     var pag = arr.slice(ini, ini + PER);
+    var cnt = document.getElementById('adjListCount');
+    if (cnt) cnt.innerHTML = window.fmtNum(total) + ' plaza' + (total === 1 ? '' : 's');
     el.innerHTML = total ? pag.map(rowHtml).join('')
       : '<div class="empty">Sin plazas con este filtro.<br><span class="mini">Cambia el filtro o la búsqueda. ' +
-        (S.filtro === 'bloqueadas' ? 'Bloquea una plaza con 🚫 en el listado «Todas».' : 'Usa ✅ para adjudicar o ★ para guardar favoritas.') + '</span></div>';
+        (S.filtro === 'bloqueadas' ? 'Bloquea una plaza desde su ficha para verla aquí.' : 'Selecciona una plaza para adjudicarla o guardarla en favoritas.') + '</span></div>';
     var pg = document.getElementById('adjPager');
     if (pg) pg.innerHTML = '<span class="mini" style="align-self:center">Mostrando ' + (total ? (ini + 1) : 0) + '–' + (ini + pag.length) + ' de <b>' + window.fmtNum(total) + '</b></span>' +
       '<span style="flex:1"></span>' +
@@ -377,29 +468,33 @@ window.AdjCenter = (function () {
   function rowHtml(p) {
     var adj = window.App.isAdj(p), blo = window.App.isBloq(p), fav = window.App.isFav(p);
     var info = window.App.adjInfo(p);
-    var sub = '';
+    var loc = window.esc([p.distrito, p.provincia, p.departamento].filter(Boolean).join(' · ')) +
+      (p.lat == null ? ' · pendiente de geolocalización' : '');
+    var rec = '';
     if (adj) {
-      sub = '<div class="meta">✅ Adjudicada por ti' + (info && info.ts ? ' · ' + fmtDT(info.ts) : '') +
-        (info && info.persona ? ' · <b>' + window.esc(info.persona) + '</b>' : '') +
-        (info && info.obs ? ' · ' + window.esc(info.obs) : '') + '</div>';
-    } else if (blo) {
-      var ib = (window.Store.get('bloqueadas', {}) || {})[keyOf(p)];
-      sub = '<div class="meta">🚫 Bloqueada' + (ib && ib.ts ? ' desde ' + fmtDT(ib.ts) : '') + ': no puede ser seleccionada.</div>';
+      rec = '<div class="mini adjrec">Registrada por <b>' + (info && info.persona ? window.esc(info.persona) : 'sin nombre') + '</b>' +
+        (info && info.ts ? ' · ' + fmtDT(info.ts) : '') + '</div>';
     }
-    return '<div class="adjitem' + (blo ? ' st-bloq' : adj ? ' st-adj' : '') + '">' +
-      '<div class="h"><b>' + window.esc(p.establecimiento) + '</b>' +
-      '<span class="mini">' + window.esc(p.profesion) + ' · código ' + window.esc(p.codigo) + '</span></div>' +
-      '<div class="meta">📍 ' + window.esc([p.distrito, p.provincia, p.departamento].filter(Boolean).join(' · ')) +
-      (p.lat == null ? ' · ⏳ pendiente de geolocalización' : '') + '</div>' +
-      sub + window.Adj.line(p) +
-      '<div class="tags">' + tagEstado(p) + (fav ? '<span class="tag favtag">★ Favorita</span>' : '') + '</div>' +
-      '<div class="acts">' +
-      '<button type="button" class="btn sm' + (fav ? ' on' : '') + '" data-a="fav" data-id="' + p.id + '" title="' + (fav ? 'Quitar de favoritos' : 'Marcar como favorita') + '" aria-pressed="' + fav + '">★</button>' +
-      '<button type="button" class="btn sm' + (adj ? ' on' : '') + '" data-a="adj" data-id="' + p.id + '" title="' + (adj ? 'Revertir adjudicación (pide confirmación)' : 'Adjudicar (pide confirmación)') + '" aria-pressed="' + adj + '">✅</button>' +
-      '<button type="button" class="btn sm' + (blo ? ' on' : '') + '" data-a="bloq" data-id="' + p.id + '" title="' + (blo ? 'Desbloquear (pide confirmación)' : 'Bloquear') + '" aria-pressed="' + blo + '">🚫</button>' +
-      '<button type="button" class="btn sm" data-a="newreg" data-id="' + p.id + '" title="Abrir el formulario con esta plaza">📝 Registrar</button>' +
-      '<button type="button" class="btn sm" data-a="detail" data-id="' + p.id + '" title="Ver ficha completa">👁 Ficha</button>' +
-      '</div></div>';
+    var official = window.Adj.line(p);
+    var primary = adj
+      ? '<button type="button" class="btn sm" data-a="select" data-id="' + p.id + '">Ver registro</button>'
+      : '<button type="button" class="btn sm primary" data-a="quickadj" data-id="' + p.id + '" title="Adjudicar con el nombre actual o abrir la ficha">Adjudicar</button>';
+    return '<article class="adjrowcard' + (adj ? ' is-adj' : '') + (blo ? ' is-bloq' : '') + (S.selId === p.id ? ' sel' : '') + '" data-select="' + p.id + '">' +
+      '<div class="adjrowtop">' +
+        '<button type="button" class="adjrowopen" data-select="' + p.id + '" aria-label="Abrir ficha de ' + window.esc(p.establecimiento) + '">' +
+          '<b>' + window.esc(p.establecimiento) + '</b>' +
+          '<span class="mini">' + window.esc(p.profesion) + ' · código ' + window.esc(p.codigo) + '</span>' +
+        '</button>' + tagEstado(p) +
+      '</div>' +
+      '<div class="mini adjloc">' + loc + '</div>' +
+      rec + official +
+      '<div class="adjrowbottom"><span class="mini">' + window.fmtNum(p.n_plazas || 1) + ' vacante' + ((p.n_plazas || 1) === 1 ? '' : 's') + '</span>' +
+        '<div class="acts">' + primary +
+          '<button type="button" class="btn sm' + (fav ? ' on' : '') + '" data-a="fav" data-id="' + p.id + '" title="' + (fav ? 'Quitar de favoritos' : 'Marcar como favorita') + '" aria-label="' + (fav ? 'Quitar de favoritos' : 'Marcar como favorita') + '" aria-pressed="' + fav + '">' + (fav ? '★' : '☆') + '</button>' +
+          '<button type="button" class="btn sm' + (blo ? ' on' : '') + '" data-a="bloq" data-id="' + p.id + '" title="' + (blo ? 'Desbloquear' : 'Bloquear') + '" aria-label="' + (blo ? 'Desbloquear' : 'Bloquear') + '" aria-pressed="' + blo + '">✕</button>' +
+        '</div>' +
+      '</div>' +
+    '</article>';
   }
 
   function renderMid() { renderSegs(); renderList(); }
@@ -422,10 +517,10 @@ window.AdjCenter = (function () {
     var bloqs = window.Store.get('bloqueadas', {}) || {};
     var nBloq = Object.keys(bloqs).length;
     var html = '<div class="rowbtns" style="flex-wrap:wrap">' +
-      '<button type="button" class="btn sm" id="adjCsv">⬇ CSV del registro</button>' +
-      '<button type="button" class="btn sm" id="adjJson">⬇ JSON de estados (favoritas + adjudicadas + bloqueadas)</button>' +
-      '<label class="btn sm" style="cursor:pointer">⬆ Importar estados JSON<input type="file" id="adjJsonIn" accept=".json,application/json" style="display:none"></label>' +
-      (regs.length || nBloq ? '<button type="button" class="btn sm" id="adjVaciar">🗑 Vaciar adjudicadas y bloqueadas</button>' : '') + '</div>';
+      '<button type="button" class="btn sm" id="adjCsv">Descargar CSV</button>' +
+      '<button type="button" class="btn sm" id="adjJson">Exportar JSON</button>' +
+      '<label class="btn sm" style="cursor:pointer">Importar JSON<input type="file" id="adjJsonIn" accept=".json,application/json" style="display:none"></label>' +
+      (regs.length || nBloq ? '<button type="button" class="btn sm" id="adjVaciar">Vaciar adjudicadas y bloqueadas</button>' : '') + '</div>';
     html += '<div class="mini" style="margin-top:8px"><b>' + window.fmtNum(regs.length) + '</b> adjudicaciones registradas por ti' +
       (nBloq ? ' · <b>' + window.fmtNum(nBloq) + '</b> bloqueos' : '') + '. El registro vive solo en este navegador.</div>';
     if (nBloq) {
@@ -436,15 +531,15 @@ window.AdjCenter = (function () {
           return '<tr><td>' + window.esc(p.establecimiento) + '<div class="mini">' + window.esc(p.profesion) + ' · ' + window.esc(p.codigo) + '</div></td>' +
             '<td>' + window.esc([p.distrito, p.departamento].filter(Boolean).join(', ')) + '</td>' +
             '<td>' + fmtDT((bloqs[keyOf(p)] || {}).ts) + '</td>' +
-            '<td><button type="button" class="btn sm" data-bloq-del="' + p.id + '" title="Desbloquear (pide confirmación)">🔓</button></td></tr>';
-        }).join('') + '</table>' + (nBloq > 12 ? '<div class="mini">…y ' + (nBloq - 12) + ' más (que se ven con el filtro 🚫 del listado).</div>' : '');
+            '<td><button type="button" class="btn sm" data-bloq-del="' + p.id + '" title="Desbloquear (pide confirmación)">Desbloquear</button></td></tr>';
+        }).join('') + '</table>' + (nBloq > 12 ? '<div class="mini">…y ' + (nBloq - 12) + ' más (que se ven con el filtro de bloqueadas).</div>' : '');
     }
     html += regs.length ? '<table class="dt" style="margin-top:10px"><tr><th>Fecha y hora</th><th>Plaza</th><th>Persona</th><th>Observaciones</th><th></th></tr>' +
       regs.slice(0, 30).map(function (r) {
         return '<tr><td>' + fmtDT(r.ts) + '</td>' +
           '<td>' + window.esc(r.p.establecimiento) + '<div class="mini">' + window.esc(r.p.profesion) + ' · ' + window.esc(r.p.codigo) + '</div></td>' +
           '<td>' + window.esc(r.persona) + '</td><td>' + window.esc(r.obs || '—') + '</td>' +
-          '<td><button type="button" class="btn sm" data-rev="' + r.p.id + '" title="Revertir adjudicación (pide confirmación)">↩</button></td></tr>';
+          '<td><button type="button" class="btn sm" data-rev="' + r.p.id + '" title="Revertir adjudicación (pide confirmación)">Revertir</button></td></tr>';
       }).join('') + '</table>' + (regs.length > 30 ? '<div class="mini">…y ' + (regs.length - 30) + ' más.</div>' : '')
       : '<div class="empty" style="margin-top:10px">Sin adjudicaciones registradas todavía.</div>';
     el.innerHTML = html;
@@ -481,7 +576,7 @@ window.AdjCenter = (function () {
     window.App.askConfirm({
       title: '¿Vaciar estados de seguimiento?',
       html: '<div class="mini">Se quitarán <b>' + window.fmtNum(window.App.adjCount()) + '</b> adjudicaciones y <b>' + window.fmtNum(window.App.bloqCount()) + '</b> bloqueos.</div>' +
-            '<div class="note">Las ★ favoritas no se tocan. Acción reversible solo regenerando los estados (usa antes ⬇ JSON si quieres respaldo).</div>',
+            '<div class="note">Las favoritas no se tocan. Si quieres respaldo, usa antes Exportar JSON en el registro.</div>',
       ok: 'Sí, vaciar',
       onOk: function () {
         window.Store.set('adjudicadas', {}); window.Store.set('bloqueadas', {});
@@ -540,8 +635,8 @@ window.AdjCenter = (function () {
       }
       window.App.askConfirm({
         title: '¿Importar estados?',
-        html: '<div class="mini"><b>' + window.esc(f.name) + '</b><br>★ ' + ((d.favoritas || []).length) + ' favoritas · ✅ ' + Object.keys(d.adjudicadas || {}).length +
-              ' adjudicadas · 🚫 ' + Object.keys(d.bloqueadas || {}).length + ' bloqueadas.</div>' +
+        html: '<div class="mini"><b>' + window.esc(f.name) + '</b><br>' + ((d.favoritas || []).length) + ' favoritas · ' + Object.keys(d.adjudicadas || {}).length +
+              ' adjudicadas · ' + Object.keys(d.bloqueadas || {}).length + ' bloqueadas.</div>' +
               '<div class="note">Se fusiona con lo que ya tienes: si hay conflicto, prevalece la marca más reciente. Los favoritos se unen.</div>',
         ok: 'Sí, importar y fusionar',
         onOk: function () {
@@ -569,9 +664,9 @@ window.AdjCenter = (function () {
   /* ---------- nota de sincronización ---------- */
   function renderSyncNote() {
     var el = document.getElementById('adjSyncNote'); if (!el) return;
-    el.innerHTML = 'Supervisa y gestiona tus estados de plaza <b>sin mapa</b>: disponible · ★ favorita · ✅ adjudicada · 🚫 bloqueada. ' +
-      'Los estados se guardan <b>solo en este navegador</b>; las demás pestañas del mismo navegador se actualizan al instante. ' +
-      'La <b>adjudicación compartida en tiempo real entre equipos no está disponible</b> (no hay servidor integrado): usa ⬇ JSON para compartir estados por archivo.';
+    el.innerHTML = 'Gestiona tus marcas locales: disponible · ★ favorita · ✓ adjudicada · ✕ bloqueada. ' +
+      'Recuerda: no hay servidor integrado de sincronización; se guardan <b>solo en este navegador</b> y se sincronizan entre sus pestañas. ' +
+      'No modifican la adjudicación oficial 2026-I; para compartirlas, usa Exportar JSON en el registro.';
   }
 
   /* ---------- funciones de estado público ---------- */
@@ -604,29 +699,23 @@ window.AdjCenter = (function () {
     var lst = document.getElementById('adjList');
     if (lst) lst.addEventListener('click', function (e) {
       var b = e.target.closest ? e.target.closest('[data-a]') : null;
-      if (!b) return;
-      var p = window.App.byId(Number(b.getAttribute('data-id')));
-      var a = b.getAttribute('data-a');
-      if (!p) return;
-      if (a === 'fav') window.App.toggleFav(p);
-      else if (a === 'adj') window.App.toggleAdj(p);   // confirmación breve integrada en App
-      else if (a === 'bloq') toggleBloq(p);
-      else if (a === 'newreg') { abrirFormCon(p); }
-      else if (a === 'detail') window.App.openDetail(p.id);
-      renderMid();
+      if (b) {
+        var p = window.App.byId(Number(b.getAttribute('data-id')));
+        var a = b.getAttribute('data-a');
+        if (!p) return;
+        if (a === 'fav') { window.App.toggleFav(p); selPlazaInfo(); }
+        else if (a === 'bloq') toggleBloq(p);
+        else if (a === 'quickadj') quickAdj(p);
+        else if (a === 'select') elegirPlaza(p);
+        else if (a === 'detail') window.App.openDetail(p.id);
+        return;
+      }
+      var row = e.target.closest ? e.target.closest('[data-select]') : null;
+      if (!row) return;
+      var rp = window.App.byId(Number(row.getAttribute('data-select')));
+      if (rp) elegirPlaza(rp);
     });
 
-    /* formulario de registro: se construye y cablea en renderForm (una vez;
-       wire() solo atiende elementos estáticos del HTML) */
-    var sug = document.getElementById('adjSug');
-    if (sug) sug.addEventListener('keydown', function (e) {
-      if (e.key === 'ArrowDown' || e.key === 'ArrowUp') {
-        var os = Array.prototype.slice.call(sug.querySelectorAll('[data-sug]'));
-        var i = os.indexOf(document.activeElement);
-        if (e.key === 'ArrowDown' && i < os.length - 1) { e.preventDefault(); os[i + 1].focus(); }
-        if (e.key === 'ArrowUp') { e.preventDefault(); i > 0 ? os[i - 1].focus() : document.getElementById('adjQ').focus(); }
-      }
-    });
     var vmap = document.getElementById('adjToMap');
     if (vmap) vmap.onclick = function () { window.App.go('map'); };
 
@@ -641,10 +730,7 @@ window.AdjCenter = (function () {
   }
 
   function abrirFormCon(p) {
-    var box = document.getElementById('adjRegBox');
-    if (box) box.open = true;
     elegirPlaza(p);
-    box && box.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }
 
   /* ---------- render general (se llama al entrar y en cada cambio de estado) ---------- */
@@ -669,36 +755,45 @@ window.AdjCenter = (function () {
     renderMid();
     renderSyncNote();
     renderHist();
+    selPlazaInfo();
   }
 
-  /* el formulario se construye una vez (conserva lo escrito entre refrescos) */
+  /* la ficha se construye una vez (conserva lo escrito entre refrescos) */
   function renderForm() {
     var el = document.getElementById('adjForm'); if (!el || el.hasAttribute('data-ready')) return;
     el.setAttribute('data-ready', '1');
     el.innerHTML =
-      '<div class="mini">Escribe el nombre (o el código) de la plaza y elige una de las <b>' + window.fmtNum(all().length) +
-      ' plazas del conjunto activo</b>. Los estados ★ / ✅ / 🚫 se guardan por separado; una plaza favorita no implica adjudicación.</div>' +
-      '<div class="sugwrap" style="margin-top:8px"><input type="text" id="adjQ" placeholder="Nombre o código de la plaza…" autocomplete="off" role="combobox" aria-expanded="false" aria-controls="adjSug">' +
-      '<div id="adjSug" class="sugbox" role="listbox"></div></div>' +
-      '<div id="adjSelCard"></div>' +
-      '<div class="frow"><span>Persona que adjudica *</span><input type="text" id="adjPersona" placeholder="Ej: María Quispe — IPRESS / comisión SERUMS"></div>' +
-      '<div class="frow"><span>Fecha y hora del registro</span><input type="datetime-local" id="adjFecha" value="' + localDT() + '"></div>' +
-      '<div class="frow"><span>Observaciones (opcional)</span><textarea id="adjObs" rows="2" placeholder="Nota de la sesión, acta, resolución N°…"></textarea></div>' +
-      '<div class="rowbtns" style="margin-top:8px"><button type="button" class="btn primary" id="adjGuardar">✅ Registrar adjudicación</button>' +
-      '<button type="button" class="btn" id="adjLimpiar">Limpiar formulario</button><span id="adjMsg"></span></div>';
-    document.getElementById('adjQ').addEventListener('input', function () {
-      S.selId = null; selPlazaInfo();
-      muestraSugerencias(document.getElementById('adjSug'), sugerencias(this.value));
-    });
-    document.getElementById('adjQ').addEventListener('keydown', function (e) {
-      var r = document.getElementById('adjSug'), opts = r ? r.querySelectorAll('[data-sug]') : [];
-      if (e.key === 'ArrowDown' && opts.length) { e.preventDefault(); opts[0].focus(); }
-      else if (e.key === 'Escape') { cierraSug(); }
-      else if (e.key === 'Enter' && opts.length) { e.preventDefault(); opts[0].click(); }
-    });
-    document.getElementById('adjQ').addEventListener('blur', function () { setTimeout(cierraSug, 200); });
+      '<div id="adjEmpty" class="adjempty">' +
+        '<div class="adjempty-ico" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="5" y="3" width="14" height="18" rx="2.5"/><path d="M9 8h6M9 12h6M9 16h4"/></svg></div>' +
+        '<b>Elige una plaza para empezar</b>' +
+        '<p class="mini">Haz clic en una tarjeta de la izquierda o usa el buscador. La ficha y el registro aparecen aquí, sin pasos largos.</p>' +
+        '<div class="adjflow"><span>1 · Elige</span><span>2 · Nombre</span><span>3 · Registra</span></div>' +
+      '</div>' +
+      '<div id="adjFormBody" class="adjformbody" hidden>' +
+        '<div id="adjSelCard"></div>' +
+        '<label class="adjfield" for="adjPersona"><span>A nombre de <b>*</b></span>' +
+          '<input type="text" id="adjPersona" placeholder="Ej: María Quispe — IPRESS / comisión SERUMS" autocomplete="off"></label>' +
+        '<div class="adjactions">' +
+          '<button type="button" class="btn primary" id="adjGuardar">Registrar adjudicación</button>' +
+          '<button type="button" class="btn" id="adjFav" aria-pressed="false"><span aria-hidden="true">☆</span> Favorita</button>' +
+          '<button type="button" class="btn" id="adjBloq" aria-pressed="false"><span aria-hidden="true">✕</span> Bloquear</button>' +
+          '<button type="button" class="btn" id="adjDetail">Ficha completa</button>' +
+          '<button type="button" class="btn" id="adjClose">Cerrar</button>' +
+        '</div>' +
+        '<details class="acc adjmore"><summary>Fecha, hora y notas (opcional)</summary>' +
+          '<div class="frow"><span>Fecha y hora del registro</span><input type="datetime-local" id="adjFecha" value="' + localDT() + '"></div>' +
+          '<div class="frow"><span>Observaciones</span><textarea id="adjObs" rows="2" placeholder="Acta, resolución, nota de la sesión…"></textarea></div>' +
+        '</details>' +
+        '<div id="adjMsg" class="adjmsg" role="status" aria-live="polite"></div>' +
+        '<div class="mini adjfine">Tu marca es local y no altera la adjudicación oficial. Se guarda al instante y puedes deshacerla o revertirla.</div>' +
+      '</div>';
     document.getElementById('adjGuardar').onclick = registrar;
-    document.getElementById('adjLimpiar').onclick = function () { limpiarForm(true); window.toast('Formulario limpio.'); };
+    document.getElementById('adjFav').onclick = function () { var p = current(); if (!p) return; window.App.toggleFav(p); selPlazaInfo(); };
+    document.getElementById('adjBloq').onclick = function () { var p = current(); if (!p) return; toggleBloq(p); };
+    document.getElementById('adjDetail').onclick = function () { var p = current(); if (p) window.App.openDetail(p.id); };
+    document.getElementById('adjClose').onclick = function () { limpiarForm(true); };
+    var pe = document.getElementById('adjPersona');
+    if (pe) pe.value = window.Store.get('adj_persona', '') || '';
   }
 
   return { render: render, badge: badge, toggleBloq: toggleBloq, counts: counts };

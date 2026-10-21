@@ -5,7 +5,7 @@ Plataforma interactiva para **explorar, filtrar, comparar y analizar las plazas 
 - **Dataset oficial incluido:** 7 323 plazas del **Anexo 2 — Oferta de plazas remuneradas SERUMS 2026-I** (MINSA), con **6 971 ubicadas (95,2 %)** gracias al cruce por **código RENIPRESS** con el listado nacional de establecimientos más los puntos verificados aportados.
 - **Adjudicación cruzada:** el *listado de adjudicados* 2026-I se cruza con el *PDF de resultados finales* y con las plazas: al abrir una plaza se ve **quién la obtuvo y con qué nota** (7 301 con nota, 5 «no se presentó», 183 sin registro en el PDF — siempre indicado, nunca estimado). Además puedes marcar tus propias plazas **favoritas (★)** y **adjudicadas (✅)** para tu seguimiento.
 - **Sin build:** abre `index.html` y funciona (solo necesitas internet para Google Maps y las librerías CDN).
-- **Diseño:** sistema de diseño propio (glassmorphism funcional) con **MOKOTO** (títulos) + **Open Sans** (texto), paleta de marca `#df2531` (100 %, 45 % y 65 % de transparencia), `#ffffff` y `#000000` con acentos en degradado naranja, **tema oscuro predeterminado y tema claro**, tarjetas translúcidas, barra lateral de navegación y controles flotantes.
+- **Diseño:** sistema de diseño propio **Premium Glass UI 2.0** (documentado en `DESIGN-SYSTEM.md`): **Zen Dots** (marca) + **Inter** (interfaz), paleta negro/blanco/rojo `#df2531`, superficies translúcidas con desenfoque selectivo, radios y espaciado unificados, **tema oscuro predeterminado y tema claro**, barra lateral de navegación y controles flotantes. El mapa de Google usa un estilo nocturno a juego.
 
 ## Contenido
 
@@ -21,7 +21,7 @@ Plataforma interactiva para **explorar, filtrar, comparar y analizar las plazas 
 | `js/app.js` | Estado global, navegación, tema, favoritos, marcas de adjudicación propias, filtros rápidos, confirmación, comparador, notificaciones y arranque |
 | `datos/datos_plazas.js` | 7 323 plazas reales + coordenadas (generado por script, no inventado) |
 | `datos/datos_adjudicados.js` | Cruce oficial adjudicados × notas (`window.SERUMS_ADJUDICADOS` + `_META`), generado, no editar a mano |
-| `fonts/README.txt` | Cómo activar MOKOTO (fuente comercial opcional) |
+| `fonts/README.txt` | Nota histórica sobre MOKOTO (la interfaz ya usa Zen Dots + Inter; no se requieren fuentes locales) |
 | `.env.example` | Variables `VITE_GOOGLE_MAPS_API_KEY` / servidor |
 | `tests/test_basico.py` | Pruebas básicas (ejecutar con `python`) |
 | `tests/check_adjudicados.py` | Verifica el cruce de adjudicación (conteos, claves, notas 0-20, 0 descuadres) |
@@ -190,4 +190,4 @@ Estático, sin backend: GitHub Pages / Netlify / Vercel / cualquier hosting. Sub
 - Clustering requiere la CDN de MarkerClusterer; sin ella se muestran hasta 2 500 marcadores con aviso.
 - Sin remuneraciones ni modalidad en la fuente oficial: esos filtros aparecen como no disponibles.
 - **El seguimiento (★/✅/🚫) es local a este navegador**: se sincroniza entre pestañas automáticamente, pero **no entre equipos** — la adjudicación compartida en tiempo real necesitaría un backend, no incluido; para compartir estados se exporta/importa un JSON.
-- **MOKOTO** no se distribuye (fuente comercial): los títulos usan **Michroma** hasta que instales Mokoto o coloques `fonts/Mokoto.ttf` (ver `fonts/README.txt`).
+- **Tipografía:** **Zen Dots** (marca y títulos de identidad) + **Inter** (interfaz y datos), ambas desde Google Fonts; no se distribuye ninguna fuente comercial.

@@ -3,7 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <!--
-  SERUMS HUB — Centro de aplicaciones (BANQUEAR + PLAZAS SERUMS)
+  SERUMS HUB — Centro de aplicaciones
+  BANQUEO · PLAZAS SERUMS · Study Dashboard · Study Flashcards
   © 2026 ZARCONT — Todos los derechos reservados · Licencia: LICENSE (raíz del repositorio)
   Autoría, versiones y registro de cambios: AUTORIA.md · Terceros: NOTICE.md
 -->
@@ -12,7 +13,7 @@
 <script>document.documentElement.classList.add("js");</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#080808">
-<meta name="description" content="SERUMS HUB — Centro de acceso a BANQUEAR (exámenes) y PLAZAS SERUMS (mapa de plazas).">
+<meta name="description" content="SERUMS HUB — Centro de acceso a BANQUEO, PLAZAS SERUMS, Study Dashboard y Study Flashcards.">
 <title>SERUMS HUB — Centro de aplicaciones</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Crect x='11' y='13' width='18' height='38' rx='7' fill='%23DF2531'/%3E%3Crect x='35' y='13' width='18' height='38' rx='7' fill='%23F2F2F2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -44,6 +45,7 @@
     --glass: rgba(255, 255, 255, .07);
     --glass-strong: rgba(255, 255, 255, .12);
     --glass-dark: rgba(10, 10, 10, .72);
+    --glass-edge: rgba(255, 255, 255, .09);
     --border: rgba(255, 255, 255, .14);
     --border-soft: rgba(255, 255, 255, .08);
     --red-soft: rgba(223, 37, 49, .16);
@@ -99,12 +101,7 @@
     --t-slow: 520ms cubic-bezier(.22, 1, .36, 1);
     --ease-out: cubic-bezier(.22, 1, .36, 1);
 
-    /* Tarjeta del carrusel */
-    --card-w: clamp(380px, 40vw, 540px);
-    --card-h: clamp(430px, 58vh, 560px);
-
     /* Capas */
-    --z-dock: 35;
     --z-bar: 40;
     --z-tip: 60;
     --z-overlay: 80;
@@ -133,79 +130,146 @@
   ::-webkit-scrollbar-track{ background: transparent; }
   ::-webkit-scrollbar-thumb{ background: #2a2a2a; border-radius: var(--r-full); border: 2px solid #0a0a0a; }
 
-  :focus-visible{ outline: 2px solid var(--red); outline-offset: 2px; }
+  :focus-visible{ outline: 2px solid var(--red); outline-offset: 3px; }
 
-  /* ============ Fondo ambiental (estático, sin luces en movimiento) ============ */
-  .bg{ position: fixed; inset: 0; z-index: -1; overflow: hidden; background: var(--bg); }
-  .glow{ position: absolute; border-radius: 50%; filter: blur(90px); }
-  .glow-a{
-    width: 62vmax; height: 62vmax; left: -20vmax; top: -28vmax;
-    background: radial-gradient(circle, rgba(72, 20, 22, .55), transparent 62%);
+  /* ============ Fondo ambiental ============ */
+  .bg{
+    position: fixed; inset: 0; z-index: -1; overflow: hidden;
+    background:
+      radial-gradient(68% 58% at 70% 28%, rgba(197, 140, 84, .24), transparent 68%),
+      radial-gradient(56% 56% at 14% 8%, rgba(116, 46, 38, .34), transparent 72%),
+      radial-gradient(56% 48% at 50% 78%, rgba(127, 91, 60, .24), transparent 74%),
+      linear-gradient(152deg, #130e0b 0%, #0a0807 50%, #0c0907 100%);
   }
-  .glow-b{
-    width: 66vmax; height: 66vmax; right: -24vmax; bottom: -30vmax;
-    background: radial-gradient(circle, rgba(116, 27, 30, .38), transparent 62%);
+  .room{ position: absolute; inset: -4%; }
+  .room::before{
+    content: ""; position: absolute; left: -3%; top: 3%; width: 42%; height: 40%;
+    background:
+      linear-gradient(180deg, rgba(132, 94, 64, .24), transparent 72%),
+      repeating-linear-gradient(90deg, transparent 0 74px, rgba(255, 235, 212, .06) 74px 76px),
+      repeating-linear-gradient(0deg, transparent 0 58px, rgba(255, 235, 212, .045) 58px 60px);
+    filter: blur(4px); opacity: .85;
+    -webkit-mask-image: linear-gradient(120deg, #000 12%, transparent 88%);
+    mask-image: linear-gradient(120deg, #000 12%, transparent 88%);
   }
-  .glow-c{
-    width: 44vmax; height: 44vmax; left: 50%; top: -24vmax; transform: translateX(-50%);
-    background: radial-gradient(circle, rgba(223, 37, 49, .12), transparent 64%);
+  .room::after{
+    content: ""; position: absolute; left: 8%; top: 0%; width: 34%; height: 36%;
+    background: radial-gradient(ellipse at 48% 38%, rgba(128, 91, 61, .24), transparent 70%);
+    filter: blur(26px);
   }
-  .grid{
-    position: absolute; inset: -1px;
-    background-image:
-      linear-gradient(rgba(255,255,255,.024) 1px, transparent 1px),
-      linear-gradient(90deg, rgba(255,255,255,.024) 1px, transparent 1px);
-    background-size: 46px 46px;
-    -webkit-mask-image: radial-gradient(ellipse 78% 60% at 50% 38%, #000 30%, transparent 74%);
-    mask-image: radial-gradient(ellipse 78% 60% at 50% 38%, #000 30%, transparent 74%);
+  .lamp-glow{
+    position: absolute; right: 2%; top: -2%; width: 34vw; height: 38vw; border-radius: 50%;
+    background: radial-gradient(circle, rgba(255, 204, 138, .27), rgba(255, 177, 96, .09) 42%, transparent 70%);
+    filter: blur(26px);
+  }
+  .lamp-core{
+    position: absolute; right: 15%; top: 12%; width: 9px; height: 9px; border-radius: 50%;
+    background: rgba(255, 233, 196, .82);
+    box-shadow: 0 0 34px 18px rgba(255, 196, 120, .30), 0 0 110px 52px rgba(255, 175, 92, .13);
+  }
+  .table-glow{
+    position: absolute; left: 50%; bottom: -7%; width: 100vw; height: 42vh;
+    transform: translateX(-50%);
+    background: radial-gradient(ellipse at 50% 54%, rgba(142, 106, 72, .36), rgba(70, 51, 35, .16) 44%, transparent 72%);
+    filter: blur(28px);
+  }
+  .table-edge{
+    position: absolute; left: 50%; bottom: 2%; width: 88vw; height: 17vh;
+    transform: translateX(-50%);
+    border-radius: 50% 50% 0 0;
+    background:
+      linear-gradient(180deg, rgba(139, 104, 72, .22), rgba(54, 39, 27, .12) 48%, transparent 82%);
+    filter: blur(18px);
+    opacity: .75;
+  }
+  .room-line{
+    position: absolute; left: 6%; bottom: 9%; width: 88%; height: 1px;
+    background: linear-gradient(90deg, transparent, rgba(255, 222, 182, .20), transparent);
+    filter: blur(.4px);
+  }
+  .bokeh{
+    position: absolute; border-radius: 50%; filter: blur(2px);
+    background: radial-gradient(circle at 35% 30%, rgba(255, 223, 174, .30), rgba(199, 139, 77, .10) 52%, transparent 72%);
+    opacity: .55;
+  }
+  .b1{ width: 70px; height: 70px; right: 9%; top: 18%; filter: blur(7px); opacity: .30; }
+  .b2{ width: 34px; height: 34px; right: 25%; top: 11%; filter: blur(4px); opacity: .24; }
+  .b3{ width: 18px; height: 18px; left: 22%; top: 20%; filter: blur(3px); opacity: .20; }
+  .b4{ width: 46px; height: 46px; left: 9%; bottom: 24%; filter: blur(9px); opacity: .16; }
+  .beam{
+    position: absolute; left: 50%; top: -12%; width: 46vw; height: 76vh;
+    transform: translateX(-50%) rotate(8deg);
+    background: linear-gradient(180deg, rgba(255, 231, 194, .055), transparent 74%);
+    filter: blur(28px);
+    -webkit-mask-image: linear-gradient(180deg, #000, transparent 88%);
+    mask-image: linear-gradient(180deg, #000, transparent 88%);
   }
   .noise{
-    position: absolute; inset: 0; opacity: .05; mix-blend-mode: overlay;
+    position: absolute; inset: 0; opacity: .055; mix-blend-mode: overlay;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)'/%3E%3C/svg%3E");
     background-size: 180px 180px;
   }
   .vignette{
     position: absolute; inset: 0;
-    background: radial-gradient(ellipse 92% 72% at 50% 36%, transparent 52%, rgba(0, 0, 0, .58) 100%);
+    background:
+      radial-gradient(ellipse 72% 66% at 50% 42%, transparent 38%, rgba(0, 0, 0, .34) 78%, rgba(0, 0, 0, .64) 100%),
+      linear-gradient(180deg, rgba(0, 0, 0, .26), transparent 24%, transparent 76%, rgba(0, 0, 0, .42));
+  }
+  .sr-only{
+    position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px;
+    overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
   }
 
-  /* ============ Barra superior flotante ============ */
+  /* ============ Barra superior ============ */
   .topbar{
-    position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
-    width: min(820px, calc(100vw - 28px)); height: 56px;
+    position: fixed; top: 14px; left: 50%; transform: translateX(-50%);
+    width: min(980px, calc(100vw - 28px)); height: 54px;
     display: flex; align-items: center; justify-content: space-between; gap: var(--sp-3);
-    padding: 0 10px 0 12px;
-    background: var(--glass-dark);
-    border: 1px solid var(--border-soft);
-    border-radius: 18px;
-    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    box-shadow: var(--shadow-md);
+    padding: 0 8px 0 11px;
+    background:
+      linear-gradient(180deg, rgba(51, 36, 28, .52), rgba(14, 11, 9, .64)),
+      rgba(12, 11, 10, .42);
+    border: 1px solid rgba(255, 255, 255, .13);
+    border-radius: 17px;
+    -webkit-backdrop-filter: blur(22px) saturate(150%);
+    backdrop-filter: blur(22px) saturate(150%);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .11), 0 20px 50px -30px rgba(0, 0, 0, .9);
     z-index: var(--z-bar);
   }
-  .tb-left{ display: flex; align-items: center; gap: 10px; min-width: 0; }
+  .tb-left{ display: flex; align-items: center; gap: 9px; min-width: 0; }
   .logo{
-    width: 30px; height: 30px; border-radius: 9px; flex: none;
+    width: 29px; height: 29px; border-radius: 9px; flex: none;
     display: grid; place-items: center;
     background: linear-gradient(140deg, var(--red), var(--red-dark));
     box-shadow: 0 6px 18px -8px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, .25);
   }
-  .logo svg{ width: 16px; height: 16px; display: block; }
-  .brand{ font-size: 12px; font-weight: 700; letter-spacing: .14em; white-space: nowrap; }
+  .logo svg{ width: 15px; height: 15px; display: block; }
+  .brand{ font-family: var(--font-display); font-size: 10px; font-weight: 400; letter-spacing: .15em; white-space: nowrap; }
+  .tb-arrows{
+    display: flex; align-items: center; gap: 1px;
+    margin-left: 1px; padding-left: 6px;
+    border-left: 1px solid rgba(255, 255, 255, .10);
+  }
+  .tb-arrows .icon-btn{ width: 31px; height: 31px; border-radius: 9px; }
+  .tb-arrows .icon-btn svg{ width: 16px; height: 16px; }
   .tb-center{
     position: absolute; left: 50%; transform: translateX(-50%);
     display: flex; align-items: center; gap: 8px;
-    font-size: 10.5px; letter-spacing: .16em; text-transform: uppercase; color: var(--text-3);
+    font-size: 9.5px; letter-spacing: .14em; text-transform: uppercase; color: var(--text-3);
     white-space: nowrap;
   }
-  .dot-live{ width: 6px; height: 6px; border-radius: 50%; background: var(--red); box-shadow: 0 0 10px var(--red-glow); }
-  .tb-right{ display: flex; align-items: center; gap: 4px; }
+  .tb-center b{ color: var(--text-2); font-size: 10px; font-weight: 550; letter-spacing: .12em; }
+  .tb-count{
+    color: rgba(255, 255, 255, .32); font-size: 9px; letter-spacing: .08em;
+    font-variant-numeric: tabular-nums;
+  }
+  .dot-live{ width: 5px; height: 5px; border-radius: 50%; background: var(--red); box-shadow: 0 0 10px var(--red-glow); }
+  .tb-right{ display: flex; align-items: center; gap: 2px; }
 
-  /* Botón de icono genérico */
   .icon-btn{
-    width: 38px; height: 38px; flex: none;
+    width: 34px; height: 34px; flex: none;
     display: grid; place-items: center;
-    border-radius: 12px; border: 1px solid transparent; background: transparent;
+    border-radius: 10px; border: 1px solid transparent; background: transparent;
     color: var(--text-2); cursor: pointer;
     transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
   }
@@ -233,262 +297,547 @@
   [data-tip]:hover::after, [data-tip]:focus-visible::after{
     opacity: 1; transform: translateX(-50%) translateY(0);
   }
-  .dock [data-tip]::after{
-    top: 50%; left: calc(100% + 12px);
-    transform: translateY(-50%) translateX(-4px);
-  }
-  .dock [data-tip]:hover::after, .dock [data-tip]:focus-visible::after{
-    transform: translateY(-50%) translateX(0);
-  }
 
-  /* ============ Escenario principal ============ */
-  main{
-    min-height: 100vh;
+  /* ============ Escenario ============ */
+  main#stage{
+    width: 100%;
     min-height: 100dvh;
+    margin: 0;
+    padding: 82px 0 20px;
     display: flex; flex-direction: column; align-items: center; justify-content: center;
-    gap: clamp(24px, 4.5vh, 40px);
-    padding: clamp(96px, 13vh, 122px) 20px clamp(112px, 16vh, 148px);
   }
-
-  .hero{ display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
-  .title{
-    font-family: var(--font-display);
-    font-weight: 400;
-    font-size: clamp(24px, 3.4vw, 40px);
-    letter-spacing: .03em;
-    line-height: 1.1;
-  }
-  .title .accent{ color: var(--red); }
-  .subtitle{ color: var(--text-2); font-size: var(--fs-md); font-weight: 450; letter-spacing: .01em; }
-
-  /* ============ Carrusel (deck) ============ */
-  .deck-wrap{ position: relative; display: grid; place-items: center; }
-
-  .deck{
+  .carousel-shell{
     position: relative;
-    width: var(--card-w);
-    height: var(--card-h);
-    perspective: 1400px;
+    width: min(1240px, calc(100vw - 32px));
+    display: flex; flex-direction: column; align-items: center;
   }
 
-  .card{
-    /* Estado por defecto: activa/centrada */
-    --tx: 0%; --ty: 0px; --tz: 0px; --ry: 0deg; --sc: 1; --op: 1; --z: 2; --bri: 1;
-    --fullOp: 1; --miniOp: 0;
-
-    position: absolute; inset: 0;
-    display: block; overflow: hidden;
-    border-radius: var(--r-card);
-    background: linear-gradient(165deg, #171717, #0b0b0b 72%);
-    border: 1px solid var(--border-soft);
-    box-shadow: var(--shadow-lg);
-    color: inherit; cursor: pointer; user-select: none;
-    transform: translateX(var(--tx)) translateY(var(--ty)) translateZ(var(--tz)) rotateY(var(--ry)) scale(var(--sc));
-    opacity: var(--op);
-    filter: brightness(var(--bri));
-    z-index: var(--z);
-    will-change: transform, opacity;
+  /* ============ Carrusel ============ */
+  .carousel{
+    --card-w: clamp(350px, 34vw, 448px);
+    --card-h: clamp(480px, calc(100dvh - 248px), 620px);
+    --side-offset: calc(var(--card-w) * .88);
+    position: relative;
+    width: 100%; height: var(--card-h);
+    perspective: 1700px;
+    touch-action: pan-y;
+  }
+  .app-card{
+    --app: var(--red);
+    --app-soft: rgba(223, 37, 49, .16);
+    --app-line: rgba(223, 37, 49, .34);
+    --art-bg: #131313;
+    position: absolute; left: 50%; top: 50%;
+    width: var(--card-w); height: var(--card-h);
+    display: flex; flex-direction: column;
+    isolation: isolate; overflow: hidden;
+    border: 1px solid rgba(255, 255, 255, .13);
+    border-radius: 30px;
+    background: #0f0f10;
+    color: var(--text-1); text-decoration: none;
+    box-shadow: 0 50px 110px -46px rgba(0, 0, 0, .94), inset 0 1px 0 rgba(255, 255, 255, .06);
+    opacity: 0; pointer-events: none;
+    transform: translate(-50%, -50%) scale(.7);
     transition:
-      transform var(--t-slow),
-      opacity 500ms ease,
-      filter 500ms ease,
-      border-color 500ms ease,
-      box-shadow 500ms ease;
+      transform 680ms cubic-bezier(.2, .75, .2, 1),
+      opacity 440ms ease,
+      filter 440ms ease,
+      border-color 440ms ease,
+      box-shadow 440ms ease;
+    will-change: transform, opacity;
+    outline: none;
   }
+  .app-card.is-active{
+    z-index: 5; opacity: 1; pointer-events: auto;
+    transform: translate(-50%, -50%) scale(1);
+    border-color: color-mix(in srgb, var(--app) 26%, rgba(255, 255, 255, .16));
+    box-shadow:
+      0 60px 130px -46px rgba(0, 0, 0, .96),
+      0 0 0 1px color-mix(in srgb, var(--app) 10%, transparent),
+      inset 0 1px 0 rgba(255, 255, 255, .09);
+  }
+  .app-card.is-right{
+    z-index: 3; opacity: .72; pointer-events: auto;
+    transform: translate(calc(-50% + var(--side-offset)), -50%) scale(.78) rotateY(-10deg);
+    filter: brightness(.84) saturate(.95);
+    cursor: pointer;
+  }
+  .app-card.is-left{
+    z-index: 3; opacity: .72; pointer-events: auto;
+    transform: translate(calc(-50% - var(--side-offset)), -50%) scale(.78) rotateY(10deg);
+    filter: brightness(.84) saturate(.95);
+    cursor: pointer;
+  }
+  .app-card.is-right:hover, .app-card.is-left:hover{
+    opacity: .94; filter: brightness(.98) saturate(1);
+  }
+  .app-card.is-hidden{
+    z-index: 1; opacity: 0; pointer-events: none;
+    transform: translate(-50%, -50%) scale(.62);
+  }
+  .app-card:focus-visible{
+    box-shadow:
+      0 0 0 2px rgba(255, 255, 255, .9),
+      0 0 0 7px color-mix(in srgb, var(--app) 32%, transparent),
+      0 60px 130px -46px rgba(0, 0, 0, .96);
+  }
+  .app-card--banqueo{ --app: #E33A45; --app-soft: rgba(227, 58, 69, .18); --app-line: rgba(227, 58, 69, .38); }
+  .app-card--plazas{ --app: #F08A5D; --app-soft: rgba(240, 138, 93, .16); --app-line: rgba(240, 138, 93, .34); }
+  .app-card--dashboard{ --app: #E2B15B; --app-soft: rgba(226, 177, 91, .16); --app-line: rgba(226, 177, 91, .34); }
+  .app-card--flashcards{ --app: #8FD3B0; --app-soft: rgba(143, 211, 176, .16); --app-line: rgba(143, 211, 176, .32); }
 
-  /* Estado activo según la selección del deck */
-  .deck[data-current="banquear"] .card[data-app="banquear"],
-  .deck[data-current="plazas"] .card[data-app="plazas"]{
-    --tx: 0%; --ty: 0px; --tz: 0px; --ry: 0deg; --sc: 1; --op: 1; --z: 2; --bri: 1;
-    --fullOp: 1; --miniOp: 0;
-    border-color: rgba(255, 255, 255, .16);
-    box-shadow: 0 34px 90px -34px rgba(0, 0, 0, .9), 0 24px 70px -30px var(--red-glow);
+  /* ============ Tarjeta: arte y contenido ============ */
+  .app-art{
+    position: relative; flex: 0 0 60%; min-height: 0;
+    overflow: hidden; background: var(--art-bg);
   }
+  .app-art::after{
+    content: ""; position: absolute; inset: 0; z-index: 2; pointer-events: none;
+    background: linear-gradient(180deg, rgba(0, 0, 0, .12), transparent 30%, rgba(8, 8, 10, .22) 68%, rgba(15, 15, 16, .92) 100%);
+  }
+  .app-card:not(.is-active) .app-art{ flex-basis: 100%; }
+  .app-card:not(.is-active) .app-art::after{
+    background: linear-gradient(180deg, rgba(0, 0, 0, .04), rgba(0, 0, 0, .08) 46%, rgba(8, 8, 10, .9) 100%);
+  }
+  .app-open-pill{
+    position: absolute; left: 16px; top: 16px; z-index: 4;
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 7px 11px 7px 12px; border-radius: 999px;
+    background: rgba(248, 246, 240, .94); color: #12100e;
+    font-size: 9.5px; font-weight: 650; letter-spacing: .04em;
+    box-shadow: 0 10px 26px -12px rgba(0, 0, 0, .8), inset 0 1px 0 rgba(255, 255, 255, .8);
+  }
+  .app-open-pill svg{ width: 12px; height: 12px; }
+  .app-badge{
+    position: absolute; right: 16px; top: 16px; z-index: 4;
+    padding: 7px 10px; border-radius: 999px;
+    background: rgba(10, 9, 8, .38); border: 1px solid rgba(255, 255, 255, .15);
+    color: rgba(255, 255, 255, .72);
+    font-size: 8.5px; letter-spacing: .13em; font-variant-numeric: tabular-nums;
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  }
+  .app-card:not(.is-active) .app-open-pill,
+  .app-card:not(.is-active) .app-badge{ display: none; }
 
-  /* Estado secundario: PLAZAS a la derecha cuando BANQUEAR es la activa */
-  .deck[data-current="banquear"] .card[data-app="plazas"]{
-    --tx: 42%; --ty: 0px; --tz: -150px; --ry: -13deg; --sc: .86; --op: .5; --z: 1; --bri: .7;
-    --fullOp: 0; --miniOp: 1;
+  .app-body{
+    position: relative; z-index: 3; flex: 1 1 auto; min-height: 0;
+    display: flex; flex-direction: column;
+    padding: 14px 22px 17px;
+    background:
+      radial-gradient(92% 72% at 104% 112%, color-mix(in srgb, var(--app) 11%, transparent), transparent 68%),
+      linear-gradient(180deg, #111113 0%, #0d0d0f 100%);
+    overflow: hidden;
   }
-  /* Estado secundario: BANQUEAR a la izquierda cuando PLAZAS es la activa */
-  .deck[data-current="plazas"] .card[data-app="banquear"]{
-    --tx: -42%; --ty: 0px; --tz: -150px; --ry: 13deg; --sc: .86; --op: .5; --z: 1; --bri: .7;
-    --fullOp: 0; --miniOp: 1;
+  .app-card:not(.is-active) .app-body{
+    position: absolute; left: 0; right: 0; bottom: 0;
+    padding: 70px 22px 21px;
+    background: linear-gradient(180deg, transparent 0%, rgba(8, 8, 10, .82) 42%, #0b0b0d 100%);
   }
+  .app-kicker{
+    display: flex; align-items: center; gap: 6px;
+    color: var(--app);
+    font-size: 8.5px; letter-spacing: .15em; text-transform: uppercase; font-weight: 650;
+  }
+  .app-kicker::before{
+    content: ""; width: 4px; height: 4px; border-radius: 50%; background: var(--app);
+    box-shadow: 0 0 9px color-mix(in srgb, var(--app) 70%, transparent);
+  }
+  .app-card h2{
+    margin: 5px 0 5px;
+    font-size: clamp(24px, 2.35vw, 32px);
+    line-height: 1.03;
+    letter-spacing: -.04em;
+    font-weight: 680;
+    color: #f5f2ec;
+  }
+  .app-card:not(.is-active) h2{
+    margin: 3px 0 0; font-size: 25px; letter-spacing: -.03em;
+  }
+  .app-desc{
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical;
+    overflow: hidden;
+    color: rgba(245, 242, 236, .58); font-size: 11.5px; line-height: 1.46;
+  }
+  .app-meta{
+    list-style: none; display: flex; flex-wrap: wrap; gap: 4px 12px;
+    margin-top: 7px; color: rgba(245, 242, 236, .38); font-size: 9px;
+  }
+  .app-meta li{ display: inline-flex; align-items: center; gap: 5px; white-space: nowrap; }
+  .app-meta li::before{
+    content: ""; width: 2.5px; height: 2.5px; border-radius: 50%;
+    background: var(--app); opacity: .9;
+  }
+  .app-quote{
+    max-width: 27ch; margin: 15px 0 0; padding-top: 12px;
+    border-top: 1px solid rgba(255, 255, 255, .075);
+    font-family: var(--font-display);
+    font-size: clamp(17px, 1.55vw, 21px); font-weight: 400;
+    line-height: 1.12; letter-spacing: -.01em;
+    color: rgba(245, 242, 236, .68);
+  }
+  .app-card:not(.is-active) .app-desc,
+  .app-card:not(.is-active) .app-meta,
+  .app-card:not(.is-active) .app-progress,
+  .app-card:not(.is-active) .app-last,
+  .app-card:not(.is-active) .app-quote,
+  .app-card:not(.is-active) .app-foot{ display: none; }
 
-  @media (hover: hover){
-    .deck[data-current="banquear"] .card[data-app="banquear"]:hover,
-    .deck[data-current="plazas"] .card[data-app="plazas"]:hover{ --ty: -5px; }
-    .deck[data-current="banquear"] .card[data-app="plazas"]:hover{ --tx: 44%; --ry: -7deg; --sc: .9; --op: .72; --bri: .88; }
-    .deck[data-current="plazas"] .card[data-app="banquear"]:hover{ --tx: -44%; --ry: 7deg; --sc: .9; --op: .72; --bri: .88; }
+  /* Progreso real de Study */
+  .app-progress{
+    margin-top: 8px; padding-top: 8px;
+    border-top: 1px solid rgba(255, 255, 255, .075);
   }
-
-  /* Arte decorativo de cada tarjeta */
-  .card-art{ position: absolute; inset: 0; display: block; }
-  .card-art svg{ width: 100%; height: 100%; display: block; }
-  .card-scrim{
-    position: absolute; inset: 0;
-    background: linear-gradient(180deg, rgba(5, 5, 5, 0) 34%, rgba(5, 5, 5, .55) 58%, rgba(5, 5, 5, .94) 100%);
+  .app-progress-head{
+    display: flex; align-items: baseline; justify-content: space-between; gap: 10px;
+    color: rgba(245, 242, 236, .38); font-size: 8px; letter-spacing: .08em; text-transform: uppercase;
   }
+  .app-progress-head b{
+    color: #f5f2ec; font-size: 10.5px; font-weight: 620;
+    letter-spacing: -.01em; text-transform: none;
+  }
+  .app-progress-track{
+    height: 3px; margin-top: 6px; border-radius: 999px;
+    background: rgba(255, 255, 255, .075); overflow: hidden;
+  }
+  .app-progress-track span{
+    display: block; height: 100%; width: 0;
+    border-radius: inherit; background: var(--app);
+    box-shadow: 0 0 12px color-mix(in srgb, var(--app) 55%, transparent);
+    transition: width 500ms var(--ease-out);
+  }
+  .app-progress-note{
+    margin-top: 5px; color: rgba(245, 242, 236, .40); font-size: 8.5px; line-height: 1.4;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+  }
+  .app-progress.is-empty .app-progress-track span{ background: rgba(255, 255, 255, .22); box-shadow: none; }
 
-  .badge{
-    position: absolute; top: 16px; left: 16px;
+  .app-last{
+    display: flex; align-items: baseline; gap: 6px; min-width: 0;
+    margin-top: 5px; color: rgba(245, 242, 236, .54); font-size: 9px; line-height: 1.35;
+  }
+  .app-last span{
+    flex: none; color: rgba(245, 242, 236, .28); font-size: 7.5px;
+    letter-spacing: .1em; text-transform: uppercase;
+  }
+  .app-last b{
+    min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    font-weight: 500; color: rgba(245, 242, 236, .58);
+  }
+  .app-last[hidden]{ display: none; }
+
+  .app-foot{
+    display: flex; align-items: center; justify-content: space-between;
+    gap: 10px; margin-top: auto; padding-top: 9px;
+  }
+  .app-cta{
     display: inline-flex; align-items: center; gap: 7px;
-    padding: 5px 11px;
-    border-radius: var(--r-full);
-    background: rgba(8, 8, 8, .55);
-    border: 1px solid var(--border-soft);
-    -webkit-backdrop-filter: blur(var(--blur-sm));
-    backdrop-filter: blur(var(--blur-sm));
-    font-size: var(--fs-xs); font-weight: 600; letter-spacing: .1em; text-transform: uppercase;
-    color: rgba(255, 255, 255, .82);
+    color: #f5f2ec; font-size: 10.5px; font-weight: 630; letter-spacing: .015em;
   }
-  .badge-dot{ width: 5px; height: 5px; border-radius: 50%; background: var(--red); }
+  .app-cta svg{ width: 14px; height: 14px; color: var(--app); transition: transform var(--t-fast); }
+  .app-card:hover .app-cta svg{ transform: translateX(3px); }
+  .app-tag{
+    color: rgba(245, 242, 236, .26); font-size: 8px; letter-spacing: .12em; text-transform: uppercase;
+    white-space: nowrap;
+  }
 
-  /* Contenido completo (tarjeta activa) */
-  .content-full{
-    position: absolute; left: 0; right: 0; bottom: 0;
-    padding: 22px 24px 24px;
-    display: flex; flex-direction: column; gap: 12px;
-    opacity: var(--fullOp, 1);
-    transform: translateY(calc((1 - var(--fullOp, 1)) * 14px));
-    transition: opacity 450ms ease, transform 450ms var(--ease-out);
+  /* ============ Arte: BANQUEO ============ */
+  .app-card--banqueo .app-art{
+    background:
+      radial-gradient(62% 62% at 78% 17%, rgba(227, 58, 69, .42), transparent 68%),
+      radial-gradient(55% 60% at 12% 92%, rgba(88, 22, 28, .66), transparent 72%),
+      linear-gradient(155deg, #1b0b0d, #0b0708);
   }
-  .row-title{ display: flex; align-items: baseline; justify-content: space-between; gap: 12px; }
-  .row-title h2{ font-size: clamp(21px, 2vw, 27px); font-weight: 680; letter-spacing: .01em; }
-  .counter{ font-size: 12px; letter-spacing: .08em; color: var(--text-3); font-variant-numeric: tabular-nums; }
-  .desc{ font-size: var(--fs-md); line-height: 1.5; color: var(--text-2); max-width: 46ch; }
-  .meta{ list-style: none; display: flex; flex-direction: column; gap: 7px; }
-  .meta li{ display: flex; align-items: center; gap: 9px; font-size: var(--fs-sm); color: var(--text-3); }
-  .meta svg{ width: 15px; height: 15px; flex: none; color: rgba(255, 255, 255, .45); }
-  .row-cta{ margin-top: 4px; }
-  .btn-open{
-    display: inline-flex; align-items: center; gap: 9px;
-    padding: 12px 20px;
-    border-radius: var(--r-full);
-    background: var(--white); color: #0a0a0a;
-    font-size: var(--fs-md); font-weight: 650;
-    box-shadow: 0 10px 26px -10px rgba(0, 0, 0, .6);
-    transition: background var(--t-fast), box-shadow var(--t-fast);
+  .art-scene{ position: absolute; inset: 0; z-index: 1; }
+  .art-orb{
+    position: absolute; border-radius: 50%; filter: blur(18px); pointer-events: none;
   }
-  .btn-open svg{ width: 15px; height: 15px; transition: transform var(--t-fast); }
-  .card:hover .btn-open{ background: #f1f1f1; box-shadow: var(--shadow-red); }
-  .card:hover .btn-open svg{ transform: translateX(2px); }
+  .art-ben .art-orb{ width: 180px; height: 180px; right: -50px; top: -50px; background: rgba(255, 103, 110, .22); }
+  .art-ben .sheet-back{
+    position: absolute; left: 17%; top: 11%; width: 63%; height: 78%;
+    border-radius: 11px; background: #bfb09a; transform: rotate(4deg); opacity: .25;
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, .8);
+  }
+  .art-ben .sheet{
+    position: absolute; left: 9%; top: 9%; width: 67%; height: 82%;
+    padding: 14px 14px 12px; border-radius: 11px;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, .35), transparent 30%),
+      linear-gradient(165deg, #f7f0e3, #e9dcc5);
+    transform: rotate(-7deg);
+    box-shadow: 0 34px 55px -24px rgba(0, 0, 0, .9), inset 0 1px 0 rgba(255, 255, 255, .7);
+    color: #4a4033;
+  }
+  .art-ben .sheet-top{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .art-ben .sheet-brand{ color: #ad1c28; font-size: 7px; font-weight: 800; letter-spacing: .18em; }
+  .art-ben .sheet-no{ color: #8f8371; font-size: 6.5px; letter-spacing: .1em; }
+  .art-ben .sheet-q{ height: 4px; margin-bottom: 4px; border-radius: 99px; background: #4c4439; }
+  .art-ben .sheet-q.w70{ width: 68%; background: #74695b; }
+  .art-ben .sheet-opts{ display: grid; gap: 4px; margin-top: 9px; }
+  .art-ben .sheet-opt{
+    display: flex; align-items: center; gap: 6px;
+    padding: 3px 5px; border: 1px solid rgba(72, 59, 45, .14); border-radius: 4px;
+  }
+  .art-ben .sheet-opt i{
+    width: 11px; height: 11px; flex: none; display: grid; place-items: center;
+    border: 1px solid rgba(72, 59, 45, .24); border-radius: 50%;
+    color: #756858; font-style: normal; font-size: 5.5px; font-weight: 700;
+  }
+  .art-ben .sheet-opt span{ height: 3px; flex: 1; border-radius: 99px; background: #b7a993; }
+  .art-ben .sheet-opt.is-key{ border-color: rgba(192, 35, 46, .38); background: rgba(223, 37, 49, .09); }
+  .art-ben .sheet-opt.is-key i{ border-color: #d02a35; background: #d02a35; color: #fff; }
+  .art-ben .sheet-opt.is-key span{ background: #c98584; }
+  .art-ben .sheet-stamp{
+    position: absolute; right: 11px; bottom: 10px; width: 39px; height: 39px;
+    display: grid; place-items: center; border: 1.4px solid rgba(173, 28, 40, .55); border-radius: 50%;
+    color: #ad1c28; font-size: 5.5px; font-weight: 800; line-height: 1.15; text-align: center;
+    letter-spacing: .08em; transform: rotate(-13deg);
+  }
+  .art-stat{
+    position: absolute; z-index: 3; right: 15px; bottom: 14px;
+    display: flex; align-items: baseline; gap: 7px;
+    padding: 8px 11px; border-radius: 11px;
+    background: rgba(14, 11, 10, .52); border: 1px solid rgba(255, 255, 255, .15);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 15px 34px -20px rgba(0, 0, 0, .9);
+    -webkit-backdrop-filter: blur(16px) saturate(150%); backdrop-filter: blur(16px) saturate(150%);
+  }
+  .art-stat b{ color: #f5f2ec; font-size: 17px; font-weight: 650; letter-spacing: -.03em; line-height: 1; }
+  .art-stat span{ color: rgba(255, 255, 255, .48); font-size: 7px; letter-spacing: .13em; text-transform: uppercase; }
 
-  /* Contenido compacto (tarjeta secundaria) */
-  .content-mini{
-    position: absolute; left: 0; right: 0; bottom: 0;
-    padding: 18px 22px 20px;
-    display: flex; flex-direction: column; gap: 3px;
-    opacity: var(--miniOp, 0);
-    transform: translateY(calc((1 - var(--miniOp, 0)) * 10px));
-    transition: opacity 450ms ease, transform 450ms var(--ease-out);
-    pointer-events: none;
+  /* ============ Arte: PLAZAS ============ */
+  .app-card--plazas .app-art{
+    background:
+      radial-gradient(65% 62% at 78% 15%, rgba(240, 138, 93, .38), transparent 68%),
+      radial-gradient(55% 60% at 10% 92%, rgba(88, 38, 21, .68), transparent 72%),
+      linear-gradient(155deg, #1a0e08, #0d0806);
   }
-  .content-mini strong{ font-size: 15px; font-weight: 650; letter-spacing: .04em; }
-  .content-mini span{ font-size: 12px; color: rgba(255, 255, 255, .55); }
+  .art-plazas .art-orb{ width: 190px; height: 190px; right: -40px; top: -60px; background: rgba(255, 158, 108, .18); }
+  .art-plazas .map-plane{
+    position: absolute; left: 7%; top: 8%; width: 86%; height: 81%;
+    overflow: hidden; border: 1px solid rgba(255, 170, 120, .18); border-radius: 19px;
+    background:
+      linear-gradient(rgba(255, 154, 100, .065) 1px, transparent 1px) 0 0 / 32px 32px,
+      linear-gradient(90deg, rgba(255, 154, 100, .065) 1px, transparent 1px) 0 0 / 32px 32px,
+      radial-gradient(circle at 62% 42%, rgba(240, 138, 93, .20), transparent 62%),
+      #130c09;
+    box-shadow: 0 30px 60px -24px rgba(0, 0, 0, .9), inset 0 1px 0 rgba(255, 255, 255, .04);
+    transform: rotate(-3deg);
+  }
+  .art-plazas .map-plane::after{
+    content: ""; position: absolute; inset: 0; pointer-events: none;
+    background: radial-gradient(circle at 54% 44%, transparent 28%, rgba(8, 6, 5, .42) 100%);
+  }
+  .art-plazas .map-lines{ position: absolute; inset: 0; width: 100%; height: 100%; }
+  .art-plazas .map-pin{
+    position: absolute; z-index: 2; width: 12px; height: 12px; border-radius: 50%;
+    background: #f5a476; border: 2px solid rgba(24, 12, 7, .9);
+    box-shadow: 0 0 0 5px rgba(240, 138, 93, .13), 0 0 22px rgba(240, 138, 93, .55);
+  }
+  .art-plazas .map-pin::after{
+    content: ""; position: absolute; inset: -8px; border: 1px solid rgba(240, 138, 93, .36); border-radius: 50%;
+    animation: pinPulse 3.2s ease-out infinite;
+  }
+  .art-plazas .pin-a{ left: 31%; top: 42%; }
+  .art-plazas .pin-b{ left: 61%; top: 29%; animation-delay: .8s; }
+  .art-plazas .pin-c{ left: 54%; top: 66%; animation-delay: 1.5s; }
+  @keyframes pinPulse{ 0%, 100%{ transform: scale(.8); opacity: .2; } 45%{ opacity: .8; } 70%{ transform: scale(1.35); opacity: 0; } }
+  .art-plazas .map-label{
+    position: absolute; left: 12%; top: 12%; z-index: 2;
+    color: rgba(255, 215, 190, .48); font-size: 7px; letter-spacing: .18em; text-transform: uppercase;
+  }
+
+  /* ============ Arte: STUDY DASHBOARD ============ */
+  .app-card--dashboard .app-art{
+    background:
+      radial-gradient(62% 62% at 76% 17%, rgba(226, 177, 91, .36), transparent 66%),
+      radial-gradient(55% 60% at 10% 92%, rgba(91, 62, 27, .62), transparent 72%),
+      linear-gradient(155deg, #171006, #0c0906);
+  }
+  .art-dash .art-orb{ width: 185px; height: 185px; right: -40px; top: -50px; background: rgba(244, 199, 120, .18); }
+  .art-dash .paper-back{
+    position: absolute; left: 19%; top: 10%; width: 62%; height: 79%;
+    border-radius: 12px; background: #c7ae83; opacity: .22; transform: rotate(6deg);
+    box-shadow: 0 20px 40px -20px rgba(0, 0, 0, .8);
+  }
+  .art-dash .paper{
+    position: absolute; left: 11%; top: 8%; width: 67%; height: 84%;
+    padding: 15px 15px 13px; border-radius: 12px;
+    background: linear-gradient(160deg, #f7eedb, #ead8b6);
+    transform: rotate(-4deg); color: #4b3b24;
+    box-shadow: 0 34px 55px -24px rgba(0, 0, 0, .9), inset 0 1px 0 rgba(255, 255, 255, .75);
+  }
+  .art-dash .paper-top{ display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px; }
+  .art-dash .paper-label{ color: #9b651f; font-size: 7px; font-weight: 800; letter-spacing: .17em; }
+  .art-dash .paper-dot{ width: 18px; height: 18px; display: grid; place-items: center; border: 1px solid rgba(155, 101, 31, .35); border-radius: 50%; color: #9b651f; font-size: 6px; font-weight: 800; }
+  .art-dash .paper-title{ width: 72%; height: 7px; margin-bottom: 5px; border-radius: 99px; background: #4d3a22; }
+  .art-dash .paper-line{ height: 3.5px; margin-bottom: 4px; border-radius: 99px; background: #b9a17b; }
+  .art-dash .paper-line.short{ width: 64%; }
+  .art-dash .paper-bar{ height: 4px; margin-top: 11px; overflow: hidden; border-radius: 99px; background: rgba(77, 58, 34, .16); }
+  .art-dash .paper-bar span{ display: block; width: 64%; height: 100%; border-radius: inherit; background: #c08a3f; }
+  .art-dash .paper-note{ margin-top: 6px; color: #8e7958; font-size: 5.5px; letter-spacing: .08em; text-transform: uppercase; }
+  .art-dash .paper-tabs{ display: flex; gap: 4px; margin-top: 10px; }
+  .art-dash .paper-tabs i{ height: 3px; flex: 1; border-radius: 99px; background: rgba(77, 58, 34, .18); }
+  .art-dash .paper-tabs i:first-child{ background: #c08a3f; }
+  .art-dash .paper-bars{ display: flex; align-items: flex-end; gap: 4px; height: 46px; margin-top: 13px; }
+  .art-dash .paper-bars i{ flex: 1; border-radius: 2px 2px 0 0; background: rgba(155, 101, 31, .25); }
+  .art-dash .paper-bars i:nth-child(1){ height: 34%; }
+  .art-dash .paper-bars i:nth-child(2){ height: 56%; }
+  .art-dash .paper-bars i:nth-child(3){ height: 43%; }
+  .art-dash .paper-bars i:nth-child(4){ height: 72%; }
+  .art-dash .paper-bars i:nth-child(5){ height: 58%; }
+  .art-dash .paper-bars i:nth-child(6){ height: 88%; }
+  .art-dash .paper-bars i:nth-child(7){ height: 66%; background: #c08a3f; }
+  .art-dash .paper-footer{
+    position: absolute; left: 15px; right: 15px; bottom: 13px;
+    display: flex; align-items: center; justify-content: space-between;
+    padding-top: 7px; border-top: 1px solid rgba(77, 58, 34, .14);
+    color: #927c59; font-size: 5.5px; letter-spacing: .1em; text-transform: uppercase;
+  }
+
+  /* ============ Arte: STUDY FLASHCARDS ============ */
+  .app-card--flashcards .app-art{
+    background:
+      radial-gradient(62% 62% at 74% 16%, rgba(143, 211, 176, .30), transparent 66%),
+      radial-gradient(55% 60% at 10% 92%, rgba(27, 75, 57, .60), transparent 72%),
+      linear-gradient(155deg, #07120e, #060b09);
+  }
+  .art-flash .art-orb{ width: 190px; height: 190px; right: -40px; top: -55px; background: rgba(143, 211, 176, .16); }
+  .art-flash .flash-deck{ position: absolute; left: 10%; top: 7%; width: 74%; height: 84%; }
+  .art-flash .flash-card{
+    position: absolute; left: 50%; top: 50%; width: 70%; height: 83%;
+    border-radius: 13px; overflow: hidden;
+  }
+  .art-flash .flash-back{
+    transform: translate(-58%, -50%) rotate(-13deg) scale(.92);
+    background: rgba(245, 242, 230, .10); border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: 0 24px 40px -24px rgba(0, 0, 0, .9);
+  }
+  .art-flash .flash-mid{
+    transform: translate(-49%, -50%) rotate(-6deg) scale(.96);
+    background: linear-gradient(160deg, rgba(42, 100, 78, .55), rgba(12, 34, 27, .8));
+    border: 1px solid rgba(143, 211, 176, .24);
+    box-shadow: 0 26px 44px -24px rgba(0, 0, 0, .9);
+  }
+  .art-flash .flash-front{
+    transform: translate(-42%, -50%) rotate(4deg);
+    padding: 14px 14px 12px;
+    background: linear-gradient(158deg, #f8f4e8, #e7e1d1);
+    color: #173128; box-shadow: 0 34px 55px -24px rgba(0, 0, 0, .92), inset 0 1px 0 rgba(255, 255, 255, .7);
+  }
+  .art-flash .flash-tag{ color: #3e8d6b; font-size: 6px; font-weight: 800; letter-spacing: .17em; }
+  .art-flash .flash-q{
+    margin: 12px 0 4px; color: #1d3b2f;
+    font-family: var(--font-display); font-size: 49px; line-height: .9;
+  }
+  .art-flash .flash-line{ height: 3.5px; margin-bottom: 4px; border-radius: 99px; background: #b9c7bc; }
+  .art-flash .flash-line.short{ width: 66%; }
+  .art-flash .flash-foot{
+    position: absolute; left: 14px; right: 14px; bottom: 11px;
+    display: flex; align-items: center; justify-content: space-between;
+    color: #7c9186; font-size: 5.5px; letter-spacing: .08em; text-transform: uppercase;
+  }
+  .art-flash .flash-dots{ display: flex; gap: 3px; }
+  .art-flash .flash-dots i{ width: 3px; height: 3px; border-radius: 50%; background: #b4c4ba; }
+  .art-flash .flash-dots i:first-child{ background: #3e8d6b; }
 
   /* ============ Dock lateral ============ */
   .dock{
-    position: fixed; left: clamp(16px, 2.2vw, 30px); top: 50%;
+    position: fixed; z-index: 40; left: 18px; top: 50%;
     transform: translateY(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 6px;
-    padding: 10px 8px;
-    background: var(--glass-dark);
-    border: 1px solid var(--border-soft);
-    border-radius: var(--r-lg);
-    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    box-shadow: var(--shadow-md);
-    z-index: var(--z-dock);
+    display: flex; flex-direction: column; gap: 2px;
+    padding: 5px; border-radius: 999px;
+    background: linear-gradient(180deg, rgba(46, 34, 26, .46), rgba(10, 9, 8, .62));
+    border: 1px solid rgba(255, 255, 255, .12);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 22px 50px -28px rgba(0, 0, 0, .95);
+    -webkit-backdrop-filter: blur(20px) saturate(150%); backdrop-filter: blur(20px) saturate(150%);
   }
-  .dock-logo{
-    width: 34px; height: 34px; border-radius: 10px;
-    display: grid; place-items: center;
-    background: linear-gradient(140deg, var(--red), var(--red-dark));
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .25);
-  }
-  .dock-logo svg{ width: 16px; height: 16px; display: block; }
-  .dock-sep{ width: 22px; height: 1px; background: var(--border); margin: 4px 0; }
   .dock-btn{
-    width: 42px; height: 42px;
+    --dock: #fff;
+    width: 40px; height: 40px;
     display: grid; place-items: center;
-    border-radius: 12px; border: 1px solid transparent; background: transparent;
-    color: rgba(255, 255, 255, .55); cursor: pointer;
-    transition: background var(--t-fast), color var(--t-fast), border-color var(--t-fast);
+    border: 1px solid transparent; border-radius: 50%;
+    background: transparent; color: rgba(255, 255, 255, .38);
+    cursor: pointer;
+    transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
   }
-  .dock-btn svg{ width: 19px; height: 19px; display: block; }
-  .dock-btn:hover{ background: var(--glass); color: var(--text-1); }
-  .dock-btn[aria-current="true"]{
-    background: var(--red-soft); color: var(--white);
-    border-color: rgba(223, 37, 49, .35);
+  .dock-btn svg{ width: 17px; height: 17px; display: block; }
+  .dock-btn:hover{ color: rgba(255, 255, 255, .8); background: rgba(255, 255, 255, .07); }
+  .dock-btn.is-active{
+    color: var(--dock);
+    background: color-mix(in srgb, var(--dock) 13%, rgba(255, 255, 255, .04));
+    border-color: color-mix(in srgb, var(--dock) 28%, transparent);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px -8px color-mix(in srgb, var(--dock) 55%, transparent);
   }
 
-  /* ============ Barra de control inferior ============ */
-  .controls{
-    position: fixed; left: 50%; bottom: 16px; transform: translateX(-50%);
-    display: flex; flex-direction: column; align-items: center; gap: 10px;
-    z-index: var(--z-bar);
+  /* ============ Control inferior ============ */
+  .carousel-bar{
+    --bar: var(--red);
+    position: relative; z-index: 10;
+    width: min(560px, calc(100vw - 40px)); height: 62px;
+    margin-top: 12px; padding: 7px 9px;
+    display: flex; align-items: center; gap: 7px;
+    border-radius: 21px;
+    background:
+      linear-gradient(180deg, rgba(54, 39, 30, .46), rgba(12, 10, 9, .68)),
+      rgba(10, 9, 8, .42);
+    border: 1px solid rgba(255, 255, 255, .14);
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 26px 60px -34px rgba(0, 0, 0, .96);
+    -webkit-backdrop-filter: blur(24px) saturate(150%); backdrop-filter: blur(24px) saturate(150%);
   }
-  .dockbar{
-    display: flex; align-items: center; gap: 8px;
-    padding: 8px;
-    background: var(--glass-dark);
-    border: 1px solid var(--border-soft);
-    border-radius: var(--r-full);
-    -webkit-backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    backdrop-filter: blur(var(--blur-md)) saturate(140%);
-    box-shadow: var(--shadow-md);
-  }
-  .nav-btn{
-    width: 44px; height: 44px; flex: none;
-    display: grid; place-items: center;
-    border-radius: 50%;
-    background: var(--glass); border: 1px solid var(--border-soft);
-    color: var(--text-1); cursor: pointer;
-    transition: background var(--t-fast), transform var(--t-fast);
-  }
-  .nav-btn:hover{ background: var(--glass-strong); }
-  .nav-btn:active{ transform: scale(.94); }
-  .nav-btn svg{ width: 18px; height: 18px; display: block; }
-  .capsule{
-    display: flex; align-items: center; gap: 12px;
-    padding: 6px 20px 6px 8px;
-    min-width: 248px;
-    border-radius: var(--r-full);
-    background: rgba(255, 255, 255, .05);
-    border: 1px solid var(--border-soft);
-  }
-  .cap-icon{
+  .bar-btn{
     width: 38px; height: 38px; flex: none;
     display: grid; place-items: center;
-    border-radius: 12px;
-    background: linear-gradient(140deg, var(--red-soft), rgba(255, 255, 255, .04));
-    border: 1px solid rgba(255, 255, 255, .12);
-    color: var(--white);
+    border-radius: 50%; border: 1px solid transparent;
+    background: transparent; color: rgba(255, 255, 255, .46);
+    cursor: pointer; transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast);
   }
-  .cap-icon svg{ width: 19px; height: 19px; display: block; }
-  .cap-text{ display: flex; flex-direction: column; min-width: 0; }
-  .cap-text strong{ font-size: 13.5px; font-weight: 650; letter-spacing: .06em; white-space: nowrap; }
-  .cap-text em{
-    font-style: normal; font-size: 11.5px; color: var(--text-3); white-space: nowrap;
-    overflow: hidden; text-overflow: ellipsis;
-  }
-  .dots{ display: flex; align-items: center; gap: 4px; }
-  .dot{
-    width: 26px; height: 22px; flex: none;
+  .bar-btn:hover{ color: #fff; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .1); }
+  .bar-btn svg{ width: 17px; height: 17px; display: block; }
+  .bar-now{ display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; padding: 0 2px; }
+  .bar-thumb{
+    width: 42px; height: 42px; flex: none;
     display: grid; place-items: center;
-    background: transparent; border: none; cursor: pointer; padding: 0;
+    border-radius: 50%;
+    color: var(--bar);
+    background: color-mix(in srgb, var(--bar) 14%, rgba(255, 255, 255, .05));
+    border: 1px solid color-mix(in srgb, var(--bar) 28%, rgba(255, 255, 255, .08));
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .12);
   }
-  .dot::before{
-    content: ""; width: 8px; height: 8px; border-radius: var(--r-full);
-    background: rgba(255, 255, 255, .22);
-    transition: width var(--t-base), background var(--t-base);
+  .bar-thumb svg{ width: 18px; height: 18px; display: block; }
+  .bar-copy{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .bar-copy b{
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    color: #f5f2ec; font-size: 11px; font-weight: 650; letter-spacing: .055em;
   }
-  .dot:hover::before{ background: rgba(255, 255, 255, .4); }
-  .dot.is-on::before{ width: 22px; background: var(--red); }
+  .bar-copy span{
+    overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+    color: rgba(245, 242, 236, .42); font-size: 9px; line-height: 1.2;
+  }
+  .bar-open{
+    height: 38px; flex: none;
+    display: inline-flex; align-items: center; gap: 6px;
+    padding: 0 14px; border-radius: 11px; border: 0;
+    background: #f4f1e9; color: #14110e;
+    font: inherit; font-size: 10px; font-weight: 680; letter-spacing: .03em;
+    cursor: pointer;
+    box-shadow: 0 8px 20px -12px rgba(0, 0, 0, .85);
+    transition: background var(--t-fast), transform var(--t-fast);
+  }
+  .bar-open:hover{ background: #fff; transform: translateY(-1px); }
+  .bar-open svg{ width: 13px; height: 13px; }
+  .dots{
+    position: relative; z-index: 10;
+    display: flex; align-items: center; justify-content: center; gap: 6px;
+    margin-top: 11px; height: 8px;
+  }
+  .dot{
+    width: 6px; height: 6px; padding: 0; flex: none;
+    border: 0; border-radius: 999px; background: rgba(255, 255, 255, .22);
+    cursor: pointer; transition: width 360ms var(--ease-out), background 260ms ease;
+  }
+  .dot:hover{ background: rgba(255, 255, 255, .5); }
+  .dot.is-active{ width: 22px; background: #f4f1e9; box-shadow: 0 0 16px rgba(255, 255, 255, .18); }
 
-  /* ============ Modal de atajos ============ */
+  /* ============ Modales ============ */
   .scrim{
     position: fixed; inset: 0; z-index: var(--z-modal);
     background: rgba(0, 0, 0, .55);
@@ -501,13 +850,13 @@
   .modal{
     position: fixed; z-index: calc(var(--z-modal) + 1);
     left: 50%; top: 50%;
-    width: min(380px, calc(100vw - 40px));
+    width: min(400px, calc(100vw - 40px));
     transform: translate(-50%, -48%) scale(.97);
-    background: rgba(14, 14, 14, .92);
+    background: linear-gradient(180deg, rgba(20, 20, 20, .94), rgba(10, 10, 10, .92));
     border: 1px solid var(--border);
     border-radius: var(--r-lg);
     padding: 20px 22px;
-    box-shadow: var(--shadow-lg);
+    box-shadow: inset 0 1px 0 var(--glass-edge), var(--shadow-lg);
     -webkit-backdrop-filter: blur(var(--blur-lg));
     backdrop-filter: blur(var(--blur-lg));
     opacity: 0; visibility: hidden;
@@ -528,20 +877,34 @@
     color: var(--text-1);
     box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .4);
   }
-  .modal-note{ margin-top: 16px; font-size: 12px; color: var(--text-3); line-height: 1.5; }
+  .modal-note{ margin-top: 16px; font-size: 12px; color: var(--text-3); line-height: 1.55; }
+  .about-brand{ display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
+  .about-mark{
+    width: 46px; height: 46px; border-radius: 14px; flex: none;
+    display: grid; place-items: center;
+    background: linear-gradient(140deg, var(--red), var(--red-dark));
+    box-shadow: 0 10px 26px -12px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, .25);
+  }
+  .about-mark svg{ width: 21px; height: 21px; display: block; }
+  .about-id{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+  .about-wordmark{ font-family: var(--font-display); font-size: 19px; letter-spacing: .14em; }
+  .about-sub{ font-size: 12px; color: var(--text-3); }
+  .about-list li span:last-child{ color: var(--text-1); font-weight: 550; text-align: right; }
 
   /* ============ Overlay de apertura ============ */
   body.launching{ overflow: hidden; }
-  body.launching .card,
+  body.launching .app-card,
+  body.launching .topbar,
   body.launching .dock,
-  body.launching .controls,
-  body.launching .topbar{ pointer-events: none; }
+  body.launching .carousel-bar,
+  body.launching .dots{ pointer-events: none; }
 
   .overlay{
+    --launch: var(--red);
     position: fixed; inset: 0; z-index: var(--z-overlay);
     display: grid; place-items: center; cursor: default;
     background:
-      radial-gradient(58% 52% at 50% 46%, var(--red-soft), transparent 70%),
+      radial-gradient(58% 52% at 50% 46%, color-mix(in srgb, var(--launch) 18%, transparent), transparent 70%),
       radial-gradient(140% 100% at 50% 0%, rgba(255, 255, 255, .04), transparent 55%),
       #060606;
     clip-path: inset(50% 50% 50% 50% round 30px);
@@ -559,105 +922,120 @@
   .overlay-icon{
     width: 76px; height: 76px; border-radius: 22px;
     display: grid; place-items: center;
-    color: var(--white);
-    background: linear-gradient(150deg, var(--red-soft), rgba(255, 255, 255, .04));
-    border: 1px solid rgba(255, 255, 255, .14);
-    box-shadow: 0 20px 60px -20px var(--red-glow);
+    color: var(--launch);
+    background: color-mix(in srgb, var(--launch) 15%, transparent);
+    border: 1px solid color-mix(in srgb, var(--launch) 34%, transparent);
+    box-shadow: 0 20px 60px -20px color-mix(in srgb, var(--launch) 45%, transparent);
   }
   .overlay-icon svg{ width: 34px; height: 34px; display: block; }
-  .overlay-name{ font-size: 22px; font-weight: 700; letter-spacing: .08em; }
+  .overlay-name{ font-size: 22px; font-weight: 700; letter-spacing: .08em; text-align: center; }
   .overlay-status{ display: inline-flex; align-items: center; gap: 10px; color: var(--text-2); font-size: 14px; }
   .spinner{
     width: 16px; height: 16px; border-radius: 50%;
     border: 2px solid rgba(255, 255, 255, .16);
-    border-top-color: var(--red);
+    border-top-color: var(--launch);
     animation: spin .8s linear infinite;
   }
   @keyframes spin{ to{ transform: rotate(360deg); } }
-
-  /* ============ Marca ZARCONT ============ */
-  .corner-credit{
-    position: fixed; left: clamp(16px, 2.2vw, 30px); bottom: 16px;
-    font-size: 11px; letter-spacing: .08em; color: var(--text-3);
-    font-variant-numeric: tabular-nums;
-    pointer-events: none; user-select: none;
-    z-index: 1;
-  }
-  .about-brand{ display: flex; align-items: center; gap: 14px; margin-bottom: 16px; }
-  .about-mark{
-    width: 46px; height: 46px; border-radius: 14px; flex: none;
-    display: grid; place-items: center;
-    background: linear-gradient(140deg, var(--red), var(--red-dark));
-    box-shadow: 0 10px 26px -12px var(--red-glow), inset 0 1px 0 rgba(255, 255, 255, .25);
-  }
-  .about-mark svg{ width: 21px; height: 21px; display: block; }
-  .about-id{ display: flex; flex-direction: column; gap: 2px; min-width: 0; }
-  .about-wordmark{ font-family: var(--font-display); font-size: 19px; letter-spacing: .14em; }
-  .about-sub{ font-size: 12px; color: var(--text-3); }
-  .about-list li span:last-child{ color: var(--text-1); font-weight: 550; text-align: right; }
   .overlay-brand{
     font-family: var(--font-display);
     font-size: 11px; letter-spacing: .34em; color: rgba(255, 255, 255, .38);
   }
 
-  /* ============ Entrada (aparición al cargar) ============ */
-  .topbar, .title, .subtitle, .deck-wrap, .dock, .controls, .corner-credit{
-    transition: opacity 700ms ease, transform 700ms var(--ease-out);
+  /* ============ Entrada ============ */
+  .topbar, .carousel-shell, .dock{
+    transition: opacity 740ms ease, transform 740ms var(--ease-out);
   }
-  /* Sin JS, todo permanece visible (degradación limpia) */
   html.js .topbar{ opacity: 0; transform: translateX(-50%) translateY(-12px); }
-  html.js .title{ opacity: 0; transform: translateY(16px); }
-  html.js .subtitle{ opacity: 0; transform: translateY(16px); }
-  html.js .deck-wrap{ opacity: 0; transform: translateY(26px) scale(.985); }
-  html.js .dock{ opacity: 0; transform: translateY(-50%) translateX(-16px); }
-  html.js .controls{ opacity: 0; transform: translateX(-50%) translateY(16px); }
-  html.js .corner-credit{ opacity: 0; }
-
+  html.js .carousel-shell{ opacity: 0; transform: translateY(26px) scale(.985); }
+  html.js .dock{ opacity: 0; transform: translateY(-50%) translateX(-10px); }
   body.ready .topbar{ opacity: 1; transform: translateX(-50%); }
-  body.ready .title{ opacity: 1; transform: none; }
-  body.ready .subtitle{ opacity: 1; transform: none; }
-  body.ready .deck-wrap{ opacity: 1; transform: none; }
+  body.ready .carousel-shell{ opacity: 1; transform: none; }
   body.ready .dock{ opacity: 1; transform: translateY(-50%); }
-  body.ready .controls{ opacity: 1; transform: translateX(-50%); }
-  body.ready .corner-credit{ opacity: 1; }
-
-  .title{ transition-delay: 90ms; }
-  .subtitle{ transition-delay: 160ms; }
-  .deck-wrap{ transition-delay: 240ms; }
-  .dock{ transition-delay: 360ms; }
-  .controls{ transition-delay: 440ms; }
-  .corner-credit{ transition-delay: 560ms; }
+  .topbar{ transition-delay: 60ms; }
+  .carousel-shell{ transition-delay: 130ms; }
+  .dock{ transition-delay: 230ms; }
 
   /* ============ Responsive ============ */
-  @media (max-width: 900px){
+  @media (max-width: 1100px){
     .dock{ display: none; }
   }
-
-  @media (max-width: 760px){
-    :root{
-      --card-w: min(88vw, 430px);
-      --card-h: clamp(470px, 62vh, 590px);
-    }
-    .corner-credit{ display: none; }
-    main{ padding-top: clamp(86px, 12vh, 100px); padding-bottom: clamp(108px, 15vh, 132px); }
+  @media (max-width: 1020px){
     .tb-center{ display: none; }
-    /* En móvil, la tarjeta secundaria espera oculta tras la activa */
-    .deck[data-current="banquear"] .card[data-app="plazas"],
-    .deck[data-current="plazas"] .card[data-app="banquear"]{
-      --tx: 5%; --tz: -240px; --ry: 0deg; --sc: .95; --op: 0;
-      pointer-events: none;
+  }
+  @media (max-width: 900px){
+    main#stage{ padding-top: 76px; }
+    .carousel-shell{ width: calc(100vw - 24px); }
+    .topbar{ width: calc(100vw - 24px); }
+    .app-card.is-left,
+    .app-card.is-right,
+    .app-card.is-hidden{
+      opacity: 0; pointer-events: none;
+      transform: translate(-50%, -50%) scale(.94);
+      filter: none;
     }
-    .capsule{ min-width: 0; padding-right: 16px; }
-    .cap-text em{ max-width: 150px; }
+    .app-card.is-active{ transform: translate(-50%, -50%) scale(1); }
   }
-
-  @media (max-width: 480px){
-    .brand{ letter-spacing: .1em; }
-    .nav-btn{ width: 40px; height: 40px; }
+  @media (max-width: 820px){
+    .carousel{
+      --card-w: min(448px, calc(100vw - 40px));
+      --card-h: clamp(520px, calc(100dvh - 222px), 640px);
+    }
   }
-
-  @media (max-height: 840px) and (min-width: 761px){
-    :root{ --card-h: clamp(400px, 52vh, 500px); }
+  @media (max-width: 600px){
+    main#stage{ padding: 68px 0 14px; }
+    .topbar{ top: 10px; height: 50px; border-radius: 14px; padding-left: 9px; }
+    .topbar .logo{ width: 27px; height: 27px; border-radius: 8px; }
+    .brand{ font-size: 9px; letter-spacing: .11em; }
+    .tb-arrows{ padding-left: 4px; }
+    .tb-arrows .icon-btn{ width: 29px; height: 29px; }
+    .icon-btn{ width: 32px; height: 32px; }
+    #btnFs{ display: none; }
+    .carousel{
+      --card-w: min(448px, calc(100vw - 24px));
+      --card-h: clamp(520px, calc(100dvh - 190px), 640px);
+    }
+    .app-card{ border-radius: 24px; }
+    .app-art{ flex-basis: 60%; }
+    .app-body{ padding: 13px 18px 15px; }
+    .app-card h2{ font-size: 25px; }
+    .app-card:not(.is-active) h2{ font-size: 23px; }
+    .app-desc{ font-size: 10.8px; line-height: 1.42; }
+    .app-meta{ margin-top: 6px; gap: 3px 10px; }
+    .app-quote{ margin-top: 13px; padding-top: 10px; font-size: 17px; }
+    .app-progress{ margin-top: 7px; padding-top: 7px; }
+    .app-progress-note{ font-size: 8px; }
+    .app-last{ margin-top: 4px; font-size: 8.5px; }
+    .app-last span{ font-size: 7px; }
+    .app-foot{ padding-top: 7px; }
+    .app-cta{ font-size: 10px; }
+    .app-open-pill{ left: 13px; top: 13px; }
+    .app-badge{ right: 13px; top: 13px; }
+    .art-stat{ right: 12px; bottom: 12px; }
+    .carousel-bar{
+      width: calc(100vw - 24px); height: 58px;
+      margin-top: 10px; padding: 6px 7px; gap: 5px; border-radius: 18px;
+    }
+    .bar-btn{ width: 34px; height: 34px; }
+    .bar-thumb{ width: 36px; height: 36px; }
+    .bar-thumb svg{ width: 16px; height: 16px; }
+    .bar-now{ gap: 8px; }
+    .bar-copy b{ font-size: 10px; }
+    .bar-copy span{ font-size: 8.5px; }
+    .bar-open{ width: 36px; height: 36px; padding: 0; justify-content: center; border-radius: 50%; }
+    .bar-open span{ display: none; }
+    .dots{ margin-top: 8px; }
+  }
+  @media (max-width: 380px){
+    .brand{ display: none; }
+    .app-card h2{ font-size: 23px; }
+    .app-tag{ display: none; }
+  }
+  @media (max-height: 820px) and (min-width: 821px){
+    .app-art{ flex-basis: 58%; }
+    .app-desc{ -webkit-line-clamp: 2; }
+    .app-meta{ margin-top: 5px; }
+    .app-progress{ margin-top: 6px; padding-top: 6px; }
   }
 
   /* ============ Accesibilidad: menos movimiento ============ */
@@ -669,9 +1047,9 @@
     }
   }
 
-  /* Respaldo si el navegador no soporta backdrop-filter */
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
-    .topbar, .dock, .dockbar, .modal, .badge{ background: rgba(12, 12, 12, .96); }
+    .topbar, .modal, .dock, .carousel-bar{ background: rgba(12, 11, 10, .96); }
+    .app-badge, .art-stat{ background: rgba(12, 11, 10, .9); }
   }
 </style>
 </head>
@@ -679,10 +1057,18 @@
 
   <!-- Fondo ambiental -->
   <div class="bg" aria-hidden="true">
-    <div class="glow glow-a"></div>
-    <div class="glow glow-b"></div>
-    <div class="glow glow-c"></div>
-    <div class="grid"></div>
+    <div class="room">
+      <span class="lamp-glow"></span>
+      <span class="lamp-core"></span>
+      <span class="table-glow"></span>
+      <span class="table-edge"></span>
+      <span class="room-line"></span>
+      <span class="bokeh b1"></span>
+      <span class="bokeh b2"></span>
+      <span class="bokeh b3"></span>
+      <span class="bokeh b4"></span>
+    </div>
+    <div class="beam"></div>
     <div class="noise"></div>
     <div class="vignette"></div>
   </div>
@@ -697,8 +1083,16 @@
         </svg>
       </span>
       <span class="brand">SERUMS HUB</span>
+      <div class="tb-arrows" aria-label="Navegación del carrusel">
+        <button class="icon-btn" id="prevTop" data-tip="Anterior" aria-label="Aplicación anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <button class="icon-btn" id="nextTop" data-tip="Siguiente" aria-label="Aplicación siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
     </div>
-    <div class="tb-center" role="status"><span class="dot-live"></span>2 aplicaciones</div>
+    <div class="tb-center"><span class="dot-live"></span><b id="tbNow">BANQUEO</b><span class="tb-count" id="tbPos">1 / 4</span></div>
     <div class="tb-right">
       <button class="icon-btn" id="btnFs" data-tip="Pantalla completa" aria-label="Pantalla completa">
         <svg class="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -729,213 +1123,238 @@
 
   <!-- Escenario -->
   <main id="stage">
+    <div class="carousel-shell">
+      <section class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Aplicaciones disponibles">
 
-    <section class="hero">
-      <h1 class="title">SERUMS <span class="accent">HUB</span></h1>
-      <p class="subtitle">¿Qué quieres hacer hoy?</p>
-    </section>
-
-    <div class="deck-wrap">
-      <section class="deck" id="deck" data-current="banquear" aria-label="Aplicaciones disponibles">
-
-        <!-- BANQUEAR -->
-        <a class="card" data-app="banquear" aria-current="true" href="./EXAMEN STUDIO/Examen Studio.html">
-          <span class="card-art" aria-hidden="true">
-            <svg viewBox="0 0 540 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <radialGradient id="artGlowB" cx="50%" cy="16%" r="72%">
-                  <stop offset="0%" stop-color="#DF2531" stop-opacity=".2"/>
-                  <stop offset="55%" stop-color="#DF2531" stop-opacity=".05"/>
-                  <stop offset="100%" stop-color="#DF2531" stop-opacity="0"/>
-                </radialGradient>
-              </defs>
-              <rect width="540" height="560" fill="url(#artGlowB)"/>
-              <g fill="none" stroke="rgba(255,255,255,.1)" stroke-width="2">
-                <rect x="398" y="58" width="96" height="128" rx="16" transform="rotate(8 446 122)"/>
-                <rect x="376" y="84" width="96" height="128" rx="16" transform="rotate(3 424 148)"/>
-              </g>
-              <g transform="rotate(-5 250 300)">
-                <rect x="92" y="120" width="300" height="380" rx="26" fill="rgba(255,255,255,.035)" stroke="rgba(255,255,255,.13)"/>
-                <g stroke="rgba(255,255,255,.1)" stroke-width="4" stroke-linecap="round">
-                  <line x1="152" y1="192" x2="352" y2="192"/>
-                  <line x1="152" y1="258" x2="352" y2="258"/>
-                  <line x1="152" y1="324" x2="352" y2="324"/>
-                  <line x1="152" y1="390" x2="300" y2="390"/>
-                </g>
-                <g fill="none" stroke="rgba(255,255,255,.2)" stroke-width="2.5">
-                  <circle cx="124" cy="192" r="10"/>
-                  <circle cx="124" cy="258" r="10"/>
-                  <circle cx="124" cy="324" r="10"/>
-                  <circle cx="124" cy="390" r="10"/>
-                </g>
-                <circle cx="124" cy="258" r="12" fill="#DF2531"/>
-                <path d="m119 258 3.5 3.5 7-7.5" fill="none" stroke="#FFFFFF" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <g transform="rotate(10 388 432)">
-                <circle cx="388" cy="432" r="52" fill="rgba(223,37,49,.14)" stroke="rgba(223,37,49,.55)" stroke-width="2"/>
-                <path d="m364 432 16 16 30-32" fill="none" stroke="#DF2531" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
-              </g>
-              <g fill="none" stroke="rgba(255,255,255,.05)" stroke-width="9" stroke-linecap="round" stroke-linejoin="round" transform="translate(430 282) scale(4.4) translate(-12 -12)">
-                <rect x="8" y="2.5" width="8" height="4" rx="1.5"/>
-                <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
-              </g>
-            </svg>
+      <!-- BANQUEO -->
+      <a class="app-card app-card--banqueo is-active" data-app="banqueo" data-index="0" href="./EXAMEN STUDIO/Examen Studio.html?v=2.1.5">
+        <div class="app-art" aria-hidden="true">
+          <div class="art-scene art-ben">
+            <span class="art-orb"></span>
+            <div class="sheet-back"></div>
+            <div class="sheet">
+              <div class="sheet-top">
+                <span class="sheet-brand">BANQUEO</span>
+                <span class="sheet-no">FICHA 01</span>
+              </div>
+              <div class="sheet-q"></div>
+              <div class="sheet-q w70"></div>
+              <div class="sheet-opts">
+                <div class="sheet-opt is-key"><i>A</i><span></span></div>
+                <div class="sheet-opt"><i>B</i><span></span></div>
+                <div class="sheet-opt"><i>C</i><span></span></div>
+                <div class="sheet-opt"><i>D</i><span></span></div>
+              </div>
+              <div class="sheet-stamp">CLAVE<br>VERIFICADA</div>
+            </div>
+            <div class="art-stat"><b>51</b><span>exámenes</span></div>
+          </div>
+          <span class="app-open-pill">Abrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="card-scrim" aria-hidden="true"></span>
-          <span class="badge"><span class="badge-dot"></span>Exámenes</span>
-
-          <div class="content-full">
-            <div class="row-title">
-              <h2>BANQUEAR</h2>
-              <span class="counter">1 / 2</span>
-            </div>
-            <p class="desc">Repasa, practica y resuelve exámenes SERUMS de años anteriores.</p>
-            <ul class="meta">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7z"/><path d="M14 2v5h5"/><path d="M9 13h6"/><path d="M9 17h4"/></svg>
-                <span>Importa PDFs con respuestas resaltadas</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="13" r="8"/><path d="M12 9v4l2.5 2"/><path d="M9 2h6"/></svg>
-                <span>Cronómetro · Ranking · Historial</span>
-              </li>
-            </ul>
-            <div class="row-cta">
-              <span class="btn-open">Abrir aplicación
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-              </span>
-            </div>
+          <span class="app-badge">01 / 04</span>
+        </div>
+        <div class="app-body">
+          <span class="app-kicker">Banco de exámenes</span>
+          <h2>BANQUEO</h2>
+          <p class="app-desc">51 exámenes reales por profesión, con la clave en su página original, revisión y práctica.</p>
+          <ul class="app-meta">
+            <li>51 exámenes</li>
+            <li>Claves trazables</li>
+            <li>Revisión y práctica</li>
+          </ul>
+          <p class="app-quote">La clave vive en su página original.</p>
+          <div class="app-foot">
+            <span class="app-cta">Abrir aplicación
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+            <span class="app-tag">Preparación</span>
           </div>
+        </div>
+      </a>
 
-          <div class="content-mini" aria-hidden="true">
-            <strong>BANQUEAR</strong>
-            <span>Exámenes · Práctica</span>
+      <!-- PLAZAS SERUMS -->
+      <a class="app-card app-card--plazas is-right" data-app="plazas" data-index="1" href="./serums map/serums-map-explorer/index.html">
+        <div class="app-art" aria-hidden="true">
+          <div class="art-scene art-plazas">
+            <span class="art-orb"></span>
+            <div class="map-plane">
+              <span class="map-label">Territorio</span>
+              <svg class="map-lines" viewBox="0 0 360 280" preserveAspectRatio="none" aria-hidden="true">
+                <g fill="none" stroke="rgba(240,138,93,.28)" stroke-width="1.2">
+                  <path d="M-18 214C42 178 84 232 148 188S254 118 384 154"/>
+                  <path d="M-12 238C54 200 98 252 164 208S274 142 392 176" opacity=".55"/>
+                  <path d="M-20 190C38 154 88 206 142 164S248 94 378 126" opacity=".45"/>
+                  <ellipse cx="218" cy="88" rx="58" ry="34"/>
+                  <ellipse cx="218" cy="88" rx="40" ry="22" opacity=".7"/>
+                  <ellipse cx="218" cy="88" rx="22" ry="11" opacity=".5"/>
+                </g>
+                <path d="M28 244C86 196 134 230 192 170S276 126 342 142" fill="none" stroke="rgba(255,205,176,.62)" stroke-width="1.6" stroke-linecap="round" stroke-dasharray="3 8"/>
+                <g fill="rgba(255,196,160,.55)">
+                  <circle cx="92" cy="218" r="2"/><circle cx="146" cy="196" r="2"/>
+                  <circle cx="218" cy="146" r="2"/><circle cx="286" cy="132" r="2"/>
+                </g>
+              </svg>
+              <span class="map-pin pin-a"></span>
+              <span class="map-pin pin-b"></span>
+              <span class="map-pin pin-c"></span>
+            </div>
+            <div class="art-stat"><b>7 323</b><span>plazas</span></div>
           </div>
-        </a>
-
-        <!-- PLAZAS SERUMS -->
-        <a class="card" data-app="plazas" href="./serums map/serums-map-explorer/index.html">
-          <span class="card-art" aria-hidden="true">
-            <svg viewBox="0 0 540 560" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-              <defs>
-                <radialGradient id="artGlowP" cx="72%" cy="14%" r="72%">
-                  <stop offset="0%" stop-color="#DF2531" stop-opacity=".18"/>
-                  <stop offset="55%" stop-color="#DF2531" stop-opacity=".05"/>
-                  <stop offset="100%" stop-color="#DF2531" stop-opacity="0"/>
-                </radialGradient>
-                <pattern id="artDots" width="26" height="26" patternUnits="userSpaceOnUse">
-                  <circle cx="2" cy="2" r="1.4" fill="rgba(255,255,255,.1)"/>
-                </pattern>
-              </defs>
-              <rect width="540" height="560" fill="url(#artGlowP)"/>
-              <rect width="540" height="560" fill="url(#artDots)"/>
-              <g fill="none" stroke="rgba(255,255,255,.06)" stroke-width="2">
-                <path d="M-20 520 C 120 480 180 520 320 470"/>
-                <path d="M-20 556 C 140 510 220 556 380 500"/>
-              </g>
-              <path d="M 40 470 C 150 430 150 300 260 280 S 430 200 466 116" fill="none" stroke="rgba(223,37,49,.6)" stroke-width="3" stroke-linecap="round" stroke-dasharray="2 14"/>
-              <circle cx="118" cy="404" r="5" fill="rgba(255,255,255,.25)"/>
-              <circle cx="260" cy="280" r="5" fill="#DF2531" opacity=".85"/>
-              <circle cx="352" cy="238" r="5" fill="rgba(255,255,255,.25)"/>
-              <circle cx="466" cy="72" r="30" fill="none" stroke="rgba(223,37,49,.35)"/>
-              <circle cx="466" cy="72" r="52" fill="none" stroke="rgba(223,37,49,.16)"/>
-              <g transform="translate(466 96) scale(3.4) translate(-12 -21)">
-                <path d="M12 21.5s-7.5-6.8-7.5-11.5a7.5 7.5 0 0 1 15 0c0 4.7-7.5 11.5-7.5 11.5z" fill="#DF2531" stroke="rgba(255,255,255,.25)" stroke-width=".8"/>
-                <circle cx="12" cy="10" r="3" fill="#0d0d0d"/>
-              </g>
-            </svg>
+          <span class="app-open-pill">Abrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="card-scrim" aria-hidden="true"></span>
-          <span class="badge"><span class="badge-dot"></span>Mapa</span>
-
-          <div class="content-full">
-            <div class="row-title">
-              <h2>PLAZAS SERUMS</h2>
-              <span class="counter">2 / 2</span>
-            </div>
-            <p class="desc">Explora, filtra y consulta las plazas SERUMS disponibles.</p>
-            <ul class="meta">
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-                <span>Mapa interactivo · Filtros y búsqueda</span>
-              </li>
-              <li>
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21h18"/><path d="M6 21V11"/><path d="M11 21V5"/><path d="M16 21v-8"/><path d="M21 21V8"/></svg>
-                <span>Adjudicación · Notas · Estadísticas</span>
-              </li>
-            </ul>
-            <div class="row-cta">
-              <span class="btn-open">Abrir aplicación
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
-              </span>
-            </div>
+          <span class="app-badge">02 / 04</span>
+        </div>
+        <div class="app-body">
+          <span class="app-kicker">Explorador territorial</span>
+          <h2>PLAZAS SERUMS</h2>
+          <p class="app-desc">Explora, filtra y consulta las 7 323 plazas disponibles en un mapa interactivo.</p>
+          <ul class="app-meta">
+            <li>7 323 plazas</li>
+            <li>Mapa y filtros</li>
+            <li>Adjudicación y notas</li>
+          </ul>
+          <p class="app-quote">Cada plaza, en su territorio.</p>
+          <div class="app-foot">
+            <span class="app-cta">Abrir aplicación
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+            <span class="app-tag">Plazas</span>
           </div>
+        </div>
+      </a>
 
-          <div class="content-mini" aria-hidden="true">
-            <strong>PLAZAS SERUMS</strong>
-            <span>Explorador de plazas</span>
+      <!-- STUDY DASHBOARD -->
+      <a class="app-card app-card--dashboard is-hidden" data-app="dashboard" data-index="2" data-study-card="dashboard" href="./study-dashboard/index.html">
+        <div class="app-art" aria-hidden="true">
+          <div class="art-scene art-dash">
+            <span class="art-orb"></span>
+            <div class="paper-back"></div>
+            <div class="paper">
+              <div class="paper-top">
+                <span class="paper-label">FICHA DE ESTUDIO</span>
+                <span class="paper-dot">01</span>
+              </div>
+              <div class="paper-title"></div>
+              <div class="paper-line"></div>
+              <div class="paper-line"></div>
+              <div class="paper-line short"></div>
+              <div class="paper-bar"><span></span></div>
+              <div class="paper-note">Progreso del temario</div>
+              <div class="paper-tabs"><i></i><i></i><i></i><i></i></div>
+              <div class="paper-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+              <div class="paper-footer"><span>5 áreas</span><span>14 temas</span></div>
+            </div>
+            <div class="art-stat"><b>28</b><span>fichas</span></div>
           </div>
-        </a>
+          <span class="app-open-pill">Abrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </span>
+          <span class="app-badge">03 / 04</span>
+        </div>
+        <div class="app-body">
+          <span class="app-kicker">Lectura y progreso</span>
+          <h2>STUDY DASHBOARD</h2>
+          <p class="app-desc">Organiza el temario, lee fichas resumidas y sigue tu avance ficha a ficha.</p>
+          <ul class="app-meta">
+            <li>28 fichas</li>
+            <li>14 temas</li>
+            <li>5 áreas</li>
+          </ul>
+          <div class="app-progress is-empty" data-progress="dashboard">
+            <div class="app-progress-head"><span>Fichas completadas</span><b data-progress-value>—</b></div>
+            <div class="app-progress-track"><span data-progress-bar></span></div>
+            <p class="app-progress-note" data-progress-note>Sin actividad registrada todavía</p>
+          </div>
+          <p class="app-last" data-last="dashboard" hidden><span>Último punto</span><b data-last-text></b></p>
+          <div class="app-foot">
+            <span class="app-cta">Abrir Study Dashboard
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+            <span class="app-tag">Temario</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- STUDY FLASHCARDS -->
+      <a class="app-card app-card--flashcards is-left" data-app="flashcards" data-index="3" data-study-card="flashcards" href="./study-flashcards/index.html">
+        <div class="app-art" aria-hidden="true">
+          <div class="art-scene art-flash">
+            <span class="art-orb"></span>
+            <div class="flash-deck">
+              <div class="flash-card flash-back"></div>
+              <div class="flash-card flash-mid"></div>
+              <div class="flash-card flash-front">
+                <span class="flash-tag">CONCEPTO</span>
+                <div class="flash-q">?</div>
+                <div class="flash-line"></div>
+                <div class="flash-line short"></div>
+                <div class="flash-foot">
+                  <span>Repaso activo</span>
+                  <span class="flash-dots"><i></i><i></i><i></i></span>
+                </div>
+              </div>
+            </div>
+            <div class="art-stat"><b>84</b><span>tarjetas</span></div>
+          </div>
+          <span class="app-open-pill">Abrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </span>
+          <span class="app-badge">04 / 04</span>
+        </div>
+        <div class="app-body">
+          <span class="app-kicker">Recuperación activa</span>
+          <h2>STUDY FLASHCARDS</h2>
+          <p class="app-desc">Practica con tarjetas, repaso espaciado y exámenes que vuelven sobre lo que necesitas reforzar.</p>
+          <ul class="app-meta">
+            <li>84 tarjetas</li>
+            <li>Repaso espaciado</li>
+            <li>Examen</li>
+          </ul>
+          <div class="app-progress is-empty" data-progress="flashcards">
+            <div class="app-progress-head"><span>Tarjetas revisadas</span><b data-progress-value>—</b></div>
+            <div class="app-progress-track"><span data-progress-bar></span></div>
+            <p class="app-progress-note" data-progress-note>Sin actividad registrada todavía</p>
+          </div>
+          <p class="app-last" data-last="flashcards" hidden><span>Último mazo</span><b data-last-text></b></p>
+          <div class="app-foot">
+            <span class="app-cta">Abrir Study Flashcards
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+            <span class="app-tag">Práctica</span>
+          </div>
+        </div>
+      </a>
 
       </section>
+
+      <div class="carousel-bar" id="carouselBar" aria-label="Aplicación seleccionada">
+        <button class="bar-btn" id="prevBtn" aria-label="Aplicación anterior">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+        </button>
+        <div class="bar-now">
+          <span class="bar-thumb" id="barThumb" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="8" y="2.5" width="8" height="4" rx="1.2"/><path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/><path d="m9.5 13.5 1.8 1.8 3.7-3.8"/></svg>
+          </span>
+          <span class="bar-copy"><b id="barTitle">BANQUEO</b><span id="barSub">Banco de exámenes</span></span>
+        </div>
+        <button class="bar-open" id="openCurrent" aria-label="Abrir BANQUEO">
+          <span>Abrir</span>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+        </button>
+        <button class="bar-btn" id="nextBtn" aria-label="Aplicación siguiente">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 18 6-6-6-6"/></svg>
+        </button>
+      </div>
+
+      <div class="dots" id="dots" role="group" aria-label="Seleccionar aplicación"></div>
     </div>
+
+    <aside class="dock" id="dock" aria-label="Ir a una aplicación"></aside>
   </main>
 
-  <!-- Crédito de autoría (pie) -->
-  <div class="corner-credit">SERUMS HUB · © 2026 ZARCONT</div>
-
-  <!-- Dock lateral -->
-  <nav class="dock" aria-label="Navegación de aplicaciones">
-    <span class="dock-logo" aria-hidden="true">
-      <svg viewBox="0 0 24 24" aria-hidden="true">
-        <rect x="3.5" y="4" width="7" height="16" rx="2.4" fill="#FFFFFF"/>
-        <rect x="13.5" y="4" width="7" height="16" rx="2.4" fill="rgba(255,255,255,.72)"/>
-      </svg>
-    </span>
-    <span class="dock-sep" aria-hidden="true"></span>
-    <button class="dock-btn" data-app="banquear" data-tip="BANQUEAR" aria-label="Mostrar BANQUEAR" aria-current="true">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
-        <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
-        <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
-      </svg>
-    </button>
-    <button class="dock-btn" data-app="plazas" data-tip="PLAZAS SERUMS" aria-label="Mostrar PLAZAS SERUMS" aria-current="false">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-        <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-        <circle cx="12" cy="10" r="3"/>
-      </svg>
-    </button>
-  </nav>
-
-  <!-- Barra de control inferior -->
-  <div class="controls">
-    <div class="dockbar">
-      <button class="nav-btn" id="btnPrev" data-tip="Anterior" aria-label="Aplicación anterior">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 6-6 6 6 6"/></svg>
-      </button>
-      <div class="capsule">
-        <span class="cap-icon" id="capIcon" aria-hidden="true">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
-            <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
-            <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
-          </svg>
-        </span>
-        <span class="cap-text" aria-live="polite">
-          <strong id="capName">BANQUEAR</strong>
-          <em id="capTag">Exámenes · Práctica</em>
-        </span>
-      </div>
-      <button class="nav-btn" id="btnNext" data-tip="Siguiente" aria-label="Aplicación siguiente">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
-      </button>
-    </div>
-    <div class="dots" role="group" aria-label="Selección de aplicación">
-      <button class="dot is-on" data-app="banquear" aria-label="Mostrar BANQUEAR" aria-current="true"></button>
-      <button class="dot" data-app="plazas" aria-label="Mostrar PLAZAS SERUMS" aria-current="false"></button>
-    </div>
-  </div>
+  <div class="sr-only" id="carouselLive" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Modal de atajos -->
   <div class="scrim" id="helpScrim" aria-hidden="true"></div>
@@ -947,12 +1366,12 @@
       </button>
     </div>
     <ul class="keys">
-      <li><span class="k"><kbd>←</kbd><kbd>→</kbd></span><span>Cambiar de aplicación</span></li>
-      <li><span class="k"><kbd>Enter</kbd></span><span>Abrir la aplicación seleccionada</span></li>
-      <li><span class="k"><kbd>1</kbd><kbd>2</kbd></span><span>Seleccionar aplicación directamente</span></li>
+      <li><span class="k"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd></span><span>Abrir una aplicación</span></li>
+      <li><span class="k"><kbd>←</kbd><kbd>→</kbd></span><span>Girar el carrusel</span></li>
+      <li><span class="k"><kbd>Enter</kbd></span><span>Abrir la aplicación central</span></li>
       <li><span class="k"><kbd>Esc</kbd></span><span>Cerrar este panel</span></li>
     </ul>
-    <p class="modal-note">También puedes hacer clic en las tarjetas o deslizar en pantallas táctiles.</p>
+    <p class="modal-note">También puedes tocar una tarjeta lateral para llevarla al centro, usar el dock o deslizar horizontalmente. BANQUEO y PLAZAS conservan su propio almacenamiento.</p>
   </div>
 
   <!-- Modal «Acerca de» -->
@@ -973,15 +1392,15 @@
       </span>
       <span class="about-id">
         <span class="about-wordmark">ZARCONT</span>
-        <span class="about-sub">SERUMS HUB · <span id="aboutVersion">v1.0.0</span></span>
+        <span class="about-sub">SERUMS HUB · <span id="aboutVersion">v2.2.0</span></span>
       </span>
     </div>
     <ul class="keys about-list">
       <li><span>Autoría</span><span>ZARCONT</span></li>
       <li><span>Licencia</span><span>Propietaria — todos los derechos reservados</span></li>
-      <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-1.0.0</span></li>
+      <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-2.2.0</span></li>
     </ul>
-    <p class="modal-note">Incluye <b>BANQUEAR</b> (Examen Studio) y <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v1.0.0). Datos de plazas: fuentes públicas oficiales. Las librerías de terceros conservan sus propias licencias.</p>
+    <p class="modal-note">Interfaz <b>Premium Glass 2.0</b> con carrusel de aplicaciones, dock lateral y control inferior. Incluye <b>BANQUEO</b> (Examen Studio v2.1.1), <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v2.0.0), <b>Study Dashboard</b> y <b>Study Flashcards</b>, dos aplicaciones de estudio con temario compartido. Las librerías de terceros conservan sus propias licencias.</p>
   </div>
 
   <!-- Overlay de apertura -->
@@ -997,55 +1416,50 @@
     </div>
   </div>
 
-  <!-- Iconos reutilizables de las aplicaciones -->
-  <template id="tpl-icon-banquear">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <rect x="8" y="2.5" width="8" height="4" rx="1.2"/>
-      <path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/>
-      <path d="m9.5 13.5 1.8 1.8 3.7-3.8"/>
-    </svg>
-  </template>
-  <template id="tpl-icon-plazas">
-    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-      <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/>
-      <circle cx="12" cy="10" r="3"/>
-    </svg>
-  </template>
-
 <script>
-/* © 2026 ZARCONT — SERUMS HUB · Identificador: ZARCONT-SRH-1.0.0 · Licencia propietaria (ver LICENSE) */
+/* © 2026 ZARCONT — SERUMS HUB · Identificador: ZARCONT-SRH-2.2.0 · Licencia propietaria (ver LICENSE) */
 (function(){
   "use strict";
 
   /* ==================================================================
-     CONFIGURACIÓN — Edita aquí las rutas de tus aplicaciones.
-     Las rutas son relativas a este archivo (index.html).
+     CONFIGURACIÓN — rutas base de las aplicaciones.
+     Cada tarjeta conserva su href real; si Study tiene un último punto,
+     se reemplaza por el enlace de reanudación.
      ================================================================== */
   const CONFIG = {
     apps: {
-      banquear: "./EXAMEN STUDIO/Examen Studio.html",
-      plazas:   "./serums map/serums-map-explorer/index.html"
+      banqueo:   "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+      plazas:    "./serums map/serums-map-explorer/index.html",
+      dashboard: "./study-dashboard/index.html",
+      flashcards:"./study-flashcards/index.html"
     },
-    duracionTransicion: 650,    // ms que dura la animación antes de abrir
-    abrirEnNuevaPestana: false, // true → abre la aplicación en una pestaña nueva
-    version: "1.0.0",           // versión del SERUMS HUB (marca: ZARCONT)
-    build: "ZARCONT-SRH-1.0.0"  // identificador de compilación
+    duracionTransicion: 650,
+    abrirEnNuevaPestana: false,
+    version: "2.2.0",
+    build: "ZARCONT-SRH-2.2.0"
   };
+  const SNAPSHOT_KEY = "studyhub:snapshot:v1";
   /* ================================================================== */
 
   const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
-
   const stage = document.getElementById("stage");
-  const deck = document.getElementById("deck");
-  const cards = Array.from(deck.querySelectorAll(".card"));
-  const order = cards.map(function(c){ return c.dataset.app; });
-  const dots = Array.from(document.querySelectorAll(".dot"));
-  const dockBtns = Array.from(document.querySelectorAll(".dock-btn"));
-  const capName = document.getElementById("capName");
-  const capTag = document.getElementById("capTag");
-  const capIcon = document.getElementById("capIcon");
-  const btnPrev = document.getElementById("btnPrev");
-  const btnNext = document.getElementById("btnNext");
+  const cards = Array.from(document.querySelectorAll(".app-card[data-app]"));
+  const order = cards.map(function(c){ return c.getAttribute("data-app"); });
+  const carousel = document.getElementById("carousel");
+  const carouselBar = document.getElementById("carouselBar");
+  const tbNow = document.getElementById("tbNow");
+  const tbPos = document.getElementById("tbPos");
+  const barThumb = document.getElementById("barThumb");
+  const barTitle = document.getElementById("barTitle");
+  const barSub = document.getElementById("barSub");
+  const openCurrent = document.getElementById("openCurrent");
+  const dock = document.getElementById("dock");
+  const dots = document.getElementById("dots");
+  const carouselLive = document.getElementById("carouselLive");
+  const prevTop = document.getElementById("prevTop");
+  const nextTop = document.getElementById("nextTop");
+  const prevBtn = document.getElementById("prevBtn");
+  const nextBtn = document.getElementById("nextBtn");
   const btnFs = document.getElementById("btnFs");
   const btnHelp = document.getElementById("btnHelp");
   const helpModal = document.getElementById("helpModal");
@@ -1058,48 +1472,159 @@
   const overlay = document.getElementById("overlay");
   const overlayIcon = document.getElementById("overlayIcon");
   const overlayName = document.getElementById("overlayName");
+  let activeIndex = 0;
+  let suppressClick = false;
+  let swipeStart = null;
+  let launchTimer = 0;
 
-  const icon = function(id){ return document.getElementById("tpl-icon-" + id).innerHTML; };
+  const ICONS = {
+    banqueo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2.5" width="8" height="4" rx="1.2"/><path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/><path d="m9.5 13.5 1.8 1.8 3.7-3.8"/></svg>',
+    plazas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>',
+    dashboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h6"/></svg>',
+    flashcards: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2"/><path d="M7 12h6M7 16h4"/></svg>'
+  };
+  function icon(id){ return ICONS[id] || ""; }
+
   const APPS = {
-    banquear: { name: "BANQUEAR",      tag: "Exámenes · Práctica",  icon: icon("banquear") },
-    plazas:   { name: "PLAZAS SERUMS", tag: "Explorador de plazas", icon: icon("plazas") }
+    banqueo:   { name: "BANQUEO",          tagline: "Banco de exámenes",       color: "#E33A45", icon: icon("banqueo") },
+    plazas:    { name: "PLAZAS SERUMS",    tagline: "Explorador territorial",  color: "#F08A5D", icon: icon("plazas") },
+    dashboard: { name: "STUDY DASHBOARD",  tagline: "Lectura y progreso",      color: "#E2B15B", icon: icon("dashboard") },
+    flashcards:{ name: "STUDY FLASHCARDS", tagline: "Recuperación activa",     color: "#8FD3B0", icon: icon("flashcards") }
   };
 
-  // 1) Aplicar las URLs reales desde la configuración
-  cards.forEach(function(card){
-    const url = CONFIG.apps[card.dataset.app];
-    if (url) card.setAttribute("href", url);
-  });
-
-  // 2) Selección del carrusel
-  let current = 0;
-  function select(i){
-    current = ((i % order.length) + order.length) % order.length;
-    const id = order[current];
-    deck.dataset.current = id;
-    dots.forEach(function(d){
-      const on = d.dataset.app === id;
-      d.classList.toggle("is-on", on);
-      d.setAttribute("aria-current", on ? "true" : "false");
-    });
-    dockBtns.forEach(function(b){
-      b.setAttribute("aria-current", b.dataset.app === id ? "true" : "false");
-    });
-    cards.forEach(function(c){
-      c.setAttribute("aria-current", c.dataset.app === id ? "true" : "false");
-    });
-    const app = APPS[id];
-    capName.textContent = app.name;
-    capTag.textContent = app.tag;
-    capIcon.innerHTML = app.icon;
+  /* ==================================================================
+     Progreso real de Study (snapshot escrito por StudyStore)
+     ================================================================== */
+  function readSnapshot(){
+    try {
+      const raw = localStorage.getItem(SNAPSHOT_KEY);
+      if (!raw) return null;
+      const snap = JSON.parse(raw);
+      return snap && typeof snap === "object" ? snap : null;
+    } catch (err){ return null; }
   }
-  select(0);
 
-  // Relleno del panel «Acerca de» con versión e identificador
+  function dashboardHref(snap){
+    const last = snap && snap.dashboard ? snap.dashboard.last : null;
+    if (last && last.sheetId){
+      return "./study-dashboard/index.html?sheet=" + encodeURIComponent(last.sheetId);
+    }
+    return CONFIG.apps.dashboard;
+  }
+  function flashcardsHref(snap){
+    const last = snap && snap.flashcards ? snap.flashcards.last : null;
+    if (last && last.deckId){
+      return "./study-flashcards/index.html?deck=" + encodeURIComponent(last.deckId) + "&resume=1";
+    }
+    return CONFIG.apps.flashcards;
+  }
+
+  function setProgress(kind, opts){
+    const card = document.querySelector('[data-study-card="' + kind + '"]');
+    if (!card) return;
+    const box = card.querySelector('[data-progress="' + kind + '"]');
+    const value = box.querySelector("[data-progress-value]");
+    const bar = box.querySelector("[data-progress-bar]");
+    const note = box.querySelector("[data-progress-note]");
+    const last = card.querySelector('[data-last="' + kind + '"]');
+    const lastText = last.querySelector("[data-last-text]");
+
+    const has = opts && opts.has;
+    const known = opts && opts.known;
+    box.classList.toggle("is-empty", !has);
+    value.textContent = known ? opts.value : "—";
+    bar.style.width = known ? Math.max(0, Math.min(100, opts.percent)) + "%" : "0%";
+    note.textContent = has ? opts.note : "Sin actividad registrada todavía";
+
+    if (has && opts.lastTitle){
+      last.hidden = false;
+      lastText.textContent = opts.lastTitle;
+      lastText.title = opts.lastTitle;
+    } else {
+      last.hidden = true;
+      lastText.textContent = "";
+      lastText.removeAttribute("title");
+    }
+
+    const link = card;
+    link.setAttribute("href", opts.href || CONFIG.apps[kind]);
+  }
+
+  function activeId(){
+    return order[activeIndex] || order[0] || "banqueo";
+  }
+  function syncBarSub(){
+    if (!barSub) return;
+    const id = activeId();
+    let sub = APPS[id] ? APPS[id].tagline : "";
+    if (id === "dashboard" || id === "flashcards"){
+      const box = document.querySelector('[data-study-card="' + id + '"] [data-progress="' + id + '"]');
+      const note = box && box.querySelector("[data-progress-note]");
+      if (box && !box.classList.contains("is-empty") && note && note.textContent) sub = note.textContent;
+    }
+    barSub.textContent = sub;
+  }
+
+  function applySnapshot(snap){
+    const cardsById = {};
+    cards.forEach(function(card){ cardsById[card.getAttribute("data-app")] = card; });
+    const dashboardCard = cardsById.dashboard;
+    const flashCard = cardsById.flashcards;
+    if (dashboardCard) dashboardCard.setAttribute("href", dashboardHref(snap));
+    if (flashCard) flashCard.setAttribute("href", flashcardsHref(snap));
+
+    const d = snap && snap.dashboard ? snap.dashboard : null;
+    if (d) {
+      const has = !!(d.completedSheets || d.viewedSheets || d.startedTopics);
+      const total = Number(d.totalSheets) || 0;
+      const done = Number(d.completedSheets) || 0;
+      const percent = total ? Math.round((done / total) * 100) : (Number(d.percent) || 0);
+      const started = Number(d.startedTopics) || 0;
+      setProgress("dashboard", {
+        has: has,
+        known: total > 0,
+        value: total ? done + "/" + total : "—",
+        percent: percent,
+        note: has
+          ? started + " tema" + (started === 1 ? "" : "s") + " iniciado" + (started === 1 ? "" : "s") + (Number(d.streak) ? " · " + d.streak + " día" + (Number(d.streak) === 1 ? "" : "s") + " de racha" : "")
+          : "",
+        lastTitle: d.last && d.last.title ? d.last.title : "",
+        href: dashboardHref(snap)
+      });
+    }
+
+    const f = snap && snap.flashcards ? snap.flashcards : null;
+    if (f) {
+      const has = !!(Number(f.reviewedCards) > 0 || Number(f.todayReviews) > 0);
+      const total = Number(f.totalCards) || 0;
+      const reviewed = Number(f.reviewedCards) || 0;
+      const percent = total ? Math.round((reviewed / total) * 100) : 0;
+      setProgress("flashcards", {
+        has: has,
+        known: total > 0,
+        value: total ? reviewed + "/" + total : "—",
+        percent: percent,
+        note: has
+          ? (Number(f.masteredCards) || 0) + " dominadas · " + (Number(f.dueCards) || 0) + " por repasar"
+          : "",
+        lastTitle: f.last && f.last.title ? f.last.title : "",
+        href: flashcardsHref(snap)
+      });
+    }
+    syncBarSub();
+  }
+
+  function refreshStudyCards(){
+    applySnapshot(readSnapshot());
+  }
+
+  /* Relleno del panel «Acerca de» */
   document.getElementById("aboutVersion").textContent = "v" + CONFIG.version;
   document.getElementById("aboutBuild").textContent = CONFIG.build;
 
-  // 3) Aparición de la página
+  /* ==================================================================
+     Aparición y actualización
+     ================================================================== */
   function start(){
     let done = false;
     function mark(){
@@ -1108,7 +1633,7 @@
       document.body.classList.add("ready");
     }
     requestAnimationFrame(function(){ requestAnimationFrame(mark); });
-    window.setTimeout(mark, 350); // respaldo si la pestaña está en segundo plano
+    window.setTimeout(mark, 350);
   }
   if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", start, { once: true });
@@ -1116,59 +1641,255 @@
     start();
   }
 
-  // 4) Tarjetas: secundaria selecciona, activa abre
-  cards.forEach(function(card){
+  refreshStudyCards();
+  window.addEventListener("storage", function(e){
+    if (e.key === SNAPSHOT_KEY) refreshStudyCards();
+  });
+  window.addEventListener("pageshow", refreshStudyCards);
+  document.addEventListener("visibilitychange", function(){
+    if (!document.hidden) refreshStudyCards();
+  });
+
+  /* ==================================================================
+     Carrusel: selección, navegación y estado visual
+     ================================================================== */
+  function buildNav(){
+    dock.innerHTML = cards.map(function(card, i){
+      const app = APPS[order[i]];
+      return '<button class="dock-btn" type="button" data-index="' + i + '" style="--dock:' + app.color + '" aria-label="Ver ' + app.name + '" aria-pressed="false">' + app.icon + '</button>';
+    }).join("");
+    dots.innerHTML = cards.map(function(card, i){
+      const app = APPS[order[i]];
+      return '<button class="dot" type="button" data-index="' + i + '" aria-label="Ver ' + app.name + ', ' + (i + 1) + ' de ' + cards.length + '" aria-current="false"></button>';
+    }).join("");
+  }
+
+  function setActive(index, opts){
+    opts = opts || {};
+    const n = cards.length;
+    index = ((index % n) + n) % n;
+    const changed = index !== activeIndex;
+    activeIndex = index;
+
+    cards.forEach(function(card, i){
+      const delta = (i - activeIndex + n) % n;
+      const active = delta === 0;
+      card.classList.toggle("is-active", active);
+      card.classList.toggle("is-right", delta === 1);
+      card.classList.toggle("is-left", delta === n - 1);
+      card.classList.toggle("is-hidden", delta === 2);
+      card.tabIndex = active ? 0 : -1;
+      card.setAttribute("aria-current", active ? "true" : "false");
+      const app = APPS[order[i]];
+      if (app){
+        card.setAttribute(
+          "aria-label",
+          (active ? "Abrir " : "Seleccionar ") + app.name + ", " + (i + 1) + " de " + n + ". " + app.tagline + "."
+        );
+      }
+    });
+
+    const app = APPS[activeId()];
+    if (app){
+      if (tbNow) tbNow.textContent = app.name;
+      if (tbPos) tbPos.textContent = (activeIndex + 1) + " / " + n;
+      if (barTitle) barTitle.textContent = app.name;
+      if (barThumb) barThumb.innerHTML = app.icon;
+      if (carouselBar) carouselBar.style.setProperty("--bar", app.color);
+      if (openCurrent) openCurrent.setAttribute("aria-label", "Abrir " + app.name);
+      syncBarSub();
+    }
+
+    if (dock){
+      Array.prototype.forEach.call(dock.children, function(btn, i){
+        const on = i === activeIndex;
+        btn.classList.toggle("is-active", on);
+        btn.setAttribute("aria-pressed", on ? "true" : "false");
+      });
+    }
+    if (dots){
+      Array.prototype.forEach.call(dots.children, function(dot, i){
+        const on = i === activeIndex;
+        dot.classList.toggle("is-active", on);
+        dot.setAttribute("aria-current", on ? "true" : "false");
+      });
+    }
+
+    if (opts.focus && cards[activeIndex]) cards[activeIndex].focus({ preventScroll: true });
+    if (changed && opts.announce !== false && carouselLive){
+      carouselLive.textContent = app.name + ", " + (activeIndex + 1) + " de " + n + ". " + app.tagline + ".";
+    }
+  }
+
+  function move(delta, opts){
+    opts = opts || {};
+    const focus = opts.focus === undefined ? cards.indexOf(document.activeElement) !== -1 : opts.focus;
+    setActive(activeIndex + delta, { focus: focus, announce: opts.announce !== false });
+  }
+
+  buildNav();
+  setActive(0, { announce: false, focus: false });
+
+  if (prevTop) prevTop.addEventListener("click", function(){ move(-1, { focus: false }); });
+  if (nextTop) nextTop.addEventListener("click", function(){ move(1, { focus: false }); });
+  if (prevBtn) prevBtn.addEventListener("click", function(){ move(-1, { focus: false }); });
+  if (nextBtn) nextBtn.addEventListener("click", function(){ move(1, { focus: false }); });
+  if (openCurrent) openCurrent.addEventListener("click", function(){ launch(cards[activeIndex]); });
+  if (dock) dock.addEventListener("click", function(e){
+    const btn = e.target.closest("[data-index]");
+    if (!btn) return;
+    setActive(Number(btn.getAttribute("data-index")), { focus: false });
+  });
+  if (dots) dots.addEventListener("click", function(e){
+    const dot = e.target.closest("[data-index]");
+    if (!dot) return;
+    setActive(Number(dot.getAttribute("data-index")), { focus: false });
+  });
+
+  /* ==================================================================
+     Tarjetas: abrir con transición
+     ================================================================== */
+  let navigating = false;
+  function launch(card){
+    if (navigating) return;
+    const id = card.getAttribute("data-app");
+    const app = APPS[id];
+    const url = card.getAttribute("href");
+    if (!app || !url) return;
+    if (/^(https?:|file:)/.test(url) && url.indexOf(location.origin) !== 0 && /^https?:/.test(url)) {
+      window.location.assign(url);
+      return;
+    }
+    navigating = true;
+    try {
+      const color = app.color;
+      overlay.style.setProperty("--launch", color);
+      overlayIcon.innerHTML = app.icon;
+      overlayName.textContent = app.name;
+      document.body.classList.add("launching");
+      overlay.setAttribute("aria-hidden", "false");
+
+      const go = function(){
+        if (CONFIG.abrirEnNuevaPestana) window.open(url, "_blank", "noopener");
+        else window.location.assign(url);
+      };
+
+      if (REDUCED){
+        overlay.classList.add("animating", "show");
+        window.setTimeout(go, 80);
+        return;
+      }
+
+      const r = card.getBoundingClientRect();
+      overlay.style.clipPath =
+        "inset(" + Math.round(r.top) + "px " +
+        Math.round(window.innerWidth - r.right) + "px " +
+        Math.round(window.innerHeight - r.bottom) + "px " +
+        Math.round(r.left) + "px round 28px)";
+      overlay.classList.add("animating", "show");
+      void overlay.offsetHeight;
+      const expand = function(){ overlay.style.clipPath = "inset(0px 0px 0px 0px round 0px)"; };
+      requestAnimationFrame(expand);
+      window.setTimeout(expand, 60);
+      window.setTimeout(go, CONFIG.duracionTransicion + 90);
+    } catch (err) {
+      window.location.assign(url);
+    }
+  }
+
+  cards.forEach(function(card, index){
     card.addEventListener("click", function(e){
+      if (suppressClick){
+        e.preventDefault();
+        suppressClick = false;
+        return;
+      }
+      if (!card.classList.contains("is-active")){
+        e.preventDefault();
+        setActive(index, { focus: true });
+        return;
+      }
       if (e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button !== 0) return;
-      const i = order.indexOf(card.dataset.app);
-      if (i !== current){ e.preventDefault(); select(i); return; }
+      if (card.getAttribute("target") === "_blank") return;
       e.preventDefault();
       launch(card);
     });
+    card.addEventListener("keydown", function(e){
+      if ((e.key === " " || e.key === "Spacebar") && card.classList.contains("is-active")){
+        e.preventDefault();
+        launch(card);
+      }
+    });
   });
 
-  // 5) Controles de navegación
-  btnPrev.addEventListener("click", function(){ select(current - 1); });
-  btnNext.addEventListener("click", function(){ select(current + 1); });
-  dots.forEach(function(d){
-    d.addEventListener("click", function(){ select(order.indexOf(d.dataset.app)); });
-  });
-  dockBtns.forEach(function(b){
-    b.addEventListener("click", function(){ select(order.indexOf(b.dataset.app)); });
-  });
+  /* Gesto táctil / arrastre horizontal */
+  if (carousel){
+    carousel.addEventListener("pointerdown", function(e){
+      if (e.pointerType === "mouse" && e.button !== 0) return;
+      swipeStart = { x: e.clientX, y: e.clientY };
+    });
+    carousel.addEventListener("pointerup", function(e){
+      if (!swipeStart) return;
+      const dx = e.clientX - swipeStart.x;
+      const dy = e.clientY - swipeStart.y;
+      swipeStart = null;
+      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.3){
+        suppressClick = true;
+        move(dx < 0 ? 1 : -1, { focus: false });
+        window.setTimeout(function(){ suppressClick = false; }, 450);
+      }
+    });
+    carousel.addEventListener("pointercancel", function(){ swipeStart = null; });
+    carousel.addEventListener("dragstart", function(e){ e.preventDefault(); });
+  }
 
-  // 6) Gesto táctil para cambiar de aplicación
-  let sx = 0, sy = 0, swiping = false;
-  stage.addEventListener("pointerdown", function(e){
-    if (e.pointerType === "mouse") return;
-    swiping = true; sx = e.clientX; sy = e.clientY;
-  });
-  stage.addEventListener("pointerup", function(e){
-    if (!swiping) return;
-    swiping = false;
-    const dx = e.clientX - sx, dy = e.clientY - sy;
-    if (Math.abs(dx) > 48 && Math.abs(dy) < 64) select(current + (dx < 0 ? 1 : -1));
-  });
-
-  // 7) Teclado
+  /* ==================================================================
+     Teclado
+     ================================================================== */
   document.addEventListener("keydown", function(e){
     if (e.key === "Escape"){ if (openModalEl) closeModal(); return; }
-    if (openModalEl) return;
-    if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (e.key === "ArrowLeft"){ e.preventDefault(); select(current - 1); }
-    else if (e.key === "ArrowRight"){ e.preventDefault(); select(current + 1); }
-    else if (e.key === "1"){ select(0); }
-    else if (e.key === "2"){ select(1); }
-    else if (e.key === "Enter"){
-      const ae = document.activeElement;
-      if (!ae || ae === document.body || ae === document.documentElement){
-        e.preventDefault();
-        launch(cards[current]);
+    if (openModalEl){
+      if (e.key === "Tab"){
+        var focusables = Array.prototype.slice.call(
+          openModalEl.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+        ).filter(function(el){ return !el.disabled && el.offsetParent !== null; });
+        if (!focusables.length) return;
+        var first = focusables[0], last = focusables[focusables.length - 1];
+        if (e.shiftKey && document.activeElement === first){ e.preventDefault(); last.focus(); }
+        else if (!e.shiftKey && document.activeElement === last){ e.preventDefault(); first.focus(); }
+        else if (!openModalEl.contains(document.activeElement)){ e.preventDefault(); first.focus(); }
       }
+      return;
+    }
+    if (e.metaKey || e.ctrlKey || e.altKey) return;
+    if (/^[1-4]$/.test(e.key)){
+      const index = Number(e.key) - 1;
+      const card = cards[index];
+      if (!card) return;
+      e.preventDefault();
+      if (launchTimer) window.clearTimeout(launchTimer);
+      if (index === activeIndex){
+        launch(card);
+      } else {
+        setActive(index, { focus: false });
+        launchTimer = window.setTimeout(function(){
+          launchTimer = 0;
+          launch(cards[index]);
+        }, REDUCED ? 0 : 280);
+      }
+      return;
+    }
+    if (e.key === "ArrowLeft" || e.key === "ArrowRight"){
+      e.preventDefault();
+      move(e.key === "ArrowLeft" ? -1 : 1, {
+        focus: cards.indexOf(document.activeElement) !== -1
+      });
     }
   });
 
-  // 8) Modales (atajos de teclado y «Acerca de»)
+  /* ==================================================================
+     Modales (atajos y «Acerca de»)
+     ================================================================== */
   let openModalEl = null, lastFocus = null, openTrigger = null;
   function openModal(modal, scrim, closeBtn, trigger){
     if (openModalEl) closeModal();
@@ -1177,6 +1898,8 @@
     openTrigger = trigger;
     scrim.classList.add("open"); scrim.setAttribute("aria-hidden", "false");
     modal.classList.add("open"); modal.setAttribute("aria-hidden", "false");
+    const topbar = document.querySelector(".topbar");
+    [stage, topbar].forEach(function(region){ if (region) region.inert = true; });
     closeBtn.focus();
   }
   function closeModal(){
@@ -1184,6 +1907,8 @@
     const scrim = (openModalEl === helpModal) ? helpScrim : aboutScrim;
     openModalEl.classList.remove("open"); openModalEl.setAttribute("aria-hidden", "true");
     scrim.classList.remove("open"); scrim.setAttribute("aria-hidden", "true");
+    const topbar = document.querySelector(".topbar");
+    [stage, topbar].forEach(function(region){ if (region) region.inert = false; });
     openModalEl = null;
     const back = (lastFocus && lastFocus !== document.body && typeof lastFocus.focus === "function") ? lastFocus : (openTrigger || btnHelp);
     back.focus();
@@ -1195,7 +1920,9 @@
   helpScrim.addEventListener("click", closeModal);
   aboutScrim.addEventListener("click", closeModal);
 
-  // 9) Pantalla completa
+  /* ==================================================================
+     Pantalla completa
+     ================================================================== */
   if (!document.fullscreenEnabled){
     btnFs.hidden = true;
   } else {
@@ -1214,53 +1941,7 @@
     });
   }
 
-  // 10) Transición de apertura
-  let navigating = false;
-  function launch(card){
-    if (navigating) return;
-    const id = card.dataset.app;
-    const url = CONFIG.apps[id];
-    if (!url) return;
-    navigating = true;
-
-    try {
-      overlayIcon.innerHTML = APPS[id].icon;
-      overlayName.textContent = APPS[id].name;
-      document.body.classList.add("launching");
-      overlay.setAttribute("aria-hidden", "false");
-
-      const go = function(){
-        if (CONFIG.abrirEnNuevaPestana) window.open(url, "_blank", "noopener");
-        else window.location.assign(url);
-      };
-
-      if (REDUCED){
-        overlay.classList.add("animating", "show");
-        window.setTimeout(go, 80);
-        return;
-      }
-
-      // La capa se expande desde la tarjeta elegida
-      const r = card.getBoundingClientRect();
-      overlay.style.clipPath =
-        "inset(" + Math.round(r.top) + "px " +
-        Math.round(window.innerWidth - r.right) + "px " +
-        Math.round(window.innerHeight - r.bottom) + "px " +
-        Math.round(r.left) + "px round 28px)";
-      overlay.classList.add("animating", "show");
-      void overlay.offsetHeight; // fuerza el cálculo del estado inicial
-      const expand = function(){
-        overlay.style.clipPath = "inset(0px 0px 0px 0px round 0px)";
-      };
-      requestAnimationFrame(expand);
-      window.setTimeout(expand, 60); // respaldo en pestañas sin frames
-      window.setTimeout(go, CONFIG.duracionTransicion + 90);
-    } catch (err) {
-      window.location.assign(url); // respaldo: navegar directamente
-    }
-  }
-
-  // 11) Restaurar la interfaz si el usuario vuelve con "Atrás"
+  /* Restaurar la interfaz si el usuario vuelve con «Atrás» */
   window.addEventListener("pageshow", function(){
     navigating = false;
     document.body.classList.remove("launching");

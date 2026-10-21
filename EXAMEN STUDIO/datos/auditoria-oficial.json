@@ -1,0 +1,5241 @@
+{
+  "audits": [
+    {
+      "examId": "2025-i-biologia",
+      "file": "7084225-biologia.pdf",
+      "header": "BIOLOGIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2680
+        },
+        {
+          "page": 2,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2800
+        },
+        {
+          "page": 3,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2817
+        },
+        {
+          "page": 4,
+          "lines": 60,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3071
+        },
+        {
+          "page": 5,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3084
+        },
+        {
+          "page": 6,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2996
+        },
+        {
+          "page": 7,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2833
+        },
+        {
+          "page": 8,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2995
+        },
+        {
+          "page": 9,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3306
+        },
+        {
+          "page": 10,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2916
+        },
+        {
+          "page": 11,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2674
+        },
+        {
+          "page": 12,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3172
+        },
+        {
+          "page": 13,
+          "lines": 13,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 903
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-enfermeria",
+      "file": "7084225-enfermeria_claves.pdf",
+      "header": "ENFERMERIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 2,
+          "questions": [
+            8
+          ],
+          "rect": [
+            55.2,
+            125.5,
+            556.8,
+            139.3
+          ],
+          "snippet": "muestra",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 8,
+          "questions": [
+            54
+          ],
+          "rect": [
+            55.2,
+            165.1,
+            556.8,
+            178.8
+          ],
+          "snippet": "tratamiento",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2589
+        },
+        {
+          "page": 2,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 3235
+        },
+        {
+          "page": 3,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2557
+        },
+        {
+          "page": 4,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2930
+        },
+        {
+          "page": 5,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3074
+        },
+        {
+          "page": 6,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2710
+        },
+        {
+          "page": 7,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3124
+        },
+        {
+          "page": 8,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 2621
+        },
+        {
+          "page": 9,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2947
+        },
+        {
+          "page": 10,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3110
+        },
+        {
+          "page": 11,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2609
+        },
+        {
+          "page": 12,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2793
+        },
+        {
+          "page": 13,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2774
+        },
+        {
+          "page": 14,
+          "lines": 13,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 964
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-farmacia",
+      "file": "7084225-farmacia-y-bioquimica.pdf",
+      "header": "QUIMICO FARMACEUTICO - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 48,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2845
+        },
+        {
+          "page": 2,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2657
+        },
+        {
+          "page": 3,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2966
+        },
+        {
+          "page": 4,
+          "lines": 57,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2755
+        },
+        {
+          "page": 5,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3135
+        },
+        {
+          "page": 6,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3306
+        },
+        {
+          "page": 7,
+          "lines": 52,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3014
+        },
+        {
+          "page": 8,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2606
+        },
+        {
+          "page": 9,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2896
+        },
+        {
+          "page": 10,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2707
+        },
+        {
+          "page": 11,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3116
+        },
+        {
+          "page": 12,
+          "lines": 58,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3049
+        },
+        {
+          "page": 13,
+          "lines": 43,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2121
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-ingenieria-sanitaria",
+      "file": "7084225-ing-sanitaria.pdf",
+      "header": "INGENIERIA SANITARIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2845
+        },
+        {
+          "page": 2,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2930
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2818
+        },
+        {
+          "page": 4,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2592
+        },
+        {
+          "page": 5,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2713
+        },
+        {
+          "page": 6,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2806
+        },
+        {
+          "page": 7,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2596
+        },
+        {
+          "page": 8,
+          "lines": 49,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2736
+        },
+        {
+          "page": 9,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2651
+        },
+        {
+          "page": 10,
+          "lines": 48,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2638
+        },
+        {
+          "page": 11,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2892
+        },
+        {
+          "page": 12,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2737
+        },
+        {
+          "page": 13,
+          "lines": 33,
+          "questions": 5,
+          "highlights": 5,
+          "textCharacters": 1969
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-veterinaria",
+      "file": "7084225-medicina-veterinaria.pdf",
+      "header": "MEDICINA VETERINARIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 7,
+          "questions": [
+            52
+          ],
+          "rect": [
+            55.2,
+            621.0,
+            556.8,
+            634.8
+          ],
+          "snippet": "intersectoriales",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 8,
+          "questions": [
+            55
+          ],
+          "rect": [
+            55.2,
+            287.3,
+            556.8,
+            301.0
+          ],
+          "snippet": "D. Manejo clínico de casos, capacitación, disposición adecuada de desechos contaminados, intensificación de",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2844
+        },
+        {
+          "page": 2,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2798
+        },
+        {
+          "page": 3,
+          "lines": 41,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2754
+        },
+        {
+          "page": 4,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2949
+        },
+        {
+          "page": 5,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3078
+        },
+        {
+          "page": 6,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2536
+        },
+        {
+          "page": 7,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 2703
+        },
+        {
+          "page": 8,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 3120
+        },
+        {
+          "page": 9,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3225
+        },
+        {
+          "page": 10,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2578
+        },
+        {
+          "page": 11,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3100
+        },
+        {
+          "page": 12,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2609
+        },
+        {
+          "page": 13,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2856
+        },
+        {
+          "page": 14,
+          "lines": 7,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 282
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-medicina",
+      "file": "7084225-medicina.pdf",
+      "header": "MEDICINA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 6,
+          "questions": [
+            38
+          ],
+          "rect": [
+            55.2,
+            110.1,
+            556.8,
+            123.7
+          ],
+          "snippet": "A. Identificar las causas de morbimortalidad de la población atendida y diagnosticar la situación de salud de la",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 8,
+          "questions": [
+            57
+          ],
+          "rect": [
+            55.2,
+            437.0,
+            556.8,
+            450.8
+          ],
+          "snippet": "enfermedades transmisibles",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 10,
+          "questions": [
+            75
+          ],
+          "rect": [
+            55.2,
+            622.8,
+            556.8,
+            636.5
+          ],
+          "snippet": "la recuperación total",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2699
+        },
+        {
+          "page": 2,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2826
+        },
+        {
+          "page": 3,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3022
+        },
+        {
+          "page": 4,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3235
+        },
+        {
+          "page": 5,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2807
+        },
+        {
+          "page": 6,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 2839
+        },
+        {
+          "page": 7,
+          "lines": 56,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2915
+        },
+        {
+          "page": 8,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 2922
+        },
+        {
+          "page": 9,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2945
+        },
+        {
+          "page": 10,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 3178
+        },
+        {
+          "page": 11,
+          "lines": 58,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3119
+        },
+        {
+          "page": 12,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3119
+        },
+        {
+          "page": 13,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3052
+        },
+        {
+          "page": 14,
+          "lines": 6,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 286
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-nutricion",
+      "file": "7084225-nutricion.pdf",
+      "header": "NUTRICIÓN - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 7,
+          "questions": [
+            54
+          ],
+          "rect": [
+            55.2,
+            622.8,
+            556.8,
+            636.5
+          ],
+          "snippet": "C. Notificación inmediata y coordinación con el establecimiento con laboratorio mas cercano para la toma de",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 13,
+          "questions": [
+            96
+          ],
+          "rect": [
+            55.2,
+            314.8,
+            556.8,
+            328.6
+          ],
+          "snippet": "favorecen y/o interfieren en la salud nutricional del mismo.",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2675
+        },
+        {
+          "page": 2,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2681
+        },
+        {
+          "page": 3,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2860
+        },
+        {
+          "page": 4,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3378
+        },
+        {
+          "page": 5,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2564
+        },
+        {
+          "page": 6,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3233
+        },
+        {
+          "page": 7,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 2976
+        },
+        {
+          "page": 8,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2929
+        },
+        {
+          "page": 9,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2777
+        },
+        {
+          "page": 10,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2984
+        },
+        {
+          "page": 11,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2840
+        },
+        {
+          "page": 12,
+          "lines": 49,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2308
+        },
+        {
+          "page": 13,
+          "lines": 46,
+          "questions": 6,
+          "highlights": 7,
+          "textCharacters": 2810
+        },
+        {
+          "page": 14,
+          "lines": 8,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 399
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-obstetricia",
+      "file": "7084225-obstetricia.pdf",
+      "header": "OBSTETRICIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2313
+        },
+        {
+          "page": 2,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2638
+        },
+        {
+          "page": 3,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2956
+        },
+        {
+          "page": 4,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2655
+        },
+        {
+          "page": 5,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2791
+        },
+        {
+          "page": 6,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2711
+        },
+        {
+          "page": 7,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2626
+        },
+        {
+          "page": 8,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2706
+        },
+        {
+          "page": 9,
+          "lines": 65,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2997
+        },
+        {
+          "page": 10,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2838
+        },
+        {
+          "page": 11,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2813
+        },
+        {
+          "page": 12,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2715
+        },
+        {
+          "page": 13,
+          "lines": 21,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 1214
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-odontologia",
+      "file": "7084225-odontologia.pdf",
+      "header": "ODONTOLOGIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 12,
+          "questions": [
+            89
+          ],
+          "rect": [
+            55.2,
+            665.9,
+            556.8,
+            679.5
+          ],
+          "snippet": "D. Proponer alternativas para la incorporación de contenidos referidos a la higiene y salud bucal en el trabajo de",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 13,
+          "questions": [
+            90
+          ],
+          "rect": [
+            55.2,
+            139.3,
+            556.8,
+            153.1
+          ],
+          "snippet": "establecimientos de salud",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2952
+        },
+        {
+          "page": 2,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3305
+        },
+        {
+          "page": 3,
+          "lines": 46,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 3208
+        },
+        {
+          "page": 4,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2765
+        },
+        {
+          "page": 5,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2824
+        },
+        {
+          "page": 6,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2938
+        },
+        {
+          "page": 7,
+          "lines": 54,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3151
+        },
+        {
+          "page": 8,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2841
+        },
+        {
+          "page": 9,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3086
+        },
+        {
+          "page": 10,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2973
+        },
+        {
+          "page": 11,
+          "lines": 53,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3102
+        },
+        {
+          "page": 12,
+          "lines": 53,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 3096
+        },
+        {
+          "page": 13,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 3341
+        },
+        {
+          "page": 14,
+          "lines": 27,
+          "questions": 4,
+          "highlights": 4,
+          "textCharacters": 1315
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-psicologia",
+      "file": "7084225-psicologia.pdf",
+      "header": "PSICOLOGIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 53,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3240
+        },
+        {
+          "page": 2,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2547
+        },
+        {
+          "page": 3,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2974
+        },
+        {
+          "page": 4,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2729
+        },
+        {
+          "page": 5,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3007
+        },
+        {
+          "page": 6,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3080
+        },
+        {
+          "page": 7,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2800
+        },
+        {
+          "page": 8,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2799
+        },
+        {
+          "page": 9,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2649
+        },
+        {
+          "page": 10,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2582
+        },
+        {
+          "page": 11,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2994
+        },
+        {
+          "page": 12,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2616
+        },
+        {
+          "page": 13,
+          "lines": 16,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 1060
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-laboratorio",
+      "file": "7084225-tm-laboratorio.pdf",
+      "header": "TM-LABORATORIO C. - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2609
+        },
+        {
+          "page": 2,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2884
+        },
+        {
+          "page": 3,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2314
+        },
+        {
+          "page": 4,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2778
+        },
+        {
+          "page": 5,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2985
+        },
+        {
+          "page": 6,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2669
+        },
+        {
+          "page": 7,
+          "lines": 54,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2731
+        },
+        {
+          "page": 8,
+          "lines": 61,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2800
+        },
+        {
+          "page": 9,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2961
+        },
+        {
+          "page": 10,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2688
+        },
+        {
+          "page": 11,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3075
+        },
+        {
+          "page": 12,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2703
+        },
+        {
+          "page": 13,
+          "lines": 12,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 693
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-optometria",
+      "file": "7084225-tm-optometria.pdf",
+      "header": "TM-OPTOMETRIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2735
+        },
+        {
+          "page": 2,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2689
+        },
+        {
+          "page": 3,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2899
+        },
+        {
+          "page": 4,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2822
+        },
+        {
+          "page": 5,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2609
+        },
+        {
+          "page": 6,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2779
+        },
+        {
+          "page": 7,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2909
+        },
+        {
+          "page": 8,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2573
+        },
+        {
+          "page": 9,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2771
+        },
+        {
+          "page": 10,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2473
+        },
+        {
+          "page": 11,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2875
+        },
+        {
+          "page": 12,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2718
+        },
+        {
+          "page": 13,
+          "lines": 27,
+          "questions": 4,
+          "highlights": 4,
+          "textCharacters": 1538
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-radiologia",
+      "file": "7084225-tm-radiologia.pdf",
+      "header": "TM-RADIOLOGIA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 7,
+          "questions": [
+            50
+          ],
+          "rect": [
+            55.2,
+            139.3,
+            556.8,
+            153.1
+          ],
+          "snippet": "combustibles fósiles",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2728
+        },
+        {
+          "page": 2,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3186
+        },
+        {
+          "page": 3,
+          "lines": 49,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2865
+        },
+        {
+          "page": 4,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3008
+        },
+        {
+          "page": 5,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2994
+        },
+        {
+          "page": 6,
+          "lines": 51,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2657
+        },
+        {
+          "page": 7,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 9,
+          "textCharacters": 2837
+        },
+        {
+          "page": 8,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2587
+        },
+        {
+          "page": 9,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2849
+        },
+        {
+          "page": 10,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2763
+        },
+        {
+          "page": 11,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2592
+        },
+        {
+          "page": 12,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2824
+        },
+        {
+          "page": 13,
+          "lines": 7,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 600
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-terapia-fisica",
+      "file": "7084225-tm-t-fisica.pdf",
+      "header": "TM-TERAPIA FISICA - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 12,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2600
+        },
+        {
+          "page": 2,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2975
+        },
+        {
+          "page": 3,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2434
+        },
+        {
+          "page": 4,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2835
+        },
+        {
+          "page": 5,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2987
+        },
+        {
+          "page": 6,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2716
+        },
+        {
+          "page": 7,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2574
+        },
+        {
+          "page": 8,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2448
+        },
+        {
+          "page": 9,
+          "lines": 56,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3042
+        },
+        {
+          "page": 10,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2229
+        },
+        {
+          "page": 11,
+          "lines": 57,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2595
+        },
+        {
+          "page": 12,
+          "lines": 39,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 1847
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-terapia-lenguaje",
+      "file": "7084225-tm-t-lenguaje.pdf",
+      "header": "TM-TERAPIA LENGUAJE - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 13,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3108
+        },
+        {
+          "page": 2,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2783
+        },
+        {
+          "page": 3,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2379
+        },
+        {
+          "page": 4,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2584
+        },
+        {
+          "page": 5,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2599
+        },
+        {
+          "page": 6,
+          "lines": 56,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2557
+        },
+        {
+          "page": 7,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2568
+        },
+        {
+          "page": 8,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2725
+        },
+        {
+          "page": 9,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3262
+        },
+        {
+          "page": 10,
+          "lines": 50,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2671
+        },
+        {
+          "page": 11,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2552
+        },
+        {
+          "page": 12,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2927
+        },
+        {
+          "page": 13,
+          "lines": 28,
+          "questions": 4,
+          "highlights": 4,
+          "textCharacters": 1630
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-tm-terapia-ocupacional",
+      "file": "7084225-tm-t-ocupacional.pdf",
+      "header": "",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2814
+        },
+        {
+          "page": 2,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2784
+        },
+        {
+          "page": 3,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2956
+        },
+        {
+          "page": 4,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3137
+        },
+        {
+          "page": 5,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3124
+        },
+        {
+          "page": 6,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3172
+        },
+        {
+          "page": 7,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2810
+        },
+        {
+          "page": 8,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2738
+        },
+        {
+          "page": 9,
+          "lines": 57,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2953
+        },
+        {
+          "page": 10,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2888
+        },
+        {
+          "page": 11,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2767
+        },
+        {
+          "page": 12,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3148
+        },
+        {
+          "page": 13,
+          "lines": 49,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2642
+        },
+        {
+          "page": 14,
+          "lines": 7,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 407
+        }
+      ]
+    },
+    {
+      "examId": "2025-i-trabajo-social",
+      "file": "7084225-trabajo-social.pdf",
+      "header": "TRABAJO SOCIAL - I",
+      "cycle": {
+        "year": 2025,
+        "convocatoria": "I",
+        "label": "2025-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 1,
+          "questions": [
+            4
+          ],
+          "rect": [
+            55.2,
+            393.9,
+            556.8,
+            407.7
+          ],
+          "snippet": "planes",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        },
+        {
+          "type": "resaltado_incidental",
+          "severity": "info",
+          "page": 3,
+          "questions": [
+            21
+          ],
+          "rect": [
+            55.2,
+            528.1,
+            556.8,
+            541.9
+          ],
+          "snippet": "objetivamente",
+          "detail": "Resaltado amarillo sobre el enunciado; no se usó como respuesta."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 3048
+        },
+        {
+          "page": 2,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2913
+        },
+        {
+          "page": 3,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 8,
+          "textCharacters": 2783
+        },
+        {
+          "page": 4,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3258
+        },
+        {
+          "page": 5,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3136
+        },
+        {
+          "page": 6,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2861
+        },
+        {
+          "page": 7,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3150
+        },
+        {
+          "page": 8,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2916
+        },
+        {
+          "page": 9,
+          "lines": 55,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2728
+        },
+        {
+          "page": 10,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3110
+        },
+        {
+          "page": 11,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2543
+        },
+        {
+          "page": 12,
+          "lines": 54,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2885
+        },
+        {
+          "page": 13,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 3259
+        },
+        {
+          "page": 14,
+          "lines": 6,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 258
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-medicina",
+      "file": "8053031-001-medicina.pdf",
+      "header": "MEDICINA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 14,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2443
+        },
+        {
+          "page": 2,
+          "lines": 49,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2347
+        },
+        {
+          "page": 3,
+          "lines": 56,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2204
+        },
+        {
+          "page": 4,
+          "lines": 42,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2060
+        },
+        {
+          "page": 5,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2451
+        },
+        {
+          "page": 6,
+          "lines": 53,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2464
+        },
+        {
+          "page": 7,
+          "lines": 43,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2201
+        },
+        {
+          "page": 8,
+          "lines": 43,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2468
+        },
+        {
+          "page": 9,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2511
+        },
+        {
+          "page": 10,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2429
+        },
+        {
+          "page": 11,
+          "lines": 55,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2476
+        },
+        {
+          "page": 12,
+          "lines": 52,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2363
+        },
+        {
+          "page": 13,
+          "lines": 41,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2369
+        },
+        {
+          "page": 14,
+          "lines": 41,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2096
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-enfermeria",
+      "file": "8053031-002-enfermeria.pdf",
+      "header": "ENFERMERIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 15,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2377
+        },
+        {
+          "page": 2,
+          "lines": 40,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2002
+        },
+        {
+          "page": 3,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2212
+        },
+        {
+          "page": 4,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2441
+        },
+        {
+          "page": 5,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2297
+        },
+        {
+          "page": 6,
+          "lines": 46,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2003
+        },
+        {
+          "page": 7,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2212
+        },
+        {
+          "page": 8,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2255
+        },
+        {
+          "page": 9,
+          "lines": 45,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2578
+        },
+        {
+          "page": 10,
+          "lines": 51,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2374
+        },
+        {
+          "page": 11,
+          "lines": 47,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2316
+        },
+        {
+          "page": 12,
+          "lines": 44,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 2376
+        },
+        {
+          "page": 13,
+          "lines": 47,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 1946
+        },
+        {
+          "page": 14,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2539
+        },
+        {
+          "page": 15,
+          "lines": 48,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 1883
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-odontologia",
+      "file": "8053031-003-odontologia.pdf",
+      "header": "ODONTOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3784
+        },
+        {
+          "page": 2,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3374
+        },
+        {
+          "page": 3,
+          "lines": 59,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3500
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3949
+        },
+        {
+          "page": 5,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3670
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3159
+        },
+        {
+          "page": 7,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3196
+        },
+        {
+          "page": 8,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3425
+        },
+        {
+          "page": 9,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3386
+        },
+        {
+          "page": 10,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3888
+        },
+        {
+          "page": 11,
+          "lines": 50,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2730
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-obstetricia",
+      "file": "8053031-004-obstetricia.pdf",
+      "header": "OBSTETRICIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3097
+        },
+        {
+          "page": 2,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3104
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3449
+        },
+        {
+          "page": 4,
+          "lines": 66,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3376
+        },
+        {
+          "page": 5,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3718
+        },
+        {
+          "page": 6,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3225
+        },
+        {
+          "page": 7,
+          "lines": 62,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3238
+        },
+        {
+          "page": 8,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3289
+        },
+        {
+          "page": 9,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3346
+        },
+        {
+          "page": 10,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2945
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-psicologia",
+      "file": "8053031-005-psicologia.pdf",
+      "header": "PSICOLOGIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3290
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3268
+        },
+        {
+          "page": 3,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3175
+        },
+        {
+          "page": 4,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3320
+        },
+        {
+          "page": 5,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3044
+        },
+        {
+          "page": 6,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3591
+        },
+        {
+          "page": 7,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3498
+        },
+        {
+          "page": 8,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3348
+        },
+        {
+          "page": 9,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3183
+        },
+        {
+          "page": 10,
+          "lines": 39,
+          "questions": 6,
+          "highlights": 6,
+          "textCharacters": 1859
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-trabajo-social",
+      "file": "8053031-006-trabajo-social.pdf",
+      "header": "TRABAJO SOCIAL",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3586
+        },
+        {
+          "page": 2,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3456
+        },
+        {
+          "page": 3,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3702
+        },
+        {
+          "page": 4,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3442
+        },
+        {
+          "page": 5,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3227
+        },
+        {
+          "page": 6,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3004
+        },
+        {
+          "page": 7,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3342
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3527
+        },
+        {
+          "page": 9,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3248
+        },
+        {
+          "page": 10,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3725
+        },
+        {
+          "page": 11,
+          "lines": 20,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 1176
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-veterinaria",
+      "file": "8053031-007-veterinaria.pdf",
+      "header": "VETERINARIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3344
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3114
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3450
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3428
+        },
+        {
+          "page": 5,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3266
+        },
+        {
+          "page": 6,
+          "lines": 66,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3587
+        },
+        {
+          "page": 7,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3323
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3350
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3135
+        },
+        {
+          "page": 10,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3431
+        },
+        {
+          "page": 11,
+          "lines": 11,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 503
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-nutricion",
+      "file": "8053031-008-nutricion.pdf",
+      "header": "NUTRICIÓN",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3591
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3551
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3449
+        },
+        {
+          "page": 4,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3428
+        },
+        {
+          "page": 5,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3377
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3923
+        },
+        {
+          "page": 7,
+          "lines": 74,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3016
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3823
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3451
+        },
+        {
+          "page": 10,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3405
+        },
+        {
+          "page": 11,
+          "lines": 20,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 1032
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-biologia",
+      "file": "8053031-009-biologia.pdf",
+      "header": "BIOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3432
+        },
+        {
+          "page": 2,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3070
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3546
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3710
+        },
+        {
+          "page": 5,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3109
+        },
+        {
+          "page": 6,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3387
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3230
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3233
+        },
+        {
+          "page": 9,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3334
+        },
+        {
+          "page": 10,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3684
+        },
+        {
+          "page": 11,
+          "lines": 20,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 1046
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-farmacia",
+      "file": "8053031-010-farmacia.pdf",
+      "header": "FARMACIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3047
+        },
+        {
+          "page": 2,
+          "lines": 56,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 3286
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3652
+        },
+        {
+          "page": 4,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2942
+        },
+        {
+          "page": 5,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3240
+        },
+        {
+          "page": 6,
+          "lines": 62,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2950
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3229
+        },
+        {
+          "page": 8,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3315
+        },
+        {
+          "page": 9,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3159
+        },
+        {
+          "page": 10,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3588
+        },
+        {
+          "page": 11,
+          "lines": 19,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 989
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-ingenieria-sanitaria",
+      "file": "8053031-011-ingenieria-sanitaria.pdf",
+      "header": "INGENIERÍA SANITARIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3542
+        },
+        {
+          "page": 2,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3676
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3541
+        },
+        {
+          "page": 4,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3271
+        },
+        {
+          "page": 5,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3337
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3240
+        },
+        {
+          "page": 7,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3071
+        },
+        {
+          "page": 8,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3444
+        },
+        {
+          "page": 9,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3122
+        },
+        {
+          "page": 10,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3136
+        },
+        {
+          "page": 11,
+          "lines": 8,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 419
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-laboratorio",
+      "file": "8053031-012-laboratorio.pdf",
+      "header": "LABORATORIO",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3495
+        },
+        {
+          "page": 2,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3221
+        },
+        {
+          "page": 3,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3319
+        },
+        {
+          "page": 4,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3225
+        },
+        {
+          "page": 5,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3432
+        },
+        {
+          "page": 6,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3492
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3275
+        },
+        {
+          "page": 8,
+          "lines": 79,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3613
+        },
+        {
+          "page": 9,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3395
+        },
+        {
+          "page": 10,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3161
+        },
+        {
+          "page": 11,
+          "lines": 6,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 381
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-radiologia",
+      "file": "8053031-013-radiologia.pdf",
+      "header": "RADIOLOGIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 58,
+          "questions": 8,
+          "highlights": 8,
+          "textCharacters": 2958
+        },
+        {
+          "page": 2,
+          "lines": 65,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3551
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3393
+        },
+        {
+          "page": 4,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3212
+        },
+        {
+          "page": 5,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2865
+        },
+        {
+          "page": 6,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3022
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3371
+        },
+        {
+          "page": 8,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3202
+        },
+        {
+          "page": 9,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3488
+        },
+        {
+          "page": 10,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3262
+        },
+        {
+          "page": 11,
+          "lines": 13,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 747
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-terapia-fisica",
+      "file": "8053031-014-terapia-fisica.pdf",
+      "header": "TERAPIA FISICA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2924
+        },
+        {
+          "page": 2,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3667
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3184
+        },
+        {
+          "page": 4,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3300
+        },
+        {
+          "page": 5,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3507
+        },
+        {
+          "page": 6,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3546
+        },
+        {
+          "page": 7,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3346
+        },
+        {
+          "page": 8,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3534
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3119
+        },
+        {
+          "page": 10,
+          "lines": 67,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3250
+        },
+        {
+          "page": 11,
+          "lines": 6,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 254
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-terapia-lenguaje",
+      "file": "8053031-015-terapia-del-lenguaje.pdf",
+      "header": "TERAPIA DEL LENGUAJE",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3647
+        },
+        {
+          "page": 2,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3448
+        },
+        {
+          "page": 3,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3541
+        },
+        {
+          "page": 4,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3396
+        },
+        {
+          "page": 5,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3332
+        },
+        {
+          "page": 6,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3228
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3385
+        },
+        {
+          "page": 8,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3168
+        },
+        {
+          "page": 9,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3395
+        },
+        {
+          "page": 10,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3145
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-terapia-ocupacional",
+      "file": "8053031-016-terapia-ocupacional.pdf",
+      "header": "TERAPIA OCUPACIONAL",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3576
+        },
+        {
+          "page": 2,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3435
+        },
+        {
+          "page": 3,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3468
+        },
+        {
+          "page": 4,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3351
+        },
+        {
+          "page": 5,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3461
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 2747
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3672
+        },
+        {
+          "page": 8,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3068
+        },
+        {
+          "page": 9,
+          "lines": 66,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3394
+        },
+        {
+          "page": 10,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3362
+        },
+        {
+          "page": 11,
+          "lines": 14,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 672
+        }
+      ]
+    },
+    {
+      "examId": "2026-i-tm-optometria",
+      "file": "8053031-017-optometria.pdf",
+      "header": "OPTOMETRÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "I",
+        "label": "2026-I"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3147
+        },
+        {
+          "page": 2,
+          "lines": 76,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3172
+        },
+        {
+          "page": 3,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3281
+        },
+        {
+          "page": 4,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3316
+        },
+        {
+          "page": 5,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3589
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3410
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3027
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3547
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3113
+        },
+        {
+          "page": 10,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3318
+        },
+        {
+          "page": 11,
+          "lines": 19,
+          "questions": 3,
+          "highlights": 3,
+          "textCharacters": 1090
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-biologia",
+      "file": "8489155-biologia.pdf",
+      "header": "BIOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3585
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3150
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3609
+        },
+        {
+          "page": 4,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3304
+        },
+        {
+          "page": 5,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3537
+        },
+        {
+          "page": 6,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3369
+        },
+        {
+          "page": 7,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3419
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3579
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3424
+        },
+        {
+          "page": 10,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 2968
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-enfermeria",
+      "file": "8489155-enfermeria.pdf",
+      "header": "ENFERMERÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3337
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3214
+        },
+        {
+          "page": 3,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3949
+        },
+        {
+          "page": 4,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3037
+        },
+        {
+          "page": 5,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3528
+        },
+        {
+          "page": 6,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3420
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3206
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3470
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3321
+        },
+        {
+          "page": 10,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3622
+        },
+        {
+          "page": 11,
+          "lines": 13,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 582
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-farmacia",
+      "file": "8489155-farmacia-y-bioquimica.pdf",
+      "header": "FARMACIA Y BIOQUÍMICA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3329
+        },
+        {
+          "page": 2,
+          "lines": 62,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2833
+        },
+        {
+          "page": 3,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3394
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3376
+        },
+        {
+          "page": 5,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3449
+        },
+        {
+          "page": 6,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3461
+        },
+        {
+          "page": 7,
+          "lines": 58,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3453
+        },
+        {
+          "page": 8,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3409
+        },
+        {
+          "page": 9,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3284
+        },
+        {
+          "page": 10,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3396
+        },
+        {
+          "page": 11,
+          "lines": 6,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 319
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-ingenieria-sanitaria",
+      "file": "8489155-ingenieria-sanitaria.pdf",
+      "header": "INGENIERÍA SANITARIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3621
+        },
+        {
+          "page": 2,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3268
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3553
+        },
+        {
+          "page": 4,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3515
+        },
+        {
+          "page": 5,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3225
+        },
+        {
+          "page": 6,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3360
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3075
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3816
+        },
+        {
+          "page": 9,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3436
+        },
+        {
+          "page": 10,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2974
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-laboratorio",
+      "file": "8489155-laboratorio-clinico.pdf",
+      "header": "TM DE LABORATORIO CLÍNICO Y ANATOMÍA PATOLÓGICA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3939
+        },
+        {
+          "page": 2,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3292
+        },
+        {
+          "page": 3,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3205
+        },
+        {
+          "page": 4,
+          "lines": 63,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3369
+        },
+        {
+          "page": 5,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3428
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3218
+        },
+        {
+          "page": 7,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3150
+        },
+        {
+          "page": 8,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3098
+        },
+        {
+          "page": 9,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3761
+        },
+        {
+          "page": 10,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2555
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-medicina",
+      "file": "8489155-medicina.pdf",
+      "header": "MEDICINA HUMANA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3536
+        },
+        {
+          "page": 2,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3771
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3407
+        },
+        {
+          "page": 4,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3228
+        },
+        {
+          "page": 5,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3588
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3321
+        },
+        {
+          "page": 7,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3749
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3780
+        },
+        {
+          "page": 9,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3297
+        },
+        {
+          "page": 10,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3703
+        },
+        {
+          "page": 11,
+          "lines": 24,
+          "questions": 4,
+          "highlights": 4,
+          "textCharacters": 1038
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-nutricion",
+      "file": "8489155-nutricion.pdf",
+      "header": "NUTRICIÓN",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3760
+        },
+        {
+          "page": 2,
+          "lines": 66,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3254
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3564
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3324
+        },
+        {
+          "page": 5,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3437
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3577
+        },
+        {
+          "page": 7,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3480
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3423
+        },
+        {
+          "page": 9,
+          "lines": 62,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3098
+        },
+        {
+          "page": 10,
+          "lines": 68,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3930
+        },
+        {
+          "page": 11,
+          "lines": 7,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 459
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-obstetricia",
+      "file": "8489155-obstetricia.pdf",
+      "header": "OBSTETRICIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3434
+        },
+        {
+          "page": 2,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3589
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3439
+        },
+        {
+          "page": 4,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3405
+        },
+        {
+          "page": 5,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3629
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3581
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3513
+        },
+        {
+          "page": 8,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3558
+        },
+        {
+          "page": 9,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3260
+        },
+        {
+          "page": 10,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3216
+        },
+        {
+          "page": 11,
+          "lines": 27,
+          "questions": 4,
+          "highlights": 4,
+          "textCharacters": 1457
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-odontologia",
+      "file": "8489155-odontologia.pdf",
+      "header": "ODONTOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3431
+        },
+        {
+          "page": 2,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3463
+        },
+        {
+          "page": 3,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3464
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3253
+        },
+        {
+          "page": 5,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3415
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3258
+        },
+        {
+          "page": 7,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3753
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3440
+        },
+        {
+          "page": 9,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3624
+        },
+        {
+          "page": 10,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3224
+        },
+        {
+          "page": 11,
+          "lines": 7,
+          "questions": 1,
+          "highlights": 1,
+          "textCharacters": 324
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-optometria",
+      "file": "8489155-optometria.pdf",
+      "header": "TM EN OPTOMETRÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3412
+        },
+        {
+          "page": 2,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3419
+        },
+        {
+          "page": 3,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3082
+        },
+        {
+          "page": 4,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3003
+        },
+        {
+          "page": 5,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3652
+        },
+        {
+          "page": 6,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3499
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3128
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3224
+        },
+        {
+          "page": 9,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3437
+        },
+        {
+          "page": 10,
+          "lines": 46,
+          "questions": 7,
+          "highlights": 7,
+          "textCharacters": 2335
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-psicologia",
+      "file": "8489155-psicologia.pdf",
+      "header": "PSICOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [
+        {
+          "type": "alternativa_vacia",
+          "severity": "info",
+          "page": 10,
+          "questions": [
+            100
+          ],
+          "detail": "Se descartó la marca E sin contenido."
+        }
+      ],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3511
+        },
+        {
+          "page": 2,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3482
+        },
+        {
+          "page": 3,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3277
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3635
+        },
+        {
+          "page": 5,
+          "lines": 66,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3081
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2986
+        },
+        {
+          "page": 7,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3560
+        },
+        {
+          "page": 8,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3484
+        },
+        {
+          "page": 9,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3760
+        },
+        {
+          "page": 10,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3799
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-radiologia",
+      "file": "8489155-radiologia.pdf",
+      "header": "TM EN RADIOLOGÍA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3353
+        },
+        {
+          "page": 2,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3667
+        },
+        {
+          "page": 3,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3081
+        },
+        {
+          "page": 4,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2786
+        },
+        {
+          "page": 5,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3220
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3196
+        },
+        {
+          "page": 7,
+          "lines": 59,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3611
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3402
+        },
+        {
+          "page": 9,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3326
+        },
+        {
+          "page": 10,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3365
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-terapia-lenguaje",
+      "file": "8489155-terapia-de-lenguaje.pdf",
+      "header": "TM EN TERAPIA DEL LENGUAJE",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3336
+        },
+        {
+          "page": 2,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3440
+        },
+        {
+          "page": 3,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3155
+        },
+        {
+          "page": 4,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3336
+        },
+        {
+          "page": 5,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3658
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3292
+        },
+        {
+          "page": 7,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3526
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3275
+        },
+        {
+          "page": 9,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3574
+        },
+        {
+          "page": 10,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3420
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-terapia-fisica",
+      "file": "8489155-terapia-fisica.pdf",
+      "header": "TM EN TERAPIA FÍSICA Y REHABILITACIÓN",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3345
+        },
+        {
+          "page": 2,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 2972
+        },
+        {
+          "page": 3,
+          "lines": 69,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3356
+        },
+        {
+          "page": 4,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3360
+        },
+        {
+          "page": 5,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3136
+        },
+        {
+          "page": 6,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3165
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3309
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3376
+        },
+        {
+          "page": 9,
+          "lines": 68,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3401
+        },
+        {
+          "page": 10,
+          "lines": 31,
+          "questions": 5,
+          "highlights": 5,
+          "textCharacters": 1635
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-tm-terapia-ocupacional",
+      "file": "8489155-terapia-ocupacional.pdf",
+      "header": "TM EN TERAPIA OCUPACIONAL",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3488
+        },
+        {
+          "page": 2,
+          "lines": 61,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3533
+        },
+        {
+          "page": 3,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3496
+        },
+        {
+          "page": 4,
+          "lines": 62,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3550
+        },
+        {
+          "page": 5,
+          "lines": 69,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3580
+        },
+        {
+          "page": 6,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3376
+        },
+        {
+          "page": 7,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3170
+        },
+        {
+          "page": 8,
+          "lines": 68,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3311
+        },
+        {
+          "page": 9,
+          "lines": 65,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3378
+        },
+        {
+          "page": 10,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3579
+        },
+        {
+          "page": 11,
+          "lines": 33,
+          "questions": 5,
+          "highlights": 5,
+          "textCharacters": 1826
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-trabajo-social",
+      "file": "8489155-trabajo-social.pdf",
+      "header": "TRABAJO SOCIAL",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 11,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3608
+        },
+        {
+          "page": 2,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3622
+        },
+        {
+          "page": 3,
+          "lines": 63,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 4016
+        },
+        {
+          "page": 4,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3358
+        },
+        {
+          "page": 5,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3612
+        },
+        {
+          "page": 6,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3544
+        },
+        {
+          "page": 7,
+          "lines": 65,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3440
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3927
+        },
+        {
+          "page": 9,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3279
+        },
+        {
+          "page": 10,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3595
+        },
+        {
+          "page": 11,
+          "lines": 14,
+          "questions": 2,
+          "highlights": 2,
+          "textCharacters": 803
+        }
+      ]
+    },
+    {
+      "examId": "2026-ii-veterinaria",
+      "file": "8489155-veterinaria.pdf",
+      "header": "MEDICINA VETERINARIA",
+      "cycle": {
+        "year": 2026,
+        "convocatoria": "II",
+        "label": "2026-II"
+      },
+      "pages": 10,
+      "questions": 100,
+      "verified": 100,
+      "incidents": [],
+      "pageStats": [
+        {
+          "page": 1,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3414
+        },
+        {
+          "page": 2,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 2966
+        },
+        {
+          "page": 3,
+          "lines": 66,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3203
+        },
+        {
+          "page": 4,
+          "lines": 64,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3443
+        },
+        {
+          "page": 5,
+          "lines": 64,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3200
+        },
+        {
+          "page": 6,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3171
+        },
+        {
+          "page": 7,
+          "lines": 70,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3302
+        },
+        {
+          "page": 8,
+          "lines": 67,
+          "questions": 11,
+          "highlights": 11,
+          "textCharacters": 3609
+        },
+        {
+          "page": 9,
+          "lines": 67,
+          "questions": 10,
+          "highlights": 10,
+          "textCharacters": 3652
+        },
+        {
+          "page": 10,
+          "lines": 60,
+          "questions": 9,
+          "highlights": 9,
+          "textCharacters": 3228
+        }
+      ]
+    }
+  ],
+  "totals": {
+    "professions": 17,
+    "exams": 51,
+    "questions": 5100,
+    "validAnswers": 5100,
+    "duplicateGroups": 580,
+    "duplicateQuestions": 2695
+  }
+}

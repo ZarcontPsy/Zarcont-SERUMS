@@ -7,7 +7,7 @@ Uso:
     python verificar_integridad.py --generar    # regenera el manifiesto
 
 Exclusiones deliberadas: JSON crudos de entrada en "serums map/", carpetas
-__pycache__/, node_modules, .git y el propio manifiesto. Ver AUTORIA.md (§5).
+__pycache__/, node_modules, .git, .opencode y el propio manifiesto. Ver AUTORIA.md (§5).
 """
 import hashlib
 import pathlib
@@ -16,7 +16,7 @@ import sys
 sys.stdout.reconfigure(encoding="utf-8")
 RAIZ = pathlib.Path(__file__).resolve().parent
 MANIFIESTO = RAIZ / "INTEGRITY.sha256"
-DIRS_EXCLUIDOS = {"__pycache__", "node_modules", ".git"}
+DIRS_EXCLUIDOS = {"__pycache__", "node_modules", ".git", ".opencode"}
 
 
 def sha256(ruta: pathlib.Path) -> str:

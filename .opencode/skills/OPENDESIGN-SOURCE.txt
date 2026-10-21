@@ -1,0 +1,37 @@
+OpenDesign — skills instalados (adaptación a OpenCode V2)
+=========================================================
+
+Origen: https://github.com/manalkaff/opendesign (tag v0.3.1) — MIT License, © 2026 manalkaff.
+Licencia incluida en: OPENDESIGN-LICENSE.txt
+
+Fecha de instalación: 2026-10-19
+
+Por qué están copiados aquí
+---------------------------
+Las instrucciones oficiales (INSTALL.md) instalan el plugin `opendesign@git+https://github.com/
+manalkaff/opendesign.git`. Ese plugin usa la API de plugins de OpenCode **V1** (export nombrado +
+hooks `config` / `experimental.chat.system.transform`) y OpenCode **V2** lo rechaza:
+
+    failed to load plugin ... Plugin must export a default definition with an id and an
+    effect or setup function. (Missing key at ["default"])
+
+OpenCode V2 descubre skills nativamente en `.opencode/skills/<id>/SKILL.md`, así que los 10 skills
+se copiaron tal cual desde `skills/` del paquete (el plugin solo añadía: registrar esta carpeta y
+inyectar el skill de entrada en el prompt del sistema; ambas cosas se cubren aquí).
+
+Skills instalados (ID = nombre de carpeta)
+------------------------------------------
+create-design-system · frontend-design · handoff-to-claude-code · interactive-prototype ·
+make-a-deck · make-tweakable · opendesign · run-opendesign · setup-opendesign · wireframe
+
+Uso
+---
+- En un chat: menciona `@opendesign` (o pide cargar el skill `opendesign`).
+- El skill de entrada enruta a los especialistas según el tipo de artefacto.
+
+Actualizar
+----------
+Re-copiar la carpeta `skills/` del repositorio upstream (o de la caché de OpenCode) sobre
+`.opencode/skills/`. Si OpenCode publica soporte V2 del plugin, se puede volver al método oficial:
+añadir `"plugins": ["opendesign@git+https://github.com/manalkaff/opendesign.git"]` en
+`.opencode/opencode.json` y borrar esta carpeta.

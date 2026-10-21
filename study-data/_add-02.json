@@ -1,0 +1,2187 @@
+{
+  "sources": [
+    {
+      "id": "src-gestantes",
+      "title": "Directiva Sanitaria N.° 155-MINSA/DGIESP-2024 para el Cuidado Integral de la Salud Mental de Gestantes y Madres de Niñas y Niños Menores de 5 Años",
+      "short": "Perinatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Directiva sanitaria",
+      "provenance": "Directiva sanitaria del Ministerio de Salud del Perú (N.° 155-MINSA/DGIESP-2024).",
+      "file": "../study-data/fuentes/salud-mental-gestantes-madres.pdf"
+    },
+    {
+      "id": "src-ley-violencia",
+      "title": "Texto Único Ordenado de la Ley N.° 30364, Ley para Prevenir, Sancionar y Erradicar la Violencia contra las Mujeres y los Integrantes del Grupo Familiar",
+      "short": "Ley 30364",
+      "authors": "Congreso de la República del Perú",
+      "kind": "Ley y reglamento",
+      "provenance": "Texto único ordenado de la Ley N.° 30364 y su reglamento, con las modificaciones incorporadas en la versión oficial.",
+      "file": "../study-data/fuentes/ley-violencia-contra-mujer.pdf"
+    },
+    {
+      "id": "src-gt-violencia",
+      "title": "Guía Técnica para el Cuidado de la Salud Mental de Mujeres en Situación de Violencia Ocasionada por la Pareja o Expareja",
+      "short": "GT violencia",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía técnica",
+      "provenance": "Guía técnica aprobada por Resolución Ministerial N.° 670-2021/MINSA.",
+      "file": "../study-data/fuentes/gt-salud-mental-mujeres-violencia.pdf"
+    },
+    {
+      "id": "src-violencia-sexual",
+      "title": "Norma Técnica de Salud N.° 164-MINSA/2020/DGIESP para el Cuidado Integral a Mujeres e Integrantes del Grupo Familiar Afectados por Violencia Sexual",
+      "short": "Violencia sexual",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 164-MINSA/2020/DGIESP).",
+      "file": "../study-data/fuentes/nt-afectados-violencia-sexual.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-perinatal",
+      "title": "Salud mental perinatal",
+      "short": "Perinatal",
+      "description": "Detección, tratamiento y continuidad del cuidado de la salud mental durante la gestación, el puerperio y la crianza temprana.",
+      "accent": "#C9A7D6",
+      "icon": "heart",
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "area-violencia",
+      "title": "Violencia de género",
+      "short": "Violencia",
+      "description": "Marco legal, detección, primera acogida, valoración del riesgo y atención integral de la violencia sexual.",
+      "accent": "#D98E8E",
+      "icon": "flag",
+      "sourceIds": [
+        "src-ley-violencia",
+        "src-gt-violencia",
+        "src-violencia-sexual"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-perinatal-deteccion",
+      "title": "Detección y tamizaje",
+      "areaId": "area-perinatal",
+      "summary": "Signos de alarma, PHQ-9, WAST y AUDIT-C: qué preguntar, cuándo hacerlo y cómo pasar del puntaje a una conducta clínica.",
+      "keywords": [
+        "PHQ-9",
+        "WAST",
+        "AUDIT-C",
+        "tamizaje",
+        "gestante"
+      ],
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-perinatal-cuidado",
+      "title": "Tratamiento y continuidad",
+      "areaId": "area-perinatal",
+      "summary": "Intervenciones psicosociales, psicoterapia, psicofármacos con criterio, duelo, violencia y seguimiento maternofilial.",
+      "keywords": [
+        "psicoterapia",
+        "psicofármacos",
+        "duelo",
+        "continuidad",
+        "lactancia"
+      ],
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-violencia-marco",
+      "title": "Marco legal y protección",
+      "areaId": "area-violencia",
+      "summary": "Definición, tipos, sujetos protegidos, derechos, denuncia y medidas de protección de la Ley N.° 30364.",
+      "keywords": [
+        "Ley 30364",
+        "tipos de violencia",
+        "denuncia",
+        "medidas de protección"
+      ],
+      "sourceIds": [
+        "src-ley-violencia"
+      ]
+    },
+    {
+      "id": "topic-violencia-deteccion",
+      "title": "Detección y primera acogida",
+      "areaId": "area-violencia",
+      "summary": "Señales de alerta, WAST, entrevista segura y los cinco movimientos de ANIMA para una primera acogida sin revictimización.",
+      "keywords": [
+        "WAST",
+        "ANIMA",
+        "primera acogida",
+        "violencia de pareja"
+      ],
+      "sourceIds": [
+        "src-gt-violencia",
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-violencia-atencion",
+      "title": "Riesgo, salud mental y seguimiento",
+      "areaId": "area-violencia",
+      "summary": "Valoración del riesgo, plan de seguridad, consecuencias en salud mental, tratamiento escalonado y continuidad.",
+      "keywords": [
+        "riesgo",
+        "plan de seguridad",
+        "salud mental",
+        "seguimiento"
+      ],
+      "sourceIds": [
+        "src-gt-violencia",
+        "src-ley-violencia"
+      ]
+    },
+    {
+      "id": "topic-violencia-sexual",
+      "title": "Violencia sexual",
+      "areaId": "area-violencia",
+      "summary": "Atención de emergencia, AVISAS, consentimiento, preservación de evidencia, profilaxis y seguimiento integral.",
+      "keywords": [
+        "AVISAS",
+        "PEP",
+        "profilaxis",
+        "evidencia",
+        "seguimiento"
+      ],
+      "sourceIds": [
+        "src-violencia-sexual"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-perinatal-01",
+      "title": "Signos de alarma y tamizajes que abren la puerta",
+      "kicker": "Perinatal · Detección",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Todo contacto con la gestante, la puérpera o el niño menor de 5 años es una oportunidad para detectar. El tamizaje no es un diagnóstico: es una señal que exige evaluación.",
+      "keyConcepts": [
+        "El PHQ-9 explora síntomas depresivos; el WAST, violencia de pareja; el AUDIT-C, consumo de alcohol.",
+        "En la gestante, el PHQ-9 se aplica en el primer trimestre o primer contacto y en el tercer trimestre.",
+        "En la puérpera se aplica antes del alta si no se hizo antes; en la niña o niño se evalúa desarrollo, vínculo y señales de alarma.",
+        "Un resultado positivo abre evaluación clínica, valoración del riesgo y un plan de cuidado; no se archiva como una etiqueta."
+      ],
+      "sections": [
+        {
+          "title": "Mirar antes de preguntar",
+          "body": [
+            "La detección no empieza con el cuestionario. Empieza cuando el personal observa y pregunta por el estado emocional, la calidad del sueño, el apetito, la culpa, la desesperanza, la violencia y el consumo de alcohol.",
+            "En la gestación y el puerperio estos problemas pueden confundirse con molestias esperables. La clave es preguntar de forma directa, en un espacio privado y sin naturalizar el sufrimiento."
+          ],
+          "bullets": [
+            "Tristeza persistente, anhedonia, llanto fácil o irritabilidad.",
+            "Ansiedad, insomnio que no mejora, pesadillas o evitación.",
+            "Ideas de muerte, autolesión o daño al bebé.",
+            "Violencia de pareja, control económico, amenazas o coerción sexual.",
+            "Consumo de alcohol u otras sustancias; falta de apoyo o aislamiento."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Tres instrumentos, tres riesgos distintos",
+          "body": [
+            "Los instrumentos no se sustituyen entre sí: cada uno explora un riesgo diferente y puede aplicarse en la misma consulta."
+          ],
+          "table": {
+            "headers": [
+              "Instrumento",
+              "Qué explora",
+              "Puntaje y punto de corte"
+            ],
+            "rows": [
+              [
+                "PHQ-9",
+                "Síntomas depresivos en las últimas 2 semanas; 9 ítems, 0 a 27.",
+                "Positivo desde 5. Bandas: 5–9 leve, 10–14 moderado, 15–19 moderadamente severo, 20–27 severo."
+              ],
+              [
+                "WAST",
+                "Violencia en la relación de pareja; 8 ítems, 8 a 24.",
+                "Positivo con 15 o más. Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor."
+              ],
+              [
+                "AUDIT-C",
+                "Consumo de alcohol; 3 ítems, 0 a 12.",
+                "Positivo con 3 o más. En el embarazo, cualquier respuesta de consumo nocivo exige intervención."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Momentos que no se deben perder",
+          "bullets": [
+            "Gestante: primer trimestre o primer contacto, y tercer trimestre.",
+            "Puérpera: antes del alta, si no se aplicó durante la gestación.",
+            "Niña o niño menor de 1 año: en dos momentos del primer año, incluido el décimo mes.",
+            "Niña o niño de 1 a 5 años: al menos una vez al año, en la atención del niño.",
+            "Todo contacto por otro motivo también es una oportunidad para preguntar."
+          ],
+          "callout": {
+            "title": "Para recordar",
+            "text": "El tamizaje es una puerta, no una sentencia. Un puntaje alto obliga a evaluar, proteger y ofrecer un plan; un puntaje bajo no elimina la necesidad de escuchar.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-deteccion"
+    },
+    {
+      "id": "sheet-perinatal-02",
+      "title": "Cuando el tamizaje es positivo: confirmar y referir",
+      "kicker": "Perinatal · Tamizaje positivo",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Un tamizaje positivo exige evaluación clínica, diagnóstico y un plan. Los casos leves pueden manejarse en el establecimiento; los moderados y severos se refieren al centro de salud mental comunitario.",
+      "keyConcepts": [
+        "El PHQ-9 positivo se interpreta por bandas: 5–9 leve, 10–14 moderado, 15–19 moderadamente severo, 20–27 severo.",
+        "El WAST positivo o la sospecha por los ítems 4, 6 o 7 activan valoración de riesgo y plan de seguridad.",
+        "El AUDIT-C positivo exige intervención breve; en el embarazo, cualquier consumo de riesgo se aborda sin esperar.",
+        "La gravedad, el riesgo suicida, la psicosis y la incapacidad funcional mandan sobre el puntaje."
+      ],
+      "sections": [
+        {
+          "title": "PHQ-9: del puntaje a la conducta",
+          "body": [
+            "El puntaje orienta, pero no reemplaza la entrevista. Se explora duración, impacto funcional, síntomas psicóticos, ideación suicida y capacidad de cuidar al bebé."
+          ],
+          "table": {
+            "headers": [
+              "Resultado",
+              "Interpretación",
+              "Conducta general"
+            ],
+            "rows": [
+              [
+                "5–9",
+                "Depresión leve",
+                "Manejo en el establecimiento, intervención psicosocial y seguimiento cercano."
+              ],
+              [
+                "10–14",
+                "Depresión moderada",
+                "Evaluación por salud mental; manejo conjunto o referencia al CSMC según riesgo y recursos."
+              ],
+              [
+                "15–19",
+                "Moderadamente severa",
+                "Referencia al CSMC; valorar urgencia y apoyo familiar."
+              ],
+              [
+                "20–27",
+                "Severa",
+                "Referencia prioritaria; descartar psicosis, riesgo suicida y necesidad de hospitalización."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "WAST y AUDIT-C: actuar sin minimizar",
+          "bullets": [
+            "WAST positivo: valorar riesgo, activar plan de seguridad y coordinar con CEM, PNP o justicia según el caso.",
+            "Si los ítems 4, 6 o 7 son afirmativos, tratar como violencia confirmada aunque el total no llegue a 15.",
+            "Un WAST negativo no descarta violencia: si hay señales, preguntar de nuevo y ofrecer ayuda.",
+            "AUDIT-C positivo: intervención breve, educación y referencia según gravedad; en el embarazo no se posterga.",
+            "Nunca preguntar por violencia delante de la pareja o de familiares que puedan ser agresores."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Confirmar, clasificar y organizar",
+          "body": [
+            "El diagnóstico se establece con evaluación clínica y criterios CIE-10, por médico psiquiatra, médico de familia o médico general capacitado. El plan debe integrar salud mental, obstetricia, pediatría y red de apoyo.",
+            "La presencia de psicosis, confusión, ideación suicida estructurada, rechazo de alimentos o incapacidad para cuidar al bebé convierte el caso en una urgencia."
+          ],
+          "callout": {
+            "title": "Regla práctica",
+            "text": "Primero se protege y se evalúa el riesgo; después se discute el diagnóstico y el tratamiento. Un puntaje nunca justifica ignorar una señal de peligro.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            15,
+            16,
+            17,
+            19,
+            23,
+            26,
+            31
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-deteccion"
+    },
+    {
+      "id": "sheet-perinatal-03",
+      "title": "Psicoterapia primero, fármacos con criterio",
+      "kicker": "Perinatal · Tratamiento",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La base del tratamiento es psicosocial y psicoterapéutica. Los psicofármacos se usan cuando el riesgo lo justifica, con evaluación individual y seguimiento estrecho.",
+      "keyConcepts": [
+        "La TCC, la psicoterapia interpersonal y las intervenciones de apoyo son pilares del manejo.",
+        "En gestación y lactancia se evalúa riesgo-beneficio para la madre, el feto, el embarazo y el neonato.",
+        "No se suspende bruscamente un tratamiento necesario; se coordina con psiquiatría.",
+        "La TEC se reserva para casos graves, refractarios o con riesgo vital, tras consentimiento y evaluación."
+      ],
+      "sections": [
+        {
+          "title": "Qué se ofrece antes y junto a los fármacos",
+          "body": [
+            "La directiva prioriza intervenciones psicosociales y psicoterapéuticas: psicoeducación, consejería, activación conductual, resolución de problemas, TCC y psicoterapia interpersonal. También incluye apoyo a la maternidad, lactancia y vínculo.",
+            "En casos leves o moderados, estas intervenciones pueden ser suficientes. En casos graves se combinan con tratamiento farmacológico y seguimiento especializado."
+          ],
+          "bullets": [
+            "TCC: cambiar pensamientos y conductas que mantienen el malestar.",
+            "Psicoterapia interpersonal: trabajar duelo, transición de rol, disputas y déficits sociales.",
+            "Intervenciones de apoyo: escucha, validación, información y activación de redes.",
+            "Terapia de pareja: solo si no hay violencia y existe una relación de cuidado; nunca como sustituto de la protección."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Psicofármacos en gestación y lactancia",
+          "body": [
+            "No hay una regla automática de suspender o iniciar. Se individualiza el riesgo-beneficio y se considera la salud materna, el riesgo de recaída, la edad gestacional, la lactancia y la evidencia disponible.",
+            "La prescripción y el ajuste corresponden al médico tratante con competencia en salud mental; se monitorizan efectos adversos y se coordina con obstetricia y neonatología."
+          ],
+          "table": {
+            "headers": [
+              "Dominio",
+              "Qué evaluar"
+            ],
+            "rows": [
+              [
+                "Madre",
+                "Gravedad, riesgo suicida, funcionalidad, adherencia y preferencia."
+              ],
+              [
+                "Embarazo",
+                "Riesgo de recaída, impacto de la enfermedad no tratada y alternativas."
+              ],
+              [
+                "Feto y neonato",
+                "Exposición, momento del parto, vigilancia neonatal y lactancia."
+              ],
+              [
+                "Tratamiento",
+                "Dosis mínima eficaz, monoterapia cuando sea posible y seguimiento."
+              ]
+            ]
+          },
+          "callout": {
+            "title": "No hacer",
+            "text": "No suspender de golpe un psicofármaco necesario ni iniciarlo sin evaluación. La enfermedad no tratada también tiene riesgos para la madre y el bebé.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "TEC y hospitalización",
+          "body": [
+            "La terapia electroconvulsiva se considera una alternativa de último recurso en depresión grave, psicosis, catatonia, rechazo de alimentos o riesgo vital, cuando otras opciones no son suficientes o no pueden usarse. Requiere consentimiento informado y evaluación especializada.",
+            "La hospitalización se indica cuando existe riesgo suicida, psicosis, incapacidad de autocuidado o de cuidado del bebé, o cuando el manejo ambulatorio no es seguro."
+          ],
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            19,
+            21,
+            22
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-cuidado"
+    },
+    {
+      "id": "sheet-perinatal-04",
+      "title": "Duelo, violencia y continuidad del cuidado",
+      "kicker": "Perinatal · Continuidad",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El duelo perinatal, la violencia y el riesgo suicida exigen una respuesta activa. La continuidad se organiza con el plan de cuidado y el seguimiento maternofilial.",
+      "keyConcepts": [
+        "El duelo perinatal se acompaña con información clara, respeto, posibilidad de ver y despedir al bebé y seguimiento.",
+        "No se aconseja un nuevo embarazo o una adopción inmediata como forma de resolver el duelo.",
+        "La violencia de pareja contraindica la terapia de pareja y exige plan de seguridad.",
+        "El seguimiento puede ser presencial, domiciliario o por teleconsulta, con frecuencia proporcional a la complejidad."
+      ],
+      "sections": [
+        {
+          "title": "Acompañar el duelo perinatal",
+          "body": [
+            "La pérdida puede ocurrir en la gestación, el parto o el puerperio. La respuesta incluye información sencilla y honesta, explicación de los procedimientos, posibilidad de ver y sostener al bebé, respeto a las creencias y apoyo para la despedida.",
+            "El seguimiento debe explorar culpa, síntomas depresivos, duelo complicado y riesgo suicida. No se debe presionar para “superarlo” ni recomendar de inmediato otro embarazo o una adopción."
+          ],
+          "bullets": [
+            "Escuchar sin minimizar: “no fue tu culpa” debe acompañarse de explicación y tiempo.",
+            "Ofrecer apoyo para trámites, funeral y lactancia si corresponde.",
+            "Explorar culpa, ira, negación, síntomas persistentes y riesgo suicida.",
+            "Coordinar salud mental, obstetricia y apoyo social."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Violencia y riesgo suicida",
+          "body": [
+            "La violencia puede aparecer o intensificarse en el embarazo y el puerperio. Se pregunta en privado, se valora el riesgo y se construye un plan de seguridad. La terapia de pareja no se indica cuando hay violencia.",
+            "La ideación suicida, la psicosis, la confusión o la incapacidad para cuidar al bebé requieren evaluación urgente y protección."
+          ],
+          "callout": {
+            "title": "Seguridad primero",
+            "text": "Si hay violencia, no se confronta al agresor ni se cita a la pareja. Se activan redes de protección y se documenta el riesgo.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Un plan que continúa",
+          "body": [
+            "El plan de cuidado integral (PCC) organiza las intervenciones y el seguimiento. La frecuencia depende de la gravedad: puede ser semanal al inicio, luego quincenal o mensual, y debe ajustarse a la evolución.",
+            "La continuidad incluye salud mental, control prenatal o puerperal, lactancia, vínculo, desarrollo infantil y articulación con la comunidad. El alta no es abandono: se acuerda un plan de mantenimiento y signos de alarma."
+          ],
+          "bullets": [
+            "Definir responsable, contacto y próxima cita antes de cerrar la consulta.",
+            "Usar recordatorios y búsqueda activa si la persona no acude.",
+            "Involucrar a la red de apoyo con consentimiento y cuidado de la confidencialidad.",
+            "Registrar el plan y los acuerdos en la historia clínica."
+          ],
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            20,
+            23,
+            26,
+            36
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-cuidado"
+    },
+    {
+      "id": "sheet-violencia-01",
+      "title": "Qué es violencia y a quién protege la ley",
+      "kicker": "Violencia · Marco legal",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La Ley N.° 30364 reconoce cuatro formas de violencia y protege a las mujeres durante todo su ciclo de vida y a los integrantes del grupo familiar.",
+      "keyConcepts": [
+        "Los tipos son física, psicológica, sexual y económica o patrimonial.",
+        "La violencia no se limita al daño corporal: incluye control, amenazas, coerción y privación de recursos.",
+        "Protege a mujeres de todas las edades y a los integrantes del grupo familiar.",
+        "La ley reconoce atención de salud gratuita, información, asistencia jurídica y no revictimización."
+      ],
+      "sections": [
+        {
+          "title": "Cuatro formas de violencia",
+          "table": {
+            "headers": [
+              "Tipo",
+              "Qué incluye"
+            ],
+            "rows": [
+              [
+                "Física",
+                "Golpes, empujones, quemaduras o cualquier acción que cause daño corporal."
+              ],
+              [
+                "Psicológica",
+                "Humillación, amenazas, control, aislamiento o desvalorización."
+              ],
+              [
+                "Sexual",
+                "Actos sexuales sin consentimiento, coerción o exposición a contenido sexual."
+              ],
+              [
+                "Económica o patrimonial",
+                "Control del dinero, privación de recursos, daño o retención de bienes y documentos."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Sujetos de protección",
+          "bullets": [
+            "Mujeres durante todo su ciclo de vida: niñas, adolescentes, jóvenes, adultas y adultas mayores.",
+            "Cónyuges, ex cónyuges, convivientes y ex convivientes.",
+            "Ascendientes, descendientes y parientes colaterales dentro de los grados que fija la ley.",
+            "Personas que habitan en el mismo hogar, sin relación contractual o laboral.",
+            "Niños, adolescentes, adultos mayores y personas con discapacidad, con atención especializada."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Derechos que se activan",
+          "bullets": [
+            "Vida, dignidad, igualdad y no discriminación.",
+            "Información, orientación y asistencia jurídica gratuita.",
+            "Atención de salud física y mental gratuita, con documentación y certificados.",
+            "Confidencialidad y protección de la identidad y los datos.",
+            "No ser revictimizada con declaraciones reiterativas o humillantes."
+          ],
+          "callout": {
+            "title": "Para retener",
+            "text": "La violencia también es control, amenaza y privación. La ley protege antes de que exista una lesión grave.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            25,
+            27
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-marco"
+    },
+    {
+      "id": "sheet-violencia-02",
+      "title": "Denuncia y medidas de protección",
+      "kicker": "Violencia · Ruta legal",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La denuncia puede ser verbal, escrita o virtual, sin abogado ni tasa. El juez dicta medidas según el riesgo: 48 horas en leve o moderado y 24 horas en severo.",
+      "keyConcepts": [
+        "Se denuncia ante la PNP, fiscalía penal o de familia y juzgado de familia.",
+        "No se exige abogado, tasa, examen médico ni lesiones visibles.",
+        "Los profesionales de salud y educación deben denunciar los casos que conozcan.",
+        "Las medidas buscan proteger la vida y la integridad, no solo sancionar."
+      ],
+      "sections": [
+        {
+          "title": "Dónde y cómo denunciar",
+          "bullets": [
+            "PNP, fiscalía penal o de familia y juzgado de familia.",
+            "Juzgados de paz donde no existan juzgados de familia.",
+            "Denuncia verbal, escrita o por canales virtuales; si es verbal se levanta acta.",
+            "Puede denunciar la persona afectada o cualquier otra en su favor, sin representación.",
+            "No se requiere abogado, tasa, exámenes ni huellas visibles."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Medidas de protección",
+          "body": [
+            "El juez evalúa el riesgo y puede ordenar retiro del agresor del domicilio, prohibición de acercamiento o comunicación, prohibición de armas, inventario de bienes, asignación económica de emergencia, tratamiento psicológico y albergue, entre otras.",
+            "Las medidas se comunican de inmediato a las entidades encargadas de ejecutarlas."
+          ],
+          "table": {
+            "headers": [
+              "Riesgo",
+              "Plazo máximo",
+              "Respuesta"
+            ],
+            "rows": [
+              [
+                "Leve o moderado",
+                "48 horas",
+                "Audiencia y medidas acordes al caso."
+              ],
+              [
+                "Severo",
+                "24 horas",
+                "Medidas inmediatas; puede prescindirse de audiencia."
+              ],
+              [
+                "No determinable",
+                "72 horas",
+                "Evaluación y resolución en audiencia."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Salud y justicia",
+          "bullets": [
+            "Atención de salud gratuita y documentación del daño físico y psíquico.",
+            "Preservación de pruebas y emisión de certificados e informes.",
+            "La atención de urgencia no se condiciona a la denuncia.",
+            "Evitar declaraciones reiterativas y juicios sobre la vida íntima."
+          ],
+          "callout": {
+            "title": "No confundir",
+            "text": "Atender no es lo mismo que denunciar. La atención y la protección se activan de inmediato; la denuncia es un derecho y un deber legal.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            33,
+            35
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-marco"
+    },
+    {
+      "id": "sheet-violencia-03",
+      "title": "Señales de violencia y WAST",
+      "kicker": "Violencia · Detección",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La violencia de pareja se detecta con preguntas directas, privacidad y WAST. Un tamizaje negativo no descarta violencia cuando la clínica alerta.",
+      "keyConcepts": [
+        "El WAST tiene 8 ítems; 15 o más es positivo.",
+        "Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+        "Un WAST negativo no descarta violencia.",
+        "Se pregunta en privado, sin la pareja ni familiares que puedan ser agresores."
+      ],
+      "sections": [
+        {
+          "title": "Señales que alertan",
+          "bullets": [
+            "Embarazos no deseados, lesiones genitales, dolor pélvico, ITS repetidas o disfunción sexual.",
+            "Ansiedad, depresión, insomnio, pesadillas, hipervigilancia o consumo de sustancias.",
+            "Golpes en cabeza, cuello, abdomen, mamas o genitales con explicaciones inconsistentes.",
+            "Miedo, evitación, retraimiento o control de la pareja.",
+            "Amenazas, celos, control económico, aislamiento o armas en casa."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "WAST: cómo preguntar",
+          "body": [
+            "Se explica el propósito, se asegura la privacidad y se adapta el lenguaje. No es un interrogatorio ni una prueba que la persona debe pasar.",
+            "Se aplica en consulta, control prenatal, puerperio y cualquier contacto sanitario. En población general, al menos una vez al año cuando se indaga violencia."
+          ],
+          "bullets": [
+            "Buscar un momento a solas si vino acompañada.",
+            "Explicar la confidencialidad y sus límites.",
+            "Usar preguntas directas y conductuales.",
+            "Registrar resultado y acciones, no solo el puntaje."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Interpretar sin cerrar la puerta",
+          "body": [
+            "Un total de 15 o más es positivo. Si los ítems 4, 6 o 7 son afirmativos, se considera violencia confirmada aunque el total sea menor. Un resultado negativo no excluye violencia: la persona puede no sentirse segura para revelar.",
+            "Ante cualquier positivo o sospecha se valora el riesgo, se ofrece primera acogida y se construye un plan de seguridad."
+          ],
+          "callout": {
+            "title": "Privacidad",
+            "text": "Nunca se pregunta por violencia delante del agresor. La privacidad es una condición de seguridad.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            42
+          ]
+        },
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-deteccion"
+    },
+    {
+      "id": "sheet-violencia-04",
+      "title": "ANIMA: primera acogida en cinco movimientos",
+      "kicker": "Violencia · Primera acogida",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "ANIMA organiza la primera respuesta: Atención, No juzgar y validar, Informarse, Mejorar la seguridad y Apoyar. No es terapia ni interrogatorio.",
+      "keyConcepts": [
+        "ANIMA significa Atención, No juzgar/validar, Informarse, Mejorar la seguridad y Apoyar.",
+        "La primera acogida busca que la persona se sienta escuchada, informada y más segura.",
+        "No se presiona para denunciar ni se promete lo que no se puede cumplir.",
+        "Se explican los límites de la confidencialidad y se ofrecen opciones."
+      ],
+      "sections": [
+        {
+          "title": "Los cinco movimientos",
+          "table": {
+            "headers": [
+              "Paso",
+              "Qué implica"
+            ],
+            "rows": [
+              [
+                "Atención",
+                "Recibir con respeto, sin apuro, en un espacio privado; escuchar sin interrumpir."
+              ],
+              [
+                "No juzgar y validar",
+                "Creer el relato, validar emociones y evitar preguntas que culpen."
+              ],
+              [
+                "Informarse",
+                "Preguntar por la situación, el riesgo, los apoyos y las necesidades."
+              ],
+              [
+                "Mejorar la seguridad",
+                "Identificar peligros inmediatos y construir un plan realista."
+              ],
+              [
+                "Apoyar",
+                "Informar derechos y opciones, coordinar servicios y acordar seguimiento."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Lo que no se hace",
+          "bullets": [
+            "No preguntar qué hizo para provocar la agresión.",
+            "No confrontar al agresor ni citar a la pareja.",
+            "No presionar para denunciar o dejar la relación.",
+            "No prometer protección absoluta.",
+            "No romper la confidencialidad sin explicar los límites."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cerrar la primera acogida",
+          "body": [
+            "Se resume lo escuchado, se valida el esfuerzo de pedir ayuda y se ofrecen opciones. Se acuerda un próximo paso concreto: cita, llamada, coordinación con CEM o PNP, o plan de seguridad.",
+            "Si hay riesgo inmediato, no se deja a la persona sola: se activa la ruta de protección."
+          ],
+          "callout": {
+            "title": "Frase útil",
+            "text": "“Te creo. No es tu culpa. No tienes que decidir todo ahora. Vamos a ver juntas qué opciones son más seguras.”",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            13,
+            14,
+            15,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-deteccion"
+    },
+    {
+      "id": "sheet-violencia-05",
+      "title": "Riesgo y plan de seguridad",
+      "kicker": "Violencia · Riesgo",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La ficha de valoración orienta la protección. El riesgo suele aumentar en la separación y debe reevaluarse con cada cambio.",
+      "keyConcepts": [
+        "La ficha se aplica a mujeres y adolescentes mayores de 14 años con violencia de pareja o expareja.",
+        "Puntajes: 0–7 leve, 8–13 moderado, 14–17 severo 1, 18–37 severo 2 o extremo.",
+        "El riesgo puede aumentar en la separación, el embarazo o ante amenazas de muerte o armas.",
+        "El plan de seguridad es concreto: a dónde ir, con quién, qué llevar y cómo pedir ayuda."
+      ],
+      "sections": [
+        {
+          "title": "Valorar el riesgo",
+          "body": [
+            "Se aplica con consentimiento y en privado. Si ya fue aplicada, se revisa y actualiza si cambió la situación.",
+            "Se exploran frecuencia y gravedad, amenazas, armas, celos, control, consumo, violencia sexual, niños y riesgo durante la separación."
+          ],
+          "bullets": [
+            "¿Amenazas de muerte o de daño a los hijos?",
+            "¿Armas en casa o acceso a ellas?",
+            "¿Aumentó la frecuencia o gravedad?",
+            "¿Está intentando separarse?",
+            "¿Tiene red de apoyo o está aislada?"
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Niveles y respuesta",
+          "table": {
+            "headers": [
+              "Puntaje",
+              "Nivel",
+              "Respuesta"
+            ],
+            "rows": [
+              [
+                "0–7",
+                "Leve",
+                "Orientación, primera acogida, plan de seguridad y seguimiento."
+              ],
+              [
+                "8–13",
+                "Moderado",
+                "Plan reforzado, coordinación con CEM/PNP y seguimiento cercano."
+              ],
+              [
+                "14–17",
+                "Severo 1",
+                "Protección inmediata y reevaluación frecuente."
+              ],
+              [
+                "18–37",
+                "Severo 2 / extremo",
+                "Respuesta urgente y articulación con justicia y emergencia."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Plan de seguridad",
+          "bullets": [
+            "Lugar seguro, ruta de salida, transporte y llaves.",
+            "Documentos, dinero, medicamentos y ropa para ella y sus hijos.",
+            "Contacto de confianza y palabra clave.",
+            "Plan para niños, mascotas y personas dependientes.",
+            "Números de emergencia y ubicación de CEM, PNP o albergue.",
+            "Qué hacer si el agresor aparece."
+          ],
+          "callout": {
+            "title": "La separación no siempre reduce el riesgo",
+            "text": "Puede aumentarlo. La protección debe intensificarse, no retirarse.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            24,
+            25,
+            48,
+            56,
+            57,
+            59
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-atencion"
+    },
+    {
+      "id": "sheet-violencia-06",
+      "title": "Salud mental y seguimiento",
+      "kicker": "Violencia · Salud mental",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La violencia se asocia a depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias. El tratamiento es escalonado y la continuidad es parte de la protección.",
+      "keyConcepts": [
+        "Las consecuencias más frecuentes son depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias.",
+        "Los casos leves pueden manejarse en el primer nivel; los moderados y graves se refieren a salud mental especializada.",
+        "La terapia de pareja no se indica cuando hay violencia.",
+        "El seguimiento incluye seguridad, salud mental, red de apoyo y articulación con justicia."
+      ],
+      "sections": [
+        {
+          "title": "Lo que puede aparecer",
+          "bullets": [
+            "Episodio depresivo, ansiedad generalizada o crisis de angustia.",
+            "Estrés postraumático: intrusiones, pesadillas, evitación e hipervigilancia.",
+            "Somatización: dolor y síntomas persistentes sin causa clara.",
+            "Consumo de alcohol u otras sustancias.",
+            "Riesgo suicida, sobre todo con aislamiento o violencia grave."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Tratamiento escalonado",
+          "body": [
+            "La intervención inicial incluye psicoeducación, validación, apoyo social, manejo de ansiedad y resolución de problemas. En casos moderados o graves se añade psicoterapia especializada y, si corresponde, fármacos.",
+            "La TCC y las intervenciones centradas en trauma son útiles para el estrés postraumático. La terapia de pareja está contraindicada cuando hay violencia."
+          ],
+          "table": {
+            "headers": [
+              "Situación",
+              "Manejo"
+            ],
+            "rows": [
+              [
+                "Leve o reactivo",
+                "Primer nivel: escucha, psicoeducación, apoyo y seguimiento."
+              ],
+              [
+                "Moderado",
+                "Salud mental: psicoterapia y plan conjunto."
+              ],
+              [
+                "Grave o complejo",
+                "Equipo especializado, farmacoterapia si procede y coordinación intersectorial."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Seguimiento",
+          "bullets": [
+            "Verificar que la ruta de protección esté activa.",
+            "Coordinar con CEM, PNP, fiscalía y servicios sociales.",
+            "Reevaluar riesgo, síntomas, consumo y red de apoyo.",
+            "Registrar plan, acuerdos y derivaciones.",
+            "Evitar repetir la historia innecesariamente."
+          ],
+          "callout": {
+            "title": "Seguridad y tratamiento",
+            "text": "La depresión o el estrés postraumático no se resuelven solo con fármacos si la violencia continúa. La seguridad es parte del tratamiento.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            23,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-atencion"
+    },
+    {
+      "id": "sheet-violencia-07",
+      "title": "Violencia sexual: las primeras 72 horas",
+      "kicker": "Violencia · Emergencia",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "La violencia sexual aguda es una emergencia. Se atiende de inmediato, con consentimiento, preservando evidencia y activando AVISAS.",
+      "keyConcepts": [
+        "La violencia sexual aguda ocurre cuando el episodio fue hace menos de 72 horas o requiere atención inmediata.",
+        "AVISAS: Acogida, Valoración, Intervención clínica, Seguimiento, Acceso a la información y justicia, Seguridad.",
+        "El examen y las muestras requieren consentimiento informado.",
+        "La atención es gratuita y no se condiciona a la denuncia."
+      ],
+      "sections": [
+        {
+          "title": "AVISAS",
+          "table": {
+            "headers": [
+              "Componente",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "Acogida e intervención en crisis",
+                "Recibir, validar, contener y explicar."
+              ],
+              [
+                "Valoración",
+                "Lesiones, estado emocional, riesgo suicida, embarazo, ITS y necesidades sociales."
+              ],
+              [
+                "Intervención clínica",
+                "Tratar lesiones, profilaxis, anticoncepción y salud mental."
+              ],
+              [
+                "Seguimiento",
+                "ITS, VIH, embarazo, salud mental y adherencia."
+              ],
+              [
+                "Acceso a la información y justicia",
+                "Derechos, denuncia, pruebas y acompañamiento legal."
+              ],
+              [
+                "Seguridad",
+                "Plan de protección y red de apoyo."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Consentimiento y evidencia",
+          "body": [
+            "Se explica cada procedimiento y se respeta la negativa. La persona puede estar acompañada si lo desea; se cuida la privacidad y se evita la confrontación.",
+            "La evidencia se recoge antes de lavar o cambiar ropa cuando sea posible, pero no se culpabiliza si ya se bañó. Las muestras se rotulan, sellan y registran con cadena de custodia."
+          ],
+          "table": {
+            "headers": [
+              "Muestra",
+              "Ventana orientativa"
+            ],
+            "rows": [
+              [
+                "Oral",
+                "Primer día."
+              ],
+              [
+                "Vulvar o vaginal",
+                "Hasta 5 días."
+              ],
+              [
+                "Cervical",
+                "Después de 48 horas y hasta 5 días."
+              ],
+              [
+                "Anal o rectal",
+                "Hasta 3 días."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Primeras decisiones",
+          "bullets": [
+            "Estabilizar, tratar lesiones y valorar riesgo suicida.",
+            "Prueba de embarazo y anticoncepción de emergencia.",
+            "Pruebas basales de VIH, sífilis, hepatitis B y C.",
+            "Profilaxis de VIH e ITS; valorar vacuna contra hepatitis B.",
+            "Documentar y explicar el seguimiento."
+          ],
+          "callout": {
+            "title": "No exigir denuncia para atender",
+            "text": "La atención es un derecho y no depende de la denuncia. La decisión de denunciar se informa y se acompaña.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            20,
+            21,
+            22,
+            24,
+            25,
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-sexual"
+    },
+    {
+      "id": "sheet-violencia-08",
+      "title": "Profilaxis, anticoncepción y seguimiento",
+      "kicker": "Violencia sexual · Continuidad",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "La profilaxis busca prevenir VIH, ITS y embarazo; el seguimiento busca detectar infecciones, embarazo y secuelas en salud mental.",
+      "keyConcepts": [
+        "La profilaxis de VIH se inicia dentro de las 72 horas y dura 28 días si no se conoce el estado del agresor.",
+        "Se ofrece profilaxis de ITS, vacunación contra hepatitis B y anticoncepción de emergencia.",
+        "El seguimiento incluye VIH a los 3 y 6 meses, sífilis a los 3 meses y prueba de embarazo.",
+        "La TCC centrada en trauma requiere al menos 12 sesiones en los casos indicados."
+      ],
+      "sections": [
+        {
+          "title": "Profilaxis",
+          "table": {
+            "headers": [
+              "Riesgo",
+              "Intervención"
+            ],
+            "rows": [
+              [
+                "VIH",
+                "Iniciar dentro de 72 horas; 28 días si no se conoce el estado del agresor."
+              ],
+              [
+                "ITS",
+                "Profilaxis para sífilis, gonorrea y clamidia según el caso y el peso."
+              ],
+              [
+                "Hepatitis B",
+                "Iniciar o completar vacunación; valorar inmunoglobulina si no está vacunada."
+              ],
+              [
+                "Embarazo",
+                "Anticoncepción de emergencia y prueba de embarazo."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Seguimiento",
+          "bullets": [
+            "VIH a los 3 y 6 meses; si es positivo, vincular a TAR.",
+            "Sífilis a los 3 meses.",
+            "Embarazo: prueba inicial y seguimiento.",
+            "ITS: control clínico y tratamiento de parejas.",
+            "Salud mental: estrés postraumático, depresión, ansiedad y riesgo suicida."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Salud mental y continuidad",
+          "body": [
+            "La TCC centrada en trauma y otras intervenciones especializadas reducen síntomas de estrés postraumático, depresión y ansiedad. En los casos indicados se requieren al menos 12 sesiones.",
+            "La atención es gratuita y puede financiarse por el SIS. El plan de alta incluye signos de alarma, contacto y próxima cita."
+          ],
+          "callout": {
+            "title": "No perder el hilo",
+            "text": "Una prueba negativa a los 3 meses no cierra el seguimiento: el VIH requiere control a los 6 meses y la salud mental puede manifestarse después.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            65
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-sexual"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-perinatal-01-1",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "concept",
+      "prompt": "¿Qué explora el WAST y cuál es su punto de corte?",
+      "answer": "Explora violencia en la relación de pareja mediante 8 ítems (8 a 24 puntos). Se considera positivo con 15 o más; los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+      "explanation": "El WAST no mide depresión ni alcohol. Es un tamizaje de violencia de pareja y debe aplicarse en privado, sin la pareja presente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "WAST",
+        "violencia"
+      ]
+    },
+    {
+      "id": "card-perinatal-01-2",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "multiple",
+      "prompt": "Una gestante obtiene 12 puntos en el PHQ-9. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Descartar depresión porque el puntaje es bajo.",
+        "Realizar evaluación clínica, valorar el riesgo y ofrecer un plan de cuidado en el primer nivel.",
+        "Iniciar de inmediato un antidepresivo sin evaluación.",
+        "Repetir el PHQ-9 solo al año."
+      ],
+      "correctIndex": 1,
+      "explanation": "Desde 5 el PHQ-9 es positivo. Un puntaje de 12 corresponde a síntomas moderados: requiere evaluación clínica, valoración de riesgo y un plan de cuidado; no se descarta ni se medica a ciegas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "conducta"
+      ]
+    },
+    {
+      "id": "card-perinatal-01-3",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "application",
+      "prompt": "Una puérpera acude a control del recién nacido y refiere cansancio, llanto y que “no puede con todo”. ¿Cuál es el primer paso más seguro?",
+      "options": [
+        "Atribuirlo al cansancio normal del puerperio y citar en un mes.",
+        "Aplicar el PHQ-9 en un espacio privado, explorar ideación de daño y violencia, y evaluar el riesgo.",
+        "Preguntar delante de su pareja para confirmar la información.",
+        "Indicarle solo hierro y descanso."
+      ],
+      "correctIndex": 1,
+      "explanation": "El cansancio puede ser normal, pero también un síntoma depresivo. Se tamiza en privado, se explora riesgo suicida y violencia, y se decide la conducta según el resultado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-1",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "concept",
+      "prompt": "¿Cómo se interpretan las bandas del PHQ-9 en la gestación y el puerperio?",
+      "answer": "5–9 leve, 10–14 moderado, 15–19 moderadamente severo y 20–27 severo. Desde 5 se considera positivo y requiere evaluación clínica.",
+      "explanation": "El punto de corte es 5, no 10. La banda orienta la gravedad y el nivel de atención, pero el riesgo clínico siempre se evalúa aparte.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "bandas"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-2",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "multiple",
+      "prompt": "Una gestante tiene WAST total de 12, pero responde afirmativamente al ítem 6. ¿Qué corresponde?",
+      "options": [
+        "Descartar violencia porque el total es menor de 15.",
+        "Sospechar violencia confirmada, valorar riesgo y activar protección.",
+        "Repetir el WAST al año sin otras acciones.",
+        "Preguntar a la pareja para verificar la respuesta."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor de 15. Se actúa con valoración de riesgo y plan de seguridad, sin confrontar a la pareja.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "WAST",
+        "riesgo"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-3",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "application",
+      "prompt": "Una puérpera con PHQ-9 de 22 refiere que no duerme, se siente culpable y piensa que “sería mejor desaparecer”. ¿Cuál es la prioridad?",
+      "options": [
+        "Iniciar psicoterapia ambulatoria y citar en 4 semanas.",
+        "Valorar riesgo suicida, protección del bebé y derivación urgente a salud mental.",
+        "Indicar solo medidas de higiene del sueño.",
+        "Esperar a que el puerperio avance."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un PHQ-9 de 22 es severo y la ideación de desaparecer exige valoración urgente del riesgo, protección y derivación. La psicoterapia sola no es suficiente en este momento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "riesgo suicida",
+        "urgencia"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-1",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "concept",
+      "prompt": "¿Cuál es el papel de la psicoterapia en la depresión perinatal?",
+      "answer": "Es un pilar del tratamiento, especialmente en casos leves o moderados. La TCC y la psicoterapia interpersonal abordan pensamientos, conductas, duelo, rol materno y relaciones.",
+      "explanation": "La psicoterapia no es un adorno: puede ser el tratamiento principal en casos leves o moderados y se combina con fármacos en casos graves.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "psicoterapia"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-2",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es la conducta correcta ante una gestante que ya toma un antidepresivo y queda embarazada?",
+      "options": [
+        "Suspenderlo de inmediato por el embarazo.",
+        "Evaluar riesgo-beneficio con salud mental, evitar cambios bruscos y monitorizar.",
+        "Duplicar la dosis para prevenir recaídas.",
+        "Sustituirlo siempre por psicoterapia."
+      ],
+      "correctIndex": 1,
+      "explanation": "La decisión es individualizada. Suspender de golpe puede provocar recaída o síntomas de retirada; se evalúa con psiquiatría y se monitoriza madre, embarazo y neonato.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "psicofármacos",
+        "gestación"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-3",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "application",
+      "prompt": "Una gestante con depresión grave presenta rechazo de alimentos, mutismo y riesgo suicida. ¿Qué opción corresponde?",
+      "options": [
+        "Manejo ambulatorio con psicoeducación semanal.",
+        "Hospitalización y evaluación para tratamiento especializado, incluida la TEC si está indicada.",
+        "Solo terapia de pareja.",
+        "Esperar el parto para iniciar tratamiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La gravedad, el rechazo de alimentos y el riesgo suicida exigen hospitalización y tratamiento especializado. La TEC es una opción de último recurso en casos graves o refractarios.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "TEC",
+        "hospitalización"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-1",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "concept",
+      "prompt": "¿Qué se recomienda y qué se evita al acompañar un duelo perinatal?",
+      "answer": "Se recomienda información clara, respeto, posibilidad de ver y despedir al bebé, apoyo para trámites y seguimiento. Se evita minimizar la pérdida, presionar para superarla o recomendar de inmediato otro embarazo o una adopción.",
+      "explanation": "El duelo no es una enfermedad ni una falta de fortaleza. El acompañamiento respeta el tiempo y explora riesgo suicida y duelo complicado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "duelo"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-2",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "multiple",
+      "prompt": "¿Cuál es la mejor conducta si una gestante revela violencia de pareja?",
+      "options": [
+        "Citarla con su pareja para mejorar la comunicación.",
+        "Preguntar en privado, valorar el riesgo, construir un plan de seguridad y activar la ruta de protección.",
+        "Decirle que primero resuelva sus problemas de pareja y luego vuelva.",
+        "Registrar el dato sin hacer nada más."
+      ],
+      "correctIndex": 1,
+      "explanation": "La violencia contraindica la terapia de pareja. La respuesta es privada, centrada en la seguridad, con valoración de riesgo y articulación con los servicios de protección.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "violencia",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-3",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "application",
+      "prompt": "Una madre con depresión leve mejora tras seis semanas de apoyo y psicoterapia. ¿Cómo se organiza la continuidad?",
+      "options": [
+        "Alta definitiva sin próxima cita.",
+        "Mantener seguimiento acordado, evaluar adherencia, red de apoyo y signos de alarma, y ajustar la frecuencia.",
+        "Suspender toda intervención porque ya mejoró.",
+        "Derivarla siempre a hospitalización."
+      ],
+      "correctIndex": 1,
+      "explanation": "La mejoría no elimina el riesgo de recaída. Se mantiene un plan de continuidad con seguimiento, educación sobre signos de alarma y ajuste de la frecuencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            23,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "continuidad",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-violencia-01-1",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son los cuatro tipos de violencia de la Ley N.° 30364?",
+      "answer": "Física, psicológica, sexual y económica o patrimonial.",
+      "explanation": "La ley no reduce la violencia al golpe. El control económico, la coerción sexual y la humillación también son violencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "tipos"
+      ]
+    },
+    {
+      "id": "card-violencia-01-2",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "multiple",
+      "prompt": "¿Cuál situación es violencia económica o patrimonial?",
+      "options": [
+        "Un empujón.",
+        "Impedir que la pareja use su dinero o retener sus documentos de trabajo.",
+        "Una amenaza de golpe.",
+        "Una relación sexual sin consentimiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La violencia económica afecta recursos, bienes o documentos. Las otras opciones son física, psicológica y sexual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "violencia económica"
+      ]
+    },
+    {
+      "id": "card-violencia-01-3",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "application",
+      "prompt": "Una mujer adulta mayor con discapacidad convive con un familiar que la agrede. ¿Está protegida?",
+      "options": [
+        "No, solo protege a mujeres jóvenes.",
+        "Sí, la ley protege a las mujeres durante todo su ciclo de vida y a los integrantes del grupo familiar.",
+        "Solo si hay lesiones graves.",
+        "Solo si denuncia ante un juez penal."
+      ],
+      "correctIndex": 1,
+      "explanation": "La protección alcanza a las mujeres de todas las edades y a los integrantes del grupo familiar, con atención especializada cuando hay discapacidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            7,
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "sujetos"
+      ]
+    },
+    {
+      "id": "card-violencia-02-1",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "concept",
+      "prompt": "¿Qué requisitos se exigen para denunciar violencia según la Ley N.° 30364?",
+      "answer": "Ninguno de fondo: puede ser verbal, escrita o virtual, sin abogado, tasa, exámenes ni lesiones visibles.",
+      "explanation": "La ley elimina barreras de acceso. La falta de pruebas físicas o de abogado no impide denunciar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "denuncia"
+      ]
+    },
+    {
+      "id": "card-violencia-02-2",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "multiple",
+      "prompt": "En riesgo severo, ¿cuál es el plazo máximo para que el juzgado emita medidas de protección?",
+      "options": [
+        "24 horas.",
+        "48 horas.",
+        "72 horas.",
+        "7 días."
+      ],
+      "correctIndex": 0,
+      "explanation": "Riesgo severo: 24 horas; leve o moderado: 48 horas; riesgo no determinable: 72 horas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "plazos"
+      ]
+    },
+    {
+      "id": "card-violencia-02-3",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "application",
+      "prompt": "Una mujer con lesión leve dice que no quiere denunciar. ¿Qué corresponde?",
+      "options": [
+        "Negarle la atención hasta que denuncie.",
+        "Atenderla, documentar, informar derechos y opciones, y valorar el riesgo.",
+        "Obligarla a firmar la denuncia.",
+        "Decirle que vuelva con más pruebas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La atención es gratuita e inmediata y no se condiciona a la denuncia. Se documenta, se informa y se valora el riesgo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            7,
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "atención"
+      ]
+    },
+    {
+      "id": "card-violencia-03-1",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "concept",
+      "prompt": "¿Qué es el WAST y cómo se interpreta?",
+      "answer": "Es un tamizaje de violencia de pareja de 8 ítems. Es positivo con 15 o más; los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+      "explanation": "El WAST no sustituye la entrevista clínica; abre la conversación y orienta la valoración del riesgo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        },
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "WAST"
+      ]
+    },
+    {
+      "id": "card-violencia-03-2",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "multiple",
+      "prompt": "Una mujer responde que no ha sufrido violencia, pero tiene lesiones repetidas y evita hablar delante de su pareja. ¿Qué corresponde?",
+      "options": [
+        "Confiar en el WAST negativo y no insistir.",
+        "Volver a preguntar en privado, explorar el contexto y ofrecer ayuda sin presionar.",
+        "Confrontar a la pareja.",
+        "Registrar “sin violencia” y cerrar el caso."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un tamizaje negativo no descarta violencia. Las lesiones repetidas y la evitación son señales para preguntar de nuevo en privado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "WAST negativo"
+      ]
+    },
+    {
+      "id": "card-violencia-03-3",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "application",
+      "prompt": "Una gestante llega acompañada de su pareja, que no se separa de ella. ¿Cómo se indaga violencia?",
+      "options": [
+        "Preguntar delante de él.",
+        "Buscar un momento a solas, con una excusa clínica, y preguntar en privado.",
+        "Omitir el tema.",
+        "Pedirle a la pareja que responda."
+      ],
+      "correctIndex": 1,
+      "explanation": "La privacidad es una condición de seguridad. Se busca un momento a solas y nunca se confronta al posible agresor.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "privacidad"
+      ]
+    },
+    {
+      "id": "card-violencia-04-1",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "concept",
+      "prompt": "¿Qué significa ANIMA?",
+      "answer": "Atención, No juzgar y validar, Informarse, Mejorar la seguridad y Apoyar.",
+      "explanation": "ANIMA es una secuencia de primera acogida, no una terapia. Busca que la persona se sienta escuchada, informada y más segura.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "ANIMA"
+      ]
+    },
+    {
+      "id": "card-violencia-04-2",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "multiple",
+      "prompt": "¿Cuál conducta contradice la primera acogida?",
+      "options": [
+        "Validar el relato y explicar la confidencialidad.",
+        "Preguntar qué hizo para provocar la agresión.",
+        "Ofrecer opciones y respetar el ritmo.",
+        "Construir un plan de seguridad."
+      ],
+      "correctIndex": 1,
+      "explanation": "Culpar a la víctima es revictimizante y contradice el “No juzgar” de ANIMA.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "revictimización"
+      ]
+    },
+    {
+      "id": "card-violencia-04-3",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "application",
+      "prompt": "Una mujer revela violencia y no quiere denunciar todavía. ¿Cuál es la respuesta más adecuada?",
+      "options": [
+        "Decirle que no se puede hacer nada.",
+        "Validar, informar opciones, valorar riesgo y acordar un plan de seguridad y seguimiento.",
+        "Denunciar sin su conocimiento.",
+        "Convencerla de denunciar hoy."
+      ],
+      "correctIndex": 1,
+      "explanation": "La primera acogida respeta la autonomía, valora el riesgo y mantiene el acompañamiento sin coerción.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "autonomía"
+      ]
+    },
+    {
+      "id": "card-violencia-05-1",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "concept",
+      "prompt": "¿Cuáles son los niveles de riesgo y sus puntajes?",
+      "answer": "Leve 0–7, moderado 8–13, severo 1 de 14–17 y severo 2 o extremo de 18–37.",
+      "explanation": "El puntaje orienta la intensidad de la respuesta y debe reevaluarse cuando cambia la situación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            56,
+            57
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "riesgo"
+      ]
+    },
+    {
+      "id": "card-violencia-05-2",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "multiple",
+      "prompt": "¿Qué momento requiere especial vigilancia del riesgo?",
+      "options": [
+        "Cuando la pareja está más cariñosa.",
+        "Durante la separación o el intento de separación.",
+        "Solo cuando hay lesiones visibles.",
+        "Cuando la mujer deja de denunciar."
+      ],
+      "correctIndex": 1,
+      "explanation": "La separación puede aumentar el riesgo de agresión grave o feminicidio. La protección debe reforzarse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            24,
+            25,
+            57
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "separación"
+      ]
+    },
+    {
+      "id": "card-violencia-05-3",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "application",
+      "prompt": "Una mujer con riesgo severo 2 quiere volver con su pareja porque no tiene dónde quedarse. ¿Qué corresponde?",
+      "options": [
+        "Decirle que ya no se puede hacer nada.",
+        "Respetar su decisión, reforzar el plan de seguridad, explorar albergue y coordinar protección.",
+        "Convencerla de denunciar inmediatamente.",
+        "Cerrar el caso."
+      ],
+      "correctIndex": 1,
+      "explanation": "La autonomía se respeta, pero el riesgo no desaparece. Se buscan alternativas concretas y se mantiene la coordinación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            57,
+            59
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "albergue"
+      ]
+    },
+    {
+      "id": "card-violencia-06-1",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "concept",
+      "prompt": "¿Cuáles son las consecuencias de salud mental más frecuentes de la violencia de pareja?",
+      "answer": "Depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias; también riesgo suicida.",
+      "explanation": "Los síntomas pueden aparecer meses después y no siempre se relacionan espontáneamente con la violencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "salud mental"
+      ]
+    },
+    {
+      "id": "card-violencia-06-2",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "multiple",
+      "prompt": "¿Cuál intervención está contraindicada cuando hay violencia de pareja?",
+      "options": [
+        "Psicoeducación.",
+        "Terapia de pareja para mejorar la comunicación.",
+        "TCC individual.",
+        "Plan de seguridad."
+      ],
+      "correctIndex": 1,
+      "explanation": "La terapia de pareja puede aumentar el riesgo y la revictimización. Se prioriza la seguridad y el trabajo individual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            21,
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "terapia de pareja"
+      ]
+    },
+    {
+      "id": "card-violencia-06-3",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "application",
+      "prompt": "Una mujer con violencia severa presenta insomnio, pesadillas y evitación. ¿Cuál es el enfoque más adecuado?",
+      "options": [
+        "Terapia de pareja.",
+        "Evaluación de salud mental, TCC centrada en trauma, seguridad y seguimiento.",
+        "Solo medicación para dormir.",
+        "Decirle que los síntomas desaparecerán al dejar la relación."
+      ],
+      "correctIndex": 1,
+      "explanation": "El estrés postraumático requiere evaluación y psicoterapia centrada en trauma, junto con seguridad y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            26,
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "estrés postraumático"
+      ]
+    },
+    {
+      "id": "card-violencia-07-1",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "concept",
+      "prompt": "¿Qué significa AVISAS?",
+      "answer": "Acogida e intervención en crisis, Valoración, Intervención clínica, Seguimiento, Acceso a la información y justicia, y Seguridad.",
+      "explanation": "AVISAS organiza la atención integral y evita reducirla al examen genital.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "AVISAS"
+      ]
+    },
+    {
+      "id": "card-violencia-07-2",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es la ventana orientativa para la muestra cervical?",
+      "options": [
+        "Primer día.",
+        "Hasta 3 días.",
+        "Después de 48 horas y hasta 5 días.",
+        "Solo después de 10 días."
+      ],
+      "correctIndex": 2,
+      "explanation": "Cervical: después de 48 horas y hasta 5 días. Oral: primer día; vulvar/vaginal: hasta 5 días; anal/rectal: hasta 3 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            32,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "evidencia"
+      ]
+    },
+    {
+      "id": "card-violencia-07-3",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "application",
+      "prompt": "Una adolescente acude 36 horas después de una agresión y ya se bañó. ¿Qué corresponde?",
+      "options": [
+        "No tomar muestras porque se bañó.",
+        "Explicar que aún se pueden recoger muestras, obtener consentimiento y continuar la atención integral.",
+        "Esperar 5 días.",
+        "Exigir denuncia antes de atender."
+      ],
+      "correctIndex": 1,
+      "explanation": "El baño no elimina todas las evidencias. Se explica, se recoge lo posible con consentimiento y se brinda atención completa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            20,
+            32,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "evidencia"
+      ]
+    },
+    {
+      "id": "card-violencia-08-1",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "concept",
+      "prompt": "¿Cuándo se inicia y cuánto dura la profilaxis de VIH tras violencia sexual?",
+      "answer": "Se inicia dentro de las 72 horas y se mantiene 28 días cuando no se conoce el estado serológico del agresor.",
+      "explanation": "La profilaxis es una urgencia y se acompaña de consejería y adherencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "PEP"
+      ]
+    },
+    {
+      "id": "card-violencia-08-2",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "multiple",
+      "prompt": "¿Qué seguimiento serológico se recomienda?",
+      "options": [
+        "VIH solo al año; sífilis al mes.",
+        "VIH a los 3 y 6 meses; sífilis a los 3 meses.",
+        "Ninguno si no hay síntomas.",
+        "Solo prueba de embarazo."
+      ],
+      "correctIndex": 1,
+      "explanation": "El seguimiento incluye VIH a los 3 y 6 meses y sífilis a los 3 meses, además de embarazo, ITS y salud mental.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-violencia-08-3",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "application",
+      "prompt": "Una mujer atendida por violencia sexual presenta pesadillas y evitación a las 6 semanas. ¿Qué opción es más adecuada?",
+      "options": [
+        "Decirle que es normal y no requiere tratamiento.",
+        "Evaluar salud mental y ofrecer psicoterapia centrada en trauma con seguimiento.",
+        "Indicar solo antidepresivos.",
+        "Esperar seis meses."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los síntomas de estrés postraumático requieren evaluación y psicoterapia centrada en trauma; la TCC puede requerir al menos 12 sesiones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            38,
+            39
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "TCC"
+      ]
+    }
+  ]
+}

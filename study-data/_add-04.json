@@ -1,0 +1,699 @@
+{
+  "sources": [
+    {
+      "id": "src-hepatitis-b",
+      "title": "Norma Técnica de Salud N.° 146-MINSA/2018/DGIESP para la Prevención, Diagnóstico y Tratamiento de la Hepatitis Viral B en el Perú",
+      "short": "Hepatitis B",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 146-MINSA/2018/DGIESP).",
+      "file": "../study-data/fuentes/nt-prevencion-hepatitis-b.pdf"
+    },
+    {
+      "id": "src-hepatitis-c",
+      "title": "Norma Técnica de Salud N.° 145-MINSA/2018/DGIESP para la Prevención, Diagnóstico y Tratamiento de la Hepatitis Viral C en el Perú",
+      "short": "Hepatitis C",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 145-MINSA/2018/DGIESP).",
+      "file": "../study-data/fuentes/nt-prevencion-hepatitis-c.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-hepatitis",
+      "title": "Hepatitis virales",
+      "short": "Hepatitis",
+      "description": "Prevención, diagnóstico, tratamiento y seguimiento de la hepatitis B y C.",
+      "accent": "#B6C77A",
+      "icon": "drop",
+      "sourceIds": [
+        "src-hepatitis-b",
+        "src-hepatitis-c"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-hepatitis-b",
+      "title": "Hepatitis B",
+      "areaId": "area-hepatitis",
+      "summary": "Transmisión, vacunación, diagnóstico, tratamiento y seguimiento de la infección crónica.",
+      "keywords": [
+        "HBsAg",
+        "vacuna",
+        "tenofovir",
+        "cirrosis",
+        "HBeAg"
+      ],
+      "sourceIds": [
+        "src-hepatitis-b"
+      ]
+    },
+    {
+      "id": "topic-hepatitis-c",
+      "title": "Hepatitis C",
+      "areaId": "area-hepatitis",
+      "summary": "Tamizaje, confirmación con ARN, fibrosis, antivirales pangenotípicos y curación.",
+      "keywords": [
+        "Anti-VHC",
+        "ARN",
+        "APRI",
+        "sofosbuvir",
+        "RVS"
+      ],
+      "sourceIds": [
+        "src-hepatitis-c"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-hepatitis-01",
+      "title": "Prevenir y detectar la hepatitis B",
+      "kicker": "Hepatitis B · Prevención",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La hepatitis B se previene con vacunación y se detecta con HBsAg. La infección crónica se define por la persistencia del antígeno de superficie por más de seis meses.",
+      "keyConcepts": [
+        "El HBsAg positivo por más de 6 meses define infección crónica.",
+        "La primera dosis de vacuna se aplica al recién nacido dentro de las primeras 12 horas.",
+        "Se tamiza a gestantes, contactos, donantes y personas con factores de riesgo.",
+        "La atención es gratuita y cubierta por el PEAS."
+      ],
+      "sections": [
+        {
+          "title": "Transmisión y prevención",
+          "body": [
+            "El virus se transmite por sangre, semen, secreciones vaginales y de madre a hijo durante el parto. La vacunación, los preservativos, la seguridad de las inyecciones y el tamizaje de donantes reducen la transmisión.",
+            "El esquema completo tiene tres dosis y no se reinicia si hay retraso."
+          ],
+          "bullets": [
+            "Vacunar al recién nacido dentro de las 12 horas.",
+            "Completar las tres dosis.",
+            "Tamizar a gestantes y ofrecer prevención de transmisión maternoinfantil.",
+            "Tamizar a contactos y personas con factores de riesgo.",
+            "Evitar compartir agujas o material punzocortante."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Diagnóstico",
+          "body": [
+            "El tamizaje inicial es HBsAg. Si es reactivo se solicita anti-HBc IgM, anti-HBc total, HBeAg, anti-HBe y ADN viral para definir fase y tratamiento.",
+            "La infección aguda se confirma con anti-HBc IgM positivo; la crónica, con HBsAg persistente por más de seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Quién debe evaluarse",
+          "bullets": [
+            "Gestantes y sus parejas.",
+            "Donantes de sangre, órganos y tejidos.",
+            "Personas con VIH, hepatitis C, tuberculosis o enfermedad renal crónica.",
+            "Contactos domiciliarios y sexuales.",
+            "Personas con transfusiones, hemodiálisis, drogas inyectables o privación de libertad."
+          ],
+          "callout": {
+            "title": "Prevenir es tratar",
+            "text": "La vacuna y la primera dosis del recién nacido son las intervenciones con mayor impacto para evitar la transmisión vertical.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            21,
+            37
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-b"
+    },
+    {
+      "id": "sheet-hepatitis-02",
+      "title": "Tratamiento y seguimiento de la hepatitis B crónica",
+      "kicker": "Hepatitis B · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El tratamiento se indica según cirrosis, carga viral, ALT, HBeAg y edad. El tenofovir es de primera línea; el entecavir se prefiere cuando hay riesgo renal.",
+      "keyConcepts": [
+        "Toda persona con cirrosis y carga viral detectable debe tratarse.",
+        "Sin cirrosis: carga viral >2000 UI/ml y ALT elevada o persistentemente anormal.",
+        "También se trata a personas ≥30 años, HBeAg positivo, carga viral >2000 y ALT normal.",
+        "El seguimiento incluye ALT, carga viral, HBeAg, fibrosis y vigilancia de hepatocarcinoma."
+      ],
+      "sections": [
+        {
+          "title": "Cuándo iniciar tratamiento",
+          "table": {
+            "headers": [
+              "Escenario",
+              "Criterio"
+            ],
+            "rows": [
+              [
+                "Cirrosis",
+                "Carga viral detectable; tratar siempre."
+              ],
+              [
+                "Sin cirrosis, ALT elevada",
+                "Carga viral >2000 UI/ml y ALT ≥2 veces el límite superior o persistentemente anormal."
+              ],
+              [
+                "Sin cirrosis, ALT normal",
+                "Edad ≥30 años, HBeAg positivo y carga viral >2000 UI/ml."
+              ],
+              [
+                "Riesgo especial",
+                "Antecedente familiar de hepatocarcinoma o cirrosis, manifestaciones extrahepáticas, reactivación o inmunosupresión."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Esquemas y monitoreo",
+          "body": [
+            "El tenofovir es el antiviral de primera línea. En riesgo renal o contraindicación se prefiere entecavir. El tratamiento es prolongado y no se suspende sin evaluación especializada.",
+            "Se monitorizan ALT, carga viral, HBeAg, función renal y fibrosis. En cirrosis se vigila hepatocarcinoma cada seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Situaciones especiales",
+          "bullets": [
+            "Coinfección VIH: incluir TDF y 3TC o FTC.",
+            "Coinfección VHC: evaluar interacciones y reactivación.",
+            "Embarazo: evaluar carga viral y tratamiento para reducir transmisión vertical.",
+            "Inmunosupresión: valorar profilaxis o tratamiento.",
+            "No suspender bruscamente: puede causar reactivación."
+          ],
+          "callout": {
+            "title": "No basta con mirar la ALT",
+            "text": "Una ALT normal no descarta enfermedad avanzada. La carga viral, el HBeAg, la edad y la fibrosis completan la decisión.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            23,
+            24,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-b"
+    },
+    {
+      "id": "sheet-hepatitis-03",
+      "title": "Tamizaje y diagnóstico de la hepatitis C",
+      "kicker": "Hepatitis C · Diagnóstico",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "El tamizaje es anti-VHC; el diagnóstico de infección activa requiere ARN detectable. La fibrosis se evalúa con APRI o elastografía.",
+      "keyConcepts": [
+        "Anti-VHC reactivo exige ARN del VHC.",
+        "Anti-VHC positivo + ARN detectable = infección activa; ARN indetectable = resuelta o falso positivo.",
+        "APRI >2 o elastografía >12 kPa sugieren cirrosis.",
+        "Toda persona con infección confirmada debe acceder a tratamiento."
+      ],
+      "sections": [
+        {
+          "title": "Del tamizaje al diagnóstico",
+          "body": [
+            "Se tamiza a poblaciones de riesgo, donantes, personas con VIH o hepatitis B, hemodializados, usuarios de drogas, personas privadas de libertad y con antecedentes de transfusiones o procedimientos invasivos.",
+            "Una prueba rápida o ELISA anti-VHC reactiva no confirma infección activa: se requiere ARN del VHC."
+          ],
+          "table": {
+            "headers": [
+              "Anti-VHC",
+              "ARN VHC",
+              "Interpretación"
+            ],
+            "rows": [
+              [
+                "Positivo",
+                "Detectable",
+                "Infección por VHC."
+              ],
+              [
+                "Positivo",
+                "Indetectable",
+                "Hepatitis C resuelta o falso positivo."
+              ],
+              [
+                "Negativo",
+                "No aplica",
+                "Sin evidencia de infección; repetir si hay sospecha."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Evaluación de fibrosis",
+          "body": [
+            "Se usan APRI y elastografía. APRI <0,5 sugiere ausencia de fibrosis significativa; 0,5–1,5 es dudosa; >1,5–2 significativa; >2 cirrosis. Elastografía <7 kPa ausencia; 7–9,4 moderada; 9,4–12 significativa; >12 cirrosis."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Antes de tratar",
+          "bullets": [
+            "Serología de VIH y hepatitis B.",
+            "Hemograma, plaquetas, bilirrubinas, albúmina y función renal.",
+            "Descarte de tuberculosis activa y embarazo.",
+            "Evaluación de interacciones y alcohol.",
+            "Consentimiento informado."
+          ],
+          "callout": {
+            "title": "No tratar sin confirmar",
+            "text": "El anti-VHC positivo puede reflejar infección resuelta. La carga viral de ARN confirma la infección activa.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-c"
+    },
+    {
+      "id": "sheet-hepatitis-04",
+      "title": "Tratamiento pangenotípico y curación",
+      "kicker": "Hepatitis C · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El tratamiento es pangenotípico y cura en más del 90% de los casos. La cura se define por ARN indetectable 12 semanas después de terminar el tratamiento.",
+      "keyConcepts": [
+        "Primera elección: sofosbuvir/velpatasvir 400/100 mg, una tableta al día por 12 semanas.",
+        "Alternativa: sofosbuvir/daclatasvir 400/60 mg por 12 semanas.",
+        "En cirrosis compensada, sofosbuvir/velpatasvir se extiende a 24 semanas.",
+        "En enfermedad renal crónica 4–5 se usa glecaprevir/pibrentasvir."
+      ],
+      "sections": [
+        {
+          "title": "Esquemas",
+          "table": {
+            "headers": [
+              "Situación",
+              "Esquema"
+            ],
+            "rows": [
+              [
+                "Sin cirrosis o cirrosis compensada",
+                "Sofosbuvir/velpatasvir 400/100 mg, 1 tableta/día por 12 semanas."
+              ],
+              [
+                "Alternativa",
+                "Sofosbuvir/daclatasvir 400/60 mg, 1 tableta/día por 12 semanas."
+              ],
+              [
+                "Cirrosis compensada",
+                "Sofosbuvir/velpatasvir por 24 semanas."
+              ],
+              [
+                "Enfermedad renal crónica 4–5",
+                "Glecaprevir/pibrentasvir 100/40 mg, 3 tabletas/día por 8 semanas; 12 semanas si hay cirrosis."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Curación y seguimiento",
+          "body": [
+            "La cura se define por ARN indetectable a las 12 semanas de finalizado el tratamiento. Se controla al inicio y a las 12 semanas postratamiento.",
+            "El seguimiento clínico es mensual durante el tratamiento. En cirrosis se mantiene vigilancia de hepatocarcinoma cada seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Situaciones especiales",
+          "bullets": [
+            "Coinfección VIH/VHC: tratar la hepatitis C sin interrumpir el TAR.",
+            "Coinfección VHB/VHC: riesgo de reactivación; monitorizar.",
+            "Embarazo: evitar procedimientos invasivos en el tercer trimestre; el tipo de parto no modifica la transmisión; la lactancia no es fuente de infección.",
+            "Niños de madres con VHC: anti-VHC a los 18 meses; si es positivo, confirmar con carga viral.",
+            "Fracaso: reevaluar adherencia e interacciones; retratamiento con comité de expertos."
+          ],
+          "callout": {
+            "title": "Curación no es inmunidad",
+            "text": "La curación no protege contra una nueva infección. Se mantienen prevención, tamizaje y seguimiento.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-c"
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-hepatitis-01-1",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "concept",
+      "prompt": "¿Cómo se define la infección crónica por hepatitis B?",
+      "answer": "Por HBsAg persistente por más de seis meses, o por anti-HBc IgM negativo + HBsAg positivo + anti-HBc total positivo.",
+      "explanation": "La persistencia del HBsAg distingue la infección crónica de la aguda.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "HBsAg"
+      ]
+    },
+    {
+      "id": "card-hepatitis-01-2",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo debe recibir el recién nacido la primera dosis de vacuna contra hepatitis B?",
+      "options": [
+        "Antes de las 12 horas de vida.",
+        "A los 2 meses.",
+        "A los 6 meses.",
+        "Solo si la madre es HBsAg positiva."
+      ],
+      "correctIndex": 0,
+      "explanation": "La primera dosis se aplica dentro de las primeras 12 horas; luego se completa el esquema de tres dosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "vacuna"
+      ]
+    },
+    {
+      "id": "card-hepatitis-01-3",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "application",
+      "prompt": "Una gestante tiene HBsAg positivo. ¿Qué corresponde además de evaluar su carga viral?",
+      "options": [
+        "No hacer nada hasta el parto.",
+        "Coordinar la prevención de transmisión maternoinfantil y asegurar vacuna e inmunoglobulina al recién nacido según indicación.",
+        "Suspender la lactancia.",
+        "Vacunar solo a la madre."
+      ],
+      "correctIndex": 1,
+      "explanation": "La prevención incluye evaluar la carga viral, tratar si está indicado y asegurar vacuna e inmunoglobulina al recién nacido.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            37,
+            38
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "gestante"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-1",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "concept",
+      "prompt": "¿Qué personas con hepatitis B crónica deben recibir tratamiento?",
+      "answer": "Cirrosis con carga viral detectable; sin cirrosis, carga viral >2000 UI/ml y ALT elevada; y personas ≥30 años con HBeAg positivo, carga viral >2000 y ALT normal, entre otros criterios de riesgo.",
+      "explanation": "La decisión integra cirrosis, carga viral, ALT, HBeAg, edad y riesgo de hepatocarcinoma.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            31,
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-2",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "multiple",
+      "prompt": "¿Cuál es el antiviral de primera línea para la hepatitis B crónica?",
+      "options": [
+        "Entecavir.",
+        "Tenofovir.",
+        "Sofosbuvir.",
+        "Aciclovir."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tenofovir es de primera línea; el entecavir se prefiere cuando hay riesgo renal o contraindicación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "tenofovir"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-3",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "application",
+      "prompt": "Un paciente con cirrosis por hepatitis B tiene carga viral detectable y ALT normal. ¿Debe tratarse?",
+      "options": [
+        "No, porque la ALT es normal.",
+        "Sí, la cirrosis con carga viral detectable es criterio de tratamiento.",
+        "Solo si tiene HBeAg positivo.",
+        "Solo si presenta ascitis."
+      ],
+      "correctIndex": 1,
+      "explanation": "La cirrosis con replicación viral es indicación de tratamiento independientemente de la ALT.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "cirrosis"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-1",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "concept",
+      "prompt": "¿Cómo se confirma una infección activa por hepatitis C?",
+      "answer": "Con anti-VHC reactivo y ARN del VHC detectable. Si el ARN es indetectable, se considera infección resuelta o falso positivo.",
+      "explanation": "El anti-VHC es tamizaje; el ARN confirma replicación activa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-2",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "multiple",
+      "prompt": "¿Qué prueba no invasiva se recomienda para evaluar fibrosis hepática?",
+      "options": [
+        "Biopsia hepática de entrada.",
+        "APRI o elastografía de transición.",
+        "Radiografía de tórax.",
+        "Solo ALT."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma recomienda APRI y elastografía como pruebas no invasivas para evaluar fibrosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "fibrosis"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-3",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "application",
+      "prompt": "Un paciente tiene anti-VHC positivo y ARN indetectable. ¿Qué significa?",
+      "options": [
+        "Infección activa que requiere tratamiento inmediato.",
+        "Infección resuelta o falso positivo; no hay replicación activa.",
+        "Cirrosis descompensada.",
+        "Debe iniciar sofosbuvir igualmente."
+      ],
+      "correctIndex": 1,
+      "explanation": "Anti-VHC positivo con ARN indetectable indica infección resuelta o falso positivo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "ARN"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-1",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "concept",
+      "prompt": "¿Cuál es el esquema pangenotípico de primera elección para hepatitis C?",
+      "answer": "Sofosbuvir/velpatasvir 400/100 mg, una tableta al día por 12 semanas; en cirrosis compensada se extiende a 24 semanas.",
+      "explanation": "La alternativa es sofosbuvir/daclatasvir 400/60 mg por 12 semanas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "sofosbuvir"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-2",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "multiple",
+      "prompt": "¿Cómo se define la curación de la hepatitis C?",
+      "options": [
+        "ARN indetectable al inicio del tratamiento.",
+        "ARN indetectable 12 semanas después de terminar el tratamiento.",
+        "ALT normal en cualquier momento.",
+        "Ausencia de síntomas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La cura se define por respuesta viral sostenida: ARN indetectable 12 semanas después de finalizar el tratamiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "curación"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-3",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "application",
+      "prompt": "Una paciente con hepatitis C y enfermedad renal crónica grado 5 necesita tratamiento. ¿Qué esquema es de elección?",
+      "options": [
+        "Sofosbuvir/velpatasvir.",
+        "Glecaprevir/pibrentasvir, 3 tabletas al día por 8 semanas.",
+        "Sofosbuvir/daclatasvir.",
+        "Interferón."
+      ],
+      "correctIndex": 1,
+      "explanation": "En enfermedad renal crónica 4–5 se prefiere glecaprevir/pibrentasvir; la duración se ajusta a 12 semanas si hay cirrosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "renal"
+      ]
+    }
+  ]
+}

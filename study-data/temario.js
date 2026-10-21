@@ -1,0 +1,3032 @@
+/* SERUMS STUDY — contenido compartido
+   Fuentes documentales aportadas por el usuario. Las fichas son síntesis de estudio:
+   no sustituyen la norma vigente ni el juicio clínico. Cada referencia apunta al PDF. */
+window.STUDY_CONTENT = {
+  version: "1.0.0",
+  meta: {
+    title: "Temario de estudio",
+    subtitle: "Atención primaria, curso de vida, consumo de alcohol, salud materna y continuidad de cuidados.",
+    disclaimer: "Síntesis de estudio basada en las fuentes aportadas. Verifica cada ficha en el documento original; no sustituye la norma vigente ni la decisión clínica."
+  },
+  sources: [
+    {
+      id: "src-aps",
+      short: "APS",
+      title: "Atributos de la Atención Primaria de Salud (APS): una visión desde la Medicina Familiar",
+      authors: "Rosas Prieto, Zarate y Cuba Fuentes",
+      kind: "Artículo de revisión",
+      provenance: "Artículo académico de referencia; no es una norma del MINSA.",
+      file: "../study-data/fuentes/atencion-primaria-salud.pdf"
+    },
+    {
+      id: "src-mci",
+      short: "MCI",
+      title: "Modelo de Cuidado Integral de Salud por Curso de Vida para la Persona, Familia y Comunidad (MCI)",
+      authors: "Ministerio de Salud del Perú",
+      kind: "Documento técnico",
+      provenance: "Documento técnico del Ministerio de Salud del Perú.",
+      file: "../study-data/fuentes/modelo-cuidado-integral-curso-vida.pdf"
+    },
+    {
+      id: "src-audit",
+      short: "AUDIT",
+      title: "AUDIT: Test de Identificación de los Trastornos Debidos al Consumo de Alcohol",
+      authors: "Organización Mundial de la Salud",
+      kind: "Manual de referencia",
+      provenance: "Manual de la OMS sobre un instrumento de tamizaje; no es un diagnóstico.",
+      file: "../study-data/fuentes/audit-consumo-alcohol.pdf"
+    },
+    {
+      id: "src-materna",
+      short: "Materna",
+      title: "Norma Técnica de Salud para la Atención Integral de Salud Materna",
+      authors: "Ministerio de Salud del Perú",
+      kind: "Norma técnica",
+      provenance: "Norma técnica del Ministerio de Salud del Perú.",
+      file: "../study-data/fuentes/atencion-integral-salud-materna.pdf"
+    },
+    {
+      id: "src-mental",
+      short: "Continuidad",
+      title: "Guía técnica de continuidad de cuidados para personas con trastornos mentales graves y/o problemas psicosociales de riesgo en los Centros de Salud Mental Comunitaria",
+      authors: "Ministerio de Salud del Perú",
+      kind: "Guía técnica",
+      provenance: "Guía técnica del Ministerio de Salud del Perú para los Centros de Salud Mental Comunitaria.",
+      file: "../study-data/fuentes/continuidad-trastornos-mentales.pdf"
+    }
+  ],
+  areas: [
+    {
+      id: "area-aps",
+      title: "Atención Primaria de Salud",
+      short: "APS",
+      description: "Los atributos que hacen del primer nivel un espacio de cuidado continuo, integral y coordinado.",
+      accent: "#A9C7A4",
+      icon: "compass",
+      sourceIds: ["src-aps"]
+    },
+    {
+      id: "area-mci",
+      title: "Modelo de Cuidado Integral",
+      short: "MCI",
+      description: "Persona, familia y comunidad a lo largo del curso de vida, con determinantes y redes de cuidado.",
+      accent: "#E6B566",
+      icon: "path",
+      sourceIds: ["src-mci"]
+    },
+    {
+      id: "area-audit",
+      title: "Consumo de alcohol",
+      short: "AUDIT",
+      description: "Tamizaje, puntuación e intervención breve para identificar y acompañar el consumo de riesgo.",
+      accent: "#D98B6A",
+      icon: "drop",
+      sourceIds: ["src-audit"]
+    },
+    {
+      id: "area-materna",
+      title: "Salud materna",
+      short: "Materna",
+      description: "Atención preconcepcional, prenatal, parto institucional, emergencias y puerperio.",
+      accent: "#D77C8D",
+      icon: "heart",
+      sourceIds: ["src-materna"]
+    },
+    {
+      id: "area-mental",
+      title: "Continuidad de cuidados",
+      short: "Salud mental",
+      description: "Cuidado continuo, plan individualizado y articulación de redes en salud mental comunitaria.",
+      accent: "#8FB8D8",
+      icon: "loop",
+      sourceIds: ["src-mental"]
+    }
+  ],
+  topics: [
+    {
+      id: "topic-aps-atributos",
+      areaId: "area-aps",
+      title: "Los cuatro atributos de la APS",
+      summary: "Accesibilidad y primer contacto, longitudinalidad, integralidad y coordinación: la brújula de la atención primaria.",
+      sourceIds: ["src-aps"],
+      keywords: ["Starfield", "primer contacto", "longitudinalidad", "integralidad", "coordinación"]
+    },
+    {
+      id: "topic-aps-sistemas",
+      areaId: "area-aps",
+      title: "APS y atención especializada",
+      summary: "Qué distingue a la APS del segundo nivel y por qué una APS fuerte mejora el sistema completo.",
+      sourceIds: ["src-aps"],
+      keywords: ["primer nivel", "especializada", "sistema de salud", "eficiencia", "referencia"]
+    },
+    {
+      id: "topic-mci-fundamentos",
+      areaId: "area-mci",
+      title: "Cuidado integral y determinantes",
+      summary: "El MCI desplaza el foco desde la enfermedad aislada hacia la persona, su familia, su comunidad y sus condiciones de vida.",
+      sourceIds: ["src-mci"],
+      keywords: ["determinantes sociales", "derechos", "equidad", "cuidado integral", "MCI"]
+    },
+    {
+      id: "topic-mci-curso-vida",
+      areaId: "area-mci",
+      title: "Cuidado por curso de vida",
+      summary: "Cada etapa influye en la siguiente: oportunidades de promoción, prevención y cuidado en momentos clave.",
+      sourceIds: ["src-mci"],
+      keywords: ["curso de vida", "niñez", "adolescencia", "adultez", "vejez"]
+    },
+    {
+      id: "topic-mci-familia-comunidad",
+      areaId: "area-mci",
+      title: "Familia, comunidad y territorio",
+      summary: "El cuidado se organiza con la familia, los escenarios comunitarios y las redes integradas de salud.",
+      sourceIds: ["src-mci"],
+      keywords: ["familia", "APOC", "comunidad", "RIS", "territorio"]
+    },
+    {
+      id: "topic-audit-conceptos",
+      areaId: "area-audit",
+      title: "Patrones de consumo y tamizaje",
+      summary: "Distinguir consumo de riesgo, perjudicial y dependencia, y saber qué mide realmente el AUDIT.",
+      sourceIds: ["src-audit"],
+      keywords: ["consumo de riesgo", "perjudicial", "dependencia", "tamizaje", "AUDIT"]
+    },
+    {
+      id: "topic-audit-aplicacion",
+      areaId: "area-audit",
+      title: "Aplicación y puntuación",
+      summary: "Administrar las diez preguntas, comprender los dominios y leer la puntuación sin convertirla en diagnóstico.",
+      sourceIds: ["src-audit"],
+      keywords: ["puntuación", "consumición estándar", "dominios", "punto de corte", "interpretación"]
+    },
+    {
+      id: "topic-audit-intervencion",
+      areaId: "area-audit",
+      title: "Intervención breve y derivación",
+      summary: "Feedback, consejo y seguimiento; cuándo intensificar el apoyo y cuándo derivar a evaluación especializada.",
+      sourceIds: ["src-audit"],
+      keywords: ["intervención breve", "consejo", "derivación", "seguimiento", "dependencia"]
+    },
+    {
+      id: "topic-materna-prenatal",
+      areaId: "area-materna",
+      title: "Preconcepcional y prenatal",
+      summary: "Preparar el embarazo y acompañar la gestación con controles, suplementación, tamizajes y signos de alarma.",
+      sourceIds: ["src-materna"],
+      keywords: ["preconcepcional", "control prenatal", "ácido fólico", "hierro", "alarma"]
+    },
+    {
+      id: "topic-materna-parto",
+      areaId: "area-materna",
+      title: "Parto y emergencias",
+      summary: "Plan de parto, parto institucional, parto vertical y organización frente a las claves de emergencia obstétrica.",
+      sourceIds: ["src-materna"],
+      keywords: ["plan de parto", "parto institucional", "parto vertical", "clave roja", "emergencia"]
+    },
+    {
+      id: "topic-materna-puerperio",
+      areaId: "area-materna",
+      title: "Puerperio y continuidad",
+      summary: "Cuidado inmediato y mediato, alojamiento conjunto, lactancia y seguimiento después del alta.",
+      sourceIds: ["src-materna"],
+      keywords: ["puerperio", "alojamiento conjunto", "lactancia", "visita domiciliaria", "seguimiento"]
+    },
+    {
+      id: "topic-mental-continuidad",
+      areaId: "area-mental",
+      title: "Qué es la continuidad de cuidados",
+      summary: "Un proceso continuo, intensivo y personalizado, con componentes clínicos, psicosociales y de gestión.",
+      sourceIds: ["src-mental"],
+      keywords: ["continuidad", "recuperación", "CSMC", "cuidado integral", "vínculo"]
+    },
+    {
+      id: "topic-mental-plan",
+      areaId: "area-mental",
+      title: "Evaluación y plan individualizado",
+      summary: "Del criterio de derivación al PCCl: evaluación integral, objetivos, responsables y revisión periódica.",
+      sourceIds: ["src-mental"],
+      keywords: ["derivación", "evaluación integral", "PCCl", "gestor de cuidados", "seguimiento"]
+    },
+    {
+      id: "topic-mental-articulacion",
+      areaId: "area-mental",
+      title: "Redes, crisis y alta",
+      summary: "Articulación con familia y comunidad, respuesta ante crisis, alta y seguimiento posterior.",
+      sourceIds: ["src-mental"],
+      keywords: ["redes", "ecomapa", "crisis", "alta", "reingreso"]
+    }
+  ],
+  sheets: [
+    {
+      id: "sheet-aps-01",
+      topicId: "topic-aps-atributos",
+      areaId: "area-aps",
+      title: "Una APS fuerte no es un consultorio de segunda",
+      kicker: "Atención primaria · Fundamentos",
+      minutes: 6,
+      level: "Base",
+      summary: "La atención primaria no es una versión reducida de la atención especializada. Es el lugar donde la persona entra al sistema, construye una relación longitudinal y recibe cuidado integral con coordinación.",
+      keyConcepts: [
+        "La APS es la puerta de entrada y el eje organizador del sistema.",
+        "Su fuerza depende de atributos, no solo de recursos.",
+        "Una APS sólida se asocia con mejores resultados y mayor eficiencia.",
+        "El foco es la persona y su contexto, no la enfermedad aislada."
+      ],
+      sections: [
+        {
+          title: "De la enfermedad a la persona",
+          depth: "core",
+          body: [
+            "La atención primaria de salud (APS) es el primer nivel de contacto de la persona con el sistema sanitario. No debe entenderse como una atención empobrecida o como un simple filtro administrativo. Es el espacio donde se resuelven las necesidades de salud más frecuentes y desde donde se organiza la continuidad del cuidado.",
+            "El artículo de referencia recuerda que una APS fuerte se asocia con mejores resultados en salud y con un uso más eficiente de los recursos. La diferencia no está solo en el edificio o en la especialidad del profesional, sino en cómo se organiza la atención y en la relación que construye con la población."
+          ]
+        },
+        {
+          title: "Los cuatro atributos de Starfield",
+          depth: "core",
+          table: {
+            headers: ["Atributo", "Pregunta que responde"],
+            rows: [
+              ["Accesibilidad y primer contacto", "¿Puede la persona entrar al sistema con facilidad y por el nivel adecuado?"],
+              ["Longitudinalidad", "¿Existe una relación personal y continua a lo largo del tiempo?"],
+              ["Integralidad", "¿Se responde a las necesidades de salud más frecuentes de la comunidad?"],
+              ["Coordinación", "¿Se articulan primer nivel y especialistas sin fragmentar la atención?"]
+            ]
+          },
+          body: [
+            "Los cuatro atributos se complementan. Una puerta abierta sin continuidad produce atenciones aisladas; una relación continua sin coordinación no evita la fragmentación; y una cartera amplia sin acceso real no llega a quienes más la necesitan."
+          ]
+        },
+        {
+          title: "Qué cambia en la práctica",
+          depth: "full",
+          bullets: [
+            "Se pregunta por el contexto familiar, laboral y comunitario, no solo por el síntoma.",
+            "Se prioriza el vínculo y el seguimiento por encima de la atención puntual.",
+            "Se coordina con otros niveles y sectores en lugar de derivar sin retorno de información.",
+            "Se identifican necesidades de la población asignada y se planifican acciones de promoción y prevención."
+          ],
+          callout: {
+            tone: "info",
+            title: "Idea para retener",
+            text: "La APS no compite con la especializada: la organiza y la complementa. Su valor está en la continuidad y en la integralidad del cuidado."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }]
+    },
+    {
+      id: "sheet-aps-02",
+      topicId: "topic-aps-atributos",
+      areaId: "area-aps",
+      title: "Accesibilidad y longitudinalidad: entrar y permanecer",
+      kicker: "Atención primaria · Atributos",
+      minutes: 7,
+      level: "Base",
+      summary: "La accesibilidad elimina barreras para llegar al servicio; la longitudinalidad construye una relación estable en el tiempo. Sin la primera no se entra; sin la segunda no se acompaña.",
+      keyConcepts: [
+        "Accesibilidad incluye barreras económicas, geográficas, organizativas y culturales.",
+        "Primer contacto implica un punto de entrada identificable y resolutivo.",
+        "Longitudinalidad es una relación continua, no solo una historia clínica compartida.",
+        "La continuidad mejora la confianza, la información y la oportunidad del cuidado."
+      ],
+      sections: [
+        {
+          title: "Accesibilidad no es solo tener una puerta",
+          depth: "core",
+          body: [
+            "El artículo describe la accesibilidad como la facilidad con la que el paciente puede utilizar los servicios. No basta con que el establecimiento exista: importan los horarios, el tiempo de espera, la distancia, los costos indirectos, la información disponible y la pertinencia cultural.",
+            "El primer contacto es el punto de entrada al sistema. Cuando la persona enferma, debe saber dónde acudir y encontrar una respuesta que no la haga recorrer circuitos innecesarios. La APS actúa como puerta de entrada, pero también como lugar de resolución de lo frecuente."
+          ],
+          bullets: [
+            "Barreras geográficas: distancia, transporte, tiempo de viaje.",
+            "Barreras económicas: gasto directo e indirecto, pérdida de ingresos.",
+            "Barreras organizativas: horarios, citas, colas, trámites.",
+            "Barreras culturales: idioma, trato, desconfianza, lack de pertinencia."
+          ]
+        },
+        {
+          title: "Longitudinalidad: la persona a lo largo del tiempo",
+          depth: "core",
+          body: [
+            "La longitudinalidad es la relación personal y continua entre el equipo de salud y la persona. No se agota en la continuidad administrativa de una historia clínica: implica conocer a la persona, su familia y su entorno, y usar ese conocimiento para anticipar problemas y acompañar decisiones.",
+            "La relación longitudinal permite ver la evolución de un problema, detectar cambios sutiles y evitar repeticiones innecesarias. También favorece la confianza, un elemento clave para hablar de temas sensibles y para sostener el cuidado en el tiempo."
+          ]
+        },
+        {
+          title: "Continuidad no es lo mismo que longitudinalidad",
+          depth: "full",
+          body: [
+            "La continuidad puede ser informativa, relacional o de gestión. La longitudinalidad se refiere a la relación estable entre una persona y un equipo a lo largo del tiempo. Un sistema puede compartir información y, aun así, ofrecer una experiencia fragmentada si la persona cambia de profesional en cada contacto.",
+            "La APS fuerte busca ambas: que la información circule y que exista un vínculo humano que dé sentido a esa información."
+          ],
+          callout: {
+            tone: "info",
+            title: "Ejemplo",
+            text: "Una gestante que conoce a su equipo, que recibe controles con continuidad y que sabe a quién llamar ante una alarma tiene más probabilidades de sostener el cuidado que una persona que empieza de cero en cada consulta."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }]
+    },
+    {
+      id: "sheet-aps-03",
+      topicId: "topic-aps-atributos",
+      areaId: "area-aps",
+      title: "Integralidad y coordinación: cuidar sin fragmentar",
+      kicker: "Atención primaria · Atributos",
+      minutes: 7,
+      level: "Intermedio",
+      summary: "La integralidad amplía la mirada a las necesidades frecuentes de la población; la coordinación conecta niveles, servicios e información para que el cuidado no se rompa en cada derivación.",
+      keyConcepts: [
+        "Integralidad no significa hacer todo, sino responder a las necesidades frecuentes con una cartera pertinente.",
+        "Coordinación requiere comunicación, referencia y contrarreferencia.",
+        "La información compartida es un soporte de la continuidad.",
+        "La coordinación entre niveles evita duplicaciones y pérdidas de seguimiento."
+      ],
+      sections: [
+        {
+          title: "Integralidad: una cartera que responde a la comunidad",
+          depth: "core",
+          body: [
+            "La integralidad implica ofrecer un conjunto de servicios que cubra las necesidades de salud más frecuentes de la población, desde la promoción y la prevención hasta la recuperación y la rehabilitación. No quiere decir que el primer nivel resuelva todo: significa que organiza una respuesta integral y sabe cuándo complementarse con otros niveles.",
+            "La cartera debe construirse con información sobre la población asignada. Una comunidad con alta carga de enfermedades crónicas, problemas de salud mental o violencia requiere respuestas distintas de otra con otras necesidades."
+          ]
+        },
+        {
+          title: "Coordinación: el cuidado como una cadena",
+          depth: "core",
+          body: [
+            "La coordinación es la articulación entre los servicios para evitar la fragmentación. Incluye mecanismos de comunicación, referencia y contrarreferencia, y la posibilidad de que la información clínica relevante acompañe a la persona cuando cambia de nivel.",
+            "El artículo subraya que la coordinación no se reduce a enviar una hoja de referencia. Requiere que el primer nivel y los especialistas compartan objetivos, información y seguimiento. Sin retorno de información, la APS pierde capacidad para continuar el cuidado."
+          ],
+          bullets: [
+            "Referencia oportuna y con información clínica suficiente.",
+            "Contrarreferencia que explique hallazgos, tratamiento y seguimiento.",
+            "Canales de comunicación fluidos entre profesionales.",
+            "Sistemas de información que eviten repetir exámenes y perder hallazgos."
+          ]
+        },
+        {
+          title: "El riesgo de la fragmentación",
+          depth: "full",
+          body: [
+            "Cuando cada servicio atiende una parte sin conocer el conjunto, la persona puede recibir indicaciones contradictorias, duplicar exámenes o quedar sin seguimiento. La fragmentación es especialmente costosa en enfermedades crónicas, embarazo, salud mental y situaciones de violencia.",
+            "La coordinación también tiene una dimensión de equidad: las personas con menos recursos son las que más dependen de que el sistema las acompañe entre un nivel y otro."
+          ],
+          callout: {
+            tone: "warn",
+            title: "No confundir",
+            text: "Derivar no es coordinar. La derivación sin comunicación ni seguimiento puede ser una forma de fragmentar el cuidado."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4, 5] }]
+    },
+    {
+      id: "sheet-aps-04",
+      topicId: "topic-aps-sistemas",
+      areaId: "area-aps",
+      title: "APS y atención especializada: complementarias, no rivales",
+      kicker: "Atención primaria · Sistemas",
+      minutes: 6,
+      level: "Intermedio",
+      summary: "La APS y la atención especializada cumplen funciones distintas. Un sistema fuerte combina la resolutividad del primer nivel con el acceso oportuno a especialistas y a tecnología.",
+      keyConcepts: [
+        "La APS se orienta a la persona y a la comunidad; la especializada, a problemas y órganos específicos.",
+        "La APS resuelve lo frecuente y coordina; la especializada aporta experticia y tecnología.",
+        "Un sistema sin APS fuerte tiende a la fragmentación y al uso ineficiente de recursos.",
+        "La articulación entre niveles es parte del cuidado, no un trámite."
+      ],
+      sections: [
+        {
+          title: "Dos funciones diferentes",
+          depth: "core",
+          table: {
+            headers: ["Dimensión", "APS", "Atención especializada"],
+            rows: [
+              ["Foco", "Persona, familia y comunidad", "Problema, órgano o enfermedad específica"],
+              ["Relación", "Continua y longitudinal", "Habitualmente episódica"],
+              ["Función", "Primer contacto, resolución de lo frecuente, coordinación", "Evaluación, tratamiento y tecnología especializada"],
+              ["Población", "Población asignada y su territorio", "Pacientes referidos o derivados"]
+            ]
+          },
+          body: [
+            "La especializada no es un nivel superior en dignidad: es un nivel distinto de complejidad. Su valor está en la experticia y en la tecnología para problemas que requieren ese abordaje. La APS aporta la continuidad, el contexto y la coordinación que permiten que ese conocimiento llegue en el momento adecuado."
+          ]
+        },
+        {
+          title: "Por qué una APS fuerte mejora el sistema",
+          depth: "core",
+          bullets: [
+            "Resuelve una parte importante de la demanda evitando recorridos innecesarios.",
+            "Detecta problemas antes de que requieran atención de mayor complejidad.",
+            "Coordina el uso de especialistas y exámenes, reduciendo duplicaciones.",
+            "Mantiene el vínculo con la persona cuando el problema es crónico o complejo."
+          ],
+          body: [
+            "El artículo de revisión sostiene que los sistemas con APS fuerte obtienen mejores resultados y son más eficientes. La razón no es que la APS haga el trabajo de todos, sino que organiza el cuidado de forma más coherente y cercana."
+          ]
+        },
+        {
+          title: "La trampa de la demanda espontánea",
+          depth: "full",
+          body: [
+            "Si la APS funciona solo como un consultorio que atiende demanda espontánea, pierde capacidad de anticipar y de coordinar. La agenda debe reservar espacio para el seguimiento, la prevención y las personas con mayor riesgo, no solo para quienes llegan primero.",
+            "Un sistema centrado exclusivamente en la atención curativa y en el tercer nivel suele ser más costoso y menos equitativo. La APS fuerte desplaza el foco hacia la promoción, la prevención y el cuidado continuo."
+          ],
+          callout: {
+            tone: "info",
+            title: "Para la práctica",
+            text: "Cuando derives, piensa en el circuito completo: quién recibe, qué información viaja, quién hace seguimiento y cómo vuelve la respuesta al primer nivel."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3, 4] }]
+    },
+    {
+      id: "sheet-mci-01",
+      topicId: "topic-mci-fundamentos",
+      areaId: "area-mci",
+      title: "Del enfoque curativo al cuidado integral",
+      kicker: "MCI · Fundamentos",
+      minutes: 7,
+      level: "Base",
+      summary: "El MCI propone cuidar a la persona, su familia y su comunidad a lo largo del curso de vida, actuando sobre determinantes y articulando promoción, prevención, recuperación y rehabilitación.",
+      keyConcepts: [
+        "La salud se construye en la interacción de factores biológicos, ambientales, sociales y de acceso a servicios.",
+        "El MCI supera la atención episódica centrada solo en la enfermedad.",
+        "La persona, la familia y la comunidad son sujetos y escenarios del cuidado.",
+        "El cuidado integral incluye promoción, prevención, recuperación y rehabilitación."
+      ],
+      sections: [
+        {
+          title: "Una mirada más amplia de la salud",
+          depth: "core",
+          body: [
+            "El Modelo de Cuidado Integral de Salud por Curso de Vida (MCI) parte de una idea sencilla: la salud no depende solo de lo que ocurre en el consultorio. Los resultados sanitarios se construyen en la interacción de factores protectores y de riesgo a lo largo de la vida, incluidos los determinantes sociales.",
+            "Por eso, el modelo no se limita a tratar enfermedades. Busca comprender a la persona en su contexto, anticipar riesgos, promover hábitos saludables y garantizar continuidad cuando aparece un daño."
+          ]
+        },
+        {
+          title: "Qué es el MCI",
+          depth: "core",
+          body: [
+            "El MCI es un conjunto de estrategias, normas, procedimientos, herramientas y recursos que, al complementarse, responden a las necesidades de salud de las personas, las familias y la comunidad. Acoge los atributos de la APS y enfatiza un vínculo de largo plazo entre las personas y los equipos multidisciplinarios.",
+            "El cuidado se brinda en la oferta fija y móvil del primer nivel, pero también en el segundo y tercer nivel, con telemedicina cuando corresponde. El equipo es responsable de coordinar con la red para que el cuidado no se interrumpa."
+          ]
+        },
+        {
+          title: "El enfoque de derechos y los determinantes",
+          depth: "full",
+          body: [
+            "El enfoque de derechos implica garantizar acceso, no discriminación, no regresividad y priorización de las poblaciones más vulnerables. No basta con ofrecer servicios: el Estado debe crear condiciones para que las personas puedan vivir de forma saludable.",
+            "El enfoque de curso de vida añade que cada etapa influye en la siguiente. Las exposiciones negativas pueden acumularse y formar cadenas de riesgo; las intervenciones oportunas también pueden producir efectos protectores duraderos."
+          ],
+          callout: {
+            tone: "info",
+            title: "Idea central",
+            text: "El MCI no es solo un conjunto de prestaciones: es una forma de organizar el cuidado para que la persona sea vista en su historia y en su territorio."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 41, 42] }]
+    },
+    {
+      id: "sheet-mci-02",
+      topicId: "topic-mci-fundamentos",
+      areaId: "area-mci",
+      title: "Principios, atributos y cuatro componentes",
+      kicker: "MCI · Arquitectura",
+      minutes: 8,
+      level: "Intermedio",
+      summary: "El MCI se sostiene en principios de la APS renovada y se organiza en cuatro componentes interrelacionados: provisión, organización, gestión y financiamiento.",
+      keyConcepts: [
+        "Integralidad, universalidad, calidad, corresponsabilidad, equidad, solidaridad y eficiencia.",
+        "Accesibilidad, primer contacto, longitudinalidad, integralidad y coordinación.",
+        "Provisión, organización, gestión y financiamiento son componentes del modelo.",
+        "La corresponsabilidad implica que persona, familia y comunidad participan activamente."
+      ],
+      sections: [
+        {
+          title: "Los principios del MCI",
+          depth: "core",
+          body: [
+            "El modelo adopta los principios de la APS renovada. La integralidad abarca promoción, prevención, recuperación y rehabilitación; la universalidad garantiza el derecho a la salud; la calidad integra dimensiones técnico-científicas, humanas y del entorno.",
+            "La corresponsabilidad reconoce a la persona, la familia y la comunidad como socios activos. La equidad implica asignar recursos según necesidad, no dar lo mismo a todos. La solidaridad y la eficiencia completan el marco."
+          ],
+          bullets: [
+            "Integralidad: cuidados completos y continuos.",
+            "Universalidad: derecho a la salud y acceso equitativo.",
+            "Calidad: técnica, humana y entorno.",
+            "Corresponsabilidad: participación activa de la persona y su entorno.",
+            "Equidad: recursos según necesidad.",
+            "Solidaridad y eficiencia: cobertura y uso responsable de recursos."
+          ]
+        },
+        {
+          title: "Los cuatro componentes",
+          depth: "core",
+          table: {
+            headers: ["Componente", "Qué organiza"],
+            rows: [
+              ["Provisión del cuidado", "Qué cuidados se brindan y en qué escenarios: persona, familia, comunidad, hogar, escuela, trabajo."],
+              ["Organización", "Cómo se organizan los servicios y las redes para garantizar acceso y continuidad."],
+              ["Gestión", "Cómo se planifica, coordina, monitorea y evalúa el cuidado en el territorio."],
+              ["Financiamiento", "Cómo se asignan los recursos para sostener el cuidado y la equidad."]
+            ]
+          },
+          body: [
+            "Los componentes no funcionan por separado. Una buena provisión sin organización produce servicios aislados; una red sin financiamiento suficiente no puede sostener la continuidad; una gestión sin provisión pierde sentido para la persona."
+          ]
+        },
+        {
+          title: "Los atributos que aterrizan el modelo",
+          depth: "full",
+          body: [
+            "El MCI recoge los atributos de la APS: accesibilidad, primer contacto, longitudinalidad, integralidad y coordinación. A ellos suma la continuidad del cuidado, entendida como la experiencia coherente y conectada de eventos de salud a lo largo del tiempo.",
+            "La formación del equipo multidisciplinario también es parte del modelo: no se puede exigir una APS integral con profesionales formados solo en una lógica hospitalaria y curativa."
+          ],
+          callout: {
+            tone: "info",
+            title: "Para ordenar el estudio",
+            text: "Piensa en el MCI como una arquitectura: principios (por qué), atributos (cómo se vive el cuidado), componentes (con qué se organiza) y curso de vida (cuándo y con quién)."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [38, 41, 42, 43, 44] }]
+    },
+    {
+      id: "sheet-mci-03",
+      topicId: "topic-mci-curso-vida",
+      areaId: "area-mci",
+      title: "Curso de vida: prenatal y primera infancia",
+      kicker: "MCI · Curso de vida",
+      minutes: 7,
+      level: "Base",
+      summary: "El periodo prenatal y los primeros años son etapas críticas. El cuidado preconcepcional, el control prenatal, el parto institucional y el desarrollo infantil sientan bases para toda la vida.",
+      keyConcepts: [
+        "El periodo prenatal es una etapa crítica del curso de vida.",
+        "El cuidado comienza antes del embarazo y continúa durante y después de él.",
+        "La familia y la comunidad son parte del cuidado de la gestante y del niño.",
+        "El objetivo incluye desarrollo físico, cognitivo, emocional y social."
+      ],
+      sections: [
+        {
+          title: "Prenatal: antes, durante y después",
+          depth: "core",
+          body: [
+            "El MCI considera el periodo prenatal como una condición crítica que repercute en la persona, la familia y la comunidad. El cuidado comienza con la preparación preconcepcional, sigue con la atención prenatal y continúa en el parto, el puerperio y el cuidado del neonato.",
+            "La provisión incluye control nutricional, actividad física, atención prenatal reenfocada, suplementación de hierro y ácido fólico, inmunización, apoyo psicológico, tamizajes, preparación para el parto, apego precoz y lactancia materna."
+          ]
+        },
+        {
+          title: "Niñez: desarrollar capacidades",
+          depth: "core",
+          body: [
+            "En la niñez, el objetivo del cuidado integral es el desarrollo físico, cognitivo, emocional y social. Las intervenciones se brindan en el hogar, el establecimiento de salud, la institución educativa y la comunidad.",
+            "La familia cumple un papel central: apoyo para el cuidado, prevención de riesgos en el hogar, estimulación temprana, alimentación adecuada y vigilancia de signos de alarma. La comunidad aporta entornos seguros y oportunidades de desarrollo."
+          ],
+          bullets: [
+            "Promoción del desarrollo y del apego seguro.",
+            "Prevención de enfermedades y de riesgos del entorno.",
+            "Detección oportuna de problemas de desarrollo.",
+            "Articulación con escuela y comunidad."
+          ]
+        },
+        {
+          title: "Por qué importa la etapa prenatal",
+          depth: "full",
+          body: [
+            "Las exposiciones durante el embarazo pueden influir en el desarrollo posterior. El MCI busca controlar y manejar las exposiciones que sufre el feto para que alcance un adecuado desarrollo psicomotor, emocional y social.",
+            "Las casas de espera materna son un ejemplo de articulación entre el cuidado y el territorio: acercan a la gestante que vive lejos a un establecimiento con capacidad resolutiva cerca del parto."
+          ],
+          callout: {
+            tone: "info",
+            title: "Continuidad",
+            text: "El cuidado prenatal no termina con el parto. La transición a puerperio, lactancia y cuidado del neonato es parte de la misma trayectoria."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [49, 50, 51] }]
+    },
+    {
+      id: "sheet-mci-04",
+      topicId: "topic-mci-curso-vida",
+      areaId: "area-mci",
+      title: "Adolescencia, adultez y vejez",
+      kicker: "MCI · Curso de vida",
+      minutes: 6,
+      level: "Intermedio",
+      summary: "Las etapas posteriores no son un simple transcurso de tiempo: cada una tiene riesgos, oportunidades y necesidades de cuidado que condicionan la siguiente.",
+      keyConcepts: [
+        "La adolescencia es una etapa de oportunidades y de exposición a riesgos.",
+        "La adultez concentra la carga de enfermedades crónicas y factores de riesgo.",
+        "La vejez exige cuidar funcionalidad, autonomía y calidad de vida.",
+        "La continuidad entre etapas permite anticipar y no solo reaccionar."
+      ],
+      sections: [
+        {
+          title: "Adolescencia: anticipar trayectorias",
+          depth: "core",
+          body: [
+            "La adolescencia se caracteriza por cambios físicos, emocionales y sociales, y por una mayor exposición a conductas de riesgo. El cuidado integral busca fortalecer factores protectores, promover salud mental, prevenir consumo de sustancias y acompañar la construcción de autonomía.",
+            "La escuela, la familia y la comunidad son escenarios clave. La atención no debería limitarse a lo reproductivo o a lo curativo: también importa el desarrollo socioemocional y la prevención de violencia."
+          ]
+        },
+        {
+          title: "Adultez: carga crónica y cuidado continuo",
+          depth: "core",
+          body: [
+            "En la adultez, las enfermedades no transmisibles y sus factores de riesgo adquieren peso. El MCI propone identificar riesgos, promover hábitos saludables, controlar condiciones crónicas y mantener la continuidad del cuidado.",
+            "El trabajo y el rol familiar pueden convertirse en barreras para asistir a controles. La organización de servicios debe facilitar el acceso y evitar que la persona abandone el seguimiento por incompatibilidad de horarios o largas esperas."
+          ]
+        },
+        {
+          title: "Vejez: funcionalidad y autonomía",
+          depth: "full",
+          body: [
+            "En la persona adulta mayor, el objetivo no es solo prolongar la vida, sino preservar la funcionalidad, la autonomía y la calidad de vida. El cuidado incluye prevención, manejo de enfermedades crónicas, rehabilitación y, cuando corresponde, cuidados paliativos.",
+            "La familia y la comunidad cumplen un papel central. También es fundamental detectar situaciones de dependencia, sobrecarga del cuidador y riesgo de violencia o abandono."
+          ],
+          bullets: [
+            "Valorar funcionalidad y autonomía, no solo diagnósticos.",
+            "Prevenir caídas y complicaciones de enfermedades crónicas.",
+            "Acompañar al cuidador y evitar su sobrecarga.",
+            "Respetar preferencias y proyectos de vida."
+          ],
+          callout: {
+            tone: "info",
+            title: "Mirada de curso de vida",
+            text: "Una intervención en la infancia puede modificar la trayectoria adulta; una intervención en la adultez puede cambiar la experiencia de la vejez. Esa es la lógica de anticipación del MCI."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [49, 52, 53, 54] }]
+    },
+    {
+      id: "sheet-mci-05",
+      topicId: "topic-mci-familia-comunidad",
+      areaId: "area-mci",
+      title: "Familia y ciclo vital: el cuidado en casa",
+      kicker: "MCI · Familia y comunidad",
+      minutes: 7,
+      level: "Intermedio",
+      summary: "La familia es sujeto y escenario de cuidado. Conocer su ciclo vital, su dinámica y sus redes permite anticipar riesgos y acompañar transiciones.",
+      keyConcepts: [
+        "La familia es sujeto y escenario de cuidado.",
+        "El ciclo vital familiar ayuda a comprender transiciones y tareas.",
+        "La ficha familiar permite conocer la dinámica y los riesgos del hogar.",
+        "El cuidado no es unidireccional: la persona también cuida de sí misma y de su entorno."
+      ],
+      sections: [
+        {
+          title: "La familia como sujeto y escenario",
+          depth: "core",
+          body: [
+            "En el MCI, la familia no es solo un dato del paciente. Es sujeto de cuidado y escenario donde ocurre gran parte del cuidado cotidiano. La familia puede proteger, pero también puede ser fuente de riesgo o de sobrecarga.",
+            "El cuidado es bidireccional: la persona cuida de sí misma, la familia cuida a sus integrantes y la comunidad cuida a las familias. Esa reciprocidad es la base de la corresponsabilidad."
+          ]
+        },
+        {
+          title: "El ciclo vital familiar",
+          depth: "core",
+          body: [
+            "El ciclo vital familiar permite ordenar las transiciones: formación de la pareja, expansión con la llegada de los hijos, dispersión cuando los hijos se independizan y contracción en etapas posteriores. Cada etapa trae tareas y riesgos distintos.",
+            "La ficha familiar ayuda a registrar la composición del hogar, las condiciones de vida, los factores de riesgo y las redes de apoyo. No es un formulario burocrático: es una herramienta para comprender el contexto y planificar el cuidado."
+          ],
+          table: {
+            headers: ["Etapa", "Transición típica"],
+            rows: [
+              ["Formación", "Construcción de la pareja y del proyecto familiar."],
+              ["Expansión", "Llegada de hijos y reorganización de roles."],
+              ["Dispersión", "Salida de los hijos y nuevos equilibrios."],
+              ["Contracción", "Envejecimiento, pérdidas y reorganización del cuidado."]
+            ]
+          }
+        },
+        {
+          title: "Familia, riesgo y apoyo",
+          depth: "full",
+          body: [
+            "La evaluación familiar no busca etiquetar, sino identificar recursos y necesidades. Una familia con buenas redes puede sostener mejor un tratamiento; una familia sobrecargada puede necesitar apoyo para continuar cuidando.",
+            "En situaciones de violencia, la familia puede ser un espacio de riesgo. El equipo debe detectar señales, activar rutas de protección y no limitarse a una intervención individual."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Cuidado con la sobrecarga",
+            text: "Cuando el cuidado recae en una sola persona, la familia puede parecer disponible pero estar al límite. Preguntar por la sobrecarga también es cuidar."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [51, 54, 55, 56, 57] }]
+    },
+    {
+      id: "sheet-mci-06",
+      topicId: "topic-mci-familia-comunidad",
+      areaId: "area-mci",
+      title: "Comunidad, APOC y redes integradas",
+      kicker: "MCI · Territorio",
+      minutes: 8,
+      level: "Avanzado",
+      summary: "El MCI organiza el cuidado en un territorio y con una población asignada. La comunidad no es el escenario pasivo: participa, identifica necesidades y moviliza recursos.",
+      keyConcepts: [
+        "La comunidad es sujeto y escenario del cuidado.",
+        "APOC articula la atención primaria con la comunidad y el territorio.",
+        "Las RIS organizan servicios según necesidades de una población definida.",
+        "La gestión territorial articula sectores y determinantes sociales."
+      ],
+      sections: [
+        {
+          title: "La comunidad no es un decorado",
+          depth: "core",
+          body: [
+            "El MCI considera a la comunidad como sujeto de cuidado y escenario de intervención. No es solo el lugar donde vive la persona: es una red de relaciones, recursos y condiciones que influyen en su salud.",
+            "La participación comunitaria permite identificar necesidades, priorizar problemas y movilizar recursos. También puede fortalecer la confianza en los servicios y mejorar la pertinencia cultural de las intervenciones."
+          ]
+        },
+        {
+          title: "APOC y redes integradas",
+          depth: "core",
+          body: [
+            "La Atención Primaria Orientada a la Comunidad (APOC) combina la atención individual con una mirada poblacional y comunitaria. Permite pasar de la consulta a la planificación de acciones para grupos y territorios.",
+            "Las Redes Integradas de Salud (RIS) organizan servicios para una población definida, con una cartera que responde a sus necesidades. El primer nivel actúa como integrador y coordinador; los otros niveles complementan la atención cuando se requiere mayor complejidad."
+          ],
+          bullets: [
+            "Población y territorio definidos.",
+            "Cartera de servicios según necesidades.",
+            "Primer nivel con capacidad resolutiva y función coordinadora.",
+            "Articulación entre niveles y sectores."
+          ]
+        },
+        {
+          title: "Gestión territorial",
+          depth: "full",
+          body: [
+            "La gestión territorial implica acuerdos entre actores, diagnóstico local, planificación y seguimiento de indicadores. Los determinantes sociales no se resuelven solo desde el sector salud: requieren educación, vivienda, trabajo, protección social y participación local.",
+            "El equipo de salud puede facilitar ese trabajo, pero no reemplaza a los demás sectores. La salud pública se juega también en las decisiones que se toman fuera del consultorio."
+          ],
+          callout: {
+            tone: "info",
+            title: "Del consultorio al territorio",
+            text: "Una ficha clínica describe a la persona; un mapa comunitario describe las oportunidades y barreras del entorno. El MCI necesita ambas miradas."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59, 60, 61, 62] }]
+    },
+    {
+      id: "sheet-audit-01",
+      topicId: "topic-audit-conceptos",
+      areaId: "area-audit",
+      title: "Tres patrones que conviene distinguir",
+      kicker: "AUDIT · Conceptos",
+      minutes: 7,
+      level: "Base",
+      summary: "El AUDIT ayuda a identificar consumo de riesgo, consumo perjudicial y posible dependencia. Son categorías relacionadas, pero no equivalentes.",
+      keyConcepts: [
+        "Consumo de riesgo: mayor probabilidad de consecuencias adversas.",
+        "Consumo perjudicial: ya existen consecuencias físicas o mentales.",
+        "Dependencia: patrón con pérdida de control, prioridad y síntomas de abstinencia.",
+        "El tamizaje identifica probabilidad; no confirma un diagnóstico."
+      ],
+      sections: [
+        {
+          title: "Un continuo, no tres cajas rígidas",
+          depth: "core",
+          body: [
+            "El manual del AUDIT distingue el consumo de riesgo, el consumo perjudicial y la dependencia de alcohol. El consumo de riesgo se asocia con una mayor probabilidad de consecuencias adversas, aunque todavía no se haya producido un daño evidente.",
+            "El consumo perjudicial implica que ya existen consecuencias físicas o mentales. La dependencia es un patrón más complejo, con síntomas como deseo intenso, pérdida de control, prioridad del consumo sobre otras actividades, tolerancia y abstinencia."
+          ]
+        },
+        {
+          title: "Por qué importa tamizar",
+          depth: "core",
+          body: [
+            "Si el personal de salud pregunta solo a quienes “parecen” tener un problema con la bebida, se pierde a muchas personas con consumo de riesgo. El AUDIT fue diseñado como un método simple de tamizaje para identificar el consumo excesivo y apoyar una evaluación breve.",
+            "El instrumento no sustituye una entrevista clínica ni un diagnóstico. Su función es detectar probabilidad y orientar el nivel de intervención."
+          ],
+          bullets: [
+            "Identificar personas que podrían beneficiarse de una intervención breve.",
+            "Orientar la intensidad del abordaje según la puntuación.",
+            "Abrir una conversación sobre consumo sin estigmatizar.",
+            "Derivar a evaluación especializada cuando corresponde."
+          ]
+        },
+        {
+          title: "No todo consumo es igual",
+          depth: "full",
+          body: [
+            "Una persona puede beber ocasionalmente sin cumplir criterios de riesgo; otra puede tener un patrón de atracones con consecuencias importantes; otra puede presentar dependencia. La entrevista clínica y el contexto ayudan a interpretar el resultado.",
+            "El manual insiste en que la puntuación más alta indica mayor probabilidad de problemas y mayor necesidad de tratamiento intensivo, pero no reemplaza el juicio clínico."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Lenguaje",
+            text: "Evita etiquetar a la persona como “alcohólica” a partir de una puntuación. Habla de consumo de riesgo, consumo perjudicial o posible dependencia, y ofrece una ruta de apoyo."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6, 7, 8] }]
+    },
+    {
+      id: "sheet-audit-02",
+      topicId: "topic-audit-conceptos",
+      areaId: "area-audit",
+      title: "Qué mide el AUDIT y cómo se administra",
+      kicker: "AUDIT · Instrumento",
+      minutes: 8,
+      level: "Base",
+      summary: "Diez preguntas exploran consumo, síntomas de dependencia y consecuencias. Una administración cuidadosa mejora la sinceridad y la calidad de la información.",
+      keyConcepts: [
+        "Tres dominios: consumo, dependencia y consecuencias relacionadas.",
+        "Las preguntas 1-3 exploran cantidad y frecuencia.",
+        "Las preguntas 4-6 exploran síntomas de dependencia.",
+        "Las preguntas 7-10 exploran problemas y consecuencias."
+      ],
+      sections: [
+        {
+          title: "Los tres dominios",
+          depth: "core",
+          table: {
+            headers: ["Preguntas", "Dominio", "Qué explora"],
+            rows: [
+              ["1-3", "Consumo", "Frecuencia, cantidad habitual y episodios intensos."],
+              ["4-6", "Dependencia", "Control, interferencia con obligaciones y necesidad de beber al despertar."],
+              ["7-10", "Consecuencias", "Culpa, lagunas, lesiones y preocupación de otras personas."]
+            ]
+          },
+          body: [
+            "El AUDIT no solo mide cuánto se bebe. También explora patrones de pérdida de control, consecuencias y señales de dependencia. Por eso una puntuación total puede ser similar en personas con perfiles muy distintos.",
+            "El manual recomienda revisar las preguntas individuales, no solo el total. Las respuestas a los ítems de dependencia y de daño aportan información clave para decidir el abordaje."
+          ]
+        },
+        {
+          title: "Una conversación, no un interrogatorio",
+          depth: "core",
+          body: [
+            "El AUDIT puede aplicarse mediante entrevista oral o auto-pase. La entrevista permite aclarar respuestas ambiguas; el auto-pase puede ser más rápido y favorecer la confidencialidad, pero requiere capacidad de lectura y comprensión.",
+            "Antes de aplicarlo, explica por qué se pregunta por alcohol, que la información es confidencial y que no se busca juzgar. La persona debe estar en condiciones de responder, no intoxicada y no en una urgencia médica."
+          ],
+          bullets: [
+            "Preséntalo como parte del cuidado habitual, no como una acusación.",
+            "Aclara qué se considera una bebida estándar en el contexto local.",
+            "Lee las preguntas tal como están escritas y mantén el orden.",
+            "Registra comentarios y circunstancias relevantes."
+          ]
+        },
+        {
+          title: "La consumición estándar",
+          depth: "full",
+          body: [
+            "Las preguntas 2 y 3 usan consumiciones o bebidas estándar. El manual explica que una consumición equivale aproximadamente a 10 gramos de alcohol puro, aunque la medida local puede variar. La equivalencia debe adaptarse a las bebidas y recipientes habituales del país.",
+            "Si la persona no comprende la medida, usa ejemplos concretos y verifica que la respuesta se refiera al mismo volumen. Una mala comprensión de la unidad puede distorsionar la puntuación."
+          ],
+          callout: {
+            tone: "info",
+            title: "Dato práctico",
+            text: "El AUDIT completo puede completarse en unos minutos y puntuarse rápidamente. La calidad depende más de la conversación que de la velocidad."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [15, 16, 17, 18, 19] }]
+    },
+    {
+      id: "sheet-audit-03",
+      topicId: "topic-audit-aplicacion",
+      areaId: "area-audit",
+      title: "Puntuación: leer el total y los ítems",
+      kicker: "AUDIT · Puntuación",
+      minutes: 8,
+      level: "Intermedio",
+      summary: "Cada pregunta puntúa de 0 a 4. El total orienta, pero los ítems de dependencia y daño pueden cambiar la conducta clínica.",
+      keyConcepts: [
+        "Cada ítem puntúa de 0 a 4; el total va de 0 a 40.",
+        "Un total ≥8 sugiere consumo de riesgo o perjudicial y posible dependencia.",
+        "En mujeres y varones mayores de 65 se recomienda un corte de 7.",
+        "Los ítems 4-6 y 9-10 merecen revisión específica."
+      ],
+      sections: [
+        {
+          title: "Cómo se suma",
+          depth: "core",
+          body: [
+            "Cada respuesta tiene una puntuación de 0 a 4. Se suman los diez ítems para obtener un total entre 0 y 40. Las preguntas 9 y 10 usan categorías de 0, 2 o 4, porque exploran lesiones y preocupación de terceros.",
+            "El manual recomienda un punto de corte de 8 para identificar consumo de riesgo, consumo perjudicial y posible dependencia. Un corte de 10 aumenta la especificidad, aunque reduce la sensibilidad."
+          ]
+        },
+        {
+          title: "Ajustes por población",
+          depth: "core",
+          body: [
+            "Debido a diferencias de peso y metabolismo, el manual sugiere reducir el corte a 7 para todas las mujeres y para varones mayores de 65. La elección final debe considerar los estándares locales y el juicio clínico.",
+            "Un mismo total puede significar cosas distintas según el patrón de respuestas. Por eso conviene revisar los ítems de consumo intenso, dependencia y consecuencias."
+          ],
+          table: {
+            headers: ["Puntuación", "Lectura orientativa"],
+            rows: [
+              ["0-7", "Bajo riesgo o abstinencia; reforzar hábitos saludables."],
+              ["8-15", "Consumo de riesgo; consejo simple y educación."],
+              ["16-19", "Terapia breve y monitorización continuada."],
+              ["20 o más", "Evaluación diagnóstica especializada."]
+            ]
+          }
+        },
+        {
+          title: "Los ítems que no conviene ignorar",
+          depth: "full",
+          bullets: [
+            "Pregunta 2 o 3 con puntuación ≥1: consumo en nivel de riesgo.",
+            "Preguntas 4-6 con puntuación >0: posible inicio de dependencia.",
+            "Preguntas 7-10 con puntuación >0: ya hay consecuencias relacionadas.",
+            "Preguntas 9-10: lesiones y preocupación de otras personas."
+          ],
+          body: [
+            "El manual señala que una puntuación alta en los ítems de dependencia puede justificar el nivel máximo de intervención, incluso si el total no es extremadamente alto. La interpretación es clínica, no mecánica."
+          ],
+          callout: {
+            tone: "warn",
+            title: "El total no lo explica todo",
+            text: "Dos personas con 12 puntos pueden necesitar respuestas distintas si una presenta síntomas de dependencia y la otra solo consumo intenso ocasional."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [20, 21] }]
+    },
+    {
+      id: "sheet-audit-04",
+      topicId: "topic-audit-aplicacion",
+      areaId: "area-audit",
+      title: "Zonas de riesgo y respuesta escalonada",
+      kicker: "AUDIT · Interpretación",
+      minutes: 6,
+      level: "Intermedio",
+      summary: "Las cuatro zonas del AUDIT ayudan a decidir la intensidad de la respuesta: educación, consejo simple, terapia breve con seguimiento o derivación especializada.",
+      keyConcepts: [
+        "Zona I: bajo riesgo o abstinencia; educación y refuerzo.",
+        "Zona II: consejo simple y materiales educativos.",
+        "Zona III: consejo, terapia breve y monitorización.",
+        "Zona IV: derivación para evaluación diagnóstica y tratamiento."
+      ],
+      sections: [
+        {
+          title: "Las cuatro zonas",
+          depth: "core",
+          table: {
+            headers: ["Zona", "Puntuación", "Respuesta orientativa"],
+            rows: [
+              ["I", "0-7", "Educación sobre alcohol y hábitos de bajo riesgo."],
+              ["II", "8-15", "Consejo simple, feedback y materiales educativos."],
+              ["III", "16-19", "Terapia breve y monitorización continuada."],
+              ["IV", "20-40", "Derivación a especialista para evaluación y tratamiento."]
+            ]
+          },
+          body: [
+            "Las zonas no son compartimentos estancos. Son una guía para escalar la respuesta según la puntuación, los ítems individuales y el contexto clínico. La entrevista puede revelar dependencia o riesgo que justifiquen una respuesta más intensa."
+          ]
+        },
+        {
+          title: "Qué significa “consejo simple”",
+          depth: "core",
+          body: [
+            "El consejo simple es una intervención breve, de baja intensidad, centrada en reducir el consumo de riesgo. Incluye feedback sobre el resultado, información sobre riesgos, una recomendación clara y apoyo para establecer un objetivo.",
+            "No es una charla moralizante. Es una conversación respetuosa que conecta el consumo con la salud y que ofrece una alternativa concreta."
+          ],
+          bullets: [
+            "Presenta el resultado del tamizaje.",
+            "Relaciona el consumo con riesgos o consecuencias concretas.",
+            "Ofrece una recomendación y escucha la reacción.",
+            "Acuerda un objetivo y un seguimiento."
+          ]
+        },
+        {
+          title: "Cuando la zona no coincide con la impresión",
+          depth: "full",
+          body: [
+            "Si la puntuación no coincide con la evidencia clínica, revisa las respuestas, el contexto y los antecedentes. Una persona puede minimizar el consumo; otra puede haber tenido un periodo atípico de consumo intenso.",
+            "El manual recomienda usar el juicio clínico y considerar la historia familiar, las condiciones médicas y la credibilidad de las respuestas. La zona orienta, no decide por el profesional."
+          ],
+          callout: {
+            tone: "info",
+            title: "Regla útil",
+            text: "A mayor puntuación y más señales de dependencia, mayor intensidad de evaluación y apoyo. No dejes a una persona con posible dependencia solo con un folleto."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }]
+    },
+    {
+      id: "sheet-audit-05",
+      topicId: "topic-audit-intervencion",
+      areaId: "area-audit",
+      title: "Intervención breve: acompañar el cambio",
+      kicker: "AUDIT · Intervención",
+      minutes: 7,
+      level: "Intermedio",
+      summary: "La intervención breve combina feedback, consejo, compromiso y seguimiento. Es útil para el consumo de riesgo y perjudicial, no sustituye el tratamiento de la dependencia.",
+      keyConcepts: [
+        "Duración variable: desde pocos minutos hasta varias sesiones.",
+        "Elementos: feedback, riesgos, consejo, compromiso y objetivo.",
+        "El estilo debe ser empático y no confrontacional.",
+        "El seguimiento sostiene el cambio y permite ajustar el plan."
+      ],
+      sections: [
+        {
+          title: "Una intervención pequeña con intención clara",
+          depth: "core",
+          body: [
+            "Las intervenciones breves son actividades de baja intensidad y corta duración. Pueden ir desde cinco minutos de consejo simple hasta varias sesiones de terapia breve. Buscan intervenir temprano, antes de que el problema se consolide.",
+            "El manual las describe como una combinación de feedback sobre el tamizaje, consejo, educación para la salud, mejora de habilidades y sugerencias prácticas. No requieren una estructura hospitalaria compleja."
+          ]
+        },
+        {
+          title: "Los componentes",
+          depth: "core",
+          table: {
+            headers: ["Componente", "Qué hacer"],
+            rows: [
+              ["Feedback", "Presentar el resultado y explicar qué significa."],
+              ["Riesgos", "Conectar el consumo con consecuencias concretas para esa persona."],
+              ["Consejo", "Recomendar reducción o abstinencia según el caso."],
+              ["Compromiso", "Acordar un objetivo realista y la participación de la persona."],
+              ["Seguimiento", "Programar una revisión y ajustar el apoyo."]
+            ]
+          },
+          body: [
+            "La entrevista motivacional aporta un estilo útil: explorar la ambivalencia, respetar la autonomía y reforzar la confianza. La confrontación rara vez ayuda a sostener el cambio."
+          ]
+        },
+        {
+          title: "Cuando el objetivo es la abstinencia",
+          depth: "full",
+          body: [
+            "En personas con dependencia, embarazo, condiciones médicas o uso de medicamentos incompatibles con el alcohol, la abstinencia puede ser el objetivo más seguro. La decisión debe individualizarse y, cuando hay dependencia, no debe plantearse una reducción sin evaluación y apoyo adecuados.",
+            "La intervención breve no es un tratamiento suficiente para la dependencia. El manual es claro: los pacientes con puntuaciones altas o señales de dependencia requieren evaluación especializada."
+          ],
+          callout: {
+            tone: "warn",
+            title: "No prometas lo que la evidencia no sostiene",
+            text: "La intervención breve es eficaz en consumo de riesgo y perjudicial. En dependencia, el paso siguiente es una evaluación diagnóstica y un plan de tratamiento."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [23, 24] }]
+    },
+    {
+      id: "sheet-audit-06",
+      topicId: "topic-audit-intervencion",
+      areaId: "area-audit",
+      title: "Derivación, diagnóstico y límites del AUDIT",
+      kicker: "AUDIT · Límites",
+      minutes: 7,
+      level: "Avanzado",
+      summary: "Una puntuación positiva abre una ruta, no cierra un diagnóstico. La evaluación especializada y la seguridad de la persona son prioritarias cuando hay dependencia o riesgo.",
+      keyConcepts: [
+        "El AUDIT es un tamizaje, no un diagnóstico.",
+        "La sospecha de dependencia requiere evaluación especializada.",
+        "La derivación debe considerar la voluntad y el seguimiento.",
+        "La abstinencia y el síndrome de abstinencia pueden requerir manejo médico."
+      ],
+      sections: [
+        {
+          title: "La derivación como parte del cuidado",
+          depth: "core",
+          body: [
+            "La derivación a servicios especializados es frecuente cuando el primer nivel no está preparado para tratar la dependencia. Debe tenerse en cuenta la voluntad de la persona y la disponibilidad de servicios.",
+            "Una intervención breve puede preparar la derivación: feedback, examen clínico, información sobre riesgos y acompañamiento para reducir resistencias. El seguimiento ayuda a que la derivación no se pierda."
+          ]
+        },
+        {
+          title: "El diagnóstico no es la puntuación",
+          depth: "core",
+          body: [
+            "El AUDIT no proporciona una base suficiente para establecer un plan de tratamiento. El diagnóstico requiere una evaluación clínica cualificada, con criterios diagnósticos y una entrevista estructurada cuando corresponde.",
+            "El manual menciona criterios de dependencia como deseo intenso, pérdida de control, abstinencia, tolerancia y abandono de otras fuentes de placer. La presencia de varios criterios durante un periodo significativo orienta la evaluación."
+          ],
+          bullets: [
+            "No etiquetes solo con el total del AUDIT.",
+            "Explora consecuencias, control, tolerancia y abstinencia.",
+            "Considera condiciones médicas y medicamentos.",
+            "Deriva cuando sospeches dependencia o riesgo."
+          ]
+        },
+        {
+          title: "Seguridad y abstinencia",
+          depth: "full",
+          body: [
+            "La desintoxicación puede ser necesaria para algunas personas. El síndrome de abstinencia puede ser grave y requerir manejo médico. No se debe indicar una suspensión brusca sin evaluación cuando hay dependencia significativa.",
+            "El manual también recuerda que el abordaje de la dependencia incluye tratamiento farmacológico, apoyo social y familiar, prevención de recaídas y entrenamiento en habilidades, según el caso."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Seguridad primero",
+            text: "Si hay intoxicación, riesgo de autoagresión, violencia, embarazo o comorbilidad médica importante, la evaluación y la derivación no deben esperar a completar un cuestionario."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25, 26] }]
+    },
+    {
+      id: "sheet-materna-01",
+      topicId: "topic-materna-prenatal",
+      areaId: "area-materna",
+      title: "Atención preconcepcional: preparar el embarazo",
+      kicker: "Salud materna · Antes del embarazo",
+      minutes: 6,
+      level: "Base",
+      summary: "La atención preconcepcional identifica riesgos y prepara a la persona y a su familia para un embarazo saludable. Es una oportunidad de prevención antes de la concepción.",
+      keyConcepts: [
+        "La atención preconcepcional se dirige a personas con intención de embarazo.",
+        "Incluye evaluación de riesgos, consejería y suplementación.",
+        "El ácido fólico se inicia antes de la concepción.",
+        "La pareja y la familia también son parte de la preparación."
+      ],
+      sections: [
+        {
+          title: "Una consulta antes de la concepción",
+          depth: "core",
+          body: [
+            "La atención preconcepcional busca que la persona llegue al embarazo en las mejores condiciones posibles. Incluye evaluación del estado de salud, antecedentes obstétricos y médicos, hábitos, medicamentos, vacunas y factores de riesgo.",
+            "También es un espacio para consejería sobre planificación del embarazo, alimentación, actividad física, prevención de infecciones y consumo de alcohol o tabaco. La pareja puede participar cuando corresponde."
+          ]
+        },
+        {
+          title: "Suplementación y preparación",
+          depth: "core",
+          body: [
+            "La norma incluye la suplementación con ácido fólico antes de la concepción para reducir el riesgo de defectos del tubo neural. La dosis y duración deben seguir la indicación normativa y el criterio clínico.",
+            "Se revisan vacunas, enfermedades crónicas y medicamentos que puedan afectar el embarazo. La continuidad con el equipo de salud permite ajustar el plan antes de la concepción."
+          ],
+          bullets: [
+            "Evaluar antecedentes personales y familiares.",
+            "Revisar medicamentos y condiciones crónicas.",
+            "Promover alimentación y hábitos saludables.",
+            "Orientar sobre ácido fólico y control prenatal.",
+            "Identificar barreras de acceso y planificar el seguimiento."
+          ]
+        },
+        {
+          title: "No solo es un tema de la gestante",
+          depth: "full",
+          body: [
+            "La preparación del embarazo involucra a la pareja y a la familia. La corresponsabilidad permite reducir exposiciones de riesgo, organizar el cuidado y preparar el hogar para la llegada del bebé.",
+            "La atención preconcepcional también es una oportunidad para detectar violencia, problemas de salud mental y necesidades sociales que pueden afectar el embarazo."
+          ],
+          callout: {
+            tone: "info",
+            title: "Anticipar",
+            text: "La preconcepción no garantiza un embarazo sin riesgos, pero permite llegar mejor preparada y detectar problemas antes de que se vuelvan urgentes."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }]
+    },
+    {
+      id: "sheet-materna-02",
+      topicId: "topic-materna-prenatal",
+      areaId: "area-materna",
+      title: "Prenatal reenfocada, tamizajes y alarmas",
+      kicker: "Salud materna · Gestación",
+      minutes: 9,
+      level: "Intermedio",
+      summary: "El control prenatal combina evaluación integral, suplementación, tamizajes y educación sobre signos de alarma. La oportunidad y la continuidad son tan importantes como el número de controles.",
+      keyConcepts: [
+        "La atención prenatal reenfocada integra evaluación clínica, laboratorio y consejería.",
+        "Se recomiendan al menos seis controles prenatales.",
+        "La suplementación con hierro y ácido fólico es parte del cuidado.",
+        "Los signos de alarma deben explicarse y vincularse a una ruta de atención."
+      ],
+      sections: [
+        {
+          title: "Qué incluye el control prenatal",
+          depth: "core",
+          body: [
+            "El control prenatal no es solo medir la presión y escuchar latidos. Incluye historia clínica completa, evaluación del riesgo, examen físico, controles de peso y presión, altura uterina, evaluación del crecimiento fetal y pruebas de laboratorio según edad gestacional.",
+            "La norma enfatiza la atención prenatal reenfocada: una mirada integral que incorpora prevención, promoción y detección oportuna, con participación de la gestante y su familia."
+          ]
+        },
+        {
+          title: "Frecuencia y suplementación",
+          depth: "core",
+          body: [
+            "La norma establece un mínimo de seis controles prenatales para embarazos de bajo riesgo, con una distribución que se intensifica hacia el final. El primer control debe ser lo más temprano posible; los siguientes se programan según la edad gestacional y el riesgo.",
+            "La suplementación incluye ácido fólico y hierro. También se valora calcio en poblaciones con bajo consumo y otras intervenciones según necesidad. La adherencia debe revisarse en cada control."
+          ],
+          table: {
+            headers: ["Momento", "Énfasis"],
+            rows: [
+              ["Antes de las 14 semanas", "Confirmar embarazo, evaluar riesgo, ácido fólico, laboratorio inicial."],
+              ["14-27 semanas", "Crecimiento fetal, suplementación, tamizajes, educación."],
+              ["28-36 semanas", "Control de crecimiento, preparación para el parto, alarmas."],
+              ["37 semanas al parto", "Plan de parto, signos de trabajo de parto, referencia oportuna."]
+            ]
+          }
+        },
+        {
+          title: "Signos de alarma: explicar y actuar",
+          depth: "full",
+          body: [
+            "La gestante y su familia deben conocer los signos que requieren atención inmediata: sangrado vaginal, dolor abdominal intenso, cefalea intensa, visión borrosa, convulsiones, fiebre, salida de líquido amniótico, disminución de movimientos fetales, dificultad respiratoria, entre otros.",
+            "No basta con enumerarlos. Hay que verificar que la persona comprenda, que sepa dónde acudir y que tenga una vía de contacto. La referencia debe ser oportuna y con información clínica suficiente."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Alarma no es espera",
+            text: "Un signo de alarma no se maneja “viendo cómo evoluciona” por teléfono. Se orienta a la gestante a acudir al establecimiento y se activa la ruta correspondiente."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [4, 11, 12, 13, 14, 15] }]
+    },
+    {
+      id: "sheet-materna-03",
+      topicId: "topic-materna-parto",
+      areaId: "area-materna",
+      title: "Plan de parto y parto institucional",
+      kicker: "Salud materna · Parto",
+      minutes: 7,
+      level: "Base",
+      summary: "El plan de parto prepara decisiones y rutas antes del inicio del trabajo de parto. El parto institucional busca atención segura, con capacidad resolutiva y respeto por la persona.",
+      keyConcepts: [
+        "El plan de parto se construye durante la gestación.",
+        "Incluye lugar, transporte, acompañante y recursos.",
+        "El parto institucional ocurre en un establecimiento de salud.",
+        "El parto vertical es una opción cuando las condiciones lo permiten."
+      ],
+      sections: [
+        {
+          title: "Planificar antes de que empiece",
+          depth: "core",
+          body: [
+            "El plan de parto es una herramienta de preparación. Permite identificar el establecimiento adecuado, la ruta, el transporte, el acompañante, los recursos necesarios y las señales para acudir. Se conversa durante los controles prenatales, no cuando el trabajo de parto ya comenzó.",
+            "La norma incluye entrevistas de planificación del parto y promueve que la gestante y su familia participen. La planificación reduce demoras y facilita la llegada oportuna."
+          ]
+        },
+        {
+          title: "Parto institucional y parto vertical",
+          depth: "core",
+          body: [
+            "El parto institucional ocurre en un establecimiento de salud y puede ser vaginal o abdominal. Busca atención por personal capacitado, disponibilidad de recursos y manejo de complicaciones.",
+            "El parto vertical es una posición en la que la gestante se sostiene de pie, sentada, en cuclillas o apoyando una o dos rodillas, mientras el profesional atiende delante o detrás. Debe ofrecerse con condiciones adecuadas y respeto por la elección informada."
+          ],
+          bullets: [
+            "Lugar de parto y ruta de traslado definidos.",
+            "Medio de transporte y contacto disponible.",
+            "Acompañante elegido por la gestante.",
+            "Signos para acudir sin esperar.",
+            "Necesidades de sangre, medicamentos o referencia."
+          ]
+        },
+        {
+          title: "Respeto y seguridad",
+          depth: "full",
+          body: [
+            "La atención del parto debe combinar seguridad clínica y trato respetuoso. La persona tiene derecho a información, privacidad, acompañamiento cuando las condiciones lo permiten y participación en las decisiones.",
+            "La norma reconoce la pertinencia cultural y la posibilidad de parto vertical. No se trata de imponer una posición, sino de ofrecer opciones seguras y acompañar la elección."
+          ],
+          callout: {
+            tone: "info",
+            title: "Continuidad",
+            text: "El plan de parto debe actualizarse si cambian las condiciones de la gestante, el establecimiento o la ruta de referencia."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [6, 7, 16, 17, 18] }]
+    },
+    {
+      id: "sheet-materna-04",
+      topicId: "topic-materna-parto",
+      areaId: "area-materna",
+      title: "Emergencias obstétricas: claves roja, azul y amarilla",
+      kicker: "Salud materna · Emergencias",
+      minutes: 8,
+      level: "Avanzado",
+      summary: "Las claves de emergencia obstétrica organizan la respuesta inmediata y la referencia. No sustituyen las guías clínicas: activan un circuito de actuación coordinada.",
+      keyConcepts: [
+        "Clave roja: hemorragia obstétrica.",
+        "Clave azul: emergencia hipertensiva del embarazo.",
+        "Clave amarilla: infección o sepsis obstétrica.",
+        "La clave activa manejo inmediato, coordinación y referencia oportuna."
+      ],
+      sections: [
+        {
+          title: "Una forma de organizar la respuesta",
+          depth: "core",
+          body: [
+            "La norma incorpora las claves de emergencia obstétrica para estandarizar la respuesta del equipo. Cada clave agrupa un conjunto de condiciones que requieren actuación inmediata y coordinación con establecimientos de mayor complejidad.",
+            "La clave no es un diagnóstico completo ni un protocolo cerrado. Es una señal de activación que moviliza recursos y ordena la atención mientras se confirma y maneja la causa."
+          ],
+          table: {
+            headers: ["Clave", "Problema", "Prioridad"],
+            rows: [
+              ["Roja", "Hemorragia obstétrica", "Control del sangrado, estabilización y referencia."],
+              ["Azul", "Emergencia hipertensiva del embarazo", "Control de presión, prevención de convulsiones y referencia."],
+              ["Amarilla", "Infección o sepsis obstétrica", "Identificación, antibióticos y manejo oportuno."]
+            ]
+          }
+        },
+        {
+          title: "Qué debe funcionar antes de la emergencia",
+          depth: "core",
+          body: [
+            "La respuesta a una emergencia depende de preparación previa: personal capacitado, insumos disponibles, comunicación con referencia, transporte y coordinación entre niveles. La norma insiste en la organización de la referencia y en la recepción por personal competente.",
+            "La comunicación con el establecimiento de mayor complejidad debe realizarse para que el equipo esté preparado. La referencia se acompaña del formato correspondiente y de la información clínica necesaria."
+          ],
+          bullets: [
+            "Reconocer la clave y activar al equipo.",
+            "Iniciar estabilización según protocolo.",
+            "Comunicar y coordinar la referencia.",
+            "Acompañar a la persona y mantener información.",
+            "Registrar la atención y el traslado."
+          ]
+        },
+        {
+          title: "Los límites de esta ficha",
+          depth: "full",
+          body: [
+            "Esta ficha solo resume el marco normativo. El manejo clínico detallado de hemorragia, hipertensión o sepsis requiere guías específicas, entrenamiento y recursos adecuados.",
+            "La clave ayuda a no perder tiempo, pero no reemplaza el juicio clínico ni la evaluación individual. En una emergencia, la prioridad es estabilizar y referir de forma segura."
+          ],
+          callout: {
+            tone: "warn",
+            title: "No memorices la clave sin el circuito",
+            text: "Saber que una hemorragia es clave roja no sirve si no sabes a quién llamar, dónde está el kit, cómo estabilizar y cómo referir."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 17, 21] }]
+    },
+    {
+      id: "sheet-materna-05",
+      topicId: "topic-materna-puerperio",
+      areaId: "area-materna",
+      title: "Puerperio y alojamiento conjunto",
+      kicker: "Salud materna · Después del parto",
+      minutes: 7,
+      level: "Base",
+      summary: "El puerperio es un periodo de recuperación y vigilancia. El alojamiento conjunto y el contacto precoz favorecen el vínculo, la lactancia y la detección de signos de alarma.",
+      keyConcepts: [
+        "El puerperio comprende desde el parto hasta la recuperación, convencionalmente 42 días.",
+        "El puerperio inmediato requiere vigilancia estrecha de la madre.",
+        "El alojamiento conjunto mantiene a la madre y al recién nacido juntos.",
+        "La lactancia y el contacto precoz forman parte del cuidado."
+      ],
+      sections: [
+        {
+          title: "Un periodo de recuperación y riesgo",
+          depth: "core",
+          body: [
+            "El puerperio es el periodo posterior al parto en el que la madre se recupera y el cuerpo vuelve a sus condiciones previas. La norma lo organiza en inmediato, mediato y tardío, con vigilancia de sangrado, involución uterina, presión arterial, infección y estado emocional.",
+            "Las complicaciones pueden aparecer después del alta. Por eso el control y la educación sobre signos de alarma son parte esencial del cuidado."
+          ]
+        },
+        {
+          title: "Alojamiento conjunto y contacto precoz",
+          depth: "core",
+          body: [
+            "El alojamiento conjunto mantiene a la madre y al recién nacido en el mismo espacio, favoreciendo el contacto, la lactancia a demanda y el aprendizaje de cuidados. Debe adaptarse a las condiciones clínicas y respetar la privacidad.",
+            "El contacto piel a piel precoz y el inicio temprano de la lactancia favorecen el vínculo y la salud del recién nacido. El equipo debe acompañar sin imponer y resolver dificultades."
+          ],
+          bullets: [
+            "Vigilar sangrado, dolor, fiebre y presión arterial.",
+            "Valorar involución uterina y estado de la herida.",
+            "Favorecer contacto y lactancia en las primeras horas.",
+            "Enseñar signos de alarma a la madre y su familia.",
+            "Programar el control puerperal."
+          ]
+        },
+        {
+          title: "Salud mental y violencia",
+          depth: "full",
+          body: [
+            "El puerperio también es un momento de vulnerabilidad emocional. La tristeza posparto es frecuente, pero la depresión posparto requiere identificación y apoyo. Pensamientos de daño a sí misma o al bebé son una señal de alarma.",
+            "La violencia puede aparecer o intensificarse durante el embarazo y el puerperio. El equipo debe preguntar en un espacio seguro y activar rutas de protección cuando sea necesario."
+          ],
+          callout: {
+            tone: "info",
+            title: "No es solo control físico",
+            text: "Preguntar cómo se siente, cómo duerme, si tiene apoyo y si se siente segura en casa es parte de la atención puerperal."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22, 23] }]
+    },
+    {
+      id: "sheet-materna-06",
+      topicId: "topic-materna-puerperio",
+      areaId: "area-materna",
+      title: "Lactancia, visita domiciliaria y continuidad",
+      kicker: "Salud materna · Seguimiento",
+      minutes: 7,
+      level: "Intermedio",
+      summary: "La continuidad después del alta incluye control puerperal, apoyo a la lactancia y visita domiciliaria cuando la persona no acude o existe riesgo.",
+      keyConcepts: [
+        "La lactancia materna exclusiva es la alimentación recomendada en los primeros meses.",
+        "El control puerperal verifica recuperación y detecta complicaciones.",
+        "La visita domiciliaria acerca el cuidado cuando hay barreras.",
+        "La continuidad requiere coordinación entre establecimiento, familia y comunidad."
+      ],
+      sections: [
+        {
+          title: "Apoyo real a la lactancia",
+          depth: "core",
+          body: [
+            "La lactancia materna exclusiva es la alimentación recomendada durante los primeros meses de vida. El apoyo debe ser práctico: posición, agarre, frecuencia, manejo de congestión y confianza de la madre.",
+            "El equipo también debe conocer las contraindicaciones y las situaciones que requieren evaluación. No se trata de presionar, sino de acompañar una decisión informada y resolver dificultades."
+          ]
+        },
+        {
+          title: "Control puerperal y visita domiciliaria",
+          depth: "core",
+          body: [
+            "El control puerperal permite evaluar la recuperación de la madre, el estado del recién nacido, la lactancia y el bienestar emocional. La norma establece controles y visitas según el riesgo y la capacidad de acceso.",
+            "La visita domiciliaria es especialmente útil cuando la persona no puede acudir al establecimiento, falta a un control o requiere evaluar el entorno familiar. Debe planificarse y registrarse."
+          ],
+          table: {
+            headers: ["Momento", "Qué observar"],
+            rows: [
+              ["Primeras 24 horas", "Sangrado, signos vitales, lactancia, vínculo, seguridad."],
+              ["Primera semana", "Recuperación, herida, lactancia, signos de alarma, salud mental."],
+              ["Hasta los 42 días", "Control puerperal, planificación, seguimiento del recién nacido."]
+            ]
+          }
+        },
+        {
+          title: "Cerrar la brecha del alta",
+          depth: "full",
+          body: [
+            "El alta hospitalaria no es el final del cuidado. La coordinación con el primer nivel debe asegurar que la persona tenga una cita, sepa dónde acudir y reciba seguimiento si no asiste.",
+            "La familia y la comunidad pueden apoyar el traslado, la alimentación y el cuidado del bebé, pero necesitan información clara. La continuidad se construye con acuerdos concretos, no solo con una hoja de alta."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Si no acude, busca",
+            text: "Una inasistencia al control puerperal no es un detalle administrativo. Puede ser la primera señal de una complicación o de una barrera de acceso."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-materna", pages: [7, 22, 23, 24] }]
+    },
+    {
+      id: "sheet-mental-01",
+      topicId: "topic-mental-continuidad",
+      areaId: "area-mental",
+      title: "Continuidad de cuidados: acompañar sin soltar",
+      kicker: "Continuidad · Concepto",
+      minutes: 7,
+      level: "Base",
+      summary: "La continuidad de cuidados es un proceso continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, articulado con su entorno y con la red de servicios.",
+      keyConcepts: [
+        "No es una suma de consultas aisladas: es un proceso continuo y personalizado.",
+        "Incluye componentes clínicos, psicosociales y de gestión.",
+        "La persona y su cuidador participan activamente.",
+        "La articulación entre establecimientos y redes es parte del cuidado."
+      ],
+      sections: [
+        {
+          title: "Una definición que ordena la práctica",
+          depth: "core",
+          body: [
+            "La guía define la continuidad de cuidados como el proceso de atención de salud continuo, intensivo y personalizado que recibe la persona usuaria y su cuidador, con participación activa de ambos. Implica la acción articulada entre establecimientos de la misma red o fuera de ella.",
+            "El objetivo es garantizar calidad de cuidados, bienestar y recuperación, con intervenciones centradas en la persona y su entorno. No se limita a evitar que la persona se pierda entre servicios: busca sostener un proyecto de cuidado."
+          ]
+        },
+        {
+          title: "Tres componentes",
+          depth: "core",
+          table: {
+            headers: ["Componente", "Qué incluye"],
+            rows: [
+              ["Clínico", "Atención del problema de salud mental y físico, reducción de síntomas y mejora de calidad de vida."],
+              ["Psicosocial", "Familia, trabajo, relaciones, funcionamiento en la comunidad y proyecto de vida."],
+              ["Gestión", "Actividades administrativas que facilitan la continuidad y la articulación."]
+            ]
+          },
+          body: [
+            "Los componentes se entrelazan. Una mejoría clínica sin apoyo psicosocial puede no sostenerse; un plan psicosocial sin manejo clínico puede ser insuficiente. La gestión hace posible que ambos lleguen a tiempo."
+          ]
+        },
+        {
+          title: "Recuperación, no solo ausencia de síntomas",
+          depth: "full",
+          body: [
+            "La guía adopta una noción de recuperación personal y única: cambiar actitudes, metas, habilidades y roles para tener una vida satisfactoria, esperanzadora y activa, incluso con limitaciones. Incluye autoconfianza, identidad positiva, sentido de vida y responsabilidad sobre el propio cuidado.",
+            "Esta mirada desplaza el foco desde “controlar la enfermedad” hacia “construir una vida”. La continuidad de cuidados es el soporte para que ese proceso sea posible."
+          ],
+          callout: {
+            tone: "info",
+            title: "Diferencia clave",
+            text: "Continuidad no es lo mismo que adherencia. La persona puede asistir a sus citas y, aun así, no tener un cuidado continuo si no hay un plan compartido y un vínculo que sostenga el proceso."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4, 6, 7] }]
+    },
+    {
+      id: "sheet-mental-02",
+      topicId: "topic-mental-continuidad",
+      areaId: "area-mental",
+      title: "Equipo, roles y arquitectura del cuidado",
+      kicker: "Continuidad · Equipo",
+      minutes: 8,
+      level: "Intermedio",
+      summary: "La continuidad se sostiene con un equipo interdisciplinario, un coordinador y un gestor de cuidados que conoce a la persona y articula el plan.",
+      keyConcepts: [
+        "El equipo interdisciplinario tratante integra al menos dos profesionales de distintas disciplinas.",
+        "El coordinador organiza la continuidad y supervisa el funcionamiento.",
+        "El gestor de cuidados acompaña a la persona y elabora el PCCl.",
+        "La asignación de personas usuarias debe permitir un seguimiento real."
+      ],
+      sections: [
+        {
+          title: "Quién hace qué",
+          depth: "core",
+          table: {
+            headers: ["Rol", "Función principal"],
+            rows: [
+              ["Jefe del CSMC", "Asegura implementación, recursos y supervisión de la continuidad."],
+              ["Coordinador de la continuidad", "Organiza, articula, supervisa y evalúa el funcionamiento."],
+              ["Gestor de cuidados", "Evalúa, elabora el PCCl, coordina intervenciones y mantiene contacto con la persona."],
+              ["Equipo interdisciplinario", "Participa en la evaluación, discusión y ejecución del plan."]
+            ]
+          },
+          body: [
+            "El gestor de cuidados es el profesional del equipo que asume la dirección del cuidado de la persona asignada. No trabaja solo: coordina con el equipo y con la persona. La guía menciona un máximo de 15 personas usuarias por gestor para permitir un seguimiento real.",
+            "El coordinador suele ser un profesional de enfermería con especialidad o competencias en salud mental. Su tarea incluye reuniones, supervisión y articulación con redes."
+          ]
+        },
+        {
+          title: "El plan no se improvisa",
+          depth: "core",
+          body: [
+            "La continuidad requiere instrumentos y rutinas: formatos de evaluación, plan de continuidad, ficha de programación, padrón nominal y registro en la historia clínica. También requiere reuniones periódicas de discusión de casos.",
+            "La guía establece que el PCCl se revisa y actualiza cada 15 días por el gestor, según necesidad, coordinando con el equipo tratante. La continuidad se sostiene en la constancia de esos encuentros."
+          ]
+        },
+        {
+          title: "Un equipo que se coordina",
+          depth: "full",
+          body: [
+            "La interdisciplina no es la suma de opiniones aisladas. Implica discutir la situación, acordar objetivos y distribuir responsabilidades. El plan debe ser conocido por la persona y, cuando corresponde, por su cuidador.",
+            "La comunicación con el primer nivel y con otros sectores también es responsabilidad del equipo. La continuidad no termina en la puerta del CSMC."
+          ],
+          callout: {
+            tone: "info",
+            title: "Para recordar",
+            text: "El gestor de cuidados no es un “caso asignado” administrativo: es la persona que sostiene el vínculo y la coherencia del plan."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [8, 9, 10, 11] }]
+    },
+    {
+      id: "sheet-mental-03",
+      topicId: "topic-mental-plan",
+      areaId: "area-mental",
+      title: "Derivación y evaluación integral",
+      kicker: "Continuidad · Ingreso",
+      minutes: 9,
+      level: "Avanzado",
+      summary: "La derivación a continuidad requiere criterios claros. La evaluación inicial valora funcionamiento, familia, adherencia, sobrecarga del cuidador y riesgo.",
+      keyConcepts: [
+        "Se consideran al menos dos de cuatro criterios de derivación.",
+        "La evaluación valora funcionamiento, familia, adherencia, cuidador y riesgo.",
+        "Se usan instrumentos estandarizados según población.",
+        "La decisión de ingreso se basa en la evaluación integral, no en una sola escala."
+      ],
+      sections: [
+        {
+          title: "Cuándo derivar",
+          depth: "core",
+          body: [
+            "La guía indica que puede ingresar a continuidad la persona de cualquier edad con un problema psicosocial de riesgo y/o trastorno mental grave que presente como mínimo dos de cuatro criterios: evolución desfavorable, escasa o nula adherencia al tratamiento integral, apoyo sociofamiliar desfavorable o nulo, o ser víctima de violencia o maltrato infantil con un trastorno mental.",
+            "La derivación puede surgir de la evaluación integral, la consulta individual, la visita domiciliaria u otro contacto. Debe registrarse en la historia clínica e informarse al coordinador."
+          ]
+        },
+        {
+          title: "Qué se evalúa al ingreso",
+          depth: "core",
+          table: {
+            headers: ["Área", "Instrumento o fuente"],
+            rows: [
+              ["Funcionamiento y salud", "HoNOS en adultos; HoNOSCA en niños y adolescentes."],
+              ["Funcionalidad familiar", "Apgar familiar."],
+              ["Adherencia farmacológica", "Test de Morisky y Green."],
+              ["Sobrecarga del cuidador", "Escala de Zarit."],
+              ["Riesgo para la vida e integridad", "Fichas de valoración de riesgo según población."]
+            ]
+          },
+          body: [
+            "La evaluación incluye entrevista, observación y aplicación de instrumentos. Los resultados se interpretan y se trasladan a las áreas de evaluación; no se usan de forma aislada.",
+            "La guía también considera calidad de vida (WHOQOL) y proceso de recuperación (RAS) para establecer una línea basal y reevaluar cada tres meses."
+          ]
+        },
+        {
+          title: "Riesgo y seguridad",
+          depth: "full",
+          body: [
+            "Si se identifica violencia, se aplica la ficha de valoración de riesgo que corresponda. En situaciones de riesgo grave, la protección y la derivación inmediata a los servicios competentes tienen prioridad sobre la continuidad ordinaria.",
+            "La evaluación de riesgo no es un trámite: puede cambiar el plan, el lugar de atención y la intensidad del seguimiento. La seguridad de la persona y de terceros es prioritaria."
+          ],
+          callout: {
+            tone: "warn",
+            title: "No reducir a un puntaje",
+            text: "Las escalas ayudan a ordenar la evaluación. La decisión de ingreso considera la situación clínica, el apoyo familiar, el riesgo y la capacidad del servicio para sostener el cuidado."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [13, 14, 15, 16, 17, 18, 19] }]
+    },
+    {
+      id: "sheet-mental-04",
+      topicId: "topic-mental-plan",
+      areaId: "area-mental",
+      title: "PCCl: un plan hecho con la persona",
+      kicker: "Continuidad · Plan",
+      minutes: 8,
+      level: "Intermedio",
+      summary: "El Plan de Continuidad de Cuidados Individualizado organiza necesidades, potencialidades, objetivos, actividades, responsables y evaluación. Se construye con la persona y su cuidador.",
+      keyConcepts: [
+        "El PCCl se basa en necesidades, problemas y potencialidades.",
+        "Incluye objetivos, actividades, responsables y criterios de evaluación.",
+        "Se revisa y actualiza cada 15 días.",
+        "La persona y su cuidador participan en su elaboración."
+      ],
+      sections: [
+        {
+          title: "La estructura del plan",
+          depth: "core",
+          table: {
+            headers: ["Elemento", "Pregunta que responde"],
+            rows: [
+              ["Necesidades y problemas", "¿Qué requiere atención?"],
+              ["Potencialidades", "¿Con qué recursos cuenta la persona y su entorno?"],
+              ["Objetivos", "¿Qué queremos lograr y cómo sabremos que se logró?"],
+              ["Actividades", "¿Qué se hará, con qué frecuencia y en qué escenario?"],
+              ["Responsables", "¿Quién acompaña cada acción?"],
+              ["Evaluación", "¿Se cumplió, está en proceso o no se cumplió?"]
+            ]
+          },
+          body: [
+            "El plan no es una lista de indicaciones. Es un acuerdo de trabajo que integra el tratamiento, el apoyo psicosocial, la familia, la comunidad y la prevención de crisis. Debe ser comprensible para la persona y relevante para su proyecto de vida."
+          ]
+        },
+        {
+          title: "Discusión de caso y revisión",
+          depth: "core",
+          body: [
+            "La guía establece reuniones de discusión de la situación de la persona, con presentación del caso, formulación del PCCl y monitoreo de objetivos. Se recomienda un mínimo de tres reuniones al mes y una revisión del plan cada 15 días por el gestor.",
+            "Las decisiones se registran en el formato de continuidad y en la historia clínica. La revisión permite ajustar lo que no funciona y no repetir un plan que ya no responde a la persona."
+          ],
+          bullets: [
+            "Presentar la situación actual y los resultados de la evaluación.",
+            "Formular o actualizar objetivos y actividades.",
+            "Asignar responsables y tiempos.",
+            "Evaluar cumplimiento y grado de afectación.",
+            "Registrar acuerdos y cambios."
+          ]
+        },
+        {
+          title: "Crisis y plan de contención",
+          depth: "full",
+          body: [
+            "El formato de continuidad incluye un plan de contención de crisis. Esto implica anticipar señales, acordar a quién contactar, qué hacer y dónde acudir. La persona y su cuidador deben conocerlo.",
+            "La continuidad no evita todas las crisis, pero puede reducir su impacto y evitar respuestas tardías o descoordinadas. Un plan de crisis claro es parte del cuidado, no un anexo."
+          ],
+          callout: {
+            tone: "info",
+            title: "Coproducción",
+            text: "Un PCCl impuesto desde el equipo tiene menos probabilidades de sostenerse que uno construido con la persona, con objetivos realistas y un lenguaje que ella comprenda."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [5, 6, 11, 20, 21] }]
+    },
+    {
+      id: "sheet-mental-05",
+      topicId: "topic-mental-articulacion",
+      areaId: "area-mental",
+      title: "Redes comunitarias y ecomapa",
+      kicker: "Continuidad · Comunidad",
+      minutes: 8,
+      level: "Intermedio",
+      summary: "La continuidad se apoya en redes: amistades y vecinos, grupos y organizaciones, e instituciones. El ecomapa hace visible esa trama y ayuda a movilizarla.",
+      keyConcepts: [
+        "Las redes primarias incluyen amistades y vecinos.",
+        "Las secundarias incluyen grupos recreativos, religiosos, laborales y sociales.",
+        "Las terciarias incluyen instituciones y servicios de protección.",
+        "El ecomapa visualiza relaciones y recursos para el plan."
+      ],
+      sections: [
+        {
+          title: "Tres niveles de red",
+          depth: "core",
+          table: {
+            headers: ["Red", "Ejemplos"],
+            rows: [
+              ["Primaria", "Amistades, vecinos, personas cercanas."],
+              ["Secundaria", "Grupos recreativos, organizaciones religiosas, organizaciones sociales, relaciones laborales o de estudio."],
+              ["Terciaria", "CEM, comisaría, juzgado de familia, DEMUNA, ONG, OMAPED, CONADIS, centros del adulto mayor."]
+            ]
+          },
+          body: [
+            "La guía define las redes comunitarias de salud mental como el conjunto de relaciones e intercambios que se establecen alrededor de la persona y su entorno. Se identifican con la persona y se plasman en un ecomapa.",
+            "La red no es solo un recurso para “derivar”. Puede ofrecer pertenencia, actividades, apoyo práctico y protección. También puede incluir relaciones que generan riesgo, y eso debe identificarse."
+          ]
+        },
+        {
+          title: "Cómo movilizar la red",
+          depth: "core",
+          body: [
+            "La movilización tiene dos etapas: identificar con la persona y su cuidador las redes presentes en sus entornos, y acercar esas redes a la persona o a la persona a ellas mediante acompañamiento.",
+            "El equipo no debe imponer vínculos. La persona decide qué redes quiere activar. El rol del equipo es facilitar, acompañar y evaluar si la vinculación es segura y significativa."
+          ],
+          bullets: [
+            "Identificar relaciones significativas y recursos del territorio.",
+            "Reconocer redes que generan riesgo o conflicto.",
+            "Facilitar el acercamiento con consentimiento.",
+            "Acompañar el proceso y revisar resultados.",
+            "Registrar el ecomapa y actualizarlo."
+          ]
+        },
+        {
+          title: "Familia y cuidador",
+          depth: "full",
+          body: [
+            "La familia puede ser una red de apoyo central, pero también puede estar sobrecargada. La guía incluye la evaluación de sobrecarga del cuidador con la escala de Zarit y el soporte continuo: acompañamiento psicosocial, contención emocional y acciones que favorezcan la redistribución del cuidado.",
+            "Cuidar al cuidador no es un extra. Si la persona que sostiene el cuidado se agota, la continuidad se vuelve frágil."
+          ],
+          callout: {
+            tone: "info",
+            title: "Ecomapa",
+            text: "Un ecomapa no es un organigrama. Es un mapa de relaciones: quién está cerca, qué apoyo ofrece, qué vínculo es tenso y qué recursos faltan."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [7, 22, 67] }]
+    },
+    {
+      id: "sheet-mental-06",
+      topicId: "topic-mental-articulacion",
+      areaId: "area-mental",
+      title: "Alta, reingreso y continuidad después",
+      kicker: "Continuidad · Trayectoria",
+      minutes: 7,
+      level: "Avanzado",
+      summary: "El alta no es abandono. La guía distingue tipos de alta, programa seguimiento posterior y prevé el reingreso cuando reaparecen criterios de derivación.",
+      keyConcepts: [
+        "El alta se decide con el equipo, la persona y su cuidador.",
+        "Existen altas por recuperación, voluntaria, por abandono y por traslado.",
+        "El seguimiento posterior al alta incluye contacto a los 2 y 4 meses.",
+        "El reingreso se evalúa como un nuevo ingreso cuando hay recaída."
+      ],
+      sections: [
+        {
+          title: "Tipos de alta",
+          depth: "core",
+          table: {
+            headers: ["Tipo", "Criterio"],
+            rows: [
+              ["Por recuperación", "Disminución del grado de afectación y objetivos del PCCl cumplidos."],
+              ["Voluntaria", "La persona o su cuidador decide no continuar."],
+              ["Por abandono", "No se logra contactar a la persona o cuidador durante un periodo definido."],
+              ["Por traslado", "La persona cambia de domicilio fuera de la jurisdicción."]
+            ]
+          },
+          body: [
+            "El alta se decide en una reunión con el equipo, la persona y su cuidador. Debe registrarse en la historia clínica y en el padrón nominal. La guía también indica investigar el motivo de un alta voluntaria, porque puede revelar barreras o insatisfacción."
+          ]
+        },
+        {
+          title: "Seguimiento post-alta",
+          depth: "core",
+          body: [
+            "El gestor de cuidados realiza telemonitoreo, visitas domiciliarias u otras intervenciones según la valoración del equipo, a los 2 y 4 meses después del alta. El objetivo es detectar recaídas y sostener la transición a otros apoyos.",
+            "La continuidad no termina con el alta: se transforma. La persona puede necesitar menos intensidad, pero no necesariamente menos conexión."
+          ]
+        },
+        {
+          title: "Reingreso y crisis",
+          depth: "full",
+          body: [
+            "Si la persona presenta una recaída y vuelve a cumplir los criterios de derivación, se determina el reingreso. Se evalúa como un nuevo ingreso y se registra en la plantilla de reingresos del padrón nominal.",
+            "El reingreso no debe vivirse como un fracaso. Es una oportunidad para revisar qué falló, ajustar el plan y reforzar los apoyos. La continuidad de cuidados debe aprender de la trayectoria de la persona."
+          ],
+          callout: {
+            tone: "warn",
+            title: "Alta no es cierre",
+            text: "Un alta sin seguimiento ni articulación con el primer nivel puede dejar a la persona sin red justo cuando más necesita sostén."
+          }
+        }
+      ],
+      sourceRefs: [{ sourceId: "src-mental", pages: [19, 23, 24] }]
+    },
+  ],
+  cards: [
+    {
+      id: "card-aps-01-1",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-01",
+      type: "concept",
+      prompt: "Explica por qué la APS no debe entenderse como una atención de segunda categoría.",
+      answer: "Porque es la puerta de entrada y el eje organizador del sistema: resuelve necesidades frecuentes, construye una relación longitudinal y coordina el cuidado con otros niveles. Una APS fuerte se asocia con mejores resultados y mayor eficiencia, no con menor calidad.",
+      explanation: "La APS no compite con la especializada; cumple una función distinta y complementaria. Su valor está en el acceso, la continuidad, la integralidad y la coordinación.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
+      tags: ["APS", "fundamentos"]
+    },
+    {
+      id: "card-aps-01-2",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-01",
+      type: "multiple",
+      prompt: "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?",
+      options: ["Accesibilidad", "Longitudinalidad", "Integralidad", "Coordinación"],
+      correctIndex: 1,
+      explanation: "La longitudinalidad es la relación personal y continua en el tiempo. La accesibilidad es la facilidad de uso; la integralidad, la amplitud de la cartera; la coordinación, la articulación entre servicios.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
+      tags: ["APS", "atributos"]
+    },
+    {
+      id: "card-aps-01-3",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-01",
+      type: "application",
+      prompt: "Una persona acude por primera vez a un establecimiento con dolor abdominal. El equipo la evalúa, resuelve el problema y la vincula a controles. ¿Qué atributo se activa primero y cuál se construye después?",
+      options: [
+        "Primero la coordinación; después la accesibilidad.",
+        "Primero el primer contacto; después la longitudinalidad.",
+        "Primero la integralidad; después el primer contacto.",
+        "Primero la longitudinalidad; después la coordinación."
+      ],
+      correctIndex: 1,
+      explanation: "El primer contacto es el punto de entrada al sistema. La longitudinalidad se construye cuando esa relación se mantiene y se acompaña en el tiempo.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }],
+      tags: ["APS", "aplicación"]
+    },
+    {
+      id: "card-aps-02-1",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-02",
+      type: "concept",
+      prompt: "Enumera al menos tres tipos de barreras que pueden limitar la accesibilidad a la APS.",
+      answer: "Barreras geográficas (distancia, transporte), económicas (costos directos e indirectos), organizativas (horarios, citas, trámites) y culturales (idioma, trato, desconfianza, falta de pertinencia).",
+      explanation: "La accesibilidad no se reduce a la existencia del establecimiento. Importa si la persona puede usarlo de forma oportuna y sin costos desproporcionados.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3] }],
+      tags: ["APS", "accesibilidad"]
+    },
+    {
+      id: "card-aps-02-2",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-02",
+      type: "multiple",
+      prompt: "¿Cuál de las siguientes situaciones describe mejor una falla de longitudinalidad?",
+      options: [
+        "La persona no puede llegar al establecimiento por falta de transporte.",
+        "La persona cambia de profesional en cada consulta y nadie conoce su historia.",
+        "El establecimiento no cuenta con especialista en cardiología.",
+        "La persona recibe una receta sin explicación."
+      ],
+      correctIndex: 1,
+      explanation: "La longitudinalidad se rompe cuando no hay una relación estable y continuada. La falta de transporte es una barrera de acceso; la ausencia de especialista se relaciona con la coordinación y la complejidad.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
+      tags: ["APS", "longitudinalidad"]
+    },
+    {
+      id: "card-aps-02-3",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-02",
+      type: "application",
+      prompt: "Una gestante falta a sus controles porque vive a tres horas del establecimiento y no tiene transporte. ¿Cuál es la respuesta más pertinente desde la APS?",
+      options: [
+        "Registrar la inasistencia y esperar a que vuelva.",
+        "Derivarla inmediatamente al hospital sin evaluar barreras.",
+        "Identificar la barrera de acceso y activar alternativas: visita domiciliaria, casa de espera, teleorientación o apoyo de la red.",
+        "Suspender los controles hasta que pueda trasladarse por sus propios medios."
+      ],
+      correctIndex: 2,
+      explanation: "La accesibilidad exige identificar y reducir barreras. La respuesta debe mantener la continuidad del cuidado y no culpar a la persona por no asistir.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }],
+      tags: ["APS", "accesibilidad", "aplicación"]
+    },
+    {
+      id: "card-aps-03-1",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-03",
+      type: "concept",
+      prompt: "¿Qué significa integralidad en APS y qué no significa?",
+      answer: "Significa ofrecer una cartera que responda a las necesidades de salud más frecuentes de la población, articulando promoción, prevención, recuperación y rehabilitación. No significa que el primer nivel deba resolver todo sin apoyo de otros niveles.",
+      explanation: "La integralidad es una responsabilidad de organización del cuidado, no una exigencia de omnipotencia del primer nivel.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
+      tags: ["APS", "integralidad"]
+    },
+    {
+      id: "card-aps-03-2",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-03",
+      type: "multiple",
+      prompt: "¿Cuál de las siguientes acciones fortalece mejor la coordinación entre niveles?",
+      options: [
+        "Enviar al especialista una hoja con el diagnóstico y esperar la respuesta.",
+        "Compartir información clínica relevante, acordar el motivo de referencia y asegurar la contrarreferencia.",
+        "Indicar al paciente que busque por su cuenta al especialista.",
+        "Repetir todos los exámenes en cada nivel para confirmar resultados."
+      ],
+      correctIndex: 1,
+      explanation: "La coordinación requiere comunicación bidireccional, información suficiente y seguimiento. La derivación sin retorno de información fragmenta el cuidado.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [4, 5] }],
+      tags: ["APS", "coordinación"]
+    },
+    {
+      id: "card-aps-03-3",
+      topicId: "topic-aps-atributos",
+      sheetId: "sheet-aps-03",
+      type: "application",
+      prompt: "Un paciente con diabetes es derivado al especialista. La interconsulta responde “continuar manejo en primer nivel”, pero no incluye resultados ni ajustes. ¿Qué falla del cuidado es más evidente?",
+      options: [
+        "Falla de accesibilidad.",
+        "Falla de coordinación y continuidad.",
+        "Falla de longitudinalidad exclusivamente.",
+        "Falla de primer contacto."
+      ],
+      correctIndex: 1,
+      explanation: "La respuesta no aporta información suficiente para continuar el cuidado, y el circuito entre niveles queda incompleto. Es una falla de coordinación que afecta la continuidad.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [4, 5] }],
+      tags: ["APS", "coordinación", "aplicación"]
+    },
+    {
+      id: "card-aps-04-1",
+      topicId: "topic-aps-sistemas",
+      sheetId: "sheet-aps-04",
+      type: "concept",
+      prompt: "Diferencia el foco de la APS del foco de la atención especializada.",
+      answer: "La APS se centra en la persona, la familia y la comunidad, con una relación longitudinal y una mirada integral. La especializada se centra en problemas, órganos o enfermedades específicas, con mayor complejidad tecnológica y habitualmente una relación episódica.",
+      explanation: "No son niveles jerárquicos de dignidad, sino funciones distintas dentro de un sistema de salud.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
+      tags: ["APS", "sistemas"]
+    },
+    {
+      id: "card-aps-04-2",
+      topicId: "topic-aps-sistemas",
+      sheetId: "sheet-aps-04",
+      type: "multiple",
+      prompt: "¿Qué consecuencia es más coherente con un sistema que carece de una APS fuerte?",
+      options: [
+        "Mayor continuidad y menor uso de especialistas.",
+        "Mayor fragmentación, uso menos eficiente de recursos y peor acceso para poblaciones vulnerables.",
+        "Mejor coordinación entre niveles por ausencia de intermediarios.",
+        "Reducción automática de la demanda de atención especializada."
+      ],
+      correctIndex: 1,
+      explanation: "Sin APS fuerte, el sistema tiende a la fragmentación y a la atención reactiva. La APS organiza el primer contacto y coordina el cuidado.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
+      tags: ["APS", "sistemas"]
+    },
+    {
+      id: "card-aps-04-3",
+      topicId: "topic-aps-sistemas",
+      sheetId: "sheet-aps-04",
+      type: "application",
+      prompt: "Una persona con una enfermedad crónica compleja es atendida por varios especialistas. ¿Cuál es el mejor papel de la APS?",
+      options: [
+        "Retirarse para no interferir con los especialistas.",
+        "Coordinar el plan, mantener el vínculo, revisar la adherencia y asegurar que las recomendaciones sean coherentes.",
+        "Repetir todas las pruebas para verificar lo que dicen los especialistas.",
+        "Derivar de nuevo cada vez que aparezca un síntoma."
+      ],
+      correctIndex: 1,
+      explanation: "La APS aporta continuidad y coordinación. Su función es integrar el cuidado, no sustituir la experticia especializada ni desaparecer del circuito.",
+      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4, 5] }],
+      tags: ["APS", "coordinación", "aplicación"]
+    },
+    {
+      id: "card-mci-01-1",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-01",
+      type: "concept",
+      prompt: "¿Por qué el MCI afirma que la salud se construye también fuera del establecimiento de salud?",
+      answer: "Porque los resultados en salud dependen de la interacción de factores protectores y de riesgo a lo largo de la vida, incluidos los determinantes sociales. El acceso a servicios es solo uno de esos factores; también importan las condiciones de vida, el entorno, la familia y la comunidad.",
+      explanation: "El MCI adopta un enfoque de determinantes y de curso de vida. Por eso el cuidado incluye promoción y prevención, no solo tratamiento.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 43] }],
+      tags: ["MCI", "determinantes"]
+    },
+    {
+      id: "card-mci-01-2",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-01",
+      type: "multiple",
+      prompt: "¿Cuál es la descripción más completa del MCI?",
+      options: [
+        "Un programa de atención materno-infantil del primer nivel.",
+        "Un conjunto de estrategias, normas, procedimientos, herramientas y recursos que responden a las necesidades de salud de personas, familias y comunidades a lo largo del curso de vida.",
+        "Un modelo hospitalario centrado en enfermedades crónicas.",
+        "Una campaña de vacunación y control de crecimiento."
+      ],
+      correctIndex: 1,
+      explanation: "El MCI es un modelo organizador del cuidado, no una campaña o un programa limitado a una etapa o enfermedad.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [41] }],
+      tags: ["MCI", "definición"]
+    },
+    {
+      id: "card-mci-01-3",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-01",
+      type: "application",
+      prompt: "Una persona con hipertensión no logra controlar su presión. Vive en una zona sin transporte, trabaja sin horario fijo y no puede pagar los medicamentos. ¿Qué mirada es más coherente con el MCI?",
+      options: [
+        "Insistir en la adherencia y responsabilizar solo a la persona.",
+        "Aumentar la dosis sin explorar barreras.",
+        "Evaluar y abordar barreras de acceso y determinantes, coordinar apoyos y ajustar el plan con la persona.",
+        "Derivarla al hospital y cerrar el seguimiento en el primer nivel."
+      ],
+      correctIndex: 2,
+      explanation: "El MCI no separa el problema clínico del contexto. Abordar barreras económicas, geográficas y organizativas es parte del cuidado.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 41, 43] }],
+      tags: ["MCI", "determinantes", "aplicación"]
+    },
+    {
+      id: "card-mci-02-1",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-02",
+      type: "concept",
+      prompt: "Nombra los cuatro componentes del MCI y explica en una frase qué organiza cada uno.",
+      answer: "Provisión: qué cuidados se brindan y en qué escenarios. Organización: cómo se estructuran servicios y redes para garantizar acceso y continuidad. Gestión: cómo se planifica, coordina y evalúa el cuidado en el territorio. Financiamiento: cómo se asignan los recursos para sostener el cuidado.",
+      explanation: "Los cuatro componentes son interdependientes: una buena provisión sin organización o financiamiento no sostiene la continuidad.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [43, 44] }],
+      tags: ["MCI", "componentes"]
+    },
+    {
+      id: "card-mci-02-2",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-02",
+      type: "multiple",
+      prompt: "¿Qué principio del MCI implica que la persona, la familia y la comunidad participan como socios activos en el cuidado?",
+      options: ["Universalidad", "Corresponsabilidad", "Eficiencia", "Solidaridad"],
+      correctIndex: 1,
+      explanation: "La corresponsabilidad reconoce el deber y la capacidad de participar en la toma de decisiones y en el cuidado de la salud.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [38] }],
+      tags: ["MCI", "principios"]
+    },
+    {
+      id: "card-mci-02-3",
+      topicId: "topic-mci-fundamentos",
+      sheetId: "sheet-mci-02",
+      type: "application",
+      prompt: "Un equipo tiene un buen plan de cuidados, pero no cuenta con presupuesto para transporte, insumos ni personal suficiente. ¿Qué componente del MCI está más comprometido?",
+      options: ["Provisión", "Organización", "Gestión", "Financiamiento"],
+      correctIndex: 3,
+      explanation: "El financiamiento organiza la asignación de recursos para sostener el cuidado. Sin recursos, la provisión y la continuidad se deterioran.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [44, 40] }],
+      tags: ["MCI", "financiamiento", "aplicación"]
+    },
+    {
+      id: "card-mci-03-1",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-03",
+      type: "concept",
+      prompt: "¿Por qué el periodo prenatal es considerado una etapa crítica en el curso de vida?",
+      answer: "Porque las exposiciones y cuidados durante el embarazo influyen en el desarrollo del feto y en la trayectoria posterior de la persona. El cuidado comienza antes de la concepción y continúa durante el embarazo, el parto, el puerperio y la crianza.",
+      explanation: "El MCI busca controlar exposiciones y promover un desarrollo psicomotor, emocional y social adecuado desde el inicio de la vida.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [49, 50] }],
+      tags: ["MCI", "curso de vida", "prenatal"]
+    },
+    {
+      id: "card-mci-03-2",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-03",
+      type: "multiple",
+      prompt: "¿Cuál es el objetivo del cuidado integral en la niñez según el MCI?",
+      options: [
+        "Solo prevenir enfermedades infecciosas.",
+        "Garantizar el desarrollo físico, cognitivo, emocional y social.",
+        "Preparar al niño para el mercado laboral.",
+        "Sustituir el rol de la familia por el del establecimiento."
+      ],
+      correctIndex: 1,
+      explanation: "El cuidado integral de la niñez busca el desarrollo físico, cognitivo, emocional y social, con la familia y la comunidad como actores centrales.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [51] }],
+      tags: ["MCI", "niñez"]
+    },
+    {
+      id: "card-mci-03-3",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-03",
+      type: "application",
+      prompt: "Una gestante vive en una comunidad rural alejada y se acerca la fecha probable de parto. ¿Qué respuesta del MCI facilita la continuidad y la seguridad?",
+      options: [
+        "Indicarle que espere en casa hasta que inicie el trabajo de parto.",
+        "Derivarla solo cuando presente una complicación.",
+        "Coordinar una casa de espera materna o un alojamiento cercano al establecimiento con capacidad resolutiva.",
+        "Suspender los controles hasta el parto."
+      ],
+      correctIndex: 2,
+      explanation: "Las casas de espera materna acercan a la gestante a un establecimiento con capacidad resolutiva cuando vive lejos, facilitando el parto institucional oportuno.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [50] }],
+      tags: ["MCI", "prenatal", "aplicación"]
+    },
+    {
+      id: "card-mci-04-1",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-04",
+      type: "concept",
+      prompt: "¿Qué caracteriza a la adolescencia como etapa del curso de vida y qué implica para el cuidado?",
+      answer: "Es una etapa de cambios físicos, emocionales y sociales, con mayor exposición a conductas de riesgo y gran potencial de desarrollo. El cuidado debe fortalecer factores protectores, promover salud mental, prevenir consumo de sustancias y acompañar la autonomía, con escuela, familia y comunidad.",
+      explanation: "La mirada de curso de vida no se limita a lo reproductivo; integra desarrollo socioemocional, prevención y participación.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [49, 52] }],
+      tags: ["MCI", "adolescencia"]
+    },
+    {
+      id: "card-mci-04-2",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-04",
+      type: "multiple",
+      prompt: "¿Cuál es un objetivo central del cuidado en la persona adulta mayor según el MCI?",
+      options: [
+        "Prolongar la vida a cualquier costo, aunque se pierda autonomía.",
+        "Preservar funcionalidad, autonomía y calidad de vida, incluyendo rehabilitación y cuidados paliativos cuando corresponda.",
+        "Suspender la prevención porque ya no es útil.",
+        "Delegar todo el cuidado a la familia sin apoyo del equipo."
+      ],
+      correctIndex: 1,
+      explanation: "El cuidado de la vejez se orienta a la funcionalidad y la calidad de vida, no solo a la supervivencia. También incluye apoyo al cuidador.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [53, 54] }],
+      tags: ["MCI", "vejez"]
+    },
+    {
+      id: "card-mci-04-3",
+      topicId: "topic-mci-curso-vida",
+      sheetId: "sheet-mci-04",
+      type: "application",
+      prompt: "Un adulto con diabetes falta a sus controles porque trabaja en horario rotativo. ¿Qué ajuste es más coherente con el curso de vida y la continuidad?",
+      options: [
+        "Retirarlo del programa por inasistencia.",
+        "Repetir la misma indicación sin cambiar la organización de la atención.",
+        "Ofrecer alternativas de seguimiento y ajustar el plan a su horario, manteniendo el control clínico.",
+        "Derivarlo al hospital y no volver a contactarlo."
+      ],
+      correctIndex: 2,
+      explanation: "La continuidad exige adaptar la organización del servicio a las condiciones de vida de la persona, sin abandonar el control clínico.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [52, 53] }],
+      tags: ["MCI", "adultez", "aplicación"]
+    },
+    {
+      id: "card-mci-05-1",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-05",
+      type: "concept",
+      prompt: "¿Por qué el MCI considera a la familia sujeto y escenario de cuidado?",
+      answer: "Porque la familia es a la vez destinataria de intervenciones y el espacio donde ocurre gran parte del cuidado cotidiano. Puede proteger y sostener, pero también puede estar sobrecargada o ser fuente de riesgo; por eso se evalúa su dinámica, sus recursos y sus necesidades.",
+      explanation: "El cuidado es bidireccional: la persona cuida de sí misma, la familia cuida a sus integrantes y la comunidad cuida a las familias.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [51, 54, 55] }],
+      tags: ["MCI", "familia"]
+    },
+    {
+      id: "card-mci-05-2",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-05",
+      type: "multiple",
+      prompt: "¿Cuál de las siguientes etapas del ciclo vital familiar se relaciona con la salida de los hijos del hogar?",
+      options: ["Formación", "Expansión", "Dispersión", "Contracción"],
+      correctIndex: 2,
+      explanation: "La dispersión ocurre cuando los hijos se independizan y la familia reorganiza sus roles. La contracción se asocia a etapas posteriores, envejecimiento y pérdidas.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [55, 56] }],
+      tags: ["MCI", "familia", "ciclo vital"]
+    },
+    {
+      id: "card-mci-05-3",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-05",
+      type: "application",
+      prompt: "Una cuidadora principal de una persona adulta mayor refiere cansancio, insomnio y aislamiento. ¿Qué lectura es más pertinente?",
+      options: [
+        "Es un problema exclusivo de la persona mayor.",
+        "La cuidadora no tiene voluntad para continuar.",
+        "La sobrecarga del cuidador es un riesgo para la continuidad del cuidado y requiere apoyo.",
+        "Se debe reemplazar a la cuidadora sin evaluar la situación."
+      ],
+      correctIndex: 2,
+      explanation: "La sobrecarga del cuidador afecta su salud y la sostenibilidad del cuidado. Identificarla y ofrecer apoyo es parte del cuidado familiar.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [55, 56, 57] }],
+      tags: ["MCI", "cuidador", "aplicación"]
+    },
+    {
+      id: "card-mci-06-1",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-06",
+      type: "concept",
+      prompt: "¿Qué aporta la Atención Primaria Orientada a la Comunidad (APOC) a la práctica del primer nivel?",
+      answer: "Combina la atención individual con una mirada poblacional y comunitaria. Permite identificar necesidades del territorio, planificar acciones para grupos y movilizar recursos, en lugar de limitarse a la demanda espontánea.",
+      explanation: "La APOC ayuda a pasar del consultorio a la comunidad sin abandonar la atención individual.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59] }],
+      tags: ["MCI", "APOC"]
+    },
+    {
+      id: "card-mci-06-2",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-06",
+      type: "multiple",
+      prompt: "¿Qué caracteriza a una Red Integrada de Salud (RIS)?",
+      options: [
+        "Atiende solo a quienes llegan por emergencia.",
+        "Organiza servicios para una población y territorio definidos, con una cartera que responde a sus necesidades y articulación entre niveles.",
+        "Se limita a un hospital de tercer nivel.",
+        "Funciona sin coordinación entre establecimientos."
+      ],
+      correctIndex: 1,
+      explanation: "La RIS articula servicios para una población definida y rinde cuentas por resultados sanitarios y administrativos.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [60, 61] }],
+      tags: ["MCI", "RIS"]
+    },
+    {
+      id: "card-mci-06-3",
+      topicId: "topic-mci-familia-comunidad",
+      sheetId: "sheet-mci-06",
+      type: "application",
+      prompt: "En una comunidad aumentan los casos de violencia familiar. ¿Cuál es la respuesta más completa desde el MCI y la APOC?",
+      options: [
+        "Atender solo las lesiones físicas y no preguntar por el contexto.",
+        "Responsabilizar a las familias y no intervenir.",
+        "Articular detección, atención, protección y trabajo con redes locales e intersectoriales, sin limitarse a la consulta individual.",
+        "Derivar todos los casos al hospital sin coordinación local."
+      ],
+      correctIndex: 2,
+      explanation: "La violencia requiere una respuesta articulada con protección, comunidad y otros sectores. El MCI y la APOC permiten leer el problema en el territorio y movilizar redes.",
+      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59, 61] }],
+      tags: ["MCI", "comunidad", "aplicación"]
+    },
+    {
+      id: "card-audit-01-1",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-01",
+      type: "concept",
+      prompt: "Diferencia consumo de riesgo, consumo perjudicial y dependencia de alcohol.",
+      answer: "Consumo de riesgo: mayor probabilidad de consecuencias adversas, sin daño evidente todavía. Perjudicial: ya existen consecuencias físicas o mentales. Dependencia: patrón con deseo intenso, pérdida de control, prioridad del consumo, tolerancia y/o abstinencia.",
+      explanation: "Son categorías relacionadas, pero no equivalentes. El tamizaje ayuda a identificar probabilidad; el diagnóstico requiere evaluación clínica.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6, 7, 8] }],
+      tags: ["AUDIT", "conceptos"]
+    },
+    {
+      id: "card-audit-01-2",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-01",
+      type: "multiple",
+      prompt: "¿Qué caracteriza al consumo de riesgo?",
+      options: [
+        "Siempre implica dependencia establecida.",
+        "Aumenta la probabilidad de consecuencias adversas, aunque no necesariamente haya daño evidente.",
+        "Solo existe cuando hay cirrosis.",
+        "No requiere ninguna intervención."
+      ],
+      correctIndex: 1,
+      explanation: "El consumo de riesgo se define por la probabilidad de consecuencias, no por la presencia de un daño ya establecido.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6] }],
+      tags: ["AUDIT", "consumo de riesgo"]
+    },
+    {
+      id: "card-audit-01-3",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-01",
+      type: "application",
+      prompt: "Un servicio aplica el AUDIT solo a las personas que “parecen tener problemas con la bebida”. ¿Qué error es más probable?",
+      options: [
+        "Detectar demasiados casos de bajo riesgo.",
+        "Perder a muchas personas con consumo de riesgo que no parecen tener un problema evidente.",
+        "Aumentar la confidencialidad.",
+        "Reducir el tiempo de consulta."
+      ],
+      correctIndex: 1,
+      explanation: "El manual advierte que tamizar solo a quienes parecen tener un problema pierde a la mayoría de personas con consumo excesivo. El tamizaje debe integrarse de forma más amplia.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [15] }],
+      tags: ["AUDIT", "tamizaje", "aplicación"]
+    },
+    {
+      id: "card-audit-02-1",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-02",
+      type: "concept",
+      prompt: "¿Qué exploran los tres dominios del AUDIT?",
+      answer: "Consumo (preguntas 1-3): frecuencia, cantidad y episodios intensos. Dependencia (4-6): control, interferencia y necesidad de beber. Consecuencias (7-10): culpa, lagunas, lesiones y preocupación de otras personas.",
+      explanation: "El AUDIT no solo mide cantidad. También explora señales de dependencia y daños asociados.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [18, 20] }],
+      tags: ["AUDIT", "dominios"]
+    },
+    {
+      id: "card-audit-02-2",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-02",
+      type: "multiple",
+      prompt: "¿Qué es una consumición estándar en el marco del AUDIT?",
+      options: [
+        "Cualquier vaso servido en una reunión social.",
+        "Una medida aproximada de alcohol puro, que el manual sitúa alrededor de 10 gramos y que debe adaptarse a las bebidas locales.",
+        "Una botella completa de cualquier bebida.",
+        "Solo la cantidad de alcohol que produce intoxicación."
+      ],
+      correctIndex: 1,
+      explanation: "La consumición estándar permite comparar cantidades. Su equivalencia debe explicarse con ejemplos locales para evitar errores.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [16, 17] }],
+      tags: ["AUDIT", "consumición estándar"]
+    },
+    {
+      id: "card-audit-02-3",
+      topicId: "topic-audit-conceptos",
+      sheetId: "sheet-audit-02",
+      type: "application",
+      prompt: "Una persona responde de forma ambigua a las preguntas sobre frecuencia y cantidad. ¿Cuál es la mejor conducta?",
+      options: [
+        "Elegir una respuesta al azar para completar el cuestionario.",
+        "Registrar solo el total sin explorar.",
+        "Repetir la pregunta con las opciones de respuesta y pedir que elija la que mejor describa su consumo.",
+        "Suspender el tamizaje y no volver a preguntar."
+      ],
+      correctIndex: 2,
+      explanation: "La entrevista permite aclarar respuestas ambiguas. Repetir la pregunta y las opciones mejora la calidad del dato.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [18, 19] }],
+      tags: ["AUDIT", "administración", "aplicación"]
+    },
+    {
+      id: "card-audit-03-1",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-03",
+      type: "concept",
+      prompt: "¿Cuál es el punto de corte general del AUDIT y qué ajuste se recomienda para mujeres y varones mayores de 65?",
+      answer: "El punto de corte general es 8. Para todas las mujeres y para varones mayores de 65 se recomienda reducirlo a 7, para aumentar la sensibilidad. La elección final debe considerar estándares locales y juicio clínico.",
+      explanation: "El corte no es universal: depende de la población y del objetivo del tamizaje. Un corte más bajo detecta más casos, con mayor probabilidad de falsos positivos.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [20] }],
+      tags: ["AUDIT", "puntuación"]
+    },
+    {
+      id: "card-audit-03-2",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-03",
+      type: "multiple",
+      prompt: "Una puntuación mayor que cero en las preguntas 4-6 del AUDIT sugiere principalmente:",
+      options: [
+        "Consumo de bajo riesgo.",
+        "Posible presencia o inicio de dependencia de alcohol.",
+        "Consecuencias exclusivamente sociales.",
+        "Que la persona nunca ha bebido."
+      ],
+      correctIndex: 1,
+      explanation: "Las preguntas 4-6 exploran control, interferencia y necesidad de beber. Puntuaciones positivas, especialmente frecuentes, orientan a dependencia.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [20, 21] }],
+      tags: ["AUDIT", "dependencia"]
+    },
+    {
+      id: "card-audit-03-3",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-03",
+      type: "application",
+      prompt: "Una persona obtiene 12 puntos en el AUDIT, pero responde afirmativamente a varios ítems de dependencia. ¿Qué conducta es más adecuada?",
+      options: [
+        "Aplicar solo educación porque el total es menor de 16.",
+        "Ignorar los ítems individuales y seguir la zona sin ajustes.",
+        "Revisar los ítems de dependencia y considerar una intervención más intensa o evaluación adicional.",
+        "Concluir que no hay riesgo porque el total es bajo."
+      ],
+      correctIndex: 2,
+      explanation: "El manual señala que los ítems de dependencia pueden justificar el nivel máximo de intervención aunque el total no sea muy alto. La lectura es clínica.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [20, 23] }],
+      tags: ["AUDIT", "interpretación", "aplicación"]
+    },
+    {
+      id: "card-audit-04-1",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-04",
+      type: "concept",
+      prompt: "Describe las cuatro zonas de riesgo del AUDIT y la respuesta orientativa de cada una.",
+      answer: "Zona I (0-7): educación y bajo riesgo. Zona II (8-15): consejo simple y materiales. Zona III (16-19): terapia breve y monitorización continuada. Zona IV (20-40): derivación a especialista para evaluación diagnóstica y tratamiento.",
+      explanation: "Las zonas orientan la intensidad de la respuesta, pero no sustituyen la evaluación clínica ni los ítems individuales.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
+      tags: ["AUDIT", "zonas"]
+    },
+    {
+      id: "card-audit-04-2",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-04",
+      type: "multiple",
+      prompt: "Una puntuación de 10 en el AUDIT se ubica en la zona II. ¿Qué respuesta es más coherente?",
+      options: [
+        "Derivación inmediata a especialista.",
+        "Consejo simple, feedback y materiales educativos.",
+        "Ninguna intervención, porque no es dependencia.",
+        "Ingreso hospitalario."
+      ],
+      correctIndex: 1,
+      explanation: "La zona II (8-15) se asocia con consejo simple y educación. La derivación especializada se reserva para puntuaciones más altas o señales de dependencia.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
+      tags: ["AUDIT", "zonas"]
+    },
+    {
+      id: "card-audit-04-3",
+      topicId: "topic-audit-aplicacion",
+      sheetId: "sheet-audit-04",
+      type: "application",
+      prompt: "Una persona obtiene 18 puntos, sin signos claros de dependencia. ¿Qué nivel de respuesta corresponde según las zonas?",
+      options: [
+        "Zona I: educación.",
+        "Zona II: consejo simple.",
+        "Zona III: consejo, terapia breve y monitorización continuada.",
+        "Zona IV: derivación inmediata."
+      ],
+      correctIndex: 2,
+      explanation: "18 puntos se ubican en la zona III (16-19), que sugiere terapia breve y seguimiento. Si no responde o se sospecha dependencia, se amplía la evaluación.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
+      tags: ["AUDIT", "zonas", "aplicación"]
+    },
+    {
+      id: "card-audit-05-1",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-05",
+      type: "concept",
+      prompt: "¿Cuáles son los componentes principales de una intervención breve para consumo de riesgo?",
+      answer: "Feedback sobre el tamizaje, identificación de riesgos y consecuencias, consejo médico, solicitud de compromiso, definición de un objetivo (reducción o abstinencia) y seguimiento. Puede incluir educación, habilidades y sugerencias prácticas.",
+      explanation: "La intervención breve es de baja intensidad y busca intervenir temprano, antes de que el problema se consolide.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [23] }],
+      tags: ["AUDIT", "intervención breve"]
+    },
+    {
+      id: "card-audit-05-2",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-05",
+      type: "multiple",
+      prompt: "¿En qué grupo ha mostrado mayor utilidad la intervención breve?",
+      options: [
+        "Personas con dependencia grave que requieren desintoxicación.",
+        "Personas con consumo de riesgo o perjudicial que no son dependientes.",
+        "Personas que nunca han consumido alcohol.",
+        "Personas con intoxicación aguda en emergencia."
+      ],
+      correctIndex: 1,
+      explanation: "La evidencia favorece la intervención breve en consumo de riesgo y perjudicial. La dependencia requiere evaluación y tratamiento más intensivo.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [23, 24] }],
+      tags: ["AUDIT", "intervención breve"]
+    },
+    {
+      id: "card-audit-05-3",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-05",
+      type: "application",
+      prompt: "Una persona con 24 puntos en el AUDIT y signos de dependencia recibe solo un folleto educativo. ¿Cuál es el problema principal?",
+      options: [
+        "La intervención es demasiado intensiva.",
+        "Se está subestimando la necesidad de evaluación y tratamiento especializado.",
+        "El folleto es suficiente porque la persona no está intoxicada.",
+        "No hay problema, porque el AUDIT no es diagnóstico."
+      ],
+      correctIndex: 1,
+      explanation: "Una puntuación alta con signos de dependencia requiere derivación y evaluación. La intervención breve no sustituye el tratamiento de la dependencia.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23, 24] }],
+      tags: ["AUDIT", "derivación", "aplicación"]
+    },
+    {
+      id: "card-audit-06-1",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-06",
+      type: "concept",
+      prompt: "¿Por qué el AUDIT no puede usarse como único método para diagnosticar dependencia?",
+      answer: "Porque es un instrumento de tamizaje: identifica probabilidad de consumo de riesgo, perjudicial o dependencia, pero no proporciona la base suficiente para un diagnóstico ni para un plan de tratamiento. El diagnóstico requiere evaluación clínica cualificada y criterios diagnósticos.",
+      explanation: "El manual insiste en que una puntuación positiva abre una ruta de evaluación, no cierra un diagnóstico.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25] }],
+      tags: ["AUDIT", "límites"]
+    },
+    {
+      id: "card-audit-06-2",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-06",
+      type: "multiple",
+      prompt: "¿Por qué la suspensión brusca del alcohol puede ser riesgosa en una persona con dependencia?",
+      options: [
+        "Porque el alcohol no produce abstinencia.",
+        "Porque puede desencadenar un síndrome de abstinencia que requiere manejo médico.",
+        "Porque el AUDIT deja de ser válido.",
+        "Porque siempre produce mejoría inmediata."
+      ],
+      correctIndex: 1,
+      explanation: "La dependencia puede cursar con abstinencia significativa. La desintoxicación debe evaluarse y manejarse con apoyo médico cuando corresponde.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25] }],
+      tags: ["AUDIT", "seguridad"]
+    },
+    {
+      id: "card-audit-06-3",
+      topicId: "topic-audit-intervencion",
+      sheetId: "sheet-audit-06",
+      type: "application",
+      prompt: "Un paciente obtiene 26 puntos en el AUDIT y refiere que «puede dejarlo solo». ¿Cuál es la conducta más segura?",
+      options: [
+        "Aceptar la afirmación y no ofrecer seguimiento.",
+        "Indicar suspensión abrupta sin control.",
+        "Reconocer su autonomía, ofrecer información y derivar para evaluación especializada, manteniendo seguimiento.",
+        "Aplicar solo educación y cerrar el caso."
+      ],
+      correctIndex: 2,
+      explanation: "La voluntad de la persona importa, pero una puntuación alta exige evaluación y seguimiento. La derivación debe acompañarse, no imponerse ni abandonarse.",
+      sourceRefs: [{ sourceId: "src-audit", pages: [22, 24, 25] }],
+      tags: ["AUDIT", "derivación", "aplicación"]
+    },
+    {
+      id: "card-materna-01-1",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-01",
+      type: "concept",
+      prompt: "¿Cuál es el objetivo de la atención preconcepcional?",
+      answer: "Preparar a la persona y a su familia para un embarazo saludable, identificando riesgos y necesidades antes de la concepción. Incluye evaluación clínica, consejería, revisión de medicamentos y vacunas, promoción de hábitos saludables y suplementación con ácido fólico.",
+      explanation: "La preconcepción es una oportunidad de prevención y preparación, no un requisito administrativo para embarazarse.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }],
+      tags: ["Materna", "preconcepcional"]
+    },
+    {
+      id: "card-materna-01-2",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-01",
+      type: "multiple",
+      prompt: "¿Por qué se indica ácido fólico antes de la concepción?",
+      options: [
+        "Para tratar anemia en el embarazo.",
+        "Para reducir el riesgo de defectos del tubo neural.",
+        "Para prevenir diabetes gestacional.",
+        "Para sustituir el control prenatal."
+      ],
+      correctIndex: 1,
+      explanation: "La suplementación preconcepcional con ácido fólico reduce el riesgo de defectos del tubo neural. La dosis y duración siguen la norma y el criterio clínico.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9] }],
+      tags: ["Materna", "ácido fólico"]
+    },
+    {
+      id: "card-materna-01-3",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-01",
+      type: "application",
+      prompt: "Una persona con epilepsia en tratamiento desea embarazarse. ¿Qué respuesta es más completa?",
+      options: [
+        "Indicarle que suspenda todos los medicamentos por su cuenta.",
+        "Decirle que no puede embarazarse.",
+        "Realizar una evaluación preconcepcional, revisar el tratamiento con el especialista y planificar el control del embarazo.",
+        "Iniciar control prenatal solo cuando tenga un retraso menstrual."
+      ],
+      correctIndex: 2,
+      explanation: "La preconcepción permite ajustar el tratamiento y anticipar riesgos. La suspensión abrupta de medicamentos puede ser peligrosa.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }],
+      tags: ["Materna", "preconcepcional", "aplicación"]
+    },
+    {
+      id: "card-materna-02-1",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-02",
+      type: "concept",
+      prompt: "¿Qué incluye la atención prenatal reenfocada y por qué no se limita a controles físicos?",
+      answer: "Incluye historia clínica, evaluación de riesgo, examen físico, controles de peso y presión, altura uterina, crecimiento fetal, laboratorio, suplementación, tamizajes, educación y consejería. También aborda el contexto familiar, los hábitos y los signos de alarma.",
+      explanation: "La atención prenatal reenfocada integra promoción, prevención y detección oportuna, con participación de la gestante y su familia.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [4, 11, 12, 13, 14] }],
+      tags: ["Materna", "prenatal"]
+    },
+    {
+      id: "card-materna-02-2",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-02",
+      type: "multiple",
+      prompt: "¿Cuál es el número mínimo de controles prenatales que establece la norma para un embarazo de bajo riesgo?",
+      options: ["Tres", "Cuatro", "Seis", "Doce"],
+      correctIndex: 2,
+      explanation: "La norma establece un mínimo de seis controles prenatales, con distribución según edad gestacional y riesgo.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [11, 12] }],
+      tags: ["Materna", "control prenatal"]
+    },
+    {
+      id: "card-materna-02-3",
+      topicId: "topic-materna-prenatal",
+      sheetId: "sheet-materna-02",
+      type: "application",
+      prompt: "Una gestante de 34 semanas refiere cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta es más adecuada?",
+      options: [
+        "Indicarle reposo y control en una semana.",
+        "Darle un analgésico y enviarla a casa.",
+        "Activar atención inmediata, evaluar emergencia hipertensiva y coordinar referencia según la clave correspondiente.",
+        "Esperar a que cumpla 37 semanas."
+      ],
+      correctIndex: 2,
+      explanation: "Cefalea intensa, visión borrosa e hipertensión son signos de alarma. Requieren evaluación y manejo inmediato, no espera.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [14, 15, 21] }],
+      tags: ["Materna", "alarma", "aplicación"]
+    },
+    {
+      id: "card-materna-03-1",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-03",
+      type: "concept",
+      prompt: "¿Qué es el plan de parto y cuándo debe construirse?",
+      answer: "Es una herramienta de preparación que define el lugar de parto, la ruta y el transporte, el acompañante, los recursos y las señales para acudir. Se construye durante la gestación, en los controles prenatales, no cuando el trabajo de parto ya comenzó.",
+      explanation: "Planificar reduce demoras y facilita la llegada oportuna al establecimiento adecuado.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [6, 16, 17] }],
+      tags: ["Materna", "plan de parto"]
+    },
+    {
+      id: "card-materna-03-2",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-03",
+      type: "multiple",
+      prompt: "¿Qué describe mejor el parto vertical?",
+      options: [
+        "Un parto que ocurre fuera del establecimiento de salud.",
+        "Una posición elegida por la gestante, con apoyo, en la que puede estar de pie, sentada, en cuclillas o de rodillas.",
+        "Una cesárea programada.",
+        "Un parto sin atención profesional."
+      ],
+      correctIndex: 1,
+      explanation: "El parto vertical es una opción de posición, no un parto extrahospitalario. Debe ofrecerse con condiciones seguras y respeto por la elección informada.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [17, 18] }],
+      tags: ["Materna", "parto vertical"]
+    },
+    {
+      id: "card-materna-03-3",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-03",
+      type: "application",
+      prompt: "Una gestante de 38 semanas vive lejos y no tiene transporte disponible. ¿Qué elemento del plan de parto es prioritario revisar?",
+      options: [
+        "El color de la habitación.",
+        "La ruta, el medio de transporte y el contacto para acudir oportunamente.",
+        "El sexo del bebé.",
+        "La fecha exacta del alta."
+      ],
+      correctIndex: 1,
+      explanation: "El plan de parto debe resolver cómo llegará la persona al establecimiento. Sin transporte, la planificación no es operativa.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [6, 16, 17] }],
+      tags: ["Materna", "plan de parto", "aplicación"]
+    },
+    {
+      id: "card-materna-04-1",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-04",
+      type: "concept",
+      prompt: "¿Qué son las claves de emergencia obstétrica y para qué sirven?",
+      answer: "Son señales de activación que organizan la respuesta inmediata ante emergencias obstétricas. La clave roja corresponde a hemorragia, la azul a emergencia hipertensiva y la amarilla a infección o sepsis. No sustituyen las guías clínicas: movilizan recursos y coordinan la atención y la referencia.",
+      explanation: "La clave es una forma de estandarizar la respuesta y reducir demoras, no un diagnóstico completo.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 17, 21] }],
+      tags: ["Materna", "emergencias"]
+    },
+    {
+      id: "card-materna-04-2",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-04",
+      type: "multiple",
+      prompt: "¿A qué problema corresponde la clave roja?",
+      options: ["Infección puerperal", "Hemorragia obstétrica", "Emergencia hipertensiva", "Trabajo de parto normal"],
+      correctIndex: 1,
+      explanation: "La clave roja se activa ante hemorragia obstétrica, una emergencia que requiere control del sangrado, estabilización y referencia oportuna.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [5, 21] }],
+      tags: ["Materna", "clave roja"]
+    },
+    {
+      id: "card-materna-04-3",
+      topicId: "topic-materna-parto",
+      sheetId: "sheet-materna-04",
+      type: "application",
+      prompt: "Una puérpera presenta sangrado abundante y signos de shock. ¿Cuál es la secuencia más adecuada?",
+      options: [
+        "Esperar a que el sangrado disminuya y luego evaluar.",
+        "Activar clave roja, iniciar estabilización según protocolo y coordinar referencia inmediata.",
+        "Darle de alta con control ambulatorio.",
+        "Aplicar solo un analgésico y observarla."
+      ],
+      correctIndex: 1,
+      explanation: "La hemorragia obstétrica es una emergencia. La clave roja organiza la respuesta inmediata, la estabilización y la referencia.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 21] }],
+      tags: ["Materna", "hemorragia", "aplicación"]
+    },
+    {
+      id: "card-materna-05-1",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-05",
+      type: "concept",
+      prompt: "¿Qué es el puerperio y qué se vigila en la madre?",
+      answer: "Es el periodo posterior al parto en el que la madre se recupera; convencionalmente se extiende hasta los 42 días. Se vigilan sangrado, involución uterina, presión arterial, signos de infección, estado de la herida, dolor, lactancia y bienestar emocional.",
+      explanation: "Las complicaciones pueden aparecer después del alta, por eso el control y la educación sobre signos de alarma son esenciales.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22, 23] }],
+      tags: ["Materna", "puerperio"]
+    },
+    {
+      id: "card-materna-05-2",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-05",
+      type: "multiple",
+      prompt: "¿Qué es el alojamiento conjunto?",
+      options: [
+        "Separar a la madre y al recién nacido para descanso.",
+        "Mantener a la madre y al recién nacido juntos, favoreciendo contacto, lactancia y aprendizaje de cuidados.",
+        "Un espacio exclusivo para cesáreas.",
+        "Una consulta externa de puerperio."
+      ],
+      correctIndex: 1,
+      explanation: "El alojamiento conjunto mantiene juntos a madre y recién nacido, con adaptación a las condiciones clínicas y respeto por la privacidad.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22] }],
+      tags: ["Materna", "alojamiento conjunto"]
+    },
+    {
+      id: "card-materna-05-3",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-05",
+      type: "application",
+      prompt: "Una puérpera de 5 días consulta por cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta corresponde?",
+      options: [
+        "Indicar analgesia y control en una semana.",
+        "Considerar signo de alarma, evaluar emergencia hipertensiva y actuar de inmediato.",
+        "Atribuirlo al cansancio y enviarla a casa.",
+        "Suspender la lactancia."
+      ],
+      correctIndex: 1,
+      explanation: "La hipertensión con cefalea y visión borrosa en el puerperio es un signo de alarma. Requiere evaluación inmediata y manejo según el caso.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [14, 21, 22] }],
+      tags: ["Materna", "puerperio", "alarma", "aplicación"]
+    },
+    {
+      id: "card-materna-06-1",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-06",
+      type: "concept",
+      prompt: "¿Qué papel cumple la visita domiciliaria en el puerperio?",
+      answer: "Acerca el cuidado cuando la persona no puede acudir, falta a un control o requiere evaluar el entorno familiar. Permite valorar recuperación, lactancia, bienestar emocional, signos de alarma y condiciones de vida, y debe planificarse y registrarse.",
+      explanation: "La visita domiciliaria no es una intromisión: es una estrategia de continuidad cuando el acceso es difícil o el riesgo lo justifica.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [7, 23, 24] }],
+      tags: ["Materna", "visita domiciliaria"]
+    },
+    {
+      id: "card-materna-06-2",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-06",
+      type: "multiple",
+      prompt: "¿Qué alimentación se recomienda de forma exclusiva en los primeros meses?",
+      options: ["Fórmula artificial", "Lactancia materna exclusiva", "Agua y jugos", "Papillas desde el primer día"],
+      correctIndex: 1,
+      explanation: "La lactancia materna exclusiva es la alimentación recomendada en los primeros meses, con apoyo práctico a la madre.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [22, 23] }],
+      tags: ["Materna", "lactancia"]
+    },
+    {
+      id: "card-materna-06-3",
+      topicId: "topic-materna-puerperio",
+      sheetId: "sheet-materna-06",
+      type: "application",
+      prompt: "Una puérpera no asiste a su control de la primera semana y no responde a llamadas. ¿Qué respuesta es más coherente con la continuidad?",
+      options: [
+        "Cerrar el caso por inasistencia.",
+        "Esperar a que vuelva por su cuenta.",
+        "Intentar contacto por otros medios y activar visita domiciliaria o búsqueda en la red, según el riesgo.",
+        "Enviar una carta con la próxima cita."
+      ],
+      correctIndex: 2,
+      explanation: "La inasistencia puede ocultar una complicación o una barrera de acceso. La continuidad exige buscar activamente a la persona.",
+      sourceRefs: [{ sourceId: "src-materna", pages: [7, 23, 24] }],
+      tags: ["Materna", "seguimiento", "aplicación"]
+    },
+    {
+      id: "card-mental-01-1",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-01",
+      type: "concept",
+      prompt: "¿Qué es la continuidad de cuidados en salud mental comunitaria?",
+      answer: "Es un proceso de atención continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, con participación activa de la persona y su cuidador. Implica articulación entre establecimientos y componentes clínicos, psicosociales y de gestión.",
+      explanation: "No es una suma de consultas aisladas: es un proceso que sostiene el cuidado en el tiempo y en el territorio.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4] }],
+      tags: ["Continuidad", "concepto"]
+    },
+    {
+      id: "card-mental-01-2",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-01",
+      type: "multiple",
+      prompt: "¿Qué componente de la continuidad incluye familia, trabajo, relaciones y funcionamiento en la comunidad?",
+      options: ["Componente clínico", "Componente psicosocial", "Componente de gestión", "Componente administrativo"],
+      correctIndex: 1,
+      explanation: "El componente psicosocial aborda la vida cotidiana, los vínculos, el trabajo y la participación en la comunidad.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4] }],
+      tags: ["Continuidad", "componentes"]
+    },
+    {
+      id: "card-mental-01-3",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-01",
+      type: "application",
+      prompt: "Una persona con trastorno mental grave falta repetidamente a sus citas. ¿Qué lectura es más coherente con la continuidad de cuidados?",
+      options: [
+        "Es una falta de interés y debe cerrarse el caso.",
+        "Puede haber barreras, pérdida de vínculo o riesgo; hay que buscar a la persona y revisar el plan.",
+        "La continuidad solo depende de la asistencia a consulta.",
+        "Se debe suspender el tratamiento."
+      ],
+      correctIndex: 1,
+      explanation: "La continuidad no se limita a la asistencia. La inasistencia puede ser una señal de alarma o una barrera que el equipo debe abordar.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4, 8] }],
+      tags: ["Continuidad", "aplicación"]
+    },
+    {
+      id: "card-mental-02-1",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-02",
+      type: "concept",
+      prompt: "¿Cuál es la función del gestor de cuidados en la continuidad?",
+      answer: "Es el profesional del equipo interdisciplinario que asume la dirección del cuidado de la persona asignada: realiza la evaluación inicial, elabora el PCCl con la persona y el equipo, coordina las intervenciones, mantiene contacto con la persona y su cuidador y hace seguimiento.",
+      explanation: "El gestor no trabaja solo: articula con el equipo, la familia, la comunidad y la red de servicios.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [8, 9, 10] }],
+      tags: ["Continuidad", "roles"]
+    },
+    {
+      id: "card-mental-02-2",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-02",
+      type: "multiple",
+      prompt: "¿Qué profesional suele asumir la coordinación de la continuidad en el CSMC?",
+      options: [
+        "Cualquier persona administrativa sin formación en salud.",
+        "Un profesional de enfermería con especialidad o competencias en salud mental.",
+        "El familiar de la persona usuaria.",
+        "Un representante de la comunidad sin vínculo con el servicio."
+      ],
+      correctIndex: 1,
+      explanation: "La guía señala a enfermería con especialidad en salud mental o, en su defecto, con competencias en salud mental.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [9] }],
+      tags: ["Continuidad", "coordinación"]
+    },
+    {
+      id: "card-mental-02-3",
+      topicId: "topic-mental-continuidad",
+      sheetId: "sheet-mental-02",
+      type: "application",
+      prompt: "Un gestor de cuidados tiene asignadas 20 personas usuarias y no logra sostener el seguimiento. ¿Qué decisión es más coherente con la guía?",
+      options: [
+        "Aumentar la carga porque la continuidad es intensiva.",
+        "Revisar la asignación para que el número permita un seguimiento real, considerando el máximo de 15 personas por gestor.",
+        "Suspender las reuniones de equipo.",
+        "Delegar el seguimiento a la familia sin apoyo."
+      ],
+      correctIndex: 1,
+      explanation: "La guía menciona un máximo de 15 personas usuarias por gestor para permitir un seguimiento real. La continuidad requiere condiciones de trabajo adecuadas.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [19] }],
+      tags: ["Continuidad", "organización", "aplicación"]
+    },
+    {
+      id: "card-mental-03-1",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-03",
+      type: "concept",
+      prompt: "¿Cuáles son los cuatro criterios de derivación a continuidad y cuántos deben cumplirse?",
+      answer: "Evolución desfavorable del proceso de recuperación; escasa o nula adherencia al tratamiento integral; apoyo sociofamiliar desfavorable o nulo; y ser víctima de violencia o maltrato infantil con un trastorno mental. Se requieren al menos dos de los cuatro.",
+      explanation: "La derivación se basa en una evaluación integral, no en un diagnóstico aislado ni en una impresión subjetiva.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [13] }],
+      tags: ["Continuidad", "derivación"]
+    },
+    {
+      id: "card-mental-03-2",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-03",
+      type: "multiple",
+      prompt: "¿Qué instrumento se usa para evaluar funcionalidad familiar en adultos?",
+      options: ["HoNOS", "Apgar familiar", "Morisky y Green", "Zarit"],
+      correctIndex: 1,
+      explanation: "El Apgar familiar evalúa la percepción de funcionalidad familiar. HoNOS evalúa funcionamiento y salud; Morisky y Green, adherencia; Zarit, sobrecarga del cuidador.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [14, 15, 17] }],
+      tags: ["Continuidad", "evaluación"]
+    },
+    {
+      id: "card-mental-03-3",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-03",
+      type: "application",
+      prompt: "Durante la evaluación de ingreso se detecta que una persona es víctima de violencia con riesgo para su vida. ¿Qué prioridad corresponde?",
+      options: [
+        "Completar primero todas las escalas y luego actuar.",
+        "Activar la ruta de protección y derivación inmediata según el riesgo, sin postergar la seguridad.",
+        "Continuar el plan habitual porque la violencia no forma parte de la evaluación.",
+        "Esperar a que la persona lo decida sin ofrecer alternativas."
+      ],
+      correctIndex: 1,
+      explanation: "La seguridad es prioritaria. La evaluación de riesgo activa rutas de protección y coordinación con servicios competentes.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [16, 19] }],
+      tags: ["Continuidad", "riesgo", "aplicación"]
+    },
+    {
+      id: "card-mental-04-1",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-04",
+      type: "concept",
+      prompt: "¿Qué elementos debe contener un Plan de Continuidad de Cuidados Individualizado (PCCl)?",
+      answer: "Necesidades y problemas, potencialidades, objetivos, actividades, responsables y evaluación (cumplido, en proceso o no cumplido). Se elabora con la persona, el equipo interdisciplinario y su cuidador, e incluye prevención de crisis cuando corresponde.",
+      explanation: "El PCCl es un acuerdo de trabajo, no una lista de indicaciones. Debe ser comprensible y relevante para el proyecto de vida de la persona.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [5, 6, 20, 21] }],
+      tags: ["Continuidad", "PCCl"]
+    },
+    {
+      id: "card-mental-04-2",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-04",
+      type: "multiple",
+      prompt: "¿Con qué frecuencia se revisa y actualiza el PCCl, según la guía?",
+      options: ["Cada 6 meses", "Cada 15 días", "Solo al alta", "Una vez al año"],
+      correctIndex: 1,
+      explanation: "El gestor de cuidados revisa y actualiza el PCCl cada 15 días, según necesidad, coordinando con el equipo tratante.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [6] }],
+      tags: ["Continuidad", "PCCl"]
+    },
+    {
+      id: "card-mental-04-3",
+      topicId: "topic-mental-plan",
+      sheetId: "sheet-mental-04",
+      type: "application",
+      prompt: "El PCCl de una persona no está logrando sus objetivos y la persona dice que no se siente escuchada. ¿Qué conducta es más adecuada?",
+      options: [
+        "Mantener el plan sin cambios para no perder continuidad.",
+        "Revisar el plan con la persona y el equipo, ajustar objetivos y actividades y registrar los acuerdos.",
+        "Cerrar el caso por falta de colaboración.",
+        "Aumentar la medicación sin evaluar el plan."
+      ],
+      correctIndex: 1,
+      explanation: "El PCCl es un proceso revisable. La falta de avance exige revisar la situación, escuchar a la persona y ajustar el plan.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [6, 20, 21] }],
+      tags: ["Continuidad", "PCCl", "aplicación"]
+    },
+    {
+      id: "card-mental-05-1",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-05",
+      type: "concept",
+      prompt: "¿Qué son las redes comunitarias de salud mental y cómo se visualizan?",
+      answer: "Son el conjunto de relaciones e intercambios alrededor de la persona y su entorno, que pueden ofrecer apoyo, pertenencia y recursos. Se identifican con la persona y se plasman en un ecomapa, que muestra vínculos y recursos disponibles.",
+      explanation: "Las redes incluyen amistades y vecinos, grupos y organizaciones, e instituciones de protección y servicios.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [7, 67] }],
+      tags: ["Continuidad", "redes"]
+    },
+    {
+      id: "card-mental-05-2",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-05",
+      type: "multiple",
+      prompt: "¿Cuál es un ejemplo de red comunitaria terciaria?",
+      options: ["Un vecino que acompaña a la persona.", "Un grupo recreativo del barrio.", "La DEMUNA o una comisaría.", "Una amistad cercana."],
+      correctIndex: 2,
+      explanation: "Las redes terciarias incluyen instituciones y organizaciones como DEMUNA, comisaría, CEM, ONG u OMAPED. Las primarias son amistades y vecinos; las secundarias, grupos y organizaciones sociales.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [7] }],
+      tags: ["Continuidad", "redes"]
+    },
+    {
+      id: "card-mental-05-3",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-05",
+      type: "application",
+      prompt: "Una persona usuaria está aislada y refiere no tener a nadie. ¿Cuál es el primer paso para movilizar redes?",
+      options: [
+        "Imponerle actividades grupales sin explorar su historia.",
+        "Identificar con ella y su cuidador las relaciones y recursos presentes en sus entornos, y construir un ecomapa.",
+        "Derivarla a una institución sin consentimiento.",
+        "Concluir que no es posible continuar el cuidado."
+      ],
+      correctIndex: 1,
+      explanation: "La movilización comienza por identificar redes significativas con la persona. Luego se facilita el acercamiento, con consentimiento y acompañamiento.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [22, 67] }],
+      tags: ["Continuidad", "redes", "aplicación"]
+    },
+    {
+      id: "card-mental-06-1",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-06",
+      type: "concept",
+      prompt: "¿Qué tipos de alta contempla la guía de continuidad?",
+      answer: "Alta por recuperación, alta voluntaria, alta por abandono y alta por traslado. Todas se registran en la historia clínica y en el padrón nominal.",
+      explanation: "El alta se decide en una reunión con el equipo, la persona y su cuidador. No es un acto administrativo aislado.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [23] }],
+      tags: ["Continuidad", "alta"]
+    },
+    {
+      id: "card-mental-06-2",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-06",
+      type: "multiple",
+      prompt: "¿Qué seguimiento se realiza después del alta, según la guía?",
+      options: [
+        "Ninguno, el caso se cierra definitivamente.",
+        "Contacto a los 2 y 4 meses mediante telemonitoreo, visitas u otras intervenciones según valoración.",
+        "Solo una llamada al año.",
+        "Únicamente control administrativo."
+      ],
+      correctIndex: 1,
+      explanation: "La guía indica seguimiento post-alta a los 2 y 4 meses, según valoración del equipo y necesidad de la persona.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [23] }],
+      tags: ["Continuidad", "alta"]
+    },
+    {
+      id: "card-mental-06-3",
+      topicId: "topic-mental-articulacion",
+      sheetId: "sheet-mental-06",
+      type: "application",
+      prompt: "Una persona dada de alta presenta una recaída y vuelve a cumplir los criterios de derivación. ¿Qué corresponde?",
+      options: [
+        "Negar el reingreso porque ya tuvo alta.",
+        "Evaluarla como un nuevo ingreso y registrar el reingreso en el padrón nominal.",
+        "Enviarla a otro servicio sin evaluación.",
+        "Mantenerla fuera del programa hasta el próximo año."
+      ],
+      correctIndex: 1,
+      explanation: "El reingreso se evalúa como un nuevo ingreso y se registra. La recaída es una oportunidad para revisar el plan y reforzar apoyos, no un fracaso.",
+      sourceRefs: [{ sourceId: "src-mental", pages: [24] }],
+      tags: ["Continuidad", "reingreso", "aplicación"]
+    },
+  ]
+};

@@ -1,6 +1,6 @@
 {
   "name": "serums-map-explorer",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Plataforma interactiva de exploración geográfica de plazas SERUMS del Perú (standalone + base Vite/React/TS)",
   "author": "ZARCONT",
   "license": "SEE LICENSE IN LICENSE",
