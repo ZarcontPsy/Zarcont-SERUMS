@@ -1,0 +1,452 @@
+FILE gpc-episodio-depresivo-leve.pdf | pages 140 | chars 330606
+
+== HEADINGS (candidates) ==
+p1 [26.0] GUÍA DE PRÁCTICA CLÍNICA
+p1 [21.0] PARA EL TAMIZAJE Y EL MANEJO DEL EPISODIO
+p1 [21.0] DEPRESIVO LEVE EN EL PRIMER NIVEL DE
+p1 [26.0] ATENCIÓN
+p1 [24.0] GUÍA EN VERSIÓN EXTENSA
+p1 [18.0] GPC N°27
+p1 [18.0] Octubre 2019
+p2 [11.0] SEGURO SOCIAL DE SALUD - ESSALUD
+p2 [11.0] Presidenta Ejecutiva, EsSalud
+p2 [11.0] Gerente General, EsSalud
+p2 [11.0] INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN - IETSI
+p2 [11.0] Directora del Instituto de Evaluación de Tecnologías en Salud e Investigación
+p2 [11.0] Gerente de la Dirección de Evaluación de Tecnologías Sanitarias
+p2 [11.0] Gerente de la Dirección de Investigación en Salud
+p2 [11.0] Gerente de la Dirección de Guías de Práctica Clínica, Farmacovigilancia y Tecnovigilancia
+p2 [11.0] Asesor del Instituto de Evaluación de Tecnologías en Salud e Investigación
+p3 [18.0] Grupo elaborador
+p3 [11.0] Timaná Ruiz Raúl Alonso, IETSI, EsSalud
+p3 [11.0] Revisor Clínico
+p3 [11.0] Revisor Metodológico
+p3 [11.0] Revisor Externo
+p3 [11.0] Financiamiento
+p3 [11.0] Citación
+p4 [11.0] Agradecimientos
+p4 [11.0] Datos de contacto
+p4 [11.0] Teléfono: (+511) 265 6000, anexo 1953
+p5 [11.0] Tabla de contenido
+p6 [11.0] GUÍA DE PRÁCTICA CLÍNICA
+p6 [11.0] PARA EL TAMIZAJE Y EL MANEJO DEL EPISODIO DEPRESIVO LEVE EN EL PRIMER NIVEL DE
+p6 [11.0] ATENCIÓN
+p6 [11.0] VERSIÓN EN EXTENSO
+p6 [11.0] I.
+p6 [11.0] Generalidades
+p6 [11.0] Presentación del problema y fundamentos para la realización de la guía
+p6 [11.0] Objetivo y población de la GPC
+p6 [11.0] Objetivos de la GPC:
+p7 [11.0] Población a la cual se aplicará la GPC:
+p7 [11.0] Usuarios y ámbito de la GPC
+p7 [11.0] Usuarios de la GPC:
+p7 [11.0] Ámbito asistencial:
+p8 [11.0] II.
+p8 [11.0] Métodos
+p8 [11.0] A continuación, se presenta un resumen de la metodología, que se detalla en el Anexo N° 1.
+p8 [11.0] Conformación del grupo elaborador de la guía (GEG): La Dirección de Guías de Práctica Clínica,
+p8 [11.0] Formulación de preguntas: En concordancia con los objetivos y alcances de esta GPC, se
+p8 [11.0] formularon 6 preguntas clínicas (Tabla 1), cada una de las cuales incluía una o más preguntas en
+p8 [11.0] Búsqueda de GPC previas: Se encontraron cuatro GPC que obtuvieron un puntaje mayor a 60%
+p8 [11.0] Evaluation-II (AGREE-II) (Anexo N° 2). Sin embargo, el GEG consideró que el proceso de
+p8 [11.0] Búsqueda y selección de la evidencia: Se realizó la búsqueda sistemática y selección de la
+p8 [11.0] evidencia para cada pregunta PICO (Anexo N° 3). Para ello, entre mayo de 2018 y enero de 2019
+p8 [11.0] Evaluación de calidad, riesgo de sesgo y certeza de la evidencia: Se evaluó la calidad de las RS
+p8 [11.0] y el riesgo de sesgo de los estudios primarios (Anexo N° 4). Finalmente, se evaluó la certeza de
+p8 [11.0] Formulación de las recomendaciones: Se realizaron reuniones periódicas en las cuales se
+p8 [11.0] evidencia relevante disponible. Estos fueron establecidos por consenso o mayoría simple.
+p8 [11.0] Revisión: Se realizaron dos tipos de revisiones: 1) La versión in-extenso de la presente GPC fue
+p8 [11.0] Actualización de la GPC: La presente GPC tiene una vigencia de tres años. Al acercarse al fin de
+p9 [11.0] III.
+p9 [11.0] Cómo usar esta guía: Implicancias del tipo de recomendación
+p9 [11.0] el significado de cada categoría se muestran en la Figura 1. Luego de evaluar los factores
+p9 [11.0] palabra “sugerimos”). Las implicancias de cada tipo de recomendación se detallan en la Figura
+p9 [11.0] Figura 1. Determinación de la certeza de la evidencia con metodología GRADE, toma de
+p9 [11.0] decisiones usando los marcos EtD, e implicancias de los tipos de recomendaciones.
+p9 [14.0] emitir la recomendación (EtD):
+p10 [11.0] IV.
+p10 [11.0] Lista de recomendaciones y puntos de buena práctica clínica
+p14 [11.0] V.
+p14 [11.0] Flujograma del manejo
+p14 [11.0] Flujograma de tamizaje y diagnóstico del episodio depresivo leve
+p15 [11.0] Flujograma de manejo del episodio depresivo leve
+p16 [11.0] VI.
+p16 [11.0] Desarrollo de las preguntas y recomendaciones
+p16 [11.0] La metodología en extenso se expone en el Anexo N° 1, la búsqueda de guías de práctica clínica
+p16 [11.0] en el Anexo N° 2,  la búsqueda bibliográfica para cada pregunta en el Anexo N° 3, la evaluación
+p16 [11.0] de riesgo de sesgo de la evidencia considerada en el Anexo N° 4, y el desarrollo de cada pregunta
+p16 [11.0] incluyendo el marco EtD en el Anexo N° 5. A continuación se presenta de manera resumida los
+p16 [11.0] Pregunta 1: En población adulta, ¿se deberían brindar intervenciones para prevenir el
+p16 [11.0] desarrollo de episodios depresivos?
+p16 [11.0] Introducción:
+p16 [11.0] Desarrollo de las recomendaciones:
+p17 [11.0] una recomendación a favor de brindar intervenciones preventivas de episodios depresivos. El
+p17 [11.0] recursos y tiempo. Por ello se decidió emitir una recomendación condicional.
+p17 [11.0] Justificación de las BPC:
+p17 [11.0] (ver Tabla). En base a ello, el GEG decidió proponer que las intervenciones preventivas que se
+p19 [11.0] Pregunta 2: En población adulta, ¿se debería realizar tamizaje de episodio depresivo durante
+p19 [11.0] la consulta en primer nivel de atención?
+p19 [11.0] Introducción:
+p19 [11.0] Desarrollo de las recomendaciones:
+p19 [11.0] por emitir una recomendación a favor.
+p20 [11.0] una recomendación fuerte.
+p20 [11.0] Justificación de las BPC:
+p20 [11.0] severo; según el número, severidad y tipo de síntomas que presente el paciente (ver Tabla).
+p21 [11.0] presentes por cuatro a más días (27). (ver Tabla)
+p21 [11.0] semanas (27). (ver Tabla)
+p23 [11.0] Pregunta 3: En pacientes adultos con episodio depresivo leve, ¿qué terapia se debería brindar
+p23 [11.0] como manejo inicial: terapia farmacológica o psicoterapia?
+p23 [11.0] Introducción:
+p23 [11.0] Desarrollo de las recomendaciones:
+p23 [11.0] Schramm 2015 (33) (forest plot en Anexo N° 5).
+p23 [11.0] intervenciones sobre otra, por ello se decidió emitir una recomendación condicional para la
+p23 [11.0] elección de alguna de estas intervenciones. Para optar por alguna de ellas se debe tomar en
+p25 [11.0] Pregunta 4: En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p25 [11.0] manejo con psicoterapia, ¿qué psicoterapia se debería usar?
+p25 [11.0] Introducción:
+p25 [11.0] Desarrollo de las recomendaciones:
+p25 [11.0] certeza de la evidencia fue moderada, se podría emitir una recomendación fuerte a favor del
+p25 [11.0] una recomendación a favor condicional para el uso de esta intervención.
+p26 [11.0] Justificación de las BPC:
+p28 [11.0] Pregunta 5: En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p28 [11.0] manejo con terapia farmacológica, ¿con qué antidepresivo se debería iniciar la terapia?
+p28 [11.0] Introducción:
+p28 [11.0] Desarrollo de las recomendaciones:
+p29 [11.0] recomendación a favor de iniciar la terapia con ISRS.
+p29 [11.0] se decidió emitir una recomendación condicional.
+p29 [11.0] Justificación de las BPC:
+p29 [11.0] (ver Anexo N°05) (39), por lo que su uso podría prolongar la duración de la terapia y generar
+p30 [11.0] misma dosis o incrementar la dosis del antidepresivo (ver Tabla), opciones que también fueron
+p32 [11.0] Pregunta 6: En pacientes adultos con episodio depresivo leve, ¿se debería indicar realizar
+p32 [11.0] ejercicio físico?
+p32 [11.0] Introducción:
+p32 [11.0] Desarrollo de las recomendaciones:
+p32 [11.0] entre otros) serían pequeños. En base a ello, se decidió emitir una recomendación a favor.
+p33 [11.0] pacientes. Por tal motivo se decidió emitir una recomendación fuerte.
+p33 [11.0] Justificación de las BPC:
+p34 [11.0] VII.
+p34 [11.0] Plan de actualización de la Guía de Práctica Clínica
+p34 [11.0] VIII.
+p34 [11.0] Plan de evaluación y monitoreo de la guía de práctica clínica
+p34 [11.0] Tema
+p34 [11.0] Indicador
+p34 [11.0] Numerador
+p34 [11.0] Denominador
+p34 [11.0] Valor
+p34 [11.0] esperado
+p35 [11.0] Tema
+p35 [11.0] Indicador
+p35 [11.0] Numerador
+p35 [11.0] Denominador
+p35 [11.0] Valor
+p35 [11.0] esperado
+p36 [11.0] IX.
+p36 [11.0] Referencias
+p39 [26.0] GUÍA DE PRÁCTICA CLÍNICA
+p39 [21.0] PARA EL TAMIZAJE Y EL MANEJO DEL EPISODIO
+p39 [21.0] DEPRESIVO LEVE EN EL PRIMER NIVEL DE
+p39 [26.0] ATENCIÓN
+p39 [24.0] ANEXOS
+p39 [18.0] GPC N°27
+p39 [18.0] Octubre 2019
+p40 [11.0] SEGURO SOCIAL DE SALUD - ESSALUD
+p40 [11.0] Presidenta Ejecutiva, EsSalud
+p40 [11.0] Gerente General, EsSalud
+p40 [11.0] INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN - IETSI
+p40 [11.0] Directora del Instituto de Evaluación de Tecnologías en Salud e Investigación
+p40 [11.0] Gerente de la Dirección de Evaluación de Tecnologías Sanitarias
+p40 [11.0] Gerente de la Dirección de Investigación en Salud
+p40 [11.0] Gerente de la Dirección de Guías de Práctica Clínica, Farmacovigilancia y Tecnovigilancia
+p40 [11.0] Asesor del Instituto de Evaluación de Tecnologías en Salud e Investigación
+p41 [18.0] Grupo elaborador
+p41 [11.0] Timaná Ruiz Raúl Alonso, IETSI, EsSalud
+p41 [11.0] Revisor Clínico
+p41 [11.0] Revisor Metodológico
+p41 [11.0] Revisor Externo
+p41 [11.0] Financiamiento
+p41 [11.0] Citación
+p42 [11.0] Agradecimientos
+p42 [11.0] Datos de contacto
+p43 [11.0] Tabla de Contenido
+p45 [11.0] GUÍA DE PRÁCTICA CLÍNICA
+p45 [11.0] PARA EL TAMIZAJE Y MANEJO DEL EPISODIO DEPRESIVO MAYOR LEVE EN ADULTOS EN EL
+p45 [11.0] PRIMER NIVEL DE ATENCIÓN
+p45 [11.0] ANEXOS
+p45 [11.0] Anexo N° 1: Metodología
+p45 [11.0] a. Conformación del Grupo Elaborador de la Guía
+p45 [11.0] b. Declaración de conflictos de interés y derechos de autor
+p46 [11.0] c. Formulación de las preguntas clínicas, preguntas PICO, e identificación de desenlaces
+p46 [11.0] pregunta se presentan en la descripción de las preguntas PICO de cada pregunta clínica.
+p46 [11.0] d. Búsqueda de GPC previas
+p47 [11.0] En el Anexo N° 2 se presentan las bases de datos y las estrategias de búsqueda utilizadas, el
+p47 [11.0] e. Búsqueda y selección de la evidencia para la toma de decisiones en cada pregunta PICO
+p48 [11.0] i.
+p48 [11.0] Búsqueda y selección de RS realizadas dentro de las GPC:
+p48 [11.0] En el Anexo N° 2 se presentan las bases de datos y las estrategias de búsqueda utilizadas,
+p48 [11.0] ii.
+p48 [11.0] Búsqueda de RS publicadas como artículos científicos:
+p48 [11.0] cada pregunta PICO se muestran en el Anexo N° 3.
+p48 [11.0] iii.
+p48 [11.0] Selección de la evidencia para la toma de decisiones para cada pregunta:
+p48 [11.0] estudios encontrados en estas búsquedas de novo se detallan en el Anexo N° 3.
+p49 [11.0] Anexo N° 3.
+p49 [11.0] f. Evaluación del riesgo de sesgo y de la certeza de la evidencia.
+p49 [11.0] i.
+p49 [11.0] Evaluación de riesgo de sesgo
+p50 [11.0] se muestran en el Anexo N° 4.
+p50 [11.0] ii.
+p50 [11.0] Evaluación de la certeza de la evidencia
+p50 [11.0] Findings para cada pregunta PICO (Anexo N° 5). Para aquellos desenlaces para los cuales
+p50 [11.0] g. Formulación de las recomendaciones y puntos de buena práctica clínica.
+p50 [11.0] en el Anexo N° 5 Para la presente GPC, el GEG consideró que no era imperativo realizar
+p51 [11.0] h. Validación de la Guía de Práctica Clínica.
+p51 [11.0] Validación con especialistas clínicos
+p51 [11.0] Nombre
+p51 [11.0] Institución
+p51 [11.0] Profesión/Cargo
+p52 [11.0] Nombre
+p52 [11.0] Institución
+p52 [11.0] Profesión/Cargo
+p52 [11.0] Validación con tomadores de decisiones.
+p52 [11.0] Validación con Pacientes
+p52 [11.0] i.
+p52 [11.0] Revisión externa.
+p53 [11.0] Anexo N° 2: Búsqueda y selección de guías de práctica clínica que realicen revisiones
+p53 [11.0] sistemáticas
+p53 [11.0] Búsqueda:
+p54 [11.0] Flujograma de la estrategia de búsqueda y selección de GPC:
+p55 [11.0] Guías encontradas:
+p55 [11.0] la presente GPC. Estas guías se presentan a continuación:
+p56 [11.0] Evaluación con AGREE-II:
+p58 [11.0] Anexo N° 3: Búsqueda de la evidencia para cada pregunta clínica
+p58 [11.0] Pregunta 1. En población adulta, ¿se deberían brindar intervenciones para prevenir el
+p58 [11.0] desarrollo de episodios depresivos?
+p58 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1:
+p59 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p59 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p61 [11.0] Pregunta 2. En población adulta, ¿se debería realizar tamizaje de episodio depresivo durante
+p61 [11.0] la consulta en primer nivel de atención?
+p61 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1:
+p61 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p62 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p62 [11.0] Búsqueda B: búsqueda de ECA para actualizar la RS de Siu (2016) “US TaskForce” :
+p62 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p64 [11.0] Pregunta 3. En pacientes adultos con episodio depresivo leve, ¿qué terapia se debería brindar
+p64 [11.0] como manejo inicial: terapia farmacológica o psicoterapia?
+p64 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1:
+p65 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p65 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p65 [11.0] Búsqueda B: búsqueda de ECA para actualización de RS de Amick (2015):
+p66 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p66 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p68 [11.0] Pregunta 4. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p68 [11.0] manejo con psicoterapia, ¿qué psicoterapia se debería usar?
+p68 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1:
+p68 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p69 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p70 [11.0] Pregunta 5. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p70 [11.0] manejo con terapia farmacológica, ¿con qué antidepresivo se debería iniciar la terapia?
+p70 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1 y 2:
+p71 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p71 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p72 [11.0] Pregunta 6. En pacientes adultos con episodio depresivo leve, ¿se debería indicar realizar
+p72 [11.0] ejercicio físico?
+p72 [11.0] Búsqueda A: búsqueda de RS para las preguntas PICO N° 1:
+p72 [11.0] Listado de citaciones evaluadas a texto completo y excluidas:
+p73 [11.0] Listado de citaciones evaluadas a texto completo e incluidas:
+p74 [11.0] Anexo N° 4: Tablas de evaluación de calidad y riesgo de sesgo en los estudios
+p74 [11.0] Pregunta 1. En población adulta, ¿se deberían brindar intervenciones para prevenir el
+p74 [11.0] desarrollo de episodios depresivos?
+p75 [11.0] Pregunta 2. En población adulta, ¿se debería realizar tamizaje de episodio depresivo durante
+p75 [11.0] la consulta en primer nivel de atención?
+p77 [11.0] Pregunta 3. En pacientes adultos con episodio depresivo leve, ¿qué terapia se debería brindar
+p77 [11.0] como manejo inicial: terapia farmacológica o psicoterapia?
+p79 [11.0] Pregunta 4. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p79 [11.0] manejo con psicoterapia, ¿qué psicoterapia se debería usar?
+p80 [11.0] Pregunta 5. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p80 [11.0] manejo con terapia farmacológica, ¿con qué antidepresivo se debería iniciar la terapia?
+p81 [11.0] Pregunta 6. En pacientes adultos con episodio depresivo leve, ¿se debería indicar realizar
+p81 [11.0] ejercicio físico?
+p82 [11.0] Anexo N° 5: Desarrollo de la pregunta
+p82 [11.0] Pregunta 1. En población adulta, ¿se deberían brindar intervenciones para prevenir el
+p82 [11.0] desarrollo de episodios depresivos?
+p82 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p82 [11.0] Búsqueda de RS:
+p82 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p82 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p82 [11.0] Resumen de la evidencia:
+p83 [11.0] Tablas SoF:
+p84 [11.0] Tabla EtD:
+p84 [11.0] Pregunta 1: En población adulta, ¿se deberían brindar intervenciones para prevenir el
+p84 [11.0] desarrollo de episodios depresivos?
+p87 [11.0] condicional.
+p88 [11.0] Pregunta 2. En población adulta, ¿se debería realizar tamizaje de episodio depresivo durante
+p88 [11.0] la consulta en primer nivel de atención?
+p88 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p88 [11.0] Búsqueda de RS:
+p88 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p88 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p89 [11.0] Resumen de la evidencia:
+p89 [11.0] Tablas SoF:
+p89 [14.0] Para síntomas depresivos: Silverstone 2017
+p89 [14.0] Para número de síntomas depresivos: Williams 1999
+p89 [14.0] Para recuperación de depresión: Williams 1999
+p91 [11.0] Tabla EtD:
+p91 [11.0] Pregunta 2: En población adulta, ¿se debería realizar tamizaje de episodio depresivo
+p91 [11.0] durante la consulta en primer nivel de atención?
+p94 [11.0] potencialmente evaluable. Por ello se decidió emitir una recomendación fuerte.
+p96 [11.0] Pregunta 3. En pacientes adultos con episodio depresivo leve, ¿qué terapia se debería brindar
+p96 [11.0] como manejo inicial: terapia farmacológica o psicoterapia?
+p96 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p96 [11.0] Búsqueda de RS:
+p96 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p96 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p97 [11.0] Resumen de la evidencia:
+p97 [11.0] Forest Plot:
+p97 [11.0] Desenlace: Remisión
+p97 [11.0] Autor(es): Jessica Zafra Tanaka
+p98 [11.0] Desenlace: Respuesta
+p98 [11.0] Autor(es): Jessica Zafra Tanaka
+p98 [11.0] Tablas SoF:
+p98 [14.0] los del ECA de Schramm et al.)
+p100 [11.0] Tabla EtD:
+p100 [11.0] Pregunta 3: En pacientes adultos con episodio depresivo leve, ¿qué terapia se debería
+p100 [11.0] brindar como manejo inicial: terapia farmacológica o psicoterapia?
+p104 [11.0] Pregunta 4. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p104 [11.0] manejo con psicoterapia, ¿qué psicoterapia se debería usar?
+p104 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p104 [11.0] Búsqueda de RS:
+p104 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p104 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p104 [11.0] Resumen de la evidencia:
+p105 [11.0] Tablas SoF:
+p105 [14.0] Para síntomas depresivos: Cuijpers et al. (2014)
+p107 [11.0] Tabla EtD:
+p107 [11.0] Pregunta 4: En pacientes adultos con episodio depresivo leve en los que se opte por iniciar
+p107 [11.0] el manejo con psicoterapia, ¿qué psicoterapia se debería usar?
+p115 [11.0] Pregunta 5. En pacientes adultos con episodio depresivo leve en los que se opte por iniciar el
+p115 [11.0] manejo con terapia farmacológica, ¿con qué antidepresivo se debería iniciar la terapia?
+p115 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p115 [11.0] Búsqueda de RS:
+p115 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p115 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p115 [11.0] Resumen de la evidencia:
+p116 [11.0] Tablas SoF:
+p117 [11.0] Tablas SoF:
+p117 [14.0] Para eficacia: Cipriani et al.
+p119 [11.0] Tabla EtD:
+p119 [11.0] Pregunta 5: En pacientes adultos con episodio depresivo leve en los que se opte por iniciar
+p119 [11.0] el manejo con terapia farmacológica, ¿con qué antidepresivo se debería iniciar la terapia?
+p126 [11.0] especialistas y médicos generales, se decidió emitir una recomendación condicional.
+p129 [11.0] Pregunta 6. En pacientes adultos con episodio depresivo leve, ¿se debería indicar realizar
+p129 [11.0] ejercicio físico?
+p129 [11.0] Preguntas PICO abordadas en esta pregunta clínica:
+p129 [11.0] Búsqueda de RS:
+p129 [11.0] Para esta pregunta, se realizó una búsqueda de GPC que tengan RS (Anexo N° 2) y de RS
+p129 [11.0] publicadas como artículos científicos (Anexo N° 3), como se detalla en la sección de métodos.
+p130 [11.0] Resumen de la evidencia:
+p130 [11.0] Tablas SoF:
+p132 [11.0] Tabla EtD:
+p132 [11.0] Pregunta 6: En pacientes adultos con episodio depresivo leve, ¿se debería indicar realizar
+p132 [11.0] ejercicio físico?
+p138 [11.0] Referencias
+
+== FIRST PAGES ==
+
+--- p1 ---
+GUÍA DE PRÁCTICA CLÍNICA
+PARA EL TAMIZAJE Y EL MANEJO DEL EPISODIO
+DEPRESIVO LEVE EN EL PRIMER NIVEL DE
+ATENCIÓN
+GUÍA EN VERSIÓN EXTENSA
+GPC N°27
+Octubre 2019
+
+--- p2 ---
+INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN
+2
+SEGURO SOCIAL DE SALUD - ESSALUD
+Fiorella Molinelli Aristondo
+Presidenta Ejecutiva, EsSalud
+Alfredo Barredo Moyano
+Gerente General, EsSalud
+INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN - IETSI
+Patricia Pimentel Álvarez
+Directora del Instituto de Evaluación de Tecnologías en Salud e Investigación
+Fabián Fiestas Saldarriaga
+Gerente de la Dirección de Evaluación de Tecnologías Sanitarias
+Víctor Javier Suárez Moreno
+Gerente de la Dirección de Investigación en Salud
+Héctor Miguel Garavito Farro
+Gerente de la Dirección de Guías de Práctica Clínica, Farmacovigilancia y Tecnovigilancia
+Raúl Alonso Timaná Ruiz
+Asesor del Instituto de Evaluación de Tecnologías en Salud e Investigación
+
+--- p3 ---
+INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN
+3
+Grupo elaborador
+-
+Macciotta Felices Beatrice Milagros, Hospital Nacional Edgardo Rebagliati Martins, EsSalud
+-
+Morón Corales Carla Giuliana, Centro de Atención Primaria II Lurín, EsSalud
+-
+Luna Matos Matilde Lena, Hospital Nacional Guillermo Almenara Irigoyen, EsSalud
+-
+Gonzales Madrid Víctor Manuel, Hospital Nacional Alberto Sabogal Sologuren, EsSalud
+-
+Carbajal Dieguez Roberto Raúl, Centro de Atención Primaria III Huaycán, EsSalud
+-
+Rodriguez Mori Edith, Hospital II Lima Norte Callao “Luis Negreiros Vega”, EsSalud
+-
+Melgarejo Moreno Amelia, Hospital II Ramón Castilla, EsSalud
+-
+Zafra Tanaka Jessica Hanae, IETSI, EsSalud
+-
+Goicochea Lugo Sergio André, IETSI, EsSalud
+-
+Timaná Ruiz Raúl Alonso, IETSI, EsSalud
+Revisor Clínico
+Dr. Valle Rivadeneyra, Rubén Eliseo. Médico Psiquiatra.
+Centro de Investigación en Epidemiología Clínica y Medicina Basada en Evidencias, Facultad de
+Medicina Humana, Universidad de San Martín de Porres, Lima, Perú.
+Dirección Ejecutiva de Investigación, Docencia y Atención Especializada (DEIDAE) de Adultos y
+Adultos Mayores, Instituto Nacional de Salud Mental “Honorio Delgado - Hideyo Noguchi”, Lima,
+Perú.
+Revisor Metodológico
+Dr. Fiestas Saldarriaga, Fabián Alejandro. Médico Epidemiólogo.
+Gerente de la Dirección de Evaluación de Tecnologías Sanitarias, Instituto de Evaluación de
+Tecnologías en Salud e Investigación-IETSI, Seguro Social de Salud-EsSalud, Lima, Perú.
+Dr. Taype Rondán, Álvaro Renzo. Médico Epidemiólogo.
+Maestría en Ciencias en Investigación Epidemiológica, Universidad Peruana Cayetano Heredia.
+Unidad de Investigación para la Generación y Síntesis de Evidencias en Salud, Universidad San
+Ignacio de Loyola, Lima, Perú.
+Revisor Externo
+Dr. Galvez-Bucollini Abanto, Juan Antonio. Psiquiatra. Clínica Anglo Americana, British American
+Hospital S.A., Lima, Perú.
+Financiamiento
+Este documento técnico ha sido financiado por el Instituto de Evaluación de Tecnologías en
+Salud e Investigación (IETSI), EsSalud, Perú.
+Citación
+Este documento debe ser citado como: “Instituto de Evaluación de Tecnologías en Salud e
+Investigación. Guía de Práctica Clínica para el tamizaje y el manejo del episodio depresivo leve
+en el primer nivel de atención: Guía en Versión Extensa. Lima: EsSalud; 2019”
+
+--- p4 ---
+INSTITUTO DE EVALUACIÓN DE TECNOLOGÍAS EN SALUD E INVESTIGACIÓN
+4
+Agradecimientos
+Agradecemos a las siguientes personas por su colaboración en la extracción de datos y
+evaluación de la calidad de los estudios primarios:
+Mejía Santivañez, Jhonatan
+Facultad de Medicina Humana, Universidad Nacional del Centro del Perú, Huancayo, Perú.
+Gonzales Salcedo, Albert
+Instituto de Evaluación de Tecnologías en Salud e Investigación – IETSI, Seguro Social de Salud-
+EsSalud, Lima, Perú.
+Reategui Sokolova, Cristina
+Instituto de Evaluación de Tecnologías en Salud e Investigación – IETSI, Seguro Social de Salud-
+EsSalud, Lima, Perú.
+Datos de contacto
+Raúl Timaná Ruiz
+Correo electrónico: raul.timana@essalud.gob.pe rtimanar@gmail.com
+Teléfono: (+511) 265 6000, anexo 1953

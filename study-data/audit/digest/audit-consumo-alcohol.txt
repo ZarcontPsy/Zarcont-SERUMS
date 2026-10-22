@@ -1,0 +1,219 @@
+FILE audit-consumo-alcohol.pdf | pages 41 | chars 96008
+
+== HEADINGS (candidates) ==
+p1 [36.0] AUDIT
+p1 [22.0] Cuestionario de Identificación
+p1 [22.0] de los Transtornos debidos
+p1 [22.0] al Consumo de Alcohol
+p1 [13.0] Pautas para su utilización en Atención Primaria
+p1 [13.0] Thomas F. Babor
+p1 [13.0] John C. Higgins-Biddle
+p1 [13.0] John B. Saunders
+p1 [13.0] Maristela G. Monteiro
+p2 [36.0] AUDIT
+p2 [22.0] Cuestionario de Identificación
+p2 [22.0] de los Transtornos debidos
+p2 [22.0] al Consumo de Alcohol
+p2 [13.0] Pautas para su utilización en Atención Primaria
+p2 [13.0] Thomas F. Babor
+p2 [13.0] John C. Higgins-Biddle
+p2 [13.0] John B. Saunders
+p2 [13.0] Maristela G. Monteiro
+p3 [13.0] Resumen
+p3 [13.0] Reconocimientos
+p4 [20.0] Índice
+p5 [24.5] E
+p5 [20.0] Objetivo de este manual
+p6 [24.5] H
+p6 [20.0] ¿Por qué hacer screening del consumo
+p6 [20.0] de alcohol?
+p8 [11.0] Figura 1
+p8 [13.0] Efectos del consumo de alto riesgo
+p9 [24.5] S
+p9 [20.0] El contexto del Screening del Alcohol
+p10 [11.0] Cuadro 1
+p10 [13.0] Personal, centros y grupos que se consideran apropiados para un
+p10 [13.0] programa de detección utilizando el AUDIT
+p11 [24.5] E
+p11 [20.0] Desarrollo y validación del AUDIT
+p12 [11.0] Cuadro 2
+p12 [13.0] Dominios e items del AUDIT
+p12 [11.0] Dominios
+p12 [11.0] Número de la pregunta
+p12 [11.0] Contenido del ítem
+p15 [24.5] E
+p15 [11.0] Con respecto al paciente
+p15 [20.0] Normas de administración
+p16 [11.0] Introducción del AUDIT
+p17 [11.0] Administración oral vs.
+p17 [11.0] Cuestionario de auto-pase
+p17 [11.0] Cuadro 3
+p17 [13.0] Ventajas de los diferentes métodos de administración del AUDIT
+p17 [11.0] Cuestionario
+p17 [11.0] Entrevista
+p18 [11.0] Cuadro 4
+p18 [13.0] Test de Identificación de Trastornos por consumo de alcohol:
+p18 [13.0] versión de entrevista.
+p19 [11.0] Acortamiento del proceso
+p19 [11.0] de screening
+p20 [24.5] E
+p20 [20.0] Puntuación e interpretación
+p22 [24.5] L
+p22 [20.0] Cómo ayudar a los pacientes
+p22 [11.0] Cuadro 5
+p22 [13.0] Aconseje a los pacientes
+p22 [13.0] que no beban
+p23 [11.0] Cuadro 6
+p23 [13.0] Nivel de Riesgo
+p23 [13.0] Intervención
+p23 [13.0] Puntuación del AUDIT*
+p23 [11.0] Cuadro 7
+p23 [13.0] Elementos de las
+p23 [13.0] Intervenciones Breves
+p25 [11.0] Cuadro 8
+p25 [13.0] Criterios CIE-10 para el síndrome de dependencia de alcohol
+p26 [24.5] E
+p26 [20.0] Implementación del programa
+p27 [11.0] Cuadro 9
+p27 [13.0] Preguntas para la implementación
+p29 [24.5] E
+p29 [20.0] Anexo A
+p29 [13.0] Normas de investigación sobre el AUDIT
+p31 [24.5] E
+p31 [20.0] Anexo B
+p31 [13.0] Formato sugerido para el AUDIT de auto-pase
+p32 [11.0] Cuadro 10
+p32 [13.0] Test de Identificación de Trastornos por consumo de alcohol:
+p32 [13.0] versión de auto-pase.
+p33 [24.5] E
+p33 [11.0] ¿Qué es una consumición
+p33 [11.0] o bebida estándar?
+p33 [11.0] ¿Cómo calcular el contenido
+p33 [11.0] de alcohol en una bebida?
+p33 [20.0] Anexo C
+p33 [13.0] Traducción y adaptación a idiomas, culturas
+p33 [13.0] y situaciones específicas
+p34 [24.5] U
+p34 [20.0] Anexo D
+p34 [13.0] Procedimientos de screening clínico
+p35 [24.5] L
+p35 [20.0] Anexo E
+p35 [13.0] Material de formación para el AUDIT
+p36 [20.0] Referencias
+p40 [20.0] Notas
+
+== FIRST PAGES ==
+
+--- p1 ---
+AUDIT
+Cuestionario de Identificación
+de los Transtornos debidos
+al Consumo de Alcohol
+Pautas para su utilización en Atención Primaria
+Organización Mundial de la Salud
+Departamento de Salud Mental
+y Dependencia de Sustancias
+Thomas F. Babor
+John C. Higgins-Biddle
+John B. Saunders
+Maristela G. Monteiro
+WHO/MSD/MSB/01.6a
+Original: Inglés
+Distribución: General
+CONSELLERIA DE BENESTAR SOCIAL
+
+--- p2 ---
+AUDIT
+Cuestionario de Identificación
+de los Transtornos debidos
+al Consumo de Alcohol
+Pautas para su utilización en Atención Primaria
+Organización Mundial de la Salud
+Departamento de Salud Mental
+y Dependencia de Sustancias
+Thomas F. Babor
+John C. Higgins-Biddle
+John B. Saunders
+Maristela G. Monteiro
+WHO/MSD/MSB/01.6a
+Original: Inglés
+Distribución: General
+CONSELLERIA DE BENESTAR SOCIAL
+
+--- p3 ---
+Resumen
+Este manual presenta el AUDIT, el Test de Identificación de los Trastornos Debidos al Consumo de
+Alcohol, y describe cómo utilizarlo para identificar a las personas con un patrón de consumo
+perjudicial o de riesgo de alcohol. El AUDIT fue desarrollado por la Organización Mundial de la Salud
+(OMS) como un método simple de screening del consumo excesivo de alcohol y como un apoyo en la
+evaluación breve. Puede ayudar en la identificación del consumo excesivo de alcohol como causa de la
+enfermedad presente. También proporciona un marco de trabajo en la intervención para ayudar a los
+bebedores con consumo perjudicial o de riesgo a reducir o cesar el consumo de alcohol y con ello
+puedan evitar las consecuencias perjudiciales de su consumo. La primera edición de este manual fue
+publicada en 1989 (Documento Nº. WHO/MNH/89.4) y fue actualizada en 1992 (WHO/PSA/92.4).
+Desde ese momento su utilización se ha extendido tanto entre el personal sanitario como entre los
+investigadores del alcohol. Con el creciente uso del screening de alcohol y la popularidad internacional
+del AUDIT, surgió la necesidad de revisar este manual para incorporar los avances en la investigación y
+la experiencia clínica.
+Este manual va dirigido principalmente para personal sanitario, pero otros profesionales que se
+encuentren ante personas con problemas relacionados con el alcohol también pueden encontrarlo útil.
+Está diseñado para su uso junto con un documento complementario que proporciona información
+sobre los procedimientos de intervención precoz, y que lleva por título «La Intervención breve para el
+consumo perjudicial o de riesgo: Un Manual para Uso en Atención Primaria». Juntos, estos manuales
+describen una aproximación detallada del screening y la intervención breve para los problemas
+relacionados con el alcohol en Atención Primaria de Salud.
+Reconocimientos
+La revisión y finalización de este documento fueron coordinadas por Maristela Monteiro con la
+asistencia técnica de Vladimir Poznyak del Departamento de Salud Mental y Dependencia de
+Sustancias de la OMS, y Deborah Talamini, Universidad de Connecticut. El apoyo económico para esta
+publicación fue proporcionado por el Ministerio de Salud y de Bienestar de Japón.
+Traducción. José Martínez-Raga, Bartolomé Pérez Gálvez, Miguel Castellano Gómez, María Dolores
+Temprado Albalat
+© Organización Mundial de la Salud 2001
+Este documento no es una publicación formal de la Organización Mundial de la Salud (OMS), todos los
+derechos están reservados por la Organización. Este documento puede, sin embargo, ser libremente
+revisado, resumido, reproducido y traducido, en parte o en su totalidad pero no para la venta o para
+su utilización con fines comerciales. Cualquier pregunta debe ser remitida al Departamento de Salud
+Mental y Dependencia de Sustancias, Organización Mundial de la Salud, CH-1211 Ginebra 27, Suiza,
+que estará encantado de aportar la información más reciente o cualquier cambio hecho en el texto, los
+planes para nuevas ediciones y reimpresiones, las adaptaciones regionales y las traducciones ya
+disponibles.
+Los autores son los únicos responsables de los puntos de vista expresados en este documento, los
+cuales no son necesariamente los de la Organización Mundial de la Salud.
+2
+AUDIT
+
+--- p4 ---
+4
+Objetivo de este manual
+5
+¿Por qué hacer screeling del consumo de alcohol?
+8
+El contexto del screening del alcohol
+10
+Desarrollo y validación del AUDIT
+14
+Normas de administración
+19
+Puntuación e interpretación
+21
+Cómo ayudar a los pacientes
+25
+Implementación del programa
+Anexos
+28
+A. Normas de investigación para el AUDIT
+30
+B. Formato sugerido para el AUDIT de auto-pase
+32
+C. Traducción y adaptación a idiomas, culturas
+y circunstancias específicas
+33
+D. Procedimientos de screening clínicos
+34
+E. Materiales de formación para el AUDIT
+35
+Referencias
+Índice
+ÍNDICE
+3

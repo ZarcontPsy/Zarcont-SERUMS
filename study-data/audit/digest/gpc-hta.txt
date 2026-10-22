@@ -1,0 +1,297 @@
+FILE gpc-hta.pdf | pages 27 | chars 62203
+
+== TOC ==
+p1: Page 1
+p2: Page 2
+p3: Page 3
+p4: Page 4
+p5: Page 5
+p6: Page 6
+p7: Page 7
+p8: Page 8
+p9: Page 9
+p10: Page 10
+p11: Page 11
+p12: Page 12
+p13: Page 13
+p14: Page 14
+p15: Page 15
+p16: Page 16
+p17: Page 17
+p18: Page 18
+p19: Page 19
+p20: Page 20
+p21: Page 21
+p22: Page 22
+p23: Page 23
+p24: Page 24
+p25: Page 25
+p26: Page 26
+p27: Page 27
+
+== HEADINGS (candidates) ==
+p1 [21.1] *,19‘)
+p1 [12.7] No  031- 20 ISIrit (-ISA
+p1 [60.4] Zne, a, 1 9
+p1 [13.4] EN EJZO
+p1 [26.5] del  2015
+p2 [20.5] ree et cf
+p2 [17.7] r /
+p2 [17.0] ▪ tc7
+p3 [11.3] GUÍA TÉCNICA: GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO,
+p3 [11.3] TRATAMIENTO Y CONTROL DE LA ENFERMEDAD HIPERTENSIVA
+p3 [12.5] I. FINALIDAD
+p3 [11.0] II. OBJETIVO
+p3 [11.6] IV. DIAGNÓSTICO Y TRATAMIENTO DE LA HIPERTENSIÓN ARTERIAL
+p3 [10.8] V. CONSIDERACIONES GENERALES
+p3 [42.5] sistólica es 140 mmHg y para la diastólica
+p10 [33.5] PAS 130-139 	PAS 140-159 	PAS 160-179 	PAS 180
+p10 [33.5] o PAD 85-89 	o PAD 90-99
+p10 [33.5] o PAD 100-109
+p10 [33.5] Riesgo moderado
+p10 [12.5] sintomáticag.
+p11 [11.2] • Hemoglobina y hematocrito.
+p12 [13.5] Tabla 3. Metas de presión arterial y nivel de recomendación9"
+p12 [21.8] R ecimendición
+p13 [38.0] de
+p13 [38.0] manera
+p13 [38.0] regular tal
+p13 [38.0] como
+p13 [38.0] caminar,
+p14 [40.2] arterial diastólica
+p15 [33.5] ' 	'
+p16 [33.5] de < 140/90
+p16 [33.5] durante varias semanas
+p16 [33.5] • Después añadir
+p16 [33.5] para la PA con
+p16 [33.5] si objetivo
+p16 [33.5] • cambios en el estilo de vida
+p16 [33.5] 1^^• No intervenirsobre la PA
+p19 [23.0] (
+p19 [13.9] PAD ,90
+p19 [31.3] C
+p19 [31.3] Me d ::carientes
+p20 [30.8] i
+p20 [14.1] BRA
+p22 [38.0] Hiponatremia,
+p22 [38.0] hipopotasemia,
+p22 [38.0] riesgo
+p22 [38.0] que
+p22 [38.0] con
+p22 [38.0] las
+p22 [38.0] tiazidas),
+p22 [38.0] ginecomastia
+p22 [38.0] en
+p22 [38.0] varones
+p22 [38.0] y
+p22 [38.0] Insuficiencia
+p22 [38.0] Bradicardia,
+p22 [38.0] broncoespasmo,
+p22 [38.0] arterial
+p22 [38.0] periférica,
+p22 [38.0] disfunción
+p22 [38.0] insuficiencia
+p22 [38.0] frecuencia
+p22 [38.0] los dihidropiridínicos.
+p22 [38.0] Con
+p22 [38.0] dihidropiridínicos
+p22 [38.0] reacciones
+p22 [38.0] pueden
+p22 [38.0] estreñimiento,
+p22 [38.0] bradicardia
+p22 [38.0] trastornos
+p25 [42.5] disponible
+p25 [42.5] en
+p25 [42.5] línea.ltalia:
+p25 [42.5] Alwan
+p25 [42.5] A.
+p25 [42.5] Disponible
+p25 [42.5] (ENDES
+p25 [42.5] Lima.
+p25 [42.5] Ministerio
+p25 [42.5] de
+p25 [42.5] Salud.
+p25 [14.1] InternMed 2007:147-783-786. Disponible en:
+p26 [13.9] Instituto Nacional de Salud, 2012. Disponible en:
+
+== FIRST PAGES ==
+
+--- p1 ---
+A. Velásquez
+MINISTERIO DE SALUD
+, \caukCA DEL p
+*,19‘)
+No  031- 20 ISIrit (-ISA
+Zne, a, 1 9
+EN EJZO
+del  2015
+Visto, los Expedientes N°s 14-088487-001 y 14-043194-003, que contienen el
+Memorándum N° 1433-2014-DGSP/MINSA y el Informe N° 037-2014-DGSP-DAIS-
+ESNPCDNT/MINSA, de la Dirección General de Salud de las Personas del Ministerio de
+Salud;
+CONSIDERANDO:
+Que, los numerales I y II del Título Preliminar de la Ley N° 26842, Ley General de
+Salud disponen que la salud es condición indispensable del desarrollo humano y medio
+fundamental para alcanzar el bienestar individual y colectivo, y que la protección de la
+salud es de interés público. Por tanto, es responsabilidad del Estado regularla, vigilarla y
+promoverla;
+Que, el numeral 1) del artículo 3 del Decreto Legislativo N° 1161, Ley de
+Organización y Funciones del Ministerio de Salud establece que el Ministerio de Salud es
+competente en Salud de las Personas;
+Que, asimismo, el literal a) del artículo 5 de la precitada Ley dispone que es
+función rectora del Ministerio de Salud formular, planear, dirigir, coordinar, ejecutar,
+supervisar y evaluar la política nacional y sectorial de Promoción de la Salud, Prevención
+de Enfermedades, Recuperación y Rehabilitación en Salud, bajo su competencia,
+aplicable a todos los niveles de gobierno; así como "Dictar normas y lineamientos técnicos
+para la adecuada ejecución y supervisión de las políticas nacionales y sectoriales, (...)",
+conforme se desprende dei literal b) del artículo 5 de la precitada Ley;
+Que, por Resolución Ministerial N° 491-2009/M INSA, de fecha 21 de julio de 2009,
+se aprobó la "Guía Técnica: Guía de Práctica Clínica para la Prevención y Control de la
+Enfermedad Hipertensiva en el Primer Nivel de Atención";
+Que, de acuerdo a lo previsto en el literal a) del artículo 41 del Reglamento de
+Organización y Funciones del Ministerio de Salud, aprobado por Decreto Supremo N°
+023-2005-SA y sus modificatorias, la Dirección General de Salud de las Personas, es el
+órgano técnico normativo a cargo de proponer las políticas de salud, prioridades sanitarias
+
+--- p2 ---
+5. RUIZ Z.
+ANÍBAL VELÁSQUEZ VALDIVIA
+Ministro de Salud
+o II, I O
+co
+▪
+ree et cf
+•
+r /
+CI
+▪ tc7
+y estrategias de atención de salud de las personas y el modelo de atención integral de
+salud, con alcance sectorial e institucional;
+Que, la Dirección General de Salud de las Personas ha elaborado la "Guía
+Técnica: Guía de Práctica Clínica para el Diagnóstico, Tratamiento y Control de la
+Enfermedad Hipertensiva", cuya finalidad es contribuir en la reducción de la morbilidad y
+mortalidad de la enfermedad hipertensiva;
+Estando a lo propuesto por la Dirección General de Salud de las Personas;
+Con el visado de la Directora General de la Dirección General de Salud de las
+Personas, de la Directora General de la Oficina General de Asesoría Jurídica, del
+Viceministro de Salud Pública y del Viceministro de Prestaciones y Aseguramiento en
+Salud;
+De conformidad con el Decreto Legislativo N° 1161, Ley de Organización y
+Funciones del Ministerio de Salud;
+SE RESUELVE:
+Artículo 1.- Aprobar la "Guía Técnica: Guía de Práctica Clínica para el
+Diagnóstico, Tratamiento y Control de la Enfermedad Hipertensiva", que forma parte
+integrante de la presente Resolución Ministerial.
+Artículo 2.- Encargar a la Dirección General de Salud de las Personas la difusión
+y supervisión de lo dispuesto en la citada Guía Técnica.
+Artículo 3.- Disponer que el Instituto de Gestión de Servicios de Salud, así como
+las Direcciones de Salud, Direcciones Regionales de Salud, las Gerencias Regionales de
+Salud o las que hagan sus veces en el ámbito regional, son responsables de la difusión,
+implementación y supervisión de la presente Guía Técnica, dentro de sus respectivas
+jurisdicciones.
+Artículo 4.- Dejar sin efecto la Resolución Ministerial N° 491-2009/MINSA, de
+fecha 21 de julio de 2009, que aprobó la "Guía Técnica: Guía de Práctica Clínica para la
+Prevención y Control de la Enfermedad Hipertensiva en el Primer Nivel de Atención".
+Artículo 5.- Encargar a la Oficina General de Comunicaciones la publicación de la
+presente Resolución Ministerial en el Portal Institucional del Ministerio de Salud, en la
+dirección: http://www.minsa.gob.pe/transparencia/dge_normas.asp.
+Regístrese, comuníquese y publíquese.
+
+--- p3 ---
+GUÍA TÉCNICA: GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO,
+TRATAMIENTO Y CONTROL DE LA ENFERMEDAD HIPERTENSIVA
+I. FINALIDAD
+Contribuir a la reducción de la morbilidad y mortalidad de la enfermedad hipertensiva.
+II. OBJETIVO
+Establecer los criterios técnicos para el diagnóstico, tratamiento y control de la enfermedad
+hipertensiva.
+III. ÁMBITO DE APLICACIÓN
+La presente Guía de Práctica Clínica tiene como ámbito de aplicación los establecimientos de
+salud del Ministerio de Salud, del Instituto de Gestión de Servicios de Salud, de las Direcciones
+Regionales de Salud, de las Gerencias Regionales de Salud o las que hagan sus veces a nivel
+regional. También podrá servir como referente para los demás establecimientos de salud del
+Seguro Social de Salud (EsSalud), de las Instituciones Armadas (IPRESS), de la Policía
+Nacional del Perú, así como para los establecimientos de salud privados y otros prestadores
+que brinden atenciones de salud en todo el país.
+IV. DIAGNÓSTICO Y TRATAMIENTO DE LA HIPERTENSIÓN ARTERIAL
+4.1. Nombre y código de la Clasificación Internacional de Enfermedades 10ma. versión
+(CIE 10)
+•
+Hipertensión esencial (primaria) (110).
+•
+Enfermedad cardiaca hipertensiva (111).
+•
+Enfermedad renal hipertensiva (112).
+•
+Enfermedad cardiorrenal hipertensiva (113).
+•
+Hipertensión secundaria (115).
+•
+Insuficiencia cardíaca (150).
+•
+Enfermedad cerebrovascular, no especificada (167.9).
+V. CONSIDERACIONES GENERALES
+5.1. DEFINICIÓN
+La hipertensión arterial (HTA) es una enfermedad vascular, arterial, sistémica,
+inflamatoria-crónica, sin etiología definida en la mayoría de los casos; y cuya
+manifestación clínica indispensable es la elevación anormal y persistente de la presión
+arterial sistólica (PAS) o diastólica (PAD).
+En la población adulta (.?18 años de edad), el punto de corte para la presión arterial
+sistólica es 140 mmHg y para la diastólica
+mmHg. El riesgo cardiovascular es
+inherente al nivel de la presión arterial y observa un incremento de tipo lineal. Sin
+embargo, se debe establecer el riesgo adicional teniendo en cuenta los factores de riesgo
+presentes, así como el compromiso clínico o subclínico de órgano o sistema blanco
+(estratificación de riesgo global).
+N. Reyes p
+1
+
+--- p4 ---
+N. Reyes P
+GUÍA TÉCNICA:
+GUÍA DE PRACTICA CLÍNICA PARA EL DIAGNÓSTICO, TRATAMIENTO Y CONTROL DE LA ENFERMEDAD
+HIPERTENSIVA
+La enfermedad hipertensiva no es curable pero se considera que la reducción efectiva de
+la presión arterial (PA) es un objetivo fundamental para la reducción de los eventos
+cardiovasculares.
+5.2. ETIOLOGÍA
+5.2.1. Hipertensión primaria (esencial o idiopática):
+Es aquella hipertensión en la que no existe una causa identificable; existen múltiples
+factores relacionados o asociados pero no con categoría de causa y efecto; está
+descrito un componente familiar, pero aún no está definido un único gen
+responsable. De manera general, corresponde a más del 95% de casos de
+hipertensión arterial.
+5.2.2. Hipertensión secundaria:
+Es aquella debida a una causa identificable; cuya remoción o corrección
+desencadena un control óptimo de la PA y, en muchos casos, la curación de la
+enfermedad. Corresponde a menos del 5% del total de casos de hipertensión
+arterial.
+Entre ellas destacan por su prevalencia:
+• Enfermedad renal: parenquimal o renovascular (glomerulonefritis, nefropatías
+intersticiales, hidronefrosis, tumores renales, aterosclerosis o displasias de
+arterias renales).
+• Enfermedades endocrinas: hipotiroidismo e hipertiroidismo, hiperaldosteronismo
+primario, feocromocitoma, síndrome de Cushing, entre otras.
+• Miscelánea: tumores, coartación de aorta, enfermedad de Paget, entre otros.
+• Medicamentos: anticonceptivos hormonales, corticosteroides, agentes vaso
+constrictores, simpáticomiméticos, antidepresivos tricíclicos, inhibidores de la
+monoaminoxidasa, anfetaminas, antiinflamatorios no esteroideos, ciclosporina,
+eritropoyetina entre otros.
+5.3. FISIOPATOLOGÍA
+El concepto actual sobre la enfermedad hipertensiva es de una enfermedad vascular,
+arterial, sistémica, inflamatoria, crónica y progresiva.
+Partiendo de ese concepto genérico, se desprende que el vaso sanguíneo es el órgano
+primario de afección y dentro de esa estructura está el endotelio. Este órgano es vital en la
+homeostasis vascular ya que de su normal funcionamiento depende el equilibrio y, por
+ende, la salud integral vascular.
+La presión arterial está regulada por numerosos factores neuro-hormonales de acción
+sistémica y local, que funcionan en circuitos de autorregulación, manteniéndola dentro de
+límites estrechos.
+Diversos factores como herencia y estilo de vida, sistema nervioso simpático
+hiperactivado, ingesta excesiva de sal, hormonas o sustancias liberadas por el endotelio
+enfermo, pueden modificar el gasto cardiaco o la resistencia vascular periférica, lo que da
+inicio a la enfermedad.
+La angiotensina II (de acción sistémica o tisular), potente vasoconstrictora y facilitadora del
+crecimiento celular, es el principal determinante de la persistencia de la enfermedad
+hipertensiva.
+2

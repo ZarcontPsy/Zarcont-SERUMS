@@ -1,0 +1,1850 @@
+FILE nt-neonatal.pdf | pages 71 | chars 180850
+
+== HEADINGS (candidates) ==
+p1 [11.8] MINISTERIO DE SALUD
+p1 [13.6] Que, los numerales I y II del Título Preliminar de la Ley N° 26842, Ley General de
+p1 [13.9] Salud, disponen que la salud es condición indispensable del desarrollo humano y medio
+p1 [13.6] Que, los literales b) y h) del artículo 5 del acotado Decreto Legislativo, modificado
+p1 [12.9] por el Decreto Legislativo N° 1504, Decreto Legislativo que fortalece al Instituto Nacional de
+p1 [12.6] del Ministerio de Salud formular, planear, dirigir, coordinar, ejecutar, supervisar y evaluar la
+p1 [12.6] política nacional y sectorial de promoción de la salud, vigilancia, prevención y control de las
+p1 [16.9] enfermedades, recuperación, rehabilitación en salud, tecnologías en salud y buenas
+p1 [14.2] Visto, el Expediente N° DGIESP-DVICI20240000442, que contiene el Informe N°
+p1 [15.0] D000255-2024-DGIESP-DVICI-MINSA y la Nota Informativa N° D002130-2024-DGIESP-
+p1 [15.1] MINSA de la Dirección General de Intervenciones Estratégicas en Salud Pública; y, el
+p1 [12.6] Informe N° D000802-2024-QGAJ-MINSA de la Oficina General de Asesoría Jurídica;
+p1 [17.7] Que, el numeral 1) del artículo 3 del Decreto Legislativo N° 1161, Ley de
+p1 [13.2] Organización y Funciones del Ministerio de Salud, establece que el Ministerio de Salud es
+p1 [14.1] competente en salud de las personas; y su artículo 4 dispone que el Sector Salud está
+p1 [12.6] conformado por el Ministerio de Salud, como organismo rector, las entidades adscritas a él,
+p1 [15.6] las instituciones públicas y privadas de nivel nacional, regional y local, y las personas
+p1 [12.5] y que tienen impacto directo o indirecto en la salud, individual o colectiva;
+p1 [13.2] Que, el artículo 63 del Reglamento de Organización y Funciones del Ministerio de
+p1 [13.2] Salud, aprobado por Decreto Supremo N° 008-2017-SA, modificado por Decreto Supremo
+p1 [14.5] N° 011-2017-SA, establece que la Dirección General de Intervenciones Estratégicas en
+p1 [12.5] Salud Pública es el órgano de línea del Ministerio de Salud, dependiente del Viceministerio
+p1 [14.5] de Salud Pública, competente para dirigir y coordinar las intervenciones estratégicas de
+p1 [16.5] /y 4
+p1 [14.1] áa&a jo
+p1 [14.9] v? ytatj) a í7
+p2 [11.4] SE RESUELVE:
+p2 [12.5] Regístrese, comuniqúese y publíquese.
+p2 [19.5] < T.
+p2 [15.1] Con el visado de la Dirección General de Intervenciones Estratégicas en Salud
+p2 [14.8] Pública, de la Dirección General de Operaciones en Salud, de la Dirección General de
+p2 [13.9] de la Dirección General de Medicamentos, Insumos y Drogas, de la Dirección General de
+p2 [12.9] Telesalud, Referencia y Urgencias, de la Oficina General de Tecnologías de la Información,
+p2 [13.8] General de Asesoría Jurídica, de la Secretaría General, del Despacho Viceministerial de
+p2 [14.8] Que, mediante los documentos del visto, la Dirección General de Intervenciones
+p2 [15.3] Estratégicas en Salud Pública propone la actualización de la Norma Técnica de Salud
+p2 [12.9] Estando a lo propuesto por la Dirección General de Intervenciones Estratégicas en
+p2 [12.9] Artículo 2.- Derogar la Resolución Ministerial N° 828-2013/MINSA, que aprueba la
+p2 [15.1] NTS N° 106-MINSA/DGSP-V.01: <Norma Técnica de Salud para la Atención Integral de
+p2 [11.8] CÉSAR HENRY VÁSQUEZ SÁNCHEZ
+p2 [11.8] Ministro de Salud
+p2 [12.5] Que, mediante la Resolución Ministerial N° 828-2013/MINSA, se aprueba la NTS N°
+p2 [16.2] 106-MINSA/DGSP-V.01: <Norma Técnica de Salud para la Atención Integral de Salud
+p2 [12.6] Neonatal=, la cual ha sido modificada con la Resolución Ministerial N° 669-2015/MINSA;
+p2 [11.4] Artículo 3.- Encargar a la Oficina de Transparencia y Anticorrupción de la Secretaría
+p2 [13.2] General la publicación de la presente Resolución Ministerial y su Anexo en la sede digital
+p2 [21.7] Artículo 1.-Aprobar la NTS N° 2. H -MINSA/DGIESP-2024, Norma Técnica de
+p2 [12.9] Salud para la Atención Integral de Salud Neonatal, que como Anexo forma parte integrante
+p2 [13.9] de la presente Resolución Ministerial y que se publica en la sede digital del Ministerio de
+p2 [17.0] De conformidad con lo dispuesto en el Decreto Legislativo N° 1161, Ley de
+p2 [12.6] Organización y Funciones del Ministerio de Salud, modificado por la Ley N° 30895, Ley que
+p2 [14.5] fortalece la función rectora del Ministerio de Salud, y por el Decreto Legislativo N° 1504,
+p2 [12.6] Decreto Legislativo que fortalece al Instituto Nacional de Salud para la prevención y control
+p2 [16.9] aprobado por Decreto Supremo N° 008-2017-SA, modificado mediante los Decretos
+p2 [18.1] kJ
+p3 [18.7] I. FINALIDAD
+p3 [15.3] II. OBJETIVOS
+p3 [16.5] 2.2 OBJETIVOS ESPECÍFICOS
+p3 [12.1] III. ÁMBITO DE APLICACIÓN
+p3 [18.9] IV. BASE LEGAL
+p3 [13.6] NTS N°21 4 -MINSA/DGIESP-2024
+p3 [13.2] NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD
+p3 [10.9] NEONATAL
+p3 [13.2] 2.1 OBJETIVO GENERAL
+p3 [15.1] La presente Norma Técnica de Salud es de aplicación a nivel nacional en todos los
+p3 [15.1] de Redes Integradas de Salud (DIRIS); de los Gobiernos Regionales, a cargo de las
+p3 [12.9] o las que hagan sus veces a nivel regional; de los Gobiernos Locales; del Seguro Social
+p3 [13.8] de Salud - ESSALUD; de la Sanidad de las Fuerzas Armadas; de la Sanidad de la Policía
+p3 [12.9] Nacional de Perú; y, en establecimientos de salud de administración privada y mixta que
+p3 [12.6] Establecer los procedimientos técnico-administrativos que permitan brindar la
+p3 [12.6] Fortalecer los procesos de gestión correspondientes a la atención integral de
+p3 [12.5] salud neonatal.
+p3 [15.4] Fortalecer la organización y funciones en los servicios neonatales de los
+p3 [17.0] establecimientos de salud, correspondientes a los diferentes niveles de
+p3 [12.5] Ley N° 26842, Ley General de Salud, y sus modificatorias.
+p3 [12.5] Ley N° 29885, Ley de Tamizaje Neonatal Universal, y su modificatoria.
+p3 [12.6] Ley N° 31975, Ley que modifica la Ley N° 29885, Ley que declara de interés nacional
+p3 [12.5] la creación del programa de Tamizaje Neonatal Universal.
+p3 [16.7] Ley N° 31856, Ley que garantiza la atención de la salud de acuerdo con las
+p3 [12.5] Ley N° 29344, Ley Marco de Aseguramiento Universal en Salud.
+p3 [12.5] Ley N° 31633, Ley que implementa y desarrolla los bancos de leche humana.
+p3 [12.9] Decreto Supremo N° 020-2014-SA, que aprueba el Texto Único Ordenado de la Ley
+p3 [12.9] N° 29344, Ley Marco de Aseguramiento Universal de Salud.
+p3 [14.1] Decreto Supremo N° 008-2017-SA, que aprueba el Reglamento de Organización y
+p3 [12.5] Funciones del Ministerio de Salud, y sus modificatorias.
+p3 [12.6] Decreto Supremo N° 020-2014, SA, que aprueba el Texto Único Ordenado de la Ley
+p3 [12.9] N° 29344, Ley Marco de Aseguramiento Universal en Salud.
+p3 [15.9] Resolución Ministerial N° 633-2023-MINSA, que aprueba el Documento Técnico:
+p4 [15.6] NTS N° 2. / M -MINSA/DGIESP-2024
+p4 [20.3] Resolución Ministerial N° 884-2022/MINSA, que aprueba la NTS N° 196-
+p4 [12.6] MINSA/DGIESP-2022 <Norma Técnica de Salud que establece el Esquema Nacional
+p4 [13.9] MINSA/2020/DGIESP: Directiva Sanitaria para la Implementación de la Práctica del
+p4 [16.2] Resolución Ministerial N° 030-2020/MINSA, que aprueba el Documento Técnico
+p4 [13.8] <Modelo de Cuidado Integral de salud por Curso de Vida para la Persona, Familia y
+p4 [15.9] Resolución Ministerial N° 670-2019/MINSA, que aprueba el Documento Técnico:
+p4 [20.0] Resolución Ministerial N° 558-2019/MINSA, que aprueba la NTS N° 154-
+p4 [16.7] MINSA/2019/DGIESP <Norma Técnica de Salud para el Tamizaje Neonatal de
+p4 [12.5] Quística, Hipoacusia Congénita y Catarata Congénita=.
+p4 [20.0] Resolución Ministerial N° 426-2019/MINSA, que aprueba la NTS N° 152-
+p4 [18.7] MINSA/2019/DGIESP-V.01 <Norma Técnica de Salud para la Implementación,
+p4 [20.7] MINSA/2019/DGIESP, Directiva Sanitaria que establece la Organización y
+p4 [15.4] Funcionamiento de los Comités de Prevención de la Mortalidad Materna, Fetal y
+p4 [20.0] Resolución Ministerial N° 537-2017/MINSA, que aprueba la NTS N° 137-
+p4 [14.8] MINSA/2017/DGIESP <Norma Técnica de Salud para el Control de Crecimiento y
+p4 [16.5] Resolución Ministerial N° 902-2017/MINSA, que aprueba el Documento Técnico
+p4 [17.9] <Catálogo de Procedimientos Médicos y Sanitarios del Sector Salud=, y sus
+p4 [15.9] Resolución Ministerial N° 907-2016/MINSA, que aprueba el Documento Técnico:
+p4 [12.9] <Definiciones Operacionales y Criterios de Programación y de Medición de Avances
+p4 [20.3] Resolución Ministerial N° 539-2016/MINSA, que aprueba la NTS N° 123-
+p4 [17.5] MINSA/DIGEMID-V.01 <Norma Técnica de Salud que regula las actividades de
+p4 [18.5] Farmacovigilancia y Tecnovigilancia de Productos Farmacéuticos, Dispositivos
+p4 [13.9] Resolución Ministerial N° 609-2014/MINSA, que aprueba la Directiva Administrativa
+p4 [21.1] N° 201-MINSA/DGSP-V.01 Directiva Administrativa para la Certificación de
+p4 [14.8] Resolución Ministerial N° 260-2014/MINSA, que aprueba la <Guía Técnica para la
+p4 [14.1] Resolución Ministerial N° 148-2012/MINSA, que aprueba la Directiva Administrativa
+p4 [17.9] N° 190-MINSA/OGEI-V.01 que establece el procedimiento para el registro del
+p4 [18.5] MINSA/DGSP-V.02 <Directiva Sanitaria para la Evaluación de las Funciones
+p4 [12.5] Obstétricas y Neonatales en los Establecimientos de Salud=.
+p4 [12.9] Resolución Ministerial N° 540-2011/MINSA, que aprueba la Norma Técnica de Salud
+p4 [17.7] N° 091-MINSA/DIGEMID-V.01 <Norma Técnica de Salud para la Utilización de
+p4 [15.4] Medicamentos No Considerados en el Petitorio Nacional Único de Medicamentos
+p4 [12.9] Resolución Ministerial N° 707-2010/MINSA, que aprueba la Norma Técnica de Salud
+p4 [14.5] N° 084-MINSA/DGSP-V.01 Norma Técnica de Salud de Atención del Recién Nacido
+p4 [12.6] Pre término con riesgo de Retinopatía del Prematuro.
+p4 [15.4] V.01 Norma Técnica de Salud que establece el Subsistema Nacional de Vigilancia
+p4 [12.5] Epidemiológica Perinatal y Neonatal.
+p5 [19.1] V. DISPOSICIONES GENERALES
+p5 [15.4] 5.1.1 Atención del recién nacido en alojamiento conjunto: Es la prestación del cuidado
+p5 [14.2] integral brindada al recién nacido que se encuentra en permanencia junto a su madre,
+p5 [16.2] fortaleciendo el vínculo afectivo, promoviendo y/o dando continuidad a la lactancia
+p5 [15.9] materna, detección de signos de alarma, brindando consejería a la madre sobre los
+p5 [16.0] cuidados generales del recién nacido y consejería en lactancia materna. Se realiza
+p5 [14.2] 5.1.3 Atención integral de salud del recién nacido: Es el conjunto de intervenciones
+p5 [13.2] todo recién nacido (de 0 a 28 días de vida), provistas de manera continua, brindadas en
+p5 [16.2] los establecimientos de salud y el seguimiento, en términos de calidad, equidad y
+p5 [14.8] 5.1.7 Consentimiento informado: Es la autorización informada, libre y voluntaria, que
+p5 [14.8] que vicie su voluntad, para el procedimiento o tratamiento de salud, siendo el médico
+p5 [15.4] tratante, docente o investigador, según corresponda, responsable de llevar a cabo el
+p5 [12.9] proceso del consentimiento informado, debiendo garantizar el derecho a la información y
+p5 [12.6] 5.1.5 Bolsa para termorrequlación neonatal: Es una bolsa estéril oclusiva de polietileno
+p5 [16.9] (con o sin capucha), para evitar la pérdida de calor del recién nacido prematuro
+p5 [12.5] inmediatamente después del parto.
+p5 [14.4] NTS N° 214 -MINSA/DGIESP-2024
+p5 [19.2] 5.1.2 Atención inmediata del recién nacido: Es el conjunto sistematizado de
+p5 [14.2] la adaptación a la vida extrauterina, reducir eventuales riesgos, daños, complicaciones,
+p5 [13.6] 5.1.6 Contacto piel a piel: Procedimiento con importantes beneficios para la madre y el
+p5 [13.2] sobre el abdomen y/o pecho desnudo de la madre, favoreciendo el inicio de la lactancia
+p5 [15.1] como partos por cesárea. Para lograr los beneficios, esta debe ser mantenida por un
+p5 [17.0] 5.1.4 Atención de salud del recién nacido con complicaciones: Es la atención
+p5 [20.4] 5.1.8 Contrarreferencia: Proceso administrativo-asistencial mediante el cual el
+p5 [12.9] establecimiento de salud de destino de la referencia devuelve o envía la responsabilidad
+p5 [13.9] del cuidado de un usuario o el resultado de la prueba diagnóstica al establecimiento de
+p5 [19.8] Resolución Ministerial N° 862-2008/MINSA, que aprueba la NTS N° 074-
+p5 [19.6] MINSA/DGSP-V.01 <Norma Técnica de Salud que establece el conjunto de
+p5 [13.9] intervenciones articuladas para la reducción de la mortalidad neonatal en el primer
+p5 [12.5] Guías de Práctica Clínica y una Guía de Procedimientos), relacionadas a la calidad de
+p5 [12.5] atención del recién nacido en los establecimientos de salud.
+p5 [47.5] lo
+p5 [19.8] 5.1 DEFINICIONES OPERATIVAS
+p6 [12.6] 5.1.13 Nacido vivo: Se considera nacido vivo al producto de la concepción que después
+p6 [12.5] de su expulsión o extracción completa del cuerpo de la madre, llora, respira o da señal de
+p6 [13.6] vida como latidos del corazón, pulsaciones del cordón umbilical o movimientos efectivos
+p6 [12.6] de los músculos de contracción voluntaria, tanto si se ha cortado o no el cordón umbilical
+p6 [12.6] y esté o no desprendida la placenta, independientemente de la duración del embarazo.
+p6 [12.9] 5.1.12 Muerte neonatal evitable: Muerte neonatal ocurrida en un recién nacido con peso
+p6 [14.2] de 2500 gramos a más, mayor o igual a 37 semanas de gestación y sin malformación
+p6 [12.9] 5.1.18 Oxigenoterapia: Es el suministro de oxígeno suplementario, cuando el pulmón es
+p6 [12.5] insuficiente para suplir las necesidades de oxígeno en los tejidos del organismo.
+p6 [12.2] Fase III: Ventilación mecánica convencional y ventilación de alta frecuencia.
+p6 [13.6] 5.1.19 Recién nacido o neonato: Nacido vivo producto de una gestación, en el periodo
+p6 [13.9] 5.1.11 Muerte neonatal: Es la defunción del recién nacido vivo que ocurre en el intervalo
+p6 [18.9] 5.1.9 Equipo de atención de salud neonatal: Está conformado por los profesionales
+p6 [17.5] responsables de la atención integral de salud del recién nacido: Médico pediatra
+p6 [15.3] neonatólogo o médico neonatólogo o médico pediatra o médico de familia o médico
+p6 [17.2] la Categorization de Establecimientos del Sector Salud, aprobado por Resolución
+p6 [12.2] 5.1.15 Peso al nacer: Es el peso del recién nacido constatado por un medio estandarizado
+p6 [17.0] 5.1.10 Identificación segura del recién nacido: Procedimiento realizado al recién
+p6 [13.9] nacido/a para garantizar su identidad desde el momento del nacimiento, en alojamiento
+p6 [12.9] importante para que en la realización de procedimientos diagnósticos y/o terapéuticos de
+p6 [13.2] 5.1.16 Pinzamiento y corte precoz del cordón umbilical: Procedimiento que se realiza
+p6 [13.6] en los primeros 60 segundos tras el parto, pinzando y seccionando el cordón umbilical y
+p6 [12.6] que separa física y definitivamente al recién nacido de su madre.
+p6 [26.0] NTS N° H -MINSA/DGIESP-2024
+p6 [16.2] 5.1.17 Pinzamiento y corte oportuno del cordón umbilical: Procedimiento que se
+p6 [12.9] realiza pinzando y seccionando el cordón umbilical, y que separa física y definitivamente
+p6 [12.9] al recién nacido de su madre, transcurrido entre 1 a 3 minutos desde el parto o cuando han
+p6 [14.8] cesado las pulsaciones del cordón. Es conocido también como corte tardío de cordón
+p6 [13.6] 5.1.14 Período neonatal: El período neonatal comienza desde el nacimiento y termina a
+p6 [14.8] 5.1.20 Recién nacido de alto riesgo: Recién nacido que tiene mayor probabilidad de
+p6 [20.7] presentar alteraciones o complicaciones, fundamentalmente, sensoriales y del
+p6 [28.0] §
+p6 [57.0] te
+p7 [13.2] 5.1.24 Recién nacido a término: Recién nacido de 37 a 41 semanas de edad gestacional.
+p7 [14.2] 5.1.27 Recién nacido de bajo peso: Es un recién nacido con un peso inferior a 2500
+p7 [13.8] 5.1.30 Referencia: Proceso administrativo - asistencial mediante el cual el personal de un
+p7 [12.9] establecimiento de salud transfiere la responsabilidad de la atención de las necesidades
+p7 [15.7] del recién nacido a otro establecimiento de salud de mayor capacidad resolutiva. La
+p7 [12.2] 5.1.22 Recién nacido normal o sano: Todo recién nacido con peso mayor o igual a 2,500
+p7 [13.2] g hasta 3,999 g, cuya edad gestacional es igual o mayor de 37 semanas y menor de 42
+p7 [15.3] semanas, nacido de parto eutócico o distócico y que no presenta patología o alguna
+p7 [13.2] 5.1.28 Recién nacido de muy bajo peso: Es un recién nacido con peso al nacer inferior
+p7 [12.9] a 1500 gramos.
+p7 [13.2] 5.1.29 Recién nacido con extremo bajo peso: Es un/a recién nacido con peso al nacer
+p7 [12.9] inferior a 1000 gramos.
+p7 [18.4] 5.1.31 Seguimiento del recién nacido de alto riesgo: Conjunto de actividades
+p7 [13.2] sistemáticas y periódicas desarrolladas, con el objeto de diagnosticar, tratar y rehabilitar
+p7 [14.2] de manera adecuada y oportuna en los recién nacidos de alto riesgo que requieran de
+p7 [12.6] 5.1.33 Telecapacitación: Es el proceso de enseñanza/aprendizaje mediante el uso de las
+p7 [16.7] Tecnologías de la Información y de la Comunicación - TIC, realizado por personal
+p7 [14.1] especializado con las competencias necesarias, orientado a ampliar los conocimientos,
+p7 [12.2] 5.1.26 Recién nacido vigoroso: Recién nacido que al momento del nacimiento llora, tiene
+p7 [18.2] 5.1.32 Tamizaje de cardiopatía conqénita: Es la búsqueda e identificación pre
+p7 [12.9] sintomática de patologías cardiacas críticas empleando la oximetría de pulso que ponen
+p7 [12.6] en riesgo la vida del recién nacido, esta se realiza oportunamente a partir de las 12 horas
+p7 [14.8] 5.1.34 Tele interconsulta: Es la consulta a distancia mediante el uso de las TIC, que
+p7 [17.5] usuaria, pudiendo esta estar o no presente, con fines de promoción, prevención,
+p7 [14.1] diagnóstico, tratamiento, recuperación, rehabilitación y cuidados paliativos según sea el
+p7 [15.2] NTS N° 2 m -MINSA/DGIESP-2024
+p7 [16.5] 5.1.23 Recién nacido pre término: Recién nacido antes de 37 semanas de edad
+p7 [15.7] 5.1.25 Recién nacido post término: Recién nacido de 42 semanas a más de edad
+p7 [15.3] 5.1.21 Recién nacido en estado crítico: Situación en la cual el recién nacido está en
+p7 [13.2] riesgo momentáneo o continuo de perder la vida o de tener un deterioro importante por
+p8 [12.2] 5.2. CONSIDERACIONES GENERALES DE LA ATENCIÓN NEONATAL
+p8 [12.5] caso, cumpliendo con las restricciones reguladas para la prescripción de medicamentos y
+p8 [12.5] demás disposiciones que determine el Ministerio de Salud.
+p8 [13.2] 5.2.1. A La DIRESA, GERESA, DIRIS, unidades ejecutoras y/o las que hagan sus veces,
+p8 [15.1] Gobiernos Locales, ESSALUD, la Sanidad de las Fuerzas Armadas, la Sanidad de la
+p8 [13.8] Policía Nacional de Perú, privados y mixtos en cuyos establecimientos de salud brinden
+p8 [13.2] atención neonatal, en coordinación con los directores o quienes hagan sus veces en los
+p8 [12.5] establecimientos de salud, les corresponde:
+p8 [15.9] Priorizar y gestionar la disponibilidad y permanencia laboral de los profesionales
+p8 [15.1] integrantes del equipo de atención de salud neonatal necesarios, que garantice la
+p8 [13.9] atención del recién nacido en todos los establecimientos de salud de su jurisdicción
+p8 [14.5] Gestionar la atención prioritaria y oportuna de todo recién nacido sano, o el recién
+p8 [13.6] nacido prematuro o con alguna complicación, y, de ser necesaria, la atención en otro
+p8 [12.5] establecimiento de salud de mayor capacidad resolutiva, realizar la referencia.
+p8 [15.1] Gestionar el equipamiento e infraestructura necesarios para la atención del recién
+p8 [12.9] Implementar la atención inmediata del recién nacido dentro de sala de partos y centro
+p8 [12.9] de servicios la atención de parto, fomentando la NO separación del recién nacido y su
+p8 [12.9] Priorizar y gestionar la dotación del kit de reanimación neonatal básico y avanzado en
+p8 [15.4] Implementar y monitorear la implementación de todos los documentos normativos
+p8 [12.6] de salud del primer, segundo y tercer nivel de atención.
+p8 [18.4] Todo recién nacido prematuro es tamizado para identificar retinopatía de la
+p8 [14.5] Prematuridad (ROP) antes de ser dado de alta; los casos diagnosticados con ROP
+p8 [14.5] reciben atención oportuna, continua y de calidad en establecimientos de salud con
+p8 [19.4] capacidad resolutiva para el diagnóstico, tratamiento, seguimiento, control y
+p8 [15.1] la atención del recién nacido en el marco de la atención centrada en la familia. El
+p8 [12.6] establecimiento de salud provee los recursos necesarios, como material de protección
+p8 [12.5] personal (mandilón, gorro, mascarilla, botas) de ser necesario.
+p8 [12.6] Fortalecer el seguimiento de todos los recién nacidos (durante el periodo neonatal que
+p8 [14.5] comprende desde el nacimiento hasta los 28 días de vida), a través de la atención
+p8 [12.9] médica, control de crecimiento y desarrollo, visita domiciliaria y seguimiento del recién
+p8 [13.9] Las acciones de promoción de la salud, como higiene de manos, lactancia materna,
+p8 [14.5] inmunizaciones, pautas de crianza, entre otras, son realizados por el personal de la
+p8 [13.6] Salvaguardar el vínculo afectivo entre el recién nacido y su madre y la práctica de la
+p8 [13.6] inclusive en situaciones de pandemia con las medidas preventivas correspondientes,
+p8 [13.6] NTS N° 'Z H -MINSA/DGIESP-2024
+p8 [58.1] í*?
+p9 [16.0] VI. DISPOSICIONES ESPECÍFICAS
+p9 [12.5] 6.1. Atención inmediata del recién nacido
+p9 [13.8] - La atención inmediata del recién nacido es responsabilidad del equipo de atención
+p9 [12.9] 6.1.1. Atención inmediata del recién nacido: Principio de anticipación
+p9 [12.5] Consiste en la preparación y valoración perinatal, previamente a suscitarse el parto,
+p9 [15.4] a. Identificar factores de riesgo perinatal:
+p9 [14.1] - El equipo de atención de salud neonatal conoce los antecedentes del embarazo,
+p9 [17.5] controles prenatales, factores de riesgo de la madre, situación del parto y
+p9 [14.8] - La información obtenida contribuye a organizar la atención; convocar al recurso
+p9 [16.9] humano necesario, según el riesgo; preparar equipos y dispositivos médicos
+p9 [12.6] necesarios para la atención neonatal.
+p9 [13.2] Mantener el orden y la buena comunicación entre el equipo de atención materna y el
+p9 [13.2] Supervisar la implementación del tamizaje neonatal universal en los recién nacidos,
+p9 [13.5] en concordancia con la NTS N° 154-MINSA/2019/DGIESP <Norma Técnica de Salud
+p9 [16.5] para el Tamizaje Neonatal de Hipotiroidismo Congénito, Hiperplasia Suprarrenal
+p9 [18.4] Congénita, Fenilcetonuria, Fibrosis Quística, Hipoacusia Congénita y Catarata
+p9 [13.6] Congénita=, aprobada con Resolución Ministerial N° 558-2019/MINSA o la que haga
+p9 [18.0] Supervisar el cumplimiento estricto de todas las actividades y procedimientos
+p9 [12.6] - El tiempo promedio de duración de la atención inmediata del recién nacido sano es
+p9 [13.2] - Todo recién nacido que recibió maniobras de (RCP es estabilizado, monitoreado y
+p9 [13.2] evaluado con mayor frecuencia hasta ser trasladado a hospitalización o referido al
+p9 [12.6] - Para la atención inmediata del recién nacido, tener en consideración el principio de
+p9 [13.9] anticipación, intervenciones en la primera hora de vida y la segunda hora de vida
+p9 [22.5] NTS N° 21 -MINSA/DGIESP-2024
+p9 [14.8] Cumplir con las estrictas medidas de bioseguridad y prevención de las Infecciones
+p9 [14.5] Analizar toda muerte neonatal, según lo dispuesto en la Directiva Sanitaria N° 084-
+p9 [21.5] MINSA-2019-DGIESP, Directiva Sanitaria que establece la Organización y
+p9 [16.2] Funcionamiento de los Comités de Prevención de la Mortalidad Materna, Fetal y
+p9 [12.9] Neonatal, aprobado con Resolución Ministerial N° 251-2019/MINSA o la que haga sus
+p10 [12.1] FACTORES DE RIESGO
+p10 [15.3] ij
+p10 [14.8] b. Para la recepción del recién nacido
+p10 [13.9] - En cada atención del parto, se deben tener en cuenta los siguientes factores que
+p10 [13.6] Verifica la disponibilidad y funcionamiento de los dispositivos médicos y equipos
+p10 [12.9] necesarios para la atención inmediata del recién nacido (Anexo N° 1).
+p10 [16.7] NTS N° Z.I H -MINSA/DGIESP-2024
+p10 [11.8] Equipo de aspiración:
+p10 [13.6] " Sondas de aspiración N° 6F, 8F, 10F, 12F.
+p10 [16.8] ¥ c Kct
+p10 [20.5] Respirador manual (bolsa autoinflable tamaño neonatal-máscara
+p11 [12.5] Ventilación a presión positiva (VPP):
+p11 [13.9] " Dispositivo de ventilación a presión positiva (Bolsa auto infiable o equipo
+p11 [12.5] flujo a 10 litros/min).
+p11 [13.8] " Filtro antibacteriano - viral, (opcional).
+p11 [12.5] " Laringoscopio neonatal con hojas rectas N° 00, 0 y 1.
+p11 [12.5] " Tubos endotraqueales sin caff, N° 2.5, 3.0 y 3.5 mm
+p11 [12.1] Suministros de cateterismo del vaso umbilical
+p11 [13.6] " Jeringas de 20cc (2), 10cc (2), 5cc (2), 1cc (4).
+p11 [15.1] " Catéter venoso umbilical (de una sola luz) N° 3.5F - 5 F o sonda de
+p11 [13.5] alimentación N° 4F - 6F.
+p11 [13.2] " Jeringas 1cc, 5cc, 10cc.
+p11 [12.9] " Adrenalina (0.1mg/ml = 1mg/10ml).
+p11 [15.6] " Solución salina normal como expansión de volumen, Cloruro de sodio
+p11 [13.2] " Dextrosa al 10%.
+p11 [15.4] NTS N° 2.1 H -MINSA/DGIESP-2024
+p12 [12.6] se atienden partos, para verificar temperatura necesaria en sala de partos.
+p12 [12.5] Contar con toallas estériles precalentadas para la recepción y secado del recién
+p12 [12.6] 6.1.2. Atención inmediata del recién nacido: Primera hora de vida
+p12 [12.5] 6.1.2.1.Valoración de la condición del recién nacido:
+p12 [13.2] El equipo de atención de salud neonatal conduce y realiza la atención del recién
+p12 [15.1] Al culminar el periodo expulsivo, el personal que atiende el parto (profesional
+p12 [14.8] médico gineco obstetra, médico cirujano y licenciado en obstetricia/obstetra, en
+p12 [16.2] concordancia con la NTS N°1O5-MINSA/DGSP-V.O1 <Norma Técnica de Salud
+p12 [13.9] para la Atención Integral de salud Materna, aprobado con Resolución Ministerial
+p12 [14.8] N°827-2013/MINSA o las que hagan sus veces) sostiene el cuerpo del recién
+p12 [13.2] nacido, comunica la hora del nacimiento, menciona el sexo del recién nacido a la
+p12 [12.6] inmediata del recién nacido.
+p12 [14.8] Desde el nacimiento y en simultáneo el equipo de atención de salud neonatal
+p12 [13.2] Si el recién nacido a término ó prematuro tardío (34 a 36 semanas de gestación)
+p12 [14.5] atiende el parto, en coordinación con el equipo de atención de salud neonatal,
+p12 [14.5] desde el abdomen del recién nacido, lo que facilita la toma de muestra para el
+p12 [14.2] En caso se tome la muestra de sangre del cordón umbilical para determinar su
+p12 [16.7] grupo sanguíneo y factor Rh, se utiliza una jeringa de 1cc heparinizada,
+p12 [13.2] asegurándonos de obtener una muestra mayor de 0.2 cc, utilizando cualquiera de
+p12 [16.2] > Para recién nacidos muy prematuros
+p12 [13.6] Incubadora para mantener la temperatura ideal del recién nacido durante
+p12 [12.9] el traslado a la Unidad de Cuidados Intermedios Neonatales o Unidad de
+p12 [19.4] c. Prevenir la pérdida de calor
+p12 [15.1] Precalentar la cuna de calor radiante 30 minutos antes de colocar al recién
+p12 [15.2] NTS N° 21 H -MINSA/DGIESP-2024
+p12 [21.7] Cjl
+p12 [17.9] ^7
+p13 [12.9] 6.1.2.2.Procedimientos de atención de rutina (Anexo N° 3): Seguidamente, el equipo
+p13 [16.2] de atención de salud neonatal aplica los procedimientos que se detallan a
+p13 [15.7] a. Prevenir la pérdida de calor
+p13 [12.5] Una vez colocado el recién nacido en el vientre materno, el equipo de atención
+p13 [13.2] de salud neonatal recepciona y seca al recién nacido con toalla pre calentada
+p13 [13.2] sobre el vientre/abdomen desnudo de la madre, evita secar ambas manos del
+p13 [12.9] recién nacido (para conservar el olor del líquido amniótico que le sirve de guía
+p13 [14.5] para llegar al pecho materno) y se cambia por otra toalla pre calentada, se
+p13 [15.1] procede a retirar la primera toalla húmeda y cubrir al recién nacido con la
+p13 [14.5] de 1,500 gramos, se le cubre todo el cuerpo con bolsa de polietileno estéril
+p13 [13.2] neonatal y con un gorro se cubre la cabeza del recién nacido inmediatamente
+p13 [12.9] después del nacimiento. No secar al recién nacido, ya que la humedad caliente
+p13 [17.3] Si el recién nacido no evidencia llanto, esfuerzo respiratorio, se encuentra
+p13 [12.6] hipotónico o con alguna condición crítica, el equipo de atención de salud neonatal
+p13 [12.6] indica al profesional que atiende el parto el pinzamiento y corte precoz del cordón
+p13 [16.2] umbilical y entrega inmediata al equipo de atención de salud neonatal para
+p13 [12.5] continuar con las maniobras de RCP y otros procedimientos que correspondan.
+p13 [15.4] En recién nacidos con presencia de líquido amniótico fétido, corioamnionitis,
+p13 [13.8] NTS N° 'Z1 H -MINSA/DGIESP-2024
+p14 [12.9] protege las pérdidas de calor por evaporación y evita lesiones potenciales por
+p14 [15.1] y del tubo neural abierto o expuesto, cubrir el defecto con bolsa estéril de
+p14 [14.5] b. Contacto piel a piel
+p14 [13.6] Consiste en colocar al recién nacido de cubito ventral y en forma longitudinal
+p14 [12.6] Durante este procedimiento, el equipo de atención de salud neonatal realiza lo
+p14 [15.1] " Evalúa constantemente al recién nacido durante el tiempo que dura el
+p14 [14.8] De presentarse algún signo de alarma en el recién nacido o la madre,
+p14 [13.2] suspender el contacto piel a piel y proceder a su atención bajo fuente de
+p14 [13.9] El equipo de atención de salud neonatal registra los datos en el brazalete al
+p14 [13.2] momento del nacimiento y contiene la siguiente información: El primer apellido
+p14 [13.2] del padre y de la madre (cuando no sea posible, se identifica al recién nacido
+p14 [13.6] con los apellidos de la madre), fecha y hora de nacimiento y sexo del recién
+p14 [13.6] NTS N° 7 I 4 -MINSA/DGIESP-2024
+p14 [19.6] -J
+p14 [14.2] El brazalete se coloca en la muñeca de la mano izquierda (la saturación de
+p14 [15.4] oxígeno se toma en la mano derecha), y, de no ser posible en miembros
+p14 [16.0] 6.1.3. Atención inmediata del recién nacido: En la segunda hora (posterior al
+p14 [12.2] contacto piel a piel)
+p14 [13.2] Después del contacto piel a piel y de la primera lactada, colocar al recién nacido
+p14 [15.0] bajo fuente de calor con las condiciones que aseguren su termorregulación y
+p14 [12.5] continuar con su atención: 0
+p14 [15.3] a. Colocación de la pinza umbilical plástica (Clamp)
+p14 [11.8] El contacto piel a piel tiene duración de 60 minutos y se prolonga hasta el inicio
+p14 [15.4] c. Identificación segura del recién nacido:
+p14 [12.6] Los datos del recién nacido para el registro del Certificado de Nacido Vivo/a se
+p14 [14.5] desarrolla en el marco de lo precisado en la Directiva Administrativa N° 190-
+p14 [19.1] MINSA/OGEI-V.01 que establece el procedimiento para el registro del
+p14 [13.2] Certificado de Nacido/a Vivo en todos los establecimientos de salud del país,
+p14 [14.8] aprobado por Resolución Ministerial N° 148-2012/MINSA o la que haga sus
+p15 [14.1] NTS N° 2 1 H -MINSA/DGIESP-2024
+p15 [13.8] Verificar las 2 arterias y una vena del
+p15 [12.6] cordón umbilical.
+p15 [12.9] La profilaxis del cordón umbilical se realiza con alcohol al 70% o clorhexidina
+p15 [12.6] del 0,5% o 1% y luego se cubre con gasa estéril.
+p15 [14.2] No aplicar antisépticos que contengan yodo, por el riesgo de ser absorbido
+p15 [12.6] fácilmente por la piel del recién nacido y producir trastornos tiroideos.
+p15 [15.3] c. Profilaxis ocular
+p15 [20.9] - El recorte del cordón umbilical es realizado con tijera estéril a 1 cm por arriba
+p15 [12.6] de la pinza umbilical plástica (clamp) en el recién nacido sano.
+p15 [14.8] b. Profilaxis de cordón umbilical
+p15 [15.4] A todo recién nacido se le realiza la evaluación de las funciones vitales,
+p15 [18.7] saturación de oxígeno, frecuencia cardiaca, temperatura y frecuencia
+p15 [12.6] de la edad gestacional aplicando el test de Capurro o Ballard (Anexos N°s 4 y
+p15 [13.9] 5); aplicar el test de Silverman en casos de dificultad respiratoria del recién
+p15 [12.5] gentilmente una sonda orogástrica o de aspiración N° 08F o 10F (ingresar 2 a
+p15 [12.9] 3cm). Está contraindicado el uso del termómetro de mercurio.
+p15 [12.6] f. Profilaxis de la enfermedad hemorrágica del recién nacido
+p15 [14.1] A todo recién nacido se le aplica la vitamina K (Fitomenadiona amp. 10 mg/ml)
+p15 [16.0] por vía intramuscular (cara antero-lateral externa del muslo izquierdo) para
+p15 [12.5] prevenir la enfermedad hemorrágica dentro de las primeras 6 hora de vida, en la
+p15 [14.5] Recién nacidos prematuros con peso menor o igual a 1500g: 0.3mg mg/kg
+p15 [12.9] (0.03ml) a 0.5mg(0.05ml) mg/kg IM.
+p15 [13.2] Recién nacidos con peso mayor a 1,500g: 1mg (0.1 ml) IM.
+p15 [12.2] g. Historia clínica neonatal
+p15 [12.9] Se registra toda atención médica y de enfermería en la historia clínica neonatal.
+p15 [12.1] (Anexos N°s 10 y 11).
+p15 [12.2] h. Traslado del recién nacido
+p15 [13.6] - Abrir los párpados con la yema de los dedos y aplicar ungüento en el saco
+p15 [13.6] Aplicar: Tetraciclina ungüento oftálmico al 1% (1 cm. en cada ojo).
+p15 [11.4] d. Realizar la somatometría:
+p15 [12.6] Pesar, tallar, medir el perímetro cefálico, el perímetro torácico recién nacido, y
+p15 [12.5] registrar estos datos en la historia clínica neonatal.
+p15 [12.5] e. Examen físico del recién nacido
+p15 [14.9] La COlOCaCiÓn de la pinza umbilical médicos sanitarios del Centro Nacional de Abastecimiento de
+p15 [10.8] plástica (clamp), se realiza de 2 a 3 cm Recursos Estratégicos en Salud - CENARES, v. OI, Ministerio de
+p15 [15.1] de salud neonatal que atiende al recién
+p15 [22.3] nacido, bajo técnicas rigurosamente
+p15 [19.9] ^OO<
+p15 [21.3] u
+p16 [12.5] Curación del cordón umbilical.
+p16 [12.5] Prioritariamente, considerar la siguiente lista temática:
+p16 [20.9] - Baño del recién nacido.
+p16 [15.9] NTSNo21H -MINSA/DGIESP-2024
+p16 [10.7] NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD NEONATAL
+p16 [12.6] 6.2. Atención del recién nacido en alojamiento conjunto
+p16 [13.9] Esta atención se inicia desde que la madre se encuentra en el periodo de puerperio
+p16 [16.2] inmediato, y el recién nacido necesita monitoreo continuo propio del proceso de
+p16 [15.1] Todo recién nacido tiene una evaluación médica en las primeras 12 horas de vida
+p16 [12.9] durante su permanencia en alojamiento conjunto y continua una evaluación cada 12 a
+p16 [16.2] Todo recién nacido en alojamiento conjunto recibe las atenciones del equipo de
+p16 [12.2] a. Verificar constantemente la identificación segura en cada proceso de atención.
+p16 [12.6] b. Colocar al recién nacido al lado de su madre.
+p16 [12.5] c. Realizar la evaluación periódica de signos vitales al recién nacido.
+p16 [13.9] Atender de manera inmediata al llamado de la madre en función a los signos o
+p16 [12.2] d. Promover y mantener la lactancia materna exclusiva.
+p16 [13.6] El recién nacido continua con lactancia materna exclusiva a libre demanda en el
+p16 [13.6] Está prohibido el uso de otro alimento para el recién nacido que no sea la leche
+p16 [13.2] Realizar actividades de información, orientación, educación y comunicación a
+p16 [12.1] la madre.
+p16 [13.2] Si el recién nacido se encuentra con funciones vitales estables, concluida la
+p16 [14.2] atención inmediata, es regresado con su madre para alojamiento conjunto,
+p16 [12.9] En caso de que el recién nacido presente alguna complicación y requiera un
+p16 [15.1] manejo especializado, bajo indicación médica, debe ser transportado a la
+p16 [12.9] UCIN o a la Unidad de Cuidados Intermedios Neonatales en una incubadora
+p16 [13.2] de trasporte, cuya temperatura oscile entre 32°C y 32.5°C, y la temperatura
+p16 [13.6] corporal recién nacido debe ser mantenida en 36.5°C; monitoreada a través
+p16 [20.7] del servocontrol. De ser necesario, coordinar la referencia a un
+p17 [13.2] Entrega del carnet neonatal a la madre del recién nacido antes del momento del
+p17 [13.6] alta, debidamente llenado, indicando la fecha del primer control de crecimiento y
+p17 [16.2] NTS N° 2 I <4 -MINSA/DGIESP-2024
+p17 [17.7] De ser necesario, orienta sobre los trámites de inscripción en las IAFAS
+p17 [12.6] correspondientes, referencia y contrarreferencia y otros trámites administrativos.
+p17 [12.6] Supervisar y registrar la alimentación, hidratación, evacuaciones y peso diario.
+p17 [12.5] g. Realizar la higiene del recién nacido
+p17 [12.9] h. Realizar la limpieza y desinfección desde la base del cordón umbilical con alcohol
+p17 [13.2] Tamizaje neonatal; a todo recién nacido se le realiza el tamizaje neonatal según lo
+p17 [13.2] precisado en la NTS N° 154-MINSA/2019/DGIESP <Norma Técnica de Salud para el
+p17 [13.6] Tamizaje Neonatal de Hipotiroidismo Congénito, Hiperplasia Suprarrenal Congénita,
+p17 [17.7] Fenilcetonuria, Fibrosis Quística, Hipoacusia Congénita y Catarata Congénita=,
+p17 [14.2] Tamizaje de enfermedades metabólicas: Hipotiroidismo congénito, hiperplasia
+p17 [13.9] Tamizaje de hipoacusia congénita, entre las 24 y 48 horas de vida y/o a más
+p17 [11.8] Tamizaje de catarata congénita, debe ser realizado antes de ser dado de alta, su
+p17 [13.6] Tamizaje de cardiopatía congénita Este tamizaje consiste en una intervención no
+p17 [12.9] invasiva realizada por el equipo de atención de salud neonatal a todo recién nacido,
+p17 [13.2] que pueda poner en riesgo su vida. Este procedimiento se realiza después de las 12
+p17 [12.2] 6.3. Atención del recién nacido hospitalizado
+p17 [13.2] Es el conjunto de cuidados, procedimientos y atención médica especializada que se
+p17 [12.6] De acuerdo con la severidad del compromiso clínico, se procede a la hospitalización
+p17 [14.5] del recién nacido en la Unidad de Cuidados Intermedios Neonatales y UCIN para
+p17 [13.6] En la alimentación del recién nacido hospitalizado, se prioriza la leche materna, por
+p17 [14.5] Los bancos de leche humana se implementan en las instituciones prestadoras de
+p17 [15.6] servicios de salud, de acuerdo con lo establecido en la Ley N° 31633, Ley que
+p17 [18.2] Los establecimientos de salud de acuerdo a su nivel de complejidad, bajo
+p17 [12.6] responsabilidad, deben contar con el equipo de atención de salud neonatal, además,
+p17 [15.3] requieren contar con un equipo médico de diferentes especialidades (cardiólogo,
+p18 [16.2] NTS N° 2) M -MINSA/DGIESP-2024
+p18 [22.4] r//
+p18 [17.9] oftalmólogo, neurólogo, otorrinolaringólogo, cirujano pediatra, medicina física y
+p18 [17.3] rehabilitación, neurocirujano, cirujano cardiovascular, neumólogo, endocrinólogo,
+p18 [12.5] gastroenterólogo, nefrólogo entre otros), profesionales cirujano dentista, nutricionista,
+p18 [12.5] psicólogo, asistente social, fisioterapista, tecnólogos médicos y técnicos para realizar
+p18 [15.1] La frecuencia de las evaluaciones médicas depende de la condición clínica y
+p18 [12.9] severidad del compromiso del recién nacido; pudiendo requerir, en los casos más
+p18 [14.5] de la madre y/o del recién nacido, sexo, fecha, hora de nacimiento, número de
+p18 [16.2] La dirección del establecimiento de salud, en coordinación con las jefaturas
+p18 [14.1] correspondientes, gestiona la dotación necesaria de equipos de alta tecnología,
+p18 [23.6] como monitores multiparámetros, ventiladores mecánicos neonatales,
+p18 [16.7] incubadoras, bombas perfusoras, oxímetros portátiles y de mesa y otros de
+p18 [13.2] atención neonatal implementar la práctica del método canguro para el manejo de
+p18 [15.4] neonatos pretérminos y/o con bajo peso al nacer en el marco de la Directiva
+p18 [12.6] Sanitaria No108-MINSA/2020/DGIESP: Directiva Sanitaria para la Implementación
+p18 [13.9] de la Práctica del Método Canguro, aprobada con Resolución Ministerial N°440-
+p18 [13.6] clínica neonatal y en otros formatos establecidos, la atención y/o procedimientos
+p18 [13.6] El médico responsable de la atención de salud neonatal informa a los padres o
+p18 [14.1] nacido durante la estancia hospitalaria; debe hacerlo usando un lenguaje claro,
+p18 [13.2] directo, conciso, con amabilidad y confiabilidad, así mismo se debe contar con el
+p18 [14.5] En caso de que el recién nacido prematuro desarrolle retinopatía que requiere
+p18 [13.2] fotocoagulación, esta es realizada dentro de los espacios de la UCIN, por ser de
+p18 [13.2] Aplicar los estándares nacionales e internacionales de medidas de bioseguridad
+p18 [12.9] y el padre respetando las medidas de bioseguridad, toda vez que los padres del
+p18 [12.6] recién nacido no son visita.
+p18 [16.7] La extracción de muestra de sangre en recién nacidos es realizada por la
+p18 [12.9] enfermera del equipo de atención de salud neonatal o tecnólogo médico del área
+p18 [13.2] En el caso de recién nacidos menores de 1500 gramos, la extracción de muestra
+p18 [13.6] 6.3.1 Unidad de Cuidados Intermedios Neonatales
+p18 [13.9] Es el área que cuenta con la infraestructura, equipamiento y recursos humanos
+p18 [13.2] especializados necesarios para la atención del recién nacido con complicaciones
+p19 [12.6] 6.3.2. Unidad de Cuidados Intensivos Neonatales
+p19 [12.6] enfermedad que ponga en peligro su vida (estado crítico) y que tiene la posibilidad de
+p19 [12.6] resolverse mediante la intervención del equipo de médicos y enfermeras especialistas
+p19 [17.2] en el manejo del recién nacido en estado crítico, así como también de otros
+p19 [14.8] profesionales de diferentes especialidades y equipos de alta tecnología diseñados
+p19 [13.2] El establecimiento de salud proporciona al recién nacido en estado crítico la atención
+p19 [13.2] médica profesional, oportuna, inmediata y de alta calidad, ofreciendo al mismo tiempo
+p19 [12.9] En esta unidad se realizan procedimientos de mediana y gran complejidad, como
+p19 [16.2] canalización de vías periféricas, colocación de catéter centrales (percutáneo,
+p19 [13.2] flebotomía), exanguinotransfusión, fototerapia, administración de hemoderivados,
+p19 [18.2] nutrición parenteral; monitoreo no invasivo de signos vitales, estudios de
+p19 [12.5] diagnóstico, tratamiento farmacológico, examen de fondo de ojo para descarte de
+p19 [14.1] retinopatía de la prematuridad, estudios radiológicos, ecocardiografía, ecografía
+p19 [17.5] cerebral, abdominal, pulmonar y de otros órganos si lo requiere, cuidados
+p19 [17.5] paliativos, tamizaje neonatal (tamizaje metabólico, oftalmológico, cardiaco y
+p19 [15.1] auditivo) y cuidados del recién nacido en método canguro, entre otros que se
+p19 [15.7] NTS N° 21 4 -MINSA/DGIESP-2024
+p19 [15.1] 6.3.1.2 Procedimientos más frecuentes en la Unidad de Cuidados Intermedios
+p19 [19.6] que requiere medidas terapéuticas de soporte vital y atención médica
+p19 [13.6] 6.3.1.1 Criterios de ingreso a la Unidad de Cuidados Intermedios Neonatales
+p19 [18.0] a. Recién nacido con patología que no requiere soporte ventilatorio invasivo
+p19 [13.6] FASE 1 o FASE 2.
+p19 [13.9] d. Hipoglicemia sintomática o niveles séricos de glucosa menor de 45 mg/dl. hasta
+p19 [12.6] las 48 horas de vida y 60mg/dl en mayores de 48 horas de vida, en recién nacidos
+p19 [14.8] e. Recién nacido con malformaciones congénitas mayores como neurológicas, de
+p19 [14.8] tracto digestivo, pulmonares, cardiovasculares entre otros, detectada durante el
+p19 [13.9] control pre natal en medicina fetal o al nacimiento, que cursen SIN inestabilidad
+p19 [12.6] f. Recién nacido con hiperbilirrubinemia que requiera tratamiento.
+p19 [17.2] h. Recién nacido que requiera administración parenteral de medicamentos y/o
+p20 [11.8] 6.3.2.2. Procedimientos especiales en la Unidad de Cuidados Intensivos Neonatal
+p20 [16.5] c) Otros recién nacidos en estado crítico, según criterio e indicación médica.
+p20 [12.2] 6.3.2.1. Criterios de ingreso a la Unidad de Cuidado Intensivos Neonatal
+p20 [12.9] Los recién nacidos que ingresan a la UCIN son aquellos que tienen características
+p20 [12.5] por las características individuales, la patología que presenta en el periodo neonatal
+p20 [12.5] inmediato, así como por las patologías maternas o de la gestación.
+p20 [16.2] a) Por procedencia: Los pacientes ingresan de las siguientes áreas:
+p20 [13.9] Mantener los niveles de ruido por debajo de los 45 decibeles en el día y 30
+p20 [16.5] Los niveles de iluminación en áreas críticas neonatales son tenues y lo
+p20 [18.7] estrictamente necesarios para las labores del personal asistencial, de
+p20 [13.6] preferencia, deben tener ambientes con iluminación focalizada (tipo lámparas
+p20 [12.9] spot). El uso de cobertores individuales es una alternativa.
+p20 [15.6] b) Por categoría:
+p20 [12.6] Recién nacido que requiere soporte ventilatorio invasivo.
+p20 [16.5] Recién nacido con inestabilidad hemodinámica y/o soporte inotrópico que
+p20 [12.6] Recién nacido con apneas severas de cualquier origen.
+p20 [16.7] Recién nacido que requiere de monitorización continua o procedimientos
+p20 [12.6] Recién nacido con estatus convulsivo.
+p20 [15.4] - Servicio de emergencia: Reingresos, prematuros o bajo peso que ingresan,
+p20 [16.2] NTS N° 7 H -MINSA/DGIESP-2024
+p20 [20.7] g) Monitoreo de saturación
+p20 [14.2] k) Administración y monitoreos de
+p20 [17.0] medicamentos enmarcados en
+p20 [40.2] documentos normativos
+p20 [13.2] a) Colocación y mantenimiento del
+p20 [15.4] Catéter Venoso Central (PICC)
+p20 [14.1] b) Colocación y mantenimiento de
+p20 [19.1] umbilical, línea arterial, entre
+p21 [12.2] 6.3.2.3 Egreso de la Unidad de Cuidados Intensivos Neonatal
+p21 [14.1] Todos los recién nacidos que egresan de la UCIN son transferidos a la Unidad de
+p21 [13.2] Cuidados Intermedios Neonatales (egreso o transferencia interna) o referidos a otro
+p21 [12.5] establecimiento de salud con mayor capacidad resolutiva, de ser necesario, para dar
+p21 [12.2] 6.3.3. Alta hospitalaria
+p21 [14.8] de signos vitales, examen físico neonatal normal, ausencia de enfermedad y/o
+p21 [15.7] oral adecuada, despistaje infeccioso negativo si existió algún riesgo de este,
+p21 [12.6] tamizaje neonatal, con grupo sanguíneo ABO y Rh, y con sus vacunas completas
+p21 [12.5] El proceso del alta del recién nacido es responsabilidad del médico.
+p21 [12.9] El equipo de atención de salud neonatal es responsable de brindar la orientación
+p21 [13.2] de los cuidados del recién nacido a los padres y familiares en temas del cuidado
+p21 [15.9] nacido en casa, reconocimiento de signos de alarma y reanimación neonatal
+p21 [13.6] 6.3.3.1 Procedimientos del alta hospitalaria
+p21 [12.9] El médico responsable del alta del recién nacido genera los documentos de alta
+p21 [12.6] efectuados, pronóstico y recomendaciones.
+p21 [22.7] " Verifica, ordena y corrobora los datos completos en la historia clínica del recién
+p21 [13.2] nacido, interconsulta a psicología u otras especialidades según lo amerite la
+p21 [13.5] madre o en casos especiales (madre adolescente, madre con problemas de
+p21 [13.2] salud mental, alguna discapacidad y otros), así mismo brinda indicaciones a
+p21 [17.3] la madre y familia sobre los cuidados del recién nacido en el hogar,
+p21 [18.2] observación de los signos de alarma, cumplimiento de los tamizajes
+p21 [14.3] NTS N° 2 I H -MINSA/DGIESP-2024
+p21 [14.8] s) Toma de muestras sanguíneas
+p21 [17.7] v) Ecografía cerebral, abdominal,
+p21 [22.7] x) Otros procedimientos según
+p21 [15.9] aprobados por el Ministerio de
+p21 [31.7] n) Monitoreos hemodinámicos
+p21 [16.2] o) Ventilación mecánica en modo
+p21 [20.7] p) Cuidados de la vía
+p21 [30.2] aspiración de secreción
+p21 [18.5] endotraqueal fijación de tubo
+p22 [13.2] *En situaciones del alta después del tercer día de vida del recién nacido, el primer
+p22 [13.2] control se realiza a partir de las 48 horas posteriores al alta, el segundo control se
+p22 [14.2] realiza con intervalo mínimo de 3 días respecto al primer control, y los controles
+p22 [15.4] neonatales y calendario de vacunación, estimulación temprana, lavado de
+p22 [12.9] manos, importancia de los controles de crecimiento y desarrollo, indicando la
+p22 [13.6] fecha del primer control en el carnet neonatal y otros que se consideren de
+p22 [22.9] " Entrega la papeleta de alta, carnet del recién nacido con las citas de control,
+p22 [16.0] NTS N°'2.1 H -MINSA/DGIESP-2024
+p22 [12.6] 6.5. Inmunización del recién nacido
+p22 [14.2] El recién nacido antes del alta es protegido contra las formas graves de tuberculosis
+p22 [15.1] (Bacilo de Calmette - Guérin - BCG) y la hepatitis viral B (HVB); en el marco a lo
+p22 [15.9] el Esquema Nacional de Vacunación, aprobada con Resolución Ministerial N° 884-
+p22 [12.9] 2022/MINSA o la que haga sus veces; por ello, el equipo de atención de salud neonatal
+p22 [15.1] coordina o realiza la administración de las primeras vacunas del recién nacido y se
+p22 [12.5] registra en la Hoja de Evaluación Médica Neonatal y tarjeta CRED neonatal.
+p22 [13.9] La administración de la vacuna HVB es efectuada en el vasto externo, en el tercio
+p22 [12.6] La administración de la vacuna BCG es por vía intradérmica, en el hombro del brazo
+p22 [12.5] 6.4. Control de crecimiento y desarrollo del recién nacido
+p22 [13.6] El control de crecimiento y desarrollo - CRED del recién nacido es el conjunto de
+p22 [15.3] los riesgos, alteraciones o trastornos, así como la presencia de enfermedades,
+p22 [12.6] facilitando su diagnóstico e intervención oportuna, el mismo que debe ser realizado
+p22 [14.8] en el establecimiento de salud, conforme a la NTS N° 137-MINSA/2017/DGIESP
+p22 [17.5] niño menores de cinco años=, aprobada con Resolución Ministerial N° 537-
+p22 [15.6] 2017/MINSA o la que haga sus veces. La periodicidad del CRED se detalla a
+p22 [28.3] v/1
+p23 [21.5] requerido exanguinotransfusión y/o
+p23 [16.9] Independientemente donde se encuentre el recién nacido, se debe cumplir la
+p23 [15.4] vacunación de acuerdo con la NTS 196-MINSA/DGIESP-2022 Norma Técnica de
+p23 [12.6] Salud que Establece el Esquema Nacional de Vacunación, aprobada con Resolución
+p23 [18.7] Recién nacido con patología neurológica: Asfixia al nacer, hemorragias,
+p23 [12.5] Evaluación nutricional especializada.
+p23 [14.1] NTS N° 2,1 H -MINSA/DGIESP-2024
+p23 [13.9] del recién nacido de riesgo contempla las evaluaciones sistemáticas, el número de
+p23 [12.9] Evaluación del crecimiento (peso, talla, perímetro cefálico y perímetro torácico) y
+p23 [12.6] desarrollo (motor, neurosensorial, lenguaje, social, entre otras).
+p23 [12.6] 6.6. Seguimiento del recién nacido de riesgo
+p23 [16.2] Es la atención interdisciplinaria del recién nacido identificado como de riesgo,
+p23 [15.4] realizada en el consultorio de alto riesgo de los establecimientos de salud del
+p23 [18.7] a) Se considera recién nacido de riesgo a:
+p23 [12.9] Recién nacido de peso menor a 2,500 gramos, independientemente de su edad
+p23 [21.5] Post-operado de patología quirúrgica: Atresia esofágica, gastrosquisis,
+p23 [16.2] Recién nacido con mielo meningocele, hidrocefalia y patología derivada de
+p24 [15.6] 6.7. Visita domiciliaria
+p24 [14.5] del establecimiento de salud hasta la vivienda de la familia, con el objetivo de
+p24 [15.7] desarrollar acciones de captación, acompañamiento y seguimiento dirigidas al
+p24 [16.7] recién nacido, realizando la anamnesis, evaluación física del recién nacido,
+p24 [13.6] haciendo énfasis en los factores de riesgo y signos de enfermedad neonatal, así
+p24 [12.6] cuidado del recién nacido.
+p24 [15.1] Preparación de la familia para la adherencia a los cuidados adecuados y la
+p24 [15.2] NTS N° 21 4 -MINSA/DGIESP-2024
+p24 [15.6] Todo establecimiento de salud del primer nivel de atención y hospitales con
+p24 [20.0] población asignada realizan la visita domiciliaria a todo recién nacido
+p24 [16.7] independientemente de su condición (sano o con alguna patología) que se
+p24 [12.5] Esta actividad es realizada por el equipo de atención de salud neonatal; de no ser
+p24 [12.9] el personal técnico de enfermería debidamente capacitado en temas de atención
+p24 [14.5] integral de salud de recién nacidos en los establecimientos de salud donde no
+p24 [14.5] Recién nacido con alguna condición desfavorable en el nacimiento (prematuro,
+p24 [14.5] Cuando se ha detectado alteraciones en la ganancia de peso en los controles
+p24 [12.9] Si el domicilio de la familia se ubica en una comunidad o sector a más de 3 horas
+p24 [15.4] En el caso del recién nacido producto de un parto domiciliario, la visita debe
+p24 [15.9] realizarse de inmediato, luego de haber tomado conocimiento del caso y en
+p24 [12.9] coordinación con el profesional responsable de la salud materna para trasladar a
+p24 [13.6] la madre y recién nacido al establecimiento de salud para su mejor evaluación y
+p24 [13.6] con la familia, comunidad y/o autoridades locales (en comunidades del interior del
+p24 [14.5] país) para que el día de la visita la familia espere al personal de la salud en el
+p25 [18.7] 7.1. Componente de gestión
+p25 [14.8] a) Planificación: Los niveles de dirección de los establecimientos de salud y unidades
+p25 [15.1] ejecutoras deben incluir en el Plan Operativo Institucional y metas operativas, las
+p25 [12.9] d) Número de visitas a desarrollar: Se realiza mínimamente una visita domiciliaria por
+p25 [14.8] cada recién nacido en el periodo de 0 a 28 días de vida; de ser necesario, se
+p25 [19.6] programan más visitas según necesidad y/o problemática identificada. En
+p25 [13.6] situaciones que el recién nacido no es llevado a su control del CRED, se procede
+p25 [12.9] Todo establecimiento de salud debe contar con un libro de seguimiento (virtual y/o
+p25 [17.0] Las visitas domiciliarias realizadas a cada recién nacido: Fecha, problema
+p25 [15.9] Registrar la fecha de la siguiente visita domiciliaria (en caso lo amerite) y
+p25 [12.6] f) Materiales: Kit para la visita domiciliaria
+p25 [14.2] Rotafolio de temas sobre identificación de signos de alarma del recién nacido,
+p25 [13.6] En caso de recién nacido menor de 10 días, se debe contar con los materiales
+p25 [19.2] g) Referencia, en caso de identificar algún signo de alarma; el recién nacido debe ser
+p25 [20.9] - Observación de la técnica de amamantamiento y fortalecer esta práctica (según
+p25 [13.6] ficha de observación de la mamada de la <Guía Técnica para la Consejería en
+p25 [13.2] Lactancia Materna=, aprobada con Resolución Ministerial N° 462-2015/MINSA o
+p25 [15.4] c) Concientizar y comprometer a la madre para acudir al establecimiento de salud y
+p25 [15.3] cumplir con los 4 controles de crecimiento y desarrollo del recién nacido en la
+p25 [12.5] recién nacido.
+p25 [12.9] NTS N° T. 1 H -MINSA/DGIESP-2024
+p26 [12.2] 7.1.1. Indicadores
+p26 [11.8] Indicadores de estructura
+p26 [11.6] 8ESTÁNDAR
+p26 [13.2] - Mayor al 50%
+p26 [14.2] _PG^
+p26 [14.7] NTS N° 'Z l H -MINSA/DGIESP-2024
+p26 [17.6] de salud de la
+p26 [13.6] monitoreo, supervisión y evaluación, en el marco del programa de Presupuesto por
+p26 [18.2] Resultados <Salud Materna Neonatal= y Programa Presupuestal Orientado al
+p26 [20.5] b) Programación: Corresponde a la programación de actividades, materiales,
+p26 [16.5] medicamentos e insumos. La dirección de cada establecimiento de salud debe
+p26 [12.9] c) Criterios de programación: Para la programación de las intervenciones, se considera
+p26 [14.1] al 100% de los recién nacidos que se encuentren bajo responsabilidad de todo los
+p26 [13.9] establecimientos de salud con cartera de servicios <Atención de partos=, de Redes
+p26 [12.5] Integradas de Salud - DIRIS; de los Gobiernos Regionales, a través de las DIRESAs;
+p26 [13.6] Locales, el ESSALUD; la Sanidad de las Fuerzas Armadas; la Sanidad de la Policía
+p26 [15.1] Nacional de Perú; y privados. Los establecimientos de salud que no cuenten con
+p26 [19.4] población asignada/bajo responsabilidad, programan teniendo en cuenta los
+p26 [13.9] nacimientos atendidos en los últimos 3 años, considerando para ello, el año con el
+p26 [13.2] mayor número de nacimientos (Fuente de información: Padrón nominal o Certificado
+p26 [14.5] estructura, resultado e impacto. Los indicadores de proceso se evalúan de manera
+p26 [12.5] de orientar y reorientar procesos, principalmente los considerados críticos en los
+p26 [16.9] de la atención neonatal en los establecimientos de salud, por lo tanto, es
+p26 [13.8] programada de manera periódica. Los resultados de la supervisión permiten la
+p26 [17.3] La evaluación, a través de la cual se verifica el avance de los objetivos
+p26 [12.9] alcanzados con respecto a los programados. La evaluación se realiza utilizando
+p26 [12.5] indicadores, con una periodicidad trimestral, semestral y anual. La evaluación se
+p26 [16.2] hace tanto de las metas físicas, así como, presupuéstales en cada nivel. Para la
+p26 [20.9] atención inmediata
+p26 [16.7] N° de establecimientos
+p26 [14.4] profesionales médicos y
+p26 [25.8] médicos y
+p26 [13.8] atención inmediata y
+p27 [11.8] Indicadores de proceso:
+p27 [11.3] 8ESTÁNDAR
+p27 [16.9] Estancia hospitalaria
+p27 [14.6] Porcentaje de recién
+p27 [12.9] nacidos que iniciaron
+p27 [26.3] lactancia materna
+p27 [12.9] N° total de dias-estancia
+p27 [14.7] de los egresados de la
+p27 [31.4] reanimación cardio
+p27 [13.2] - Mayor al 50%
+p27 [14.4] Total, de nacidos
+p27 [15.2] NTSN-'ZH -MlNSA/DGIESP-2024
+p27 [16.7] N° establecimientos de
+p27 [18.7] salud de la DIRESA/
+p27 [34.4] con profesionales
+p27 [12.9] estabilización y trasporte
+p27 [17.6] para la referencia del
+p27 [15.9] UCIN del
+p27 [17.6] de salud de la
+p27 [14.4] N° de días incubadoras
+p27 [13.2] UCIN ocupadas del mes
+p27 [16.9] recibió maniobras RCP
+p27 [20.7] en el momento
+p27 [26.7] nacimiento en
+p27 [26.3] médicos y
+p27 [22.0] trasporte para
+p27 [15.2] referencia del recién
+p27 [18.9] salud que cuentan
+p27 [15.2] con el equipamiento
+p27 [32.6] necesario para
+p27 [15.7] inmediata del recién
+p27 [24.9] Número de recién
+p27 [30.6] nacidos en el
+p27 [12.6] establecimiento de salud
+p27 [18.0] atendidos en el
+p27 [23.0] de salud del
+p27 [12.9] nacidos que necesitó
+p27 [23.7] el momento
+p27 [16.9] N° de establecimientos
+p27 [17.2] necesario para realizar
+p27 [17.8] atención inmediata del
+p27 [14.7] recién nacido y RCP X
+p27 [20.9] Total, de días
+p27 [24.2] disponibles del
+p28 [15.2] prematuros del hospital
+p28 [15.0] que recibieron atención
+p28 [14.7] con método canguro X
+p28 [13.4] Total, de nacidos
+p28 [13.8] numerador, de la
+p28 [13.4] DIRESA, DIRIS y
+p28 [18.9] de recién
+p28 [13.7] con método canguro
+p28 [15.4] durante su estancia
+p28 [14.7] NTS N° 21H -MINSA/DGIESP-2024
+p28 [14.0] catarata congénita y
+p28 [17.5] con tamizaje neonatal
+p28 [14.5] que recibieron lactancia
+p28 [21.9] materna durante la
+p28 [13.5] primera hora de vida X
+p28 [13.5] Porcentaje de recién
+p28 [19.9] el establecimiento
+p28 [24.4] de salud que
+p28 [12.9] recibieron el paquete
+p28 [21.5] N° de recién
+p28 [14.7] nacidos (28 días
+p28 [17.1] de vida) de la
+p28 [23.0] jurisdicción i
+p28 [16.3] de salud
+p28 [14.2] registrados en el
+p28 [21.3] padrón nominal
+p28 [15.9] de medición del
+p28 [16.5] durante el contacto
+p28 [17.5] piel a piel en la
+p28 [20.6] de salud con
+p28 [17.4] de vida, en el
+p28 [28.1] medición del
+p28 [16.5] de salud en el
+p28 [18.7] Porcentaje mensual
+p28 [29.2] recibieron visita
+p28 [20.6] recibieron una visita
+p28 [17.6] domiciliaria durante el
+p28 [16.9] N° de recién nacidos
+p28 [26.1] atendidos en el
+p28 [26.8] establecimiento de
+p28 [32.0] visita domiciliaria,
+p28 [22.6] registrados en HIS
+p28 [12.9] linea. X 100
+p28 [16.5] Total, de recién
+p28 [20.0] hospital en el
+p29 [12.1] Indicadores de resultado:
+p29 [12.1] 7.1.2. Gestión del conocimiento
+p29 [13.5] Mortalidad neonatal
+p29 [16.3] por bajo peso al
+p29 [12.7] por malformaciones
+p29 [13.9] La capacitación del recurso humano se realiza en el marco de los procesos de
+p29 [12.6] Tasa de mortalidad neonatal.
+p29 [13.0] N° total de nacidos vivos del
+p29 [15.6] mismo año, en determinado
+p29 [13.5] NTS N° 2 1 H -MINSA/DGIESP-2024
+p29 [25.9] N° de muertes
+p29 [16.7] recién nacidos de 0
+p29 [14.9] hasta los 28 días de
+p29 [14.2] Total, de nacidos del mismo
+p29 [20.0] periodo de medición del
+p29 [20.8] N° de defunciones
+p29 [17.4] neonatales con peso
+p29 [15.2] periodo de medición, en un
+p29 [12.9] causas relacionadas al
+p29 [15.6] Total, de nacidos vivos del
+p29 [17.9] numerador, en determinado
+p30 [12.9] Todo establecimiento de salud, según la cartera de servicio que oferte, incluye en
+p30 [17.7] el plan de desarrollo de personas - PDP institucional, las capacitaciones,
+p30 [12.9] presenciales o virtuales, a través de la telecapacitación, de manera obligatoria en
+p30 [13.6] temas relacionados a la salud neonatal, como son atención inmediata del recién
+p30 [17.0] nacido normal y con complicaciones, tamizaje neonatal, evaluación física y
+p30 [13.2] neurológica del recién nacido en el CRED, lactancia materna, atención del recién
+p30 [15.1] nacido en las Unidades de Cuidados Intermedios, método canguro, tamizaje y
+p30 [16.2] manejo de retinopatía de la prematuridad, oxigenoterapia en recién nacidos,
+p30 [14.5] atención del recién nacido en las UCIN, cuidados del recién nacido prematuro,
+p30 [13.8] capacitación presencial y obligatoria al equipo de atención de salud neonatal en
+p30 [14.5] El jefe de departamento o del servicio neonatología en los establecimientos de
+p30 [13.6] salud realizan el requerimiento de capacitación para su incorporación en el PDP
+p30 [14.9] NTS N° 2.1 4 -MINSA/DGIESP-2024
+p30 [18.2] Las capacitaciones programadas deben orientarse a la resolución de las
+p30 [12.5] críticos identificados en el nivel local, regional o nacional.
+p30 [18.7] La DIRESA, GERESA, DIRIS o quienes hagan sus veces, monitorea el
+p30 [13.2] cumplimiento del PDP de los establecimientos de salud, según lo precisado en el
+p30 [14.8] párrafo anterior. Asimismo, incluyen en su PDP, capacitaciones presenciales o
+p30 [16.0] telecapacitación para fortalecer la gestión de la salud neonatal en el ámbito
+p30 [12.9] El MINSA, a través de la Dirección General de Personal de la Salud, monitorea el
+p30 [16.7] cumplimiento del PDP de los institutos especializados que brinden atención
+p30 [18.9] En el nivel local, los establecimientos de salud realizan la recolección,
+p30 [14.5] esta actividad se realiza de acuerdo a la normativa emitida por el Ministerio de
+p30 [13.6] Salud; para ello, se hace uso de las diferentes fuentes de información: Libros de
+p30 [18.7] atención inmediata neonatal, certificado de nacido vivo - CNV, certificado de
+p30 [14.8] defunción, libros y registros de muertes neonatales, historias clínicas, libros de
+p30 [14.2] atención de emergencias, libros de hospitalización de las unidades de cuidados
+p30 [12.9] intensivos y cuidados intermedios neonatales, libro de egresos, base de datos del
+p30 [12.6] Seguro Integral de Salud (SIS), HIS y otros según corresponda. Asimismo, dichas
+p30 [15.9] fuentes de información consignan diagnósticos con los códigos CIE 10 y sus
+p30 [20.5] actualizaciones, procedimientos según Documento Técnico <Catálogo de
+p30 [12.9] Procedimientos Médicos y Sanitarios del Sector Salud=, aprobado por Resolución
+p30 [14.2] Ministerial N° 902-2017/MINSA o la que haga sus veces; y, los diagnósticos de
+p30 [12.5] NANDA - North American Nursing Diagnosis Association).
+p30 [12.9] Asimismo, realizan la detección y notificación de las muertes fetales y neonatales,
+p30 [16.9] de acuerdo con los contenidos de la NTS N° 078-MINSA/DGE-V.01 <Norma
+p30 [19.6] Técnica de Salud que establece el Subsistema Nacional de Vigilancia
+p30 [13.2] El Ministerio de Salud, DIRESAS/GERESAS/DIRIS o las que hagan sus veces en
+p30 [12.9] el ámbito regional, fortalecen los sistemas de información para mejorar el registro
+p30 [13.3] llj
+p31 [12.9] 7.1.4. Investigación en salud neonatal
+p31 [16.0] 7.2. Componente de organización
+p31 [12.5] 7.2.1. Organización por niveles de atención
+p31 [13.2] Los establecimientos de salud están organizados para brindar atención integral
+p31 [13.2] recién nacido (Anexos N°s 15 y 16) y se garantice la continuidad de la atención
+p31 [12.5] las funciones obstétricas y neonatales definidas en la Directiva Sanitaria N° 001-
+p31 [16.2] MINSA/DGSP-V.02 Directiva Sanitaria para la Evaluación de las Funciones
+p31 [15.1] Los establecimientos de salud con funciones obstétricas y neonatales están
+p31 [13.9] correlacionados con la categorización de los establecimientos de salud, donde
+p31 [12.5] medicamentos, insumes y recursos humanos.
+p31 [12.9] e) Los establecimientos de salud del ESSALUD; la Sanidad de las Fuerzas Armadas
+p31 [15.6] y de la Policía Nacional de Perú; así como en los establecimientos de salud
+p31 [13.2] privados y mixtos registran información relacionada a la atención neonatal en los
+p31 [12.9] Los establecimientos de salud, en el marco de sus competencias, deben destinar
+p31 [12.9] el horario necesario para el desarrollo de investigaciones orientadas a mejorar la
+p31 [12.5] salud neonatal.
+p31 [15.7] NTS N° 21 4 -MINSA/DGIESP-2024
+p31 [12.1] 7.2.2. Instrumentos de registro de la atención neonatal:
+p31 [15.3] a) Todo registro de la atención neonatal es realizado por el equipo de atención
+p31 [12.5] conforme a la NTS N° 139-MINSA/2018/DGAIN: <Norma Técnica de Salud para la
+p31 [12.9] Gestión de la Historia Clínica=, aprobada con Resolución Ministerial N° 214-2018-
+p31 [13.2] MINSA=, aprobada con Resolución Ministerial N° 265-2018/MINSA o la que haga
+p31 [13.2] sus veces, considerando los documentos de los Anexos N° 10, 11 y 12.
+p31 [14.5] c) Todo nacimiento ocurrido en los establecimientos de salud públicos, privados y
+p31 [13.5] mixtos, es registrado en el formulario o aplicativo del Certificado de Nacido Vivo -
+p31 [12.9] CNV, según lo dispuesto en la Directiva Administrativa N° 190-MINSA/OGEI.V.01,
+p31 [12.5] aprobado con Resolución Ministerial N° 148-2012/MINSA o la que haga sus veces.
+p31 [17.5] d) Todo establecimiento de salud de las GERESA, DIRESA y DIRIS, registra
+p31 [13.2] El Ministerio de Salud, las DIRESA/GERESA y DIRIS o las que hagan sus veces
+p31 [13.9] en el ámbito regional; Gobiernos Locales; ESSALUD; la Sanidad de las Fuerzas
+p31 [15.6] Armadas; la Sanidad de la Policía Nacional de Perú; y, privados que brinden
+p31 [20.7] atención neonatal fomentan el desarrollo de investigación operativa y
+p31 [15.6] epidemiológica que contribuyan a mejorar la calidad de atención de la salud
+p32 [12.6] 7.2.3. Recursos humanos
+p32 [13.5] NTS N° 2. / M -MINSA/DGIESP-2024
+p32 [12.9] Los directores de los establecimientos de salud gestionan la dotación del recurso
+p32 [14.8] El recurso humano responsable de la atención integral del recién nacido es el
+p32 [16.2] equipo de atención de salud neonatal y de acuerdo con las necesidades o
+p32 [14.8] complicaciones neonatales se suman en el marco de sus competencias, otros
+p32 [12.9] parto, la atención inmediata del recién nacido es realizada por otro profesional de
+p32 [13.6] de salud del segundo y tercer nivel de atención cuentan mínimamente con los
+p32 [12.6] 7.2.4. Equipos biomédicos y dispositivos médicos
+p32 [17.7] Todo establecimiento de salud que brinde atención de partos, realiza el
+p32 [15.4] requerimiento de equipos y dispositivos médicos para la atención del recién
+p32 [15.1] Los dispositivos médicos mínimos necesarios para la atención inmediata del
+p33 [14.0] 7.2.5. Medicamentos
+p33 [12.2] 7.2.6. Mantenimiento preventivo, correctivo y renovación de equipos
+p33 [12.9] El kit mínimamente necesario para RCP del recién nacido se detalla en el literal b)
+p33 [13.8] Todo equipo biomédico destinado a la atención de salud es ingresado al registro
+p33 [14.1] NTS N° 2 1 4 -MINSA/DGIESP-2024
+p33 [13.9] a nivel regional; de los gobiernos locales, del ESSALUD; de la Sanidad de las
+p33 [25.3] Fuerzas Armadas; de la Sanidad de la Policía Nacional de Perú; y
+p33 [16.5] establecimientos de salud de administración privada y mixtas, que brinden
+p33 [17.0] Todo establecimiento de salud cuenta con los medicamentos y dispositivos
+p33 [15.7] Técnico: Petitorio Nacional Único de Medicamentos Esenciales para el Sector
+p33 [17.5] veces, en documentos normativos aprobados por el Ministerio de Salud y
+p33 [13.6] documentos de elaboración propia de hospitales e institutos aprobados con acto
+p33 [12.5] resolutivo (guías de prácticas clínica, protocolos entre otros).
+p33 [17.5] Los establecimientos de salud pueden adquirir y utilizar medicamentos no
+p33 [15.4] considerados en el PNUME, en casos debidamente justificados y conforme al
+p33 [21.5] procedimiento establecido en la Norma Técnica de Salud N° 091-
+p33 [20.7] MINSA/DIGEMID-V.01 <Norma Técnica de Salud para la Utilización de
+p33 [12.9] Medicamentos No Considerados en el Petitorio Nacional Único de Medicamentos
+p33 [14.1] Esenciales=, aprobada con Resolución Ministerial N° 540-2011/MINSA o las que
+p33 [14.1] El registro, reporte y notificación de reacciones adversas a los medicamentos o
+p33 [14.5] eventos adversos a los dispositivos médicos deben ser informados de manera
+p33 [20.7] obligatoria por los profesionales de la salud al Centro Nacional de
+p33 [15.0] Farmacovigilancia y Tecnovigilancia de la Dirección General de Medicamentos
+p33 [13.8] Insumos y Drogas - DIGEMID (Anexos N°s 13 y 14).
+p34 [15.7] 7.4. Calidad de la atención
+p34 [16.7] Los directores de la DIRESA, GERESA, DIRIS y establecimientos de salud,
+p34 [15.9] evalúan de manera continua la calidad de atención que se brinda mediante
+p34 [12.6] instrumentos que permitan recoger la percepción y expectativas del usuario, en el
+p34 [14.2] marco de la NTS N° 029-MINSA/DIGEPRES-V.02 <Norma Técnica de Salud de
+p34 [12.6] evaluación de los procesos de atención e implementar estrategias orientadas a la
+p34 [12.2] 7.2.7. Referencia y contrarreferencia
+p34 [13.8] Todo establecimiento de salud realiza la referencia del recién nacido cuando su
+p34 [12.9] realizan según lo dispuesto en la NT N° 018-MINSA/DGSP-V01: "Norma Técnica
+p34 [17.2] del Sistema de Referencia y Contrarreferencia de los Establecimientos del
+p34 [13.6] atención neonatal, programar y ejecutar el mantenimiento preventivo, correctivo
+p34 [13.5] NTS N° 2 I H -MINSA/DGIESP-2024
+p34 [11.8] 7.3. Componente de financiamiento
+p34 [16.2] El MINSA, DIRESAs, GERESAs y DIRIS o las que hagan sus veces a nivel
+p34 [12.6] regional, los gobiernos locales, ESSALUD, la Sanidad de las Fuerzas Armadas, la
+p34 [15.1] Sanidad de la Policía Nacional del Perú, y otros establecimientos de salud de
+p34 [12.9] régimen privado y mixtos, brindan las atenciones al recién nacido que se detallan
+p34 [12.5] en la presente norma, bajo el financiamiento de las IAFAS correspondientes.
+p34 [13.2] Los establecimientos del Ministerio de Salud y Gobiernos Regionales programan
+p34 [26.1] - PPR 0016 TBC-VIH/SIDA
+p35 [12.2] VIII. RESPONSABILIDADES
+p35 [12.2] 8.1. Nivel nacional
+p35 [12.2] 8.3. Nivel local
+p35 [11.4] XI. ANEXOS
+p35 [12.6] 8.2. Nivel regional
+p35 [13.6] Las GERESAs, DIRESAs, DIRIS o la que haga sus veces en el ámbito regional son
+p35 [17.5] responsables de implementar, difundir, brindar asistencia técnica, monitoreo y
+p35 [16.7] supervisión del cumplimiento de la presente Norma Técnica de Salud en sus
+p35 [14.2] en Salud Pública, es responsable de la difusión de la presente Norma Técnica de
+p35 [12.9] Salud hasta el nivel regional, así como de brindar asistencia técnica, y supervisar su
+p35 [18.0] Asimismo, las autoridades institucionales del nivel nacional de los diferentes
+p35 [13.2] prestadores de servicios de salud que integren el Sector Salud son responsables de
+p35 [16.5] la difusión y de la aplicación de la presente Norma Técnica de Salud en los
+p35 [13.2] La dirección o jefatura de cada establecimiento de salud, público o privado, según el
+p35 [12.9] nivel de complejidad, es responsable de la aplicación de la presente Norma Técnica
+p35 [12.6] de Salud en lo que corresponda.
+p35 [15.6] ANEXO N° 1 CHECK LIST DE MATERIALES E INSUMOS PARA LA ATENCIÓN
+p35 [12.9] INMEDIATA DEL RECIÉN NACIDO.
+p35 [17.0] ANEXO N° 2 LISTA DE VERIFICACIÓN DE EQUIPOS PARA REANIMACIÓN
+p35 [12.5] ANEXO N° 3 CHECK LIST DEL PROCEDIMIENTO DE ATENCION INMEDIATA DEL
+p35 [12.6] RECIEN NACIDO.
+p35 [16.7] NTS N° Z f 4 -MINSA/DGIESP-2024
+p35 [21.5] EN UCI
+p35 [21.3] ANEXO N° 8 PROCEDIMIENTO
+p35 [21.9] MANTENIMIENTO DEL CATETER
+p35 [12.5] ANEXO N° 9 FICHA DE VISITA DOMICILIARIA AL RECIÉN NACIDO.
+p35 [12.9] ANEXO N°10 HISTORIA CLÍNICA NEONATAL: HOJA DE EVALUACIÓN.
+p35 [13.6] ANEXO N° 11 REGISTRO DE ENFERMERÍA: HOJA DE VALORACIÓN LADO A Y B
+p35 [20.9] <INSTALACIÓN Y
+p35 [22.1] DE INSERCIÓN
+p35 [12.6] ANEXO N° 6 HIGIENE Y CUIDADO DE LA PIEL DEL RECIÉN NACIDO.
+p35 [17.3] ANEXO N°7 SIGNOS DE ALARMA Y MANIFESTACIONES CLÍNICAS EN EL
+p36 [19.2] UNIDAD DE CUIDADOS
+p36 [15.1] NTSN°21H -MINSA/DGIESP-2024
+p36 [19.6] ANEXO N° 12 REGISTRO DE ENFERMERÍA
+p36 [14.1] ANEXO N° 13 FORMATO DE NOTIFICACIÓN DE SOSPECHA DE REACCIONES
+p36 [12.6] ADVERSAS A MEDICAMENTOS U OTROS PRODUCTOS FARMACEUTICOS.
+p36 [16.9] ANEXO N° 14 FORMATO NOTIFICACIÓN DE SOSPECHAS DE INCIDENTES
+p36 [16.5] ADVERSAS A DISPOSITIVOS MÉDICOS POR LOS PROFESIONALES DE LA
+p36 [14.8] ANEXO N° 15 FLUJO DE ATENCIÓN DEL RECIÉN NACIDO SANO <ATENCIÓN
+p36 [12.5] ANEXO N° 16 FLUJO DE ATENCIÓN DEL RECIÉN NACIDO ENFERMO.
+p37 [10.5] LISTA DE VERIFICACIÓN
+p37 [11.3] Kit para la
+p37 [12.3] ANEXO N° 1 CHECK LIST DE MATERIALES E INSUMOS PARA LA ATENCIÓN
+p37 [11.6] INMEDIATA DEL RECIÉN NACIDO
+p37 [14.9] NTS N° 21 4 -MINSA/DGIESP-2024
+p37 [22.9] mínimo para la Tarjetas de identificación de cuna color celeste y rosado.
+p37 [10.5] inmediata del
+p37 [10.9] recién nacido.
+p37 [10.9] Prevención de hemorragia neonatal
+p37 [11.3] Kit de ropa para
+p37 [10.5] la atención
+p37 [10.5] Inmediata del
+p37 [10.9] recién nacido
+p37 [10.9] el recién nacido
+p37 [10.9] Kit de higiene
+p37 [10.9] del recién
+p37 [10.6] nacido en
+p38 [11.0] SUMINISTROS Y EQUIPOS
+p38 [13.2] Nemotecnia (C.A.S.O.A.V.I.M.T.): corresponde a la lista de verificación rápida, que incluye
+p38 [13.2] únicamente los suministros y equipos esenciales, el cual se debe ajustarse a la capacidad
+p38 [12.2] ANEXO N° 2: LISTA DE VERIFICACIÓN DE EQUIPOS PARA REANIMACIÓN
+p38 [15.9] NTS N° 21 4 -MINSA/DGIESP-2024
+p38 [14.3] //y tMw
+p38 [12.6] Sensor de temperatura y tapa del sensor
+p38 [14.5] Bolsas plásticas o envoltorio plástico de
+p38 [20.7] ¥ Colchón térmico (<32 semanas de
+p38 [20.0] " Usar pera de goma (número 4 y 6)
+p38 [15.9] * Aspirador de secreciones empotrado o
+p38 [18.7] portátil, fijado (80 a 100 mmHg) de
+p38 [18.9] Oxímetro de pulso, monitor cardiaco,
+p38 [21.5] electrodos, tabla de saturación de
+p38 [15.9] Equipo para proporcionar flujo libre de
+p38 [19.4] ¥ Tabla de objetivo de saturación de
+p38 [14.8] Encender el flujómetro de oxígeno a 10
+p38 [15.7] Mezclador de gases (oxigeno) fijado a
+p38 [15.4] ¥ Ajustar el mesclador según normas del
+p38 [25.9] Estetoscopio completo
+p38 [15.9] * Verificar la operatividad del resucitador
+p38 [17.7] recién nacido a término pretérmino y
+p38 [13.9] Sonda de alimentación (N.° 8,10,12 fr) y
+p38 [30.4] jeringa de 20ml _______________
+p38 [14.8] Hoja de tamaño 00 para prematuros -0
+p38 [13.5] para pretérmino -1 para a término
+p38 [18.0] * Tubos Endotraqueales (TET) tamaños
+p38 [13.2] Máscara laríngea (tamaño 1) y jeringa de
+p39 [19.6] Termorregulación ,
+p39 [15.2] NTSN°,2Jl | -MINSA/DGIESR-2024
+p39 [46.3] id
+p39 [12.6] Cinta métrica y/o tabla de profundidad de
+p39 [18.0] Cinta adhesiva a prueba de agua o
+p39 [19.2] * Adrenalina 1:10,000 (0,1 mg/ml)
+p39 [21.1] Insumos para la administración
+p39 [19.6] medicamentos (jeringa de todos
+p39 [19.8] Suministros para colocar un catéter
+p39 [12.5] umbilical de emergencia catéter umbilical
+p39 [20.0] J Bolsa para termorregulación para recién
+p39 [36.6] V /
+p40 [16.2] y dispositivos médicos: Oxígeno, aire comprimido, otros.
+p40 [12.2] ANEXO N° 3: CHECK LIST DEL PROCEDIMIENTO DE LA ATENCIÓN INMEDIATA DEL
+p40 [12.1] RECIEN NACIDO
+p40 [14.1] DURANTE: RECEPCION DEL RECIÉN NACIDO EN SALA DE PARTOS Y/O
+p40 [11.8] SALA DE OPERACIONES
+p40 [13.2] Control térmico en la sala de partos y sala de operaciones, la temperatura
+p40 [11.4] ambiental debe estar entre 24 y 26°C
+p40 [16.7] Monitores multiparámetros en establecimientos de salud del nivel de
+p40 [12.9] atención II-2, 111-1 y III-2
+p40 [12.9] Preparación y precalentamiento de la incubadora de transporte con nido y
+p40 [13.2] Incubadora de transporte con ventilador mecánico o resucitador con pieza
+p40 [16.5] NTSN°'2JH -MINSA/DGIESP-2024
+p41 [12.5] Recién nacido y madre en buen estado: Traslado juntos pasan a
+p41 [12.9] Recién nacido con alguna complicación: Pasa a hospitalización según
+p41 [19.2] NTS N° 2 / H -MINSA/DGIESP-2024
+p41 [13.7] 8Procedimiento de RCP si fuera necesario
+p42 [12.6] Cálculo de la edad gestacional según el puntaje de los parámetros alcanzados
+p42 [16.7] NTS N° 11H -MINSA/DGIESP-2024
+p42 [11.9] Q
+p42 [17.0] o
+p42 [10.6] rG5E
+p42 [52.8] Czdl GJI
+p42 [16.3] /15.
+p43 [12.6] ANEXO N° 5: ESCALA DE BALLARD
+p43 [27.5] hs.
+p43 [36.0] r
+p43 [17.1] o
+p43 [13.9] La escala de Ballard se basa en la madurez física y neuromuscular del recién nacido y se
+p43 [14.1] puede utilizar hasta 4 días después del nacimiento (en la práctica, la escala de Ballard se
+p43 [12.6] utiliza generalmente en las primeras 24 horas)
+p43 [15.4] NTS N° 2 1H -MINSA/DGIESP-2024
+p43 [16.5] I >90"
+p43 [50.3] O
+p43 [11.0] k
+p44 [12.2] ANEXO N° 6: HIGIENE Y CUIDADO DE LA PIEL DEL RECIÉN NACIDO
+p44 [12.2] HIGIENE DE LA PIEL Y CUERO CABELLUDO DEL RECIEN NACIDO
+p44 [12.6] Informar del procedimiento a la madre.
+p44 [12.5] Preparar el equipo, materiales y ambiente.
+p44 [15.9] Mantener puertas y ventanas cerradas evitando corrientes de aire que puedan alterar la
+p44 [13.8] NO se realiza el baño de inmersión antes de las 48 horas, porque se lava el manto protector
+p44 [16.5] natural de la piel del recién nacido, al quitarlo exponemos la piel a la colonización de
+p44 [12.5] Se toma previamente la temperatura al recién nacido y si es inferior a 36,5°C NO se realiza
+p44 [12.2] el procedimiento.
+p44 [12.5] Lavar los ojos sólo en caso de presencia de secreciones, esto se realiza con gasa o algodón y
+p44 [12.6] Limpiar con torunda de algodón humedecido con agua temperada, sin jabón, iniciando por la
+p44 [12.9] cara, luego el cuerpo y desechar la torunda de algodón. Luego, secar con toques sin friccionar.
+p44 [12.6] Limpiar la zona perianal con torunda de algodón humedecido, secar y colocar pañal desechadle y
+p44 [12.9] Lavado de manos, iniciar limpieza del cordón umbilical con gasa y alcohol, NO cubrir el muñón
+p44 [13.2] 1 toalla.
+p44 [14.2] 1 paquete de gasa 10 x 10.
+p44 [13.2] 1 frasco de alcohol de 70°.
+p44 [13.9] 1 peine de bebé.
+p44 [13.6] 1 colchoneta.
+p44 [13.9] 1 kit de ropa del recién nacido: ropón/ajuar de bebé, gorro de algodón, pañal de tela y un pañal
+p44 [11.5] 2.-PROCEDIMIENTO.
+p44 [14.9] NTS N° 21 4 -MINSA/DGIESP-2024
+p44 [12.5] Responsable de la actividad: Enfermera.
+p44 [12.1] Apoyo: Técnica/o de Enfermería._______
+p44 [13.5] 1.- Materiales - equipos:
+p45 [12.2] MANIFESTACIÓN CLÍNICA
+p45 [13.8] - Secuela de asfixias (E.H.I).
+p45 [14.1] - Deshidratación grave (Diarreas, vómitos).
+p45 [13.2] - Anemia (Palidez, HTO menor a 40%).
+p45 [11.8] POBRE SUCCIÓN
+p45 [14.1] - Retracciones xifoidea e intercostal.
+p45 [13.8] - aleteo nasal y/o cianosis.
+p45 [13.2] - Tiraje supraesternal y subcostal.
+p45 [14.1] Coloración amarillenta de escleras y piel. La presencia de ictericia
+p45 [12.9] así mismo, sí la ictericia se extiende hasta el abdomen entre las 24
+p45 [13.5] La palidez puede presentarse por pobre perfusión de la piel como
+p45 [15.4] cuando hay shock o por anemia; el llenado capilar es un buen
+p45 [14.8] indicador de shock, si se acompaña con taquicardia, hipotensión,
+p45 [12.9] ruidos cardiacos débiles, letargía o mal de estado general.
+p45 [12.2] ANEXO N°7: SIGNOS DE ALARMA Y MANIFESTACIONES CLÍNICAS EN EL RECIÉN
+p45 [16.5] - Ausencia de esfuerzo respiratorio por más de 20 segundos
+p45 [19.1] usualmente acompañada de bradicardia (FC -100/minuto)
+p45 [12.9] cianosis, palidez e hipotonía.
+p45 [13.8] - Los niños prematuros menores a 34 semanas pueden presentar
+p45 [15.4] Coloración azulada de la piel y mucosas, puede ser periférica
+p45 [12.9] (manos, pies) o central (perioral, tórax y mucosas).
+p45 [16.9] NTS N° 2 i M -MINSA/DGIESP-2024
+p45 [16.5] Signo de alarma inespecífico, común a una serie de trastorno
+p45 [12.6] metabólicos, infecciosos y congénitos.
+p45 [19.6] Hipoglucemia (En recién nacido pequeños para la edad
+p45 [15.4] gestacional - PEG, grande para la edad gestacional - GEG y
+p45 [17.5] prematuros). El amamantamiento inadecuado también es un
+p46 [11.8] PIEL MARMÓREA
+p46 [17.5] - Hipoglicemia.
+p46 [14.1] - Hipocalcemia.
+p46 [13.2] - Acidosis metabólica.
+p46 [13.8] - Daño renal.
+p46 [13.5] - Coagulación intravascular diseminada.
+p46 [14.8] NTS N° 2^ 4 -MINSA/DGIESP-2024
+p46 [14.1] - Los recién nacidos hipotérmicos deben incrementar gradualmente
+p46 [12.9] la temperatura. Evitar el aumento brusco de temperatura.
+p46 [13.8] pálida cuando se hace presión con el dedo. Puede ocurrir como
+p46 [17.5] - La exposición al frió puede producir piel marmórea, a la
+p46 [16.7] evaluación presenta: Taquicardia, taquipnea, pobre perfusión,
+p46 [19.1] pulsos débiles, palidez, cianosis, disminución del volumen
+p46 [12.5] urinario, alteración del sensorio, alteraciones de la temperatura.
+p46 [18.4] - Es el aumento de glóbulos rojos en sangre del recién nacido por
+p46 [12.6] °C. En los recién nacidos prematuros, la hipotermia está asociada
+p46 [14.5] con el incremento de la morbilidad y la mortalidad neonatal. El
+p46 [17.5] recién nacido prematuro es particularmente vulnerable a la
+p46 [15.9] pérdida de calor, puede ser la primera manifestación de una
+p46 [13.8] - Se previene manteniendo una temperatura ambiental adecuada
+p46 [13.2] en la sala de partos o en la sala de operaciones, uso de campos
+p46 [17.3] precalentados secado y remoción de los campos húmedos
+p46 [18.4] - La fontanela abombada puede ocurrir cuando aumenta la presión
+p46 [19.4] intracraneal por infección, sangrados u otras causas; es
+p46 [64.3] o9
+p46 [19.1] Los glóbulos rojos adicionales pueden bloquear el flujo
+p46 [12.5] sanguíneo en los capilares más pequeños. Esto se conoce como
+p46 [23.2] Síntomas: Somnolencia,
+p47 [19.4] " Tumores intracraneanas.
+p47 [18.2] Son movimientos involuntarios que no cesan al sostener la
+p47 [13.2] NTS N° 2.1 H -MINSA/DGIESP-2024
+p47 [15.1] importante determinar si se debe a meningitis, para lo que es
+p47 [15.9] Anormalidades congénitas y/o exposición a teratógenos y/o
+p47 [13.6] Inoculación inadvertida de anestésico local de cuero cabelludo
+p47 [12.5] al recién nacido.
+p47 [13.2] Tónicas (las posturas sostenidas que asemejan a la rigidez de
+p47 [13.6] decorticación (postura anormal con rigidez, brazos flexionados,
+p47 [13.9] los puños cerrados y las piernas derechas), descerebración, o
+p47 [16.9] de opistótonos (posición anormal, postura rígida, arquea la
+p47 [15.1] Clónicas (movimientos rítmicos lentos de 1 a 3 sacudidas por
+p47 [18.7] "> " ,
+p47 [21.3] - Errores innatos del metabolismo y dependencia a piridoxina.
+p47 [16.4] En las convulsiones se puede presentar movimientos oculares
+p47 [18.9] anormales; los movimientos son estereotipados repetitivos y
+p47 [12.5] Los tipos de convulsiones que se presentan en el recién nacido son
+p47 [24.3] Sutiles (desviaciones oculares, nistagmos, parpadeo,
+p47 [19.8] movimientos oro-buco-linguales, movimientos de pedaleo,
+p48 [11.1] ERITEMA TÓXICO
+p48 [11.8] REGURGITACIÓN >
+p48 [11.8] VÓMITOS EN LOS
+p48 [12.2] RECIÉN NACIDOS
+p48 [11.8] TEXTURA Y EL
+p48 [11.8] COLOR DE LAS
+p48 [13.9] NTS N° ZA H -MINSA/DGIESP-2024
+p48 [14.5] Son lesiones cutáneas benignas transitorias, es una pequeña
+p48 [13.9] pápula de 1 a 3 mm de diámetro que evoluciona a una pústula
+p48 [14.8] el lugar más frecuente es el tronco, respetando casi siempre
+p48 [13.2] articulares; secundaria a parto traumático, considerar hipotonía
+p48 [16.0] Es necesario la evaluación de un neurólogo para tratar de
+p48 [12.5] reestablecer la causa; mientras esto ocurre, iniciar rehabilitación
+p48 [20.3] precoz (estimulación temprana) para tratar de mejorar
+p48 [14.8] Ombligo rojo con secreción purulenta maloliente. Si el recién
+p48 [14.8] nacido presenta signos inflamatorios en la base del ombligo,
+p48 [13.2] pero sin extensión en la pared abdominal, ausencia de fiebre y
+p48 [12.6] luce saludable, puede ser manejado en casa.
+p48 [14.2] La presencia de sangre en las heces puede ser manifestado
+p48 [15.6] como un problema de sangrado, como sangre viva o como
+p48 [15.3] otras manifestaciones en la piel (petequias, equimosis) o en
+p48 [12.6] En el recién nacido si las deposiciones son acuosas es diarrea;
+p48 [14.5] deposiciones de manera regular y le duele, puede tratarse de
+p48 [14.8] Cuando la sangre se acompaña de diarrea, el diagnóstico es
+p48 [18.0] disentería, la que requiere tratamiento antibiótico y puede
+p48 [11.0] Regurgitación es el contenido gástrico que regresa sin esfuerzo
+p48 [24.4] Debemos primero descartar que no existe una
+p48 [12.5] o de un paciente gravemente enfermo (NEC). Se considera mejoría
+p48 [17.0] si el abdomen deja de estar tenso y disminuye el perímetro
+p48 [12.6] abdominal, con la presencia de ruidos hidroaéreos normales.
+p49 [11.0] y
+p49 [12.9] Paso 1
+p49 [13.2] Enfermera 1 y 2
+p49 [12.9] Enfermera 1
+p49 [18.5] Verificar la presencia y/o permeabilidad de una vía
+p49 [12.9] Seleccionar la vena para la punción (se recomienda elegir
+p49 [15.9] vena de calibre grueso de preferencia vena cefálica o
+p49 [15.9] Solución antiséptica (Clorhexidina
+p49 [15.4] 0,5%, yodopovidona 10%, alcohol
+p49 [13.2] NTS N° 2 1 4 -MINSA/DGIESP-2024
+p49 [12.2] ANEXO N° 8 PROCEDIMIENTO INVASIVO EN LA UNIDAD DE CUIDADOS INTENSIVOS
+p49 [11.8] <INSTALACIÓN Y MANTENIMIENTO DEL CATETER VENOSO CENTRAL DE
+p49 [12.1] INSERCIÓN PERIFÉRICA (PICC)=
+p49 [14.2] Definición. Colocación de un catéter vascular a nivel central (vena cava superior o inferió
+p49 [12.9] Recursos humanos: Médico y enfermera (2).
+p49 [19.6] ¥/ Kit completo de catéter percutáneo.
+p49 [19.4] K Catéter percutáneo de 1 French o 2
+p49 [19.4] K Gasa estéril
+p49 [19.6] K Tijeras
+p49 [19.8] K Pinza de disección sin dientes
+p50 [12.9] Enfermera 1
+p50 [13.2] Enfermera 1 y 2
+p50 [13.6] Enfermera 1 y2
+p50 [12.6] Colocar campos estériles sobre el paciente, exponiendo la
+p50 [14.1] Solicitar al ayudante que ejerza presión con la mano por
+p50 [18.2] encima de la zona de punción para permitir mayor
+p50 [12.6] Una vez confirmado el retorno venoso, retirar parcialmente
+p50 [12.6] el mandril, introducir unos milímetros el introcath.
+p50 [13.2] Quitar la ligadura y presionar levemente por encima de la
+p50 [14.8] Ponerse los guantes y realizar la antisepsia, desinfectar
+p50 [14.8] destilada en forma circular de adentro hacia afuera con
+p50 [15.3] movimientos suaves y firmes. Repita este procedimiento
+p50 [16.0] Dejar Cubierta la zona con una gasa grande o campo
+p50 [16.2] Preparación del recién nacido en la unidad en que se
+p50 [18.9] encuentre: Posición, inmovilización, abrigo, analgesia,
+p50 [15.2] NTS N° 21 Ll -MINSA/DGIESP-2024
+p50 [13.2] Realizar la punción con el introcath en ángulo de 15 a 45°
+p50 [15.6] con el bisel hacia arriba a 1cm del punto donde desea
+p51 [12.9] Enfermera 1
+p51 [12.9] Enfermera 1y 2
+p51 [12.6] Enfermera 1y2
+p51 [16.0] Aplicar una gasita de 1cm. Cuadrado sobre el sitio de
+p51 [18.7] punción, fijarla ejerciendo leve presión con una tira
+p51 [14.8] autoadhesiva pequeña (3 a 4cm) en forma horizontal al
+p51 [15.6] Tomar el catéter con la pinza e introducirlo lentamente
+p51 [16.5] Al terminar de insertar el catéter la longitud deseada,
+p51 [20.0] comprobar la permeabilidad infundiendo la solución
+p51 [13.6] Romper el introductor cogiendo las alitas y presionándolo
+p51 [14.5] hacia los costados, retirarlo lentamente teniendo cuidado
+p51 [12.9] purgar con solución salina, dejando la jeringa conectada y
+p51 [12.5] Continuar ejerciendo presión sobre el sitio de punción para
+p51 [13.2] Colocar una corbata con la tira adhesiva estéril (8cm) por
+p51 [13.6] Pegar apósito adhesivo transparente rectangular dejando
+p51 [14.8] libre el sitio de punción (cubrir desde donde empieza el
+p51 [13.2] catéter hasta 1-2cm, el apósito adhesivo no debe envolver
+p51 [13.2] NTS N° 2.1 4 -MINSA/DGIESP-2024
+p52 [12.6] Enfermera 1
+p52 [12.9] Enfermera 1 y2
+p52 [12.5] Enfermera 1y2
+p52 [15.9] Si tiene que retirar el catéter algunos centímetros: con
+p52 [13.9] técnica estéril despegar la gasita de la zona de punción,
+p52 [12.9] Ayudar al personal de radiología a tomar la placa teniendo
+p52 [15.3] Terminar de fijar: colocar apósito adhesivo transparente
+p52 [15.9] sobre el resto del catéter (desde la última parte de la
+p52 [12.6] Realice las anotaciones en la Historia Clínica/enfermería y
+p52 [14.5] Registrar el procedimiento en la hoja de seguimiento de
+p52 [18.7] NTS N° 21 H -MINSA/DGIESP-2024
+p52 [12.5] Medidas de Seguridad: Mantenimiento del CVCIP
+p52 [21.5] " Evaluar diariamente signos de alarma: edema, flogosis, desplazamiento,
+p52 [13.8] " Realizar la limpieza quirúrgica de la zona de punción si es necesario cuando haya
+p52 [12.9] sangrado o en caso que, después de varios días el apósito transparente no asegure
+p52 [12.6] " Para cambiar la línea de infusión: Primero aseptizar la unión de la línea con el catéter,
+p52 [12.5] cambiar la línea, desclampar el catéter, iniciar la infusión y finalmente abrir la línea.
+p53 [12.6] ANEXO N° 9: FICHA DE VISITA DOMICILIARIA AL RECIÉN NACIDO
+p53 [11.4] DATOS GENERALES:
+p53 [12.9] Antecedentes (BPN, Prematuro, Etc.):
+p53 [18.4] ¿Fue coordinado?: S¡( )
+p53 [18.4] No( )
+p53 [12.1] DESARROLLO DE LA VISITA
+p53 [12.5] Presentarse, identificarse muy cordialmente y en todo momento mantenga un trato
+p53 [12.1] respetuoso, amigable y empático
+p53 [15.4] NTS N° 21 4 -MINSA/DGIESP-2024
+p53 [13.2] 1. Lactancia materna: según ficha de observación de la mamada de la Guía técnica
+p53 [12.5] para la Consejería en Lactancia Materna aprobada con RM N° 462-2015/MINSA o la
+p53 [11.8] que haga sus veces.
+p53 [12.1] 2. Verificar el cumplimiento del calendario de vacunación
+p53 [12.9] 3. Cordón umbilical: Marque con un aspa
+p53 [19.1] a) Secreción amarillenta y mal oliente del muñón: SI ( ) NO ( )
+p53 [18.9] b) Sangrado: SI ( ) NO ( )
+p53 [12.6] c) Enrojecimiento, hinchazón o sensibilidad de la piel alrededor del muñón:
+p53 [18.9] Sl( ) NO( )
+p53 [18.9] d) Presencia de granuloma: SI ( ) NO ( )
+p53 [19.2] e) Fiebre: SI ( ) NO ( )
+p54 [18.9] d) Referir en caso sea necesario
+p54 [14.2] e) Acuerdos y compromisos:
+p54 [12.1] FIRMA DE LA MADRE Y/O FAMILIA VISITADA
+p54 [11.8] FIRMA Y SELLO DEL PERSONAL QUE REALIZA LA VISITA
+p54 [16.7] NTS N° '2lLl -MINSA/DGIESP-2024
+p54 [19.2] Bebé muy adormilado, letárgico, flácido: SI ( ) NO ( )
+p54 [18.9] Temperatura corporal del bebé menor de 36°C o mayor de 38°C: SI ( ) NO ( )
+p54 [18.9] Alteraciones en la respiración /dificultad para respirar: SI ( ) NO ( )
+p54 [18.9] Color de la piel anormal: SI ( ) NO ( )
+p54 [19.1] Lacta menos de lo normal/succión pobre: SI ( ) NO ( )
+p54 [19.2] Llanto inconsolable, malestar general: SI ( ) NO ( )
+p54 [19.2] Distensión abdominal: SI ( ) NO ( )
+p54 [19.1] Dificultad respiratoria SI ( ) NO ( )
+p54 [16.2] 4. Signos de alarma: realizar la Anamnesis y examen físico del recién nacido y
+p54 [14.8] 5. Actividades que realizar:
+p54 [13.9] Demostrar la forma correcta de limpieza y curación del cordón umbilical (solo en
+p54 [12.5] menores de 10 días de vida)
+p54 [12.6] Brindar consejería en lactancia materna y abrigo del recién nacido
+p54 [38.3] V o
+p55 [12.5] ANEXO N° 10 HOJA DE EVALUACIÓN MÉDICA NEONATAL
+p55 [33.2] NTS N° -MINSA/DGIESP-2024
+p56 [13.9] ANEXO N° 11 REGISTRO DE ENFERMERÍA: HOJA DE VALORACIÓN
+p56 [18.7] NTSN°2H -MINSA/DGIESP-2024
+p56 [37.4] l1^9
+p56 [44.0] r
+p57 [21.5] NTS N° l M -MINSA/DGIESP-2024
+p57 [13.0] Identificación correcta: ( )
+p57 [14.8] Toma de huellas madre y RN ( ) higiene de la piel ( ) Cuero cabelludo y vestido: si ( ) no( )
+p58 [13.5] ANEXO N° 12 REGISTRO DE ENFERMERÍA - UNIDAD DE CUIDADOS INTENSIVOS (LADO A)
+p58 [14.6] I
+p58 [18.2] NTS N° 2| 4 -MINSA/DGIESP-2024
+p58 [18.1] ü
+p58 [16.4] i
+p58 [19.7] j
+p58 [14.0] l
+p58 [12.0] s
+p58 [16.5] ii
+p58 [16.7] i!
+p58 [19.6] í1
+p58 [12.4] -i
+p58 [16.7] Íí
+p58 [17.2] p
+p58 [22.0] h
+p58 [19.1] Íi
+p58 [16.4] o
+p58 [17.3] P
+p58 [14.9] li
+p58 [18.9] 0 h1*
+p59 [12.9] LADO B
+p59 [14.5] | O T
+p59 [14.7] NTS N° 2.1 9 -MINSA/DGIESP/2024
+p59 [15.6] |° |n
+p59 [12.4] 'U
+p60 [13.5] | Peso (Kg): | Historia Clínica y/o DNI?
+p60 [12.9] F  M
+p60 [17.4] Suspensión (Marcar con X) Si
+p60 [10.6] Reexposición (Marcar con X)
+p60 [10.5] Otros datos importantes de la historia clínica, incluyendo condiciones médicas preexistentes,
+p60 [10.5] final (*)
+p60 [12.6] MEDICAMENTO(S) U OTRO(S) PRODUCTO(S) FARMACÉUTICO(S) SOSPECHOSO(S) (En el caso df
+p60 [10.5] prescripción o
+p60 [10.5] CIE 10
+p60 [10.5] Edad (*):
+p60 [13.5] | Sexo (*f
+p60 [17.6] NTS N°2J H -MINSA/DGIESP/2024
+p60 [10.9] NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD NEONATAL
+p60 [18.9] B. REACCIONES ADVERSAS SOSPECHADAS:___________________
+p60 [20.5] ¥ Reacción adversa ¥ Error de medicación ¥ Problema de calidad
+p60 [10.5] Describir la reacción adversa (*)
+p60 [19.7] Fecha de inicio de RAM (*): / /_
+p60 [23.4] Fecha final de RAM: /_ /_
+p60 [10.9] Gravedad de la RAM (Marcar con X)
+p60 [30.6] Leve  Moderada
+p60 [10.9] Solo para RAM grave (Marcar con X)
+p60 [25.1] ¥ Recuperado ¥ Recuperado con
+p60 [16.2] No recuperado  Mortal
+p61 [13.8] | N° Notificación:
+p61 [13.2] Notifique, aunque usted no tenga la certeza de que el medicamento u otro producto
+p61 [14.8] farmacéutico causó la reacción adversa. La sospecha de una asociación es razón
+p61 [15.4] Notifique todas las sospechas de reacciones adversas conocidas, desconocidas,
+p61 [15.4] leves, moderadas y graves relacionadas con el uso de Productos Farmacéuticos
+p61 [18.5] (medicamentos, medicamentos herbarios, productos dietéticos y edulcorantes,
+p61 [12.6] En caso de embarazo, indicar el número de semanas de gestación al momento de la
+p61 [12.5] Las sospechas de reacciones adversas graves deben ser notificadas dentro de
+p61 [12.9] las veinticuatro (24) horas de conocido el caso, y si son leves o moderadas, en
+p61 [12.5] un plazo no mayor de setenta y dos (72) horas y deberán ser enviadas según el
+p61 [12.2] flujo de notificación de acuerdo a la Norma Técnica de Salud correspondiente.
+p61 [12.2] DATOS DEL PACIENTE
+p61 [12.5] Nombres o iniciales: Registrar los nombres o iniciales del paciente.
+p61 [13.2] Edad: Expresar en números e indicar si son días, meses o años. En caso de no contar
+p61 [12.1] Los campos (*) son obligatorios
+p61 [18.0] NTS N° 2 I 4 -MINSA/DGIESP/2024
+p61 [11.3] NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD NEONATAL
+p61 [13.3] $
+p61 [12.2] INSTRUCTIVO PARA COMPLETAR EL FORMATO DE NOTIFICACIÓN DE SOSPECHAS
+p61 [12.2] DE REACCIONES ADVERSAS A MEDICAMENTOS U OTROS PRODUCTOS
+p61 [12.2] FARMACÉUTICOS POR LOS PROFESIONALES DE LA SALUD
+p61 [10.9] En caso de sospecha de problemas de calidad indicar: N? Registro Sanitario:
+p61 [20.3] Fecha de venc¡miento_ ./
+p61 [18.5] D. MEDICAMENTO(S) U OTRO(S) PRODUCTO(S) FARMACÉUTICO(S) CONCOMITANTE(S) UTILIZADO^
+p61 [42.4] c "
+p61 [19.7] E. DATOS DEL NOTIFICADOR
+p62 [12.5] Sexo: Marcar con una <X= la opción que corresponda.
+p62 [13.2] Peso: Indicar el peso del paciente en Kg.
+p62 [12.2] Historia Clínica y/o DNI: Si se conoce colocarlo.
+p62 [14.5] Establecimiento: Indicar el nombre completo del establecimiento (hospital, centro de
+p62 [12.5] salud, puesto de salud, farmacia/botica u otra institución) donde se detecta la RAM.
+p62 [13.6] Diagnóstico principal o CIE 10: Indicar la enfermedad de base del paciente (ejemplo:
+p62 [17.7] Cáncer, enfermedad de Alzheimer) o su respectivo código CIE 10 (clasificación
+p62 [11.4] REACCIONES ADVERSAS SOSPECHADAS
+p62 [13.6] El formato también puede ser utilizado para notificar errores de medicación, problemas
+p62 [15.1] de calidad, u otros (uso fuera de indicación autorizada, uso del medicamento u otro
+p62 [17.3] producto farmacéutico durante el embarazo o lactancia, sobredosis o exposición
+p62 [14.5] Reacción adversa: Describa detalladamente la(s) reacción(es) adversa(s) incluyendo
+p62 [16.7] reacción adversa, signos y/o síntomas reportados, diagnóstico diferencial) para la
+p62 [13.6] reacción adversa. Si se modifica la dosis, registrar la nueva dosis administrada. Indicar
+p62 [15.3] el desenlace de la(s) reacción(es) adversa(s) y en el caso de un desenlace mortal
+p62 [15.4] Fecha de inicio de RAM: Indicar la fecha (día/mes/año) exacta en la cual inició la
+p62 [14.8] Fecha final de RAM: Indicar la fecha (día/mes/año) exacta en la cual desaparece la
+p62 [12.9] Gravedad de la RAM: Marcar con <X= la gravedad de la reacción adversa. La valoración
+p62 [13.2] Solo para RAM grave: en el caso de una reacción adversa grave, marcar con una <X=
+p62 [12.9] Desenlace: Marcar con una <X= la opción que corresponda.
+p62 [14.8] Resultados relevantes de exámenes de laboratorio (incluir fechas): Resultados de
+p62 [16.0] pruebas de laboratorio usadas en el diagnóstico de la reacción adversa y, si está
+p62 [14.1] disponible, las concentraciones séricas del medicamento u otro producto farmacéutico
+p62 [12.6] Otros datos importantes de la historia clínica: Indicar condiciones médicas previas de
+p62 [12.6] importancia, así como patologías concomitantes (ejemplo: Hipertensión arterial, diabetes
+p62 [14.8] mellitus, disfunción renal/hepática, etc.) u otras condiciones en el paciente (ejemplo:
+p62 [12.0] MEDICAMENTO(S)
+p62 [12.2] SOSPECHOSO(S)
+p62 [12.5] Nombre comercial y genérico: Registrar el nombre comercial y genérico (DCI) indicado
+p62 [12.5] en el rotulado del medicamento u otro producto farmacéutico administrado incluyendo la
+p62 [13.9] Si el medicamento u otro producto farmacéutico es genérico, no deje de mencionar el
+p62 [16.2] Laboratorio: Colocar el nombre del laboratorio fabricante o del titular del registro
+p62 [12.9] Lote: Registrar las letras y/o números que indica el <lote= en el envase del producto.
+p62 [13.2] Dosis/frecuencía: Indicar la dosis en cantidad y unidades de medida suministrada y los
+p62 [12.9] 20 mg cada 12 horas).
+p62 [17.6] NTSNo /21H -MINSA/DGIESP/2024
+p63 [16.2] r/ j
+p63 [12.1] Para conocer el efecto de la suspensión y reexposición: Marcar con una <X= la opción
+p63 [16.5] El paciente recibió tratamiento para la reacción adversa: Indicar si la reacción
+p63 [12.2] En caso de sospecha de problemas de calidad: Completar la información solicitada.
+p63 [14.1] En el caso de productos biológicos es necesario registrar el nombre comercial,
+p63 [12.5] laboratorio fabricante, número de registro sanitario y número de lote.
+p63 [15.6] NTS N° T-l 4 -MINSA/DGIESP/2024
+p63 [12.1] DATOS DEL NOTIFICADOR
+p63 [15.6] Nombres y apellidos, profesión, teléfono, correo electrónico (de contacto de la
+p63 [15.7] persona): Su objetivo es para solicitar información adicional y/o para canalizar una
+p63 [12.9] Fecha de notificación: Indicar la fecha (día/mes/año) en que se completó el formato.
+p63 [11.4] N° notificación: Este casillero será para uso exclusivo del Centro de Referencia Regional
+p63 [15.9] Vía de administración: Describa la vía de administración del medicamento u otro
+p63 [13.2] producto farmacéutico (ejemplo: VO, IM, IV).
+p63 [11.8] Fecha inicio y final: Indicar la fecha (día/mes/año) en que inició y finalizó o se suspendió
+p63 [16.5] el tratamiento con el medicamento u otro producto farmacéutico. En caso que el
+p63 [16.2] Motivo de prescripción o CIE 10: Describa el motivo o indicación por el cual el
+p63 [14.2] medicamento u otro producto farmacéutico fue prescrito o usado en el paciente o su
+p63 [12.9] respectivo código CIE 10.
+p63 [29.7] MEDICAMENTO(S) U OTRO(S) PRODUCTO(S)
+p63 [12.2] CONCOMITANTE(S) UTILIZADOS EN LOS 3 ÚLTIMOS MESES
+p63 [12.9] Registrar el nombre comercial y genérico (DCI) de los medicamentos u otros productos
+p63 [12.5] farmacéuticos prescritos o automedicados utilizados en los 3 últimos meses antes de la
+p63 [18.7] aparición de la reacción adversa. Excluir los medicamentos u otros productos
+p63 [17.2] farmacéuticos usados para tratar la reacción adversa. En el caso de anomalías
+p63 [13.8] congénitas, indicar todos los medicamentos u otros productos farmacéuticos utilizados
+p63 [12.9] hasta un mes antes de la gestación. En caso de que el tratamiento continúe al momento
+p64 [14.1] El
+p64 [20.8] zzz
+p64 [12.5] FORMATO DE NOTIFICACIÓN DE SOSPECHAS DE INCIDENTES ADVERSAS A
+p64 [12.5] DISPOSITIVOS MÉDICOS POR LOS PROFESIONALES DE LA SALUD
+p64 [11.1] FORMATO
+p64 [24.3] < ) I
+p64 [14.3] Antes del uso del DM (
+p64 [16.2] NTS N° 21H -MINSA/DG1ESP/2024
+p64 [13.4] si (
+p64 [31.3] I,
+p64 [13.9] Durante el uso del DM (
+p64 [13.1] Ambiente inapropiado (
+p64 [14.1] Grave (
+p65 [11.8] CÓMO NOTIFICAR
+p65 [16.7] 2. Nombre comercial y/o marca Si corresponde y se cuente con la información.
+p65 [16.7] 3. N° de registro sanitario y lote. Datos imprescindibles.
+p65 [16.7] 5. Fecha de expiración Dato imprescindible.
+p65 [16.7] 6. Nombre del sitio de fabricación y el país S/ corresponde y se cuente con la información.
+p65 [18.7] 7. Nombre del fabricante y el país S/ corresponde y se cuente con la información.
+p65 [16.7] 8. Nombre del importador y/o distribuidor. Si corresponde y se cuente con la información.
+p65 [12.6] III. Datos de la sospecha de incidente adverso
+p65 [12.2] INSTRUCTIVO PARA COMPLETAR EL FORMATO DE NOTIFICACIÓN DE SOSPECHAS
+p65 [12.2] DE INCIDENTES ADVERSOS A DISPOSITIVOS MÉDICOS POR LOS
+p65 [11.8] PROFESIONALES DE LA SALUD
+p65 [20.3] 1. Detección de la temporalidad del incidente adverso Marcar: Antes del uso /durante
+p65 [12.9] el uso/después del uso del DM. Datos imprescindibles
+p65 [12.5] 3. Historia clínica y/o DNI. SZ corresponde y se cuente con la información.
+p65 [12.6] 4. Diagnostico principal o CIE 10. Si corresponde y se cuente con la información.
+p65 [22.5] NTS N° | 4 -MINSA/DGIESP/2024
+p65 [12.2] CÓMO LLENAR EL FORMATO
+p65 [17.5] " Número de notificación: Colocar el número a la notificación según el correlativo
+p65 [19.2] correspondiente.  Fecha: La fecha en que ocurrió el incidente adverso Datos
+p65 [12.2] II. Datos del dispositivo médico (consignar):
+p65 [16.9] 1. Nombre común del dispositivo médico que se sospecha ocasionó el incidente adverso
+p65 [14.1] (consigne toda la información que se encuentre en la rotulada por ejemplo seda negra
+p65 [12.5] trenzada 10/0 con doble aguja 3/8 circulo espatulada de 6.4 mm). Dato imprescindible.
+p65 [16.7] 9. Indique si el dispositivo médico de un solo uso ha sido utilizado más de una vez SI / NO S/
+p65 [16.7] 4. Modelo, serie y fecha de fabricación del dispositivo médico S/ corresponde y se cuente con
+p65 [12.1] PARTES DEL FORMATO
+p65 [12.1] I. Identificación del paciente (consignar)
+p65 [15.3] fff
+p66 [12.2] IV. Datos del notificador (consignar):
+p66 [19.8] 2. Tipo de afectado. Marcar: Paciente /operario / otros (consignar en esta parte si no
+p66 [12.5] hubo afectado u otro que usted considere). Datos imprescindibles
+p66 [13.2] Ambiente inapropiado: Uso de un ambiente que produce la falla o mal funcionamiento
+p66 [12.2] Mala calidad: Incluye todos los problemas de calidad referidos al dispositivo médico (error
+p66 [11.8] Error de uso: Un acto u omisión de un acto por parte del usuario u operador del dispositivo
+p66 [13.6] médico, que tiene un resultado diferente al previsto por el fabricante o esperado por el
+p66 [16.7] Condiciones de almacenamiento: Condiciones de almacenamiento del dispositivo
+p66 [13.2] médico que no se cumplieron (temperatura, humedad, exposición a la luz inapropiada),
+p66 [18.4] Mantenimiento: Mantenimiento rutinario o periódico inadecuado, que causa mal
+p66 [13.8] funcionamiento o falla de un dispositivo médico o componente, excluyendo causas de
+p66 [16.7] Condición del paciente: Hace referencia una serie de características propias del
+p66 [14.1] paciente que conducen a una falla o desempeño deficiente del dispositivo médico, por
+p66 [13.9] Otros (especificar): Mencionar otra causa detectada durante la investigación realizada
+p66 [27.3] NTS N° H -MINSA/DGIESP/2024
+p66 [17.0] 7. Acciones correctivas y preventivas iniciadas Escriba las acciones correctivas y
+p66 [12.5] preventivas planteadas para contrarrestar el incidente adverso. Datos imprescindibles
+p66 [20.4] 3. Descripción de la sospecha de incidente adverso Explicar mínimamente: El
+p66 [14.5] problema que presentó el dispositivo médico y si hubo consecuencias en el paciente.
+p66 [12.9] 2. Profesión/ocupación. Dato imprescindible
+p66 [23.8] 5. Consecuencia: Marcar: Muerte /lesión permanente/ lesión temporal/ requiere
+p66 [13.8] intervención quirúrgica/ produjo o prolongó su hospitalización / no tuvo consecuencias/
+p66 [20.0] 4. Clasificación del incidente adverso Marcar: Leve/ moderado / grave Datos
+p66 [20.0] 6. Causa probable. Marcar la causa probable que considere. Datos imprescindibles
+p67 [16.5] 2. Dirección, ciudad, región, e-mail y teléfono. $/corresponde y se cuente con la información
+p67 [16.5] 1. Nombre de la institución/ organismo/centro de trabajo al que pertenece el reporte. Dato
+p67 [20.0] NTS N° 2 I M -MINSA/DGIESP/2024
+p67 [16.7] 'y
+p68 [28.9] I
+p68 [34.1] ¿
+p68 [34.1] d
+p68 [20.8] f
+p68 [27.4] Ó
+p68 [15.9] 15 FLUJO DE ATENCIÓN DEL RECIÉN NACIDO SANO <ATENCIÓN
+p68 [62.8] s <
+p68 [11.8] tía
+p68 [11.0] u z
+p68 [15.4] ANEXO N°
+p68 [17.2] NTS N° T. 1 H -MINSA/DGIESP/2024
+p68 [19.5] j
+p68 [15.0] Contacto piel a p e del ]
+p68 [17.9] rocíen nacido con su ¥
+p69 [12.9] ANEXO N° 16: FLUJO DE ATENCIÓN DEL RECIÉN NACIDO ENFERMO
+p69 [14.6] ATENCIÓN DEL RN HOSPITALIZADO
+p69 [14.1] i
+p69 [21.0] I
+p69 [17.6] NTS ^2-14 -M1NSA/DGIESP/2024
+p69 [20.3] Hijo de madre RH negativo ¡
+p69 [19.3] ! RN con encefalopatía hipóxico
+p69 [14.9] [ No
+p69 [23.2] i RN pretérminos<35s
+p69 [12.5] ¡ Dificultad respiratoria moderada
+p69 [18.9] ! Hipoglicemia <de 40mg/dl
+p70 [14.8] 13) Brogan J, Rapkin G. Implementing evidence-based neonatal skin care with parent-
+p70 [15.3] performed, delayed immersion baths. Nurs Womens Health [Internet], 2017 [cited
+p70 [12.9] 14) Franck LS, RN, Axelin A, RN, Van Veenendaal NR, Bacchini F. Improving Neonatal
+p70 [12.5] Intensive Care Unit Quality and Safety with Family-Centered Care. Clin Perinatol 50
+p70 [15.1] AC. Family Involvement in the Routine Care of Hospitalized Preterm or Low Birth
+p70 [13.6] Weight Infants: A Systematic Review and Meta-analysis. PEDIATRICS Volume 150,
+p70 [19.1] NTS N° 2 1 4 -MINSA/DGIESP/2024
+p70 [14.8] Hansen AR, Stark AR, Eichenwald EC, Martin CR. Cloherty and stark9s manual of
+p70 [12.9] neonatal care. 9th ed. Baltimore, MD: Wolters Kluwer Health; 2023.
+p70 [15.6] Garcia May PK, Coronado Zarco IA, Valencia Contreras C, Núñez Enriquez JC.
+p70 [16.2] Contacto piel a piel al nacimiento. Perinatol Reprod Humana. 1 de diciembre de
+p70 [13.6] Boardman J, Groves A, Ramasethu J. Avery y Macdonald. Neonatologia. 8a ed. La
+p70 [12.5] Villa y Corte de Madrid, España: Ovid Technologies; 2020.
+p70 [14.2] Kliegman RM, Geme J, Blum N, Shah SS, Tasker RC, editores, nelson Tratado de
+p70 [12.5] Pediatría. 21a ed. Elsevier; 2020.
+p70 [17.3] MacDonald MG, Seshia MM. avery Neonatologia. Diagnóstico y Tratamiento del
+p70 [13.6] recien nacido, 7. 7a ed. Baltimore, MD, Estados Unidos de América: Wolters Kluwer
+p70 [15.1] Carmona-Jiménez D, Remington CU, Jaramillo-Parra E, Moreno AM, Gil-Villa AM,
+p70 [12.9] López-Herrera FE, et al. Prácticas clave y conocimientos de la Estrategia AIEPI en el
+p70 [25.9] Ambiente Comunitario. Rev Fac Nac Salud Pública. Disponible en:
+p70 [15.7] Abanto J. Hemoglobina y Hematocrito del recien nacido y Tipo de Clampaje del
+p70 [22.1] Cordon Umbilical. Centro de Salud Materna Perinatal Simón Bolívar -
+p70 [12.6] Cajamarca. publicación de la sonrisa; 2016.
+p70 [13.2] Academia Americana de Pediatría. Libro de texto para la Reanimación Neonatal. Elk
+p70 [12.9] Grove Village, IL: Academia Estadounidense de Pediatría Itasca, IL; 2022.
+p70 [12.5] 10) MacDonald MG, Seshia MMK. avery Neonatologia. 7a ed. la Ciudad Condal, España:
+p70 [12.9] care: Evidence-based clinical practice guideline (3rd ed.). Washington, DC: Author.
+p70 [15.6] 12) Lund, C. (2016). Bathing and beyond: Current bathing controversies for newborn
+p70 [27.2] infants. Advances in Neonatal Care, 16(Suppl. 5S),
+p71 [11.1] (s/f).
+p71 [17.8] NTS N° 2.1 4 -MINSA/DGIESP/2024
+p71 [13.2] 16) Gooding JS, Cooper LG, Blaine Al, Franck LS, Howse JL, Berns SD. Family Support
+p71 [14.5] and Family-Centered Care in the Neonatal Intensive Care Unit: Origins, Advances,
+p71 [12.6] Impact. Semin Perinatol 35:20-28 © 2011
+p71 [20.3] 17) Jolley J, Shields L. The Evolution of Family-Centered Care. Journal of Pediatric
+p71 [12.5] Nursing, Vol 24, No 2 (April), 2009. pp164-169
+p71 [14.8] 18) Ullan, A, Velver, M. Humanización del Hospital pediátrico. Perspectiva psicosocial.
+p71 [12.9] 19) Franck LS, O'Brien K. The evolution of family-centered care: From supporting parent-
+p71 [13.6] delivered interventions to a model of family integrated care. Birth Defects Research.
+p71 [20.7] "Natural Labor
+p71 [13.5] Identificación inequívoca del paciente y verificación - Estrategia para la Seguridad del
+p71 [27.1] Paciente, (s/f). Seguridadpaciente.es. https://www.sequridadpaciente.es/areas-
+p71 [12.9] Web y Universidad de Notre Dame. (s/f). NICU standard 23: Ambient lighting in infant
+p71 [31.1] care areas NICU Recommended Standards, https://nicudesign.nd.edu/nicu-
+p71 [13.6] Rivas, G., Marcalain, V., Recouso, J., Silveira, V., Bentos, J., Alonso, V., Correa, V.,
+p71 [12.5] Sauleda, M., Garat, F., Gómez, LM, De Agostini, M., Cordano, C., Rey, G., Rodríguez,
+p71 [16.9] I. y Blasina, F. (2021). Guía de manejo obstétrico y recién nacido en madre
+p71 [30.0] aloinmunizada. La Revista médica del Uruguay, 37
+p71 [19.8] (S/f). Draeger.com. https://www.draeqer.com/es es/Hospital/Neonatal-Care/NICU-
+p71 [15.3] Sola, A., & Golombek, S. (2018). Detección temprana con oximetría de pulso de
+p71 [14.8] condiciones neonatales hipoxémicas. Desarrollo de la IX declaración de consenso
+p71 [21.3] clínico de la Sociedad Iberoamericana de Neonatología (SIBEN). Revista
+p71 [13.2] Internacional de Cribado Neonatal ,4(V), 10. https://do¡.org/10.3390/i¡ns4010010.
+p71 [13.6] McDonald SJ, Middleton P, Dowswell T, Morris PS. Effect of timing of umbilical cord
+p71 [24.0] 2013. Available from:https://www.cochrane.orq/es/CD004074/PREG efecto-del-
+p71 [12.9] deficiencia de hierro en lactantes [Internet], Disponible en:
+p71 [20.9] Sullivan, Debora Henline and McGuiness, Courtney,
+p71 [24.7] Management" (2015). Walden Faculty and Staff
+p71 [21.7] Cuidado del cordón umbilical en el recién nacido.
+p71 [15.4] Guía de Práctica Clínica: Los Cuidados Rutinarios del cordón umbilical en recién
+p71 [22.9] nacido sanos https://www.revista-portalesmedicos.com/revista-medica/cuidados-
+
+== FIRST PAGES ==
+
+--- p1 ---
+MINISTERIO DE SALUD
+ti
+DI
+CONSIDERANDO:
+C. DIAZV.
+o
+I
+Que, los numerales I y II del Título Preliminar de la Ley N° 26842, Ley General de
+Salud, disponen que la salud es condición indispensable del desarrollo humano y medio
+fundamental para alcanzar el bienestar individual y colectivo, y que la protección de la salud
+es de interés público, siendo responsabilidad del Estado regularla, vigilarla y promoverla;
+Que, los literales b) y h) del artículo 5 del acotado Decreto Legislativo, modificado
+por el Decreto Legislativo N° 1504, Decreto Legislativo que fortalece al Instituto Nacional de
+Salud para la prevención y control de las enfermedades, señalan que son funciones rectoras
+del Ministerio de Salud formular, planear, dirigir, coordinar, ejecutar, supervisar y evaluar la
+política nacional y sectorial de promoción de la salud, vigilancia, prevención y control de las
+enfermedades, recuperación, rehabilitación en salud, tecnologías en salud y buenas
+prácticas en salud, bajo su competencia, aplicable a todos los niveles de gobierno; así como
+dictar normas y lineamientos técnicos para la adecuada ejecución y supervisión de la política
+nacional y políticas sectoriales de salud, entre otras;
+Visto, el Expediente N° DGIESP-DVICI20240000442, que contiene el Informe N°
+D000255-2024-DGIESP-DVICI-MINSA y la Nota Informativa N° D002130-2024-DGIESP-
+MINSA de la Dirección General de Intervenciones Estratégicas en Salud Pública; y, el
+Informe N° D000802-2024-QGAJ-MINSA de la Oficina General de Asesoría Jurídica;
+E. PEÑA
+¥VARADO CH.
+Que, el numeral 1) del artículo 3 del Decreto Legislativo N° 1161, Ley de
+Organización y Funciones del Ministerio de Salud, establece que el Ministerio de Salud es
+competente en salud de las personas; y su artículo 4 dispone que el Sector Salud está
+conformado por el Ministerio de Salud, como organismo rector, las entidades adscritas a él,
+las instituciones públicas y privadas de nivel nacional, regional y local, y las personas
+naturales que realizan actividades vinculadas a las competencias establecidas en dicha Ley,
+y que tienen impacto directo o indirecto en la salud, individual o colectiva;
+Que, el artículo 63 del Reglamento de Organización y Funciones del Ministerio de
+Salud, aprobado por Decreto Supremo N° 008-2017-SA, modificado por Decreto Supremo
+N° 011-2017-SA, establece que la Dirección General de Intervenciones Estratégicas en
+Salud Pública es el órgano de línea del Ministerio de Salud, dependiente del Viceministerio
+de Salud Pública, competente para dirigir y coordinar las intervenciones estratégicas de
+salud pública en materia de intervenciones por curso de vida y cuidado integral, entre otras;
+/y 4
+c.
+JDEBO'
+áa&a jo
+M.9GUÍl0f
+v? ytatj) a í7
+te
+mw Ég .
+
+--- p2 ---
+C.DIMV.
+SE RESUELVE:
+uaums.
+Regístrese, comuniqúese y publíquese.
+C.WÜIWC0
+< T.
+Con el visado de la Dirección General de Intervenciones Estratégicas en Salud
+Pública, de la Dirección General de Operaciones en Salud, de la Dirección General de
+Aseguramiento e Intercambio Prestacional, de la Dirección General de Personal de la Salud,
+de la Dirección General de Medicamentos, Insumos y Drogas, de la Dirección General de
+Telesalud, Referencia y Urgencias, de la Oficina General de Tecnologías de la Información,
+del Centro Nacional de Epidemiología, Prevención y Control de Enfermedades, de la Oficina
+General de Asesoría Jurídica, de la Secretaría General, del Despacho Viceministerial de
+Salud Pública y del Despacho Viceministerial de Prestaciones y Aseguramiento en Salud; y,
+Que, mediante los documentos del visto, la Dirección General de Intervenciones
+Estratégicas en Salud Pública propone la actualización de la Norma Técnica de Salud
+señalada en el considerando precedente;
+Estando a lo propuesto por la Dirección General de Intervenciones Estratégicas en
+Salud Pública;
+Artículo 2.- Derogar la Resolución Ministerial N° 828-2013/MINSA, que aprueba la
+NTS N° 106-MINSA/DGSP-V.01: <Norma Técnica de Salud para la Atención Integral de
+Salud Neonatal=, así como la Resolución Ministerial N° 669-2015/MINSA.
+CÉSAR HENRY VÁSQUEZ SÁNCHEZ
+Ministro de Salud
+Que, mediante la Resolución Ministerial N° 828-2013/MINSA, se aprueba la NTS N°
+106-MINSA/DGSP-V.01: <Norma Técnica de Salud para la Atención Integral de Salud
+Neonatal=, la cual ha sido modificada con la Resolución Ministerial N° 669-2015/MINSA;
+1°
+Artículo 3.- Encargar a la Oficina de Transparencia y Anticorrupción de la Secretaría
+General la publicación de la presente Resolución Ministerial y su Anexo en la sede digital
+del Ministerio de Salud.
+Artículo 1.-Aprobar la NTS N° 2. H -MINSA/DGIESP-2024, Norma Técnica de
+Salud para la Atención Integral de Salud Neonatal, que como Anexo forma parte integrante
+de la presente Resolución Ministerial y que se publica en la sede digital del Ministerio de
+Salud.
+e. PEÑA
+De conformidad con lo dispuesto en el Decreto Legislativo N° 1161, Ley de
+Organización y Funciones del Ministerio de Salud, modificado por la Ley N° 30895, Ley que
+fortalece la función rectora del Ministerio de Salud, y por el Decreto Legislativo N° 1504,
+Decreto Legislativo que fortalece al Instituto Nacional de Salud para la prevención y control
+de las enfermedades; y, el Reglamento de Organización y Funciones del Ministerio de Salud,
+aprobado por Decreto Supremo N° 008-2017-SA, modificado mediante los Decretos
+Supremos N° 011-2017-SA y N° 032-2017-SA;
+1
+kJ
+CH.
+«.CUBA
+IDSJOS
+c-ALIíAFUoq
+
+--- p3 ---
+I. FINALIDAD
+Contribuir a la reducción de la morbilidad y mortalidad neonatal en el Perú.
+II. OBJETIVOS
+2.2 OBJETIVOS ESPECÍFICOS
+2.2.1
+2.2.2
+2.2.3.
+III. ÁMBITO DE APLICACIÓN
+IV. BASE LEGAL
+1
+NTS N°21 4 -MINSA/DGIESP-2024
+NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD
+NEONATAL
+2.1 OBJETIVO GENERAL
+Establecer disposiciones para la atención integral de salud durante el periodo neonatal.
+La presente Norma Técnica de Salud es de aplicación a nivel nacional en todos los
+establecimientos de salud dependientes del Ministerio de Salud, a cargo de las Direcciones
+de Redes Integradas de Salud (DIRIS); de los Gobiernos Regionales, a cargo de las
+Direcciones Regionales de Salud (DIRESAs), Gerencias Regionales de Salud (GERESAs)
+o las que hagan sus veces a nivel regional; de los Gobiernos Locales; del Seguro Social
+de Salud - ESSALUD; de la Sanidad de las Fuerzas Armadas; de la Sanidad de la Policía
+Nacional de Perú; y, en establecimientos de salud de administración privada y mixta que
+brinden atención neonatal.
+Establecer los procedimientos técnico-administrativos que permitan brindar la
+atención integral de salud en la etapa neonatal.
+Fortalecer los procesos de gestión correspondientes a la atención integral de
+salud neonatal.
+Fortalecer la organización y funciones en los servicios neonatales de los
+establecimientos de salud, correspondientes a los diferentes niveles de
+atención.
+Ley N° 26842, Ley General de Salud, y sus modificatorias.
+Ley N° 29885, Ley de Tamizaje Neonatal Universal, y su modificatoria.
+Ley N° 31975, Ley que modifica la Ley N° 29885, Ley que declara de interés nacional
+la creación del programa de Tamizaje Neonatal Universal.
+Ley N° 31856, Ley que garantiza la atención de la salud de acuerdo con las
+necesidades individuales del recién nacido prematuro.
+Ley N° 29344, Ley Marco de Aseguramiento Universal en Salud.
+Ley N° 31633, Ley que implementa y desarrolla los bancos de leche humana.
+Decreto Legislativo N° 1161, Ley de Organización y Funciones del Ministerio de Salud
+y sus modificatorias.
+Decreto Supremo N° 020-2014-SA, que aprueba el Texto Único Ordenado de la Ley
+N° 29344, Ley Marco de Aseguramiento Universal de Salud.
+Decreto Supremo N° 008-2017-SA, que aprueba el Reglamento de Organización y
+Funciones del Ministerio de Salud, y sus modificatorias.
+Decreto Supremo N° 020-2014, SA, que aprueba el Texto Único Ordenado de la Ley
+N° 29344, Ley Marco de Aseguramiento Universal en Salud.
+Resolución Ministerial N° 633-2023-MINSA, que aprueba el Documento Técnico:
+Petitorio Nacional Único de Medicamentos Esenciales para el Sector Salud.
+
+--- p4 ---
+o
+2
+C.DIAZV.
+NTS N° 2. / M -MINSA/DGIESP-2024
+NORMA TÉCNICA DE SALUD PARA LA ATENCIÓN INTEGRAL DE SALUD NEONATAL
+Vs. / UCj OSÍ % -JA
+Resolución Ministerial N° 884-2022/MINSA, que aprueba la NTS N° 196-
+MINSA/DGIESP-2022 <Norma Técnica de Salud que establece el Esquema Nacional
+de Vacunación=, y sus modificatorias.
+Resolución Ministerial N° 440-2020/MINSA, que aprueba la Directiva Sanitaria N° 108-
+MINSA/2020/DGIESP: Directiva Sanitaria para la Implementación de la Práctica del
+Método Canguro.
+Resolución Ministerial N° 030-2020/MINSA, que aprueba el Documento Técnico
+<Modelo de Cuidado Integral de salud por Curso de Vida para la Persona, Familia y
+Comunidad (MCI)=.
+Resolución Ministerial N° 670-2019/MINSA, que aprueba el Documento Técnico:
+Petitorio Nacional Único de Dispositivos Médicos Esenciales para el Sector Salud.
+Resolución Ministerial N° 558-2019/MINSA, que aprueba la NTS N° 154-
+MINSA/2019/DGIESP <Norma Técnica de Salud para el Tamizaje Neonatal de
+Hipotiroidismo Congénito, Hiperplasia Suprarrenal Congénita, Fenilcetonuria, Fibrosis
+Quística, Hipoacusia Congénita y Catarata Congénita=.
+Resolución Ministerial N° 426-2019/MINSA, que aprueba la NTS N° 152-
+MINSA/2019/DGIESP-V.01 <Norma Técnica de Salud para la Implementación,
+Funcionamiento y Promoción de Bancos de Leche Humana en el Perú=.
+Resolución Ministerial N° 251-2019/MINSA, que aprueba la Directiva Sanitaria N° 084-
+MINSA/2019/DGIESP, Directiva Sanitaria que establece la Organización y
+Funcionamiento de los Comités de Prevención de la Mortalidad Materna, Fetal y
+Neonatal.
+Resolución Ministerial N° 537-2017/MINSA, que aprueba la NTS N° 137-
+MINSA/2017/DGIESP <Norma Técnica de Salud para el Control de Crecimiento y
+Desarrollo de la Niña y el Niño Menores de Cinco Años=, y su modificatoria.
+Resolución Ministerial N° 902-2017/MINSA, que aprueba el Documento Técnico
+<Catálogo de Procedimientos Médicos y Sanitarios del Sector Salud=, y sus
+modificatorias.
+Resolución Ministerial N° 907-2016/MINSA, que aprueba el Documento Técnico:
+<Definiciones Operacionales y Criterios de Programación y de Medición de Avances
+de los Programas Presupuéstales=, y sus modificatorias.
+Resolución Ministerial N° 539-2016/MINSA, que aprueba la NTS N° 123-
+MINSA/DIGEMID-V.01 <Norma Técnica de Salud que regula las actividades de
+Farmacovigilancia y Tecnovigilancia de Productos Farmacéuticos, Dispositivos
+Médicos y Productos Sanitarios=.
+Resolución Ministerial N° 609-2014/MINSA, que aprueba la Directiva Administrativa
+N° 201-MINSA/DGSP-V.01 Directiva Administrativa para la Certificación de
+Establecimientos de Salud Amigos de la Madre, la Niña y el Niño.
+Resolución Ministerial N° 260-2014/MINSA, que aprueba la <Guía Técnica para la
+Implementación de Grupos de apoyo Comunal para promover y proteger la Lactancia
+Materna=.
+Resolución Ministerial N° 148-2012/MINSA, que aprueba la Directiva Administrativa
+N° 190-MINSA/OGEI-V.01 que establece el procedimiento para el registro del
+Certificado de Nacido Vivo en todos los establecimientos de salud del país.
+Resolución Ministerial N° 853-2012/MINSA, que aprueba la Directiva Sanitaria N° 001-
+MINSA/DGSP-V.02 <Directiva Sanitaria para la Evaluación de las Funciones
+Obstétricas y Neonatales en los Establecimientos de Salud=.
+Resolución Ministerial N° 540-2011/MINSA, que aprueba la Norma Técnica de Salud
+N° 091-MINSA/DIGEMID-V.01 <Norma Técnica de Salud para la Utilización de
+Medicamentos No Considerados en el Petitorio Nacional Único de Medicamentos
+Esenciales=, y su mo

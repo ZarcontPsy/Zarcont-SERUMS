@@ -1,0 +1,43 @@
+﻿source_id,short,file,pages,topics,sheets,cards,cited_pages,page_coverage_pct,status,notes
+src-aps,APS,atencion-primaria-salud.pdf,6,2,4,12,5,83.3,Tematica principal cubierta,
+src-mci,MCI,modelo-cuidado-integral-curso-vida.pdf,82,5,8,24,27,32.9,Tematica principal cubierta,
+src-audit,AUDIT,audit-consumo-alcohol.pdf,41,3,6,18,16,39.0,Tematica principal cubierta,
+src-materna,Materna,atencion-integral-salud-materna.pdf,59,3,6,18,19,32.2,Tematica principal cubierta,
+src-mental,Continuidad,continuidad-trastornos-mentales.pdf,69,3,6,18,22,31.9,Tematica principal cubierta,
+src-adulto,Adulto,cuidado-integral-persona-adulta.pdf,90,4,8,24,23,25.6,Tematica principal cubierta,
+src-depresion,Depresión,gpc-episodio-depresivo-leve.pdf,140,4,8,24,6,4.3,Tematica principal cubierta,
+src-gestantes,Perinatal,salud-mental-gestantes-madres.pdf,41,3,5,15,15,36.6,Tematica principal cubierta,
+src-ley-violencia,Ley 30364,ley-violencia-contra-mujer.pdf,76,1,2,6,12,15.8,Cobertura parcial,Marco legal y medidas de proteccion; faltan desarrollos procedimentales y articulacion con otros servicios.
+src-gt-violencia,GT violencia,gt-salud-mental-mujeres-violencia.pdf,66,2,4,12,24,36.4,Tematica principal cubierta,
+src-violencia-sexual,Violencia sexual,nt-afectados-violencia-sexual.pdf,70,1,2,6,14,20.0,Cobertura parcial,"Atencion inmediata y profilaxis; faltan seguimiento longitudinal, salud mental y ruta legal detallada."
+src-its,ITS,nt-prevencion-control-its.pdf,39,1,2,6,11,28.2,Tematica principal cubierta,
+src-vih,VIH adulto,nt-atencion-integral-adulto-vih.pdf,74,1,2,6,8,10.8,Cobertura parcial,"Diagnostico, TAR y monitoreo; faltan coinfecciones, falla terapeutica y poblaciones especiales."
+src-prevencion-combinada,Prevención combinada,nt-prevencion-combinada-vih-alto-riesgo.pdf,24,1,2,6,10,41.7,Tematica principal cubierta,
+src-hepatitis-b,Hepatitis B,nt-prevencion-hepatitis-b.pdf,65,1,2,6,14,21.5,Cobertura parcial,"Prevencion, diagnostico y tratamiento; faltan escenarios especiales y seguimiento de contactos."
+src-hepatitis-c,Hepatitis C,nt-prevencion-hepatitis-c.pdf,49,1,2,6,8,16.3,Cobertura parcial,"Tamizaje, diagnostico y tratamiento; faltan grupos especiales y manejo de reinfeccion."
+src-higiene-manos,Higiene de manos OMS,higiene-manos-oms.pdf,32,2,4,12,17,53.1,Tematica principal cubierta,
+src-vigilancia-iaas,Vigilancia de IAAS,vigilancia-iaas.pdf,42,2,4,12,11,26.2,Tematica principal cubierta,
+src-nutricion-ninos,Nutrición infantil 0-11 años,gt-nutricion-ninos-0-11.pdf,88,2,6,18,12,13.6,Tematica principal cubierta,
+src-nutricion-adultos,Nutrición en adultos,gt-nutricion-adultos.pdf,36,2,4,12,11,30.6,Tematica principal cubierta,
+src-lactancia-materna,Consejería en lactancia,gt-consejeria-lactancia-materna.pdf,59,3,5,15,11,18.6,Tematica principal cubierta,
+src-nutricion-ninos-anterior,Guía 2024 (acto resolutivo),gt-nutricion-ninos-0-11-anterior.pdf,69,0,0,0,0,0.0,"Acto normativo, sin duplicacion",
+src-ottawa,Ottawa,carta-ottawa-promocion-salud.pdf,4,1,1,3,4,100.0,Tematica principal cubierta,
+src-promocion-politica,Política de promoción,politica-promocion-salud.pdf,34,1,1,3,12,35.3,Tematica principal cubierta,
+src-modelo-abordaje,Modelo de abordaje,abordaje-promocion-salud.pdf,221,2,2,6,17,7.7,Cobertura parcial,"Sujetos, escenarios, ejes y programas; los siete anexos tematicos no se desarrollan ficha por ficha."
+src-municipios,Municipios saludables,municipios-comunidades-saludables.pdf,49,1,1,3,8,16.3,Cobertura parcial,"Definicion, fases y evaluacion; faltan actores, lineas de accion y herramientas de gestion."
+src-escuelas,Escuelas saludables,instituciones-educativas-saludables.pdf,38,1,1,3,5,13.2,Cobertura parcial,"Concepto, lineas y organizacion; faltan instrumentos de diagnostico y evaluacion escolar."
+src-agente,Agente comunitario,labor-agente-comunitario-salud.pdf,49,1,1,3,10,20.4,Cobertura parcial,"Roles, capacitacion y sostenibilidad; faltan instrumentos de supervision y registro."
+src-agua-reglamento,Calidad del agua,calidad-del-agua.pdf,46,2,2,6,15,32.6,Tematica principal cubierta,
+src-salud-ambiental-politica,Política salud ambiental,politica-nacional-salud-ambiental.pdf,34,1,2,6,15,44.1,Tematica principal cubierta,
+src-metales,Metales pesados,vigilancia-metales-pesados.pdf,52,2,2,6,15,28.8,Tematica principal cubierta,
+src-parto,Cuidados del parto,cuidados-durante-el-parto.pdf,210,1,1,3,6,2.9,Cobertura parcial,"Atencion respetuosa, fases y practicas clave; no se detallan las 56 recomendaciones una por una."
+src-neonatal,Atención neonatal,nt-neonatal.pdf,71,2,2,6,13,18.3,Cobertura parcial,"Atencion inmediata, alojamiento y signos de alarma; faltan UCIN, prematurez y referencia."
+src-tamizaje,Tamizaje neonatal,tamizaje-neonatal.pdf,37,1,1,3,6,16.2,Tematica principal cubierta,
+src-raras,Enfermedades raras,enfermedades-raras-huerfanas.pdf,9,1,1,3,6,66.7,Tematica principal cubierta,
+src-dm2,DM2,gpc-dm2.pdf,100,2,2,6,13,13.0,Tematica principal cubierta,
+src-hta,HTA,gpc-hta.pdf,27,2,2,6,10,37.0,Tematica principal cubierta,
+src-climaterio,Climaterio,gpc-climaterio-menopausia.pdf,42,1,1,3,11,26.2,Cobertura parcial,"Diagnostico, MRS y terapia hormonal; faltan manejo no hormonal y seguimiento a largo plazo."
+src-adolescente-nts,Adolescentes,nt-adolescente.pdf,74,2,2,6,12,16.2,Tematica principal cubierta,
+src-nino-expuesto,Niño expuesto al VIH,gpc-nino-expuesto-vih.pdf,9,1,1,3,5,55.6,Tematica principal cubierta,
+src-sifilis,Sífilis congénita,gpc-sifilis-congenita.pdf,9,1,1,3,5,55.6,Tematica principal cubierta,
+src-vih-navv,VIH pediátrico,nt-nino-adolescente-vih.pdf,82,1,1,3,10,12.2,Cobertura parcial,"Equipo, diagnostico, TAR y adherencia; faltan infecciones oportunistas, TB y revelacion del diagnostico."

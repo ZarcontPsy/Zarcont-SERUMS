@@ -1,0 +1,495 @@
+FILE gpc-dm2.pdf | pages 100 | chars 17536
+
+== HEADINGS (candidates) ==
+p1 [24.0] GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO,
+p1 [24.0] TRATAMIENTO Y CONTROL DE LA DIABETES
+p1 [24.0] MELLITUS TIPO 2 EN EL PRIMER NIVEL DE
+p1 [24.0] ATENCIÓN
+p1 [24.0] R.M. 719-2015
+p1 [24.0] ÓSCAR BOGGIO, MD MPH
+p1 [18.0] Médico especialista
+p1 [18.0] Medicina Preventiva y Salud Pública
+p1 [18.0] Lima,  2 de mayo de 2017
+p3 [40.0] El ascenso es más rápido en países de
+p3 [40.0] bajo- y mediano ingreso
+p3 [10.6] 0%
+p3 [10.6] 2%
+p3 [10.6] 4%
+p3 [10.6] 6%
+p3 [10.6] 8%
+p3 [10.6] 10%
+p3 [16.0] DM Prevalence
+p3 [16.0] Low-income
+p3 [16.0] Lower middle-
+p3 [16.0] income
+p3 [16.0] Upper middle-
+p3 [16.0] High-income
+p15 [36.0] GUÍA DE PRÁCTICA CLÍNICA
+p15 [36.0] PARA EL DIAGNÓSTICO,
+p15 [36.0] TRATAMIENTO Y CONTROL DE
+p15 [36.0] LA DIABETES MELLITUS TIPO 2
+p15 [36.0] EN EL PRIMER NIVEL DE
+p15 [36.0] ATENCIÓN
+p15 [36.0] R.M. 719-2015
+p16 [28.0] OBJETIVO
+p16 [28.0] Establecer criterios técnicos para el
+p16 [28.0] diagnóstico, tratamiento y control de la
+p16 [28.0] diabetes mellitus tipo 2 (DM-2) en el primer
+p16 [28.0] nivel de atención
+p17 [28.0] ÁMBITO DE APLICACIÓN
+p17 [28.0] • MINSA
+p17 [28.0] • Referencia para otros
+p18 [28.0] DEFINICIÓN
+p18 [24.0] La diabetes mellitus (DM) es un trastorno metabólico
+p18 [24.0] que tiene causas diversas; se caracteriza por
+p18 [24.0] hiperglucemia crónica y trastornos del metabolismo de
+p18 [24.0] los carbohidratos, las grasas y las proteínas como
+p18 [24.0] consecuencia de anomalías de la secreción o del
+p18 [24.0] efecto de la insulina.
+p21 [36.0] Existiría un 6.7% (IC 95%; 4.1% – 9%) de personas
+p21 [24.0] con 18 años a más que tienen azúcar elevada en
+p21 [24.0] sangre (≥126 mg/dl) o que toman medicación
+p21 [24.0] hipoglucemiante o tuvieron diagnóstico previo de
+p21 [24.0] diabetes mellitus.
+p22 [18.0] ENDES 2015
+p23 [24.0] En el reporte PERUDIAB, realizado en personas de
+p23 [24.0] 25 años a más del área urbana y suburbana, en el
+p23 [24.0] país existiría una prevalencia de diabetes mellitus
+p23 [40.0] de 7% (IC 95%; 5.3% - 8.7%) de los que el 4.2%
+p23 [24.0] (60%) refirieron que un médico o una enfermera les
+p23 [24.0] mencionó tener diabetes o utilizaban medicación
+p23 [24.0] para tratarla (antidiabéticos orales o insulina)
+p23 [12.0] study, disponible en línea. British Medical Journal Open Diabetes Research and Care, 3(1):e000110.
+p24 [40.0] Aproximadamente 1.000.000
+p24 [40.0] de diabéticos
+p26 [16.0] FACTORES DE RIESGO ASOCIADOS
+p26 [16.0] Medio ambiente
+p26 [16.0] Urbanización
+p26 [16.0] Riesgo ocupacional
+p26 [16.0] Sedentarismo
+p26 [16.0] Malos hábitos alimentarios
+p26 [16.0] Tabaquismo
+p26 [16.0] Alcohol
+p26 [16.0] Antecedente familiar de diabetes mellitus
+p26 [16.0] Hiperglucemia intermedia
+p26 [16.0] Síndrome metabólico
+p26 [16.0] Sobrepeso y obesidad
+p26 [16.0] Obesidad abdominal
+p26 [16.0] Etnia
+p26 [16.0] Edad
+p26 [16.0] Dislipidemia
+p26 [16.0] Historia de enfermedad cardiovascular
+p26 [16.0] Hipertensión arterial (HTA)
+p26 [16.0] Antecedentes obstétricos de diabetes mellitus gestacional
+p26 [16.0] Antecedente de hijos macrosómicos
+p26 [16.0] Antecedente  de bajo peso al nacimiento
+p26 [16.0] Acantosis nigricans y acrocordones
+p26 [16.0] Síndrome de ovario poliquístico
+p26 [16.0] Bajo grado de  instrucción
+p27 [28.0] CRIBADO:
+p27 [28.0] Se recomienda el cribado de la glucosa plasmática
+p27 [28.0] -como una parte más de la evaluación del riesgo
+p27 [28.0] cardiovascular- en los adultos entre 40-70 años de
+p27 [28.0] edad que fueran obesos o tuvieran sobrepeso; o
+p27 [28.0] según lo indicado en las normas de valoración y
+p27 [28.0] tamizaje de factores de riesgo. Si los valores son
+p27 [28.0] normales,
+p27 [28.0] repetir
+p27 [28.0] cada
+p27 [28.0] años.
+p27 [28.0] Considerar
+p27 [28.0] realizarlo a menores de 40 años si tienen historia
+p27 [28.0] familiar
+p27 [28.0] de
+p27 [28.0] diabetes,
+p27 [28.0] diabetes
+p27 [28.0] gestacional
+p27 [28.0] o
+p27 [28.0] síndrome de ovario poliquístico u otros según
+p27 [28.0] criterio médico.
+p28 [40.0] CRITERIOS DIAGNÓSTICOS
+p29 [18.0] CRITERIOS DIAGNÓSTICOS
+p29 [18.0] Cualquiera de los siguientes:
+p29 [24.0] Glucemia en ayunas en plasma venoso igual o mayor
+p29 [24.0] a 126 mg/dl, en dos oportunidades.
+p29 [18.0] No debe pasar más de 72 horas entre una y otra medición. El ayuno se
+p29 [18.0] define como un período sin ingesta calórica de por lo menos 8 horas. La
+p29 [18.0] persona puede estar asintomática.
+p30 [24.0] Síntomas de hiperglucemia o crisis
+p30 [24.0] hiperglucémica y una glucemia casual medida en
+p30 [24.0] plasma venoso igual o mayor de 200 mg/dl.
+p30 [18.0] Casual se define como cualquier hora del día sin relación con el
+p30 [18.0] tiempo transcurrido desde la última comida. Los síntomas de la
+p30 [18.0] hiperglucemia incluyen poliuria, polidipsia y pérdida inexplicable de
+p30 [18.0] peso.
+p31 [24.0] Glucemia medida en plasma venoso igual o mayor a 200
+p31 [24.0] mg/dl dos horas después de una carga oral de 75gr. de
+p31 [24.0] glucosa anhidra
+p32 [28.0] No se recomienda el uso de hemoglobina
+p32 [28.0] glucosilada para el diagnóstico de DM-2,
+p32 [28.0] debido a que en la actualidad es poco
+p32 [28.0] accesible en nuestro país, con una variedad
+p32 [28.0] de métodos para su determinación y por no
+p32 [28.0] existir aún la estandarización del método más
+p32 [28.0] apropiado para su medición en los
+p32 [28.0] laboratorios clínicos en el proceso
+p32 [28.0] diagnóstico.
+p43 [28.0] • Electrocardiograma: Indicado en todos las personas
+p43 [28.0] con sintomatología cardiovascular. Se recomienda
+p43 [28.0] realizar un electrocardiograma anualmente en las
+p43 [28.0] personas asintomáticas con diabetes.
+p44 [18.0] INTERCONSULTAS AL DIAGNÓSTICO DE LA PERSONA CON DIABETES
+p44 [18.0] MELLITUS TIPO 2
+p44 [18.0] Una vez realizado el diagnóstico de diabetes mellitus, se debe evaluar
+p44 [18.0] complicaciones y comorbilidades. Estos se realizan en el segundo y tercer nivel de
+p44 [18.0] atención (o en alguno del primer nivel con disponibilidad de médico especialista o
+p44 [18.0] personal capacitado) dependiendo de la disponibilidad del profesional.
+p44 [18.0] A la persona con DM-2 derivar para:
+p44 [18.0] •
+p44 [18.0] Ser evaluado por oftalmólogo, en su defecto, médico capacitado.
+p44 [18.0] Ser evaluado por endocrinólogo, en su defecto, médico internista.
+p44 [18.0] Ser evaluado por cirujano dentista.
+p44 [18.0] Ser evaluado por nutricionista o personal de salud capacitado.
+p44 [18.0] Según resultados en el proceso diagnóstico, la persona con DM-2:
+p44 [18.0] Podrá ser evaluado por especialista en Salud Mental.
+p44 [18.0] Podrá ser evaluado por consultor de la Estrategia Sanitaria Nacional de
+p44 [18.0] Prevención y Control de la Tuberculosis o neumólogo.
+p44 [18.0] Podrá ser evaluado por nefrólogo, en su defecto, médico internista.
+p44 [18.0] Podrá ser evaluado por cardiólogo, en su defecto, médico internista.
+p45 [28.0] Metas de control cardiometabólico:
+p45 [28.0] • Glucemia en ayunas 70 a 130 mg/dl.
+p45 [28.0] • Glucemia post prandial menor de 180 mg/dl.
+p45 [28.0] • Hemoglobina glucosilada menor de 7%(*).
+p45 [28.0] • Colesterol total menor de 200 mg/dl.
+p45 [28.0] • Colesterol HDL mayor de 50 mg/dl.
+p45 [28.0] • Colesterol LDL menor de 100 mg/dl.
+p45 [28.0] • Triglicéridos menor de 150 mg/dl.
+p45 [28.0] • Presión arterial menor de 140/80 mmHg.
+p46 [54.0] MANEJO
+p47 [32.1] • El pilar del tratamiento de la diabetes es la
+p47 [32.0] intervención intensiva sobre estilos de vida:
+p47 [32.0] plan de alimentación y actividad física, a
+p47 [32.0] cargo de un equipo conformado idealmente
+p47 [32.1] por médico (general, familiar, internista y/o
+p47 [32.0] endocrinólogo), enfermera, nutricionista,
+p47 [32.0] psicólogo u otro personal de salud
+p47 [32.1] capacitado en diabetes.
+p48 [44.1] CAMBIOS ESTILOS DE VIDA
+p48 [18.0] 3 a 4 meses*
+p49 [18.0] EDUCACIÓN EN DIABETES
+p49 [18.0] •
+p49 [18.0] Familia y soporte social
+p49 [18.0] Autocuidado
+p50 [18.0] RECOMENDACIONES NUTRICIONALES
+p50 [18.0] •
+p50 [18.0] Frutas y verduras
+p50 [18.0] Evitar otras
+p52 [18.0] ACTIVIDAD FÍSICA
+p52 [18.0] •
+p52 [18.0] 150 minutos semanales
+p52 [18.0] 10 minutos como mínimo
+p52 [18.0] Fortalecimiento de grandes grupos musculare (2v/sem)
+p54 [18.0] TABACO
+p55 [18.0] RIESGOS OCUPACIONALES
+p56 [18.0] VACUNAS
+p56 [18.0] •
+p56 [18.0] Gripe 1v/año
+p56 [18.0] Neumococo 1 o 2 v/vida (corte: 65 años)
+p56 [18.0] VHB*, Tdap*
+p57 [32.1] TERAPIA FARMACOLÓGICA
+p58 [18.0] MONOTERAPIA
+p58 [18.0] ¿Estable? Empieza
+p59 [18.0] MONOTERAPIA
+p59 [18.0] •
+p59 [18.0] METFORMINA
+p59 [18.0] GLIBENCLAMIDA
+p60 [18.0] MONOTERAPIA
+p60 [18.0] •
+p60 [18.0] METFORMINA
+p60 [18.0] o Primera línea
+p60 [18.0] o 500 y 850 mg
+p60 [18.0] o Iniciar con dosis bajas de 500mg u 850mg por día,
+p60 [18.0] dosis única.
+p60 [18.0] o Incrementar de 500mg a 850mg cada 1 a 2 semanas
+p60 [18.0] de forma progresiva hasta alcanzar el control
+p60 [18.0] glucémico y/o la dosis máxima de 2,550mg si fuera
+p60 [18.0] necesario.
+p60 [18.0] o Debe tomarse con o inmediatamente después de las
+p60 [18.0] comidas principales.
+p62 [18.0] MONOTERAPIA
+p62 [18.0] •
+p62 [18.0] METFORMINA
+p62 [18.0] o Nauseas, diarreas y dolor abdominal son los efectos
+p62 [18.0] adversos más frecuentes.
+p62 [18.0] o Acidosis láctica, que se puede presentar si se usa: En
+p62 [18.0] infarto agudo de miocardio, insuficiencia renal o
+p62 [18.0] hepática.
+p62 [18.0] o La hipoglucemia es muy rara.
+p63 [18.0] MONOTERAPIA
+p63 [18.0] •
+p63 [18.0] GLIBENCLAMIDA
+p63 [18.0] o Intolerancia o contraindicación a metformina.
+p63 [18.0] o 5 mg
+p63 [18.0] o Hipoglucemias, aumento de peso
+p63 [18.0] o Iniciar con dosis bajas (2.5 mg – 5 mg) una vez al día en el desayuno
+p63 [18.0] o primera comida. Se puede administrar dos veces al día en algunas
+p63 [18.0] personas (por ejemplo aquellos que reciben más de 10 mg por día).
+p63 [18.0] o Incrementar ≤2.5 mg al día cada semana hasta conseguir el control
+p63 [18.0] glucémico deseado o hasta que se alcance la dosis máxima permitida
+p63 [18.0] (20 mg/día).
+p63 [18.0] o Existe mayor susceptibilidad de hipoglucemia en las personas con
+p63 [18.0] malnutrición, adulto mayor, personas con falla hepática o renal, o
+p63 [18.0] insuficiencia adrenal o pituitaria. Referir en estos casos a médico
+p63 [18.0] internista o endocrinólogo.
+p64 [18.0] MONOTERAPIA
+p64 [18.0] •
+p64 [18.0] GLIBENCLAMIDA
+p64 [18.0] o Hipoglucemia.
+p64 [18.0] o Reacciones de hipersensibilidad cutánea (esporádicas).
+p64 [18.0] o Posible alergia cruzada con sulfonamidas.
+p64 [18.0] o Raramente puede ocasionar trombocitopenia, agranulocitosis,
+p64 [18.0] pancitopenia y anemia hemolítica, estasis biliar y hepatitis.
+p65 [18.0] MONOTERAPIA
+p65 [18.0] •
+p65 [18.0] GLIMEPIRIDA
+p65 [18.0] o 2-4 mg
+p65 [18.0] o Aprobado por DIGEMID para:
+p65 [18.0] 1. En el tratamiento de la DM-2 en personas ≥65 años con hiperglucemia
+p65 [18.0] no controlada con medicamentos de primera línea (metformina).
+p65 [18.0] 2. En la enfermedad renal crónica, se justifica solo para personas con
+p65 [18.0] enfermedad renal leve y moderada con FG ˃ 60 ml/min/1.73 m2 en
+p65 [18.0] los que no se consigue el objetivo de control glucémico con metfomina
+p65 [18.0] por lo que la individualización del tratamiento resulta esencial y
+p65 [18.0] requiere ajuste de dosis.
+p65 [18.0] o El uso de este medicamento requiere ser iniciado por médico especialista
+p65 [18.0] del segundo o tercer nivel de atención. El médico del primer nivel podrá
+p65 [18.0] utilizarlo con las indicaciones precisas del especialista antes mencionado.
+p68 [44.0] INSULINA: referir*
+p69 [44.0] COMBINACIONES: referir*
+p70 [40.0] OTRO MEDICAMENTO: referir*, R. M.
+p70 [40.0] 540-2011/MINSA (NTS para la
+p70 [40.0] Utilización de Medicamentos no
+p70 [40.0] considerados en el PNUME)
+p73 [18.0] CRITERIOS DE REFERENCIA
+p73 [18.0] Persona con diagnóstico de DM-2 con inadecuado control metabólico por 3
+p73 [18.0] a 6 meses a pesar del tratamiento no farmacológico y farmacológico en
+p73 [18.0] monoterapia (con adecuada adherencia y dosis), debe ser referido al
+p73 [18.0] segundo o tercer nivel de atención para evaluación por médico internista o
+p73 [18.0] endocrinólogo.
+p74 [18.0] CRITERIOS DE REFERENCIA
+p74 [18.0] En caso de no contar con un profesional licenciado en nutrición o personal
+p74 [18.0] de salud capacitado en esta función, se podrá referir al nivel de atención
+p74 [18.0] inmediato superior para evaluación y educación en autocontrol de la
+p74 [18.0] diabetes.
+p75 [18.0] CRITERIOS DE REFERENCIA
+p75 [15.0] Toda persona  con DM-2 con sintomatología o daño evidenciado de complicación crónica
+p75 [15.0] que requieran atención por un médico especialista en oftalmología, nefrología, neurología y
+p75 [15.0] cardiología, debe ser referido al II o III nivel de atención según corresponda, en los
+p75 [15.0] siguientes casos:
+p75 [15.0] Albuminuria mayor de 300 mg/24 horas.
+p75 [15.0] Concentración de creatinina sérica mayor de 1.5 mg/dl.
+p75 [15.0] TFG < 60ml/minuto (enfermedad renal crónica, etapa 3 o más).
+p75 [15.0] Neuropatía diabética dolorosa.
+p75 [15.0] Neuropatía diabético autonómica.
+p75 [15.0] Enfermedad vascular periférica.
+p75 [15.0] Pie diabético con clasificación de Wagner con grado ≥ 2.
+p75 [15.0] Retinopatía diabética no proliferativa moderada a severa.
+p75 [15.0] Retinopatía diabética proliferativa.
+p75 [15.0] Enfermedad coronaria.
+p75 [15.0] Insuficiencia cardiaca grado III y IV.
+p75 [15.0] Antecedente de accidente cerebrovascular.
+p76 [18.0] CRITERIOS DE REFERENCIA
+p76 [18.0] Infección aguda severa.
+p77 [18.0] CRITERIOS DE REFERENCIA
+p77 [18.0] Persona con diabetes e hipertensión arterial.
+p78 [18.0] CRITERIOS DE REFERENCIA
+p78 [18.0] DM-2 con sospecha clínica o bioquímica de descompensación o
+p78 [18.0] complicación aguda que requiera atención inmediata debe ser derivado a un
+p78 [18.0] nivel de mayor complejidad para su manejo correspondiente por un
+p78 [18.0] especialista.
+p79 [18.0] IMPORTANTE: No debe referir para:
+p79 [18.0] •
+p79 [18.0] Confirmar diagnóstico de DM-2.
+p79 [18.0] Para inicio de tratamiento.
+p79 [18.0] Persona sin adherencia al tratamiento instalado.
+p80 [18.0] Criterios de contrarreferencia:
+p80 [18.0] •
+p80 [18.0] Se efectuará contrarreferencia al establecimiento de salud de origen
+p80 [18.0] aquellas personas que cumplan los siguientes criterios:
+p80 [18.0] Se encuentren estabilizados en los últimos controles; y,
+p80 [18.0] Que hayan logrado el control glucémico.
+p82 [28.0] GUÍA TÉCNICA: GUÍA PRÁCTICA CLÍNICA PARA EL
+p82 [28.0] DIAGNÓSTICO, TRATAMIENTO Y CONTROL DEL PIE
+p82 [28.0] DIABÉTICO
+p82 [28.0] R.M. 226-2016
+p83 [28.0] OBJETIVO
+p83 [28.0] • Establecer criterios técnicos para el diagnóstico,
+p83 [28.0] tratamiento y control del pie diabético en personas
+p83 [28.0] con diabetes mellitus tipo 1 y 2 en el primer nivel
+p83 [28.0] de atención.
+p84 [28.0] ÁMBITO DE APLICACIÓN
+p84 [28.0] Establecimientos de salud del Instituto de Gestión de
+p84 [28.0] Servicios de Salud, de las Direcciones Regionales de
+p84 [28.0] Salud, de las Gerencias Regionales de Salud o las que
+p84 [28.0] hagan sus veces a nivel regional así como otros
+p84 [28.0] prestadores de servicios de salud públicos (Seguro
+p84 [28.0] Social de Salud, Sanidades de las Fuerzas Armadas y
+p84 [28.0] Policía Nacional del Perú, Gobiernos Regionales y
+p84 [28.0] Locales) y privados, según corresponda.
+p85 [28.0] DEFINICIÓN
+p85 [28.0] El pie diabético se define como cualquier
+p85 [28.0] complicación en el pie como consecuencia de la DM-
+p85 [28.0] 2, y tiene diversas formas de presentación, pero las
+p85 [28.0] principales son la neuropatía y la insuficiencia
+p85 [28.0] vascular periférica. Esto conlleva a las personas a un
+p85 [28.0] mayor riesgo de ulceración y en muchos casos de
+p85 [28.0] amputación.
+p86 [26.0] • A nivel mundial se reporta que hasta el 50% de las
+p86 [26.0] personas con DM-2 pueden desarrollar durante su vida
+p86 [26.0] una úlcera en los pies. De estas personas, un 20%
+p86 [26.1] sufrirán una amputación en miembro inferior
+p86 [26.0] secundaria a la misma.
+p86 [26.0] • Estudios en el Perú han encontrado prevalencias de
+p86 [26.0] neuropatía entre 57%-90% en personas atendidos en
+p86 [26.0] hospitales del tercer nivel.
+p86 [16.0] Fuente: Ticse R, Pimentel R, Mazzeti P, Villena J. Elevada frecuencia de neuropatía periférica
+p86 [16.0] en personas con Diabetes mellitus tipo 2 de un hospital general de Lima-Perú. Rev Med
+p86 [16.0] Hered 2013; 24:114-121.
+p87 [26.0] CUADRO CLÍNICO
+p87 [26.0] Signos y síntomas
+p87 [26.0] Dependerá de la etapa en la que se encuentre la
+p87 [26.1] enfermedad al momento del diagnóstico:
+p87 [26.0] Asintomáticos: Son aquellas personas con DM-2 o DM-1
+p87 [26.0] que no advierten los síntomas clásicos de pie diabético.
+p87 [26.0] Sintomáticos: Las manifestaciones clínicas pueden variar
+p87 [26.1] según las complicaciones que presenta la persona como
+p87 [26.0] adormecimientos, calambres, hormigueos (parestesias),
+p87 [26.0] dolor tipo quemazón o electricidad en miembros
+p87 [26.0] inferiores en caso de neuropatía diabética; dolor en
+p87 [26.0] pantorrilla (claudicación intermitente) en caso de
+p87 [26.1] enfermedad arterial periférica.
+p88 [22.0] Criterios de diagnóstico
+p88 [22.0] Forma de evaluación
+p88 [22.0] Se debe examinar el pie de una persona con diabetes mellitus
+p88 [22.0] retirándole los zapatos, las medias, vendajes y gasas.
+p88 [22.0] Se debe examinar en ambos pies si hay la presencia de los
+p88 [22.0] siguientes factores de riesgo:
+p88 [22.0] • Neuropatía (usar el monofilamento de 10g como parte del
+p88 [22.0] examen sensitivo de los pies)
+p88 [22.0] • Isquemia del miembro inferior
+p88 [22.0] • Ulceración
+p88 [22.0] • Callos
+p88 [22.0] • Infección y/o inflamación
+p88 [22.0] • Deformidades
+p88 [22.0] • Gangrena
+p88 [22.0] • Artropatía de Charcot
+p89 [28.0] Estratificación del riesgo basado en los factores de
+p89 [28.0] riesgo:
+p89 [28.0] • Bajo riesgo: ausencia de factores de riesgo
+p89 [28.0] • Riesgo moderado: un factor de riesgo presente
+p89 [28.0] • Alto riesgo: úlcera previa o amputación o terapia
+p89 [28.0] de reemplazo renal o más de un factor de riesgo
+p89 [28.0] presente
+p90 [28.0] Radiografía simple de pie:
+p90 [28.0] Se debe realizar de forma comparativa, en posiciones
+p90 [28.0] frontales y oblicuas, con el propósito de evidenciar
+p90 [28.0] presencia de osteomielitis, infección productora de
+p90 [28.0] gas en tejidos blandos y calcificación de las arterias
+p90 [28.0] del pie. Solicitarla ante la sospecha de estas.
+p91 [44.1] MANEJO
+p92 [28.0] Metas de control cardiometabólico:
+p92 [28.0] • Glucemia en ayunas 70 a 130 mg/dl.
+p92 [28.0] • Glucemia post prandial menor de 180 mg/dl.
+p92 [28.0] • Hemoglobina glucosilada menor de 7%(*).
+p92 [28.0] • Colesterol total menor de 200 mg/dl.
+p92 [28.0] • Colesterol HDL mayor de 50 mg/dl.
+p92 [28.0] • Colesterol LDL menor de 100 mg/dl.
+p92 [28.0] • Triglicéridos menor de 150 mg/dl.
+p92 [28.0] • Presión arterial menor de 140/80 mmHg.
+p93 [28.0] • El pilar del tratamiento de la diabetes es la
+p93 [28.0] intervención intensiva sobre estilos de vida: plan de
+p93 [28.0] alimentación y actividad física, a cargo de un
+p93 [28.0] equipo conformado idealmente por médico
+p93 [28.0] (general, familiar, internista y/o endocrinólogo),
+p93 [28.0] enfermera, nutricionista, psicólogo u otro personal
+p93 [28.0] de salud capacitado en diabetes.
+p94 [26.0] Bajo riesgo: continuar con las evaluaciones anuales con
+p94 [26.0] énfasis en la importancia del cuidado de los pies y dar
+p94 [26.1] información de la posibilidad de progresión a riesgo
+p94 [26.0] moderado o alto:
+p94 [26.0] • inspeccione sus pies diariamente
+p94 [26.0] • lávese e hidrate sus pies diariamente
+p94 [26.1] • córtese las uñas con regularidad
+p94 [26.0] • nunca camine descalzo
+p94 [26.0] • no dificulte la circulación sanguínea
+p94 [26.0] • realice una evaluación médica de sus pies por lo menos
+p94 [26.0] una vez al año
+p95 [28.0] Riesgo moderado o alto
+p95 [28.0] • Dar consejos y proporcionar atención sobre el
+p95 [28.0] cuidado de la piel y las uñas de los pies.
+p95 [28.0] • Evaluar el estado biomecánico de los pies,
+p95 [28.0] incluyendo la necesidad de proporcionar calzado
+p95 [28.0] especializado y plantillas. Las recomendaciones de
+p95 [28.0] calzado tienen que ser indicadas por el Servicio de
+p95 [28.0] Terapia Física, por lo que hay que referir al siguiente
+p95 [28.0] nivel de atención.
+p95 [28.0] • Evaluar el estado vascular de los miembros
+p95 [28.0] inferiores.
+p96 [40.0] Terapéutica
+p97 [28.0] • Documentar el tamaño, profundidad y posición de
+p97 [28.0] la úlcera.
+p97 [28.0] • Referir al servicio especializado para que indiquen
+p97 [28.0] una ortesis para personas con lesión plantar
+p97 [28.0] neuropática, no isquémica, no infectada en el ante
+p97 [28.0] pie o en la mitad del pie.
+p97 [28.0] • Si la úlcera requiere debridación, la persona debe
+p97 [28.0] ser referida.
+p97 [28.0] • Para la limpieza de la úlcera, se seguirá los pasos
+p97 [28.0] sugeridos en el Anexo 5.
+p98 [28.0] CRITERIOS DE REFERENCIA
+p98 [28.0] Wagner con grado ≥ 2 y/o una clasificación de
+p98 [28.0] Fontaine ≥IIb
+p99 [28.0] CRITERIOS DE REFERENCIA
+p99 [28.0] No evolucione favorablemente, definido como
+p99 [28.0] persona que progrese de Wagner 1 a Wagner 2, o
+p99 [28.0] que no reduce y/o no mejora la úlcera a pesar del
+p99 [28.0] tratamiento adecuado y adherencia a las
+p99 [28.0] indicaciones de manejo.
+p100 [44.0] Gracias
+
+== FIRST PAGES ==
+
+--- p1 ---
+GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO,
+TRATAMIENTO Y CONTROL DE LA DIABETES
+MELLITUS TIPO 2 EN EL PRIMER NIVEL DE
+ATENCIÓN
+R.M. 719-2015
+ÓSCAR BOGGIO, MD MPH
+Médico especialista
+Medicina Preventiva y Salud Pública
+Lima,  2 de mayo de 2017
+
+--- p2 ---
+
+
+--- p3 ---
+El ascenso es más rápido en países de
+bajo- y mediano ingreso
+0%
+2%
+4%
+6%
+8%
+10%
+1980 1982 1984 1986 1988 1990 1992 1994 1996 1998 2000 2002 2004 2006 2008 2010 2012 2014
+DM Prevalence
+Low-income
+Lower middle-
+income
+Upper middle-
+income
+High-income
+
+--- p4 ---
+

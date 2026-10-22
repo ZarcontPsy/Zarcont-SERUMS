@@ -301,6 +301,41 @@
   function cardById(id) { return content().cards.find(function (c) { return c.id === id; }) || null; }
   function sourceById(id) { return content().sources.find(function (s) { return s.id === id; }) || null; }
 
+  function deckKind(deckId) {
+    if (!deckId) return { kind: "all", sheet: null, topic: null };
+    var sheet = sheetById(deckId);
+    if (sheet) return { kind: "sheet", sheet: sheet, topic: topicById(sheet.topicId) };
+    var topic = topicById(deckId);
+    if (topic) return { kind: "topic", sheet: null, topic: topic };
+    console.warn("StudyStore: mazo no encontrado", deckId);
+    return { kind: "missing", sheet: null, topic: null };
+  }
+  function cardsForDeck(deckId) {
+    var deck = deckKind(deckId);
+    if (deck.kind === "all") return content().cards.slice();
+    if (deck.kind === "missing") return [];
+    return content().cards.filter(function (c) {
+      return deck.kind === "sheet" ? c.sheetId === deckId : c.topicId === deckId;
+    });
+  }
+  function deckTitle(deck) {
+    if (deck.kind === "sheet") return deck.sheet.title;
+    if (deck.kind === "topic") return deck.topic.title;
+    return "Sesión de flashcards";
+  }
+  function deckTopicId(deck) {
+    if (deck.kind === "sheet") return deck.sheet.topicId;
+    if (deck.kind === "topic") return deck.topic.id;
+    return "";
+  }
+  function cardDeckId(card) {
+    if (!card) return "";
+    var sheet = sheetById(card.sheetId);
+    if (sheet) return sheet.id;
+    var topic = topicById(card.topicId);
+    return topic ? topic.id : "";
+  }
+
   function ensureSheet(sheetId) {
     if (!state.sheets[sheetId]) {
       state.sheets[sheetId] = {
@@ -496,7 +531,8 @@
     return state.last.flashcards;
   }
   function startSession(mode, deckId, cardIds) {
-    var topic = topicById(deckId);
+    var deck = deckKind(deckId);
+    if (deck.kind === "missing") return null;
     state.flashSession = {
       id: "session-" + Date.now(),
       mode: mode,
@@ -510,9 +546,12 @@
       startedAt: nowISO(),
       updatedAt: nowISO()
     };
-    if (topic) {
+    if (deck.kind === "sheet" || deck.kind === "topic") {
       state.last.flashcards = {
-        deckId: deckId, topicId: deckId, title: topic.title,
+        deckId: deckId,
+        topicId: deckTopicId(deck),
+        sheetId: deck.kind === "sheet" ? deck.sheet.id : "",
+        title: deckTitle(deck),
         at: nowISO(), url: lastFlashcardsUrl(deckId, true)
       };
     }
@@ -572,13 +611,14 @@
     };
     state.sessions.unshift(summary);
     state.sessions = state.sessions.slice(0, 100);
-    var topic = topicById(s.deckId);
+    var deck = deckKind(s.deckId);
     pushHistory({
-      type: "session", id: s.id, title: (topic ? topic.title : "Sesión") + " · " + total + " tarjetas",
-      topicId: s.deckId, at: endedAt
+      type: "session", id: s.id, title: deckTitle(deck) + " · " + total + " tarjetas",
+      topicId: deckTopicId(deck), sheetId: deck.kind === "sheet" ? deck.sheet.id : "", at: endedAt
     });
     state.last.flashcards = {
-      deckId: s.deckId, topicId: s.deckId, title: topic ? topic.title : "Sesión de flashcards",
+      deckId: s.deckId, topicId: deckTopicId(deck), sheetId: deck.kind === "sheet" ? deck.sheet.id : "",
+      title: deckTitle(deck),
       at: endedAt, url: lastFlashcardsUrl(s.deckId, true)
     };
     state.flashSession = null;
@@ -603,19 +643,18 @@
     return !d || d.getTime() <= Date.now();
   }
   function getDueCards(deckId) {
-    return content().cards.filter(function (c) {
-      return (!deckId || c.topicId === deckId) && isDue(c.id);
+    return cardsForDeck(deckId).filter(function (c) {
+      return isDue(c.id);
     });
   }
   function getErrorCards(deckId) {
-    return content().cards.filter(function (c) {
-      if (deckId && c.topicId !== deckId) return false;
+    return cardsForDeck(deckId).filter(function (c) {
       var st = state.cards[c.id];
       return st && (st.lastResult === "again" || st.lapses > 0);
     });
   }
   function getDeckStats(deckId) {
-    var cards = content().cards.filter(function (c) { return c.topicId === deckId; });
+    var cards = cardsForDeck(deckId);
     var reviewed = 0, mastered = 0, due = 0, errors = 0, lastReviewAt = null;
     cards.forEach(function (c) {
       var st = state.cards[c.id];
@@ -733,8 +772,9 @@
     var recs = [];
     var due = getDueCards().filter(function (c) { return state.cards[c.id] && state.cards[c.id].reviews > 0; });
     if (due.length > 0) {
-      recs.push({
-        kind: "flashcards", mode: "quick", deckId: due[0].topicId,
+      var dueDeck = cardDeckId(due[0]);
+      if (dueDeck) recs.push({
+        kind: "flashcards", mode: "quick", deckId: dueDeck,
         title: "Repaso pendiente",
         text: "Hay " + due.length + " tarjeta" + (due.length === 1 ? "" : "s") + " para repasar hoy.",
         action: "Repasar ahora"
@@ -775,16 +815,18 @@
     }
     var errors = getErrorCards();
     if (errors.length && recs.length < 3) {
-      recs.push({
-        kind: "flashcards", mode: "errors", deckId: errors[0].topicId,
+      var errorDeck = cardDeckId(errors[0]);
+      if (errorDeck) recs.push({
+        kind: "flashcards", mode: "errors", deckId: errorDeck,
         title: "Refuerza tus errores",
         text: "Tienes " + errors.length + " tarjeta" + (errors.length === 1 ? "" : "s") + " con errores previos.",
         action: "Practicar"
       });
     }
     if (!recs.length) {
+      var firstSheet = content().sheets[0];
       recs.push({
-        kind: "flashcards", mode: "free", deckId: content().topics[0] ? content().topics[0].id : "",
+        kind: "flashcards", mode: "free", deckId: firstSheet ? firstSheet.id : "",
         title: "Cierra el círculo",
         text: "Convierte lo leído en recuperación activa con una sesión corta.",
         action: "Abrir flashcards"

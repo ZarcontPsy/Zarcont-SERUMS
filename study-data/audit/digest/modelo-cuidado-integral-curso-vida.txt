@@ -1,0 +1,346 @@
+FILE modelo-cuidado-integral-curso-vida.pdf | pages 82 | chars 229285
+
+== HEADINGS (candidates) ==
+p1 [24.0] Documento Técnico:
+p1 [24.0] Modelo de Cuidado Integral de Salud por
+p1 [24.0] Curso de Vida
+p1 [20.0] Para la Persona, Familia y Comunidad (MCI)
+p2 [14.0] ÍNDICE
+p4 [11.0] DOCUMENTO TÉCNICO
+p4 [11.0] “MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA
+p4 [11.0] PARA LA PERSONA, FAMILIA Y COMUNIDAD (MCI)”
+p4 [11.0] I.
+p4 [11.0] INTRODUCCIÓN
+p6 [11.0] II.
+p6 [11.0] FINALIDAD
+p6 [11.0] III.
+p6 [11.0] OBJETIVOS
+p6 [11.0] 3.1 Objetivo General
+p6 [11.0] 3.2 Objetivos Específicos
+p6 [11.0] IV.
+p6 [11.0] BASE LEGAL
+p6 [11.0] ● Ley N° 26842, Ley General de Salud y modificatorias.
+p6 [11.0] ● Ley N° 27658, Ley de Modernización de la Gestión del Estado.
+p6 [11.0] ● Ley N° 27783, Ley de Bases de la Descentralización
+p6 [11.0] ● Ley N° 27867, Ley Orgánica de Gobiernos Regionales
+p6 [11.0] ● Ley N° 29414, Ley que establece los Derechos de las Personas Usuarias de los Servicios de
+p6 [11.0] ● Ley N° 27972 Ley Orgánica de Municipalidades
+p6 [11.0] ● Ley N° 29158, Ley Orgánica del Poder Ejecutivo.
+p6 [11.0] ●  Ley N° 29733, Ley de Protección de Datos Personales, y modificatoria.
+p6 [11.0] ● Ley N° 29889, Ley de Salud Mental
+p6 [11.0] ● Ley N° 30421, Ley Marco de Telesalud, y su modificatoria.
+p6 [11.0] ● Ley N° 30024, Ley que crea el Registro Nacional de Historias Clínicas Electrónicas.
+p6 [11.0] ● Ley N° 30825, Ley que fortalece la labor de los Agentes Comunitarios de Salud.
+p6 [11.0] ● Ley N° 30885, Ley que establece la conformación y el funcionamiento de las Redes
+p6 [11.0] ● Ley N° 30895, Ley que Fortalece la Función Rectora del Ministerio de Salud.
+p6 [11.0] ● Decreto Legislativo N° 1161, Ley de Organización y Funciones del Ministerio de Salud.
+p7 [11.0] ● Decreto Supremo N° 020-2014-SA, que aprueba el Texto Único Ordenado de la Ley N°
+p7 [11.0] ● Decreto Supremo N° 008-2017-SA, que aprueba el Reglamento de Organización y Funciones
+p7 [11.0] ● Decreto Supremo N° 003-2019-SA, que aprueba el Reglamento de la
+p7 [11.0] ● Decreto Supremo N° 012-2019-SA, que aprueba el Reglamento del Decreto Legislativo N°
+p7 [11.0] ● Resolución Ministerial N° 546-2011/MINSA, que aprueba la NTS N° 021-MINSA/DGSP-V.03:
+p7 [11.0] ● Resolución Ministerial N° 850-2016/MINSA que aprueba el documento denominado
+p7 [11.0] ● Resolución
+p7 [11.0] ● Resolución Ministerial N° 366-2017/MINSA, que aprueba el Documento Técnico:
+p7 [11.0] V.
+p7 [11.0] ÁMBITO DE APLICACIÓN
+p7 [11.0] CONTENIDO
+p7 [11.0] 6.1 CONTEXTO DEL MODELO DE CUIDADO INTEGRAL POR CURSO DE VIDA
+p7 [11.0] Contexto socio demográfico
+p11 [11.0] Contexto de los Determinantes Sociales de la Salud
+p12 [11.0] a. Mejorar las condiciones de vida.
+p14 [11.0] b. Luchar contra la inequidad
+p14 [11.0] c. Medir la magnitud del problema, analizarlo y evaluar los efectos de las intervenciones
+p15 [11.0] Determinantes Sociales de Salud
+p15 [11.0] Abordaje
+p15 [11.0] Gobierno nacional
+p15 [11.0] Programa Juntos
+p15 [11.0] satisfactorios
+p15 [11.0] Inclusión Social
+p16 [11.0] Inclusión Social
+p16 [11.0] Infancia y adolescencia
+p16 [11.0] Vulnerables
+p16 [11.0] Violencia contra la mujer
+p17 [11.0] Ministerio de Salud
+p17 [11.0] Diversidad cultural
+p18 [11.0] Seguridad en el trabajo
+p18 [11.0] Trabajo
+p18 [11.0] Alimentación saludable
+p19 [11.0] niños, niñas y adolescentes.
+p19 [11.0] Estrategia Barrio Seguro
+p19 [11.0] Discapacidad
+p20 [11.0] calidad.
+p20 [11.0] Educación Vial
+p20 [11.0] Comunicaciones
+p21 [11.0] Seguridad Alimentaria
+p21 [11.0] Agricultura y Riego
+p21 [11.0] Metales pesados
+p22 [11.0] Cambio Climático
+p22 [11.0] del ambiente.
+p22 [11.0] Impacto Ambiental
+p23 [11.0] Agua y Saneamiento
+p23 [11.0] Ingresos y Empleo
+p23 [11.0] Educación
+p24 [11.0] 6.1.3. Contexto del sistema de salud
+p25 [11.0] a.
+p25 [11.0] Provisión de servicios
+p26 [11.0] b. Generación de recursos
+p26 [11.0] Recursos Humanos
+p27 [11.0] Infraestructura
+p28 [11.0] Medicamentos
+p28 [11.0] Tecnología
+p28 [11.0] c.
+p28 [11.0] Financiamiento
+p29 [11.0] Indicador
+p30 [11.0] d.
+p30 [11.0] Rectoría
+p31 [11.0] 6.1.4. Antecedentes del Modelo de Cuidado Integral de la Salud
+p33 [11.0] 6.2. MARCO CONCEPTUAL DEL MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA
+p35 [11.0] 6.2.1. Conceptos y Definiciones
+p35 [11.0] ● Cartera de servicios: conjunto de diferentes prestaciones que brinda un establecimiento de
+p35 [11.0] ● Ciclo vital familiar: Secuencia de fases por las que atraviesa la familia desde su creación hasta
+p35 [11.0] ● Cuidado: Es la acción de asistir y preservar la propia salud y la de los demás en base a
+p35 [11.0] ● Cuidado de la salud: Acción de proteger, cautelar, preservar, de manera empática, el Derecho
+p36 [11.0] ● Cuidado integral de la salud: Son las acciones e intervenciones personales, familiares y
+p36 [11.0] ● Curso de vida: Comprende la sucesión de eventos que ocurren a lo largo de la existencia de
+p36 [11.0] preconcepción hasta la muerte(75).
+p36 [11.0] ● Determinantes Sociales de la Salud: Los determinantes sociales de la salud son las
+p36 [11.0] El contexto socio económico y político incluye el ejercicio de la gobernanza, el modelo de
+p36 [11.0] Los determinantes estructurales incluyen a los estratificadores estructurales que generan la
+p36 [11.0] Los determinantes intermedios incluyen a las condiciones materiales en las que se vive; las
+p37 [11.0] ● Gestión territorial en salud: Es un modelo de gestión que la autoridad del territorio del nivel
+p37 [11.0] ● Intercambio prestacional: Acciones de articulación interinstitucional que garantice el
+p37 [11.0] ● Telesalud: Servicio de salud a distancia prestado por personal de la salud competente, a
+p37 [11.0] ● Vía de cuidados integrales en salud1: Herramienta de gestión para los cuidados integrales de
+p37 [11.0] reestablecer su salud (79).
+p37 [11.0] 6.2.2. Principios orientadores del Modelo
+p39 [11.0] 6.2.3. Concordancia entre la Política de Salud, el Modelo de Cuidado integral y las estrategias
+p39 [11.0] de Atención Primaria de Salud
+p39 [11.0] Tabla 5: Comparación entre la situación actual y el nuevo modelo de cuidado integral por curso
+p39 [11.0] de vida
+p39 [11.0] Área
+p39 [11.0] SITUACION ACTUAL
+p39 [11.0] MCI
+p41 [11.0] 6.2.4. Definición del modelo
+p41 [11.0] 6.2.5. Características del Modelo
+p41 [11.0] El Modelo de Cuidado Integral de Salud por Curso de Vida (MCI) concibe las acciones del cuidado
+p42 [11.0] Enfoques transversales
+p43 [11.0] 6.3. COMPONENTES DEL MODELO DE CUIDADO INTEGRAL POR CURSO DE VIDA
+p44 [11.0] 6.3.1  Componente de provisión del cuidado
+p46 [11.0] a.
+p46 [11.0] Abordaje de los determinantes sociales de la salud
+p47 [11.0] Tabla 6. Determinantes estructurales y su relación con los sectores del poder ejecutivo
+p47 [11.0] Determinantes Sociales de Salud
+p48 [11.0] b.
+p48 [11.0] Cuidado integral a la persona con enfoque de curso de vida
+p49 [11.0] período crítico y sensible, la trayectoria y procesos de acumulación.(88)
+p49 [11.0] b.1. Cuidados periodo prenatal
+p50 [11.0] b.2. Cuidados individuales por curso de vida niño
+p52 [11.0] b.3. Cuidados individuales por curso de vida adolescente
+p52 [11.0] b.4. Cuidados individuales por curso de vida joven
+p53 [11.0] b.5. Cuidados individuales por curso de vida adulto
+p54 [11.0] b.6. Cuidados individuales por curso de vida adulto mayor
+p54 [11.0] c.
+p54 [11.0] Cuidados por el ciclo vital de la familia
+p55 [11.0] entorno familiar.
+p56 [11.0] relación con la pareja.
+p56 [11.0] Figura 4. Ciclo vital de la familia.
+p57 [11.0] d.
+p57 [11.0] Cuidados en la comunidad
+p58 [11.0] 6.3.2. Componente organización para la provisión del cuidado
+p58 [11.0] a.
+p58 [11.0] Organización de la Autoridad Nacional, Regional y Local en Salud para la provisión de los
+p58 [11.0] cuidados
+p59 [11.0] b.
+p59 [11.0] Organización territorial del cuidado integral de la salud
+p60 [11.0] c.
+p60 [11.0] Organización de la Red Integrada de Salud
+p62 [11.0] d.
+p62 [11.0] Organización de los servicios de salud
+p62 [11.0] 6.3.3. Componente de Gestión para provisión de los cuidados
+p62 [11.0] ● Gestión orientada a resultados: Administración de los recursos públicos centrado en el
+p62 [11.0] ● Gestión por procesos: Forma de planificar, organizar, dirigir y controlar las actividades de
+p62 [11.0] ● Gestión de la calidad: Implica contar con servicios de salud que cumplan con estándares de
+p63 [11.0] ● Efectivo: Se ofrece basada en conocimiento científico, para lo cual se tendrán, como mínimo,
+p63 [11.0] ● Seguro: Se capacitará al personal de salud de toda la RIS en seguridad del paciente para
+p63 [11.0] ● Centrado en las personas: Atención que respeta y responde a las preferencias, necesidades
+p63 [11.0] ● Oportuno: La organización en RIS se estructura para evitar retrasos en proporcionar y brindar
+p63 [11.0] ● Equitativo: Todos tienen la oportunidad de acceder al cuidado de su salud y acceder a
+p63 [11.0] ● Integrado: La atención que recibe el usuario a través de la Red Integrada de Salud están
+p63 [11.0] ● Eficiente:  Procesos organizados para evitar el desperdicio de recursos, incluidos equipos,
+p63 [11.0] Gestión de un Sistema Integrado de Monitoreo, seguimiento y evaluación
+p63 [11.0] Disponer de un Sistema  Integrado de monitoreo, seguimiento y evaluación que permita articular
+p63 [11.0] compromisos asumidos por todos los miembros de esta alianza estratégica.
+p64 [11.0] El fortalecimiento de los mecanismos de rendición de cuentas de los resultados de la gestión de la
+p64 [11.0] sistemas de información, que permitan automatizarla en tiempo real, para esto se diseñaran
+p64 [11.0] sistemas Integrados de información gerencial, como el Balanced Scorecard, que permite disponer
+p64 [11.0] Recursos Humanos
+p65 [11.0] ● Gestión de los recursos tecnológicos
+p66 [11.0] que el Ministerio de Salud, como ente rector de del sistema, desarrolle una gestión de productos
+p66 [11.0] farmacéuticos, sanitarios y dispositivos médicos basada en acceso universal con énfasis en el
+p66 [11.0] 1 Investigación y desarrollo de medicamentos y vacunas que atiendan las necesidades de
+p66 [11.0] salud pública: Esto es especialmente importante con respecto a las enfermedades
+p66 [11.0] 2 Políticas sobre precios justos y financiación: Se pretende que, en el contexto de los
+p66 [11.0] sostenible.
+p66 [11.0] 3 Aplicación y gestión de la propiedad intelectual para contribuir a la innovación y promover
+p66 [11.0] la salud pública: El objetivo de la labor en esta esfera de actividad es promover la
+p66 [11.0] 4 Gestión de las adquisiciones y la cadena de suministro: El suministro regular de
+p66 [11.0] 5 Prescripción, dispensación y uso apropiados: Se estima que, a escala mundial, la mitad de
+p66 [11.0] fundamentales para garantizar el logro de efectos sanitarios y el uso eficaz de los recursos.
+p67 [11.0] 6 Sistemas de reglamentación que garanticen la calidad, seguridad y eficacia de los
+p67 [11.0] medicamentos y vacunas: Los organismos nacionales de reglamentación farmacéutica se
+p67 [11.0] 7 Preparación para emergencias: Una emergencia de salud pública –por ejemplo, la
+p67 [11.0] reguladores que para otros agentes.
+p67 [11.0] 8 Buena gobernanza: Urge mejorar la transparencia y el acceso a información oportuna y
+p67 [11.0] incorporar, prescribir y utilizar los productos sanitarios de forma racional.
+p67 [11.0] 9 Recopilación, seguimiento y uso de datos esenciales: El seguimiento del acceso a los
+p67 [11.0] asegurando siempre la protección de datos personales en salud.
+p67 [11.0] 10 Capacidad del personal sanitario con respecto al acceso a los medicamentos y vacunas Se
+p67 [11.0] disponibilidad de medicamentos y vacunas.
+p67 [11.0] implementarlos.
+p67 [11.0] Gestión de la Infraestructura, equipamiento y mantenimiento
+p68 [11.0] oportunidad y sostenibilidad de los servicios requiere que los responsables de la gestión de la
+p69 [11.0] 1. Aspectos relacionados con la ubicación geográfica. Permite la identificación rápida de las
+p69 [11.0] 2. Aspectos estructurales. Describe aspectos para diagnosticar la seguridad del
+p69 [11.0] 3. Aspectos no estructurales. Facilita el análisis de la seguridad de los elementos no
+p69 [11.0] 4. Aspectos funcionales. Brinda elementos para evaluar el nivel de organización de la
+p70 [11.0] ● Gestión de las tecnologías de la información
+p70 [11.0] ● Sencillo: Para ser usada por el personal operativo del Primer Nivel de Atención.
+p70 [11.0] ● Único: De preferencia evitar duplicidades en el registro y almacenamiento de la información
+p70 [11.0] ● Uso de estándares a partir de la identificación de usuario: El registro pasa por la
+p70 [11.0] ● Integral: El sistema de información debe considerar progresivamente el registro de
+p70 [11.0] ● Uso de la Tecnología disponible: Mejorando la capacidad de la infraestructura tecnológica
+p71 [11.0] ● Seguridad y confidencialidad de la información: Considera las medidas de seguridad tanto
+p71 [11.0] su forma y/o fondo.
+p71 [11.0] 6.3.4. Componente de financiamiento
+p71 [11.0] a. Aseguramiento universal
+p72 [11.0] b. Mejorar la eficiencia y calidad del gasto y Desarrollar nuevos mecanismos de pago
+p72 [11.0] de la atención de salud, como ya sucedió en todos los países de la región.
+p73 [11.0] c. Financiamiento por incentivos para promover el cuidado integral en el primer nivel de
+p73 [11.0] atención
+p73 [11.0] un incentivo de forma anual en  el marco del decreto legislativo 1153(120).
+p73 [11.0] ● Financiamiento de Salud desde el Estado
+p74 [11.0] VII.  GLOSARIO
+p75 [11.0] VIII  REFERENCIAS BIBLIOGRÁFICAS
+
+== FIRST PAGES ==
+
+--- p1 ---
+Documento Técnico:
+Modelo de Cuidado Integral de Salud por
+Curso de Vida
+Para la Persona, Familia y Comunidad (MCI)
+
+--- p2 ---
+DOCUMENTO TÉCNICO:
+MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA PARA LA PERSONA, FAMILIA Y COMUNIDAD (MCI)
+2
+ÍNDICE
+I.
+INTRODUCCIÓN…………………………………………………………………………………………………………..4
+II.
+FINALIDAD……..…………………………………………………………………………………………………………   6
+III.
+OBJETIVOS…………………………………………………………………………………………………………………..6
+IV.
+BASE LEGAL……………………………………………………………………………………………………………….. 6
+V.
+ÁMBITO DE APLICACIÓN……………………………………………………………………………………………. 7
+VI.
+CONTENIDO………………………………………………………………………………………………………………. 7
+VI.1
+CONTEXTO DEL MODELO DE CUIDADO INTEGRAL POR CURSO DE VIDA……………………. 7
+VI.1.1 Contexto socio demográfico………………………………………………………………………….………….. 7
+VI.1.2 Contexto de los Determinantes Sociales de la Salud…………………………………………………. 11
+a. Mejorar las condiciones de vida. ……………………………………………………………………………..……11
+b. Luchar contra la inequidad…………………………………………………………………………………………... 14
+c.  Medir la magnitud del problema ………………………………………………………………………………….14
+VI.1.3 Contexto del Sistema de Salud…………………………………………………………………………………..24
+a. Provisión de servicios…………………………………………………………………………………………………25
+b. Generación de recursos……………………………………………………………………………………………..26
+c.  Financiamiento…………………………………………………………………………………………………………29
+d.  Rectoría……………………………………………………………………………………………………………………30
+VI.1.4 Antecedentes del Modelo de Cuidado Integral de la Salud……………………………………….31
+VI.2
+Marco conceptual del modelo de cuidado integral de salud por
+Curso de vida…………………………………………………………………………………………………………….34
+VI.2.1 Conceptos y Definiciones………………………………………………………………………………………….35
+VI.2.2 Principios orientadores del Modelo………………………………………………………………………….38
+VI.2.3 Concordancia entre la Política de Salud, el Modelo de Cuidado Integral y las
+estrategias de Atención Primaria de Salud……………………………………………………………….39
+VI.2.4 Definición del modelo……………………………………………………………………………………………...41
+VI.2.5 Características del modelo……………………………………………………………………………………….41
+VI.3
+COMPONENTES DEL MODELO DE CUIDADO INTEGRAL POR CURSO DE VIDA……….….43
+VI.3.1 Componente de provisión del cuidado………………………………………………………………….…44
+
+--- p3 ---
+DOCUMENTO TÉCNICO:
+MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA PARA LA PERSONA, FAMILIA Y COMUNIDAD (MCI)
+3
+a. Abordaje de los determinantes sociales de la salud…………………………………….46
+b. Cuidado integral a la persona con enfoque de curso de vida………………........48
+c. Cuidados por el ciclo vital de la familia……………………………………………………….54
+d. Cuidados en la comunidad………………………………………………………………………….57
+VI.3.2 Componente organización para la provisión del cuidado……………………………………….. 57
+a. Organización de la Autoridad Nacional, Regional y Local en Salud para
+la provisión de los cuidados…………………………………………………………………………………… 57
+b. Organización territorial del cuidado integral de la salud……………………………. 60
+c. Organización de la Red Integrada de Salud…………………………………………………60
+d. Organización de los servicios de salud………………………………………………………..61
+VI.3.3 Componente de gestión para provisión de los cuidados ………………………………………..61
+VI.3.4 Componente de financiamiento…………………………………………………………………………….69
+a. Aseguramiento universal…………………………………………………………………………………71
+b. Mejorar la eficiencia y calidad del gasto y desarrollar nuevos mecanismos de pago
+c. Financiamiento por incentivos para promover el cuidado integral en el primer nivel de
+atención…………………………………………………………………………………………………………..72
+d. Financiamiento de Salud desde el Estado………………………………………………………..73
+VII.
+GLOSARIO………………………………………………………………………………………………………………74
+VIII.
+REFERENCIAS BIBLIOGRÁFICAS……………………………………………………………………………...75
+
+--- p4 ---
+DOCUMENTO TÉCNICO:
+MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA PARA LA PERSONA, FAMILIA Y COMUNIDAD (MCI)
+4
+DOCUMENTO TÉCNICO
+“MODELO DE CUIDADO INTEGRAL DE SALUD POR CURSO DE VIDA
+PARA LA PERSONA, FAMILIA Y COMUNIDAD (MCI)”
+I.
+INTRODUCCIÓN
+La salud de las personas y la población constituye un proceso dinámico de interacción entre los
+individuos y su entorno, que al lograr el equilibrio y adaptación armónica permite su crecimiento y
+desarrollo individual y social. En 1948, la Organización Mundial de la Salud definió a la salud, en un
+sentido holístico, como: "Un estado de completo bienestar físico, mental y social, y no solamente la
+ausencia del mal o la enfermedad", siendo entonces, el estado saludable el adecuado
+funcionamiento físico y metal, que le permite a las personas responder a las exigencias del medio,
+y no simplemente la ausencia de síntomas o el padecimiento de enfermedades.
+El bienestar y el estado de salud de las personas y población están vinculados al contexto en que
+desarrollan sus actividades. Los aspectos individuales, familiares, sociales y las condiciones
+ecológicas y ambientales, influyen favoreciendo o deteriorando su estado de salud. En la actualidad,
+las personas se enfrentan a un entorno hostil, urbanización desorganizada, crisis económica,
+conflictos que generan un creciente estrés. El estrés social y psicológico puede desencadenar,
+predisponer o agravar una amplia variedad de enfermedades y trastornos desde edades tempranas
+y a lo largo del curso de vida.
+Asimismo, la dinámica familiar y laboral han modificado el relacionamiento humano: los niños
+crecen con ausencias prolongadas de los padres, la comunicación intergeneracional se ha visto
+modificada por los nuevos medios y desarrollos tecnológicos, nuevas profesiones y ocupaciones,
+conductas y comportamientos individualistas en un escenario de transición demográfica y
+epidemiológica. Esto determina que el abordaje de los determinantes sociales de la salud deba
+adecuarse al contexto de los nuevos tiempos en cada espacio socio-geográfico.
+En nuestro país, el Ministerio de Salud ha iniciado el proceso de formulación de la Política Nacional
+Multisectorial de Salud “Perú país saludable al 2030” que responda efectivamente a las necesidades
+de la población. En los últimos años, si bien hubo mejoras respecto a los indicadores de pobreza y
+una reducción de inequidades en la salud, todavía hay disparidades regionales y un nivel alto de
+pobreza en algunas comunidades, necesitándose un abordaje intersectorial de los determinantes
+sociales de la salud que mantenga y mejore los logros ya alcanzados mientras priorice la población
+vulnerable.
+En 1978, para enfrentar los factores causales que condicionan la salud, se llevó a cabo la Conferencia
+Internacional de Alma Ata, que concluyó con la Declaración de Alma Ata, que definió a la Atención
+Primaria de Salud (APS) como la “asistencia sanitaria esencial basada en métodos y tecnologías
+prácticos, científicamente fundados y socialmente aceptables, puestas al alcance de todos los
+individuos y familias de la comunidad mediante su plena participación y a un costo que la comunidad
+y el país puedan soportar, en todas y cada una de las etapas de su desarrollo con un espíritu de
+autorresponsabilidad y autodeterminación”, y se estableció como una estrategia para alcanzar un
+mejor nivel de salud de los pueblos y cumplir con el lema “Salud para todos en el año 2000”.

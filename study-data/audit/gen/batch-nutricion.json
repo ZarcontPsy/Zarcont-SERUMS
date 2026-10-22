@@ -1,0 +1,1665 @@
+{
+  "sources": [
+    {
+      "id": "src-nutricion-ninos",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la niña y el niño de 0 a 11 años",
+      "short": "Nutrición infantil 0-11 años",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica elaborada por el Instituto Nacional de Salud y publicada en Lima en 2025 (ISBN 978-612-310-181-7); 88 páginas.",
+      "file": "../study-data/fuentes/gt-nutricion-ninos-0-11.pdf"
+    },
+    {
+      "id": "src-nutricion-adultos",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la persona adulta",
+      "short": "Nutrición en adultos",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica del Instituto Nacional de Salud, publicada en Lima en 2012; 36 páginas. No incluye a la gestante.",
+      "file": "../study-data/fuentes/gt-nutricion-adultos.pdf"
+    },
+    {
+      "id": "src-lactancia-materna",
+      "title": "Guía técnica para la consejería en lactancia materna",
+      "short": "Consejería en lactancia",
+      "authors": "Ministerio de Salud del Perú (MINSA)",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica aprobada por Resolución Ministerial N.° 462-2015/MINSA y publicada por el MINSA en 2019; 59 páginas.",
+      "file": "../study-data/fuentes/gt-consejeria-lactancia-materna.pdf"
+    },
+    {
+      "id": "src-nutricion-ninos-anterior",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la niña y el niño de 0 a 11 años (versión anterior)",
+      "short": "Nutrición infantil 2023",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Versión anterior de la guía infantil, aprobada en 2023; 69 páginas.",
+      "file": "../study-data/fuentes/gt-nutricion-ninos-0-11-anterior.pdf",
+      "notes": "Versión anterior de la guía vigente de 2025. Se registra solo como referencia histórica: su contenido se cubre con src-nutricion-ninos y no genera fichas ni tarjetas en este lote."
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-nutricion",
+      "title": "Nutrición y lactancia materna",
+      "short": "Nutrición",
+      "description": "Valoración antropométrica, consejo alimentario y consejería en lactancia para niños, adultos y familias.",
+      "accent": "#C9A66B",
+      "icon": "heart",
+      "sourceIds": [
+        "src-nutricion-ninos",
+        "src-nutricion-adultos",
+        "src-lactancia-materna"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Evaluación nutricional infantil",
+      "summary": "Mediciones, indicadores y puntos de corte para clasificar el estado nutricional de la niña y el niño de 0 a 11 años.",
+      "sourceIds": [
+        "src-nutricion-ninos"
+      ],
+      "keywords": [
+        "antropometría",
+        "peso para la talla",
+        "talla para la edad",
+        "IMC para la edad"
+      ]
+    },
+    {
+      "id": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Intervención nutricional infantil",
+      "summary": "Lectura de curvas, consejo alimentario, derivación y acciones colectivas para prevenir y tratar la malnutrición infantil.",
+      "sourceIds": [
+        "src-nutricion-ninos",
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "curvas de crecimiento",
+        "lactancia materna",
+        "alimentación complementaria",
+        "micronutrientes"
+      ]
+    },
+    {
+      "id": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Evaluación nutricional del adulto",
+      "summary": "Técnica antropométrica, índice de masa corporal y perímetro abdominal para clasificar el estado nutricional y el riesgo cardiometabólico.",
+      "sourceIds": [
+        "src-nutricion-adultos"
+      ],
+      "keywords": [
+        "IMC",
+        "perímetro abdominal",
+        "talla",
+        "peso"
+      ]
+    },
+    {
+      "id": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejería e intervención en el adulto",
+      "summary": "Consejería nutricional, signos de alerta y tratamiento según delgadez, sobrepeso u obesidad.",
+      "sourceIds": [
+        "src-nutricion-adultos"
+      ],
+      "keywords": [
+        "consejería nutricional",
+        "signos de alerta",
+        "obesidad",
+        "delgadez"
+      ]
+    },
+    {
+      "id": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Técnica de la lactancia materna",
+      "summary": "Contacto piel a piel, agarre, posición y frecuencia de las mamadas para un inicio y mantenimiento eficaces.",
+      "sourceIds": [
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "piel a piel",
+        "agarre",
+        "posición",
+        "calostro"
+      ]
+    },
+    {
+      "id": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Dificultades y conservación de la leche",
+      "summary": "Manejo de infecciones y mitos, relactación, extracción, conservación y administración de leche humana.",
+      "sourceIds": [
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "mastitis",
+        "VIH",
+        "extracción",
+        "conservación"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-nutricion-ninos-01",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Mediciones e indicadores según la edad",
+      "kicker": "Nutrición · Evaluación infantil",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La valoración cambia con la edad: el recién nacido, el menor de 5 años y el escolar requieren mediciones e indicadores distintos.",
+      "keyConcepts": [
+        "En el recién nacido se miden peso, longitud, perímetro cefálico y perímetro torácico.",
+        "En menores de 5 años se usan P/E, P/T, T/E y PC/E; el perímetro cefálico se mide hasta los 36 meses.",
+        "En 5 a 11 años se miden peso, talla y perímetro abdominal, y se usan IMC/E, T/E y PAB/E.",
+        "La fecha de nacimiento y la edad gestacional son datos obligatorios para interpretar los indicadores."
+      ],
+      "sections": [
+        {
+          "title": "Qué se mide en cada etapa",
+          "depth": "core",
+          "bullets": [
+            "En el recién nacido se registran peso, longitud, perímetro cefálico y perímetro torácico (p. 20).",
+            "En menores de 5 años se toma peso, talla (longitud o estatura) y perímetro cefálico hasta los 36 meses (p. 20).",
+            "En niñas y niños de 5 a 11 años se mide peso, talla y perímetro abdominal (p. 20)."
+          ]
+        },
+        {
+          "title": "Indicadores que corresponden",
+          "depth": "core",
+          "table": {
+            "headers": ["Grupo de edad", "Indicadores", "Qué aporta"],
+            "rows": [
+              ["Recién nacido", "Peso al nacer, peso para la edad gestacional, longitud, PC y perímetro torácico", "Evalúa el crecimiento intrauterino y el riesgo neonatal"],
+              ["Menores de 5 años", "P/E, P/T, T/E y PC/E", "Distingue desnutrición aguda, crónica y crecimiento cerebral"],
+              ["De 5 a 11 años", "IMC/E, T/E y PAB/E", "Evalúa delgadez, sobrepeso, obesidad y riesgo cardiometabólico"]
+            ]
+          }
+        },
+        {
+          "title": "Registro y condiciones",
+          "depth": "full",
+          "body": [
+            "La valoración se realiza en la primera atención y en los controles, y también puede captarse por referencia de otro establecimiento o de agentes comunitarios (p. 20).",
+            "En la historia clínica deben constar la fecha de nacimiento, la edad gestacional y las mediciones obtenidas; la clasificación se registra además en el HIS (p. 20)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Para recordar",
+            "text": "La edad gestacional al nacer es un dato obligatorio: sin ella no se interpreta el peso para la edad gestacional."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [20, 21, 22] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-02",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Puntos de corte y clasificación",
+      "kicker": "Nutrición · Evaluación infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Los puntos de corte en desviaciones estándar permiten clasificar desnutrición aguda, crónica, sobrepeso y obesidad, con una excepción importante en lactantes con lactancia materna exclusiva.",
+      "keyConcepts": [
+        "P/T >3 DE es obesidad; >2 DE a 3 DE, sobrepeso; <-2 DE a -3 DE, bajo peso o emaciado; <-3 DE, bajo peso severo.",
+        "T/E <-2 DE a -3 DE corresponde a talla baja y <-3 DE a talla baja severa.",
+        "IMC/E >2 DE es obesidad; >1 DE a 2 DE, sobrepeso; <-2 DE a -3 DE, delgadez; <-3 DE, delgadez severa.",
+        "PAB/E ≥P75 indica riesgo alto y ≥P90 riesgo muy alto en niñas y niños de 5 a 11 años."
+      ],
+      "sections": [
+        {
+          "title": "Peso para la talla y talla para la edad",
+          "depth": "core",
+          "table": {
+            "headers": ["Indicador", "Punto de corte", "Clasificación"],
+            "rows": [
+              ["P/T", "> 3 DE", "Obesidad"],
+              ["P/T", "> 2 DE a 3 DE", "Sobrepeso"],
+              ["P/T", "2 DE a -2 DE", "Normal"],
+              ["P/T", "< -2 DE a -3 DE", "Bajo peso / emaciado"],
+              ["P/T", "< -3 DE", "Bajo peso severo"],
+              ["T/E", "< -2 DE a -3 DE", "Talla baja"],
+              ["T/E", "< -3 DE", "Talla baja severa"]
+            ]
+          }
+        },
+        {
+          "title": "IMC/E y perímetro abdominal",
+          "depth": "core",
+          "bullets": [
+            "En 5 a 11 años, un IMC/E >2 DE indica obesidad y un IMC/E >1 DE a 2 DE, sobrepeso (p. 25).",
+            "Un IMC/E <-2 DE a -3 DE corresponde a delgadez y <-3 DE a delgadez severa (p. 25).",
+            "Un PAB/E ≥P75 señala riesgo alto y ≥P90 riesgo muy alto de enfermedad cardiovascular y metabólica (p. 26)."
+          ]
+        },
+        {
+          "title": "La excepción de los primeros 6 meses",
+          "depth": "full",
+          "body": [
+            "En menores de 6 meses con lactancia materna exclusiva no se considera sobrepeso u obesidad para fines de intervención, aunque el P/T supere 2 DE (p. 24, p. 27).",
+            "La clasificación se registra, pero la conducta prioriza sostener la lactancia materna y el control del crecimiento."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "No confundir clasificación con intervención",
+            "text": "Un P/T elevado en un lactante con lactancia materna exclusiva no justifica restringir la lactancia ni indicar pérdida de peso."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [23, 24, 25, 26, 27] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-03",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Curvas de crecimiento y signos de alerta",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La curva de crecimiento permite detectar riesgos antes de que la clasificación cambie: importan la dirección, la velocidad y el canal, no solo el punto del control actual.",
+      "keyConcepts": [
+        "Cada niña o niño tiene su propia velocidad de crecimiento y debe mantenerse en un mismo canal.",
+        "Un aplanamiento o un cambio de canal pueden ser signos de alerta aunque el punto siga en rango normal.",
+        "En talla, un incremento menor a 2,5 cm en 6 meses obliga a evaluar el crecimiento.",
+        "Las curvas se grafican en cada control y se unen los puntos para interpretar la tendencia."
+      ],
+      "sections": [
+        {
+          "title": "La tendencia manda",
+          "depth": "core",
+          "body": [
+            "Se espera que el crecimiento sea ascendente y se mantenga en un mismo carril o canal; cuando la tendencia cambia, puede ser un indicador de riesgo (p. 27).",
+            "Graficar cada control y unir los puntos permite ver si el crecimiento sigue su canal o se está alejando de él (p. 29)."
+          ]
+        },
+        {
+          "title": "Signos de alerta por grupo",
+          "depth": "core",
+          "bullets": [
+            "En menores de 5 años, el aplanamiento de P/E y P/T desde 1 DE, el cruce de la mediana y de -1 DE, la ausencia de variación de peso o un cambio pronunciado en poco tiempo son signos de alerta (p. 28).",
+            "En T/E, el aplanamiento, el cambio de canal descendente, el incremento menor a 2,5 cm en 6 meses o la talla sin variación entre controles sugieren riesgo de talla baja (p. 28).",
+            "En 5 a 11 años, un IMC/E entre <-1 DE y -2 DE sugiere riesgo de delgadez; entre >1 DE y 2 DE, riesgo de sobrepeso; una variación de ±1,5 en 6 meses también alerta (p. 28)."
+          ]
+        },
+        {
+          "title": "Cómo graficar y qué registrar",
+          "depth": "full",
+          "table": {
+            "headers": ["Paso", "Acción"],
+            "rows": [
+              ["1", "Elegir la gráfica según el sexo y el indicador"],
+              ["2", "Ubicar la edad y el valor medido en los ejes"],
+              ["3", "Marcar el punto en la intersección"],
+              ["4", "Unir el punto con el control anterior"],
+              ["5", "Interpretar el canal y la tendencia"],
+              ["6", "Registrar la tendencia y las indicaciones en la historia clínica"]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Para retener",
+            "text": "Un punto aislado puede parecer normal; la curva muestra si el crecimiento se está deteniendo o desviando."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [27, 28, 29] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-04",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejo alimentario y micronutrientes",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La lactancia materna exclusiva hasta los 6 meses y la lactancia continuada con alimentación complementaria hasta los 24 meses son la base del consejo alimentario.",
+      "keyConcepts": [
+        "La lactancia materna exclusiva se mantiene durante los primeros 6 meses.",
+        "Desde los 6 meses se introduce alimentación complementaria sin abandonar la lactancia, hasta los 24 meses.",
+        "Las preparaciones no llevan azúcar ni sal y se ofrecen con cuchara, con el niño sentado.",
+        "En bajo peso o talla baja se indica un plan personalizado y suplementación con hierro, vitamina A, zinc y otros micronutrientes."
+      ],
+      "sections": [
+        {
+          "title": "Los primeros 24 meses",
+          "depth": "core",
+          "bullets": [
+            "Priorizar la lactancia materna exclusiva durante los primeros 6 meses y la lactancia continuada más alimentación complementaria hasta los 24 meses (p. 30, p. 31).",
+            "La alimentación complementaria empieza a los 6 meses con comidas espesas, papillas, purés, cereales y verduras, sin reemplazar las mamadas (p. 28 de la guía de lactancia).",
+            "No se agrega azúcar ni sal a las preparaciones; se ofrecen a temperatura corporal, con cuchara pequeña y con el niño sentado (p. 28 de la guía de lactancia)."
+          ]
+        },
+        {
+          "title": "Cuando el peso o la talla no avanzan",
+          "depth": "core",
+          "body": [
+            "Se orienta al aumento progresivo de peso y talla mediante un plan de atención personalizado y un equipo multidisciplinario (p. 30).",
+            "Se brinda atención nutricional a la madre, padre o cuidador, se prioriza la lactancia materna y la alimentación complementaria, y se suplementa con hierro, vitamina A, zinc y otros micronutrientes (p. 30, p. 31)."
+          ]
+        },
+        {
+          "title": "Cuando hay exceso de peso",
+          "depth": "full",
+          "table": {
+            "headers": ["Situación", "Objetivo del consejo"],
+            "rows": [
+              ["Bajo peso o talla baja", "Aumento progresivo de peso y talla con plan personalizado"],
+              ["Crecimiento adecuado", "Sostener hábitos y continuar controles"],
+              ["Sobrepeso u obesidad", "Mantener o lograr una ganancia más lenta de peso, sin buscar pérdida"]
+            ]
+          },
+          "callout": {
+            "tone": "warning",
+            "title": "Nunca indicar pérdida de peso",
+            "text": "En la niñez, el objetivo frente al sobrepeso es frenar la ganancia, no reducir el peso corporal."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30, 31] },
+        { "sourceId": "src-lactancia-materna", "pages": [28] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-05",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Atención individual y derivación",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Toda niña o niño con malnutrición es de alto riesgo y requiere atención prioritaria; la ruta incluye consulta nutricional y referencia cuando el establecimiento no cuenta con nutricionista.",
+      "keyConcepts": [
+        "La malnutrición por exceso o por déficit se considera de alto riesgo y recibe atención prioritaria.",
+        "La consulta nutricional sigue seis pasos, desde conocer el estado de salud hasta el registro y seguimiento.",
+        "Si no hay nutricionista, se refiere a un establecimiento de mayor capacidad resolutiva.",
+        "El profesional que atiende el control registra la interconsulta a nutrición en la historia clínica."
+      ],
+      "sections": [
+        {
+          "title": "Prioridad y ruta de atención",
+          "depth": "core",
+          "bullets": [
+            "Las niñas y niños con malnutrición por exceso o por déficit deben recibir atención prioritaria del equipo multidisciplinario, con prioridad en nutrición y medicina (p. 30).",
+            "Tanto quienes tienen indicadores normales con adecuada ganancia como quienes presentan talla baja, bajo peso, delgadez, sobrepeso u obesidad se derivan a consulta nutricional (p. 30).",
+            "Si el establecimiento no cuenta con nutricionista, se refiere a uno de mayor capacidad resolutiva (p. 30)."
+          ]
+        },
+        {
+          "title": "Los seis pasos de la consulta nutricional",
+          "depth": "core",
+          "table": {
+            "headers": ["Paso", "Contenido"],
+            "rows": [
+              ["1", "Conocer el estado de salud y nutrición"],
+              ["2", "Anamnesis alimentaria y diagnóstico nutricional"],
+              ["3", "Estimar los requerimientos de energía"],
+              ["4", "Establecer metas"],
+              ["5", "Prescribir la alimentación"],
+              ["6", "Registrar y hacer seguimiento"]
+            ]
+          }
+        },
+        {
+          "title": "Cuando la velocidad de crecimiento disminuye",
+          "depth": "full",
+          "body": [
+            "Se orienta al aumento progresivo de peso y talla como parte de un plan personalizado por el equipo multidisciplinario (p. 30).",
+            "Se involucra a la madre, padre o cuidador con atención nutricional, se prioriza la lactancia materna exclusiva y luego la continuada con alimentación complementaria, y se agregan micronutrientes (p. 30, p. 31)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Registrar para no perder el hilo",
+            "text": "La interconsulta a nutrición debe quedar escrita en la historia clínica por el profesional que la indica."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30, 31] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-06",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Abordaje colectivo y seguimiento",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Además de la atención individual, el nivel colectivo vigila tendencias, coordina acciones preventivas y evalúa sus resultados para mejorar el estado nutricional de la población infantil.",
+      "keyConcepts": [
+        "El abordaje colectivo evalúa el grado de carencia nutricional y sus factores determinantes.",
+        "Se vigilan las tendencias de desnutrición, obesidad y sus factores asociados.",
+        "La meta poblacional es mantener a la mayoría entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E.",
+        "Las acciones preventivas se evalúan y se complementan con investigación operativa."
+      ],
+      "sections": [
+        {
+          "title": "Qué vigila el nivel colectivo",
+          "depth": "core",
+          "bullets": [
+            "Evaluar el grado de carencia nutricional y analizar los factores que influyen en la malnutrición (p. 31).",
+            "Vigilar las tendencias de desnutrición, obesidad y su asociación con determinantes, y establecer acciones para prevenir talla baja, sobrepeso y obesidad (p. 31).",
+            "Evaluar la aplicación y los resultados de esas acciones y facilitar investigaciones para intervenciones de salud pública (p. 31)."
+          ]
+        },
+        {
+          "title": "Metas poblacionales",
+          "depth": "core",
+          "body": [
+            "Los esfuerzos deben dirigirse a mantener el mayor porcentaje de niñas y niños entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E (p. 31).",
+            "Estas metas orientan la vigilancia y la priorización de acciones, pero no sustituyen la interpretación individual de la curva de cada niño."
+          ]
+        },
+        {
+          "title": "Seguimiento en cada control",
+          "depth": "full",
+          "table": {
+            "headers": ["Acción", "Qué se registra"],
+            "rows": [
+              ["Graficar", "El punto del control actual y la unión con el anterior"],
+              ["Interpretar", "El canal, la dirección y la velocidad de crecimiento"],
+              ["Decidir", "Mantener, reforzar o derivar a consulta nutricional"],
+              ["Registrar", "La tendencia y las indicaciones en la historia clínica"]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Lo individual y lo colectivo se complementan",
+            "text": "La vigilancia poblacional detecta problemas; la curva de cada niño permite actuar oportunamente."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [29, 31] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-01",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Medición antropométrica estandarizada",
+      "kicker": "Nutrición · Evaluación del adulto",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "Peso, talla y perímetro abdominal requieren equipo calibrado y una técnica reproducible; la calidad del dato determina la clasificación y las decisiones.",
+      "keyConcepts": [
+        "La balanza de plataforma debe tener resolución de 100 g y capacidad mínima de 140 kg.",
+        "La talla se mide con tallímetro fijo, plano de Frankfurt y tres mediciones promediadas.",
+        "El perímetro abdominal se mide en el punto medio entre la última costilla y la cresta ilíaca.",
+        "La cinta métrica debe ser flexible, no elástica, de fibra de vidrio, de 200 cm y resolución de 1 mm."
+      ],
+      "sections": [
+        {
+          "title": "Equipo y condiciones",
+          "depth": "core",
+          "bullets": [
+            "La balanza mecánica de plataforma, sin tallímetro incorporado, debe tener resolución de 100 g y capacidad mínima de 140 kg (p. 15).",
+            "La talla se mide con tallímetro fijo de madera; el tallímetro incorporado a la balanza no cumple las especificaciones (p. 17).",
+            "La cinta métrica debe medir 200 cm, tener resolución de 1 mm y ser de fibra de vidrio, flexible y no elástica (p. 19).",
+            "La toma se realiza en un ambiente privado, ventilado y con buena iluminación (p. 13)."
+          ]
+        },
+        {
+          "title": "Peso y talla",
+          "depth": "core",
+          "bullets": [
+            "Para el peso, la persona se quita zapatos y ropa en exceso, la balanza se ajusta a cero y se ubica en el centro de la plataforma, erguida y con los brazos a los costados (p. 16).",
+            "Para la talla, talones, pantorrillas, nalgas, hombros y parte posterior de la cabeza deben contactar con el tablero; la cabeza se orienta según el plano de Frankfurt (p. 17).",
+            "La talla se mide tres veces consecutivas y se registra el promedio (p. 17)."
+          ]
+        },
+        {
+          "title": "Perímetro abdominal",
+          "depth": "full",
+          "table": {
+            "headers": ["Paso", "Cómo se hace"],
+            "rows": [
+              ["Posición", "De pie, torso descubierto, brazos relajados y pies separados de 25 a 30 cm"],
+              ["Referencias", "Punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca, a ambos lados"],
+              ["Cinta", "Horizontal, alrededor del abdomen, sin comprimir"],
+              ["Lectura", "Al final de una exhalación normal"],
+              ["Repetición", "Tres mediciones y promedio"]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "La técnica se puede auditar",
+            "text": "Registrar peso, talla y perímetro abdominal en la historia clínica permite repetir la medición y comparar controles."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [13, 15, 16, 17, 19] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-02",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "IMC, perímetro abdominal y riesgo",
+      "kicker": "Nutrición · Evaluación del adulto",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El IMC clasifica el estado nutricional y el perímetro abdominal añade el riesgo cardiometabólico; ambos se interpretan juntos.",
+      "keyConcepts": [
+        "El IMC se calcula con peso en kilogramos dividido entre la talla en metros al cuadrado.",
+        "IMC <18,5 es delgadez; 18,5 a <25 es normal; 25 a <30 es sobrepeso; ≥30 es obesidad.",
+        "En varones, PAB ≥94 cm es riesgo alto y ≥102 cm muy alto; en mujeres, ≥80 cm y ≥88 cm.",
+        "El IMC no distingue masa magra de grasa y puede sobreestimar la obesidad en personas con gran desarrollo muscular."
+      ],
+      "sections": [
+        {
+          "title": "Clasificación por IMC",
+          "depth": "core",
+          "table": {
+            "headers": ["Clasificación", "IMC (kg/m²)"],
+            "rows": [
+              ["Delgadez grado III", "< 16"],
+              ["Delgadez grado II", "16 a < 17"],
+              ["Delgadez grado I", "17 a < 18,5"],
+              ["Normal", "18,5 a < 25"],
+              ["Sobrepeso", "25 a < 30"],
+              ["Obesidad grado I", "30 a < 35"],
+              ["Obesidad grado II", "35 a < 40"],
+              ["Obesidad grado III", "≥ 40"]
+            ]
+          }
+        },
+        {
+          "title": "Perímetro abdominal",
+          "depth": "core",
+          "table": {
+            "headers": ["Sexo", "Riesgo bajo", "Riesgo alto", "Riesgo muy alto"],
+            "rows": [
+              ["Hombre", "< 94 cm", "≥ 94 cm", "≥ 102 cm"],
+              ["Mujer", "< 80 cm", "≥ 80 cm", "≥ 88 cm"]
+            ]
+          }
+        },
+        {
+          "title": "Riesgo combinado y límites del IMC",
+          "depth": "full",
+          "body": [
+            "El riesgo de comorbilidad aumenta cuando se asocian valores anormales de IMC y de perímetro abdominal (p. 22).",
+            "En deportistas con gran desarrollo muscular, el IMC puede sobreestimar la grasa corporal; en ellos se recomienda valorar pliegues cutáneos y bioimpedanciometría (p. 21)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "No clasificar con un solo dato",
+            "text": "Un IMC normal no descarta riesgo si el perímetro abdominal es alto; por eso ambos se interpretan en conjunto."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [20, 21, 22] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-03",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejería y signos de alerta",
+      "kicker": "Nutrición · Intervención en adultos",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La consejería nutricional es un proceso participativo de 20 a 45 minutos; los signos de alerta indican cuándo reforzar el seguimiento aunque la clasificación sea normal.",
+      "keyConcepts": [
+        "La consejería nutricional dura aproximadamente entre 20 y 45 minutos.",
+        "La orientación nutricional es una actividad educativa básica y puntual, distinta de la consejería.",
+        "Una pérdida o ganancia involuntaria mayor a 1 kg en dos semanas es un signo de alerta.",
+        "Cambiar de clasificación en sentido opuesto a la normalidad también exige atención."
+      ],
+      "sections": [
+        {
+          "title": "Consejería, orientación y consulta",
+          "depth": "core",
+          "body": [
+            "La consejería nutricional es un proceso educativo, interpersonal y participativo entre el personal capacitado y la persona adulta o su cuidador, con una duración estimada de 20 a 45 minutos (p. 12).",
+            "La orientación nutricional, en cambio, es una actividad educativa básica y puntual; la consulta nutricional es la atención especializada del nutricionista (p. 12)."
+          ]
+        },
+        {
+          "title": "Signos de alerta",
+          "depth": "core",
+          "bullets": [
+            "Incremento o pérdida involuntaria de peso mayor a 1 kg en las dos últimas semanas (p. 22).",
+            "Variación del IMC de ±1,5 (aproximadamente 3 kg) entre dos controles consecutivos en los últimos 3 meses (p. 22).",
+            "IMC cercano a los límites de la normalidad: entre 18,5 y 19,5 o entre 24 y 25 (p. 22).",
+            "Cambio de clasificación en sentido opuesto a la normalidad, por ejemplo de sobrepeso a obesidad o de normal a delgadez (p. 22)."
+          ]
+        },
+        {
+          "title": "Conducta según el riesgo",
+          "depth": "full",
+          "table": {
+            "headers": ["Situación", "Conducta"],
+            "rows": [
+              ["Valoración normal", "Orientación o consejería para mantener el estado"],
+              ["Riesgo con signo de alerta", "Consejería, plan personalizado y controles programados"],
+              ["Delgadez, sobrepeso u obesidad", "Tratamiento nutricional dentro del plan de atención integral"]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "El signo de alerta cambia la frecuencia",
+            "text": "Un resultado normal no significa alta definitiva si existe un signo de alerta; corresponde reforzar la consejería y programar el control."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [12, 22, 23] }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-04",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Tratamiento según la clasificación",
+      "kicker": "Nutrición · Intervención en adultos",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La intervención se adapta al IMC: recuperación en delgadez, mantenimiento en normalidad y pérdida gradual y supervisada en sobrepeso y obesidad.",
+      "keyConcepts": [
+        "En delgadez se descarta enfermedad asociada y se busca recuperar el rango normal de IMC.",
+        "En sobrepeso se propone una pérdida progresiva de 0,5 kg por semana.",
+        "En obesidad sin factores adicionales se plantea una pérdida de 0,5 a 1,0 kg por semana.",
+        "En IMC ≥40 se valoran medidas intensivas, incluida la cirugía, con manejo multidisciplinario."
+      ],
+      "sections": [
+        {
+          "title": "Delgadez y normalidad",
+          "depth": "core",
+          "bullets": [
+            "En delgadez se deriva a interconsulta médica para descartar enfermedad asociada y, si se presume un trastorno del comportamiento, a evaluación psicológica (p. 23).",
+            "La recuperación nutricional busca alcanzar el rango de normalidad del IMC y puede complementarse con mediciones de grasa y masa magra (p. 23).",
+            "En IMC normal se recomienda mantener el peso, promover estilos de vida saludables y evaluar al menos una vez al año (p. 23)."
+          ]
+        },
+        {
+          "title": "Sobrepeso y obesidad",
+          "depth": "core",
+          "bullets": [
+            "En sobrepeso se orienta a una pérdida progresiva de 0,5 kg por semana y se evalúan factores de riesgo asociados al perímetro abdominal (p. 23).",
+            "En obesidad sin factores adicionales se plantea una pérdida de 0,5 a 1,0 kg por semana con alimentación balanceada y control médico y nutricional (p. 24).",
+            "En ambos casos se recomienda actividad física, alimentación adecuada, abandono del tabaco y evitar el alcohol (p. 24)."
+          ]
+        },
+        {
+          "title": "Obesidad grado III",
+          "depth": "full",
+          "body": [
+            "Con IMC ≥40 el objetivo es reducir el peso exagerado y descartar enfermedades asociadas; se consideran medidas intensivas y opciones como el tratamiento quirúrgico (p. 24).",
+            "La cirugía se valora con referencia a un establecimiento de mayor complejidad para manejo multidisciplinario (p. 24)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "La velocidad importa",
+            "text": "Una pérdida más rápida que la indicada no es un objetivo terapéutico; el ritmo se ajusta según la clasificación y el riesgo."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [23, 24] }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-01",
+      "topicId": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Inicio y contacto piel a piel",
+      "kicker": "Lactancia · Técnica",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El contacto piel a piel inmediato y el alojamiento conjunto crean las condiciones para un inicio temprano y sostenido de la lactancia.",
+      "keyConcepts": [
+        "El contacto piel a piel debe mantenerse por lo menos una hora después del nacimiento.",
+        "El aseo y otras atenciones se postergan para no interrumpir el apego.",
+        "El alojamiento conjunto mantiene juntos a la madre y al bebé día y noche hasta el alta.",
+        "El calostro se produce en los primeros 5 días y es rico en componentes inmunológicos."
+      ],
+      "sections": [
+        {
+          "title": "Parto y contacto piel a piel",
+          "depth": "core",
+          "bullets": [
+            "El parto natural sin intervenciones innecesarias favorece el inicio de la lactancia y el apego (p. 21).",
+            "Inmediatamente después del nacimiento, el bebé se coloca piel a piel con la madre, se seca excepto las manos y se cubre con una manta y un gorro; se mantiene así por lo menos una hora (p. 21).",
+            "Se posterga el aseo y las demás atenciones; el Apgar se toma sin interferir el apego (p. 21).",
+            "En cesáreas también se realiza el contacto cuando es posible, dejando libres las manos de la madre; el padre puede apoyar (p. 21)."
+          ]
+        },
+        {
+          "title": "Alojamiento conjunto y calostro",
+          "depth": "core",
+          "bullets": [
+            "Mantener a la madre y al bebé juntos día y noche hasta el alta fortalece la confianza y la lactancia (p. 22).",
+            "El calostro es la secreción amarillenta y espesa de los primeros 5 días; es rico en componentes inmunológicos y se considera la primera vacuna (p. 22, p. 40).",
+            "Su cantidad es suficiente para cubrir las necesidades del recién nacido y ayuda a la maduración del aparato digestivo (p. 22).",
+            "No se debe administrar suero glucosado ni fórmula, salvo prescripción médica registrada en la historia clínica (p. 22)."
+          ]
+        },
+        {
+          "title": "Qué explicar a la madre",
+          "depth": "full",
+          "table": {
+            "headers": ["Mensaje", "Contenido"],
+            "rows": [
+              ["Contacto", "Piel a piel inmediato, al menos una hora"],
+              ["Alojamiento", "Juntos día y noche hasta el alta"],
+              ["Calostro", "Suficiente, inmunológico y digestivo"],
+              ["Suplementos", "Solo con indicación médica registrada"]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "El apego no es un trámite",
+            "text": "La primera hora favorece la orientación al pezón y el vínculo; interrumpirla por rutinas no urgentes puede dificultar el inicio de la lactancia."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [21, 22, 40] }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-02",
+      "topicId": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Agarre, posición y frecuencia",
+      "kicker": "Lactancia · Técnica",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Un buen agarre y una posición cómoda permiten vaciar el pecho y prevenir dolor; la frecuencia a demanda sostiene la producción de leche.",
+      "keyConcepts": [
+        "El bebé debe estar barriga con barriga y alineado oreja-hombro-cadera.",
+        "El agarre correcto incluye boca bien abierta, labio inferior hacia afuera y mentón que toca el pecho.",
+        "Se recomiendan 8 a 12 mamadas en 24 horas, de día y de noche.",
+        "El llanto es un signo tardío de hambre; conviene reconocer las señales tempranas."
+      ],
+      "sections": [
+        {
+          "title": "Posición y agarre",
+          "depth": "core",
+          "bullets": [
+            "La madre puede dar pecho sentada o recostada; sentada, mantiene la columna recta y las rodillas ligeramente elevadas, con el bebé en la curva del codo (p. 22).",
+            "El bebé se gira hacia la madre, con el cuerpo y la cabeza en línea recta, barriga con barriga y la nariz frente al pezón (p. 22).",
+            "La madre sostiene el pecho con la mano en forma de C, a 3 o 4 cm detrás del pezón, y acerca al bebé para que abra bien la boca y agarre parte de la areola (p. 22, p. 23)."
+          ]
+        },
+        {
+          "title": "Señales de un agarre correcto",
+          "depth": "core",
+          "bullets": [
+            "La boca del bebé está bien abierta (p. 23).",
+            "El labio inferior está hacia afuera y el mentón toca el pecho (p. 23).",
+            "Se ve más areola por arriba que por debajo de la boca (p. 23)."
+          ]
+        },
+        {
+          "title": "Frecuencia y señales de hambre",
+          "depth": "full",
+          "table": {
+            "headers": ["Aspecto", "Referencia"],
+            "rows": [
+              ["Frecuencia", "8 a 12 mamadas en 24 horas, en promedio"],
+              ["Momento", "A demanda, de día y de noche"],
+              ["Duración", "Variable: puede bastar 10 minutos o requerir 30 o más"],
+              ["Hambre temprana", "Busca el pecho, abre la boca, saca la lengua, succiona manos, está inquieto"],
+              ["Suficiencia", "Queda tranquilo, gana peso y orina de 4 a 6 veces al día desde los 3 días"]
+            ]
+          },
+          "callout": {
+            "tone": "warning",
+            "title": "No esperar el llanto",
+            "text": "El llanto es un signo tardío de hambre; ofrecer el pecho antes facilita el agarre y evita que el bebé se angustie."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [22, 23] }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-03",
+      "topicId": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Dificultades, infecciones y mitos",
+      "kicker": "Lactancia · Dificultades",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La mayoría de las infecciones maternas no contraindica la lactancia; el VIH es la excepción. Los mitos se abordan con información y respeto.",
+      "keyConcepts": [
+        "La mastitis, la tuberculosis, la hepatitis B y C y otras infecciones comunes no contraindican la lactancia.",
+        "La infección por VIH sí contraindica la lactancia por el riesgo de transmisión.",
+        "El calostro no es una leche aguada: es suficiente y protector.",
+        "La relactación requiere contacto piel a piel frecuente y evitar biberones y chupones."
+      ],
+      "sections": [
+        {
+          "title": "Infecciones y lactancia",
+          "depth": "core",
+          "bullets": [
+            "En la mayoría de infecciones maternas, incluidas mastitis, tuberculosis, hepatitis B y C, tifoidea, cólera y sífilis, no está contraindicada la lactancia; el niño se beneficia de la protección (p. 49).",
+            "Se estima que el 5 a 15 % de bebés nacidos de mujeres con VIH se infectan a través de la lactancia, por lo que debe evitarse por completo (p. 49).",
+            "En el Perú, la alimentación artificial para estos casos se proporciona de manera gratuita a través del SIS (p. 49)."
+          ]
+        },
+        {
+          "title": "Mitos frecuentes",
+          "depth": "core",
+          "bullets": [
+            "Mitos como que el calostro es aguado, que algunas madres no producen suficiente leche, que la lactancia debilita o afecta la belleza, o que el tamaño del pecho determina la producción deben corregirse con información (p. 49).",
+            "También se aclara que beber más líquidos no aumenta la producción, que la menstruación no impide lactar y que el contacto con agua fría o algunos alimentos no es un impedimento (p. 49).",
+            "Conviene conversar respetuosamente e incluir a las abuelas y mujeres mayores, que pueden ser aliadas de la lactancia (p. 49)."
+          ]
+        },
+        {
+          "title": "Relactación y nueva gestación",
+          "depth": "full",
+          "body": [
+            "La relactación exige motivación, contacto piel a piel frecuente y ofrecer el pecho cuando el bebé muestre interés; la leche se ofrece con taza o cuchara y no se usan biberones ni chupones de entretenimiento (p. 27).",
+            "Una nueva gestación no es motivo para suspender el amamantamiento, especialmente si el niño es pequeño, salvo en casos de parto prematuro (p. 26)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Escuchar antes de corregir",
+            "text": "Los mitos pueden influir en el éxito o el abandono de la lactancia; preguntar qué cree la familia permite corregir sin confrontar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [26, 27, 49] }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-04",
+      "topicId": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Extracción y conservación de leche",
+      "kicker": "Lactancia · Dificultades",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La extracción manual es la técnica más sencilla y con menor riesgo de contaminación; la conservación y la administración correctas preservan la calidad de la leche.",
+      "keyConcepts": [
+        "La leche extraída se conserva de 6 a 8 horas a temperatura ambiente, salvo en zonas muy calurosas.",
+        "En refrigeradora se conserva hasta 72 horas.",
+        "La extracción manual dura aproximadamente entre 15 y 20 minutos.",
+        "La leche calentada no debe volver a refrigerarse y la que no se consume se elimina."
+      ],
+      "sections": [
+        {
+          "title": "Cuándo y cómo extraer",
+          "depth": "core",
+          "bullets": [
+            "La extracción sirve para alimentar a un prematuro, aliviar la congestión, mantener la lactancia durante una separación o evitar la transmisión de infecciones (p. 50).",
+            "La extracción manual es la forma más sencilla, práctica y con menor riesgo de contaminación; exige lavado de manos y un recipiente con tapa, de boca ancha y resistente al calor (p. 50).",
+            "Se masajea la mama, se sostiene con la mano en C en el límite de la areola y se presiona hacia el pecho de forma intermitente y rítmica, rotando los dedos y sin jalar el pezón (p. 50, p. 51).",
+            "La extracción manual dura aproximadamente entre 15 y 20 minutos (p. 51)."
+          ]
+        },
+        {
+          "title": "Conservación",
+          "depth": "core",
+          "table": {
+            "headers": ["Lugar", "Tiempo de duración"],
+            "rows": [
+              ["A temperatura ambiente", "6 a 8 horas, excepto en zonas muy calurosas, donde hay que refrigerar"],
+              ["Refrigerada", "72 horas"],
+              ["Calentada", "No se vuelve a refrigerar"]
+            ]
+          }
+        },
+        {
+          "title": "Administración",
+          "depth": "full",
+          "bullets": [
+            "La leche se entibia colocando el frasco en un envase con agua caliente, sin someterla al fuego directo (p. 52).",
+            "Se administra con taza y cucharita, con el bebé semisentado; en menores de 4 meses se evita tocar la lengua porque empujan lo que toca (p. 52).",
+            "La leche que no se consume se elimina y la leche calentada no se vuelve a refrigerar (p. 52)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "Calentar no es hervir",
+            "text": "El calor directo afecta sustancias probióticas y células vivas; el baño de agua caliente es suficiente para entibiar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [50, 51, 52] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-nutricion-ninos-01-1",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "concept",
+      "prompt": "¿Qué indicadores se usan para valorar a una niña o un niño menor de 5 años?",
+      "answer": "Se emplean peso para la edad (P/E), peso para la talla (P/T), talla para la edad (T/E) y perímetro cefálico para la edad (PC/E). El P/T detecta desnutrición aguda o exceso de peso, mientras que el T/E refleja desnutrición crónica.",
+      "explanation": "Cada indicador responde a una pregunta distinta: el P/E resume el peso para la edad, el P/T compara peso y talla, el T/E valora el crecimiento lineal y el PC/E el crecimiento cerebral. Usarlos juntos evita conclusiones parciales.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [20, 23, 24] }
+      ],
+      "tags": ["nutrición infantil", "antropometría", "indicadores"]
+    },
+    {
+      "id": "card-nutricion-ninos-01-2",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "multiple",
+      "prompt": "¿Hasta qué edad se recomienda medir el perímetro cefálico en la valoración nutricional infantil?",
+      "options": [
+        "Hasta los 36 meses",
+        "Hasta los 12 meses",
+        "Hasta los 24 meses",
+        "Hasta los 60 meses"
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía indica medir el perímetro cefálico hasta los 36 meses, con énfasis en zonas de riesgo por Zika. Pasada esa edad, la valoración se apoya en peso, talla y perímetro abdominal.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [20, 25] }
+      ],
+      "tags": ["nutrición infantil", "perímetro cefálico", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-01-3",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "application",
+      "prompt": "Una niña de 7 años acude a su control de crecimiento. ¿Qué mediciones e indicadores corresponden a su edad?",
+      "options": [
+        "Peso y longitud; P/E y P/T",
+        "Peso, talla y perímetro abdominal; IMC/E, T/E y PAB/E",
+        "Peso, talla y perímetro cefálico; P/T y PC/E",
+        "Solo peso y talla; P/E y T/E"
+      ],
+      "correctIndex": 1,
+      "explanation": "Entre los 5 y 11 años se mide peso, talla y perímetro abdominal, y se clasifica con IMC/E, T/E y PAB/E. El perímetro cefálico se reserva para los primeros 36 meses.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [20, 25, 26] }
+      ],
+      "tags": ["nutrición infantil", "escolares", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-ninos-02-1",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "concept",
+      "prompt": "¿Qué diferencia hay entre el peso para la talla y la talla para la edad?",
+      "answer": "El P/T compara el peso con la talla y refleja el estado nutricional actual o agudo, por lo que identifica emaciación, bajo peso, sobrepeso y obesidad. El T/E compara la talla con la edad y refleja el crecimiento lineal acumulado, por lo que identifica desnutrición crónica o talla baja.",
+      "explanation": "Un niño puede tener P/T normal y T/E bajo: esto sugiere desnutrición pasada o crónica. Por eso ambos indicadores se leen juntos y se complementan con la curva de crecimiento.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [23, 24] }
+      ],
+      "tags": ["nutrición infantil", "P/T", "T/E"]
+    },
+    {
+      "id": "card-nutricion-ninos-02-2",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "multiple",
+      "prompt": "Una niña de 8 años tiene un IMC/E de 2,5 DE. ¿Cómo se clasifica?",
+      "options": [
+        "Normal",
+        "Sobrepeso",
+        "Obesidad",
+        "Delgadez severa"
+      ],
+      "correctIndex": 2,
+      "explanation": "En 5 a 11 años, el IMC/E >2 DE corresponde a obesidad; el sobrepeso abarca desde >1 DE hasta 2 DE. Un valor de 2,5 DE supera el límite de obesidad.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [25] }
+      ],
+      "tags": ["nutrición infantil", "IMC/E", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-02-3",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "application",
+      "prompt": "Lactante de 4 meses con lactancia materna exclusiva y P/T de 2,4 DE. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Iniciar una dieta hipocalórica",
+        "Suspender la lactancia materna",
+        "Derivar para cirugía bariátrica",
+        "Mantener la lactancia materna exclusiva, no clasificar como sobrepeso para intervención y controlar el crecimiento"
+      ],
+      "correctIndex": 3,
+      "explanation": "En menores de 6 meses con lactancia materna exclusiva no se considera sobrepeso u obesidad para fines de intervención, aunque el P/T supere 2 DE. Restringir la lactancia o indicar pérdida de peso sería incorrecto.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [24, 27] }
+      ],
+      "tags": ["nutrición infantil", "lactancia materna", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-ninos-03-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "concept",
+      "prompt": "¿Por qué la tendencia de la curva importa más que un punto aislado?",
+      "answer": "Porque un punto puede estar dentro del rango normal y, aun así, mostrar que el crecimiento se está deteniendo o desviando. La curva revela la dirección y la velocidad del crecimiento, y permite detectar el riesgo antes de que cambie la clasificación.",
+      "explanation": "La guía espera un crecimiento ascendente y estable dentro de un mismo canal. El aplanamiento, el cruce de líneas o un cambio de canal son signos de alerta que un único valor no muestra.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [27, 28] }
+      ],
+      "tags": ["nutrición infantil", "curvas de crecimiento", "tendencia"]
+    },
+    {
+      "id": "card-nutricion-ninos-03-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es un signo de alerta de talla baja en una niña o un niño de 5 a 11 años?",
+      "options": [
+        "Aumento de talla de 4 cm en 6 meses",
+        "Incremento de talla menor a 2,5 cm en 6 meses",
+        "Peso estable entre dos controles",
+        "IMC/E de 0 DE"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía considera que un incremento de talla menor a 2,5 cm en 6 meses es un signo de alerta de talla baja en 5 a 11 años. Un aumento de 4 cm no cumple ese criterio y el IMC/E de 0 DE es normal.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [28] }
+      ],
+      "tags": ["nutrición infantil", "talla baja", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-03-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "application",
+      "prompt": "Niño de 3 años cuya curva de P/T se aplana y cruza la mediana hacia -1 DE. ¿Qué corresponde hacer?",
+      "options": [
+        "Revisar la curva, valorar el cambio de tendencia y brindar atención nutricional con seguimiento",
+        "Esperar al siguiente control anual sin intervención",
+        "Indicar pérdida de peso",
+        "Suspender la lactancia materna"
+      ],
+      "correctIndex": 0,
+      "explanation": "El aplanamiento y el cruce de la mediana hacia -1 DE son signos de alerta de desnutrición. Corresponde valorar la tendencia, revisar la alimentación y el estado de salud, y asegurar atención nutricional y seguimiento.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [28, 30] }
+      ],
+      "tags": ["nutrición infantil", "signos de alerta", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-ninos-04-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "concept",
+      "prompt": "¿Cómo se alimenta a una niña o un niño durante los primeros 24 meses?",
+      "answer": "Con lactancia materna exclusiva durante los primeros 6 meses y, desde esa edad, lactancia materna continuada más alimentación complementaria hasta los 24 meses. Las preparaciones no llevan azúcar ni sal y se ofrecen con cuchara, con el niño sentado.",
+      "explanation": "La alimentación complementaria complementa la leche materna, no la reemplaza de golpe. Mantener las mamadas asegura energía y nutrientes mientras se introducen nuevas texturas y sabores.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30, 31] },
+        { "sourceId": "src-lactancia-materna", "pages": [28] }
+      ],
+      "tags": ["nutrición infantil", "alimentación complementaria", "lactancia"]
+    },
+    {
+      "id": "card-nutricion-ninos-04-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "multiple",
+      "prompt": "En una niña con sobrepeso, ¿cuál es el objetivo del consejo nutricional?",
+      "options": [
+        "Perder 1 kg por semana",
+        "Suspender la cena",
+        "Lograr una pérdida rápida de peso antes de la pubertad",
+        "Mantener el peso o lograr una ganancia más lenta, sin indicar pérdida de peso"
+      ],
+      "correctIndex": 3,
+      "explanation": "En la niñez no se indica la disminución de peso como objetivo del control. La guía orienta a mantener el peso o lograr una ganancia más lenta, con alimentación adecuada y seguimiento.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [31] }
+      ],
+      "tags": ["nutrición infantil", "sobrepeso", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-04-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "application",
+      "prompt": "Lactante de 8 meses con bajo peso y alimentación complementaria escasa. ¿Qué corresponde?",
+      "options": [
+        "Suspender la lactancia para que coma más",
+        "Indicar solo fórmula artificial",
+        "Reforzar la lactancia materna y la alimentación complementaria, agregar micronutrientes y establecer un plan personalizado",
+        "Restringir las comidas a dos veces al día"
+      ],
+      "correctIndex": 2,
+      "explanation": "En bajo peso se busca un aumento progresivo con un plan personalizado, priorizando la lactancia materna y la alimentación complementaria, y suplementando con hierro, vitamina A, zinc y otros micronutrientes.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30, 31] }
+      ],
+      "tags": ["nutrición infantil", "bajo peso", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-ninos-05-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "concept",
+      "prompt": "¿Cuáles son los seis pasos de la consulta nutricional infantil?",
+      "answer": "Conocer el estado de salud y nutrición, realizar la anamnesis alimentaria y el diagnóstico nutricional, estimar los requerimientos de energía, establecer metas, prescribir la alimentación y registrar con seguimiento.",
+      "explanation": "El orden asegura que la prescripción se base en un diagnóstico y en metas claras, y que el plan quede registrado para evaluar su evolución. La consulta no se reduce a entregar una lista de alimentos.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30] }
+      ],
+      "tags": ["nutrición infantil", "consulta nutricional", "pasos"]
+    },
+    {
+      "id": "card-nutricion-ninos-05-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "multiple",
+      "prompt": "¿Quién debe derivar a consulta nutricional y registrar la interconsulta en la historia clínica?",
+      "options": [
+        "El profesional responsable del control de crecimiento y desarrollo o de la atención médica",
+        "Únicamente el nutricionista del establecimiento",
+        "La madre, padre o cuidador",
+        "El personal administrativo del establecimiento"
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía señala que el profesional responsable del control de crecimiento y desarrollo o de la atención médica deriva y registra la interconsulta a nutrición en la historia clínica. El nutricionista atiende la consulta, pero no es quien la genera necesariamente.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30] }
+      ],
+      "tags": ["nutrición infantil", "derivación", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-05-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "application",
+      "prompt": "En un puesto de salud sin nutricionista, un niño de 2 años presenta obesidad. ¿Qué conducta corresponde?",
+      "options": [
+        "Mantenerlo en control local sin otra acción",
+        "Indicar una dieta restrictiva por escrito",
+        "Referirlo a un establecimiento de mayor capacidad resolutiva y asegurar la contrarreferencia para el seguimiento",
+        "Esperar a que cumpla 5 años para derivarlo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Si el establecimiento no cuenta con nutricionista, la guía indica referir a uno de mayor capacidad resolutiva y luego continuar el control periódico mediante contrarreferencia. La obesidad requiere atención nutricional, no solo observación.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [30] }
+      ],
+      "tags": ["nutrición infantil", "referencia", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-ninos-06-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "concept",
+      "prompt": "¿Qué busca el abordaje colectivo de la nutrición infantil?",
+      "answer": "Evaluar el grado de carencia nutricional y sus factores, vigilar las tendencias de desnutrición y obesidad, establecer acciones preventivas y evaluar sus resultados. También promueve investigación operativa y participación social.",
+      "explanation": "El nivel colectivo no reemplaza la consulta individual: identifica grupos en riesgo, orienta políticas y programas, y permite medir si las intervenciones están funcionando.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [31] }
+      ],
+      "tags": ["nutrición infantil", "salud pública", "prevención"]
+    },
+    {
+      "id": "card-nutricion-ninos-06-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "multiple",
+      "prompt": "¿Entre qué límites se busca mantener a la mayoría de niñas y niños en P/T, P/E e IMC/E?",
+      "options": [
+        "Entre 2 y -2 DE",
+        "Entre 3 y -3 DE",
+        "Entre 1 y -1 DE",
+        "Entre la mediana y -2 DE"
+      ],
+      "correctIndex": 2,
+      "explanation": "La meta poblacional es mantener al mayor porcentaje entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E. Es un objetivo de vigilancia, no un criterio para clasificar a un niño individual.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [31] }
+      ],
+      "tags": ["nutrición infantil", "metas poblacionales", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-ninos-06-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "application",
+      "prompt": "En una comunidad aumenta la prevalencia de obesidad infantil. ¿Cuál es la respuesta más completa desde el nivel colectivo?",
+      "options": [
+        "Citar individualmente a todos los niños para pesarles",
+        "Vigilar la tendencia y sus determinantes, implementar acciones educativas y evaluar los resultados",
+        "Prohibir la venta de alimentos en la comunidad",
+        "Derivar a todos los niños a cirugía"
+      ],
+      "correctIndex": 1,
+      "explanation": "El abordaje colectivo vigila tendencias y factores asociados, implementa acciones de prevención y evaluúa su aplicación y resultados. Citar o derivar a todos sin análisis no constituye una intervención poblacional.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-ninos", "pages": [31] }
+      ],
+      "tags": ["nutrición infantil", "obesidad", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-adultos-01-1",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "concept",
+      "prompt": "¿Cómo se mide correctamente el perímetro abdominal en una persona adulta?",
+      "answer": "Con la persona de pie, torso descubierto y brazos relajados, se ubica el punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca. La cinta se coloca horizontal, sin comprimir, y se lee al final de una exhalación normal, promediando tres mediciones.",
+      "explanation": "Ese punto medio es la referencia anatómica que hace reproducible la medición. La lectura al final de la exhalación evita que la contracción abdominal altere el valor.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [19] }
+      ],
+      "tags": ["nutrición adulto", "perímetro abdominal", "técnica"]
+    },
+    {
+      "id": "card-nutricion-adultos-01-2",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "multiple",
+      "prompt": "¿Dónde se ubica la cinta para medir el perímetro abdominal?",
+      "options": [
+        "A la altura del ombligo",
+        "En el punto medio entre la última costilla y la cresta ilíaca",
+        "Sobre la cresta ilíaca",
+        "En el borde inferior del esternón"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía indica marcar el punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca, a ambos lados, y colocar la cinta sobre esas referencias. El ombligo no es el punto anatómico indicado.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [19] }
+      ],
+      "tags": ["nutrición adulto", "perímetro abdominal", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-adultos-01-3",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "application",
+      "prompt": "Al medir la talla de un adulto, se observa que la cabeza está inclinada hacia atrás. ¿Qué corresponde hacer?",
+      "options": [
+        "Registrar la medida tal como quedó",
+        "Repetir la medición apoyando solo la frente en el tallímetro",
+        "Corregir la posición hasta el plano de Frankfurt y promediar tres mediciones",
+        "Medir con el tallímetro incorporado a la balanza"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cabeza debe orientarse según el plano de Frankfurt, una línea imaginaria del borde superior del conducto auditivo externo a la base de la órbita, perpendicular al tablero. Luego se realizan tres mediciones y se promedia.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [17] }
+      ],
+      "tags": ["nutrición adulto", "talla", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-adultos-02-1",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "concept",
+      "prompt": "¿Cómo se interpretan juntos el IMC y el perímetro abdominal?",
+      "answer": "El IMC clasifica el estado nutricional global, mientras que el perímetro abdominal estima el riesgo cardiometabólico. Cuando ambos están alterados, el riesgo de comorbilidad aumenta, por lo que un IMC normal no descarta riesgo si el perímetro abdominal es alto.",
+      "explanation": "El IMC no informa dónde se distribuye la grasa. El perímetro abdominal añade esa información y permite identificar riesgo de diabetes, hipertensión y enfermedad cardiovascular.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [20, 22] }
+      ],
+      "tags": ["nutrición adulto", "IMC", "perímetro abdominal"]
+    },
+    {
+      "id": "card-nutricion-adultos-02-2",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "multiple",
+      "prompt": "Una persona adulta tiene un IMC de 35,5 kg/m². ¿Cómo se clasifica?",
+      "options": [
+        "Sobrepeso",
+        "Obesidad grado I",
+        "Obesidad grado III",
+        "Obesidad grado II"
+      ],
+      "correctIndex": 3,
+      "explanation": "La obesidad grado II abarca desde 35 hasta menos de 40 kg/m². El grado I va de 30 a menos de 35, y el grado III corresponde a 40 o más.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [20] }
+      ],
+      "tags": ["nutrición adulto", "IMC", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-adultos-02-3",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "application",
+      "prompt": "Una mujer adulta tiene un perímetro abdominal de 85 cm. ¿Qué nivel de riesgo representa?",
+      "options": [
+        "Riesgo alto, porque en la mujer el punto de corte es ≥80 cm",
+        "Riesgo bajo, porque el punto de corte es ≥88 cm",
+        "Riesgo muy alto, porque supera los 80 cm",
+        "No se puede interpretar sin conocer el peso"
+      ],
+      "correctIndex": 0,
+      "explanation": "En mujeres, un perímetro abdominal ≥80 cm indica riesgo alto y ≥88 cm riesgo muy alto. Con 85 cm se ubica en riesgo alto, independientemente del peso.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [20] }
+      ],
+      "tags": ["nutrición adulto", "perímetro abdominal", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-adultos-03-1",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "concept",
+      "prompt": "¿En qué se diferencian la orientación, la consejería y la consulta nutricional?",
+      "answer": "La orientación es una actividad educativa básica y puntual; la consejería es un proceso educativo, interpersonal y participativo de 20 a 45 minutos; la consulta es la atención especializada del nutricionista, orientada a promoción, prevención, recuperación o control.",
+      "explanation": "Las tres comparten el objetivo de mejorar la alimentación, pero difieren en profundidad y responsable. Confundirlas puede llevar a registrar una consejería como si fuera una consulta especializada.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [12] }
+      ],
+      "tags": ["nutrición adulto", "consejería", "consulta"]
+    },
+    {
+      "id": "card-nutricion-adultos-03-2",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo se estima para una consejería nutricional?",
+      "options": [
+        "De 20 a 45 minutos",
+        "De 5 a 10 minutos",
+        "De 60 a 90 minutos",
+        "Menos de 15 minutos"
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía define la consejería nutricional con un tiempo estimado de 20 a 45 minutos. Ese margen permite explorar la situación, acordar metas y verificar la comprensión.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [12] }
+      ],
+      "tags": ["nutrición adulto", "consejería", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-adultos-03-3",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "application",
+      "prompt": "Una persona con IMC normal refiere haber perdido 2 kg sin proponérselo en las últimas dos semanas. ¿Qué corresponde?",
+      "options": [
+        "Considerarla normal y darle el alta",
+        "Repetir la medición en un año",
+        "Brindar consejería, evaluar el signo de alerta y programar controles",
+        "Indicar una dieta para ganar peso de inmediato"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una pérdida involuntaria mayor a 1 kg en dos semanas es un signo de alerta, aunque el IMC sea normal. Corresponde consejería, evaluación de la causa y seguimiento programado.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [22, 23] }
+      ],
+      "tags": ["nutrición adulto", "signos de alerta", "aplicación"]
+    },
+    {
+      "id": "card-nutricion-adultos-04-1",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "concept",
+      "prompt": "¿Qué velocidad de pérdida de peso se propone en sobrepeso y en obesidad?",
+      "answer": "En sobrepeso se propone una pérdida progresiva de 0,5 kg por semana. En obesidad sin factores adicionales de riesgo se plantea una pérdida de 0,5 a 1,0 kg por semana, con alimentación balanceada y control médico y nutricional.",
+      "explanation": "La velocidad se ajusta para favorecer una pérdida sostenida y segura. Una pérdida más rápida no es el objetivo terapéutico y puede dificultar el mantenimiento.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [23, 24] }
+      ],
+      "tags": ["nutrición adulto", "sobrepeso", "obesidad"]
+    },
+    {
+      "id": "card-nutricion-adultos-04-2",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "multiple",
+      "prompt": "Una persona adulta tiene un IMC de 42 kg/m². ¿Qué opción corresponde considerar?",
+      "options": [
+        "Solo consejería breve en el primer nivel",
+        "Referencia para manejo multidisciplinario, con valoración de medidas intensivas incluida la cirugía",
+        "Dieta muy restrictiva sin seguimiento",
+        "Alta con control anual"
+      ],
+      "correctIndex": 1,
+      "explanation": "Con IMC ≥40 se busca reducir el peso exagerado, descartar enfermedades asociadas y valorar medidas intensivas, incluida la cirugía, con referencia a un establecimiento de mayor complejidad y manejo multidisciplinario.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [24] }
+      ],
+      "tags": ["nutrición adulto", "obesidad grado III", "opción múltiple"]
+    },
+    {
+      "id": "card-nutricion-adultos-04-3",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "application",
+      "prompt": "Una persona adulta tiene IMC de 17,2 kg/m² y refiere pérdida de apetito. ¿Cuál es la conducta inicial más adecuada?",
+      "options": [
+        "Indicar una dieta hipocalórica",
+        "Considerarla normal y citarla en un año",
+        "Derivarla a cirugía bariátrica",
+        "Derivarla a interconsulta médica para descartar enfermedad asociada e iniciar recuperación nutricional"
+      ],
+      "correctIndex": 3,
+      "explanation": "Un IMC de 17,2 corresponde a delgadez grado I. La guía indica derivar a interconsulta médica para descartar enfermedad asociada y luego buscar la recuperación nutricional hasta el rango normal.",
+      "sourceRefs": [
+        { "sourceId": "src-nutricion-adultos", "pages": [23] }
+      ],
+      "tags": ["nutrición adulto", "delgadez", "aplicación"]
+    },
+    {
+      "id": "card-lactancia-01-1",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "concept",
+      "prompt": "¿Qué características tiene el calostro y por qué se considera importante?",
+      "answer": "Es la secreción amarillenta y espesa de los primeros 5 días, rica en componentes inmunológicos, proteínas, calcio y otros minerales. Su volumen es suficiente para el recién nacido, ayuda a eliminar el meconio, previene la ictericia y madura el aparato digestivo.",
+      "explanation": "Se le llama la primera vacuna porque aporta protección inmunológica mientras el sistema del bebé madura. Su escaso volumen no significa que falte leche: está adaptado a las necesidades iniciales.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [22, 40] }
+      ],
+      "tags": ["lactancia", "calostro", "recién nacido"]
+    },
+    {
+      "id": "card-lactancia-01-2",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo se recomienda mantener el contacto piel a piel después del nacimiento?",
+      "options": [
+        "Al menos 15 minutos",
+        "Al menos 30 minutos",
+        "Al menos 1 hora",
+        "Al menos 6 horas"
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía recomienda mantener el contacto piel a piel por lo menos una hora, salvo que la madre o el bebé requieran atención especial. Durante ese tiempo se posterga el aseo y otras atenciones no urgentes.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [21] }
+      ],
+      "tags": ["lactancia", "piel a piel", "opción múltiple"]
+    },
+    {
+      "id": "card-lactancia-01-3",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "application",
+      "prompt": "Nace un bebé por cesárea y la madre está despierta y estable. ¿Qué conducta favorece la lactancia?",
+      "options": [
+        "Realizar el contacto piel a piel lo antes posible, con las manos de la madre libres, y apoyar la lactancia",
+        "Separar al bebé hasta que la madre se recupere por completo",
+        "Ofrecer fórmula de inicio para evitar hipoglucemia",
+        "Esperar 24 horas para la primera mamada"
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía indica que el contacto piel a piel también se realice en cesáreas cuando sea posible, dejando libres las manos de la madre y facilitando la lactancia lo antes posible. El padre puede apoyar si la madre no puede.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [21] }
+      ],
+      "tags": ["lactancia", "cesárea", "aplicación"]
+    },
+    {
+      "id": "card-lactancia-02-1",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "concept",
+      "prompt": "¿Cómo se reconoce un agarre correcto al pecho?",
+      "answer": "La boca está bien abierta, el labio inferior se ve hacia afuera, el mentón toca el pecho y se observa más areola por arriba que por debajo de la boca. El bebé debe estar girado hacia la madre, con cuerpo y cabeza alineados.",
+      "explanation": "Estas señales indican que el bebé toma suficiente tejido mamario y no solo el pezón. Un agarre superficial puede causar dolor y vaciamiento incompleto.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [22, 23] }
+      ],
+      "tags": ["lactancia", "agarre", "técnica"]
+    },
+    {
+      "id": "card-lactancia-02-2",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "multiple",
+      "prompt": "¿Cuántas mamadas en 24 horas se consideran habituales en un recién nacido?",
+      "options": [
+        "De 2 a 4",
+        "De 5 a 7",
+        "De 15 a 20",
+        "De 8 a 12"
+      ],
+      "correctIndex": 3,
+      "explanation": "La guía indica un promedio de 8 a 12 mamadas en 24 horas, a demanda, de día y de noche. La duración varía: a algunos bebés les basta 10 minutos y otros necesitan 30 o más.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [23] }
+      ],
+      "tags": ["lactancia", "frecuencia", "opción múltiple"]
+    },
+    {
+      "id": "card-lactancia-02-3",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "application",
+      "prompt": "Una madre refiere que solo ofrece el pecho cuando el bebé llora. ¿Qué orientación corresponde?",
+      "options": [
+        "Indicarle que espere siempre al llanto para asegurar hambre",
+        "Enseñarle las señales tempranas de hambre y ofrecer el pecho antes del llanto",
+        "Recomendarle biberones para que el bebé no se angustie",
+        "Decirle que el llanto siempre indica dolor"
+      ],
+      "correctIndex": 1,
+      "explanation": "El llanto es un signo tardío de hambre. Conviene enseñar señales tempranas como buscar el pecho, abrir la boca, sacar la lengua, succionar las manos o mostrarse inquieto, y ofrecer el pecho en ese momento.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [23] }
+      ],
+      "tags": ["lactancia", "señales de hambre", "aplicación"]
+    },
+    {
+      "id": "card-lactancia-03-1",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "concept",
+      "prompt": "¿Qué infección materna contraindica la lactancia materna y por qué?",
+      "answer": "La infección por VIH contraindica la lactancia porque se estima que el 5 a 15 % de bebés nacidos de mujeres infectadas se infectan a través de ella. En el Perú se debe evitar por completo y se proporciona alimentación artificial gratuita a través del SIS.",
+      "explanation": "La mayoría de las infecciones maternas, como mastitis, tuberculosis o hepatitis B y C, no contraindican la lactancia. El VIH es la excepción por el riesgo comprobado de transmisión vertical durante la lactancia.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [49] }
+      ],
+      "tags": ["lactancia", "VIH", "infecciones"]
+    },
+    {
+      "id": "card-lactancia-03-2",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "multiple",
+      "prompt": "¿Cuál de estas infecciones maternas contraindica la lactancia materna?",
+      "options": [
+        "VIH",
+        "Mastitis",
+        "Hepatitis B",
+        "Tuberculosis"
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía señala que la mayoría de infecciones, incluidas mastitis, tuberculosis y hepatitis B y C, no contraindican la lactancia. La infección por VIH es la excepción, por el riesgo de transmisión al bebé.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [49] }
+      ],
+      "tags": ["lactancia", "VIH", "opción múltiple"]
+    },
+    {
+      "id": "card-lactancia-03-3",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "application",
+      "prompt": "Una madre con mastitis consulta si debe suspender la lactancia. ¿Qué corresponde responder?",
+      "options": [
+        "Sí, debe suspenderla hasta que cedan el dolor y la fiebre",
+        "No, la mastitis no contraindica la lactancia; debe continuar y recibir tratamiento",
+        "Solo puede dar leche del pecho afectado después de 7 días",
+        "Debe cambiar a fórmula de forma definitiva"
+      ],
+      "correctIndex": 1,
+      "explanation": "La mastitis figura entre las infecciones que no contraindican la lactancia; de hecho, el bebé se beneficia de la protección. Corresponde mantener la lactancia y tratar el cuadro según indicación clínica.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [49] }
+      ],
+      "tags": ["lactancia", "mastitis", "aplicación"]
+    },
+    {
+      "id": "card-lactancia-04-1",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "concept",
+      "prompt": "¿Cómo se conserva la leche materna extraída?",
+      "answer": "A temperatura ambiente se conserva de 6 a 8 horas, excepto en zonas muy calurosas, donde debe refrigerarse. En refrigeradora se conserva hasta 72 horas. La leche calentada no debe volver a refrigerarse y la que no se consume se elimina.",
+      "explanation": "Separar la leche en porciones según el consumo evita descongelar o recalentar más de lo necesario. La cadena de frío y el descarte de sobrantes reducen el riesgo de contaminación.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [51, 52] }
+      ],
+      "tags": ["lactancia", "conservación", "leche extraída"]
+    },
+    {
+      "id": "card-lactancia-04-2",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo puede conservarse la leche materna extraída en refrigeradora?",
+      "options": [
+        "6 a 8 horas",
+        "24 horas",
+        "72 horas",
+        "7 días"
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía indica 72 horas en el interior de la refrigeradora. Las 6 a 8 horas corresponden a la conservación a temperatura ambiente, con excepción de zonas muy calurosas.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [51] }
+      ],
+      "tags": ["lactancia", "conservación", "opción múltiple"]
+    },
+    {
+      "id": "card-lactancia-04-3",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "application",
+      "prompt": "Después de calentar leche extraída, el bebé no la termina. ¿Qué se hace con el resto?",
+      "options": [
+        "Guardarlo en la refrigeradora para la siguiente toma",
+        "Recalentarlo al día siguiente",
+        "Mezclarlo con leche recién extraída",
+        "Eliminarlo, porque la leche calentada no debe volver a refrigerarse"
+      ],
+      "correctIndex": 3,
+      "explanation": "La leche calentada no debe volver a refrigerarse y la que no se consumió se elimina. Mezclarla o recalentarla aumenta el riesgo de contaminación y no conserva sus propiedades.",
+      "sourceRefs": [
+        { "sourceId": "src-lactancia-materna", "pages": [52] }
+      ],
+      "tags": ["lactancia", "administración", "aplicación"]
+    }
+  ]
+}

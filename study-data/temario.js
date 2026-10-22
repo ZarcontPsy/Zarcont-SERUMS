@@ -1,366 +1,1907 @@
-/* SERUMS STUDY — contenido compartido
+/* SERUMS STUDY - contenido compartido
    Fuentes documentales aportadas por el usuario. Las fichas son síntesis de estudio:
    no sustituyen la norma vigente ni el juicio clínico. Cada referencia apunta al PDF. */
 window.STUDY_CONTENT = {
-  version: "1.0.0",
-  meta: {
-    title: "Temario de estudio",
-    subtitle: "Atención primaria, curso de vida, consumo de alcohol, salud materna y continuidad de cuidados.",
-    disclaimer: "Síntesis de estudio basada en las fuentes aportadas. Verifica cada ficha en el documento original; no sustituye la norma vigente ni la decisión clínica."
+  "version": "2.0.0",
+  "meta": {
+    "title": "Temario de estudio",
+    "subtitle": "42 fuentes de atención primaria, curso de vida, salud pública, salud materno-neonatal, enfermedades crónicas, VIH, promoción de la salud y salud ambiental.",
+    "disclaimer": "Síntesis de estudio basada en las fuentes aportadas. Verifica cada ficha en el documento original; no sustituye la norma vigente ni la decisión clínica."
   },
-  sources: [
+  "sources": [
     {
-      id: "src-aps",
-      short: "APS",
-      title: "Atributos de la Atención Primaria de Salud (APS): una visión desde la Medicina Familiar",
-      authors: "Rosas Prieto, Zarate y Cuba Fuentes",
-      kind: "Artículo de revisión",
-      provenance: "Artículo académico de referencia; no es una norma del MINSA.",
-      file: "../study-data/fuentes/atencion-primaria-salud.pdf"
+      "id": "src-aps",
+      "short": "APS",
+      "title": "Atributos de la Atención Primaria de Salud (APS): una visión desde la Medicina Familiar",
+      "authors": "Rosas Prieto, Zarate y Cuba Fuentes",
+      "kind": "Artículo de revisión",
+      "provenance": "Artículo académico de referencia; no es una norma del MINSA.",
+      "file": "../study-data/fuentes/atencion-primaria-salud.pdf"
     },
     {
-      id: "src-mci",
-      short: "MCI",
-      title: "Modelo de Cuidado Integral de Salud por Curso de Vida para la Persona, Familia y Comunidad (MCI)",
-      authors: "Ministerio de Salud del Perú",
-      kind: "Documento técnico",
-      provenance: "Documento técnico del Ministerio de Salud del Perú.",
-      file: "../study-data/fuentes/modelo-cuidado-integral-curso-vida.pdf"
+      "id": "src-mci",
+      "short": "MCI",
+      "title": "Modelo de Cuidado Integral de Salud por Curso de Vida para la Persona, Familia y Comunidad (MCI)",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico del Ministerio de Salud del Perú.",
+      "file": "../study-data/fuentes/modelo-cuidado-integral-curso-vida.pdf"
     },
     {
-      id: "src-audit",
-      short: "AUDIT",
-      title: "AUDIT: Test de Identificación de los Trastornos Debidos al Consumo de Alcohol",
-      authors: "Organización Mundial de la Salud",
-      kind: "Manual de referencia",
-      provenance: "Manual de la OMS sobre un instrumento de tamizaje; no es un diagnóstico.",
-      file: "../study-data/fuentes/audit-consumo-alcohol.pdf"
+      "id": "src-audit",
+      "short": "AUDIT",
+      "title": "AUDIT: Test de Identificación de los Trastornos Debidos al Consumo de Alcohol",
+      "authors": "Organización Mundial de la Salud",
+      "kind": "Manual de referencia",
+      "provenance": "Manual de la OMS sobre un instrumento de tamizaje; no es un diagnóstico.",
+      "file": "../study-data/fuentes/audit-consumo-alcohol.pdf"
     },
     {
-      id: "src-materna",
-      short: "Materna",
-      title: "Norma Técnica de Salud para la Atención Integral de Salud Materna",
-      authors: "Ministerio de Salud del Perú",
-      kind: "Norma técnica",
-      provenance: "Norma técnica del Ministerio de Salud del Perú.",
-      file: "../study-data/fuentes/atencion-integral-salud-materna.pdf"
+      "id": "src-materna",
+      "short": "Materna",
+      "title": "Norma Técnica de Salud para la Atención Integral de Salud Materna",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú.",
+      "file": "../study-data/fuentes/atencion-integral-salud-materna.pdf"
     },
     {
-      id: "src-mental",
-      short: "Continuidad",
-      title: "Guía técnica de continuidad de cuidados para personas con trastornos mentales graves y/o problemas psicosociales de riesgo en los Centros de Salud Mental Comunitaria",
-      authors: "Ministerio de Salud del Perú",
-      kind: "Guía técnica",
-      provenance: "Guía técnica del Ministerio de Salud del Perú para los Centros de Salud Mental Comunitaria.",
-      file: "../study-data/fuentes/continuidad-trastornos-mentales.pdf"
+      "id": "src-mental",
+      "short": "Continuidad",
+      "title": "Guía técnica de continuidad de cuidados para personas con trastornos mentales graves y/o problemas psicosociales de riesgo en los Centros de Salud Mental Comunitaria",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía técnica",
+      "provenance": "Guía técnica del Ministerio de Salud del Perú para los Centros de Salud Mental Comunitaria.",
+      "file": "../study-data/fuentes/continuidad-trastornos-mentales.pdf"
+    },
+    {
+      "id": "src-adulto",
+      "title": "Norma Técnica de Salud para el Cuidado Integral de Salud de la Persona Adulta",
+      "short": "Adulto",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 229-MINSA/DGIESP-2025).",
+      "file": "../study-data/fuentes/cuidado-integral-persona-adulta.pdf"
+    },
+    {
+      "id": "src-depresion",
+      "title": "Guía de Práctica Clínica para el Tamizaje y el Manejo del Episodio Depresivo Leve en el Primer Nivel de Atención",
+      "short": "Depresión",
+      "authors": "Instituto de Evaluación de Tecnologías en Salud e Investigación (IETSI), EsSalud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía de práctica clínica de EsSalud/IETSI (GPC N.° 27). Su ámbito asistencial es el primer nivel de atención de EsSalud.",
+      "file": "../study-data/fuentes/gpc-episodio-depresivo-leve.pdf"
+    },
+    {
+      "id": "src-gestantes",
+      "title": "Directiva Sanitaria N.° 155-MINSA/DGIESP-2024 para el Cuidado Integral de la Salud Mental de Gestantes y Madres de Niñas y Niños Menores de 5 Años",
+      "short": "Perinatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Directiva sanitaria",
+      "provenance": "Directiva sanitaria del Ministerio de Salud del Perú (N.° 155-MINSA/DGIESP-2024).",
+      "file": "../study-data/fuentes/salud-mental-gestantes-madres.pdf"
+    },
+    {
+      "id": "src-ley-violencia",
+      "title": "Texto Único Ordenado de la Ley N.° 30364, Ley para Prevenir, Sancionar y Erradicar la Violencia contra las Mujeres y los Integrantes del Grupo Familiar",
+      "short": "Ley 30364",
+      "authors": "Congreso de la República del Perú",
+      "kind": "Ley y reglamento",
+      "provenance": "Texto único ordenado de la Ley N.° 30364 y su reglamento, con las modificaciones incorporadas en la versión oficial.",
+      "file": "../study-data/fuentes/ley-violencia-contra-mujer.pdf"
+    },
+    {
+      "id": "src-gt-violencia",
+      "title": "Guía Técnica para el Cuidado de la Salud Mental de Mujeres en Situación de Violencia Ocasionada por la Pareja o Expareja",
+      "short": "GT violencia",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía técnica",
+      "provenance": "Guía técnica aprobada por Resolución Ministerial N.° 670-2021/MINSA.",
+      "file": "../study-data/fuentes/gt-salud-mental-mujeres-violencia.pdf"
+    },
+    {
+      "id": "src-violencia-sexual",
+      "title": "Norma Técnica de Salud N.° 164-MINSA/2020/DGIESP para el Cuidado Integral a Mujeres e Integrantes del Grupo Familiar Afectados por Violencia Sexual",
+      "short": "Violencia sexual",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 164-MINSA/2020/DGIESP).",
+      "file": "../study-data/fuentes/nt-afectados-violencia-sexual.pdf"
+    },
+    {
+      "id": "src-its",
+      "title": "Norma Técnica de Salud N.° 240-MINSA/DGIESP-2026 para la Prevención y Control de las Infecciones de Transmisión Sexual",
+      "short": "ITS",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 240-MINSA/DGIESP-2026).",
+      "file": "../study-data/fuentes/nt-prevencion-control-its.pdf"
+    },
+    {
+      "id": "src-vih",
+      "title": "Norma Técnica de Salud N.° 169-MINSA/2020/DGIESP de Atención Integral del Adulto con Infección por el Virus de la Inmunodeficiencia Humana (VIH)",
+      "short": "VIH adulto",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 169-MINSA/2020/DGIESP).",
+      "file": "../study-data/fuentes/nt-atencion-integral-adulto-vih.pdf"
+    },
+    {
+      "id": "src-prevencion-combinada",
+      "title": "Norma Técnica de Salud N.° 204-MINSA/DGIESP-2023 de Prevención Combinada del Virus de la Inmunodeficiencia Humana para Poblaciones en Alto Riesgo",
+      "short": "Prevención combinada",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 204-MINSA/DGIESP-2023).",
+      "file": "../study-data/fuentes/nt-prevencion-combinada-vih-alto-riesgo.pdf"
+    },
+    {
+      "id": "src-hepatitis-b",
+      "title": "Norma Técnica de Salud N.° 146-MINSA/2018/DGIESP para la Prevención, Diagnóstico y Tratamiento de la Hepatitis Viral B en el Perú",
+      "short": "Hepatitis B",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 146-MINSA/2018/DGIESP).",
+      "file": "../study-data/fuentes/nt-prevencion-hepatitis-b.pdf"
+    },
+    {
+      "id": "src-hepatitis-c",
+      "title": "Norma Técnica de Salud N.° 145-MINSA/2018/DGIESP para la Prevención, Diagnóstico y Tratamiento de la Hepatitis Viral C en el Perú",
+      "short": "Hepatitis C",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica del Ministerio de Salud del Perú (NTS N.° 145-MINSA/2018/DGIESP).",
+      "file": "../study-data/fuentes/nt-prevencion-hepatitis-c.pdf"
+    },
+    {
+      "id": "src-higiene-manos",
+      "title": "Manual técnico de referencia para la higiene de las manos",
+      "short": "Higiene de manos OMS",
+      "authors": "Organización Mundial de la Salud (OMS)",
+      "kind": "Manual",
+      "provenance": "Manual técnico de referencia de la OMS publicado en 2009 (WHO/IER/PSP/2009.02); traducción al español de 2010.",
+      "file": "../study-data/fuentes/higiene-manos-oms.pdf"
+    },
+    {
+      "id": "src-vigilancia-iaas",
+      "title": "Norma Técnica de Salud N.° 163-MINSA/2020/CDC para la vigilancia de las infecciones asociadas a la atención de la salud",
+      "short": "Vigilancia de IAAS",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica de salud del Ministerio de Salud del Perú (NTS N.° 163-MINSA/2020/CDC).",
+      "file": "../study-data/fuentes/vigilancia-iaas.pdf"
+    },
+    {
+      "id": "src-nutricion-ninos",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la niña y el niño de 0 a 11 años",
+      "short": "Nutrición infantil 0-11 años",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica elaborada por el Instituto Nacional de Salud y publicada en Lima en 2025 (ISBN 978-612-310-181-7); 88 páginas.",
+      "file": "../study-data/fuentes/gt-nutricion-ninos-0-11.pdf"
+    },
+    {
+      "id": "src-nutricion-adultos",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la persona adulta",
+      "short": "Nutrición en adultos",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica del Instituto Nacional de Salud, publicada en Lima en 2012; 36 páginas. No incluye a la gestante.",
+      "file": "../study-data/fuentes/gt-nutricion-adultos.pdf"
+    },
+    {
+      "id": "src-lactancia-materna",
+      "title": "Guía técnica para la consejería en lactancia materna",
+      "short": "Consejería en lactancia",
+      "authors": "Ministerio de Salud del Perú (MINSA)",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica aprobada por Resolución Ministerial N.° 462-2015/MINSA y publicada por el MINSA en 2019; 59 páginas.",
+      "file": "../study-data/fuentes/gt-consejeria-lactancia-materna.pdf"
+    },
+    {
+      "id": "src-nutricion-ninos-anterior",
+      "title": "Guía técnica para la valoración nutricional antropométrica de la niña y el niño de 0 a 11 años (versión anterior)",
+      "short": "Guía 2024 (acto resolutivo)",
+      "authors": "Instituto Nacional de Salud (INS), Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Resolución Ministerial que aprueba la Guía Técnica de valoración nutricional antropométrica; su contenido temático se desarrolla en la guía 2025, por lo que no se duplican fichas.",
+      "file": "../study-data/fuentes/gt-nutricion-ninos-0-11-anterior.pdf",
+      "notes": "Acto normativo de aprobación; no aporta temas distintos a la guía 2025."
+    },
+    {
+      "id": "src-ottawa",
+      "title": "Carta de Ottawa para la Promoción de la Salud",
+      "short": "Ottawa",
+      "authors": "Organización Mundial de la Salud",
+      "kind": "Declaración internacional",
+      "provenance": "Carta adoptada en la Primera Conferencia Internacional sobre Promoción de la Salud, Ottawa, 1986.",
+      "file": "../study-data/fuentes/carta-ottawa-promocion-salud.pdf"
+    },
+    {
+      "id": "src-promocion-politica",
+      "title": "Lineamientos de Política de Promoción de la Salud en el Perú",
+      "short": "Política de promoción",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico de la Dirección General de Promoción de la Salud que orienta la promoción de la salud en los tres niveles de gobierno.",
+      "file": "../study-data/fuentes/politica-promocion-salud.pdf"
+    },
+    {
+      "id": "src-modelo-abordaje",
+      "title": "Modelo de Abordaje de Promoción de la Salud en el Perú",
+      "short": "Modelo de abordaje",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico de 2006 que organiza la promoción de la salud por sujetos, escenarios, ejes temáticos y programas.",
+      "file": "../study-data/fuentes/abordaje-promocion-salud.pdf"
+    },
+    {
+      "id": "src-municipios",
+      "title": "Programa de Municipios y Comunidades Saludables",
+      "short": "Municipios saludables",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Programa nacional de promoción de la salud en el ámbito municipal y comunal, publicado en 2005.",
+      "file": "../study-data/fuentes/municipios-comunidades-saludables.pdf"
+    },
+    {
+      "id": "src-escuelas",
+      "title": "Programa de Promoción de la Salud en las Instituciones Educativas — Escuelas Saludables",
+      "short": "Escuelas saludables",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Documento técnico",
+      "provenance": "Programa nacional de promoción de la salud en instituciones educativas, publicado en 2005.",
+      "file": "../study-data/fuentes/instituciones-educativas-saludables.pdf"
+    },
+    {
+      "id": "src-agente",
+      "title": "Orientaciones para el fortalecimiento de la labor del Agente Comunitario de Salud",
+      "short": "Agente comunitario",
+      "authors": "Ministerio de Salud del Perú — DGPS",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico aprobado por R.M. N° 411-2014/MINSA; define roles, capacitación y sostenibilidad del agente comunitario.",
+      "file": "../study-data/fuentes/labor-agente-comunitario-salud.pdf"
+    },
+    {
+      "id": "src-agua-reglamento",
+      "title": "Reglamento de la Calidad del Agua para Consumo Humano (D.S. N° 031-2010-SA)",
+      "short": "Calidad del agua",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Reglamento",
+      "provenance": "Reglamento nacional que establece la gestión, vigilancia, control y requisitos de calidad del agua para consumo humano.",
+      "file": "../study-data/fuentes/calidad-del-agua.pdf"
+    },
+    {
+      "id": "src-salud-ambiental-politica",
+      "title": "Política Nacional de Salud Ambiental 2011-2020",
+      "short": "Política salud ambiental",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Política nacional",
+      "provenance": "Documento técnico aprobado por R.M. N° 258-2011/MINSA; define principios, situación y seis políticas nacionales de salud ambiental.",
+      "file": "../study-data/fuentes/politica-nacional-salud-ambiental.pdf"
+    },
+    {
+      "id": "src-metales",
+      "title": "Vigilancia epidemiológica de factores de riesgo por exposición e intoxicación por metales pesados y metaloides (NTS N° 111-2014)",
+      "short": "Metales pesados",
+      "authors": "Ministerio de Salud del Perú — Dirección General de Epidemiología",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 006-2015/MINSA; organiza la notificación, investigación y respuesta ante exposición a metales pesados.",
+      "file": "../study-data/fuentes/vigilancia-metales-pesados.pdf"
+    },
+    {
+      "id": "src-parto",
+      "title": "Recomendaciones de la OMS: cuidados durante el parto para una experiencia de parto positiva",
+      "short": "Cuidados del parto",
+      "authors": "Organización Mundial de la Salud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Directriz de la OMS de 2018, versión oficial en español de la OPS 2019, con 56 recomendaciones sobre cuidados intraparto.",
+      "file": "../study-data/fuentes/cuidados-durante-el-parto.pdf"
+    },
+    {
+      "id": "src-neonatal",
+      "title": "Norma Técnica de Salud para la Atención Integral de Salud Neonatal",
+      "short": "Atención neonatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica del MINSA que organiza la atención inmediata, alojamiento conjunto, cuidados intermedios y alta del recién nacido.",
+      "file": "../study-data/fuentes/nt-neonatal.pdf"
+    },
+    {
+      "id": "src-tamizaje",
+      "title": "Norma Técnica de Salud para el Tamizaje Neonatal",
+      "short": "Tamizaje neonatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica que regula el tamizaje de hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia y catarata congénita.",
+      "file": "../study-data/fuentes/tamizaje-neonatal.pdf"
+    },
+    {
+      "id": "src-raras",
+      "title": "Reglamento de la Ley N° 29698: enfermedades raras o huérfanas",
+      "short": "Enfermedades raras",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Reglamento",
+      "provenance": "Reglamento que desarrolla la Ley N° 29698 sobre prevención, diagnóstico, atención integral y rehabilitación de personas con enfermedades raras o huérfanas.",
+      "file": "../study-data/fuentes/enfermedades-raras-huerfanas.pdf"
+    },
+    {
+      "id": "src-dm2",
+      "title": "Guía de práctica clínica para el diagnóstico, tratamiento y control de la diabetes mellitus tipo 2 en el primer nivel de atención",
+      "short": "DM2",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica aprobada por R.M. N° 719-2015/MINSA; incluye criterios diagnósticos, metas y esquema de tratamiento.",
+      "file": "../study-data/fuentes/gpc-dm2.pdf"
+    },
+    {
+      "id": "src-hta",
+      "title": "Guía de práctica clínica para el diagnóstico, tratamiento y control de la enfermedad hipertensiva",
+      "short": "HTA",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica del MINSA para el manejo de la hipertensión arterial en el primer nivel de atención.",
+      "file": "../study-data/fuentes/gpc-hta.pdf"
+    },
+    {
+      "id": "src-climaterio",
+      "title": "Guía de práctica clínica para diagnóstico y tratamiento del climaterio",
+      "short": "Climaterio",
+      "authors": "Hospital Nacional Hipólito Unanue — Ministerio de Salud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional de 2024 para la atención de mujeres en etapa de climaterio; incluye escala MRS y criterios de terapia hormonal.",
+      "file": "../study-data/fuentes/gpc-climaterio-menopausia.pdf"
+    },
+    {
+      "id": "src-adolescente-nts",
+      "title": "Norma Técnica de Salud para la Atención Integral de Salud de Adolescentes (NTS N° 157)",
+      "short": "Adolescentes",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 1001-2019/MINSA; organiza la atención integral de adolescentes de 12 a 17 años.",
+      "file": "../study-data/fuentes/nt-adolescente.pdf"
+    },
+    {
+      "id": "src-nino-expuesto",
+      "title": "Guía de práctica clínica para el diagnóstico y tratamiento del niño expuesto al VIH",
+      "short": "Niño expuesto al VIH",
+      "authors": "Instituto Nacional Materno Perinatal — MINSA",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional del INMP, versión 3, para la atención del neonato expuesto al VIH.",
+      "file": "../study-data/fuentes/gpc-nino-expuesto-vih.pdf"
+    },
+    {
+      "id": "src-sifilis",
+      "title": "Guía de práctica clínica para el diagnóstico y tratamiento de sífilis congénita",
+      "short": "Sífilis congénita",
+      "authors": "Instituto Nacional Materno Perinatal — MINSA",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional del INMP, versión 3, para el diagnóstico y tratamiento de sífilis congénita.",
+      "file": "../study-data/fuentes/gpc-sifilis-congenita.pdf"
+    },
+    {
+      "id": "src-vih-navv",
+      "title": "Norma Técnica de Salud para la Atención Integral de Niñas, Niños y Adolescentes con Infección por VIH (NTS N° 167)",
+      "short": "VIH pediátrico",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 167-MINSA/2020/DGIESP; organiza diagnóstico, TAR, adherencia y seguimiento.",
+      "file": "../study-data/fuentes/nt-nino-adolescente-vih.pdf"
     }
   ],
-  areas: [
+  "areas": [
     {
-      id: "area-aps",
-      title: "Atención Primaria de Salud",
-      short: "APS",
-      description: "Los atributos que hacen del primer nivel un espacio de cuidado continuo, integral y coordinado.",
-      accent: "#A9C7A4",
-      icon: "compass",
-      sourceIds: ["src-aps"]
+      "id": "area-aps",
+      "title": "Atención Primaria de Salud",
+      "short": "APS",
+      "description": "Los atributos que hacen del primer nivel un espacio de cuidado continuo, integral y coordinado.",
+      "accent": "#A9C7A4",
+      "icon": "compass",
+      "sourceIds": [
+        "src-aps"
+      ]
     },
     {
-      id: "area-mci",
-      title: "Modelo de Cuidado Integral",
-      short: "MCI",
-      description: "Persona, familia y comunidad a lo largo del curso de vida, con determinantes y redes de cuidado.",
-      accent: "#E6B566",
-      icon: "path",
-      sourceIds: ["src-mci"]
+      "id": "area-mci",
+      "title": "Modelo de Cuidado Integral",
+      "short": "MCI",
+      "description": "Persona, familia y comunidad a lo largo del curso de vida, con determinantes y redes de cuidado.",
+      "accent": "#E6B566",
+      "icon": "path",
+      "sourceIds": [
+        "src-mci"
+      ]
     },
     {
-      id: "area-audit",
-      title: "Consumo de alcohol",
-      short: "AUDIT",
-      description: "Tamizaje, puntuación e intervención breve para identificar y acompañar el consumo de riesgo.",
-      accent: "#D98B6A",
-      icon: "drop",
-      sourceIds: ["src-audit"]
+      "id": "area-audit",
+      "title": "Consumo de alcohol",
+      "short": "AUDIT",
+      "description": "Tamizaje, puntuación e intervención breve para identificar y acompañar el consumo de riesgo.",
+      "accent": "#D98B6A",
+      "icon": "drop",
+      "sourceIds": [
+        "src-audit"
+      ]
     },
     {
-      id: "area-materna",
-      title: "Salud materna",
-      short: "Materna",
-      description: "Atención preconcepcional, prenatal, parto institucional, emergencias y puerperio.",
-      accent: "#D77C8D",
-      icon: "heart",
-      sourceIds: ["src-materna"]
+      "id": "area-materna",
+      "title": "Salud materna",
+      "short": "Materna",
+      "description": "Atención preconcepcional, prenatal, parto institucional, emergencias y puerperio.",
+      "accent": "#D77C8D",
+      "icon": "heart",
+      "sourceIds": [
+        "src-materna"
+      ]
     },
     {
-      id: "area-mental",
-      title: "Continuidad de cuidados",
-      short: "Salud mental",
-      description: "Cuidado continuo, plan individualizado y articulación de redes en salud mental comunitaria.",
-      accent: "#8FB8D8",
-      icon: "loop",
-      sourceIds: ["src-mental"]
+      "id": "area-mental",
+      "title": "Continuidad de cuidados",
+      "short": "Salud mental",
+      "description": "Cuidado continuo, plan individualizado y articulación de redes en salud mental comunitaria.",
+      "accent": "#8FB8D8",
+      "icon": "loop",
+      "sourceIds": [
+        "src-mental"
+      ]
+    },
+    {
+      "id": "area-adulto",
+      "title": "Cuidado integral del adulto",
+      "short": "Adulto",
+      "description": "Cuidado integral, prevención y continuidad para las personas de 30 a 59 años, desde la captación hasta el seguimiento.",
+      "accent": "#D9A066",
+      "icon": "heart",
+      "sourceIds": [
+        "src-adulto"
+      ]
+    },
+    {
+      "id": "area-depresion",
+      "title": "Depresión en atención primaria",
+      "short": "Depresión",
+      "description": "Tamizaje, diagnóstico y manejo del episodio depresivo leve en el primer nivel, con criterios claros para derivar.",
+      "accent": "#A9B8E0",
+      "icon": "brain",
+      "sourceIds": [
+        "src-depresion"
+      ]
+    },
+    {
+      "id": "area-perinatal",
+      "title": "Salud mental perinatal",
+      "short": "Perinatal",
+      "description": "Detección, tratamiento y continuidad del cuidado de la salud mental durante la gestación, el puerperio y la crianza temprana.",
+      "accent": "#C9A7D6",
+      "icon": "heart",
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "area-violencia",
+      "title": "Violencia de género",
+      "short": "Violencia",
+      "description": "Marco legal, detección, primera acogida, valoración del riesgo y atención integral de la violencia sexual.",
+      "accent": "#D98E8E",
+      "icon": "flag",
+      "sourceIds": [
+        "src-ley-violencia",
+        "src-gt-violencia",
+        "src-violencia-sexual",
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "area-itsvih",
+      "title": "ITS y VIH",
+      "short": "ITS/VIH",
+      "description": "Abordaje sindrómico de las ITS, prevención combinada, PrEP, PPE y atención integral del adulto con VIH.",
+      "accent": "#7FA8C9",
+      "icon": "link",
+      "sourceIds": [
+        "src-its",
+        "src-vih",
+        "src-prevencion-combinada"
+      ]
+    },
+    {
+      "id": "area-hepatitis",
+      "title": "Hepatitis virales",
+      "short": "Hepatitis",
+      "description": "Prevención, diagnóstico, tratamiento y seguimiento de la hepatitis B y C.",
+      "accent": "#B6C77A",
+      "icon": "drop",
+      "sourceIds": [
+        "src-hepatitis-b",
+        "src-hepatitis-c"
+      ]
+    },
+    {
+      "id": "area-seguridad-paciente",
+      "title": "Seguridad del paciente e IAAS",
+      "short": "Seguridad e IAAS",
+      "description": "Higiene de manos para interrumpir la transmisión y vigilancia epidemiológica de las infecciones asociadas a la atención de la salud.",
+      "accent": "#8BA9A0",
+      "icon": "target",
+      "sourceIds": [
+        "src-higiene-manos",
+        "src-vigilancia-iaas"
+      ]
+    },
+    {
+      "id": "area-nutricion",
+      "title": "Nutrición y lactancia materna",
+      "short": "Nutrición",
+      "description": "Valoración antropométrica, consejo alimentario y consejería en lactancia para niños, adultos y familias.",
+      "accent": "#C9A66B",
+      "icon": "heart",
+      "sourceIds": [
+        "src-nutricion-ninos",
+        "src-nutricion-adultos",
+        "src-lactancia-materna",
+        "src-nutricion-ninos-anterior"
+      ]
+    },
+    {
+      "id": "area-promocion",
+      "title": "Promoción de la salud y participación comunitaria",
+      "short": "Promoción",
+      "description": "Estrategias, políticas y programas para actuar sobre los determinantes sociales y fortalecer la participación de personas, familias y comunidades.",
+      "accent": "#E0B36A",
+      "icon": "sun",
+      "sourceIds": [
+        "src-ottawa",
+        "src-promocion-politica",
+        "src-modelo-abordaje",
+        "src-municipios",
+        "src-escuelas",
+        "src-agente"
+      ]
+    },
+    {
+      "id": "area-ambiental",
+      "title": "Salud ambiental y determinantes del entorno",
+      "short": "Salud ambiental",
+      "description": "Agua segura, aire, residuos, sustancias peligrosas y vigilancia de riesgos ambientales para proteger la salud de la población.",
+      "accent": "#86B7A8",
+      "icon": "drop",
+      "sourceIds": [
+        "src-agua-reglamento",
+        "src-salud-ambiental-politica",
+        "src-metales"
+      ]
+    },
+    {
+      "id": "area-materno-neonatal",
+      "title": "Maternidad, recién nacido y tamizaje",
+      "short": "Materno-neonatal",
+      "description": "Cuidados respetuosos del parto, atención inmediata del recién nacido, alojamiento conjunto, tamizaje neonatal y enfermedades raras.",
+      "accent": "#D9A0A8",
+      "icon": "heart",
+      "sourceIds": [
+        "src-parto",
+        "src-neonatal",
+        "src-tamizaje",
+        "src-raras"
+      ]
+    },
+    {
+      "id": "area-cronicas",
+      "title": "Enfermedades crónicas y salud de la mujer adulta",
+      "short": "Crónicas",
+      "description": "Diagnóstico, tratamiento y seguimiento de diabetes, hipertensión y climaterio en el primer nivel de atención.",
+      "accent": "#C98F6B",
+      "icon": "chart",
+      "sourceIds": [
+        "src-dm2",
+        "src-hta",
+        "src-climaterio"
+      ]
+    },
+    {
+      "id": "area-adolescencia-vih",
+      "title": "Adolescencia y VIH pediátrico",
+      "short": "Adolescencia y VIH",
+      "description": "Atención integral del adolescente, prevención y manejo del VIH en niñas, niños y adolescentes, y sífilis congénita.",
+      "accent": "#8FA8C9",
+      "icon": "path",
+      "sourceIds": [
+        "src-adolescente-nts",
+        "src-nino-expuesto",
+        "src-sifilis",
+        "src-vih-navv"
+      ]
     }
   ],
-  topics: [
+  "topics": [
     {
-      id: "topic-aps-atributos",
-      areaId: "area-aps",
-      title: "Los cuatro atributos de la APS",
-      summary: "Accesibilidad y primer contacto, longitudinalidad, integralidad y coordinación: la brújula de la atención primaria.",
-      sourceIds: ["src-aps"],
-      keywords: ["Starfield", "primer contacto", "longitudinalidad", "integralidad", "coordinación"]
+      "id": "topic-aps-atributos",
+      "areaId": "area-aps",
+      "title": "Los cuatro atributos de la APS",
+      "summary": "Accesibilidad y primer contacto, longitudinalidad, integralidad y coordinación: la brújula de la atención primaria.",
+      "sourceIds": [
+        "src-aps"
+      ],
+      "keywords": [
+        "Starfield",
+        "primer contacto",
+        "longitudinalidad",
+        "integralidad",
+        "coordinación"
+      ]
     },
     {
-      id: "topic-aps-sistemas",
-      areaId: "area-aps",
-      title: "APS y atención especializada",
-      summary: "Qué distingue a la APS del segundo nivel y por qué una APS fuerte mejora el sistema completo.",
-      sourceIds: ["src-aps"],
-      keywords: ["primer nivel", "especializada", "sistema de salud", "eficiencia", "referencia"]
+      "id": "topic-aps-sistemas",
+      "areaId": "area-aps",
+      "title": "APS y atención especializada",
+      "summary": "Qué distingue a la APS del segundo nivel y por qué una APS fuerte mejora el sistema completo.",
+      "sourceIds": [
+        "src-aps"
+      ],
+      "keywords": [
+        "primer nivel",
+        "especializada",
+        "sistema de salud",
+        "eficiencia",
+        "referencia"
+      ]
     },
     {
-      id: "topic-mci-fundamentos",
-      areaId: "area-mci",
-      title: "Cuidado integral y determinantes",
-      summary: "El MCI desplaza el foco desde la enfermedad aislada hacia la persona, su familia, su comunidad y sus condiciones de vida.",
-      sourceIds: ["src-mci"],
-      keywords: ["determinantes sociales", "derechos", "equidad", "cuidado integral", "MCI"]
+      "id": "topic-mci-fundamentos",
+      "areaId": "area-mci",
+      "title": "Cuidado integral y determinantes",
+      "summary": "El MCI desplaza el foco desde la enfermedad aislada hacia la persona, su familia, su comunidad y sus condiciones de vida.",
+      "sourceIds": [
+        "src-mci"
+      ],
+      "keywords": [
+        "determinantes sociales",
+        "derechos",
+        "equidad",
+        "cuidado integral",
+        "MCI"
+      ]
     },
     {
-      id: "topic-mci-curso-vida",
-      areaId: "area-mci",
-      title: "Cuidado por curso de vida",
-      summary: "Cada etapa influye en la siguiente: oportunidades de promoción, prevención y cuidado en momentos clave.",
-      sourceIds: ["src-mci"],
-      keywords: ["curso de vida", "niñez", "adolescencia", "adultez", "vejez"]
+      "id": "topic-mci-curso-vida",
+      "areaId": "area-mci",
+      "title": "Cuidado por curso de vida",
+      "summary": "Cada etapa influye en la siguiente: oportunidades de promoción, prevención y cuidado en momentos clave.",
+      "sourceIds": [
+        "src-mci"
+      ],
+      "keywords": [
+        "curso de vida",
+        "niñez",
+        "adolescencia",
+        "adultez",
+        "vejez"
+      ]
     },
     {
-      id: "topic-mci-familia-comunidad",
-      areaId: "area-mci",
-      title: "Familia, comunidad y territorio",
-      summary: "El cuidado se organiza con la familia, los escenarios comunitarios y las redes integradas de salud.",
-      sourceIds: ["src-mci"],
-      keywords: ["familia", "APOC", "comunidad", "RIS", "territorio"]
+      "id": "topic-mci-familia-comunidad",
+      "areaId": "area-mci",
+      "title": "Familia, comunidad y territorio",
+      "summary": "El cuidado se organiza con la familia, los escenarios comunitarios y las redes integradas de salud.",
+      "sourceIds": [
+        "src-mci"
+      ],
+      "keywords": [
+        "familia",
+        "APOC",
+        "comunidad",
+        "RIS",
+        "territorio"
+      ]
     },
     {
-      id: "topic-audit-conceptos",
-      areaId: "area-audit",
-      title: "Patrones de consumo y tamizaje",
-      summary: "Distinguir consumo de riesgo, perjudicial y dependencia, y saber qué mide realmente el AUDIT.",
-      sourceIds: ["src-audit"],
-      keywords: ["consumo de riesgo", "perjudicial", "dependencia", "tamizaje", "AUDIT"]
+      "id": "topic-audit-conceptos",
+      "areaId": "area-audit",
+      "title": "Patrones de consumo y tamizaje",
+      "summary": "Distinguir consumo de riesgo, perjudicial y dependencia, y saber qué mide realmente el AUDIT.",
+      "sourceIds": [
+        "src-audit"
+      ],
+      "keywords": [
+        "consumo de riesgo",
+        "perjudicial",
+        "dependencia",
+        "tamizaje",
+        "AUDIT"
+      ]
     },
     {
-      id: "topic-audit-aplicacion",
-      areaId: "area-audit",
-      title: "Aplicación y puntuación",
-      summary: "Administrar las diez preguntas, comprender los dominios y leer la puntuación sin convertirla en diagnóstico.",
-      sourceIds: ["src-audit"],
-      keywords: ["puntuación", "consumición estándar", "dominios", "punto de corte", "interpretación"]
+      "id": "topic-audit-aplicacion",
+      "areaId": "area-audit",
+      "title": "Aplicación y puntuación",
+      "summary": "Administrar las diez preguntas, comprender los dominios y leer la puntuación sin convertirla en diagnóstico.",
+      "sourceIds": [
+        "src-audit"
+      ],
+      "keywords": [
+        "puntuación",
+        "consumición estándar",
+        "dominios",
+        "punto de corte",
+        "interpretación"
+      ]
     },
     {
-      id: "topic-audit-intervencion",
-      areaId: "area-audit",
-      title: "Intervención breve y derivación",
-      summary: "Feedback, consejo y seguimiento; cuándo intensificar el apoyo y cuándo derivar a evaluación especializada.",
-      sourceIds: ["src-audit"],
-      keywords: ["intervención breve", "consejo", "derivación", "seguimiento", "dependencia"]
+      "id": "topic-audit-intervencion",
+      "areaId": "area-audit",
+      "title": "Intervención breve y derivación",
+      "summary": "Feedback, consejo y seguimiento; cuándo intensificar el apoyo y cuándo derivar a evaluación especializada.",
+      "sourceIds": [
+        "src-audit"
+      ],
+      "keywords": [
+        "intervención breve",
+        "consejo",
+        "derivación",
+        "seguimiento",
+        "dependencia"
+      ]
     },
     {
-      id: "topic-materna-prenatal",
-      areaId: "area-materna",
-      title: "Preconcepcional y prenatal",
-      summary: "Preparar el embarazo y acompañar la gestación con controles, suplementación, tamizajes y signos de alarma.",
-      sourceIds: ["src-materna"],
-      keywords: ["preconcepcional", "control prenatal", "ácido fólico", "hierro", "alarma"]
+      "id": "topic-materna-prenatal",
+      "areaId": "area-materna",
+      "title": "Preconcepcional y prenatal",
+      "summary": "Preparar el embarazo y acompañar la gestación con controles, suplementación, tamizajes y signos de alarma.",
+      "sourceIds": [
+        "src-materna"
+      ],
+      "keywords": [
+        "preconcepcional",
+        "control prenatal",
+        "ácido fólico",
+        "hierro",
+        "alarma"
+      ]
     },
     {
-      id: "topic-materna-parto",
-      areaId: "area-materna",
-      title: "Parto y emergencias",
-      summary: "Plan de parto, parto institucional, parto vertical y organización frente a las claves de emergencia obstétrica.",
-      sourceIds: ["src-materna"],
-      keywords: ["plan de parto", "parto institucional", "parto vertical", "clave roja", "emergencia"]
+      "id": "topic-materna-parto",
+      "areaId": "area-materna",
+      "title": "Parto y emergencias",
+      "summary": "Plan de parto, parto institucional, parto vertical y organización frente a las claves de emergencia obstétrica.",
+      "sourceIds": [
+        "src-materna"
+      ],
+      "keywords": [
+        "plan de parto",
+        "parto institucional",
+        "parto vertical",
+        "clave roja",
+        "emergencia"
+      ]
     },
     {
-      id: "topic-materna-puerperio",
-      areaId: "area-materna",
-      title: "Puerperio y continuidad",
-      summary: "Cuidado inmediato y mediato, alojamiento conjunto, lactancia y seguimiento después del alta.",
-      sourceIds: ["src-materna"],
-      keywords: ["puerperio", "alojamiento conjunto", "lactancia", "visita domiciliaria", "seguimiento"]
+      "id": "topic-materna-puerperio",
+      "areaId": "area-materna",
+      "title": "Puerperio y continuidad",
+      "summary": "Cuidado inmediato y mediato, alojamiento conjunto, lactancia y seguimiento después del alta.",
+      "sourceIds": [
+        "src-materna"
+      ],
+      "keywords": [
+        "puerperio",
+        "alojamiento conjunto",
+        "lactancia",
+        "visita domiciliaria",
+        "seguimiento"
+      ]
     },
     {
-      id: "topic-mental-continuidad",
-      areaId: "area-mental",
-      title: "Qué es la continuidad de cuidados",
-      summary: "Un proceso continuo, intensivo y personalizado, con componentes clínicos, psicosociales y de gestión.",
-      sourceIds: ["src-mental"],
-      keywords: ["continuidad", "recuperación", "CSMC", "cuidado integral", "vínculo"]
+      "id": "topic-mental-continuidad",
+      "areaId": "area-mental",
+      "title": "Qué es la continuidad de cuidados",
+      "summary": "Un proceso continuo, intensivo y personalizado, con componentes clínicos, psicosociales y de gestión.",
+      "sourceIds": [
+        "src-mental"
+      ],
+      "keywords": [
+        "continuidad",
+        "recuperación",
+        "CSMC",
+        "cuidado integral",
+        "vínculo"
+      ]
     },
     {
-      id: "topic-mental-plan",
-      areaId: "area-mental",
-      title: "Evaluación y plan individualizado",
-      summary: "Del criterio de derivación al PCCl: evaluación integral, objetivos, responsables y revisión periódica.",
-      sourceIds: ["src-mental"],
-      keywords: ["derivación", "evaluación integral", "PCCl", "gestor de cuidados", "seguimiento"]
+      "id": "topic-mental-plan",
+      "areaId": "area-mental",
+      "title": "Evaluación y plan individualizado",
+      "summary": "Del criterio de derivación al PCCl: evaluación integral, objetivos, responsables y revisión periódica.",
+      "sourceIds": [
+        "src-mental"
+      ],
+      "keywords": [
+        "derivación",
+        "evaluación integral",
+        "PCCl",
+        "gestor de cuidados",
+        "seguimiento"
+      ]
     },
     {
-      id: "topic-mental-articulacion",
-      areaId: "area-mental",
-      title: "Redes, crisis y alta",
-      summary: "Articulación con familia y comunidad, respuesta ante crisis, alta y seguimiento posterior.",
-      sourceIds: ["src-mental"],
-      keywords: ["redes", "ecomapa", "crisis", "alta", "reingreso"]
+      "id": "topic-mental-articulacion",
+      "areaId": "area-mental",
+      "title": "Redes, crisis y alta",
+      "summary": "Articulación con familia y comunidad, respuesta ante crisis, alta y seguimiento posterior.",
+      "sourceIds": [
+        "src-mental"
+      ],
+      "keywords": [
+        "redes",
+        "ecomapa",
+        "crisis",
+        "alta",
+        "reingreso"
+      ]
+    },
+    {
+      "id": "topic-adulto-cuidado",
+      "title": "Cuidado integral y ruta de entrada",
+      "areaId": "area-adulto",
+      "summary": "Población, enfoques, captación, admisión, triage y plan de cuidado: la puerta de entrada del adulto al sistema.",
+      "keywords": [
+        "CISPA",
+        "captación",
+        "admisión",
+        "triage",
+        "enfoques"
+      ],
+      "sourceIds": [
+        "src-adulto"
+      ]
+    },
+    {
+      "id": "topic-adulto-evaluacion",
+      "title": "Evaluación y paquete preventivo",
+      "areaId": "area-adulto",
+      "summary": "Evaluación anual, riesgo cardiometabólico, promoción, visita familiar y prestaciones del paquete de cuidado.",
+      "keywords": [
+        "evaluación anual",
+        "riesgo cardiovascular",
+        "promoción",
+        "PAIFAM"
+      ],
+      "sourceIds": [
+        "src-adulto"
+      ]
+    },
+    {
+      "id": "topic-adulto-riesgos",
+      "title": "Cáncer, salud mental y otros riesgos",
+      "areaId": "area-adulto",
+      "summary": "Tamizajes de cáncer, depresión, consumo de alcohol, violencia, inmunizaciones y salud bucal.",
+      "keywords": [
+        "cáncer",
+        "PHQ-9",
+        "AUDIT",
+        "violencia",
+        "inmunizaciones"
+      ],
+      "sourceIds": [
+        "src-adulto"
+      ]
+    },
+    {
+      "id": "topic-adulto-continuidad",
+      "title": "Referencia y continuidad",
+      "areaId": "area-adulto",
+      "summary": "Plan de cuidado, referencia y contrarreferencia, modalidades de atención, financiamiento y organización.",
+      "keywords": [
+        "referencia",
+        "contrarreferencia",
+        "telesalud",
+        "SIS",
+        "gestión"
+      ],
+      "sourceIds": [
+        "src-adulto"
+      ]
+    },
+    {
+      "id": "topic-depresion-tamizaje",
+      "title": "Tamizaje y prevención",
+      "areaId": "area-depresion",
+      "summary": "PHQ-9 en grupos prioritarios, prevención selectiva y detección de la depresión bipolar.",
+      "keywords": [
+        "PHQ-9",
+        "tamizaje",
+        "prevención",
+        "bipolaridad"
+      ],
+      "sourceIds": [
+        "src-depresion"
+      ]
+    },
+    {
+      "id": "topic-depresion-diagnostico",
+      "title": "Diagnóstico y gravedad",
+      "areaId": "area-depresion",
+      "summary": "Criterios CIE-10, bandas de severidad y señales que obligan a derivar.",
+      "keywords": [
+        "CIE-10",
+        "severidad",
+        "derivación",
+        "riesgo suicida"
+      ],
+      "sourceIds": [
+        "src-depresion"
+      ]
+    },
+    {
+      "id": "topic-depresion-tratamiento",
+      "title": "Psicoterapia y estilos de vida",
+      "areaId": "area-depresion",
+      "summary": "TCC, resolución de problemas, duración, respuesta, remisión, alta y ejercicio físico.",
+      "keywords": [
+        "TCC",
+        "resolución de problemas",
+        "remisión",
+        "ejercicio"
+      ],
+      "sourceIds": [
+        "src-depresion"
+      ]
+    },
+    {
+      "id": "topic-depresion-farmacos",
+      "title": "Farmacoterapia y seguimiento",
+      "areaId": "area-depresion",
+      "summary": "ISRS, ajuste de dosis, controles con PHQ-9, mantenimiento y criterios de derivación.",
+      "keywords": [
+        "ISRS",
+        "antidepresivos",
+        "mantenimiento",
+        "seguimiento"
+      ],
+      "sourceIds": [
+        "src-depresion"
+      ]
+    },
+    {
+      "id": "topic-perinatal-deteccion",
+      "title": "Detección y tamizaje",
+      "areaId": "area-perinatal",
+      "summary": "Signos de alarma, PHQ-9, WAST y AUDIT-C: qué preguntar, cuándo hacerlo y cómo pasar del puntaje a una conducta clínica.",
+      "keywords": [
+        "PHQ-9",
+        "WAST",
+        "AUDIT-C",
+        "tamizaje",
+        "gestante"
+      ],
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-perinatal-cuidado",
+      "title": "Tratamiento y continuidad",
+      "areaId": "area-perinatal",
+      "summary": "Intervenciones psicosociales, psicoterapia, psicofármacos con criterio, duelo, violencia y seguimiento maternofilial.",
+      "keywords": [
+        "psicoterapia",
+        "psicofármacos",
+        "duelo",
+        "continuidad",
+        "lactancia"
+      ],
+      "sourceIds": [
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-violencia-marco",
+      "title": "Marco legal y protección",
+      "areaId": "area-violencia",
+      "summary": "Definición, tipos, sujetos protegidos, derechos, denuncia y medidas de protección de la Ley N.° 30364.",
+      "keywords": [
+        "Ley 30364",
+        "tipos de violencia",
+        "denuncia",
+        "medidas de protección"
+      ],
+      "sourceIds": [
+        "src-ley-violencia"
+      ]
+    },
+    {
+      "id": "topic-violencia-deteccion",
+      "title": "Detección y primera acogida",
+      "areaId": "area-violencia",
+      "summary": "Señales de alerta, WAST, entrevista segura y los cinco movimientos de ANIMA para una primera acogida sin revictimización.",
+      "keywords": [
+        "WAST",
+        "ANIMA",
+        "primera acogida",
+        "violencia de pareja"
+      ],
+      "sourceIds": [
+        "src-gt-violencia",
+        "src-gestantes"
+      ]
+    },
+    {
+      "id": "topic-violencia-atencion",
+      "title": "Riesgo, salud mental y seguimiento",
+      "areaId": "area-violencia",
+      "summary": "Valoración del riesgo, plan de seguridad, consecuencias en salud mental, tratamiento escalonado y continuidad.",
+      "keywords": [
+        "riesgo",
+        "plan de seguridad",
+        "salud mental",
+        "seguimiento"
+      ],
+      "sourceIds": [
+        "src-gt-violencia",
+        "src-ley-violencia"
+      ]
+    },
+    {
+      "id": "topic-violencia-sexual",
+      "title": "Violencia sexual",
+      "areaId": "area-violencia",
+      "summary": "Atención de emergencia, AVISAS, consentimiento, preservación de evidencia, profilaxis y seguimiento integral.",
+      "keywords": [
+        "AVISAS",
+        "PEP",
+        "profilaxis",
+        "evidencia",
+        "seguimiento"
+      ],
+      "sourceIds": [
+        "src-violencia-sexual"
+      ]
+    },
+    {
+      "id": "topic-its-sindromes",
+      "title": "ITS: abordaje sindrómico",
+      "areaId": "area-itsvih",
+      "summary": "Reconocer síndromes, tratar el mismo día, prevenir complicaciones y ofrecer tamizaje y consejería.",
+      "keywords": [
+        "ITS",
+        "síndrome",
+        "ceftriaxona",
+        "doxiciclina",
+        "pareja"
+      ],
+      "sourceIds": [
+        "src-its"
+      ]
+    },
+    {
+      "id": "topic-vih-prevencion",
+      "title": "Prevención combinada del VIH",
+      "areaId": "area-itsvih",
+      "summary": "Medidas biomédicas, conductuales y estructurales; paquete de prevención, PrEP y PPE.",
+      "keywords": [
+        "prevención combinada",
+        "PrEP",
+        "PPE",
+        "preservativo"
+      ],
+      "sourceIds": [
+        "src-prevencion-combinada"
+      ]
+    },
+    {
+      "id": "topic-vih-atencion",
+      "title": "Atención integral del adulto con VIH",
+      "areaId": "area-itsvih",
+      "summary": "Diagnóstico, inicio temprano del TAR, esquema de primera línea, monitoreo y fracaso virológico.",
+      "keywords": [
+        "TAR",
+        "TDF/3TC/DTG",
+        "carga viral",
+        "CD4",
+        "adherencia"
+      ],
+      "sourceIds": [
+        "src-vih"
+      ]
+    },
+    {
+      "id": "topic-hepatitis-b",
+      "title": "Hepatitis B",
+      "areaId": "area-hepatitis",
+      "summary": "Transmisión, vacunación, diagnóstico, tratamiento y seguimiento de la infección crónica.",
+      "keywords": [
+        "HBsAg",
+        "vacuna",
+        "tenofovir",
+        "cirrosis",
+        "HBeAg"
+      ],
+      "sourceIds": [
+        "src-hepatitis-b"
+      ]
+    },
+    {
+      "id": "topic-hepatitis-c",
+      "title": "Hepatitis C",
+      "areaId": "area-hepatitis",
+      "summary": "Tamizaje, confirmación con ARN, fibrosis, antivirales pangenotípicos y curación.",
+      "keywords": [
+        "Anti-VHC",
+        "ARN",
+        "APRI",
+        "sofosbuvir",
+        "RVS"
+      ],
+      "sourceIds": [
+        "src-hepatitis-c"
+      ]
+    },
+    {
+      "id": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Los cinco momentos y la técnica",
+      "summary": "Los cinco momentos traducen las indicaciones de la OMS en puntos concretos de la atención; la técnica correcta y el uso adecuado de guantes completan la práctica.",
+      "sourceIds": [
+        "src-higiene-manos"
+      ],
+      "keywords": [
+        "cinco momentos",
+        "higiene de manos",
+        "técnica",
+        "guantes"
+      ]
+    },
+    {
+      "id": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Adherencia y cultura de seguridad",
+      "summary": "La observación directa mide el cumplimiento, y la retroalimentación y el cuidado de las manos sostienen una cultura de seguridad.",
+      "sourceIds": [
+        "src-higiene-manos"
+      ],
+      "keywords": [
+        "observación",
+        "cumplimiento",
+        "retroalimentación",
+        "cultura de seguridad"
+      ]
+    },
+    {
+      "id": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Definiciones y vigilancia epidemiológica",
+      "summary": "Definiciones, red, procesos, notificación e indicadores de la vigilancia de las IAAS según la NTS 163-MINSA/2020/CDC.",
+      "sourceIds": [
+        "src-vigilancia-iaas"
+      ],
+      "keywords": [
+        "IAAS",
+        "definición de caso",
+        "vigilancia",
+        "notificación"
+      ]
+    },
+    {
+      "id": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Prevención, brotes y respuesta",
+      "summary": "La información de la vigilancia orienta la prevención y la supervisión; los brotes se detectan, notifican e investigan con plazos definidos.",
+      "sourceIds": [
+        "src-vigilancia-iaas"
+      ],
+      "keywords": [
+        "prevención",
+        "brotes",
+        "investigación",
+        "control"
+      ]
+    },
+    {
+      "id": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Evaluación nutricional infantil",
+      "summary": "Mediciones, indicadores y puntos de corte para clasificar el estado nutricional de la niña y el niño de 0 a 11 años.",
+      "sourceIds": [
+        "src-nutricion-ninos"
+      ],
+      "keywords": [
+        "antropometría",
+        "peso para la talla",
+        "talla para la edad",
+        "IMC para la edad"
+      ]
+    },
+    {
+      "id": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Intervención nutricional infantil",
+      "summary": "Lectura de curvas, consejo alimentario, derivación y acciones colectivas para prevenir y tratar la malnutrición infantil.",
+      "sourceIds": [
+        "src-nutricion-ninos",
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "curvas de crecimiento",
+        "lactancia materna",
+        "alimentación complementaria",
+        "micronutrientes"
+      ]
+    },
+    {
+      "id": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Evaluación nutricional del adulto",
+      "summary": "Técnica antropométrica, índice de masa corporal y perímetro abdominal para clasificar el estado nutricional y el riesgo cardiometabólico.",
+      "sourceIds": [
+        "src-nutricion-adultos"
+      ],
+      "keywords": [
+        "IMC",
+        "perímetro abdominal",
+        "talla",
+        "peso"
+      ]
+    },
+    {
+      "id": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejería e intervención en el adulto",
+      "summary": "Consejería nutricional, signos de alerta y tratamiento según delgadez, sobrepeso u obesidad.",
+      "sourceIds": [
+        "src-nutricion-adultos"
+      ],
+      "keywords": [
+        "consejería nutricional",
+        "signos de alerta",
+        "obesidad",
+        "delgadez"
+      ]
+    },
+    {
+      "id": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Técnica de la lactancia materna",
+      "summary": "Contacto piel a piel, agarre, posición y frecuencia de las mamadas para un inicio y mantenimiento eficaces.",
+      "sourceIds": [
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "piel a piel",
+        "agarre",
+        "posición",
+        "calostro"
+      ]
+    },
+    {
+      "id": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Dificultades y conservación de la leche",
+      "summary": "Manejo de infecciones y mitos, relactación, extracción, conservación y administración de leche humana.",
+      "sourceIds": [
+        "src-lactancia-materna"
+      ],
+      "keywords": [
+        "mastitis",
+        "VIH",
+        "extracción",
+        "conservación"
+      ]
+    },
+    {
+      "id": "topic-ottawa-estrategias",
+      "areaId": "area-promocion",
+      "title": "Carta de Ottawa y estrategias de promoción",
+      "summary": "La promoción de la salud actúa sobre los determinantes y combina cinco estrategias complementarias.",
+      "sourceIds": [
+        "src-ottawa"
+      ],
+      "keywords": [
+        "promoción",
+        "Ottawa",
+        "determinantes",
+        "participación",
+        "políticas públicas"
+      ]
+    },
+    {
+      "id": "topic-promocion-politicas",
+      "areaId": "area-promocion",
+      "title": "Salud en todas las políticas",
+      "summary": "Lineamientos para incorporar la salud en las decisiones de todos los sectores y cerrar brechas de inequidad.",
+      "sourceIds": [
+        "src-promocion-politica"
+      ],
+      "keywords": [
+        "determinantes sociales",
+        "gestión territorial",
+        "equidad",
+        "intersectorialidad"
+      ]
+    },
+    {
+      "id": "topic-modelo-sujetos",
+      "areaId": "area-promocion",
+      "title": "Sujetos, escenarios y ejes temáticos",
+      "summary": "El modelo peruano organiza la promoción en la persona, la familia y la comunidad, en escenarios y ejes concretos.",
+      "sourceIds": [
+        "src-modelo-abordaje"
+      ],
+      "keywords": [
+        "modelo de abordaje",
+        "escenarios",
+        "ejes temáticos",
+        "etapas de vida"
+      ]
+    },
+    {
+      "id": "topic-modelo-programas",
+      "areaId": "area-promocion",
+      "title": "Programas de promoción de la salud",
+      "summary": "Los programas de familias, municipios, escuelas y centros laborales traducen el modelo en acciones territoriales.",
+      "sourceIds": [
+        "src-modelo-abordaje"
+      ],
+      "keywords": [
+        "familias saludables",
+        "escuelas saludables",
+        "centros laborales",
+        "municipios"
+      ]
+    },
+    {
+      "id": "topic-municipios-fases",
+      "areaId": "area-promocion",
+      "title": "Municipios y comunidades saludables",
+      "summary": "El programa municipal se implementa en cinco fases con un comité multisectorial y evaluación participativa.",
+      "sourceIds": [
+        "src-municipios"
+      ],
+      "keywords": [
+        "municipio saludable",
+        "comité multisectorial",
+        "fases",
+        "evaluación participativa"
+      ]
+    },
+    {
+      "id": "topic-escuelas",
+      "areaId": "area-promocion",
+      "title": "Escuelas saludables",
+      "summary": "La institución educativa es un escenario clave para promover comportamientos y entornos saludables con toda la comunidad educativa.",
+      "sourceIds": [
+        "src-escuelas"
+      ],
+      "keywords": [
+        "escuela",
+        "promoción",
+        "entornos saludables",
+        "comunidad educativa"
+      ]
+    },
+    {
+      "id": "topic-agente",
+      "areaId": "area-promocion",
+      "title": "Agente comunitario de salud",
+      "summary": "El agente comunitario es un líder voluntario que articula la comunidad con los servicios de salud y desarrolla roles progresivos.",
+      "sourceIds": [
+        "src-agente"
+      ],
+      "keywords": [
+        "agente comunitario",
+        "participación",
+        "roles",
+        "capacitación"
+      ]
+    },
+    {
+      "id": "topic-agua-calidad",
+      "areaId": "area-ambiental",
+      "title": "Calidad e inocuidad del agua",
+      "summary": "El reglamento fija requisitos microbiológicos, organolépticos, químicos y radiactivos, y distribuye responsabilidades entre autoridad, proveedor y consumidor.",
+      "sourceIds": [
+        "src-agua-reglamento"
+      ],
+      "keywords": [
+        "agua",
+        "inocuidad",
+        "límites máximos permisibles",
+        "cloro residual"
+      ]
+    },
+    {
+      "id": "topic-agua-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Vigilancia y control del agua",
+      "summary": "La vigilancia sanitaria y el control de calidad detectan desviaciones y activan medidas correctivas y de comunicación.",
+      "sourceIds": [
+        "src-agua-reglamento"
+      ],
+      "keywords": [
+        "vigilancia sanitaria",
+        "control de calidad",
+        "medidas correctivas",
+        "DIGESA"
+      ]
+    },
+    {
+      "id": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Política nacional de salud ambiental",
+      "summary": "La política prioriza agua, alimentos, aire, peligros ambientales, descentralización y emergencias.",
+      "sourceIds": [
+        "src-salud-ambiental-politica"
+      ],
+      "keywords": [
+        "salud ambiental",
+        "política",
+        "riesgos",
+        "determinantes"
+      ]
+    },
+    {
+      "id": "topic-metales-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Metales pesados: exposición y casos",
+      "summary": "La norma define exposición, caso sospechoso, probable y confirmado, y establece la notificación obligatoria.",
+      "sourceIds": [
+        "src-metales"
+      ],
+      "keywords": [
+        "metales pesados",
+        "exposición",
+        "intoxicación",
+        "notificación"
+      ]
+    },
+    {
+      "id": "topic-metales-respuesta",
+      "areaId": "area-ambiental",
+      "title": "Investigación y respuesta ante metales",
+      "summary": "La investigación epidemiológica, el laboratorio y la respuesta intersectorial permiten confirmar casos y controlar la fuente.",
+      "sourceIds": [
+        "src-metales"
+      ],
+      "keywords": [
+        "investigación",
+        "laboratorio",
+        "contingencia",
+        "RENACE"
+      ]
+    },
+    {
+      "id": "topic-parto-respetuoso",
+      "areaId": "area-materno-neonatal",
+      "title": "Parto positivo y atención respetuosa",
+      "summary": "La experiencia del parto importa: respeto, acompañamiento, comunicación y decisiones informadas mejoran los resultados y la satisfacción.",
+      "sourceIds": [
+        "src-parto"
+      ],
+      "keywords": [
+        "parto",
+        "atención respetuosa",
+        "acompañamiento",
+        "derechos"
+      ]
+    },
+    {
+      "id": "topic-neonatal-inmediato",
+      "areaId": "area-materno-neonatal",
+      "title": "Atención inmediata del recién nacido",
+      "summary": "La anticipación, el calor, la evaluación y los cuidados de rutina en la primera hora son determinantes para la supervivencia neonatal.",
+      "sourceIds": [
+        "src-neonatal"
+      ],
+      "keywords": [
+        "recién nacido",
+        "atención inmediata",
+        "hipotermia",
+        "vitamina K"
+      ]
+    },
+    {
+      "id": "topic-neonatal-alojamiento",
+      "areaId": "area-materno-neonatal",
+      "title": "Alojamiento conjunto y signos de alarma",
+      "summary": "El alojamiento conjunto sostiene la lactancia y el vínculo, pero exige vigilancia de signos de alarma y criterios de alta seguros.",
+      "sourceIds": [
+        "src-neonatal"
+      ],
+      "keywords": [
+        "alojamiento conjunto",
+        "lactancia",
+        "signos de alarma",
+        "alta"
+      ]
+    },
+    {
+      "id": "topic-tamizaje-neonatal",
+      "areaId": "area-materno-neonatal",
+      "title": "Tamizaje neonatal",
+      "summary": "El tamizaje detecta enfermedades metabólicas, endocrinas, auditivas y visuales antes de que produzcan daño irreversible.",
+      "sourceIds": [
+        "src-tamizaje"
+      ],
+      "keywords": [
+        "tamizaje",
+        "hipotiroidismo",
+        "fenilcetonuria",
+        "hipoacusia"
+      ]
+    },
+    {
+      "id": "topic-raras",
+      "areaId": "area-materno-neonatal",
+      "title": "Enfermedades raras o huérfanas",
+      "summary": "La ley y su reglamento garantizan atención integral, registro y financiamiento progresivo para personas con enfermedades raras.",
+      "sourceIds": [
+        "src-raras"
+      ],
+      "keywords": [
+        "enfermedades raras",
+        "huérfanas",
+        "registro",
+        "FISSAL"
+      ]
+    },
+    {
+      "id": "topic-dm2-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "Diabetes tipo 2: diagnóstico y metas",
+      "summary": "El diagnóstico se confirma con glucemia en ayunas, síntomas con glucemia casual o prueba de tolerancia oral; las metas guían el control.",
+      "sourceIds": [
+        "src-dm2"
+      ],
+      "keywords": [
+        "diabetes",
+        "diagnóstico",
+        "hemoglobina glucosilada",
+        "metas"
+      ]
+    },
+    {
+      "id": "topic-dm2-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "Tratamiento y referencia de la DM2",
+      "summary": "Estilos de vida, metformina como primera línea y criterios claros de referencia estructuran el manejo en el primer nivel.",
+      "sourceIds": [
+        "src-dm2"
+      ],
+      "keywords": [
+        "metformina",
+        "estilos de vida",
+        "referencia",
+        "complicaciones"
+      ]
+    },
+    {
+      "id": "topic-hta-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "Hipertensión: medición y riesgo",
+      "summary": "La clasificación de la presión arterial y la estratificación del riesgo cardiovascular orientan el manejo.",
+      "sourceIds": [
+        "src-hta"
+      ],
+      "keywords": [
+        "hipertensión",
+        "presión arterial",
+        "riesgo cardiovascular"
+      ]
+    },
+    {
+      "id": "topic-hta-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "Tratamiento y signos de alarma en HTA",
+      "summary": "Los cambios de estilo de vida, la terapia farmacológica escalonada y el reconocimiento de la emergencia hipertensiva son claves.",
+      "sourceIds": [
+        "src-hta"
+      ],
+      "keywords": [
+        "tratamiento",
+        "estilos de vida",
+        "emergencia hipertensiva"
+      ]
+    },
+    {
+      "id": "topic-climaterio",
+      "areaId": "area-cronicas",
+      "title": "Climaterio y menopausia",
+      "summary": "El diagnóstico es clínico; el manejo combina estilos de vida, evaluación de síntomas y terapia hormonal individualizada cuando corresponde.",
+      "sourceIds": [
+        "src-climaterio"
+      ],
+      "keywords": [
+        "climaterio",
+        "menopausia",
+        "terapia hormonal",
+        "MRS"
+      ]
+    },
+    {
+      "id": "topic-adolescente-atencion",
+      "areaId": "area-adolescencia-vih",
+      "title": "Atención integral del adolescente",
+      "summary": "La NTS 157 organiza paquetes de atención, servicios diferenciados y un enfoque de derechos para adolescentes de 12 a 17 años.",
+      "sourceIds": [
+        "src-adolescente-nts"
+      ],
+      "keywords": [
+        "adolescente",
+        "atención integral",
+        "servicios diferenciados",
+        "confidencialidad"
+      ]
+    },
+    {
+      "id": "topic-adolescente-proceso",
+      "areaId": "area-adolescencia-vih",
+      "title": "Proceso de atención y consejería",
+      "summary": "Captación, admisión, evaluación biopsicosocial, plan individual y referencia sostienen la continuidad del cuidado adolescente.",
+      "sourceIds": [
+        "src-adolescente-nts"
+      ],
+      "keywords": [
+        "captación",
+        "consejería",
+        "plan de atención",
+        "referencia"
+      ]
+    },
+    {
+      "id": "topic-nino-expuesto",
+      "areaId": "area-adolescencia-vih",
+      "title": "Niño expuesto al VIH",
+      "summary": "El hijo de madre con VIH requiere profilaxis, PCR y seguimiento hasta conocer su estado serológico definitivo.",
+      "sourceIds": [
+        "src-nino-expuesto"
+      ],
+      "keywords": [
+        "VIH",
+        "transmisión vertical",
+        "profilaxis",
+        "PCR"
+      ]
+    },
+    {
+      "id": "topic-sifilis",
+      "areaId": "area-adolescencia-vih",
+      "title": "Sífilis congénita",
+      "summary": "La sífilis congénita se diagnostica por criterios epidemiológicos, serológicos, clínicos o directos y requiere tratamiento oportuno.",
+      "sourceIds": [
+        "src-sifilis"
+      ],
+      "keywords": [
+        "sífilis",
+        "congénita",
+        "VDRL",
+        "penicilina"
+      ]
+    },
+    {
+      "id": "topic-vih-navv",
+      "areaId": "area-adolescencia-vih",
+      "title": "VIH en niñas, niños y adolescentes",
+      "summary": "El equipo multidisciplinario, el TAR y el seguimiento virológico mejoran la supervivencia y la calidad de vida.",
+      "sourceIds": [
+        "src-vih-navv"
+      ],
+      "keywords": [
+        "VIH pediátrico",
+        "TAR",
+        "carga viral",
+        "adherencia"
+      ]
+    },
+    {
+      "id": "topic-mci-gestion",
+      "areaId": "area-mci",
+      "title": "Organización territorial y redes integradas",
+      "summary": "El MCI organiza el cuidado en un territorio y una población asignada, con redes integradas y flujos de atención centrados en la persona.",
+      "sourceIds": [
+        "src-mci"
+      ],
+      "keywords": [
+        "RIS",
+        "territorio",
+        "redes integradas",
+        "gestión local"
+      ]
+    },
+    {
+      "id": "topic-mci-financiamiento",
+      "areaId": "area-mci",
+      "title": "Gestión de la calidad y financiamiento",
+      "summary": "La gestión por resultados, la calidad, la información y el aseguramiento universal sostienen la implementación del modelo.",
+      "sourceIds": [
+        "src-mci"
+      ],
+      "keywords": [
+        "calidad",
+        "financiamiento",
+        "aseguramiento",
+        "incentivos"
+      ]
     }
   ],
-  sheets: [
+  "sheets": [
     {
-      id: "sheet-aps-01",
-      topicId: "topic-aps-atributos",
-      areaId: "area-aps",
-      title: "Una APS fuerte no es un consultorio de segunda",
-      kicker: "Atención primaria · Fundamentos",
-      minutes: 6,
-      level: "Base",
-      summary: "La atención primaria no es una versión reducida de la atención especializada. Es el lugar donde la persona entra al sistema, construye una relación longitudinal y recibe cuidado integral con coordinación.",
-      keyConcepts: [
+      "id": "sheet-aps-01",
+      "topicId": "topic-aps-atributos",
+      "areaId": "area-aps",
+      "title": "Una APS fuerte no es un consultorio de segunda",
+      "kicker": "Atención primaria · Fundamentos",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La atención primaria no es una versión reducida de la atención especializada. Es el lugar donde la persona entra al sistema, construye una relación longitudinal y recibe cuidado integral con coordinación.",
+      "keyConcepts": [
         "La APS es la puerta de entrada y el eje organizador del sistema.",
         "Su fuerza depende de atributos, no solo de recursos.",
         "Una APS sólida se asocia con mejores resultados y mayor eficiencia.",
         "El foco es la persona y su contexto, no la enfermedad aislada."
       ],
-      sections: [
+      "sections": [
         {
-          title: "De la enfermedad a la persona",
-          depth: "core",
-          body: [
+          "title": "De la enfermedad a la persona",
+          "depth": "core",
+          "body": [
             "La atención primaria de salud (APS) es el primer nivel de contacto de la persona con el sistema sanitario. No debe entenderse como una atención empobrecida o como un simple filtro administrativo. Es el espacio donde se resuelven las necesidades de salud más frecuentes y desde donde se organiza la continuidad del cuidado.",
             "El artículo de referencia recuerda que una APS fuerte se asocia con mejores resultados en salud y con un uso más eficiente de los recursos. La diferencia no está solo en el edificio o en la especialidad del profesional, sino en cómo se organiza la atención y en la relación que construye con la población."
           ]
         },
         {
-          title: "Los cuatro atributos de Starfield",
-          depth: "core",
-          table: {
-            headers: ["Atributo", "Pregunta que responde"],
-            rows: [
-              ["Accesibilidad y primer contacto", "¿Puede la persona entrar al sistema con facilidad y por el nivel adecuado?"],
-              ["Longitudinalidad", "¿Existe una relación personal y continua a lo largo del tiempo?"],
-              ["Integralidad", "¿Se responde a las necesidades de salud más frecuentes de la comunidad?"],
-              ["Coordinación", "¿Se articulan primer nivel y especialistas sin fragmentar la atención?"]
+          "title": "Los cuatro atributos de Starfield",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Atributo",
+              "Pregunta que responde"
+            ],
+            "rows": [
+              [
+                "Accesibilidad y primer contacto",
+                "¿Puede la persona entrar al sistema con facilidad y por el nivel adecuado?"
+              ],
+              [
+                "Longitudinalidad",
+                "¿Existe una relación personal y continua a lo largo del tiempo?"
+              ],
+              [
+                "Integralidad",
+                "¿Se responde a las necesidades de salud más frecuentes de la comunidad?"
+              ],
+              [
+                "Coordinación",
+                "¿Se articulan primer nivel y especialistas sin fragmentar la atención?"
+              ]
             ]
           },
-          body: [
+          "body": [
             "Los cuatro atributos se complementan. Una puerta abierta sin continuidad produce atenciones aisladas; una relación continua sin coordinación no evita la fragmentación; y una cartera amplia sin acceso real no llega a quienes más la necesitan."
           ]
         },
         {
-          title: "Qué cambia en la práctica",
-          depth: "full",
-          bullets: [
+          "title": "Qué cambia en la práctica",
+          "depth": "full",
+          "bullets": [
             "Se pregunta por el contexto familiar, laboral y comunitario, no solo por el síntoma.",
             "Se prioriza el vínculo y el seguimiento por encima de la atención puntual.",
             "Se coordina con otros niveles y sectores en lugar de derivar sin retorno de información.",
             "Se identifican necesidades de la población asignada y se planifican acciones de promoción y prevención."
           ],
-          callout: {
-            tone: "info",
-            title: "Idea para retener",
-            text: "La APS no compite con la especializada: la organiza y la complementa. Su valor está en la continuidad y en la integralidad del cuidado."
+          "callout": {
+            "tone": "info",
+            "title": "Idea para retener",
+            "text": "La APS no compite con la especializada: la organiza y la complementa. Su valor está en la continuidad y en la integralidad del cuidado."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-aps-02",
-      topicId: "topic-aps-atributos",
-      areaId: "area-aps",
-      title: "Accesibilidad y longitudinalidad: entrar y permanecer",
-      kicker: "Atención primaria · Atributos",
-      minutes: 7,
-      level: "Base",
-      summary: "La accesibilidad elimina barreras para llegar al servicio; la longitudinalidad construye una relación estable en el tiempo. Sin la primera no se entra; sin la segunda no se acompaña.",
-      keyConcepts: [
+      "id": "sheet-aps-02",
+      "topicId": "topic-aps-atributos",
+      "areaId": "area-aps",
+      "title": "Accesibilidad y longitudinalidad: entrar y permanecer",
+      "kicker": "Atención primaria · Atributos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La accesibilidad elimina barreras para llegar al servicio; la longitudinalidad construye una relación estable en el tiempo. Sin la primera no se entra; sin la segunda no se acompaña.",
+      "keyConcepts": [
         "Accesibilidad incluye barreras económicas, geográficas, organizativas y culturales.",
         "Primer contacto implica un punto de entrada identificable y resolutivo.",
         "Longitudinalidad es una relación continua, no solo una historia clínica compartida.",
         "La continuidad mejora la confianza, la información y la oportunidad del cuidado."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Accesibilidad no es solo tener una puerta",
-          depth: "core",
-          body: [
+          "title": "Accesibilidad no es solo tener una puerta",
+          "depth": "core",
+          "body": [
             "El artículo describe la accesibilidad como la facilidad con la que el paciente puede utilizar los servicios. No basta con que el establecimiento exista: importan los horarios, el tiempo de espera, la distancia, los costos indirectos, la información disponible y la pertinencia cultural.",
             "El primer contacto es el punto de entrada al sistema. Cuando la persona enferma, debe saber dónde acudir y encontrar una respuesta que no la haga recorrer circuitos innecesarios. La APS actúa como puerta de entrada, pero también como lugar de resolución de lo frecuente."
           ],
-          bullets: [
+          "bullets": [
             "Barreras geográficas: distancia, transporte, tiempo de viaje.",
             "Barreras económicas: gasto directo e indirecto, pérdida de ingresos.",
             "Barreras organizativas: horarios, citas, colas, trámites.",
-            "Barreras culturales: idioma, trato, desconfianza, lack de pertinencia."
+            "Barreras culturales: idioma, trato, desconfianza, falta de pertinencia."
           ]
         },
         {
-          title: "Longitudinalidad: la persona a lo largo del tiempo",
-          depth: "core",
-          body: [
+          "title": "Longitudinalidad: la persona a lo largo del tiempo",
+          "depth": "core",
+          "body": [
             "La longitudinalidad es la relación personal y continua entre el equipo de salud y la persona. No se agota en la continuidad administrativa de una historia clínica: implica conocer a la persona, su familia y su entorno, y usar ese conocimiento para anticipar problemas y acompañar decisiones.",
             "La relación longitudinal permite ver la evolución de un problema, detectar cambios sutiles y evitar repeticiones innecesarias. También favorece la confianza, un elemento clave para hablar de temas sensibles y para sostener el cuidado en el tiempo."
-          ]
+          ],
+          "bullets": []
         },
         {
-          title: "Continuidad no es lo mismo que longitudinalidad",
-          depth: "full",
-          body: [
+          "title": "Continuidad no es lo mismo que longitudinalidad",
+          "depth": "full",
+          "body": [
             "La continuidad puede ser informativa, relacional o de gestión. La longitudinalidad se refiere a la relación estable entre una persona y un equipo a lo largo del tiempo. Un sistema puede compartir información y, aun así, ofrecer una experiencia fragmentada si la persona cambia de profesional en cada contacto.",
             "La APS fuerte busca ambas: que la información circule y que exista un vínculo humano que dé sentido a esa información."
           ],
-          callout: {
-            tone: "info",
-            title: "Ejemplo",
-            text: "Una gestante que conoce a su equipo, que recibe controles con continuidad y que sabe a quién llamar ante una alarma tiene más probabilidades de sostener el cuidado que una persona que empieza de cero en cada consulta."
-          }
+          "callout": {
+            "tone": "info",
+            "title": "Ejemplo",
+            "text": "Una gestante que conoce a su equipo, que recibe controles con continuidad y que sabe a quién llamar ante una alarma tiene más probabilidades de sostener el cuidado que una persona que empieza de cero en cada consulta."
+          },
+          "bullets": []
         }
       ],
-      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-aps-03",
-      topicId: "topic-aps-atributos",
-      areaId: "area-aps",
-      title: "Integralidad y coordinación: cuidar sin fragmentar",
-      kicker: "Atención primaria · Atributos",
-      minutes: 7,
-      level: "Intermedio",
-      summary: "La integralidad amplía la mirada a las necesidades frecuentes de la población; la coordinación conecta niveles, servicios e información para que el cuidado no se rompa en cada derivación.",
-      keyConcepts: [
+      "id": "sheet-aps-03",
+      "topicId": "topic-aps-atributos",
+      "areaId": "area-aps",
+      "title": "Integralidad y coordinación: cuidar sin fragmentar",
+      "kicker": "Atención primaria · Atributos",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La integralidad amplía la mirada a las necesidades frecuentes de la población; la coordinación conecta niveles, servicios e información para que el cuidado no se rompa en cada derivación.",
+      "keyConcepts": [
         "Integralidad no significa hacer todo, sino responder a las necesidades frecuentes con una cartera pertinente.",
         "Coordinación requiere comunicación, referencia y contrarreferencia.",
         "La información compartida es un soporte de la continuidad.",
         "La coordinación entre niveles evita duplicaciones y pérdidas de seguimiento."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Integralidad: una cartera que responde a la comunidad",
-          depth: "core",
-          body: [
+          "title": "Integralidad: una cartera que responde a la comunidad",
+          "depth": "core",
+          "body": [
             "La integralidad implica ofrecer un conjunto de servicios que cubra las necesidades de salud más frecuentes de la población, desde la promoción y la prevención hasta la recuperación y la rehabilitación. No quiere decir que el primer nivel resuelva todo: significa que organiza una respuesta integral y sabe cuándo complementarse con otros niveles.",
             "La cartera debe construirse con información sobre la población asignada. Una comunidad con alta carga de enfermedades crónicas, problemas de salud mental o violencia requiere respuestas distintas de otra con otras necesidades."
           ]
         },
         {
-          title: "Coordinación: el cuidado como una cadena",
-          depth: "core",
-          body: [
+          "title": "Coordinación: el cuidado como una cadena",
+          "depth": "core",
+          "body": [
             "La coordinación es la articulación entre los servicios para evitar la fragmentación. Incluye mecanismos de comunicación, referencia y contrarreferencia, y la posibilidad de que la información clínica relevante acompañe a la persona cuando cambia de nivel.",
             "El artículo subraya que la coordinación no se reduce a enviar una hoja de referencia. Requiere que el primer nivel y los especialistas compartan objetivos, información y seguimiento. Sin retorno de información, la APS pierde capacidad para continuar el cuidado."
           ],
-          bullets: [
+          "bullets": [
             "Referencia oportuna y con información clínica suficiente.",
             "Contrarreferencia que explique hallazgos, tratamiento y seguimiento.",
             "Canales de comunicación fluidos entre profesionales.",
@@ -368,154 +1909,203 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "El riesgo de la fragmentación",
-          depth: "full",
-          body: [
+          "title": "El riesgo de la fragmentación",
+          "depth": "full",
+          "body": [
             "Cuando cada servicio atiende una parte sin conocer el conjunto, la persona puede recibir indicaciones contradictorias, duplicar exámenes o quedar sin seguimiento. La fragmentación es especialmente costosa en enfermedades crónicas, embarazo, salud mental y situaciones de violencia.",
             "La coordinación también tiene una dimensión de equidad: las personas con menos recursos son las que más dependen de que el sistema las acompañe entre un nivel y otro."
           ],
-          callout: {
-            tone: "warn",
-            title: "No confundir",
-            text: "Derivar no es coordinar. La derivación sin comunicación ni seguimiento puede ser una forma de fragmentar el cuidado."
+          "callout": {
+            "tone": "warn",
+            "title": "No confundir",
+            "text": "Derivar no es coordinar. La derivación sin comunicación ni seguimiento puede ser una forma de fragmentar el cuidado."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4, 5] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-aps-04",
-      topicId: "topic-aps-sistemas",
-      areaId: "area-aps",
-      title: "APS y atención especializada: complementarias, no rivales",
-      kicker: "Atención primaria · Sistemas",
-      minutes: 6,
-      level: "Intermedio",
-      summary: "La APS y la atención especializada cumplen funciones distintas. Un sistema fuerte combina la resolutividad del primer nivel con el acceso oportuno a especialistas y a tecnología.",
-      keyConcepts: [
+      "id": "sheet-aps-04",
+      "topicId": "topic-aps-sistemas",
+      "areaId": "area-aps",
+      "title": "APS y atención especializada: complementarias, no rivales",
+      "kicker": "Atención primaria · Sistemas",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "La APS y la atención especializada cumplen funciones distintas. Un sistema fuerte combina la resolutividad del primer nivel con el acceso oportuno a especialistas y a tecnología.",
+      "keyConcepts": [
         "La APS se orienta a la persona y a la comunidad; la especializada, a problemas y órganos específicos.",
         "La APS resuelve lo frecuente y coordina; la especializada aporta experticia y tecnología.",
         "Un sistema sin APS fuerte tiende a la fragmentación y al uso ineficiente de recursos.",
         "La articulación entre niveles es parte del cuidado, no un trámite."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Dos funciones diferentes",
-          depth: "core",
-          table: {
-            headers: ["Dimensión", "APS", "Atención especializada"],
-            rows: [
-              ["Foco", "Persona, familia y comunidad", "Problema, órgano o enfermedad específica"],
-              ["Relación", "Continua y longitudinal", "Habitualmente episódica"],
-              ["Función", "Primer contacto, resolución de lo frecuente, coordinación", "Evaluación, tratamiento y tecnología especializada"],
-              ["Población", "Población asignada y su territorio", "Pacientes referidos o derivados"]
+          "title": "Dos funciones diferentes",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Dimensión",
+              "APS",
+              "Atención especializada"
+            ],
+            "rows": [
+              [
+                "Foco",
+                "Persona, familia y comunidad",
+                "Problema, órgano o enfermedad específica"
+              ],
+              [
+                "Relación",
+                "Continua y longitudinal",
+                "Habitualmente episódica"
+              ],
+              [
+                "Función",
+                "Primer contacto, resolución de lo frecuente, coordinación",
+                "Evaluación, tratamiento y tecnología especializada"
+              ],
+              [
+                "Población",
+                "Población asignada y su territorio",
+                "Pacientes referidos o derivados"
+              ]
             ]
           },
-          body: [
+          "body": [
             "La especializada no es un nivel superior en dignidad: es un nivel distinto de complejidad. Su valor está en la experticia y en la tecnología para problemas que requieren ese abordaje. La APS aporta la continuidad, el contexto y la coordinación que permiten que ese conocimiento llegue en el momento adecuado."
           ]
         },
         {
-          title: "Por qué una APS fuerte mejora el sistema",
-          depth: "core",
-          bullets: [
+          "title": "Por qué una APS fuerte mejora el sistema",
+          "depth": "core",
+          "bullets": [
             "Resuelve una parte importante de la demanda evitando recorridos innecesarios.",
             "Detecta problemas antes de que requieran atención de mayor complejidad.",
             "Coordina el uso de especialistas y exámenes, reduciendo duplicaciones.",
             "Mantiene el vínculo con la persona cuando el problema es crónico o complejo."
           ],
-          body: [
+          "body": [
             "El artículo de revisión sostiene que los sistemas con APS fuerte obtienen mejores resultados y son más eficientes. La razón no es que la APS haga el trabajo de todos, sino que organiza el cuidado de forma más coherente y cercana."
           ]
         },
         {
-          title: "La trampa de la demanda espontánea",
-          depth: "full",
-          body: [
+          "title": "La trampa de la demanda espontánea",
+          "depth": "full",
+          "body": [
             "Si la APS funciona solo como un consultorio que atiende demanda espontánea, pierde capacidad de anticipar y de coordinar. La agenda debe reservar espacio para el seguimiento, la prevención y las personas con mayor riesgo, no solo para quienes llegan primero.",
             "Un sistema centrado exclusivamente en la atención curativa y en el tercer nivel suele ser más costoso y menos equitativo. La APS fuerte desplaza el foco hacia la promoción, la prevención y el cuidado continuo."
           ],
-          callout: {
-            tone: "info",
-            title: "Para la práctica",
-            text: "Cuando derives, piensa en el circuito completo: quién recibe, qué información viaja, quién hace seguimiento y cómo vuelve la respuesta al primer nivel."
+          "callout": {
+            "tone": "info",
+            "title": "Para la práctica",
+            "text": "Cuando derives, piensa en el circuito completo: quién recibe, qué información viaja, quién hace seguimiento y cómo vuelve la respuesta al primer nivel."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3, 4] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-01",
-      topicId: "topic-mci-fundamentos",
-      areaId: "area-mci",
-      title: "Del enfoque curativo al cuidado integral",
-      kicker: "MCI · Fundamentos",
-      minutes: 7,
-      level: "Base",
-      summary: "El MCI propone cuidar a la persona, su familia y su comunidad a lo largo del curso de vida, actuando sobre determinantes y articulando promoción, prevención, recuperación y rehabilitación.",
-      keyConcepts: [
+      "id": "sheet-mci-01",
+      "topicId": "topic-mci-fundamentos",
+      "areaId": "area-mci",
+      "title": "Del enfoque curativo al cuidado integral",
+      "kicker": "MCI · Fundamentos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El MCI propone cuidar a la persona, su familia y su comunidad a lo largo del curso de vida, actuando sobre determinantes y articulando promoción, prevención, recuperación y rehabilitación.",
+      "keyConcepts": [
         "La salud se construye en la interacción de factores biológicos, ambientales, sociales y de acceso a servicios.",
         "El MCI supera la atención episódica centrada solo en la enfermedad.",
         "La persona, la familia y la comunidad son sujetos y escenarios del cuidado.",
         "El cuidado integral incluye promoción, prevención, recuperación y rehabilitación."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Una mirada más amplia de la salud",
-          depth: "core",
-          body: [
+          "title": "Una mirada más amplia de la salud",
+          "depth": "core",
+          "body": [
             "El Modelo de Cuidado Integral de Salud por Curso de Vida (MCI) parte de una idea sencilla: la salud no depende solo de lo que ocurre en el consultorio. Los resultados sanitarios se construyen en la interacción de factores protectores y de riesgo a lo largo de la vida, incluidos los determinantes sociales.",
             "Por eso, el modelo no se limita a tratar enfermedades. Busca comprender a la persona en su contexto, anticipar riesgos, promover hábitos saludables y garantizar continuidad cuando aparece un daño."
           ]
         },
         {
-          title: "Qué es el MCI",
-          depth: "core",
-          body: [
+          "title": "Qué es el MCI",
+          "depth": "core",
+          "body": [
             "El MCI es un conjunto de estrategias, normas, procedimientos, herramientas y recursos que, al complementarse, responden a las necesidades de salud de las personas, las familias y la comunidad. Acoge los atributos de la APS y enfatiza un vínculo de largo plazo entre las personas y los equipos multidisciplinarios.",
             "El cuidado se brinda en la oferta fija y móvil del primer nivel, pero también en el segundo y tercer nivel, con telemedicina cuando corresponde. El equipo es responsable de coordinar con la red para que el cuidado no se interrumpa."
           ]
         },
         {
-          title: "El enfoque de derechos y los determinantes",
-          depth: "full",
-          body: [
+          "title": "El enfoque de derechos y los determinantes",
+          "depth": "full",
+          "body": [
             "El enfoque de derechos implica garantizar acceso, no discriminación, no regresividad y priorización de las poblaciones más vulnerables. No basta con ofrecer servicios: el Estado debe crear condiciones para que las personas puedan vivir de forma saludable.",
             "El enfoque de curso de vida añade que cada etapa influye en la siguiente. Las exposiciones negativas pueden acumularse y formar cadenas de riesgo; las intervenciones oportunas también pueden producir efectos protectores duraderos."
           ],
-          callout: {
-            tone: "info",
-            title: "Idea central",
-            text: "El MCI no es solo un conjunto de prestaciones: es una forma de organizar el cuidado para que la persona sea vista en su historia y en su territorio."
+          "callout": {
+            "tone": "info",
+            "title": "Idea central",
+            "text": "El MCI no es solo un conjunto de prestaciones: es una forma de organizar el cuidado para que la persona sea vista en su historia y en su territorio."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 41, 42] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            35,
+            38,
+            41,
+            42
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-02",
-      topicId: "topic-mci-fundamentos",
-      areaId: "area-mci",
-      title: "Principios, atributos y cuatro componentes",
-      kicker: "MCI · Arquitectura",
-      minutes: 8,
-      level: "Intermedio",
-      summary: "El MCI se sostiene en principios de la APS renovada y se organiza en cuatro componentes interrelacionados: provisión, organización, gestión y financiamiento.",
-      keyConcepts: [
+      "id": "sheet-mci-02",
+      "topicId": "topic-mci-fundamentos",
+      "areaId": "area-mci",
+      "title": "Principios, atributos y cuatro componentes",
+      "kicker": "MCI · Arquitectura",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El MCI se sostiene en principios de la APS renovada y se organiza en cuatro componentes interrelacionados: provisión, organización, gestión y financiamiento.",
+      "keyConcepts": [
         "Integralidad, universalidad, calidad, corresponsabilidad, equidad, solidaridad y eficiencia.",
         "Accesibilidad, primer contacto, longitudinalidad, integralidad y coordinación.",
         "Provisión, organización, gestión y financiamiento son componentes del modelo.",
         "La corresponsabilidad implica que persona, familia y comunidad participan activamente."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Los principios del MCI",
-          depth: "core",
-          body: [
+          "title": "Los principios del MCI",
+          "depth": "core",
+          "body": [
             "El modelo adopta los principios de la APS renovada. La integralidad abarca promoción, prevención, recuperación y rehabilitación; la universalidad garantiza el derecho a la salud; la calidad integra dimensiones técnico-científicas, humanas y del entorno.",
             "La corresponsabilidad reconoce a la persona, la familia y la comunidad como socios activos. La equidad implica asignar recursos según necesidad, no dar lo mismo a todos. La solidaridad y la eficiencia completan el marco."
           ],
-          bullets: [
+          "bullets": [
             "Integralidad: cuidados completos y continuos.",
             "Universalidad: derecho a la salud y acceso equitativo.",
             "Calidad: técnica, humana y entorno.",
@@ -525,69 +2115,95 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Los cuatro componentes",
-          depth: "core",
-          table: {
-            headers: ["Componente", "Qué organiza"],
-            rows: [
-              ["Provisión del cuidado", "Qué cuidados se brindan y en qué escenarios: persona, familia, comunidad, hogar, escuela, trabajo."],
-              ["Organización", "Cómo se organizan los servicios y las redes para garantizar acceso y continuidad."],
-              ["Gestión", "Cómo se planifica, coordina, monitorea y evalúa el cuidado en el territorio."],
-              ["Financiamiento", "Cómo se asignan los recursos para sostener el cuidado y la equidad."]
+          "title": "Los cuatro componentes",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Componente",
+              "Qué organiza"
+            ],
+            "rows": [
+              [
+                "Provisión del cuidado",
+                "Qué cuidados se brindan y en qué escenarios: persona, familia, comunidad, hogar, escuela, trabajo."
+              ],
+              [
+                "Organización",
+                "Cómo se organizan los servicios y las redes para garantizar acceso y continuidad."
+              ],
+              [
+                "Gestión",
+                "Cómo se planifica, coordina, monitorea y evalúa el cuidado en el territorio."
+              ],
+              [
+                "Financiamiento",
+                "Cómo se asignan los recursos para sostener el cuidado y la equidad."
+              ]
             ]
           },
-          body: [
+          "body": [
             "Los componentes no funcionan por separado. Una buena provisión sin organización produce servicios aislados; una red sin financiamiento suficiente no puede sostener la continuidad; una gestión sin provisión pierde sentido para la persona."
           ]
         },
         {
-          title: "Los atributos que aterrizan el modelo",
-          depth: "full",
-          body: [
+          "title": "Los atributos que aterrizan el modelo",
+          "depth": "full",
+          "body": [
             "El MCI recoge los atributos de la APS: accesibilidad, primer contacto, longitudinalidad, integralidad y coordinación. A ellos suma la continuidad del cuidado, entendida como la experiencia coherente y conectada de eventos de salud a lo largo del tiempo.",
             "La formación del equipo multidisciplinario también es parte del modelo: no se puede exigir una APS integral con profesionales formados solo en una lógica hospitalaria y curativa."
           ],
-          callout: {
-            tone: "info",
-            title: "Para ordenar el estudio",
-            text: "Piensa en el MCI como una arquitectura: principios (por qué), atributos (cómo se vive el cuidado), componentes (con qué se organiza) y curso de vida (cuándo y con quién)."
+          "callout": {
+            "tone": "info",
+            "title": "Para ordenar el estudio",
+            "text": "Piensa en el MCI como una arquitectura: principios (por qué), atributos (cómo se vive el cuidado), componentes (con qué se organiza) y curso de vida (cuándo y con quién)."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [38, 41, 42, 43, 44] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            38,
+            41,
+            42,
+            43,
+            44
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-03",
-      topicId: "topic-mci-curso-vida",
-      areaId: "area-mci",
-      title: "Curso de vida: prenatal y primera infancia",
-      kicker: "MCI · Curso de vida",
-      minutes: 7,
-      level: "Base",
-      summary: "El periodo prenatal y los primeros años son etapas críticas. El cuidado preconcepcional, el control prenatal, el parto institucional y el desarrollo infantil sientan bases para toda la vida.",
-      keyConcepts: [
+      "id": "sheet-mci-03",
+      "topicId": "topic-mci-curso-vida",
+      "areaId": "area-mci",
+      "title": "Curso de vida: prenatal y primera infancia",
+      "kicker": "MCI · Curso de vida",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El periodo prenatal y los primeros años son etapas críticas. El cuidado preconcepcional, el control prenatal, el parto institucional y el desarrollo infantil sientan bases para toda la vida.",
+      "keyConcepts": [
         "El periodo prenatal es una etapa crítica del curso de vida.",
         "El cuidado comienza antes del embarazo y continúa durante y después de él.",
         "La familia y la comunidad son parte del cuidado de la gestante y del niño.",
         "El objetivo incluye desarrollo físico, cognitivo, emocional y social."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Prenatal: antes, durante y después",
-          depth: "core",
-          body: [
+          "title": "Prenatal: antes, durante y después",
+          "depth": "core",
+          "body": [
             "El MCI considera el periodo prenatal como una condición crítica que repercute en la persona, la familia y la comunidad. El cuidado comienza con la preparación preconcepcional, sigue con la atención prenatal y continúa en el parto, el puerperio y el cuidado del neonato.",
             "La provisión incluye control nutricional, actividad física, atención prenatal reenfocada, suplementación de hierro y ácido fólico, inmunización, apoyo psicológico, tamizajes, preparación para el parto, apego precoz y lactancia materna."
           ]
         },
         {
-          title: "Niñez: desarrollar capacidades",
-          depth: "core",
-          body: [
+          "title": "Niñez: desarrollar capacidades",
+          "depth": "core",
+          "body": [
             "En la niñez, el objetivo del cuidado integral es el desarrollo físico, cognitivo, emocional y social. Las intervenciones se brindan en el hogar, el establecimiento de salud, la institución educativa y la comunidad.",
             "La familia cumple un papel central: apoyo para el cuidado, prevención de riesgos en el hogar, estimulación temprana, alimentación adecuada y vigilancia de signos de alarma. La comunidad aporta entornos seguros y oportunidades de desarrollo."
           ],
-          bullets: [
+          "bullets": [
             "Promoción del desarrollo y del apego seguro.",
             "Prevención de enfermedades y de riesgos del entorno.",
             "Detección oportuna de problemas de desarrollo.",
@@ -595,164 +2211,209 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Por qué importa la etapa prenatal",
-          depth: "full",
-          body: [
+          "title": "Por qué importa la etapa prenatal",
+          "depth": "full",
+          "body": [
             "Las exposiciones durante el embarazo pueden influir en el desarrollo posterior. El MCI busca controlar y manejar las exposiciones que sufre el feto para que alcance un adecuado desarrollo psicomotor, emocional y social.",
             "Las casas de espera materna son un ejemplo de articulación entre el cuidado y el territorio: acercan a la gestante que vive lejos a un establecimiento con capacidad resolutiva cerca del parto."
           ],
-          callout: {
-            tone: "info",
-            title: "Continuidad",
-            text: "El cuidado prenatal no termina con el parto. La transición a puerperio, lactancia y cuidado del neonato es parte de la misma trayectoria."
+          "callout": {
+            "tone": "info",
+            "title": "Continuidad",
+            "text": "El cuidado prenatal no termina con el parto. La transición a puerperio, lactancia y cuidado del neonato es parte de la misma trayectoria."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [49, 50, 51] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            49,
+            50,
+            51
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-04",
-      topicId: "topic-mci-curso-vida",
-      areaId: "area-mci",
-      title: "Adolescencia, adultez y vejez",
-      kicker: "MCI · Curso de vida",
-      minutes: 6,
-      level: "Intermedio",
-      summary: "Las etapas posteriores no son un simple transcurso de tiempo: cada una tiene riesgos, oportunidades y necesidades de cuidado que condicionan la siguiente.",
-      keyConcepts: [
+      "id": "sheet-mci-04",
+      "topicId": "topic-mci-curso-vida",
+      "areaId": "area-mci",
+      "title": "Adolescencia, adultez y vejez",
+      "kicker": "MCI · Curso de vida",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "Las etapas posteriores no son un simple transcurso de tiempo: cada una tiene riesgos, oportunidades y necesidades de cuidado que condicionan la siguiente.",
+      "keyConcepts": [
         "La adolescencia es una etapa de oportunidades y de exposición a riesgos.",
         "La adultez concentra la carga de enfermedades crónicas y factores de riesgo.",
         "La vejez exige cuidar funcionalidad, autonomía y calidad de vida.",
         "La continuidad entre etapas permite anticipar y no solo reaccionar."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Adolescencia: anticipar trayectorias",
-          depth: "core",
-          body: [
+          "title": "Adolescencia: anticipar trayectorias",
+          "depth": "core",
+          "body": [
             "La adolescencia se caracteriza por cambios físicos, emocionales y sociales, y por una mayor exposición a conductas de riesgo. El cuidado integral busca fortalecer factores protectores, promover salud mental, prevenir consumo de sustancias y acompañar la construcción de autonomía.",
             "La escuela, la familia y la comunidad son escenarios clave. La atención no debería limitarse a lo reproductivo o a lo curativo: también importa el desarrollo socioemocional y la prevención de violencia."
           ]
         },
         {
-          title: "Adultez: carga crónica y cuidado continuo",
-          depth: "core",
-          body: [
+          "title": "Adultez: carga crónica y cuidado continuo",
+          "depth": "core",
+          "body": [
             "En la adultez, las enfermedades no transmisibles y sus factores de riesgo adquieren peso. El MCI propone identificar riesgos, promover hábitos saludables, controlar condiciones crónicas y mantener la continuidad del cuidado.",
             "El trabajo y el rol familiar pueden convertirse en barreras para asistir a controles. La organización de servicios debe facilitar el acceso y evitar que la persona abandone el seguimiento por incompatibilidad de horarios o largas esperas."
           ]
         },
         {
-          title: "Vejez: funcionalidad y autonomía",
-          depth: "full",
-          body: [
+          "title": "Vejez: funcionalidad y autonomía",
+          "depth": "full",
+          "body": [
             "En la persona adulta mayor, el objetivo no es solo prolongar la vida, sino preservar la funcionalidad, la autonomía y la calidad de vida. El cuidado incluye prevención, manejo de enfermedades crónicas, rehabilitación y, cuando corresponde, cuidados paliativos.",
             "La familia y la comunidad cumplen un papel central. También es fundamental detectar situaciones de dependencia, sobrecarga del cuidador y riesgo de violencia o abandono."
           ],
-          bullets: [
+          "bullets": [
             "Valorar funcionalidad y autonomía, no solo diagnósticos.",
             "Prevenir caídas y complicaciones de enfermedades crónicas.",
             "Acompañar al cuidador y evitar su sobrecarga.",
             "Respetar preferencias y proyectos de vida."
           ],
-          callout: {
-            tone: "info",
-            title: "Mirada de curso de vida",
-            text: "Una intervención en la infancia puede modificar la trayectoria adulta; una intervención en la adultez puede cambiar la experiencia de la vejez. Esa es la lógica de anticipación del MCI."
+          "callout": {
+            "tone": "info",
+            "title": "Mirada de curso de vida",
+            "text": "Una intervención en la infancia puede modificar la trayectoria adulta; una intervención en la adultez puede cambiar la experiencia de la vejez. Esa es la lógica de anticipación del MCI."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [49, 52, 53, 54] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            49,
+            52,
+            53,
+            54
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-05",
-      topicId: "topic-mci-familia-comunidad",
-      areaId: "area-mci",
-      title: "Familia y ciclo vital: el cuidado en casa",
-      kicker: "MCI · Familia y comunidad",
-      minutes: 7,
-      level: "Intermedio",
-      summary: "La familia es sujeto y escenario de cuidado. Conocer su ciclo vital, su dinámica y sus redes permite anticipar riesgos y acompañar transiciones.",
-      keyConcepts: [
+      "id": "sheet-mci-05",
+      "topicId": "topic-mci-familia-comunidad",
+      "areaId": "area-mci",
+      "title": "Familia y ciclo vital: el cuidado en casa",
+      "kicker": "MCI · Familia y comunidad",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La familia es sujeto y escenario de cuidado. Conocer su ciclo vital, su dinámica y sus redes permite anticipar riesgos y acompañar transiciones.",
+      "keyConcepts": [
         "La familia es sujeto y escenario de cuidado.",
         "El ciclo vital familiar ayuda a comprender transiciones y tareas.",
         "La ficha familiar permite conocer la dinámica y los riesgos del hogar.",
         "El cuidado no es unidireccional: la persona también cuida de sí misma y de su entorno."
       ],
-      sections: [
+      "sections": [
         {
-          title: "La familia como sujeto y escenario",
-          depth: "core",
-          body: [
+          "title": "La familia como sujeto y escenario",
+          "depth": "core",
+          "body": [
             "En el MCI, la familia no es solo un dato del paciente. Es sujeto de cuidado y escenario donde ocurre gran parte del cuidado cotidiano. La familia puede proteger, pero también puede ser fuente de riesgo o de sobrecarga.",
             "El cuidado es bidireccional: la persona cuida de sí misma, la familia cuida a sus integrantes y la comunidad cuida a las familias. Esa reciprocidad es la base de la corresponsabilidad."
           ]
         },
         {
-          title: "El ciclo vital familiar",
-          depth: "core",
-          body: [
+          "title": "El ciclo vital familiar",
+          "depth": "core",
+          "body": [
             "El ciclo vital familiar permite ordenar las transiciones: formación de la pareja, expansión con la llegada de los hijos, dispersión cuando los hijos se independizan y contracción en etapas posteriores. Cada etapa trae tareas y riesgos distintos.",
             "La ficha familiar ayuda a registrar la composición del hogar, las condiciones de vida, los factores de riesgo y las redes de apoyo. No es un formulario burocrático: es una herramienta para comprender el contexto y planificar el cuidado."
           ],
-          table: {
-            headers: ["Etapa", "Transición típica"],
-            rows: [
-              ["Formación", "Construcción de la pareja y del proyecto familiar."],
-              ["Expansión", "Llegada de hijos y reorganización de roles."],
-              ["Dispersión", "Salida de los hijos y nuevos equilibrios."],
-              ["Contracción", "Envejecimiento, pérdidas y reorganización del cuidado."]
+          "table": {
+            "headers": [
+              "Etapa",
+              "Transición típica"
+            ],
+            "rows": [
+              [
+                "Formación",
+                "Construcción de la pareja y del proyecto familiar."
+              ],
+              [
+                "Expansión",
+                "Llegada de hijos y reorganización de roles."
+              ],
+              [
+                "Dispersión",
+                "Salida de los hijos y nuevos equilibrios."
+              ],
+              [
+                "Contracción",
+                "Envejecimiento, pérdidas y reorganización del cuidado."
+              ]
             ]
           }
         },
         {
-          title: "Familia, riesgo y apoyo",
-          depth: "full",
-          body: [
+          "title": "Familia, riesgo y apoyo",
+          "depth": "full",
+          "body": [
             "La evaluación familiar no busca etiquetar, sino identificar recursos y necesidades. Una familia con buenas redes puede sostener mejor un tratamiento; una familia sobrecargada puede necesitar apoyo para continuar cuidando.",
             "En situaciones de violencia, la familia puede ser un espacio de riesgo. El equipo debe detectar señales, activar rutas de protección y no limitarse a una intervención individual."
           ],
-          callout: {
-            tone: "warn",
-            title: "Cuidado con la sobrecarga",
-            text: "Cuando el cuidado recae en una sola persona, la familia puede parecer disponible pero estar al límite. Preguntar por la sobrecarga también es cuidar."
+          "callout": {
+            "tone": "warn",
+            "title": "Cuidado con la sobrecarga",
+            "text": "Cuando el cuidado recae en una sola persona, la familia puede parecer disponible pero estar al límite. Preguntar por la sobrecarga también es cuidar."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [51, 54, 55, 56, 57] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            51,
+            54,
+            55,
+            56,
+            57
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mci-06",
-      topicId: "topic-mci-familia-comunidad",
-      areaId: "area-mci",
-      title: "Comunidad, APOC y redes integradas",
-      kicker: "MCI · Territorio",
-      minutes: 8,
-      level: "Avanzado",
-      summary: "El MCI organiza el cuidado en un territorio y con una población asignada. La comunidad no es el escenario pasivo: participa, identifica necesidades y moviliza recursos.",
-      keyConcepts: [
+      "id": "sheet-mci-06",
+      "topicId": "topic-mci-familia-comunidad",
+      "areaId": "area-mci",
+      "title": "Comunidad, APOC y redes integradas",
+      "kicker": "MCI · Territorio",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "El MCI organiza el cuidado en un territorio y con una población asignada. La comunidad no es el escenario pasivo: participa, identifica necesidades y moviliza recursos.",
+      "keyConcepts": [
         "La comunidad es sujeto y escenario del cuidado.",
         "APOC articula la atención primaria con la comunidad y el territorio.",
         "Las RIS organizan servicios según necesidades de una población definida.",
         "La gestión territorial articula sectores y determinantes sociales."
       ],
-      sections: [
+      "sections": [
         {
-          title: "La comunidad no es un decorado",
-          depth: "core",
-          body: [
+          "title": "La comunidad no es un decorado",
+          "depth": "core",
+          "body": [
             "El MCI considera a la comunidad como sujeto de cuidado y escenario de intervención. No es solo el lugar donde vive la persona: es una red de relaciones, recursos y condiciones que influyen en su salud.",
             "La participación comunitaria permite identificar necesidades, priorizar problemas y movilizar recursos. También puede fortalecer la confianza en los servicios y mejorar la pertinencia cultural de las intervenciones."
           ]
         },
         {
-          title: "APOC y redes integradas",
-          depth: "core",
-          body: [
+          "title": "APOC y redes integradas",
+          "depth": "core",
+          "body": [
             "La Atención Primaria Orientada a la Comunidad (APOC) combina la atención individual con una mirada poblacional y comunitaria. Permite pasar de la consulta a la planificación de acciones para grupos y territorios.",
             "Las Redes Integradas de Salud (RIS) organizan servicios para una población definida, con una cartera que responde a sus necesidades. El primer nivel actúa como integrador y coordinador; los otros niveles complementan la atención cuando se requiere mayor complejidad."
           ],
-          bullets: [
+          "bullets": [
             "Población y territorio definidos.",
             "Cartera de servicios según necesidades.",
             "Primer nivel con capacidad resolutiva y función coordinadora.",
@@ -760,53 +2421,65 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Gestión territorial",
-          depth: "full",
-          body: [
+          "title": "Gestión territorial",
+          "depth": "full",
+          "body": [
             "La gestión territorial implica acuerdos entre actores, diagnóstico local, planificación y seguimiento de indicadores. Los determinantes sociales no se resuelven solo desde el sector salud: requieren educación, vivienda, trabajo, protección social y participación local.",
             "El equipo de salud puede facilitar ese trabajo, pero no reemplaza a los demás sectores. La salud pública se juega también en las decisiones que se toman fuera del consultorio."
           ],
-          callout: {
-            tone: "info",
-            title: "Del consultorio al territorio",
-            text: "Una ficha clínica describe a la persona; un mapa comunitario describe las oportunidades y barreras del entorno. El MCI necesita ambas miradas."
+          "callout": {
+            "tone": "info",
+            "title": "Del consultorio al territorio",
+            "text": "Una ficha clínica describe a la persona; un mapa comunitario describe las oportunidades y barreras del entorno. El MCI necesita ambas miradas."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59, 60, 61, 62] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            58,
+            59,
+            60,
+            61,
+            62
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-01",
-      topicId: "topic-audit-conceptos",
-      areaId: "area-audit",
-      title: "Tres patrones que conviene distinguir",
-      kicker: "AUDIT · Conceptos",
-      minutes: 7,
-      level: "Base",
-      summary: "El AUDIT ayuda a identificar consumo de riesgo, consumo perjudicial y posible dependencia. Son categorías relacionadas, pero no equivalentes.",
-      keyConcepts: [
+      "id": "sheet-audit-01",
+      "topicId": "topic-audit-conceptos",
+      "areaId": "area-audit",
+      "title": "Tres patrones que conviene distinguir",
+      "kicker": "AUDIT · Conceptos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El AUDIT ayuda a identificar consumo de riesgo, consumo perjudicial y posible dependencia. Son categorías relacionadas, pero no equivalentes.",
+      "keyConcepts": [
         "Consumo de riesgo: mayor probabilidad de consecuencias adversas.",
         "Consumo perjudicial: ya existen consecuencias físicas o mentales.",
         "Dependencia: patrón con pérdida de control, prioridad y síntomas de abstinencia.",
         "El tamizaje identifica probabilidad; no confirma un diagnóstico."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Un continuo, no tres cajas rígidas",
-          depth: "core",
-          body: [
+          "title": "Un continuo, no tres cajas rígidas",
+          "depth": "core",
+          "body": [
             "El manual del AUDIT distingue el consumo de riesgo, el consumo perjudicial y la dependencia de alcohol. El consumo de riesgo se asocia con una mayor probabilidad de consecuencias adversas, aunque todavía no se haya producido un daño evidente.",
             "El consumo perjudicial implica que ya existen consecuencias físicas o mentales. La dependencia es un patrón más complejo, con síntomas como deseo intenso, pérdida de control, prioridad del consumo sobre otras actividades, tolerancia y abstinencia."
           ]
         },
         {
-          title: "Por qué importa tamizar",
-          depth: "core",
-          body: [
+          "title": "Por qué importa tamizar",
+          "depth": "core",
+          "body": [
             "Si el personal de salud pregunta solo a quienes “parecen” tener un problema con la bebida, se pierde a muchas personas con consumo de riesgo. El AUDIT fue diseñado como un método simple de tamizaje para identificar el consumo excesivo y apoyar una evaluación breve.",
             "El instrumento no sustituye una entrevista clínica ni un diagnóstico. Su función es detectar probabilidad y orientar el nivel de intervención."
           ],
-          bullets: [
+          "bullets": [
             "Identificar personas que podrían beneficiarse de una intervención breve.",
             "Orientar la intensidad del abordaje según la puntuación.",
             "Abrir una conversación sobre consumo sin estigmatizar.",
@@ -814,61 +2487,87 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "No todo consumo es igual",
-          depth: "full",
-          body: [
+          "title": "No todo consumo es igual",
+          "depth": "full",
+          "body": [
             "Una persona puede beber ocasionalmente sin cumplir criterios de riesgo; otra puede tener un patrón de atracones con consecuencias importantes; otra puede presentar dependencia. La entrevista clínica y el contexto ayudan a interpretar el resultado.",
             "El manual insiste en que la puntuación más alta indica mayor probabilidad de problemas y mayor necesidad de tratamiento intensivo, pero no reemplaza el juicio clínico."
           ],
-          callout: {
-            tone: "warn",
-            title: "Lenguaje",
-            text: "Evita etiquetar a la persona como “alcohólica” a partir de una puntuación. Habla de consumo de riesgo, consumo perjudicial o posible dependencia, y ofrece una ruta de apoyo."
+          "callout": {
+            "tone": "warn",
+            "title": "Lenguaje",
+            "text": "Evita etiquetar a la persona como “alcohólica” a partir de una puntuación. Habla de consumo de riesgo, consumo perjudicial o posible dependencia, y ofrece una ruta de apoyo."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6, 7, 8] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-02",
-      topicId: "topic-audit-conceptos",
-      areaId: "area-audit",
-      title: "Qué mide el AUDIT y cómo se administra",
-      kicker: "AUDIT · Instrumento",
-      minutes: 8,
-      level: "Base",
-      summary: "Diez preguntas exploran consumo, síntomas de dependencia y consecuencias. Una administración cuidadosa mejora la sinceridad y la calidad de la información.",
-      keyConcepts: [
+      "id": "sheet-audit-02",
+      "topicId": "topic-audit-conceptos",
+      "areaId": "area-audit",
+      "title": "Qué mide el AUDIT y cómo se administra",
+      "kicker": "AUDIT · Instrumento",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "Diez preguntas exploran consumo, síntomas de dependencia y consecuencias. Una administración cuidadosa mejora la sinceridad y la calidad de la información.",
+      "keyConcepts": [
         "Tres dominios: consumo, dependencia y consecuencias relacionadas.",
         "Las preguntas 1-3 exploran cantidad y frecuencia.",
         "Las preguntas 4-6 exploran síntomas de dependencia.",
         "Las preguntas 7-10 exploran problemas y consecuencias."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Los tres dominios",
-          depth: "core",
-          table: {
-            headers: ["Preguntas", "Dominio", "Qué explora"],
-            rows: [
-              ["1-3", "Consumo", "Frecuencia, cantidad habitual y episodios intensos."],
-              ["4-6", "Dependencia", "Control, interferencia con obligaciones y necesidad de beber al despertar."],
-              ["7-10", "Consecuencias", "Culpa, lagunas, lesiones y preocupación de otras personas."]
+          "title": "Los tres dominios",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Preguntas",
+              "Dominio",
+              "Qué explora"
+            ],
+            "rows": [
+              [
+                "1-3",
+                "Consumo",
+                "Frecuencia, cantidad habitual y episodios intensos."
+              ],
+              [
+                "4-6",
+                "Dependencia",
+                "Control, interferencia con obligaciones y necesidad de beber al despertar."
+              ],
+              [
+                "7-10",
+                "Consecuencias",
+                "Culpa, lagunas, lesiones y preocupación de otras personas."
+              ]
             ]
           },
-          body: [
+          "body": [
             "El AUDIT no solo mide cuánto se bebe. También explora patrones de pérdida de control, consecuencias y señales de dependencia. Por eso una puntuación total puede ser similar en personas con perfiles muy distintos.",
             "El manual recomienda revisar las preguntas individuales, no solo el total. Las respuestas a los ítems de dependencia y de daño aportan información clave para decidir el abordaje."
           ]
         },
         {
-          title: "Una conversación, no un interrogatorio",
-          depth: "core",
-          body: [
+          "title": "Una conversación, no un interrogatorio",
+          "depth": "core",
+          "body": [
             "El AUDIT puede aplicarse mediante entrevista oral o auto-pase. La entrevista permite aclarar respuestas ambiguas; el auto-pase puede ser más rápido y favorecer la confidencialidad, pero requiere capacidad de lectura y comprensión.",
             "Antes de aplicarlo, explica por qué se pregunta por alcohol, que la información es confidencial y que no se busca juzgar. La persona debe estar en condiciones de responder, no intoxicada y no en una urgencia médica."
           ],
-          bullets: [
+          "bullets": [
             "Preséntalo como parte del cuidado habitual, no como una acusación.",
             "Aclara qué se considera una bebida estándar en el contexto local.",
             "Lee las preguntas tal como están escritas y mantén el orden.",
@@ -876,123 +2575,177 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "La consumición estándar",
-          depth: "full",
-          body: [
+          "title": "La consumición estándar",
+          "depth": "full",
+          "body": [
             "Las preguntas 2 y 3 usan consumiciones o bebidas estándar. El manual explica que una consumición equivale aproximadamente a 10 gramos de alcohol puro, aunque la medida local puede variar. La equivalencia debe adaptarse a las bebidas y recipientes habituales del país.",
             "Si la persona no comprende la medida, usa ejemplos concretos y verifica que la respuesta se refiera al mismo volumen. Una mala comprensión de la unidad puede distorsionar la puntuación."
           ],
-          callout: {
-            tone: "info",
-            title: "Dato práctico",
-            text: "El AUDIT completo puede completarse en unos minutos y puntuarse rápidamente. La calidad depende más de la conversación que de la velocidad."
+          "callout": {
+            "tone": "info",
+            "title": "Dato práctico",
+            "text": "El AUDIT completo puede completarse en unos minutos y puntuarse rápidamente. La calidad depende más de la conversación que de la velocidad."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [15, 16, 17, 18, 19] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-03",
-      topicId: "topic-audit-aplicacion",
-      areaId: "area-audit",
-      title: "Puntuación: leer el total y los ítems",
-      kicker: "AUDIT · Puntuación",
-      minutes: 8,
-      level: "Intermedio",
-      summary: "Cada pregunta puntúa de 0 a 4. El total orienta, pero los ítems de dependencia y daño pueden cambiar la conducta clínica.",
-      keyConcepts: [
+      "id": "sheet-audit-03",
+      "topicId": "topic-audit-aplicacion",
+      "areaId": "area-audit",
+      "title": "Puntuación: leer el total y los ítems",
+      "kicker": "AUDIT · Puntuación",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Cada pregunta puntúa de 0 a 4. El total orienta, pero los ítems de dependencia y daño pueden cambiar la conducta clínica.",
+      "keyConcepts": [
         "Cada ítem puntúa de 0 a 4; el total va de 0 a 40.",
         "Un total ≥8 sugiere consumo de riesgo o perjudicial y posible dependencia.",
         "En mujeres y varones mayores de 65 se recomienda un corte de 7.",
         "Los ítems 4-6 y 9-10 merecen revisión específica."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Cómo se suma",
-          depth: "core",
-          body: [
+          "title": "Cómo se suma",
+          "depth": "core",
+          "body": [
             "Cada respuesta tiene una puntuación de 0 a 4. Se suman los diez ítems para obtener un total entre 0 y 40. Las preguntas 9 y 10 usan categorías de 0, 2 o 4, porque exploran lesiones y preocupación de terceros.",
             "El manual recomienda un punto de corte de 8 para identificar consumo de riesgo, consumo perjudicial y posible dependencia. Un corte de 10 aumenta la especificidad, aunque reduce la sensibilidad."
           ]
         },
         {
-          title: "Ajustes por población",
-          depth: "core",
-          body: [
+          "title": "Ajustes por población",
+          "depth": "core",
+          "body": [
             "Debido a diferencias de peso y metabolismo, el manual sugiere reducir el corte a 7 para todas las mujeres y para varones mayores de 65. La elección final debe considerar los estándares locales y el juicio clínico.",
             "Un mismo total puede significar cosas distintas según el patrón de respuestas. Por eso conviene revisar los ítems de consumo intenso, dependencia y consecuencias."
           ],
-          table: {
-            headers: ["Puntuación", "Lectura orientativa"],
-            rows: [
-              ["0-7", "Bajo riesgo o abstinencia; reforzar hábitos saludables."],
-              ["8-15", "Consumo de riesgo; consejo simple y educación."],
-              ["16-19", "Terapia breve y monitorización continuada."],
-              ["20 o más", "Evaluación diagnóstica especializada."]
+          "table": {
+            "headers": [
+              "Puntuación",
+              "Lectura orientativa"
+            ],
+            "rows": [
+              [
+                "0-7",
+                "Bajo riesgo o abstinencia; reforzar hábitos saludables."
+              ],
+              [
+                "8-15",
+                "Consumo de riesgo; consejo simple y educación."
+              ],
+              [
+                "16-19",
+                "Terapia breve y monitorización continuada."
+              ],
+              [
+                "20 o más",
+                "Evaluación diagnóstica especializada."
+              ]
             ]
           }
         },
         {
-          title: "Los ítems que no conviene ignorar",
-          depth: "full",
-          bullets: [
+          "title": "Los ítems que no conviene ignorar",
+          "depth": "full",
+          "bullets": [
             "Pregunta 2 o 3 con puntuación ≥1: consumo en nivel de riesgo.",
             "Preguntas 4-6 con puntuación >0: posible inicio de dependencia.",
             "Preguntas 7-10 con puntuación >0: ya hay consecuencias relacionadas.",
             "Preguntas 9-10: lesiones y preocupación de otras personas."
           ],
-          body: [
+          "body": [
             "El manual señala que una puntuación alta en los ítems de dependencia puede justificar el nivel máximo de intervención, incluso si el total no es extremadamente alto. La interpretación es clínica, no mecánica."
           ],
-          callout: {
-            tone: "warn",
-            title: "El total no lo explica todo",
-            text: "Dos personas con 12 puntos pueden necesitar respuestas distintas si una presenta síntomas de dependencia y la otra solo consumo intenso ocasional."
+          "callout": {
+            "tone": "warn",
+            "title": "El total no lo explica todo",
+            "text": "Dos personas con 12 puntos pueden necesitar respuestas distintas si una presenta síntomas de dependencia y la otra solo consumo intenso ocasional."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [20, 21] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-04",
-      topicId: "topic-audit-aplicacion",
-      areaId: "area-audit",
-      title: "Zonas de riesgo y respuesta escalonada",
-      kicker: "AUDIT · Interpretación",
-      minutes: 6,
-      level: "Intermedio",
-      summary: "Las cuatro zonas del AUDIT ayudan a decidir la intensidad de la respuesta: educación, consejo simple, terapia breve con seguimiento o derivación especializada.",
-      keyConcepts: [
+      "id": "sheet-audit-04",
+      "topicId": "topic-audit-aplicacion",
+      "areaId": "area-audit",
+      "title": "Zonas de riesgo y respuesta escalonada",
+      "kicker": "AUDIT · Interpretación",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "Las cuatro zonas del AUDIT ayudan a decidir la intensidad de la respuesta: educación, consejo simple, terapia breve con seguimiento o derivación especializada.",
+      "keyConcepts": [
         "Zona I: bajo riesgo o abstinencia; educación y refuerzo.",
         "Zona II: consejo simple y materiales educativos.",
         "Zona III: consejo, terapia breve y monitorización.",
         "Zona IV: derivación para evaluación diagnóstica y tratamiento."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Las cuatro zonas",
-          depth: "core",
-          table: {
-            headers: ["Zona", "Puntuación", "Respuesta orientativa"],
-            rows: [
-              ["I", "0-7", "Educación sobre alcohol y hábitos de bajo riesgo."],
-              ["II", "8-15", "Consejo simple, feedback y materiales educativos."],
-              ["III", "16-19", "Terapia breve y monitorización continuada."],
-              ["IV", "20-40", "Derivación a especialista para evaluación y tratamiento."]
+          "title": "Las cuatro zonas",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Zona",
+              "Puntuación",
+              "Respuesta orientativa"
+            ],
+            "rows": [
+              [
+                "I",
+                "0-7",
+                "Educación sobre alcohol y hábitos de bajo riesgo."
+              ],
+              [
+                "II",
+                "8-15",
+                "Consejo simple, feedback y materiales educativos."
+              ],
+              [
+                "III",
+                "16-19",
+                "Terapia breve y monitorización continuada."
+              ],
+              [
+                "IV",
+                "20-40",
+                "Derivación a especialista para evaluación y tratamiento."
+              ]
             ]
           },
-          body: [
+          "body": [
             "Las zonas no son compartimentos estancos. Son una guía para escalar la respuesta según la puntuación, los ítems individuales y el contexto clínico. La entrevista puede revelar dependencia o riesgo que justifiquen una respuesta más intensa."
           ]
         },
         {
-          title: "Qué significa “consejo simple”",
-          depth: "core",
-          body: [
+          "title": "Qué significa “consejo simple”",
+          "depth": "core",
+          "body": [
             "El consejo simple es una intervención breve, de baja intensidad, centrada en reducir el consumo de riesgo. Incluye feedback sobre el resultado, información sobre riesgos, una recomendación clara y apoyo para establecer un objetivo.",
             "No es una charla moralizante. Es una conversación respetuosa que conecta el consumo con la salud y que ofrece una alternativa concreta."
           ],
-          bullets: [
+          "bullets": [
             "Presenta el resultado del tamizaje.",
             "Relaciona el consumo con riesgos o consecuencias concretas.",
             "Ofrece una recomendación y escucha la reacción.",
@@ -1000,110 +2753,144 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Cuando la zona no coincide con la impresión",
-          depth: "full",
-          body: [
+          "title": "Cuando la zona no coincide con la impresión",
+          "depth": "full",
+          "body": [
             "Si la puntuación no coincide con la evidencia clínica, revisa las respuestas, el contexto y los antecedentes. Una persona puede minimizar el consumo; otra puede haber tenido un periodo atípico de consumo intenso.",
             "El manual recomienda usar el juicio clínico y considerar la historia familiar, las condiciones médicas y la credibilidad de las respuestas. La zona orienta, no decide por el profesional."
           ],
-          callout: {
-            tone: "info",
-            title: "Regla útil",
-            text: "A mayor puntuación y más señales de dependencia, mayor intensidad de evaluación y apoyo. No dejes a una persona con posible dependencia solo con un folleto."
+          "callout": {
+            "tone": "info",
+            "title": "Regla útil",
+            "text": "A mayor puntuación y más señales de dependencia, mayor intensidad de evaluación y apoyo. No dejes a una persona con posible dependencia solo con un folleto."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-05",
-      topicId: "topic-audit-intervencion",
-      areaId: "area-audit",
-      title: "Intervención breve: acompañar el cambio",
-      kicker: "AUDIT · Intervención",
-      minutes: 7,
-      level: "Intermedio",
-      summary: "La intervención breve combina feedback, consejo, compromiso y seguimiento. Es útil para el consumo de riesgo y perjudicial, no sustituye el tratamiento de la dependencia.",
-      keyConcepts: [
+      "id": "sheet-audit-05",
+      "topicId": "topic-audit-intervencion",
+      "areaId": "area-audit",
+      "title": "Intervención breve: acompañar el cambio",
+      "kicker": "AUDIT · Intervención",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La intervención breve combina feedback, consejo, compromiso y seguimiento. Es útil para el consumo de riesgo y perjudicial, no sustituye el tratamiento de la dependencia.",
+      "keyConcepts": [
         "Duración variable: desde pocos minutos hasta varias sesiones.",
         "Elementos: feedback, riesgos, consejo, compromiso y objetivo.",
         "El estilo debe ser empático y no confrontacional.",
         "El seguimiento sostiene el cambio y permite ajustar el plan."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Una intervención pequeña con intención clara",
-          depth: "core",
-          body: [
+          "title": "Una intervención pequeña con intención clara",
+          "depth": "core",
+          "body": [
             "Las intervenciones breves son actividades de baja intensidad y corta duración. Pueden ir desde cinco minutos de consejo simple hasta varias sesiones de terapia breve. Buscan intervenir temprano, antes de que el problema se consolide.",
             "El manual las describe como una combinación de feedback sobre el tamizaje, consejo, educación para la salud, mejora de habilidades y sugerencias prácticas. No requieren una estructura hospitalaria compleja."
           ]
         },
         {
-          title: "Los componentes",
-          depth: "core",
-          table: {
-            headers: ["Componente", "Qué hacer"],
-            rows: [
-              ["Feedback", "Presentar el resultado y explicar qué significa."],
-              ["Riesgos", "Conectar el consumo con consecuencias concretas para esa persona."],
-              ["Consejo", "Recomendar reducción o abstinencia según el caso."],
-              ["Compromiso", "Acordar un objetivo realista y la participación de la persona."],
-              ["Seguimiento", "Programar una revisión y ajustar el apoyo."]
+          "title": "Los componentes",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Componente",
+              "Qué hacer"
+            ],
+            "rows": [
+              [
+                "Feedback",
+                "Presentar el resultado y explicar qué significa."
+              ],
+              [
+                "Riesgos",
+                "Conectar el consumo con consecuencias concretas para esa persona."
+              ],
+              [
+                "Consejo",
+                "Recomendar reducción o abstinencia según el caso."
+              ],
+              [
+                "Compromiso",
+                "Acordar un objetivo realista y la participación de la persona."
+              ],
+              [
+                "Seguimiento",
+                "Programar una revisión y ajustar el apoyo."
+              ]
             ]
           },
-          body: [
+          "body": [
             "La entrevista motivacional aporta un estilo útil: explorar la ambivalencia, respetar la autonomía y reforzar la confianza. La confrontación rara vez ayuda a sostener el cambio."
           ]
         },
         {
-          title: "Cuando el objetivo es la abstinencia",
-          depth: "full",
-          body: [
+          "title": "Cuando el objetivo es la abstinencia",
+          "depth": "full",
+          "body": [
             "En personas con dependencia, embarazo, condiciones médicas o uso de medicamentos incompatibles con el alcohol, la abstinencia puede ser el objetivo más seguro. La decisión debe individualizarse y, cuando hay dependencia, no debe plantearse una reducción sin evaluación y apoyo adecuados.",
             "La intervención breve no es un tratamiento suficiente para la dependencia. El manual es claro: los pacientes con puntuaciones altas o señales de dependencia requieren evaluación especializada."
           ],
-          callout: {
-            tone: "warn",
-            title: "No prometas lo que la evidencia no sostiene",
-            text: "La intervención breve es eficaz en consumo de riesgo y perjudicial. En dependencia, el paso siguiente es una evaluación diagnóstica y un plan de tratamiento."
+          "callout": {
+            "tone": "warn",
+            "title": "No prometas lo que la evidencia no sostiene",
+            "text": "La intervención breve es eficaz en consumo de riesgo y perjudicial. En dependencia, el paso siguiente es una evaluación diagnóstica y un plan de tratamiento."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [23, 24] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-audit-06",
-      topicId: "topic-audit-intervencion",
-      areaId: "area-audit",
-      title: "Derivación, diagnóstico y límites del AUDIT",
-      kicker: "AUDIT · Límites",
-      minutes: 7,
-      level: "Avanzado",
-      summary: "Una puntuación positiva abre una ruta, no cierra un diagnóstico. La evaluación especializada y la seguridad de la persona son prioritarias cuando hay dependencia o riesgo.",
-      keyConcepts: [
+      "id": "sheet-audit-06",
+      "topicId": "topic-audit-intervencion",
+      "areaId": "area-audit",
+      "title": "Derivación, diagnóstico y límites del AUDIT",
+      "kicker": "AUDIT · Límites",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Una puntuación positiva abre una ruta, no cierra un diagnóstico. La evaluación especializada y la seguridad de la persona son prioritarias cuando hay dependencia o riesgo.",
+      "keyConcepts": [
         "El AUDIT es un tamizaje, no un diagnóstico.",
         "La sospecha de dependencia requiere evaluación especializada.",
         "La derivación debe considerar la voluntad y el seguimiento.",
         "La abstinencia y el síndrome de abstinencia pueden requerir manejo médico."
       ],
-      sections: [
+      "sections": [
         {
-          title: "La derivación como parte del cuidado",
-          depth: "core",
-          body: [
+          "title": "La derivación como parte del cuidado",
+          "depth": "core",
+          "body": [
             "La derivación a servicios especializados es frecuente cuando el primer nivel no está preparado para tratar la dependencia. Debe tenerse en cuenta la voluntad de la persona y la disponibilidad de servicios.",
             "Una intervención breve puede preparar la derivación: feedback, examen clínico, información sobre riesgos y acompañamiento para reducir resistencias. El seguimiento ayuda a que la derivación no se pierda."
           ]
         },
         {
-          title: "El diagnóstico no es la puntuación",
-          depth: "core",
-          body: [
+          "title": "El diagnóstico no es la puntuación",
+          "depth": "core",
+          "body": [
             "El AUDIT no proporciona una base suficiente para establecer un plan de tratamiento. El diagnóstico requiere una evaluación clínica cualificada, con criterios diagnósticos y una entrevista estructurada cuando corresponde.",
             "El manual menciona criterios de dependencia como deseo intenso, pérdida de control, abstinencia, tolerancia y abandono de otras fuentes de placer. La presencia de varios criterios durante un periodo significativo orienta la evaluación."
           ],
-          bullets: [
+          "bullets": [
             "No etiquetes solo con el total del AUDIT.",
             "Explora consecuencias, control, tolerancia y abstinencia.",
             "Considera condiciones médicas y medicamentos.",
@@ -1111,53 +2898,63 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Seguridad y abstinencia",
-          depth: "full",
-          body: [
+          "title": "Seguridad y abstinencia",
+          "depth": "full",
+          "body": [
             "La desintoxicación puede ser necesaria para algunas personas. El síndrome de abstinencia puede ser grave y requerir manejo médico. No se debe indicar una suspensión brusca sin evaluación cuando hay dependencia significativa.",
             "El manual también recuerda que el abordaje de la dependencia incluye tratamiento farmacológico, apoyo social y familiar, prevención de recaídas y entrenamiento en habilidades, según el caso."
           ],
-          callout: {
-            tone: "warn",
-            title: "Seguridad primero",
-            text: "Si hay intoxicación, riesgo de autoagresión, violencia, embarazo o comorbilidad médica importante, la evaluación y la derivación no deben esperar a completar un cuestionario."
+          "callout": {
+            "tone": "warn",
+            "title": "Seguridad primero",
+            "text": "Si hay intoxicación, riesgo de autoagresión, violencia, embarazo o comorbilidad médica importante, la evaluación y la derivación no deben esperar a completar un cuestionario."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25, 26] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            24,
+            25,
+            26
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-01",
-      topicId: "topic-materna-prenatal",
-      areaId: "area-materna",
-      title: "Atención preconcepcional: preparar el embarazo",
-      kicker: "Salud materna · Antes del embarazo",
-      minutes: 6,
-      level: "Base",
-      summary: "La atención preconcepcional identifica riesgos y prepara a la persona y a su familia para un embarazo saludable. Es una oportunidad de prevención antes de la concepción.",
-      keyConcepts: [
+      "id": "sheet-materna-01",
+      "topicId": "topic-materna-prenatal",
+      "areaId": "area-materna",
+      "motivo": "Sin PDF de control prenatal. Requiere material de A2-SA2-2.3 (Paquete prenatal)",
+      "title": "Atención preconcepcional: preparar el embarazo",
+      "kicker": "Salud materna · Antes del embarazo",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La atención preconcepcional identifica riesgos y prepara a la persona y a su familia para un embarazo saludable. Es una oportunidad de prevención antes de la concepción.",
+      "keyConcepts": [
         "La atención preconcepcional se dirige a personas con intención de embarazo.",
         "Incluye evaluación de riesgos, consejería y suplementación.",
         "El ácido fólico se inicia antes de la concepción.",
         "La pareja y la familia también son parte de la preparación."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Una consulta antes de la concepción",
-          depth: "core",
-          body: [
+          "title": "Una consulta antes de la concepción",
+          "depth": "core",
+          "body": [
             "La atención preconcepcional busca que la persona llegue al embarazo en las mejores condiciones posibles. Incluye evaluación del estado de salud, antecedentes obstétricos y médicos, hábitos, medicamentos, vacunas y factores de riesgo.",
             "También es un espacio para consejería sobre planificación del embarazo, alimentación, actividad física, prevención de infecciones y consumo de alcohol o tabaco. La pareja puede participar cuando corresponde."
           ]
         },
         {
-          title: "Suplementación y preparación",
-          depth: "core",
-          body: [
+          "title": "Suplementación y preparación",
+          "depth": "core",
+          "body": [
             "La norma incluye la suplementación con ácido fólico antes de la concepción para reducir el riesgo de defectos del tubo neural. La dosis y duración deben seguir la indicación normativa y el criterio clínico.",
             "Se revisan vacunas, enfermedades crónicas y medicamentos que puedan afectar el embarazo. La continuidad con el equipo de salud permite ajustar el plan antes de la concepción."
           ],
-          bullets: [
+          "bullets": [
             "Evaluar antecedentes personales y familiares.",
             "Revisar medicamentos y condiciones crónicas.",
             "Promover alimentación y hábitos saludables.",
@@ -1166,110 +2963,149 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "No solo es un tema de la gestante",
-          depth: "full",
-          body: [
+          "title": "No solo es un tema de la gestante",
+          "depth": "full",
+          "body": [
             "La preparación del embarazo involucra a la pareja y a la familia. La corresponsabilidad permite reducir exposiciones de riesgo, organizar el cuidado y preparar el hogar para la llegada del bebé.",
             "La atención preconcepcional también es una oportunidad para detectar violencia, problemas de salud mental y necesidades sociales que pueden afectar el embarazo."
           ],
-          callout: {
-            tone: "info",
-            title: "Anticipar",
-            text: "La preconcepción no garantiza un embarazo sin riesgos, pero permite llegar mejor preparada y detectar problemas antes de que se vuelvan urgentes."
+          "callout": {
+            "tone": "info",
+            "title": "Anticipar",
+            "text": "La preconcepción no garantiza un embarazo sin riesgos, pero permite llegar mejor preparada y detectar problemas antes de que se vuelvan urgentes."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            8,
+            9,
+            10
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-02",
-      topicId: "topic-materna-prenatal",
-      areaId: "area-materna",
-      title: "Prenatal reenfocada, tamizajes y alarmas",
-      kicker: "Salud materna · Gestación",
-      minutes: 9,
-      level: "Intermedio",
-      summary: "El control prenatal combina evaluación integral, suplementación, tamizajes y educación sobre signos de alarma. La oportunidad y la continuidad son tan importantes como el número de controles.",
-      keyConcepts: [
+      "id": "sheet-materna-02",
+      "topicId": "topic-materna-prenatal",
+      "areaId": "area-materna",
+      "motivo": "Sin PDF de control prenatal. Requiere material de A2-SA2-2.3 (Paquete prenatal)",
+      "title": "Prenatal reenfocada, tamizajes y alarmas",
+      "kicker": "Salud materna · Gestación",
+      "minutes": 9,
+      "level": "Intermedio",
+      "summary": "El control prenatal combina evaluación integral, suplementación, tamizajes y educación sobre signos de alarma. La oportunidad y la continuidad son tan importantes como el número de controles.",
+      "keyConcepts": [
         "La atención prenatal reenfocada integra evaluación clínica, laboratorio y consejería.",
         "Se recomiendan al menos seis controles prenatales.",
         "La suplementación con hierro y ácido fólico es parte del cuidado.",
         "Los signos de alarma deben explicarse y vincularse a una ruta de atención."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Qué incluye el control prenatal",
-          depth: "core",
-          body: [
+          "title": "Qué incluye el control prenatal",
+          "depth": "core",
+          "body": [
             "El control prenatal no es solo medir la presión y escuchar latidos. Incluye historia clínica completa, evaluación del riesgo, examen físico, controles de peso y presión, altura uterina, evaluación del crecimiento fetal y pruebas de laboratorio según edad gestacional.",
             "La norma enfatiza la atención prenatal reenfocada: una mirada integral que incorpora prevención, promoción y detección oportuna, con participación de la gestante y su familia."
           ]
         },
         {
-          title: "Frecuencia y suplementación",
-          depth: "core",
-          body: [
+          "title": "Frecuencia y suplementación",
+          "depth": "core",
+          "body": [
             "La norma establece un mínimo de seis controles prenatales para embarazos de bajo riesgo, con una distribución que se intensifica hacia el final. El primer control debe ser lo más temprano posible; los siguientes se programan según la edad gestacional y el riesgo.",
             "La suplementación incluye ácido fólico y hierro. También se valora calcio en poblaciones con bajo consumo y otras intervenciones según necesidad. La adherencia debe revisarse en cada control."
           ],
-          table: {
-            headers: ["Momento", "Énfasis"],
-            rows: [
-              ["Antes de las 14 semanas", "Confirmar embarazo, evaluar riesgo, ácido fólico, laboratorio inicial."],
-              ["14-27 semanas", "Crecimiento fetal, suplementación, tamizajes, educación."],
-              ["28-36 semanas", "Control de crecimiento, preparación para el parto, alarmas."],
-              ["37 semanas al parto", "Plan de parto, signos de trabajo de parto, referencia oportuna."]
+          "table": {
+            "headers": [
+              "Momento",
+              "Énfasis"
+            ],
+            "rows": [
+              [
+                "Antes de las 14 semanas",
+                "Confirmar embarazo, evaluar riesgo, ácido fólico, laboratorio inicial."
+              ],
+              [
+                "14-27 semanas",
+                "Crecimiento fetal, suplementación, tamizajes, educación."
+              ],
+              [
+                "28-36 semanas",
+                "Control de crecimiento, preparación para el parto, alarmas."
+              ],
+              [
+                "37 semanas al parto",
+                "Plan de parto, signos de trabajo de parto, referencia oportuna."
+              ]
             ]
           }
         },
         {
-          title: "Signos de alarma: explicar y actuar",
-          depth: "full",
-          body: [
+          "title": "Signos de alarma: explicar y actuar",
+          "depth": "full",
+          "body": [
             "La gestante y su familia deben conocer los signos que requieren atención inmediata: sangrado vaginal, dolor abdominal intenso, cefalea intensa, visión borrosa, convulsiones, fiebre, salida de líquido amniótico, disminución de movimientos fetales, dificultad respiratoria, entre otros.",
             "No basta con enumerarlos. Hay que verificar que la persona comprenda, que sepa dónde acudir y que tenga una vía de contacto. La referencia debe ser oportuna y con información clínica suficiente."
           ],
-          callout: {
-            tone: "warn",
-            title: "Alarma no es espera",
-            text: "Un signo de alarma no se maneja “viendo cómo evoluciona” por teléfono. Se orienta a la gestante a acudir al establecimiento y se activa la ruta correspondiente."
+          "callout": {
+            "tone": "warn",
+            "title": "Alarma no es espera",
+            "text": "Un signo de alarma no se maneja “viendo cómo evoluciona” por teléfono. Se orienta a la gestante a acudir al establecimiento y se activa la ruta correspondiente."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [4, 11, 12, 13, 14, 15] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            4,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-03",
-      topicId: "topic-materna-parto",
-      areaId: "area-materna",
-      title: "Plan de parto y parto institucional",
-      kicker: "Salud materna · Parto",
-      minutes: 7,
-      level: "Base",
-      summary: "El plan de parto prepara decisiones y rutas antes del inicio del trabajo de parto. El parto institucional busca atención segura, con capacidad resolutiva y respeto por la persona.",
-      keyConcepts: [
+      "id": "sheet-materna-03",
+      "topicId": "topic-materna-parto",
+      "areaId": "area-materna",
+      "activa": true,
+      "itemOficial": "A2-SA2-2.2",
+      "title": "Plan de parto y parto institucional",
+      "kicker": "Salud materna · Parto",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El plan de parto prepara decisiones y rutas antes del inicio del trabajo de parto. El parto institucional busca atención segura, con capacidad resolutiva y respeto por la persona.",
+      "keyConcepts": [
         "El plan de parto se construye durante la gestación.",
         "Incluye lugar, transporte, acompañante y recursos.",
         "El parto institucional ocurre en un establecimiento de salud.",
         "El parto vertical es una opción cuando las condiciones lo permiten."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Planificar antes de que empiece",
-          depth: "core",
-          body: [
+          "title": "Planificar antes de que empiece",
+          "depth": "core",
+          "body": [
             "El plan de parto es una herramienta de preparación. Permite identificar el establecimiento adecuado, la ruta, el transporte, el acompañante, los recursos necesarios y las señales para acudir. Se conversa durante los controles prenatales, no cuando el trabajo de parto ya comenzó.",
             "La norma incluye entrevistas de planificación del parto y promueve que la gestante y su familia participen. La planificación reduce demoras y facilita la llegada oportuna."
           ]
         },
         {
-          title: "Parto institucional y parto vertical",
-          depth: "core",
-          body: [
+          "title": "Parto institucional y parto vertical",
+          "depth": "core",
+          "body": [
             "El parto institucional ocurre en un establecimiento de salud y puede ser vaginal o abdominal. Busca atención por personal capacitado, disponibilidad de recursos y manejo de complicaciones.",
             "El parto vertical es una posición en la que la gestante se sostiene de pie, sentada, en cuclillas o apoyando una o dos rodillas, mientras el profesional atiende delante o detrás. Debe ofrecerse con condiciones adecuadas y respeto por la elección informada."
           ],
-          bullets: [
+          "bullets": [
             "Lugar de parto y ruta de traslado definidos.",
             "Medio de transporte y contacto disponible.",
             "Acompañante elegido por la gestante.",
@@ -1278,61 +3114,90 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Respeto y seguridad",
-          depth: "full",
-          body: [
+          "title": "Respeto y seguridad",
+          "depth": "full",
+          "body": [
             "La atención del parto debe combinar seguridad clínica y trato respetuoso. La persona tiene derecho a información, privacidad, acompañamiento cuando las condiciones lo permiten y participación en las decisiones.",
             "La norma reconoce la pertinencia cultural y la posibilidad de parto vertical. No se trata de imponer una posición, sino de ofrecer opciones seguras y acompañar la elección."
           ],
-          callout: {
-            tone: "info",
-            title: "Continuidad",
-            text: "El plan de parto debe actualizarse si cambian las condiciones de la gestante, el establecimiento o la ruta de referencia."
+          "callout": {
+            "tone": "info",
+            "title": "Continuidad",
+            "text": "El plan de parto debe actualizarse si cambian las condiciones de la gestante, el establecimiento o la ruta de referencia."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [6, 7, 16, 17, 18] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            6,
+            7,
+            16,
+            17,
+            18
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-04",
-      topicId: "topic-materna-parto",
-      areaId: "area-materna",
-      title: "Emergencias obstétricas: claves roja, azul y amarilla",
-      kicker: "Salud materna · Emergencias",
-      minutes: 8,
-      level: "Avanzado",
-      summary: "Las claves de emergencia obstétrica organizan la respuesta inmediata y la referencia. No sustituyen las guías clínicas: activan un circuito de actuación coordinada.",
-      keyConcepts: [
+      "id": "sheet-materna-04",
+      "topicId": "topic-materna-parto",
+      "areaId": "area-materna",
+      "activa": true,
+      "itemOficial": "A2-SA2-2.2",
+      "title": "Emergencias obstétricas: claves roja, azul y amarilla",
+      "kicker": "Salud materna · Emergencias",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "Las claves de emergencia obstétrica organizan la respuesta inmediata y la referencia. No sustituyen las guías clínicas: activan un circuito de actuación coordinada.",
+      "keyConcepts": [
         "Clave roja: hemorragia obstétrica.",
         "Clave azul: emergencia hipertensiva del embarazo.",
         "Clave amarilla: infección o sepsis obstétrica.",
         "La clave activa manejo inmediato, coordinación y referencia oportuna."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Una forma de organizar la respuesta",
-          depth: "core",
-          body: [
+          "title": "Una forma de organizar la respuesta",
+          "depth": "core",
+          "body": [
             "La norma incorpora las claves de emergencia obstétrica para estandarizar la respuesta del equipo. Cada clave agrupa un conjunto de condiciones que requieren actuación inmediata y coordinación con establecimientos de mayor complejidad.",
             "La clave no es un diagnóstico completo ni un protocolo cerrado. Es una señal de activación que moviliza recursos y ordena la atención mientras se confirma y maneja la causa."
           ],
-          table: {
-            headers: ["Clave", "Problema", "Prioridad"],
-            rows: [
-              ["Roja", "Hemorragia obstétrica", "Control del sangrado, estabilización y referencia."],
-              ["Azul", "Emergencia hipertensiva del embarazo", "Control de presión, prevención de convulsiones y referencia."],
-              ["Amarilla", "Infección o sepsis obstétrica", "Identificación, antibióticos y manejo oportuno."]
+          "table": {
+            "headers": [
+              "Clave",
+              "Problema",
+              "Prioridad"
+            ],
+            "rows": [
+              [
+                "Roja",
+                "Hemorragia obstétrica",
+                "Control del sangrado, estabilización y referencia."
+              ],
+              [
+                "Azul",
+                "Emergencia hipertensiva del embarazo",
+                "Control de presión, prevención de convulsiones y referencia."
+              ],
+              [
+                "Amarilla",
+                "Infección o sepsis obstétrica",
+                "Identificación, antibióticos y manejo oportuno."
+              ]
             ]
           }
         },
         {
-          title: "Qué debe funcionar antes de la emergencia",
-          depth: "core",
-          body: [
+          "title": "Qué debe funcionar antes de la emergencia",
+          "depth": "core",
+          "body": [
             "La respuesta a una emergencia depende de preparación previa: personal capacitado, insumos disponibles, comunicación con referencia, transporte y coordinación entre niveles. La norma insiste en la organización de la referencia y en la recepción por personal competente.",
             "La comunicación con el establecimiento de mayor complejidad debe realizarse para que el equipo esté preparado. La referencia se acompaña del formato correspondiente y de la información clínica necesaria."
           ],
-          bullets: [
+          "bullets": [
             "Reconocer la clave y activar al equipo.",
             "Iniciar estabilización según protocolo.",
             "Comunicar y coordinar la referencia.",
@@ -1341,53 +3206,65 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Los límites de esta ficha",
-          depth: "full",
-          body: [
+          "title": "Los límites de esta ficha",
+          "depth": "full",
+          "body": [
             "Esta ficha solo resume el marco normativo. El manejo clínico detallado de hemorragia, hipertensión o sepsis requiere guías específicas, entrenamiento y recursos adecuados.",
             "La clave ayuda a no perder tiempo, pero no reemplaza el juicio clínico ni la evaluación individual. En una emergencia, la prioridad es estabilizar y referir de forma segura."
           ],
-          callout: {
-            tone: "warn",
-            title: "No memorices la clave sin el circuito",
-            text: "Saber que una hemorragia es clave roja no sirve si no sabes a quién llamar, dónde está el kit, cómo estabilizar y cómo referir."
+          "callout": {
+            "tone": "warn",
+            "title": "No memorices la clave sin el circuito",
+            "text": "Saber que una hemorragia es clave roja no sirve si no sabes a quién llamar, dónde está el kit, cómo estabilizar y cómo referir."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 17, 21] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            5,
+            16,
+            17,
+            21
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-05",
-      topicId: "topic-materna-puerperio",
-      areaId: "area-materna",
-      title: "Puerperio y alojamiento conjunto",
-      kicker: "Salud materna · Después del parto",
-      minutes: 7,
-      level: "Base",
-      summary: "El puerperio es un periodo de recuperación y vigilancia. El alojamiento conjunto y el contacto precoz favorecen el vínculo, la lactancia y la detección de signos de alarma.",
-      keyConcepts: [
+      "id": "sheet-materna-05",
+      "topicId": "topic-materna-puerperio",
+      "areaId": "area-materna",
+      "activa": true,
+      "itemOficial": "A2-SA2-2.4",
+      "title": "Puerperio y alojamiento conjunto",
+      "kicker": "Salud materna · Después del parto",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El puerperio es un periodo de recuperación y vigilancia. El alojamiento conjunto y el contacto precoz favorecen el vínculo, la lactancia y la detección de signos de alarma.",
+      "keyConcepts": [
         "El puerperio comprende desde el parto hasta la recuperación, convencionalmente 42 días.",
         "El puerperio inmediato requiere vigilancia estrecha de la madre.",
         "El alojamiento conjunto mantiene a la madre y al recién nacido juntos.",
         "La lactancia y el contacto precoz forman parte del cuidado."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Un periodo de recuperación y riesgo",
-          depth: "core",
-          body: [
+          "title": "Un periodo de recuperación y riesgo",
+          "depth": "core",
+          "body": [
             "El puerperio es el periodo posterior al parto en el que la madre se recupera y el cuerpo vuelve a sus condiciones previas. La norma lo organiza en inmediato, mediato y tardío, con vigilancia de sangrado, involución uterina, presión arterial, infección y estado emocional.",
             "Las complicaciones pueden aparecer después del alta. Por eso el control y la educación sobre signos de alarma son parte esencial del cuidado."
           ]
         },
         {
-          title: "Alojamiento conjunto y contacto precoz",
-          depth: "core",
-          body: [
+          "title": "Alojamiento conjunto y contacto precoz",
+          "depth": "core",
+          "body": [
             "El alojamiento conjunto mantiene a la madre y al recién nacido en el mismo espacio, favoreciendo el contacto, la lactancia a demanda y el aprendizaje de cuidados. Debe adaptarse a las condiciones clínicas y respetar la privacidad.",
             "El contacto piel a piel precoz y el inicio temprano de la lactancia favorecen el vínculo y la salud del recién nacido. El equipo debe acompañar sin imponer y resolver dificultades."
           ],
-          bullets: [
+          "bullets": [
             "Vigilar sangrado, dolor, fiebre y presión arterial.",
             "Valorar involución uterina y estado de la herida.",
             "Favorecer contacto y lactancia en las primeras horas.",
@@ -1396,289 +3273,422 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Salud mental y violencia",
-          depth: "full",
-          body: [
+          "title": "Salud mental y violencia",
+          "depth": "full",
+          "body": [
             "El puerperio también es un momento de vulnerabilidad emocional. La tristeza posparto es frecuente, pero la depresión posparto requiere identificación y apoyo. Pensamientos de daño a sí misma o al bebé son una señal de alarma.",
             "La violencia puede aparecer o intensificarse durante el embarazo y el puerperio. El equipo debe preguntar en un espacio seguro y activar rutas de protección cuando sea necesario."
           ],
-          callout: {
-            tone: "info",
-            title: "No es solo control físico",
-            text: "Preguntar cómo se siente, cómo duerme, si tiene apoyo y si se siente segura en casa es parte de la atención puerperal."
+          "callout": {
+            "tone": "info",
+            "title": "No es solo control físico",
+            "text": "Preguntar cómo se siente, cómo duerme, si tiene apoyo y si se siente segura en casa es parte de la atención puerperal."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22, 23] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            4,
+            21,
+            22,
+            23
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-materna-06",
-      topicId: "topic-materna-puerperio",
-      areaId: "area-materna",
-      title: "Lactancia, visita domiciliaria y continuidad",
-      kicker: "Salud materna · Seguimiento",
-      minutes: 7,
-      level: "Intermedio",
-      summary: "La continuidad después del alta incluye control puerperal, apoyo a la lactancia y visita domiciliaria cuando la persona no acude o existe riesgo.",
-      keyConcepts: [
+      "id": "sheet-materna-06",
+      "topicId": "topic-materna-puerperio",
+      "areaId": "area-materna",
+      "activa": true,
+      "itemOficial": "A2-SA2-2.12",
+      "title": "Lactancia, visita domiciliaria y continuidad",
+      "kicker": "Salud materna · Seguimiento",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La continuidad después del alta incluye control puerperal, apoyo a la lactancia y visita domiciliaria cuando la persona no acude o existe riesgo.",
+      "keyConcepts": [
         "La lactancia materna exclusiva es la alimentación recomendada en los primeros meses.",
         "El control puerperal verifica recuperación y detecta complicaciones.",
         "La visita domiciliaria acerca el cuidado cuando hay barreras.",
         "La continuidad requiere coordinación entre establecimiento, familia y comunidad."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Apoyo real a la lactancia",
-          depth: "core",
-          body: [
+          "title": "Apoyo real a la lactancia",
+          "depth": "core",
+          "body": [
             "La lactancia materna exclusiva es la alimentación recomendada durante los primeros meses de vida. El apoyo debe ser práctico: posición, agarre, frecuencia, manejo de congestión y confianza de la madre.",
             "El equipo también debe conocer las contraindicaciones y las situaciones que requieren evaluación. No se trata de presionar, sino de acompañar una decisión informada y resolver dificultades."
           ]
         },
         {
-          title: "Control puerperal y visita domiciliaria",
-          depth: "core",
-          body: [
+          "title": "Control puerperal y visita domiciliaria",
+          "depth": "core",
+          "body": [
             "El control puerperal permite evaluar la recuperación de la madre, el estado del recién nacido, la lactancia y el bienestar emocional. La norma establece controles y visitas según el riesgo y la capacidad de acceso.",
             "La visita domiciliaria es especialmente útil cuando la persona no puede acudir al establecimiento, falta a un control o requiere evaluar el entorno familiar. Debe planificarse y registrarse."
           ],
-          table: {
-            headers: ["Momento", "Qué observar"],
-            rows: [
-              ["Primeras 24 horas", "Sangrado, signos vitales, lactancia, vínculo, seguridad."],
-              ["Primera semana", "Recuperación, herida, lactancia, signos de alarma, salud mental."],
-              ["Hasta los 42 días", "Control puerperal, planificación, seguimiento del recién nacido."]
+          "table": {
+            "headers": [
+              "Momento",
+              "Qué observar"
+            ],
+            "rows": [
+              [
+                "Primeras 24 horas",
+                "Sangrado, signos vitales, lactancia, vínculo, seguridad."
+              ],
+              [
+                "Primera semana",
+                "Recuperación, herida, lactancia, signos de alarma, salud mental."
+              ],
+              [
+                "Hasta los 42 días",
+                "Control puerperal, planificación, seguimiento del recién nacido."
+              ]
             ]
           }
         },
         {
-          title: "Cerrar la brecha del alta",
-          depth: "full",
-          body: [
+          "title": "Cerrar la brecha del alta",
+          "depth": "full",
+          "body": [
             "El alta hospitalaria no es el final del cuidado. La coordinación con el primer nivel debe asegurar que la persona tenga una cita, sepa dónde acudir y reciba seguimiento si no asiste.",
             "La familia y la comunidad pueden apoyar el traslado, la alimentación y el cuidado del bebé, pero necesitan información clara. La continuidad se construye con acuerdos concretos, no solo con una hoja de alta."
           ],
-          callout: {
-            tone: "warn",
-            title: "Si no acude, busca",
-            text: "Una inasistencia al control puerperal no es un detalle administrativo. Puede ser la primera señal de una complicación o de una barrera de acceso."
+          "callout": {
+            "tone": "warn",
+            "title": "Si no acude, busca",
+            "text": "Una inasistencia al control puerperal no es un detalle administrativo. Puede ser la primera señal de una complicación o de una barrera de acceso."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-materna", pages: [7, 22, 23, 24] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            7,
+            22,
+            23,
+            24
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-01",
-      topicId: "topic-mental-continuidad",
-      areaId: "area-mental",
-      title: "Continuidad de cuidados: acompañar sin soltar",
-      kicker: "Continuidad · Concepto",
-      minutes: 7,
-      level: "Base",
-      summary: "La continuidad de cuidados es un proceso continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, articulado con su entorno y con la red de servicios.",
-      keyConcepts: [
+      "id": "sheet-mental-01",
+      "topicId": "topic-mental-continuidad",
+      "areaId": "area-mental",
+      "title": "Continuidad de cuidados: acompañar sin soltar",
+      "kicker": "Continuidad · Concepto",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La continuidad de cuidados es un proceso continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, articulado con su entorno y con la red de servicios.",
+      "keyConcepts": [
         "No es una suma de consultas aisladas: es un proceso continuo y personalizado.",
         "Incluye componentes clínicos, psicosociales y de gestión.",
         "La persona y su cuidador participan activamente.",
         "La articulación entre establecimientos y redes es parte del cuidado."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Una definición que ordena la práctica",
-          depth: "core",
-          body: [
+          "title": "Una definición que ordena la práctica",
+          "depth": "core",
+          "body": [
             "La guía define la continuidad de cuidados como el proceso de atención de salud continuo, intensivo y personalizado que recibe la persona usuaria y su cuidador, con participación activa de ambos. Implica la acción articulada entre establecimientos de la misma red o fuera de ella.",
             "El objetivo es garantizar calidad de cuidados, bienestar y recuperación, con intervenciones centradas en la persona y su entorno. No se limita a evitar que la persona se pierda entre servicios: busca sostener un proyecto de cuidado."
           ]
         },
         {
-          title: "Tres componentes",
-          depth: "core",
-          table: {
-            headers: ["Componente", "Qué incluye"],
-            rows: [
-              ["Clínico", "Atención del problema de salud mental y físico, reducción de síntomas y mejora de calidad de vida."],
-              ["Psicosocial", "Familia, trabajo, relaciones, funcionamiento en la comunidad y proyecto de vida."],
-              ["Gestión", "Actividades administrativas que facilitan la continuidad y la articulación."]
+          "title": "Tres componentes",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Componente",
+              "Qué incluye"
+            ],
+            "rows": [
+              [
+                "Clínico",
+                "Atención del problema de salud mental y físico, reducción de síntomas y mejora de calidad de vida."
+              ],
+              [
+                "Psicosocial",
+                "Familia, trabajo, relaciones, funcionamiento en la comunidad y proyecto de vida."
+              ],
+              [
+                "Gestión",
+                "Actividades administrativas que facilitan la continuidad y la articulación."
+              ]
             ]
           },
-          body: [
+          "body": [
             "Los componentes se entrelazan. Una mejoría clínica sin apoyo psicosocial puede no sostenerse; un plan psicosocial sin manejo clínico puede ser insuficiente. La gestión hace posible que ambos lleguen a tiempo."
           ]
         },
         {
-          title: "Recuperación, no solo ausencia de síntomas",
-          depth: "full",
-          body: [
+          "title": "Recuperación, no solo ausencia de síntomas",
+          "depth": "full",
+          "body": [
             "La guía adopta una noción de recuperación personal y única: cambiar actitudes, metas, habilidades y roles para tener una vida satisfactoria, esperanzadora y activa, incluso con limitaciones. Incluye autoconfianza, identidad positiva, sentido de vida y responsabilidad sobre el propio cuidado.",
             "Esta mirada desplaza el foco desde “controlar la enfermedad” hacia “construir una vida”. La continuidad de cuidados es el soporte para que ese proceso sea posible."
           ],
-          callout: {
-            tone: "info",
-            title: "Diferencia clave",
-            text: "Continuidad no es lo mismo que adherencia. La persona puede asistir a sus citas y, aun así, no tener un cuidado continuo si no hay un plan compartido y un vínculo que sostenga el proceso."
+          "callout": {
+            "tone": "info",
+            "title": "Diferencia clave",
+            "text": "Continuidad no es lo mismo que adherencia. La persona puede asistir a sus citas y, aun así, no tener un cuidado continuo si no hay un plan compartido y un vínculo que sostenga el proceso."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4, 6, 7] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            3,
+            4,
+            6,
+            7
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-02",
-      topicId: "topic-mental-continuidad",
-      areaId: "area-mental",
-      title: "Equipo, roles y arquitectura del cuidado",
-      kicker: "Continuidad · Equipo",
-      minutes: 8,
-      level: "Intermedio",
-      summary: "La continuidad se sostiene con un equipo interdisciplinario, un coordinador y un gestor de cuidados que conoce a la persona y articula el plan.",
-      keyConcepts: [
+      "id": "sheet-mental-02",
+      "topicId": "topic-mental-continuidad",
+      "areaId": "area-mental",
+      "title": "Equipo, roles y arquitectura del cuidado",
+      "kicker": "Continuidad · Equipo",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La continuidad se sostiene con un equipo interdisciplinario, un coordinador y un gestor de cuidados que conoce a la persona y articula el plan.",
+      "keyConcepts": [
         "El equipo interdisciplinario tratante integra al menos dos profesionales de distintas disciplinas.",
         "El coordinador organiza la continuidad y supervisa el funcionamiento.",
         "El gestor de cuidados acompaña a la persona y elabora el PCCl.",
         "La asignación de personas usuarias debe permitir un seguimiento real."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Quién hace qué",
-          depth: "core",
-          table: {
-            headers: ["Rol", "Función principal"],
-            rows: [
-              ["Jefe del CSMC", "Asegura implementación, recursos y supervisión de la continuidad."],
-              ["Coordinador de la continuidad", "Organiza, articula, supervisa y evalúa el funcionamiento."],
-              ["Gestor de cuidados", "Evalúa, elabora el PCCl, coordina intervenciones y mantiene contacto con la persona."],
-              ["Equipo interdisciplinario", "Participa en la evaluación, discusión y ejecución del plan."]
+          "title": "Quién hace qué",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Rol",
+              "Función principal"
+            ],
+            "rows": [
+              [
+                "Jefe del CSMC",
+                "Asegura implementación, recursos y supervisión de la continuidad."
+              ],
+              [
+                "Coordinador de la continuidad",
+                "Organiza, articula, supervisa y evalúa el funcionamiento."
+              ],
+              [
+                "Gestor de cuidados",
+                "Evalúa, elabora el PCCl, coordina intervenciones y mantiene contacto con la persona."
+              ],
+              [
+                "Equipo interdisciplinario",
+                "Participa en la evaluación, discusión y ejecución del plan."
+              ]
             ]
           },
-          body: [
+          "body": [
             "El gestor de cuidados es el profesional del equipo que asume la dirección del cuidado de la persona asignada. No trabaja solo: coordina con el equipo y con la persona. La guía menciona un máximo de 15 personas usuarias por gestor para permitir un seguimiento real.",
             "El coordinador suele ser un profesional de enfermería con especialidad o competencias en salud mental. Su tarea incluye reuniones, supervisión y articulación con redes."
           ]
         },
         {
-          title: "El plan no se improvisa",
-          depth: "core",
-          body: [
+          "title": "El plan no se improvisa",
+          "depth": "core",
+          "body": [
             "La continuidad requiere instrumentos y rutinas: formatos de evaluación, plan de continuidad, ficha de programación, padrón nominal y registro en la historia clínica. También requiere reuniones periódicas de discusión de casos.",
             "La guía establece que el PCCl se revisa y actualiza cada 15 días por el gestor, según necesidad, coordinando con el equipo tratante. La continuidad se sostiene en la constancia de esos encuentros."
           ]
         },
         {
-          title: "Un equipo que se coordina",
-          depth: "full",
-          body: [
+          "title": "Un equipo que se coordina",
+          "depth": "full",
+          "body": [
             "La interdisciplina no es la suma de opiniones aisladas. Implica discutir la situación, acordar objetivos y distribuir responsabilidades. El plan debe ser conocido por la persona y, cuando corresponde, por su cuidador.",
             "La comunicación con el primer nivel y con otros sectores también es responsabilidad del equipo. La continuidad no termina en la puerta del CSMC."
           ],
-          callout: {
-            tone: "info",
-            title: "Para recordar",
-            text: "El gestor de cuidados no es un “caso asignado” administrativo: es la persona que sostiene el vínculo y la coherencia del plan."
+          "callout": {
+            "tone": "info",
+            "title": "Para recordar",
+            "text": "El gestor de cuidados no es un “caso asignado” administrativo: es la persona que sostiene el vínculo y la coherencia del plan."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [8, 9, 10, 11] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            8,
+            9,
+            10,
+            11
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-03",
-      topicId: "topic-mental-plan",
-      areaId: "area-mental",
-      title: "Derivación y evaluación integral",
-      kicker: "Continuidad · Ingreso",
-      minutes: 9,
-      level: "Avanzado",
-      summary: "La derivación a continuidad requiere criterios claros. La evaluación inicial valora funcionamiento, familia, adherencia, sobrecarga del cuidador y riesgo.",
-      keyConcepts: [
+      "id": "sheet-mental-03",
+      "topicId": "topic-mental-plan",
+      "areaId": "area-mental",
+      "title": "Derivación y evaluación integral",
+      "kicker": "Continuidad · Ingreso",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "La derivación a continuidad requiere criterios claros. La evaluación inicial valora funcionamiento, familia, adherencia, sobrecarga del cuidador y riesgo.",
+      "keyConcepts": [
         "Se consideran al menos dos de cuatro criterios de derivación.",
         "La evaluación valora funcionamiento, familia, adherencia, cuidador y riesgo.",
         "Se usan instrumentos estandarizados según población.",
         "La decisión de ingreso se basa en la evaluación integral, no en una sola escala."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Cuándo derivar",
-          depth: "core",
-          body: [
+          "title": "Cuándo derivar",
+          "depth": "core",
+          "body": [
             "La guía indica que puede ingresar a continuidad la persona de cualquier edad con un problema psicosocial de riesgo y/o trastorno mental grave que presente como mínimo dos de cuatro criterios: evolución desfavorable, escasa o nula adherencia al tratamiento integral, apoyo sociofamiliar desfavorable o nulo, o ser víctima de violencia o maltrato infantil con un trastorno mental.",
             "La derivación puede surgir de la evaluación integral, la consulta individual, la visita domiciliaria u otro contacto. Debe registrarse en la historia clínica e informarse al coordinador."
           ]
         },
         {
-          title: "Qué se evalúa al ingreso",
-          depth: "core",
-          table: {
-            headers: ["Área", "Instrumento o fuente"],
-            rows: [
-              ["Funcionamiento y salud", "HoNOS en adultos; HoNOSCA en niños y adolescentes."],
-              ["Funcionalidad familiar", "Apgar familiar."],
-              ["Adherencia farmacológica", "Test de Morisky y Green."],
-              ["Sobrecarga del cuidador", "Escala de Zarit."],
-              ["Riesgo para la vida e integridad", "Fichas de valoración de riesgo según población."]
+          "title": "Qué se evalúa al ingreso",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Área",
+              "Instrumento o fuente"
+            ],
+            "rows": [
+              [
+                "Funcionamiento y salud",
+                "HoNOS en adultos; HoNOSCA en niños y adolescentes."
+              ],
+              [
+                "Funcionalidad familiar",
+                "Apgar familiar."
+              ],
+              [
+                "Adherencia farmacológica",
+                "Test de Morisky y Green."
+              ],
+              [
+                "Sobrecarga del cuidador",
+                "Escala de Zarit."
+              ],
+              [
+                "Riesgo para la vida e integridad",
+                "Fichas de valoración de riesgo según población."
+              ]
             ]
           },
-          body: [
+          "body": [
             "La evaluación incluye entrevista, observación y aplicación de instrumentos. Los resultados se interpretan y se trasladan a las áreas de evaluación; no se usan de forma aislada.",
             "La guía también considera calidad de vida (WHOQOL) y proceso de recuperación (RAS) para establecer una línea basal y reevaluar cada tres meses."
           ]
         },
         {
-          title: "Riesgo y seguridad",
-          depth: "full",
-          body: [
+          "title": "Riesgo y seguridad",
+          "depth": "full",
+          "body": [
             "Si se identifica violencia, se aplica la ficha de valoración de riesgo que corresponda. En situaciones de riesgo grave, la protección y la derivación inmediata a los servicios competentes tienen prioridad sobre la continuidad ordinaria.",
             "La evaluación de riesgo no es un trámite: puede cambiar el plan, el lugar de atención y la intensidad del seguimiento. La seguridad de la persona y de terceros es prioritaria."
           ],
-          callout: {
-            tone: "warn",
-            title: "No reducir a un puntaje",
-            text: "Las escalas ayudan a ordenar la evaluación. La decisión de ingreso considera la situación clínica, el apoyo familiar, el riesgo y la capacidad del servicio para sostener el cuidado."
+          "callout": {
+            "tone": "warn",
+            "title": "No reducir a un puntaje",
+            "text": "Las escalas ayudan a ordenar la evaluación. La decisión de ingreso considera la situación clínica, el apoyo familiar, el riesgo y la capacidad del servicio para sostener el cuidado."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [13, 14, 15, 16, 17, 18, 19] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-04",
-      topicId: "topic-mental-plan",
-      areaId: "area-mental",
-      title: "PCCl: un plan hecho con la persona",
-      kicker: "Continuidad · Plan",
-      minutes: 8,
-      level: "Intermedio",
-      summary: "El Plan de Continuidad de Cuidados Individualizado organiza necesidades, potencialidades, objetivos, actividades, responsables y evaluación. Se construye con la persona y su cuidador.",
-      keyConcepts: [
+      "id": "sheet-mental-04",
+      "topicId": "topic-mental-plan",
+      "areaId": "area-mental",
+      "title": "PCCl: un plan hecho con la persona",
+      "kicker": "Continuidad · Plan",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El Plan de Continuidad de Cuidados Individualizado organiza necesidades, potencialidades, objetivos, actividades, responsables y evaluación. Se construye con la persona y su cuidador.",
+      "keyConcepts": [
         "El PCCl se basa en necesidades, problemas y potencialidades.",
         "Incluye objetivos, actividades, responsables y criterios de evaluación.",
         "Se revisa y actualiza cada 15 días.",
         "La persona y su cuidador participan en su elaboración."
       ],
-      sections: [
+      "sections": [
         {
-          title: "La estructura del plan",
-          depth: "core",
-          table: {
-            headers: ["Elemento", "Pregunta que responde"],
-            rows: [
-              ["Necesidades y problemas", "¿Qué requiere atención?"],
-              ["Potencialidades", "¿Con qué recursos cuenta la persona y su entorno?"],
-              ["Objetivos", "¿Qué queremos lograr y cómo sabremos que se logró?"],
-              ["Actividades", "¿Qué se hará, con qué frecuencia y en qué escenario?"],
-              ["Responsables", "¿Quién acompaña cada acción?"],
-              ["Evaluación", "¿Se cumplió, está en proceso o no se cumplió?"]
+          "title": "La estructura del plan",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Elemento",
+              "Pregunta que responde"
+            ],
+            "rows": [
+              [
+                "Necesidades y problemas",
+                "¿Qué requiere atención?"
+              ],
+              [
+                "Potencialidades",
+                "¿Con qué recursos cuenta la persona y su entorno?"
+              ],
+              [
+                "Objetivos",
+                "¿Qué queremos lograr y cómo sabremos que se logró?"
+              ],
+              [
+                "Actividades",
+                "¿Qué se hará, con qué frecuencia y en qué escenario?"
+              ],
+              [
+                "Responsables",
+                "¿Quién acompaña cada acción?"
+              ],
+              [
+                "Evaluación",
+                "¿Se cumplió, está en proceso o no se cumplió?"
+              ]
             ]
           },
-          body: [
+          "body": [
             "El plan no es una lista de indicaciones. Es un acuerdo de trabajo que integra el tratamiento, el apoyo psicosocial, la familia, la comunidad y la prevención de crisis. Debe ser comprensible para la persona y relevante para su proyecto de vida."
           ]
         },
         {
-          title: "Discusión de caso y revisión",
-          depth: "core",
-          body: [
+          "title": "Discusión de caso y revisión",
+          "depth": "core",
+          "body": [
             "La guía establece reuniones de discusión de la situación de la persona, con presentación del caso, formulación del PCCl y monitoreo de objetivos. Se recomienda un mínimo de tres reuniones al mes y una revisión del plan cada 15 días por el gestor.",
             "Las decisiones se registran en el formato de continuidad y en la historia clínica. La revisión permite ajustar lo que no funciona y no repetir un plan que ya no responde a la persona."
           ],
-          bullets: [
+          "bullets": [
             "Presentar la situación actual y los resultados de la evaluación.",
             "Formular o actualizar objetivos y actividades.",
             "Asignar responsables y tiempos.",
@@ -1687,61 +3697,84 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Crisis y plan de contención",
-          depth: "full",
-          body: [
+          "title": "Crisis y plan de contención",
+          "depth": "full",
+          "body": [
             "El formato de continuidad incluye un plan de contención de crisis. Esto implica anticipar señales, acordar a quién contactar, qué hacer y dónde acudir. La persona y su cuidador deben conocerlo.",
             "La continuidad no evita todas las crisis, pero puede reducir su impacto y evitar respuestas tardías o descoordinadas. Un plan de crisis claro es parte del cuidado, no un anexo."
           ],
-          callout: {
-            tone: "info",
-            title: "Coproducción",
-            text: "Un PCCl impuesto desde el equipo tiene menos probabilidades de sostenerse que uno construido con la persona, con objetivos realistas y un lenguaje que ella comprenda."
+          "callout": {
+            "tone": "info",
+            "title": "Coproducción",
+            "text": "Un PCCl impuesto desde el equipo tiene menos probabilidades de sostenerse que uno construido con la persona, con objetivos realistas y un lenguaje que ella comprenda."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [5, 6, 11, 20, 21] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            5,
+            6,
+            11,
+            20,
+            21
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-05",
-      topicId: "topic-mental-articulacion",
-      areaId: "area-mental",
-      title: "Redes comunitarias y ecomapa",
-      kicker: "Continuidad · Comunidad",
-      minutes: 8,
-      level: "Intermedio",
-      summary: "La continuidad se apoya en redes: amistades y vecinos, grupos y organizaciones, e instituciones. El ecomapa hace visible esa trama y ayuda a movilizarla.",
-      keyConcepts: [
+      "id": "sheet-mental-05",
+      "topicId": "topic-mental-articulacion",
+      "areaId": "area-mental",
+      "title": "Redes comunitarias y ecomapa",
+      "kicker": "Continuidad · Comunidad",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La continuidad se apoya en redes: amistades y vecinos, grupos y organizaciones, e instituciones. El ecomapa hace visible esa trama y ayuda a movilizarla.",
+      "keyConcepts": [
         "Las redes primarias incluyen amistades y vecinos.",
         "Las secundarias incluyen grupos recreativos, religiosos, laborales y sociales.",
         "Las terciarias incluyen instituciones y servicios de protección.",
         "El ecomapa visualiza relaciones y recursos para el plan."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Tres niveles de red",
-          depth: "core",
-          table: {
-            headers: ["Red", "Ejemplos"],
-            rows: [
-              ["Primaria", "Amistades, vecinos, personas cercanas."],
-              ["Secundaria", "Grupos recreativos, organizaciones religiosas, organizaciones sociales, relaciones laborales o de estudio."],
-              ["Terciaria", "CEM, comisaría, juzgado de familia, DEMUNA, ONG, OMAPED, CONADIS, centros del adulto mayor."]
+          "title": "Tres niveles de red",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Red",
+              "Ejemplos"
+            ],
+            "rows": [
+              [
+                "Primaria",
+                "Amistades, vecinos, personas cercanas."
+              ],
+              [
+                "Secundaria",
+                "Grupos recreativos, organizaciones religiosas, organizaciones sociales, relaciones laborales o de estudio."
+              ],
+              [
+                "Terciaria",
+                "CEM, comisaría, juzgado de familia, DEMUNA, ONG, OMAPED, CONADIS, centros del adulto mayor."
+              ]
             ]
           },
-          body: [
+          "body": [
             "La guía define las redes comunitarias de salud mental como el conjunto de relaciones e intercambios que se establecen alrededor de la persona y su entorno. Se identifican con la persona y se plasman en un ecomapa.",
             "La red no es solo un recurso para “derivar”. Puede ofrecer pertenencia, actividades, apoyo práctico y protección. También puede incluir relaciones que generan riesgo, y eso debe identificarse."
           ]
         },
         {
-          title: "Cómo movilizar la red",
-          depth: "core",
-          body: [
+          "title": "Cómo movilizar la red",
+          "depth": "core",
+          "body": [
             "La movilización tiene dos etapas: identificar con la persona y su cuidador las redes presentes en sus entornos, y acercar esas redes a la persona o a la persona a ellas mediante acompañamiento.",
             "El equipo no debe imponer vínculos. La persona decide qué redes quiere activar. El rol del equipo es facilitar, acompañar y evaluar si la vinculación es segura y significativa."
           ],
-          bullets: [
+          "bullets": [
             "Identificar relaciones significativas y recursos del territorio.",
             "Reconocer redes que generan riesgo o conflicto.",
             "Facilitar el acercamiento con consentimiento.",
@@ -1750,1283 +3783,16918 @@ window.STUDY_CONTENT = {
           ]
         },
         {
-          title: "Familia y cuidador",
-          depth: "full",
-          body: [
+          "title": "Familia y cuidador",
+          "depth": "full",
+          "body": [
             "La familia puede ser una red de apoyo central, pero también puede estar sobrecargada. La guía incluye la evaluación de sobrecarga del cuidador con la escala de Zarit y el soporte continuo: acompañamiento psicosocial, contención emocional y acciones que favorezcan la redistribución del cuidado.",
             "Cuidar al cuidador no es un extra. Si la persona que sostiene el cuidado se agota, la continuidad se vuelve frágil."
           ],
-          callout: {
-            tone: "info",
-            title: "Ecomapa",
-            text: "Un ecomapa no es un organigrama. Es un mapa de relaciones: quién está cerca, qué apoyo ofrece, qué vínculo es tenso y qué recursos faltan."
+          "callout": {
+            "tone": "info",
+            "title": "Ecomapa",
+            "text": "Un ecomapa no es un organigrama. Es un mapa de relaciones: quién está cerca, qué apoyo ofrece, qué vínculo es tenso y qué recursos faltan."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [7, 22, 67] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            7,
+            22,
+            67
+          ]
+        }
+      ]
     },
     {
-      id: "sheet-mental-06",
-      topicId: "topic-mental-articulacion",
-      areaId: "area-mental",
-      title: "Alta, reingreso y continuidad después",
-      kicker: "Continuidad · Trayectoria",
-      minutes: 7,
-      level: "Avanzado",
-      summary: "El alta no es abandono. La guía distingue tipos de alta, programa seguimiento posterior y prevé el reingreso cuando reaparecen criterios de derivación.",
-      keyConcepts: [
+      "id": "sheet-mental-06",
+      "topicId": "topic-mental-articulacion",
+      "areaId": "area-mental",
+      "title": "Alta, reingreso y continuidad después",
+      "kicker": "Continuidad · Trayectoria",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "El alta no es abandono. La guía distingue tipos de alta, programa seguimiento posterior y prevé el reingreso cuando reaparecen criterios de derivación.",
+      "keyConcepts": [
         "El alta se decide con el equipo, la persona y su cuidador.",
         "Existen altas por recuperación, voluntaria, por abandono y por traslado.",
         "El seguimiento posterior al alta incluye contacto a los 2 y 4 meses.",
         "El reingreso se evalúa como un nuevo ingreso cuando hay recaída."
       ],
-      sections: [
+      "sections": [
         {
-          title: "Tipos de alta",
-          depth: "core",
-          table: {
-            headers: ["Tipo", "Criterio"],
-            rows: [
-              ["Por recuperación", "Disminución del grado de afectación y objetivos del PCCl cumplidos."],
-              ["Voluntaria", "La persona o su cuidador decide no continuar."],
-              ["Por abandono", "No se logra contactar a la persona o cuidador durante un periodo definido."],
-              ["Por traslado", "La persona cambia de domicilio fuera de la jurisdicción."]
+          "title": "Tipos de alta",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Tipo",
+              "Criterio"
+            ],
+            "rows": [
+              [
+                "Por recuperación",
+                "Disminución del grado de afectación y objetivos del PCCl cumplidos."
+              ],
+              [
+                "Voluntaria",
+                "La persona o su cuidador decide no continuar."
+              ],
+              [
+                "Por abandono",
+                "No se logra contactar a la persona o cuidador durante un periodo definido."
+              ],
+              [
+                "Por traslado",
+                "La persona cambia de domicilio fuera de la jurisdicción."
+              ]
             ]
           },
-          body: [
+          "body": [
             "El alta se decide en una reunión con el equipo, la persona y su cuidador. Debe registrarse en la historia clínica y en el padrón nominal. La guía también indica investigar el motivo de un alta voluntaria, porque puede revelar barreras o insatisfacción."
           ]
         },
         {
-          title: "Seguimiento post-alta",
-          depth: "core",
-          body: [
+          "title": "Seguimiento post-alta",
+          "depth": "core",
+          "body": [
             "El gestor de cuidados realiza telemonitoreo, visitas domiciliarias u otras intervenciones según la valoración del equipo, a los 2 y 4 meses después del alta. El objetivo es detectar recaídas y sostener la transición a otros apoyos.",
             "La continuidad no termina con el alta: se transforma. La persona puede necesitar menos intensidad, pero no necesariamente menos conexión."
           ]
         },
         {
-          title: "Reingreso y crisis",
-          depth: "full",
-          body: [
+          "title": "Reingreso y crisis",
+          "depth": "full",
+          "body": [
             "Si la persona presenta una recaída y vuelve a cumplir los criterios de derivación, se determina el reingreso. Se evalúa como un nuevo ingreso y se registra en la plantilla de reingresos del padrón nominal.",
             "El reingreso no debe vivirse como un fracaso. Es una oportunidad para revisar qué falló, ajustar el plan y reforzar los apoyos. La continuidad de cuidados debe aprender de la trayectoria de la persona."
           ],
-          callout: {
-            tone: "warn",
-            title: "Alta no es cierre",
-            text: "Un alta sin seguimiento ni articulación con el primer nivel puede dejar a la persona sin red justo cuando más necesita sostén."
+          "callout": {
+            "tone": "warn",
+            "title": "Alta no es cierre",
+            "text": "Un alta sin seguimiento ni articulación con el primer nivel puede dejar a la persona sin red justo cuando más necesita sostén."
           }
         }
       ],
-      sourceRefs: [{ sourceId: "src-mental", pages: [19, 23, 24] }]
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            19,
+            23,
+            24
+          ]
+        }
+      ]
     },
+    {
+      "id": "sheet-adulto-01",
+      "title": "La persona adulta, una etapa con necesidades propias",
+      "kicker": "Cuidado integral · Población y enfoques",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "El CISPA abarca de 30 a 59 años, 11 meses y 29 días. La captación no depende del motivo de consulta: cualquier contacto es una oportunidad para iniciar el cuidado.",
+      "keyConcepts": [
+        "La población objetivo llega hasta los 59 años, 11 meses y 29 días.",
+        "CISPA significa cuidado integral de salud de la persona adulta.",
+        "Se capta en consulta, como acompañante, por referencia comunitaria o de otro establecimiento.",
+        "Los enfoques de derechos, género, interculturalidad, curso de vida y territorio orientan la atención."
+      ],
+      "sections": [
+        {
+          "title": "Quién es la persona adulta para la norma",
+          "body": [
+            "La norma delimita una población concreta: personas desde los 30 años hasta los 59 años, 11 meses y 29 días. No incluye a la persona adulta mayor, que tiene su propio cuidado integral.",
+            "El CISPA no es una lista de enfermedades. Es el conjunto de acciones e intervenciones que se brindan según las necesidades de salud y el riesgo sanitario, en el contexto de la familia y la comunidad."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cinco enfoques que cambian la práctica",
+          "body": [
+            "Los enfoques no son un adorno del documento: definen cómo se organiza la atención y qué desigualdades deben corregirse."
+          ],
+          "table": {
+            "headers": [
+              "Enfoque",
+              "Qué exige en la práctica"
+            ],
+            "rows": [
+              [
+                "Derechos humanos",
+                "Trato digno, igualdad y no discriminación; la persona es el centro de la acción del Estado."
+              ],
+              [
+                "Equidad de género",
+                "Reconocer roles y oportunidades diferenciadas; responder a necesidades específicas de mujeres y varones."
+              ],
+              [
+                "Interculturalidad",
+                "Servicios pertinentes culturalmente, con participación y diálogo entre saberes."
+              ],
+              [
+                "Curso de vida",
+                "Considerar cómo las exposiciones y decisiones de hoy influyen en la salud futura."
+              ],
+              [
+                "Territorialidad",
+                "Articular con actores del territorio para abordar los determinantes sociales."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Captar es abrir una puerta",
+          "body": [
+            "La captación puede ocurrir en una consulta, cuando la persona acompaña a otro usuario, cuando llega referida por un agente comunitario o cuando la refiere otro establecimiento. No se espera a que la persona pida una atención preventiva."
+          ],
+          "bullets": [
+            "Identificar a la persona y ofrecer el paquete de cuidado integral.",
+            "Concertar una cita para iniciar el cuidado, el mismo día o después.",
+            "Registrar la captación y asegurar que la persona sepa dónde y cuándo continuar."
+          ],
+          "callout": {
+            "title": "Idea para retener",
+            "text": "Captar no es esperar que la persona regrese: es identificar, ofrecer el paquete y concertar una cita.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            10,
+            18,
+            19,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-cuidado"
+    },
+    {
+      "id": "sheet-adulto-02",
+      "title": "Admisión, triage y plan de cuidado",
+      "kicker": "Cuidado integral · Ruta de entrada",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La admisión verifica la afiliación, abre historia clínica y ficha familiar, entrega el carnet y orienta el flujo. El triage detecta signos de alarma y el plan organiza las prestaciones del año.",
+      "keyConcepts": [
+        "Si la persona no tiene seguro, se afilia al SIS.",
+        "Toda persona adulta requiere historia clínica individual y ficha familiar.",
+        "El triage incluye antropometría, signos vitales y cálculo del IMC.",
+        "El plan de cuidado integral se elabora en la primera consulta y programa las citas."
+      ],
+      "sections": [
+        {
+          "title": "Admisión sin barreras",
+          "body": [
+            "La admisión verifica la IAFAS y, si la persona no está afiliada, la afilia al SIS. Si su seguro no financia la prestación en ese establecimiento, se le informa sobre el cuidado integral y sus derechos.",
+            "Se abre la historia clínica individual y la ficha familiar, se entrega el carnet de cuidado integral y se orienta el flujo dentro del establecimiento."
+          ],
+          "bullets": [
+            "Datos mínimos: nombres, documento de identidad, fecha de nacimiento, dirección y teléfono.",
+            "Registro físico o electrónico, integrado a la historia clínica.",
+            "Orientación clara sobre el siguiente paso, sin dejar a la persona sin destino."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Triage y evaluación inicial",
+          "body": [
+            "El triage identifica signos y síntomas de alarma para decidir si la atención es ambulatoria o de urgencia. En la misma evaluación se toman medidas antropométricas y signos vitales."
+          ],
+          "table": {
+            "headers": [
+              "Dato",
+              "Para qué sirve"
+            ],
+            "rows": [
+              [
+                "Peso, talla e IMC",
+                "Determinar estado nutricional y riesgo metabólico."
+              ],
+              [
+                "Perímetro abdominal",
+                "Estimar riesgo cardiometabólico."
+              ],
+              [
+                "Presión arterial",
+                "Detectar hipertensión con equipos calibrados."
+              ],
+              [
+                "Frecuencia cardiaca y respiratoria",
+                "Completar la evaluación inicial y detectar gravedad."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Plan de cuidado integral",
+          "body": [
+            "El profesional que atiende en la primera consulta elabora el plan de cuidado integral según la condición de la persona. El plan programa las citas de las prestaciones que conforman el paquete y se registra en la historia clínica.",
+            "La evaluación integral se realiza una vez al año, priorizando los factores de riesgo de enfermedades no transmisibles y la salud mental."
+          ],
+          "callout": {
+            "title": "No confundir",
+            "text": "El plan no es una receta aislada: es la programación coordinada de promoción, prevención, recuperación y rehabilitación.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            22,
+            23,
+            24,
+            25,
+            42
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-cuidado"
+    },
+    {
+      "id": "sheet-adulto-03",
+      "title": "Evaluación integral: medir para prevenir",
+      "kicker": "Evaluación · Riesgo cardiometabólico",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Cada año se evalúan factores de riesgo con anamnesis, examen físico, presión arterial, perímetro abdominal, IMC, glucosa y perfil lipídico. El objetivo es detectar temprano, no esperar síntomas.",
+      "keyConcepts": [
+        "La evaluación integral del adulto se realiza una vez al año.",
+        "La presión arterial se mide con equipos calibrados y técnica estandarizada.",
+        "El perímetro abdominal y el IMC estiman riesgo metabólico y cardiovascular.",
+        "Si no hay capacidad para el perfil lipídico, se refiere al siguiente nivel."
+      ],
+      "sections": [
+        {
+          "title": "Qué se mide y por qué",
+          "body": [
+            "La evaluación clínica busca factores de riesgo de sobrepeso, obesidad, diabetes, hipertensión, salud mental y cáncer. Se apoya en la anamnesis, el examen físico y pruebas de laboratorio según la capacidad del establecimiento."
+          ],
+          "table": {
+            "headers": [
+              "Medición",
+              "Interpretación clínica"
+            ],
+            "rows": [
+              [
+                "Presión arterial",
+                "Identifica hipertensión y orienta confirmación y tratamiento."
+              ],
+              [
+                "Perímetro abdominal",
+                "Se relaciona con diabetes tipo 2, hipertensión y enfermedad cardiovascular."
+              ],
+              [
+                "IMC",
+                "Clasifica el estado nutricional y el riesgo asociado."
+              ],
+              [
+                "Glucosa",
+                "Detecta hiperglicemia mediante glucosa en ayunas, al azar o tolerancia oral."
+              ],
+              [
+                "Perfil lipídico",
+                "Detecta dislipidemias mediante colesterol total, HDL, triglicéridos y LDL calculado."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Cuando el resultado altera el plan",
+          "body": [
+            "Un valor alterado no se interpreta de forma aislada. Se confirma, se valora el riesgo global y se define si corresponde manejo en el primer nivel o referencia."
+          ],
+          "bullets": [
+            "Registrar el resultado y el plan en la historia clínica.",
+            "Educar y acordar metas realistas con la persona.",
+            "Programar control y adherencia al tratamiento.",
+            "Referir cuando el establecimiento no cuenta con la capacidad resolutiva necesaria."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Riesgo que no se ve en la consulta",
+          "body": [
+            "La evaluación también considera el contexto familiar, laboral y comunitario. La salud ocupacional, la vivienda, la alimentación y el acceso a servicios influyen en el riesgo y en la posibilidad real de cambiar."
+          ],
+          "callout": {
+            "title": "Mirada integral",
+            "text": "Medir sin preguntar por el contexto produce cifras correctas y planes imposibles de cumplir.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            24,
+            28,
+            29,
+            42
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-evaluacion"
+    },
+    {
+      "id": "sheet-adulto-04",
+      "title": "Promoción y prevención: el paquete del año",
+      "kicker": "Prevención · Paquete priorizado",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Promoción dos veces al año, con al menos tres meses de intervalo; visita familiar cuatro veces al año y PAIFAM. El paquete incluye tamizajes de cáncer, salud mental, planificación familiar, inmunizaciones y salud bucal.",
+      "keyConcepts": [
+        "Las actividades de promoción se brindan dos veces al año, con intervalo mínimo de tres meses.",
+        "La visita familiar integral se realiza cuatro veces al año.",
+        "El PAIFAM se completa con la evaluación integral de la familia.",
+        "El paquete puede ser priorizado o completo según la capacidad resolutiva."
+      ],
+      "sections": [
+        {
+          "title": "Promoción con frecuencia y contenido",
+          "body": [
+            "La promoción busca empoderar a la persona para que tome control de su salud. Se brinda de forma individual o grupal, en la vivienda, la comunidad, el centro laboral o la institución educativa."
+          ],
+          "bullets": [
+            "Actividad física, alimentación y estilos de vida saludable.",
+            "Prevención del consumo de alcohol, tabaco y sustancias psicoactivas.",
+            "Prevención de la violencia, buen trato y cultura de paz.",
+            "Salud sexual y reproductiva; seguridad vial; higiene y ambiente."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Prevención organizada por riesgos",
+          "body": [
+            "La prevención incluye tamizajes, control periódico y protección específica. No todas las prestaciones se realizan en todos los establecimientos: la capacidad resolutiva define si el paquete es priorizado o completo."
+          ],
+          "table": {
+            "headers": [
+              "Componente",
+              "Ejemplos del paquete"
+            ],
+            "rows": [
+              [
+                "Riesgo cardiometabólico",
+                "Presión arterial, perímetro abdominal, IMC, glucosa y perfil lipídico."
+              ],
+              [
+                "Cáncer",
+                "Cuello uterino, mama, próstata, colon y recto, piel."
+              ],
+              [
+                "Salud mental",
+                "PHQ-9, AUDIT y tamizaje de violencia."
+              ],
+              [
+                "Salud sexual y reproductiva",
+                "Consejería y métodos anticonceptivos."
+              ],
+              [
+                "Protección específica",
+                "Inmunizaciones según esquema y salud bucal."
+              ],
+              [
+                "Salud ocupacional",
+                "Identificación de factores de riesgo laborales."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Priorizado no significa incompleto para siempre",
+          "body": [
+            "Los establecimientos I-1 e I-2 brindan el paquete priorizado; los I-3 e I-4, el paquete completo. Si una prestación no está disponible, corresponde coordinar la referencia para que la persona no pierda el cuidado."
+          ],
+          "callout": {
+            "title": "Continuidad",
+            "text": "La capacidad resolutiva organiza la oferta, pero no justifica abandonar una necesidad detectada.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            26,
+            27,
+            28,
+            31,
+            33,
+            35,
+            37
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-evaluacion"
+    },
+    {
+      "id": "sheet-adulto-05",
+      "title": "Cáncer: tamizajes que no se improvisan",
+      "kicker": "Prevención · Cáncer",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El paquete incluye tamizaje de cuello uterino con VPH, IVAA o Papanicolaou; mama con examen clínico; próstata con tacto y PSA; colon y recto con sangre oculta; y piel con la regla ABCDE.",
+      "keyConcepts": [
+        "El tamizaje de cuello uterino puede usar prueba de VPH, IVAA o Papanicolaou.",
+        "El tamizaje de mama incluye examen clínico ordenado de mama y axila.",
+        "El tamizaje de próstata combina evaluación médica, tacto rectal y PSA.",
+        "El tamizaje de piel sigue la regla ABCDE."
+      ],
+      "sections": [
+        {
+          "title": "Cuello uterino y mama",
+          "body": [
+            "El tamizaje de cuello uterino busca lesiones premalignas. La prueba de VPH identifica virus de alto riesgo; la IVAA y el Papanicolaou permiten evaluar el cuello uterino según la norma vigente.",
+            "En mama, el examen clínico busca masas palpables y otros signos. La indicación de mamografía u otros estudios corresponde según la norma específica y la evaluación del riesgo."
+          ],
+          "table": {
+            "headers": [
+              "Tamizaje",
+              "Herramienta principal"
+            ],
+            "rows": [
+              [
+                "Cuello uterino",
+                "Prueba de VPH, IVAA o Papanicolaou."
+              ],
+              [
+                "Mama",
+                "Examen clínico de mama y axila."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Próstata, colon y piel",
+          "body": [
+            "En próstata se realiza evaluación médica con palpación digital y dosaje de PSA. En colon y recto se indica examen físico y sangre oculta en heces. En piel se evalúa asimetría, borde, color, diámetro y evolución."
+          ],
+          "table": {
+            "headers": [
+              "Tamizaje",
+              "Herramienta principal"
+            ],
+            "rows": [
+              [
+                "Próstata",
+                "Tacto rectal y PSA."
+              ],
+              [
+                "Colon y recto",
+                "Examen físico y sangre oculta en heces."
+              ],
+              [
+                "Piel",
+                "Evaluación física con regla ABCDE."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué hacer con un resultado",
+          "body": [
+            "Un tamizaje positivo no es un diagnóstico de cáncer. Debe confirmarse, registrarse y derivarse oportunamente según la norma específica, asegurando que la persona conozca el siguiente paso."
+          ],
+          "callout": {
+            "title": "Tamizar no es diagnosticar",
+            "text": "El valor del tamizaje está en detectar temprano y cerrar el circuito con confirmación y tratamiento.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-riesgos"
+    },
+    {
+      "id": "sheet-adulto-06",
+      "title": "Salud mental, violencia y consumo",
+      "kicker": "Prevención · Salud mental",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "El paquete incluye tamizaje de depresión, AUDIT para alcohol y drogas e indagación de violencia. La detección oportuna permite tratar y derivar, pero ningún tamizaje reemplaza la evaluación clínica.",
+      "keyConcepts": [
+        "El tamizaje de depresión se apoya en observación, entrevista y PHQ-9.",
+        "El AUDIT identifica consumo perjudicial de alcohol.",
+        "La violencia se explora con signos, actitudes y comportamientos, en un espacio seguro.",
+        "Un resultado positivo requiere confirmación y plan de cuidado."
+      ],
+      "sections": [
+        {
+          "title": "Tres tamizajes, tres preguntas",
+          "body": [
+            "El equipo de salud no busca etiquetas: busca necesidades que puedan estar ocultas detrás de un motivo de consulta físico."
+          ],
+          "table": {
+            "headers": [
+              "Tamizaje",
+              "Qué explora"
+            ],
+            "rows": [
+              [
+                "Depresión",
+                "Síntomas depresivos mediante observación, entrevista y PHQ-9."
+              ],
+              [
+                "Alcohol y drogas",
+                "Consumo perjudicial mediante AUDIT."
+              ],
+              [
+                "Violencia",
+                "Signos, actitudes y comportamientos asociados a violencia."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué hacer si sale positivo",
+          "body": [
+            "El resultado se interpreta con la entrevista y el contexto. Se informa a la persona, se brinda consejería y se define si corresponde manejo en el establecimiento o referencia."
+          ],
+          "bullets": [
+            "No comunicar un diagnóstico solo por el puntaje de un cuestionario.",
+            "Evaluar riesgo, redes de apoyo y necesidades inmediatas.",
+            "Registrar el hallazgo y el plan acordado.",
+            "Coordinar con salud mental cuando la complejidad lo requiera."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Violencia: preguntar con seguridad",
+          "body": [
+            "La indagación debe realizarse en privado, sin la pareja o acompañante, con escucha activa y sin juicios. La seguridad de la persona es parte de la evaluación."
+          ],
+          "callout": {
+            "title": "Primum non nocere",
+            "text": "Preguntar por violencia sin condiciones de privacidad puede aumentar el riesgo. Primero se asegura el espacio; después se pregunta.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-riesgos"
+    },
+    {
+      "id": "sheet-adulto-07",
+      "title": "Referencia, contrarreferencia y continuidad",
+      "kicker": "Continuidad · Redes",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "La referencia se hace cuando la capacidad resolutiva no alcanza; la contrarreferencia devuelve el caso con información para continuar el cuidado en el primer nivel.",
+      "keyConcepts": [
+        "Referir es trasladar el caso con información clínica suficiente.",
+        "La contrarreferencia devuelve hallazgos, tratamiento y plan de seguimiento.",
+        "La cita y el registro sostienen la continuidad.",
+        "Oferta fija, móvil y telesalud son modalidades complementarias."
+      ],
+      "sections": [
+        {
+          "title": "Derivar con información",
+          "body": [
+            "La referencia no es un abandono. Debe incluir el motivo, los hallazgos relevantes, el tratamiento recibido, los exámenes disponibles y la identificación de la persona."
+          ],
+          "bullets": [
+            "Registrar la referencia en la historia clínica.",
+            "Informar a la persona y a su familia sobre el destino y el motivo.",
+            "Coordinar la cita cuando el sistema lo permita.",
+            "Asegurar la contrarreferencia y el retorno al primer nivel."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Recibir de vuelta",
+          "body": [
+            "La contrarreferencia permite que el primer nivel retome el control, la adherencia y la vigilancia. Sin ella, la persona queda atrapada entre niveles y el cuidado se fragmenta."
+          ],
+          "callout": {
+            "title": "Cerrar el circuito",
+            "text": "Una referencia sin contrarreferencia es una derivación a medias.",
+            "tone": "info"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Modalidades que sostienen la continuidad",
+          "body": [
+            "La atención puede brindarse en oferta fija, oferta móvil o telesalud. La modalidad se elige según el territorio, la capacidad del establecimiento y las necesidades de la persona."
+          ],
+          "table": {
+            "headers": [
+              "Modalidad",
+              "Uso"
+            ],
+            "rows": [
+              [
+                "Oferta fija",
+                "Atención programada en el establecimiento."
+              ],
+              [
+                "Oferta móvil",
+                "Acercamiento a zonas de difícil acceso."
+              ],
+              [
+                "Telesalud",
+                "Teleorientación, telemonitoreo o teleconsulta cuando corresponde."
+              ]
+            ]
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            25,
+            40,
+            42
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-continuidad"
+    },
+    {
+      "id": "sheet-adulto-08",
+      "title": "Organización, financiamiento y vigilancia",
+      "kicker": "Gestión · CISPA",
+      "minutes": 5,
+      "level": "Avanzado",
+      "summary": "El CISPA se organiza por capacidad resolutiva, se financia por IAFAS y SIS y se registra en la historia clínica y los sistemas de información. La vigilancia permite medir cobertura y calidad.",
+      "keyConcepts": [
+        "El paquete es priorizado en I-1 e I-2 y completo en I-3 e I-4.",
+        "El financiamiento corresponde a las IAFAS, con cobertura mínima del PEAS.",
+        "El registro alimenta la continuidad y la vigilancia.",
+        "La organización incluye horarios, flujos y señalización."
+      ],
+      "sections": [
+        {
+          "title": "Quién hace qué",
+          "body": [
+            "Los establecimientos del primer nivel organizan un equipo de salud capacitado. Los niveles II y III conforman un equipo interdisciplinario y brindan el paquete completo."
+          ],
+          "table": {
+            "headers": [
+              "Nivel",
+              "Responsabilidad"
+            ],
+            "rows": [
+              [
+                "I-1 e I-2",
+                "Paquete priorizado según capacidad resolutiva."
+              ],
+              [
+                "I-3 e I-4",
+                "Paquete completo con equipo de salud."
+              ],
+              [
+                "II y III",
+                "Complementariedad, continuidad y atención especializada."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Financiamiento y registro",
+          "body": [
+            "Las intervenciones son financiadas por las IAFAS en el marco del aseguramiento universal. El SIS cubre a la población sin otro seguro. Todas las actividades programadas deben incorporarse al plan operativo institucional."
+          ],
+          "bullets": [
+            "Verificar la afiliación y afiliar al SIS cuando corresponda.",
+            "Registrar las atenciones en la historia clínica y en los sistemas institucionales.",
+            "Usar la información para programar citas y evaluar cobertura."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Vigilancia y mejora",
+          "body": [
+            "La vigilancia no es un trámite administrativo: permite saber si las personas captadas reciben el paquete, si los tamizajes se cierran y si las referencias retornan."
+          ],
+          "callout": {
+            "title": "Lo que no se registra no se puede cuidar",
+            "text": "El registro oportuno sostiene la continuidad, la evaluación y la toma de decisiones.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            38,
+            40,
+            45,
+            46
+          ]
+        }
+      ],
+      "areaId": "area-adulto",
+      "topicId": "topic-adulto-continuidad"
+    },
+    {
+      "id": "sheet-depresion-01",
+      "title": "PHQ-9: tamizar no es diagnosticar",
+      "kicker": "Depresión · Tamizaje",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "En grupos prioritarios se recomienda tamizar con PHQ-9; un puntaje mayor o igual a 10 es positivo, pero el diagnóstico se confirma con los criterios CIE-10.",
+      "keyConcepts": [
+        "Los grupos prioritarios son adultos mayores, personas con enfermedades crónicas y mujeres en periodo de periparto.",
+        "Un PHQ-9 mayor o igual a 10 se considera positivo.",
+        "Cualquier personal de salud con oportunidad de atender puede aplicar el tamizaje.",
+        "Un tamizaje positivo no confirma el diagnóstico."
+      ],
+      "sections": [
+        {
+          "title": "A quién tamizar",
+          "body": [
+            "La recomendación es tamizar a los grupos prioritarios que acuden a consulta en el primer nivel. No se propone tamizar a toda la población sin criterio, sino concentrar el esfuerzo donde la probabilidad y el impacto son mayores."
+          ],
+          "bullets": [
+            "Adultos mayores.",
+            "Personas con enfermedades crónicas.",
+            "Mujeres en periodo de periparto.",
+            "Personas con síntomas depresivos que no cumplen criterios de episodio."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cómo interpretar el PHQ-9",
+          "body": [
+            "El PHQ-9 evalúa nueve síntomas durante las dos semanas previas. El punto de corte operativo para el tamizaje es 10; después de confirmar el episodio, el mismo puntaje ayuda a graduar la severidad."
+          ],
+          "table": {
+            "headers": [
+              "Puntaje",
+              "Lectura"
+            ],
+            "rows": [
+              [
+                "0 a 9",
+                "Tamizaje negativo."
+              ],
+              [
+                "10 a 14",
+                "Episodio depresivo leve."
+              ],
+              [
+                "15 a 19",
+                "Episodio depresivo moderado."
+              ],
+              [
+                "20 a 27",
+                "Episodio depresivo severo."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "El test no reemplaza la entrevista",
+          "body": [
+            "El PHQ-9 tiene buena sensibilidad y especificidad, pero puede clasificar erróneamente. Por eso, todo positivo se confirma con los criterios CIE-10 y con una evaluación clínica que descarte otras causas."
+          ],
+          "callout": {
+            "title": "Secuencia correcta",
+            "text": "Tamizar, confirmar y luego graduar. Nunca iniciar un tratamiento solo por el puntaje.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            20
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tamizaje"
+    },
+    {
+      "id": "sheet-depresion-02",
+      "title": "Prevenir y descartar bipolaridad",
+      "kicker": "Depresión · Prevención y diagnóstico diferencial",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La prevención se basa en intervenciones psicológicas y educativas, especialmente en grupos de riesgo. Antes de tratar, hay que descartar depresión bipolar.",
+      "keyConcepts": [
+        "La prevención puede incluir educación y estrategias cognitivo-conductuales.",
+        "Se prioriza a adultos mayores, personas con enfermedades crónicas y mujeres en periparto.",
+        "Una hipomanía dura cuatro días o más; una manía, una semana o más.",
+        "Si se sospecha bipolaridad, se refiere al psiquiatra."
+      ],
+      "sections": [
+        {
+          "title": "Prevención selectiva",
+          "body": [
+            "La GPC sugiere intervenciones preventivas psicológicas y educativas basadas en terapia cognitivo-conductual: inteligencia emocional, resolución de problemas y estrategias de afrontamiento."
+          ],
+          "bullets": [
+            "Se dirigen principalmente a grupos de riesgo.",
+            "También pueden ofrecerse a personas con síntomas depresivos que no cumplen criterios de episodio.",
+            "No reemplazan el tratamiento de un episodio ya establecido."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Bipolaridad: dos pistas temporales",
+          "body": [
+            "La sospecha de depresión bipolar cambia el tratamiento porque la monoterapia con antidepresivos puede desencadenar síntomas maníacos."
+          ],
+          "table": {
+            "headers": [
+              "Episodio",
+              "Duración mínima",
+              "Qué se observa"
+            ],
+            "rows": [
+              [
+                "Hipomanía",
+                "4 días o más",
+                "Elevación leve y persistente del ánimo, aumento de energía y actividad."
+              ],
+              [
+                "Manía",
+                "1 semana o más",
+                "Humor elevado sin relación con las circunstancias, excitación, menor necesidad de sueño."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Por qué importa",
+          "body": [
+            "La prevalencia de depresión bipolar en pacientes tratados en atención primaria es relevante. No identificarla puede llevar a un tratamiento incorrecto y a un mayor riesgo de viraje maníaco."
+          ],
+          "callout": {
+            "title": "Antes del antidepresivo",
+            "text": "Preguntar por episodios de exaltación, irritabilidad o disminución de sueño no es un detalle: es seguridad clínica.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            21
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tamizaje"
+    },
+    {
+      "id": "sheet-depresion-03",
+      "title": "CIE-10: confirmar y graduar",
+      "kicker": "Depresión · Diagnóstico",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El episodio depresivo exige al menos dos semanas, dos síntomas característicos y un total de cuatro de diez. La gravedad se gradúa con el PHQ-9.",
+      "keyConcepts": [
+        "Duración mínima: dos semanas.",
+        "Se requieren al menos dos síntomas característicos.",
+        "El total debe sumar al menos cuatro de los diez síntomas.",
+        "La gravedad se clasifica con PHQ-9 en leve, moderada o severa."
+      ],
+      "sections": [
+        {
+          "title": "Los criterios",
+          "body": [
+            "El CIE-10 exige que el episodio dure al menos dos semanas y que estén presentes al menos dos síntomas característicos: ánimo deprimido, pérdida de interés o placer, o disminución de energía con fatigabilidad."
+          ],
+          "bullets": [
+            "Además de los característicos, debe haber al menos otro síntoma de la lista.",
+            "La suma total debe ser de cuatro o más de los diez síntomas.",
+            "Los síntomas deben generar malestar o deterioro clínicamente significativo."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Bandas de severidad",
+          "body": [
+            "Una vez confirmado el episodio y descartada la bipolaridad, el PHQ-9 permite asignar severidad y decidir el nivel de atención."
+          ],
+          "table": {
+            "headers": [
+              "PHQ-9",
+              "Severidad",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "10 a 14",
+                "Leve",
+                "Manejo en primer nivel según preferencias y recursos."
+              ],
+              [
+                "15 a 19",
+                "Moderado",
+                "Referir al psiquiatra."
+              ],
+              [
+                "20 a 27",
+                "Severo",
+                "Referir al psiquiatra."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Qué cambia con la gravedad",
+          "body": [
+            "El episodio leve puede manejarse en el primer nivel. El moderado o severo requiere evaluación especializada porque el riesgo, la complejidad y la necesidad de ajuste terapéutico aumentan."
+          ],
+          "callout": {
+            "title": "No sobrediagnosticar",
+            "text": "Un puntaje alto no reemplaza la entrevista: hay que confirmar criterios, descartar causas orgánicas y valorar el contexto.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            20,
+            21
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-diagnostico"
+    },
+    {
+      "id": "sheet-depresion-04",
+      "title": "Señales para no manejar en primer nivel",
+      "kicker": "Depresión · Derivación",
+      "minutes": 6,
+      "level": "Avanzado",
+      "summary": "Moderado o severo, sospecha de bipolaridad, psicosis, riesgo suicida o falta de respuesta obligan a replantear el manejo y derivar.",
+      "keyConcepts": [
+        "El episodio moderado o severo se refiere al psiquiatra.",
+        "La sospecha de bipolaridad se refiere para diagnóstico y manejo.",
+        "La ideación suicida es un síntoma que exige valoración urgente del riesgo.",
+        "La falta de respuesta debe hacer reconsiderar el diagnóstico y la adherencia."
+      ],
+      "sections": [
+        {
+          "title": "Criterios de derivación",
+          "body": [
+            "La derivación no es un fracaso del primer nivel: es una decisión clínica para garantizar seguridad y tratamiento adecuado."
+          ],
+          "bullets": [
+            "PHQ-9 de 15 o más o criterios de episodio moderado o severo.",
+            "Sospecha de depresión bipolar.",
+            "Psicosis, agitación grave o deterioro funcional marcado.",
+            "Riesgo suicida o autolesivo.",
+            "Falta de respuesta después de un tratamiento bien conducido."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Riesgo suicida",
+          "body": [
+            "Los pensamientos recurrentes de muerte o suicidio forman parte de los criterios diagnósticos. No se asume que son una llamada de atención ni se minimizan: se exploran y se activa una evaluación urgente del riesgo."
+          ],
+          "bullets": [
+            "Preguntar de forma directa y respetuosa.",
+            "Valorar plan, medios, intención y factores protectores.",
+            "No dejar sola a la persona si el riesgo es alto.",
+            "Coordinar con emergencia o salud mental según el nivel de riesgo."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Reevaluar antes de insistir",
+          "body": [
+            "Si el tratamiento no funciona, hay que revisar el diagnóstico, la adherencia, los efectos adversos, los factores psicosociales y la presencia de otra patología antes de aumentar dosis o cambiar de fármaco."
+          ],
+          "callout": {
+            "title": "Seguridad primero",
+            "text": "Ante riesgo suicida, psicosis o deterioro rápido, la prioridad no es completar un esquema: es proteger la vida y derivar.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            11,
+            12,
+            21
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-diagnostico"
+    },
+    {
+      "id": "sheet-depresion-05",
+      "title": "Psicoterapia: primera línea",
+      "kicker": "Depresión · Tratamiento",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La TCC es la psicoterapia recomendada; si no está disponible, terapia de resolución de problemas. Dura de 8 a 20 sesiones, una o dos por semana.",
+      "keyConcepts": [
+        "La terapia cognitivo-conductual tiene recomendación fuerte.",
+        "La terapia de resolución de problemas es la alternativa cuando no hay TCC.",
+        "La duración es de 8 a 20 sesiones, una o dos veces por semana.",
+        "La respuesta se mide con PHQ-9 al menos en la sexta sesión."
+      ],
+      "sections": [
+        {
+          "title": "Elección y formato",
+          "body": [
+            "En el episodio leve, la psicoterapia y la farmacoterapia son opciones iniciales. La elección considera contraindicaciones, preferencias de la persona y disponibilidad de recursos."
+          ],
+          "bullets": [
+            "TCC como primera opción.",
+            "Resolución de problemas si no hay TCC disponible.",
+            "Otras psicoterapias solo como complemento.",
+            "Terapia familiar si el entorno disfuncional refuerza los síntomas; terapia grupal para fortalecer redes."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Dosis y seguimiento",
+          "body": [
+            "La psicoterapia no es una conversación sin estructura. Tiene número de sesiones, objetivo y medición de respuesta."
+          ],
+          "table": {
+            "headers": [
+              "Elemento",
+              "Indicación"
+            ],
+            "rows": [
+              [
+                "Duración",
+                "8 a 20 sesiones."
+              ],
+              [
+                "Frecuencia",
+                "1 a 2 veces por semana."
+              ],
+              [
+                "Línea base",
+                "PHQ-9 antes de iniciar."
+              ],
+              [
+                "Control",
+                "PHQ-9 al menos en la sexta sesión."
+              ],
+              [
+                "Respuesta",
+                "Reducción de 50% o más del puntaje basal."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Otras terapias",
+          "body": [
+            "La activación conductual, la terapia psicodinámica y la interpersonal pueden considerarse como complemento de la TCC o de la resolución de problemas, no como sustituto automático."
+          ],
+          "callout": {
+            "title": "Medir para ajustar",
+            "text": "Si no hay respuesta en la sexta sesión, no se sigue igual por inercia: se reformula el plan.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            11,
+            12
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tratamiento"
+    },
+    {
+      "id": "sheet-depresion-06",
+      "title": "Respuesta, remisión y alta",
+      "kicker": "Depresión · Seguimiento",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Respuesta es reducir 50% o más; parcial, entre 20% y 49%; nula, 19% o menos. Remisión es ausencia de síntomas característicos por tres semanas, con hasta tres síntomas residuales.",
+      "keyConcepts": [
+        "Respuesta: reducción de 50% o más del PHQ-9 basal.",
+        "Respuesta parcial: reducción de 20% a 49%.",
+        "No respuesta: reducción de 19% o menos.",
+        "Remisión: tres semanas sin síntomas característicos, con hasta tres residuales."
+      ],
+      "sections": [
+        {
+          "title": "Tres formas de leer el cambio",
+          "body": [
+            "El mismo puntaje basal permite comparar y decidir. No basta con sentirse mejor: hay que medir el cambio y evaluar el funcionamiento."
+          ],
+          "table": {
+            "headers": [
+              "Categoría",
+              "Cambio en PHQ-9"
+            ],
+            "rows": [
+              [
+                "Respuesta",
+                "Disminución de 50% o más."
+              ],
+              [
+                "Respuesta parcial",
+                "Disminución de 20% a 49%."
+              ],
+              [
+                "No respuesta",
+                "Disminución de 19% o menos."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Remisión y alta",
+          "body": [
+            "La remisión exige ausencia de los síntomas característicos durante al menos tres semanas; pueden persistir hasta tres síntomas residuales. Si se alcanza, se puede dar de alta con plan de seguimiento."
+          ],
+          "bullets": [
+            "Evaluar remisión tres semanas después del término de la psicoterapia o del periodo de respuesta.",
+            "Reforzar señales de alarma y plan de recaída.",
+            "Mantener controles según riesgo y preferencias."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Ejercicio y prevención de recaídas",
+          "body": [
+            "La GPC recomienda ejercicio físico como parte del manejo. Una prescripción práctica es caminar, trotar o correr 30 minutos, tres veces por semana, adaptada a la condición física."
+          ],
+          "callout": {
+            "title": "Alta no es abandono",
+            "text": "El alta se acompaña de un plan claro: qué observar, a quién acudir y cuándo volver.",
+            "tone": "info"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            12,
+            13
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-tratamiento"
+    },
+    {
+      "id": "sheet-depresion-07",
+      "title": "ISRS: iniciar y ajustar",
+      "kicker": "Depresión · Farmacoterapia",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Si se opta por fármacos, el ISRS es la primera elección. No se inicia con clomipramina ni amitriptilina. La respuesta se evalúa entre la semana 4 y 6.",
+      "keyConcepts": [
+        "El ISRS es la primera elección farmacológica.",
+        "No se inicia con clomipramina ni amitriptilina.",
+        "La duración inicial es de 8 a 12 semanas.",
+        "La respuesta se evalúa entre la cuarta y sexta semana."
+      ],
+      "sections": [
+        {
+          "title": "Elección",
+          "body": [
+            "La recomendación es iniciar con un inhibidor selectivo de la recaptación de serotonina. La elección concreta considera comorbilidades, interacciones, efectos adversos y preferencias."
+          ],
+          "bullets": [
+            "No usar clomipramina ni amitriptilina como primera opción.",
+            "Si un ISRS no se tolera, cambiar a otro ISRS u otro grupo según el perfil clínico.",
+            "Explicar efectos adversos y adherencia desde la primera consulta."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Monitoreo",
+          "body": [
+            "La farmacoterapia tiene controles definidos. Si hay respuesta en la semana 4 a 6, se mantiene la dosis; si no, se incrementa y se continúa."
+          ],
+          "table": {
+            "headers": [
+              "Momento",
+              "Qué hacer"
+            ],
+            "rows": [
+              [
+                "Antes de iniciar",
+                "PHQ-9 basal y evaluación clínica."
+              ],
+              [
+                "Semana 4 a 6",
+                "Medir respuesta; mantener o incrementar dosis."
+              ],
+              [
+                "Semana 8 a 12",
+                "Reevaluar respuesta y remisión."
+              ],
+              [
+                "Respuesta",
+                "Continuar misma dosis tres semanas más."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Efectos adversos",
+          "body": [
+            "Los ISRS suelen ser mejor tolerados que los tricíclicos, pero no están exentos de efectos. La persona debe conocer qué observar y cuándo consultar."
+          ],
+          "callout": {
+            "title": "No cambiar a ciegas",
+            "text": "Antes de modificar el fármaco, revisar adherencia, dosis, interacciones, consumo de sustancias y diagnóstico.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-farmacos"
+    },
+    {
+      "id": "sheet-depresion-08",
+      "title": "Mantener, reducir y derivar",
+      "kicker": "Depresión · Curso clínico",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Si hay respuesta a las 8-12 semanas, se mantiene la misma dosis y se evalúa remisión tres semanas después. La farmacoterapia se mantiene al menos seis meses tras la remisión.",
+      "keyConcepts": [
+        "La respuesta se reevalúa entre la semana 8 y 12.",
+        "Si hay respuesta, se mantiene la dosis y se evalúa remisión tres semanas después.",
+        "Tras la remisión, la farmacoterapia se mantiene al menos seis meses.",
+        "Luego se reduce gradualmente la dosis hasta el cese."
+      ],
+      "sections": [
+        {
+          "title": "Qué hacer en cada control",
+          "body": [
+            "El seguimiento no es solo preguntar cómo se siente. Se mide el PHQ-9, se revisa adherencia, efectos adversos y funcionamiento, y se ajusta el plan."
+          ],
+          "table": {
+            "headers": [
+              "Escenario",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "Respuesta en semana 4 a 6",
+                "Mantener dosis y continuar."
+              ],
+              [
+                "Sin respuesta en semana 4 a 6",
+                "Incrementar dosis y continuar."
+              ],
+              [
+                "Respuesta en semana 8 a 12",
+                "Mantener dosis y evaluar remisión tres semanas después."
+              ],
+              [
+                "Sin remisión o progresión",
+                "Reconsiderar diagnóstico y derivar."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Mantenimiento",
+          "body": [
+            "La remisión no es el final inmediato del tratamiento. La farmacoterapia se continúa durante al menos seis meses después de alcanzar la remisión y luego se reduce de forma gradual hasta suspenderla."
+          ],
+          "bullets": [
+            "No suspender bruscamente.",
+            "Programar controles durante la reducción.",
+            "Educar sobre signos de recaída."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cuando el plan no funciona",
+          "body": [
+            "Si no hay remisión después de 8 a 12 semanas, hay que evaluar una patología subyacente y la progresión a moderado o severo. En ese caso, la derivación al psiquiatra es la conducta segura."
+          ],
+          "callout": {
+            "title": "No insistir sin revisar",
+            "text": "Aumentar dosis sin reevaluar el diagnóstico solo retrasa el tratamiento correcto.",
+            "tone": "warn"
+          },
+          "depth": "full"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "areaId": "area-depresion",
+      "topicId": "topic-depresion-farmacos"
+    },
+    {
+      "id": "sheet-perinatal-01",
+      "title": "Signos de alarma y tamizajes que abren la puerta",
+      "kicker": "Perinatal · Detección",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Todo contacto con la gestante, la puérpera o el niño menor de 5 años es una oportunidad para detectar. El tamizaje no es un diagnóstico: es una señal que exige evaluación.",
+      "keyConcepts": [
+        "El PHQ-9 explora síntomas depresivos; el WAST, violencia de pareja; el AUDIT-C, consumo de alcohol.",
+        "En la gestante, el PHQ-9 se aplica en el primer trimestre o primer contacto y en el tercer trimestre.",
+        "En la puérpera se aplica antes del alta si no se hizo antes; en la niña o niño se evalúa desarrollo, vínculo y señales de alarma.",
+        "Un resultado positivo abre evaluación clínica, valoración del riesgo y un plan de cuidado; no se archiva como una etiqueta."
+      ],
+      "sections": [
+        {
+          "title": "Mirar antes de preguntar",
+          "body": [
+            "La detección no empieza con el cuestionario. Empieza cuando el personal observa y pregunta por el estado emocional, la calidad del sueño, el apetito, la culpa, la desesperanza, la violencia y el consumo de alcohol.",
+            "En la gestación y el puerperio estos problemas pueden confundirse con molestias esperables. La clave es preguntar de forma directa, en un espacio privado y sin naturalizar el sufrimiento."
+          ],
+          "bullets": [
+            "Tristeza persistente, anhedonia, llanto fácil o irritabilidad.",
+            "Ansiedad, insomnio que no mejora, pesadillas o evitación.",
+            "Ideas de muerte, autolesión o daño al bebé.",
+            "Violencia de pareja, control económico, amenazas o coerción sexual.",
+            "Consumo de alcohol u otras sustancias; falta de apoyo o aislamiento."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Tres instrumentos, tres riesgos distintos",
+          "body": [
+            "Los instrumentos no se sustituyen entre sí: cada uno explora un riesgo diferente y puede aplicarse en la misma consulta."
+          ],
+          "table": {
+            "headers": [
+              "Instrumento",
+              "Qué explora",
+              "Puntaje y punto de corte"
+            ],
+            "rows": [
+              [
+                "PHQ-9",
+                "Síntomas depresivos en las últimas 2 semanas; 9 ítems, 0 a 27.",
+                "Positivo desde 5. Bandas: 5–9 leve, 10–14 moderado, 15–19 moderadamente severo, 20–27 severo."
+              ],
+              [
+                "WAST",
+                "Violencia en la relación de pareja; 8 ítems, 8 a 24.",
+                "Positivo con 15 o más. Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor."
+              ],
+              [
+                "AUDIT-C",
+                "Consumo de alcohol; 3 ítems, 0 a 12.",
+                "Positivo con 3 o más. En el embarazo, cualquier respuesta de consumo nocivo exige intervención."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Momentos que no se deben perder",
+          "bullets": [
+            "Gestante: primer trimestre o primer contacto, y tercer trimestre.",
+            "Puérpera: antes del alta, si no se aplicó durante la gestación.",
+            "Niña o niño menor de 1 año: en dos momentos del primer año, incluido el décimo mes.",
+            "Niña o niño de 1 a 5 años: al menos una vez al año, en la atención del niño.",
+            "Todo contacto por otro motivo también es una oportunidad para preguntar."
+          ],
+          "callout": {
+            "title": "Para recordar",
+            "text": "El tamizaje es una puerta, no una sentencia. Un puntaje alto obliga a evaluar, proteger y ofrecer un plan; un puntaje bajo no elimina la necesidad de escuchar.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-deteccion"
+    },
+    {
+      "id": "sheet-perinatal-02",
+      "title": "Cuando el tamizaje es positivo: confirmar y referir",
+      "kicker": "Perinatal · Tamizaje positivo",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Un tamizaje positivo exige evaluación clínica, diagnóstico y un plan. Los casos leves pueden manejarse en el establecimiento; los moderados y severos se refieren al centro de salud mental comunitario.",
+      "keyConcepts": [
+        "El PHQ-9 positivo se interpreta por bandas: 5–9 leve, 10–14 moderado, 15–19 moderadamente severo, 20–27 severo.",
+        "El WAST positivo o la sospecha por los ítems 4, 6 o 7 activan valoración de riesgo y plan de seguridad.",
+        "El AUDIT-C positivo exige intervención breve; en el embarazo, cualquier consumo de riesgo se aborda sin esperar.",
+        "La gravedad, el riesgo suicida, la psicosis y la incapacidad funcional mandan sobre el puntaje."
+      ],
+      "sections": [
+        {
+          "title": "PHQ-9: del puntaje a la conducta",
+          "body": [
+            "El puntaje orienta, pero no reemplaza la entrevista. Se explora duración, impacto funcional, síntomas psicóticos, ideación suicida y capacidad de cuidar al bebé."
+          ],
+          "table": {
+            "headers": [
+              "Resultado",
+              "Interpretación",
+              "Conducta general"
+            ],
+            "rows": [
+              [
+                "5–9",
+                "Depresión leve",
+                "Manejo en el establecimiento, intervención psicosocial y seguimiento cercano."
+              ],
+              [
+                "10–14",
+                "Depresión moderada",
+                "Evaluación por salud mental; manejo conjunto o referencia al CSMC según riesgo y recursos."
+              ],
+              [
+                "15–19",
+                "Moderadamente severa",
+                "Referencia al CSMC; valorar urgencia y apoyo familiar."
+              ],
+              [
+                "20–27",
+                "Severa",
+                "Referencia prioritaria; descartar psicosis, riesgo suicida y necesidad de hospitalización."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "WAST y AUDIT-C: actuar sin minimizar",
+          "bullets": [
+            "WAST positivo: valorar riesgo, activar plan de seguridad y coordinar con CEM, PNP o justicia según el caso.",
+            "Si los ítems 4, 6 o 7 son afirmativos, tratar como violencia confirmada aunque el total no llegue a 15.",
+            "Un WAST negativo no descarta violencia: si hay señales, preguntar de nuevo y ofrecer ayuda.",
+            "AUDIT-C positivo: intervención breve, educación y referencia según gravedad; en el embarazo no se posterga.",
+            "Nunca preguntar por violencia delante de la pareja o de familiares que puedan ser agresores."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Confirmar, clasificar y organizar",
+          "body": [
+            "El diagnóstico se establece con evaluación clínica y criterios CIE-10, por médico psiquiatra, médico de familia o médico general capacitado. El plan debe integrar salud mental, obstetricia, pediatría y red de apoyo.",
+            "La presencia de psicosis, confusión, ideación suicida estructurada, rechazo de alimentos o incapacidad para cuidar al bebé convierte el caso en una urgencia."
+          ],
+          "callout": {
+            "title": "Regla práctica",
+            "text": "Primero se protege y se evalúa el riesgo; después se discute el diagnóstico y el tratamiento. Un puntaje nunca justifica ignorar una señal de peligro.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            15,
+            16,
+            17,
+            19,
+            23,
+            26,
+            31
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-deteccion"
+    },
+    {
+      "id": "sheet-perinatal-03",
+      "title": "Psicoterapia primero, fármacos con criterio",
+      "kicker": "Perinatal · Tratamiento",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La base del tratamiento es psicosocial y psicoterapéutica. Los psicofármacos se usan cuando el riesgo lo justifica, con evaluación individual y seguimiento estrecho.",
+      "keyConcepts": [
+        "La TCC, la psicoterapia interpersonal y las intervenciones de apoyo son pilares del manejo.",
+        "En gestación y lactancia se evalúa riesgo-beneficio para la madre, el feto, el embarazo y el neonato.",
+        "No se suspende bruscamente un tratamiento necesario; se coordina con psiquiatría.",
+        "La TEC se reserva para casos graves, refractarios o con riesgo vital, tras consentimiento y evaluación."
+      ],
+      "sections": [
+        {
+          "title": "Qué se ofrece antes y junto a los fármacos",
+          "body": [
+            "La directiva prioriza intervenciones psicosociales y psicoterapéuticas: psicoeducación, consejería, activación conductual, resolución de problemas, TCC y psicoterapia interpersonal. También incluye apoyo a la maternidad, lactancia y vínculo.",
+            "En casos leves o moderados, estas intervenciones pueden ser suficientes. En casos graves se combinan con tratamiento farmacológico y seguimiento especializado."
+          ],
+          "bullets": [
+            "TCC: cambiar pensamientos y conductas que mantienen el malestar.",
+            "Psicoterapia interpersonal: trabajar duelo, transición de rol, disputas y déficits sociales.",
+            "Intervenciones de apoyo: escucha, validación, información y activación de redes.",
+            "Terapia de pareja: solo si no hay violencia y existe una relación de cuidado; nunca como sustituto de la protección."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Psicofármacos en gestación y lactancia",
+          "body": [
+            "No hay una regla automática de suspender o iniciar. Se individualiza el riesgo-beneficio y se considera la salud materna, el riesgo de recaída, la edad gestacional, la lactancia y la evidencia disponible.",
+            "La prescripción y el ajuste corresponden al médico tratante con competencia en salud mental; se monitorizan efectos adversos y se coordina con obstetricia y neonatología."
+          ],
+          "table": {
+            "headers": [
+              "Dominio",
+              "Qué evaluar"
+            ],
+            "rows": [
+              [
+                "Madre",
+                "Gravedad, riesgo suicida, funcionalidad, adherencia y preferencia."
+              ],
+              [
+                "Embarazo",
+                "Riesgo de recaída, impacto de la enfermedad no tratada y alternativas."
+              ],
+              [
+                "Feto y neonato",
+                "Exposición, momento del parto, vigilancia neonatal y lactancia."
+              ],
+              [
+                "Tratamiento",
+                "Dosis mínima eficaz, monoterapia cuando sea posible y seguimiento."
+              ]
+            ]
+          },
+          "callout": {
+            "title": "No hacer",
+            "text": "No suspender de golpe un psicofármaco necesario ni iniciarlo sin evaluación. La enfermedad no tratada también tiene riesgos para la madre y el bebé.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "TEC y hospitalización",
+          "body": [
+            "La terapia electroconvulsiva se considera una alternativa de último recurso en depresión grave, psicosis, catatonia, rechazo de alimentos o riesgo vital, cuando otras opciones no son suficientes o no pueden usarse. Requiere consentimiento informado y evaluación especializada.",
+            "La hospitalización se indica cuando existe riesgo suicida, psicosis, incapacidad de autocuidado o de cuidado del bebé, o cuando el manejo ambulatorio no es seguro."
+          ],
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            19,
+            21,
+            22
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-cuidado"
+    },
+    {
+      "id": "sheet-perinatal-04",
+      "title": "Duelo, violencia y continuidad del cuidado",
+      "kicker": "Perinatal · Continuidad",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El duelo perinatal, la violencia y el riesgo suicida exigen una respuesta activa. La continuidad se organiza con el plan de cuidado y el seguimiento maternofilial.",
+      "keyConcepts": [
+        "El duelo perinatal se acompaña con información clara, respeto, posibilidad de ver y despedir al bebé y seguimiento.",
+        "No se aconseja un nuevo embarazo o una adopción inmediata como forma de resolver el duelo.",
+        "La violencia de pareja contraindica la terapia de pareja y exige plan de seguridad.",
+        "El seguimiento puede ser presencial, domiciliario o por teleconsulta, con frecuencia proporcional a la complejidad."
+      ],
+      "sections": [
+        {
+          "title": "Acompañar el duelo perinatal",
+          "body": [
+            "La pérdida puede ocurrir en la gestación, el parto o el puerperio. La respuesta incluye información sencilla y honesta, explicación de los procedimientos, posibilidad de ver y sostener al bebé, respeto a las creencias y apoyo para la despedida.",
+            "El seguimiento debe explorar culpa, síntomas depresivos, duelo complicado y riesgo suicida. No se debe presionar para “superarlo” ni recomendar de inmediato otro embarazo o una adopción."
+          ],
+          "bullets": [
+            "Escuchar sin minimizar: “no fue tu culpa” debe acompañarse de explicación y tiempo.",
+            "Ofrecer apoyo para trámites, funeral y lactancia si corresponde.",
+            "Explorar culpa, ira, negación, síntomas persistentes y riesgo suicida.",
+            "Coordinar salud mental, obstetricia y apoyo social."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Violencia y riesgo suicida",
+          "body": [
+            "La violencia puede aparecer o intensificarse en el embarazo y el puerperio. Se pregunta en privado, se valora el riesgo y se construye un plan de seguridad. La terapia de pareja no se indica cuando hay violencia.",
+            "La ideación suicida, la psicosis, la confusión o la incapacidad para cuidar al bebé requieren evaluación urgente y protección."
+          ],
+          "callout": {
+            "title": "Seguridad primero",
+            "text": "Si hay violencia, no se confronta al agresor ni se cita a la pareja. Se activan redes de protección y se documenta el riesgo.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Un plan que continúa",
+          "body": [
+            "El plan de cuidado integral (PCC) organiza las intervenciones y el seguimiento. La frecuencia depende de la gravedad: puede ser semanal al inicio, luego quincenal o mensual, y debe ajustarse a la evolución.",
+            "La continuidad incluye salud mental, control prenatal o puerperal, lactancia, vínculo, desarrollo infantil y articulación con la comunidad. El alta no es abandono: se acuerda un plan de mantenimiento y signos de alarma."
+          ],
+          "bullets": [
+            "Definir responsable, contacto y próxima cita antes de cerrar la consulta.",
+            "Usar recordatorios y búsqueda activa si la persona no acude.",
+            "Involucrar a la red de apoyo con consentimiento y cuidado de la confidencialidad.",
+            "Registrar el plan y los acuerdos en la historia clínica."
+          ],
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            20,
+            23,
+            26,
+            36
+          ]
+        }
+      ],
+      "areaId": "area-perinatal",
+      "topicId": "topic-perinatal-cuidado"
+    },
+    {
+      "id": "sheet-violencia-01",
+      "title": "Qué es violencia y a quién protege la ley",
+      "kicker": "Violencia · Marco legal",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La Ley N.° 30364 reconoce cuatro formas de violencia y protege a las mujeres durante todo su ciclo de vida y a los integrantes del grupo familiar.",
+      "keyConcepts": [
+        "Los tipos son física, psicológica, sexual y económica o patrimonial.",
+        "La violencia no se limita al daño corporal: incluye control, amenazas, coerción y privación de recursos.",
+        "Protege a mujeres de todas las edades y a los integrantes del grupo familiar.",
+        "La ley reconoce atención de salud gratuita, información, asistencia jurídica y no revictimización."
+      ],
+      "sections": [
+        {
+          "title": "Cuatro formas de violencia",
+          "table": {
+            "headers": [
+              "Tipo",
+              "Qué incluye"
+            ],
+            "rows": [
+              [
+                "Física",
+                "Golpes, empujones, quemaduras o cualquier acción que cause daño corporal."
+              ],
+              [
+                "Psicológica",
+                "Humillación, amenazas, control, aislamiento o desvalorización."
+              ],
+              [
+                "Sexual",
+                "Actos sexuales sin consentimiento, coerción o exposición a contenido sexual."
+              ],
+              [
+                "Económica o patrimonial",
+                "Control del dinero, privación de recursos, daño o retención de bienes y documentos."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Sujetos de protección",
+          "bullets": [
+            "Mujeres durante todo su ciclo de vida: niñas, adolescentes, jóvenes, adultas y adultas mayores.",
+            "Cónyuges, ex cónyuges, convivientes y ex convivientes.",
+            "Ascendientes, descendientes y parientes colaterales dentro de los grados que fija la ley.",
+            "Personas que habitan en el mismo hogar, sin relación contractual o laboral.",
+            "Niños, adolescentes, adultos mayores y personas con discapacidad, con atención especializada."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Derechos que se activan",
+          "bullets": [
+            "Vida, dignidad, igualdad y no discriminación.",
+            "Información, orientación y asistencia jurídica gratuita.",
+            "Atención de salud física y mental gratuita, con documentación y certificados.",
+            "Confidencialidad y protección de la identidad y los datos.",
+            "No ser revictimizada con declaraciones reiterativas o humillantes."
+          ],
+          "callout": {
+            "title": "Para retener",
+            "text": "La violencia también es control, amenaza y privación. La ley protege antes de que exista una lesión grave.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            4,
+            5,
+            6,
+            7,
+            25,
+            27
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-marco"
+    },
+    {
+      "id": "sheet-violencia-02",
+      "title": "Denuncia y medidas de protección",
+      "kicker": "Violencia · Ruta legal",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La denuncia puede ser verbal, escrita o virtual, sin abogado ni tasa. El juez dicta medidas según el riesgo: 48 horas en leve o moderado y 24 horas en severo.",
+      "keyConcepts": [
+        "Se denuncia ante la PNP, fiscalía penal o de familia y juzgado de familia.",
+        "No se exige abogado, tasa, examen médico ni lesiones visibles.",
+        "Los profesionales de salud y educación deben denunciar los casos que conozcan.",
+        "Las medidas buscan proteger la vida y la integridad, no solo sancionar."
+      ],
+      "sections": [
+        {
+          "title": "Dónde y cómo denunciar",
+          "bullets": [
+            "PNP, fiscalía penal o de familia y juzgado de familia.",
+            "Juzgados de paz donde no existan juzgados de familia.",
+            "Denuncia verbal, escrita o por canales virtuales; si es verbal se levanta acta.",
+            "Puede denunciar la persona afectada o cualquier otra en su favor, sin representación.",
+            "No se requiere abogado, tasa, exámenes ni huellas visibles."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Medidas de protección",
+          "body": [
+            "El juez evalúa el riesgo y puede ordenar retiro del agresor del domicilio, prohibición de acercamiento o comunicación, prohibición de armas, inventario de bienes, asignación económica de emergencia, tratamiento psicológico y albergue, entre otras.",
+            "Las medidas se comunican de inmediato a las entidades encargadas de ejecutarlas."
+          ],
+          "table": {
+            "headers": [
+              "Riesgo",
+              "Plazo máximo",
+              "Respuesta"
+            ],
+            "rows": [
+              [
+                "Leve o moderado",
+                "48 horas",
+                "Audiencia y medidas acordes al caso."
+              ],
+              [
+                "Severo",
+                "24 horas",
+                "Medidas inmediatas; puede prescindirse de audiencia."
+              ],
+              [
+                "No determinable",
+                "72 horas",
+                "Evaluación y resolución en audiencia."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Salud y justicia",
+          "bullets": [
+            "Atención de salud gratuita y documentación del daño físico y psíquico.",
+            "Preservación de pruebas y emisión de certificados e informes.",
+            "La atención de urgencia no se condiciona a la denuncia.",
+            "Evitar declaraciones reiterativas y juicios sobre la vida íntima."
+          ],
+          "callout": {
+            "title": "No confundir",
+            "text": "Atender no es lo mismo que denunciar. La atención y la protección se activan de inmediato; la denuncia es un derecho y un deber legal.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            33,
+            35
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-marco"
+    },
+    {
+      "id": "sheet-violencia-03",
+      "title": "Señales de violencia y WAST",
+      "kicker": "Violencia · Detección",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La violencia de pareja se detecta con preguntas directas, privacidad y WAST. Un tamizaje negativo no descarta violencia cuando la clínica alerta.",
+      "keyConcepts": [
+        "El WAST tiene 8 ítems; 15 o más es positivo.",
+        "Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+        "Un WAST negativo no descarta violencia.",
+        "Se pregunta en privado, sin la pareja ni familiares que puedan ser agresores."
+      ],
+      "sections": [
+        {
+          "title": "Señales que alertan",
+          "bullets": [
+            "Embarazos no deseados, lesiones genitales, dolor pélvico, ITS repetidas o disfunción sexual.",
+            "Ansiedad, depresión, insomnio, pesadillas, hipervigilancia o consumo de sustancias.",
+            "Golpes en cabeza, cuello, abdomen, mamas o genitales con explicaciones inconsistentes.",
+            "Miedo, evitación, retraimiento o control de la pareja.",
+            "Amenazas, celos, control económico, aislamiento o armas en casa."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "WAST: cómo preguntar",
+          "body": [
+            "Se explica el propósito, se asegura la privacidad y se adapta el lenguaje. No es un interrogatorio ni una prueba que la persona debe pasar.",
+            "Se aplica en consulta, control prenatal, puerperio y cualquier contacto sanitario. En población general, al menos una vez al año cuando se indaga violencia."
+          ],
+          "bullets": [
+            "Buscar un momento a solas si vino acompañada.",
+            "Explicar la confidencialidad y sus límites.",
+            "Usar preguntas directas y conductuales.",
+            "Registrar resultado y acciones, no solo el puntaje."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Interpretar sin cerrar la puerta",
+          "body": [
+            "Un total de 15 o más es positivo. Si los ítems 4, 6 o 7 son afirmativos, se considera violencia confirmada aunque el total sea menor. Un resultado negativo no excluye violencia: la persona puede no sentirse segura para revelar.",
+            "Ante cualquier positivo o sospecha se valora el riesgo, se ofrece primera acogida y se construye un plan de seguridad."
+          ],
+          "callout": {
+            "title": "Privacidad",
+            "text": "Nunca se pregunta por violencia delante del agresor. La privacidad es una condición de seguridad.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20,
+            42
+          ]
+        },
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-deteccion"
+    },
+    {
+      "id": "sheet-violencia-04",
+      "title": "ANIMA: primera acogida en cinco movimientos",
+      "kicker": "Violencia · Primera acogida",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "ANIMA organiza la primera respuesta: Atención, No juzgar y validar, Informarse, Mejorar la seguridad y Apoyar. No es terapia ni interrogatorio.",
+      "keyConcepts": [
+        "ANIMA significa Atención, No juzgar/validar, Informarse, Mejorar la seguridad y Apoyar.",
+        "La primera acogida busca que la persona se sienta escuchada, informada y más segura.",
+        "No se presiona para denunciar ni se promete lo que no se puede cumplir.",
+        "Se explican los límites de la confidencialidad y se ofrecen opciones."
+      ],
+      "sections": [
+        {
+          "title": "Los cinco movimientos",
+          "table": {
+            "headers": [
+              "Paso",
+              "Qué implica"
+            ],
+            "rows": [
+              [
+                "Atención",
+                "Recibir con respeto, sin apuro, en un espacio privado; escuchar sin interrumpir."
+              ],
+              [
+                "No juzgar y validar",
+                "Creer el relato, validar emociones y evitar preguntas que culpen."
+              ],
+              [
+                "Informarse",
+                "Preguntar por la situación, el riesgo, los apoyos y las necesidades."
+              ],
+              [
+                "Mejorar la seguridad",
+                "Identificar peligros inmediatos y construir un plan realista."
+              ],
+              [
+                "Apoyar",
+                "Informar derechos y opciones, coordinar servicios y acordar seguimiento."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Lo que no se hace",
+          "bullets": [
+            "No preguntar qué hizo para provocar la agresión.",
+            "No confrontar al agresor ni citar a la pareja.",
+            "No presionar para denunciar o dejar la relación.",
+            "No prometer protección absoluta.",
+            "No romper la confidencialidad sin explicar los límites."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cerrar la primera acogida",
+          "body": [
+            "Se resume lo escuchado, se valida el esfuerzo de pedir ayuda y se ofrecen opciones. Se acuerda un próximo paso concreto: cita, llamada, coordinación con CEM o PNP, o plan de seguridad.",
+            "Si hay riesgo inmediato, no se deja a la persona sola: se activa la ruta de protección."
+          ],
+          "callout": {
+            "title": "Frase útil",
+            "text": "“Te creo. No es tu culpa. No tienes que decidir todo ahora. Vamos a ver juntas qué opciones son más seguras.”",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            13,
+            14,
+            15,
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-deteccion"
+    },
+    {
+      "id": "sheet-violencia-05",
+      "title": "Riesgo y plan de seguridad",
+      "kicker": "Violencia · Riesgo",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La ficha de valoración orienta la protección. El riesgo suele aumentar en la separación y debe reevaluarse con cada cambio.",
+      "keyConcepts": [
+        "La ficha se aplica a mujeres y adolescentes mayores de 14 años con violencia de pareja o expareja.",
+        "Puntajes: 0–7 leve, 8–13 moderado, 14–17 severo 1, 18–37 severo 2 o extremo.",
+        "El riesgo puede aumentar en la separación, el embarazo o ante amenazas de muerte o armas.",
+        "El plan de seguridad es concreto: a dónde ir, con quién, qué llevar y cómo pedir ayuda."
+      ],
+      "sections": [
+        {
+          "title": "Valorar el riesgo",
+          "body": [
+            "Se aplica con consentimiento y en privado. Si ya fue aplicada, se revisa y actualiza si cambió la situación.",
+            "Se exploran frecuencia y gravedad, amenazas, armas, celos, control, consumo, violencia sexual, niños y riesgo durante la separación."
+          ],
+          "bullets": [
+            "¿Amenazas de muerte o de daño a los hijos?",
+            "¿Armas en casa o acceso a ellas?",
+            "¿Aumentó la frecuencia o gravedad?",
+            "¿Está intentando separarse?",
+            "¿Tiene red de apoyo o está aislada?"
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Niveles y respuesta",
+          "table": {
+            "headers": [
+              "Puntaje",
+              "Nivel",
+              "Respuesta"
+            ],
+            "rows": [
+              [
+                "0–7",
+                "Leve",
+                "Orientación, primera acogida, plan de seguridad y seguimiento."
+              ],
+              [
+                "8–13",
+                "Moderado",
+                "Plan reforzado, coordinación con CEM/PNP y seguimiento cercano."
+              ],
+              [
+                "14–17",
+                "Severo 1",
+                "Protección inmediata y reevaluación frecuente."
+              ],
+              [
+                "18–37",
+                "Severo 2 / extremo",
+                "Respuesta urgente y articulación con justicia y emergencia."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Plan de seguridad",
+          "bullets": [
+            "Lugar seguro, ruta de salida, transporte y llaves.",
+            "Documentos, dinero, medicamentos y ropa para ella y sus hijos.",
+            "Contacto de confianza y palabra clave.",
+            "Plan para niños, mascotas y personas dependientes.",
+            "Números de emergencia y ubicación de CEM, PNP o albergue.",
+            "Qué hacer si el agresor aparece."
+          ],
+          "callout": {
+            "title": "La separación no siempre reduce el riesgo",
+            "text": "Puede aumentarlo. La protección debe intensificarse, no retirarse.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            24,
+            25,
+            48,
+            56,
+            57,
+            59
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-atencion"
+    },
+    {
+      "id": "sheet-violencia-06",
+      "title": "Salud mental y seguimiento",
+      "kicker": "Violencia · Salud mental",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La violencia se asocia a depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias. El tratamiento es escalonado y la continuidad es parte de la protección.",
+      "keyConcepts": [
+        "Las consecuencias más frecuentes son depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias.",
+        "Los casos leves pueden manejarse en el primer nivel; los moderados y graves se refieren a salud mental especializada.",
+        "La terapia de pareja no se indica cuando hay violencia.",
+        "El seguimiento incluye seguridad, salud mental, red de apoyo y articulación con justicia."
+      ],
+      "sections": [
+        {
+          "title": "Lo que puede aparecer",
+          "bullets": [
+            "Episodio depresivo, ansiedad generalizada o crisis de angustia.",
+            "Estrés postraumático: intrusiones, pesadillas, evitación e hipervigilancia.",
+            "Somatización: dolor y síntomas persistentes sin causa clara.",
+            "Consumo de alcohol u otras sustancias.",
+            "Riesgo suicida, sobre todo con aislamiento o violencia grave."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Tratamiento escalonado",
+          "body": [
+            "La intervención inicial incluye psicoeducación, validación, apoyo social, manejo de ansiedad y resolución de problemas. En casos moderados o graves se añade psicoterapia especializada y, si corresponde, fármacos.",
+            "La TCC y las intervenciones centradas en trauma son útiles para el estrés postraumático. La terapia de pareja está contraindicada cuando hay violencia."
+          ],
+          "table": {
+            "headers": [
+              "Situación",
+              "Manejo"
+            ],
+            "rows": [
+              [
+                "Leve o reactivo",
+                "Primer nivel: escucha, psicoeducación, apoyo y seguimiento."
+              ],
+              [
+                "Moderado",
+                "Salud mental: psicoterapia y plan conjunto."
+              ],
+              [
+                "Grave o complejo",
+                "Equipo especializado, farmacoterapia si procede y coordinación intersectorial."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Seguimiento",
+          "bullets": [
+            "Verificar que la ruta de protección esté activa.",
+            "Coordinar con CEM, PNP, fiscalía y servicios sociales.",
+            "Reevaluar riesgo, síntomas, consumo y red de apoyo.",
+            "Registrar plan, acuerdos y derivaciones.",
+            "Evitar repetir la historia innecesariamente."
+          ],
+          "callout": {
+            "title": "Seguridad y tratamiento",
+            "text": "La depresión o el estrés postraumático no se resuelven solo con fármacos si la violencia continúa. La seguridad es parte del tratamiento.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            23,
+            26,
+            27,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-atencion"
+    },
+    {
+      "id": "sheet-violencia-07",
+      "title": "Violencia sexual: las primeras 72 horas",
+      "kicker": "Violencia · Emergencia",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "La violencia sexual aguda es una emergencia. Se atiende de inmediato, con consentimiento, preservando evidencia y activando AVISAS.",
+      "keyConcepts": [
+        "La violencia sexual aguda ocurre cuando el episodio fue hace menos de 72 horas o requiere atención inmediata.",
+        "AVISAS: Acogida, Valoración, Intervención clínica, Seguimiento, Acceso a la información y justicia, Seguridad.",
+        "El examen y las muestras requieren consentimiento informado.",
+        "La atención es gratuita y no se condiciona a la denuncia."
+      ],
+      "sections": [
+        {
+          "title": "AVISAS",
+          "table": {
+            "headers": [
+              "Componente",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "Acogida e intervención en crisis",
+                "Recibir, validar, contener y explicar."
+              ],
+              [
+                "Valoración",
+                "Lesiones, estado emocional, riesgo suicida, embarazo, ITS y necesidades sociales."
+              ],
+              [
+                "Intervención clínica",
+                "Tratar lesiones, profilaxis, anticoncepción y salud mental."
+              ],
+              [
+                "Seguimiento",
+                "ITS, VIH, embarazo, salud mental y adherencia."
+              ],
+              [
+                "Acceso a la información y justicia",
+                "Derechos, denuncia, pruebas y acompañamiento legal."
+              ],
+              [
+                "Seguridad",
+                "Plan de protección y red de apoyo."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Consentimiento y evidencia",
+          "body": [
+            "Se explica cada procedimiento y se respeta la negativa. La persona puede estar acompañada si lo desea; se cuida la privacidad y se evita la confrontación.",
+            "La evidencia se recoge antes de lavar o cambiar ropa cuando sea posible, pero no se culpabiliza si ya se bañó. Las muestras se rotulan, sellan y registran con cadena de custodia."
+          ],
+          "table": {
+            "headers": [
+              "Muestra",
+              "Ventana orientativa"
+            ],
+            "rows": [
+              [
+                "Oral",
+                "Primer día."
+              ],
+              [
+                "Vulvar o vaginal",
+                "Hasta 5 días."
+              ],
+              [
+                "Cervical",
+                "Después de 48 horas y hasta 5 días."
+              ],
+              [
+                "Anal o rectal",
+                "Hasta 3 días."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Primeras decisiones",
+          "bullets": [
+            "Estabilizar, tratar lesiones y valorar riesgo suicida.",
+            "Prueba de embarazo y anticoncepción de emergencia.",
+            "Pruebas basales de VIH, sífilis, hepatitis B y C.",
+            "Profilaxis de VIH e ITS; valorar vacuna contra hepatitis B.",
+            "Documentar y explicar el seguimiento."
+          ],
+          "callout": {
+            "title": "No exigir denuncia para atender",
+            "text": "La atención es un derecho y no depende de la denuncia. La decisión de denunciar se informa y se acompaña.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            20,
+            21,
+            22,
+            24,
+            25,
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-sexual"
+    },
+    {
+      "id": "sheet-violencia-08",
+      "title": "Profilaxis, anticoncepción y seguimiento",
+      "kicker": "Violencia sexual · Continuidad",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "La profilaxis busca prevenir VIH, ITS y embarazo; el seguimiento busca detectar infecciones, embarazo y secuelas en salud mental.",
+      "keyConcepts": [
+        "La profilaxis de VIH se inicia dentro de las 72 horas y dura 28 días si no se conoce el estado del agresor.",
+        "Se ofrece profilaxis de ITS, vacunación contra hepatitis B y anticoncepción de emergencia.",
+        "El seguimiento incluye VIH a los 3 y 6 meses, sífilis a los 3 meses y prueba de embarazo.",
+        "La TCC centrada en trauma requiere al menos 12 sesiones en los casos indicados."
+      ],
+      "sections": [
+        {
+          "title": "Profilaxis",
+          "table": {
+            "headers": [
+              "Riesgo",
+              "Intervención"
+            ],
+            "rows": [
+              [
+                "VIH",
+                "Iniciar dentro de 72 horas; 28 días si no se conoce el estado del agresor."
+              ],
+              [
+                "ITS",
+                "Profilaxis para sífilis, gonorrea y clamidia según el caso y el peso."
+              ],
+              [
+                "Hepatitis B",
+                "Iniciar o completar vacunación; valorar inmunoglobulina si no está vacunada."
+              ],
+              [
+                "Embarazo",
+                "Anticoncepción de emergencia y prueba de embarazo."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Seguimiento",
+          "bullets": [
+            "VIH a los 3 y 6 meses; si es positivo, vincular a TAR.",
+            "Sífilis a los 3 meses.",
+            "Embarazo: prueba inicial y seguimiento.",
+            "ITS: control clínico y tratamiento de parejas.",
+            "Salud mental: estrés postraumático, depresión, ansiedad y riesgo suicida."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Salud mental y continuidad",
+          "body": [
+            "La TCC centrada en trauma y otras intervenciones especializadas reducen síntomas de estrés postraumático, depresión y ansiedad. En los casos indicados se requieren al menos 12 sesiones.",
+            "La atención es gratuita y puede financiarse por el SIS. El plan de alta incluye signos de alarma, contacto y próxima cita."
+          ],
+          "callout": {
+            "title": "No perder el hilo",
+            "text": "Una prueba negativa a los 3 meses no cierra el seguimiento: el VIH requiere control a los 6 meses y la salud mental puede manifestarse después.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            65
+          ]
+        }
+      ],
+      "areaId": "area-violencia",
+      "topicId": "topic-violencia-sexual"
+    },
+    {
+      "id": "sheet-its-01",
+      "title": "Abordaje sindrómico: tratar hoy, no esperar el laboratorio",
+      "kicker": "ITS · Abordaje",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "El abordaje sindrómico identifica un síndrome, trata de inmediato, ofrece consejería y controla a los 7 días. No espera el resultado de laboratorio para iniciar el tratamiento.",
+      "keyConcepts": [
+        "Se organiza por síndromes: descarga uretral, rectal, cervicitis, úlcera genital, flujo vaginal y dolor abdominal bajo.",
+        "El tratamiento es inmediato, integral y centrado en la persona; no es una simple receta.",
+        "Se ofrecen preservativos, consejería, tamizaje de VIH, sífilis y hepatitis B, y notificación de parejas.",
+        "El control se realiza a los 7 días; si no hay mejoría, se refiere para estudio etiológico."
+      ],
+      "sections": [
+        {
+          "title": "Qué es y por qué se usa",
+          "body": [
+            "El abordaje sindrómico permite resolver ITS en el primer nivel con recursos limitados. Se basa en la historia sexual, el examen clínico y un síndrome reconocible, sin exigir pruebas de laboratorio antes de tratar.",
+            "No sustituye el diagnóstico etiológico cuando está disponible: si el cuadro no mejora, recae o hay complicaciones, se amplía el estudio."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Cinco pasos",
+          "bullets": [
+            "Historia sexual y evaluación de riesgo, en privado y sin juzgar.",
+            "Examen físico dirigido al síndrome y descarte de otras lesiones.",
+            "Tratamiento inmediato según el síndrome y el peso o la edad.",
+            "Consejería, preservativos, tamizaje de VIH, sífilis y hepatitis B, y oferta de vacunación.",
+            "Control a los 7 días y notificación o tratamiento de parejas."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Prevención y parejas",
+          "body": [
+            "Se entregan dos preservativos masculinos a toda persona que consulta por síntomas o signos de ITS; a las mujeres se les ofrecen preservativos femeninos, hasta 10 unidades según aceptación y disponibilidad.",
+            "La pareja sexual debe evaluarse y tratarse. El periodo de búsqueda depende del síndrome: 60 días para descarga uretral, rectal o cervicitis, y 90 días para úlcera genital."
+          ],
+          "callout": {
+            "title": "Regla de oro",
+            "text": "Si hay un síndrome compatible, se trata el mismo día. El laboratorio confirma, pero no debe retrasar el alivio ni la prevención de complicaciones.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7,
+            8,
+            14,
+            16,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-its-sindromes"
+    },
+    {
+      "id": "sheet-its-02",
+      "title": "Síndromes y esquemas de tratamiento",
+      "kicker": "ITS · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "Cada síndrome tiene un esquema de primera línea, una alternativa y un periodo de búsqueda de parejas. En gestación y lactancia hay fármacos que no se usan.",
+      "keyConcepts": [
+        "Descarga uretral, rectal y cervicitis: ceftriaxona 1 g IM + doxiciclina 100 mg cada 12 horas por 7 días.",
+        "Úlcera genital: penicilina benzatínica 2.4 millones UI + aciclovir 400 mg cada 12 horas por 5 días.",
+        "Flujo vaginal: metronidazol 500 mg (4 tabletas) + fluconazol 150 mg en dosis única.",
+        "Dolor abdominal bajo: ceftriaxona + doxiciclina + metronidazol por 14 días; hospitalizar si hay embarazo, gravedad o fracaso."
+      ],
+      "sections": [
+        {
+          "title": "Esquemas de primera línea",
+          "table": {
+            "headers": [
+              "Síndrome",
+              "Tratamiento inicial",
+              "Pareja"
+            ],
+            "rows": [
+              [
+                "Descarga uretral, rectal o cervicitis",
+                "Ceftriaxona 1 g IM dosis única + doxiciclina 100 mg VO cada 12 h por 7 días. Alternativa: azitromicina 500 mg, 2 tabletas VO dosis única.",
+                "60 días."
+              ],
+              [
+                "Úlcera genital",
+                "Penicilina benzatínica 2.4 millones UI IM dosis única + aciclovir 400 mg VO cada 12 h por 5 días. Alternativa: doxiciclina 100 mg cada 12 h por 14 días + aciclovir.",
+                "90 días."
+              ],
+              [
+                "Flujo vaginal",
+                "Metronidazol 500 mg, 4 tabletas VO dosis única + fluconazol 150 mg VO dosis única. Alternativa: metronidazol 500 mg cada 12 h por 7 días + clotrimazol 500 mg vaginal dosis única.",
+                "Según el agente y el caso."
+              ],
+              [
+                "Dolor abdominal bajo",
+                "Ceftriaxona 1 g IM + doxiciclina 100 mg cada 12 h + metronidazol 500 mg cada 12 h, todos por 14 días.",
+                "60 días."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Cuándo escalar",
+          "body": [
+            "Si no hay mejoría al control de 7 días, se amplía el estudio etiológico o se refiere. El dolor abdominal bajo requiere hospitalización si hay embarazo, signos de gravedad, absceso, fracaso tras 48–72 horas o incapacidad de manejar el tratamiento ambulatorio.",
+            "La úlcera genital puede ser sífilis, herpes o chancroide; el tratamiento inicial cubre las causas más frecuentes y el seguimiento confirma la respuesta."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Embarazo y lactancia",
+          "body": [
+            "Se usan penicilinas, cefalosporinas, azitromicina, metronidazol, fluconazol 150 mg y aciclovir. No se usan tetraciclinas como la doxiciclina ni aminoglucósidos como la gentamicina por sus riesgos para el feto.",
+            "Toda ITS en gestación requiere evaluación médica y tratamiento seguro para la madre y el feto; además se coordina con la prevención de transmisión maternoinfantil."
+          ],
+          "callout": {
+            "title": "No olvidar",
+            "text": "El tratamiento de la pareja es parte del tratamiento. Sin tratar a la pareja, la reinfección y la transmisión continúan.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            18
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-its-sindromes"
+    },
+    {
+      "id": "sheet-vih-01",
+      "title": "Prevención combinada: capas que se suman",
+      "kicker": "VIH · Prevención",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La prevención combinada suma medidas biomédicas, conductuales y socioestructurales. Ninguna reemplaza a la otra: se aplican juntas y según la población.",
+      "keyConcepts": [
+        "Las medidas biomédicas incluyen preservativos, pruebas, tratamiento de ITS, vacuna contra hepatitis B, TAR, PrEP y PPE.",
+        "Las medidas conductuales y socioestructurales abordan riesgo, estigma, discriminación y acceso.",
+        "El paquete se ofrece de forma gratuita en los establecimientos públicos.",
+        "La frecuencia varía: mensual o trimestral para consejería y preservativos; pruebas de VIH y sífilis según población; hepatitis B y C anual."
+      ],
+      "sections": [
+        {
+          "title": "Tres grupos de medidas",
+          "table": {
+            "headers": [
+              "Tipo",
+              "Ejemplos"
+            ],
+            "rows": [
+              [
+                "Biomédicas",
+                "Preservativos y lubricantes, pruebas de VIH, diagnóstico y tratamiento de ITS, vacuna contra hepatitis B, TAR, PrEP y PPE."
+              ],
+              [
+                "Conductuales",
+                "Consejería, educación sexual, reducción de riesgo, habilidades de negociación y adherencia."
+              ],
+              [
+                "Socioestructurales",
+                "Lucha contra estigma y discriminación, respeto a la identidad de género y orientación sexual, acceso y confidencialidad."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "El paquete en poblaciones de alto riesgo",
+          "body": [
+            "Se dirige a HSH, mujeres trans, trabajadoras sexuales y parejas serodiscordantes. La consejería y el acceso a preservativos son mensuales o trimestrales según la población; las pruebas de VIH y sífilis también tienen periodicidad propia.",
+            "En HSH, mujeres trans y trabajadoras sexuales se entregan 144 preservativos masculinos y 25 lubricantes al mes; a las trabajadoras sexuales se añaden preservativos femeninos según disponibilidad. Las parejas serodiscordantes reciben 20 preservativos y 5 lubricantes al mes."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Confidencialidad y derechos",
+          "body": [
+            "La atención es gratuita en los establecimientos públicos y debe proteger la confidencialidad de los resultados y de la causa de transmisión. El estigma y la discriminación son barreras de salud pública: se abordan con respeto y sin juzgar.",
+            "La prueba de VIH requiere consejería pre y postest, consentimiento informado y manejo emocional del resultado."
+          ],
+          "callout": {
+            "title": "Ninguna capa sola",
+            "text": "El preservativo, la PrEP o el TAR no se sustituyen entre sí. La prevención combinada funciona cuando las medidas se suman y se adaptan a la persona.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            6,
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-prevencion"
+    },
+    {
+      "id": "sheet-vih-02",
+      "title": "PrEP y PPE: quién, cómo y hasta cuándo",
+      "kicker": "VIH · PrEP y PPE",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "La PrEP previene la infección antes de la exposición; la PPE se usa después de una exposición. Ambas requieren evaluación, adherencia y seguimiento.",
+      "keyConcepts": [
+        "La PrEP se ofrece a personas de 18 años o más de poblaciones de alto riesgo, sin VIH y sin exposición de riesgo en las últimas 72 horas.",
+        "La PrEP diaria es TDF/FTC 300/200 mg, una tableta al día; la PrEP a demanda solo se indica en HSH con dos o menos relaciones por semana.",
+        "La PrEP a demanda está contraindicada en hepatitis B crónica por el riesgo de exacerbación al suspender TDF.",
+        "La PPE se inicia dentro de las 72 horas y dura 28 días; el esquema preferido es TDF/3TC/DTG."
+      ],
+      "sections": [
+        {
+          "title": "PrEP: criterios y modalidades",
+          "body": [
+            "Antes de iniciar se descarta VIH y infección aguda, se revisa la exposición en las últimas 72 horas, la función renal y las contraindicaciones. Se solicita tamizaje de VIH y hepatitis B, creatinina, y se ofrecen sífilis, hepatitis C, ITS y prueba de embarazo.",
+            "La PrEP diaria usa TDF/FTC 300/200 mg. La PrEP a demanda solo se indica en HSH con dos o menos relaciones sexuales por semana: dos tabletas entre 2 y 24 horas antes, una 24 horas después de la primera toma y otra 24 horas después de la segunda."
+          ],
+          "table": {
+            "headers": [
+              "Situación",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "VIH confirmado o sospecha de infección aguda",
+                "No iniciar PrEP; evaluar y tratar VIH."
+              ],
+              [
+                "Exposición de riesgo en las últimas 72 horas",
+                "No iniciar PrEP; evaluar PPE."
+              ],
+              [
+                "Depuración de creatinina <60 ml/min",
+                "No iniciar PrEP."
+              ],
+              [
+                "Hepatitis B crónica",
+                "No usar PrEP a demanda; evitar interrupciones."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "PPE: después de la exposición",
+          "body": [
+            "La PPE se indica ante una exposición ocupacional o no ocupacional al VIH. Debe iniciarse lo antes posible y siempre dentro de las 72 horas, por 28 días.",
+            "El esquema preferido es TDF/3TC/DTG una tableta al día. Se ofrecen pruebas basales y seguimiento a las 6 semanas, 3 meses y 6 meses; sífilis a las 6 semanas y hepatitis C a los 3 meses."
+          ],
+          "bullets": [
+            "Evaluar el tipo de exposición y el estado del caso fuente.",
+            "Iniciar PPE sin esperar todos los resultados si está indicada.",
+            "Consejería, adherencia y manejo de efectos adversos.",
+            "Si el caso fuente es VIH negativo, no se indica PPE."
+          ],
+          "callout": {
+            "title": "Tiempo",
+            "text": "La PPE es una carrera contra el reloj: cuanto antes se inicia, mejor. Después de 72 horas ya no se indica como profilaxis.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-prevencion"
+    },
+    {
+      "id": "sheet-vih-03",
+      "title": "Diagnóstico y inicio temprano del TAR",
+      "kicker": "VIH · Atención",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "El diagnóstico se confirma con pruebas rápidas y una prueba confirmatoria. El TAR se inicia lo antes posible, sin esperar CD4 ni carga viral.",
+      "keyConcepts": [
+        "Se considera infección por VIH con dos pruebas rápidas reactivas de diferentes fabricantes o una prueba de cuarta generación reactiva más una confirmatoria.",
+        "La confirmación puede ser carga viral, IFI o inmunoblot; no debe retrasar el inicio del TAR cuando está indicado.",
+        "El TAR se indica a toda persona con VIH, independientemente del estadio clínico, CD4 o carga viral.",
+        "El esquema de primera línea es TDF/3TC/DTG una tableta al día."
+      ],
+      "sections": [
+        {
+          "title": "Cómo se confirma",
+          "body": [
+            "Se usan pruebas rápidas de anticuerpos de tercera generación de diferentes fabricantes, o una prueba de cuarta generación que detecta anticuerpos y antígeno. Todo caso reactivo requiere una prueba confirmatoria: carga viral, IFI o inmunoblot.",
+            "Los resultados reactivos de laboratorios o bancos de sangre se refieren a los servicios de VIH/ITS para evaluación y vinculación."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Evaluación basal antes o junto al TAR",
+          "bullets": [
+            "Hemograma completo, TGP, glucosa en ayunas y creatinina sérica.",
+            "Prueba de embarazo en mujeres en edad fértil.",
+            "Radiografía de tórax y baciloscopias si hay síntomas respiratorios.",
+            "HBsAg, anti-HBc total, anti-VHC y prueba de sífilis.",
+            "CD4 y carga viral basales.",
+            "Evaluación de adherencia, apoyo social, salud mental y violencia."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Primera línea y alternativas",
+          "table": {
+            "headers": [
+              "Situación",
+              "Esquema"
+            ],
+            "rows": [
+              [
+                "Primera línea",
+                "TDF/3TC/DTG 300/300/50 mg, una tableta al día."
+              ],
+              [
+                "Contraindicación o intolerancia a DTG",
+                "TDF/3TC/EFV 400 mg o TDF/FTC/EFV 600 mg."
+              ],
+              [
+                "Contraindicación de TDF",
+                "Abacavir, previa prueba HLA-B*5701 negativa."
+              ],
+              [
+                "Insuficiencia renal",
+                "Evitar coformulaciones con TDF; ajustar dosis según función renal."
+              ]
+            ]
+          },
+          "callout": {
+            "title": "No retrasar",
+            "text": "La evaluación se completa después de iniciar el TAR si es necesario. El CD4 y la carga viral no son requisitos para empezar.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-atencion"
+    },
+    {
+      "id": "sheet-vih-04",
+      "title": "Monitoreo, adherencia y fracaso virológico",
+      "kicker": "VIH · Seguimiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El seguimiento busca mantener la supresión viral, detectar fallas y resolver barreras. La carga viral es el marcador principal de efectividad.",
+      "keyConcepts": [
+        "Controles médicos: mensuales los primeros 3 meses, cada 3 meses hasta los 2 años y cada 6 meses desde el tercer año.",
+        "Carga viral: a los 3 meses del inicio, luego cada 6 meses el primer año y después anualmente.",
+        "Fracaso virológico: no lograr <1000 copias/ml a los 6 meses o rebote sostenido tras supresión.",
+        "Ante fracaso con carga viral ≥1000 copias/ml se solicita genotipificación y se evalúa cambio de esquema."
+      ],
+      "sections": [
+        {
+          "title": "Frecuencia de controles",
+          "table": {
+            "headers": [
+              "Control",
+              "Frecuencia"
+            ],
+            "rows": [
+              [
+                "Consulta médica",
+                "Mensual los primeros 3 meses; cada 3 meses hasta los 2 años; cada 6 meses desde el tercer año."
+              ],
+              [
+                "Carga viral",
+                "A los 3 meses del inicio; cada 6 meses el primer año; luego anual."
+              ],
+              [
+                "CD4",
+                "Al diagnóstico; cada 6 meses el primer año; luego anual. Puede espaciarse si CD4 >500 y carga viral suprimida."
+              ],
+              [
+                "Adherencia y efectos adversos",
+                "En cada visita; entrega de TAR y preservativos."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Fracaso virológico",
+          "body": [
+            "Se considera fracaso cuando no se logra suprimir la carga viral por debajo de 1000 copias/ml a los 6 meses de iniciado el TAR, o cuando una carga viral previamente indetectable vuelve a ser detectable en controles separados por 6–8 semanas.",
+            "Ante un fracaso con carga viral ≥1000 copias/ml se solicita genotipificación. Antes de cambiar el esquema se revisan adherencia, interacciones, tolerancia y barreras."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Adherencia y continuidad",
+          "bullets": [
+            "Explicar el objetivo de la supresión viral y el riesgo de resistencia.",
+            "Simplificar horarios y usar recordatorios; involucrar a la red de apoyo.",
+            "Preguntar por efectos adversos, salud mental, consumo de sustancias y violencia.",
+            "Coordinar con obstetricia, tuberculosis, hepatitis y salud mental.",
+            "Registrar y notificar el caso según la norma."
+          ],
+          "callout": {
+            "title": "La carga viral manda",
+            "text": "La adherencia se pregunta, pero se verifica con la carga viral. Una carga viral detectable no se atribuye automáticamente a falta de adherencia: hay que evaluar resistencia, interacciones y absorción.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            28,
+            29,
+            33,
+            34
+          ]
+        }
+      ],
+      "areaId": "area-itsvih",
+      "topicId": "topic-vih-atencion"
+    },
+    {
+      "id": "sheet-hepatitis-01",
+      "title": "Prevenir y detectar la hepatitis B",
+      "kicker": "Hepatitis B · Prevención",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La hepatitis B se previene con vacunación y se detecta con HBsAg. La infección crónica se define por la persistencia del antígeno de superficie por más de seis meses.",
+      "keyConcepts": [
+        "El HBsAg positivo por más de 6 meses define infección crónica.",
+        "La primera dosis de vacuna se aplica al recién nacido dentro de las primeras 12 horas.",
+        "Se tamiza a gestantes, contactos, donantes y personas con factores de riesgo.",
+        "La atención es gratuita y cubierta por el PEAS."
+      ],
+      "sections": [
+        {
+          "title": "Transmisión y prevención",
+          "body": [
+            "El virus se transmite por sangre, semen, secreciones vaginales y de madre a hijo durante el parto. La vacunación, los preservativos, la seguridad de las inyecciones y el tamizaje de donantes reducen la transmisión.",
+            "El esquema completo tiene tres dosis y no se reinicia si hay retraso."
+          ],
+          "bullets": [
+            "Vacunar al recién nacido dentro de las 12 horas.",
+            "Completar las tres dosis.",
+            "Tamizar a gestantes y ofrecer prevención de transmisión maternoinfantil.",
+            "Tamizar a contactos y personas con factores de riesgo.",
+            "Evitar compartir agujas o material punzocortante."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Diagnóstico",
+          "body": [
+            "El tamizaje inicial es HBsAg. Si es reactivo se solicita anti-HBc IgM, anti-HBc total, HBeAg, anti-HBe y ADN viral para definir fase y tratamiento.",
+            "La infección aguda se confirma con anti-HBc IgM positivo; la crónica, con HBsAg persistente por más de seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Quién debe evaluarse",
+          "bullets": [
+            "Gestantes y sus parejas.",
+            "Donantes de sangre, órganos y tejidos.",
+            "Personas con VIH, hepatitis C, tuberculosis o enfermedad renal crónica.",
+            "Contactos domiciliarios y sexuales.",
+            "Personas con transfusiones, hemodiálisis, drogas inyectables o privación de libertad."
+          ],
+          "callout": {
+            "title": "Prevenir es tratar",
+            "text": "La vacuna y la primera dosis del recién nacido son las intervenciones con mayor impacto para evitar la transmisión vertical.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            21,
+            37
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-b"
+    },
+    {
+      "id": "sheet-hepatitis-02",
+      "title": "Tratamiento y seguimiento de la hepatitis B crónica",
+      "kicker": "Hepatitis B · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El tratamiento se indica según cirrosis, carga viral, ALT, HBeAg y edad. El tenofovir es de primera línea; el entecavir se prefiere cuando hay riesgo renal.",
+      "keyConcepts": [
+        "Toda persona con cirrosis y carga viral detectable debe tratarse.",
+        "Sin cirrosis: carga viral >2000 UI/ml y ALT elevada o persistentemente anormal.",
+        "También se trata a personas ≥30 años, HBeAg positivo, carga viral >2000 y ALT normal.",
+        "El seguimiento incluye ALT, carga viral, HBeAg, fibrosis y vigilancia de hepatocarcinoma."
+      ],
+      "sections": [
+        {
+          "title": "Cuándo iniciar tratamiento",
+          "table": {
+            "headers": [
+              "Escenario",
+              "Criterio"
+            ],
+            "rows": [
+              [
+                "Cirrosis",
+                "Carga viral detectable; tratar siempre."
+              ],
+              [
+                "Sin cirrosis, ALT elevada",
+                "Carga viral >2000 UI/ml y ALT ≥2 veces el límite superior o persistentemente anormal."
+              ],
+              [
+                "Sin cirrosis, ALT normal",
+                "Edad ≥30 años, HBeAg positivo y carga viral >2000 UI/ml."
+              ],
+              [
+                "Riesgo especial",
+                "Antecedente familiar de hepatocarcinoma o cirrosis, manifestaciones extrahepáticas, reactivación o inmunosupresión."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Esquemas y monitoreo",
+          "body": [
+            "El tenofovir es el antiviral de primera línea. En riesgo renal o contraindicación se prefiere entecavir. El tratamiento es prolongado y no se suspende sin evaluación especializada.",
+            "Se monitorizan ALT, carga viral, HBeAg, función renal y fibrosis. En cirrosis se vigila hepatocarcinoma cada seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Situaciones especiales",
+          "bullets": [
+            "Coinfección VIH: incluir TDF y 3TC o FTC.",
+            "Coinfección VHC: evaluar interacciones y reactivación.",
+            "Embarazo: evaluar carga viral y tratamiento para reducir transmisión vertical.",
+            "Inmunosupresión: valorar profilaxis o tratamiento.",
+            "No suspender bruscamente: puede causar reactivación."
+          ],
+          "callout": {
+            "title": "No basta con mirar la ALT",
+            "text": "Una ALT normal no descarta enfermedad avanzada. La carga viral, el HBeAg, la edad y la fibrosis completan la decisión.",
+            "tone": "warn"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            23,
+            24,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-b"
+    },
+    {
+      "id": "sheet-hepatitis-03",
+      "title": "Tamizaje y diagnóstico de la hepatitis C",
+      "kicker": "Hepatitis C · Diagnóstico",
+      "minutes": 9,
+      "level": "Avanzado",
+      "summary": "El tamizaje es anti-VHC; el diagnóstico de infección activa requiere ARN detectable. La fibrosis se evalúa con APRI o elastografía.",
+      "keyConcepts": [
+        "Anti-VHC reactivo exige ARN del VHC.",
+        "Anti-VHC positivo + ARN detectable = infección activa; ARN indetectable = resuelta o falso positivo.",
+        "APRI >2 o elastografía >12 kPa sugieren cirrosis.",
+        "Toda persona con infección confirmada debe acceder a tratamiento."
+      ],
+      "sections": [
+        {
+          "title": "Del tamizaje al diagnóstico",
+          "body": [
+            "Se tamiza a poblaciones de riesgo, donantes, personas con VIH o hepatitis B, hemodializados, usuarios de drogas, personas privadas de libertad y con antecedentes de transfusiones o procedimientos invasivos.",
+            "Una prueba rápida o ELISA anti-VHC reactiva no confirma infección activa: se requiere ARN del VHC."
+          ],
+          "table": {
+            "headers": [
+              "Anti-VHC",
+              "ARN VHC",
+              "Interpretación"
+            ],
+            "rows": [
+              [
+                "Positivo",
+                "Detectable",
+                "Infección por VHC."
+              ],
+              [
+                "Positivo",
+                "Indetectable",
+                "Hepatitis C resuelta o falso positivo."
+              ],
+              [
+                "Negativo",
+                "No aplica",
+                "Sin evidencia de infección; repetir si hay sospecha."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Evaluación de fibrosis",
+          "body": [
+            "Se usan APRI y elastografía. APRI <0,5 sugiere ausencia de fibrosis significativa; 0,5–1,5 es dudosa; >1,5–2 significativa; >2 cirrosis. Elastografía <7 kPa ausencia; 7–9,4 moderada; 9,4–12 significativa; >12 cirrosis."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Antes de tratar",
+          "bullets": [
+            "Serología de VIH y hepatitis B.",
+            "Hemograma, plaquetas, bilirrubinas, albúmina y función renal.",
+            "Descarte de tuberculosis activa y embarazo.",
+            "Evaluación de interacciones y alcohol.",
+            "Consentimiento informado."
+          ],
+          "callout": {
+            "title": "No tratar sin confirmar",
+            "text": "El anti-VHC positivo puede reflejar infección resuelta. La carga viral de ARN confirma la infección activa.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-c"
+    },
+    {
+      "id": "sheet-hepatitis-04",
+      "title": "Tratamiento pangenotípico y curación",
+      "kicker": "Hepatitis C · Tratamiento",
+      "minutes": 10,
+      "level": "Avanzado",
+      "summary": "El tratamiento es pangenotípico y cura en más del 90% de los casos. La cura se define por ARN indetectable 12 semanas después de terminar el tratamiento.",
+      "keyConcepts": [
+        "Primera elección: sofosbuvir/velpatasvir 400/100 mg, una tableta al día por 12 semanas.",
+        "Alternativa: sofosbuvir/daclatasvir 400/60 mg por 12 semanas.",
+        "En cirrosis compensada, sofosbuvir/velpatasvir se extiende a 24 semanas.",
+        "En enfermedad renal crónica 4–5 se usa glecaprevir/pibrentasvir."
+      ],
+      "sections": [
+        {
+          "title": "Esquemas",
+          "table": {
+            "headers": [
+              "Situación",
+              "Esquema"
+            ],
+            "rows": [
+              [
+                "Sin cirrosis o cirrosis compensada",
+                "Sofosbuvir/velpatasvir 400/100 mg, 1 tableta/día por 12 semanas."
+              ],
+              [
+                "Alternativa",
+                "Sofosbuvir/daclatasvir 400/60 mg, 1 tableta/día por 12 semanas."
+              ],
+              [
+                "Cirrosis compensada",
+                "Sofosbuvir/velpatasvir por 24 semanas."
+              ],
+              [
+                "Enfermedad renal crónica 4–5",
+                "Glecaprevir/pibrentasvir 100/40 mg, 3 tabletas/día por 8 semanas; 12 semanas si hay cirrosis."
+              ]
+            ]
+          },
+          "depth": "core"
+        },
+        {
+          "title": "Curación y seguimiento",
+          "body": [
+            "La cura se define por ARN indetectable a las 12 semanas de finalizado el tratamiento. Se controla al inicio y a las 12 semanas postratamiento.",
+            "El seguimiento clínico es mensual durante el tratamiento. En cirrosis se mantiene vigilancia de hepatocarcinoma cada seis meses."
+          ],
+          "depth": "core"
+        },
+        {
+          "title": "Situaciones especiales",
+          "bullets": [
+            "Coinfección VIH/VHC: tratar la hepatitis C sin interrumpir el TAR.",
+            "Coinfección VHB/VHC: riesgo de reactivación; monitorizar.",
+            "Embarazo: evitar procedimientos invasivos en el tercer trimestre; el tipo de parto no modifica la transmisión; la lactancia no es fuente de infección.",
+            "Niños de madres con VHC: anti-VHC a los 18 meses; si es positivo, confirmar con carga viral.",
+            "Fracaso: reevaluar adherencia e interacciones; retratamiento con comité de expertos."
+          ],
+          "callout": {
+            "title": "Curación no es inmunidad",
+            "text": "La curación no protege contra una nueva infección. Se mantienen prevención, tamizaje y seguimiento.",
+            "tone": "info"
+          },
+          "depth": "core"
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "areaId": "area-hepatitis",
+      "topicId": "topic-hepatitis-c"
+    },
+    {
+      "id": "sheet-higiene-manos-01",
+      "topicId": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Los cinco momentos de la higiene de manos",
+      "kicker": "Higiene de manos · Momentos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La OMS organiza la higiene de manos en cinco momentos: dos antes del riesgo (contacto y procedimiento aséptico) y tres después (fluidos, paciente y entorno). El modelo busca interrumpir la transmisión sin depender de listas interminables de tareas.",
+      "keyConcepts": [
+        "Las infecciones relacionadas con la atención sanitaria (IRAS) son un problema de seguridad del paciente y las manos son el principal vehículo de transmisión.",
+        "El momento 1 es antes del contacto directo con el paciente; el 2, antes de una tarea limpia o aséptica.",
+        "Los momentos 3, 4 y 5 se realizan después del riesgo de exposición a fluidos, del contacto con el paciente y del contacto con su entorno.",
+        "Los momentos 4 y 5 nunca se combinan; varias indicaciones pueden resolverse con una sola acción de higiene de manos."
+      ],
+      "sections": [
+        {
+          "title": "Por qué las manos importan",
+          "depth": "core",
+          "body": [
+            "Una infección relacionada con la atención sanitaria (IRAS) es la que afecta a un paciente durante la asistencia en un hospital u otro centro sanitario y que no estaba presente ni incubándose al ingreso. También incluye las infecciones que se manifiestan después del alta y las infecciones ocupacionales del personal.",
+            "En los países desarrollados complica entre el 5% y el 10% de los ingresos en hospitales de agudos; en los países en desarrollo el riesgo es de 2 a 20 veces mayor y la proporción de pacientes infectados puede rebasar el 25%. Los microorganismos pueden ser endógenos o exógenos, y las manos del personal son el vehículo de transmisión más frecuente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Alcance de esta ficha",
+            "text": "Este contenido proviene del Manual técnico de referencia de la OMS (2009), una guía técnica. La vigilancia de las IAAS en el Perú se rige por la NTS 163-MINSA/2020/CDC, que se estudia en las fichas siguientes."
+          }
+        },
+        {
+          "title": "Los cinco momentos",
+          "depth": "core",
+          "body": [
+            "El modelo se centra en los contactos que ocurren en la zona del paciente: el paciente y las superficies y objetos que le son temporales y exclusivos. La zona acompaña al paciente y no se limita a la cama."
+          ],
+          "table": {
+            "headers": [
+              "Momento",
+              "Cuándo",
+              "Propósito"
+            ],
+            "rows": [
+              [
+                "1",
+                "Antes del contacto directo con el paciente.",
+                "Proteger al paciente de los gérmenes del área de asistencia."
+              ],
+              [
+                "2",
+                "Antes de una tarea limpia o aséptica.",
+                "Evitar la inoculación al paciente o el paso de gérmenes de un punto a otro del cuerpo."
+              ],
+              [
+                "3",
+                "Después del riesgo de exposición a fluidos corporales.",
+                "Proteger al profesional y al entorno de la contaminación."
+              ],
+              [
+                "4",
+                "Después del contacto con el paciente.",
+                "Proteger al profesional y al área de asistencia de los gérmenes del paciente."
+              ],
+              [
+                "5",
+                "Después del contacto con el entorno del paciente.",
+                "Proteger al profesional y al entorno cuando no se tocó al paciente."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Antes y después: dos lógicas",
+          "depth": "full",
+          "bullets": [
+            "Los dos momentos «antes» protegen al paciente; los tres «después» protegen al profesional y al área de asistencia.",
+            "Si se toca al paciente y luego un objeto de su entorno antes de salir, se aplica el momento 4 y no el 5.",
+            "El momento 5 excluye el contacto con el paciente: solo se aplica cuando se tocaron superficies u objetos de su entorno sin haberlo tocado.",
+            "Cuando varias indicaciones coinciden en una misma secuencia, una sola acción de higiene de manos puede ser suficiente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Regla de oro",
+            "text": "Antes de tocar al paciente o un punto crítico; después de fluidos, del paciente o de su entorno. Los momentos 4 y 5 son excluyentes."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-02",
+      "topicId": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Técnica, producto y guantes",
+      "kicker": "Higiene de manos · Técnica",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La fricción con preparado de base alcohólica es la forma preferente de higiene rutinaria; el lavado con agua y jabón se reserva para manos visiblemente sucias, sangre o fluidos, sospecha de esporas y después de usar los servicios. La técnica depende de la cantidad, el tiempo y la superficie cubierta.",
+      "keyConcepts": [
+        "La fricción con preparado de base alcohólica elimina la mayoría de los gérmenes, incluidos virus, y requiere de 20 a 30 segundos.",
+        "El lavado con agua y jabón se indica con suciedad visible, sangre o fluidos, sospecha de esporas y después de usar los servicios.",
+        "La eficacia depende de la calidad del producto, la cantidad, el tiempo y la superficie de la mano cubierta.",
+        "Los guantes no sustituyen la higiene de manos: se realiza antes de ponerlos y después de quitarlos."
+      ],
+      "sections": [
+        {
+          "title": "Fricción alcohólica o lavado",
+          "depth": "core",
+          "body": [
+            "Cuando hay un preparado de base alcohólica disponible, se prefiere para la antisepsia rutinaria de las manos (recomendación de categoría IB). Permite actuar en el punto de atención, requiere de 20 a 30 segundos y tiene buena tolerancia de la piel.",
+            "El lavado con agua y jabón se indica cuando las manos están visiblemente sucias o manchadas de sangre u otros fluidos corporales, cuando existe una fuerte sospecha o evidencia de exposición a organismos potencialmente formadores de esporas y después de usar los servicios (categoría II)."
+          ],
+          "bullets": [
+            "No utilizar jabón y preparado de base alcohólica de forma conjunta.",
+            "Frotar hasta que el producto se evapore por completo.",
+            "Secar bien las manos después de lavarlas con agua y jabón."
+          ]
+        },
+        {
+          "title": "Qué hace eficaz la técnica",
+          "depth": "core",
+          "bullets": [
+            "Usar un producto conforme a los estándares y en cantidad suficiente.",
+            "Dedicar el tiempo adecuado y cubrir toda la superficie de las manos.",
+            "Mantener uñas naturales, cortas y sin esmalte; no usar uñas postizas.",
+            "No llevar anillos ni joyas; mantener los antebrazos descubiertos y la piel sin cortes.",
+            "Aplicar crema de manos compatible para conservar la piel sana."
+          ]
+        },
+        {
+          "title": "Guantes: complemento, no sustituto",
+          "depth": "full",
+          "body": [
+            "Las indicaciones de higiene de manos son independientes de las que justifican el uso de guantes. Si una indicación precede a una tarea con guantes, la higiene se realiza antes de ponérselos; si la sigue, se realiza después de quitárselos.",
+            "Si aparece una indicación mientras el profesional lleva guantes, debe quitárselos, efectuar la higiene de manos y cambiarlos si fuera necesario. El uso de guantes no condiciona las indicaciones de higiene de manos; más bien la higiene influye en el uso apropiado de los guantes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El guante no lo protege de todo",
+            "text": "El uso de guantes no modifica ni sustituye la higiene de manos. La higiene de manos debe realizarse antes de ponerlos y después de retirarlos."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8,
+            17,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-03",
+      "topicId": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Medir la adherencia: observación directa",
+      "kicker": "Higiene de manos · Adherencia",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La observación directa convierte cada indicación observada en una oportunidad y registra si hubo o no una acción de higiene de manos. El cumplimiento es la proporción entre acciones realizadas y oportunidades.",
+      "keyConcepts": [
+        "Una oportunidad es una indicación observada que requiere una acción de higiene de manos; varias indicaciones pueden formar una sola oportunidad.",
+        "El cumplimiento se calcula como acciones realizadas divididas entre oportunidades, multiplicado por 100.",
+        "Se recomiendan 200 oportunidades por periodo y unidad de observación.",
+        "Las sesiones duran unos 20 minutos (±10) y no conviene observar a más de tres profesionales a la vez."
+      ],
+      "sections": [
+        {
+          "title": "Indicación, oportunidad y acción",
+          "depth": "core",
+          "body": [
+            "El observador identifica indicaciones, las convierte en oportunidades y registra la acción realizada o no realizada. Solo debe registrar lo que ve claramente y no puede asumir que una acción ocurrió.",
+            "Una acción positiva que no está justificada por una indicación no se incluye en el cálculo. Si varias indicaciones coinciden, se computa una sola oportunidad y una sola acción necesaria."
+          ]
+        },
+        {
+          "title": "Fórmula y estándares",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Elemento",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Cumplimiento",
+                "(Acciones realizadas / Oportunidades) × 100"
+              ],
+              [
+                "Oportunidades por periodo y unidad",
+                "200"
+              ],
+              [
+                "Duración de la sesión",
+                "20 minutos (±10)"
+              ],
+              [
+                "Profesionales observados a la vez",
+                "No más de 3"
+              ],
+              [
+                "Categorías profesionales",
+                "Enfermería o matrona, auxiliar, médico y otros"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Límites y uso de los resultados",
+          "depth": "full",
+          "bullets": [
+            "El observador puede influir en el comportamiento observado (efecto del observador).",
+            "La interpretación de las definiciones y de la situación puede afectar la fiabilidad de los datos.",
+            "Los datos deben recogerse de forma anónima y confidencial; no deben emplearse para una evaluación administrativa del personal.",
+            "La retroalimentación inmediata y la discusión de los resultados apoyan la mejora continua."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es una auditoría punitiva",
+            "text": "La observación busca mejorar la práctica y la seguridad del paciente. Presentar los resultados al personal, en un clima de confianza, es parte del método."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-04",
+      "topicId": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Retroalimentación, cultura y cuidado de las manos",
+      "kicker": "Higiene de manos · Cultura de seguridad",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La observación se completa con retroalimentación oportuna y un clima de confianza. La seguridad de las manos —piel sana, uñas cortas y sin joyas— y el cuidado cutáneo sostienen la adherencia.",
+      "keyConcepts": [
+        "La retroalimentación debe presentarse lo antes posible al personal observado y discutirse en un clima de confianza.",
+        "Los resultados no deben emplearse para una evaluación administrativa del personal.",
+        "Las joyas y las uñas largas, esmaltadas o postizas favorecen la colonización y la transmisión.",
+        "Debe evitarse combinar jabón y preparado alcohólico, usar agua caliente o ponerse guantes con las manos húmedas."
+      ],
+      "sections": [
+        {
+          "title": "Retroalimentar para mejorar",
+          "depth": "core",
+          "body": [
+            "El propósito de la observación es demostrar el grado de cumplimiento y evaluar la técnica; sus resultados ayudan a elegir intervenciones formativas. La retroalimentación inmediata, individual o colectiva, tiene un efecto promotor y permite intercambiar puntos de vista.",
+            "Cuando se evalúa el cumplimiento basal, conviene esperar a tener las tasas globales antes de dar retroalimentación. Los datos deben ser anónimos y confidenciales, y no usarse para una evaluación administrativa del personal."
+          ]
+        },
+        {
+          "title": "Seguridad y cuidado de la piel",
+          "depth": "core",
+          "bullets": [
+            "La piel debajo de los anillos está más colonizada; se desaconseja llevar joyas durante la asistencia.",
+            "Las uñas deben ser naturales, cortas y sin esmalte; no deben usarse uñas postizas.",
+            "La dermatitis de contacto es frecuente por el uso repetido de jabones y detergentes; una crema de manos ayuda a mantener la piel sana.",
+            "Lavarse con agua y jabón inmediatamente antes o después del preparado alcohólico, usar agua caliente o ponerse guantes con las manos húmedas aumenta la irritación."
+          ]
+        },
+        {
+          "title": "Conductas a evitar",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Práctica",
+              "Por qué evitarla"
+            ],
+            "rows": [
+              [
+                "Combinar agua y jabón con preparado alcohólico",
+                "Irrita la piel y es innecesario."
+              ],
+              [
+                "Usar agua caliente",
+                "Aumenta la irritación cutánea."
+              ],
+              [
+                "Ponerse guantes con las manos húmedas",
+                "Favorece la irritación de la piel."
+              ],
+              [
+                "Llevar guantes fuera de las indicaciones",
+                "No protege y puede favorecer la transmisión."
+              ],
+              [
+                "Realizar higiene fuera de las indicaciones",
+                "No aporta beneficio y puede dañar la piel."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Cultura de seguridad",
+            "text": "Observar, informar y conversar los resultados mejora la práctica. La sanción no es el objetivo de la observación."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-01",
+      "topicId": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Definiciones y vigilancia de las IAAS",
+      "kicker": "Vigilancia de IAAS · Definiciones",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La NTS 163 define la IAAS, la definición de caso y los factores de riesgo vigilados. La vigilancia es selectiva, focalizada, activa y permanente, y se organiza en una red nacional.",
+      "keyConcepts": [
+        "IAAS es una condición local o sistémica por un agente infeccioso o su toxina, adquirida durante la atención y no presente ni incubándose al ingreso.",
+        "Se excluyen las infecciones transplacentarias, la colonización y la extensión de una infección previa, salvo evidencia de una nueva infección.",
+        "La definición de caso combina la definición operativa, el factor de riesgo vigilado y los criterios específicos del tipo de IAAS.",
+        "La vigilancia es selectiva, focalizada, activa y permanente."
+      ],
+      "sections": [
+        {
+          "title": "Qué es una IAAS",
+          "depth": "core",
+          "body": [
+            "La NTS 163 define la IAAS como una condición local o sistémica resultante de una reacción adversa a la presencia de un agente infeccioso o de sus toxinas. Ocurre en un paciente durante la atención y no estaba presente ni incubándose al ingreso, salvo que se relacione con una admisión previa.",
+            "No se consideran IAAS la extensión o complicación de una infección ya presente, las infecciones del recién nacido adquiridas por vía transplacentaria ni la colonización sin signos o síntomas. La norma también contempla la vigilancia posterior al alta en pacientes con procedimientos o cirugías vigiladas."
+          ]
+        },
+        {
+          "title": "Definición de caso y factores de riesgo",
+          "depth": "core",
+          "bullets": [
+            "Cumplir la definición operativa de IAAS.",
+            "Tener asociación con el factor de riesgo vigilado, sin evidencia de otra causa conocida.",
+            "Cumplir los criterios específicos del tipo de IAAS: hallazgos clínicos, resultados de laboratorio y otras pruebas.",
+            "Factores vigilados: catéter venoso central, catéter urinario permanente, catéter venoso periférico, ventilador mecánico, nutrición parenteral total, parto vaginal y cirugías seleccionadas.",
+            "La neumonía en pacientes con ventilación no invasiva no se considera asociada a ventilación mecánica."
+          ]
+        },
+        {
+          "title": "Características de la vigilancia",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Característica",
+              "Significado"
+            ],
+            "rows": [
+              [
+                "Selectiva",
+                "Se concentra en pacientes hospitalizados y en eventos priorizados por su importancia y posibilidad de prevención."
+              ],
+              [
+                "Focalizada",
+                "Prioriza los servicios con mayor uso de dispositivos, procedimientos y cirugías seleccionadas."
+              ],
+              [
+                "Activa",
+                "Búsqueda intencional de casos que cumplen la definición."
+              ],
+              [
+                "Permanente",
+                "El personal responsable dispone del tiempo necesario para la búsqueda."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "No es un manual de higiene",
+            "text": "La NTS 163 regula la vigilancia epidemiológica de las IAAS. Las recomendaciones de higiene de manos provienen del manual de la OMS estudiado en las primeras fichas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-02",
+      "topicId": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Red, procesos y notificación de la vigilancia",
+      "kicker": "Vigilancia de IAAS · Procesos",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La vigilancia de IAAS se organiza en los niveles local, regional y nacional, sigue cinco fases y se notifica en el aplicativo del CDC hasta el séptimo día hábil del mes siguiente. Los indicadores permiten comparar tasas y detectar desviaciones.",
+      "keyConcepts": [
+        "La red tiene nivel local (IPRESS), regional (DIRIS/DIRESA/GERESA) y nacional (CDC).",
+        "El proceso tiene cinco fases: plan, recolección, análisis, comunicación y evaluación.",
+        "La notificación local se realiza hasta el séptimo día hábil del mes siguiente al vigilado.",
+        "La incidencia acumulada usa personas en riesgo al inicio; la densidad de incidencia usa tiempo-persona."
+      ],
+      "sections": [
+        {
+          "title": "La red y sus recursos",
+          "depth": "core",
+          "body": [
+            "Todas las IPRESS públicas y privadas del país deben incorporarse a la Red de vigilancia de las IAAS. El nivel regional consolida y controla la calidad de la información; el CDC es el nivel nacional. Los tres niveles monitorean, supervisan y evalúan la red una vez al año.",
+            "Las IPRESS deben garantizar personal capacitado, acceso a fuentes de información, disponibilidad horaria, mobiliario, equipo de cómputo con internet y recursos para capacitación y campañas educativas."
+          ]
+        },
+        {
+          "title": "Cinco fases y recolección",
+          "depth": "core",
+          "bullets": [
+            "Plan anual de vigilancia: tipos de IAAS, factores de riesgo y servicios vigilados.",
+            "Recolección diaria en Neonatología, Gineco-Obstetricia y UCI; Medicina y Cirugía también se visitan a diario durante el mes vigilado.",
+            "Revisión de historia clínica, entrevistas, libros de ingresos y egresos, libro de partos y reportes de laboratorio.",
+            "Ante sospecha, aplicar la definición de caso; en casos confirmados, llenar la ficha de investigación epidemiológica.",
+            "Consolidar mensualmente la información en el aplicativo del CDC."
+          ]
+        },
+        {
+          "title": "Indicadores y periodicidad",
+          "depth": "full",
+          "body": [
+            "La incidencia acumulada se calcula con los casos nuevos sobre las personas libres de enfermedad al inicio del periodo. La densidad de incidencia usa la suma de los tiempos libres de enfermedad (tiempo-persona) y expresa la velocidad con la que aparecen los casos."
+          ],
+          "table": {
+            "headers": [
+              "Nivel",
+              "Reportes y análisis"
+            ],
+            "rows": [
+              [
+                "Local (IPRESS)",
+                "Reportes mensuales de tasas; informes trimestrales, mínimo 4 al año."
+              ],
+              [
+                "Regional",
+                "Reportes mensuales; informes semestrales y anuales, mínimo 2 al año."
+              ],
+              [
+                "Nacional (CDC)",
+                "Informes semestrales y anuales; tasas referenciales por percentiles y categoría de IPRESS."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Notificación oportuna",
+            "text": "La IPRESS notifica en el aplicativo del CDC hasta el séptimo día hábil del mes siguiente. El nivel regional consolida y controla la calidad de la información."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-03",
+      "topicId": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Prevenir desde la vigilancia y la supervisión",
+      "kicker": "Vigilancia de IAAS · Prevención",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La NTS 163 se centra en la vigilancia: sus datos permiten priorizar, detectar desviaciones y evaluar medidas. La supervisión y los planes de mejora cierran el ciclo, y el laboratorio vigila la resistencia antimicrobiana.",
+      "keyConcepts": [
+        "La vigilancia permite establecer la línea base, detectar desviaciones y evaluar si las medidas preventivas fueron eficaces.",
+        "El plan anual prioriza tipos de IAAS por necesidad, frecuencia, transmisibilidad, letalidad y costos.",
+        "La supervisión deja hallazgos y un plan de intervención con medidas correctivas, etapas y metas.",
+        "Las cepas con perfiles de resistencia de alerta se notifican dentro de las 24 horas."
+      ],
+      "sections": [
+        {
+          "title": "De la vigilancia a la prevención",
+          "depth": "core",
+          "body": [
+            "Los datos de la vigilancia permiten monitorizar y detectar desviaciones respecto de la línea base endémica, identificar factores de riesgo, evaluar el impacto de las medidas preventivas y orientar la educación del personal. También sirven como indicadores de la calidad de la gestión.",
+            "El plan anual selecciona los eventos a vigilar según la necesidad de vigilar infecciones específicas, su mayor frecuencia, la posibilidad de un patógeno de alta transmisibilidad y las infecciones con alta letalidad, mayor estancia hospitalaria o mayores costos."
+          ]
+        },
+        {
+          "title": "Supervisión y planes de mejora",
+          "depth": "core",
+          "bullets": [
+            "La supervisión se comunica oficialmente a la IPRESS y utiliza instrumentos definidos.",
+            "Al terminar, se comunican los hallazgos y problemas y se brinda asistencia técnica sobre las medidas correctivas.",
+            "La IPRESS elabora un plan de intervención con etapas y metas por cada hallazgo.",
+            "El nivel regional consolida los hallazgos y los remite al CDC; el nivel nacional hace seguimiento.",
+            "El informe de la supervisión se comunica al CDC en un plazo no mayor a 7 días hábiles."
+          ]
+        },
+        {
+          "title": "Alertas de resistencia antimicrobiana",
+          "depth": "full",
+          "body": [
+            "El laboratorio de microbiología envía los reportes de cultivos positivos y los perfiles de resistencia. El hallazgo de las cepas de alerta se notifica dentro de las 24 horas a la DIRESA/GERESA/DIRIS, que comunica al CDC y al Laboratorio de Referencia Nacional de Infecciones Intrahospitalarias del INS."
+          ],
+          "bullets": [
+            "Enterococcus spp. intermedio o resistente a vancomicina y resistente a linezolid.",
+            "Enterococcus faecalis resistente a ampicilina o penicilina.",
+            "Enterobacterias resistentes a carbapenemes o con resistencia a colistina.",
+            "Pseudomonas aeruginosa y Acinetobacter baumannii resistentes a carbapenemes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Prevención basada en datos",
+            "text": "Vigilar sin actuar no cambia el riesgo: la información debe traducirse en medidas, supervisión y evaluación."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5,
+            9,
+            10,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-04",
+      "topicId": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Brotes: detección, notificación e investigación",
+      "kicker": "Vigilancia de IAAS · Brotes",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Un brote es un aumento de casos por encima de lo esperado, un microorganismo con nuevo perfil de resistencia o un cambio de ese perfil. La IPRESS notifica en 24 horas y la investigación la conduce la Oficina de Epidemiología con el Comité Local de Control de Infecciones.",
+      "keyConcepts": [
+        "Brote: más casos de los esperados (aumento a partir de un caso), nuevo perfil de resistencia o cambio del perfil en un periodo, lugar y población.",
+        "La sospecha puede venir del personal asistencial, del personal de vigilancia o del laboratorio de microbiología.",
+        "La notificación es dentro de las 24 horas, por la web y por correo, a la DIRIS/DIRESA/GERESA y al CDC.",
+        "La IPRESS conserva las cepas y las deriva al laboratorio de referencia; presenta informes inicial, de seguimiento y final."
+      ],
+      "sections": [
+        {
+          "title": "Qué es un brote",
+          "depth": "core",
+          "body": [
+            "La NTS 163 considera brote la ocurrencia de un número de casos mayor que el esperado (aumento a partir de un caso), la aparición de un microorganismo con un nuevo perfil de resistencia en el servicio o en la IPRESS, o un cambio del perfil de resistencia dentro de un periodo, lugar y población específicos.",
+            "El estudio lo conduce el responsable de la Oficina de Epidemiología de la IPRESS, con apoyo del Comité Local de Control de Infecciones y del jefe del servicio donde ocurre el evento."
+          ]
+        },
+        {
+          "title": "Fuentes de sospecha y primeras acciones",
+          "depth": "core",
+          "bullets": [
+            "Personal de salud asistencial de los servicios.",
+            "Personal de vigilancia, durante las visitas o el análisis de los resultados.",
+            "Laboratorio de microbiología, al revisar los cultivos positivos de pacientes con IAAS.",
+            "Notificar dentro de las 24 horas por la web y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC.",
+            "Conservar las cepas y coordinar su derivación al laboratorio de referencia."
+          ]
+        },
+        {
+          "title": "Informes y cierre",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Etapa",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "Informe inicial",
+                "Notificación del evento y datos disponibles al momento."
+              ],
+              [
+                "Informe de seguimiento",
+                "Avance de la investigación y medidas adoptadas."
+              ],
+              [
+                "Informe final",
+                "Resultados, conclusiones y cierre del brote."
+              ]
+            ]
+          },
+          "body": [
+            "Los informes se remiten a la Oficina de Epidemiología regional, que los deriva al CDC. El CDC, en coordinación con el INS y otras instancias, elabora los informes de los brotes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "24 horas, no un mes",
+            "text": "La notificación del brote es urgente y no espera al cierre mensual de la vigilancia rutinaria."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-01",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Mediciones e indicadores según la edad",
+      "kicker": "Nutrición · Evaluación infantil",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La valoración cambia con la edad: el recién nacido, el menor de 5 años y el escolar requieren mediciones e indicadores distintos.",
+      "keyConcepts": [
+        "En el recién nacido se miden peso, longitud, perímetro cefálico y perímetro torácico.",
+        "En menores de 5 años se usan P/E, P/T, T/E y PC/E; el perímetro cefálico se mide hasta los 36 meses.",
+        "En 5 a 11 años se miden peso, talla y perímetro abdominal, y se usan IMC/E, T/E y PAB/E.",
+        "La fecha de nacimiento y la edad gestacional son datos obligatorios para interpretar los indicadores."
+      ],
+      "sections": [
+        {
+          "title": "Qué se mide en cada etapa",
+          "depth": "core",
+          "bullets": [
+            "En el recién nacido se registran peso, longitud, perímetro cefálico y perímetro torácico (p. 20).",
+            "En menores de 5 años se toma peso, talla (longitud o estatura) y perímetro cefálico hasta los 36 meses (p. 20).",
+            "En niñas y niños de 5 a 11 años se mide peso, talla y perímetro abdominal (p. 20)."
+          ]
+        },
+        {
+          "title": "Indicadores que corresponden",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Grupo de edad",
+              "Indicadores",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "Recién nacido",
+                "Peso al nacer, peso para la edad gestacional, longitud, PC y perímetro torácico",
+                "Evalúa el crecimiento intrauterino y el riesgo neonatal"
+              ],
+              [
+                "Menores de 5 años",
+                "P/E, P/T, T/E y PC/E",
+                "Distingue desnutrición aguda, crónica y crecimiento cerebral"
+              ],
+              [
+                "De 5 a 11 años",
+                "IMC/E, T/E y PAB/E",
+                "Evalúa delgadez, sobrepeso, obesidad y riesgo cardiometabólico"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Registro y condiciones",
+          "depth": "full",
+          "body": [
+            "La valoración se realiza en la primera atención y en los controles, y también puede captarse por referencia de otro establecimiento o de agentes comunitarios (p. 20).",
+            "En la historia clínica deben constar la fecha de nacimiento, la edad gestacional y las mediciones obtenidas; la clasificación se registra además en el HIS (p. 20)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Para recordar",
+            "text": "La edad gestacional al nacer es un dato obligatorio: sin ella no se interpreta el peso para la edad gestacional."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            20,
+            21,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-02",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Puntos de corte y clasificación",
+      "kicker": "Nutrición · Evaluación infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Los puntos de corte en desviaciones estándar permiten clasificar desnutrición aguda, crónica, sobrepeso y obesidad, con una excepción importante en lactantes con lactancia materna exclusiva.",
+      "keyConcepts": [
+        "P/T >3 DE es obesidad; >2 DE a 3 DE, sobrepeso; <-2 DE a -3 DE, bajo peso o emaciado; <-3 DE, bajo peso severo.",
+        "T/E <-2 DE a -3 DE corresponde a talla baja y <-3 DE a talla baja severa.",
+        "IMC/E >2 DE es obesidad; >1 DE a 2 DE, sobrepeso; <-2 DE a -3 DE, delgadez; <-3 DE, delgadez severa.",
+        "PAB/E ≥P75 indica riesgo alto y ≥P90 riesgo muy alto en niñas y niños de 5 a 11 años."
+      ],
+      "sections": [
+        {
+          "title": "Peso para la talla y talla para la edad",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Indicador",
+              "Punto de corte",
+              "Clasificación"
+            ],
+            "rows": [
+              [
+                "P/T",
+                "> 3 DE",
+                "Obesidad"
+              ],
+              [
+                "P/T",
+                "> 2 DE a 3 DE",
+                "Sobrepeso"
+              ],
+              [
+                "P/T",
+                "2 DE a -2 DE",
+                "Normal"
+              ],
+              [
+                "P/T",
+                "< -2 DE a -3 DE",
+                "Bajo peso / emaciado"
+              ],
+              [
+                "P/T",
+                "< -3 DE",
+                "Bajo peso severo"
+              ],
+              [
+                "T/E",
+                "< -2 DE a -3 DE",
+                "Talla baja"
+              ],
+              [
+                "T/E",
+                "< -3 DE",
+                "Talla baja severa"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "IMC/E y perímetro abdominal",
+          "depth": "core",
+          "bullets": [
+            "En 5 a 11 años, un IMC/E >2 DE indica obesidad y un IMC/E >1 DE a 2 DE, sobrepeso (p. 25).",
+            "Un IMC/E <-2 DE a -3 DE corresponde a delgadez y <-3 DE a delgadez severa (p. 25).",
+            "Un PAB/E ≥P75 señala riesgo alto y ≥P90 riesgo muy alto de enfermedad cardiovascular y metabólica (p. 26)."
+          ]
+        },
+        {
+          "title": "La excepción de los primeros 6 meses",
+          "depth": "full",
+          "body": [
+            "En menores de 6 meses con lactancia materna exclusiva no se considera sobrepeso u obesidad para fines de intervención, aunque el P/T supere 2 DE (p. 24, p. 27).",
+            "La clasificación se registra, pero la conducta prioriza sostener la lactancia materna y el control del crecimiento."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "No confundir clasificación con intervención",
+            "text": "Un P/T elevado en un lactante con lactancia materna exclusiva no justifica restringir la lactancia ni indicar pérdida de peso."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-03",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Curvas de crecimiento y signos de alerta",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La curva de crecimiento permite detectar riesgos antes de que la clasificación cambie: importan la dirección, la velocidad y el canal, no solo el punto del control actual.",
+      "keyConcepts": [
+        "Cada niña o niño tiene su propia velocidad de crecimiento y debe mantenerse en un mismo canal.",
+        "Un aplanamiento o un cambio de canal pueden ser signos de alerta aunque el punto siga en rango normal.",
+        "En talla, un incremento menor a 2,5 cm en 6 meses obliga a evaluar el crecimiento.",
+        "Las curvas se grafican en cada control y se unen los puntos para interpretar la tendencia."
+      ],
+      "sections": [
+        {
+          "title": "La tendencia manda",
+          "depth": "core",
+          "body": [
+            "Se espera que el crecimiento sea ascendente y se mantenga en un mismo carril o canal; cuando la tendencia cambia, puede ser un indicador de riesgo (p. 27).",
+            "Graficar cada control y unir los puntos permite ver si el crecimiento sigue su canal o se está alejando de él (p. 29)."
+          ]
+        },
+        {
+          "title": "Signos de alerta por grupo",
+          "depth": "core",
+          "bullets": [
+            "En menores de 5 años, el aplanamiento de P/E y P/T desde 1 DE, el cruce de la mediana y de -1 DE, la ausencia de variación de peso o un cambio pronunciado en poco tiempo son signos de alerta (p. 28).",
+            "En T/E, el aplanamiento, el cambio de canal descendente, el incremento menor a 2,5 cm en 6 meses o la talla sin variación entre controles sugieren riesgo de talla baja (p. 28).",
+            "En 5 a 11 años, un IMC/E entre <-1 DE y -2 DE sugiere riesgo de delgadez; entre >1 DE y 2 DE, riesgo de sobrepeso; una variación de ±1,5 en 6 meses también alerta (p. 28)."
+          ]
+        },
+        {
+          "title": "Cómo graficar y qué registrar",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Paso",
+              "Acción"
+            ],
+            "rows": [
+              [
+                "1",
+                "Elegir la gráfica según el sexo y el indicador"
+              ],
+              [
+                "2",
+                "Ubicar la edad y el valor medido en los ejes"
+              ],
+              [
+                "3",
+                "Marcar el punto en la intersección"
+              ],
+              [
+                "4",
+                "Unir el punto con el control anterior"
+              ],
+              [
+                "5",
+                "Interpretar el canal y la tendencia"
+              ],
+              [
+                "6",
+                "Registrar la tendencia y las indicaciones en la historia clínica"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Para retener",
+            "text": "Un punto aislado puede parecer normal; la curva muestra si el crecimiento se está deteniendo o desviando."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            27,
+            28,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-04",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejo alimentario y micronutrientes",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La lactancia materna exclusiva hasta los 6 meses y la lactancia continuada con alimentación complementaria hasta los 24 meses son la base del consejo alimentario.",
+      "keyConcepts": [
+        "La lactancia materna exclusiva se mantiene durante los primeros 6 meses.",
+        "Desde los 6 meses se introduce alimentación complementaria sin abandonar la lactancia, hasta los 24 meses.",
+        "Las preparaciones no llevan azúcar ni sal y se ofrecen con cuchara, con el niño sentado.",
+        "En bajo peso o talla baja se indica un plan personalizado y suplementación con hierro, vitamina A, zinc y otros micronutrientes."
+      ],
+      "sections": [
+        {
+          "title": "Los primeros 24 meses",
+          "depth": "core",
+          "bullets": [
+            "Priorizar la lactancia materna exclusiva durante los primeros 6 meses y la lactancia continuada más alimentación complementaria hasta los 24 meses (p. 30, p. 31).",
+            "La alimentación complementaria empieza a los 6 meses con comidas espesas, papillas, purés, cereales y verduras, sin reemplazar las mamadas (p. 28 de la guía de lactancia).",
+            "No se agrega azúcar ni sal a las preparaciones; se ofrecen a temperatura corporal, con cuchara pequeña y con el niño sentado (p. 28 de la guía de lactancia)."
+          ]
+        },
+        {
+          "title": "Cuando el peso o la talla no avanzan",
+          "depth": "core",
+          "body": [
+            "Se orienta al aumento progresivo de peso y talla mediante un plan de atención personalizado y un equipo multidisciplinario (p. 30).",
+            "Se brinda atención nutricional a la madre, padre o cuidador, se prioriza la lactancia materna y la alimentación complementaria, y se suplementa con hierro, vitamina A, zinc y otros micronutrientes (p. 30, p. 31)."
+          ]
+        },
+        {
+          "title": "Cuando hay exceso de peso",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Situación",
+              "Objetivo del consejo"
+            ],
+            "rows": [
+              [
+                "Bajo peso o talla baja",
+                "Aumento progresivo de peso y talla con plan personalizado"
+              ],
+              [
+                "Crecimiento adecuado",
+                "Sostener hábitos y continuar controles"
+              ],
+              [
+                "Sobrepeso u obesidad",
+                "Mantener o lograr una ganancia más lenta de peso, sin buscar pérdida"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "warning",
+            "title": "Nunca indicar pérdida de peso",
+            "text": "En la niñez, el objetivo frente al sobrepeso es frenar la ganancia, no reducir el peso corporal."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30,
+            31
+          ]
+        },
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            28
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-05",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Atención individual y derivación",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Toda niña o niño con malnutrición es de alto riesgo y requiere atención prioritaria; la ruta incluye consulta nutricional y referencia cuando el establecimiento no cuenta con nutricionista.",
+      "keyConcepts": [
+        "La malnutrición por exceso o por déficit se considera de alto riesgo y recibe atención prioritaria.",
+        "La consulta nutricional sigue seis pasos, desde conocer el estado de salud hasta el registro y seguimiento.",
+        "Si no hay nutricionista, se refiere a un establecimiento de mayor capacidad resolutiva.",
+        "El profesional que atiende el control registra la interconsulta a nutrición en la historia clínica."
+      ],
+      "sections": [
+        {
+          "title": "Prioridad y ruta de atención",
+          "depth": "core",
+          "bullets": [
+            "Las niñas y niños con malnutrición por exceso o por déficit deben recibir atención prioritaria del equipo multidisciplinario, con prioridad en nutrición y medicina (p. 30).",
+            "Tanto quienes tienen indicadores normales con adecuada ganancia como quienes presentan talla baja, bajo peso, delgadez, sobrepeso u obesidad se derivan a consulta nutricional (p. 30).",
+            "Si el establecimiento no cuenta con nutricionista, se refiere a uno de mayor capacidad resolutiva (p. 30)."
+          ]
+        },
+        {
+          "title": "Los seis pasos de la consulta nutricional",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Paso",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "1",
+                "Conocer el estado de salud y nutrición"
+              ],
+              [
+                "2",
+                "Anamnesis alimentaria y diagnóstico nutricional"
+              ],
+              [
+                "3",
+                "Estimar los requerimientos de energía"
+              ],
+              [
+                "4",
+                "Establecer metas"
+              ],
+              [
+                "5",
+                "Prescribir la alimentación"
+              ],
+              [
+                "6",
+                "Registrar y hacer seguimiento"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cuando la velocidad de crecimiento disminuye",
+          "depth": "full",
+          "body": [
+            "Se orienta al aumento progresivo de peso y talla como parte de un plan personalizado por el equipo multidisciplinario (p. 30).",
+            "Se involucra a la madre, padre o cuidador con atención nutricional, se prioriza la lactancia materna exclusiva y luego la continuada con alimentación complementaria, y se agregan micronutrientes (p. 30, p. 31)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Registrar para no perder el hilo",
+            "text": "La interconsulta a nutrición debe quedar escrita en la historia clínica por el profesional que la indica."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30,
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-ninos-06",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Abordaje colectivo y seguimiento",
+      "kicker": "Nutrición · Intervención infantil",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Además de la atención individual, el nivel colectivo vigila tendencias, coordina acciones preventivas y evalúa sus resultados para mejorar el estado nutricional de la población infantil.",
+      "keyConcepts": [
+        "El abordaje colectivo evalúa el grado de carencia nutricional y sus factores determinantes.",
+        "Se vigilan las tendencias de desnutrición, obesidad y sus factores asociados.",
+        "La meta poblacional es mantener a la mayoría entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E.",
+        "Las acciones preventivas se evalúan y se complementan con investigación operativa."
+      ],
+      "sections": [
+        {
+          "title": "Qué vigila el nivel colectivo",
+          "depth": "core",
+          "bullets": [
+            "Evaluar el grado de carencia nutricional y analizar los factores que influyen en la malnutrición (p. 31).",
+            "Vigilar las tendencias de desnutrición, obesidad y su asociación con determinantes, y establecer acciones para prevenir talla baja, sobrepeso y obesidad (p. 31).",
+            "Evaluar la aplicación y los resultados de esas acciones y facilitar investigaciones para intervenciones de salud pública (p. 31)."
+          ]
+        },
+        {
+          "title": "Metas poblacionales",
+          "depth": "core",
+          "body": [
+            "Los esfuerzos deben dirigirse a mantener el mayor porcentaje de niñas y niños entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E (p. 31).",
+            "Estas metas orientan la vigilancia y la priorización de acciones, pero no sustituyen la interpretación individual de la curva de cada niño."
+          ]
+        },
+        {
+          "title": "Seguimiento en cada control",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Acción",
+              "Qué se registra"
+            ],
+            "rows": [
+              [
+                "Graficar",
+                "El punto del control actual y la unión con el anterior"
+              ],
+              [
+                "Interpretar",
+                "El canal, la dirección y la velocidad de crecimiento"
+              ],
+              [
+                "Decidir",
+                "Mantener, reforzar o derivar a consulta nutricional"
+              ],
+              [
+                "Registrar",
+                "La tendencia y las indicaciones en la historia clínica"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Lo individual y lo colectivo se complementan",
+            "text": "La vigilancia poblacional detecta problemas; la curva de cada niño permite actuar oportunamente."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            29,
+            31
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-01",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "Medición antropométrica estandarizada",
+      "kicker": "Nutrición · Evaluación del adulto",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "Peso, talla y perímetro abdominal requieren equipo calibrado y una técnica reproducible; la calidad del dato determina la clasificación y las decisiones.",
+      "keyConcepts": [
+        "La balanza de plataforma debe tener resolución de 100 g y capacidad mínima de 140 kg.",
+        "La talla se mide con tallímetro fijo, plano de Frankfurt y tres mediciones promediadas.",
+        "El perímetro abdominal se mide en el punto medio entre la última costilla y la cresta ilíaca.",
+        "La cinta métrica debe ser flexible, no elástica, de fibra de vidrio, de 200 cm y resolución de 1 mm."
+      ],
+      "sections": [
+        {
+          "title": "Equipo y condiciones",
+          "depth": "core",
+          "bullets": [
+            "La balanza mecánica de plataforma, sin tallímetro incorporado, debe tener resolución de 100 g y capacidad mínima de 140 kg (p. 15).",
+            "La talla se mide con tallímetro fijo de madera; el tallímetro incorporado a la balanza no cumple las especificaciones (p. 17).",
+            "La cinta métrica debe medir 200 cm, tener resolución de 1 mm y ser de fibra de vidrio, flexible y no elástica (p. 19).",
+            "La toma se realiza en un ambiente privado, ventilado y con buena iluminación (p. 13)."
+          ]
+        },
+        {
+          "title": "Peso y talla",
+          "depth": "core",
+          "bullets": [
+            "Para el peso, la persona se quita zapatos y ropa en exceso, la balanza se ajusta a cero y se ubica en el centro de la plataforma, erguida y con los brazos a los costados (p. 16).",
+            "Para la talla, talones, pantorrillas, nalgas, hombros y parte posterior de la cabeza deben contactar con el tablero; la cabeza se orienta según el plano de Frankfurt (p. 17).",
+            "La talla se mide tres veces consecutivas y se registra el promedio (p. 17)."
+          ]
+        },
+        {
+          "title": "Perímetro abdominal",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Paso",
+              "Cómo se hace"
+            ],
+            "rows": [
+              [
+                "Posición",
+                "De pie, torso descubierto, brazos relajados y pies separados de 25 a 30 cm"
+              ],
+              [
+                "Referencias",
+                "Punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca, a ambos lados"
+              ],
+              [
+                "Cinta",
+                "Horizontal, alrededor del abdomen, sin comprimir"
+              ],
+              [
+                "Lectura",
+                "Al final de una exhalación normal"
+              ],
+              [
+                "Repetición",
+                "Tres mediciones y promedio"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "La técnica se puede auditar",
+            "text": "Registrar peso, talla y perímetro abdominal en la historia clínica permite repetir la medición y comparar controles."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            13,
+            15,
+            16,
+            17,
+            19
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-02",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "areaId": "area-nutricion",
+      "title": "IMC, perímetro abdominal y riesgo",
+      "kicker": "Nutrición · Evaluación del adulto",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El IMC clasifica el estado nutricional y el perímetro abdominal añade el riesgo cardiometabólico; ambos se interpretan juntos.",
+      "keyConcepts": [
+        "El IMC se calcula con peso en kilogramos dividido entre la talla en metros al cuadrado.",
+        "IMC <18,5 es delgadez; 18,5 a <25 es normal; 25 a <30 es sobrepeso; ≥30 es obesidad.",
+        "En varones, PAB ≥94 cm es riesgo alto y ≥102 cm muy alto; en mujeres, ≥80 cm y ≥88 cm.",
+        "El IMC no distingue masa magra de grasa y puede sobreestimar la obesidad en personas con gran desarrollo muscular."
+      ],
+      "sections": [
+        {
+          "title": "Clasificación por IMC",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Clasificación",
+              "IMC (kg/m²)"
+            ],
+            "rows": [
+              [
+                "Delgadez grado III",
+                "< 16"
+              ],
+              [
+                "Delgadez grado II",
+                "16 a < 17"
+              ],
+              [
+                "Delgadez grado I",
+                "17 a < 18,5"
+              ],
+              [
+                "Normal",
+                "18,5 a < 25"
+              ],
+              [
+                "Sobrepeso",
+                "25 a < 30"
+              ],
+              [
+                "Obesidad grado I",
+                "30 a < 35"
+              ],
+              [
+                "Obesidad grado II",
+                "35 a < 40"
+              ],
+              [
+                "Obesidad grado III",
+                "≥ 40"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Perímetro abdominal",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Sexo",
+              "Riesgo bajo",
+              "Riesgo alto",
+              "Riesgo muy alto"
+            ],
+            "rows": [
+              [
+                "Hombre",
+                "< 94 cm",
+                "≥ 94 cm",
+                "≥ 102 cm"
+              ],
+              [
+                "Mujer",
+                "< 80 cm",
+                "≥ 80 cm",
+                "≥ 88 cm"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Riesgo combinado y límites del IMC",
+          "depth": "full",
+          "body": [
+            "El riesgo de comorbilidad aumenta cuando se asocian valores anormales de IMC y de perímetro abdominal (p. 22).",
+            "En deportistas con gran desarrollo muscular, el IMC puede sobreestimar la grasa corporal; en ellos se recomienda valorar pliegues cutáneos y bioimpedanciometría (p. 21)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "No clasificar con un solo dato",
+            "text": "Un IMC normal no descarta riesgo si el perímetro abdominal es alto; por eso ambos se interpretan en conjunto."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            20,
+            21,
+            22
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-03",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Consejería y signos de alerta",
+      "kicker": "Nutrición · Intervención en adultos",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La consejería nutricional es un proceso participativo de 20 a 45 minutos; los signos de alerta indican cuándo reforzar el seguimiento aunque la clasificación sea normal.",
+      "keyConcepts": [
+        "La consejería nutricional dura aproximadamente entre 20 y 45 minutos.",
+        "La orientación nutricional es una actividad educativa básica y puntual, distinta de la consejería.",
+        "Una pérdida o ganancia involuntaria mayor a 1 kg en dos semanas es un signo de alerta.",
+        "Cambiar de clasificación en sentido opuesto a la normalidad también exige atención."
+      ],
+      "sections": [
+        {
+          "title": "Consejería, orientación y consulta",
+          "depth": "core",
+          "body": [
+            "La consejería nutricional es un proceso educativo, interpersonal y participativo entre el personal capacitado y la persona adulta o su cuidador, con una duración estimada de 20 a 45 minutos (p. 12).",
+            "La orientación nutricional, en cambio, es una actividad educativa básica y puntual; la consulta nutricional es la atención especializada del nutricionista (p. 12)."
+          ]
+        },
+        {
+          "title": "Signos de alerta",
+          "depth": "core",
+          "bullets": [
+            "Incremento o pérdida involuntaria de peso mayor a 1 kg en las dos últimas semanas (p. 22).",
+            "Variación del IMC de ±1,5 (aproximadamente 3 kg) entre dos controles consecutivos en los últimos 3 meses (p. 22).",
+            "IMC cercano a los límites de la normalidad: entre 18,5 y 19,5 o entre 24 y 25 (p. 22).",
+            "Cambio de clasificación en sentido opuesto a la normalidad, por ejemplo de sobrepeso a obesidad o de normal a delgadez (p. 22)."
+          ]
+        },
+        {
+          "title": "Conducta según el riesgo",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Situación",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "Valoración normal",
+                "Orientación o consejería para mantener el estado"
+              ],
+              [
+                "Riesgo con signo de alerta",
+                "Consejería, plan personalizado y controles programados"
+              ],
+              [
+                "Delgadez, sobrepeso u obesidad",
+                "Tratamiento nutricional dentro del plan de atención integral"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "El signo de alerta cambia la frecuencia",
+            "text": "Un resultado normal no significa alta definitiva si existe un signo de alerta; corresponde reforzar la consejería y programar el control."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            12,
+            22,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nutricion-adultos-04",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "areaId": "area-nutricion",
+      "title": "Tratamiento según la clasificación",
+      "kicker": "Nutrición · Intervención en adultos",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La intervención se adapta al IMC: recuperación en delgadez, mantenimiento en normalidad y pérdida gradual y supervisada en sobrepeso y obesidad.",
+      "keyConcepts": [
+        "En delgadez se descarta enfermedad asociada y se busca recuperar el rango normal de IMC.",
+        "En sobrepeso se propone una pérdida progresiva de 0,5 kg por semana.",
+        "En obesidad sin factores adicionales se plantea una pérdida de 0,5 a 1,0 kg por semana.",
+        "En IMC ≥40 se valoran medidas intensivas, incluida la cirugía, con manejo multidisciplinario."
+      ],
+      "sections": [
+        {
+          "title": "Delgadez y normalidad",
+          "depth": "core",
+          "bullets": [
+            "En delgadez se deriva a interconsulta médica para descartar enfermedad asociada y, si se presume un trastorno del comportamiento, a evaluación psicológica (p. 23).",
+            "La recuperación nutricional busca alcanzar el rango de normalidad del IMC y puede complementarse con mediciones de grasa y masa magra (p. 23).",
+            "En IMC normal se recomienda mantener el peso, promover estilos de vida saludables y evaluar al menos una vez al año (p. 23)."
+          ]
+        },
+        {
+          "title": "Sobrepeso y obesidad",
+          "depth": "core",
+          "bullets": [
+            "En sobrepeso se orienta a una pérdida progresiva de 0,5 kg por semana y se evalúan factores de riesgo asociados al perímetro abdominal (p. 23).",
+            "En obesidad sin factores adicionales se plantea una pérdida de 0,5 a 1,0 kg por semana con alimentación balanceada y control médico y nutricional (p. 24).",
+            "En ambos casos se recomienda actividad física, alimentación adecuada, abandono del tabaco y evitar el alcohol (p. 24)."
+          ]
+        },
+        {
+          "title": "Obesidad grado III",
+          "depth": "full",
+          "body": [
+            "Con IMC ≥40 el objetivo es reducir el peso exagerado y descartar enfermedades asociadas; se consideran medidas intensivas y opciones como el tratamiento quirúrgico (p. 24).",
+            "La cirugía se valora con referencia a un establecimiento de mayor complejidad para manejo multidisciplinario (p. 24)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "La velocidad importa",
+            "text": "Una pérdida más rápida que la indicada no es un objetivo terapéutico; el ritmo se ajusta según la clasificación y el riesgo."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-01",
+      "topicId": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Inicio y contacto piel a piel",
+      "kicker": "Lactancia · Técnica",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El contacto piel a piel inmediato y el alojamiento conjunto crean las condiciones para un inicio temprano y sostenido de la lactancia.",
+      "keyConcepts": [
+        "El contacto piel a piel debe mantenerse por lo menos una hora después del nacimiento.",
+        "El aseo y otras atenciones se postergan para no interrumpir el apego.",
+        "El alojamiento conjunto mantiene juntos a la madre y al bebé día y noche hasta el alta.",
+        "El calostro se produce en los primeros 5 días y es rico en componentes inmunológicos."
+      ],
+      "sections": [
+        {
+          "title": "Parto y contacto piel a piel",
+          "depth": "core",
+          "bullets": [
+            "El parto natural sin intervenciones innecesarias favorece el inicio de la lactancia y el apego (p. 21).",
+            "Inmediatamente después del nacimiento, el bebé se coloca piel a piel con la madre, se seca excepto las manos y se cubre con una manta y un gorro; se mantiene así por lo menos una hora (p. 21).",
+            "Se posterga el aseo y las demás atenciones; el Apgar se toma sin interferir el apego (p. 21).",
+            "En cesáreas también se realiza el contacto cuando es posible, dejando libres las manos de la madre; el padre puede apoyar (p. 21)."
+          ]
+        },
+        {
+          "title": "Alojamiento conjunto y calostro",
+          "depth": "core",
+          "bullets": [
+            "Mantener a la madre y al bebé juntos día y noche hasta el alta fortalece la confianza y la lactancia (p. 22).",
+            "El calostro es la secreción amarillenta y espesa de los primeros 5 días; es rico en componentes inmunológicos y se considera la primera vacuna (p. 22, p. 40).",
+            "Su cantidad es suficiente para cubrir las necesidades del recién nacido y ayuda a la maduración del aparato digestivo (p. 22).",
+            "No se debe administrar suero glucosado ni fórmula, salvo prescripción médica registrada en la historia clínica (p. 22)."
+          ]
+        },
+        {
+          "title": "Qué explicar a la madre",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Mensaje",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "Contacto",
+                "Piel a piel inmediato, al menos una hora"
+              ],
+              [
+                "Alojamiento",
+                "Juntos día y noche hasta el alta"
+              ],
+              [
+                "Calostro",
+                "Suficiente, inmunológico y digestivo"
+              ],
+              [
+                "Suplementos",
+                "Solo con indicación médica registrada"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "El apego no es un trámite",
+            "text": "La primera hora favorece la orientación al pezón y el vínculo; interrumpirla por rutinas no urgentes puede dificultar el inicio de la lactancia."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            21,
+            22,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-02",
+      "topicId": "topic-lactancia-tecnica",
+      "areaId": "area-nutricion",
+      "title": "Agarre, posición y frecuencia",
+      "kicker": "Lactancia · Técnica",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "Un buen agarre y una posición cómoda permiten vaciar el pecho y prevenir dolor; la frecuencia a demanda sostiene la producción de leche.",
+      "keyConcepts": [
+        "El bebé debe estar barriga con barriga y alineado oreja-hombro-cadera.",
+        "El agarre correcto incluye boca bien abierta, labio inferior hacia afuera y mentón que toca el pecho.",
+        "Se recomiendan 8 a 12 mamadas en 24 horas, de día y de noche.",
+        "El llanto es un signo tardío de hambre; conviene reconocer las señales tempranas."
+      ],
+      "sections": [
+        {
+          "title": "Posición y agarre",
+          "depth": "core",
+          "bullets": [
+            "La madre puede dar pecho sentada o recostada; sentada, mantiene la columna recta y las rodillas ligeramente elevadas, con el bebé en la curva del codo (p. 22).",
+            "El bebé se gira hacia la madre, con el cuerpo y la cabeza en línea recta, barriga con barriga y la nariz frente al pezón (p. 22).",
+            "La madre sostiene el pecho con la mano en forma de C, a 3 o 4 cm detrás del pezón, y acerca al bebé para que abra bien la boca y agarre parte de la areola (p. 22, p. 23)."
+          ]
+        },
+        {
+          "title": "Señales de un agarre correcto",
+          "depth": "core",
+          "bullets": [
+            "La boca del bebé está bien abierta (p. 23).",
+            "El labio inferior está hacia afuera y el mentón toca el pecho (p. 23).",
+            "Se ve más areola por arriba que por debajo de la boca (p. 23)."
+          ]
+        },
+        {
+          "title": "Frecuencia y señales de hambre",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Aspecto",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Frecuencia",
+                "8 a 12 mamadas en 24 horas, en promedio"
+              ],
+              [
+                "Momento",
+                "A demanda, de día y de noche"
+              ],
+              [
+                "Duración",
+                "Variable: puede bastar 10 minutos o requerir 30 o más"
+              ],
+              [
+                "Hambre temprana",
+                "Busca el pecho, abre la boca, saca la lengua, succiona manos, está inquieto"
+              ],
+              [
+                "Suficiencia",
+                "Queda tranquilo, gana peso y orina de 4 a 6 veces al día desde los 3 días"
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "warning",
+            "title": "No esperar el llanto",
+            "text": "El llanto es un signo tardío de hambre; ofrecer el pecho antes facilita el agarre y evita que el bebé se angustie."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-03",
+      "topicId": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Dificultades, infecciones y mitos",
+      "kicker": "Lactancia · Dificultades",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La mayoría de las infecciones maternas no contraindica la lactancia; el VIH es la excepción. Los mitos se abordan con información y respeto.",
+      "keyConcepts": [
+        "La mastitis, la tuberculosis, la hepatitis B y C y otras infecciones comunes no contraindican la lactancia.",
+        "La infección por VIH sí contraindica la lactancia por el riesgo de transmisión.",
+        "El calostro no es una leche aguada: es suficiente y protector.",
+        "La relactación requiere contacto piel a piel frecuente y evitar biberones y chupones."
+      ],
+      "sections": [
+        {
+          "title": "Infecciones y lactancia",
+          "depth": "core",
+          "bullets": [
+            "En la mayoría de infecciones maternas, incluidas mastitis, tuberculosis, hepatitis B y C, tifoidea, cólera y sífilis, no está contraindicada la lactancia; el niño se beneficia de la protección (p. 49).",
+            "Se estima que el 5 a 15 % de bebés nacidos de mujeres con VIH se infectan a través de la lactancia, por lo que debe evitarse por completo (p. 49).",
+            "En el Perú, la alimentación artificial para estos casos se proporciona de manera gratuita a través del SIS (p. 49)."
+          ]
+        },
+        {
+          "title": "Mitos frecuentes",
+          "depth": "core",
+          "bullets": [
+            "Mitos como que el calostro es aguado, que algunas madres no producen suficiente leche, que la lactancia debilita o afecta la belleza, o que el tamaño del pecho determina la producción deben corregirse con información (p. 49).",
+            "También se aclara que beber más líquidos no aumenta la producción, que la menstruación no impide lactar y que el contacto con agua fría o algunos alimentos no es un impedimento (p. 49).",
+            "Conviene conversar respetuosamente e incluir a las abuelas y mujeres mayores, que pueden ser aliadas de la lactancia (p. 49)."
+          ]
+        },
+        {
+          "title": "Relactación y nueva gestación",
+          "depth": "full",
+          "body": [
+            "La relactación exige motivación, contacto piel a piel frecuente y ofrecer el pecho cuando el bebé muestre interés; la leche se ofrece con taza o cuchara y no se usan biberones ni chupones de entretenimiento (p. 27).",
+            "Una nueva gestación no es motivo para suspender el amamantamiento, especialmente si el niño es pequeño, salvo en casos de parto prematuro (p. 26)."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Escuchar antes de corregir",
+            "text": "Los mitos pueden influir en el éxito o el abandono de la lactancia; preguntar qué cree la familia permite corregir sin confrontar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            26,
+            27,
+            49
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-lactancia-04",
+      "topicId": "topic-lactancia-problemas",
+      "areaId": "area-nutricion",
+      "title": "Extracción y conservación de leche",
+      "kicker": "Lactancia · Dificultades",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La extracción manual es la técnica más sencilla y con menor riesgo de contaminación; la conservación y la administración correctas preservan la calidad de la leche.",
+      "keyConcepts": [
+        "La leche extraída se conserva de 6 a 8 horas a temperatura ambiente, salvo en zonas muy calurosas.",
+        "En refrigeradora se conserva hasta 72 horas.",
+        "La extracción manual dura aproximadamente entre 15 y 20 minutos.",
+        "La leche calentada no debe volver a refrigerarse y la que no se consume se elimina."
+      ],
+      "sections": [
+        {
+          "title": "Cuándo y cómo extraer",
+          "depth": "core",
+          "bullets": [
+            "La extracción sirve para alimentar a un prematuro, aliviar la congestión, mantener la lactancia durante una separación o evitar la transmisión de infecciones (p. 50).",
+            "La extracción manual es la forma más sencilla, práctica y con menor riesgo de contaminación; exige lavado de manos y un recipiente con tapa, de boca ancha y resistente al calor (p. 50).",
+            "Se masajea la mama, se sostiene con la mano en C en el límite de la areola y se presiona hacia el pecho de forma intermitente y rítmica, rotando los dedos y sin jalar el pezón (p. 50, p. 51).",
+            "La extracción manual dura aproximadamente entre 15 y 20 minutos (p. 51)."
+          ]
+        },
+        {
+          "title": "Conservación",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Lugar",
+              "Tiempo de duración"
+            ],
+            "rows": [
+              [
+                "A temperatura ambiente",
+                "6 a 8 horas, excepto en zonas muy calurosas, donde hay que refrigerar"
+              ],
+              [
+                "Refrigerada",
+                "72 horas"
+              ],
+              [
+                "Calentada",
+                "No se vuelve a refrigerar"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Administración",
+          "depth": "full",
+          "bullets": [
+            "La leche se entibia colocando el frasco en un envase con agua caliente, sin someterla al fuego directo (p. 52).",
+            "Se administra con taza y cucharita, con el bebé semisentado; en menores de 4 meses se evita tocar la lengua porque empujan lo que toca (p. 52).",
+            "La leche que no se consume se elimina y la leche calentada no se vuelve a refrigerar (p. 52)."
+          ],
+          "callout": {
+            "tone": "warning",
+            "title": "Calentar no es hervir",
+            "text": "El calor directo afecta sustancias probióticas y células vivas; el baño de agua caliente es suficiente para entibiar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            50,
+            51,
+            52
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-ottawa-01",
+      "topicId": "topic-ottawa-estrategias",
+      "areaId": "area-promocion",
+      "title": "Ottawa: promoción de la salud, no solo prevención",
+      "kicker": "Promoción · Fundamentos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La promoción de la salud no se limita a evitar enfermedades: busca que las personas y comunidades ganen control sobre su salud actuando sobre las condiciones de vida. La Carta de Ottawa propone cinco estrategias complementarias.",
+      "keyConcepts": [
+        "La salud es un recurso para la vida cotidiana, no solo la ausencia de enfermedad.",
+        "La promoción exige paz, educación, vivienda, alimentación, renta, ecosistema estable, justicia social y equidad.",
+        "Las cinco estrategias de Ottawa son: política pública sana, ambientes favorables, acción comunitaria, aptitudes personales y reorientación de los servicios.",
+        "La intersectorialidad y la participación comunitaria son condiciones para sostener los cambios."
+      ],
+      "sections": [
+        {
+          "title": "Salud como recurso cotidiano",
+          "depth": "core",
+          "body": [
+            "La Carta de Ottawa define la promoción de la salud como el proceso de proporcionar a las personas los medios necesarios para mejorar su salud y ejercer un mayor control sobre ella. La salud se entiende como un recurso para la vida diaria, no como el objetivo último de la existencia.",
+            "Para alcanzarla se requieren condiciones básicas: paz, educación, vivienda, alimentación, renta, un ecosistema estable, justicia social y equidad. Sin esas bases, las acciones educativas aisladas tienen poco efecto."
+          ],
+          "bullets": [
+            "La promoción actúa sobre las condiciones que producen salud, no solo sobre la enfermedad.",
+            "La equidad es el centro: reducir diferencias evitables e injustas.",
+            "El sector salud no puede solo: necesita gobiernos, sectores sociales, comunidad y medios."
+          ]
+        },
+        {
+          "title": "Las cinco estrategias",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Estrategia",
+              "Qué busca"
+            ],
+            "rows": [
+              [
+                "Política pública sana",
+                "Que todos los sectores consideren las consecuencias de sus decisiones sobre la salud."
+              ],
+              [
+                "Ambientes favorables",
+                "Crear entornos de vida, trabajo y ocio seguros y estimulantes."
+              ],
+              [
+                "Acción comunitaria",
+                "Que la comunidad fije prioridades y participe en las decisiones y en la ejecución."
+              ],
+              [
+                "Aptitudes personales",
+                "Información, educación y habilidades para la vida que amplíen las opciones de autocuidado."
+              ],
+              [
+                "Reorientación de servicios",
+                "Que los servicios sanitarios incorporen la promoción y respondan a las necesidades culturales."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Qué implica en el primer nivel",
+          "depth": "full",
+          "body": [
+            "La Carta no propone una campaña única sino una combinación de estrategias. El primer nivel puede abogar por ordenanzas saludables, mejorar sus propios entornos, facilitar la participación de la comunidad y reorientar la consulta hacia la prevención y el acompañamiento.",
+            "La mediación entre intereses contrapuestos es parte del rol: no se trata solo de informar, sino de construir acuerdos con otros sectores para que la opción saludable sea también la más fácil."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Idea para retener",
+            "text": "Promoción no es repartir folletos: es cambiar las condiciones que hacen difícil cuidarse y facilitar las que lo hacen posible."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-promocion-politica-01",
+      "topicId": "topic-promocion-politicas",
+      "areaId": "area-promocion",
+      "title": "Salud en todas las políticas: cuatro lineamientos para el territorio",
+      "kicker": "Promoción · Política y territorio",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La política peruana de promoción propone incorporar la salud en todas las políticas, actuar sobre los determinantes sociales y organizar la acción en el territorio con participación ciudadana.",
+      "keyConcepts": [
+        "Salud en Todas las Políticas implica evaluar las consecuencias sanitarias de las decisiones de otros sectores.",
+        "Los determinantes estructurales (poder, ingresos, educación) generan inequidades; los intermedios son las condiciones de vida.",
+        "La gestión territorial toma el distrito como unidad operativa y articula actores públicos y sociales.",
+        "La participación social y la vigilancia ciudadana son mecanismos de control y sostenibilidad."
+      ],
+      "sections": [
+        {
+          "title": "Enfoques y determinantes",
+          "depth": "core",
+          "body": [
+            "La política se apoya en cuatro enfoques: territorial, de equidad en salud, de derechos humanos y de interculturalidad. El territorio no es solo un espacio físico: es un sistema de relaciones entre actores, instituciones, ambiente y cultura.",
+            "Las inequidades en salud son diferencias evitables e injustas. Para cerrarlas hay que actuar sobre los determinantes estructurales —gobernanza, políticas macroeconómicas, posición socioeconómica— y sobre los intermedios —condiciones materiales, trabajo, vivienda, alimentación—."
+          ]
+        },
+        {
+          "title": "Los cuatro lineamientos",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Lineamiento",
+              "Foco"
+            ],
+            "rows": [
+              [
+                "1. Salud como eje de todas las políticas",
+                "Incorporar la salud en la agenda de todos los sectores y niveles de gobierno."
+              ],
+              [
+                "2. Persona, familia y comunidad en el centro",
+                "Gestión territorial con participación y decisión local."
+              ],
+              [
+                "3. Abordaje de determinantes para cerrar brechas",
+                "Articular educación, vivienda, trabajo, ambiente y protección social."
+              ],
+              [
+                "4. Empoderamiento y participación social",
+                "Fortalecer capacidades y control ciudadano sobre las decisiones."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Del discurso a la gestión territorial",
+          "depth": "full",
+          "body": [
+            "La unidad territorial básica propuesta es el distrito. Allí se pueden articular autoridades locales, instituciones, organizaciones sociales y sector salud. La coordinación intersectorial puede ser informativa, de cooperación, de coordinación o de integración; no son etapas rígidas y pueden coexistir.",
+            "La participación social tiene valor intrínseco —derecho a decidir sobre lo que afecta— y valor instrumental —mejora la pertinencia y sostenibilidad de las intervenciones—. La vigilancia ciudadana completa el ciclo al exigir rendición de cuentas."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Cuidado con la trampa sectorial",
+            "text": "Si salud planifica sola y luego pide apoyo, la intersectorialidad se vuelve trámite. Debe participar desde el diagnóstico y la priorización."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            9,
+            10,
+            13,
+            17,
+            18,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-modelo-sujetos-01",
+      "topicId": "topic-modelo-sujetos",
+      "areaId": "area-promocion",
+      "title": "Persona, familia y comunidad: los sujetos del modelo",
+      "kicker": "Promoción · Modelo peruano",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El Modelo de Abordaje organiza la promoción en tres sujetos —persona, familia y comunidad—, cinco escenarios y siete ejes temáticos, con enfoques de equidad, género e interculturalidad.",
+      "keyConcepts": [
+        "La persona se aborda según su etapa de vida y su contexto biopsicosocial.",
+        "La familia es la unidad de intervención de mayor eficacia potencial en promoción.",
+        "Los escenarios incluyen vivienda, municipio, escuela, centro laboral y comunidad.",
+        "Los ejes temáticos son alimentación, higiene, actividad física, salud sexual, habilidades para la vida, seguridad vial y salud mental."
+      ],
+      "sections": [
+        {
+          "title": "Tres sujetos, distintas necesidades",
+          "depth": "core",
+          "body": [
+            "El modelo reconoce a la persona como ser biopsicosocial inmerso en relaciones políticas, sociales, culturales y ecológicas. Las intervenciones son más efectivas cuando se adaptan a cada etapa de vida: niño, adolescente, joven, adulto y adulto mayor.",
+            "La familia es el espacio donde se aprenden normas, valores y conductas de salud; por eso se considera la unidad de intervención de mayor eficacia potencial. La comunidad aporta participación, reflexión, cooperación y movilización para sostener las acciones."
+          ]
+        },
+        {
+          "title": "Escenarios donde se vive la salud",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Escenario",
+              "Qué se promueve"
+            ],
+            "rows": [
+              [
+                "Vivienda",
+                "Saneamiento, ventilación, higiene, prevención de accidentes y convivencia."
+              ],
+              [
+                "Municipio",
+                "Políticas públicas locales, espacios públicos y entornos saludables."
+              ],
+              [
+                "Institución educativa",
+                "Habilidades para la vida, alimentación, actividad física y convivencia."
+              ],
+              [
+                "Centro laboral",
+                "Entornos y conductas saludables para trabajadores y sus familias."
+              ],
+              [
+                "Comunidad",
+                "Participación, redes sociales y movilización de recursos locales."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Los siete ejes temáticos",
+          "depth": "full",
+          "bullets": [
+            "Alimentación y nutrición saludable.",
+            "Higiene y ambiente.",
+            "Actividad física.",
+            "Salud sexual y reproductiva.",
+            "Habilidades para la vida.",
+            "Seguridad vial y cultura de tránsito.",
+            "Promoción de la salud mental, buen trato y cultura de paz."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No son compartimentos",
+            "text": "Una intervención escolar sobre alimentación también puede fortalecer habilidades para la vida y salud mental. Los ejes se combinan en cada escenario."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            29,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-modelo-programas-01",
+      "topicId": "topic-modelo-programas",
+      "areaId": "area-promocion",
+      "title": "Programas de promoción: de la familia al municipio",
+      "kicker": "Promoción · Programas",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "El modelo se operativiza mediante programas de familias y viviendas saludables, municipios y comunidades saludables, instituciones educativas y centros laborales.",
+      "keyConcepts": [
+        "El programa de familias y viviendas saludables actúa sobre la vivienda y las prácticas familiares.",
+        "Municipios y comunidades saludables buscan incorporar la salud en la agenda local.",
+        "Las instituciones educativas trabajan con toda la comunidad educativa, no solo con estudiantes.",
+        "Los centros laborales son un escenario clave por el tiempo que las personas pasan en ellos."
+      ],
+      "sections": [
+        {
+          "title": "Familias y viviendas saludables",
+          "depth": "core",
+          "body": [
+            "El programa busca que las familias adopten prácticas de cuidado y que la vivienda ofrezca condiciones seguras: saneamiento básico, ventilación, higiene, cocina saludable y prevención de accidentes. La vivienda se entiende como parte del entorno que condiciona la salud, no solo como un espacio físico.",
+            "Las acciones se conciertan con otros sectores para mejorar infraestructura, saneamiento y actividades productivas. La familia es el punto de entrada para cambiar rutinas de alimentación, higiene y convivencia."
+          ]
+        },
+        {
+          "title": "Municipios, escuelas y centros laborales",
+          "depth": "core",
+          "bullets": [
+            "Municipio saludable: autoridades, instituciones y sociedad civil mejoran condiciones de vida y entornos con políticas públicas locales.",
+            "Institución educativa saludable: involucra a docentes, directivos, familias, estudiantes y líderes escolares en comportamientos y entornos saludables.",
+            "Centro laboral saludable: aprovecha el tiempo de trabajo para promover actividad física, alimentación, salud mental y prevención de riesgos."
+          ]
+        },
+        {
+          "title": "Cómo se articulan",
+          "depth": "full",
+          "body": [
+            "Los programas comparten enfoques y estrategias: abogacía y políticas públicas, comunicación y educación para la salud, participación comunitaria y acción intersectorial. No son campañas aisladas: cada uno debe insertarse en el plan operativo de la institución y en el presupuesto disponible.",
+            "El sector salud cumple un rol facilitador: sensibiliza, brinda asistencia técnica, articula actores y acompaña la evaluación. La sostenibilidad depende de que la comunidad y las autoridades locales asuman el proceso."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Regla práctica",
+            "text": "Un programa sin actor local que lo sostenga se apaga cuando termina la campaña."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            45,
+            46,
+            129,
+            130,
+            131
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-municipios-01",
+      "topicId": "topic-municipios-fases",
+      "areaId": "area-promocion",
+      "title": "Municipios y comunidades saludables: cinco fases",
+      "kicker": "Promoción · Gestión local",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El programa municipal y comunal se implementa en cinco fases: sensibilización, organización, planificación participativa, ejecución y seguimiento con evaluación participativa transversal.",
+      "keyConcepts": [
+        "Un municipio saludable incorpora la salud en la agenda y las políticas del gobierno local.",
+        "El comité multisectorial es la instancia que organiza, planifica y evalúa el proceso.",
+        "Las cinco fases son secuenciales y la evaluación participativa acompaña todo el ciclo.",
+        "La evaluación mira participación, intersectorialidad, políticas públicas y sostenibilidad."
+      ],
+      "sections": [
+        {
+          "title": "Qué es un municipio saludable",
+          "depth": "core",
+          "body": [
+            "Es un espacio territorial donde las políticas públicas han consolidado entornos y comportamientos saludables para personas, familias y comunidades. Requiere la participación de autoridades políticas y civiles, instituciones, organizaciones y ciudadanía.",
+            "El programa tiene dos componentes: el municipio (gobierno local, espacios públicos) y la comunidad (organizaciones, barrios, zonas rurales y urbano marginales). Ambos comparten las mismas fases."
+          ]
+        },
+        {
+          "title": "Las cinco fases",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Fase",
+              "Producto o sentido"
+            ],
+            "rows": [
+              [
+                "1. Sensibilización",
+                "Identificar el municipio, capacitar al personal y lograr el acta de compromiso."
+              ],
+              [
+                "2. Organización",
+                "Conformar el comité multisectorial distrital o provincial."
+              ],
+              [
+                "3. Planificación participativa",
+                "Elaborar y aprobar el plan de acción con los actores locales."
+              ],
+              [
+                "4. Ejecución",
+                "Implementar las acciones y proyectos priorizados."
+              ],
+              [
+                "5. Seguimiento y evaluación participativa",
+                "Revisar avances y ajustar; acompaña todo el proceso."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Actores y evaluación",
+          "depth": "full",
+          "body": [
+            "El personal de salud facilita el proceso, articula recursos y brinda acompañamiento técnico. La municipalidad lidera la política local; la comunidad organizada participa en la identificación de problemas y en las decisiones.",
+            "La evaluación no es solo un informe final: es un proceso continuo de reflexión sobre lo logrado. Se evalúan la participación social, la intersectorialidad, las ordenanzas y políticas públicas y la sostenibilidad de los procesos."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El acta no es el final",
+            "text": "Firmar el compromiso abre el proceso; la fase de organización y el plan participativo son las que lo vuelven operativo."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-municipios",
+          "pages": [
+            20,
+            21,
+            22,
+            23,
+            34,
+            35,
+            36,
+            40
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-escuelas-01",
+      "topicId": "topic-escuelas",
+      "areaId": "area-promocion",
+      "title": "Escuela saludable: algo más que una charla",
+      "kicker": "Promoción · Escuelas",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Una institución educativa saludable mejora su entorno y sostiene comportamientos saludables en estudiantes, docentes y familias. El programa combina educación, entornos, políticas y trabajo intersectorial.",
+      "keyConcepts": [
+        "La escuela saludable involucra a toda la comunidad educativa.",
+        "Sus líneas de acción son comportamientos saludables, entornos saludables, intersectorialidad y políticas que promueven salud.",
+        "El consejo educativo institucional incluye a docentes, estudiantes, familias y personal de salud.",
+        "Los ejes temáticos incluyen alimentación, higiene, actividad física, salud sexual, habilidades para la vida, seguridad vial y salud mental."
+      ],
+      "sections": [
+        {
+          "title": "Qué es una escuela saludable",
+          "depth": "core",
+          "body": [
+            "El programa busca contribuir al desarrollo humano integral de los estudiantes y de la comunidad educativa mediante acciones de promoción de la salud en las instituciones educativas. Una escuela saludable es aquella que ha alcanzado estándares de mejora en su entorno y cuya comunidad mantiene comportamientos saludables en la vida cotidiana.",
+            "No se trata solo de transmitir información: se interviene sobre el ambiente físico, las relaciones interpersonales, las políticas escolares y la participación de las familias."
+          ]
+        },
+        {
+          "title": "Cuatro líneas de acción",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Línea",
+              "Qué implica"
+            ],
+            "rows": [
+              [
+                "Comportamientos saludables",
+                "Educación y desarrollo de habilidades para la alimentación, higiene, actividad física, salud sexual y salud mental."
+              ],
+              [
+                "Entornos saludables",
+                "Espacios físicos seguros, limpios, ventilados y con condiciones para la actividad física."
+              ],
+              [
+                "Intersectorialidad",
+                "Articulación entre salud, educación, municipalidad y organizaciones locales."
+              ],
+              [
+                "Políticas que promueven salud",
+                "Normas escolares sobre tabaco, alimentación, convivencia y actividad física."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cómo se organiza",
+          "depth": "full",
+          "body": [
+            "El consejo educativo institucional reúne al director, subdirector, representantes de docentes y estudiantes, y al personal de salud de la jurisdicción. El sector salud brinda asistencia técnica y capacitación; la escuela lidera la implementación.",
+            "Los ejes temáticos se adaptan a la realidad local. Se recomienda usar materiales educativos pertinentes y formar a docentes para que repliquen las sesiones con estudiantes y familias."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El ejemplo también educa",
+            "text": "Una escuela que vende comida ultraprocesada en su kiosco y no facilita actividad física contradice el mensaje que enseña."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-escuelas",
+          "pages": [
+            9,
+            10,
+            25,
+            26,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-agente-01",
+      "topicId": "topic-agente",
+      "areaId": "area-promocion",
+      "title": "Agente comunitario: puente entre la comunidad y la salud",
+      "kicker": "Promoción · Participación comunitaria",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El agente comunitario de salud es un líder elegido o reconocido por su comunidad, que realiza acciones voluntarias de promoción y prevención y articula a la población con los servicios de salud.",
+      "keyConcepts": [
+        "El ACS es elegido o reconocido por su comunidad y actúa de forma voluntaria.",
+        "Sus roles son progresivos: educador sanitario, supervisor-capacitador y gestor comunal.",
+        "Debe conocer sus límites: educa, identifica riesgos y refiere; no reemplaza al personal de salud.",
+        "La capacitación inicial, la continua y la recalificación sostienen su labor."
+      ],
+      "sections": [
+        {
+          "title": "Quién es y qué hace",
+          "depth": "core",
+          "body": [
+            "El agente comunitario de salud (ACS) es una persona elegida o reconocida por su comunidad. Realiza acciones voluntarias de promoción de la salud y prevención de enfermedades en coordinación con el personal de salud y otras instituciones locales, y cumple un rol articulador entre la comunidad y las autoridades.",
+            "Su labor se centra inicialmente en salud materno-perinatal y nutrición infantil, y luego se amplía a otras etapas de vida. Apoya campañas, vigilancia comunitaria y actividades de educación."
+          ]
+        },
+        {
+          "title": "Tres niveles de rol",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Nivel",
+              "Rol"
+            ],
+            "rows": [
+              [
+                "Básico",
+                "Educador sanitario: promueve comportamientos saludables, primeros auxilios y referencia de riesgos."
+              ],
+              [
+                "Intermedio",
+                "Supervisor-capacitador: apoya y capacita a otros agentes."
+              ],
+              [
+                "Avanzado",
+                "Gestor comunal: articula con autoridades, presupuesto participativo y determinantes sociales."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Formación y sostenibilidad",
+          "depth": "full",
+          "bullets": [
+            "Capacitación básica inicial para ser reconocido como ACS.",
+            "Capacitación continua y recalificación anual.",
+            "Criterios de calificación: >80% de asistencia, >75% de logros de aprendizaje y evaluación.",
+            "Compromiso mínimo de dos años; inactividad tras tres meses sin reportar actividades.",
+            "Evitar que el ACS financie de su bolsillo sus traslados o alimentación; gestionar incentivos y reconocimiento."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Voluntario no significa sin apoyo",
+            "text": "La sostenibilidad depende de capacitación, reconocimiento, condiciones y compensación de gastos operativos."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-agente",
+          "pages": [
+            10,
+            14,
+            16,
+            17,
+            18,
+            19,
+            20,
+            25,
+            26,
+            29
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-agua-01",
+      "topicId": "topic-agua-calidad",
+      "areaId": "area-ambiental",
+      "title": "Agua para consumo humano: qué debe cumplir",
+      "kicker": "Salud ambiental · Agua",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "El Reglamento de la Calidad del Agua fija requisitos para que el agua sea inocua y apta para consumo y uso doméstico. No basta con que sea transparente: debe cumplir límites microbiológicos, organolépticos, químicos y radiactivos.",
+      "keyConcepts": [
+        "El agua apta para consumo humano debe estar exenta de coliformes totales, termotolerantes y E. coli.",
+        "El cloro residual libre debe mantenerse al menos en 0,5 mg/L en la red de distribución.",
+        "Los límites máximos permisibles incluyen parámetros microbiológicos, organolépticos, químicos y radiactivos.",
+        "La responsabilidad es compartida entre autoridad sanitaria, proveedor y consumidor."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa agua apta",
+          "depth": "core",
+          "body": [
+            "El reglamento define el agua de consumo humano como aquella apta para beber y para todo uso doméstico habitual, incluida la higiene personal. El agua tratada es la que fue sometida a procesos físicos, químicos o biológicos para volverla inocua.",
+            "La norma busca garantizar la inocuidad, prevenir factores de riesgo sanitario y proteger la salud. Se aplica a toda persona natural o jurídica, pública o privada, que produzca, transporte, almacene o suministre agua."
+          ]
+        },
+        {
+          "title": "Límites que importan en la práctica",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Parámetro",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Coliformes totales, termotolerantes y E. coli",
+                "0 UFC/100 mL"
+              ],
+              [
+                "Bacterias heterotróficas",
+                "menos de 500 UFC/mL a 35 °C"
+              ],
+              [
+                "Cloro residual libre",
+                "no menos de 0,5 mg/L en la red"
+              ],
+              [
+                "pH",
+                "6,5 a 8,5"
+              ],
+              [
+                "Turbiedad",
+                "5 UNT"
+              ],
+              [
+                "Arsénico",
+                "0,010 mg/L"
+              ],
+              [
+                "Plomo",
+                "0,010 mg/L"
+              ],
+              [
+                "Mercurio",
+                "0,001 mg/L"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Roles y obligaciones",
+          "depth": "full",
+          "bullets": [
+            "DIGESA: política nacional, normas de vigilancia y consolidación de información.",
+            "DIRESA, GRS o DISA: vigilancia y control en su jurisdicción.",
+            "Proveedor: plan de control de calidad, tratamiento, muestreo y medidas correctivas.",
+            "Consumidor: usar y almacenar el agua de forma segura y colaborar con el cuidado de la fuente."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No todo pozo es una fuente segura",
+            "text": "La vigilancia debe cubrir también camiones cisterna, surtidores y conexiones provisionales, no solo la red formal."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            10,
+            11,
+            13,
+            14,
+            29,
+            30,
+            31,
+            39,
+            40,
+            41
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-agua-02",
+      "topicId": "topic-agua-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Cuando el agua falla: vigilancia y medidas correctivas",
+      "kicker": "Salud ambiental · Agua",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "La vigilancia sanitaria detecta problemas que el proveedor no ve y activa respuestas. Ante contaminación microbiológica o químicas fuera de límite, el proveedor debe investigar, corregir y comunicar a la autoridad.",
+      "keyConcepts": [
+        "La vigilancia sanitaria es distinta del control de calidad que realiza el proveedor.",
+        "Ante coliformes en la red, se investiga la causa y se recolectan muestras diarias hasta tener dos resultados negativos consecutivos.",
+        "Ante un parámetro químico fuera de límite, se repite el muestreo y se comunica a la autoridad sanitaria.",
+        "Las excepciones por desastres naturales son temporales y no deben causar daño a la salud."
+      ],
+      "sections": [
+        {
+          "title": "Vigilar no es lo mismo que controlar",
+          "depth": "core",
+          "body": [
+            "El proveedor controla la calidad de su sistema: trata, muestrea y corrige. La autoridad sanitaria vigila la calidad del agua que llega a la población y fiscaliza el cumplimiento. Ambas funciones se complementan, pero no se sustituyen.",
+            "La vigilancia incluye inspecciones, muestreos, revisión de registros y análisis de información. Si detecta un riesgo, puede emitir medidas de seguridad y sanciones."
+          ]
+        },
+        {
+          "title": "Respuesta ante un resultado adverso",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Hallazgo",
+              "Respuesta inmediata"
+            ],
+            "rows": [
+              [
+                "Coliformes totales o termotolerantes en la red",
+                "Investigar causas, corregir y muestrear a diario hasta dos resultados negativos consecutivos."
+              ],
+              [
+                "Parámetro químico sobre el límite",
+                "Repetir el muestreo; si se confirma, investigar y comunicar a la autoridad sanitária."
+              ],
+              [
+                "Emergencia o desastre natural",
+                "Excepción temporal otorgada por la autoridad, sin daño a la salud."
+              ],
+              [
+                "Incumplimiento del proveedor",
+                "Fiscalización, medidas de seguridad y sanción."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Comunicar también es proteger",
+          "depth": "full",
+          "body": [
+            "La norma incluye la difusión y el acceso a la información sobre la calidad del agua. Una comunidad informada puede exigir mejoras, proteger sus reservorios y adoptar prácticas seguras de almacenamiento.",
+            "El registro oportuno de muestras, resultados y acciones correctivas permite reconstruir lo ocurrido y evaluar si la respuesta fue suficiente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Para recordar",
+            "text": "Un resultado negativo aislado no cierra el problema: hay que demostrar que la corrección funcionó."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            15,
+            16,
+            17,
+            18,
+            30,
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-ambiental-politica-01",
+      "topicId": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Salud ambiental: riesgos que se pueden prevenir",
+      "kicker": "Salud ambiental · Política",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La Política Nacional de Salud Ambiental 2011-2020 reconoce que el ambiente insalubre produce enfermedades evitables y que la respuesta exige prevención, evidencia, transparencia y participación.",
+      "keyConcepts": [
+        "La salud ambiental es un derecho social transversal a todos los sectores del Estado.",
+        "Los riesgos prioritarios incluyen agua, aire, alimentos, residuos, vectores, zoonosis y sustancias peligrosas.",
+        "Las decisiones deben basarse en evidencia científica y en un enfoque preventivo.",
+        "La transparencia y la participación son principios de la política."
+      ],
+      "sections": [
+        {
+          "title": "El ambiente como determinante",
+          "depth": "core",
+          "body": [
+            "La política señala que la salud depende de alimentación inocua, vivienda saludable, trabajo digno, educación y condiciones ambientales adecuadas. El agua contaminada, el aire sucio, los residuos mal manejados y los vectores producen enfermedades que afectan sobre todo a los más pobres.",
+            "La salud ambiental no es un tema exclusivo del sector salud: es transversal y requiere articulación con vivienda, agricultura, ambiente, trabajo y gobiernos locales."
+          ]
+        },
+        {
+          "title": "Cinco principios",
+          "depth": "core",
+          "bullets": [
+            "Respeto a la vida en un entorno saludable.",
+            "Enfoque preventivo, antes que remedial.",
+            "Decisiones basadas en evidencia científica.",
+            "Facilitación del comercio que fomenta la salud.",
+            "Transparencia y participación de la población."
+          ]
+        },
+        {
+          "title": "Los problemas prioritarios",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Ámbito",
+              "Ejemplo de riesgo"
+            ],
+            "rows": [
+              [
+                "Agua y recursos hídricos",
+                "Contaminación bacteriana, metales, vertimientos."
+              ],
+              [
+                "Aire",
+                "Partículas y gases de transporte, industria y cocina."
+              ],
+              [
+                "Alimentos",
+                "Contaminación microbiológica y química."
+              ],
+              [
+                "Residuos sólidos",
+                "Vertederos abiertos y quema informal."
+              ],
+              [
+                "Vectores y zoonosis",
+                "Dengue, roedores, animales de compañía."
+              ],
+              [
+                "Sustancias peligrosas",
+                "Plaguicidas, mercurio, plomo y otros químicos."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Mirada de equidad",
+            "text": "Los riesgos ambientales no se distribuyen por igual: suelen concentrarse en las poblaciones con menos recursos y menor capacidad de exigir protección."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-ambiental-politica-02",
+      "topicId": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Seis políticas para actuar sobre el entorno",
+      "kicker": "Salud ambiental · Política",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La política se operativiza en seis frentes: agua, alimentos, aire, peligros y alertas, descentralización y emergencias. Cada uno tiene objetivos y estrategias verificables.",
+      "keyConcepts": [
+        "La primera política asegura la vigilancia del agua de consumo humano.",
+        "La segunda busca la inocuidad de los alimentos; la tercera, la calidad del aire.",
+        "La cuarta vigila peligros y alertas ambientales, incluidos residuos, químicos, vectores y zoonosis.",
+        "La quinta fortalece la descentralización y la sexta la respuesta en emergencias y desastres."
+      ],
+      "sections": [
+        {
+          "title": "Las seis políticas",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Política",
+              "Foco"
+            ],
+            "rows": [
+              [
+                "1. Agua de consumo humano",
+                "Vigilancia y fiscalización sanitaria; tecnologías intradomiciliarias en zonas dispersas."
+              ],
+              [
+                "2. Inocuidad de alimentos",
+                "Producción, comercio y control sanitario; referencia al Codex Alimentarius."
+              ],
+              [
+                "3. Calidad del aire",
+                "Estándares, estudios de costo-efectividad e intervenciones."
+              ],
+              [
+                "4. Peligros y alertas",
+                "Recursos hídricos, residuos, químicos, vectores y zoonosis."
+              ],
+              [
+                "5. Descentralización",
+                "Fortalecer capacidades regionales y locales."
+              ],
+              [
+                "6. Emergencias y desastres",
+                "Planes de respuesta del sector salud."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Qué se espera del nivel local",
+          "depth": "core",
+          "body": [
+            "La política no se ejecuta solo desde Lima. Las DIRESA y los gobiernos locales deben vigilar el agua, los alimentos y los riesgos ambientales de su jurisdicción, con planes operativos y personal responsable.",
+            "La descentralización implica transferir funciones y capacidades, no solo responsabilidades. Sin presupuesto, laboratorio y personal capacitado, la vigilancia se queda en el papel."
+          ]
+        },
+        {
+          "title": "Emergencias: prepararse antes",
+          "depth": "full",
+          "body": [
+            "Inundaciones, deslizamientos, derrames y otros eventos pueden contaminar el agua, afectar los alimentos y generar brotes. La política pide planes articulados y capacidad de respuesta oportuna.",
+            "La preparación incluye identificar fuentes de riesgo, mantener reservas y protocolos, y coordinar con defensa civil, gobiernos locales y otros sectores."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "La emergencia no crea el riesgo",
+            "text": "Muchas veces lo visibiliza: agua insegura, viviendas mal ubicadas y sistemas de salud frágiles ya existían antes del desastre."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-metales-01",
+      "topicId": "topic-metales-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Metales pesados: exposición, caso y notificación",
+      "kicker": "Salud ambiental · Metales",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La norma distingue exposición de intoxicación y define casos sospechosos, probables y confirmados. La notificación es obligatoria y la respuesta ante contingencias es inmediata.",
+      "keyConcepts": [
+        "Un caso sospechoso es una persona expuesta a una fuente confirmada, sin síntomas.",
+        "El caso probable requiere hallazgos clínicos o de laboratorio compatibles; el confirmado requiere confirmación.",
+        "La notificación de casos es mensual y obligatoria; la contingencia se notifica de inmediato.",
+        "Las poblaciones expuestas viven o trabajan cerca de fuentes naturales o antropogénicas."
+      ],
+      "sections": [
+        {
+          "title": "Exposición no es lo mismo que intoxicación",
+          "depth": "core",
+          "body": [
+            "La exposición es el contacto con una fuente de metales pesados o metaloides. La intoxicación implica daño a la salud. Una persona puede estar expuesta sin síntomas y aun así requerir seguimiento.",
+            "La norma define factor de riesgo como cualquier condición, característica o exposición que pueda producir daño. Las fuentes pueden ser naturales o antropogénicas: minería, fundición, industria, agua contaminada, alimentos o suelo."
+          ]
+        },
+        {
+          "title": "Definiciones de caso",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Tipo de caso",
+              "Criterio"
+            ],
+            "rows": [
+              [
+                "Sospechoso (expuesto)",
+                "Antecedente de exposición a fuente confirmada, sin manifestaciones clínicas."
+              ],
+              [
+                "Probable",
+                "Cuadro clínico o resultado de laboratorio compatible, sin confirmación completa."
+              ],
+              [
+                "Confirmado",
+                "Caso con confirmación clínica, epidemiológica o de laboratorio según la norma."
+              ],
+              [
+                "Descartado",
+                "Investigación que excluye la exposición o la intoxicación."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Notificación y vigilancia",
+          "depth": "full",
+          "bullets": [
+            "Notificación mensual obligatoria de casos sospechosos, probables y confirmados.",
+            "Notificación negativa cuando no se presentan casos.",
+            "Notificación inmediata de contingencias por exposición.",
+            "Vigilancia pasiva a partir de las atenciones y vigilancia centinela en establecimientos seleccionados."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No esperar síntomas",
+            "text": "La exposición puede ser silenciosa. La vigilancia busca identificar riesgo antes de que aparezca el daño clínico."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-metales-02",
+      "topicId": "topic-metales-respuesta",
+      "areaId": "area-ambiental",
+      "title": "Investigación y respuesta ante metales pesados",
+      "kicker": "Salud ambiental · Metales",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Ante un caso o contingencia, el equipo de salud investiga la fuente, toma muestras biológicas y ambientales, y reporta en plazos definidos. La respuesta es intersectorial y se sostiene en la red de epidemiología.",
+      "keyConcepts": [
+        "La investigación epidemiológica busca la fuente de exposición y las personas afectadas.",
+        "El informe preliminar se remite dentro de las 72 horas; luego se envían seguimiento y informe final.",
+        "Las muestras biológicas se toman con bioseguridad y se articulan con el laboratorio.",
+        "La RENACE y los establecimientos centinela sostienen la vigilancia en los niveles local, regional y nacional."
+      ],
+      "sections": [
+        {
+          "title": "Investigar antes de concluir",
+          "depth": "core",
+          "body": [
+            "La investigación epidemiológica reconstruye la cadena de exposición: fuente, vía, tiempo, población afectada y factores de riesgo. No basta con un resultado de laboratorio aislado; hay que interpretarlo con la historia de exposición y el cuadro clínico.",
+            "El equipo debe identificar localidades en riesgo, personas expuestas, actividades económicas y posibles fuentes ambientales: aire, agua, suelo y alimentos."
+          ]
+        },
+        {
+          "title": "Plazos y productos",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Producto",
+              "Plazo"
+            ],
+            "rows": [
+              [
+                "Notificación de contingencia",
+                "Inmediata"
+              ],
+              [
+                "Informe preliminar de investigación",
+                "Dentro de 72 horas"
+              ],
+              [
+                "Informe de seguimiento",
+                "Según evolución del evento"
+              ],
+              [
+                "Informe final",
+                "Al concluir la investigación"
+              ],
+              [
+                "Notificación mensual de casos",
+                "Cada mes, incluida la negativa"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Una respuesta que no termina en el laboratorio",
+          "depth": "full",
+          "body": [
+            "Confirmar un caso exige comunicar, orientar y derivar a la atención correspondiente. También implica coordinar con ambiente, minería, agricultura y gobiernos locales para controlar la fuente.",
+            "La información debe retroalimentar a los niveles local y regional mediante boletines, reportes y salas de situación. La vigilancia sirve para decidir, no solo para registrar."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Pregunta clave",
+            "text": "Si se confirma un caso, ¿ya sabemos de dónde viene la exposición y quiénes más están expuestos?"
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            19,
+            21,
+            22,
+            23,
+            24,
+            25,
+            26,
+            27
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-parto-01",
+      "topicId": "topic-parto-respetuoso",
+      "areaId": "area-materno-neonatal",
+      "title": "Parto positivo: respeto, acompañamiento y decisiones",
+      "kicker": "Materno-neonatal · Parto",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La OMS propone un modelo de cuidado centrado en la mujer, con atención respetuosa, comunicación efectiva y acompañamiento de una persona de su elección. La experiencia del parto es tan importante como los resultados clínicos.",
+      "keyConcepts": [
+        "La atención respetuosa mantiene dignidad, privacidad, confidencialidad e integridad física.",
+        "Se recomienda el acompañamiento por la persona que la mujer elija.",
+        "La fase activa se define desde los 5 cm de dilatación.",
+        "La posición y el esfuerzo de pujo deben respetar la elección y la necesidad de la mujer."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa atención respetuosa",
+          "depth": "core",
+          "body": [
+            "La atención respetuosa de la maternidad es la atención organizada para todas las mujeres de manera que mantenga su dignidad, privacidad y confidencialidad, asegure la integridad física y el trato adecuado, y permita decisiones informadas y apoyo continuo durante el trabajo de parto y el parto.",
+            "La comunicación efectiva, con métodos simples y culturalmente aceptables, es parte del cuidado. El acompañamiento por una persona de elección de la mujer se recomienda de forma explícita."
+          ]
+        },
+        {
+          "title": "Fases y tiempos que conviene conocer",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Momento",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Fase latente",
+                "Contracciones dolorosas con cambios variables del cuello; progresión lenta hasta 5 cm."
+              ],
+              [
+                "Fase activa",
+                "Desde 5 cm hasta dilatación total; suele durar ≤12 h en primeros partos y ≤10 h en posteriores."
+              ],
+              [
+                "Período expulsivo",
+                "Desde dilatación total hasta el nacimiento; normalmente 3 h en primíparas y 2 h en multíparas."
+              ],
+              [
+                "Alumbramiento",
+                "Se recomienda uterotónico profiláctico para prevenir hemorragia posparto."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Decisiones que no se imponen",
+          "depth": "full",
+          "bullets": [
+            "Permitir la posición que la mujer elija, incluidas las posiciones erguidas.",
+            "Respetar la necesidad de pujar en el momento en que la siente.",
+            "Evitar intervenciones de rutina sin indicación: rasurado, enema, amniotomía aislada, oxitocina para acelerar o fluidos intravenosos.",
+            "Ofrecer alivio del dolor según preferencia: métodos de relajación, analgesia peridural u opioides cuando corresponda."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "La experiencia cuenta",
+            "text": "Un parto seguro no es solo un parto sin complicaciones: también es un parto en el que la mujer se siente informada, acompañada y tratada con respeto."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-parto",
+          "pages": [
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-neonatal-01",
+      "topicId": "topic-neonatal-inmediato",
+      "areaId": "area-materno-neonatal",
+      "title": "Recién nacido: los primeros minutos y la primera hora",
+      "kicker": "Materno-neonatal · Neonatal",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La atención inmediata empieza antes del parto, con la identificación de riesgos y la preparación del equipo. En la primera hora se prioriza el calor, la evaluación, el contacto piel a piel y la lactancia.",
+      "keyConcepts": [
+        "El principio de anticipación exige conocer los factores de riesgo y preparar equipos antes del parto.",
+        "La sala de partos debe mantenerse entre 24 y 26 °C.",
+        "El APGAR no determina por sí solo la necesidad de reanimación.",
+        "La vitamina K se aplica dentro de las primeras 6 horas de vida."
+      ],
+      "sections": [
+        {
+          "title": "Antes de que nazca",
+          "depth": "core",
+          "body": [
+            "El equipo neonatal revisa la historia materna, los controles prenatales, los factores de riesgo y la situación del parto. Con esa información organiza el recurso humano, verifica equipos y prepara el kit de reanimación.",
+            "Los factores de riesgo pueden ser anteparto (diabetes, hipertensión, hemorragia, infección, prematuridad), intraparto (cesárea urgente, presentación anormal, líquido meconial, prolapso de cordón) o posparto (hipotermia, apnea, dificultad respiratoria)."
+          ]
+        },
+        {
+          "title": "Primera hora: prioridades",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Prioridad",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "Calor",
+                "Secar con toalla precalentada, cubrir la cabeza y evitar pérdidas de calor."
+              ],
+              [
+                "Evaluación",
+                "Respiración, llanto, tono muscular y edad gestacional."
+              ],
+              [
+                "Contacto piel a piel",
+                "Colocar sobre el abdomen/pecho materno y vigilar signos de alarma."
+              ],
+              [
+                "Lactancia",
+                "Iniciar tan pronto como sea posible si madre y bebé están estables."
+              ],
+              [
+                "Profilaxis",
+                "Vitamina K IM, cuidado del cordón y profilaxis ocular según norma."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Detalles que evitan daño",
+          "depth": "full",
+          "bullets": [
+            "No secar a los menores de 32 semanas o <1500 g: cubrir con bolsa estéril de polietileno y gorro.",
+            "No aplicar antisépticos con yodo en el cordón por riesgo de trastornos tiroideos.",
+            "Verificar dos arterias y una vena en el cordón.",
+            "Vitamina K: 0,3-0,5 mg/kg IM en ≤1500 g; 1 mg IM en >1500 g, dentro de las primeras 6 horas.",
+            "Evitar el uso del termómetro de mercurio."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "El APGAR no decide la reanimación",
+            "text": "La reanimación se inicia según la respiración, el tono y la frecuencia cardíaca, no esperando el puntaje de APGAR."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-neonatal-02",
+      "topicId": "topic-neonatal-alojamiento",
+      "areaId": "area-materno-neonatal",
+      "title": "Alojamiento conjunto: acompañar y vigilar",
+      "kicker": "Materno-neonatal · Neonatal",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El alojamiento conjunto mantiene al recién nacido con su madre, favorece el vínculo y la lactancia y permite detectar signos de alarma. Exige evaluación periódica y criterios de alta claros.",
+      "keyConcepts": [
+        "Todo recién nacido en alojamiento conjunto requiere evaluación médica en las primeras 12 horas.",
+        "La lactancia materna exclusiva se promueve y se protege.",
+        "La hipotermia, la dificultad respiratoria y la ictericia precoz son signos de alarma.",
+        "El alta exige estabilidad, alimentación adecuada, tamizaje y vacunas."
+      ],
+      "sections": [
+        {
+          "title": "Qué se hace en alojamiento conjunto",
+          "depth": "core",
+          "body": [
+            "El recién nacido permanece junto a su madre, en condiciones de abrigo adecuadas, con control periódico de temperatura y signos vitales. Se verifica la identificación segura, se promueve la lactancia materna exclusiva y se enseña a la madre a reconocer signos de alarma.",
+            "La evaluación médica se realiza en las primeras 12 horas y luego cada 12 a 24 horas según la complejidad del establecimiento."
+          ]
+        },
+        {
+          "title": "Signos de alarma",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Signo",
+              "Qué puede indicar"
+            ],
+            "rows": [
+              [
+                "Pobre succión",
+                "Infección, prematurez, alteración neurológica o metabólica."
+              ],
+              [
+                "Apnea o dificultad respiratoria",
+                "Sepsis, distress respiratorio, cardiopatía."
+              ],
+              [
+                "Ictericia en las primeras 24 h",
+                "Hemólisis o infección; requiere laboratorio."
+              ],
+              [
+                "Hipotermia <36,5 °C",
+                "Sepsis, prematurez, ambiente frío."
+              ],
+              [
+                "Fiebre >38 °C",
+                "Infección."
+              ],
+              [
+                "Convulsiones o hipotonía",
+                "Asfixia, infección, trastorno metabólico."
+              ],
+              [
+                "Onfalitis",
+                "Infección del cordón."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Alta segura",
+          "depth": "full",
+          "body": [
+            "Antes del alta el recién nacido debe estar hemodinámicamente estable, con signos vitales normales, alimentación oral adecuada, micción y emisión de meconio, tamizaje neonatal realizado, grupo sanguíneo y vacunas completas para la edad.",
+            "El equipo orienta a los padres sobre lactancia, cuidados en casa, signos de alarma y reanimación básica. El seguimiento posterior es parte de la continuidad del cuidado."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es solo “observación”",
+            "text": "El alojamiento conjunto es una intervención de cuidado: protege el vínculo, la lactancia y la detección temprana de problemas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            5,
+            16,
+            21,
+            45,
+            46,
+            47
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-tamizaje-01",
+      "topicId": "topic-tamizaje-neonatal",
+      "areaId": "area-materno-neonatal",
+      "title": "Tamizaje neonatal: detectar antes del daño",
+      "kicker": "Materno-neonatal · Tamizaje",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tamizaje neonatal busca identificar enfermedades metabólicas, endocrinas, auditivas y visuales en recién nacidos aparentemente sanos. La oportunidad de la toma y el seguimiento de resultados son decisivos.",
+      "keyConcepts": [
+        "Se tamiza hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia y catarata congénita.",
+        "La muestra de sangre se toma después de las 48 horas de vida.",
+        "Si el alta ocurre antes de 48 horas, la toma se hace en el control o antes de los 7 días.",
+        "La prueba auditiva se realiza entre las 24 y 48 horas o antes del mes; el reflejo rojo, antes del alta."
+      ],
+      "sections": [
+        {
+          "title": "Las seis enfermedades del tamizaje",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Enfermedad",
+              "Qué se busca"
+            ],
+            "rows": [
+              [
+                "Hipotiroidismo congénito",
+                "Déficit de hormona tiroidea que afecta el desarrollo neurológico."
+              ],
+              [
+                "Hiperplasia suprarrenal congénita",
+                "Déficit enzimático con riesgo de crisis adrenal."
+              ],
+              [
+                "Fenilcetonuria",
+                "Acumulación de fenilalanina con daño neurológico."
+              ],
+              [
+                "Fibrosis quística",
+                "Afectación pulmonar y pancreática."
+              ],
+              [
+                "Hipoacusia congénita",
+                "Pérdida auditiva que afecta el lenguaje."
+              ],
+              [
+                "Catarata congénita",
+                "Opacidad del cristalino que afecta la visión."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cuándo y cómo se toma",
+          "depth": "core",
+          "body": [
+            "La muestra de sangre en papel filtro se toma después de las 48 horas de vida. Si el alta ocurre antes, se toma en la primera atención de control a las 48 horas del alta o antes de los 7 días de nacido. En recién nacidos transfundidos, se espera 7 días después de la última transfusión.",
+            "La prueba auditiva con emisiones otoacústicas se realiza antes del alta, entre las 24 y 48 horas, y a más tardar antes del mes. El reflejo rojo binocular se evalúa antes del alta y su normalidad es requisito para el alta."
+          ]
+        },
+        {
+          "title": "Resultados y seguimiento",
+          "depth": "full",
+          "bullets": [
+            "Los resultados pueden ser normales, indeterminados o sospechosos.",
+            "Un resultado sospechoso exige confirmación diagnóstica y, si corresponde, inicio oportuno de tratamiento.",
+            "La muestra se conserva durante 5 años para control de calidad y verificación.",
+            "El tamizaje no tiene contraindicaciones; la obligación es garantizar la toma y el seguimiento."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Tamizar no es diagnosticar",
+            "text": "Un resultado positivo es una señal para confirmar y actuar, no un diagnóstico definitivo. El seguimiento es parte del tamizaje."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-tamizaje",
+          "pages": [
+            9,
+            10,
+            11,
+            12,
+            13,
+            21
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-raras-01",
+      "topicId": "topic-raras",
+      "areaId": "area-materno-neonatal",
+      "title": "Enfermedades raras: derechos, registro y financiamiento",
+      "kicker": "Materno-neonatal · Enfermedades raras",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La Ley N° 29698 y su reglamento reconocen las enfermedades raras o huérfanas como prioridad nacional. La respuesta incluye atención integral, registro nacional, medicamentos y financiamiento progresivo.",
+      "keyConcepts": [
+        "Una enfermedad rara tiene baja prevalencia y suele ser crónica, grave y discapacitante.",
+        "Una enfermedad huérfana carece de evidencia suficiente para diagnóstico y tratamiento.",
+        "La persona tiene derecho a la atención integral y a no ser discriminada.",
+        "El Registro Nacional (RNPERH) y el FISSAL son instrumentos clave de la política."
+      ],
+      "sections": [
+        {
+          "title": "Qué son y por qué importan",
+          "depth": "core",
+          "body": [
+            "Las enfermedades raras son aquellas con peligro de muerte o invalidez, de baja prevalencia en la población y con dificultades para el diagnóstico y tratamiento. Las enfermedades huérfanas se caracterizan porque la evidencia científica disponible es escasa.",
+            "La ley busca garantizar prevención, diagnóstico, atención integral, rehabilitación y monitoreo, con enfoque de derechos humanos, género e interculturalidad."
+          ]
+        },
+        {
+          "title": "Instrumentos de la política",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Instrumento",
+              "Función"
+            ],
+            "rows": [
+              [
+                "Plan Nacional",
+                "Organiza prevención, diagnóstico, atención, rehabilitación y monitoreo."
+              ],
+              [
+                "RNPERH",
+                "Registra casos y genera información sobre incidencia, prevalencia y mortalidad."
+              ],
+              [
+                "Listado de ERH",
+                "Identifica las enfermedades priorizadas por el MINSA."
+              ],
+              [
+                "FISSAL",
+                "Financia progresivamente la atención de afiliados según el listado aprobado."
+              ],
+              [
+                "MERH",
+                "Medicamentos para enfermedades raras, sujetos a evaluación y disponibilidad presupuestal."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "El rol del primer nivel",
+          "depth": "full",
+          "bullets": [
+            "Sospechar y referir oportunamente, sin retrasar por falta de diagnóstico.",
+            "Evitar la discriminación y acompañar a la persona y su familia.",
+            "Registrar el diagnóstico con CIE-10 y los datos requeridos.",
+            "Coordinar con el nivel especializado y con el financiamiento correspondiente.",
+            "Educar sobre la enfermedad y los cuidados, sin prometer curas ni tratamientos no aprobados."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No son enfermedades “imposibles”",
+            "text": "Aunque sean poco frecuentes, existen rutas de atención, registro y financiamiento. El primer nivel es la puerta para activarlas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-raras",
+          "pages": [
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-dm2-01",
+      "topicId": "topic-dm2-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "DM2: cómo se confirma y qué metas buscar",
+      "kicker": "Crónicas · Diabetes",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La diabetes tipo 2 puede ser asintomática durante años. El diagnóstico se confirma con glucemia en ayunas repetida, síntomas con glucemia casual o una prueba de tolerancia oral. Las metas de control reducen complicaciones.",
+      "keyConcepts": [
+        "Glucemia en ayunas ≥126 mg/dL en dos oportunidades confirma el diagnóstico.",
+        "Una glucemia casual ≥200 mg/dL con síntomas de hiperglucemia también confirma.",
+        "La prueba oral de 75 g con glucemia ≥200 mg/dL a las 2 horas es otro criterio.",
+        "Las metas incluyen HbA1c <7%, glucemia en ayunas 70-130 mg/dL y PA <140/80 mmHg."
+      ],
+      "sections": [
+        {
+          "title": "Tres caminos diagnósticos",
+          "depth": "core",
+          "body": [
+            "El primer criterio es la glucemia en ayunas ≥126 mg/dL en plasma venoso, confirmada en dos mediciones separadas por no más de 72 horas. El ayuno implica al menos 8 horas sin ingesta calórica. La persona puede no tener síntomas.",
+            "El segundo criterio es una glucemia casual ≥200 mg/dL acompañada de síntomas clásicos: poliuria, polidipsia y pérdida inexplicable de peso. El tercero es una glucemia ≥200 mg/dL dos horas después de una carga oral de 75 g de glucosa."
+          ]
+        },
+        {
+          "title": "Metas de control cardiometabólico",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Indicador",
+              "Meta"
+            ],
+            "rows": [
+              [
+                "Glucemia en ayunas",
+                "70-130 mg/dL"
+              ],
+              [
+                "Glucemia postprandial",
+                "<180 mg/dL"
+              ],
+              [
+                "Hemoglobina glucosilada",
+                "<7%"
+              ],
+              [
+                "Colesterol LDL",
+                "<100 mg/dL"
+              ],
+              [
+                "Colesterol HDL",
+                ">50 mg/dL"
+              ],
+              [
+                "Triglicéridos",
+                "<150 mg/dL"
+              ],
+              [
+                "Presión arterial",
+                "<140/80 mmHg"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Diagnóstico no es sinónimo de derivación",
+          "depth": "full",
+          "body": [
+            "El diagnóstico y el inicio del tratamiento pueden hacerse en el primer nivel. La derivación se reserva para situaciones específicas: falta de control pese a tratamiento adecuado, sospecha de complicación, necesidad de insulina o evaluación especializada.",
+            "Confirmar el diagnóstico no es un motivo de referencia. Tampoco lo es iniciar tratamiento ni la falta de adherencia aislada: primero se trabaja con la persona y su contexto."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No confundir control con curación",
+            "text": "La DM2 es crónica. El objetivo es sostener el control y prevenir complicaciones, no dar el alta definitiva."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            29,
+            30,
+            31,
+            44,
+            45,
+            79
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-dm2-02",
+      "topicId": "topic-dm2-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "DM2: estilos de vida, metformina y cuándo referir",
+      "kicker": "Crónicas · Diabetes",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tratamiento parte de la educación y los cambios intensivos de estilo de vida. La metformina es la primera línea farmacológica; la derivación se activa por falta de control, complicaciones o necesidad de insulina.",
+      "keyConcepts": [
+        "La intervención intensiva sobre alimentación y actividad física es el pilar del tratamiento.",
+        "La metformina se inicia con dosis bajas y se titula de forma progresiva.",
+        "Se debe evaluar complicaciones y comorbilidades al diagnóstico.",
+        "La falta de control tras 3-6 meses con tratamiento adecuado es criterio de referencia."
+      ],
+      "sections": [
+        {
+          "title": "El pilar no es solo la pastilla",
+          "depth": "core",
+          "body": [
+            "El manejo incluye educación en autocuidado, plan de alimentación, actividad física y apoyo familiar. Idealmente participa un equipo con médico, enfermera, nutricionista y psicólogo. Los cambios de estilo de vida se sostienen durante 3 a 4 meses antes de intensificar el tratamiento farmacológico, salvo que el riesgo exija otra conducta.",
+            "La metformina es la primera línea. Se inicia con 500 u 850 mg al día y se incrementa cada 1 a 2 semanas hasta alcanzar el control o la dosis máxima de 2550 mg. Se toma con o inmediatamente después de las comidas principales."
+          ]
+        },
+        {
+          "title": "Efectos adversos y alternativas",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Fármaco",
+              "Puntos clave"
+            ],
+            "rows": [
+              [
+                "Metformina",
+                "Náuseas, diarrea y dolor abdominal; acidosis láctica en falla renal/hepática o infarto. Hipoglucemia rara."
+              ],
+              [
+                "Glibenclamida",
+                "Alternativa si no se tolera metformina; riesgo de hipoglucemia y aumento de peso."
+              ],
+              [
+                "Glimepirida",
+                "Uso en mayores de 65 años o enfermedad renal leve-moderada; inicio por especialista."
+              ],
+              [
+                "Insulina",
+                "Indicada en situaciones específicas; requiere educación y seguimiento."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cuándo referir",
+          "depth": "full",
+          "bullets": [
+            "Control metabólico inadecuado tras 3 a 6 meses de tratamiento no farmacológico y farmacológico en monoterapia, con adherencia y dosis adecuadas.",
+            "Albuminuria >300 mg/24 h, creatinina >1,5 mg/dL o TFG <60 mL/min.",
+            "Neuropatía dolorosa o autonómica, enfermedad vascular periférica o pie diabético Wagner ≥2.",
+            "Retinopatía moderada-severa o proliferativa, enfermedad coronaria, insuficiencia cardíaca III-IV o antecedente de ACV.",
+            "Diabetes con hipertensión arterial o infección aguda severa."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Contrarreferencia",
+            "text": "La persona estabilizada y con control glucémico debe volver a su establecimiento de origen para continuar el seguimiento."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            44,
+            47,
+            60,
+            62,
+            63,
+            73,
+            75,
+            80
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-hta-01",
+      "topicId": "topic-hta-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "HTA: medir bien, clasificar y estratificar el riesgo",
+      "kicker": "Crónicas · Hipertensión",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La hipertensión es en gran medida asintomática. El diagnóstico exige mediciones repetidas y una evaluación del riesgo cardiovascular y del daño de órgano blanco.",
+      "keyConcepts": [
+        "Se debe medir la presión arterial a toda persona de 18 años o más.",
+        "Normal: <120/80; prehipertensión: 120-139/80-89; hipertensión: ≥140/90.",
+        "El estadio 1 es 140-159/90-99; el estadio 2 es ≥160/100.",
+        "La estratificación del riesgo combina presión, factores de riesgo, daño de órgano blanco y eventos previos."
+      ],
+      "sections": [
+        {
+          "title": "Cribado y clasificación",
+          "depth": "core",
+          "body": [
+            "La presión arterial se mide en toda persona mayor de 18 años. Si está en rango normal y no hay factores de riesgo, puede repetirse cada 5 años. Si hay factores de riesgo o valores de 120-139/80-89 mmHg, el control debe ser anual.",
+            "La clasificación operativa es: normal <120/80; prehipertensión 120-139/80-89; hipertensión ≥140/90, con estadio 1 (140-159/90-99) y estadio 2 (≥160/100)."
+          ]
+        },
+        {
+          "title": "Qué evalúa el riesgo",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Componente",
+              "Ejemplos"
+            ],
+            "rows": [
+              [
+                "Factores de riesgo",
+                "Edad, sexo masculino, tabaquismo, dislipidemia, diabetes, obesidad, antecedente familiar."
+              ],
+              [
+                "Daño asintomático",
+                "Hipertrofia ventricular, engrosamiento carotídeo, retinopatía, reducción de TFG, microalbuminuria."
+              ],
+              [
+                "Enfermedad manifiesta",
+                "Ictus, infarto, insuficiencia cardíaca, enfermedad arterial periférica, ERC avanzada."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "El examen que no se puede saltar",
+          "depth": "full",
+          "bullets": [
+            "Peso, talla, IMC y perímetro abdominal.",
+            "Medición de presión, pulso y frecuencia cardíaca.",
+            "Examen cardiovascular, pulmonar, abdominal y de pulsos periféricos.",
+            "Fondo de ojo y evaluación de edema.",
+            "Laboratorio: glucosa, creatinina, perfil lipídico, orina y electrolitos; ECG según capacidad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "La HTA no se diagnostica con una sola toma aislada",
+            "text": "Se requieren mediciones repetidas y una evaluación integral; una cifra alta en una consulta puede ser transitoria."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            8,
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-hta-02",
+      "topicId": "topic-hta-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "HTA: tratar, controlar y reconocer la alarma",
+      "kicker": "Crónicas · Hipertensión",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tratamiento combina cambios de estilo de vida y fármacos según riesgo y cifras. La meta general es <140/90 mmHg, con ajustes en diabetes, proteinuria y octogenarios. La emergencia hipertensiva exige referencia.",
+      "keyConcepts": [
+        "Reducir sal a menos de 5 g/día, controlar peso y hacer actividad física regular.",
+        "La meta general es <140/90 mmHg; en proteinuria, <130/80; en octogenarios, PAS 140-150.",
+        "La terapia farmacológica se indica según riesgo y nivel de presión.",
+        "Presión ≥180/110 con daño agudo de órgano blanco es una emergencia hipertensiva."
+      ],
+      "sections": [
+        {
+          "title": "Estilos de vida con efectos medibles",
+          "depth": "core",
+          "bullets": [
+            "Reducir la ingesta de sal a no más de 5 g al día.",
+            "Evitar o moderar el alcohol.",
+            "Consumir frutas, verduras y alimentos bajos en grasa.",
+            "Reducir y controlar el peso; mantener IMC 18,5-24,9.",
+            "Realizar al menos 30 minutos diarios o 150 minutos semanales de actividad aeróbica.",
+            "Evitar el humo de tabaco y reducir exposiciones ocupacionales."
+          ]
+        },
+        {
+          "title": "Cuándo iniciar fármacos",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Situación",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "Riesgo bajo",
+                "Estilos de vida 3-6 meses; si no alcanza la meta, iniciar fármaco."
+              ],
+              [
+                "PA ≥160/100",
+                "Iniciar tratamiento farmacológico independientemente de otros parámetros."
+              ],
+              [
+                "Riesgo moderado o mayor",
+                "Iniciar fármaco independentemente de la cifra."
+              ],
+              [
+                "Diabetes",
+                "Meta <140/80; considerar combinación según riesgo."
+              ],
+              [
+                "Proteinuria",
+                "Meta <130/80."
+              ],
+              [
+                "Octogenario",
+                "Mantener PAS entre 140 y 150."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "La alarma que no espera",
+          "depth": "full",
+          "body": [
+            "Una presión ≥180/110 mmHg con evidencia de complicación aguda —síndrome coronario agudo, insuficiencia cardíaca, encefalopatía, disección de aorta— es una emergencia hipertensiva y requiere referencia inmediata al segundo o tercer nivel.",
+            "La hipertensión primaria no se da de alta: el objetivo es mantener el control y el seguimiento de por vida. La decisión de derivar por riesgo alto, daño de órgano blanco o falta de control debe ser explícita y con contrarreferencia."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No bajar la presión de golpe sin evaluar",
+            "text": "La conducta depende de si hay daño agudo de órgano blanco. Ante la duda, referir y no improvisar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            17,
+            18
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-climaterio-01",
+      "topicId": "topic-climaterio",
+      "areaId": "area-cronicas",
+      "title": "Climaterio: diagnóstico clínico y decisión terapéutica",
+      "kicker": "Crónicas · Salud de la mujer",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El climaterio es una etapa de transición hormonal con síntomas físicos, emocionales y sexuales. El diagnóstico es clínico y la terapia hormonal se indica solo en síntomas moderados a severos, de forma individualizada.",
+      "keyConcepts": [
+        "La menopausia se diagnostica de forma retrospectiva tras 12 meses de amenorrea sin otra causa.",
+        "Los síntomas vasomotores, genitourinarios, psicológicos y musculoesqueléticos afectan la calidad de vida.",
+        "La escala MRS ayuda a graduar la intensidad y orientar la conducta.",
+        "La terapia hormonal exige evaluación de riesgos, dosis baja, tiempo corto y seguimiento."
+      ],
+      "sections": [
+        {
+          "title": "Qué es y cómo se reconoce",
+          "depth": "core",
+          "body": [
+            "El climaterio abarca la transición hacia la menopausia y el periodo posterior, debido al declive de la función ovárica. La menopausia es la última menstruación; se confirma retrospectivamente cuando han pasado 12 meses de amenorrea sin otra causa patológica o fisiológica.",
+            "El diagnóstico es fundamentalmente clínico. La FSH y el estradiol pueden apoyar, pero no son obligatorios. Es importante descartar otras causas de amenorrea o sangrado y evaluar síntomas vasomotores, sequedad vaginal, alteraciones del sueño, ánimo y dolor musculoesquelético."
+          ]
+        },
+        {
+          "title": "Escala MRS y orientación",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Puntaje MRS",
+              "Orientación"
+            ],
+            "rows": [
+              [
+                "Total ≥15",
+                "Terapia hormonal muy recomendable; tratar según intensidad."
+              ],
+              [
+                "Total ≥8, somático ≥8 o psicológico ≥6",
+                "Cualquier terapia hormonal según evaluación individual."
+              ],
+              [
+                "Urogenital ≥3",
+                "Considerar terapia local o sistémica según caso."
+              ],
+              [
+                "Síntomas leves",
+                "Estilos de vida, medidas no farmacológicas y seguimiento."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Terapia hormonal: indicación y límites",
+          "depth": "full",
+          "body": [
+            "La terapia hormonal menopáusica se prescribe en síndrome climatérico con síntomas moderados a severos que afectan la calidad de vida. Debe ser individualizada, con dosis bajas, tiempo corto y controles periódicos. La vía transdérmica puede preferirse en algunas mujeres con riesgo trombótico o metabólico.",
+            "Es fundamental revisar contraindicaciones: sangrado vaginal sin explicación, enfermedad hepática, trombosis venosa o embolia pulmonar, trombofilia, hipertensión no tratada y antecedente de cáncer de mama o endometrio. En mujeres con útero intacto, el estrógeno debe acompañarse de progestágeno para proteger el endometrio."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No es una receta universal",
+            "text": "La decisión depende de síntomas, riesgos, preferencias y seguimiento. No se indica en síntomas leves ni sin evaluación previa."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-climaterio",
+          "pages": [
+            13,
+            14,
+            15,
+            16,
+            24,
+            25,
+            26,
+            28,
+            30,
+            31,
+            35
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-adolescente-01",
+      "topicId": "topic-adolescente-atencion",
+      "areaId": "area-adolescencia-vih",
+      "title": "Adolescente: una atención distinta, no una consulta cualquiera",
+      "kicker": "Adolescencia · Atención integral",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La atención integral del adolescente comprende promoción, prevención, recuperación y rehabilitación, con paquetes básico, completo y especializado. La confidencialidad y la participación son condiciones del servicio.",
+      "keyConcepts": [
+        "La población objetivo son adolescentes de 12 a 17 años, 11 meses y 29 días.",
+        "El paquete básico se brinda en el primer nivel; el completo y el especializado añaden laboratorio, estomatología y especialistas.",
+        "La atención debe ser confidencial, privada y sin negar el servicio si el adolescente acude solo.",
+        "Los servicios diferenciados facilitan el acceso y la participación adolescente."
+      ],
+      "sections": [
+        {
+          "title": "Tres paquetes, distintos niveles",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Paquete",
+              "Qué incluye"
+            ],
+            "rows": [
+              [
+                "Básico",
+                "Prestaciones esenciales de promoción, prevención y atención en el primer nivel."
+              ],
+              [
+                "Completo",
+                "Añade laboratorio, estomatología, evaluación clínica y ocular."
+              ],
+              [
+                "Especializado",
+                "Añade evaluación por especialistas ante riesgos identificados."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Confidencialidad y acceso",
+          "depth": "core",
+          "body": [
+            "La atención debe garantizar privacidad y confidencialidad, incluido el manejo de datos personales. Todo adolescente puede recibir atención preventiva, solo o acompañado de un adulto de confianza.",
+            "Si acude solo, no se le debe negar la atención: se le atiende en presencia de otro personal del establecimiento, respetando su autonomía progresiva. Los servicios diferenciados deben tener horarios, ambientes y trato amigables."
+          ]
+        },
+        {
+          "title": "Enfoques que orientan la atención",
+          "depth": "full",
+          "bullets": [
+            "Derechos y ciudadanía: el adolescente es sujeto de derechos.",
+            "Desarrollo positivo: fortalecer potencialidades, no solo riesgos.",
+            "Género y diversidad: respeto a identidades y necesidades particulares.",
+            "Interculturalidad e inclusión social: superar barreras y discriminación.",
+            "Curso de vida y territorio: entender el contexto familiar y comunitario."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es un adulto pequeño",
+            "text": "La adolescencia tiene necesidades propias de desarrollo, salud mental, sexualidad y participación. La atención debe adaptarse, no al revés."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            20,
+            21,
+            22,
+            23,
+            24,
+            26,
+            28,
+            30
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-adolescente-02",
+      "topicId": "topic-adolescente-proceso",
+      "areaId": "area-adolescencia-vih",
+      "title": "Del motivo de consulta al plan individual",
+      "kicker": "Adolescencia · Proceso de atención",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La atención empieza por el motivo que trae al adolescente y continúa con una evaluación biopsicosocial, un plan individualizado y la referencia cuando se requiere.",
+      "keyConcepts": [
+        "La captación puede ser en el establecimiento, la escuela, la comunidad o por referencia.",
+        "Se debe respetar el motivo de consulta y usarlo como puerta de entrada.",
+        "La evaluación integral incluye salud sexual, mental, física y nutricional.",
+        "El plan debe acordarse con el adolescente y evaluarse al finalizar."
+      ],
+      "sections": [
+        {
+          "title": "Captación y admisión",
+          "depth": "core",
+          "body": [
+            "La captación puede ocurrir en la consulta, por derivación de otros servicios, por agentes comunitarios, por instituciones educativas o en intervenciones extramurales. Se prioriza a los grupos en mayor vulnerabilidad.",
+            "En admisión se apertura la historia clínica de atención integral del adolescente, se registra la identificación y se brinda un trato empático y respetuoso. El carné de salud ayuda a ordenar las atenciones."
+          ]
+        },
+        {
+          "title": "Evaluación y plan",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Momento",
+              "Qué se hace"
+            ],
+            "rows": [
+              [
+                "Motivo de consulta",
+                "Atender la necesidad que trae el adolescente, sin postergarla."
+              ],
+              [
+                "Evaluación integral",
+                "Explorar salud sexual y reproductiva, mental, física y nutricional."
+              ],
+              [
+                "Priorización",
+                "Acordar qué necesidades se atienden primero."
+              ],
+              [
+                "Plan individual",
+                "Definir prestaciones, tiempos y responsables con el adolescente."
+              ],
+              [
+                "Seguimiento",
+                "Evaluar cumplimiento e impacto; referir si es necesario."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Referencia y trabajo en red",
+          "depth": "full",
+          "body": [
+            "Cuando el riesgo supera la capacidad resolutiva, se refiere a un establecimiento de mayor complejidad y se asegura la contrarreferencia. También se articula con comisarías de familia, fiscalías, DEMUNA, CEM y casas de acogida cuando corresponde.",
+            "La adolescente embarazada tiene derecho a atención integral y diferenciada durante embarazo, parto y puerperio, incluida la atención de su recién nacido."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No fragmentar",
+            "text": "Atender solo el motivo de consulta y no ofrecer el paquete integral pierde la oportunidad de detectar riesgos y prevenir."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            24,
+            31,
+            32,
+            33,
+            34
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-nino-expuesto-01",
+      "topicId": "topic-nino-expuesto",
+      "areaId": "area-adolescencia-vih",
+      "title": "Niño expuesto al VIH: profilaxis y seguimiento",
+      "kicker": "VIH · Transmisión vertical",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "Todo recién nacido de madre con VIH es un niño expuesto. Requiere profilaxis antirretroviral, alimentación segura y pruebas de PCR para conocer su estado serológico.",
+      "keyConcepts": [
+        "El niño expuesto es todo recién nacido de madre con infección por VIH.",
+        "La profilaxis depende del escenario de riesgo y de la carga viral materna.",
+        "Se solicita PCR-ADN-VIH-1 al primer y tercer mes de vida.",
+        "El seguimiento continúa hasta conocer el estado serológico definitivo."
+      ],
+      "sections": [
+        {
+          "title": "Riesgo y profilaxis",
+          "depth": "core",
+          "body": [
+            "Sin intervención, aproximadamente 20% de los niños se infectan antes de nacer y 50-80% durante el parto; la lactancia puede aumentar el riesgo. La profilaxis antirretroviral reduce la transmisión.",
+            "El esquema depende del escenario: zidovudina sola en el escenario 1; en el escenario 3 se agregan lamivudina y nevirapina. La carga viral materna >1000 copias/mL en el tercer trimestre indica mayor riesgo."
+          ]
+        },
+        {
+          "title": "Diagnóstico y alimentación",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Aspecto",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "PCR al nacer",
+                "En alto riesgo: madre sin control prenatal, sin TAR, infección aguda o carga viral ≥1000."
+              ],
+              [
+                "PCR a los 1 y 3 meses",
+                "Seguimiento habitual del niño expuesto."
+              ],
+              [
+                "Lactancia",
+                "Se indica sucedáneo de leche materna; la lactancia materna aumenta el riesgo."
+              ],
+              [
+                "Confirmación",
+                "Dos PCR positivos confirman infección; discordancia exige nueva prueba."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Alta y seguimiento",
+          "depth": "full",
+          "bullets": [
+            "Alta con profilaxis iniciada, alimentación segura y consejería a la madre.",
+            "Tarjeta de recién nacido de riesgo y control por consultorio externo.",
+            "Citas conjuntas con la madre cuando sea posible.",
+            "Vacunas según calendario; valorar vacunas atenuadas según inmunosupresión.",
+            "Niño con PCR negativos: alta del seguimiento al año de edad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El objetivo es cerrar la transmisión",
+            "text": "Profilaxis, alimentación segura y seguimiento oportuno son una cadena; si falla un eslabón, el riesgo aumenta."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-nino-expuesto",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-sifilis-01",
+      "topicId": "topic-sifilis",
+      "areaId": "area-adolescencia-vih",
+      "title": "Sífilis congénita: sospechar, confirmar y tratar",
+      "kicker": "VIH · Sífilis congénita",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La sífilis congénita se adquiere intraútero de una madre no tratada o mal tratada. La mayoría de los recién nacidos son asintomáticos, por lo que el tamizaje y los criterios diagnósticos son esenciales.",
+      "keyConcepts": [
+        "Es una treponematosis neonatal adquirida intraútero.",
+        "El 75% de los recién nacidos puede estar asintomático.",
+        "Se diagnostica por criterio epidemiológico, serológico, clínico o directo.",
+        "El tratamiento de elección es penicilina; el seguimiento serológico es obligatorio."
+      ],
+      "sections": [
+        {
+          "title": "Cuatro criterios diagnósticos",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Criterio",
+              "Qué exige"
+            ],
+            "rows": [
+              [
+                "Epidemiológico",
+                "Madre con sífilis no tratada o mal tratada, o prueba reactiva en el parto."
+              ],
+              [
+                "Serológico",
+                "VDRL/RPR del niño con títulos cuatro veces mayores que los maternos."
+              ],
+              [
+                "Clínico",
+                "Lesiones palmoplantares, rinitis, hepatoesplenomegalia, pseudoparálisis, alteraciones óseas o hematológicas."
+              ],
+              [
+                "Directo",
+                "Demostración de Treponema pallidum en lesiones, secreciones, placenta o autopsia."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Tratamiento",
+          "depth": "core",
+          "body": [
+            "El tratamiento de elección es penicilina. En el recién nacido con enfermedad comprobada o muy probable se usa penicilina G sódica 100 000 UI/kg/día los primeros 7 días y luego 150 000 UI/kg/día hasta completar 10 días.",
+            "Si el niño es asintomático y los estudios (LCR, hematología, radiografía de huesos) son negativos, puede usarse penicilina benzatínica 50 000 UI/kg IM una vez, con seguimiento serológico cada 3 meses."
+          ]
+        },
+        {
+          "title": "Seguimiento y prevención",
+          "depth": "full",
+          "bullets": [
+            "RPR cuantitativo a los 6 meses, 1 año y 2 años; los títulos deben descender.",
+            "VDRL en LCR a los 6 meses y 2 años si hubo neurosífilis.",
+            "Comprobar el tratamiento de la madre antes del alta.",
+            "Entregar tarjeta de recién nacido de riesgo y asegurar el control.",
+            "La prevención primaria es el tamizaje y tratamiento oportuno de la gestante."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Asintomático no significa sano",
+            "text": "Tres de cada cuatro recién nacidos con sífilis congénita no tienen signos evidentes al nacer. El tamizaje materno y el seguimiento son la clave."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-sifilis",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-vih-navv-01",
+      "topicId": "topic-vih-navv",
+      "areaId": "area-adolescencia-vih",
+      "title": "VIH pediátrico: equipo, TAR y adherencia",
+      "kicker": "VIH · Niñas, niños y adolescentes",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La atención del VIH en menores de 18 años requiere un equipo multidisciplinario, diagnóstico temprano, TAR oportuno y seguimiento virológico e inmunológico.",
+      "keyConcepts": [
+        "El equipo incluye pediatra, enfermería, psicología, obstetricia, trabajo social, farmacia y laboratorio.",
+        "El TAR se inicia con esquemas según grupo etario y se ajusta por peso, edad y comorbilidad.",
+        "La carga viral se controla a los 3, 6 y 12 meses, y luego semestralmente.",
+        "La adherencia es un determinante central del éxito terapéutico."
+      ],
+      "sections": [
+        {
+          "title": "Un equipo, no un profesional aislado",
+          "depth": "core",
+          "body": [
+            "La evaluación clínica, el inicio del TAR y el seguimiento se realizan en establecimientos con equipo multidisciplinario capacitado. Participan pediatría, enfermería, psicología, obstetricia, trabajo social, farmacia y laboratorio.",
+            "El equipo acompaña la revelación del diagnóstico, maneja reacciones adversas, previene infecciones oportunistas y coordina la referencia cuando se requiere mayor complejidad."
+          ]
+        },
+        {
+          "title": "TAR y monitoreo",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Momento",
+              "Conducta"
+            ],
+            "rows": [
+              [
+                "Antes del TAR",
+                "Carga viral, CD4 y genotipificación basales; no retrasar el inicio por esperar resultados."
+              ],
+              [
+                "Control",
+                "Carga viral a los 3, 6 y 12 meses; luego semestral."
+              ],
+              [
+                "CD4",
+                "A los 6 y 12 meses; luego anual si la carga viral es indetectable."
+              ],
+              [
+                "Falla virológica",
+                "Carga viral >1000 copias/mL en dos determinaciones separadas por 4 semanas."
+              ],
+              [
+                "Adherencia",
+                "Involucrar a cuidadores, adaptar horarios y educar sin juzgar."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Prevención y derechos",
+          "depth": "full",
+          "bullets": [
+            "Vacunación según calendario, con precauciones en inmunosupresión severa.",
+            "Consejería sobre sexualidad segura y entrega de preservativos en adolescentes.",
+            "Confidencialidad y protección de datos personales.",
+            "Revelación progresiva del diagnóstico, adaptada a la edad y con apoyo psicológico.",
+            "Tamizaje de contactos y prevención de la transmisión materno-infantil."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Adherencia no es obediencia",
+            "text": "Es un acuerdo sostenido con la persona y su familia, basado en información, apoyo y adaptación a la vida cotidiana."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih-navv",
+          "pages": [
+            23,
+            24,
+            28,
+            30,
+            31,
+            32,
+            33,
+            34,
+            35,
+            36
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-mci-07",
+      "topicId": "topic-mci-gestion",
+      "areaId": "area-mci",
+      "title": "Territorio y redes: dónde se organiza el cuidado",
+      "kicker": "MCI · Organización",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "El MCI organiza el cuidado en redes integradas de salud (RIS) con población y territorio definidos. La gestión territorial articula autoridades, equipos y comunidad para responder a las necesidades locales.",
+      "keyConcepts": [
+        "La RIS se delimita por población, cobertura, accesibilidad, densidad y circunscripción política.",
+        "La población y las familias están nominalizadas y asignadas a equipos multidisciplinarios.",
+        "El Plan Local de Salud aborda los determinantes y articula actores del territorio.",
+        "La captación y el triaje son oportunidades para ofrecer el cuidado integral."
+      ],
+      "sections": [
+        {
+          "title": "La RIS como unidad de gestión",
+          "depth": "core",
+          "body": [
+            "La Red Integrada de Salud define objetivos para la persona, familia y comunidad según sus necesidades. Se delimita por tamaño de población, cobertura prestacional, accesibilidad geográfica, densidad poblacional y relación con la circunscripción político-administrativa.",
+            "La población está nominalizada y las familias se asignan a equipos multidisciplinarios. La RIS articula la provisión de servicios y el abordaje de determinantes, optimizando recursos y estableciendo metas de salud."
+          ]
+        },
+        {
+          "title": "Gestión territorial",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Elemento",
+              "Función"
+            ],
+            "rows": [
+              [
+                "Autoridad local de salud",
+                "Presenta el Plan Local de Salud y articula actores."
+              ],
+              [
+                "Comité o consejo local",
+                "Coordina, monitorea y da seguimiento a los indicadores."
+              ],
+              [
+                "Equipo de gestión de la RIS",
+                "Coordina con autoridades y organiza los servicios."
+              ],
+              [
+                "Acuerdos de gestión",
+                "Ordenan responsabilidades entre niveles y sectores."
+              ],
+              [
+                "Comunidad organizada",
+                "Participa en diagnóstico, priorización y control social."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Flujos centrados en la persona",
+          "depth": "full",
+          "body": [
+            "La captación puede ocurrir en una atención recuperativa, en la comunidad o mediante alianzas con instituciones locales. El triaje no es solo clasificación: es una oportunidad para reincorporar a la persona al cuidado integral.",
+            "La cartera de servicios se ordena según los cuidados que requiere la población y los equipos establecen flujos horizontales dentro de la RIS. La historia clínica electrónica única facilita la continuidad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Red no es solo derivar",
+            "text": "Una red integrada comparte población, información, metas y recursos; no es una suma de establecimientos desconectados."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            59,
+            60,
+            61,
+            62
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-mci-08",
+      "topicId": "topic-mci-financiamiento",
+      "areaId": "area-mci",
+      "title": "Calidad, información y financiamiento del modelo",
+      "kicker": "MCI · Gestión y financiamiento",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "El MCI se sostiene con gestión por resultados, estándares de calidad, sistemas de información y aseguramiento universal. Sin financiamiento y medición, el modelo queda en el discurso.",
+      "keyConcepts": [
+        "La calidad exige servicios efectivos, seguros, centrados en las personas, oportunos, equitativos, integrados y eficientes.",
+        "La gestión por resultados usa indicadores de estructura, proceso y resultado.",
+        "El aseguramiento universal busca eliminar la barrera económica.",
+        "Los incentivos deben alinear a gobiernos locales y equipos de salud con las metas."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa calidad",
+          "depth": "core",
+          "body": [
+            "Un servicio de calidad es efectivo (basado en evidencia), seguro (minimiza eventos adversos), centrado en las personas (respeta preferencias y valores), oportuno (evita retrasos), equitativo (elimina barreras evitables), integrado (coordina la atención) y eficiente (evita desperdicio).",
+            "La calidad no es un lujo: sin confianza, las personas no usan los servicios. Por eso el MCI incluye protocolos, seguridad del paciente y medición sistemática."
+          ]
+        },
+        {
+          "title": "Medir para decidir",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Instrumento",
+              "Uso"
+            ],
+            "rows": [
+              [
+                "Indicadores de estructura",
+                "Recursos, equipamiento y organización disponibles."
+              ],
+              [
+                "Indicadores de proceso",
+                "Si las actividades se realizan como están previstas."
+              ],
+              [
+                "Indicadores de resultado",
+                "Cambios en salud, cobertura y calidad."
+              ],
+              [
+                "Cuadro de mando",
+                "Información estratégica para la gestión y rendición de cuentas."
+              ],
+              [
+                "Historia clínica electrónica",
+                "Registro longitudinal y fuente para la gestión clínica y de políticas."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Financiamiento y sostenibilidad",
+          "depth": "full",
+          "bullets": [
+            "Aseguramiento universal para eliminar la barrera económica.",
+            "Mejora de la eficiencia y calidad del gasto.",
+            "Actualización periódica del PEAS.",
+            "Incentivos a gobiernos locales por abordar determinantes.",
+            "Incentivos a equipos multidisciplinarios por metas de cuidado.",
+            "Inversión en recursos humanos, infraestructura, tecnología e información."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Sin presupuesto no hay modelo",
+            "text": "El MCI requiere financiamiento sostenido y reglas claras; de lo contrario, la coordinación y la continuidad quedan como buenas intenciones."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            62,
+            63,
+            64,
+            65,
+            70,
+            71,
+            72,
+            73
+          ]
+        }
+      ]
+    }
   ],
-  cards: [
+  "cards": [
     {
-      id: "card-aps-01-1",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-01",
-      type: "concept",
-      prompt: "Explica por qué la APS no debe entenderse como una atención de segunda categoría.",
-      answer: "Porque es la puerta de entrada y el eje organizador del sistema: resuelve necesidades frecuentes, construye una relación longitudinal y coordina el cuidado con otros niveles. Una APS fuerte se asocia con mejores resultados y mayor eficiencia, no con menor calidad.",
-      explanation: "La APS no compite con la especializada; cumple una función distinta y complementaria. Su valor está en el acceso, la continuidad, la integralidad y la coordinación.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
-      tags: ["APS", "fundamentos"]
+      "id": "card-aps-01-1",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-01",
+      "type": "concept",
+      "prompt": "Explica por qué la APS no debe entenderse como una atención de segunda categoría.",
+      "answer": "Porque es la puerta de entrada y el eje organizador del sistema: resuelve necesidades frecuentes, construye una relación longitudinal y coordina el cuidado con otros niveles. Una APS fuerte se asocia con mejores resultados y mayor eficiencia, no con menor calidad.",
+      "explanation": "La APS no compite con la especializada; cumple una función distinta y complementaria. Su valor está en el acceso, la continuidad, la integralidad y la coordinación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "fundamentos"
+      ]
     },
     {
-      id: "card-aps-01-2",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-01",
-      type: "multiple",
-      prompt: "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?",
-      options: ["Accesibilidad", "Longitudinalidad", "Integralidad", "Coordinación"],
-      correctIndex: 1,
-      explanation: "La longitudinalidad es la relación personal y continua en el tiempo. La accesibilidad es la facilidad de uso; la integralidad, la amplitud de la cartera; la coordinación, la articulación entre servicios.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
-      tags: ["APS", "atributos"]
+      "id": "card-aps-01-2",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-01",
+      "type": "multiple",
+      "prompt": "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?",
+      "options": [
+        "Integralidad",
+        "Coordinación",
+        "Accesibilidad",
+        "Longitudinalidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "La longitudinalidad es la relación personal y continua en el tiempo. La accesibilidad es la facilidad de uso; la integralidad, la amplitud de la cartera; la coordinación, la articulación entre servicios.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "atributos"
+      ]
     },
     {
-      id: "card-aps-01-3",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-01",
-      type: "application",
-      prompt: "Una persona acude por primera vez a un establecimiento con dolor abdominal. El equipo la evalúa, resuelve el problema y la vincula a controles. ¿Qué atributo se activa primero y cuál se construye después?",
-      options: [
-        "Primero la coordinación; después la accesibilidad.",
-        "Primero el primer contacto; después la longitudinalidad.",
+      "id": "card-aps-01-3",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-01",
+      "type": "application",
+      "prompt": "Una persona acude por primera vez a un establecimiento con dolor abdominal. El equipo la evalúa, resuelve el problema y la vincula a controles. ¿Qué atributo se activa primero y cuál se construye después?",
+      "options": [
         "Primero la integralidad; después el primer contacto.",
-        "Primero la longitudinalidad; después la coordinación."
+        "Primero la longitudinalidad; después la coordinación.",
+        "Primero la coordinación; después la accesibilidad.",
+        "Primero el primer contacto; después la longitudinalidad."
       ],
-      correctIndex: 1,
-      explanation: "El primer contacto es el punto de entrada al sistema. La longitudinalidad se construye cuando esa relación se mantiene y se acompaña en el tiempo.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }],
-      tags: ["APS", "aplicación"]
+      "correctIndex": 3,
+      "explanation": "El primer contacto es el punto de entrada al sistema. La longitudinalidad se construye cuando esa relación se mantiene y se acompaña en el tiempo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "aplicación"
+      ]
     },
     {
-      id: "card-aps-02-1",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-02",
-      type: "concept",
-      prompt: "Enumera al menos tres tipos de barreras que pueden limitar la accesibilidad a la APS.",
-      answer: "Barreras geográficas (distancia, transporte), económicas (costos directos e indirectos), organizativas (horarios, citas, trámites) y culturales (idioma, trato, desconfianza, falta de pertinencia).",
-      explanation: "La accesibilidad no se reduce a la existencia del establecimiento. Importa si la persona puede usarlo de forma oportuna y sin costos desproporcionados.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3] }],
-      tags: ["APS", "accesibilidad"]
+      "id": "card-aps-02-1",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-02",
+      "type": "concept",
+      "prompt": "Enumera al menos tres tipos de barreras que pueden limitar la accesibilidad a la APS.",
+      "answer": "Barreras geográficas (distancia, transporte), económicas (costos directos e indirectos), organizativas (horarios, citas, trámites) y culturales (idioma, trato, desconfianza, falta de pertinencia).",
+      "explanation": "La accesibilidad no se reduce a la existencia del establecimiento. Importa si la persona puede usarlo de forma oportuna y sin costos desproporcionados.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "accesibilidad"
+      ]
     },
     {
-      id: "card-aps-02-2",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-02",
-      type: "multiple",
-      prompt: "¿Cuál de las siguientes situaciones describe mejor una falla de longitudinalidad?",
-      options: [
-        "La persona no puede llegar al establecimiento por falta de transporte.",
-        "La persona cambia de profesional en cada consulta y nadie conoce su historia.",
+      "id": "card-aps-02-2",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-02",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes situaciones describe mejor una falla de longitudinalidad?",
+      "options": [
         "El establecimiento no cuenta con especialista en cardiología.",
-        "La persona recibe una receta sin explicación."
+        "La persona recibe una receta sin explicación.",
+        "La persona no puede llegar al establecimiento por falta de transporte.",
+        "La persona cambia de profesional en cada consulta y nadie conoce su historia."
       ],
-      correctIndex: 1,
-      explanation: "La longitudinalidad se rompe cuando no hay una relación estable y continuada. La falta de transporte es una barrera de acceso; la ausencia de especialista se relaciona con la coordinación y la complejidad.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
-      tags: ["APS", "longitudinalidad"]
+      "correctIndex": 3,
+      "explanation": "La longitudinalidad se rompe cuando no hay una relación estable y continuada. La falta de transporte es una barrera de acceso; la ausencia de especialista se relaciona con la coordinación y la complejidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "longitudinalidad"
+      ]
     },
     {
-      id: "card-aps-02-3",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-02",
-      type: "application",
-      prompt: "Una gestante falta a sus controles porque vive a tres horas del establecimiento y no tiene transporte. ¿Cuál es la respuesta más pertinente desde la APS?",
-      options: [
-        "Registrar la inasistencia y esperar a que vuelva.",
-        "Derivarla inmediatamente al hospital sin evaluar barreras.",
+      "id": "card-aps-02-3",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-02",
+      "type": "application",
+      "prompt": "Una gestante falta a sus controles porque vive a tres horas del establecimiento y no tiene transporte. ¿Cuál es la respuesta más pertinente desde la APS?",
+      "options": [
         "Identificar la barrera de acceso y activar alternativas: visita domiciliaria, casa de espera, teleorientación o apoyo de la red.",
-        "Suspender los controles hasta que pueda trasladarse por sus propios medios."
+        "Suspender los controles hasta que pueda trasladarse por sus propios medios.",
+        "Registrar la inasistencia y esperar a que vuelva.",
+        "Derivarla inmediatamente al hospital sin evaluar barreras."
       ],
-      correctIndex: 2,
-      explanation: "La accesibilidad exige identificar y reducir barreras. La respuesta debe mantener la continuidad del cuidado y no culpar a la persona por no asistir.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [2, 3, 4] }],
-      tags: ["APS", "accesibilidad", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La accesibilidad exige identificar y reducir barreras. La respuesta debe mantener la continuidad del cuidado y no culpar a la persona por no asistir.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "accesibilidad",
+        "aplicación"
+      ]
     },
     {
-      id: "card-aps-03-1",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-03",
-      type: "concept",
-      prompt: "¿Qué significa integralidad en APS y qué no significa?",
-      answer: "Significa ofrecer una cartera que responda a las necesidades de salud más frecuentes de la población, articulando promoción, prevención, recuperación y rehabilitación. No significa que el primer nivel deba resolver todo sin apoyo de otros niveles.",
-      explanation: "La integralidad es una responsabilidad de organización del cuidado, no una exigencia de omnipotencia del primer nivel.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4] }],
-      tags: ["APS", "integralidad"]
+      "id": "card-aps-03-1",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-03",
+      "type": "concept",
+      "prompt": "¿Qué significa integralidad en APS y qué no significa?",
+      "answer": "Significa ofrecer una cartera que responda a las necesidades de salud más frecuentes de la población, articulando promoción, prevención, recuperación y rehabilitación. No significa que el primer nivel deba resolver todo sin apoyo de otros niveles.",
+      "explanation": "La integralidad es una responsabilidad de organización del cuidado, no una exigencia de omnipotencia del primer nivel.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "integralidad"
+      ]
     },
     {
-      id: "card-aps-03-2",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-03",
-      type: "multiple",
-      prompt: "¿Cuál de las siguientes acciones fortalece mejor la coordinación entre niveles?",
-      options: [
+      "id": "card-aps-03-2",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-03",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes acciones fortalece mejor la coordinación entre niveles?",
+      "options": [
         "Enviar al especialista una hoja con el diagnóstico y esperar la respuesta.",
         "Compartir información clínica relevante, acordar el motivo de referencia y asegurar la contrarreferencia.",
         "Indicar al paciente que busque por su cuenta al especialista.",
         "Repetir todos los exámenes en cada nivel para confirmar resultados."
       ],
-      correctIndex: 1,
-      explanation: "La coordinación requiere comunicación bidireccional, información suficiente y seguimiento. La derivación sin retorno de información fragmenta el cuidado.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [4, 5] }],
-      tags: ["APS", "coordinación"]
+      "correctIndex": 1,
+      "explanation": "La coordinación requiere comunicación bidireccional, información suficiente y seguimiento. La derivación sin retorno de información fragmenta el cuidado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "coordinación"
+      ]
     },
     {
-      id: "card-aps-03-3",
-      topicId: "topic-aps-atributos",
-      sheetId: "sheet-aps-03",
-      type: "application",
-      prompt: "Un paciente con diabetes es derivado al especialista. La interconsulta responde “continuar manejo en primer nivel”, pero no incluye resultados ni ajustes. ¿Qué falla del cuidado es más evidente?",
-      options: [
+      "id": "card-aps-03-3",
+      "topicId": "topic-aps-atributos",
+      "sheetId": "sheet-aps-03",
+      "type": "application",
+      "prompt": "Un paciente con diabetes es derivado al especialista. La interconsulta responde “continuar manejo en primer nivel”, pero no incluye resultados ni ajustes. ¿Qué falla del cuidado es más evidente?",
+      "options": [
+        "Falla de primer contacto.",
         "Falla de accesibilidad.",
         "Falla de coordinación y continuidad.",
-        "Falla de longitudinalidad exclusivamente.",
-        "Falla de primer contacto."
+        "Falla de longitudinalidad exclusivamente."
       ],
-      correctIndex: 1,
-      explanation: "La respuesta no aporta información suficiente para continuar el cuidado, y el circuito entre niveles queda incompleto. Es una falla de coordinación que afecta la continuidad.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [4, 5] }],
-      tags: ["APS", "coordinación", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La respuesta no aporta información suficiente para continuar el cuidado, y el circuito entre niveles queda incompleto. Es una falla de coordinación que afecta la continuidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            4,
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "coordinación",
+        "aplicación"
+      ]
     },
     {
-      id: "card-aps-04-1",
-      topicId: "topic-aps-sistemas",
-      sheetId: "sheet-aps-04",
-      type: "concept",
-      prompt: "Diferencia el foco de la APS del foco de la atención especializada.",
-      answer: "La APS se centra en la persona, la familia y la comunidad, con una relación longitudinal y una mirada integral. La especializada se centra en problemas, órganos o enfermedades específicas, con mayor complejidad tecnológica y habitualmente una relación episódica.",
-      explanation: "No son niveles jerárquicos de dignidad, sino funciones distintas dentro de un sistema de salud.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
-      tags: ["APS", "sistemas"]
+      "id": "card-aps-04-1",
+      "topicId": "topic-aps-sistemas",
+      "sheetId": "sheet-aps-04",
+      "type": "concept",
+      "prompt": "Diferencia el foco de la APS del foco de la atención especializada.",
+      "answer": "La APS se centra en la persona, la familia y la comunidad, con una relación longitudinal y una mirada integral. La especializada se centra en problemas, órganos o enfermedades específicas, con mayor complejidad tecnológica y habitualmente una relación episódica.",
+      "explanation": "No son niveles jerárquicos de dignidad, sino funciones distintas dentro de un sistema de salud.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "sistemas"
+      ]
     },
     {
-      id: "card-aps-04-2",
-      topicId: "topic-aps-sistemas",
-      sheetId: "sheet-aps-04",
-      type: "multiple",
-      prompt: "¿Qué consecuencia es más coherente con un sistema que carece de una APS fuerte?",
-      options: [
-        "Mayor continuidad y menor uso de especialistas.",
-        "Mayor fragmentación, uso menos eficiente de recursos y peor acceso para poblaciones vulnerables.",
+      "id": "card-aps-04-2",
+      "topicId": "topic-aps-sistemas",
+      "sheetId": "sheet-aps-04",
+      "type": "multiple",
+      "prompt": "¿Qué consecuencia es más coherente con un sistema que carece de una APS fuerte?",
+      "options": [
         "Mejor coordinación entre niveles por ausencia de intermediarios.",
-        "Reducción automática de la demanda de atención especializada."
+        "Reducción automática de la demanda de atención especializada.",
+        "Mayor continuidad y menor uso de especialistas.",
+        "Mayor fragmentación, uso menos eficiente de recursos y peor acceso para poblaciones vulnerables."
       ],
-      correctIndex: 1,
-      explanation: "Sin APS fuerte, el sistema tiende a la fragmentación y a la atención reactiva. La APS organiza el primer contacto y coordina el cuidado.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [1, 2, 3] }],
-      tags: ["APS", "sistemas"]
+      "correctIndex": 3,
+      "explanation": "Sin APS fuerte, el sistema tiende a la fragmentación y a la atención reactiva. La APS organiza el primer contacto y coordina el cuidado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "sistemas"
+      ]
     },
     {
-      id: "card-aps-04-3",
-      topicId: "topic-aps-sistemas",
-      sheetId: "sheet-aps-04",
-      type: "application",
-      prompt: "Una persona con una enfermedad crónica compleja es atendida por varios especialistas. ¿Cuál es el mejor papel de la APS?",
-      options: [
-        "Retirarse para no interferir con los especialistas.",
+      "id": "card-aps-04-3",
+      "topicId": "topic-aps-sistemas",
+      "sheetId": "sheet-aps-04",
+      "type": "application",
+      "prompt": "Una persona con una enfermedad crónica compleja es atendida por varios especialistas. ¿Cuál es el mejor papel de la APS?",
+      "options": [
         "Coordinar el plan, mantener el vínculo, revisar la adherencia y asegurar que las recomendaciones sean coherentes.",
         "Repetir todas las pruebas para verificar lo que dicen los especialistas.",
-        "Derivar de nuevo cada vez que aparezca un síntoma."
+        "Derivar de nuevo cada vez que aparezca un síntoma.",
+        "Retirarse para no interferir con los especialistas."
       ],
-      correctIndex: 1,
-      explanation: "La APS aporta continuidad y coordinación. Su función es integrar el cuidado, no sustituir la experticia especializada ni desaparecer del circuito.",
-      sourceRefs: [{ sourceId: "src-aps", pages: [3, 4, 5] }],
-      tags: ["APS", "coordinación", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La APS aporta continuidad y coordinación. Su función es integrar el cuidado, no sustituir la experticia especializada ni desaparecer del circuito.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            3,
+            4,
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "APS",
+        "coordinación",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-01-1",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-01",
-      type: "concept",
-      prompt: "¿Por qué el MCI afirma que la salud se construye también fuera del establecimiento de salud?",
-      answer: "Porque los resultados en salud dependen de la interacción de factores protectores y de riesgo a lo largo de la vida, incluidos los determinantes sociales. El acceso a servicios es solo uno de esos factores; también importan las condiciones de vida, el entorno, la familia y la comunidad.",
-      explanation: "El MCI adopta un enfoque de determinantes y de curso de vida. Por eso el cuidado incluye promoción y prevención, no solo tratamiento.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 43] }],
-      tags: ["MCI", "determinantes"]
+      "id": "card-mci-01-1",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-01",
+      "type": "concept",
+      "prompt": "¿Por qué el MCI afirma que la salud se construye también fuera del establecimiento de salud?",
+      "answer": "Porque los resultados en salud dependen de la interacción de factores protectores y de riesgo a lo largo de la vida, incluidos los determinantes sociales. El acceso a servicios es solo uno de esos factores; también importan las condiciones de vida, el entorno, la familia y la comunidad.",
+      "explanation": "El MCI adopta un enfoque de determinantes y de curso de vida. Por eso el cuidado incluye promoción y prevención, no solo tratamiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            35,
+            38,
+            43
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "determinantes"
+      ]
     },
     {
-      id: "card-mci-01-2",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-01",
-      type: "multiple",
-      prompt: "¿Cuál es la descripción más completa del MCI?",
-      options: [
+      "id": "card-mci-01-2",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la descripción más completa del MCI?",
+      "options": [
         "Un programa de atención materno-infantil del primer nivel.",
         "Un conjunto de estrategias, normas, procedimientos, herramientas y recursos que responden a las necesidades de salud de personas, familias y comunidades a lo largo del curso de vida.",
         "Un modelo hospitalario centrado en enfermedades crónicas.",
         "Una campaña de vacunación y control de crecimiento."
       ],
-      correctIndex: 1,
-      explanation: "El MCI es un modelo organizador del cuidado, no una campaña o un programa limitado a una etapa o enfermedad.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [41] }],
-      tags: ["MCI", "definición"]
+      "correctIndex": 1,
+      "explanation": "El MCI es un modelo organizador del cuidado, no una campaña o un programa limitado a una etapa o enfermedad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            41
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "definición"
+      ]
     },
     {
-      id: "card-mci-01-3",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-01",
-      type: "application",
-      prompt: "Una persona con hipertensión no logra controlar su presión. Vive en una zona sin transporte, trabaja sin horario fijo y no puede pagar los medicamentos. ¿Qué mirada es más coherente con el MCI?",
-      options: [
+      "id": "card-mci-01-3",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-01",
+      "type": "application",
+      "prompt": "Una persona con hipertensión no logra controlar su presión. Vive en una zona sin transporte, trabaja sin horario fijo y no puede pagar los medicamentos. ¿Qué mirada es más coherente con el MCI?",
+      "options": [
         "Insistir en la adherencia y responsabilizar solo a la persona.",
         "Aumentar la dosis sin explorar barreras.",
         "Evaluar y abordar barreras de acceso y determinantes, coordinar apoyos y ajustar el plan con la persona.",
         "Derivarla al hospital y cerrar el seguimiento en el primer nivel."
       ],
-      correctIndex: 2,
-      explanation: "El MCI no separa el problema clínico del contexto. Abordar barreras económicas, geográficas y organizativas es parte del cuidado.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [35, 38, 41, 43] }],
-      tags: ["MCI", "determinantes", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "El MCI no separa el problema clínico del contexto. Abordar barreras económicas, geográficas y organizativas es parte del cuidado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            35,
+            38,
+            41,
+            43
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "determinantes",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-02-1",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-02",
-      type: "concept",
-      prompt: "Nombra los cuatro componentes del MCI y explica en una frase qué organiza cada uno.",
-      answer: "Provisión: qué cuidados se brindan y en qué escenarios. Organización: cómo se estructuran servicios y redes para garantizar acceso y continuidad. Gestión: cómo se planifica, coordina y evalúa el cuidado en el territorio. Financiamiento: cómo se asignan los recursos para sostener el cuidado.",
-      explanation: "Los cuatro componentes son interdependientes: una buena provisión sin organización o financiamiento no sostiene la continuidad.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [43, 44] }],
-      tags: ["MCI", "componentes"]
+      "id": "card-mci-02-1",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-02",
+      "type": "concept",
+      "prompt": "Nombra los cuatro componentes del MCI y explica en una frase qué organiza cada uno.",
+      "answer": "Provisión: qué cuidados se brindan y en qué escenarios. Organización: cómo se estructuran servicios y redes para garantizar acceso y continuidad. Gestión: cómo se planifica, coordina y evalúa el cuidado en el territorio. Financiamiento: cómo se asignan los recursos para sostener el cuidado.",
+      "explanation": "Los cuatro componentes son interdependientes: una buena provisión sin organización o financiamiento no sostiene la continuidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            43,
+            44
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "componentes"
+      ]
     },
     {
-      id: "card-mci-02-2",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-02",
-      type: "multiple",
-      prompt: "¿Qué principio del MCI implica que la persona, la familia y la comunidad participan como socios activos en el cuidado?",
-      options: ["Universalidad", "Corresponsabilidad", "Eficiencia", "Solidaridad"],
-      correctIndex: 1,
-      explanation: "La corresponsabilidad reconoce el deber y la capacidad de participar en la toma de decisiones y en el cuidado de la salud.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [38] }],
-      tags: ["MCI", "principios"]
+      "id": "card-mci-02-2",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-02",
+      "type": "multiple",
+      "prompt": "¿Qué principio del MCI implica que la persona, la familia y la comunidad participan como socios activos en el cuidado?",
+      "options": [
+        "Eficiencia",
+        "Solidaridad",
+        "Universalidad",
+        "Corresponsabilidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "La corresponsabilidad reconoce el deber y la capacidad de participar en la toma de decisiones y en el cuidado de la salud.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            38
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "principios"
+      ]
     },
     {
-      id: "card-mci-02-3",
-      topicId: "topic-mci-fundamentos",
-      sheetId: "sheet-mci-02",
-      type: "application",
-      prompt: "Un equipo tiene un buen plan de cuidados, pero no cuenta con presupuesto para transporte, insumos ni personal suficiente. ¿Qué componente del MCI está más comprometido?",
-      options: ["Provisión", "Organización", "Gestión", "Financiamiento"],
-      correctIndex: 3,
-      explanation: "El financiamiento organiza la asignación de recursos para sostener el cuidado. Sin recursos, la provisión y la continuidad se deterioran.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [44, 40] }],
-      tags: ["MCI", "financiamiento", "aplicación"]
+      "id": "card-mci-02-3",
+      "topicId": "topic-mci-fundamentos",
+      "sheetId": "sheet-mci-02",
+      "type": "application",
+      "prompt": "Un equipo tiene un buen plan de cuidados, pero no cuenta con presupuesto para transporte, insumos ni personal suficiente. ¿Qué componente del MCI está más comprometido?",
+      "options": [
+        "Financiamiento",
+        "Provisión",
+        "Organización",
+        "Gestión"
+      ],
+      "correctIndex": 0,
+      "explanation": "El financiamiento organiza la asignación de recursos para sostener el cuidado. Sin recursos, la provisión y la continuidad se deterioran.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            44,
+            40
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "financiamiento",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-03-1",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-03",
-      type: "concept",
-      prompt: "¿Por qué el periodo prenatal es considerado una etapa crítica en el curso de vida?",
-      answer: "Porque las exposiciones y cuidados durante el embarazo influyen en el desarrollo del feto y en la trayectoria posterior de la persona. El cuidado comienza antes de la concepción y continúa durante el embarazo, el parto, el puerperio y la crianza.",
-      explanation: "El MCI busca controlar exposiciones y promover un desarrollo psicomotor, emocional y social adecuado desde el inicio de la vida.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [49, 50] }],
-      tags: ["MCI", "curso de vida", "prenatal"]
+      "id": "card-mci-03-1",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-03",
+      "type": "concept",
+      "prompt": "¿Por qué el periodo prenatal es considerado una etapa crítica en el curso de vida?",
+      "answer": "Porque las exposiciones y cuidados durante el embarazo influyen en el desarrollo del feto y en la trayectoria posterior de la persona. El cuidado comienza antes de la concepción y continúa durante el embarazo, el parto, el puerperio y la crianza.",
+      "explanation": "El MCI busca controlar exposiciones y promover un desarrollo psicomotor, emocional y social adecuado desde el inicio de la vida.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            49,
+            50
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "curso de vida",
+        "prenatal"
+      ]
     },
     {
-      id: "card-mci-03-2",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-03",
-      type: "multiple",
-      prompt: "¿Cuál es el objetivo del cuidado integral en la niñez según el MCI?",
-      options: [
+      "id": "card-mci-03-2",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es el objetivo del cuidado integral en la niñez según el MCI?",
+      "options": [
         "Solo prevenir enfermedades infecciosas.",
         "Garantizar el desarrollo físico, cognitivo, emocional y social.",
         "Preparar al niño para el mercado laboral.",
         "Sustituir el rol de la familia por el del establecimiento."
       ],
-      correctIndex: 1,
-      explanation: "El cuidado integral de la niñez busca el desarrollo físico, cognitivo, emocional y social, con la familia y la comunidad como actores centrales.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [51] }],
-      tags: ["MCI", "niñez"]
+      "correctIndex": 1,
+      "explanation": "El cuidado integral de la niñez busca el desarrollo físico, cognitivo, emocional y social, con la familia y la comunidad como actores centrales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            51
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "niñez"
+      ]
     },
     {
-      id: "card-mci-03-3",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-03",
-      type: "application",
-      prompt: "Una gestante vive en una comunidad rural alejada y se acerca la fecha probable de parto. ¿Qué respuesta del MCI facilita la continuidad y la seguridad?",
-      options: [
+      "id": "card-mci-03-3",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-03",
+      "type": "application",
+      "prompt": "Una gestante vive en una comunidad rural alejada y se acerca la fecha probable de parto. ¿Qué respuesta del MCI facilita la continuidad y la seguridad?",
+      "options": [
         "Indicarle que espere en casa hasta que inicie el trabajo de parto.",
         "Derivarla solo cuando presente una complicación.",
         "Coordinar una casa de espera materna o un alojamiento cercano al establecimiento con capacidad resolutiva.",
         "Suspender los controles hasta el parto."
       ],
-      correctIndex: 2,
-      explanation: "Las casas de espera materna acercan a la gestante a un establecimiento con capacidad resolutiva cuando vive lejos, facilitando el parto institucional oportuno.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [50] }],
-      tags: ["MCI", "prenatal", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "Las casas de espera materna acercan a la gestante a un establecimiento con capacidad resolutiva cuando vive lejos, facilitando el parto institucional oportuno.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            50
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "prenatal",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-04-1",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-04",
-      type: "concept",
-      prompt: "¿Qué caracteriza a la adolescencia como etapa del curso de vida y qué implica para el cuidado?",
-      answer: "Es una etapa de cambios físicos, emocionales y sociales, con mayor exposición a conductas de riesgo y gran potencial de desarrollo. El cuidado debe fortalecer factores protectores, promover salud mental, prevenir consumo de sustancias y acompañar la autonomía, con escuela, familia y comunidad.",
-      explanation: "La mirada de curso de vida no se limita a lo reproductivo; integra desarrollo socioemocional, prevención y participación.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [49, 52] }],
-      tags: ["MCI", "adolescencia"]
+      "id": "card-mci-04-1",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-04",
+      "type": "concept",
+      "prompt": "¿Qué caracteriza a la adolescencia como etapa del curso de vida y qué implica para el cuidado?",
+      "answer": "Es una etapa de cambios físicos, emocionales y sociales, con mayor exposición a conductas de riesgo y gran potencial de desarrollo. El cuidado debe fortalecer factores protectores, promover salud mental, prevenir consumo de sustancias y acompañar la autonomía, con escuela, familia y comunidad.",
+      "explanation": "La mirada de curso de vida no se limita a lo reproductivo; integra desarrollo socioemocional, prevención y participación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            49,
+            52
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "adolescencia"
+      ]
     },
     {
-      id: "card-mci-04-2",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-04",
-      type: "multiple",
-      prompt: "¿Cuál es un objetivo central del cuidado en la persona adulta mayor según el MCI?",
-      options: [
-        "Prolongar la vida a cualquier costo, aunque se pierda autonomía.",
-        "Preservar funcionalidad, autonomía y calidad de vida, incluyendo rehabilitación y cuidados paliativos cuando corresponda.",
+      "id": "card-mci-04-2",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-04",
+      "type": "multiple",
+      "prompt": "¿Cuál es un objetivo central del cuidado en la persona adulta mayor según el MCI?",
+      "options": [
         "Suspender la prevención porque ya no es útil.",
-        "Delegar todo el cuidado a la familia sin apoyo del equipo."
+        "Delegar todo el cuidado a la familia sin apoyo del equipo.",
+        "Prolongar la vida a cualquier costo, aunque se pierda autonomía.",
+        "Preservar funcionalidad, autonomía y calidad de vida, incluyendo rehabilitación y cuidados paliativos cuando corresponda."
       ],
-      correctIndex: 1,
-      explanation: "El cuidado de la vejez se orienta a la funcionalidad y la calidad de vida, no solo a la supervivencia. También incluye apoyo al cuidador.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [53, 54] }],
-      tags: ["MCI", "vejez"]
+      "correctIndex": 3,
+      "explanation": "El cuidado de la vejez se orienta a la funcionalidad y la calidad de vida, no solo a la supervivencia. También incluye apoyo al cuidador.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            53,
+            54
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "vejez"
+      ]
     },
     {
-      id: "card-mci-04-3",
-      topicId: "topic-mci-curso-vida",
-      sheetId: "sheet-mci-04",
-      type: "application",
-      prompt: "Un adulto con diabetes falta a sus controles porque trabaja en horario rotativo. ¿Qué ajuste es más coherente con el curso de vida y la continuidad?",
-      options: [
-        "Retirarlo del programa por inasistencia.",
-        "Repetir la misma indicación sin cambiar la organización de la atención.",
+      "id": "card-mci-04-3",
+      "topicId": "topic-mci-curso-vida",
+      "sheetId": "sheet-mci-04",
+      "type": "application",
+      "prompt": "Un adulto con diabetes falta a sus controles porque trabaja en horario rotativo. ¿Qué ajuste es más coherente con el curso de vida y la continuidad?",
+      "options": [
         "Ofrecer alternativas de seguimiento y ajustar el plan a su horario, manteniendo el control clínico.",
-        "Derivarlo al hospital y no volver a contactarlo."
+        "Derivarlo al hospital y no volver a contactarlo.",
+        "Retirarlo del programa por inasistencia.",
+        "Repetir la misma indicación sin cambiar la organización de la atención."
       ],
-      correctIndex: 2,
-      explanation: "La continuidad exige adaptar la organización del servicio a las condiciones de vida de la persona, sin abandonar el control clínico.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [52, 53] }],
-      tags: ["MCI", "adultez", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La continuidad exige adaptar la organización del servicio a las condiciones de vida de la persona, sin abandonar el control clínico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            52,
+            53
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "adultez",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-05-1",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-05",
-      type: "concept",
-      prompt: "¿Por qué el MCI considera a la familia sujeto y escenario de cuidado?",
-      answer: "Porque la familia es a la vez destinataria de intervenciones y el espacio donde ocurre gran parte del cuidado cotidiano. Puede proteger y sostener, pero también puede estar sobrecargada o ser fuente de riesgo; por eso se evalúa su dinámica, sus recursos y sus necesidades.",
-      explanation: "El cuidado es bidireccional: la persona cuida de sí misma, la familia cuida a sus integrantes y la comunidad cuida a las familias.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [51, 54, 55] }],
-      tags: ["MCI", "familia"]
+      "id": "card-mci-05-1",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-05",
+      "type": "concept",
+      "prompt": "¿Por qué el MCI considera a la familia sujeto y escenario de cuidado?",
+      "answer": "Porque la familia es a la vez destinataria de intervenciones y el espacio donde ocurre gran parte del cuidado cotidiano. Puede proteger y sostener, pero también puede estar sobrecargada o ser fuente de riesgo; por eso se evalúa su dinámica, sus recursos y sus necesidades.",
+      "explanation": "El cuidado es bidireccional: la persona cuida de sí misma, la familia cuida a sus integrantes y la comunidad cuida a las familias.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            51,
+            54,
+            55
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "familia"
+      ]
     },
     {
-      id: "card-mci-05-2",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-05",
-      type: "multiple",
-      prompt: "¿Cuál de las siguientes etapas del ciclo vital familiar se relaciona con la salida de los hijos del hogar?",
-      options: ["Formación", "Expansión", "Dispersión", "Contracción"],
-      correctIndex: 2,
-      explanation: "La dispersión ocurre cuando los hijos se independizan y la familia reorganiza sus roles. La contracción se asocia a etapas posteriores, envejecimiento y pérdidas.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [55, 56] }],
-      tags: ["MCI", "familia", "ciclo vital"]
+      "id": "card-mci-05-2",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-05",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes etapas del ciclo vital familiar se relaciona con la salida de los hijos del hogar?",
+      "options": [
+        "Expansión",
+        "Dispersión",
+        "Contracción",
+        "Formación"
+      ],
+      "correctIndex": 1,
+      "explanation": "La dispersión ocurre cuando los hijos se independizan y la familia reorganiza sus roles. La contracción se asocia a etapas posteriores, envejecimiento y pérdidas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            55,
+            56
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "familia",
+        "ciclo vital"
+      ]
     },
     {
-      id: "card-mci-05-3",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-05",
-      type: "application",
-      prompt: "Una cuidadora principal de una persona adulta mayor refiere cansancio, insomnio y aislamiento. ¿Qué lectura es más pertinente?",
-      options: [
+      "id": "card-mci-05-3",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-05",
+      "type": "application",
+      "prompt": "Una cuidadora principal de una persona adulta mayor refiere cansancio, insomnio y aislamiento. ¿Qué lectura es más pertinente?",
+      "options": [
         "Es un problema exclusivo de la persona mayor.",
         "La cuidadora no tiene voluntad para continuar.",
         "La sobrecarga del cuidador es un riesgo para la continuidad del cuidado y requiere apoyo.",
         "Se debe reemplazar a la cuidadora sin evaluar la situación."
       ],
-      correctIndex: 2,
-      explanation: "La sobrecarga del cuidador afecta su salud y la sostenibilidad del cuidado. Identificarla y ofrecer apoyo es parte del cuidado familiar.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [55, 56, 57] }],
-      tags: ["MCI", "cuidador", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La sobrecarga del cuidador afecta su salud y la sostenibilidad del cuidado. Identificarla y ofrecer apoyo es parte del cuidado familiar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            55,
+            56,
+            57
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "cuidador",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mci-06-1",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-06",
-      type: "concept",
-      prompt: "¿Qué aporta la Atención Primaria Orientada a la Comunidad (APOC) a la práctica del primer nivel?",
-      answer: "Combina la atención individual con una mirada poblacional y comunitaria. Permite identificar necesidades del territorio, planificar acciones para grupos y movilizar recursos, en lugar de limitarse a la demanda espontánea.",
-      explanation: "La APOC ayuda a pasar del consultorio a la comunidad sin abandonar la atención individual.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59] }],
-      tags: ["MCI", "APOC"]
+      "id": "card-mci-06-1",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-06",
+      "type": "concept",
+      "prompt": "¿Qué aporta la Atención Primaria Orientada a la Comunidad (APOC) a la práctica del primer nivel?",
+      "answer": "Combina la atención individual con una mirada poblacional y comunitaria. Permite identificar necesidades del territorio, planificar acciones para grupos y movilizar recursos, en lugar de limitarse a la demanda espontánea.",
+      "explanation": "La APOC ayuda a pasar del consultorio a la comunidad sin abandonar la atención individual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            58,
+            59
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "APOC"
+      ]
     },
     {
-      id: "card-mci-06-2",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-06",
-      type: "multiple",
-      prompt: "¿Qué caracteriza a una Red Integrada de Salud (RIS)?",
-      options: [
-        "Atiende solo a quienes llegan por emergencia.",
-        "Organiza servicios para una población y territorio definidos, con una cartera que responde a sus necesidades y articulación entre niveles.",
+      "id": "card-mci-06-2",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-06",
+      "type": "multiple",
+      "prompt": "¿Qué caracteriza a una Red Integrada de Salud (RIS)?",
+      "options": [
         "Se limita a un hospital de tercer nivel.",
-        "Funciona sin coordinación entre establecimientos."
+        "Funciona sin coordinación entre establecimientos.",
+        "Atiende solo a quienes llegan por emergencia.",
+        "Organiza servicios para una población y territorio definidos, con una cartera que responde a sus necesidades y articulación entre niveles."
       ],
-      correctIndex: 1,
-      explanation: "La RIS articula servicios para una población definida y rinde cuentas por resultados sanitarios y administrativos.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [60, 61] }],
-      tags: ["MCI", "RIS"]
+      "correctIndex": 3,
+      "explanation": "La RIS articula servicios para una población definida y rinde cuentas por resultados sanitarios y administrativos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            60,
+            61
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "RIS"
+      ]
     },
     {
-      id: "card-mci-06-3",
-      topicId: "topic-mci-familia-comunidad",
-      sheetId: "sheet-mci-06",
-      type: "application",
-      prompt: "En una comunidad aumentan los casos de violencia familiar. ¿Cuál es la respuesta más completa desde el MCI y la APOC?",
-      options: [
-        "Atender solo las lesiones físicas y no preguntar por el contexto.",
-        "Responsabilizar a las familias y no intervenir.",
+      "id": "card-mci-06-3",
+      "topicId": "topic-mci-familia-comunidad",
+      "sheetId": "sheet-mci-06",
+      "type": "application",
+      "prompt": "En una comunidad aumentan los casos de violencia familiar. ¿Cuál es la respuesta más completa desde el MCI y la APOC?",
+      "options": [
         "Articular detección, atención, protección y trabajo con redes locales e intersectoriales, sin limitarse a la consulta individual.",
-        "Derivar todos los casos al hospital sin coordinación local."
+        "Derivar todos los casos al hospital sin coordinación local.",
+        "Atender solo las lesiones físicas y no preguntar por el contexto.",
+        "Responsabilizar a las familias y no intervenir."
       ],
-      correctIndex: 2,
-      explanation: "La violencia requiere una respuesta articulada con protección, comunidad y otros sectores. El MCI y la APOC permiten leer el problema en el territorio y movilizar redes.",
-      sourceRefs: [{ sourceId: "src-mci", pages: [57, 58, 59, 61] }],
-      tags: ["MCI", "comunidad", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La violencia requiere una respuesta articulada con protección, comunidad y otros sectores. El MCI y la APOC permiten leer el problema en el territorio y movilizar redes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            58,
+            59,
+            61
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "comunidad",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-01-1",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-01",
-      type: "concept",
-      prompt: "Diferencia consumo de riesgo, consumo perjudicial y dependencia de alcohol.",
-      answer: "Consumo de riesgo: mayor probabilidad de consecuencias adversas, sin daño evidente todavía. Perjudicial: ya existen consecuencias físicas o mentales. Dependencia: patrón con deseo intenso, pérdida de control, prioridad del consumo, tolerancia y/o abstinencia.",
-      explanation: "Son categorías relacionadas, pero no equivalentes. El tamizaje ayuda a identificar probabilidad; el diagnóstico requiere evaluación clínica.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6, 7, 8] }],
-      tags: ["AUDIT", "conceptos"]
+      "id": "card-audit-01-1",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-01",
+      "type": "concept",
+      "prompt": "Diferencia consumo de riesgo, consumo perjudicial y dependencia de alcohol.",
+      "answer": "Consumo de riesgo: mayor probabilidad de consecuencias adversas, sin daño evidente todavía. Perjudicial: ya existen consecuencias físicas o mentales. Dependencia: patrón con deseo intenso, pérdida de control, prioridad del consumo, tolerancia y/o abstinencia.",
+      "explanation": "Son categorías relacionadas, pero no equivalentes. El tamizaje ayuda a identificar probabilidad; el diagnóstico requiere evaluación clínica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "conceptos"
+      ]
     },
     {
-      id: "card-audit-01-2",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-01",
-      type: "multiple",
-      prompt: "¿Qué caracteriza al consumo de riesgo?",
-      options: [
+      "id": "card-audit-01-2",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-01",
+      "type": "multiple",
+      "prompt": "¿Qué caracteriza al consumo de riesgo?",
+      "options": [
         "Siempre implica dependencia establecida.",
         "Aumenta la probabilidad de consecuencias adversas, aunque no necesariamente haya daño evidente.",
         "Solo existe cuando hay cirrosis.",
         "No requiere ninguna intervención."
       ],
-      correctIndex: 1,
-      explanation: "El consumo de riesgo se define por la probabilidad de consecuencias, no por la presencia de un daño ya establecido.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [5, 6] }],
-      tags: ["AUDIT", "consumo de riesgo"]
+      "correctIndex": 1,
+      "explanation": "El consumo de riesgo se define por la probabilidad de consecuencias, no por la presencia de un daño ya establecido.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "consumo de riesgo"
+      ]
     },
     {
-      id: "card-audit-01-3",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-01",
-      type: "application",
-      prompt: "Un servicio aplica el AUDIT solo a las personas que “parecen tener problemas con la bebida”. ¿Qué error es más probable?",
-      options: [
+      "id": "card-audit-01-3",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-01",
+      "type": "application",
+      "prompt": "Un servicio aplica el AUDIT solo a las personas que “parecen tener problemas con la bebida”. ¿Qué error es más probable?",
+      "options": [
+        "Reducir el tiempo de consulta.",
         "Detectar demasiados casos de bajo riesgo.",
         "Perder a muchas personas con consumo de riesgo que no parecen tener un problema evidente.",
-        "Aumentar la confidencialidad.",
-        "Reducir el tiempo de consulta."
+        "Aumentar la confidencialidad."
       ],
-      correctIndex: 1,
-      explanation: "El manual advierte que tamizar solo a quienes parecen tener un problema pierde a la mayoría de personas con consumo excesivo. El tamizaje debe integrarse de forma más amplia.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [15] }],
-      tags: ["AUDIT", "tamizaje", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "El manual advierte que tamizar solo a quienes parecen tener un problema pierde a la mayoría de personas con consumo excesivo. El tamizaje debe integrarse de forma más amplia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "tamizaje",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-02-1",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-02",
-      type: "concept",
-      prompt: "¿Qué exploran los tres dominios del AUDIT?",
-      answer: "Consumo (preguntas 1-3): frecuencia, cantidad y episodios intensos. Dependencia (4-6): control, interferencia y necesidad de beber. Consecuencias (7-10): culpa, lagunas, lesiones y preocupación de otras personas.",
-      explanation: "El AUDIT no solo mide cantidad. También explora señales de dependencia y daños asociados.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [18, 20] }],
-      tags: ["AUDIT", "dominios"]
+      "id": "card-audit-02-1",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-02",
+      "type": "concept",
+      "prompt": "¿Qué exploran los tres dominios del AUDIT?",
+      "answer": "Consumo (preguntas 1-3): frecuencia, cantidad y episodios intensos. Dependencia (4-6): control, interferencia y necesidad de beber. Consecuencias (7-10): culpa, lagunas, lesiones y preocupación de otras personas.",
+      "explanation": "El AUDIT no solo mide cantidad. También explora señales de dependencia y daños asociados.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            18,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "dominios"
+      ]
     },
     {
-      id: "card-audit-02-2",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-02",
-      type: "multiple",
-      prompt: "¿Qué es una consumición estándar en el marco del AUDIT?",
-      options: [
-        "Cualquier vaso servido en una reunión social.",
-        "Una medida aproximada de alcohol puro, que el manual sitúa alrededor de 10 gramos y que debe adaptarse a las bebidas locales.",
+      "id": "card-audit-02-2",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-02",
+      "type": "multiple",
+      "prompt": "¿Qué es una consumición estándar en el marco del AUDIT?",
+      "options": [
         "Una botella completa de cualquier bebida.",
-        "Solo la cantidad de alcohol que produce intoxicación."
+        "Solo la cantidad de alcohol que produce intoxicación.",
+        "Cualquier vaso servido en una reunión social.",
+        "Una medida aproximada de alcohol puro, que el manual sitúa alrededor de 10 gramos y que debe adaptarse a las bebidas locales."
       ],
-      correctIndex: 1,
-      explanation: "La consumición estándar permite comparar cantidades. Su equivalencia debe explicarse con ejemplos locales para evitar errores.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [16, 17] }],
-      tags: ["AUDIT", "consumición estándar"]
+      "correctIndex": 3,
+      "explanation": "La consumición estándar permite comparar cantidades. Su equivalencia debe explicarse con ejemplos locales para evitar errores.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "consumición estándar"
+      ]
     },
     {
-      id: "card-audit-02-3",
-      topicId: "topic-audit-conceptos",
-      sheetId: "sheet-audit-02",
-      type: "application",
-      prompt: "Una persona responde de forma ambigua a las preguntas sobre frecuencia y cantidad. ¿Cuál es la mejor conducta?",
-      options: [
-        "Elegir una respuesta al azar para completar el cuestionario.",
-        "Registrar solo el total sin explorar.",
+      "id": "card-audit-02-3",
+      "topicId": "topic-audit-conceptos",
+      "sheetId": "sheet-audit-02",
+      "type": "application",
+      "prompt": "Una persona responde de forma ambigua a las preguntas sobre frecuencia y cantidad. ¿Cuál es la mejor conducta?",
+      "options": [
         "Repetir la pregunta con las opciones de respuesta y pedir que elija la que mejor describa su consumo.",
-        "Suspender el tamizaje y no volver a preguntar."
+        "Suspender el tamizaje y no volver a preguntar.",
+        "Elegir una respuesta al azar para completar el cuestionario.",
+        "Registrar solo el total sin explorar."
       ],
-      correctIndex: 2,
-      explanation: "La entrevista permite aclarar respuestas ambiguas. Repetir la pregunta y las opciones mejora la calidad del dato.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [18, 19] }],
-      tags: ["AUDIT", "administración", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La entrevista permite aclarar respuestas ambiguas. Repetir la pregunta y las opciones mejora la calidad del dato.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "administración",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-03-1",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-03",
-      type: "concept",
-      prompt: "¿Cuál es el punto de corte general del AUDIT y qué ajuste se recomienda para mujeres y varones mayores de 65?",
-      answer: "El punto de corte general es 8. Para todas las mujeres y para varones mayores de 65 se recomienda reducirlo a 7, para aumentar la sensibilidad. La elección final debe considerar estándares locales y juicio clínico.",
-      explanation: "El corte no es universal: depende de la población y del objetivo del tamizaje. Un corte más bajo detecta más casos, con mayor probabilidad de falsos positivos.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [20] }],
-      tags: ["AUDIT", "puntuación"]
+      "id": "card-audit-03-1",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-03",
+      "type": "concept",
+      "prompt": "¿Cuál es el punto de corte general del AUDIT y qué ajuste se recomienda para mujeres y varones mayores de 65?",
+      "answer": "El punto de corte general es 8. Para todas las mujeres y para varones mayores de 65 se recomienda reducirlo a 7, para aumentar la sensibilidad. La elección final debe considerar estándares locales y juicio clínico.",
+      "explanation": "El corte no es universal: depende de la población y del objetivo del tamizaje. Un corte más bajo detecta más casos, con mayor probabilidad de falsos positivos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "puntuación"
+      ]
     },
     {
-      id: "card-audit-03-2",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-03",
-      type: "multiple",
-      prompt: "Una puntuación mayor que cero en las preguntas 4-6 del AUDIT sugiere principalmente:",
-      options: [
+      "id": "card-audit-03-2",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-03",
+      "type": "multiple",
+      "prompt": "Una puntuación mayor que cero en las preguntas 4-6 del AUDIT sugiere principalmente:",
+      "options": [
         "Consumo de bajo riesgo.",
         "Posible presencia o inicio de dependencia de alcohol.",
         "Consecuencias exclusivamente sociales.",
         "Que la persona nunca ha bebido."
       ],
-      correctIndex: 1,
-      explanation: "Las preguntas 4-6 exploran control, interferencia y necesidad de beber. Puntuaciones positivas, especialmente frecuentes, orientan a dependencia.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [20, 21] }],
-      tags: ["AUDIT", "dependencia"]
+      "correctIndex": 1,
+      "explanation": "Las preguntas 4-6 exploran control, interferencia y necesidad de beber. Puntuaciones positivas, especialmente frecuentes, orientan a dependencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "dependencia"
+      ]
     },
     {
-      id: "card-audit-03-3",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-03",
-      type: "application",
-      prompt: "Una persona obtiene 12 puntos en el AUDIT, pero responde afirmativamente a varios ítems de dependencia. ¿Qué conducta es más adecuada?",
-      options: [
+      "id": "card-audit-03-3",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-03",
+      "type": "application",
+      "prompt": "Una persona obtiene 12 puntos en el AUDIT, pero responde afirmativamente a varios ítems de dependencia. ¿Qué conducta es más adecuada?",
+      "options": [
         "Aplicar solo educación porque el total es menor de 16.",
         "Ignorar los ítems individuales y seguir la zona sin ajustes.",
         "Revisar los ítems de dependencia y considerar una intervención más intensa o evaluación adicional.",
         "Concluir que no hay riesgo porque el total es bajo."
       ],
-      correctIndex: 2,
-      explanation: "El manual señala que los ítems de dependencia pueden justificar el nivel máximo de intervención aunque el total no sea muy alto. La lectura es clínica.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [20, 23] }],
-      tags: ["AUDIT", "interpretación", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "El manual señala que los ítems de dependencia pueden justificar el nivel máximo de intervención aunque el total no sea muy alto. La lectura es clínica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            20,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "interpretación",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-04-1",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-04",
-      type: "concept",
-      prompt: "Describe las cuatro zonas de riesgo del AUDIT y la respuesta orientativa de cada una.",
-      answer: "Zona I (0-7): educación y bajo riesgo. Zona II (8-15): consejo simple y materiales. Zona III (16-19): terapia breve y monitorización continuada. Zona IV (20-40): derivación a especialista para evaluación diagnóstica y tratamiento.",
-      explanation: "Las zonas orientan la intensidad de la respuesta, pero no sustituyen la evaluación clínica ni los ítems individuales.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
-      tags: ["AUDIT", "zonas"]
+      "id": "card-audit-04-1",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-04",
+      "type": "concept",
+      "prompt": "Describe las cuatro zonas de riesgo del AUDIT y la respuesta orientativa de cada una.",
+      "answer": "Zona I (0-7): educación y bajo riesgo. Zona II (8-15): consejo simple y materiales. Zona III (16-19): terapia breve y monitorización continuada. Zona IV (20-40): derivación a especialista para evaluación diagnóstica y tratamiento.",
+      "explanation": "Las zonas orientan la intensidad de la respuesta, pero no sustituyen la evaluación clínica ni los ítems individuales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "zonas"
+      ]
     },
     {
-      id: "card-audit-04-2",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-04",
-      type: "multiple",
-      prompt: "Una puntuación de 10 en el AUDIT se ubica en la zona II. ¿Qué respuesta es más coherente?",
-      options: [
-        "Derivación inmediata a especialista.",
-        "Consejo simple, feedback y materiales educativos.",
+      "id": "card-audit-04-2",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-04",
+      "type": "multiple",
+      "prompt": "Una puntuación de 10 en el AUDIT se ubica en la zona II. ¿Qué respuesta es más coherente?",
+      "options": [
         "Ninguna intervención, porque no es dependencia.",
-        "Ingreso hospitalario."
+        "Ingreso hospitalario.",
+        "Derivación inmediata a especialista.",
+        "Consejo simple, feedback y materiales educativos."
       ],
-      correctIndex: 1,
-      explanation: "La zona II (8-15) se asocia con consejo simple y educación. La derivación especializada se reserva para puntuaciones más altas o señales de dependencia.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
-      tags: ["AUDIT", "zonas"]
+      "correctIndex": 3,
+      "explanation": "La zona II (8-15) se asocia con consejo simple y educación. La derivación especializada se reserva para puntuaciones más altas o señales de dependencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "zonas"
+      ]
     },
     {
-      id: "card-audit-04-3",
-      topicId: "topic-audit-aplicacion",
-      sheetId: "sheet-audit-04",
-      type: "application",
-      prompt: "Una persona obtiene 18 puntos, sin signos claros de dependencia. ¿Qué nivel de respuesta corresponde según las zonas?",
-      options: [
-        "Zona I: educación.",
-        "Zona II: consejo simple.",
+      "id": "card-audit-04-3",
+      "topicId": "topic-audit-aplicacion",
+      "sheetId": "sheet-audit-04",
+      "type": "application",
+      "prompt": "Una persona obtiene 18 puntos, sin signos claros de dependencia. ¿Qué nivel de respuesta corresponde según las zonas?",
+      "options": [
         "Zona III: consejo, terapia breve y monitorización continuada.",
-        "Zona IV: derivación inmediata."
+        "Zona IV: derivación inmediata.",
+        "Zona I: educación.",
+        "Zona II: consejo simple."
       ],
-      correctIndex: 2,
-      explanation: "18 puntos se ubican en la zona III (16-19), que sugiere terapia breve y seguimiento. Si no responde o se sospecha dependencia, se amplía la evaluación.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23] }],
-      tags: ["AUDIT", "zonas", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "18 puntos se ubican en la zona III (16-19), que sugiere terapia breve y seguimiento. Si no responde o se sospecha dependencia, se amplía la evaluación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "zonas",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-05-1",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-05",
-      type: "concept",
-      prompt: "¿Cuáles son los componentes principales de una intervención breve para consumo de riesgo?",
-      answer: "Feedback sobre el tamizaje, identificación de riesgos y consecuencias, consejo médico, solicitud de compromiso, definición de un objetivo (reducción o abstinencia) y seguimiento. Puede incluir educación, habilidades y sugerencias prácticas.",
-      explanation: "La intervención breve es de baja intensidad y busca intervenir temprano, antes de que el problema se consolide.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [23] }],
-      tags: ["AUDIT", "intervención breve"]
+      "id": "card-audit-05-1",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-05",
+      "type": "concept",
+      "prompt": "¿Cuáles son los componentes principales de una intervención breve para consumo de riesgo?",
+      "answer": "Feedback sobre el tamizaje, identificación de riesgos y consecuencias, consejo médico, solicitud de compromiso, definición de un objetivo (reducción o abstinencia) y seguimiento. Puede incluir educación, habilidades y sugerencias prácticas.",
+      "explanation": "La intervención breve es de baja intensidad y busca intervenir temprano, antes de que el problema se consolide.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "intervención breve"
+      ]
     },
     {
-      id: "card-audit-05-2",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-05",
-      type: "multiple",
-      prompt: "¿En qué grupo ha mostrado mayor utilidad la intervención breve?",
-      options: [
+      "id": "card-audit-05-2",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-05",
+      "type": "multiple",
+      "prompt": "¿En qué grupo ha mostrado mayor utilidad la intervención breve?",
+      "options": [
         "Personas con dependencia grave que requieren desintoxicación.",
         "Personas con consumo de riesgo o perjudicial que no son dependientes.",
         "Personas que nunca han consumido alcohol.",
         "Personas con intoxicación aguda en emergencia."
       ],
-      correctIndex: 1,
-      explanation: "La evidencia favorece la intervención breve en consumo de riesgo y perjudicial. La dependencia requiere evaluación y tratamiento más intensivo.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [23, 24] }],
-      tags: ["AUDIT", "intervención breve"]
+      "correctIndex": 1,
+      "explanation": "La evidencia favorece la intervención breve en consumo de riesgo y perjudicial. La dependencia requiere evaluación y tratamiento más intensivo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "intervención breve"
+      ]
     },
     {
-      id: "card-audit-05-3",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-05",
-      type: "application",
-      prompt: "Una persona con 24 puntos en el AUDIT y signos de dependencia recibe solo un folleto educativo. ¿Cuál es el problema principal?",
-      options: [
+      "id": "card-audit-05-3",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-05",
+      "type": "application",
+      "prompt": "Una persona con 24 puntos en el AUDIT y signos de dependencia recibe solo un folleto educativo. ¿Cuál es el problema principal?",
+      "options": [
+        "No hay problema, porque el AUDIT no es diagnóstico.",
         "La intervención es demasiado intensiva.",
         "Se está subestimando la necesidad de evaluación y tratamiento especializado.",
-        "El folleto es suficiente porque la persona no está intoxicada.",
-        "No hay problema, porque el AUDIT no es diagnóstico."
+        "El folleto es suficiente porque la persona no está intoxicada."
       ],
-      correctIndex: 1,
-      explanation: "Una puntuación alta con signos de dependencia requiere derivación y evaluación. La intervención breve no sustituye el tratamiento de la dependencia.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 23, 24] }],
-      tags: ["AUDIT", "derivación", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "Una puntuación alta con signos de dependencia requiere derivación y evaluación. La intervención breve no sustituye el tratamiento de la dependencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "derivación",
+        "aplicación"
+      ]
     },
     {
-      id: "card-audit-06-1",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-06",
-      type: "concept",
-      prompt: "¿Por qué el AUDIT no puede usarse como único método para diagnosticar dependencia?",
-      answer: "Porque es un instrumento de tamizaje: identifica probabilidad de consumo de riesgo, perjudicial o dependencia, pero no proporciona la base suficiente para un diagnóstico ni para un plan de tratamiento. El diagnóstico requiere evaluación clínica cualificada y criterios diagnósticos.",
-      explanation: "El manual insiste en que una puntuación positiva abre una ruta de evaluación, no cierra un diagnóstico.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25] }],
-      tags: ["AUDIT", "límites"]
+      "id": "card-audit-06-1",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-06",
+      "type": "concept",
+      "prompt": "¿Por qué el AUDIT no puede usarse como único método para diagnosticar dependencia?",
+      "answer": "Porque es un instrumento de tamizaje: identifica probabilidad de consumo de riesgo, perjudicial o dependencia, pero no proporciona la base suficiente para un diagnóstico ni para un plan de tratamiento. El diagnóstico requiere evaluación clínica cualificada y criterios diagnósticos.",
+      "explanation": "El manual insiste en que una puntuación positiva abre una ruta de evaluación, no cierra un diagnóstico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "límites"
+      ]
     },
     {
-      id: "card-audit-06-2",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-06",
-      type: "multiple",
-      prompt: "¿Por qué la suspensión brusca del alcohol puede ser riesgosa en una persona con dependencia?",
-      options: [
-        "Porque el alcohol no produce abstinencia.",
-        "Porque puede desencadenar un síndrome de abstinencia que requiere manejo médico.",
+      "id": "card-audit-06-2",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-06",
+      "type": "multiple",
+      "prompt": "¿Por qué la suspensión brusca del alcohol puede ser riesgosa en una persona con dependencia?",
+      "options": [
         "Porque el AUDIT deja de ser válido.",
-        "Porque siempre produce mejoría inmediata."
+        "Porque siempre produce mejoría inmediata.",
+        "Porque el alcohol no produce abstinencia.",
+        "Porque puede desencadenar un síndrome de abstinencia que requiere manejo médico."
       ],
-      correctIndex: 1,
-      explanation: "La dependencia puede cursar con abstinencia significativa. La desintoxicación debe evaluarse y manejarse con apoyo médico cuando corresponde.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [24, 25] }],
-      tags: ["AUDIT", "seguridad"]
+      "correctIndex": 3,
+      "explanation": "La dependencia puede cursar con abstinencia significativa. La desintoxicación debe evaluarse y manejarse con apoyo médico cuando corresponde.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "seguridad"
+      ]
     },
     {
-      id: "card-audit-06-3",
-      topicId: "topic-audit-intervencion",
-      sheetId: "sheet-audit-06",
-      type: "application",
-      prompt: "Un paciente obtiene 26 puntos en el AUDIT y refiere que «puede dejarlo solo». ¿Cuál es la conducta más segura?",
-      options: [
-        "Aceptar la afirmación y no ofrecer seguimiento.",
-        "Indicar suspensión abrupta sin control.",
+      "id": "card-audit-06-3",
+      "topicId": "topic-audit-intervencion",
+      "sheetId": "sheet-audit-06",
+      "type": "application",
+      "prompt": "Un paciente obtiene 26 puntos en el AUDIT y refiere que «puede dejarlo solo». ¿Cuál es la conducta más segura?",
+      "options": [
         "Reconocer su autonomía, ofrecer información y derivar para evaluación especializada, manteniendo seguimiento.",
-        "Aplicar solo educación y cerrar el caso."
+        "Aplicar solo educación y cerrar el caso.",
+        "Aceptar la afirmación y no ofrecer seguimiento.",
+        "Indicar suspensión abrupta sin control."
       ],
-      correctIndex: 2,
-      explanation: "La voluntad de la persona importa, pero una puntuación alta exige evaluación y seguimiento. La derivación debe acompañarse, no imponerse ni abandonarse.",
-      sourceRefs: [{ sourceId: "src-audit", pages: [22, 24, 25] }],
-      tags: ["AUDIT", "derivación", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La voluntad de la persona importa, pero una puntuación alta exige evaluación y seguimiento. La derivación debe acompañarse, no imponerse ni abandonarse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-audit",
+          "pages": [
+            22,
+            24,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "AUDIT",
+        "derivación",
+        "aplicación"
+      ]
     },
     {
-      id: "card-materna-01-1",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-01",
-      type: "concept",
-      prompt: "¿Cuál es el objetivo de la atención preconcepcional?",
-      answer: "Preparar a la persona y a su familia para un embarazo saludable, identificando riesgos y necesidades antes de la concepción. Incluye evaluación clínica, consejería, revisión de medicamentos y vacunas, promoción de hábitos saludables y suplementación con ácido fólico.",
-      explanation: "La preconcepción es una oportunidad de prevención y preparación, no un requisito administrativo para embarazarse.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }],
-      tags: ["Materna", "preconcepcional"]
+      "id": "card-materna-01-1",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-01",
+      "type": "concept",
+      "prompt": "¿Cuál es el objetivo de la atención preconcepcional?",
+      "answer": "Preparar a la persona y a su familia para un embarazo saludable, identificando riesgos y necesidades antes de la concepción. Incluye evaluación clínica, consejería, revisión de medicamentos y vacunas, promoción de hábitos saludables y suplementación con ácido fólico.",
+      "explanation": "La preconcepción es una oportunidad de prevención y preparación, no un requisito administrativo para embarazarse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "preconcepcional"
+      ]
     },
     {
-      id: "card-materna-01-2",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-01",
-      type: "multiple",
-      prompt: "¿Por qué se indica ácido fólico antes de la concepción?",
-      options: [
+      "id": "card-materna-01-2",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-01",
+      "type": "multiple",
+      "prompt": "¿Por qué se indica ácido fólico antes de la concepción?",
+      "options": [
         "Para tratar anemia en el embarazo.",
         "Para reducir el riesgo de defectos del tubo neural.",
         "Para prevenir diabetes gestacional.",
         "Para sustituir el control prenatal."
       ],
-      correctIndex: 1,
-      explanation: "La suplementación preconcepcional con ácido fólico reduce el riesgo de defectos del tubo neural. La dosis y duración siguen la norma y el criterio clínico.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9] }],
-      tags: ["Materna", "ácido fólico"]
+      "correctIndex": 1,
+      "explanation": "La suplementación preconcepcional con ácido fólico reduce el riesgo de defectos del tubo neural. La dosis y duración siguen la norma y el criterio clínico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "ácido fólico"
+      ]
     },
     {
-      id: "card-materna-01-3",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-01",
-      type: "application",
-      prompt: "Una persona con epilepsia en tratamiento desea embarazarse. ¿Qué respuesta es más completa?",
-      options: [
+      "id": "card-materna-01-3",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-01",
+      "type": "application",
+      "prompt": "Una persona con epilepsia en tratamiento desea embarazarse. ¿Qué respuesta es más completa?",
+      "options": [
         "Indicarle que suspenda todos los medicamentos por su cuenta.",
         "Decirle que no puede embarazarse.",
         "Realizar una evaluación preconcepcional, revisar el tratamiento con el especialista y planificar el control del embarazo.",
         "Iniciar control prenatal solo cuando tenga un retraso menstrual."
       ],
-      correctIndex: 2,
-      explanation: "La preconcepción permite ajustar el tratamiento y anticipar riesgos. La suspensión abrupta de medicamentos puede ser peligrosa.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [8, 9, 10] }],
-      tags: ["Materna", "preconcepcional", "aplicación"]
-    },
-    {
-      id: "card-materna-02-1",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-02",
-      type: "concept",
-      prompt: "¿Qué incluye la atención prenatal reenfocada y por qué no se limita a controles físicos?",
-      answer: "Incluye historia clínica, evaluación de riesgo, examen físico, controles de peso y presión, altura uterina, crecimiento fetal, laboratorio, suplementación, tamizajes, educación y consejería. También aborda el contexto familiar, los hábitos y los signos de alarma.",
-      explanation: "La atención prenatal reenfocada integra promoción, prevención y detección oportuna, con participación de la gestante y su familia.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [4, 11, 12, 13, 14] }],
-      tags: ["Materna", "prenatal"]
-    },
-    {
-      id: "card-materna-02-2",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-02",
-      type: "multiple",
-      prompt: "¿Cuál es el número mínimo de controles prenatales que establece la norma para un embarazo de bajo riesgo?",
-      options: ["Tres", "Cuatro", "Seis", "Doce"],
-      correctIndex: 2,
-      explanation: "La norma establece un mínimo de seis controles prenatales, con distribución según edad gestacional y riesgo.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [11, 12] }],
-      tags: ["Materna", "control prenatal"]
-    },
-    {
-      id: "card-materna-02-3",
-      topicId: "topic-materna-prenatal",
-      sheetId: "sheet-materna-02",
-      type: "application",
-      prompt: "Una gestante de 34 semanas refiere cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta es más adecuada?",
-      options: [
-        "Indicarle reposo y control en una semana.",
-        "Darle un analgésico y enviarla a casa.",
-        "Activar atención inmediata, evaluar emergencia hipertensiva y coordinar referencia según la clave correspondiente.",
-        "Esperar a que cumpla 37 semanas."
+      "correctIndex": 2,
+      "explanation": "La preconcepción permite ajustar el tratamiento y anticipar riesgos. La suspensión abrupta de medicamentos puede ser peligrosa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            8,
+            9,
+            10
+          ]
+        }
       ],
-      correctIndex: 2,
-      explanation: "Cefalea intensa, visión borrosa e hipertensión son signos de alarma. Requieren evaluación y manejo inmediato, no espera.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [14, 15, 21] }],
-      tags: ["Materna", "alarma", "aplicación"]
+      "tags": [
+        "Materna",
+        "preconcepcional",
+        "aplicación"
+      ]
     },
     {
-      id: "card-materna-03-1",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-03",
-      type: "concept",
-      prompt: "¿Qué es el plan de parto y cuándo debe construirse?",
-      answer: "Es una herramienta de preparación que define el lugar de parto, la ruta y el transporte, el acompañante, los recursos y las señales para acudir. Se construye durante la gestación, en los controles prenatales, no cuando el trabajo de parto ya comenzó.",
-      explanation: "Planificar reduce demoras y facilita la llegada oportuna al establecimiento adecuado.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [6, 16, 17] }],
-      tags: ["Materna", "plan de parto"]
+      "id": "card-materna-02-1",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-02",
+      "type": "concept",
+      "prompt": "¿Qué incluye la atención prenatal reenfocada y por qué no se limita a controles físicos?",
+      "answer": "Incluye historia clínica, evaluación de riesgo, examen físico, controles de peso y presión, altura uterina, crecimiento fetal, laboratorio, suplementación, tamizajes, educación y consejería. También aborda el contexto familiar, los hábitos y los signos de alarma.",
+      "explanation": "La atención prenatal reenfocada integra promoción, prevención y detección oportuna, con participación de la gestante y su familia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            4,
+            11,
+            12,
+            13,
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "prenatal"
+      ]
     },
     {
-      id: "card-materna-03-2",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-03",
-      type: "multiple",
-      prompt: "¿Qué describe mejor el parto vertical?",
-      options: [
+      "id": "card-materna-02-2",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-02",
+      "type": "multiple",
+      "prompt": "¿Cuál es el número mínimo de controles prenatales que establece la norma para un embarazo de bajo riesgo?",
+      "options": [
+        "Doce",
+        "Tres",
+        "Cuatro",
+        "Seis"
+      ],
+      "correctIndex": 3,
+      "explanation": "La norma establece un mínimo de seis controles prenatales, con distribución según edad gestacional y riesgo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            11,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "control prenatal"
+      ]
+    },
+    {
+      "id": "card-materna-02-3",
+      "topicId": "topic-materna-prenatal",
+      "sheetId": "sheet-materna-02",
+      "type": "application",
+      "prompt": "Una gestante de 34 semanas refiere cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta es más adecuada?",
+      "options": [
+        "Activar atención inmediata, evaluar emergencia hipertensiva y coordinar referencia según la clave correspondiente.",
+        "Esperar a que cumpla 37 semanas.",
+        "Indicarle reposo y control en una semana.",
+        "Darle un analgésico y enviarla a casa."
+      ],
+      "correctIndex": 0,
+      "explanation": "Cefalea intensa, visión borrosa e hipertensión son signos de alarma. Requieren evaluación y manejo inmediato, no espera.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            14,
+            15,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "alarma",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-materna-03-1",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-03",
+      "type": "concept",
+      "prompt": "¿Qué es el plan de parto y cuándo debe construirse?",
+      "answer": "Es una herramienta de preparación que define el lugar de parto, la ruta y el transporte, el acompañante, los recursos y las señales para acudir. Se construye durante la gestación, en los controles prenatales, no cuando el trabajo de parto ya comenzó.",
+      "explanation": "Planificar reduce demoras y facilita la llegada oportuna al establecimiento adecuado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            6,
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "plan de parto"
+      ]
+    },
+    {
+      "id": "card-materna-03-2",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-03",
+      "type": "multiple",
+      "prompt": "¿Qué describe mejor el parto vertical?",
+      "options": [
         "Un parto que ocurre fuera del establecimiento de salud.",
         "Una posición elegida por la gestante, con apoyo, en la que puede estar de pie, sentada, en cuclillas o de rodillas.",
         "Una cesárea programada.",
         "Un parto sin atención profesional."
       ],
-      correctIndex: 1,
-      explanation: "El parto vertical es una opción de posición, no un parto extrahospitalario. Debe ofrecerse con condiciones seguras y respeto por la elección informada.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [17, 18] }],
-      tags: ["Materna", "parto vertical"]
+      "correctIndex": 1,
+      "explanation": "El parto vertical es una opción de posición, no un parto extrahospitalario. Debe ofrecerse con condiciones seguras y respeto por la elección informada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            17,
+            18
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "parto vertical"
+      ]
     },
     {
-      id: "card-materna-03-3",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-03",
-      type: "application",
-      prompt: "Una gestante de 38 semanas vive lejos y no tiene transporte disponible. ¿Qué elemento del plan de parto es prioritario revisar?",
-      options: [
+      "id": "card-materna-03-3",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-03",
+      "type": "application",
+      "prompt": "Una gestante de 38 semanas vive lejos y no tiene transporte disponible. ¿Qué elemento del plan de parto es prioritario revisar?",
+      "options": [
+        "La fecha exacta del alta.",
         "El color de la habitación.",
         "La ruta, el medio de transporte y el contacto para acudir oportunamente.",
-        "El sexo del bebé.",
-        "La fecha exacta del alta."
+        "El sexo del bebé."
       ],
-      correctIndex: 1,
-      explanation: "El plan de parto debe resolver cómo llegará la persona al establecimiento. Sin transporte, la planificación no es operativa.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [6, 16, 17] }],
-      tags: ["Materna", "plan de parto", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "El plan de parto debe resolver cómo llegará la persona al establecimiento. Sin transporte, la planificación no es operativa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            6,
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "plan de parto",
+        "aplicación"
+      ]
     },
     {
-      id: "card-materna-04-1",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-04",
-      type: "concept",
-      prompt: "¿Qué son las claves de emergencia obstétrica y para qué sirven?",
-      answer: "Son señales de activación que organizan la respuesta inmediata ante emergencias obstétricas. La clave roja corresponde a hemorragia, la azul a emergencia hipertensiva y la amarilla a infección o sepsis. No sustituyen las guías clínicas: movilizan recursos y coordinan la atención y la referencia.",
-      explanation: "La clave es una forma de estandarizar la respuesta y reducir demoras, no un diagnóstico completo.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 17, 21] }],
-      tags: ["Materna", "emergencias"]
+      "id": "card-materna-04-1",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-04",
+      "type": "concept",
+      "prompt": "¿Qué son las claves de emergencia obstétrica y para qué sirven?",
+      "answer": "Son señales de activación que organizan la respuesta inmediata ante emergencias obstétricas. La clave roja corresponde a hemorragia, la azul a emergencia hipertensiva y la amarilla a infección o sepsis. No sustituyen las guías clínicas: movilizan recursos y coordinan la atención y la referencia.",
+      "explanation": "La clave es una forma de estandarizar la respuesta y reducir demoras, no un diagnóstico completo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            5,
+            16,
+            17,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "emergencias"
+      ]
     },
     {
-      id: "card-materna-04-2",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-04",
-      type: "multiple",
-      prompt: "¿A qué problema corresponde la clave roja?",
-      options: ["Infección puerperal", "Hemorragia obstétrica", "Emergencia hipertensiva", "Trabajo de parto normal"],
-      correctIndex: 1,
-      explanation: "La clave roja se activa ante hemorragia obstétrica, una emergencia que requiere control del sangrado, estabilización y referencia oportuna.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [5, 21] }],
-      tags: ["Materna", "clave roja"]
+      "id": "card-materna-04-2",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-04",
+      "type": "multiple",
+      "prompt": "¿A qué problema corresponde la clave roja?",
+      "options": [
+        "Emergencia hipertensiva",
+        "Trabajo de parto normal",
+        "Infección puerperal",
+        "Hemorragia obstétrica"
+      ],
+      "correctIndex": 3,
+      "explanation": "La clave roja se activa ante hemorragia obstétrica, una emergencia que requiere control del sangrado, estabilización y referencia oportuna.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            5,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "clave roja"
+      ]
     },
     {
-      id: "card-materna-04-3",
-      topicId: "topic-materna-parto",
-      sheetId: "sheet-materna-04",
-      type: "application",
-      prompt: "Una puérpera presenta sangrado abundante y signos de shock. ¿Cuál es la secuencia más adecuada?",
-      options: [
-        "Esperar a que el sangrado disminuya y luego evaluar.",
+      "id": "card-materna-04-3",
+      "topicId": "topic-materna-parto",
+      "sheetId": "sheet-materna-04",
+      "type": "application",
+      "prompt": "Una puérpera presenta sangrado abundante y signos de shock. ¿Cuál es la secuencia más adecuada?",
+      "options": [
         "Activar clave roja, iniciar estabilización según protocolo y coordinar referencia inmediata.",
         "Darle de alta con control ambulatorio.",
-        "Aplicar solo un analgésico y observarla."
+        "Aplicar solo un analgésico y observarla.",
+        "Esperar a que el sangrado disminuya y luego evaluar."
       ],
-      correctIndex: 1,
-      explanation: "La hemorragia obstétrica es una emergencia. La clave roja organiza la respuesta inmediata, la estabilización y la referencia.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [5, 16, 21] }],
-      tags: ["Materna", "hemorragia", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La hemorragia obstétrica es una emergencia. La clave roja organiza la respuesta inmediata, la estabilización y la referencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            5,
+            16,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "hemorragia",
+        "aplicación"
+      ]
     },
     {
-      id: "card-materna-05-1",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-05",
-      type: "concept",
-      prompt: "¿Qué es el puerperio y qué se vigila en la madre?",
-      answer: "Es el periodo posterior al parto en el que la madre se recupera; convencionalmente se extiende hasta los 42 días. Se vigilan sangrado, involución uterina, presión arterial, signos de infección, estado de la herida, dolor, lactancia y bienestar emocional.",
-      explanation: "Las complicaciones pueden aparecer después del alta, por eso el control y la educación sobre signos de alarma son esenciales.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22, 23] }],
-      tags: ["Materna", "puerperio"]
+      "id": "card-materna-05-1",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-05",
+      "type": "concept",
+      "prompt": "¿Qué es el puerperio y qué se vigila en la madre?",
+      "answer": "Es el periodo posterior al parto en el que la madre se recupera; convencionalmente se extiende hasta los 42 días. Se vigilan sangrado, involución uterina, presión arterial, signos de infección, estado de la herida, dolor, lactancia y bienestar emocional.",
+      "explanation": "Las complicaciones pueden aparecer después del alta, por eso el control y la educación sobre signos de alarma son esenciales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            4,
+            21,
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "puerperio"
+      ]
     },
     {
-      id: "card-materna-05-2",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-05",
-      type: "multiple",
-      prompt: "¿Qué es el alojamiento conjunto?",
-      options: [
+      "id": "card-materna-05-2",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-05",
+      "type": "multiple",
+      "prompt": "¿Qué es el alojamiento conjunto?",
+      "options": [
         "Separar a la madre y al recién nacido para descanso.",
         "Mantener a la madre y al recién nacido juntos, favoreciendo contacto, lactancia y aprendizaje de cuidados.",
         "Un espacio exclusivo para cesáreas.",
         "Una consulta externa de puerperio."
       ],
-      correctIndex: 1,
-      explanation: "El alojamiento conjunto mantiene juntos a madre y recién nacido, con adaptación a las condiciones clínicas y respeto por la privacidad.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [4, 21, 22] }],
-      tags: ["Materna", "alojamiento conjunto"]
+      "correctIndex": 1,
+      "explanation": "El alojamiento conjunto mantiene juntos a madre y recién nacido, con adaptación a las condiciones clínicas y respeto por la privacidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            4,
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "alojamiento conjunto"
+      ]
     },
     {
-      id: "card-materna-05-3",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-05",
-      type: "application",
-      prompt: "Una puérpera de 5 días consulta por cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta corresponde?",
-      options: [
+      "id": "card-materna-05-3",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-05",
+      "type": "application",
+      "prompt": "Una puérpera de 5 días consulta por cefalea intensa, visión borrosa y presión arterial elevada. ¿Qué conducta corresponde?",
+      "options": [
+        "Suspender la lactancia.",
         "Indicar analgesia y control en una semana.",
         "Considerar signo de alarma, evaluar emergencia hipertensiva y actuar de inmediato.",
-        "Atribuirlo al cansancio y enviarla a casa.",
-        "Suspender la lactancia."
+        "Atribuirlo al cansancio y enviarla a casa."
       ],
-      correctIndex: 1,
-      explanation: "La hipertensión con cefalea y visión borrosa en el puerperio es un signo de alarma. Requiere evaluación inmediata y manejo según el caso.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [14, 21, 22] }],
-      tags: ["Materna", "puerperio", "alarma", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La hipertensión con cefalea y visión borrosa en el puerperio es un signo de alarma. Requiere evaluación inmediata y manejo según el caso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            14,
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "puerperio",
+        "alarma",
+        "aplicación"
+      ]
     },
     {
-      id: "card-materna-06-1",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-06",
-      type: "concept",
-      prompt: "¿Qué papel cumple la visita domiciliaria en el puerperio?",
-      answer: "Acerca el cuidado cuando la persona no puede acudir, falta a un control o requiere evaluar el entorno familiar. Permite valorar recuperación, lactancia, bienestar emocional, signos de alarma y condiciones de vida, y debe planificarse y registrarse.",
-      explanation: "La visita domiciliaria no es una intromisión: es una estrategia de continuidad cuando el acceso es difícil o el riesgo lo justifica.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [7, 23, 24] }],
-      tags: ["Materna", "visita domiciliaria"]
+      "id": "card-materna-06-1",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-06",
+      "type": "concept",
+      "prompt": "¿Qué papel cumple la visita domiciliaria en el puerperio?",
+      "answer": "Acerca el cuidado cuando la persona no puede acudir, falta a un control o requiere evaluar el entorno familiar. Permite valorar recuperación, lactancia, bienestar emocional, signos de alarma y condiciones de vida, y debe planificarse y registrarse.",
+      "explanation": "La visita domiciliaria no es una intromisión: es una estrategia de continuidad cuando el acceso es difícil o el riesgo lo justifica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            7,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "visita domiciliaria"
+      ]
     },
     {
-      id: "card-materna-06-2",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-06",
-      type: "multiple",
-      prompt: "¿Qué alimentación se recomienda de forma exclusiva en los primeros meses?",
-      options: ["Fórmula artificial", "Lactancia materna exclusiva", "Agua y jugos", "Papillas desde el primer día"],
-      correctIndex: 1,
-      explanation: "La lactancia materna exclusiva es la alimentación recomendada en los primeros meses, con apoyo práctico a la madre.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [22, 23] }],
-      tags: ["Materna", "lactancia"]
+      "id": "card-materna-06-2",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-06",
+      "type": "multiple",
+      "prompt": "¿Qué alimentación se recomienda de forma exclusiva en los primeros meses?",
+      "options": [
+        "Agua y jugos",
+        "Papillas desde el primer día",
+        "Fórmula artificial",
+        "Lactancia materna exclusiva"
+      ],
+      "correctIndex": 3,
+      "explanation": "La lactancia materna exclusiva es la alimentación recomendada en los primeros meses, con apoyo práctico a la madre.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "lactancia"
+      ]
     },
     {
-      id: "card-materna-06-3",
-      topicId: "topic-materna-puerperio",
-      sheetId: "sheet-materna-06",
-      type: "application",
-      prompt: "Una puérpera no asiste a su control de la primera semana y no responde a llamadas. ¿Qué respuesta es más coherente con la continuidad?",
-      options: [
-        "Cerrar el caso por inasistencia.",
-        "Esperar a que vuelva por su cuenta.",
+      "id": "card-materna-06-3",
+      "topicId": "topic-materna-puerperio",
+      "sheetId": "sheet-materna-06",
+      "type": "application",
+      "prompt": "Una puérpera no asiste a su control de la primera semana y no responde a llamadas. ¿Qué respuesta es más coherente con la continuidad?",
+      "options": [
         "Intentar contacto por otros medios y activar visita domiciliaria o búsqueda en la red, según el riesgo.",
-        "Enviar una carta con la próxima cita."
+        "Enviar una carta con la próxima cita.",
+        "Cerrar el caso por inasistencia.",
+        "Esperar a que vuelva por su cuenta."
       ],
-      correctIndex: 2,
-      explanation: "La inasistencia puede ocultar una complicación o una barrera de acceso. La continuidad exige buscar activamente a la persona.",
-      sourceRefs: [{ sourceId: "src-materna", pages: [7, 23, 24] }],
-      tags: ["Materna", "seguimiento", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La inasistencia puede ocultar una complicación o una barrera de acceso. La continuidad exige buscar activamente a la persona.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-materna",
+          "pages": [
+            7,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Materna",
+        "seguimiento",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-01-1",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-01",
-      type: "concept",
-      prompt: "¿Qué es la continuidad de cuidados en salud mental comunitaria?",
-      answer: "Es un proceso de atención continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, con participación activa de la persona y su cuidador. Implica articulación entre establecimientos y componentes clínicos, psicosociales y de gestión.",
-      explanation: "No es una suma de consultas aisladas: es un proceso que sostiene el cuidado en el tiempo y en el territorio.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4] }],
-      tags: ["Continuidad", "concepto"]
+      "id": "card-mental-01-1",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-01",
+      "type": "concept",
+      "prompt": "¿Qué es la continuidad de cuidados en salud mental comunitaria?",
+      "answer": "Es un proceso de atención continuo, intensivo y personalizado para personas con trastorno mental grave o problemas psicosociales de riesgo, con participación activa de la persona y su cuidador. Implica articulación entre establecimientos y componentes clínicos, psicosociales y de gestión.",
+      "explanation": "No es una suma de consultas aisladas: es un proceso que sostiene el cuidado en el tiempo y en el territorio.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "concepto"
+      ]
     },
     {
-      id: "card-mental-01-2",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-01",
-      type: "multiple",
-      prompt: "¿Qué componente de la continuidad incluye familia, trabajo, relaciones y funcionamiento en la comunidad?",
-      options: ["Componente clínico", "Componente psicosocial", "Componente de gestión", "Componente administrativo"],
-      correctIndex: 1,
-      explanation: "El componente psicosocial aborda la vida cotidiana, los vínculos, el trabajo y la participación en la comunidad.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4] }],
-      tags: ["Continuidad", "componentes"]
+      "id": "card-mental-01-2",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-01",
+      "type": "multiple",
+      "prompt": "¿Qué componente de la continuidad incluye familia, trabajo, relaciones y funcionamiento en la comunidad?",
+      "options": [
+        "Componente clínico",
+        "Componente psicosocial",
+        "Componente de gestión",
+        "Componente administrativo"
+      ],
+      "correctIndex": 1,
+      "explanation": "El componente psicosocial aborda la vida cotidiana, los vínculos, el trabajo y la participación en la comunidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "componentes"
+      ]
     },
     {
-      id: "card-mental-01-3",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-01",
-      type: "application",
-      prompt: "Una persona con trastorno mental grave falta repetidamente a sus citas. ¿Qué lectura es más coherente con la continuidad de cuidados?",
-      options: [
+      "id": "card-mental-01-3",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-01",
+      "type": "application",
+      "prompt": "Una persona con trastorno mental grave falta repetidamente a sus citas. ¿Qué lectura es más coherente con la continuidad de cuidados?",
+      "options": [
+        "Se debe suspender el tratamiento.",
         "Es una falta de interés y debe cerrarse el caso.",
         "Puede haber barreras, pérdida de vínculo o riesgo; hay que buscar a la persona y revisar el plan.",
-        "La continuidad solo depende de la asistencia a consulta.",
-        "Se debe suspender el tratamiento."
+        "La continuidad solo depende de la asistencia a consulta."
       ],
-      correctIndex: 1,
-      explanation: "La continuidad no se limita a la asistencia. La inasistencia puede ser una señal de alarma o una barrera que el equipo debe abordar.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [3, 4, 8] }],
-      tags: ["Continuidad", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La continuidad no se limita a la asistencia. La inasistencia puede ser una señal de alarma o una barrera que el equipo debe abordar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            3,
+            4,
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-02-1",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-02",
-      type: "concept",
-      prompt: "¿Cuál es la función del gestor de cuidados en la continuidad?",
-      answer: "Es el profesional del equipo interdisciplinario que asume la dirección del cuidado de la persona asignada: realiza la evaluación inicial, elabora el PCCl con la persona y el equipo, coordina las intervenciones, mantiene contacto con la persona y su cuidador y hace seguimiento.",
-      explanation: "El gestor no trabaja solo: articula con el equipo, la familia, la comunidad y la red de servicios.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [8, 9, 10] }],
-      tags: ["Continuidad", "roles"]
+      "id": "card-mental-02-1",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-02",
+      "type": "concept",
+      "prompt": "¿Cuál es la función del gestor de cuidados en la continuidad?",
+      "answer": "Es el profesional del equipo interdisciplinario que asume la dirección del cuidado de la persona asignada: realiza la evaluación inicial, elabora el PCCl con la persona y el equipo, coordina las intervenciones, mantiene contacto con la persona y su cuidador y hace seguimiento.",
+      "explanation": "El gestor no trabaja solo: articula con el equipo, la familia, la comunidad y la red de servicios.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            8,
+            9,
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "roles"
+      ]
     },
     {
-      id: "card-mental-02-2",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-02",
-      type: "multiple",
-      prompt: "¿Qué profesional suele asumir la coordinación de la continuidad en el CSMC?",
-      options: [
-        "Cualquier persona administrativa sin formación en salud.",
-        "Un profesional de enfermería con especialidad o competencias en salud mental.",
+      "id": "card-mental-02-2",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-02",
+      "type": "multiple",
+      "prompt": "¿Qué profesional suele asumir la coordinación de la continuidad en el CSMC?",
+      "options": [
         "El familiar de la persona usuaria.",
-        "Un representante de la comunidad sin vínculo con el servicio."
+        "Un representante de la comunidad sin vínculo con el servicio.",
+        "Cualquier persona administrativa sin formación en salud.",
+        "Un profesional de enfermería con especialidad o competencias en salud mental."
       ],
-      correctIndex: 1,
-      explanation: "La guía señala a enfermería con especialidad en salud mental o, en su defecto, con competencias en salud mental.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [9] }],
-      tags: ["Continuidad", "coordinación"]
+      "correctIndex": 3,
+      "explanation": "La guía señala a enfermería con especialidad en salud mental o, en su defecto, con competencias en salud mental.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "coordinación"
+      ]
     },
     {
-      id: "card-mental-02-3",
-      topicId: "topic-mental-continuidad",
-      sheetId: "sheet-mental-02",
-      type: "application",
-      prompt: "Un gestor de cuidados tiene asignadas 20 personas usuarias y no logra sostener el seguimiento. ¿Qué decisión es más coherente con la guía?",
-      options: [
-        "Aumentar la carga porque la continuidad es intensiva.",
+      "id": "card-mental-02-3",
+      "topicId": "topic-mental-continuidad",
+      "sheetId": "sheet-mental-02",
+      "type": "application",
+      "prompt": "Un gestor de cuidados tiene asignadas 20 personas usuarias y no logra sostener el seguimiento. ¿Qué decisión es más coherente con la guía?",
+      "options": [
         "Revisar la asignación para que el número permita un seguimiento real, considerando el máximo de 15 personas por gestor.",
         "Suspender las reuniones de equipo.",
-        "Delegar el seguimiento a la familia sin apoyo."
+        "Delegar el seguimiento a la familia sin apoyo.",
+        "Aumentar la carga porque la continuidad es intensiva."
       ],
-      correctIndex: 1,
-      explanation: "La guía menciona un máximo de 15 personas usuarias por gestor para permitir un seguimiento real. La continuidad requiere condiciones de trabajo adecuadas.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [19] }],
-      tags: ["Continuidad", "organización", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "La guía menciona un máximo de 15 personas usuarias por gestor para permitir un seguimiento real. La continuidad requiere condiciones de trabajo adecuadas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "organización",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-03-1",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-03",
-      type: "concept",
-      prompt: "¿Cuáles son los cuatro criterios de derivación a continuidad y cuántos deben cumplirse?",
-      answer: "Evolución desfavorable del proceso de recuperación; escasa o nula adherencia al tratamiento integral; apoyo sociofamiliar desfavorable o nulo; y ser víctima de violencia o maltrato infantil con un trastorno mental. Se requieren al menos dos de los cuatro.",
-      explanation: "La derivación se basa en una evaluación integral, no en un diagnóstico aislado ni en una impresión subjetiva.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [13] }],
-      tags: ["Continuidad", "derivación"]
+      "id": "card-mental-03-1",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-03",
+      "type": "concept",
+      "prompt": "¿Cuáles son los cuatro criterios de derivación a continuidad y cuántos deben cumplirse?",
+      "answer": "Evolución desfavorable del proceso de recuperación; escasa o nula adherencia al tratamiento integral; apoyo sociofamiliar desfavorable o nulo; y ser víctima de violencia o maltrato infantil con un trastorno mental. Se requieren al menos dos de los cuatro.",
+      "explanation": "La derivación se basa en una evaluación integral, no en un diagnóstico aislado ni en una impresión subjetiva.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "derivación"
+      ]
     },
     {
-      id: "card-mental-03-2",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-03",
-      type: "multiple",
-      prompt: "¿Qué instrumento se usa para evaluar funcionalidad familiar en adultos?",
-      options: ["HoNOS", "Apgar familiar", "Morisky y Green", "Zarit"],
-      correctIndex: 1,
-      explanation: "El Apgar familiar evalúa la percepción de funcionalidad familiar. HoNOS evalúa funcionamiento y salud; Morisky y Green, adherencia; Zarit, sobrecarga del cuidador.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [14, 15, 17] }],
-      tags: ["Continuidad", "evaluación"]
+      "id": "card-mental-03-2",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-03",
+      "type": "multiple",
+      "prompt": "¿Qué instrumento se usa para evaluar funcionalidad familiar en adultos?",
+      "options": [
+        "HoNOS",
+        "Apgar familiar",
+        "Morisky y Green",
+        "Zarit"
+      ],
+      "correctIndex": 1,
+      "explanation": "El Apgar familiar evalúa la percepción de funcionalidad familiar. HoNOS evalúa funcionamiento y salud; Morisky y Green, adherencia; Zarit, sobrecarga del cuidador.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            14,
+            15,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "evaluación"
+      ]
     },
     {
-      id: "card-mental-03-3",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-03",
-      type: "application",
-      prompt: "Durante la evaluación de ingreso se detecta que una persona es víctima de violencia con riesgo para su vida. ¿Qué prioridad corresponde?",
-      options: [
+      "id": "card-mental-03-3",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-03",
+      "type": "application",
+      "prompt": "Durante la evaluación de ingreso se detecta que una persona es víctima de violencia con riesgo para su vida. ¿Qué prioridad corresponde?",
+      "options": [
+        "Esperar a que la persona lo decida sin ofrecer alternativas.",
         "Completar primero todas las escalas y luego actuar.",
         "Activar la ruta de protección y derivación inmediata según el riesgo, sin postergar la seguridad.",
-        "Continuar el plan habitual porque la violencia no forma parte de la evaluación.",
-        "Esperar a que la persona lo decida sin ofrecer alternativas."
+        "Continuar el plan habitual porque la violencia no forma parte de la evaluación."
       ],
-      correctIndex: 1,
-      explanation: "La seguridad es prioritaria. La evaluación de riesgo activa rutas de protección y coordinación con servicios competentes.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [16, 19] }],
-      tags: ["Continuidad", "riesgo", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La seguridad es prioritaria. La evaluación de riesgo activa rutas de protección y coordinación con servicios competentes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            16,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "riesgo",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-04-1",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-04",
-      type: "concept",
-      prompt: "¿Qué elementos debe contener un Plan de Continuidad de Cuidados Individualizado (PCCl)?",
-      answer: "Necesidades y problemas, potencialidades, objetivos, actividades, responsables y evaluación (cumplido, en proceso o no cumplido). Se elabora con la persona, el equipo interdisciplinario y su cuidador, e incluye prevención de crisis cuando corresponde.",
-      explanation: "El PCCl es un acuerdo de trabajo, no una lista de indicaciones. Debe ser comprensible y relevante para el proyecto de vida de la persona.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [5, 6, 20, 21] }],
-      tags: ["Continuidad", "PCCl"]
+      "id": "card-mental-04-1",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-04",
+      "type": "concept",
+      "prompt": "¿Qué elementos debe contener un Plan de Continuidad de Cuidados Individualizado (PCCl)?",
+      "answer": "Necesidades y problemas, potencialidades, objetivos, actividades, responsables y evaluación (cumplido, en proceso o no cumplido). Se elabora con la persona, el equipo interdisciplinario y su cuidador, e incluye prevención de crisis cuando corresponde.",
+      "explanation": "El PCCl es un acuerdo de trabajo, no una lista de indicaciones. Debe ser comprensible y relevante para el proyecto de vida de la persona.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            5,
+            6,
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "PCCl"
+      ]
     },
     {
-      id: "card-mental-04-2",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-04",
-      type: "multiple",
-      prompt: "¿Con qué frecuencia se revisa y actualiza el PCCl, según la guía?",
-      options: ["Cada 6 meses", "Cada 15 días", "Solo al alta", "Una vez al año"],
-      correctIndex: 1,
-      explanation: "El gestor de cuidados revisa y actualiza el PCCl cada 15 días, según necesidad, coordinando con el equipo tratante.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [6] }],
-      tags: ["Continuidad", "PCCl"]
+      "id": "card-mental-04-2",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-04",
+      "type": "multiple",
+      "prompt": "¿Con qué frecuencia se revisa y actualiza el PCCl, según la guía?",
+      "options": [
+        "Solo al alta",
+        "Una vez al año",
+        "Cada 6 meses",
+        "Cada 15 días"
+      ],
+      "correctIndex": 3,
+      "explanation": "El gestor de cuidados revisa y actualiza el PCCl cada 15 días, según necesidad, coordinando con el equipo tratante.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "PCCl"
+      ]
     },
     {
-      id: "card-mental-04-3",
-      topicId: "topic-mental-plan",
-      sheetId: "sheet-mental-04",
-      type: "application",
-      prompt: "El PCCl de una persona no está logrando sus objetivos y la persona dice que no se siente escuchada. ¿Qué conducta es más adecuada?",
-      options: [
-        "Mantener el plan sin cambios para no perder continuidad.",
+      "id": "card-mental-04-3",
+      "topicId": "topic-mental-plan",
+      "sheetId": "sheet-mental-04",
+      "type": "application",
+      "prompt": "El PCCl de una persona no está logrando sus objetivos y la persona dice que no se siente escuchada. ¿Qué conducta es más adecuada?",
+      "options": [
         "Revisar el plan con la persona y el equipo, ajustar objetivos y actividades y registrar los acuerdos.",
         "Cerrar el caso por falta de colaboración.",
-        "Aumentar la medicación sin evaluar el plan."
+        "Aumentar la medicación sin evaluar el plan.",
+        "Mantener el plan sin cambios para no perder continuidad."
       ],
-      correctIndex: 1,
-      explanation: "El PCCl es un proceso revisable. La falta de avance exige revisar la situación, escuchar a la persona y ajustar el plan.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [6, 20, 21] }],
-      tags: ["Continuidad", "PCCl", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "El PCCl es un proceso revisable. La falta de avance exige revisar la situación, escuchar a la persona y ajustar el plan.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            6,
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "PCCl",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-05-1",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-05",
-      type: "concept",
-      prompt: "¿Qué son las redes comunitarias de salud mental y cómo se visualizan?",
-      answer: "Son el conjunto de relaciones e intercambios alrededor de la persona y su entorno, que pueden ofrecer apoyo, pertenencia y recursos. Se identifican con la persona y se plasman en un ecomapa, que muestra vínculos y recursos disponibles.",
-      explanation: "Las redes incluyen amistades y vecinos, grupos y organizaciones, e instituciones de protección y servicios.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [7, 67] }],
-      tags: ["Continuidad", "redes"]
+      "id": "card-mental-05-1",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-05",
+      "type": "concept",
+      "prompt": "¿Qué son las redes comunitarias de salud mental y cómo se visualizan?",
+      "answer": "Son el conjunto de relaciones e intercambios alrededor de la persona y su entorno, que pueden ofrecer apoyo, pertenencia y recursos. Se identifican con la persona y se plasman en un ecomapa, que muestra vínculos y recursos disponibles.",
+      "explanation": "Las redes incluyen amistades y vecinos, grupos y organizaciones, e instituciones de protección y servicios.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            7,
+            67
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "redes"
+      ]
     },
     {
-      id: "card-mental-05-2",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-05",
-      type: "multiple",
-      prompt: "¿Cuál es un ejemplo de red comunitaria terciaria?",
-      options: ["Un vecino que acompaña a la persona.", "Un grupo recreativo del barrio.", "La DEMUNA o una comisaría.", "Una amistad cercana."],
-      correctIndex: 2,
-      explanation: "Las redes terciarias incluyen instituciones y organizaciones como DEMUNA, comisaría, CEM, ONG u OMAPED. Las primarias son amistades y vecinos; las secundarias, grupos y organizaciones sociales.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [7] }],
-      tags: ["Continuidad", "redes"]
+      "id": "card-mental-05-2",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-05",
+      "type": "multiple",
+      "prompt": "¿Cuál es un ejemplo de red comunitaria terciaria?",
+      "options": [
+        "Un grupo recreativo del barrio.",
+        "La DEMUNA o una comisaría.",
+        "Una amistad cercana.",
+        "Un vecino que acompaña a la persona."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las redes terciarias incluyen instituciones y organizaciones como DEMUNA, comisaría, CEM, ONG u OMAPED. Las primarias son amistades y vecinos; las secundarias, grupos y organizaciones sociales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "redes"
+      ]
     },
     {
-      id: "card-mental-05-3",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-05",
-      type: "application",
-      prompt: "Una persona usuaria está aislada y refiere no tener a nadie. ¿Cuál es el primer paso para movilizar redes?",
-      options: [
+      "id": "card-mental-05-3",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-05",
+      "type": "application",
+      "prompt": "Una persona usuaria está aislada y refiere no tener a nadie. ¿Cuál es el primer paso para movilizar redes?",
+      "options": [
+        "Concluir que no es posible continuar el cuidado.",
         "Imponerle actividades grupales sin explorar su historia.",
         "Identificar con ella y su cuidador las relaciones y recursos presentes en sus entornos, y construir un ecomapa.",
-        "Derivarla a una institución sin consentimiento.",
-        "Concluir que no es posible continuar el cuidado."
+        "Derivarla a una institución sin consentimiento."
       ],
-      correctIndex: 1,
-      explanation: "La movilización comienza por identificar redes significativas con la persona. Luego se facilita el acercamiento, con consentimiento y acompañamiento.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [22, 67] }],
-      tags: ["Continuidad", "redes", "aplicación"]
+      "correctIndex": 2,
+      "explanation": "La movilización comienza por identificar redes significativas con la persona. Luego se facilita el acercamiento, con consentimiento y acompañamiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            22,
+            67
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "redes",
+        "aplicación"
+      ]
     },
     {
-      id: "card-mental-06-1",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-06",
-      type: "concept",
-      prompt: "¿Qué tipos de alta contempla la guía de continuidad?",
-      answer: "Alta por recuperación, alta voluntaria, alta por abandono y alta por traslado. Todas se registran en la historia clínica y en el padrón nominal.",
-      explanation: "El alta se decide en una reunión con el equipo, la persona y su cuidador. No es un acto administrativo aislado.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [23] }],
-      tags: ["Continuidad", "alta"]
+      "id": "card-mental-06-1",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-06",
+      "type": "concept",
+      "prompt": "¿Qué tipos de alta contempla la guía de continuidad?",
+      "answer": "Alta por recuperación, alta voluntaria, alta por abandono y alta por traslado. Todas se registran en la historia clínica y en el padrón nominal.",
+      "explanation": "El alta se decide en una reunión con el equipo, la persona y su cuidador. No es un acto administrativo aislado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "alta"
+      ]
     },
     {
-      id: "card-mental-06-2",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-06",
-      type: "multiple",
-      prompt: "¿Qué seguimiento se realiza después del alta, según la guía?",
-      options: [
-        "Ninguno, el caso se cierra definitivamente.",
-        "Contacto a los 2 y 4 meses mediante telemonitoreo, visitas u otras intervenciones según valoración.",
+      "id": "card-mental-06-2",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-06",
+      "type": "multiple",
+      "prompt": "¿Qué seguimiento se realiza después del alta, según la guía?",
+      "options": [
         "Solo una llamada al año.",
-        "Únicamente control administrativo."
+        "Únicamente control administrativo.",
+        "Ninguno, el caso se cierra definitivamente.",
+        "Contacto a los 2 y 4 meses mediante telemonitoreo, visitas u otras intervenciones según valoración."
       ],
-      correctIndex: 1,
-      explanation: "La guía indica seguimiento post-alta a los 2 y 4 meses, según valoración del equipo y necesidad de la persona.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [23] }],
-      tags: ["Continuidad", "alta"]
+      "correctIndex": 3,
+      "explanation": "La guía indica seguimiento post-alta a los 2 y 4 meses, según valoración del equipo y necesidad de la persona.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "alta"
+      ]
     },
     {
-      id: "card-mental-06-3",
-      topicId: "topic-mental-articulacion",
-      sheetId: "sheet-mental-06",
-      type: "application",
-      prompt: "Una persona dada de alta presenta una recaída y vuelve a cumplir los criterios de derivación. ¿Qué corresponde?",
-      options: [
-        "Negar el reingreso porque ya tuvo alta.",
+      "id": "card-mental-06-3",
+      "topicId": "topic-mental-articulacion",
+      "sheetId": "sheet-mental-06",
+      "type": "application",
+      "prompt": "Una persona dada de alta presenta una recaída y vuelve a cumplir los criterios de derivación. ¿Qué corresponde?",
+      "options": [
         "Evaluarla como un nuevo ingreso y registrar el reingreso en el padrón nominal.",
         "Enviarla a otro servicio sin evaluación.",
-        "Mantenerla fuera del programa hasta el próximo año."
+        "Mantenerla fuera del programa hasta el próximo año.",
+        "Negar el reingreso porque ya tuvo alta."
       ],
-      correctIndex: 1,
-      explanation: "El reingreso se evalúa como un nuevo ingreso y se registra. La recaída es una oportunidad para revisar el plan y reforzar apoyos, no un fracaso.",
-      sourceRefs: [{ sourceId: "src-mental", pages: [24] }],
-      tags: ["Continuidad", "reingreso", "aplicación"]
+      "correctIndex": 0,
+      "explanation": "El reingreso se evalúa como un nuevo ingreso y se registra. La recaída es una oportunidad para revisar el plan y reforzar apoyos, no un fracaso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mental",
+          "pages": [
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Continuidad",
+        "reingreso",
+        "aplicación"
+      ]
     },
+    {
+      "id": "card-adulto-01-1",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la población objetivo del cuidado integral de la persona adulta?",
+      "answer": "Las personas desde los 30 años hasta los 59 años, 11 meses y 29 días.",
+      "explanation": "La norma separa esta etapa de la adultez mayor. El límite superior es preciso: 59 años, 11 meses y 29 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            18
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "población"
+      ]
+    },
+    {
+      "id": "card-adulto-01-2",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "multiple",
+      "prompt": "¿En cuál de estas situaciones se puede captar a una persona adulta para el CISPA?",
+      "options": [
+        "Solo cuando el establecimiento la cita por carta.",
+        "Cuando acude a consulta, acompaña a otro usuario o llega referida por un agente comunitario.",
+        "Solo cuando tiene un seguro vigente.",
+        "Solo cuando acude por una enfermedad crónica."
+      ],
+      "correctIndex": 1,
+      "explanation": "La captación ocurre en cualquier contacto, independientemente del motivo y de la modalidad. Después se ofrece el paquete y se concierta una cita.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "captación"
+      ]
+    },
+    {
+      "id": "card-adulto-01-3",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-01",
+      "type": "application",
+      "prompt": "Una mujer de 58 años llega al establecimiento solo para acompañar a su madre. No refiere síntomas. ¿Qué debería hacer el equipo?",
+      "options": [
+        "Esperar a que cumpla 60 años para incluirla.",
+        "No hacer nada porque no es la paciente de la consulta.",
+        "Identificarla, ofrecerle el paquete de cuidado integral y concertar una cita.",
+        "Enviarla a emergencia por protocolo."
+      ],
+      "correctIndex": 2,
+      "explanation": "El acompañamiento es una oportunidad de captación. La persona está dentro del rango etario y puede iniciar su cuidado integral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            18,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "captación"
+      ]
+    },
+    {
+      "id": "card-adulto-02-1",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "concept",
+      "prompt": "¿Qué documentos mínimos requiere toda persona adulta atendida?",
+      "answer": "Historia clínica individual y ficha familiar, además del carnet de cuidado integral de salud.",
+      "explanation": "La historia clínica y la ficha familiar permiten el cuidado individual y el abordaje del contexto familiar. El carnet identifica a la persona dentro del CISPA.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "admisión"
+      ]
+    },
+    {
+      "id": "card-adulto-02-2",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "multiple",
+      "prompt": "¿Qué se evalúa en el triage de la persona adulta?",
+      "options": [
+        "Únicamente los antecedentes familiares.",
+        "Solo la glucosa capilar.",
+        "Solo el motivo de consulta y la presión arterial.",
+        "Signos de alarma, medidas antropométricas, signos vitales y cálculo del IMC."
+      ],
+      "correctIndex": 3,
+      "explanation": "El triage busca signos de alarma y establece prioridades de atención. También incluye antropometría, presión arterial, frecuencia cardiaca y respiratoria, y cálculo del IMC.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "triage"
+      ]
+    },
+    {
+      "id": "card-adulto-02-3",
+      "topicId": "topic-adulto-cuidado",
+      "sheetId": "sheet-adulto-02",
+      "type": "application",
+      "prompt": "Una persona sin seguro llega por primera vez. El establecimiento no cuenta con su IAFAS. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Afiliarla al SIS, abrir su historia clínica y orientar el flujo de atención.",
+        "Enviarla a otra región.",
+        "Registrarla solo en un cuaderno, sin historia clínica.",
+        "Negar la atención hasta que regularice su seguro."
+      ],
+      "correctIndex": 0,
+      "explanation": "La admisión debe afiliar al SIS a quien no tiene seguro y garantizar el registro y la orientación dentro del establecimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "admisión"
+      ]
+    },
+    {
+      "id": "card-adulto-03-1",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "concept",
+      "prompt": "¿Con qué frecuencia se realiza la evaluación integral de la persona adulta?",
+      "answer": "Una vez al año, priorizando los factores de riesgo de enfermedades no transmisibles y la salud mental.",
+      "explanation": "La evaluación anual organiza el paquete y permite detectar cambios en el riesgo. No se espera a que aparezcan síntomas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "evaluación"
+      ]
+    },
+    {
+      "id": "card-adulto-03-2",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "multiple",
+      "prompt": "¿Qué mide el perímetro abdominal en la evaluación del adulto?",
+      "options": [
+        "Solo la estatura.",
+        "El riesgo relacionado con diabetes tipo 2, hipertensión y enfermedad cardiovascular.",
+        "La saturación de oxígeno.",
+        "La agudeza visual."
+      ],
+      "correctIndex": 1,
+      "explanation": "El perímetro abdominal se interpreta junto con el IMC y otros factores para estimar riesgo cardiometabólico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "riesgo cardiometabólico"
+      ]
+    },
+    {
+      "id": "card-adulto-03-3",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-03",
+      "type": "application",
+      "prompt": "El establecimiento no puede procesar perfil lipídico. Una persona tiene indicación de tamizaje. ¿Qué corresponde?",
+      "options": [
+        "Reemplazar el perfil lipídico por una radiografía de tórax.",
+        "Omitir el tamizaje y no registrar nada.",
+        "Referir al siguiente nivel para la medición y continuar el cuidado.",
+        "Dar tratamiento sin resultado."
+      ],
+      "correctIndex": 2,
+      "explanation": "Si no hay capacidad para el perfil lipídico, la norma indica referir al siguiente nivel. La falta de recurso local no elimina la necesidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "referencia"
+      ]
+    },
+    {
+      "id": "card-adulto-04-1",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "concept",
+      "prompt": "¿Cuántas veces al año se brindan las actividades de promoción y con qué intervalo mínimo?",
+      "answer": "Dos veces al año, con un intervalo no menor de tres meses.",
+      "explanation": "La frecuencia busca sostener el proceso educativo, no cumplir una actividad aislada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "promoción"
+      ]
+    },
+    {
+      "id": "card-adulto-04-2",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "multiple",
+      "prompt": "¿Cuántas visitas familiares integrales al año contempla el paquete?",
+      "options": [
+        "Doce.",
+        "Una.",
+        "Dos.",
+        "Cuatro."
+      ],
+      "correctIndex": 3,
+      "explanation": "La norma establece cuatro visitas familiares integrales por año y la evaluación de la familia con llenado del PAIFAM.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "visita familiar"
+      ]
+    },
+    {
+      "id": "card-adulto-04-3",
+      "topicId": "topic-adulto-evaluacion",
+      "sheetId": "sheet-adulto-04",
+      "type": "application",
+      "prompt": "Un establecimiento I-2 detecta que una persona necesita una prestación que no está en su paquete priorizado. ¿Qué hacer?",
+      "options": [
+        "Registrar la necesidad y coordinar la referencia para que reciba la prestación.",
+        "Sustituirla por una charla.",
+        "Esperar a que el establecimiento cambie de categoría.",
+        "Decirle que no le corresponde por categoría."
+      ],
+      "correctIndex": 0,
+      "explanation": "La capacidad resolutiva organiza la oferta, pero una necesidad detectada debe cerrarse con referencia y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            37,
+            40
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "paquete"
+      ]
+    },
+    {
+      "id": "card-adulto-05-1",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "concept",
+      "prompt": "¿Qué métodos contempla el tamizaje de cáncer de cuello uterino?",
+      "answer": "Prueba de VPH, inspección visual con ácido acético (IVAA) y Papanicolaou.",
+      "explanation": "La norma incluye las tres alternativas. La elección depende de la disponibilidad y de la norma específica vigente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "cáncer"
+      ]
+    },
+    {
+      "id": "card-adulto-05-2",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "multiple",
+      "prompt": "¿Qué combina el tamizaje de cáncer de próstata?",
+      "options": [
+        "Solo PSA.",
+        "Evaluación médica, palpación digital y PSA.",
+        "Solo ecografía.",
+        "Solo tacto rectal."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma describe una evaluación médica que incluye examen físico con palpación digital y dosaje de PSA.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "próstata"
+      ]
+    },
+    {
+      "id": "card-adulto-05-3",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-05",
+      "type": "application",
+      "prompt": "Una persona tiene sangre oculta en heces positiva. ¿Cuál es la interpretación correcta?",
+      "options": [
+        "Debe repetirse cada semana de por vida.",
+        "Ya tiene cáncer de colon confirmado.",
+        "Es un tamizaje positivo que requiere confirmación y derivación oportuna.",
+        "No requiere ninguna acción."
+      ],
+      "correctIndex": 2,
+      "explanation": "El tamizaje detecta riesgo, no confirma cáncer. Un resultado positivo debe cerrarse con evaluación y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "cáncer"
+      ]
+    },
+    {
+      "id": "card-adulto-06-1",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "concept",
+      "prompt": "¿Qué instrumentos incluye el tamizaje de salud mental del adulto?",
+      "answer": "PHQ-9 para depresión, AUDIT para consumo de alcohol y drogas, y tamizaje de violencia.",
+      "explanation": "El paquete busca detectar depresión, consumo perjudicial y violencia. Los resultados se integran a la entrevista clínica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "salud mental"
+      ]
+    },
+    {
+      "id": "card-adulto-06-2",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "multiple",
+      "prompt": "¿Qué actitud es correcta al indagar por violencia en la consulta?",
+      "options": [
+        "Evitar el tema para no incomodar.",
+        "Concluir que no hay violencia si la persona no la menciona.",
+        "Preguntar frente a la pareja para confirmar la versión.",
+        "Asegurar privacidad, escuchar sin juzgar y no presionar."
+      ],
+      "correctIndex": 3,
+      "explanation": "La seguridad y la confidencialidad son condiciones para preguntar. Un tamizaje negativo no descarta violencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "violencia"
+      ]
+    },
+    {
+      "id": "card-adulto-06-3",
+      "topicId": "topic-adulto-riesgos",
+      "sheetId": "sheet-adulto-06",
+      "type": "application",
+      "prompt": "Un adulto mayor con diabetes responde el PHQ-9 con 12 puntos. ¿Qué significa ese resultado?",
+      "options": [
+        "Es un tamizaje positivo que debe confirmarse con CIE-10 y evaluación clínica.",
+        "No requiere evaluación porque el puntaje es bajo.",
+        "Debe recibir un antidepresivo de inmediato.",
+        "Tiene depresión severa confirmada."
+      ],
+      "correctIndex": 0,
+      "explanation": "El PHQ-9 es un tamizaje. Un puntaje de 12 es positivo y orienta a confirmar el episodio y graduar la severidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "PHQ-9"
+      ]
+    },
+    {
+      "id": "card-adulto-07-1",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "concept",
+      "prompt": "¿Qué es la contrarreferencia?",
+      "answer": "Es la devolución del caso al establecimiento de origen con información sobre hallazgos, tratamiento y plan de seguimiento.",
+      "explanation": "La contrarreferencia cierra el circuito y permite que el primer nivel retome el cuidado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            40
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "contrarreferencia"
+      ]
+    },
+    {
+      "id": "card-adulto-07-2",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es una modalidad de atención del CISPA?",
+      "options": [
+        "Solo la consulta presencial en el establecimiento.",
+        "Oferta fija, oferta móvil y telesalud.",
+        "Únicamente la atención por emergencia.",
+        "Solo la visita domiciliaria."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma reconoce las tres modalidades y las combina según el territorio y las necesidades de la persona.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "modalidades"
+      ]
+    },
+    {
+      "id": "card-adulto-07-3",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-07",
+      "type": "application",
+      "prompt": "Una persona atendida en el hospital por una complicación vuelve a su centro de salud. No hay informe de contrarreferencia. ¿Qué corresponde?",
+      "options": [
+        "Cerrar la historia clínica.",
+        "Reiniciar todo desde cero sin buscar información.",
+        "Solicitar el informe, registrar lo ocurrido y retomar el plan de cuidado.",
+        "Derivarla otra vez al hospital sin motivo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La continuidad exige recuperar la información y retomar el cuidado. La ausencia de contrarreferencia es una barrera que debe corregirse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            40,
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "continuidad"
+      ]
+    },
+    {
+      "id": "card-adulto-08-1",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "concept",
+      "prompt": "¿Qué diferencia el paquete priorizado del paquete completo?",
+      "answer": "El priorizado se brinda en establecimientos I-1 e I-2 según capacidad resolutiva; el completo, en I-3 e I-4 y niveles II y III.",
+      "explanation": "La categoría del establecimiento define la oferta, pero no elimina la obligación de referir lo que no se puede resolver.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "gestión"
+      ]
+    },
+    {
+      "id": "card-adulto-08-2",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "multiple",
+      "prompt": "¿Cómo se financia el cuidado integral del adulto?",
+      "options": [
+        "Únicamente con pago directo del usuario.",
+        "Solo con recursos municipales.",
+        "Solo con donaciones.",
+        "Con las IAFAS, el SIS y el presupuesto institucional, en el marco del aseguramiento universal."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las IAFAS financian las prestaciones; el SIS cubre a quien no tiene otro seguro y las actividades se incorporan al plan operativo institucional.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            40
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "financiamiento"
+      ]
+    },
+    {
+      "id": "card-adulto-08-3",
+      "topicId": "topic-adulto-continuidad",
+      "sheetId": "sheet-adulto-08",
+      "type": "application",
+      "prompt": "El equipo detecta que muchas personas captadas no vuelven a sus controles. ¿Qué acción fortalece la continuidad?",
+      "options": [
+        "Usar el registro y la sectorización para buscar activamente a las personas y reprogramar.",
+        "Esperar que regresen por iniciativa propia.",
+        "Suspender el paquete preventivo.",
+        "Eliminar el registro de citas."
+      ],
+      "correctIndex": 0,
+      "explanation": "La sectorización y el registro permiten identificar a las personas con riesgo o controles pendientes y actuar sobre las barreras de acceso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adulto",
+          "pages": [
+            21,
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Adulto",
+        "aplicación",
+        "continuidad"
+      ]
+    },
+    {
+      "id": "card-depresion-01-1",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son los grupos prioritarios para el tamizaje de depresión?",
+      "answer": "Adultos mayores, personas con enfermedades crónicas y mujeres en periodo de periparto.",
+      "explanation": "La GPC concentra el tamizaje en estos grupos, además de las personas con síntomas que no cumplen criterios de episodio.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "tamizaje"
+      ]
+    },
+    {
+      "id": "card-depresion-01-2",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "multiple",
+      "prompt": "¿Qué puntaje de PHQ-9 se considera positivo para el tamizaje?",
+      "options": [
+        "5 o más.",
+        "10 o más.",
+        "15 o más.",
+        "20 o más."
+      ],
+      "correctIndex": 1,
+      "explanation": "La GPC establece el punto de corte en 10 o más. Luego se confirma el episodio con CIE-10.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "PHQ-9"
+      ]
+    },
+    {
+      "id": "card-depresion-01-3",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-01",
+      "type": "application",
+      "prompt": "Una mujer en periparto obtiene 9 puntos en el PHQ-9. ¿Qué conducta es coherente con la GPC?",
+      "options": [
+        "Diagnosticar depresión leve y iniciar ISRS.",
+        "Considerar el tamizaje negativo y evaluar clínicamente si hay síntomas.",
+        "Referir de inmediato al psiquiatra.",
+        "Repetir el test hasta que supere 10."
+      ],
+      "correctIndex": 1,
+      "explanation": "Con el umbral de la GPC, 9 es negativo. Sin embargo, la evaluación clínica y el seguimiento siguen siendo necesarios si hay síntomas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "PHQ-9"
+      ]
+    },
+    {
+      "id": "card-depresion-02-1",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "concept",
+      "prompt": "¿Cuánto duran como mínimo los síntomas de una hipomanía y de una manía?",
+      "answer": "La hipomanía, cuatro días o más; la manía, una semana o más.",
+      "explanation": "La duración es una pista clave para diferenciar ambos episodios y sospechar depresión bipolar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "bipolaridad"
+      ]
+    },
+    {
+      "id": "card-depresion-02-2",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "multiple",
+      "prompt": "¿Qué se recomienda antes de iniciar tratamiento en un episodio depresivo confirmado?",
+      "options": [
+        "Solicitar una resonancia magnética a todas las personas.",
+        "Iniciar un ISRS sin más evaluación.",
+        "Descartar depresión bipolar.",
+        "Indicar terapia electroconvulsiva."
+      ],
+      "correctIndex": 2,
+      "explanation": "La sospecha de bipolaridad debe evaluarse antes de tratar, porque la monoterapia con antidepresivos puede empeorar el curso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "bipolaridad"
+      ]
+    },
+    {
+      "id": "card-depresion-02-3",
+      "topicId": "topic-depresion-tamizaje",
+      "sheetId": "sheet-depresion-02",
+      "type": "application",
+      "prompt": "Una persona con depresión refiere que hace meses tuvo una semana de euforia, poco sueño y actividad excesiva. ¿Qué corresponde?",
+      "options": [
+        "Aumentar la dosis del antidepresivo.",
+        "Diagnosticar trastorno de ansiedad.",
+        "Ignorar el dato porque ya pasó.",
+        "Sospechar depresión bipolar y referir al psiquiatra."
+      ],
+      "correctIndex": 3,
+      "explanation": "El antecedente de manía o hipomanía cambia el diagnóstico y el tratamiento. La derivación al psiquiatra es la conducta indicada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "bipolaridad"
+      ]
+    },
+    {
+      "id": "card-depresion-03-1",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "concept",
+      "prompt": "¿Cuántos síntomas como mínimo exige el CIE-10 para un episodio depresivo?",
+      "answer": "Al menos cuatro de los diez síntomas, incluyendo dos síntomas característicos, durante al menos dos semanas.",
+      "explanation": "Los característicos son ánimo deprimido, pérdida de interés o placer, y disminución de energía o fatigabilidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "CIE-10"
+      ]
+    },
+    {
+      "id": "card-depresion-03-2",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "multiple",
+      "prompt": "Un PHQ-9 de 17 en una persona con episodio confirmado corresponde a:",
+      "options": [
+        "Episodio moderado.",
+        "Episodio severo.",
+        "Tamizaje negativo.",
+        "Episodio leve."
+      ],
+      "correctIndex": 0,
+      "explanation": "La banda 15 a 19 corresponde a episodio moderado. En ese caso se recomienda referir al psiquiatra.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "severidad"
+      ]
+    },
+    {
+      "id": "card-depresion-03-3",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-03",
+      "type": "application",
+      "prompt": "Una persona tiene ánimo triste y anhedonia, pero solo dos síntomas en total y duración de cinco días. ¿Qué corresponde?",
+      "options": [
+        "Diagnosticar episodio depresivo leve.",
+        "No cumple criterios de episodio depresivo; evaluar otras causas y seguimiento.",
+        "Iniciar psicoterapia de 20 sesiones.",
+        "Referir a emergencia psiquiátrica de inmediato."
+      ],
+      "correctIndex": 1,
+      "explanation": "Faltan la duración mínima y el número total de síntomas. No se confirma un episodio depresivo con esos datos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-depresion-04-1",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "concept",
+      "prompt": "¿Qué severidades de depresión requieren referencia al psiquiatra?",
+      "answer": "El episodio moderado y el severo.",
+      "explanation": "El episodio leve puede manejarse en el primer nivel; el moderado o severo requiere evaluación especializada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "derivación"
+      ]
+    },
+    {
+      "id": "card-depresion-04-2",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "multiple",
+      "prompt": "¿Cuál de estas situaciones NO corresponde manejar inicialmente en el primer nivel?",
+      "options": [
+        "PHQ-9 de 12 sin criterios de gravedad.",
+        "Episodio depresivo leve sin riesgo.",
+        "Sospecha de depresión bipolar.",
+        "Persona con síntomas leves que prefiere psicoterapia."
+      ],
+      "correctIndex": 2,
+      "explanation": "La sospecha de bipolaridad exige evaluación psiquiátrica para diagnóstico y manejo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "derivación"
+      ]
+    },
+    {
+      "id": "card-depresion-04-3",
+      "topicId": "topic-depresion-diagnostico",
+      "sheetId": "sheet-depresion-04",
+      "type": "application",
+      "prompt": "Una persona con depresión leve menciona querer morir y tener un plan. ¿Cuál es la prioridad?",
+      "options": [
+        "Aumentar el ejercicio a 60 minutos diarios.",
+        "Esperar la sexta sesión para reevaluar.",
+        "Continuar la psicoterapia semanal sin cambios.",
+        "Valorar el riesgo de forma urgente y activar la ruta de seguridad y derivación."
+      ],
+      "correctIndex": 3,
+      "explanation": "La ideación con plan es una señal de riesgo que no puede esperar el curso habitual del tratamiento. La seguridad es prioritaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "riesgo suicida"
+      ]
+    },
+    {
+      "id": "card-depresion-05-1",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "concept",
+      "prompt": "¿Cuál es la psicoterapia de primera elección para el episodio depresivo leve?",
+      "answer": "La terapia cognitivo-conductual. Si no está disponible, la terapia de resolución de problemas.",
+      "explanation": "La TCC tiene recomendación fuerte. La resolución de problemas es la alternativa condicional cuando no hay TCC.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "psicoterapia"
+      ]
+    },
+    {
+      "id": "card-depresion-05-2",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "multiple",
+      "prompt": "¿Cuál es la duración habitual de la psicoterapia en el episodio leve?",
+      "options": [
+        "8 a 20 sesiones, una o dos veces por semana.",
+        "Una sesión única.",
+        "Siempre 52 sesiones.",
+        "2 a 4 sesiones."
+      ],
+      "correctIndex": 0,
+      "explanation": "La GPC establece de 8 a 20 sesiones con frecuencia de una a dos veces por semana, ampliable según necesidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "psicoterapia"
+      ]
+    },
+    {
+      "id": "card-depresion-05-3",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-05",
+      "type": "application",
+      "prompt": "Una persona inició psicoterapia con PHQ-9 basal de 12. En la sexta sesión tiene 7. ¿Cómo se interpreta?",
+      "options": [
+        "Respuesta completa y alta inmediata.",
+        "Respuesta parcial, pues la reducción es de 42%.",
+        "No respuesta.",
+        "Empeoramiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La reducción es de 5 puntos sobre 12, aproximadamente 42%, que corresponde a respuesta parcial (20% a 49%).",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "respuesta"
+      ]
+    },
+    {
+      "id": "card-depresion-06-1",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "concept",
+      "prompt": "¿Qué se considera remisión en el episodio depresivo leve?",
+      "answer": "Ausencia de los síntomas característicos durante al menos tres semanas, con hasta tres síntomas residuales.",
+      "explanation": "La remisión no exige ausencia total de cualquier síntoma, pero sí de los característicos durante tres semanas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "remisión"
+      ]
+    },
+    {
+      "id": "card-depresion-06-2",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "multiple",
+      "prompt": "¿Qué reducción del PHQ-9 define una respuesta al tratamiento?",
+      "options": [
+        "10% o más.",
+        "20% o más.",
+        "50% o más.",
+        "80% o más."
+      ],
+      "correctIndex": 2,
+      "explanation": "Respuesta es una disminución de 50% o más del puntaje basal. Entre 20% y 49% es respuesta parcial.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "respuesta"
+      ]
+    },
+    {
+      "id": "card-depresion-06-3",
+      "topicId": "topic-depresion-tratamiento",
+      "sheetId": "sheet-depresion-06",
+      "type": "application",
+      "prompt": "Una persona alcanzó remisión con psicoterapia. ¿Qué corresponde?",
+      "options": [
+        "Iniciar un antidepresivo de por vida.",
+        "No volver a evaluar nunca.",
+        "Alta con plan de seguimiento y educación sobre señales de recaída.",
+        "Continuar psicoterapia indefinidamente sin evaluación."
+      ],
+      "correctIndex": 2,
+      "explanation": "Si se alcanza remisión, se puede dar de alta con un plan claro de seguimiento y signos de alarma.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "alta"
+      ]
+    },
+    {
+      "id": "card-depresion-07-1",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "concept",
+      "prompt": "¿Cuál es el antidepresivo de primera elección en el episodio depresivo leve?",
+      "answer": "Un inhibidor selectivo de la recaptación de serotonina (ISRS).",
+      "explanation": "La GPC sugiere iniciar con ISRS cuando se opta por farmacoterapia, considerando el perfil clínico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "ISRS"
+      ]
+    },
+    {
+      "id": "card-depresion-07-2",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "multiple",
+      "prompt": "¿Qué antidepresivos NO se deben iniciar según la GPC?",
+      "options": [
+        "Escitalopram y paroxetina.",
+        "Cualquier ISRS.",
+        "Sertralina y fluoxetina.",
+        "Clomipramina y amitriptilina."
+      ],
+      "correctIndex": 3,
+      "explanation": "La GPC indica no iniciar con clomipramina o amitriptilina por baja aceptabilidad y riesgo de complicaciones cardíacas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "antidepresivos"
+      ]
+    },
+    {
+      "id": "card-depresion-07-3",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-07",
+      "type": "application",
+      "prompt": "Una persona inició ISRS hace cinco semanas y no muestra respuesta. ¿Qué corresponde?",
+      "options": [
+        "Revisar adherencia y efectos adversos, e incrementar la dosis si corresponde.",
+        "Cambiar a clomipramina.",
+        "Esperar un año antes de ajustar.",
+        "Suspender de inmediato sin evaluación."
+      ],
+      "correctIndex": 0,
+      "explanation": "Entre la semana 4 y 6 se evalúa la respuesta. Si no hay respuesta, se incrementa la dosis y se continúa, tras revisar adherencia y tolerancia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "ISRS"
+      ]
+    },
+    {
+      "id": "card-depresion-08-1",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "concept",
+      "prompt": "¿Cuánto tiempo se mantiene la farmacoterapia después de alcanzar la remisión?",
+      "answer": "Al menos seis meses, y luego se reduce gradualmente hasta el cese.",
+      "explanation": "El mantenimiento busca prevenir recaídas. La suspensión debe ser gradual y con seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "mantenimiento"
+      ]
+    },
+    {
+      "id": "card-depresion-08-2",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "multiple",
+      "prompt": "Si hay respuesta en la semana 8 a 12, ¿qué se hace?",
+      "options": [
+        "Suspender el fármaco de inmediato.",
+        "Mantener la misma dosis y evaluar remisión tres semanas después.",
+        "Duplicar la dosis sin control.",
+        "Cambiar de diagnóstico."
+      ],
+      "correctIndex": 1,
+      "explanation": "La respuesta sostenida se consolida manteniendo la dosis. La remisión se evalúa tres semanas después.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-depresion-08-3",
+      "topicId": "topic-depresion-farmacos",
+      "sheetId": "sheet-depresion-08",
+      "type": "application",
+      "prompt": "Una persona completó 12 semanas de ISRS a dosis adecuada y no alcanza remisión. ¿Qué corresponde?",
+      "options": [
+        "Iniciar amitriptilina.",
+        "Continuar igual indefinidamente.",
+        "Reevaluar patología subyacente, adherencia y severidad, y derivar al psiquiatra.",
+        "Suspender sin plan."
+      ],
+      "correctIndex": 2,
+      "explanation": "La falta de remisión a las 12 semanas obliga a reconsiderar el diagnóstico y derivar. No se debe insistir sin reevaluar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-depresion",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "Depresión",
+        "aplicación",
+        "derivación"
+      ]
+    },
+    {
+      "id": "card-perinatal-01-1",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "concept",
+      "prompt": "¿Qué explora el WAST y cuál es su punto de corte?",
+      "answer": "Explora violencia en la relación de pareja mediante 8 ítems (8 a 24 puntos). Se considera positivo con 15 o más; los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+      "explanation": "El WAST no mide depresión ni alcohol. Es un tamizaje de violencia de pareja y debe aplicarse en privado, sin la pareja presente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "WAST",
+        "violencia"
+      ]
+    },
+    {
+      "id": "card-perinatal-01-2",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "multiple",
+      "prompt": "Una gestante obtiene 12 puntos en el PHQ-9. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Iniciar de inmediato un antidepresivo sin evaluación.",
+        "Repetir el PHQ-9 solo al año.",
+        "Descartar depresión porque el puntaje es bajo.",
+        "Realizar evaluación clínica, valorar el riesgo y ofrecer un plan de cuidado en el primer nivel."
+      ],
+      "correctIndex": 3,
+      "explanation": "Desde 5 el PHQ-9 es positivo. Un puntaje de 12 corresponde a síntomas moderados: requiere evaluación clínica, valoración de riesgo y un plan de cuidado; no se descarta ni se medica a ciegas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "conducta"
+      ]
+    },
+    {
+      "id": "card-perinatal-01-3",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-01",
+      "type": "application",
+      "prompt": "Una puérpera acude a control del recién nacido y refiere cansancio, llanto y que “no puede con todo”. ¿Cuál es el primer paso más seguro?",
+      "options": [
+        "Aplicar el PHQ-9 en un espacio privado, explorar ideación de daño y violencia, y evaluar el riesgo.",
+        "Preguntar delante de su pareja para confirmar la información.",
+        "Indicarle solo hierro y descanso.",
+        "Atribuirlo al cansancio normal del puerperio y citar en un mes."
+      ],
+      "correctIndex": 0,
+      "explanation": "El cansancio puede ser normal, pero también un síntoma depresivo. Se tamiza en privado, se explora riesgo suicida y violencia, y se decide la conducta según el resultado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            9,
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-1",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "concept",
+      "prompt": "¿Cómo se interpretan las bandas del PHQ-9 en la gestación y el puerperio?",
+      "answer": "5–9 leve, 10–14 moderado, 15–19 moderadamente severo y 20–27 severo. Desde 5 se considera positivo y requiere evaluación clínica.",
+      "explanation": "El punto de corte es 5, no 10. La banda orienta la gravedad y el nivel de atención, pero el riesgo clínico siempre se evalúa aparte.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "PHQ-9",
+        "bandas"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-2",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "multiple",
+      "prompt": "Una gestante tiene WAST total de 12, pero responde afirmativamente al ítem 6. ¿Qué corresponde?",
+      "options": [
+        "Descartar violencia porque el total es menor de 15.",
+        "Sospechar violencia confirmada, valorar riesgo y activar protección.",
+        "Repetir el WAST al año sin otras acciones.",
+        "Preguntar a la pareja para verificar la respuesta."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor de 15. Se actúa con valoración de riesgo y plan de seguridad, sin confrontar a la pareja.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "WAST",
+        "riesgo"
+      ]
+    },
+    {
+      "id": "card-perinatal-02-3",
+      "topicId": "topic-perinatal-deteccion",
+      "sheetId": "sheet-perinatal-02",
+      "type": "application",
+      "prompt": "Una puérpera con PHQ-9 de 22 refiere que no duerme, se siente culpable y piensa que “sería mejor desaparecer”. ¿Cuál es la prioridad?",
+      "options": [
+        "Esperar a que el puerperio avance.",
+        "Iniciar psicoterapia ambulatoria y citar en 4 semanas.",
+        "Valorar riesgo suicida, protección del bebé y derivación urgente a salud mental.",
+        "Indicar solo medidas de higiene del sueño."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un PHQ-9 de 22 es severo y la ideación de desaparecer exige valoración urgente del riesgo, protección y derivación. La psicoterapia sola no es suficiente en este momento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            16,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "riesgo suicida",
+        "urgencia"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-1",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "concept",
+      "prompt": "¿Cuál es el papel de la psicoterapia en la depresión perinatal?",
+      "answer": "Es un pilar del tratamiento, especialmente en casos leves o moderados. La TCC y la psicoterapia interpersonal abordan pensamientos, conductas, duelo, rol materno y relaciones.",
+      "explanation": "La psicoterapia no es un adorno: puede ser el tratamiento principal en casos leves o moderados y se combina con fármacos en casos graves.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "psicoterapia"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-2",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es la conducta correcta ante una gestante que ya toma un antidepresivo y queda embarazada?",
+      "options": [
+        "Duplicar la dosis para prevenir recaídas.",
+        "Sustituirlo siempre por psicoterapia.",
+        "Suspenderlo de inmediato por el embarazo.",
+        "Evaluar riesgo-beneficio con salud mental, evitar cambios bruscos y monitorizar."
+      ],
+      "correctIndex": 3,
+      "explanation": "La decisión es individualizada. Suspender de golpe puede provocar recaída o síntomas de retirada; se evalúa con psiquiatría y se monitoriza madre, embarazo y neonato.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "psicofármacos",
+        "gestación"
+      ]
+    },
+    {
+      "id": "card-perinatal-03-3",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-03",
+      "type": "application",
+      "prompt": "Una gestante con depresión grave presenta rechazo de alimentos, mutismo y riesgo suicida. ¿Qué opción corresponde?",
+      "options": [
+        "Hospitalización y evaluación para tratamiento especializado, incluida la TEC si está indicada.",
+        "Solo terapia de pareja.",
+        "Esperar el parto para iniciar tratamiento.",
+        "Manejo ambulatorio con psicoeducación semanal."
+      ],
+      "correctIndex": 0,
+      "explanation": "La gravedad, el rechazo de alimentos y el riesgo suicida exigen hospitalización y tratamiento especializado. La TEC es una opción de último recurso en casos graves o refractarios.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "TEC",
+        "hospitalización"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-1",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "concept",
+      "prompt": "¿Qué se recomienda y qué se evita al acompañar un duelo perinatal?",
+      "answer": "Se recomienda información clara, respeto, posibilidad de ver y despedir al bebé, apoyo para trámites y seguimiento. Se evita minimizar la pérdida, presionar para superarla o recomendar de inmediato otro embarazo o una adopción.",
+      "explanation": "El duelo no es una enfermedad ni una falta de fortaleza. El acompañamiento respeta el tiempo y explora riesgo suicida y duelo complicado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "duelo"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-2",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "multiple",
+      "prompt": "¿Cuál es la mejor conducta si una gestante revela violencia de pareja?",
+      "options": [
+        "Citarla con su pareja para mejorar la comunicación.",
+        "Preguntar en privado, valorar el riesgo, construir un plan de seguridad y activar la ruta de protección.",
+        "Decirle que primero resuelva sus problemas de pareja y luego vuelva.",
+        "Registrar el dato sin hacer nada más."
+      ],
+      "correctIndex": 1,
+      "explanation": "La violencia contraindica la terapia de pareja. La respuesta es privada, centrada en la seguridad, con valoración de riesgo y articulación con los servicios de protección.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            21,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "violencia",
+        "seguridad"
+      ]
+    },
+    {
+      "id": "card-perinatal-04-3",
+      "topicId": "topic-perinatal-cuidado",
+      "sheetId": "sheet-perinatal-04",
+      "type": "application",
+      "prompt": "Una madre con depresión leve mejora tras seis semanas de apoyo y psicoterapia. ¿Cómo se organiza la continuidad?",
+      "options": [
+        "Derivarla siempre a hospitalización.",
+        "Alta definitiva sin próxima cita.",
+        "Mantener seguimiento acordado, evaluar adherencia, red de apoyo y signos de alarma, y ajustar la frecuencia.",
+        "Suspender toda intervención porque ya mejoró."
+      ],
+      "correctIndex": 2,
+      "explanation": "La mejoría no elimina el riesgo de recaída. Se mantiene un plan de continuidad con seguimiento, educación sobre signos de alarma y ajuste de la frecuencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            23,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Perinatal",
+        "continuidad",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-violencia-01-1",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son los cuatro tipos de violencia de la Ley N.° 30364?",
+      "answer": "Física, psicológica, sexual y económica o patrimonial.",
+      "explanation": "La ley no reduce la violencia al golpe. El control económico, la coerción sexual y la humillación también son violencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            5,
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "tipos"
+      ]
+    },
+    {
+      "id": "card-violencia-01-2",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "multiple",
+      "prompt": "¿Cuál situación es violencia económica o patrimonial?",
+      "options": [
+        "Una amenaza de golpe.",
+        "Una relación sexual sin consentimiento.",
+        "Un empujón.",
+        "Impedir que la pareja use su dinero o retener sus documentos de trabajo."
+      ],
+      "correctIndex": 3,
+      "explanation": "La violencia económica afecta recursos, bienes o documentos. Las otras opciones son física, psicológica y sexual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            6
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "violencia económica"
+      ]
+    },
+    {
+      "id": "card-violencia-01-3",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-01",
+      "type": "application",
+      "prompt": "Una mujer adulta mayor con discapacidad convive con un familiar que la agrede. ¿Está protegida?",
+      "options": [
+        "Sí, la ley protege a las mujeres durante todo su ciclo de vida y a los integrantes del grupo familiar.",
+        "Solo si hay lesiones graves.",
+        "Solo si denuncia ante un juez penal.",
+        "No, solo protege a mujeres jóvenes."
+      ],
+      "correctIndex": 0,
+      "explanation": "La protección alcanza a las mujeres de todas las edades y a los integrantes del grupo familiar, con atención especializada cuando hay discapacidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            7,
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "sujetos"
+      ]
+    },
+    {
+      "id": "card-violencia-02-1",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "concept",
+      "prompt": "¿Qué requisitos se exigen para denunciar violencia según la Ley N.° 30364?",
+      "answer": "Ninguno de fondo: puede ser verbal, escrita o virtual, sin abogado, tasa, exámenes ni lesiones visibles.",
+      "explanation": "La ley elimina barreras de acceso. La falta de pruebas físicas o de abogado no impide denunciar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "denuncia"
+      ]
+    },
+    {
+      "id": "card-violencia-02-2",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "multiple",
+      "prompt": "En riesgo severo, ¿cuál es el plazo máximo para que el juzgado emita medidas de protección?",
+      "options": [
+        "24 horas.",
+        "48 horas.",
+        "72 horas.",
+        "7 días."
+      ],
+      "correctIndex": 0,
+      "explanation": "Riesgo severo: 24 horas; leve o moderado: 48 horas; riesgo no determinable: 72 horas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "plazos"
+      ]
+    },
+    {
+      "id": "card-violencia-02-3",
+      "topicId": "topic-violencia-marco",
+      "sheetId": "sheet-violencia-02",
+      "type": "application",
+      "prompt": "Una mujer con lesión leve dice que no quiere denunciar. ¿Qué corresponde?",
+      "options": [
+        "Negarle la atención hasta que denuncie.",
+        "Atenderla, documentar, informar derechos y opciones, y valorar el riesgo.",
+        "Obligarla a firmar la denuncia.",
+        "Decirle que vuelva con más pruebas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La atención es gratuita e inmediata y no se condiciona a la denuncia. Se documenta, se informa y se valora el riesgo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ley-violencia",
+          "pages": [
+            7,
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "atención"
+      ]
+    },
+    {
+      "id": "card-violencia-03-1",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "concept",
+      "prompt": "¿Qué es el WAST y cómo se interpreta?",
+      "answer": "Es un tamizaje de violencia de pareja de 8 ítems. Es positivo con 15 o más; los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+      "explanation": "El WAST no sustituye la entrevista clínica; abre la conversación y orienta la valoración del riesgo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gestantes",
+          "pages": [
+            17,
+            30,
+            31
+          ]
+        },
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            42
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "WAST"
+      ]
+    },
+    {
+      "id": "card-violencia-03-2",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "multiple",
+      "prompt": "Una mujer responde que no ha sufrido violencia, pero tiene lesiones repetidas y evita hablar delante de su pareja. ¿Qué corresponde?",
+      "options": [
+        "Registrar “sin violencia” y cerrar el caso.",
+        "Confiar en el WAST negativo y no insistir.",
+        "Volver a preguntar en privado, explorar el contexto y ofrecer ayuda sin presionar.",
+        "Confrontar a la pareja."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un tamizaje negativo no descarta violencia. Las lesiones repetidas y la evitación son señales para preguntar de nuevo en privado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "WAST negativo"
+      ]
+    },
+    {
+      "id": "card-violencia-03-3",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-03",
+      "type": "application",
+      "prompt": "Una gestante llega acompañada de su pareja, que no se separa de ella. ¿Cómo se indaga violencia?",
+      "options": [
+        "Omitir el tema.",
+        "Pedirle a la pareja que responda.",
+        "Preguntar delante de él.",
+        "Buscar un momento a solas, con una excusa clínica, y preguntar en privado."
+      ],
+      "correctIndex": 3,
+      "explanation": "La privacidad es una condición de seguridad. Se busca un momento a solas y nunca se confronta al posible agresor.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            19,
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "privacidad"
+      ]
+    },
+    {
+      "id": "card-violencia-04-1",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "concept",
+      "prompt": "¿Qué significa ANIMA?",
+      "answer": "Atención, No juzgar y validar, Informarse, Mejorar la seguridad y Apoyar.",
+      "explanation": "ANIMA es una secuencia de primera acogida, no una terapia. Busca que la persona se sienta escuchada, informada y más segura.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "ANIMA"
+      ]
+    },
+    {
+      "id": "card-violencia-04-2",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "multiple",
+      "prompt": "¿Cuál conducta contradice la primera acogida?",
+      "options": [
+        "Preguntar qué hizo para provocar la agresión.",
+        "Ofrecer opciones y respetar el ritmo.",
+        "Construir un plan de seguridad.",
+        "Validar el relato y explicar la confidencialidad."
+      ],
+      "correctIndex": 0,
+      "explanation": "Culpar a la víctima es revictimizante y contradice el “No juzgar” de ANIMA.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "revictimización"
+      ]
+    },
+    {
+      "id": "card-violencia-04-3",
+      "topicId": "topic-violencia-deteccion",
+      "sheetId": "sheet-violencia-04",
+      "type": "application",
+      "prompt": "Una mujer revela violencia y no quiere denunciar todavía. ¿Cuál es la respuesta más adecuada?",
+      "options": [
+        "Decirle que no se puede hacer nada.",
+        "Validar, informar opciones, valorar riesgo y acordar un plan de seguridad y seguimiento.",
+        "Denunciar sin su conocimiento.",
+        "Convencerla de denunciar hoy."
+      ],
+      "correctIndex": 1,
+      "explanation": "La primera acogida respeta la autonomía, valora el riesgo y mantiene el acompañamiento sin coerción.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            20,
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "autonomía"
+      ]
+    },
+    {
+      "id": "card-violencia-05-1",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "concept",
+      "prompt": "¿Cuáles son los niveles de riesgo y sus puntajes?",
+      "answer": "Leve 0–7, moderado 8–13, severo 1 de 14–17 y severo 2 o extremo de 18–37.",
+      "explanation": "El puntaje orienta la intensidad de la respuesta y debe reevaluarse cuando cambia la situación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            56,
+            57
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "riesgo"
+      ]
+    },
+    {
+      "id": "card-violencia-05-2",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "multiple",
+      "prompt": "¿Qué momento requiere especial vigilancia del riesgo?",
+      "options": [
+        "Cuando la mujer deja de denunciar.",
+        "Cuando la pareja está más cariñosa.",
+        "Durante la separación o el intento de separación.",
+        "Solo cuando hay lesiones visibles."
+      ],
+      "correctIndex": 2,
+      "explanation": "La separación puede aumentar el riesgo de agresión grave o feminicidio. La protección debe reforzarse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            24,
+            25,
+            57
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "separación"
+      ]
+    },
+    {
+      "id": "card-violencia-05-3",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-05",
+      "type": "application",
+      "prompt": "Una mujer con riesgo severo 2 quiere volver con su pareja porque no tiene dónde quedarse. ¿Qué corresponde?",
+      "options": [
+        "Convencerla de denunciar inmediatamente.",
+        "Cerrar el caso.",
+        "Decirle que ya no se puede hacer nada.",
+        "Respetar su decisión, reforzar el plan de seguridad, explorar albergue y coordinar protección."
+      ],
+      "correctIndex": 3,
+      "explanation": "La autonomía se respeta, pero el riesgo no desaparece. Se buscan alternativas concretas y se mantiene la coordinación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            57,
+            59
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "albergue"
+      ]
+    },
+    {
+      "id": "card-violencia-06-1",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "concept",
+      "prompt": "¿Cuáles son las consecuencias de salud mental más frecuentes de la violencia de pareja?",
+      "answer": "Depresión, ansiedad, estrés postraumático, somatización y consumo de sustancias; también riesgo suicida.",
+      "explanation": "Los síntomas pueden aparecer meses después y no siempre se relacionan espontáneamente con la violencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "salud mental"
+      ]
+    },
+    {
+      "id": "card-violencia-06-2",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "multiple",
+      "prompt": "¿Cuál intervención está contraindicada cuando hay violencia de pareja?",
+      "options": [
+        "Terapia de pareja para mejorar la comunicación.",
+        "TCC individual.",
+        "Plan de seguridad.",
+        "Psicoeducación."
+      ],
+      "correctIndex": 0,
+      "explanation": "La terapia de pareja puede aumentar el riesgo y la revictimización. Se prioriza la seguridad y el trabajo individual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            21,
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "terapia de pareja"
+      ]
+    },
+    {
+      "id": "card-violencia-06-3",
+      "topicId": "topic-violencia-atencion",
+      "sheetId": "sheet-violencia-06",
+      "type": "application",
+      "prompt": "Una mujer con violencia severa presenta insomnio, pesadillas y evitación. ¿Cuál es el enfoque más adecuado?",
+      "options": [
+        "Terapia de pareja.",
+        "Evaluación de salud mental, TCC centrada en trauma, seguridad y seguimiento.",
+        "Solo medicación para dormir.",
+        "Decirle que los síntomas desaparecerán al dejar la relación."
+      ],
+      "correctIndex": 1,
+      "explanation": "El estrés postraumático requiere evaluación y psicoterapia centrada en trauma, junto con seguridad y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-gt-violencia",
+          "pages": [
+            22,
+            26,
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia",
+        "estrés postraumático"
+      ]
+    },
+    {
+      "id": "card-violencia-07-1",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "concept",
+      "prompt": "¿Qué significa AVISAS?",
+      "answer": "Acogida e intervención en crisis, Valoración, Intervención clínica, Seguimiento, Acceso a la información y justicia, y Seguridad.",
+      "explanation": "AVISAS organiza la atención integral y evita reducirla al examen genital.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "AVISAS"
+      ]
+    },
+    {
+      "id": "card-violencia-07-2",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es la ventana orientativa para la muestra cervical?",
+      "options": [
+        "Primer día.",
+        "Hasta 3 días.",
+        "Después de 48 horas y hasta 5 días.",
+        "Solo después de 10 días."
+      ],
+      "correctIndex": 2,
+      "explanation": "Cervical: después de 48 horas y hasta 5 días. Oral: primer día; vulvar/vaginal: hasta 5 días; anal/rectal: hasta 3 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            32,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "evidencia"
+      ]
+    },
+    {
+      "id": "card-violencia-07-3",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-07",
+      "type": "application",
+      "prompt": "Una adolescente acude 36 horas después de una agresión y ya se bañó. ¿Qué corresponde?",
+      "options": [
+        "Esperar 5 días.",
+        "Exigir denuncia antes de atender.",
+        "No tomar muestras porque se bañó.",
+        "Explicar que aún se pueden recoger muestras, obtener consentimiento y continuar la atención integral."
+      ],
+      "correctIndex": 3,
+      "explanation": "El baño no elimina todas las evidencias. Se explica, se recoge lo posible con consentimiento y se brinda atención completa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            20,
+            32,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "evidencia"
+      ]
+    },
+    {
+      "id": "card-violencia-08-1",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "concept",
+      "prompt": "¿Cuándo se inicia y cuánto dura la profilaxis de VIH tras violencia sexual?",
+      "answer": "Se inicia dentro de las 72 horas y se mantiene 28 días cuando no se conoce el estado serológico del agresor.",
+      "explanation": "La profilaxis es una urgencia y se acompaña de consejería y adherencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "PEP"
+      ]
+    },
+    {
+      "id": "card-violencia-08-2",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "multiple",
+      "prompt": "¿Qué seguimiento serológico se recomienda?",
+      "options": [
+        "VIH a los 3 y 6 meses; sífilis a los 3 meses.",
+        "Ninguno si no hay síntomas.",
+        "Solo prueba de embarazo.",
+        "VIH solo al año; sífilis al mes."
+      ],
+      "correctIndex": 0,
+      "explanation": "El seguimiento incluye VIH a los 3 y 6 meses y sífilis a los 3 meses, además de embarazo, ITS y salud mental.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-violencia-08-3",
+      "topicId": "topic-violencia-sexual",
+      "sheetId": "sheet-violencia-08",
+      "type": "application",
+      "prompt": "Una mujer atendida por violencia sexual presenta pesadillas y evitación a las 6 semanas. ¿Qué opción es más adecuada?",
+      "options": [
+        "Decirle que es normal y no requiere tratamiento.",
+        "Evaluar salud mental y ofrecer psicoterapia centrada en trauma con seguimiento.",
+        "Indicar solo antidepresivos.",
+        "Esperar seis meses."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los síntomas de estrés postraumático requieren evaluación y psicoterapia centrada en trauma; la TCC puede requerir al menos 12 sesiones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-violencia-sexual",
+          "pages": [
+            38,
+            39
+          ]
+        }
+      ],
+      "tags": [
+        "Violencia sexual",
+        "TCC"
+      ]
+    },
+    {
+      "id": "card-its-01-1",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "concept",
+      "prompt": "¿Qué es el abordaje sindrómico de las ITS?",
+      "answer": "Es un enfoque que identifica un síndrome clínico, inicia tratamiento inmediato, ofrece consejería y controla a los 7 días, sin esperar pruebas de laboratorio.",
+      "explanation": "El abordaje sindrómico prioriza el tratamiento oportuno y la prevención de complicaciones; el estudio etiológico se reserva para casos que lo requieren.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "abordaje sindrómico"
+      ]
+    },
+    {
+      "id": "card-its-01-2",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "multiple",
+      "prompt": "¿Cuántos preservativos masculinos se entregan a una persona que consulta por síntomas de ITS?",
+      "options": [
+        "1",
+        "2",
+        "5",
+        "10"
+      ],
+      "correctIndex": 1,
+      "explanation": "Se entregan 2 preservativos masculinos a toda persona que consulta por síntomas o signos de ITS; a las mujeres se ofrecen además preservativos femeninos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "preservativos"
+      ]
+    },
+    {
+      "id": "card-its-01-3",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-01",
+      "type": "application",
+      "prompt": "Un varón con descarga uretral acude al primer nivel y no hay laboratorio disponible. ¿Qué corresponde?",
+      "options": [
+        "Derivarlo siempre al hospital.",
+        "Esperar el resultado de laboratorio.",
+        "Iniciar tratamiento sindrómico, consejería, tamizaje y control a los 7 días.",
+        "Indicar solo higiene local."
+      ],
+      "correctIndex": 2,
+      "explanation": "El abordaje sindrómico permite tratar de inmediato en el primer nivel, ofrecer prevención y controlar a los 7 días; si no mejora, se refiere.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            6,
+            7,
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "card-its-02-1",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "concept",
+      "prompt": "¿Cuál es el esquema de primera línea para descarga uretral, rectal o cervicitis?",
+      "answer": "Ceftriaxona 1 g IM en dosis única + doxiciclina 100 mg VO cada 12 horas por 7 días.",
+      "explanation": "La alternativa es azitromicina 500 mg, 2 tabletas VO en dosis única. La pareja se busca por 60 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            9,
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "ceftriaxona",
+        "doxiciclina"
+      ]
+    },
+    {
+      "id": "card-its-02-2",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "multiple",
+      "prompt": "¿Cuál es el tratamiento inicial de la úlcera genital?",
+      "options": [
+        "Metronidazol 500 mg + fluconazol 150 mg.",
+        "Solo aciclovir tópico.",
+        "Ceftriaxona 1 g IM + doxiciclina por 7 días.",
+        "Penicilina benzatínica 2.4 millones UI + aciclovir 400 mg cada 12 h por 5 días."
+      ],
+      "correctIndex": 3,
+      "explanation": "La úlcera genital se trata inicialmente con penicilina benzatínica y aciclovir; la alternativa incluye doxiciclina por 14 días. La pareja se busca por 90 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "úlcera genital"
+      ]
+    },
+    {
+      "id": "card-its-02-3",
+      "topicId": "topic-its-sindromes",
+      "sheetId": "sheet-its-02",
+      "type": "application",
+      "prompt": "Una gestante presenta flujo vaginal y se confirma tricomoniasis. ¿Qué fármaco debe evitarse?",
+      "options": [
+        "Doxiciclina.",
+        "Azitromicina.",
+        "Ceftriaxona.",
+        "Metronidazol."
+      ],
+      "correctIndex": 0,
+      "explanation": "Las tetraciclinas como la doxiciclina no se usan en gestación ni lactancia. Metronidazol, azitromicina y ceftriaxona son opciones seguras según el caso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-its",
+          "pages": [
+            18,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "ITS",
+        "embarazo",
+        "doxiciclina"
+      ]
+    },
+    {
+      "id": "card-vih-01-1",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "concept",
+      "prompt": "¿Qué es la prevención combinada del VIH?",
+      "answer": "Es la suma de medidas biomédicas, conductuales y socioestructurales que se aplican juntas y se adaptan a la población para reducir nuevas infecciones.",
+      "explanation": "Ninguna medida reemplaza a otra; la efectividad aumenta cuando se combinan y se mantiene el acceso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            6,
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "prevención combinada"
+      ]
+    },
+    {
+      "id": "card-vih-01-2",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "multiple",
+      "prompt": "¿Cuántos preservativos masculinos y lubricantes recibe al mes la población HSH, MT o TS?",
+      "options": [
+        "20 y 5",
+        "50 y 10",
+        "144 y 25",
+        "10 y 2"
+      ],
+      "correctIndex": 2,
+      "explanation": "Reciben 144 preservativos masculinos y 25 lubricantes al mes. Las parejas serodiscordantes reciben 20 preservativos y 5 lubricantes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "preservativos"
+      ]
+    },
+    {
+      "id": "card-vih-01-3",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-01",
+      "type": "application",
+      "prompt": "Una mujer trans acude a un servicio de prevención. ¿Qué paquete mínimo debe ofrecerse?",
+      "options": [
+        "Solo consejería.",
+        "Consejería, preservativos y lubricantes, pruebas de VIH y sífilis, hepatitis B y C, manejo de ITS, vacunación y oferta de PrEP/PPE.",
+        "Solo prueba de VIH.",
+        "Derivación al hospital sin intervención."
+      ],
+      "correctIndex": 1,
+      "explanation": "La prevención combinada incluye todas las capas: consejería, preservativos, tamizajes, vacunación, manejo de ITS y PrEP/PPE según indicación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            7,
+            8,
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "paquete"
+      ]
+    },
+    {
+      "id": "card-vih-02-1",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "concept",
+      "prompt": "¿Quién puede recibir PrEP y cuál es el esquema diario?",
+      "answer": "Personas de 18 años o más de poblaciones de alto riesgo, sin VIH, sin infección aguda y sin exposición de riesgo en las últimas 72 horas. El esquema diario es TDF/FTC 300/200 mg, una tableta al día.",
+      "explanation": "La PrEP requiere evaluación renal, descarte de VIH y hepatitis B, y decisión voluntaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            9,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PrEP"
+      ]
+    },
+    {
+      "id": "card-vih-02-2",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "multiple",
+      "prompt": "¿En qué situación está contraindicada la PrEP a demanda?",
+      "options": [
+        "Pareja serodiscordante.",
+        "HSH con una relación sexual por semana.",
+        "Hepatitis B crónica.",
+        "Persona con VIH negativo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La PrEP a demanda está contraindicada en hepatitis B crónica porque suspender TDF puede causar exacerbación hepática.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PrEP",
+        "hepatitis B"
+      ]
+    },
+    {
+      "id": "card-vih-02-3",
+      "topicId": "topic-vih-prevencion",
+      "sheetId": "sheet-vih-02",
+      "type": "application",
+      "prompt": "Una persona acude 48 horas después de una exposición sexual de riesgo. ¿Qué corresponde?",
+      "options": [
+        "Esperar 3 meses para la prueba.",
+        "Indicar solo preservativos.",
+        "Indicar PrEP diaria.",
+        "Evaluar PPE, iniciarla si está indicada y mantenerla 28 días."
+      ],
+      "correctIndex": 3,
+      "explanation": "La PPE se inicia dentro de las 72 horas y dura 28 días. La PrEP no se inicia después de una exposición reciente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-prevencion-combinada",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "PPE"
+      ]
+    },
+    {
+      "id": "card-vih-03-1",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "concept",
+      "prompt": "¿Cómo se confirma una infección por VIH?",
+      "answer": "Con dos pruebas rápidas reactivas de diferentes fabricantes, o una prueba de cuarta generación reactiva, más una prueba confirmatoria (carga viral, IFI o inmunoblot).",
+      "explanation": "La confirmación no debe retrasar el inicio del TAR cuando está indicado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            24,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-vih-03-2",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es el esquema de primera línea para un adulto sin tratamiento previo?",
+      "options": [
+        "TDF/3TC/DTG una tableta al día.",
+        "AZT/3TC/EFV.",
+        "TDF/FTC + darunavir/ritonavir.",
+        "Solo dolutegravir."
+      ],
+      "correctIndex": 0,
+      "explanation": "El esquema de elección es TDF/3TC/DTG en dosis fija combinada. Las alternativas se usan ante contraindicaciones o intolerancia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "TAR"
+      ]
+    },
+    {
+      "id": "card-vih-03-3",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-03",
+      "type": "application",
+      "prompt": "Un paciente con VIH tiene CD4 de 850 y carga viral baja. ¿Debe iniciar TAR?",
+      "options": [
+        "No, porque el CD4 es alto.",
+        "Sí, el TAR se indica independientemente del CD4 y la carga viral.",
+        "Solo si presenta una infección oportunista.",
+        "Solo cuando la carga viral supere 1000 copias."
+      ],
+      "correctIndex": 1,
+      "explanation": "El TAR se indica a toda persona con VIH, sin importar el estadio clínico, el CD4 o la carga viral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "TAR",
+        "CD4"
+      ]
+    },
+    {
+      "id": "card-vih-04-1",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "concept",
+      "prompt": "¿Cuál es la frecuencia de control médico tras iniciar TAR?",
+      "answer": "Mensual los primeros 3 meses, cada 3 meses hasta los 2 años y cada 6 meses desde el tercer año, salvo indicación clínica.",
+      "explanation": "La frecuencia puede variar según adherencia, efectos adversos, comorbilidades y carga viral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "seguimiento"
+      ]
+    },
+    {
+      "id": "card-vih-04-2",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "multiple",
+      "prompt": "¿Cuándo se considera fracaso virológico?",
+      "options": [
+        "Una carga viral detectable aislada.",
+        "No asistir a una cita.",
+        "No lograr carga viral <1000 copias/ml a los 6 meses o rebote sostenido tras supresión.",
+        "Tener CD4 <500 en cualquier momento."
+      ],
+      "correctIndex": 2,
+      "explanation": "El fracaso se define por la falta de supresión a los 6 meses o por un rebote sostenido. Una detección aislada requiere confirmación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "fracaso virológico"
+      ]
+    },
+    {
+      "id": "card-vih-04-3",
+      "topicId": "topic-vih-atencion",
+      "sheetId": "sheet-vih-04",
+      "type": "application",
+      "prompt": "Un paciente en TAR presenta carga viral de 1500 copias/ml tras 8 meses. ¿Cuál es el siguiente paso?",
+      "options": [
+        "Suspender el TAR.",
+        "Repetir la carga viral en 1 año.",
+        "Cambiar el esquema a ciegas.",
+        "Evaluar adherencia e interacciones y solicitar genotipificación."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ante fracaso con carga viral ≥1000 copias/ml se solicita genotipificación y se evalúan adherencia, interacciones y tolerancia antes de cambiar el esquema.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "genotipificación"
+      ]
+    },
+    {
+      "id": "card-hepatitis-01-1",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "concept",
+      "prompt": "¿Cómo se define la infección crónica por hepatitis B?",
+      "answer": "Por HBsAg persistente por más de seis meses, o por anti-HBc IgM negativo + HBsAg positivo + anti-HBc total positivo.",
+      "explanation": "La persistencia del HBsAg distingue la infección crónica de la aguda.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "HBsAg"
+      ]
+    },
+    {
+      "id": "card-hepatitis-01-2",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo debe recibir el recién nacido la primera dosis de vacuna contra hepatitis B?",
+      "options": [
+        "Antes de las 12 horas de vida.",
+        "A los 2 meses.",
+        "A los 6 meses.",
+        "Solo si la madre es HBsAg positiva."
+      ],
+      "correctIndex": 0,
+      "explanation": "La primera dosis se aplica dentro de las primeras 12 horas; luego se completa el esquema de tres dosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            37
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "vacuna"
+      ]
+    },
+    {
+      "id": "card-hepatitis-01-3",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-01",
+      "type": "application",
+      "prompt": "Una gestante tiene HBsAg positivo. ¿Qué corresponde además de evaluar su carga viral?",
+      "options": [
+        "No hacer nada hasta el parto.",
+        "Coordinar la prevención de transmisión maternoinfantil y asegurar vacuna e inmunoglobulina al recién nacido según indicación.",
+        "Suspender la lactancia.",
+        "Vacunar solo a la madre."
+      ],
+      "correctIndex": 1,
+      "explanation": "La prevención incluye evaluar la carga viral, tratar si está indicado y asegurar vacuna e inmunoglobulina al recién nacido.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            37,
+            38
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "gestante"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-1",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "concept",
+      "prompt": "¿Qué personas con hepatitis B crónica deben recibir tratamiento?",
+      "answer": "Cirrosis con carga viral detectable; sin cirrosis, carga viral >2000 UI/ml y ALT elevada; y personas ≥30 años con HBeAg positivo, carga viral >2000 y ALT normal, entre otros criterios de riesgo.",
+      "explanation": "La decisión integra cirrosis, carga viral, ALT, HBeAg, edad y riesgo de hepatocarcinoma.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            31,
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-2",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "multiple",
+      "prompt": "¿Cuál es el antiviral de primera línea para la hepatitis B crónica?",
+      "options": [
+        "Aciclovir.",
+        "Entecavir.",
+        "Tenofovir.",
+        "Sofosbuvir."
+      ],
+      "correctIndex": 2,
+      "explanation": "El tenofovir es de primera línea; el entecavir se prefiere cuando hay riesgo renal o contraindicación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "tenofovir"
+      ]
+    },
+    {
+      "id": "card-hepatitis-02-3",
+      "topicId": "topic-hepatitis-b",
+      "sheetId": "sheet-hepatitis-02",
+      "type": "application",
+      "prompt": "Un paciente con cirrosis por hepatitis B tiene carga viral detectable y ALT normal. ¿Debe tratarse?",
+      "options": [
+        "Solo si tiene HBeAg positivo.",
+        "Solo si presenta ascitis.",
+        "No, porque la ALT es normal.",
+        "Sí, la cirrosis con carga viral detectable es criterio de tratamiento."
+      ],
+      "correctIndex": 3,
+      "explanation": "La cirrosis con replicación viral es indicación de tratamiento independientemente de la ALT.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-b",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis B",
+        "cirrosis"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-1",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "concept",
+      "prompt": "¿Cómo se confirma una infección activa por hepatitis C?",
+      "answer": "Con anti-VHC reactivo y ARN del VHC detectable. Si el ARN es indetectable, se considera infección resuelta o falso positivo.",
+      "explanation": "El anti-VHC es tamizaje; el ARN confirma replicación activa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-2",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "multiple",
+      "prompt": "¿Qué prueba no invasiva se recomienda para evaluar fibrosis hepática?",
+      "options": [
+        "APRI o elastografía de transición.",
+        "Radiografía de tórax.",
+        "Solo ALT.",
+        "Biopsia hepática de entrada."
+      ],
+      "correctIndex": 0,
+      "explanation": "La norma recomienda APRI y elastografía como pruebas no invasivas para evaluar fibrosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "fibrosis"
+      ]
+    },
+    {
+      "id": "card-hepatitis-03-3",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-03",
+      "type": "application",
+      "prompt": "Un paciente tiene anti-VHC positivo y ARN indetectable. ¿Qué significa?",
+      "options": [
+        "Infección activa que requiere tratamiento inmediato.",
+        "Infección resuelta o falso positivo; no hay replicación activa.",
+        "Cirrosis descompensada.",
+        "Debe iniciar sofosbuvir igualmente."
+      ],
+      "correctIndex": 1,
+      "explanation": "Anti-VHC positivo con ARN indetectable indica infección resuelta o falso positivo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "ARN"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-1",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "concept",
+      "prompt": "¿Cuál es el esquema pangenotípico de primera elección para hepatitis C?",
+      "answer": "Sofosbuvir/velpatasvir 400/100 mg, una tableta al día por 12 semanas; en cirrosis compensada se extiende a 24 semanas.",
+      "explanation": "La alternativa es sofosbuvir/daclatasvir 400/60 mg por 12 semanas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "sofosbuvir"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-2",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "multiple",
+      "prompt": "¿Cómo se define la curación de la hepatitis C?",
+      "options": [
+        "Ausencia de síntomas.",
+        "ARN indetectable al inicio del tratamiento.",
+        "ARN indetectable 12 semanas después de terminar el tratamiento.",
+        "ALT normal en cualquier momento."
+      ],
+      "correctIndex": 2,
+      "explanation": "La cura se define por respuesta viral sostenida: ARN indetectable 12 semanas después de finalizar el tratamiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "curación"
+      ]
+    },
+    {
+      "id": "card-hepatitis-04-3",
+      "topicId": "topic-hepatitis-c",
+      "sheetId": "sheet-hepatitis-04",
+      "type": "application",
+      "prompt": "Una paciente con hepatitis C y enfermedad renal crónica grado 5 necesita tratamiento. ¿Qué esquema es de elección?",
+      "options": [
+        "Sofosbuvir/daclatasvir.",
+        "Interferón.",
+        "Sofosbuvir/velpatasvir.",
+        "Glecaprevir/pibrentasvir, 3 tabletas al día por 8 semanas."
+      ],
+      "correctIndex": 3,
+      "explanation": "En enfermedad renal crónica 4–5 se prefiere glecaprevir/pibrentasvir; la duración se ajusta a 12 semanas si hay cirrosis.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hepatitis-c",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "Hepatitis C",
+        "renal"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-01-1",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "concept",
+      "prompt": "¿Qué lógica siguen los cinco momentos de la higiene de manos?",
+      "answer": "Dos momentos se realizan antes del riesgo (antes del contacto con el paciente y antes de una tarea limpia o aséptica) y tres después (tras el riesgo de exposición a fluidos, tras el contacto con el paciente y tras el contacto con su entorno). Los primeros protegen al paciente; los segundos protegen al profesional y al área de asistencia.",
+      "explanation": "El modelo de la OMS ordena las indicaciones según el riesgo de transmisión y evita depender de una lista interminable de tareas. Recordar la secuencia «dos antes, tres después» ayuda a aplicarlo en la práctica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            9,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cinco momentos"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-01-2",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "multiple",
+      "prompt": "Un profesional se dispone a tomar la presión arterial a un paciente. ¿Qué momento de la higiene de manos corresponde?",
+      "options": [
+        "Antes del contacto directo con el paciente.",
+        "Antes de una tarea limpia o aséptica.",
+        "Después del riesgo de exposición a fluidos corporales.",
+        "Después del contacto con el entorno del paciente."
+      ],
+      "correctIndex": 0,
+      "explanation": "Tomar la presión arterial es un contacto directo con el paciente y no implica acceso a mucosas, piel no intacta ni un dispositivo invasivo. Por eso corresponde el momento 1, antes de tocar al paciente; el momento 2 se reserva para procedimientos limpios o asépticos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-01-3",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "application",
+      "prompt": "Un profesional ayuda a un paciente a sentarse, luego toca la barandilla de la cama y sale de la zona del paciente. ¿Qué momento debe aplicar antes de salir?",
+      "options": [
+        "Los momentos 4 y 5, porque tocó al paciente y su entorno.",
+        "El momento 4, porque hubo contacto con el paciente; el 5 no se combina con el 4.",
+        "Solo el momento 5, porque tocó el entorno.",
+        "Ninguno, porque no hubo exposición a fluidos."
+      ],
+      "correctIndex": 1,
+      "explanation": "El momento 5 excluye el contacto con el paciente y solo se aplica cuando no se le tocó. Si hubo contacto directo y después se toca un objeto de su entorno antes de salir, se aplica el momento 4, no el 5.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-1",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "concept",
+      "prompt": "¿Cuándo está indicado lavarse las manos con agua y jabón en lugar de usar un preparado de base alcohólica?",
+      "answer": "Cuando las manos están visiblemente sucias o manchadas de sangre u otros fluidos corporales, cuando hay sospecha o evidencia de exposición a organismos formadores de esporas y después de usar los servicios. Para la antisepsia rutinaria se prefiere el preparado de base alcohólica si está disponible.",
+      "explanation": "El preparado alcohólico es eficaz y rápido para la higiene rutinaria, pero no limpia la suciedad visible ni elimina necesariamente las esporas. Por eso el lavado con agua y jabón conserva indicaciones específicas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "técnica"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-2",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "multiple",
+      "prompt": "¿Cuál afirmación sobre el uso de guantes es correcta?",
+      "options": [
+        "Basta con realizar la higiene de manos antes de ponerse los guantes.",
+        "La higiene de manos solo es necesaria si los guantes se manchan.",
+        "Debe realizarse higiene de manos antes de ponerse los guantes y después de quitárselos.",
+        "Los guantes estériles sustituyen la higiene de manos durante un procedimiento aséptico."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las indicaciones de higiene de manos son independientes de las que justifican los guantes. El guante no sustituye la higiene: se realiza antes de ponerlo y después de retirarlo; si aparece una indicación mientras se lleva puesto, se retira para hacer la higiene.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "guantes"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-3",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "application",
+      "prompt": "Tras retirar un apósito, el profesional observa que sus manos están visiblemente manchadas de sangre. ¿Qué debe hacer?",
+      "options": [
+        "Quitarse los guantes y continuar sin higiene porque no tocó al paciente.",
+        "Esperar al final del turno para lavarse las manos.",
+        "Aplicar preparado de base alcohólica dos veces y continuar.",
+        "Lavarse con agua y jabón, secarse bien y luego continuar."
+      ],
+      "correctIndex": 3,
+      "explanation": "La presencia de sangre visible exige lavado con agua y jabón; el preparado alcohólico no es adecuado para manos visiblemente sucias. Después del lavado hay que secarse bien antes de continuar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-1",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "concept",
+      "prompt": "¿Cómo se calcula el cumplimiento de la higiene de manos en la observación directa?",
+      "answer": "Se divide el número de acciones de higiene de manos realizadas entre el número de oportunidades observadas y se multiplica por 100. Cada oportunidad requiere una sola acción, aunque varias indicaciones coincidan en el mismo momento.",
+      "explanation": "El denominador son las oportunidades, no las indicaciones aisladas; por eso varias indicaciones simultáneas se computan como una sola oportunidad. El resultado expresa el porcentaje de ocasiones en que se actuó cuando se debía.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            20,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cumplimiento"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-2",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "multiple",
+      "prompt": "Según el método de observación de la OMS, ¿cuántas oportunidades se recomiendan por periodo y unidad de observación?",
+      "options": [
+        "200 oportunidades.",
+        "50 oportunidades.",
+        "100 oportunidades.",
+        "500 oportunidades."
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía indica 200 oportunidades por periodo y unidad (planta, servicio o categoría profesional) para hacer comparaciones fiables. Un número menor puede no representar bien la práctica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "observación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-3",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "application",
+      "prompt": "En una sesión se observan 20 oportunidades y se registran 15 acciones positivas de higiene de manos. ¿Cuál es el cumplimiento?",
+      "options": [
+        "15%.",
+        "20%.",
+        "25%.",
+        "75%."
+      ],
+      "correctIndex": 3,
+      "explanation": "El cálculo es (15 / 20) × 100 = 75%. Las 20 oportunidades son el denominador y las 15 acciones realizadas, el numerador.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            20,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-1",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "concept",
+      "prompt": "¿Cuál es el propósito de la retroalimentación en la observación de la higiene de manos?",
+      "answer": "Informar al personal observado sobre su cumplimiento y discutir los resultados para mejorar la práctica. La retroalimentación debe ser oportuna, en un clima de confianza y con fines educativos, no para una evaluación administrativa del personal.",
+      "explanation": "La observación no termina en la medición: su valor está en promover la reflexión y el cambio. Presentar los resultados de inmediato y dialogar sobre ellos tiene un efecto promotor.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "retroalimentación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-2",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "multiple",
+      "prompt": "¿Cuál práctica debe evitarse para cuidar la piel de las manos?",
+      "options": [
+        "Lavarse con agua caliente y jabón.",
+        "Frotar hasta que el preparado alcohólico se seque por completo.",
+        "Aplicar una crema de manos compatible con los guantes y los productos de higiene.",
+        "Secarse bien las manos después del lavado."
+      ],
+      "correctIndex": 0,
+      "explanation": "El agua caliente aumenta la irritación de la piel. Se recomienda usar agua y jabón solo cuando esté indicado, secarse bien y aplicar crema compatible; el preparado alcohólico debe secarse por completo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cuidado de la piel"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-3",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "application",
+      "prompt": "Una enfermera presenta irritación de la piel por higiene frecuente. ¿Qué recomendación es la más adecuada?",
+      "options": [
+        "Sustituir la higiene de manos por el uso permanente de guantes.",
+        "Usar una crema de manos compatible y evitar lavarse con jabón inmediatamente antes o después del preparado alcohólico.",
+        "Lavarse con agua caliente para desinfectar mejor.",
+        "Ponerse los guantes con las manos húmedas para proteger la piel."
+      ],
+      "correctIndex": 1,
+      "explanation": "La crema protectora ayuda a mantener la piel sana si es compatible con los guantes y los productos de higiene. Deben evitarse el agua caliente, la combinación innecesaria de jabón y preparado alcohólico y los guantes con manos húmedas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-01-1",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "concept",
+      "prompt": "¿Qué es una infección asociada a la atención de la salud (IAAS) según la NTS 163?",
+      "answer": "Es una condición local o sistémica resultante de una reacción adversa a la presencia de un agente infeccioso o de sus toxinas, que ocurre en un paciente durante la atención y que no estaba presente ni incubándose al ingreso, salvo que se relacione con una admisión previa. La norma también contempla la vigilancia posterior al alta en pacientes con procedimientos o cirugías vigiladas.",
+      "explanation": "La clave es el momento de adquisición: la infección se origina durante la atención y no estaba presente al ingreso. La vigilancia posterior al alta busca casos que se manifiestan después del egreso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "definición"
+      ]
+    },
+    {
+      "id": "card-iaas-01-2",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes situaciones se excluye de la definición de IAAS?",
+      "options": [
+        "Una infección del tracto urinario en un paciente con catéter urinario permanente.",
+        "Una neumonía que aparece en un paciente sometido a ventilación mecánica.",
+        "Una infección por citomegalovirus adquirida por vía transplacentaria.",
+        "Una bacteriemia asociada a catéter venoso central."
+      ],
+      "correctIndex": 2,
+      "explanation": "Las infecciones del recién nacido adquiridas por vía transplacentaria (por ejemplo, citomegalovirus, toxoplasmosis, rubeola, herpes o sífilis) se excluyen de la definición. Las otras situaciones son IAAS si cumplen los criterios específicos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-iaas-01-3",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "application",
+      "prompt": "Un paciente ingresado por una infección que ya estaba incubando al ingreso desarrolla síntomas a los tres días. ¿Cómo se clasifica?",
+      "options": [
+        "Es IAAS solo si el paciente tiene un dispositivo invasivo.",
+        "Siempre es IAAS, porque apareció durante la hospitalización.",
+        "Es IAAS solo si requiere antibióticos.",
+        "No es IAAS, salvo que exista evidencia clínica o de laboratorio de una nueva infección."
+      ],
+      "correctIndex": 3,
+      "explanation": "La definición excluye la complicación o extensión de una infección presente o incubándose al ingreso. Solo se clasifica como IAAS si hay evidencia de una infección nueva.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-02-1",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las cinco fases del proceso de vigilancia epidemiológica de las IAAS?",
+      "answer": "Plan de vigilancia, recolección de datos, análisis e interpretación, comunicación y uso de la información, y evaluación de la vigilancia. La IPRESS elabora el plan anualmente e incluye los tipos de IAAS, los factores de riesgo y los servicios vigilados.",
+      "explanation": "Las cinco fases forman un ciclo: lo que se recoge se analiza, se comunica y sirve para decidir; luego se evalúa la propia vigilancia. El plan anual es el punto de partida.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "vigilancia"
+      ]
+    },
+    {
+      "id": "card-iaas-02-2",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "multiple",
+      "prompt": "¿Hasta cuándo tiene la IPRESS para notificar la vigilancia de IAAS en el aplicativo del CDC?",
+      "options": [
+        "Hasta el séptimo día hábil del mes siguiente al mes vigilado.",
+        "Al cierre del año epidemiológico, sin notificación mensual.",
+        "Hasta el último día del mes vigilado.",
+        "Hasta el primer día hábil del mes siguiente."
+      ],
+      "correctIndex": 0,
+      "explanation": "La notificación local se realiza hasta el séptimo día hábil del mes siguiente al mes vigilado. El nivel regional consolida y controla la calidad de la información notificada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "notificación"
+      ]
+    },
+    {
+      "id": "card-iaas-02-3",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "application",
+      "prompt": "En un servicio se identifican 12 casos nuevos de IAAS entre 400 pacientes libres de infección al inicio del mes. ¿Cuál es la incidencia acumulada?",
+      "options": [
+        "3%.",
+        "12%.",
+        "30%.",
+        "48%."
+      ],
+      "correctIndex": 0,
+      "explanation": "La incidencia acumulada es (12 / 400) × 100 = 3%. El denominador son las personas susceptibles y libres de enfermedad al inicio del periodo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-03-1",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "concept",
+      "prompt": "¿Para qué sirven los resultados de la vigilancia en la prevención de las IAAS?",
+      "answer": "Permiten establecer la línea base, detectar desviaciones respecto de las tasas habituales, identificar factores de riesgo, evaluar si las medidas preventivas fueron eficaces y orientar la educación del personal. También son indicadores de la calidad de la gestión.",
+      "explanation": "La vigilancia no es un fin en sí misma: genera información para decidir y corregir. Sin análisis y uso de los datos, no se puede saber si una intervención funcionó.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "prevención"
+      ]
+    },
+    {
+      "id": "card-iaas-03-2",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "multiple",
+      "prompt": "Después de una supervisión, ¿qué corresponde a la IPRESS?",
+      "options": [
+        "Suspender la vigilancia hasta corregir todos los problemas.",
+        "Elaborar un plan de intervención con medidas correctivas, etapas y metas por cada hallazgo.",
+        "Esperar el siguiente año para revisar los hallazgos.",
+        "Remitir el informe al CDC sin hacer cambios internos."
+      ],
+      "correctIndex": 1,
+      "explanation": "La supervisión debe traducirse en un plan de intervención con medidas correctivas, etapas y metas. La IPRESS es responsable de implementarlo y el nivel regional consolida los hallazgos para el CDC.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "supervisión"
+      ]
+    },
+    {
+      "id": "card-iaas-03-3",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "application",
+      "prompt": "La tasa de infección del torrente sanguíneo asociada a catéter venoso central aumenta por encima de la línea base. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Atribuir el aumento al azar sin analizarlo.",
+        "Mantener la vigilancia sin cambios y esperar que la tasa baje sola.",
+        "Revisar los datos, identificar factores de riesgo e implementar y evaluar medidas correctivas.",
+        "Dejar de notificar los casos hasta confirmar el aumento."
+      ],
+      "correctIndex": 2,
+      "explanation": "Un aumento sobre la línea base exige verificar los datos, analizar los factores de riesgo y aplicar medidas cuyo efecto se evaluará con la misma vigilancia. La NTS prevé este ciclo de análisis y mejora.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            9,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-04-1",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "concept",
+      "prompt": "¿Qué situaciones se consideran brote epidémico de IAAS según la NTS 163?",
+      "answer": "Un número de casos mayor que el esperado (aumento a partir de un caso), la aparición de un microorganismo con un nuevo perfil de resistencia en el servicio o en la IPRESS, o un cambio del perfil de resistencia dentro de un periodo, lugar y población específicos.",
+      "explanation": "El brote no se define solo por el número de casos: también puede ser un cambio en el patrón de resistencia. Esto permite detectar problemas emergentes aunque el número de casos aún sea pequeño.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "brote"
+      ]
+    },
+    {
+      "id": "card-iaas-04-2",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "multiple",
+      "prompt": "¿En qué plazo y por qué vías notifica la IPRESS un brote de IAAS?",
+      "options": [
+        "Dentro de los 7 días hábiles, solo por correo postal.",
+        "Al cierre del mes vigilado, en el aplicativo del CDC.",
+        "Cuando el laboratorio confirme el microorganismo, únicamente al Comité Local de Control de Infecciones.",
+        "Dentro de las 24 horas, por la web y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC."
+      ],
+      "correctIndex": 3,
+      "explanation": "Los brotes se notifican dentro de las 24 horas de constatado el evento, mediante la web indicada y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC. Es un plazo más corto que el de la notificación mensual rutinaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "notificación"
+      ]
+    },
+    {
+      "id": "card-iaas-04-3",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "application",
+      "prompt": "En una UCI aparecen tres casos de Pseudomonas aeruginosa resistente a carbapenemes en una semana. ¿Qué corresponde hacer primero?",
+      "options": [
+        "Notificar dentro de las 24 horas, conservar las cepas e iniciar la investigación.",
+        "Suspender los cultivos de vigilancia.",
+        "Esperar a tener diez casos para considerarlo brote.",
+        "Notificar solo en el informe mensual."
+      ],
+      "correctIndex": 0,
+      "explanation": "La aparición de un microorganismo con un perfil de resistencia de alerta puede constituir un brote. Corresponde notificar en 24 horas, conservar las cepas para su derivación y realizar la investigación epidemiológica con el Comité Local de Control de Infecciones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-01-1",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "concept",
+      "prompt": "¿Qué indicadores se usan para valorar a una niña o un niño menor de 5 años?",
+      "answer": "Se emplean peso para la edad (P/E), peso para la talla (P/T), talla para la edad (T/E) y perímetro cefálico para la edad (PC/E). El P/T detecta desnutrición aguda o exceso de peso, mientras que el T/E refleja desnutrición crónica.",
+      "explanation": "Cada indicador responde a una pregunta distinta: el P/E resume el peso para la edad, el P/T compara peso y talla, el T/E valora el crecimiento lineal y el PC/E el crecimiento cerebral. Usarlos juntos evita conclusiones parciales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            20,
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "antropometría",
+        "indicadores"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-01-2",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "multiple",
+      "prompt": "¿Hasta qué edad se recomienda medir el perímetro cefálico en la valoración nutricional infantil?",
+      "options": [
+        "Hasta los 60 meses",
+        "Hasta los 36 meses",
+        "Hasta los 12 meses",
+        "Hasta los 24 meses"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía indica medir el perímetro cefálico hasta los 36 meses, con énfasis en zonas de riesgo por Zika. Pasada esa edad, la valoración se apoya en peso, talla y perímetro abdominal.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            20,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "perímetro cefálico",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-01-3",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "type": "application",
+      "prompt": "Una niña de 7 años acude a su control de crecimiento. ¿Qué mediciones e indicadores corresponden a su edad?",
+      "options": [
+        "Solo peso y talla; P/E y T/E",
+        "Peso y longitud; P/E y P/T",
+        "Peso, talla y perímetro abdominal; IMC/E, T/E y PAB/E",
+        "Peso, talla y perímetro cefálico; P/T y PC/E"
+      ],
+      "correctIndex": 2,
+      "explanation": "Entre los 5 y 11 años se mide peso, talla y perímetro abdominal, y se clasifica con IMC/E, T/E y PAB/E. El perímetro cefálico se reserva para los primeros 36 meses.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            20,
+            25,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "escolares",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-02-1",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "concept",
+      "prompt": "¿Qué diferencia hay entre el peso para la talla y la talla para la edad?",
+      "answer": "El P/T compara el peso con la talla y refleja el estado nutricional actual o agudo, por lo que identifica emaciación, bajo peso, sobrepeso y obesidad. El T/E compara la talla con la edad y refleja el crecimiento lineal acumulado, por lo que identifica desnutrición crónica o talla baja.",
+      "explanation": "Un niño puede tener P/T normal y T/E bajo: esto sugiere desnutrición pasada o crónica. Por eso ambos indicadores se leen juntos y se complementan con la curva de crecimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "P/T",
+        "T/E"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-02-2",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "multiple",
+      "prompt": "Una niña de 8 años tiene un IMC/E de 2,5 DE. ¿Cómo se clasifica?",
+      "options": [
+        "Delgadez severa",
+        "Normal",
+        "Sobrepeso",
+        "Obesidad"
+      ],
+      "correctIndex": 3,
+      "explanation": "En 5 a 11 años, el IMC/E >2 DE corresponde a obesidad; el sobrepeso abarca desde >1 DE hasta 2 DE. Un valor de 2,5 DE supera el límite de obesidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "IMC/E",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-02-3",
+      "topicId": "topic-nutricion-ninos-evaluacion",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "type": "application",
+      "prompt": "Lactante de 4 meses con lactancia materna exclusiva y P/T de 2,4 DE. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Mantener la lactancia materna exclusiva, no clasificar como sobrepeso para intervención y controlar el crecimiento",
+        "Iniciar una dieta hipocalórica",
+        "Suspender la lactancia materna",
+        "Derivar para cirugía bariátrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "En menores de 6 meses con lactancia materna exclusiva no se considera sobrepeso u obesidad para fines de intervención, aunque el P/T supere 2 DE. Restringir la lactancia o indicar pérdida de peso sería incorrecto.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            24,
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "lactancia materna",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-03-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "concept",
+      "prompt": "¿Por qué la tendencia de la curva importa más que un punto aislado?",
+      "answer": "Porque un punto puede estar dentro del rango normal y, aun así, mostrar que el crecimiento se está deteniendo o desviando. La curva revela la dirección y la velocidad del crecimiento, y permite detectar el riesgo antes de que cambie la clasificación.",
+      "explanation": "La guía espera un crecimiento ascendente y estable dentro de un mismo canal. El aplanamiento, el cruce de líneas o un cambio de canal son signos de alerta que un único valor no muestra.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            27,
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "curvas de crecimiento",
+        "tendencia"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-03-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "multiple",
+      "prompt": "¿Cuál es un signo de alerta de talla baja en una niña o un niño de 5 a 11 años?",
+      "options": [
+        "Aumento de talla de 4 cm en 6 meses",
+        "Incremento de talla menor a 2,5 cm en 6 meses",
+        "Peso estable entre dos controles",
+        "IMC/E de 0 DE"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía considera que un incremento de talla menor a 2,5 cm en 6 meses es un signo de alerta de talla baja en 5 a 11 años. Un aumento de 4 cm no cumple ese criterio y el IMC/E de 0 DE es normal.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "talla baja",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-03-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "type": "application",
+      "prompt": "Niño de 3 años cuya curva de P/T se aplana y cruza la mediana hacia -1 DE. ¿Qué corresponde hacer?",
+      "options": [
+        "Indicar pérdida de peso",
+        "Suspender la lactancia materna",
+        "Revisar la curva, valorar el cambio de tendencia y brindar atención nutricional con seguimiento",
+        "Esperar al siguiente control anual sin intervención"
+      ],
+      "correctIndex": 2,
+      "explanation": "El aplanamiento y el cruce de la mediana hacia -1 DE son signos de alerta de desnutrición. Corresponde valorar la tendencia, revisar la alimentación y el estado de salud, y asegurar atención nutricional y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            28,
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "signos de alerta",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-04-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "concept",
+      "prompt": "¿Cómo se alimenta a una niña o un niño durante los primeros 24 meses?",
+      "answer": "Con lactancia materna exclusiva durante los primeros 6 meses y, desde esa edad, lactancia materna continuada más alimentación complementaria hasta los 24 meses. Las preparaciones no llevan azúcar ni sal y se ofrecen con cuchara, con el niño sentado.",
+      "explanation": "La alimentación complementaria complementa la leche materna, no la reemplaza de golpe. Mantener las mamadas asegura energía y nutrientes mientras se introducen nuevas texturas y sabores.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30,
+            31
+          ]
+        },
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "alimentación complementaria",
+        "lactancia"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-04-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "multiple",
+      "prompt": "En una niña con sobrepeso, ¿cuál es el objetivo del consejo nutricional?",
+      "options": [
+        "Perder 1 kg por semana",
+        "Suspender la cena",
+        "Lograr una pérdida rápida de peso antes de la pubertad",
+        "Mantener el peso o lograr una ganancia más lenta, sin indicar pérdida de peso"
+      ],
+      "correctIndex": 3,
+      "explanation": "En la niñez no se indica la disminución de peso como objetivo del control. La guía orienta a mantener el peso o lograr una ganancia más lenta, con alimentación adecuada y seguimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "sobrepeso",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-04-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-04",
+      "type": "application",
+      "prompt": "Lactante de 8 meses con bajo peso y alimentación complementaria escasa. ¿Qué corresponde?",
+      "options": [
+        "Reforzar la lactancia materna y la alimentación complementaria, agregar micronutrientes y establecer un plan personalizado",
+        "Restringir las comidas a dos veces al día",
+        "Suspender la lactancia para que coma más",
+        "Indicar solo fórmula artificial"
+      ],
+      "correctIndex": 0,
+      "explanation": "En bajo peso se busca un aumento progresivo con un plan personalizado, priorizando la lactancia materna y la alimentación complementaria, y suplementando con hierro, vitamina A, zinc y otros micronutrientes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "bajo peso",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-05-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "concept",
+      "prompt": "¿Cuáles son los seis pasos de la consulta nutricional infantil?",
+      "answer": "Conocer el estado de salud y nutrición, realizar la anamnesis alimentaria y el diagnóstico nutricional, estimar los requerimientos de energía, establecer metas, prescribir la alimentación y registrar con seguimiento.",
+      "explanation": "El orden asegura que la prescripción se base en un diagnóstico y en metas claras, y que el plan quede registrado para evaluar su evolución. La consulta no se reduce a entregar una lista de alimentos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "consulta nutricional",
+        "pasos"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-05-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "multiple",
+      "prompt": "¿Quién debe derivar a consulta nutricional y registrar la interconsulta en la historia clínica?",
+      "options": [
+        "El personal administrativo del establecimiento",
+        "El profesional responsable del control de crecimiento y desarrollo o de la atención médica",
+        "Únicamente el nutricionista del establecimiento",
+        "La madre, padre o cuidador"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía señala que el profesional responsable del control de crecimiento y desarrollo o de la atención médica deriva y registra la interconsulta a nutrición en la historia clínica. El nutricionista atiende la consulta, pero no es quien la genera necesariamente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "derivación",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-05-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "type": "application",
+      "prompt": "En un puesto de salud sin nutricionista, un niño de 2 años presenta obesidad. ¿Qué conducta corresponde?",
+      "options": [
+        "Mantenerlo en control local sin otra acción",
+        "Indicar una dieta restrictiva por escrito",
+        "Referirlo a un establecimiento de mayor capacidad resolutiva y asegurar la contrarreferencia para el seguimiento",
+        "Esperar a que cumpla 5 años para derivarlo"
+      ],
+      "correctIndex": 2,
+      "explanation": "Si el establecimiento no cuenta con nutricionista, la guía indica referir a uno de mayor capacidad resolutiva y luego continuar el control periódico mediante contrarreferencia. La obesidad requiere atención nutricional, no solo observación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            30
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "referencia",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-06-1",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "concept",
+      "prompt": "¿Qué busca el abordaje colectivo de la nutrición infantil?",
+      "answer": "Evaluar el grado de carencia nutricional y sus factores, vigilar las tendencias de desnutrición y obesidad, establecer acciones preventivas y evaluar sus resultados. También promueve investigación operativa y participación social.",
+      "explanation": "El nivel colectivo no reemplaza la consulta individual: identifica grupos en riesgo, orienta políticas y programas, y permite medir si las intervenciones están funcionando.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "salud pública",
+        "prevención"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-06-2",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "multiple",
+      "prompt": "¿Entre qué límites se busca mantener a la mayoría de niñas y niños en P/T, P/E e IMC/E?",
+      "options": [
+        "Entre la mediana y -2 DE",
+        "Entre 2 y -2 DE",
+        "Entre 3 y -3 DE",
+        "Entre 1 y -1 DE"
+      ],
+      "correctIndex": 3,
+      "explanation": "La meta poblacional es mantener al mayor porcentaje entre 1 y -1 DE en P/T, P/E e IMC/E, y entre 2 y -2 DE en T/E. Es un objetivo de vigilancia, no un criterio para clasificar a un niño individual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "metas poblacionales",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-ninos-06-3",
+      "topicId": "topic-nutricion-ninos-intervencion",
+      "sheetId": "sheet-nutricion-ninos-06",
+      "type": "application",
+      "prompt": "En una comunidad aumenta la prevalencia de obesidad infantil. ¿Cuál es la respuesta más completa desde el nivel colectivo?",
+      "options": [
+        "Vigilar la tendencia y sus determinantes, implementar acciones educativas y evaluar los resultados",
+        "Prohibir la venta de alimentos en la comunidad",
+        "Derivar a todos los niños a cirugía",
+        "Citar individualmente a todos los niños para pesarles"
+      ],
+      "correctIndex": 0,
+      "explanation": "El abordaje colectivo vigila tendencias y factores asociados, implementa acciones de prevención y evaluúa su aplicación y resultados. Citar o derivar a todos sin análisis no constituye una intervención poblacional.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-ninos",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición infantil",
+        "obesidad",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-01-1",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "concept",
+      "prompt": "¿Cómo se mide correctamente el perímetro abdominal en una persona adulta?",
+      "answer": "Con la persona de pie, torso descubierto y brazos relajados, se ubica el punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca. La cinta se coloca horizontal, sin comprimir, y se lee al final de una exhalación normal, promediando tres mediciones.",
+      "explanation": "Ese punto medio es la referencia anatómica que hace reproducible la medición. La lectura al final de la exhalación evita que la contracción abdominal altere el valor.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "perímetro abdominal",
+        "técnica"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-01-2",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "multiple",
+      "prompt": "¿Dónde se ubica la cinta para medir el perímetro abdominal?",
+      "options": [
+        "A la altura del ombligo",
+        "En el punto medio entre la última costilla y la cresta ilíaca",
+        "Sobre la cresta ilíaca",
+        "En el borde inferior del esternón"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía indica marcar el punto medio entre el borde inferior de la última costilla y el borde superior de la cresta ilíaca, a ambos lados, y colocar la cinta sobre esas referencias. El ombligo no es el punto anatómico indicado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "perímetro abdominal",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-01-3",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "type": "application",
+      "prompt": "Al medir la talla de un adulto, se observa que la cabeza está inclinada hacia atrás. ¿Qué corresponde hacer?",
+      "options": [
+        "Registrar la medida tal como quedó",
+        "Repetir la medición apoyando solo la frente en el tallímetro",
+        "Corregir la posición hasta el plano de Frankfurt y promediar tres mediciones",
+        "Medir con el tallímetro incorporado a la balanza"
+      ],
+      "correctIndex": 2,
+      "explanation": "La cabeza debe orientarse según el plano de Frankfurt, una línea imaginaria del borde superior del conducto auditivo externo a la base de la órbita, perpendicular al tablero. Luego se realizan tres mediciones y se promedia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "talla",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-02-1",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "concept",
+      "prompt": "¿Cómo se interpretan juntos el IMC y el perímetro abdominal?",
+      "answer": "El IMC clasifica el estado nutricional global, mientras que el perímetro abdominal estima el riesgo cardiometabólico. Cuando ambos están alterados, el riesgo de comorbilidad aumenta, por lo que un IMC normal no descarta riesgo si el perímetro abdominal es alto.",
+      "explanation": "El IMC no informa dónde se distribuye la grasa. El perímetro abdominal añade esa información y permite identificar riesgo de diabetes, hipertensión y enfermedad cardiovascular.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            20,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "IMC",
+        "perímetro abdominal"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-02-2",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "multiple",
+      "prompt": "Una persona adulta tiene un IMC de 35,5 kg/m². ¿Cómo se clasifica?",
+      "options": [
+        "Sobrepeso",
+        "Obesidad grado I",
+        "Obesidad grado III",
+        "Obesidad grado II"
+      ],
+      "correctIndex": 3,
+      "explanation": "La obesidad grado II abarca desde 35 hasta menos de 40 kg/m². El grado I va de 30 a menos de 35, y el grado III corresponde a 40 o más.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "IMC",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-02-3",
+      "topicId": "topic-nutricion-adultos-evaluacion",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "type": "application",
+      "prompt": "Una mujer adulta tiene un perímetro abdominal de 85 cm. ¿Qué nivel de riesgo representa?",
+      "options": [
+        "Riesgo alto, porque en la mujer el punto de corte es ≥80 cm",
+        "Riesgo bajo, porque el punto de corte es ≥88 cm",
+        "Riesgo muy alto, porque supera los 80 cm",
+        "No se puede interpretar sin conocer el peso"
+      ],
+      "correctIndex": 0,
+      "explanation": "En mujeres, un perímetro abdominal ≥80 cm indica riesgo alto y ≥88 cm riesgo muy alto. Con 85 cm se ubica en riesgo alto, independientemente del peso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            20
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "perímetro abdominal",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-03-1",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "concept",
+      "prompt": "¿En qué se diferencian la orientación, la consejería y la consulta nutricional?",
+      "answer": "La orientación es una actividad educativa básica y puntual; la consejería es un proceso educativo, interpersonal y participativo de 20 a 45 minutos; la consulta es la atención especializada del nutricionista, orientada a promoción, prevención, recuperación o control.",
+      "explanation": "Las tres comparten el objetivo de mejorar la alimentación, pero difieren en profundidad y responsable. Confundirlas puede llevar a registrar una consejería como si fuera una consulta especializada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "consejería",
+        "consulta"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-03-2",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo se estima para una consejería nutricional?",
+      "options": [
+        "Menos de 15 minutos",
+        "De 20 a 45 minutos",
+        "De 5 a 10 minutos",
+        "De 60 a 90 minutos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía define la consejería nutricional con un tiempo estimado de 20 a 45 minutos. Ese margen permite explorar la situación, acordar metas y verificar la comprensión.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "consejería",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-03-3",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-03",
+      "type": "application",
+      "prompt": "Una persona con IMC normal refiere haber perdido 2 kg sin proponérselo en las últimas dos semanas. ¿Qué corresponde?",
+      "options": [
+        "Considerarla normal y darle el alta",
+        "Repetir la medición en un año",
+        "Brindar consejería, evaluar el signo de alerta y programar controles",
+        "Indicar una dieta para ganar peso de inmediato"
+      ],
+      "correctIndex": 2,
+      "explanation": "Una pérdida involuntaria mayor a 1 kg en dos semanas es un signo de alerta, aunque el IMC sea normal. Corresponde consejería, evaluación de la causa y seguimiento programado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "signos de alerta",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-04-1",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "concept",
+      "prompt": "¿Qué velocidad de pérdida de peso se propone en sobrepeso y en obesidad?",
+      "answer": "En sobrepeso se propone una pérdida progresiva de 0,5 kg por semana. En obesidad sin factores adicionales de riesgo se plantea una pérdida de 0,5 a 1,0 kg por semana, con alimentación balanceada y control médico y nutricional.",
+      "explanation": "La velocidad se ajusta para favorecer una pérdida sostenida y segura. Una pérdida más rápida no es el objetivo terapéutico y puede dificultar el mantenimiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "sobrepeso",
+        "obesidad"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-04-2",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "multiple",
+      "prompt": "Una persona adulta tiene un IMC de 42 kg/m². ¿Qué opción corresponde considerar?",
+      "options": [
+        "Dieta muy restrictiva sin seguimiento",
+        "Alta con control anual",
+        "Solo consejería breve en el primer nivel",
+        "Referencia para manejo multidisciplinario, con valoración de medidas intensivas incluida la cirugía"
+      ],
+      "correctIndex": 3,
+      "explanation": "Con IMC ≥40 se busca reducir el peso exagerado, descartar enfermedades asociadas y valorar medidas intensivas, incluida la cirugía, con referencia a un establecimiento de mayor complejidad y manejo multidisciplinario.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "obesidad grado III",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nutricion-adultos-04-3",
+      "topicId": "topic-nutricion-adultos-intervencion",
+      "sheetId": "sheet-nutricion-adultos-04",
+      "type": "application",
+      "prompt": "Una persona adulta tiene IMC de 17,2 kg/m² y refiere pérdida de apetito. ¿Cuál es la conducta inicial más adecuada?",
+      "options": [
+        "Derivarla a interconsulta médica para descartar enfermedad asociada e iniciar recuperación nutricional",
+        "Indicar una dieta hipocalórica",
+        "Considerarla normal y citarla en un año",
+        "Derivarla a cirugía bariátrica"
+      ],
+      "correctIndex": 0,
+      "explanation": "Un IMC de 17,2 corresponde a delgadez grado I. La guía indica derivar a interconsulta médica para descartar enfermedad asociada y luego buscar la recuperación nutricional hasta el rango normal.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nutricion-adultos",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "nutrición adulto",
+        "delgadez",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-lactancia-01-1",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "concept",
+      "prompt": "¿Qué características tiene el calostro y por qué se considera importante?",
+      "answer": "Es la secreción amarillenta y espesa de los primeros 5 días, rica en componentes inmunológicos, proteínas, calcio y otros minerales. Su volumen es suficiente para el recién nacido, ayuda a eliminar el meconio, previene la ictericia y madura el aparato digestivo.",
+      "explanation": "Se le llama la primera vacuna porque aporta protección inmunológica mientras el sistema del bebé madura. Su escaso volumen no significa que falte leche: está adaptado a las necesidades iniciales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            22,
+            40
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "calostro",
+        "recién nacido"
+      ]
+    },
+    {
+      "id": "card-lactancia-01-2",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo se recomienda mantener el contacto piel a piel después del nacimiento?",
+      "options": [
+        "Al menos 30 minutos",
+        "Al menos 1 hora",
+        "Al menos 6 horas",
+        "Al menos 15 minutos"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía recomienda mantener el contacto piel a piel por lo menos una hora, salvo que la madre o el bebé requieran atención especial. Durante ese tiempo se posterga el aseo y otras atenciones no urgentes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "piel a piel",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-lactancia-01-3",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-01",
+      "type": "application",
+      "prompt": "Nace un bebé por cesárea y la madre está despierta y estable. ¿Qué conducta favorece la lactancia?",
+      "options": [
+        "Ofrecer fórmula de inicio para evitar hipoglucemia",
+        "Esperar 24 horas para la primera mamada",
+        "Realizar el contacto piel a piel lo antes posible, con las manos de la madre libres, y apoyar la lactancia",
+        "Separar al bebé hasta que la madre se recupere por completo"
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía indica que el contacto piel a piel también se realice en cesáreas cuando sea posible, dejando libres las manos de la madre y facilitando la lactancia lo antes posible. El padre puede apoyar si la madre no puede.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "cesárea",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-lactancia-02-1",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "concept",
+      "prompt": "¿Cómo se reconoce un agarre correcto al pecho?",
+      "answer": "La boca está bien abierta, el labio inferior se ve hacia afuera, el mentón toca el pecho y se observa más areola por arriba que por debajo de la boca. El bebé debe estar girado hacia la madre, con cuerpo y cabeza alineados.",
+      "explanation": "Estas señales indican que el bebé toma suficiente tejido mamario y no solo el pezón. Un agarre superficial puede causar dolor y vaciamiento incompleto.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            22,
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "agarre",
+        "técnica"
+      ]
+    },
+    {
+      "id": "card-lactancia-02-2",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "multiple",
+      "prompt": "¿Cuántas mamadas en 24 horas se consideran habituales en un recién nacido?",
+      "options": [
+        "De 2 a 4",
+        "De 5 a 7",
+        "De 15 a 20",
+        "De 8 a 12"
+      ],
+      "correctIndex": 3,
+      "explanation": "La guía indica un promedio de 8 a 12 mamadas en 24 horas, a demanda, de día y de noche. La duración varía: a algunos bebés les basta 10 minutos y otros necesitan 30 o más.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "frecuencia",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-lactancia-02-3",
+      "topicId": "topic-lactancia-tecnica",
+      "sheetId": "sheet-lactancia-02",
+      "type": "application",
+      "prompt": "Una madre refiere que solo ofrece el pecho cuando el bebé llora. ¿Qué orientación corresponde?",
+      "options": [
+        "Enseñarle las señales tempranas de hambre y ofrecer el pecho antes del llanto",
+        "Recomendarle biberones para que el bebé no se angustie",
+        "Decirle que el llanto siempre indica dolor",
+        "Indicarle que espere siempre al llanto para asegurar hambre"
+      ],
+      "correctIndex": 0,
+      "explanation": "El llanto es un signo tardío de hambre. Conviene enseñar señales tempranas como buscar el pecho, abrir la boca, sacar la lengua, succionar las manos o mostrarse inquieto, y ofrecer el pecho en ese momento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            23
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "señales de hambre",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-lactancia-03-1",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "concept",
+      "prompt": "¿Qué infección materna contraindica la lactancia materna y por qué?",
+      "answer": "La infección por VIH contraindica la lactancia porque se estima que el 5 a 15 % de bebés nacidos de mujeres infectadas se infectan a través de ella. En el Perú se debe evitar por completo y se proporciona alimentación artificial gratuita a través del SIS.",
+      "explanation": "La mayoría de las infecciones maternas, como mastitis, tuberculosis o hepatitis B y C, no contraindican la lactancia. El VIH es la excepción por el riesgo comprobado de transmisión vertical durante la lactancia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            49
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "VIH",
+        "infecciones"
+      ]
+    },
+    {
+      "id": "card-lactancia-03-2",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "multiple",
+      "prompt": "¿Cuál de estas infecciones maternas contraindica la lactancia materna?",
+      "options": [
+        "Tuberculosis",
+        "VIH",
+        "Mastitis",
+        "Hepatitis B"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía señala que la mayoría de infecciones, incluidas mastitis, tuberculosis y hepatitis B y C, no contraindican la lactancia. La infección por VIH es la excepción, por el riesgo de transmisión al bebé.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            49
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "VIH",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-lactancia-03-3",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-03",
+      "type": "application",
+      "prompt": "Una madre con mastitis consulta si debe suspender la lactancia. ¿Qué corresponde responder?",
+      "options": [
+        "Debe cambiar a fórmula de forma definitiva",
+        "Sí, debe suspenderla hasta que cedan el dolor y la fiebre",
+        "No, la mastitis no contraindica la lactancia; debe continuar y recibir tratamiento",
+        "Solo puede dar leche del pecho afectado después de 7 días"
+      ],
+      "correctIndex": 2,
+      "explanation": "La mastitis figura entre las infecciones que no contraindican la lactancia; de hecho, el bebé se beneficia de la protección. Corresponde mantener la lactancia y tratar el cuadro según indicación clínica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            49
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "mastitis",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-lactancia-04-1",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "concept",
+      "prompt": "¿Cómo se conserva la leche materna extraída?",
+      "answer": "A temperatura ambiente se conserva de 6 a 8 horas, excepto en zonas muy calurosas, donde debe refrigerarse. En refrigeradora se conserva hasta 72 horas. La leche calentada no debe volver a refrigerarse y la que no se consume se elimina.",
+      "explanation": "Separar la leche en porciones según el consumo evita descongelar o recalentar más de lo necesario. La cadena de frío y el descarte de sobrantes reducen el riesgo de contaminación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            51,
+            52
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "conservación",
+        "leche extraída"
+      ]
+    },
+    {
+      "id": "card-lactancia-04-2",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "multiple",
+      "prompt": "¿Cuánto tiempo puede conservarse la leche materna extraída en refrigeradora?",
+      "options": [
+        "6 a 8 horas",
+        "24 horas",
+        "72 horas",
+        "7 días"
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía indica 72 horas en el interior de la refrigeradora. Las 6 a 8 horas corresponden a la conservación a temperatura ambiente, con excepción de zonas muy calurosas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            51
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "conservación",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-lactancia-04-3",
+      "topicId": "topic-lactancia-problemas",
+      "sheetId": "sheet-lactancia-04",
+      "type": "application",
+      "prompt": "Después de calentar leche extraída, el bebé no la termina. ¿Qué se hace con el resto?",
+      "options": [
+        "Guardarlo en la refrigeradora para la siguiente toma",
+        "Recalentarlo al día siguiente",
+        "Mezclarlo con leche recién extraída",
+        "Eliminarlo, porque la leche calentada no debe volver a refrigerarse"
+      ],
+      "correctIndex": 3,
+      "explanation": "La leche calentada no debe volver a refrigerarse y la que no se consumió se elimina. Mezclarla o recalentarla aumenta el riesgo de contaminación y no conserva sus propiedades.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-lactancia-materna",
+          "pages": [
+            52
+          ]
+        }
+      ],
+      "tags": [
+        "lactancia",
+        "administración",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-ottawa-01-1",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "concept",
+      "prompt": "¿Qué distingue la promoción de la salud de la prevención de enfermedades?",
+      "answer": "La prevención busca reducir factores de riesgo y evitar la aparición o progresión de enfermedades. La promoción actúa sobre las condiciones de vida y busca que las personas y comunidades ganen control sobre su salud, mediante políticas públicas, entornos favorables, participación y habilidades. Son procesos complementarios, no opuestos.",
+      "explanation": "La diferencia está en el foco: la prevención se dirige al riesgo específico; la promoción, a los determinantes y al empoderamiento. En la práctica se combinan.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "promoción",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-ottawa-01-2",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes NO es una de las cinco estrategias de la Carta de Ottawa?",
+      "options": [
+        "Aumentar la prescripción de medicamentos en la consulta.",
+        "Elaborar una política pública sana.",
+        "Crear ambientes favorables.",
+        "Reforzar la acción comunitaria."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ottawa propone política pública sana, ambientes favorables, acción comunitaria, aptitudes personales y reorientación de los servicios. Aumentar la prescripción no es una estrategia de promoción; la reorientación de servicios busca integrar la promoción, no sustituirla por fármacos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "promoción",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-ottawa-01-3",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "application",
+      "prompt": "Un distrito quiere reducir la obesidad infantil. ¿Qué conjunto de acciones corresponde mejor a un enfoque de promoción de la salud?",
+      "options": [
+        "Entregar folletos en el centro de salud y citar a los niños con obesidad.",
+        "Regular la publicidad de alimentos ultraprocesados, crear espacios deportivos y involucrar a escuelas y familias.",
+        "Aumentar las consultas de nutrición y derivar a todos los casos al hospital.",
+        "Esperar a que los niños presenten complicaciones para iniciar tratamiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La opción B combina política pública, entorno favorable y acción comunitaria, tres estrategias de Ottawa. Las demás se centran en la atención individual o en la reacción tardía y no modifican las condiciones que sostienen el problema.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "promoción",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-promocion-politica-01-1",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "concept",
+      "prompt": "¿Qué significa adoptar el enfoque de Salud en Todas las Políticas?",
+      "answer": "Significa que todos los sectores evalúan sistemáticamente las consecuencias de sus decisiones sobre la salud, buscan sinergias y evitan impactos perjudiciales. No se limita al sector salud: implica gobernanza compartida, rendición de cuentas y participación en los tres niveles de gobierno.",
+      "explanation": "El enfoque reconoce que la salud se produce en gran medida fuera del sistema sanitario. Por eso vivienda, educación, transporte, agricultura y economía deben incorporar el criterio de salud.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            8,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "política",
+        "determinantes"
+      ]
+    },
+    {
+      "id": "card-promocion-politica-01-2",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es uno de los cuatro lineamientos de la política peruana de promoción de la salud?",
+      "options": [
+        "Limitar la promoción a las enfermedades transmisibles.",
+        "Concentrar la promoción en el tercer nivel de atención.",
+        "Abordar los determinantes sociales para cerrar brechas de inequidad.",
+        "Sustituir la participación comunitaria por campañas masivas."
+      ],
+      "correctIndex": 2,
+      "explanation": "El tercer lineamiento es precisamente el abordaje de los determinantes sociales para cerrar brechas. La política busca lo contrario de concentrar, sustituir o limitar: articula sectores, participación y determinantes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            22,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "política",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-promocion-politica-01-3",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "application",
+      "prompt": "En un distrito con alta anemia infantil, el equipo de salud propone un plan. ¿Cuál acción es más coherente con la gestión territorial en salud?",
+      "options": [
+        "Derivar a todos los niños anémicos al hospital regional.",
+        "Capacitar solo al personal de salud y esperar que la comunidad acuda.",
+        "Repartir hierro en el puesto de salud y registrar la entrega.",
+        "Coordinar con educación, agricultura, municipalidad y organizaciones sociales para mejorar alimentación, agua y acceso a controles."
+      ],
+      "correctIndex": 3,
+      "explanation": "La anemia tiene determinantes alimentarios, sanitarios y socioeconómicos. La opción B articula sectores y actúa sobre esos determinantes; las otras se quedan en la entrega de insumos o en la derivación y no modifican las causas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            17,
+            18,
+            22,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "política",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-modelo-sujetos-01-1",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "concept",
+      "prompt": "¿Por qué la familia es considerada la unidad de intervención de mayor eficacia potencial en promoción de la salud?",
+      "answer": "Porque en la familia se aprenden y sostienen normas, valores, hábitos y conductas de salud. Es el espacio donde se organizan la alimentación, la higiene, el cuidado de los niños y el apoyo ante la enfermedad. Intervenir allí permite llegar a varias personas a la vez y modificar rutinas cotidianas.",
+      "explanation": "La familia media entre el individuo y la comunidad. Sin cambios en el hogar, las recomendaciones de la consulta suelen diluirse.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            31,
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "modelo",
+        "familia"
+      ]
+    },
+    {
+      "id": "card-modelo-sujetos-01-2",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes es un escenario de intervención del Modelo de Abordaje de Promoción de la Salud?",
+      "options": [
+        "El centro laboral.",
+        "La sala de operaciones.",
+        "El laboratorio de anatomía patológica.",
+        "La unidad de cuidados intensivos."
+      ],
+      "correctIndex": 0,
+      "explanation": "El modelo reconoce vivienda, municipio, institución educativa, centro laboral y comunidad como escenarios de promoción. Los otros espacios son servicios clínicos especializados, no escenarios comunitarios del modelo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            32,
+            33,
+            131
+          ]
+        }
+      ],
+      "tags": [
+        "modelo",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-modelo-sujetos-01-3",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "application",
+      "prompt": "Una comunidad rural tiene altos índices de diarrea infantil. ¿Qué intervención articula mejor los escenarios del modelo?",
+      "options": [
+        "Capacitar solo a las madres en el centro de salud.",
+        "Mejorar el agua y el saneamiento con la municipalidad, promover lavado de manos en escuelas y viviendas y organizar vigilancia comunitaria.",
+        "Entregar medicamentos antidiarreicos a todos los niños.",
+        "Prohibir el consumo de agua de la zona sin ofrecer alternativa."
+      ],
+      "correctIndex": 1,
+      "explanation": "La opción B combina vivienda, escuela, municipio y comunidad, y actúa sobre el determinante principal: agua y saneamiento. Las demás son medidas aisladas, coercitivas o puramente curativas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            32,
+            35,
+            46
+          ]
+        }
+      ],
+      "tags": [
+        "modelo",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-modelo-programas-01-1",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "concept",
+      "prompt": "¿Qué caracteriza a una institución educativa saludable?",
+      "answer": "Es una escuela que promueve comportamientos y entornos saludables en toda la comunidad educativa: estudiantes, docentes, directivos y familias. Trabaja alimentación, actividad física, habilidades para la vida, convivencia y prevención de riesgos, con participación de los actores escolares y articulación intersectorial.",
+      "explanation": "No se limita a una charla para estudiantes: modifica el entorno escolar, las prácticas docentes y la relación con las familias.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            129
+          ]
+        }
+      ],
+      "tags": [
+        "programas",
+        "escuela"
+      ]
+    },
+    {
+      "id": "card-modelo-programas-01-2",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el objetivo del programa de familias y viviendas saludables?",
+      "options": [
+        "Capacitar solo a las madres en alimentación.",
+        "Construir viviendas nuevas para todas las familias.",
+        "Mejorar las condiciones de la vivienda y las prácticas de cuidado de la familia.",
+        "Reemplazar el control de crecimiento y desarrollo por visitas sociales."
+      ],
+      "correctIndex": 2,
+      "explanation": "El programa busca mejorar el entorno físico y las prácticas familiares: saneamiento, ventilación, higiene, alimentación y prevención de accidentes. No es un programa de construcción ni sustituye los controles de salud.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "programas",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-modelo-programas-01-3",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "application",
+      "prompt": "Una empresa quiere mejorar la salud de sus trabajadores. ¿Qué acción se alinea mejor con el programa de centros laborales saludables?",
+      "options": [
+        "Aumentar las horas de trabajo para compensar las pausas.",
+        "Derivar a los trabajadores con hipertensión al hospital y no intervenir en el centro laboral.",
+        "Obligar a los trabajadores a asistir a una charla anual.",
+        "Facilitar pausas activas, alimentación saludable y entornos seguros, con participación de trabajadores y empleadores."
+      ],
+      "correctIndex": 3,
+      "explanation": "El centro laboral es un escenario de promoción: se interviene sobre el entorno y las conductas, con participación de trabajadores y empleadores. Una charla aislada o la derivación no cambian las condiciones del trabajo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-modelo-abordaje",
+          "pages": [
+            131
+          ]
+        }
+      ],
+      "tags": [
+        "programas",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-municipios-01-1",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "concept",
+      "prompt": "¿Qué es un municipio saludable?",
+      "answer": "Es un espacio territorial donde las políticas públicas han consolidado entornos y comportamientos saludables para personas, familias y comunidades, con participación de autoridades, instituciones y ciudadanía. No es solo un municipio que hace campañas: incorpora la salud en su agenda y en sus decisiones.",
+      "explanation": "La definición combina política pública, entorno y participación. Un municipio saludable se reconoce por sus decisiones y por la sostenibilidad de los procesos, no por una actividad puntual.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-municipios",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "municipios",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-municipios-01-2",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la secuencia correcta de las fases del programa de municipios y comunidades saludables?",
+      "options": [
+        "Sensibilización, organización, planificación participativa, ejecución y seguimiento con evaluación.",
+        "Planificación, ejecución, sensibilización, organización, evaluación.",
+        "Ejecución, evaluación, sensibilización, planificación, organización.",
+        "Organización, sensibilización, ejecución, planificación, evaluación."
+      ],
+      "correctIndex": 0,
+      "explanation": "El programa parte de la sensibilización y el acta de compromiso, sigue con la conformación del comité, luego el plan participativo, la ejecución y el seguimiento con evaluación participativa transversal.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-municipios",
+          "pages": [
+            34,
+            35,
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "municipios",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-municipios-01-3",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "application",
+      "prompt": "Un alcalde firma un acta para implementar el programa, pero no se conforma ningún comité ni se elabora un plan. ¿Qué fase falta y por qué importa?",
+      "options": [
+        "Falta la sensibilización; sin ella no hay compromiso.",
+        "Faltan la organización y la planificación participativa; sin comité y plan no hay responsable ni acciones priorizadas.",
+        "Falta la evaluación final; sin ella no se puede ejecutar.",
+        "No falta nada; el acta equivale a la implementación."
+      ],
+      "correctIndex": 1,
+      "explanation": "El acta cierra la sensibilización, pero el proceso continúa con la organización (comité multisectorial) y la planificación participativa (plan de acción). Sin esas fases la ejecución queda sin conducción ni prioridades.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-municipios",
+          "pages": [
+            34,
+            35,
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "municipios",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-escuelas-01-1",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "concept",
+      "prompt": "¿Qué es una institución educativa saludable?",
+      "answer": "Es aquella que ha alcanzado estándares de mejora en su entorno y cuya comunidad educativa mantiene comportamientos saludables en su vida cotidiana. Involucra a estudiantes, docentes, directivos y familias, y combina educación, entornos, políticas y trabajo intersectorial.",
+      "explanation": "La definición no se limita a actividades aisladas: exige cambios sostenidos en el entorno y en las prácticas de toda la comunidad educativa.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-escuelas",
+          "pages": [
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "escuela",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-escuelas-01-2",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es una de las líneas de acción del programa de escuelas saludables?",
+      "options": [
+        "Suspender la participación de las familias.",
+        "Eliminar el consejo educativo institucional.",
+        "Desarrollar entornos saludables.",
+        "Aumentar las horas de clase teórica."
+      ],
+      "correctIndex": 2,
+      "explanation": "El programa plantea cuatro líneas: comportamientos saludables, entornos saludables, intersectorialidad y políticas que promueven salud. Las otras opciones contradicen su enfoque participativo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-escuelas",
+          "pages": [
+            10,
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "escuela",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-escuelas-01-3",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "application",
+      "prompt": "Una escuela quiere reducir el sobrepeso en sus estudiantes. ¿Qué acción es más coherente con el programa?",
+      "options": [
+        "Prohibir que los estudiantes traigan comida.",
+        "Medir el peso una vez al año sin intervenir.",
+        "Dar una charla anual sobre alimentación.",
+        "Mejorar el kiosco escolar, promover actividad física y acordar políticas con docentes y familias."
+      ],
+      "correctIndex": 3,
+      "explanation": "La escuela saludable actúa sobre el entorno, las políticas y las prácticas, no solo sobre la información. La opción B combina kiosco, actividad física y participación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-escuelas",
+          "pages": [
+            26,
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "escuela",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-agente-01-1",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "concept",
+      "prompt": "¿Qué es el agente comunitario de salud y cuál es su rol articulador?",
+      "answer": "Es una persona elegida o reconocida por su comunidad que realiza acciones voluntarias de promoción y prevención en coordinación con el personal de salud y otras instituciones. Articula a la comunidad con los servicios y autoridades, facilita la participación y apoya la vigilancia comunitaria.",
+      "explanation": "El ACS no reemplaza al personal de salud: acerca los servicios, educa, identifica riesgos y refiere. Su legitimidad viene de la comunidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agente",
+          "pages": [
+            10,
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "agente comunitario",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-agente-01-2",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el rol básico de todo agente comunitario de salud?",
+      "options": [
+        "Educador sanitario.",
+        "Médico de la comunidad.",
+        "Gestor comunal.",
+        "Supervisor-capacitador."
+      ],
+      "correctIndex": 0,
+      "explanation": "El rol básico es educador sanitario. Los roles de supervisor-capacitador y gestor comunal son niveles posteriores; el ACS no es médico ni prescribe tratamiento.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agente",
+          "pages": [
+            16,
+            18
+          ]
+        }
+      ],
+      "tags": [
+        "agente comunitario",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-agente-01-3",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "application",
+      "prompt": "Un ACS detecta a una gestante con sangrado vaginal. ¿Qué corresponde?",
+      "options": [
+        "Indicarle un tratamiento y controlarla en su casa.",
+        "Acompañarla o facilitar su referencia inmediata al establecimiento de salud y comunicar la situación.",
+        "Esperar a que tenga dolor para referir.",
+        "Decirle que es normal y que no consulte."
+      ],
+      "correctIndex": 1,
+      "explanation": "El ACS identifica signos de riesgo y refiere; no trata ni minimiza. El sangrado en el embarazo requiere evaluación inmediata.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agente",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "agente comunitario",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-agua-01-1",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "concept",
+      "prompt": "¿Qué significa que el agua sea apta para consumo humano según el reglamento peruano?",
+      "answer": "Significa que es inocua para la salud y cumple los requisitos de calidad establecidos: límites microbiológicos y parasitológicos, organolépticos, químicos y radiactivos. Debe estar exenta de coliformes y E. coli, mantener cloro residual suficiente y no superar los límites de sustancias tóxicas.",
+      "explanation": "La aptitud no se juzga solo por el aspecto. Un agua transparente puede contener microorganismos o metales por encima del límite.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            10,
+            29,
+            39,
+            41,
+            43
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-agua-01-2",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el límite máximo permisible de coliformes totales en el agua para consumo humano?",
+      "options": [
+        "0 UFC/100 mL",
+        "10 UFC/100 mL",
+        "100 UFC/100 mL",
+        "500 UFC/100 mL"
+      ],
+      "correctIndex": 0,
+      "explanation": "El Anexo I establece 0 UFC/100 mL para coliformes totales, E. coli y coliformes termotolerantes. El valor de 500 UFC/mL corresponde a bacterias heterotróficas, no a coliformes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            39
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-agua-01-3",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "application",
+      "prompt": "Una comunidad recibe agua de un camión cisterna. El agua se ve limpia, pero no hay registro de cloración ni de análisis. ¿Qué corresponde?",
+      "options": [
+        "Esperar al próximo mes para incluirla en el muestreo rutinario.",
+        "Consumirla porque está transparente.",
+        "Verificar la autorización del proveedor, exigir el control de calidad y realizar vigilancia sanitaria del agua suministrada.",
+        "Hervirla solo si alguien presenta diarrea."
+      ],
+      "correctIndex": 2,
+      "explanation": "Los camiones cisterna son proveedores en condiciones especiales y están sujetos a autorización, control y vigilancia. La transparencia no garantiza inocuidad y la respuesta no debe esperar a que aparezcan casos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            12,
+            14,
+            15,
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-agua-02-1",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre control de calidad y vigilancia sanitaria del agua?",
+      "answer": "El control de calidad lo realiza el proveedor: trata, muestrea y corrige su sistema. La vigilancia sanitaria la ejerce la autoridad de salud: verifica que el agua llegue en condiciones seguras, fiscaliza el cumplimiento y adopta medidas de seguridad. Son funciones complementarias.",
+      "explanation": "El proveedor puede tener un plan de control impecable y aun así existir un problema en la red. La vigilancia aporta una mirada externa y pública.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            10,
+            13,
+            15,
+            16,
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "vigilancia"
+      ]
+    },
+    {
+      "id": "card-agua-02-2",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "multiple",
+      "prompt": "Si se detectan coliformes en la red de distribución, ¿qué medida corresponde además de investigar la causa?",
+      "options": [
+        "Aumentar la turbiedad permitida.",
+        "Esperar el siguiente muestreo trimestral.",
+        "Suspender todo el abastecimiento durante un mes.",
+        "Recolectar muestras diarias hasta obtener al menos dos resultados consecutivos negativos."
+      ],
+      "correctIndex": 3,
+      "explanation": "El artículo 67 exige investigar y tomar medidas correctivas, recolectando muestras diarias en el punto afectado hasta que dos muestras consecutivas no presenten coliformes totales ni termotolerantes. Suspender un mes o esperar el siguiente muestreo no es la conducta indicada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-agua-02-3",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "application",
+      "prompt": "El proveedor detecta arsénico por encima del límite en la salida de la planta. ¿Qué secuencia es correcta?",
+      "options": [
+        "Repetir el muestreo, investigar la causa, corregir y comunicar a la autoridad sanitaria.",
+        "Solo aumentar el cloro para eliminar el arsénico.",
+        "Distribuir el agua y avisar si alguien se enferma.",
+        "Ocultar el resultado hasta el informe anual."
+      ],
+      "correctIndex": 0,
+      "explanation": "Ante un parámetro químico fuera de límite, el reglamento exige un nuevo muestreo y, si se confirma, investigación, medidas correctivas y comunicación inmediata a la autoridad sanitaria. El cloro no elimina metales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-agua-reglamento",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "agua",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-01-1",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "concept",
+      "prompt": "¿Por qué la salud ambiental se considera un derecho social transversal?",
+      "answer": "Porque la salud depende de condiciones ambientales seguras —agua, aire, alimentos, vivienda, trabajo— que no produce solo el sector salud. Su protección involucra a todos los sectores del Estado y a la sociedad, y su vulneración afecta desproporcionadamente a los más pobres.",
+      "explanation": "El enfoque transversal implica que vivienda, agricultura, energía, transporte y gobiernos locales también son responsables de prevenir riesgos ambientales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            11,
+            12,
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-01-2",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes NO es uno de los principios de la Política Nacional de Salud Ambiental?",
+      "options": [
+        "Transparencia y participación.",
+        "Priorizar la atención curativa sobre la prevención.",
+        "Respeto a la vida en un entorno saludable.",
+        "Decisiones basadas en evidencia científica."
+      ],
+      "correctIndex": 1,
+      "explanation": "La política adopta un enfoque preventivo, no curativo prioritario. Los otros tres sí son principios, junto con la facilitación del comercio que fomenta la salud.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            15,
+            16
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-01-3",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "application",
+      "prompt": "En una ciudad, los casos de asma aumentan cerca de una zona industrial. ¿Qué lectura es más coherente con la política de salud ambiental?",
+      "options": [
+        "Basta con recomendar a las familias que no salgan de casa.",
+        "Es un problema exclusivamente clínico: hay que recetar más broncodilatadores.",
+        "Es un riesgo ambiental que requiere vigilancia del aire, evaluación de la fuente y articulación intersectorial.",
+        "No se puede hacer nada hasta que la industria se mude."
+      ],
+      "correctIndex": 2,
+      "explanation": "La política prioriza la vigilancia de la calidad del aire y la acción sobre los determinantes. La respuesta clínica es necesaria, pero insuficiente si no se controla la exposición.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            17,
+            18,
+            28
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-02-1",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las seis políticas nacionales de salud ambiental 2011-2020?",
+      "answer": "1) Vigilancia del agua de consumo humano; 2) inocuidad de los alimentos; 3) calidad del aire; 4) vigilancia de peligros y alertas en salud ambiental; 5) fortalecimiento de la descentralización; 6) gestión en emergencias y desastres.",
+      "explanation": "Las seis cubren los riesgos prioritarios y las condiciones institucionales para responder: agua, alimentos, aire, peligros, descentralización y emergencias.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            26,
+            27,
+            28,
+            29,
+            30,
+            31,
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "políticas"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-02-2",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "multiple",
+      "prompt": "¿Qué busca la cuarta política de salud ambiental?",
+      "options": [
+        "Construir plantas de tratamiento en todas las ciudades.",
+        "Eliminar la participación ciudadana.",
+        "Solo vigilar la calidad del aire.",
+        "Vigilar peligros y alertas ambientales, incluidos recursos hídricos, residuos, químicos, vectores y zoonosis."
+      ],
+      "correctIndex": 3,
+      "explanation": "La cuarta política es la vigilancia de peligros y alertas en salud ambiental, con objetivos específicos para recursos hídricos, residuos sólidos, sustancias químicas, vectores y zoonosis. El aire corresponde a la tercera.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            28,
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-ambiental-politica-02-3",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "application",
+      "prompt": "Tras un deslizamiento, el agua de una localidad se enturbia y hay riesgo de brote diarreico. ¿Qué acción corresponde a la política de salud ambiental?",
+      "options": [
+        "Activar el plan de respuesta, vigilar la calidad del agua, distribuir agua segura y coordinar con defensa civil y gobierno local.",
+        "Suspender la vigilancia hasta que termine la emergencia.",
+        "Atender solo a las personas que llegan al hospital.",
+        "Esperar a que el agua se aclare sola."
+      ],
+      "correctIndex": 0,
+      "explanation": "La sexta política exige preparación y respuesta articulada ante emergencias. La vigilancia del agua y la distribución de agua segura son medidas inmediatas para prevenir brotes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-salud-ambiental-politica",
+          "pages": [
+            31,
+            32
+          ]
+        }
+      ],
+      "tags": [
+        "salud ambiental",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-metales-01-1",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre un caso sospechoso y un caso confirmado de exposición a metales pesados?",
+      "answer": "El caso sospechoso es una persona con antecedente de exposición a una fuente confirmada, sin manifestaciones clínicas. El caso confirmado cuenta con confirmación clínica, epidemiológica o de laboratorio según la norma. Entre ambos está el caso probable, con hallazgos compatibles pero sin confirmación completa.",
+      "explanation": "La vigilancia no espera síntomas: identifica expuestos y los sigue. La confirmación requiere más evidencia que el simple contacto con la fuente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-metales-01-2",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "multiple",
+      "prompt": "¿Cómo se notifican los casos de exposición o intoxicación por metales pesados?",
+      "options": [
+        "Solo cuando hay síntomas graves.",
+        "De forma mensual y obligatoria, incluida la notificación negativa; las contingencias se notifican de inmediato.",
+        "Solo al final del año epidemiológico.",
+        "Únicamente por el nivel nacional."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma exige notificación mensual obligatoria de casos sospechosos, probables y confirmados, con notificación negativa si no hay casos. Las situaciones de contingencia requieren notificación inmediata.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-metales-01-3",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "application",
+      "prompt": "Un puesto de salud atiende a una familia que vive junto a una fundición y refiere exposición al plomo, pero ningún integrante tiene síntomas. ¿Qué corresponde?",
+      "options": [
+        "Esperar a que aparezcan síntomas para notificar.",
+        "No registrar nada porque no hay enfermedad.",
+        "Registrar como casos sospechosos (expuestos), notificar y iniciar investigación de la fuente.",
+        "Derivar solo al niño con mayor peso."
+      ],
+      "correctIndex": 2,
+      "explanation": "La exposición a una fuente confirmada sin síntomas define caso sospechoso. La norma busca identificar y seguir a los expuestos, no esperar el daño clínico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            14,
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-metales-02-1",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "concept",
+      "prompt": "¿Qué debe contener la investigación epidemiológica de un evento por metales pesados?",
+      "answer": "Debe identificar la fuente y la vía de exposición, las personas afectadas y expuestas, el tiempo y lugar, las actividades económicas relacionadas y los factores de riesgo ambientales. También debe integrar muestras biológicas y ambientales y emitir recomendaciones de control.",
+      "explanation": "Un resultado de laboratorio sin investigación de fuente no permite interrumpir la exposición ni proteger a otras personas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            21,
+            22,
+            44
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "investigación"
+      ]
+    },
+    {
+      "id": "card-metales-02-2",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "multiple",
+      "prompt": "¿En qué plazo debe remitirse el informe preliminar de una investigación por contingencia?",
+      "options": [
+        "24 horas",
+        "72 horas",
+        "7 días",
+        "30 días"
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma establece el informe preliminar dentro de las 72 horas, seguido del informe de seguimiento y del informe final al concluir la investigación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-metales-02-3",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "application",
+      "prompt": "Se confirma un caso de intoxicación por mercurio en una comunidad minera. ¿Cuál es la respuesta más completa?",
+      "options": [
+        "Prohibir la minería sin evaluación ni alternativa económica.",
+        "Esperar el informe anual para decidir.",
+        "Tratar al paciente y cerrar el caso.",
+        "Tratar y seguir al paciente, investigar la fuente, identificar otros expuestos, coordinar el control de la fuente y notificar a los niveles correspondientes."
+      ],
+      "correctIndex": 3,
+      "explanation": "La respuesta incluye atención, investigación, búsqueda de otros expuestos, control de la fuente y notificación. Tratar solo al caso índice deja intacta la exposición comunitaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-metales",
+          "pages": [
+            21,
+            22,
+            25,
+            26,
+            27
+          ]
+        }
+      ],
+      "tags": [
+        "metales",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-parto-01-1",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "concept",
+      "prompt": "¿Qué es la atención respetuosa de la maternidad y por qué se recomienda?",
+      "answer": "Es la atención organizada para todas las mujeres de manera que mantenga su dignidad, privacidad y confidencialidad, asegure la integridad física y el trato adecuado, y permita decisiones informadas y apoyo continuo. Se recomienda porque mejora la experiencia y los resultados del parto.",
+      "explanation": "El respeto no es un adorno: reduce el trato deshumanizado, favorece la confianza y permite que la mujer participe en las decisiones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-parto",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "parto",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-parto-01-2",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "multiple",
+      "prompt": "Según la OMS, ¿desde qué dilatación se considera que comienza la fase activa del trabajo de parto?",
+      "options": [
+        "3 cm",
+        "4 cm",
+        "5 cm",
+        "7 cm"
+      ],
+      "correctIndex": 2,
+      "explanation": "La fase activa se define desde los 5 cm hasta la dilatación total, tanto en primeros partos como en los subsecuentes. Antes de 5 cm se considera fase latente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-parto",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "parto",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-parto-01-3",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "application",
+      "prompt": "Una gestante de bajo riesgo pide caminar y elegir una posición cómoda durante el trabajo de parto. ¿Qué corresponde?",
+      "options": [
+        "Permitir la posición y la movilidad que elija, con vigilancia adecuada.",
+        "Realizar episiotomía de rutina.",
+        "Aplicar rasurado y enema antes de continuar.",
+        "Obligarla a permanecer acostada para monitorizar mejor."
+      ],
+      "correctIndex": 0,
+      "explanation": "La OMS recomienda respetar la posición de elección, incluidas las erguidas, y evitar intervenciones de rutina como rasurado, enema o episiotomía sin indicación.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-parto",
+          "pages": [
+            13,
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "parto",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-neonatal-01-1",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son las prioridades de la atención inmediata del recién nacido en la primera hora?",
+      "answer": "Prevenir la pérdida de calor, evaluar la respiración, el llanto y el tono, promover el contacto piel a piel, iniciar la lactancia si es posible y aplicar las profilaxis indicadas (vitamina K, cordón y ocular), con vigilancia continua.",
+      "explanation": "La primera hora es crítica para la adaptación neonatal. Calor, evaluación y vínculo se priorizan sin retrasar la reanimación si es necesaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            12,
+            13,
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-neonatal-01-2",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la conducta correcta para prevenir la hipotermia en un recién nacido de 30 semanas o <1500 g?",
+      "options": [
+        "Secarlo enérgicamente y bañarlo de inmediato.",
+        "Cubrirlo con bolsa estéril de polietileno y gorro, sin secarlo.",
+        "Dejarlo en la cuna sin abrigo para evaluar la adaptación.",
+        "Aplicar compresas frías en la cabeza."
+      ],
+      "correctIndex": 1,
+      "explanation": "En prematuros <32 semanas o <1500 g se recomienda bolsa estéril y gorro inmediatamente, sin secar, porque la humedad caliente protege de la pérdida evaporativa y evita lesiones por fricción.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-neonatal-01-3",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "application",
+      "prompt": "Un recién nacido a término nace con buen llanto y buen tono. ¿Qué corresponde respecto al APGAR y la reanimación?",
+      "options": [
+        "Evitar el contacto piel a piel hasta las 6 horas.",
+        "Esperar el APGAR de 1 minuto para decidir si se estimula.",
+        "Iniciar contacto piel a piel y cuidados de rutina; el APGAR no determina por sí solo la reanimación.",
+        "Intubar de inmediato por protocolo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La decisión de reanimar se basa en respiración, tono y frecuencia cardíaca, no en el APGAR. Un bebé vigoroso requiere calor, contacto piel a piel y cuidados de rutina.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-neonatal-02-1",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "concept",
+      "prompt": "¿Qué es el alojamiento conjunto y qué ventajas ofrece?",
+      "answer": "Es la permanencia del recién nacido junto a su madre desde el nacimiento hasta el alta, con cuidado integral. Fortalece el vínculo, promueve y sostiene la lactancia, permite detectar signos de alarma y facilita la consejería a la madre.",
+      "explanation": "No es solo tener al bebé en la misma habitación: implica vigilancia, educación y apoyo para el cuidado.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            5,
+            16
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "alojamiento"
+      ]
+    },
+    {
+      "id": "card-neonatal-02-2",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes es un signo de alarma en el recién nacido?",
+      "options": [
+        "Eritema tóxico benigno.",
+        "Micción dentro de las primeras 24 horas.",
+        "Ictericia que aparece a las 48 horas y es leve.",
+        "Ictericia en las primeras 24 horas de vida."
+      ],
+      "correctIndex": 3,
+      "explanation": "La ictericia en las primeras 24 horas es anormal y requiere evaluación de laboratorio. La ictericia fisiológica suele aparecer después de las 24 horas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-neonatal-02-3",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "application",
+      "prompt": "Antes del alta, un recién nacido está estable pero no se ha realizado el tamizaje neonatal. ¿Qué corresponde?",
+      "options": [
+        "Completar el tamizaje antes del alta o garantizar la toma dentro de los plazos establecidos.",
+        "Omitir el tamizaje porque el bebé está sano.",
+        "Realizar solo la prueba auditiva y omitir la de sangre.",
+        "Dar el alta y pedir que vuelva en un mes."
+      ],
+      "correctIndex": 0,
+      "explanation": "El tamizaje neonatal es parte de los requisitos de alta. Si no se puede antes, debe garantizarse la toma en el control o antes de los 7 días, según la norma.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-neonatal",
+          "pages": [
+            21
+          ]
+        },
+        {
+          "sourceId": "src-tamizaje",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "neonatal",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-tamizaje-01-1",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "concept",
+      "prompt": "¿Qué enfermedades detecta el tamizaje neonatal en el Perú?",
+      "answer": "Hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia congénita y catarata congénita. Las cuatro primeras se detectan con sangre en papel filtro; las dos últimas, con pruebas auditivas y visuales.",
+      "explanation": "El tamizaje combina pruebas metabólicas y evaluaciones sensoriales. Todas buscan intervenir antes de que el daño sea irreversible.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-tamizaje",
+          "pages": [
+            9,
+            10,
+            11,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "tamizaje",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-tamizaje-01-2",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo se debe tomar la muestra de sangre para tamizaje neonatal en un recién nacido sano a término?",
+      "options": [
+        "Inmediatamente al nacer.",
+        "Después de las primeras 48 horas de vida.",
+        "A los 30 días.",
+        "Solo si presenta síntomas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La muestra se toma después de las 48 horas. Si el alta es antes, se toma en el control a las 48 horas del alta o antes de los 7 días.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-tamizaje",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "tamizaje",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-tamizaje-01-3",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "application",
+      "prompt": "Un recién nacido recibe una transfusión antes del tamizaje. ¿Qué corresponde?",
+      "options": [
+        "Sustituir el tamizaje por una ecografía.",
+        "Tamizar de inmediato.",
+        "Esperar 7 días después de la última transfusión para tomar la muestra.",
+        "No tamizar nunca."
+      ],
+      "correctIndex": 2,
+      "explanation": "La norma indica que los recién nacidos transfundidos deben tamizarse 7 días después de la última transfusión, porque la sangre transfundida puede alterar los resultados.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-tamizaje",
+          "pages": [
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "tamizaje",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-raras-01-1",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre una enfermedad rara y una enfermedad huérfana?",
+      "answer": "La enfermedad rara tiene baja prevalencia y suele ser grave, crónica o discapacitante. La enfermedad huérfana se caracteriza porque la evidencia científica para el diagnóstico y el tratamiento es escasa. Muchas enfermedades raras son también huérfanas.",
+      "explanation": "La rareza se refiere a la frecuencia; la orfandad, a la falta de conocimiento y de opciones terapéuticas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-raras",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "enfermedades raras",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-raras-01-2",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "multiple",
+      "prompt": "¿Qué instrumento registra los casos de enfermedades raras o huérfanas en el Perú?",
+      "options": [
+        "El Sistema de Vigilancia de IAAS.",
+        "El Petitorio Nacional Único de Medicamentos.",
+        "El Registro de Defunciones.",
+        "El Registro Nacional de Pacientes (RNPERH)."
+      ],
+      "correctIndex": 3,
+      "explanation": "El RNPERH es la herramienta que registra datos y genera información sobre incidencia, prevalencia y mortalidad de las enfermedades raras o huérfanas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-raras",
+          "pages": [
+            4,
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "enfermedades raras",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-raras-01-3",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "application",
+      "prompt": "Una familia llega al puesto de salud con sospecha de una enfermedad rara no diagnosticada. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Sospechar, referir oportunamente, registrar y acompañar a la familia sin discriminación.",
+        "Indicar un tratamiento empírico sin evaluación.",
+        "Ocultar la sospecha para no generar expectativas.",
+        "Decirles que no hay nada que hacer porque es una enfermedad rara."
+      ],
+      "correctIndex": 0,
+      "explanation": "El primer nivel debe activar la ruta: sospechar, referir, registrar y acompañar. La ley garantiza atención integral y no discriminación; no se debe abandonar a la familia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-raras",
+          "pages": [
+            5,
+            7,
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "enfermedades raras",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-dm2-01-1",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "concept",
+      "prompt": "¿Con qué criterios se confirma el diagnóstico de diabetes mellitus tipo 2?",
+      "answer": "Con cualquiera de estos: glucemia en ayunas ≥126 mg/dL en dos oportunidades separadas por no más de 72 horas; glucemia casual ≥200 mg/dL con síntomas de hiperglucemia; o glucemia ≥200 mg/dL dos horas después de una carga oral de 75 g de glucosa.",
+      "explanation": "Los tres criterios reflejan hiperglucemia crónica o sintomática. Una sola cifra aislada no basta salvo que haya síntomas claros o prueba de tolerancia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            29,
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-dm2-01-2",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la meta de hemoglobina glucosilada en el control de la DM2 según la guía?",
+      "options": [
+        "<6%",
+        "<7%",
+        "<8%",
+        "<9%"
+      ],
+      "correctIndex": 1,
+      "explanation": "La guía establece como meta una hemoglobina glucosilada menor de 7%. Las otras cifras no corresponden a la meta general de control.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            45
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-dm2-01-3",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "application",
+      "prompt": "Una persona asintomática tiene una glucemia en ayunas de 130 mg/dL. ¿Cuál es la conducta correcta?",
+      "options": [
+        "Diagnosticar diabetes con una sola medición.",
+        "Repetir la glucemia en ayunas en un plazo no mayor de 72 horas para confirmar.",
+        "Indicar insulina de inmediato.",
+        "Descartar diabetes porque no tiene síntomas."
+      ],
+      "correctIndex": 1,
+      "explanation": "El criterio exige dos mediciones ≥126 mg/dL separadas por no más de 72 horas. La ausencia de síntomas no descarta diabetes; la insulina no es el paso inicial.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            29
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-dm2-02-1",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "concept",
+      "prompt": "¿Cuál es el pilar del tratamiento de la DM2 y cómo se usa la metformina?",
+      "answer": "El pilar es la intervención intensiva sobre estilos de vida: alimentación, actividad física, educación y apoyo familiar. La metformina es la primera línea farmacológica; se inicia con 500 u 850 mg al día y se titula cada 1-2 semanas hasta el control o la dosis máxima de 2550 mg, con las comidas.",
+      "explanation": "El fármaco no reemplaza los cambios de estilo de vida. La titulación progresiva reduce efectos gastrointestinales.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            47,
+            60
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "tratamiento"
+      ]
+    },
+    {
+      "id": "card-dm2-02-2",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "multiple",
+      "prompt": "¿En cuál de estos casos NO corresponde referir a la persona con DM2?",
+      "options": [
+        "Inadecuado control tras 3-6 meses con tratamiento y adherencia adecuada.",
+        "Pie diabético Wagner ≥2.",
+        "Solo para confirmar el diagnóstico en el primer nivel.",
+        "Diabetes con hipertensión arterial."
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía indica expresamente que no se debe referir para confirmar el diagnóstico ni para iniciar tratamiento. Los otros supuestos sí son criterios de referencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            73,
+            75,
+            77,
+            79
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-dm2-02-3",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "application",
+      "prompt": "Una persona con DM2 tiene albuminuria de 350 mg/24 h y edema. ¿Qué conducta corresponde?",
+      "options": [
+        "Suspender todo tratamiento y esperar.",
+        "Indicar solo dieta hiposódica sin evaluación.",
+        "Ajustar solo la metformina y controlar en un año.",
+        "Referir al segundo o tercer nivel por sospecha de complicación renal."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una albuminuria >300 mg/24 h es criterio de referencia por complicación crónica. Requiere evaluación especializada y manejo integral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-dm2",
+          "pages": [
+            75
+          ]
+        }
+      ],
+      "tags": [
+        "diabetes",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-hta-01-1",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "concept",
+      "prompt": "¿Cómo se clasifica la presión arterial en adultos y qué significa prehipertensión?",
+      "answer": "Normal: <120/80 mmHg. Prehipertensión: 120-139/80-89 mmHg. Hipertensión: ≥140/90 mmHg, con estadio 1 (140-159/90-99) y estadio 2 (≥160/100). La prehipertensión no es enfermedad establecida, pero exige control anual y manejo de factores de riesgo.",
+      "explanation": "La clasificación orienta el seguimiento y el tratamiento. La prehipertensión es una señal de riesgo, no un diagnóstico de HTA.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-hta-01-2",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "multiple",
+      "prompt": "¿Qué elementos se usan para estratificar el riesgo cardiovascular en hipertensión?",
+      "options": [
+        "Presión arterial, factores de riesgo, daño de órgano blanco y enfermedad cardiovascular o renal manifiesta.",
+        "Solo la edad y el sexo.",
+        "Únicamente el colesterol total.",
+        "Solo la cifra de presión arterial."
+      ],
+      "correctIndex": 0,
+      "explanation": "La estratificación combina el nivel de presión con factores de riesgo, daño asintomático y eventos manifiestos. La cifra aislada no alcanza para decidir el manejo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            6,
+            7,
+            10
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-hta-01-3",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "application",
+      "prompt": "Una persona de 45 años tiene presión de 150/95 mmHg en dos controles y no presenta otros factores de riesgo. ¿Qué corresponde?",
+      "options": [
+        "Considerarla normal y citarla en 5 años.",
+        "Clasificarla como hipertensión estadio 1 e iniciar evaluación integral y manejo.",
+        "Derivarla de inmediato a emergencia.",
+        "Indicarle solo un analgésico."
+      ],
+      "correctIndex": 1,
+      "explanation": "150/95 corresponde a hipertensión estadio 1. Requiere evaluación de riesgo, daño de órgano blanco y plan de manejo; no es una emergencia ni un valor normal.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-hta-02-1",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las metas de presión arterial en hipertensión general, diabetes, proteinuria y octogenarios?",
+      "answer": "En hipertensos en general, <140/90 mmHg. En diabetes, <140/80. En personas con proteinuria, <130/80. En octogenarios, mantener la presión sistólica entre 140 y 150 mmHg. Las metas se individualizan según tolerancia y comorbilidad.",
+      "explanation": "Las metas no son idénticas para todos: la proteinuria y la diabetes exigen un control más estricto, mientras que en el muy anciano se evita bajar demasiado la sistólica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "metas"
+      ]
+    },
+    {
+      "id": "card-hta-02-2",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "multiple",
+      "prompt": "¿Cuándo se considera una emergencia hipertensiva?",
+      "options": [
+        "Una sola medición alta en una consulta.",
+        "Cualquier presión ≥140/90 mmHg.",
+        "Presión ≥180/110 mmHg con evidencia de daño agudo de órgano blanco.",
+        "Presión ≥160/100 mmHg sin síntomas."
+      ],
+      "correctIndex": 2,
+      "explanation": "La emergencia requiere cifras ≥180/110 y complicación aguda: síndrome coronario, insuficiencia cardíaca, encefalopatía, disección de aorta, entre otras. Una cifra alta aislada no define emergencia.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-hta-02-3",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "application",
+      "prompt": "Un paciente hipertenso con riesgo bajo ha hecho cambios de estilo de vida durante 6 meses y sigue con presión 145/92 mmHg. ¿Qué corresponde?",
+      "options": [
+        "Suspender el seguimiento.",
+        "Derivarlo directamente a cirugía.",
+        "Esperar otros 6 meses sin cambios.",
+        "Iniciar tratamiento farmacológico y mantener los cambios de estilo de vida."
+      ],
+      "correctIndex": 3,
+      "explanation": "En riesgo bajo, si tras 3-6 meses de cambios de estilo de vida no se alcanza la meta, se inicia terapia farmacológica. Los estilos de vida se mantienen.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-hta",
+          "pages": [
+            14
+          ]
+        }
+      ],
+      "tags": [
+        "hipertensión",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-climaterio-01-1",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "concept",
+      "prompt": "¿Cómo se diagnostica la menopausia y qué es el climaterio?",
+      "answer": "El climaterio es la etapa de transición hormonal que abarca el periodo previo y posterior a la menopausia. La menopausia es la última menstruación y se diagnostica retrospectivamente tras 12 meses de amenorrea sin otra causa. El diagnóstico es clínico; las hormonas pueden apoyar pero no son obligatorias.",
+      "explanation": "No se necesita una prueba hormonal para diagnosticar menopausia en una mujer típica. La confirmación retrospectiva evita confundirla con otras causas de amenorrea.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-climaterio",
+          "pages": [
+            13,
+            25
+          ]
+        }
+      ],
+      "tags": [
+        "climaterio",
+        "diagnóstico"
+      ]
+    },
+    {
+      "id": "card-climaterio-01-2",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es una contraindicación absoluta de la terapia hormonal menopáusica?",
+      "options": [
+        "Antecedente de cáncer de mama o endometrio.",
+        "Sequedad vaginal.",
+        "Menopausia a los 50 años.",
+        "Sofocos moderados."
+      ],
+      "correctIndex": 0,
+      "explanation": "El antecedente de cáncer de mama o endometrio es una contraindicación absoluta. Los sofocos y la sequedad son síntomas que pueden motivar evaluación, no contraindicaciones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-climaterio",
+          "pages": [
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "climaterio",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-climaterio-01-3",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "application",
+      "prompt": "Una mujer de 52 años consulta por sofocos intensos que afectan su sueño y trabajo. No tiene contraindicaciones. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Indicar terapia hormonal sin evaluación.",
+        "Evaluar síntomas y riesgos, ofrecer terapia hormonal individualizada a dosis baja con seguimiento y reforzar estilos de vida.",
+        "Decirle que los síntomas son normales y no requieren manejo.",
+        "Indicar solo antibióticos."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los síntomas moderados a severos que afectan la calidad de vida justifican evaluar terapia hormonal individualizada. Siempre se revisan contraindicaciones y se acompaña con estilos de vida y controles.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-climaterio",
+          "pages": [
+            24,
+            30,
+            31
+          ]
+        }
+      ],
+      "tags": [
+        "climaterio",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-adolescente-01-1",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "concept",
+      "prompt": "¿Qué comprende la atención integral de salud del adolescente?",
+      "answer": "Comprende la provisión continua, integrada y con calidad de acciones de promoción, prevención, recuperación y rehabilitación, en el contexto de la familia, la institución educativa y la comunidad. Se concreta en paquetes básico, completo y especializado, según capacidad resolutiva.",
+      "explanation": "No es una consulta aislada: es un proceso con prestaciones definidas y seguimiento, adaptado al contexto del adolescente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            20,
+            21
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-adolescente-01-2",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "multiple",
+      "prompt": "¿Qué debe hacer el establecimiento si un adolescente acude solo a una atención preventiva?",
+      "options": [
+        "Pedirle autorización escrita de sus padres para cualquier atención.",
+        "Negarle la atención hasta que venga un adulto.",
+        "Atenderlo, protegiendo su privacidad y confidencialidad, con otro personal presente.",
+        "Enviarlo a la comisaría."
+      ],
+      "correctIndex": 2,
+      "explanation": "La norma indica que no se le debe negar la atención. Se le atiende en presencia de otro personal del establecimiento, considerando su autonomía progresiva y protegiendo su privacidad.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-adolescente-01-3",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "application",
+      "prompt": "Un adolescente de 15 años acude por una molestia leve, pero se niega a hablar de sexualidad. ¿Qué corresponde?",
+      "options": [
+        "Decirle que vuelva cuando quiera hablar.",
+        "Registrar que no colabora y cerrar la historia.",
+        "Obligarlo a responder todas las preguntas.",
+        "Atender su motivo de consulta, respetar su ritmo y ofrecer el paquete integral sin presionar."
+      ],
+      "correctIndex": 3,
+      "explanation": "Se debe respetar el motivo de consulta y la autonomía del adolescente, ofreciendo las prestaciones sin coerción. La confianza se construye progresivamente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            30,
+            33
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-adolescente-02-1",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son los momentos del proceso de atención integral del adolescente?",
+      "answer": "Captación, admisión, atención del motivo de consulta, evaluación integral de necesidades y expectativas, elaboración y ejecución del plan individual, seguimiento y evaluación. La referencia se activa cuando el riesgo supera la capacidad resolutiva.",
+      "explanation": "El proceso asegura que la consulta no se agote en el síntoma y que el adolescente reciba las prestaciones que necesita.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            32,
+            33,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "proceso"
+      ]
+    },
+    {
+      "id": "card-adolescente-02-2",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "multiple",
+      "prompt": "¿Qué se debe hacer si un adolescente presenta un riesgo que no puede manejarse en el nivel de atención?",
+      "options": [
+        "Referirlo a un establecimiento de mayor capacidad resolutiva y asegurar la continuidad.",
+        "Darle el alta y pedirle que vuelva si empeora.",
+        "Ocultar la referencia a la familia.",
+        "Mantenerlo en el mismo establecimiento sin seguimiento."
+      ],
+      "correctIndex": 0,
+      "explanation": "La norma exige referir según el sistema de referencia y contrarreferencia, garantizando continuidad y oportunidad. El alta sin seguimiento no protege al adolescente.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            31,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-adolescente-02-3",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "application",
+      "prompt": "Una adolescente de 16 años está embarazada. ¿Qué corresponde al sistema de salud?",
+      "options": [
+        "Atender solo el embarazo y no hablar de otros temas.",
+        "Garantizar atención integral y diferenciada durante embarazo, parto y puerperio, y la atención de su recién nacido.",
+        "Exigirle que vuelva con un adulto para cualquier control.",
+        "Derivarla siempre al hospital sin evaluación inicial."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma garantiza atención integral y diferenciada a la adolescente embarazada, incluida la atención del recién nacido. No se limita a lo obstétrico ni se condiciona el acceso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-adolescente-nts",
+          "pages": [
+            24,
+            34
+          ]
+        }
+      ],
+      "tags": [
+        "adolescente",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-nino-expuesto-01-1",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "concept",
+      "prompt": "¿Qué es un niño expuesto al VIH y cómo se confirma la infección?",
+      "answer": "Es todo recién nacido de madre con infección por VIH. La infección se confirma con dos resultados positivos de PCR-ADN-VIH-1; si hay discordancia, se repite la prueba a las 4 semanas. En mayores de 18 meses se usan pruebas serológicas específicas.",
+      "explanation": "La confirmación requiere más de una prueba porque los anticuerpos maternos pueden interferir. El seguimiento continúa hasta conocer el estado definitivo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nino-expuesto",
+          "pages": [
+            1,
+            3,
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-nino-expuesto-01-2",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo se solicita PCR-ADN-VIH-1 al nacer en un recién nacido expuesto?",
+      "options": [
+        "Únicamente a los 18 meses.",
+        "En todos los recién nacidos sin excepción.",
+        "En alto riesgo: madre sin control prenatal, sin TAR, infección aguda o carga viral ≥1000 en el tercer trimestre.",
+        "Solo si el bebé tiene síntomas."
+      ],
+      "correctIndex": 2,
+      "explanation": "La prueba al nacer se reserva para recién nacidos con alto riesgo de transmisión. En el resto, el seguimiento habitual incluye PCR al primer y tercer mes.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nino-expuesto",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-nino-expuesto-01-3",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "application",
+      "prompt": "Una madre con VIH tiene carga viral de 1500 copias/mL en el tercer trimestre. ¿Qué corresponde para el recién nacido?",
+      "options": [
+        "Lactancia materna exclusiva.",
+        "Alta inmediata sin control.",
+        "Solo observación sin profilaxis.",
+        "Profilaxis combinada según el escenario de mayor riesgo y seguimiento con PCR."
+      ],
+      "correctIndex": 3,
+      "explanation": "Una carga viral >1000 copias/mL indica mayor riesgo; la profilaxis se intensifica según el escenario 3 y se asegura el seguimiento con PCR. La lactancia materna está contraindicada en este contexto.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-nino-expuesto",
+          "pages": [
+            2,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "VIH",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-sifilis-01-1",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "concept",
+      "prompt": "¿Cómo se define la sífilis congénita y cuáles son sus criterios diagnósticos?",
+      "answer": "Es una treponematosis neonatal adquirida intraútero de una madre infectada no tratada o inadecuadamente tratada. Se diagnostica por criterio epidemiológico, serológico (títulos cuatro veces mayores que los maternos), clínico o por demostración directa del treponema.",
+      "explanation": "La mayoría de los recién nacidos son asintomáticos; por eso no basta el examen físico. Los criterios se combinan para no dejar casos sin tratar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-sifilis",
+          "pages": [
+            1,
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "sífilis",
+        "concepto"
+      ]
+    },
+    {
+      "id": "card-sifilis-01-2",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el tratamiento de elección para un recién nacido con sífilis congénita comprobada o muy probable?",
+      "options": [
+        "Penicilina G sódica por 10 días.",
+        "Azitromicina oral por 3 días.",
+        "Ceftriaxona intramuscular una vez.",
+        "Ninguno si está asintomático."
+      ],
+      "correctIndex": 0,
+      "explanation": "El esquema es penicilina G sódica 100 000 UI/kg/día los primeros 7 días y luego 150 000 UI/kg/día hasta completar 10 días. La azitromicina y la ceftriaxona no son el tratamiento estándar de la sífilis congénita.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-sifilis",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "sífilis",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-sifilis-01-3",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "application",
+      "prompt": "Un recién nacido está asintomático, pero su madre tuvo sífilis sin tratamiento adecuado. ¿Qué corresponde?",
+      "options": [
+        "No hacer nada porque el bebé está sano.",
+        "Evaluar con VDRL, LCR, hematología y radiografía, y tratar según el escenario correspondiente.",
+        "Solo repetir la prueba a los 2 años.",
+        "Indicar lactancia materna y alta."
+      ],
+      "correctIndex": 1,
+      "explanation": "El antecedente materno de tratamiento inadecuado es un criterio epidemiológico. Se debe evaluar y tratar según el escenario, aunque el recién nacido esté asintomático.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-sifilis",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ],
+      "tags": [
+        "sífilis",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-vih-navv-01-1",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "concept",
+      "prompt": "¿Quiénes conforman el equipo multidisciplinario para la atención del VIH en niñas, niños y adolescentes?",
+      "answer": "Médico pediatra con subespecialidad o capacitado, enfermería, psicología, obstetricia, trabajo social, químico-farmacéutico y laboratorio. El equipo realiza evaluación, inicia y ajusta el TAR, maneja infecciones oportunistas, apoya la adherencia y coordina la referencia.",
+      "explanation": "El VIH pediátrico no se maneja solo con receta: requiere seguimiento clínico, psicológico, social y farmacéutico.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih-navv",
+          "pages": [
+            23,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "VIH pediátrico",
+        "equipo"
+      ]
+    },
+    {
+      "id": "card-vih-navv-01-2",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "multiple",
+      "prompt": "¿Cómo se define la falla virológica al TAR?",
+      "options": [
+        "Cualquier efecto adverso medicamentoso.",
+        "Una carga viral de 50 copias/mL una vez.",
+        "Carga viral >1000 copias/mL en dos determinaciones separadas por 4 semanas, tras haber estado indetectable.",
+        "Un CD4 bajo en una sola medición."
+      ],
+      "correctIndex": 2,
+      "explanation": "La falla virológica requiere dos determinaciones >1000 copias/mL separadas por 4 semanas, después de un período indetectable. Una sola cifra o un efecto adverso no la definen.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih-navv",
+          "pages": [
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "VIH pediátrico",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-vih-navv-01-3",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "application",
+      "prompt": "Un adolescente con VIH tiene carga viral detectable y refiere que a veces olvida tomar su tratamiento. ¿Qué corresponde?",
+      "options": [
+        "Suspender el tratamiento.",
+        "Regañarlo y citarlo en un año.",
+        "Cambiar el esquema de inmediato sin evaluar adherencia.",
+        "Evaluar adherencia, reforzar educación y apoyo, revisar horarios y controlar la carga viral antes de decidir un cambio."
+      ],
+      "correctIndex": 3,
+      "explanation": "Antes de asumir falla terapéutica hay que evaluar y fortalecer la adherencia. El cambio de esquema se decide con criterios virológicos y luego de abordar las barreras.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vih-navv",
+          "pages": [
+            35,
+            36
+          ]
+        }
+      ],
+      "tags": [
+        "VIH pediátrico",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-mci-07-1",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "concept",
+      "prompt": "¿Cómo se delimita una Red Integrada de Salud (RIS) en el MCI?",
+      "answer": "Se delimita por tamaño de población, cobertura prestacional, accesibilidad geográfica, densidad poblacional y relación con la circunscripción político-administrativa. La población se nominaliza y las familias se asignan a equipos multidisciplinarios.",
+      "explanation": "La RIS no es un espacio arbitrario: se organiza para responder a una población concreta con recursos y servicios articulados.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            59,
+            61
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "organización"
+      ]
+    },
+    {
+      "id": "card-mci-07-2",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es el instrumento local que aborda los determinantes sociales y articula actores del territorio?",
+      "options": [
+        "El Plan Local de Salud.",
+        "El Petitorio Nacional de Medicamentos.",
+        "La historia clínica perinatal.",
+        "El registro de defunciones."
+      ],
+      "correctIndex": 0,
+      "explanation": "La Autoridad Local de Salud presenta el Plan Local de Salud, que aborda los determinantes y articula a los actores del territorio. Los otros instrumentos no cumplen esa función de planificación territorial.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            59,
+            60
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-mci-07-3",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "application",
+      "prompt": "Una persona llega al establecimiento por un dolor agudo. ¿Cómo se aprovecha esa atención para el cuidado integral?",
+      "options": [
+        "Atender solo el dolor y no preguntar nada más.",
+        "Usar la captación y el triaje para identificar necesidades de cuidado integral y ofrecer las prestaciones correspondientes.",
+        "Derivarla siempre al hospital.",
+        "Pedirle que vuelva otro día para la evaluación integral."
+      ],
+      "correctIndex": 1,
+      "explanation": "El MCI considera la atención recuperativa una oportunidad de captación. El triaje permite identificar riesgos y reincorporar a la persona al cuidado integral.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            62
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-mci-08-1",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "concept",
+      "prompt": "¿Cuáles son las características de un servicio de salud de calidad según el MCI?",
+      "answer": "Efectivo, seguro, centrado en las personas, oportuno, equitativo, integrado y eficiente. Estas características se concretan con protocolos basados en evidencia, seguridad del paciente, participación de la persona y coordinación en red.",
+      "explanation": "La calidad es multidimensional. Un servicio puede ser oportuno y aun así ser inseguro o no centrado en la persona.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            63
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "calidad"
+      ]
+    },
+    {
+      "id": "card-mci-08-2",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "multiple",
+      "prompt": "¿Qué busca el componente de financiamiento del MCI?",
+      "options": [
+        "Financiar solo la atención hospitalaria.",
+        "Aumentar el gasto de bolsillo de las familias.",
+        "Garantizar el acceso universal mediante aseguramiento, eficiencia del gasto e incentivos.",
+        "Eliminar el PEAS."
+      ],
+      "correctIndex": 2,
+      "explanation": "El MCI busca eliminar la barrera económica con aseguramiento universal, mejorar la eficiencia y calidad del gasto, actualizar el PEAS y usar incentivos para alinear a los actores.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            71,
+            72,
+            73
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-mci-08-3",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "application",
+      "prompt": "Un equipo de salud cumple las metas de cuidado de su población asignada. ¿Qué mecanismo del MCI reconoce ese desempeño?",
+      "options": [
+        "La eliminación del Plan Local de Salud.",
+        "La reducción del horario de atención.",
+        "El pago directo de los usuarios.",
+        "Los incentivos a los equipos multidisciplinarios por el cumplimiento de indicadores."
+      ],
+      "correctIndex": 3,
+      "explanation": "El MCI plantea incentivos anuales a los equipos multidisciplinarios por el cumplimiento de indicadores de resultado, en el marco de las normas de incentivos del sector público.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            73
+          ]
+        }
+      ],
+      "tags": [
+        "MCI",
+        "aplicación"
+      ]
+    }
   ]
 };

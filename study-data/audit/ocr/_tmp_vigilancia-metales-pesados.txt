@@ -1,0 +1,3085 @@
+===== PAGE 1 =====
+1
+NTS Nº 111 – 2014-MINSA/DGE - V.01 
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA 
+VIGILANCIA EPIDEMIOLÓGICA EN SALUD PÚBLICA DE 
+FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN 
+POR METALES PESADOS Y METALOIDES
+RM Nº 006 – 2015/MINSA
+Lima – Perú, 2015
+Dirección General
+de Epidemiología
+
+===== PAGE 2 =====
+2
+Vigilancia Epidemiológica en Salud Pública de Factores de Riesgo por Exposición e Intoxicación por Metales  Pesados y 
+Metaloides
+© MINISTERIO DE SALUD DEL PERÚ
+Dirección General de Epidemiología
+Calle Daniel Olaechea  N° 199, Jesús María, Lima 11
+Teléfono: 6314500
+Website: http:/www.dge.gob.pe
+E-mail postmaster@dge.gob.pe
+NTS  Nº 111 –2014- MINSA/DGE - V.01 . Norma Técnica de Salud que establece la Vigilancia Epidemiológica en Salud 
+Pública de Factores de Riesgo por Exposición e Intoxicación por  Metales Pesados y Metaloides  (RM Nº 006 - 2015 / 
+MINSA).
+VIGILANCIA EPIDEMIOLOGICA  -  DISPOSICIONES GENERALES -   DISPOSICIONES  ESPECÍFICAS- RESPONSABILIDADES 
+Perú Ministerio de Salud
+Dirección General de Epidemiología (Perú)
+Documento Elaborado por:
+Lic. Epidemióloga Laura Herminia Nayhua Gamarra
+Coordinadora del Grupo Temático Vigilancia Epidemiológica
+de Riesgos Ambientales- VSP-DVE-DGE
+Colaboradores
+Blgo. Daniel Gavancho Chávez
+Méd. Juan Caballero Caparachin
+Revisión Técnica  por:
+Luis Robles Guerrero 
+ 
+Secretaria General / MINSA
+Laura Nayhua Gamarra 
+ 
+DGE / MINSA
+Martín Yagui Moscoso 
+ 
+DGE / MINSA
+Juan Arrasco Alegre 
+ 
+DGE/ MINSA
+Aquiles Vílchez Gutarra 
+ 
+DGE /  MINSA
+Carmen Gastañaga Ruíz 
+ 
+CENSOPAS/INS
+Martha Gallo Celis 
+ 
+CENSOPAS/INS
+Carmen Carrasco Távara  
+CENAN / INS
+César A. Legua  Castilla 
+ 
+CENAN / INS
+Rocio Espinoza Laín 
+ 
+DIGESA /MINSA
+Rosa Burgos Aliaga 
+ 
+DGSP /MINSA
+Melinda Valdivia Infantas  
+HNAL / MINSA
+Walter Cáceres Leturia 
+ 
+CENSOPAS/INS
+Juan Cossio Brazzan 
+ 
+CENSOPAS/ INS
+Jonh Astete Cornejo 
+ 
+CENSOPAS/ INS
+Jaime Rosales Rimache 
+ 
+CENSOPAS/INS
+Marco Bardales Espinoza  
+OGEI / MINSA
+Bertha Muñoz Veneros 
+ 
+DIGESA / MINSA
+Sofía Gonzales Collantes  
+Centro Médico Naval
+Libertad Rosales Puño 
+ 
+PNP
+Zoila García Nuñez del Arco 
+Comando de Salud-COSALE
+José Luna Aguayo 
+ 
+IML / Ministerio Público 
+Martha Aranguren Carbajal 
+IML / Ministerio Público 
+Francisco Omar Pinto Vila  
+IML / Ministerio Público 
+Gladys Berrocal Calixtro 
+ 
+Sanidad Área
+Hugo Villa Becerra 
+ 
+EsSalud
+Clodoaldo Barreda Domínguez 
+Asociación de Clínicas Particulares del Perú
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú Nº 2015 -07417
+ISBN: 
+Primera edición, julio de 2015
+Tiraje: 2000 ejemplares  
+Impreso en: Imprenta: Mercedes Group S.A.C. / Jr. Ica 431 - Lima / Telf.: 719-2783
+
+===== PAGE 3 =====
+3
+MINISTERIO DE SALUD
+Aníbal Velásquez Valdivia
+Ministro de Salud
+Percy Luis Minaya León
+Vice Ministro de Salud Pública
+Ministerio de Salud
+Martín Javier Alfredo Yagui Moscoso
+Director General  
+Dirección General de Epidemiología
+
+===== PAGE 4 =====
+4
+
+===== PAGE 5 =====
+5
+
+===== PAGE 6 =====
+6
+
+===== PAGE 7 =====
+7
+PRESENTACIÓN
+I. 
+FINALIDAD ............................................................................. 11
+II. 
+OBJETIVOS ............................................................................ 11
+III. 
+ÁMBITO DE APLICACIÓN ..................................................... 11
+IV. 
+BASE LEGAL .......................................................................... 11
+V. 
+DISPOSICIONES GENERALES ............................................ 
+13
+ 
+5.1. 
+Deﬁ niciones operativas ............................................ 
+13
+VI. 
+DISPOSICIONES ESPECIFICAS ........................................... 19
+ 
+6.1. 
+De la Vigilancia Epidemiológica ............................... 
+19
+ 
+6.2. 
+Del Instituto Nacional de Salud ................................ 
+27
+ 
+6.3. 
+De la Dirección General de Salud de las Personas .. 27
+ 
+6.4. 
+De la Dirección General de Salud Ambiental ........... 
+27
+ 
+6.5. 
+De la Organización ................................................... 28
+ 
+6.6. 
+De la Gestión ............................................................ 28
+ 
+6.7. 
+Del Financiamiento ................................................... 29
+VII. 
+RESPONSABILIDADES ........................................................ 
+29
+ 
+7.1. 
+Nivel Nacional .......................................................... 
+29
+ 
+7.2. 
+Nivel Regional .......................................................... 
+29
+ 
+7.3. 
+Nivel Local ................................................................ 30
+VIII. 
+REFERENCIA BIBLIOGRÁFICA ............................................. 30
+ÍNDICE
+
+===== PAGE 8 =====
+8
+IX. 
+ANEXOS .......................................................................... 
+30
+Anexo 1: 
+Otras deﬁ niciones conceptuales. ..................................... 
+34
+Anexo 2: 
+Diagrama de ﬂ ujo de notiﬁ cación e investigación 
+ 
+de  la vigilancia epidemiológica en salud pública
+ 
+de factores de riesgo por exposición e intoxicación
+ 
+por metales pesados y metaloides. .................................. 
+37
+Anexo 3: 
+Registro semanal de notiﬁ cación epidemiológica
+ 
+individual. .......................................................................... 
+39
+Anexo 4: 
+Ficha de investigación epidemiológica en salud
+ 
+pública de factores de riesgo por exposición e
+ 
+intoxicación por metales pesados y metaloides. .............. 
+40
+Anexo 5: 
+Ficha de investigación epidemiológica: Factores
+ 
+de riesgo por exposición e intoxicación por
+ 
+metales pesados y metaloides. ........................................ 
+44
+Anexo 6: 
+Ficha de investigación en situación de
+ 
+contingencia por exposición e intoxicación
+ 
+por metales pesados y metaloides. .................................. 
+46
+Anexo 7A: Indicadores de la vigilancia epidemiológica
+ 
+en salud pública de factores de riesgo por exposición
+ 
+e Intoxicación por metales pesados y metaloides. ........... 
+50
+Anexo 7B: Indicadores de la vigilancia epidemiológica en
+ 
+salud pública de factores de riesgo por exposición e
+ 
+Intoxicación por metales pesados y metaloides. .............. 
+51
+Anexo 7C: Indicadores de la vigilancia epidemiológica en
+ 
+salud pública de factores de riesgo por exposición
+ 
+e Intoxicación por metales pesados y metaloides. ........... 
+52
+Anexo 7D: Indicadores de la vigilancia epidemiológica en
+ 
+salud pública de factores de riesgo por exposición e
+ 
+Intoxicación por metales pesados y metaloides. .............. 
+54
+
+===== PAGE 9 =====
+9
+El desarrollo industrial y la agricultura son necesarios para la economía, sin 
+embargo estas actividades humanas han generado efectos adversos para 
+la calidad del ambiente y la exposición de diferentes formas en la población 
+humana.
+La contaminación ambiental es un riesgo importante para la salud de la 
+población humana. En el 2012 la Organización Mundial de la Salud (OMS) 
+reﬁ ere que existen aproximadamente 7 millones de personas fallecidas 
+como consecuencia de la exposición a la contaminación atmosférica. A nivel 
+ocupacional el 19% de todos los cánceres son atribuidos a la contaminación 
+del ambiente y la contaminación del aire en el hogar está causando 4,3 
+millones de muertes cada año. Asimismo, la OMS 
+En el marco de las políticas sanitarias y de gestión pública, en el ejercicio 
+de su rol rector, el Ministerio de Salud a través de la Dirección General 
+de Epidemiología elaboró la presente Norma Técnica de Salud (NTS) que 
+establece la “Vigilancia Epidemiológica en Salud Pública de Factores de 
+Riesgo por Exposición e Intoxicación por Metales Pesados y Metaloides”, con 
+el ﬁ n de contribuir a la prevención y control de la exposición e intoxicación por 
+metales pesados  en la población peruana, con el objetivo de: Estandarizar 
+la metodología de la vigilancia epidemiológica en Salud Pública de Factores 
+de Riesgo de Exposición e Intoxicación por Metales Pesados y  Metaloides; 
+así como de sus mecanismos de articulación intersectorial.
+En tal sentido, la vigilancia epidemiológica de factores de riesgo por 
+exposición e intoxicación por metales pesados y metaloides, permitirá generar 
+información y su uso posibilitará la mejora efectiva y oportuna en los servicios 
+de salud para lograr el máximo beneﬁ cio para la salud pública en el país. 
+Finalmente la vigilancia epidemiológica no elimina ni sustituye la 
+responsabilidad de otros actores quienes deben asegurar el cumplimiento 
+del marco normativo y el control responsable de la contaminación por 
+metales pesados y metaloides  para protección de la salud de la población.
+ Med. Martín Javier Alfredo Yagui Moscoso
+Director General
+Dirección General de Epidemiología
+PRESENTACIÓN
+
+===== PAGE 10 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+10
+
+===== PAGE 11 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+11
+I. FINALIDAD
+Contribuir a la prevención y control de la exposición e intoxicación por 
+metales pesados y metaloides en la población del Perú.
+II. OBJETIVOS
+2.1. Objetivo General
+Establecer los lineamientos para  la implementación de la  vigilancia 
+epidemiológica en salud pública de factores de riesgo por exposición e 
+intoxicación por metales pesados y metaloides en la población del Perú
+2.2. Objetivos Especíﬁ cos
+2.2.1. Estandarizar la metodología de la vigilancia epidemiológica 
+en salud pública de factores de riesgo por exposición e 
+intoxicación por metales pesados y metaloides en el Perú.
+2.2.2. Establecer mecanismos de articulación intersectorial para la 
+vigilancia de factores de riesgo por exposición e intoxicación 
+por metales pesados y metaloides. 
+III. ÁMBITO DE APLICACIÓN
+La presente Norma Técnica de Salud (NTS) es de alcance nacional y de 
+aplicación obligatoria en todos los establecimientos de salud del Sector 
+públicos y privados (establecimientos de salud a cargo del Instituto de 
+Gestión de los Servicios de Salud del Ministerio de Salud, del Seguro Social 
+de Salud- EsSalud, de la Sanidad de las Fuerzas Armadas y de la Policía 
+Nacional del Perú, así como de los establecimientos de salud privados y 
+otros prestadores que brinden atenciones de salud en todo el país). 
+IV. BASE LEGAL
+• 
+Ley Nº 26842, Ley General de Salud.
+• 
+Ley Nº 27813, Ley del Sistema Nacional Coordinado y Descentralizado 
+de Salud.
+• 
+Ley Nº 27967, Ley Orgánica de Gobiernos Regionales.
+• 
+Ley Nº 27972, Ley Orgánica de Municipalidades.
+• 
+Ley Nº 29783, Ley de Seguridad y Salud en el Trabajo.
+• 
+Ley N° 28804, Ley que Regula la Declaratoria de Emergencia 
+Ambiental.
+
+===== PAGE 12 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+12
+• 
+Reglamento Sanitario Internacional (2005).
+• 
+Decreto Supremo Nº 023-2005-SA, que aprueba el Reglamento de 
+Organización y Funciones del Ministerio de Salud.
+• 
+Decreto Supremo Nº 015-2005-SA, que aprueba el Reglamento sobre 
+valores limites permisibles para Agentes Químicos en el Ambiente de 
+Trabajo.
+• 
+Decreto Supremo Nº 039-93-PCM, que aprueba el Reglamento de 
+Prevención y Control del Cáncer Profesional.
+• 
+Decreto Supremo Nº  024-2008 PCM, que aprueba el Reglamento 
+de la Ley Nº 28804, Ley que regula la declaratoria de Emergencia 
+Ambiental.
+• 
+Decreto Supremo Nº 005-2012-TR, que aprueba el Reglamento de la 
+Ley Nº 29783, Ley de Seguridad y Salud en el Trabajo.
+• 
+Resolución Ministerial Nº 511-2007-MINSA, que aprueba la “Guía 
+Técnica: Guía de Práctica Clínica  para el Manejo de Pacientes con 
+Intoxicación por Plomo”.
+• 
+Resolución Ministerial Nº 480-2008/MINSA, que aprueba la NTS Nº 
+068- MINSA/DGSP-V1 “Norma Técnica de Salud que establece el 
+Listado de Enfermedades Profesionales”.
+• 
+Resolución Ministerial Nº 526-2011/MINSA que aprueba las “Normas 
+para la elaboración de documentos normativos del Ministerio de 
+Salud”.
+• 
+Resolución Ministerial Nº 389-2011-MINSA, que aprueba la “Guía 
+Técnica: Guía de Práctica Clínica  para el Diagnóstico y Tratamiento 
+de la Intoxicación  por Arsénico.
+• 
+Resolución Ministerial Nº 026-2011-MINSA, que aprueba el Documento 
+Técnico: “Lineamientos para la Elaboración del Programa de Atención 
+y Vigilancia Epidemiológica, Ambiental y Sanitaria a ser aplicado en 
+cada Emergencia Ambiental  (Decreto Supremo  N° 024-2008 PCM).-
+Versión 02”.
+• 
+Resolución Ministerial Nº 312-2011-MINSA, que aprueba el Documento 
+Técnico: “Protocolos de Exámenes Médicos Ocupacionales y Guías 
+de Diagnóstico de los  Exámenes Médicos Obligatorios por Actividad”.
+• 
+Resolución Ministerial Nº 506-2012-MINSA, que aprueba la Directiva 
+Sanitaria Nº 046-MINSA/DGE-V.01, que establece la “Notiﬁ cación de 
+Enfermedades y eventos sujetos a vigilancia epidemiológica en Salud 
+Pública”.
+• 
+Resolución Ministerial Nº 525-2012/MINSA, que restructura la 
+organización y dependencia funcional de las Estrategias Sanitarias 
+
+===== PAGE 13 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+13
+Nacionales del Ministerio de Salud.
+• 
+Resolución Ministerial Nº 545-2012-MINSA, que aprueba la Directiva 
+Sanitaria N° 047-MINSA/DGE-V.01, “Notiﬁ cación de Brotes, Epidemias 
+y otros eventos de importancia para la Salud Pública”.
+• 
+Resolución Ministerial Nº 757-2013-MINSA, que aprueba la Guía 
+Técnica: Guía de Práctica Clínica para el Diagnóstico y Tratamiento de 
+la Intoxicación por Mercurio, y Guía Técnica: Guía de Práctica Clínica 
+para el Diagnóstico y Tratamiento de la Intoxicación por Cadmio.
+V. DISPOSICIONES GENERALES:
+5.1. DEFINICIONES OPERATIVAS:
+5.1.1. Antecedente de exposición
+ 
+Referido a la exposición de la persona o trabajador a una 
+fuente natural o antropogénica contaminada por metales 
+pesados y metaloides.
+5.1.2. Conglomerado (o clúster).
+ 
+Es la agrupación de personas en una zona o  área geográﬁ ca 
+deﬁ nida, próxima a una fuente antropogénica o natural.
+5.1.3. Factores de riesgo de exposición e intoxicación por 
+metales pesados y metaloides.
+ 
+Son condiciones de exposición o intoxicación a metales 
+pesados y metaloides con la capacidad de causar daño que 
+se presentan a continuación:
+5.1.3.1. Factores de riesgo en el hogar 
+ 
+Referido a la identiﬁ cación de diferentes factores de 
+riesgo a la salud por exposición  a metales pesados y 
+metaloides dentro del hogar (Anexo 1 de la presente 
+NTS). 
+5.1.3.2. Factores de riesgo poblacional 
+ 
+Está relacionado a la probabilidad de afectación a 
+una población como consecuencia de la exposición 
+o intoxicación por metales pesados y metaloides 
+(Anexo 1 de la presente NTS).
+5.1.3.3. Factores de riesgo ambiental  
+ 
+Referido a la identiﬁ cación de factores de riesgo con 
+probabilidad de contaminación del ambiente con 
+metales pesados y metaloides (en el suelo, agua y 
+
+===== PAGE 14 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+14
+aire) por fuente natural o antropogénica. (Anexo 1 de 
+la presente NTS).
+5.1.3.4. Factores de riesgo ocupacional
+ 
+Referido a la identiﬁ cación de factores de riesgo a la 
+salud por exposición a metales pesados y metaloides 
+en el desarrollo de la actividad laboral, que como 
+consecuencia de ello pueden ocasionar algún daño a 
+la salud. (Anexo 1 de la presente NTS).
+5.1.4. Deﬁ niciones de caso por exposición e intoxicación por 
+metales pesados y metaloides
+5.1.4.1. Caso sospechoso (expuesto)
+ 
+Es toda persona con antecedente de exposición a 
+fuente conﬁ rmada, sin manifestaciones clínicas de 
+intoxicación aguda o crónica por metales pesados y 
+metaloides.
+5.1.4.2. Caso probable 
+ 
+Es todo caso sospechoso (expuesto) y que 
+presenta manifestaciones clínicas de intoxicación 
+aguda o crónica por metales pesados y metaloides 
+diagnosticado por un médico que no puedan ser 
+explicados por otra patología.
+5.1.4.3. Caso Conﬁ rmado (Intoxicado) 
+ 
+Es el caso probable con conﬁ rmación de laboratorio.
+5.1.4.4. Caso Descartado 
+ 
+Es aquel caso que luego de la investigación 
+epidemiológica y evaluación médica, no cumple con 
+los criterios de caso conﬁ rmado o probable.
+5.1.5. Clasiﬁ cación de casos en las que ocurre la intoxicación 
+por metales pesados y metaloides
+5.1.5.1. Intoxicación en el hogar
+ 
+Exposición humana a metales pesados y metaloides 
+dentro del hogar que han producido efectos adverso 
+en la salud de la persona.
+5.1.5.2. Intoxicación poblacional.
+ 
+Daño a la salud  humana causados por la presencia 
+de  metales pesados y/o  metaloides en agua, aire, 
+suelo o alimentos; y que se encuentran por encima 
+de los estándares de calidad ambiental nacional o 
+
+===== PAGE 15 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+15
+internacional, identiﬁ cados dentro de una población 
+determinada.
+5.1.5.3. Intoxicación ocupacional
+ 
+Daño a la salud por exposición a metales pesados y 
+metaloides, que presente durante el desempeño del 
+trabajo o como consecuencia del mismo.
+5.1.5.4. Intoxicación accidental 
+ 
+Daño a la salud de un sujeto o grupo de población 
+por metales pesados y metaloides ocurridos por 
+exposición no intencional.
+5.1.6. Factor de Riesgo 
+ 
+Es cualquier condición, característica o exposición de una 
+persona o grupo de población a metales pesados que pueda 
+producir un daño a la salud. 
+5.1.7. Fuente Natural (metales pesados)
+ 
+Son aquellas que emiten contaminantes causadas por 
+fenómenos naturales como las erupciones volcánicas,  o 
+incendios forestales.
+5.1.8. Fuente Antropogénica
+ 
+Son aquellas que se originan por las actividades humanas, 
+como actividades productivas y extractivas formales, 
+informales e ilegales.  
+5.1.9. Identiﬁ cación de los factores de riesgo de exposición a 
+metales pesados y metaloides
+ 
+Referido a la recolección de datos de los principales factores 
+de riesgo de exposición a fuentes naturales o antropogénicas 
+por metales pesados y metaloides en el ambiente (aire, agua, 
+suelo, alimentos), en la población, en el hogar y de origen 
+ocupacional, que probablemente afecte en diferentes grados la 
+salud de la población expuesta.
+5.1.10. Metales pesados 
+Grupo de elementos químicos que presentan una masa 
+atómica mayor a 60 que provoca toxicidad a los seres 
+humanos.
+5.1.11. Metaloides
+Grupo de elementos químicos que representan una masa 
+atómica menor a 60 que provocan toxicidad a los seres 
+humanos (como el arsénico y otros).
+
+===== PAGE 16 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+16
+5.1.12. Poblaciones expuestas a metales pesados y metaloides 
+Se deﬁ ne al grupo de personas o poblaciones que trabajan 
+o viven en el entorno o cercanas a fuentes de contaminación 
+de origen antropogénica o natural.
+5.1.13. Red Nacional de Epidemiología (RENACE)
+Se denomina así a la red constituida por todo el personal 
+de los establecimientos de salud que realiza actividades de 
+vigilancia epidemiológica en salud pública, investigación, 
+evaluación y análisis de situación de salud; y que articula 
+acciones con los responsables de la prevención y control.
+5.1.14. Riesgo 
+Es la  probabilidad de que se produzca un daño a la salud 
+como consecuencia de la exposición a metales pesados y 
+metaloides.
+5.1.15. Situación de alerta
+Se considera en al menos uno de los siguientes casos:
+a) Población con intoxicación aguda a metales pesados y 
+metaloides 
+b) Accidentes o situación de contingencia por exposición a 
+metales pesados y metaloides como: fugas, derrames, 
+desastres tecnológicos y otros, en los que resulten 
+expuestos: pobladores y trabajadores.
+5.1.16. Situación de contingencia por exposición a metales 
+pesados y metaloides
+Situación de riesgo imprevisto derivado de actividades 
+humanas, accidentes o fenómenos naturales, que ponga en 
+riesgo la integridad de la persona o población humana en la 
+que se compruebe como agente causal los metales pesados 
+y metaloides.
+5.1.17. Vía de exposición
+Es el medio por el que los metales pesados o metaloides 
+acceden a un organismo vivo, sea a través del tracto 
+respiratorio o pulmonar (inhalación), tracto gastrointestinal o 
+vía digestiva (ingestión) y a través de la piel o vía dérmica o 
+cutánea (tópica).
+5.1.18. Vigilancia Activa
+Es la identiﬁ cación de factores de riesgo por exposición 
+a metales pesados y metaloides en  sujetos, grupos 
+
+===== PAGE 17 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+17
+poblacionales, 
+localidades, 
+los 
+mismos 
+que 
+serán 
+investigados.
+5.1.19. Vigilancia Centinela
+Es la detección de expuestos o intoxicados por metales 
+pesados y metaloides en una determinada población por 
+personal de salud del establecimiento seleccionado por su 
+proximidad a ámbitos cercanos a fuentes de contaminación.
+5.1.20. Vigilancia Pasiva
+Es la identiﬁ cación de los factores de riesgo de exposición 
+por metales pesados y metaloides que se lleva a cabo 
+a través de la recopilación, procesamiento y análisis de 
+la información  de  diferentes fuentes de información de 
+instituciones públicas y privadas que proveen salud y de 
+otros sectores vinculados.
+5.1.21. Vigilancia epidemiológica en salud pública de los 
+factores de riesgo por exposición e intoxicación por 
+metales pesados y metaloides.
+La vigilancia epidemiológica en salud pública de factores de 
+riesgo por exposición e intoxicación por metales pesados 
+y metaloides consiste en la identiﬁ cación, recolección, 
+procesamiento, 
+investigación, 
+análisis, 
+interpretación 
+de  los datos y difusión de la información de la situación 
+epidemiológica y de los factores de riesgo por exposición e 
+intoxicación por metales pesados y metaloides que orienten 
+la toma decisiones en la prevención y control.
+F5.2. La Dirección General de Epidemiología - DGE conduce la vigilancia 
+epidemiológica en salud pública de factores de riesgo de exposición 
+e intoxicación por metales pesados y metaloides, que comprende 
+la vigilancia epidemiológica en todos los establecimientos de 
+salud públicos y privados y, de la vigilancia centinela, sólo en 
+establecimientos seleccionados.
+5.3. El Responsable del establecimiento de salud público y privado 
+debe notiﬁ car obligatoriamente a la oﬁ cina de Epidemiología, en 
+forma mensual los casos sospechosos, probables o intoxicados por 
+metales pesados y metaloides en los instrumentos establecidos en 
+la presente  Norma Técnica de Salud, siguiendo el ﬂ ujo establecido 
+(nivel local, regional y nacional). De no presentarse casos al momento 
+del reporte debe realizarse la notiﬁ cación negativa.
+5.4. El personal de salud responsable de la vigilancia epidemiológica de 
+las Direcciones de salud- DISAs/ Direcciones Regionales de Salud-
+
+===== PAGE 18 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+18
+DIRESAs/ Gerencias Regionales de Salud-GERESas o el que haga 
+sus veces debe notiﬁ car en forma inmediata y obligatoria todo evento 
+en situación de contingencia por exposición a metales pesados y 
+metaloides.
+5.5. En el nivel de DISA/DIRESA/GERESA o las que hagan sus veces, 
+deben garantizar la designación del personal de salud responsable 
+de la vigilancia epidemiológica de factores de riesgo por la 
+exposición e intoxicación a metales pesados y metaloides, en su 
+ámbito jurisdiccional; así como el monitoreo y supervisión de todos 
+los componentes  de la vigilancia epidemiológica.
+5.6. Las DISAs/DIRESAs/GERESAs o las que hagan sus veces, con 
+el apoyo del personal de los establecimiento de salud deberán 
+coordinar con los gobiernos locales y regionales y otras instituciones 
+del sector salud para establecer la Vigilancia Epidemiológica en 
+Salud Pública de Factores de Riesgo por Exposición e Intoxicación a 
+Metales Pesados y Metaloides.
+VI. DISPOSICIONES ESPECÍFICAS
+6.1. DE LA VIGILANCIA EPIDEMIOLÓGICA
+6.1.1. De la recolección de la información
+6.1.1.1. El personal de salud responsable de la vigilancia 
+epidemiológica de las DISAs/DIRESAs/GERESAs o las que 
+hagan sus  veces, debe coordinar con las otras dependencias 
+técnicas de la misma instancia para la recolección de la 
+información de diferentes fuentes disponibles, relacionadas a 
+factores de riesgos por la exposición o intoxicación por metales 
+pesados y metaloides, procedentes de diversas fuentes natural 
+o antropogénica en su ámbito jurisdiccional, información 
+de monitoreo de sustancias químicas en agua, aire, suelo y 
+alimentos y monitoreo biológico y de situaciones de alerta.
+6.1.1.2. El personal de salud responsable de la vigilancia 
+epidemiológica del establecimiento de salud de las DISAs/
+DIRESAs/GERESAs o la que hagan sus veces, debe 
+identiﬁ car o detectar al caso sospechoso (expuesto), probable 
+o intoxicado en la atención de los servicios de salud (consulta 
+externa, servicio de emergencia, hospitalización y otros) por 
+exposición o intoxicación por metales pesados y metaloides 
+según las deﬁ niciones de caso.
+
+===== PAGE 19 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+19
+6.1.2. De la Notiﬁ cación   
+6.1.2.1. El personal de salud responsable de la vigilancia 
+epidemiológica de los  establecimientos de salud y servicios 
+médicos de apoyo público y privado deben notiﬁ car en forma 
+obligatoria y mensual a la Oﬁ cina de Epidemiología de las 
+DISAs/DIRESAs/GERESAs o las que hagan su veces, los 
+casos sospechosos (expuesto), probables y conﬁ rmados 
+bajo responsabilidad del nivel correspondiente según 
+el diagrama de ﬂ ujo (Anexo 2), incluida en el presente 
+documento normativo. De no presentarse casos debe realizar 
+la notiﬁ cación negativa.
+6.1.2.2. El personal de salud  responsable de la vigilancia 
+epidemiológica de los establecimientos de salud de las 
+DISAS/DIRESAs/GERESAs o las que hagan su veces debe 
+realizar la identiﬁ cación, registro y notiﬁ cación de los casos 
+según la deﬁ nición establecida en el “Formato de Registro 
+Semanal de Notiﬁ cación Epidemiológica Individual” (Anexo 
+3 de la presente NTS)), el mismo que se empleará como 
+instrumento de notiﬁ cación inmediata, según se requiera, 
+siguiendo el ﬂ ujo de la notiﬁ cación.
+6.1.2.3. Notiﬁ cación positiva: Notiﬁ ca la existencia de 
+casos por exposición o intoxicación por metales pesados y 
+metaloides cuando son captados por el personal del sector 
+salud, según plazos establecidos.
+6.1.2.4. Notiﬁ cación negativa: Notiﬁ ca la ausencia de 
+casos por metales pesados y metaloides, según los plazos 
+establecidos.
+6.1.2.5. Los casos de intoxicación por metales pesados 
+y metaloides deberá notiﬁ car utilizando la codiﬁ cación 
+internacional  de enfermedades del CIE-10:
+• (T56) Efecto tóxico de metales 
+• (T56.0) Plomo y sus compuestos
+• (T56.1) Mercurio y sus compuestos
+• (T56.2) Cromo y sus compuestos
+• (T56.3) Cadmio y sus compuestos
+• (T56.4) Cobre y sus compuestos
+• (T56.5) Zinc y sus compuestos
+• (T56.6) Estaño y sus compuestos
+
+===== PAGE 20 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+20
+• (T56.7) Berilio y sus compuestos
+• (T56.8) Otros metales.
+• (T56.9) Metal, no especiﬁ cado.  
+• (T57)  Efecto tóxico de otras sustancias inorgánicas 
+• (T57.0): Arsénico y sus compuestos
+6.1.2.6. El personal de salud ambiental de las DISAs/
+DIRESAs/ GERESAs o las que hagan sus veces, debe 
+notiﬁ car los  resultados del monitoreo de la vigilancia sanitaria 
+ambiental (agua y aire) a metales pesados y metaloides, 
+así como coordinar con otras dependencias para recolectar 
+datos de otras fuentes de información; en situaciones de 
+contingencia deberán informar los resultados del monitoreo 
+de suelo y alimentos (Anexo 5).
+6.1.2.7. El personal de salud de las DISAs/DIRESAs/ 
+GERESAs o las que hagan sus veces en situación de 
+contingencia (derrames u otros accidentes) por exposición 
+o intoxicación con metales pesados y metaloides en grupos 
+poblacionales, instituciones educativas o en comunidad, 
+debe notiﬁ car inmediatamente dentro de las 24 horas al nivel 
+superior que corresponda según el ﬂ ujograma establecido 
+(local, regional y nacional a la DGE), y se notiﬁ cará a través de 
+la página web de la DGE (http://www.dge.gob.pe/notiﬁ car/). 
+6.1.2.8. El Ministerio de Salud a través de la Red de Vigilancia 
+Epidemiológica solicitará al Ministerio Público la notiﬁ cación 
+de los casos de intoxicación por metales pesados y metaloides 
+de acuerdo a las competencias.
+6.1.2.9. Las DISAs/DIRESAs/GERESAs o las que haga sus 
+veces, deben seleccionar a los establecimientos de salud 
+(Centro u Hospital) para la vigilancia centinela según los 
+criterios:
+a) Ubicación en áreas de riesgo por exposición metales 
+pesados y metaloides.
+b) Establecimiento que cuente con un responsable de 
+epidemiologia debidamente capacitado.
+c) Condiciones que garanticen las actividades regulares 
+de esta vigilancia, personal logística y medios de 
+comunicación.
+6.1.2.10. En el nivel de las DISAs/DIRESAs/GERESAs o las 
+que hagan sus veces, deben garantizar la designación oﬁ cial 
+
+===== PAGE 21 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+21
+del establecimiento de salud centinela y del personal de salud 
+responsable de la vigilancia epidemiológica en su ámbito 
+jurisdiccional; así como el monitoreo y supervisión de todos 
+los componentes de la Vigilancia Epidemiológica en Salud 
+Pública de Factores de Riesgo de Exposición e Intoxicación 
+por Metales Pesados y Metaloides.
+6.1.2.11. El Director General de cada DISAs/DIRESAs/
+GERESAs o las que hagan sus veces, debe remitir a la 
+Dirección General de Epidemiología el nombre y ubicación de 
+los establecimientos de salud seleccionados para la vigilancia 
+centinela.
+6.1.3. De la investigación epidemiológica 
+6.1.3.1. El personal de salud responsable de la vigilancia 
+epidemiológica de los establecimientos de salud de las DISAs/
+DIRESAs/GERESAs o las que hagan sus veces, debe realizar 
+la investigación epidemiológica de factores de riesgos por 
+exposición e intoxicación por metales pesados y metaloides 
+en las personas, población en riesgo, utilizando para ello las 
+“Fichas de Investigación Epidemiológica en Salud Pública de 
+Factores de Riesgo por Exposición e Intoxicación por Metales 
+Pesados y Metaloides”  (Anexo 4 y 5).
+6.1.3.2. El personal de salud responsable de la vigilancia 
+epidemiológica en los establecimientos de salud, de las 
+DISAs/DIRESAs/GERESAs o las que hagan su veces, 
+debe realizar la investigación epidemiológica inmediata, 
+cuando identiﬁ quen una situación de alerta y debe ser 
+complementada con otras fuentes de información (medios 
+de comunicación, rumores, encuestas, monitoreo sanitario 
+ambiental, monitoreo biológico, datos educativos, laborales, 
+actividades antropogénicas y otras), que posean información 
+relevante.
+6.1.3.3. En situación de contingencia (derrames u otros 
+accidentes) el personal de Salud de las DISAs/DIRESAs/
+GERESAs o las que hagan su veces, deben realizar la 
+investigación epidemiológica  dentro de las primeras 72 
+horas utilizando la “Ficha de Investigación en Situación 
+de Contingencia por Exposición o Intoxicación a Metales 
+Pesados y Metaloides” (Anexo 6), y deberán coordinar 
+con las dependencias técnicas para la toma y remisión de 
+muestras biológicas, alimentos, o muestras ambientales a la 
+dependencia  correspondiente del Instituto Nacional de Salud 
+(INS): Centro Nacional de Salud Ocupacional y Protección del 
+
+===== PAGE 22 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+22
+Ambiente para la Salud (CENSOPAS) y el Centro Nacional de 
+Alimentación y Nutrición (CENAN) y la Dirección General de 
+Salud Ambiental (DIGESA).
+6.1.3.4. Los resultados de la investigación epidemiológica 
+o de una situación de contingencia, debe ser remitido a 
+través del informe preliminar dentro de las 72 horas, luego 
+remitir el informe de seguimiento y el informe ﬁ nal concluida 
+la  investigación, siguiendo el ﬂ ujo establecido a nivel local, 
+regional y nacional a la Dirección General de Epidemiología-
+DGE (anexo 6).
+6.1.4. Del Laboratorio
+6.1.4.1. El personal capacitado de laboratorio, debe tomar la 
+muestra biológica (sangre, orina y otros) bajo condiciones de 
+bioseguridad, de acuerdo a los procedimientos establecidos y 
+remitir al Centro Nacional de Salud Ocupacional y Protección 
+del Ambiente para la Salud (CENSOPAS) del Instituto 
+Nacional de Salud (INS), del Ministerio de Salud.
+6.1.4.2. Cuando se identiﬁ que como fuente probable 
+de exposición los alimentos de los programas sociales 
+contaminados con metales pesados y metaloides, el personal 
+de salud capacitado de las DISAs/DIRESAs/GERESAs o su 
+equivalente, debe tomar y remitir las muestras de alimentos 
+o restos para su análisis respectivo en el CENAN del INS del 
+Ministerio de Salud, previa coordinación.
+6.1.4.3. Cuando se identiﬁ que como fuente probable el  agua, 
+aire, suelo y alimentos contaminados por metales pesados y 
+metaloides, las DISAs/DIRESAs/GERESAs o la que hagan 
+sus veces, deben coordinar la  toma  de  muestras ambientales 
+y su remisión para  su procesamiento en coordinación con la 
+DIGESA del  Ministerio de Salud.
+6.1.4.4. Los resultados de laboratorio de las muestras biológicas 
+y ambientales, según corresponda deben ser remitidos en forma 
+regular por el (CENSOPAS) y el (CENAN)  del  INS, así como  de 
+la DIGESA,  a la DISAs/DIRESAs/GERESAs o la que haga sus 
+veces  con copia a la DGE del Ministerio de Salud.
+6.1.4.5. La Oﬁ cina de Epidemiología del nivel regional 
+coordinará con el Laboratorio de Referencia Regional y 
+con la Oﬁ cina de Salud Ambiental respectivamente para la 
+disponibilidad de los resultados en forma oportuna.
+
+===== PAGE 23 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+23
+6.1.5. Del procesamiento y control de calidad de datos 
+6.1.5.1. Los datos de las ﬁ chas de Vigilancia Epidemiológica 
+en Salud Pública de Factores de Riesgo por Exposición e 
+Intoxicación por Metales Pesados y Metaloides deben ser 
+ingresados y registrados en el aplicativo establecido (base de 
+datos) bajo responsabilidad de la Oﬁ cina de Epidemiología 
+de las DISAs/DIRESAs/GERESAs o la que haga sus veces 
+en cada nivel, según corresponda (local, regional y nacional).
+6.1.5.2. El personal de salud responsable de la vigilancia 
+epidemiológica de las unidades notiﬁ cantes de la RENACE 
+de las DISAs/DIRESAs/GERESAs o las que hagan su veces, 
+deben realizar el control de calidad de la ﬁ cha de investigación 
+de la Vigilancia Epidemiológica en Salud Pública de Factores 
+de Riesgo por Exposición e Intoxicación por Metales Pesados 
+y Metaloides, así como de la base de datos según lo 
+establecido por la DGE.
+6.1.6. Del Análisis de los datos
+6.1.6.1. El análisis e interpretación de los datos de la 
+vigilancia epidemiológica,debe realizarse utilizando los 
+indicadores establecidos en la presente NTS de la Vigilancia 
+Epidemiológica en Salud Pública de Factores de Riesgo por 
+Exposición e Intoxicación por  Metales Pesados y Metaloides, 
+según los niveles:
+• 
+En el  nivel nacional y regional: Los  principales indicadores 
+a utilizarse son:
+ 
+Número de zonas, distritos en riesgo por exposición a 
+metales pesados y metaloides, información disponible 
+de monitoreo biológico y ambiental sobre calidad del 
+aire, agua, y suelos,  así como fuentes de exposición 
+antropogénica 
+(minería, 
+relaves 
+mineros) 
+y 
+otras 
+actividades industriales en donde se utilicé o reutilicen 
+los metales pesados y metaloides (Anexo 7.A, 7.B de la 
+presente NTS).
+ 
+Incidencia acumulada de intoxicaciones agudas o crónicas 
+por metales pesados y metaloides, prevalencia de 
+expuestos, tasa de letalidad, tasa de ataque (situación de 
+contingencia), lugar de ocurrencia, vía de exposición y causa 
+de la intoxicación y de otros datos de factores de riesgo 
+contenidos en la ﬁ cha de investigación epidemiológica, 
+(Anexo  7.B, 7.C y 7.D de la presente NTS).
+• 
+En el nivel local: Los principales indicadores a utilizarse 
+son:
+
+===== PAGE 24 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+24
+ 
+Fuente natural: Número de localidades en riesgo de 
+exposición e intoxicación a metales pesados y metaloides.
+ 
+Fuentes antropogénicas: Número de localidades en 
+riesgo por exposición a fuentes contaminantes a metales 
+pesados y metaloides (Anexo 5 de la presente NTS).
+ 
+Número y proporciones de casos probables y conﬁ rmados 
+por intoxicación con metales pesados y metaloides, tipo 
+de metales identiﬁ cados, tipo de exposición,  fallecidos y 
+de los otros datos contenidos en la ﬁ cha de  investigación 
+epidemiológica, (Anexo 7.C de la presente NTS). 
+6.1.6.2. El análisis de la información  debe ser complementada 
+con otras fuentes de información en coordinación con la 
+Oﬁ cina de Estadística e Informática (Sistema HIS, egresos 
+hospitalarios, defunciones, etc.) y de otras dependencias 
+técnicas del Sector Salud (Dirección General de Salud 
+Ambiental -DIGESA, Dirección  General Salud de las 
+Personas, INS a través del CENSOPA y CENAN;  y de 
+otros sectores involucrados (Ministerio de Energía y Minas 
+(MINEM), Ministerio del Ambiente (MINAM), Autoridad 
+Nacional del Agua (ANA), Ministerio de la Producción 
+(PRODUCE), Instituto de Medicina Legal y Ciencias Forenses 
+del  Ministerio Publico (IML-MP) y otros).
+6.1.6.3. El nivel de desagregación de los datos de la Vigilancia 
+Epidemiológica en Salud Pública de Factores de Riesgo por 
+Exposición e Intoxicación por Metales Pesados y Metaloides, 
+en el nivel regional, debe ser realizado hasta el nivel local 
+o ámbito jurisdiccional del establecimiento de salud, lo que 
+permitirá identiﬁ car las zonas de mayor riesgo por la magnitud 
+o severidad de las intoxicaciones por metales pesados y 
+metaloides y de los factores de riesgo identiﬁ cados.
+6.1.6.4. En el nivel nacional la desagregación de la información 
+se realizará, por regiones, departamentos, provincias y 
+distritos, lo que permitirá  identiﬁ car y estratiﬁ car los riesgos 
+según división  geográﬁ ca.
+6.1.7. De la difusión de la información
+6.1.7.1. Los responsables de las Oﬁ cinas de Epidemiología 
+en coordinación con las dependencias técnicas del nivel 
+regional (DISAs/DIRESAs/GERESAs), deben emitir en forma 
+mensual un reporte de la vigilancia, con el análisis básico y las 
+recomendaciones para orientar la intervención en prevención 
+y control.
+
+===== PAGE 25 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+25
+6.1.7.2. La retroalimentación de la Vigilancia Epidemiológica 
+en Salud Pública de Factores de Riesgo por Exposición e 
+Intoxicación por Metales Pesados y Metaloides, debe ser 
+difundido mediante boletines, reportes epidemiológicos, 
+y otros, que serán generados por el responsable de 
+epidemiología del nivel regional y local; y socializados a todos 
+los actores involucrados.
+6.1.7.3. Los informes técnicos, alertas, sala de situación deben 
+ser difundidos en cada uno de los niveles respectivos (local, 
+regional). En el nivel nacional se difunde a través de la página 
+web de la DGE  http://www.dge.gob.pe/
+6.1.7.4. Son usuarios de la información de la Vigilancia 
+Epidemiológica en Salud Pública de Factores de Riesgo por 
+Exposición e Intoxicación por Metales Pesados y Metaloides, las 
+dependencias técnicas del Sector Salud, Gobiernos Regionales, 
+Gobiernos Locales; así como otros sectores (Ministerio de 
+Agricultura y Riego: Servicio Nacional de Sanidad Agraria-
+SENASA, MP: IML, Ministerio del Ambiente, Sociedades 
+Cientíﬁ cas)  e  instituciones públicas y privadas.
+6.2. El INS, a través del CENSOPAS y el CENAN son responsables de 
+brindar asistencia técnica y control a los Laboratorios de Referencia 
+Regional y laboratorio de hospitales centinelas de la DISA/DIRESA 
+y GERESA o el que haga sus veces en el diagnóstico de metales 
+pesados y metaloides.
+6.3. El Ministerio de Salud a través de la Dirección General de Salud de 
+las Personas-Estrategia Sanitaria Nacional de Control de Riesgos de 
+Contaminación con Metales Pesados y Otras Sustancias Químicas, 
+es responsable de brindar asistencia técnica para la atención de 
+los casos en coordinación con los responsables de la Estrategia 
+Regional de metales pesados y otras sustancias químicas.
+6.4. El Ministerio de Salud a través de la Dirección General de Salud 
+Ambiental (DIGESA) es responsable de brindar asistencia técnica 
+a las Direcciones de Salud Ambiental de las DISAS/DIRESAS 
+y GERESAS o lo que hagan sus veces en el ámbito regional, en 
+vigilancia sanitaria ambiental, en el marco de sus competencias.
+6.5. DE LA ORGANIZACIÓN
+Las DISAs/DIRESAs/GERESAs o las que hagan sus veces en el 
+ámbito regional deberá garantizar que todos los establecimientos de 
+salud implementen la Vigilancia Epidemiológica  en Salud Pública 
+de Factores de Riesgo por Exposición e Intoxicación por Metales 
+Pesados y Metaloides, y deberán trabajar en forma coordinada 
+
+===== PAGE 26 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+26
+e interrelacionada en todos los niveles, mediante los procesos 
+establecidos en la presente NTS.
+6.6. DE LA GESTIÓN
+6.6.1. Las DISAs/DIRESAs/GERESAs, o las que hagan sus veces 
+en el ámbito regional, así como las redes, microredes 
+y establecimientos de salud del nivel nacional deben 
+incorporar en su plan operativo las acciones de la Vigilancia 
+Epidemiológica  en Salud Pública de Factores de Riesgo por 
+Exposición e Intoxicación por Metales Pesados y Metaloides 
+e implementarlas para garantizar el cumplimiento, así como 
+como el monitoreo y evaluación correspondiente.
+6.6.2. Las DISAs/DIRESAs/GERESAs o las que hagan sus veces 
+en el ámbito regional, así como las redes, microrredes y 
+establecimientos de salud del nivel nacional coordinarán con 
+otras instituciones de salud para la implementación de la 
+Vigilancia Epidemiológica en Salud Pública de Factores de 
+Riesgo por Exposición e Intoxicación por Metales Pesados y 
+Metaloides  y notiﬁ quen de forma regular según lo establecido 
+en la presente norma técnica de salud.
+6.6.3. Las DISAs, DIRESAs/GERESAs o las que hagan sus 
+veces implementarán los centros centinela de vigilancia 
+epidemiológica en salud pública de factores de riesgo por 
+exposición e intoxicación por metales pesados y metaloides, 
+en el establecimiento de salud seleccionado; y  deberá 
+promover a nivel de los establecimientos de salud del primer 
+nivel de atención, el desarrollo de mecanismos organizados 
+de vigilancia para identiﬁ car las intoxicaciones por metales 
+pesados y metaloides.
+6.7. DEL FINANCIAMIENTO
+6.7.1. Las DISAs, DIRESAs/GERESAs o las que hagan sus veces en 
+el ámbito regional y otras instituciones que integren el Sector 
+Salud, garantizarán la implementación y funcionamiento de 
+la vigilancia epidemiológica en salud pública de factores de 
+riesgo por exposición e intoxicación por metales pesados y 
+metaloides según sus funciones.
+6.7.2. Los establecimientos de salud públicos y privados, deben 
+garantizar el ﬁ nanciamiento según su disponibilidad y recursos 
+para el funcionamiento de la  Vigilancia Epidemiológica 
+en Salud Pública de Factores de Riesgo por Exposición e 
+Intoxicación por Metales Pesados y Metaloides, en el marco 
+de sus competencias.
+
+===== PAGE 27 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+27
+VII. RESPONSABILIDADES
+7.1. NIVEL NACIONAL
+El Ministerio de Salud, a través de la Dirección General de 
+Epidemiología es responsable de difundir la presente Norma 
+Técnica en Salud hasta el nivel regional, de brindar la capacitación 
+y asistencia técnica a las DISAS de Lima, DIRESAS y GERESAS 
+o las que hagan sus veces en el ámbito regional, así como de la 
+supervisión de su cumplimiento.
+7.2. NIVEL REGIONAL
+7.2.1. Las DISAs, DIRESAs/GERESAs o las que hagan su veces 
+en el ámbito regional,  a través de la correspondiente 
+Oﬁ cina de Epidemiología  es responsables de difundir 
+la presente Norma Técnica en Salud en su ámbito, así 
+como de brindar asistencia técnica al personal de salud 
+de todos los establecimientos de salud, en especial a los 
+establecimientos seleccionados para la vigilancia centinela 
+y de su implementación, supervisión y evaluación.
+7.2.2. El Laboratorio de Referencia Regional es responsable de 
+brindar asistencia técnica y supervisar a los Establecimientos 
+de Salud centinela, en la adecuada obtención de muestras 
+biológicas y ambientales.
+7.3. NIVEL LOCAL
+El Jefe del establecimiento de salud (puestos y centros de salud, 
+hospitales e Institutos) públicos y privados, y Directores de redes 
+y microrredes de los servicios de salud son los responsables 
+de la implementación, difusión y aplicación de la presente NTS 
+en su establecimiento y jurisdicción sanitaria respectiva, según 
+corresponda.
+VIII. REFERENCIAS BIBLIOGRÁFICAS
+1) Moreno A., Granada J. Intoxicación por plomo: diagnóstico diferencial de 
+dolor abdominal crónico. Univ. Méd. Bogotá (Colombia), 53 (2): 199-207, 
+abril-junio, 2012.
+2) Swaran J.S. Flora* and Vidhu Pachauri. Chelation in Metal Intoxication. 
+Int J Environ Res Public Health. 2010 July; 7(7): 2745–2788. Published 
+online 2010 June 28. Available from: http://www.ncbi.nlm.nih.gov/pmc/
+articles/PMC2922724/?tool=pubmed. [Fecha de visita: febrero 2011 ]
+3) Talavera NME, Guillen ZMO. Evaluación de metales pesados en el tóner 
+usado en fotocopiadoras. Su relación con los trabajadores y medidas 
+
+===== PAGE 28 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+28
+de mitigación. Rev. Soc.Quím.Perú, abr./jun.2010, vol.76, no. 2,179-186.
+ISSN 1810-634X.
+4) Arana-Zegarra, Marco. El caso de derrame de mercurio en Choropampa 
+y los daños a la salud en la población rural expuesta. Rev. Perú. Med. 
+exp. salud publica. [online]. ene. /mar. 2009, vol.26, no.1, p.113-116.
+Disponible en la World Wide Web: http://www.scielo.org.pe/ scielo.php? 
+script= sci_arttext&pid=S1726-46342009000100019&lng=es&nrm=iso.
+5) Fornieles Pérez H.G., Martínez Coronel J.F., Bellot Iglesias J.L. Capítulo 
+10.8. Intoxicación por productos Industriales: 4.6 Intoxicación por Cadmio. 
+En: F. Barranco Ruiz. Principios de Urgencias, Emergencias y Cuidados 
+Críticos. Editorial UNINET, Edición electrónica 2009, España. Disponible 
+en:  http://tratado.uninet.edu/c100804.html. 
+6) Agency for Toxic Substances & Disease Registry - ATSDR. Lead. 
+Resumen de salud Pública. Disponible: http://www.atsdr.cdc.gov/es/
+toxfaqs/es_tfacts5.html . 
+7) Agency for Toxic Substances & Disease Registry - ATSDR. Mercury. 
+Resumen de salud Pública. Disponible: http://www.atsdr.cdc.gov/es/phs/
+es_phs46.html.
+8) Agency for Toxic Substances & Disease Registry - ATSDR. Cadmium. 
+Resumen de salud Pública. Disponible: http://www.atsdr.cdc.gov/es/
+toxfaqs/es_tfacts5.html.
+9) Agency for Toxic Substances & Disease Registry - ATSDR. Arsenic. 
+Resumen de salud Pública, 2009 Disponible: http://www.atsdr.cdc.gov/es/
+toxfaqs/es_tfacts5.html. 
+10) Wade TJ, Xia Y, Wu K, Li Y. Increased mortality associated with well-
+water arsenic exposure in Inner Mongolia, China. Int J Environ Res Public 
+Health. 2009 Mar; 6(3):1107-23. Epub 2009.
+11) C. Díez Sáez, S. Esteban López, J. Ayala Curiel. Capítulo 19 - 
+Intoxicación por hierro y otros metales. En: Mintegi, Santiago, Manual de 
+Intoxicaciones en pediatría. Sociedad española de urgencias de pediatría. 
+2º edición.p.274-277. Versión electrónica. 2008, España. Disponible 
+en: 
+http://www.seup.org/seup/html/gtrabajo/manualIntoxicaciones/
+capitulo19.pdf .
+12) Jerrold B. Leikin, Frank P. Paloucek. Poisoning and Toxicology handbook. 
+Healthcare USA, Fourth Edition. Informa, Inc. 52 Vanderbilt Avenue, New 
+York, NY 10017 © 2008 by Lexi-Comp, Inc. 2008, US.
+13) Fernández S, Pollio GA, Domínguez V, Nogué S., et al. Brote de 
+saturnismo asociado a un tratamiento basado en la medicina ayurvédica. 
+Med Clin (Barc). 2014. 
+
+===== PAGE 29 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+29
+14) Agency for Toxic Substances and Disease Registry. Case Studies in 
+Environmental Medicine: Lead Toxicity. US Departament of Health and 
+Human Services, Public Health Service; 2006
+15) Ministerio de Salud. Dirección General de Epidemiología. Noti-SP V.03, 
+aplicativo informático vigente, para la notiﬁ cación de enfermedades o 
+eventos de notiﬁ cación obligatoria en el Sistema Nacional de Vigilancia 
+Epidemiológica, 2006, actualizado 2011, Lima Perú. Disponible en el 
+portal Web: http://www.dge.gob.pe/ve_tools.php
+16) Mycyk, Hryhorczuk y Amitai. «Lead» en Timothy Erickson y cols editores: 
+Pediatric Toxicology: Diagnosis and Managament of the Poisoned Child. 
+McGraw-Hill, 1ra edición, 2005.
+17) Valdivia Infantas MM. Intoxicación por plomo. Rev Soc Per Med Inter. 
+2005;18(1):22-7.
+18) Albiano, Nelson. "Toxicologia Laboral: Criterios para la vigilancia de 
+los trabajadores expuestos a sustancias quimicas peligrosas". Trabajo 
+Seguro. Centro de información y asesoramiento. Revista Toxicología 
+Laboral. Ano 1N. 7. Argentina. 2005.
+19) Strategies for Establishing an Environmental Health Surveillance System 
+in California: A report of the SB 702 Expert Working Group. Berkeley 
+CA: California Policy Research Center University of California; 2004. 
+Disponible en: http://www. ucop.edu/cprc/ehssrpt.pd
+20) Canﬁ eld RL, Henderson CR, Cory-Slechta DA y cols. Intellectual 
+impairment in children with blood lead concentration below micro per 
+deciliter. N Engl J Med 2003; 348:1517-1526.
+21) Zallina H, Junidah R, Josephine Y, Jamal HH. The inﬂ uence of low blood 
+lead concentrations on the cognitive and physical development of primary 
+school children in Malaysia . Journal of Environmental Science and 
+Engineering, 5 (2011) 493-499.
+22) Selevan Sg, Rice DC, Hogan KA, Euling SY, Pfahles-Hutchens A, Bethel 
+J y  cols. Blood lead concentration and delayed puberty in girls. N Engl 
+J Med 2003; Apr 17;348: 1527-1536. Charles O. Abernathy, David J. 
+Thomast and Rebecca L. Calderon. Health Effects and Risk Assessment 
+of Arsenic. @ 2003 J. Nutr. 2003, 133:5 1536S-1538S.
+23) Organización Panamericana de la Salud. Organización Mundial de 
+la Salud. Clasiﬁ cación Estadística Internacional de Enfermedades  y 
+Problemas relacionados  con la Salud. 10 a. revisión. Washington, D.C.: 
+OPS 1995.
+24) Decreto Supremo N° 019-98-MTC. Dispone eliminar del mercado la oferta 
+de gasolina 95 RON con plomo y reducir el límite máximo de contenido 
+de plomo en la gasolina 84 RON. (14/07/98)
+
+===== PAGE 30 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+30
+IX. ANEXOS
+• 
+Anexo 1: Otras Deﬁ niciones conceptuales
+• 
+Anexo 2: Diagrama de Flujo de notiﬁ cación e investigación de la vigilancia 
+epidemiológica en salud pública de factores de riesgos por exposición e 
+intoxicación por metales pesados y metaloides.
+• 
+Anexo 3: Registro semanal de notiﬁ cación epidemiológica individual 
+• 
+Anexo 4: Ficha de investigación epidemiológica en salud pública de 
+factores de riesgos por exposición e intoxicación por metales pesados y 
+metaloides.
+• 
+Anexo 5: Ficha de Investigación epidemiológica: Factores de  riesgo por 
+exposición e intoxicación por metales pesados y metaloides.
+• 
+Anexo 6: Ficha de Investigación en situación de contingencia por 
+exposición o  intoxicación por metales  pesados y metaloides.
+• 
+Anexo 7.A: Indicadores de la vigilancia epidemiológica en salud pública 
+de factores de riesgos por exposición e intoxicación por metales pesados 
+y metaloides.
+• 
+Anexo 7.B: Indicadores de la vigilancia epidemiológica en salud pública 
+de factores de riesgos por exposición e intoxicación por metales pesados 
+y metaloides
+• 
+Anexo 7.C: Indicadores de  la vigilancia epidemiológica en salud pública 
+de factores de riesgos por exposición e intoxicación por metales pesados 
+y metaloides
+• 
+Anexo 7.D: Indicadores de la vigilancia epidemiológica en salud pública 
+de factores de riesgos por exposición e intoxicación por metales pesados 
+y metaloides.
+
+===== PAGE 31 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+31
+ANEXO 1
+Otras Deﬁ niciones Conceptuales
+• 
+Bioasimilación: Es la capacidad de un ser vivo de asimilar o involucrar 
+en su metabolismo cualquier sustancia  o elemento exógeno a él.
+• 
+Caso de exposición circunstancial a fuente de emisión: Ser vivo 
+expuesto en forma temporal y no usual a una fuente de emisión de 
+contaminantes, y que no presenta manifestaciones de intoxicación 
+• 
+Caso de exposición permanente a fuente de emisión: Persona 
+expuesta permanentemente a una fuente de emisión  en ausencia de 
+manifestaciones de intoxicación. 
+• 
+Exposición a fuentes de emisión: Contacto de un ser vivo con el 
+producto de las fuentes de emisión ﬁ jas o móviles.
+• 
+Estándar de Calidad Ambiental (ECA): Es la medida que establece el 
+nivel de concentración o del grado de elementos, sustancias o parámetros 
+físicos, químicos y biológicos, presentes en el aire, agua o suelo, en su 
+condición de cuerpo receptor, que no representa riesgo signiﬁ cativo para 
+la salud de las personas ni al ambiente.
+• 
+Fuente de emisión: Lugar de donde se emiten metales pesados o 
+metaloides hacia el medio ambiente, contaminándolo y facilitando su 
+ingreso a un ser vivo.
+• 
+Fuente conﬁ rmada
+ 
+Está relacionada a una fuente natural o antropógenica con presencia de 
+metales pesados y metaloides en aire, agua, suelo y alimentos. 
+• 
+Factores de riesgo por exposición en el hogar: 
+- 
+Hábitos de pica (ingestión de materiales no comestibles como: tierra, 
+papel, barro, pintura y arena, cenizas de cigarrillos y otros).
+- 
+Hábitos de  chupar o morder (lápices, crayolas y otros).
+- 
+Uso de productos químicos sin registro sanitario, manipulación de 
+juguetes y útiles de escritorio sin registro, ni autorización sanitaria 
+dentro de la vivienda. 
+- 
+Consumo de productos alimenticios sean de origen vegetal o 
+animal procedente de zonas contaminadas con metales pesados y 
+metaloides.
+- 
+Vivienda con pisos de tierra con contenido metálico. 
+- 
+Uso de pinturas con contenido metálico.
+- 
+Uso de utensilios de comida (cerámica vidriada).
+
+===== PAGE 32 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+32
+- 
+Ingestión accidental de productos raticidas, pinturas, preservante de 
+uso doméstico y comercial con contenido metálicos, o de metaloides. 
+- 
+Ingreso al hogar con indumentaria de trabajadores expuestos a 
+actividades de riesgo a metales pesados y metaloides.
+- 
+Uso de amuletos, collarines, aretes y otro que contengan dentro de 
+sus componentes metales pesados y metaloides.
+- 
+Ingesta de brebajes preparados artesanalmente sin control sanitario.
+- 
+Uso de sustancias con contenido de metales pesados y metaloides 
+dentro de las sesiones tradicionales de curandería.
+- 
+Almacenamiento de chatarras, equipos en desuso o baterías con 
+contenido de metales pesados y metaloides, dentro de la vivienda. 
+- 
+Quema de amalgama con contenido de mercurio en recuperación de 
+oro intradomiciliario.
+- 
+Otros usos dentro del hogar
+• 
+Factores de riesgo por exposición poblacional:
+- 
+Existencia de conglomerados o grupos de personas del área urbana 
+o rural expuestas y que se encuentra en el entorno o  cercanas a 
+fuentes antropogénicas o naturales con contenido con metales 
+pesados y metaloides.
+- 
+Familiares de trabajador expuesto a metales pesados y metaloides.
+- 
+Personas expuestas en espacios cerrados: Centros educativos, 
+guarderías, cárceles y otros  en donde se utilicen o estén expuestos 
+a  metales pesados y metaloides.
+- 
+Personas expuestas al consumo de  alimentos y aguas contaminadas 
+por metales pesados y metaloides.
+• 
+Factores de riesgo por exposición ambiental:
+- 
+Vivir, trabajar en zonas geográﬁ cas ya deﬁ nidas donde exista 
+contaminación por metales pesados y metaloides en suelos, aire, 
+alimentos y agua de consumo por exposición a fuente natural o 
+antropogénica.
+- 
+Accidentes y derrames en el transporte de metales pesados y 
+metaloides a nivel urbano o rural, que ponen en riesgo el ambiente 
+colindante a poblaciones.
+- 
+Presencia de fuentes de exposición natural o antropogénica a 
+metales pesados y metaloides en  suelos, aire,  y agua. 
+• 
+Factores de riesgo de exposición ocupacional:
+- 
+Industrias: Durante su fabricación, almacenamiento, transporte, 
+
+===== PAGE 33 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+33
+comercialización y disposición ﬁ nal (manufactura, exposición en 
+operaciones de producción, mezclado, transporte, almacenamiento, 
+concentrados de minerales), conservantes de madera, plantas 
+industriales que manufacturan o usan metales y otros.
+- 
+Trabajadores expuestos directa o indirectamente a metales pesados 
+y metaloides, durante los procesos laborales a nivel formal e informal.
+- 
+Fabricación de pinturas, manufactura de colorantes, barnices, y 
+pigmentos, fabricantes de caucho, fabricación de plásticos, balas 
+municiones con contenido metálico.
+- 
+Artesanal: cerámicas, plomadas, pesca, reciclaje y reúsos de 
+baterías, fundición clandestina.
+- 
+Curtido de cueros, industria textil.
+- 
+Mantenimiento, reparación de copiadoras, polvo de tóner de 
+copiadoras, otros residuos.
+- 
+Industria química, recipientes para ácidos fuertes o de evaporación, 
+en la manufactura de algunos insecticidas  y ciertos plásticos.
+- 
+Elaboración de la loza (“loza vidriada”), utensilios de cerámica.
+ 
+Recuperación de chatarrería, baterías, soldadura de acero inoxidable, 
+otros y  manufactura. 
+- 
+Elaboración de cristales duros, esmaltes vítreos y cristales ﬁ nos.
+- 
+Producción minera, fundición y reﬁ namiento (formal e informal).
+- 
+Recuperación secundaria, aleaciones metálicas.
+- 
+Manufactura de acumuladores y de placas para acumuladores.  
+- 
+Agroindustria y trabajo en actividades pecuarias o forestales de 
+compuestos que contengan metales pesados y metaloides.
+- 
+En situación de accidentes y trabajo médico (personal  expuesto 
+y equipos contaminados en  el proceso de atención por derrames, 
+accidentes, etc.).
+- 
+Otras situaciones de riesgo en el trabajo.
+• 
+Limitación de la exposición: Es la reubicación de la persona de la 
+zona de alta exposición a metales pesados a otro sitio cuyos niveles 
+ambientales garanticen de no riesgo de exposición en la población.
+• 
+Sector Salud: Es el conjunto de organizaciones que se relacionan con 
+la salud de las personas, Ministerio de Salud; Essalud; Sanidad de la 
+fuerza Aérea, Policía Nacional del Perú y Naval; Ministerio Publico; INPE; 
+Gobiernos Regionales; locales y del sector privado. 
+
+===== PAGE 34 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+34
+ANEXO 2: DIAGRAMA DE FLUJO DE NOTIFICACIÓN E INVESTIGACIÓN DE LA VIGILANCIA EPIDEMIOLÓGICA EN 
+SALUD PÙBLICA DE FACTORES DE  RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR  METALES PESADOS Y 
+METALOIDES.
+FLUJOGRAMA DE NOTIFICACIÓN E INVESTIGACIÓN DE  LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD  PÚBLICA DE FACTORES DE RESGO POR 
+EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS Y METALOIDES
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+
+===== PAGE 35 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+35
+
+===== PAGE 36 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+36
+08. DNI
+M
+F
+(*) ETNIA:  1: Mestizo, 2: Afro Desendiente, 3: Andino, 4:Indigena Amazonico, 5: Asiatico descendiente, 6: Otros
+*  Tip
+(***) Pueblo ETNIA: Andino (seleccionar codigos: del 01 al 08)    Indigena Amazonico (Seleccionar codigos: del 09 al 73)      
+(***) Residencia Habitual  1: Urbana   2: Urbana marginal   3: Rural/Campesina 
+A20.8 Peste no especificada
+B03 
+Viruela
+A80.3 Paralisis flacida aguda (PFA)
+B50
+T56,7 Birili
+A80.1 / 
+A80.2
+A82.0 Rabia humana silvestre
+B51
+T56,8 Otro
+UO4.9
+A82.1 Rabia humana urbana
+B52
+T56,9
+A22
+B06
+Rubéola
+A17.0
+T57
+A00
+B05
+P00 al P96 Muerte Fetal / Muerte Neonatal
+T57,0 Arsé
+A97.2
+A33
+X20
+Ofidismo
+A36
+A75.0 Tifus exantematico
+A50
+Síndrome de Rubeola Congenita
+ESAVI  (Evento supuestamente atribuido a A37
+A50
+Sífilis congénita
+    ……
+ vacunación o inmunización)
+A35
+Tétanos
+B24
+Infec
+A95.0
+Fiebre amarilla selvática
+A97. Dengue sin señales de alarma
+T60
+Efectos Tóxico de Plaguicidas
+    ……
+Infec
+GVI
+Gestante vacunada inadvertidamente
+A97. Dengue con señales de alarma
+    ……
+A39.0
+Meningitis meningococica
+A44.
+    ……
+O95
+Muerte materna
+A44.
+T56
+Efectos Tóxico de Metales
+    ……
+O96
+Muerte materna indirecta
+B57
+T56,0
+Plomo y sus compuestos
+O97
+Muerte materna incidental
+B16 Hepatitis B
+T56,1
+Mercurio y sus compuestos
+A20.0
+Peste bubonica
+J10
+T56,2
+Cromo y sus compuestos
+    ……
+Enfe
+A20.1
+Peste celulocotanea
+B55.
+T56,3
+Cadmio  y sus compuestos
+    ……
+Infec
+A20.2
+Peste Neumonica
+B55.
+T56,4
+Cobre y sus compuestos
+    ……
+Neu
+A20.7
+Peste septicemica
+A27 Leptospirosis
+T56,5
+Zinc y sus compuestos
+    ……
+A20.8
+Otras formas de Peste 
+X20
+T56,6
+Estaño y sus compuestos
+SOB
+Malaria por P. falciparum
+Malaria por P. Malariae
+Meningitis tuberculosa
+Tétanos neo-natal
+Enfermedad de Carrión Eruptiva
+Enfermedad de Chagas 
+Meta
+Malaria por P. vivax
+Tos ferina
+Loxocelismo
+Dipteria
+Cua
+Lesi
+Viole
+NOT
+Sarampión
+Cólera
+Dengue Grave
+Antrax (carbunco)
+20. DAÑOS SUJETOS A VIGILANCIA EPIDEMIOLÓGICA
+Cán
+T88.1
+NOTIFICACION INMEDIATA
+NOTIFICACION SEMANAL
+1. DISA/DIRESA 
+3. ESTABLECIMIENTO
+07. Edad 
+y Sexo
+2. RED
+6. Apellidos y Nombres
+REGISTRO SEMANAL DE NOT
+SISTEMA NACIONAL DE VIGILA
+Localidad
+Distrito
+09.  Lugar Probable de Infección/Intoxicación
+Provincia
+Poliomilitis por Poliovirus Salvaje
+Sindrome Respiratorio Agudo severo
+Influenza A - H1N1
+Leishmaniasis cutánea
+Leishmaniasis mucocutánea
+NOTIFICACION MENSUAL
+Efec
+NOTI
+NOTIFICACION SEMANAL
+Enfermedad de Carrión Aguda
+S= SOSPECHOSO
+P= PROBABLE         C= CONFIRMADO   D= DESCARTADO
+PERÚ Ministerio
+de Salud
+Dirección General
+de Epidemiología
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+ANEXO 3: REGISTRO SEMANAL DE NOTIFICACIÓN  EPIDEMIOLÓGICA INDIVIDUAL
+
+===== PAGE 37 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+37
+_________
+Colocar códigos
+NO IGN
+Hospitalizació
+n
+Si
+No
+Vig 
+Pasiva
+Busq 
+activa
+o de diagnóstico:  C: Confirmado, P: Probable, D: Descartado         ** Registrar vigilancia pasiva cuando se detecta el caso a través de las atenciones (demanda) en el EESS. 
+o y sus compuestos
+os metales
+énico y sus compuestos
+ccion por VIH / SIDA
+cciones Intrahospitalarias
+ermedad Diarreica Aguda
+ccion Respiratoria Aguda
+monia
+B /ASMA
+al No especificado
+alquier otro evento que ponga en riesgo la salud pública
+ones por Accidentes de Tránsito
+encia Familiar
+TIFICACION COLECTIVA (CONSOLIDADA)
+22. Director o Jefe del Establecimiento
+cer
+21. Firma y Sello de la Persona que Notifica
+12. Pueblo ETNIA 
+(**)
+4. MICRORRED
+AÑO -  2 0
+TIFICACIÓN EPIDEMIOLÓGICA INDIVIDUAL 
+ANCIA EPIDEMIOLÓGICA EN SALUD PÚBLICA
+SI
+15. TIPO de 
+Dx ( S,  P, C  
+o D)*
+5. SEMANA DE NOTIFICACION
+13. Residencia 
+Habitual (***)
+17. Fecha de inicio
+Inicio 
+Síntomas
+10. Dirección 
+Residencia
+14. 
+Diagnóstico 
+CIE 10
+16. 
+Protegido 
+(Vacuna)
+19. Tipo Vigilancia 
+**
+Notificación
+Defunción
+11. ETNIAS (*)
+18.  Ficha  
+Investigació
+n
+cto tóxico de otras sustancias inorgánicas
+IFICACION MENSUAL
+
+===== PAGE 38 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+38
+I.
+DATOS GENERALES
+Nombre del establecimiento de salud que notifica …………………………………………………………………………………………………………………..
+DISA/DIRESA……………………….
+Red………………… … ……
+Mircrored
+…………………………….
+Ubicación: 
+Captado: 
+Notificación:
+Busqueda Activa [ [     ]
+Situación de Riesgo [    ]
+Otros
+II.
+Nº H. Clínica:…………………….
+2.2. Lugar de Nacimiento……………………………………2.3. Edad: ……………Años [     ]
+Meses [     ]
+2.4. Genero: M [     ]
+F [     ]
+2.5. DNI…………………
+2.6. Embarazo:
+Si [    ] No [    ] 2.7. Seguro:
+SIS [    ] 
+EsSalud [    ]
+Otros:
+…………………………..
+2.8.Grado de instrucción: 
+Secundaria [    ]
+Superior [    ]
+2.9.Ocupación
+……………………………………… ……………….. 2.10. Tiempo (actividad) ………………………………………………………………….
+2.11. Dirección de la Residencia actual……………………………………. …………………………………………………………………………………………
+Primaria [    ]
+Inicial [    ]
+……………………………………………………………………….
+………………………………………………………………… Apellidos:
+Distrito ………………………
+DATOS DEL PACIENTE
+2.1.Nombres:
+1. Código de identificación
+______________
+Sin instrucción [    ]
+4. Fecha de 
+Investigación
+____/_____/____
+Consulta Externa  [    ]
+Regular [    ]
+Departamento………………………
+Provincia ……………………
+FICHA  DE INVESTIGACION EPIDEMIOLÓGICA EN SALUD PÚBLICA  DE FACTORES DE RIESGO DE 
+EXPOSICIÓN E INTOXICACIÓN POR  METALES PESADOS Y METALOIDES  
+2. Fecha de conocimiento 
+a nivel local
+4. Fecha de 
+notificación del  
+Establecimiento
+_____/_____/___
+_____/_____/___
+6. Fecha de notificación 
+nacional
+5. Fecha de notificación a 
+la DIRESA
+____/______/_____
+_____/______/______
+Otros …………………………………………………
+Servicio Emergencia  [    ]
+Localidad …………………………
+S. Hospitalización [    ]
+PERÚ Ministerio
+de Salud
+Dirección
+General de
+Epidemiología
+ANEXO 4: FICHA DE INVESTIGACIÓN EPIDEMIOLÓGICA EN SALUD PÚBLICA DE FACTORES DE RIESGO POR 
+EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS Y METALOIDES
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+38
+
+===== PAGE 39 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+39
+                                                       Referencia para localizar (Iglesia, establecimiento comercial, vecinos, otros, especificar)
+2.11.3.Provincia ………………………… 2.11.4. Departamento ……………………………
+2.12.  Area: 
+Urbana [    ]
+Urbano  marginal [    ]
+Rural  [    ]
+2.13. Teléf./célular
+………………………….
+2.14 Tiempo: Residencia actual ………………….
+2.15. Tiempo de Residencia anterior
+……..
+(años/meses)
+2.16 Etnia:
+1.Mestizo (      )
+2. Andino (    )
+3.Indigena Amazonico (    )
+4. Afrodescendiente (     )
+5. Otros:
+…………………..
+III. FACTORES DE RIESGO EPIDEMIOLOGICO
+3.1.
+3.2. Antecedente de exposición ………………….. (años)
+3.3. Lugar de ocurrencia de la  exposición:
+1. Casa [    ]
+2. Escuela [     ]
+3.Trabajo [     ]
+4. Otros (especificar)……………………..
+3.4.  Dirección de la ocurrencia
+……………………………………………………………Distrito………………….
+Provincia……… ……………………
+3.5.  Área
+Urbana [    ]
+Urbano  marginal [    ]
+Rural  [    ]
+3.6. Tiempo de exposición a una fuente con metal pesado/metaloides 
+……………………..
+(indicar:  años, meses, días u horas)
+3.7. Actividad económica: 1. Minería  formal [    ] 2. Minería informal [    ]
+3. Relaves mineros [    ]
+4. Depósito de Minerales [    ]
+5. Fundición [    ]
+6.Transporte  concentrados de metales [    ]
+7.Baterias [    ]
+8.Alfareria [    ]
+9.Soldadores [    ]
+10. Industrias [    ]
+11. Artes gráficas [    ]
+12. Hidrocarburos [    ]
+13. Otros …………………………………………………………………………………
+3.8. Vía de exposición: 
+1. Respiratoria [    ]
+2. Oral  [    ]
+3. Dermica  [    ]
+4. Desconocida  [    ]
+5.Otros
+1.Ocupacional [    ]
+2.Accidental [    ]
+3.Ambiental [    ]
+4.  Otros ………………………………..
+3.10. Tiempo en lugar de permanencia (indicar dentro de 24 Hrs)    1.Casa ……….   2.Calle …………
+3.Ambas …………. 4. Escuela……………
+5. Acompaña al trabajo a sus padres …………
+6. Trabajo…………………
+7. Otros (especificar)
+…………………………………
+3.11. Hábitos:
+1.Se come las uñas [    ] 2.Come tierra [    ]
+3.Muerde o chupa lápices, plastina [    ]4.Morder o chupar juguetes [    ]
+5. Come pinturas de las paredes [    ] 6.Se lleva los dedos a la boca [    7. Fuma [    ]
+8. Otros (Especificar)………………..………………………
+3.12. Anteriormente le  tomaron muestra para metales Si  [    ]   No  [    ]  
+3.12.Lugar
+………………………. 3.13. Fecha (años) ………………..
+Fecha de  exposición actual
+2.11.1. Localidad / comunidad
+…………………………………………………………………………………………2.11.2. Distrito………………………………
+3.9.Tipo de exposición: 
+_____ /_________/______
+39
+
+===== PAGE 40 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+40
+IV. FACTORES DE RIESGO AMBIENTAL
+4.1. Ubicación de la vivienda cercana a:
+1.Minería
+[    ] 2. Relaves mineros
+[    ]
+3. Depóstio de minerale[    ]
+4. Refineria
+  [    ]
+5. Industrias emisoras de metales
+[    ] 6. Fundición de metales
+[    ]
+7.Fábrica/ taller/ bateria [    ]
+8. Reclicado de bateria 
+[    ]
+9.Transporte concentrados metales
+[    ] 10.Fabrica de pintura
+[    ]
+11.Taller de carpinteria [    ]
+12. Soldadura
+ [    ]
+13. Fábrica de cerámica o alfareria 
+[    ] 14. Otros…………………………………………………………………………………………………………
+4.2. Tipo de construcción de  la vivienda
+Techo:
+1. Ladrilo-cemento  [    ]
+2. Calamina  [    ] 3. Eternit  [    ]
+4. Madera  [    ]
+5.Otros ………………………………………
+Pared:
+1. Ladrilo-cemento  [    ]
+2. Madera      [    ]
+3. Adobe  [    ]
+4.Otros …………………………………………………………….
+Piso:
+1. Tierra                     [    ]
+      2. Cemento   [    ] 3. Madera  [    ]
+4.Otros ……………………………………………………………..
+4.3.
+4.4. Polvo dentro de casa  [    ]
+4.5. Mes con mayor presencia de polvo
+…………………..
+4.6. Uso de agua para consumo humano?
+1. Agua Potable:
+1. Red pública  [    ]
+2. Cisterna  [    ]
+3. Pileta pública  [    ]
+4. Otros……………………………………………………
+2. Agua no potable:
+1. Rio [    ]
+2. Manantial [    ]
+3. Pozo [    ]
+4. Agua lluvia [    ]
+5. Otros…………………………………………………
+V.  FACTOR OCUPACIONAL
+5.1. Ocupación del Jefe de familia:………………………………….. 
+Nombres:…………………………………………………………………………………
+5.2. Ocupación de la Madre ……………………………………………
+Nombres:…………………………………………………………………………………
+VI. CUADRO CLÍNICO: 
+6.1.Fecha de inicio de síntomas
+………/………./………..
+6.2. Semana Epidemiológica …………
+6.3.
+Si
+No
+Si
+No
+Si
+No
+Cefalea
+[    ]
+[    ]
+Gastroenteritis hemorrágica
+[    ]
+[    ]
+Disminución / aprendizaje
+[    ]
+[    ]
+Mareos
+[    ]
+[    ]
+Ictericia
+[    ]
+[    ]
+Pérdida de memoria
+[    ]
+[    ]
+Palidez
+[    ]
+[    ]
+Hemoptisis
+[    ]
+[    ]
+Depresión
+[    ]
+[    ]
+Cansancio (debilidad muscular)
+[    ]
+[    ]
+Sudoración profusa
+[    ]
+[    ]
+Ansiedad
+[    ]
+[    ]
+Anorexia
+[    ]
+[    ]
+Ascitis
+[    ]
+[    ]
+Adormecimiento
+[    ]
+[    ]
+Presencia de polvo en el ambiente externo [    ]
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+40
+
+===== PAGE 41 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+41
+Náuseas
+[    ]
+[    ]
+Hematuria (sangre en orina)
+[    ]
+[    ]
+Dolor de hueso
+[    ]
+[    ]
+Dolor abdominal
+[    ]
+[    ]
+Disuria/ polaquiuria (dolor frecuenci [    ]
+[    ]
+Hormigueo
+[    ]
+[    ]
+Diarrea
+[    ]
+[    ]
+Irritabilidad (reacción agresiva)
+[    ]
+[    ]
+Dolores articulares
+[    ]
+[    ]
+Gingivitis
+[    ]
+[    ]
+Insomnio (dificultad para dormir)
+[    ]
+[    ]
+Convulsiones
+[    ]
+[    ]
+Sabor metálico en boca (aliento)
+[    ]
+[    ]
+Calambres
+[    ]
+[    ]
+Sensación de dificultad
+[    ]
+[    ]
+Ribete de Burton (linea grisácea entre el
+Edema (hinchado)
+[    ]
+[    ]
+respiratoria (falta de aire)
+[    ]
+[    ]
+diente y la encía)
+[    ]
+[    ]
+Dificultad para coordinar movimientos
+[    ]
+[    ]
+Pie negro
+[    ]
+[    ]
+Otros
+[    ]
+[    ]
+Hipersensibilidad cutánea
+[    ]
+[    ]
+Mano colgante
+[    ]
+[    ]
+……………………………………… [    ]
+[    ]
+Líneas  de Aldrich- Mees (lineas
+Pie colgante
+[    ]
+[    ]
+……………………………………… [    ]
+[    ]
+blancas en uñas)
+[    ]
+[    ]
+Hiperqueratosis plantar
+[    ]
+[    ]
+……………………………………… [    ]
+[    ]
+Hiperpigmentación
+[    ]
+[    ]
+[    ]
+[    ]
+VII.Examenes Toxicológicos
+Nombre del laboratorio
+2. Otros:
+…………………………………………………….
+Fecha de toma de muestra: 
+Resultados Plomo:…………….Fecha:……/………/………  Cadmio……………Fecha……./……../………
+Arsénico:……………Fecha……./……../………
+Mercurio:……………………….Fecha:……/………/………     Cromo…………… Fecha……./……../………
+Zinc………………..
+Fecha……./……../………
+Cobre:…………………………...Fecha:……/………/………   Otros…………….. Fecha……./……../………
+Otros……………… Fecha……./……../………
+VIII.Situación del caso
+1. Hospitalizado [    ] 2. Transferido  [     ]
+2.1. Lugar de referencia:……….………… …………………………………………..
+3. Alta:………./……./………4. Fallecido:………./……./………Causa básica (especificar CIE-10)
+……………………………………………………………
+IX. Criterios de Diagnóstico
+1. Laboratorio:
+1. Si [     ]
+2. No [     ]
+2. Clinica 1. Si [     ]
+2. No [     ]
+3. Antecedente epidemiológico:
+Si [    ]
+No [    ]
+X.
+Tipo de Diagnóstico
+1. Sospechoso
+1. Si [     ]
+2. No [     ]
+2. Probable
+1. Si [     ] 2. No [     ]
+3. Confirmado 
+XI. Fecha de la investigación
+..…../…..…/…….….
+XII. Notificación Negativa
+XIII.
+Médico [    ]
+Enfermera [    ]
+Otros Especificar…………………………………………………………
+Teléfono
+Celular
+…………………………………………………..
+Correo: notificacion@dge.gob.pe - computo@dge.gob.pe
+Dirección General de Epidemiología - MINSA - Lima - Perú
+Toma de muestra: 
+1. Si [    ]
+………………………….
+Firma
+1. Si [     ]
+2. No [     ]
+Fecha de recepción de laboratorio
+2. No [    ]
+………………………………………………..
+Fecha de envio a laboratorio
+..…../…..…/…….….
+Tipo de muestra: 
+Nombre del Responsable Investigación
+…………………………………………………………………………………
+………………………….
+1. Sangre [     ]
+..…../…..…/…….….
+…../……/…….
+41
+
+===== PAGE 42 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+42
+I.
+DATOS GENERALES
+Nombre del establecimiento:
+DISA/DIRESA……………………….
+Red……………………… … ……
+Mircrored …………………………….
+Ubicación: 
+II.
+FACTORES DE RIESGO
+1. Localidad investigada ………………………………………………………………….
+2. Población:
+……………………………………………………………………………….
+3. Georeferenciación
+Altitud:………..
+msnm
+Latitud Sur
+…………………………….Longitud Oeste
+……………………………………………
+4. Información de monitoreo (Aire) …………………………………
+………………………………….. ………………………5. Información de monitoreo (Agua)
+…………………………..
+………
+6. Información de monitoreo (suelo)
+………………………………………………………………….
+……………………7. Alimentos:
+……………………………………………………………..
+Localidad …………………………
+Distrito ………………………
+Provincia ……………………
+Departamento…………………………….
+____/______/_____
+_____/______/______
+………………………………………………………………………………………………………………………………….
+______________
+_____/_____/___
+_____/_____/___
+____/_____/____
+FICHA  DE INVESTIGACION EPIDEMIOLÓGICA EN SALUD PÚBLICA  DE FACTORES DE RIESGO  POR  EXPOSICIÓN E INTOXICACIÓN 
+POR  METALES PESADOS Y METALOIDES   
+1. Código de 
+identificación
+2. Fecha de conocimiento a nivel local
+4. Fecha de notificación del  
+Establecimiento
+4. Fecha de 
+Investigación
+5. Fecha de notificación a la 
+DIRESA
+6. Fecha de notificación nacional
+PERÚ Ministerio
+de Salud
+Dirección
+General de
+Epidemiología
+ANEXO 5: FICHA DE INVESTIGACIÓN EPIDEMIOLÓGICA: FACTORES DE RIESGO POR  EXPOSICIÓN O 
+INTOXICACIÓN CON METALES PESADOS Y METALOIDES
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+42
+
+===== PAGE 43 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+43
+(
+)
+8. Información  de moniotreo de calidad  del aire
+1. Plomo ……………………
+2. Arsénico
+………………… 3. Mercurio
+…………………….
+4. Cadmio
+………………………
+5. Otros metales (especificar)
+………………………………………………………………………………………………………………………………………………………………………………
+9. Antecedentes de uso del suelo con presencia de materiales contaminantes por metales  pesados
+1. Plomo ……………………
+2. Arsenico
+……………………..
+3. Mercurio
+……………………4. Cadmio
+………………………
+5. Otros……………………………
+10. Presencia de metales en el agua para consumo
+1. Plomo ……………………
+2. Arsenico
+……………………3. Mercurio
+…………………….
+4. Cadmio
+………………………
+5. Otros metales (especificar)
+………………………………………………………………………………………………………………………………………………………………………………
+11.  Ubicación de ríos contaminados (especificar)
+………….. …………………………………………………………………………………………………………………………………………………..
+12.  Ubicación de relaves mineros (especificar)
+………….. ……………………………………………………………………… ………………………………………………………………………………
+13. Utilización de agua   contaminada para el riego de alimentos
+……………………………………………………………………………………………………………………………….
+14. Vertimientos de actividades urbano industriales próximas a las viviendas
+………………………………………………………………………………………………………………………………..
+16. Aplicación de productos fitosanitarios con contenido de metales (herbicidas, insecticidas, fungicidas y plaguicidas)
+……………………………………………………………………………..
+III.
+Fecha de la investigación
+..…../…..…/…….….
+IV.
+Médico [    ]
+Enfermera [    ]
+Ingeniero  [    ]
+Otros
+Especificar………………………………
+Teléfono
+Celular
+Firma
+………………………….
+………………………….
+………………………….
+Dirección General de Epidemiología - MINSA - Lima - Perú
+Correo: notificacion@dge.gob.pe - computo@dge.gob.pe
+Nombre del Responsable Investigación
+……………………………………………………………………………………………………
+43
+
+===== PAGE 44 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+44
+I.
+DATOS DEL ESTABLECIMIENTO DE SALUD
+Nombre del establecimiento:
+DIRESA/DISA…………………………
+Red
+Microred……
+Ubicación: 
+II.
+III.
+3.1
+3 2
+Fuente de exposición: Nombre del metal pesado u otro agente
+FICHA DE INVESTIGACIÓN EN SITUACIÓN DE CONTINGENCIA POR EXPOSICIÓN O 
+INTOXICACIÓN POR METALES PESADOS Y METALOIDES
+Fecha de conocimiento a 
+nivel local
+Fecha de notificación 
+del establecimiento
+Fecha de investigación 
+y control de la 
+contingencia
+Fecha de Notificaciòn a 
+la DIRESA / DISA
+Provincia…………………..
+…………………………………
+CODIGO DE 
+IDENTIFICACION
+_____/_____/___
+Distrito:…………………
+_____/_____/___
+_____/_____/___
+Departamento ____________
+Localidad ___________________
+Distrito _______________
+Localidad: ………………………
+Provincia _________________
+Ubicación geográfica de la contingencia:
+BREVE DESCRIPCION DE LA CONTINGENCIA: Especifique lugar,  fuente de exposición, Nº de personas expuestas o intoxicadas, grupos 
+de edad, sexo, fallecidos, tipo de metales, metaloides u otras sustancias químicas  identificadas, tipo de intoxicación ) tasa de ataque, letalidad.
+………………………………………………………………………………………………………………………………………………………………….
+………………………………………………………………………………………………………………………………………………………………….
+………………………………………………………………………………………………………………………………………………………………….
+INVESTIGACIÓN (metodología empleada)
+Localidad o zona de la contingencia
+Distrito: ……………………… Provincia: ……………………………
+………………………………………………
+Fecha de Notificación  
+Nacional del evento
+_____/_____/___
+_____/_____/___
+…………………………
+PERÚ Ministerio
+de Salud
+Dirección General
+de Epidemiología
+ANEXO 6: FICHA DE INVESTIGACIÓN EN SITUACIÓN DE CONTIGENCIA POR  EXPOSICIÓN O INTOXICACIÓN CON 
+METALES PESADOS Y METALOIDES
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+44
+
+===== PAGE 45 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+45
+3.2
+Fuente de exposición: Nombre del  metal pesado u otro agente
+3.3
+Concentración del agente químico …………………………… 3.4 Cantidad derramada ……...……3.5. Donde la obtuvo ………………………..
+3.6
+3.7.  Fuente de exposición especificar:………………………………….
+3.8
+3.9   El número de personas No expuestas en la contingencia: ………….…
+3.10
+Tipo de Exposición: ………………………………………………… 3.11. Actividad económica:……………………………………………………..
+3.12
+3.13
+Lugar de ocurrencia:
+Urbana [   ]
+Urbana marginal [   ]
+Rural Campesina [   ] Nº localidades comprometidas [    ]
+3.14
+……………………………………………………………………………………………………………………………………………………………….
+……………………………………………………………………………………………………………………………………………………………….
+3.15
+Investigación epidemiológica individual de riesgo por exposición e intoxicación con metales pesados, de ser necesario
+Medio de transporte: …………………………………………
+Afectación al ambiente (aire, agua, suelo, alimentos, otros) especificar……………………………………………
+Asegúrese que los intoxicados tengan su ficha de investigación individual:
+T ratad
+o 
+Si/ N o
+El número de personas expuestas: ………………
+Sexo
+Fecha de 
+Exposición 
+o 
+Int oxicación
+Registro de los casos expuestos o intoxicados que se encuentren en la investigación
+………………………………………………………………………………..
+Población de riesgo, localidad (s) afectada (s): ……………………………………………………………………………………………..
+H o ra 
+inicio 1er 
+Sinto ma
+R ecuperado o / fallece
+Lugar de 
+residencia
+N o mbres y A pellido s
+Edad
+45
+
+===== PAGE 46 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+46
+IV. OCURRENCIA DE LA CONTINGENCIA DEBIDO A: Marque con una X una o más opciones y especificar los detalles
+Si
+No
+Si
+No
+[   ]
+[   ]
+1. Uso de equipos sin protección personal
+[   ]
+[   ]
+[   ]
+[   ]
+2. Consumo de alimentos en la zona afectada
+[   ]
+[   ]
+[   ]
+[   ]
+3. Fumar durante la actividad laboral
+[   ]
+[   ]
+4. Afectación de los cuerpos de agua
+[   ]
+[   ]
+4. Contaminación del ambiente
+[   ]
+[   ]
+5. Afectación de los alimentos
+[   ]
+[   ]
+5. Daños a la población
+[   ]
+[   ]
+[   ]
+[   ]
+6. Almacenamiento inadecuado de los metales
+[   ]
+[   ]
+[   ]
+[   ]
+7. Uso de envases/sustancias químicas
+[   ]
+[   ]
+[   ]
+[   ]
+8. Consumo de bebidas en la zona afectada
+[   ]
+[   ]
+9. Ubicación del almacén  (especificar)
+…………………………………..
+9. Contaminación del agua para el consumo human [   ]
+[   ]
+9. Identificación de Peligros (especificar)
+10. Contaminación del suelo
+[   ]
+[   ]
+………………………………………………………………………
+11. Consumo de productos contaminados
+[   ]
+[   ]
+…………………………………………………………………………….
+12. Cumple con recomendaciones indicadas
+[   ]
+[   ]
+     ………………
+ACTOS INSEGUROS
+2. Envase inadecuado del producto químico
+1. Derrame, otros (causas)
+CONDICIONES INSEGURAS
+3. Afectación del agua para el consumo humano
+6. Almacenamiento inadecuado de productos químicos
+7. Falta de señalización
+8. Afectación del aire
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+46
+
+===== PAGE 47 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+47
+Personas participantes en la Investigación e Intervención del brote:
+Instituciones
+Médico [    ]
+Enfermera [    ]
+Técnico [    ]
+Otros  [    ]
+Cargo
+Correo: notificacion@dge.gob.pe - computo@dge.gob.pe
+Dirección General de Epidemiología - M INSA - Lima - P erú
+Nombre del Responsable Investigación
+2. Captación de personas expuestas
+4. Medidas Preventivas
+………………………….
+………………………….
+………………………….
+Indicar ( cantidad)
+4 ……………………………………………………………………………
+………………………….
+Observaciones: añada una hoja adicional si lo considera necesario con los resultados: ________________________________________
+1 ……………………………………………………………………………
+3. Exámenes de laboratorio
+RECOMENDACIONES
+5. Informe técnico
+5 ……………………………………………………………………………
+Firma
+…………………………………………………………………………………
+ACCIONES REALIZADAS:
+2 ……………………………………………………………………………
+………………………….
+1. Identificación de factores de riesgo
+………………………….
+Fono/Cel ………………………….
+………………………….
+3 ……………………………………………………………………………
+47
+
+===== PAGE 48 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+48
+ANEXO  7.A
+INDICADORES DE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD PÚBLICA DE 
+FACTORES DE RIESGOS POR EXPOSICIÓN E INTOXICACIÓN POR METALES 
+PESADOS Y METALOIDES
+Indicador
+Datos Requeridos
+Construcción del Indicador
+Niveles de 
+concentración 
+de uno o más 
+metales pesados y 
+metaloides en el aire
+Concentración de metales 
+pesados y metaloides  en 
+el aire en un determinado 
+ámbito de riesgo de 
+exposición (DIGESA, 
+OEFA)
+CMPA= Número de localidades o 
+distritos con niveles de concentración 
+de uno o más metales pesados y 
+metaloides en el aire que  superan 
+los  ECAS establecidos/ Total de 
+localidades o distritos de  x  100
+Niveles de 
+concentración 
+de uno o más 
+metales pesados  
+y metaloides en 
+el agua para el 
+consumo humano
+Concentración de metales 
+pesados en el agua para 
+el consumo humano en 
+un determinado ámbito 
+de riesgo de exposición 
+(DIGESA)
+CMPACH= Número de localidades o 
+distritos con niveles de concentración 
+de uno o más metales en el agua para 
+el consumo humano que  superan los  
+niveles permisibles establecidos/ Total 
+de localidades o distritos de  x  100
+Niveles de 
+concentración de 
+uno o más metales 
+pesados  en el suelo
+Concentración de metales 
+pesados en el suelo en 
+un determinado ámbito 
+de riesgo de exposición 
+(DIGESA, MINAM)
+CMPS= Número de localidades o 
+distritos con niveles de concentración 
+de uno o más metales en el suelo que  
+superan los  ECAS establecidos/ Total 
+de localidades o distritos de  x  100
+Niveles de 
+concentración 
+de uno o más 
+metales pesados y 
+metaloides en aguas 
+superﬁ ciales
+Concentración de metales 
+pesados y metaloides  en 
+agua superﬁ ciales  en un 
+determinado ámbito de 
+riesgo de exposición (ANA)
+CMPAS= Número de localidades o 
+distritos con niveles de concentración 
+de uno o más metales pesados y 
+metaloides en agua superﬁ ciales que  
+superan los  ECAS establecidos/ Total 
+de localidades o distritos de  x  100
+Identiﬁ cación de la 
+Población en riesgo 
+por fuentes de 
+exposición antrópica 
+en metales pesados 
+y metaloides/ 
+georeferenciado en 
+mapas.
+Habitantes por localidades/
+distritos identiﬁ cados 
+en riesgo de exposición 
+por metales pesados y 
+metaloides ante una fuente 
+antrópica contaminante.
+PR= Población expuesta por grupos 
+de edad a fuentes antrópicas por 
+metales pesados y metaloides, 
+según localidades/distritos/ Total de 
+población de la región
+Niveles  de 
+concentración  
+mayor al límite 
+permisible en uno 
+o más metales 
+pesados y 
+metaloides
+Número  de personas 
+expuestas a uno o 
+más metales pesados 
+y metaloides en una 
+población determinada con 
+niveles de concentración 
+biológica mayor al límite 
+permisible en un período 
+de tiempo.
+%=Número de personas expuestas 
+a uno o más metales pesados 
+y metaloides en una población 
+determinada con niveles de 
+concentración biológica  mayor al 
+límite permisibles en un período de 
+tiempo  y lugar/  Casos  expuestos  en 
+el mismo período x 100 
+
+===== PAGE 49 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+49
+ANEXO  7.B
+INDICADORES DE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD PÚBLICA DE 
+FACTORES DE RIESGOS POR EXPOSICIÓN E INTOXICACIÓN POR METALES 
+PESADOS Y METALOIDES
+Indicador
+Datos Requeridos
+Construcción del Indicador
+Prevalencia de 
+exposición  a metales 
+pesados y metaloides
+Número de personas  
+expuestas a metales 
+pesados y metaloides en 
+el mes
+IA=Número de personas  expuestas 
+a metales pesados y metaloides  en 
+un mes/  Población expuesta en ese 
+periodo  x  1000 ó 10000 ó 100 000 
+habitantes.
+Incidencia acumulada 
+de intoxicación por 
+metales pesados y 
+metaloides aguda
+Número de casos 
+nuevos  por intoxicación 
+con metales pesados y 
+metaloides, notiﬁ cadas en 
+el mes
+IA =Número de casos nuevos por 
+intoxicación aguda con metales 
+pesados y metaloides notiﬁ cados en 
+el mes (localidad, distrito, Región) / 
+Población vigilada en un periodo de 
+tiempo x 1000 ó 10,000 ó 100 000 
+habitantes
+Tasa de Mortalidad
+Número de muertes por 
+intoxicación con metales 
+pesados y metaloides 
+según localidad, distrito, 
+región  y por grupo de 
+edad
+TM=Número de muertes por 
+intoxicación con metales pesados 
+y metaloides/  Población de la 
+localidad, distrito, región y grupo de 
+edad  x 1,000 ó 10,000 ó 100 000
+Tasa de Letalidad
+Número de fallecidos por 
+intoxicación con metales 
+pesados y metaloides
+TL=Número de defunciones por 
+intoxicación con metales pesados y 
+metaloides en un período de tiempo /  
+Casos  expuestos e intoxicados en el 
+mismo período x 100
+Tasa de Ataque 
+(situación de 
+contingencia)
+Número  de personas 
+intoxicadas por metales 
+pesados y metaloides 
+en una población 
+determinada y en un 
+período de tiempo
+TA=Número de personas intoxicadas 
+en un período de tiempo  y lugar/  
+Casos  expuestos  en el mismo 
+período x 100
+Proporción de casos 
+con niveles  de 
+concentración  mayor 
+al límite de referencia 
+en uno o más metales 
+pesados y metaloides
+Número  de personas 
+expuestas a  metales 
+pesados y metaloides 
+en una población 
+determinada con niveles 
+de concentración  
+biológica mayor al límite 
+referencia  en un período 
+de tiempo.
+%=Número de personas expuestas a 
+metales pesados y metaloides en una 
+población determinada con niveles 
+de concentración biológica  mayor al 
+límite de referencia en un período de 
+tiempo  y lugar/  Casos  expuestos  
+en el mismo período x 100
+
+===== PAGE 50 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+50
+ANEXO 7.C
+INDICADORES: VIGILANCIA EPIDEMIOLÓGICA EN SALUD PÚBLICA DE 
+FACTORES DE RIESGOS POR EXPOSICIÓN E INTOXICACIÓN POR METALES 
+PESADOS Y METALOIDES
+Indicador
+Datos Requeridos
+Construcción del Indicador
+Proporción por  tipo 
+de exposición a 
+metales pesados y 
+metaloides
+Número de personas con 
+presencia de metales 
+pesados y metaloides por tipo 
+de exposición
+%= Número de personas 
+expuestas a metales pesados 
+y metaloides  por tipo de 
+exposición/ Total de personas 
+evaluadas x 100
+Proporción  por  tipo 
+de intoxicación a 
+uno o más metales 
+pesados y metaloides.
+Número de personas 
+intoxicadas a uno o 
+más metales pesados y 
+metaloides 
+%=Número de personas 
+intoxicadas  metales pesados y 
+metaloides /   Total de personas 
+expuestas x 100
+Niveles de exposición  
+según  tipo de metales 
+pesados y metaloides 
+según  clasiﬁ cación.
+Número de personas 
+con dosaje según el  tipo 
+de metales pesados y 
+metaloides  
+%= Número de personas  
+expuesta  algún tipo de metales 
+pesados y metaloides según 
+clasiﬁ cación toxicológica /  Total 
+de  personas evaluadas  x 100
+Identiﬁ cación 
+de  fuentes  de  
+exposición  por 
+metales pesados y 
+metaloides.
+Identiﬁ cación de fuentes 
+de exposición por metales 
+pesados y metaloides según 
+lugar de ocurrencia 
+%= Número de fuentes  de 
+exposición identiﬁ cada  por 
+metales pesados y metaloides  
+según lugar  de ocurrencia  / Total 
+de fuentes x 100
+Población en riesgo: 
+Tipo de actividad 
+que realizaba en 
+el momento de 
+la exposición o 
+intoxicación con  
+metales pesados y 
+metaloides.
+Número de actividades de 
+riesgo identiﬁ cada en la 
+población expuesta.
+%=Número de personas 
+expuestas a metales pesados 
+y metaloides  según  tipo de 
+actividad que realizaba/  Total de 
+Población x 100
+Proporción de 
+casos  expuesto o 
+intoxicados a uno o 
+más metales pesados 
+y metaloides según 
+género
+Número de personas 
+intoxicadas según género 
+%=Número de personas 
+intoxicadas a uno o más metales 
+pesados y metaloides según 
+género/  Total de intoxicados  x 
+100.
+Proporción de  casos  
+con uno o más 
+metales pesados y 
+metaloides según 
+grupo de edad.
+Número de personas 
+intoxicadas a  uno o 
+más metales pesados y 
+metaloides según grupos de 
+edad
+%=Número de personas 
+intoxicadas a  uno o más 
+metales pesados y metaloides 
+según grupos de edad/  Total de 
+intoxicados x 100.
+
+===== PAGE 51 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+51
+Circunstancia 
+de  la exposición 
+o intoxicación a 
+uno o más metales 
+pesados y metaloides  
+(ocupacional, 
+accidental, ambiental)
+Número de personas 
+expuesta s o intoxicadas 
+por metales pesados 
+y metaloides según  
+circunstancia: ocupacional, 
+accidental y ambiental.
+%=Número de personas  
+expuestas o intoxicadas por 
+metales pesados y metaloides 
+según circunstancia de la 
+intoxicación (ocupacional, 
+accidental, ambiental) /  Total de  
+personas  evaluadas x 100.
+Tiempo de exposición 
+o intoxicación con 
+uno o más  metales 
+pesados y metaloides.
+Número de personas 
+expuestas o intoxicadas 
+según tiempo de exposición a 
+uno o más metales pesados 
+y metaloides.
+%= Número de personas 
+expuestas o intoxicadas según 
+tiempo de exposición a uno o más 
+metales pesados y metaloides.
+Proporción de 
+casos  expuestos o 
+intoxicados  a uno o 
+más metales pesados 
+y metaloides por lugar 
+y fuente de exposición 
+antropogénica o 
+natural
+Número de personas  
+expuestas  o intoxicadas a 
+uno o más metales pesados 
+y metaloides, según lugar  
+y fuente de exposición 
+antropogénica o natural.
+%=Número de personas   
+expuestas o intoxicadas a 
+uno o más metales pesados y 
+metaloides según lugar y fuente 
+de exposición antropogénica o 
+natural /  Total de población en 
+riesgo x 100.
+Proporción de 
+la distribución y 
+característica clínicas 
+de los intoxicados
+Características clínicas de 
+los intoxicados por uno o 
+más  metales pesados y 
+metaloides.
+%=Número de personas 
+intoxicadas según características 
+clínicas a uno o más metales 
+pesados y metaloides /  Total de 
+intoxicaciones atendidas en el 
+establecimiento de salud x 100
+
+===== PAGE 52 =====
+NTS Nº 111-2014-MINSA / DGE V.01
+NORMA TÉCNICA DE SALUD QUE ESTABLECE LA VIGILANCIA EPIDEMIOLÓGICA EN SALUD 
+PÚBLICA DE FACTORES DE RIESGO POR EXPOSICIÓN E INTOXICACIÓN POR METALES PESADOS 
+Y METALOIDES
+52
+ANEXO 7.D
+INDICADORES DE CUMPLIMIENTO DE LA VIGILANCIA EPIDEMIOLÓGICA 
+EN SALUD PÚBLICA DE FACTORES DE RIESGOS POR EXPOSICIÓN E 
+INTOXICACIÓN POR METALES PESADOS Y METALOIDES
+Indicador
+Datos Requeridos
+Construcción del
+Indicador
+Proporción de  
+establecimientos  que 
+notiﬁ can
+Número de establecimientos 
+que notiﬁ can  las 
+intoxicaciones por metales 
+pesados y metaloides
+%= Número de 
+establecimientos centinela 
+que notiﬁ can/Total Unidades 
+de notiﬁ cantes x 100
+Proporción de atendidos 
+por consulta externa 
+o hospitalizados por 
+exposición a metales 
+pesados y metaloides
+Número de personas 
+intoxicadas con metales 
+pesados y metaloides  
+según atención en consulta 
+externa o hospitalización.
+%=Número de personas 
+intoxicadas según lugar 
+de atención en consulta 
+externa u hospitalización 
+/  Total de atenciones en el 
+establecimiento de salud 
+x 100
+Proporción de situación de 
+alerta investigada
+Número de situaciones de 
+alertas investigadas
+%=Número de situación 
+de  alertas investigada 
+con seguimiento / Total 
+de situación de alerta 
+identiﬁ cada x 100
+Proporción de  situaciones 
+de alerta investigada con 
+seguimiento
+Número de situaciones 
+de alerta investigada con 
+seguimiento
+%=Número de situación 
+de  alerta investigada/ 
+Total de situación de alerta 
+identiﬁ cada x 100
+Proporción de casos 
+notiﬁ cados por intoxicación 
+con metales pesados y 
+metaloides con ﬁ cha  de 
+investigación epidemiológica
+Número de casos 
+notiﬁ cados por intoxicación 
+con metales pesados y 
+metaloides con ﬁ cha  de 
+investigación epidemiológica
+%= Número de casos 
+notiﬁ cados por  intoxicación  
+por metales pesados y 
+metaloides con ﬁ cha de 
+investigación epidemiológica 
+/Total de  casos  notiﬁ cados 
+por intoxicación con metales 
+pesados y metaloides x 100
+Proporción de  situación de 
+contingencia investigada 
+/ total de casos investigados.
+Número de situación de 
+contingencia investigada
+%= Proporción de situación 
+de contingencia investigada 
+/ total de situaciones de 
+contingencia identiﬁ cadas  
+x 100
+Proporción de 
+establecimientos que 
+remiten muestras a 
+laboratorio
+Número de unidades  
+que remiten muestras a 
+laboratorio
+%=Número de unidades 
+centinelas que remiten 
+muestras a laboratorio/ 
+Total de establecimientos 
+centinelas.

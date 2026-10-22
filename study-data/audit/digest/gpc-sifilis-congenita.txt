@@ -1,0 +1,318 @@
+FILE gpc-sifilis-congenita.pdf | pages 9 | chars 14982
+
+== HEADINGS (candidates) ==
+p1 [12.0] GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO
+p1 [12.0] DE SÍFILIS CONGÉNITA
+p1 [12.0] I.
+p1 [11.0] FINALIDAD
+p1 [12.0] II.
+p1 [11.0] OBJETIVO
+p1 [12.0] III.
+p1 [11.0] ÁMBITO DE APLICACIÓN
+p1 [12.0] IV.
+p1 [11.0] PROCEDIMIENTOS A ESTANDARIZAR
+p1 [12.0] V.
+p1 [11.0] CONSIDERACIONES GENERALES
+p1 [11.0] 5.1. DEFINICIÓN:
+p1 [11.0] 5.2. ETIOLOGÍA:
+p1 [11.0] 5.3. FISIOPATOLOGÍA:
+p2 [11.0] 5.4. ASPECTOS EPIDEMIOLÓGICOS:
+p2 [11.0] Tasas de sífilis congénita:
+p2 [11.0] 5.5. FACTORES DE RIESGO ASOCIADOS
+p2 [12.0] VI.
+p2 [11.0] CONSIDERACIONES ESPECÍFICAS
+p2 [11.0] 6.1. CUADRO CLÍNICO
+p2 [11.0] 6.2. DIAGNÓSTICO
+p2 [11.0] 6.2.1. Criterio epidemiológico.
+p2 [11.0] madre con:
+p3 [11.0] 6.2.2. Criterio serológico
+p3 [11.0] 6.2.3. Criterio clínico
+p3 [11.0] 6.2.4. Criterio diagnóstico directo
+p3 [11.0] 6.3. DIAGNÓSTICO DIFERENCIAL:
+p3 [11.0] 6.4. EXÁMENES AUXILIARES
+p3 [11.0] 6.4.1. De patología Clínica:
+p4 [11.0] 6.4.2. Imagenología:
+p4 [11.0] 6.4.3. Exámenes especializados complementarios:
+p4 [11.0] MANEJO
+p4 [11.0] SEGÚN
+p4 [11.0] NIVEL
+p4 [11.0] DE
+p4 [11.0] COMPLEJIDAD
+p4 [11.0] Y
+p4 [11.0] CAPACIDAD
+p4 [11.0] RESOLUTIVA.
+p4 [11.0] 6.5.1. Medidas generales y preventivas
+p4 [11.0] 6.5.2. Terapéutica
+p4 [11.0] Penilicilina G sódica 100,000 UI/Kg/día dividida en dos dosis por
+p4 [11.0] negativos, colocar penicilina benzatínica 50,000 UI/Kg IM por
+p4 [11.0] 6.5.3. Efectos adversos o colaterales del tratamiento y su manejo
+p4 [11.0] 6.5.4. Signos de alarma
+p4 [11.0] 6.6. CRITERIOS DE ALTA
+p5 [11.0] 6.7. SEGUIMIENTO
+p5 [11.0] 6.8. PRONÓSTICO
+p5 [11.0] 6.9. COMPLICACIONES
+p5 [11.0] 6.10. CRITERIOS DE REFERENCIA Y CONTRA REFERENCIA
+p6 [12.0] VII.
+p6 [11.0] ANEXOS
+p6 [11.0] ANEXO 1: Diagnóstico de Sífilis en la gestante.
+p7 [11.0] ANEXO 2: Manejo de Sífilis Congénita.
+p8 [11.0] ANEXO 3: Evaluación y Manejo de Neonatos con Sífilis Congénita.
+p9 [11.0] VII. BIBLIOGRAFÍA
+
+== FIRST PAGES ==
+
+--- p1 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+237
+GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO
+DE SÍFILIS CONGÉNITA
+I.
+FINALIDAD
+Contribuir con la disminución de la morbilidad y mortalidad neonatal por Sífilis
+Congénita en el Instituto Nacional Materno Perinatal (INMP).
+II.
+OBJETIVO
+Estandarizar y optimizar la atención del neonato afectado por sífilis congénita.
+III.
+ÁMBITO DE APLICACIÓN
+La presente guía de práctica clínica es de cumplimiento obligatorio en los
+diferentes servicios de atención neonatal del INMP.
+IV.
+PROCEDIMIENTOS A ESTANDARIZAR
+Diagnóstico y tratamiento de sífilis congénita en los recién nacidos hospitalizados
+en los servicios de neonatología del INMP con código CIE 10: A.50 y código
+CPMS: 86592 Prueba de sífilis; anticuerpo no treponémico; cualitativo (p. ej.
+VDRL, RPR, ART)
+V.
+CONSIDERACIONES GENERALES
+5.1. DEFINICIÓN:
+Treponematosis neonatal adquirida intraútero, de madre infectada por sífilis
+no tratada o inadecuadamente tratada durante el embarazo.
+5.2. ETIOLOGÍA:
+El agente patógeno es el Treponema Pallidum, microorganismo que
+pertenece al orden Spirocnaetales y la familia Spirochetaceae. Es muy lábil al
+medio ambiente. Fuera del cuerpo humano muere en pocos minutos por
+desecación, temperaturas por encima de los 41ºC, humedad intensa, cambios
+de pH, desinfectantes y radiación ultravioleta.
+5.3. FISIOPATOLOGÍA:
+La infección fetal es el resultado de la propagación hematógena del
+treponema desde una madre infectada; esta transmisión puede darse también
+en el momento del parto como resultado de contacto directo del recién nacido
+con lesiones genitales infecciosas de la madre. La propagación hematógena
+depende de la aparición de espiroquetemia materna.
+Los estadíos tempranos de la sífilis se caracterizan por espiroquetemia, por lo
+que la probabilidad de infección al feto si la madre tiene sífilis temprana es
+
+--- p2 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+238
+cercana al 100%. Después de la sífilis secundaria, la probabilidad de
+reaparición de la espiroquetemia disminuye con el tiempo, dos años después
+de la adquisición de la sífilis la probabilidad de transmisión sexual es baja.
+Aunque la probabilidad de transmisión a un feto puede ser hasta un 70%
+cuatro años después de la adquisición de la enfermedad de la madre,, la
+mayoría de los lactantes nacidos de madres con sífilis latente tardía no son
+infectados. Los principales factores que determinan la probabilidad de
+transmisión fetal son la etapa de sífilis materna y la duración de la exposición
+en el útero.
+5.4. ASPECTOS EPIDEMIOLÓGICOS:
+Tasas de sífilis congénita:
+● EEUU: 11.6 x 100,000 rnv (2014).
+● Perú: 0.7 x 1,000rnv (2019).
+● INMP: 3 x 1,000 rnv (2016).
+5.5. FACTORES DE RIESGO ASOCIADOS
+Dependiente de la madre, relacionado a las enfermedades de transmisión
+sexual.
+VI.
+CONSIDERACIONES ESPECÍFICAS
+6.1. CUADRO CLÍNICO
+● En la etapa neonatal, asintomático en 75%.
+● Hepatomegalia,
+● Esplenomegalia,
+● Rinitis muco purulenta,
+● Lesiones palmoplantares,
+● Seudopararálisis.
+6.2. DIAGNÓSTICO
+Se considera como caso de sífilis congénita cualquier recién nacido que
+cumpla con uno o más de los cuatro siguientes criterios:
+6.2.1. Criterio epidemiológico.
+Todo producto de la gestación (aborto, mortinato o nacido vivo) de
+madre con:
+●
+Prueba Rápida para Sífilis o una Prueba no treponémica
+positiva o reactiva durante la gestación sin tratamiento o con
+tratamiento inadecuado para prevenir la sífilis congénita. Se
+considera tratamiento adecuado aquel consistente de tres
+
+--- p3 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+239
+aplicaciones de 2400,000 UI de penicilina G benzatínica,
+aplicado hasta cuatro semanas previas a la fecha del parto.
+●
+Prueba Rápida para Sífilis o una Prueba no treponémica
+positiva o reactiva durante el trabajo de parto o aborto.
+6.2.2. Criterio serológico
+Todo recién nacido con prueba no treponémica (VDRL, RPR) con
+títulos cuatro veces mayores que los títulos de la madre, lo que
+equivale a un cambio de dos diluciones o más de dos títulos maternos.
+6.2.3. Criterio clínico
+Todo aborto, mortinato o nacido vivo de madre con antecedente de
+sífilis durante la gestación que presente una o más manifestaciones
+clínicas al examen físico de sífilis congénita:
+●
+Pénfigo palmo plantar,
+●
+Rinorrea mucosanguinolenta,
+●
+Hepato esplenomegalia,
+●
+Hidropesía fetal,
+●
+Pseudoparálisis,
+●
+Prematurez,
+●
+Evidencia radiológica de periostitis o bandas metafisiarias,
+osteocondritis,
+●
+Evidencia radiológica de neumonía alba,
+●
+Anormalidades hematológicas como: anemia, leucocitosis,
+plaquetopenia,
+●
+Evidencia de neurosífilis por laboratorio (prueba de anticuerpos,
+pleocitosis o proteinorraquia)
+6.2.4. Criterio diagnóstico directo
+Todo producto de la gestación con demostración de Treponema
+Pallidum por campo oscuro, inmunofluorescencia u otra coloración, o
+procedimiento específico en lesiones, secreciones, placenta, cordón
+umbilical o en material de autopsia.
+6.3. DIAGNÓSTICO DIFERENCIAL:
+● Toxoplasmosis.
+● Citomegalovirus.
+● Sepsis neonatal.
+6.4. EXÁMENES AUXILIARES
+6.4.1. De patología Clínica:
+●
+Hemograma.
+
+--- p4 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+240
+●
+Prueba reagínica (VDRL, RPR) cuantitativa en sangre.
+●
+Prueba reagínica (VDRL) en LCR.
+●
+Pruebas treponémicas: FTA, TPHA, Prueba rápida para sífilis
+(para ser utilizados en la madre).
+●
+Estudio citoquímico de LCR.
+●
+Pruebas de función hepática.
+6.4.2. Imagenología:
+●
+Radiografía de huesos largos.
+●
+Radiografía de tórax.
+6.4.3. Exámenes especializados complementarios:
+●
+Estudios oftalmológicos,
+●
+Función auditiva,
+●
+Estudios anatomopatológicos.
+●
+Identificación en campo oscuro de T. Pallidum.
+6.5.
+MANEJO
+SEGÚN
+NIVEL
+DE
+COMPLEJIDAD
+Y
+CAPACIDAD
+RESOLUTIVA.
+6.5.1. Medidas generales y preventivas
+●
+Hospitalización.
+●
+Aporte hídrico adecuado, por vía endovenosa de ser necesario.
+6.5.2. Terapéutica
+●
+Penilicilina G sódica 100,000 UI/Kg/día dividida en dos dosis por
+7 días EV o IM y posteriormente 150,000 UI/Kg/día dividida en tres
+dosis EV o IM.
+●
+Si el niño es asintomático al nacimiento y los resultados de VDRL
+en LCR, exámenes hematológicos y radiografía de huesos son
+negativos, colocar penicilina benzatínica 50,000 UI/Kg IM por
+una sola vez e indicar el seguimiento serológico cada tres meses.
+No se debe solicitar pruebas confirmatorias en los recién nacidos.
+●
+En el Anexo 1 se detallan escenarios para el manejo de sífilis
+congénita.
+6.5.3. Efectos adversos o colaterales del tratamiento y su manejo
+Reacción de Jarish-Herxheimer, cuyo manejo es sintomático.
+6.5.4. Signos de alarma
+No existen
+6.6. CRITERIOS DE ALTA
+●
+Tratamiento cumplido y sin sintomatología evidente.

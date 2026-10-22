@@ -1,0 +1,609 @@
+{
+  "sources": [
+    {
+      "id": "src-parto",
+      "title": "Recomendaciones de la OMS: cuidados durante el parto para una experiencia de parto positiva",
+      "short": "Cuidados del parto",
+      "authors": "Organización Mundial de la Salud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Directriz de la OMS de 2018, versión oficial en español de la OPS 2019, con 56 recomendaciones sobre cuidados intraparto.",
+      "file": "../study-data/fuentes/cuidados-durante-el-parto.pdf"
+    },
+    {
+      "id": "src-neonatal",
+      "title": "Norma Técnica de Salud para la Atención Integral de Salud Neonatal",
+      "short": "Atención neonatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica del MINSA que organiza la atención inmediata, alojamiento conjunto, cuidados intermedios y alta del recién nacido.",
+      "file": "../study-data/fuentes/nt-neonatal.pdf"
+    },
+    {
+      "id": "src-tamizaje",
+      "title": "Norma Técnica de Salud para el Tamizaje Neonatal",
+      "short": "Tamizaje neonatal",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica que regula el tamizaje de hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia y catarata congénita.",
+      "file": "../study-data/fuentes/tamizaje-neonatal.pdf"
+    },
+    {
+      "id": "src-raras",
+      "title": "Reglamento de la Ley N° 29698: enfermedades raras o huérfanas",
+      "short": "Enfermedades raras",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Reglamento",
+      "provenance": "Reglamento que desarrolla la Ley N° 29698 sobre prevención, diagnóstico, atención integral y rehabilitación de personas con enfermedades raras o huérfanas.",
+      "file": "../study-data/fuentes/enfermedades-raras-huerfanas.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-materno-neonatal",
+      "title": "Maternidad, recién nacido y tamizaje",
+      "short": "Materno-neonatal",
+      "description": "Cuidados respetuosos del parto, atención inmediata del recién nacido, alojamiento conjunto, tamizaje neonatal y enfermedades raras.",
+      "accent": "#D9A0A8",
+      "icon": "heart",
+      "sourceIds": ["src-parto", "src-neonatal", "src-tamizaje", "src-raras"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-parto-respetuoso",
+      "areaId": "area-materno-neonatal",
+      "title": "Parto positivo y atención respetuosa",
+      "summary": "La experiencia del parto importa: respeto, acompañamiento, comunicación y decisiones informadas mejoran los resultados y la satisfacción.",
+      "sourceIds": ["src-parto"],
+      "keywords": ["parto", "atención respetuosa", "acompañamiento", "derechos"]
+    },
+    {
+      "id": "topic-neonatal-inmediato",
+      "areaId": "area-materno-neonatal",
+      "title": "Atención inmediata del recién nacido",
+      "summary": "La anticipación, el calor, la evaluación y los cuidados de rutina en la primera hora son determinantes para la supervivencia neonatal.",
+      "sourceIds": ["src-neonatal"],
+      "keywords": ["recién nacido", "atención inmediata", "hipotermia", "vitamina K"]
+    },
+    {
+      "id": "topic-neonatal-alojamiento",
+      "areaId": "area-materno-neonatal",
+      "title": "Alojamiento conjunto y signos de alarma",
+      "summary": "El alojamiento conjunto sostiene la lactancia y el vínculo, pero exige vigilancia de signos de alarma y criterios de alta seguros.",
+      "sourceIds": ["src-neonatal"],
+      "keywords": ["alojamiento conjunto", "lactancia", "signos de alarma", "alta"]
+    },
+    {
+      "id": "topic-tamizaje-neonatal",
+      "areaId": "area-materno-neonatal",
+      "title": "Tamizaje neonatal",
+      "summary": "El tamizaje detecta enfermedades metabólicas, endocrinas, auditivas y visuales antes de que produzcan daño irreversible.",
+      "sourceIds": ["src-tamizaje"],
+      "keywords": ["tamizaje", "hipotiroidismo", "fenilcetonuria", "hipoacusia"]
+    },
+    {
+      "id": "topic-raras",
+      "areaId": "area-materno-neonatal",
+      "title": "Enfermedades raras o huérfanas",
+      "summary": "La ley y su reglamento garantizan atención integral, registro y financiamiento progresivo para personas con enfermedades raras.",
+      "sourceIds": ["src-raras"],
+      "keywords": ["enfermedades raras", "huérfanas", "registro", "FISSAL"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-parto-01",
+      "topicId": "topic-parto-respetuoso",
+      "areaId": "area-materno-neonatal",
+      "title": "Parto positivo: respeto, acompañamiento y decisiones",
+      "kicker": "Materno-neonatal · Parto",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La OMS propone un modelo de cuidado centrado en la mujer, con atención respetuosa, comunicación efectiva y acompañamiento de una persona de su elección. La experiencia del parto es tan importante como los resultados clínicos.",
+      "keyConcepts": [
+        "La atención respetuosa mantiene dignidad, privacidad, confidencialidad e integridad física.",
+        "Se recomienda el acompañamiento por la persona que la mujer elija.",
+        "La fase activa se define desde los 5 cm de dilatación.",
+        "La posición y el esfuerzo de pujo deben respetar la elección y la necesidad de la mujer."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa atención respetuosa",
+          "depth": "core",
+          "body": [
+            "La atención respetuosa de la maternidad es la atención organizada para todas las mujeres de manera que mantenga su dignidad, privacidad y confidencialidad, asegure la integridad física y el trato adecuado, y permita decisiones informadas y apoyo continuo durante el trabajo de parto y el parto.",
+            "La comunicación efectiva, con métodos simples y culturalmente aceptables, es parte del cuidado. El acompañamiento por una persona de elección de la mujer se recomienda de forma explícita."
+          ]
+        },
+        {
+          "title": "Fases y tiempos que conviene conocer",
+          "depth": "core",
+          "table": {
+            "headers": ["Momento", "Referencia"],
+            "rows": [
+              ["Fase latente", "Contracciones dolorosas con cambios variables del cuello; progresión lenta hasta 5 cm."],
+              ["Fase activa", "Desde 5 cm hasta dilatación total; suele durar ≤12 h en primeros partos y ≤10 h en posteriores."],
+              ["Período expulsivo", "Desde dilatación total hasta el nacimiento; normalmente 3 h en primíparas y 2 h en multíparas."],
+              ["Alumbramiento", "Se recomienda uterotónico profiláctico para prevenir hemorragia posparto."]
+            ]
+          }
+        },
+        {
+          "title": "Decisiones que no se imponen",
+          "depth": "full",
+          "bullets": [
+            "Permitir la posición que la mujer elija, incluidas las posiciones erguidas.",
+            "Respetar la necesidad de pujar en el momento en que la siente.",
+            "Evitar intervenciones de rutina sin indicación: rasurado, enema, amniotomía aislada, oxitocina para acelerar o fluidos intravenosos.",
+            "Ofrecer alivio del dolor según preferencia: métodos de relajación, analgesia peridural u opioides cuando corresponda."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "La experiencia cuenta",
+            "text": "Un parto seguro no es solo un parto sin complicaciones: también es un parto en el que la mujer se siente informada, acompañada y tratada con respeto."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-parto", "pages": [10, 11, 12, 13, 14, 15, 16] }
+      ]
+    },
+    {
+      "id": "sheet-neonatal-01",
+      "topicId": "topic-neonatal-inmediato",
+      "areaId": "area-materno-neonatal",
+      "title": "Recién nacido: los primeros minutos y la primera hora",
+      "kicker": "Materno-neonatal · Neonatal",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La atención inmediata empieza antes del parto, con la identificación de riesgos y la preparación del equipo. En la primera hora se prioriza el calor, la evaluación, el contacto piel a piel y la lactancia.",
+      "keyConcepts": [
+        "El principio de anticipación exige conocer los factores de riesgo y preparar equipos antes del parto.",
+        "La sala de partos debe mantenerse entre 24 y 26 °C.",
+        "El APGAR no determina por sí solo la necesidad de reanimación.",
+        "La vitamina K se aplica dentro de las primeras 6 horas de vida."
+      ],
+      "sections": [
+        {
+          "title": "Antes de que nazca",
+          "depth": "core",
+          "body": [
+            "El equipo neonatal revisa la historia materna, los controles prenatales, los factores de riesgo y la situación del parto. Con esa información organiza el recurso humano, verifica equipos y prepara el kit de reanimación.",
+            "Los factores de riesgo pueden ser anteparto (diabetes, hipertensión, hemorragia, infección, prematuridad), intraparto (cesárea urgente, presentación anormal, líquido meconial, prolapso de cordón) o posparto (hipotermia, apnea, dificultad respiratoria)."
+          ]
+        },
+        {
+          "title": "Primera hora: prioridades",
+          "depth": "core",
+          "table": {
+            "headers": ["Prioridad", "Conducta"],
+            "rows": [
+              ["Calor", "Secar con toalla precalentada, cubrir la cabeza y evitar pérdidas de calor."],
+              ["Evaluación", "Respiración, llanto, tono muscular y edad gestacional."],
+              ["Contacto piel a piel", "Colocar sobre el abdomen/pecho materno y vigilar signos de alarma."],
+              ["Lactancia", "Iniciar tan pronto como sea posible si madre y bebé están estables."],
+              ["Profilaxis", "Vitamina K IM, cuidado del cordón y profilaxis ocular según norma."]
+            ]
+          }
+        },
+        {
+          "title": "Detalles que evitan daño",
+          "depth": "full",
+          "bullets": [
+            "No secar a los menores de 32 semanas o <1500 g: cubrir con bolsa estéril de polietileno y gorro.",
+            "No aplicar antisépticos con yodo en el cordón por riesgo de trastornos tiroideos.",
+            "Verificar dos arterias y una vena en el cordón.",
+            "Vitamina K: 0,3-0,5 mg/kg IM en ≤1500 g; 1 mg IM en >1500 g, dentro de las primeras 6 horas.",
+            "Evitar el uso del termómetro de mercurio."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "El APGAR no decide la reanimación",
+            "text": "La reanimación se inicia según la respiración, el tono y la frecuencia cardíaca, no esperando el puntaje de APGAR."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-neonatal", "pages": [9, 10, 11, 12, 13, 14, 15] }
+      ]
+    },
+    {
+      "id": "sheet-neonatal-02",
+      "topicId": "topic-neonatal-alojamiento",
+      "areaId": "area-materno-neonatal",
+      "title": "Alojamiento conjunto: acompañar y vigilar",
+      "kicker": "Materno-neonatal · Neonatal",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El alojamiento conjunto mantiene al recién nacido con su madre, favorece el vínculo y la lactancia y permite detectar signos de alarma. Exige evaluación periódica y criterios de alta claros.",
+      "keyConcepts": [
+        "Todo recién nacido en alojamiento conjunto requiere evaluación médica en las primeras 12 horas.",
+        "La lactancia materna exclusiva se promueve y se protege.",
+        "La hipotermia, la dificultad respiratoria y la ictericia precoz son signos de alarma.",
+        "El alta exige estabilidad, alimentación adecuada, tamizaje y vacunas."
+      ],
+      "sections": [
+        {
+          "title": "Qué se hace en alojamiento conjunto",
+          "depth": "core",
+          "body": [
+            "El recién nacido permanece junto a su madre, en condiciones de abrigo adecuadas, con control periódico de temperatura y signos vitales. Se verifica la identificación segura, se promueve la lactancia materna exclusiva y se enseña a la madre a reconocer signos de alarma.",
+            "La evaluación médica se realiza en las primeras 12 horas y luego cada 12 a 24 horas según la complejidad del establecimiento."
+          ]
+        },
+        {
+          "title": "Signos de alarma",
+          "depth": "core",
+          "table": {
+            "headers": ["Signo", "Qué puede indicar"],
+            "rows": [
+              ["Pobre succión", "Infección, prematurez, alteración neurológica o metabólica."],
+              ["Apnea o dificultad respiratoria", "Sepsis, distress respiratorio, cardiopatía."],
+              ["Ictericia en las primeras 24 h", "Hemólisis o infección; requiere laboratorio."],
+              ["Hipotermia <36,5 °C", "Sepsis, prematurez, ambiente frío."],
+              ["Fiebre >38 °C", "Infección."],
+              ["Convulsiones o hipotonía", "Asfixia, infección, trastorno metabólico."],
+              ["Onfalitis", "Infección del cordón."]
+            ]
+          }
+        },
+        {
+          "title": "Alta segura",
+          "depth": "full",
+          "body": [
+            "Antes del alta el recién nacido debe estar hemodinámicamente estable, con signos vitales normales, alimentación oral adecuada, micción y emisión de meconio, tamizaje neonatal realizado, grupo sanguíneo y vacunas completas para la edad.",
+            "El equipo orienta a los padres sobre lactancia, cuidados en casa, signos de alarma y reanimación básica. El seguimiento posterior es parte de la continuidad del cuidado."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es solo “observación”",
+            "text": "El alojamiento conjunto es una intervención de cuidado: protege el vínculo, la lactancia y la detección temprana de problemas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-neonatal", "pages": [5, 16, 21, 45, 46, 47] }
+      ]
+    },
+    {
+      "id": "sheet-tamizaje-01",
+      "topicId": "topic-tamizaje-neonatal",
+      "areaId": "area-materno-neonatal",
+      "title": "Tamizaje neonatal: detectar antes del daño",
+      "kicker": "Materno-neonatal · Tamizaje",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tamizaje neonatal busca identificar enfermedades metabólicas, endocrinas, auditivas y visuales en recién nacidos aparentemente sanos. La oportunidad de la toma y el seguimiento de resultados son decisivos.",
+      "keyConcepts": [
+        "Se tamiza hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia y catarata congénita.",
+        "La muestra de sangre se toma después de las 48 horas de vida.",
+        "Si el alta ocurre antes de 48 horas, la toma se hace en el control o antes de los 7 días.",
+        "La prueba auditiva se realiza entre las 24 y 48 horas o antes del mes; el reflejo rojo, antes del alta."
+      ],
+      "sections": [
+        {
+          "title": "Las seis enfermedades del tamizaje",
+          "depth": "core",
+          "table": {
+            "headers": ["Enfermedad", "Qué se busca"],
+            "rows": [
+              ["Hipotiroidismo congénito", "Déficit de hormona tiroidea que afecta el desarrollo neurológico."],
+              ["Hiperplasia suprarrenal congénita", "Déficit enzimático con riesgo de crisis adrenal."],
+              ["Fenilcetonuria", "Acumulación de fenilalanina con daño neurológico."],
+              ["Fibrosis quística", "Afectación pulmonar y pancreática."],
+              ["Hipoacusia congénita", "Pérdida auditiva que afecta el lenguaje."],
+              ["Catarata congénita", "Opacidad del cristalino que afecta la visión."]
+            ]
+          }
+        },
+        {
+          "title": "Cuándo y cómo se toma",
+          "depth": "core",
+          "body": [
+            "La muestra de sangre en papel filtro se toma después de las 48 horas de vida. Si el alta ocurre antes, se toma en la primera atención de control a las 48 horas del alta o antes de los 7 días de nacido. En recién nacidos transfundidos, se espera 7 días después de la última transfusión.",
+            "La prueba auditiva con emisiones otoacústicas se realiza antes del alta, entre las 24 y 48 horas, y a más tardar antes del mes. El reflejo rojo binocular se evalúa antes del alta y su normalidad es requisito para el alta."
+          ]
+        },
+        {
+          "title": "Resultados y seguimiento",
+          "depth": "full",
+          "bullets": [
+            "Los resultados pueden ser normales, indeterminados o sospechosos.",
+            "Un resultado sospechoso exige confirmación diagnóstica y, si corresponde, inicio oportuno de tratamiento.",
+            "La muestra se conserva durante 5 años para control de calidad y verificación.",
+            "El tamizaje no tiene contraindicaciones; la obligación es garantizar la toma y el seguimiento."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Tamizar no es diagnosticar",
+            "text": "Un resultado positivo es una señal para confirmar y actuar, no un diagnóstico definitivo. El seguimiento es parte del tamizaje."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-tamizaje", "pages": [9, 10, 11, 12, 13, 21] }
+      ]
+    },
+    {
+      "id": "sheet-raras-01",
+      "topicId": "topic-raras",
+      "areaId": "area-materno-neonatal",
+      "title": "Enfermedades raras: derechos, registro y financiamiento",
+      "kicker": "Materno-neonatal · Enfermedades raras",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La Ley N° 29698 y su reglamento reconocen las enfermedades raras o huérfanas como prioridad nacional. La respuesta incluye atención integral, registro nacional, medicamentos y financiamiento progresivo.",
+      "keyConcepts": [
+        "Una enfermedad rara tiene baja prevalencia y suele ser crónica, grave y discapacitante.",
+        "Una enfermedad huérfana carece de evidencia suficiente para diagnóstico y tratamiento.",
+        "La persona tiene derecho a la atención integral y a no ser discriminada.",
+        "El Registro Nacional (RNPERH) y el FISSAL son instrumentos clave de la política."
+      ],
+      "sections": [
+        {
+          "title": "Qué son y por qué importan",
+          "depth": "core",
+          "body": [
+            "Las enfermedades raras son aquellas con peligro de muerte o invalidez, de baja prevalencia en la población y con dificultades para el diagnóstico y tratamiento. Las enfermedades huérfanas se caracterizan porque la evidencia científica disponible es escasa.",
+            "La ley busca garantizar prevención, diagnóstico, atención integral, rehabilitación y monitoreo, con enfoque de derechos humanos, género e interculturalidad."
+          ]
+        },
+        {
+          "title": "Instrumentos de la política",
+          "depth": "core",
+          "table": {
+            "headers": ["Instrumento", "Función"],
+            "rows": [
+              ["Plan Nacional", "Organiza prevención, diagnóstico, atención, rehabilitación y monitoreo."],
+              ["RNPERH", "Registra casos y genera información sobre incidencia, prevalencia y mortalidad."],
+              ["Listado de ERH", "Identifica las enfermedades priorizadas por el MINSA."],
+              ["FISSAL", "Financia progresivamente la atención de afiliados según el listado aprobado."],
+              ["MERH", "Medicamentos para enfermedades raras, sujetos a evaluación y disponibilidad presupuestal."]
+            ]
+          }
+        },
+        {
+          "title": "El rol del primer nivel",
+          "depth": "full",
+          "bullets": [
+            "Sospechar y referir oportunamente, sin retrasar por falta de diagnóstico.",
+            "Evitar la discriminación y acompañar a la persona y su familia.",
+            "Registrar el diagnóstico con CIE-10 y los datos requeridos.",
+            "Coordinar con el nivel especializado y con el financiamiento correspondiente.",
+            "Educar sobre la enfermedad y los cuidados, sin prometer curas ni tratamientos no aprobados."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No son enfermedades “imposibles”",
+            "text": "Aunque sean poco frecuentes, existen rutas de atención, registro y financiamiento. El primer nivel es la puerta para activarlas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-raras", "pages": [3, 4, 5, 6, 7, 8] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-parto-01-1",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "concept",
+      "prompt": "¿Qué es la atención respetuosa de la maternidad y por qué se recomienda?",
+      "answer": "Es la atención organizada para todas las mujeres de manera que mantenga su dignidad, privacidad y confidencialidad, asegure la integridad física y el trato adecuado, y permita decisiones informadas y apoyo continuo. Se recomienda porque mejora la experiencia y los resultados del parto.",
+      "explanation": "El respeto no es un adorno: reduce el trato deshumanizado, favorece la confianza y permite que la mujer participe en las decisiones.",
+      "sourceRefs": [{ "sourceId": "src-parto", "pages": [12] }],
+      "tags": ["parto", "concepto"]
+    },
+    {
+      "id": "card-parto-01-2",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "multiple",
+      "prompt": "Según la OMS, ¿desde qué dilatación se considera que comienza la fase activa del trabajo de parto?",
+      "options": ["3 cm", "4 cm", "5 cm", "7 cm"],
+      "correctIndex": 2,
+      "explanation": "La fase activa se define desde los 5 cm hasta la dilatación total, tanto en primeros partos como en los subsecuentes. Antes de 5 cm se considera fase latente.",
+      "sourceRefs": [{ "sourceId": "src-parto", "pages": [12] }],
+      "tags": ["parto", "opción múltiple"]
+    },
+    {
+      "id": "card-parto-01-3",
+      "topicId": "topic-parto-respetuoso",
+      "sheetId": "sheet-parto-01",
+      "type": "application",
+      "prompt": "Una gestante de bajo riesgo pide caminar y elegir una posición cómoda durante el trabajo de parto. ¿Qué corresponde?",
+      "options": [
+        "Obligarla a permanecer acostada para monitorizar mejor.",
+        "Permitir la posición y la movilidad que elija, con vigilancia adecuada.",
+        "Realizar episiotomía de rutina.",
+        "Aplicar rasurado y enema antes de continuar."
+      ],
+      "correctIndex": 1,
+      "explanation": "La OMS recomienda respetar la posición de elección, incluidas las erguidas, y evitar intervenciones de rutina como rasurado, enema o episiotomía sin indicación.",
+      "sourceRefs": [{ "sourceId": "src-parto", "pages": [13, 14] }],
+      "tags": ["parto", "aplicación"]
+    },
+    {
+      "id": "card-neonatal-01-1",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "concept",
+      "prompt": "¿Cuáles son las prioridades de la atención inmediata del recién nacido en la primera hora?",
+      "answer": "Prevenir la pérdida de calor, evaluar la respiración, el llanto y el tono, promover el contacto piel a piel, iniciar la lactancia si es posible y aplicar las profilaxis indicadas (vitamina K, cordón y ocular), con vigilancia continua.",
+      "explanation": "La primera hora es crítica para la adaptación neonatal. Calor, evaluación y vínculo se priorizan sin retrasar la reanimación si es necesaria.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [12, 13, 14, 15] }],
+      "tags": ["neonatal", "concepto"]
+    },
+    {
+      "id": "card-neonatal-01-2",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la conducta correcta para prevenir la hipotermia en un recién nacido de 30 semanas o <1500 g?",
+      "options": [
+        "Secarlo enérgicamente y bañarlo de inmediato.",
+        "Cubrirlo con bolsa estéril de polietileno y gorro, sin secarlo.",
+        "Dejarlo en la cuna sin abrigo para evaluar la adaptación.",
+        "Aplicar compresas frías en la cabeza."
+      ],
+      "correctIndex": 1,
+      "explanation": "En prematuros <32 semanas o <1500 g se recomienda bolsa estéril y gorro inmediatamente, sin secar, porque la humedad caliente protege de la pérdida evaporativa y evita lesiones por fricción.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [13] }],
+      "tags": ["neonatal", "opción múltiple"]
+    },
+    {
+      "id": "card-neonatal-01-3",
+      "topicId": "topic-neonatal-inmediato",
+      "sheetId": "sheet-neonatal-01",
+      "type": "application",
+      "prompt": "Un recién nacido a término nace con buen llanto y buen tono. ¿Qué corresponde respecto al APGAR y la reanimación?",
+      "options": [
+        "Esperar el APGAR de 1 minuto para decidir si se estimula.",
+        "Iniciar contacto piel a piel y cuidados de rutina; el APGAR no determina por sí solo la reanimación.",
+        "Intubar de inmediato por protocolo.",
+        "Evitar el contacto piel a piel hasta las 6 horas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La decisión de reanimar se basa en respiración, tono y frecuencia cardíaca, no en el APGAR. Un bebé vigoroso requiere calor, contacto piel a piel y cuidados de rutina.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [12, 13] }],
+      "tags": ["neonatal", "aplicación"]
+    },
+    {
+      "id": "card-neonatal-02-1",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "concept",
+      "prompt": "¿Qué es el alojamiento conjunto y qué ventajas ofrece?",
+      "answer": "Es la permanencia del recién nacido junto a su madre desde el nacimiento hasta el alta, con cuidado integral. Fortalece el vínculo, promueve y sostiene la lactancia, permite detectar signos de alarma y facilita la consejería a la madre.",
+      "explanation": "No es solo tener al bebé en la misma habitación: implica vigilancia, educación y apoyo para el cuidado.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [5, 16] }],
+      "tags": ["neonatal", "alojamiento"]
+    },
+    {
+      "id": "card-neonatal-02-2",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes es un signo de alarma en el recién nacido?",
+      "options": [
+        "Ictericia que aparece a las 48 horas y es leve.",
+        "Ictericia en las primeras 24 horas de vida.",
+        "Eritema tóxico benigno.",
+        "Micción dentro de las primeras 24 horas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La ictericia en las primeras 24 horas es anormal y requiere evaluación de laboratorio. La ictericia fisiológica suele aparecer después de las 24 horas.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [45] }],
+      "tags": ["neonatal", "opción múltiple"]
+    },
+    {
+      "id": "card-neonatal-02-3",
+      "topicId": "topic-neonatal-alojamiento",
+      "sheetId": "sheet-neonatal-02",
+      "type": "application",
+      "prompt": "Antes del alta, un recién nacido está estable pero no se ha realizado el tamizaje neonatal. ¿Qué corresponde?",
+      "options": [
+        "Dar el alta y pedir que vuelva en un mes.",
+        "Completar el tamizaje antes del alta o garantizar la toma dentro de los plazos establecidos.",
+        "Omitir el tamizaje porque el bebé está sano.",
+        "Realizar solo la prueba auditiva y omitir la de sangre."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tamizaje neonatal es parte de los requisitos de alta. Si no se puede antes, debe garantizarse la toma en el control o antes de los 7 días, según la norma.",
+      "sourceRefs": [{ "sourceId": "src-neonatal", "pages": [21] }, { "sourceId": "src-tamizaje", "pages": [9] }],
+      "tags": ["neonatal", "aplicación"]
+    },
+    {
+      "id": "card-tamizaje-01-1",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "concept",
+      "prompt": "¿Qué enfermedades detecta el tamizaje neonatal en el Perú?",
+      "answer": "Hipotiroidismo congénito, hiperplasia suprarrenal congénita, fenilcetonuria, fibrosis quística, hipoacusia congénita y catarata congénita. Las cuatro primeras se detectan con sangre en papel filtro; las dos últimas, con pruebas auditivas y visuales.",
+      "explanation": "El tamizaje combina pruebas metabólicas y evaluaciones sensoriales. Todas buscan intervenir antes de que el daño sea irreversible.",
+      "sourceRefs": [{ "sourceId": "src-tamizaje", "pages": [9, 10, 11, 12] }],
+      "tags": ["tamizaje", "concepto"]
+    },
+    {
+      "id": "card-tamizaje-01-2",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo se debe tomar la muestra de sangre para tamizaje neonatal en un recién nacido sano a término?",
+      "options": [
+        "Inmediatamente al nacer.",
+        "Después de las primeras 48 horas de vida.",
+        "A los 30 días.",
+        "Solo si presenta síntomas."
+      ],
+      "correctIndex": 1,
+      "explanation": "La muestra se toma después de las 48 horas. Si el alta es antes, se toma en el control a las 48 horas del alta o antes de los 7 días.",
+      "sourceRefs": [{ "sourceId": "src-tamizaje", "pages": [9] }],
+      "tags": ["tamizaje", "opción múltiple"]
+    },
+    {
+      "id": "card-tamizaje-01-3",
+      "topicId": "topic-tamizaje-neonatal",
+      "sheetId": "sheet-tamizaje-01",
+      "type": "application",
+      "prompt": "Un recién nacido recibe una transfusión antes del tamizaje. ¿Qué corresponde?",
+      "options": [
+        "Tamizar de inmediato.",
+        "Esperar 7 días después de la última transfusión para tomar la muestra.",
+        "No tamizar nunca.",
+        "Sustituir el tamizaje por una ecografía."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma indica que los recién nacidos transfundidos deben tamizarse 7 días después de la última transfusión, porque la sangre transfundida puede alterar los resultados.",
+      "sourceRefs": [{ "sourceId": "src-tamizaje", "pages": [21] }],
+      "tags": ["tamizaje", "aplicación"]
+    },
+    {
+      "id": "card-raras-01-1",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre una enfermedad rara y una enfermedad huérfana?",
+      "answer": "La enfermedad rara tiene baja prevalencia y suele ser grave, crónica o discapacitante. La enfermedad huérfana se caracteriza porque la evidencia científica para el diagnóstico y el tratamiento es escasa. Muchas enfermedades raras son también huérfanas.",
+      "explanation": "La rareza se refiere a la frecuencia; la orfandad, a la falta de conocimiento y de opciones terapéuticas.",
+      "sourceRefs": [{ "sourceId": "src-raras", "pages": [3] }],
+      "tags": ["enfermedades raras", "concepto"]
+    },
+    {
+      "id": "card-raras-01-2",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "multiple",
+      "prompt": "¿Qué instrumento registra los casos de enfermedades raras o huérfanas en el Perú?",
+      "options": [
+        "El Registro Nacional de Pacientes (RNPERH).",
+        "El Sistema de Vigilancia de IAAS.",
+        "El Petitorio Nacional Único de Medicamentos.",
+        "El Registro de Defunciones."
+      ],
+      "correctIndex": 0,
+      "explanation": "El RNPERH es la herramienta que registra datos y genera información sobre incidencia, prevalencia y mortalidad de las enfermedades raras o huérfanas.",
+      "sourceRefs": [{ "sourceId": "src-raras", "pages": [4, 7] }],
+      "tags": ["enfermedades raras", "opción múltiple"]
+    },
+    {
+      "id": "card-raras-01-3",
+      "topicId": "topic-raras",
+      "sheetId": "sheet-raras-01",
+      "type": "application",
+      "prompt": "Una familia llega al puesto de salud con sospecha de una enfermedad rara no diagnosticada. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Decirles que no hay nada que hacer porque es una enfermedad rara.",
+        "Sospechar, referir oportunamente, registrar y acompañar a la familia sin discriminación.",
+        "Indicar un tratamiento empírico sin evaluación.",
+        "Ocultar la sospecha para no generar expectativas."
+      ],
+      "correctIndex": 1,
+      "explanation": "El primer nivel debe activar la ruta: sospechar, referir, registrar y acompañar. La ley garantiza atención integral y no discriminación; no se debe abandonar a la familia.",
+      "sourceRefs": [{ "sourceId": "src-raras", "pages": [5, 7, 8] }],
+      "tags": ["enfermedades raras", "aplicación"]
+    }
+  ]
+}

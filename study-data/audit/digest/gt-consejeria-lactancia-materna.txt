@@ -1,0 +1,354 @@
+FILE gt-consejeria-lactancia-materna.pdf | pages 59 | chars 100956
+
+== HEADINGS (candidates) ==
+p1 [32.6] Guía técnica para la consejería
+p1 [32.6] en Lactancia  Materna
+p1 [18.0] Resolución Ministerial  N° 462-2015/MINSA
+p3 [14.0] María Elizabeth Hinostroza Pereyra
+p3 [12.0] Ministra de Salud
+p3 [14.0] Gustavo Marơn Rosell De Almeida
+p3 [12.0] Viceministro de Salud Pública
+p3 [14.0] Óscar Alfredo Broggi Angulo
+p3 [12.0] Viceministro de Prestaciones y Aseguramiento en Salud
+p3 [14.0] Sigrid Concepción Reyes Navarro
+p3 [12.0] Secretaria General
+p3 [14.0] Ángel Alberto Gonzales Vivanco
+p3 [12.0] Director General de Intervenciones Estratégicas
+p3 [12.0] en Salud Pública
+p3 [14.0] Alexandro Daniel Saco Valdivia
+p3 [12.0] Director de Promoción de la Salud
+p4 [12.0] Equipo técnico responsable de la elaboración de la guía técnica
+p4 [12.0] ParƟciparon en la validación de la guía técnica
+p4 [19.0] Guía Técnica para la Consejería en Lactancia Materna
+p9 [33.0] Presentación
+p11 [33.0] Índice
+p11 [12.0] I. Finalidad
+p11 [12.0] II. ObjeƟvo general
+p11 [12.0] II. Ámbito de aplicación
+p11 [12.0] IV. Nombre del proceso o procedimiento a estandarizar
+p11 [12.0] V. Consideraciones generales
+p11 [12.0] VI. Consideraciones especíﬁcas
+p11 [12.0] VII. Recomendaciones
+p11 [12.0] VIII. Anexos
+p11 [12.0] IX. Bibliograİa
+p13 [25.0] Guía Técnica para la Consejería en
+p13 [25.0] Lactancia Materna
+p13 [19.0] I. Finalidad
+p13 [19.0] II. Objetivo
+p13 [19.0] III. Ámbito de Aplicación
+p13 [19.0] IV. Nombre del proceso o
+p13 [19.0] procedimiento a estandarizar
+p13 [19.0] V. Consideraciones generales
+p13 [12.0] 5.1.1 Prácticas saludables para el cuidado
+p13 [12.0] infantil.-
+p13 [12.0] 5.1.2 Atención integral, integrada y
+p13 [12.0] continua de salud.-
+p14 [12.0] 5.1.3. Proceso o Procedimiento.-
+p14 [12.0] 5.2.1 Lactancia materna.-
+p14 [12.0] 5.2.2 Consejería en lactancia materna.-
+p14 [12.0] 5.2.3 Habilidades de consejería.-
+p14 [21.0] En un nivel básico son de dos
+p14 [21.0] tipos:
+p14 [12.0] 5.2.4 Metodología de la consejería en
+p14 [12.0] lactancia materna.-
+p15 [28.6] momento 1
+p15 [28.6] momento 2
+p15 [28.6] momento 3
+p15 [12.0] Inicio de la consejería
+p15 [12.0] Búsqueda de los factores
+p15 [12.0] causales o de riesgos
+p15 [12.0] Reforzar la conﬁanza y
+p15 [12.0] dar apoyo
+p16 [12.0] Registro de la consejeria
+p16 [12.0] Cierre y seguimiento
+p16 [12.0] 5.2.5 La consejería en lactancia materna,
+p16 [12.0] según niveles de atención.-
+p16 [19.0] Nivel 1: Puestos de Salud
+p16 [12.0] DURANTE LA
+p16 [12.0] ATENCIÓN PRENATAL
+p16 [12.0] DEL PARTO Y EL PUERPERIO
+p16 [12.0] ATENCIÓN INFANTIL
+p16 [12.0] Personal de la Salud (*)
+p16 [28.6] momento 4
+p16 [28.6] momento 5
+p17 [12.0] DURANTE LA
+p17 [12.0] ATENCIÓN PRENATAL
+p17 [12.0] ATENCIÓN INFANTIL
+p17 [19.0] Nivel 2: Centros Maternos
+p17 [12.0] Personal de la Salud (*)
+p17 [12.0] DEL PARTO Y EL PUERPERIO
+p17 [19.0] Nivel 3: Hospitales/institutos
+p18 [12.0] DURANTE LA
+p18 [12.0] ATENCIÓN PRENATAL
+p18 [12.0] DEL PARTO Y EL PUERPERIO
+p18 [12.0] ATENCIÓN INFANTIL
+p18 [19.0] VI. Consideraciones Específicas
+p19 [12.0] 6.1.1. La lactancia materna en el embarazo y la atención prenatal.-
+p19 [12.0] Aspectos críƟcos
+p19 [12.0] Acciones claves en la consejería en lactancia materna
+p19 [12.0] Explique que:
+p20 [12.0] 6.1.2. La lactancia materna y la atención durante el trabajo de parto.-
+p20 [12.0] Aspectos críƟcos
+p20 [12.0] Acciones claves en la consejería en lactancia materna
+p22 [12.0] 6.1.3. La lactancia materna en el post parto.-
+p22 [12.0] Aspectos críƟcos
+p22 [12.0] Acciones claves en la consejería en lactancia materna
+p25 [12.0] 6.1.4. La lactancia materna en el hogar (primeros 15 días del postparto).-
+p25 [12.0] Aspectos críƟcos
+p25 [12.0] Acciones claves en la consejería en lactancia materna
+p26 [12.0] 6.1.5. La lactancia materna hasta los 2 años de edad.-
+p26 [12.0] Aspectos críƟcos
+p26 [12.0] Acciones claves en la consejería en lactancia materna
+p27 [12.0] Aspectos críƟcos
+p27 [12.0] Acciones claves en la consejería en lactancia materna
+p28 [12.0] Aspectos críƟcos
+p28 [12.0] Acciones claves en la consejería en lactancia materna
+p28 [19.0] VII. Recomendaciones
+p29 [12.0] Aspectos
+p29 [12.0] Estándar
+p29 [12.0] 7.1.1. Los DIEZ (10) pasos para una
+p29 [12.0] lactancia materna exitosa.-
+p30 [12.0] Aspectos
+p30 [12.0] Estándar
+p30 [12.0] 7.1.2. Cumplimiento del Reglamento de
+p30 [12.0] Alimentación Infantil.-
+p31 [12.0] Aspectos
+p31 [12.0] Estándar
+p31 [12.0] 7.1.3. Implementación
+p31 [12.0] del
+p31 [12.0] Lactario
+p31 [12.0] Institucional2.-
+p31 [12.0] 7.1.4. Grupos de apoyo a la lactancia3.-
+p31 [12.0] 7.2.1. Derechos vinculados a la atención
+p31 [12.0] de salud.-
+p32 [12.0] Reglamento de Alimentación InfanƟl (Decreto Supremo N°009-2006-SA)
+p33 [12.0] Derechos Laborales vinculados a la Lactancia materna
+p33 [12.0] 7.2.2. Derechos laborales vinculados al
+p33 [12.0] embarazo, al parto y a la lactancia
+p33 [12.0] materna.-
+p33 [15.0] VIII. ANEXOS
+p33 [12.0] ANEXO 1. Habilidades de Comunicación para
+p33 [12.0] ANEXO
+p33 [12.0] ANEXO 4. Ficha de Observación de la
+p33 [12.0] ANEXO 5. Ficha de Lactancia Materna.
+p35 [19.0] Anexo 1
+p35 [12.0] 1. Usar comunicación no verbal úƟl.-
+p35 [12.0] 2. Hacer preguntas abiertas.-
+p35 [12.0] 3. Demostrar interés y devolver el comentario.-
+p36 [12.0] 4. Dar muestras de empaơa.-
+p36 [12.0] 5. Evitar palabras que puedan sonar enjuiciadoras.-
+p36 [12.0] 1. Aceptar lo que la madre piensa y siente.-
+p36 [12.0] 2. Reconocer y elogiar lo que está bien.-
+p36 [12.0] 3. Dar ayuda prácƟca.-
+p36 [12.0] 4. Proporcionar información perƟnente usando lenguaje apropiado.-
+p36 [12.0] 5. Hacer sugerencias, no dar órdenes.-
+p36 [12.0] Seguimiento y el apoyo conƟnuo.-
+p37 [19.0] Anexo 2
+p37 [12.0] 1. Cómo funciona la lactancia materna
+p37 [12.0] En una primera etapa, la producción de leche está bajo control endocrino.
+p37 [12.0] En una segunda etapa, la producción de leche depende del vaciamiento del pecho.
+p37 [12.0] La oxitocina es conocida como la “hormona del amor”
+p37 [15.0] Recuerde: La succión hace que los pechos produzcan leche, al controlar
+p38 [19.0] Beneficios para la o el niño:
+p38 [12.0] 2. La lactancia materna y su función en la formación de vínculos: El Apego.-
+p38 [19.0] Beneficios para la madre:
+p39 [19.0] • El apego prenatal: Se inicia cuando la madre comienza a percibir los movimientos
+p39 [19.0] • El nacimiento, el apego y la lactancia: Durante el trabajo de parto y el parto se
+p39 [19.0] El contacto piel a piel: La o el recién nacido dispone de
+p40 [12.0] 3. CaracterísƟcas de la leche humana
+p40 [19.0] Calostro:
+p40 [19.0] Leche de transición:
+p40 [19.0] Leche madura:
+p41 [15.0] Aspectos
+p41 [15.0] Leche materna
+p41 [15.0] Leche de animal
+p41 [15.0] Leche artificial
+p42 [12.0] 4. Desventajas y peligros del uso de sucedáneos de la leche materna (fórmulas, biberones y
+p42 [12.0] teƟnas).
+p42 [19.0] Riesgos y peligros para la o el niño:
+p42 [12.0] 5. Técnica de lactancia.-
+p42 [12.0] Posición de la madre:
+p42 [12.0] Posición de la o el bebé:
+p42 [19.0] Riesgos y peligros para la madre y la familia:
+p43 [12.0] Agarre de la o el bebé al pecho:
+p43 [12.0] Transferencia de leche:
+p43 [19.0] Diversas posiciones para el amamantamiento:
+p44 [16.0] Posición por debajo del brazo.
+p44 [16.0] Madre acostada: en esta posición es importante que
+p44 [16.0] Alza con el brazo opuesto.
+p45 [16.0] Posición en canasta.
+p45 [19.0] Cuidado Mamá Canguro:
+p46 [12.0] La atención de salud a la madre siempre constituirá una
+p46 [12.0] 6. La nutrición en la gestación.-
+p46 [12.0] 7. Cuidados de la salud materna durante la lactancia.-
+p47 [12.0] La nutrición adecuada de la madre preservará la salud de la propia madre, su capacidad de
+p47 [12.0] La nutrición durante el periodo de lactancia, son mayores los requerimientos de
+p47 [12.0] El reposo, es importante para que la madre que da de lactar pueda resistir mejor las
+p47 [12.0] La vida sexual, durante la época del amamantamiento, en algunos casos podría verse
+p47 [12.0] Planiﬁcación familiar, la lactancia materna también funciona como un método para
+p47 [12.0] El trabajo, especialmente si implica la separación de su hija o hijo, va a requerir motivar a la
+p47 [12.0] El peso, se estima que la madre que da de lactar tan frecuentemente (a
+p48 [12.0] Alcohol y cigarros, se recomienda evitar la ingesta de alcohol y cigarros pues no solo
+p48 [12.0] En caso de enfermedad; si la madre se enferma, en casi en todos los casos puede
+p48 [19.0] Brinde apoyo a la madre enferma:
+p49 [19.0] Infección por VIH y la
+p49 [19.0] lactancia materna
+p49 [12.0] 8. Mitos y creencias en la lactancia materna.-
+p49 [19.0] Mitos y creencias
+p50 [12.0] 9. La extracción, almacenamiento, conservación y administración de la leche humana
+p50 [12.0] Razones para la extracción, hay diferentes razones para extraer la leche:
+p50 [16.0] Métodos para extraer la leche, la extracción manual es la forma más sencilla, práctica,
+p50 [16.0] Medidas de higiene en la extracción, será indispensable lavarse las manos con agua y
+p50 [16.0] Preparación para la extracción, debe hacerlo cómodamente sentada en un ambiente
+p50 [16.0] Técnica para la extracción manual:
+p50 [19.0] masajes
+p51 [15.0] Conservación de la leche extraída, es recomendable
+p51 [10.6] A temperatura ambiente
+p51 [10.6] Refrigerada (en el interior
+p51 [10.6] de la refrigeradora)
+p52 [15.0] Administración de la leche extraída, la leche puede darse a temperatura ambiente. Se
+p52 [15.0] Uso de la Taza:
+p52 [15.0] Uso del Re-lactador:
+p53 [15.1] ANEXO 3
+p54 [15.1] ANEXO 4
+p55 [15.1] ANEXO 5
+p56 [30.0] BIBLIOGRAFÍA
+p58 [26.7] sobre LACTANCIA
+p58 [29.6] 113 SALUD
+p58 [23.0] llama graƟs al
+p58 [26.7] MATERNA
+p58 [20.3] Para más información
+p59 [26.7] sobre LACTANCIA
+p59 [29.6] 113 SALUD
+p59 [23.0] llama graƟs al
+p59 [26.7] MATERNA
+p59 [20.3] Para más información
+
+== FIRST PAGES ==
+
+--- p1 ---
+Guía técnica para la consejería
+en Lactancia  Materna
+Resolución Ministerial  N° 462-2015/MINSA
+
+--- p2 ---
+Catalogación hecha por la Biblioteca Central del Ministerio de Salud
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú Nº
+“Guía técnica para la consejería en lactancia materna”
+Ministerio de Salud - MINSA. Dirección General de Intervenciones Estratégicas en Salud Pública - DGIESP.
+Dirección de Promoción de la Salud - DPROM.
+Elaboración
+Rogger Eduardo Torres Lao
+DGIESP /DPROM
+Eleana Amparo Medina Leiva
+DGIESP /DPROM
+Claudia Almeri Veramendi
+DGIESP /DPROM
+María Elena Flores Ramirez
+DGIESP /DPROM
+Connie Judith Solano Auccapoma
+Diseño y diagramación:
+Roberth Edgar Gamboa Inga
+DGIESP /DPROM
+Versión digital disponible:
+La publicación “Guía técnica de consejería de la lactancia materna puede ser citada total o parcialmente,
+siempre y cuando se mencione la fuente.
+Guía técnica para la consejería en lactancia materna /  Ministerio de Salud.    Direc-
+ción General de Intervenciones Estratégicas en Salud Pública. Dirección de Promo-
+ción de la Salud -- Lima: Ministerio de Salud; 2019.
+54 p. ilus.
+PROMOCIÓN DE LA SALUD / SALUD MATERNO - INFANTIL / LACTANCIA MATERNA /
+PARTICIPACIÓN COMUNITARIA / CONOCIMIENTOS, ACTITUDES Y PRÁCTICA EN
+SALUD / PRIORIDADES EN SALUD / PERSONAL DE SALUD / GRUPOS DE AUTOAYUDA
+© MINSA, Noviembre 2019
+Ministerio de Salud
+Av. Salaverry N° 801, Lima 11 - Perú
+Teléfono: (51-1) 315-6600
+hƩps://www.gob.pe/minsa/
+webmaster@minsa.gob.pe
+Primera impresión, 2014
+Primera reimpresión, seƟembre 2015
+Segunda reimpresión, agosto 2019
+Tercera edición, noviembre 2019
+Tiraje:
+Se terminó de imprimir en el mes de noviembre de 2019
+Imprenta: J y O Editores Impresores
+Dirección: Jr. Cajamarca N° 706 - Rímac - Lima
+Teléfono: 999986545
+Correo:  ventasimprentajyo@gmail.com
+
+--- p3 ---
+María Elizabeth Hinostroza Pereyra
+Ministra de Salud
+Gustavo Marơn Rosell De Almeida
+Viceministro de Salud Pública
+Óscar Alfredo Broggi Angulo
+Viceministro de Prestaciones y Aseguramiento en Salud
+Sigrid Concepción Reyes Navarro
+Secretaria General
+Ángel Alberto Gonzales Vivanco
+Director General de Intervenciones Estratégicas
+en Salud Pública
+Alexandro Daniel Saco Valdivia
+Director de Promoción de la Salud
+
+--- p4 ---
+Equipo técnico responsable de la elaboración de la guía técnica
+Maria Elena Flores Ramírez
+Dirección de Promoción de la Salud  - MINSA
+Rosa María Valle Villón
+Dirección de Promoción de la Salud  - MINSA
+ParƟciparon en la validación de la guía técnica
+Guía Técnica para la Consejería en Lactancia Materna
+Carlos Ayestas Portugal
+Dirección General de Promoción de la Salud y
+Gestión Territorial en Salud- MINSA
+Rosa Maria Pretell Aguilar
+Dirección General de Promoción de la Salud y
+Gestión Territorial en Salud- MINSA
+Connie Judith Solano Auccapoma
+Dirección General de Promoción de la Salud y
+Gestión Territorial en Salud – MINSA
+Paula Juana Arones Dominguez
+Dirección Regional de Salud Ica - Centro de Salud Tate
+Francisco German Carmen Carrizales Dirección Regional de Salud Ica - Centro de Salud Tate
+Amanda Cecilia Bravo Calderon De Legua Dirección Regional de Salud Ica - Centro de Salud Tate
+Katty Yesabely Arcos Cayo
+Dirección Regional de Salud Ica - Centro de Salud Tate
+Sabina Amelia Huachua Valencia
+Dirección Regional de Salud Ica - Centro de Salud Tate
+Elizabeth Jenny Mitma Severuero
+Dirección Regional de Salud Ica - Centro de Salud Tate
+Evelin Elena Guerra Grados
+Dirección Regional de Salud Ica - Centro de Salud Tate
+Gladys Eulalia Hernandez Mendoza Dirección Regional de Salud Ica - Centro de Salud Tate
+Yaneth Marisol Aguilar Ballon
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Ruth Melchorita Bernaola Paredes
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Giovanna Margot Huamani Moron
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Olivia Andrea Medina Gutierrez
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Sandy Lizbet Quispe Huamani
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Mirian Daysi Mamani Quispe
+Dirección Regional de Salud Ica - Centro de Salud
+Parcona
+Eliseo Alejo Brito Falco
+Dirección Regional de Salud Ucayali - Centro de Salud
+9 De Octubre
+Silvia Elizabeth Solsol Tello
+Hospital Amazonico Yarinacocha
+Maria Cristina Ledesma Quispe
+Hospital Amazonico Yarinacocha
+Ruth Esther Casiano Rodriguez
+Hospital Amazonico Yarinacocha
+Ana Maria Montoro Asencios
+Instituto de Gestión de Servicios de Salud - Centro de
+Salud Carlos Cueto Fernandini

@@ -1,0 +1,1353 @@
+{
+  "sources": [
+    {
+      "id": "src-higiene-manos",
+      "title": "Manual técnico de referencia para la higiene de las manos",
+      "short": "Higiene de manos OMS",
+      "authors": "Organización Mundial de la Salud (OMS)",
+      "kind": "Manual",
+      "provenance": "Manual técnico de referencia de la OMS publicado en 2009 (WHO/IER/PSP/2009.02); traducción al español de 2010.",
+      "file": "../study-data/fuentes/higiene-manos-oms.pdf"
+    },
+    {
+      "id": "src-vigilancia-iaas",
+      "title": "Norma Técnica de Salud N.° 163-MINSA/2020/CDC para la vigilancia de las infecciones asociadas a la atención de la salud",
+      "short": "Vigilancia de IAAS",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica",
+      "provenance": "Norma técnica de salud del Ministerio de Salud del Perú (NTS N.° 163-MINSA/2020/CDC).",
+      "file": "../study-data/fuentes/vigilancia-iaas.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-seguridad-paciente",
+      "title": "Seguridad del paciente e IAAS",
+      "short": "Seguridad e IAAS",
+      "description": "Higiene de manos para interrumpir la transmisión y vigilancia epidemiológica de las infecciones asociadas a la atención de la salud.",
+      "accent": "#8BA9A0",
+      "icon": "target",
+      "sourceIds": [
+        "src-higiene-manos",
+        "src-vigilancia-iaas"
+      ]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Los cinco momentos y la técnica",
+      "summary": "Los cinco momentos traducen las indicaciones de la OMS en puntos concretos de la atención; la técnica correcta y el uso adecuado de guantes completan la práctica.",
+      "sourceIds": [
+        "src-higiene-manos"
+      ],
+      "keywords": [
+        "cinco momentos",
+        "higiene de manos",
+        "técnica",
+        "guantes"
+      ]
+    },
+    {
+      "id": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Adherencia y cultura de seguridad",
+      "summary": "La observación directa mide el cumplimiento, y la retroalimentación y el cuidado de las manos sostienen una cultura de seguridad.",
+      "sourceIds": [
+        "src-higiene-manos"
+      ],
+      "keywords": [
+        "observación",
+        "cumplimiento",
+        "retroalimentación",
+        "cultura de seguridad"
+      ]
+    },
+    {
+      "id": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Definiciones y vigilancia epidemiológica",
+      "summary": "Definiciones, red, procesos, notificación e indicadores de la vigilancia de las IAAS según la NTS 163-MINSA/2020/CDC.",
+      "sourceIds": [
+        "src-vigilancia-iaas"
+      ],
+      "keywords": [
+        "IAAS",
+        "definición de caso",
+        "vigilancia",
+        "notificación"
+      ]
+    },
+    {
+      "id": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Prevención, brotes y respuesta",
+      "summary": "La información de la vigilancia orienta la prevención y la supervisión; los brotes se detectan, notifican e investigan con plazos definidos.",
+      "sourceIds": [
+        "src-vigilancia-iaas"
+      ],
+      "keywords": [
+        "prevención",
+        "brotes",
+        "investigación",
+        "control"
+      ]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-higiene-manos-01",
+      "topicId": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Los cinco momentos de la higiene de manos",
+      "kicker": "Higiene de manos · Momentos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La OMS organiza la higiene de manos en cinco momentos: dos antes del riesgo (contacto y procedimiento aséptico) y tres después (fluidos, paciente y entorno). El modelo busca interrumpir la transmisión sin depender de listas interminables de tareas.",
+      "keyConcepts": [
+        "Las infecciones relacionadas con la atención sanitaria (IRAS) son un problema de seguridad del paciente y las manos son el principal vehículo de transmisión.",
+        "El momento 1 es antes del contacto directo con el paciente; el 2, antes de una tarea limpia o aséptica.",
+        "Los momentos 3, 4 y 5 se realizan después del riesgo de exposición a fluidos, del contacto con el paciente y del contacto con su entorno.",
+        "Los momentos 4 y 5 nunca se combinan; varias indicaciones pueden resolverse con una sola acción de higiene de manos."
+      ],
+      "sections": [
+        {
+          "title": "Por qué las manos importan",
+          "depth": "core",
+          "body": [
+            "Una infección relacionada con la atención sanitaria (IRAS) es la que afecta a un paciente durante la asistencia en un hospital u otro centro sanitario y que no estaba presente ni incubándose al ingreso. También incluye las infecciones que se manifiestan después del alta y las infecciones ocupacionales del personal.",
+            "En los países desarrollados complica entre el 5% y el 10% de los ingresos en hospitales de agudos; en los países en desarrollo el riesgo es de 2 a 20 veces mayor y la proporción de pacientes infectados puede rebasar el 25%. Los microorganismos pueden ser endógenos o exógenos, y las manos del personal son el vehículo de transmisión más frecuente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Alcance de esta ficha",
+            "text": "Este contenido proviene del Manual técnico de referencia de la OMS (2009), una guía técnica. La vigilancia de las IAAS en el Perú se rige por la NTS 163-MINSA/2020/CDC, que se estudia en las fichas siguientes."
+          }
+        },
+        {
+          "title": "Los cinco momentos",
+          "depth": "core",
+          "body": [
+            "El modelo se centra en los contactos que ocurren en la zona del paciente: el paciente y las superficies y objetos que le son temporales y exclusivos. La zona acompaña al paciente y no se limita a la cama."
+          ],
+          "table": {
+            "headers": [
+              "Momento",
+              "Cuándo",
+              "Propósito"
+            ],
+            "rows": [
+              [
+                "1",
+                "Antes del contacto directo con el paciente.",
+                "Proteger al paciente de los gérmenes del área de asistencia."
+              ],
+              [
+                "2",
+                "Antes de una tarea limpia o aséptica.",
+                "Evitar la inoculación al paciente o el paso de gérmenes de un punto a otro del cuerpo."
+              ],
+              [
+                "3",
+                "Después del riesgo de exposición a fluidos corporales.",
+                "Proteger al profesional y al entorno de la contaminación."
+              ],
+              [
+                "4",
+                "Después del contacto con el paciente.",
+                "Proteger al profesional y al área de asistencia de los gérmenes del paciente."
+              ],
+              [
+                "5",
+                "Después del contacto con el entorno del paciente.",
+                "Proteger al profesional y al entorno cuando no se tocó al paciente."
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Antes y después: dos lógicas",
+          "depth": "full",
+          "bullets": [
+            "Los dos momentos «antes» protegen al paciente; los tres «después» protegen al profesional y al área de asistencia.",
+            "Si se toca al paciente y luego un objeto de su entorno antes de salir, se aplica el momento 4 y no el 5.",
+            "El momento 5 excluye el contacto con el paciente: solo se aplica cuando se tocaron superficies u objetos de su entorno sin haberlo tocado.",
+            "Cuando varias indicaciones coinciden en una misma secuencia, una sola acción de higiene de manos puede ser suficiente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Regla de oro",
+            "text": "Antes de tocar al paciente o un punto crítico; después de fluidos, del paciente o de su entorno. Los momentos 4 y 5 son excluyentes."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            7,
+            9,
+            10,
+            12,
+            13,
+            14,
+            15,
+            16
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-02",
+      "topicId": "topic-higiene-manos-momentos",
+      "areaId": "area-seguridad-paciente",
+      "title": "Técnica, producto y guantes",
+      "kicker": "Higiene de manos · Técnica",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La fricción con preparado de base alcohólica es la forma preferente de higiene rutinaria; el lavado con agua y jabón se reserva para manos visiblemente sucias, sangre o fluidos, sospecha de esporas y después de usar los servicios. La técnica depende de la cantidad, el tiempo y la superficie cubierta.",
+      "keyConcepts": [
+        "La fricción con preparado de base alcohólica elimina la mayoría de los gérmenes, incluidos virus, y requiere de 20 a 30 segundos.",
+        "El lavado con agua y jabón se indica con suciedad visible, sangre o fluidos, sospecha de esporas y después de usar los servicios.",
+        "La eficacia depende de la calidad del producto, la cantidad, el tiempo y la superficie de la mano cubierta.",
+        "Los guantes no sustituyen la higiene de manos: se realiza antes de ponerlos y después de quitarlos."
+      ],
+      "sections": [
+        {
+          "title": "Fricción alcohólica o lavado",
+          "depth": "core",
+          "body": [
+            "Cuando hay un preparado de base alcohólica disponible, se prefiere para la antisepsia rutinaria de las manos (recomendación de categoría IB). Permite actuar en el punto de atención, requiere de 20 a 30 segundos y tiene buena tolerancia de la piel.",
+            "El lavado con agua y jabón se indica cuando las manos están visiblemente sucias o manchadas de sangre u otros fluidos corporales, cuando existe una fuerte sospecha o evidencia de exposición a organismos potencialmente formadores de esporas y después de usar los servicios (categoría II)."
+          ],
+          "bullets": [
+            "No utilizar jabón y preparado de base alcohólica de forma conjunta.",
+            "Frotar hasta que el producto se evapore por completo.",
+            "Secar bien las manos después de lavarlas con agua y jabón."
+          ]
+        },
+        {
+          "title": "Qué hace eficaz la técnica",
+          "depth": "core",
+          "bullets": [
+            "Usar un producto conforme a los estándares y en cantidad suficiente.",
+            "Dedicar el tiempo adecuado y cubrir toda la superficie de las manos.",
+            "Mantener uñas naturales, cortas y sin esmalte; no usar uñas postizas.",
+            "No llevar anillos ni joyas; mantener los antebrazos descubiertos y la piel sin cortes.",
+            "Aplicar crema de manos compatible para conservar la piel sana."
+          ]
+        },
+        {
+          "title": "Guantes: complemento, no sustituto",
+          "depth": "full",
+          "body": [
+            "Las indicaciones de higiene de manos son independientes de las que justifican el uso de guantes. Si una indicación precede a una tarea con guantes, la higiene se realiza antes de ponérselos; si la sigue, se realiza después de quitárselos.",
+            "Si aparece una indicación mientras el profesional lleva guantes, debe quitárselos, efectuar la higiene de manos y cambiarlos si fuera necesario. El uso de guantes no condiciona las indicaciones de higiene de manos; más bien la higiene influye en el uso apropiado de los guantes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El guante no lo protege de todo",
+            "text": "El uso de guantes no modifica ni sustituye la higiene de manos. La higiene de manos debe realizarse antes de ponerlos y después de retirarlos."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8,
+            17,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-03",
+      "topicId": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Medir la adherencia: observación directa",
+      "kicker": "Higiene de manos · Adherencia",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La observación directa convierte cada indicación observada en una oportunidad y registra si hubo o no una acción de higiene de manos. El cumplimiento es la proporción entre acciones realizadas y oportunidades.",
+      "keyConcepts": [
+        "Una oportunidad es una indicación observada que requiere una acción de higiene de manos; varias indicaciones pueden formar una sola oportunidad.",
+        "El cumplimiento se calcula como acciones realizadas divididas entre oportunidades, multiplicado por 100.",
+        "Se recomiendan 200 oportunidades por periodo y unidad de observación.",
+        "Las sesiones duran unos 20 minutos (±10) y no conviene observar a más de tres profesionales a la vez."
+      ],
+      "sections": [
+        {
+          "title": "Indicación, oportunidad y acción",
+          "depth": "core",
+          "body": [
+            "El observador identifica indicaciones, las convierte en oportunidades y registra la acción realizada o no realizada. Solo debe registrar lo que ve claramente y no puede asumir que una acción ocurrió.",
+            "Una acción positiva que no está justificada por una indicación no se incluye en el cálculo. Si varias indicaciones coinciden, se computa una sola oportunidad y una sola acción necesaria."
+          ]
+        },
+        {
+          "title": "Fórmula y estándares",
+          "depth": "core",
+          "table": {
+            "headers": [
+              "Elemento",
+              "Referencia"
+            ],
+            "rows": [
+              [
+                "Cumplimiento",
+                "(Acciones realizadas / Oportunidades) × 100"
+              ],
+              [
+                "Oportunidades por periodo y unidad",
+                "200"
+              ],
+              [
+                "Duración de la sesión",
+                "20 minutos (±10)"
+              ],
+              [
+                "Profesionales observados a la vez",
+                "No más de 3"
+              ],
+              [
+                "Categorías profesionales",
+                "Enfermería o matrona, auxiliar, médico y otros"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Límites y uso de los resultados",
+          "depth": "full",
+          "bullets": [
+            "El observador puede influir en el comportamiento observado (efecto del observador).",
+            "La interpretación de las definiciones y de la situación puede afectar la fiabilidad de los datos.",
+            "Los datos deben recogerse de forma anónima y confidencial; no deben emplearse para una evaluación administrativa del personal.",
+            "La retroalimentación inmediata y la discusión de los resultados apoyan la mejora continua."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es una auditoría punitiva",
+            "text": "La observación busca mejorar la práctica y la seguridad del paciente. Presentar los resultados al personal, en un clima de confianza, es parte del método."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19,
+            20,
+            21,
+            22,
+            24
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-higiene-manos-04",
+      "topicId": "topic-higiene-manos-adherencia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Retroalimentación, cultura y cuidado de las manos",
+      "kicker": "Higiene de manos · Cultura de seguridad",
+      "minutes": 6,
+      "level": "Base",
+      "summary": "La observación se completa con retroalimentación oportuna y un clima de confianza. La seguridad de las manos —piel sana, uñas cortas y sin joyas— y el cuidado cutáneo sostienen la adherencia.",
+      "keyConcepts": [
+        "La retroalimentación debe presentarse lo antes posible al personal observado y discutirse en un clima de confianza.",
+        "Los resultados no deben emplearse para una evaluación administrativa del personal.",
+        "Las joyas y las uñas largas, esmaltadas o postizas favorecen la colonización y la transmisión.",
+        "Debe evitarse combinar jabón y preparado alcohólico, usar agua caliente o ponerse guantes con las manos húmedas."
+      ],
+      "sections": [
+        {
+          "title": "Retroalimentar para mejorar",
+          "depth": "core",
+          "body": [
+            "El propósito de la observación es demostrar el grado de cumplimiento y evaluar la técnica; sus resultados ayudan a elegir intervenciones formativas. La retroalimentación inmediata, individual o colectiva, tiene un efecto promotor y permite intercambiar puntos de vista.",
+            "Cuando se evalúa el cumplimiento basal, conviene esperar a tener las tasas globales antes de dar retroalimentación. Los datos deben ser anónimos y confidenciales, y no usarse para una evaluación administrativa del personal."
+          ]
+        },
+        {
+          "title": "Seguridad y cuidado de la piel",
+          "depth": "core",
+          "bullets": [
+            "La piel debajo de los anillos está más colonizada; se desaconseja llevar joyas durante la asistencia.",
+            "Las uñas deben ser naturales, cortas y sin esmalte; no deben usarse uñas postizas.",
+            "La dermatitis de contacto es frecuente por el uso repetido de jabones y detergentes; una crema de manos ayuda a mantener la piel sana.",
+            "Lavarse con agua y jabón inmediatamente antes o después del preparado alcohólico, usar agua caliente o ponerse guantes con las manos húmedas aumenta la irritación."
+          ]
+        },
+        {
+          "title": "Conductas a evitar",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Práctica",
+              "Por qué evitarla"
+            ],
+            "rows": [
+              [
+                "Combinar agua y jabón con preparado alcohólico",
+                "Irrita la piel y es innecesario."
+              ],
+              [
+                "Usar agua caliente",
+                "Aumenta la irritación cutánea."
+              ],
+              [
+                "Ponerse guantes con las manos húmedas",
+                "Favorece la irritación de la piel."
+              ],
+              [
+                "Llevar guantes fuera de las indicaciones",
+                "No protege y puede favorecer la transmisión."
+              ],
+              [
+                "Realizar higiene fuera de las indicaciones",
+                "No aporta beneficio y puede dañar la piel."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Cultura de seguridad",
+            "text": "Observar, informar y conversar los resultados mejora la práctica. La sanción no es el objetivo de la observación."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19,
+            26
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-01",
+      "topicId": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Definiciones y vigilancia de las IAAS",
+      "kicker": "Vigilancia de IAAS · Definiciones",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La NTS 163 define la IAAS, la definición de caso y los factores de riesgo vigilados. La vigilancia es selectiva, focalizada, activa y permanente, y se organiza en una red nacional.",
+      "keyConcepts": [
+        "IAAS es una condición local o sistémica por un agente infeccioso o su toxina, adquirida durante la atención y no presente ni incubándose al ingreso.",
+        "Se excluyen las infecciones transplacentarias, la colonización y la extensión de una infección previa, salvo evidencia de una nueva infección.",
+        "La definición de caso combina la definición operativa, el factor de riesgo vigilado y los criterios específicos del tipo de IAAS.",
+        "La vigilancia es selectiva, focalizada, activa y permanente."
+      ],
+      "sections": [
+        {
+          "title": "Qué es una IAAS",
+          "depth": "core",
+          "body": [
+            "La NTS 163 define la IAAS como una condición local o sistémica resultante de una reacción adversa a la presencia de un agente infeccioso o de sus toxinas. Ocurre en un paciente durante la atención y no estaba presente ni incubándose al ingreso, salvo que se relacione con una admisión previa.",
+            "No se consideran IAAS la extensión o complicación de una infección ya presente, las infecciones del recién nacido adquiridas por vía transplacentaria ni la colonización sin signos o síntomas. La norma también contempla la vigilancia posterior al alta en pacientes con procedimientos o cirugías vigiladas."
+          ]
+        },
+        {
+          "title": "Definición de caso y factores de riesgo",
+          "depth": "core",
+          "bullets": [
+            "Cumplir la definición operativa de IAAS.",
+            "Tener asociación con el factor de riesgo vigilado, sin evidencia de otra causa conocida.",
+            "Cumplir los criterios específicos del tipo de IAAS: hallazgos clínicos, resultados de laboratorio y otras pruebas.",
+            "Factores vigilados: catéter venoso central, catéter urinario permanente, catéter venoso periférico, ventilador mecánico, nutrición parenteral total, parto vaginal y cirugías seleccionadas.",
+            "La neumonía en pacientes con ventilación no invasiva no se considera asociada a ventilación mecánica."
+          ]
+        },
+        {
+          "title": "Características de la vigilancia",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Característica",
+              "Significado"
+            ],
+            "rows": [
+              [
+                "Selectiva",
+                "Se concentra en pacientes hospitalizados y en eventos priorizados por su importancia y posibilidad de prevención."
+              ],
+              [
+                "Focalizada",
+                "Prioriza los servicios con mayor uso de dispositivos, procedimientos y cirugías seleccionadas."
+              ],
+              [
+                "Activa",
+                "Búsqueda intencional de casos que cumplen la definición."
+              ],
+              [
+                "Permanente",
+                "El personal responsable dispone del tiempo necesario para la búsqueda."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "No es un manual de higiene",
+            "text": "La NTS 163 regula la vigilancia epidemiológica de las IAAS. Las recomendaciones de higiene de manos provienen del manual de la OMS estudiado en las primeras fichas."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-02",
+      "topicId": "topic-iaas-vigilancia",
+      "areaId": "area-seguridad-paciente",
+      "title": "Red, procesos y notificación de la vigilancia",
+      "kicker": "Vigilancia de IAAS · Procesos",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La vigilancia de IAAS se organiza en los niveles local, regional y nacional, sigue cinco fases y se notifica en el aplicativo del CDC hasta el séptimo día hábil del mes siguiente. Los indicadores permiten comparar tasas y detectar desviaciones.",
+      "keyConcepts": [
+        "La red tiene nivel local (IPRESS), regional (DIRIS/DIRESA/GERESA) y nacional (CDC).",
+        "El proceso tiene cinco fases: plan, recolección, análisis, comunicación y evaluación.",
+        "La notificación local se realiza hasta el séptimo día hábil del mes siguiente al vigilado.",
+        "La incidencia acumulada usa personas en riesgo al inicio; la densidad de incidencia usa tiempo-persona."
+      ],
+      "sections": [
+        {
+          "title": "La red y sus recursos",
+          "depth": "core",
+          "body": [
+            "Todas las IPRESS públicas y privadas del país deben incorporarse a la Red de vigilancia de las IAAS. El nivel regional consolida y controla la calidad de la información; el CDC es el nivel nacional. Los tres niveles monitorean, supervisan y evalúan la red una vez al año.",
+            "Las IPRESS deben garantizar personal capacitado, acceso a fuentes de información, disponibilidad horaria, mobiliario, equipo de cómputo con internet y recursos para capacitación y campañas educativas."
+          ]
+        },
+        {
+          "title": "Cinco fases y recolección",
+          "depth": "core",
+          "bullets": [
+            "Plan anual de vigilancia: tipos de IAAS, factores de riesgo y servicios vigilados.",
+            "Recolección diaria en Neonatología, Gineco-Obstetricia y UCI; Medicina y Cirugía también se visitan a diario durante el mes vigilado.",
+            "Revisión de historia clínica, entrevistas, libros de ingresos y egresos, libro de partos y reportes de laboratorio.",
+            "Ante sospecha, aplicar la definición de caso; en casos confirmados, llenar la ficha de investigación epidemiológica.",
+            "Consolidar mensualmente la información en el aplicativo del CDC."
+          ]
+        },
+        {
+          "title": "Indicadores y periodicidad",
+          "depth": "full",
+          "body": [
+            "La incidencia acumulada se calcula con los casos nuevos sobre las personas libres de enfermedad al inicio del periodo. La densidad de incidencia usa la suma de los tiempos libres de enfermedad (tiempo-persona) y expresa la velocidad con la que aparecen los casos."
+          ],
+          "table": {
+            "headers": [
+              "Nivel",
+              "Reportes y análisis"
+            ],
+            "rows": [
+              [
+                "Local (IPRESS)",
+                "Reportes mensuales de tasas; informes trimestrales, mínimo 4 al año."
+              ],
+              [
+                "Regional",
+                "Reportes mensuales; informes semestrales y anuales, mínimo 2 al año."
+              ],
+              [
+                "Nacional (CDC)",
+                "Informes semestrales y anuales; tasas referenciales por percentiles y categoría de IPRESS."
+              ]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Notificación oportuna",
+            "text": "La IPRESS notifica en el aplicativo del CDC hasta el séptimo día hábil del mes siguiente. El nivel regional consolida y controla la calidad de la información."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5,
+            6,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-03",
+      "topicId": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Prevenir desde la vigilancia y la supervisión",
+      "kicker": "Vigilancia de IAAS · Prevención",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La NTS 163 se centra en la vigilancia: sus datos permiten priorizar, detectar desviaciones y evaluar medidas. La supervisión y los planes de mejora cierran el ciclo, y el laboratorio vigila la resistencia antimicrobiana.",
+      "keyConcepts": [
+        "La vigilancia permite establecer la línea base, detectar desviaciones y evaluar si las medidas preventivas fueron eficaces.",
+        "El plan anual prioriza tipos de IAAS por necesidad, frecuencia, transmisibilidad, letalidad y costos.",
+        "La supervisión deja hallazgos y un plan de intervención con medidas correctivas, etapas y metas.",
+        "Las cepas con perfiles de resistencia de alerta se notifican dentro de las 24 horas."
+      ],
+      "sections": [
+        {
+          "title": "De la vigilancia a la prevención",
+          "depth": "core",
+          "body": [
+            "Los datos de la vigilancia permiten monitorizar y detectar desviaciones respecto de la línea base endémica, identificar factores de riesgo, evaluar el impacto de las medidas preventivas y orientar la educación del personal. También sirven como indicadores de la calidad de la gestión.",
+            "El plan anual selecciona los eventos a vigilar según la necesidad de vigilar infecciones específicas, su mayor frecuencia, la posibilidad de un patógeno de alta transmisibilidad y las infecciones con alta letalidad, mayor estancia hospitalaria o mayores costos."
+          ]
+        },
+        {
+          "title": "Supervisión y planes de mejora",
+          "depth": "core",
+          "bullets": [
+            "La supervisión se comunica oficialmente a la IPRESS y utiliza instrumentos definidos.",
+            "Al terminar, se comunican los hallazgos y problemas y se brinda asistencia técnica sobre las medidas correctivas.",
+            "La IPRESS elabora un plan de intervención con etapas y metas por cada hallazgo.",
+            "El nivel regional consolida los hallazgos y los remite al CDC; el nivel nacional hace seguimiento.",
+            "El informe de la supervisión se comunica al CDC en un plazo no mayor a 7 días hábiles."
+          ]
+        },
+        {
+          "title": "Alertas de resistencia antimicrobiana",
+          "depth": "full",
+          "body": [
+            "El laboratorio de microbiología envía los reportes de cultivos positivos y los perfiles de resistencia. El hallazgo de las cepas de alerta se notifica dentro de las 24 horas a la DIRESA/GERESA/DIRIS, que comunica al CDC y al Laboratorio de Referencia Nacional de Infecciones Intrahospitalarias del INS."
+          ],
+          "bullets": [
+            "Enterococcus spp. intermedio o resistente a vancomicina y resistente a linezolid.",
+            "Enterococcus faecalis resistente a ampicilina o penicilina.",
+            "Enterobacterias resistentes a carbapenemes o con resistencia a colistina.",
+            "Pseudomonas aeruginosa y Acinetobacter baumannii resistentes a carbapenemes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Prevención basada en datos",
+            "text": "Vigilar sin actuar no cambia el riesgo: la información debe traducirse en medidas, supervisión y evaluación."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5,
+            9,
+            10,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sheet-iaas-04",
+      "topicId": "topic-iaas-prevencion",
+      "areaId": "area-seguridad-paciente",
+      "title": "Brotes: detección, notificación e investigación",
+      "kicker": "Vigilancia de IAAS · Brotes",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "Un brote es un aumento de casos por encima de lo esperado, un microorganismo con nuevo perfil de resistencia o un cambio de ese perfil. La IPRESS notifica en 24 horas y la investigación la conduce la Oficina de Epidemiología con el Comité Local de Control de Infecciones.",
+      "keyConcepts": [
+        "Brote: más casos de los esperados (aumento a partir de un caso), nuevo perfil de resistencia o cambio del perfil en un periodo, lugar y población.",
+        "La sospecha puede venir del personal asistencial, del personal de vigilancia o del laboratorio de microbiología.",
+        "La notificación es dentro de las 24 horas, por la web y por correo, a la DIRIS/DIRESA/GERESA y al CDC.",
+        "La IPRESS conserva las cepas y las deriva al laboratorio de referencia; presenta informes inicial, de seguimiento y final."
+      ],
+      "sections": [
+        {
+          "title": "Qué es un brote",
+          "depth": "core",
+          "body": [
+            "La NTS 163 considera brote la ocurrencia de un número de casos mayor que el esperado (aumento a partir de un caso), la aparición de un microorganismo con un nuevo perfil de resistencia en el servicio o en la IPRESS, o un cambio del perfil de resistencia dentro de un periodo, lugar y población específicos.",
+            "El estudio lo conduce el responsable de la Oficina de Epidemiología de la IPRESS, con apoyo del Comité Local de Control de Infecciones y del jefe del servicio donde ocurre el evento."
+          ]
+        },
+        {
+          "title": "Fuentes de sospecha y primeras acciones",
+          "depth": "core",
+          "bullets": [
+            "Personal de salud asistencial de los servicios.",
+            "Personal de vigilancia, durante las visitas o el análisis de los resultados.",
+            "Laboratorio de microbiología, al revisar los cultivos positivos de pacientes con IAAS.",
+            "Notificar dentro de las 24 horas por la web y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC.",
+            "Conservar las cepas y coordinar su derivación al laboratorio de referencia."
+          ]
+        },
+        {
+          "title": "Informes y cierre",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Etapa",
+              "Contenido"
+            ],
+            "rows": [
+              [
+                "Informe inicial",
+                "Notificación del evento y datos disponibles al momento."
+              ],
+              [
+                "Informe de seguimiento",
+                "Avance de la investigación y medidas adoptadas."
+              ],
+              [
+                "Informe final",
+                "Resultados, conclusiones y cierre del brote."
+              ]
+            ]
+          },
+          "body": [
+            "Los informes se remiten a la Oficina de Epidemiología regional, que los deriva al CDC. El CDC, en coordinación con el INS y otras instancias, elabora los informes de los brotes."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "24 horas, no un mes",
+            "text": "La notificación del brote es urgente y no espera al cierre mensual de la vigilancia rutinaria."
+          }
+        }
+      ],
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11,
+            12
+          ]
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-higiene-manos-01-1",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "concept",
+      "prompt": "¿Qué lógica siguen los cinco momentos de la higiene de manos?",
+      "answer": "Dos momentos se realizan antes del riesgo (antes del contacto con el paciente y antes de una tarea limpia o aséptica) y tres después (tras el riesgo de exposición a fluidos, tras el contacto con el paciente y tras el contacto con su entorno). Los primeros protegen al paciente; los segundos protegen al profesional y al área de asistencia.",
+      "explanation": "El modelo de la OMS ordena las indicaciones según el riesgo de transmisión y evita depender de una lista interminable de tareas. Recordar la secuencia «dos antes, tres después» ayuda a aplicarlo en la práctica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            9,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cinco momentos"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-01-2",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "multiple",
+      "prompt": "Un profesional se dispone a tomar la presión arterial a un paciente. ¿Qué momento de la higiene de manos corresponde?",
+      "options": [
+        "Después del contacto con el entorno del paciente.",
+        "Antes del contacto directo con el paciente.",
+        "Antes de una tarea limpia o aséptica.",
+        "Después del riesgo de exposición a fluidos corporales."
+      ],
+      "correctIndex": 1,
+      "explanation": "Tomar la presión arterial es un contacto directo con el paciente y no implica acceso a mucosas, piel no intacta ni un dispositivo invasivo. Por eso corresponde el momento 1, antes de tocar al paciente; el momento 2 se reserva para procedimientos limpios o asépticos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            12,
+            13
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-01-3",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-01",
+      "type": "application",
+      "prompt": "Un profesional ayuda a un paciente a sentarse, luego toca la barandilla de la cama y sale de la zona del paciente. ¿Qué momento debe aplicar antes de salir?",
+      "options": [
+        "Solo el momento 5, porque tocó el entorno.",
+        "Ninguno, porque no hubo exposición a fluidos.",
+        "Los momentos 4 y 5, porque tocó al paciente y su entorno.",
+        "El momento 4, porque hubo contacto con el paciente; el 5 no se combina con el 4."
+      ],
+      "correctIndex": 3,
+      "explanation": "El momento 5 excluye el contacto con el paciente y solo se aplica cuando no se le tocó. Si hubo contacto directo y después se toca un objeto de su entorno antes de salir, se aplica el momento 4, no el 5.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            14,
+            15
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-1",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "concept",
+      "prompt": "¿Cuándo está indicado lavarse las manos con agua y jabón en lugar de usar un preparado de base alcohólica?",
+      "answer": "Cuando las manos están visiblemente sucias o manchadas de sangre u otros fluidos corporales, cuando hay sospecha o evidencia de exposición a organismos formadores de esporas y después de usar los servicios. Para la antisepsia rutinaria se prefiere el preparado de base alcohólica si está disponible.",
+      "explanation": "El preparado alcohólico es eficaz y rápido para la higiene rutinaria, pero no limpia la suciedad visible ni elimina necesariamente las esporas. Por eso el lavado con agua y jabón conserva indicaciones específicas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "técnica"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-2",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "multiple",
+      "prompt": "¿Cuál afirmación sobre el uso de guantes es correcta?",
+      "options": [
+        "Los guantes estériles sustituyen la higiene de manos durante un procedimiento aséptico.",
+        "Basta con realizar la higiene de manos antes de ponerse los guantes.",
+        "La higiene de manos solo es necesaria si los guantes se manchan.",
+        "Debe realizarse higiene de manos antes de ponerse los guantes y después de quitárselos."
+      ],
+      "correctIndex": 3,
+      "explanation": "Las indicaciones de higiene de manos son independientes de las que justifican los guantes. El guante no sustituye la higiene: se realiza antes de ponerlo y después de retirarlo; si aparece una indicación mientras se lleva puesto, se retira para hacer la higiene.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            17
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "guantes"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-02-3",
+      "topicId": "topic-higiene-manos-momentos",
+      "sheetId": "sheet-higiene-manos-02",
+      "type": "application",
+      "prompt": "Tras retirar un apósito, el profesional observa que sus manos están visiblemente manchadas de sangre. ¿Qué debe hacer?",
+      "options": [
+        "Aplicar preparado de base alcohólica dos veces y continuar.",
+        "Lavarse con agua y jabón, secarse bien y luego continuar.",
+        "Quitarse los guantes y continuar sin higiene porque no tocó al paciente.",
+        "Esperar al final del turno para lavarse las manos."
+      ],
+      "correctIndex": 1,
+      "explanation": "La presencia de sangre visible exige lavado con agua y jabón; el preparado alcohólico no es adecuado para manos visiblemente sucias. Después del lavado hay que secarse bien antes de continuar.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            8
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-1",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "concept",
+      "prompt": "¿Cómo se calcula el cumplimiento de la higiene de manos en la observación directa?",
+      "answer": "Se divide el número de acciones de higiene de manos realizadas entre el número de oportunidades observadas y se multiplica por 100. Cada oportunidad requiere una sola acción, aunque varias indicaciones coincidan en el mismo momento.",
+      "explanation": "El denominador son las oportunidades, no las indicaciones aisladas; por eso varias indicaciones simultáneas se computan como una sola oportunidad. El resultado expresa el porcentaje de ocasiones en que se actuó cuando se debía.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            20,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cumplimiento"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-2",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "multiple",
+      "prompt": "Según el método de observación de la OMS, ¿cuántas oportunidades se recomiendan por periodo y unidad de observación?",
+      "options": [
+        "200 oportunidades.",
+        "50 oportunidades.",
+        "100 oportunidades.",
+        "500 oportunidades."
+      ],
+      "correctIndex": 0,
+      "explanation": "La guía indica 200 oportunidades por periodo y unidad (planta, servicio o categoría profesional) para hacer comparaciones fiables. Un número menor puede no representar bien la práctica.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            21,
+            22
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "observación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-03-3",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-03",
+      "type": "application",
+      "prompt": "En una sesión se observan 20 oportunidades y se registran 15 acciones positivas de higiene de manos. ¿Cuál es el cumplimiento?",
+      "options": [
+        "15%.",
+        "20%.",
+        "25%.",
+        "75%."
+      ],
+      "correctIndex": 3,
+      "explanation": "El cálculo es (15 / 20) × 100 = 75%. Las 20 oportunidades son el denominador y las 15 acciones realizadas, el numerador.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            20,
+            24
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-1",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "concept",
+      "prompt": "¿Cuál es el propósito de la retroalimentación en la observación de la higiene de manos?",
+      "answer": "Informar al personal observado sobre su cumplimiento y discutir los resultados para mejorar la práctica. La retroalimentación debe ser oportuna, en un clima de confianza y con fines educativos, no para una evaluación administrativa del personal.",
+      "explanation": "La observación no termina en la medición: su valor está en promover la reflexión y el cambio. Presentar los resultados de inmediato y dialogar sobre ellos tiene un efecto promotor.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            18,
+            19
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "retroalimentación"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-2",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "multiple",
+      "prompt": "¿Cuál práctica debe evitarse para cuidar la piel de las manos?",
+      "options": [
+        "Aplicar una crema de manos compatible con los guantes y los productos de higiene.",
+        "Secarse bien las manos después del lavado.",
+        "Lavarse con agua caliente y jabón.",
+        "Frotar hasta que el preparado alcohólico se seque por completo."
+      ],
+      "correctIndex": 2,
+      "explanation": "El agua caliente aumenta la irritación de la piel. Se recomienda usar agua y jabón solo cuando esté indicado, secarse bien y aplicar crema compatible; el preparado alcohólico debe secarse por completo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "cuidado de la piel"
+      ]
+    },
+    {
+      "id": "card-higiene-manos-04-3",
+      "topicId": "topic-higiene-manos-adherencia",
+      "sheetId": "sheet-higiene-manos-04",
+      "type": "application",
+      "prompt": "Una enfermera presenta irritación de la piel por higiene frecuente. ¿Qué recomendación es la más adecuada?",
+      "options": [
+        "Usar una crema de manos compatible y evitar lavarse con jabón inmediatamente antes o después del preparado alcohólico.",
+        "Lavarse con agua caliente para desinfectar mejor.",
+        "Ponerse los guantes con las manos húmedas para proteger la piel.",
+        "Sustituir la higiene de manos por el uso permanente de guantes."
+      ],
+      "correctIndex": 0,
+      "explanation": "La crema protectora ayuda a mantener la piel sana si es compatible con los guantes y los productos de higiene. Deben evitarse el agua caliente, la combinación innecesaria de jabón y preparado alcohólico y los guantes con manos húmedas.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-higiene-manos",
+          "pages": [
+            26
+          ]
+        }
+      ],
+      "tags": [
+        "Higiene de manos",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-01-1",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "concept",
+      "prompt": "¿Qué es una infección asociada a la atención de la salud (IAAS) según la NTS 163?",
+      "answer": "Es una condición local o sistémica resultante de una reacción adversa a la presencia de un agente infeccioso o de sus toxinas, que ocurre en un paciente durante la atención y que no estaba presente ni incubándose al ingreso, salvo que se relacione con una admisión previa. La norma también contempla la vigilancia posterior al alta en pacientes con procedimientos o cirugías vigiladas.",
+      "explanation": "La clave es el momento de adquisición: la infección se origina durante la atención y no estaba presente al ingreso. La vigilancia posterior al alta busca casos que se manifiestan después del egreso.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2,
+            3
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "definición"
+      ]
+    },
+    {
+      "id": "card-iaas-01-2",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes situaciones se excluye de la definición de IAAS?",
+      "options": [
+        "Una neumonía que aparece en un paciente sometido a ventilación mecánica.",
+        "Una infección por citomegalovirus adquirida por vía transplacentaria.",
+        "Una bacteriemia asociada a catéter venoso central.",
+        "Una infección del tracto urinario en un paciente con catéter urinario permanente."
+      ],
+      "correctIndex": 1,
+      "explanation": "Las infecciones del recién nacido adquiridas por vía transplacentaria (por ejemplo, citomegalovirus, toxoplasmosis, rubeola, herpes o sífilis) se excluyen de la definición. Las otras situaciones son IAAS si cumplen los criterios específicos.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "opción múltiple"
+      ]
+    },
+    {
+      "id": "card-iaas-01-3",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-01",
+      "type": "application",
+      "prompt": "Un paciente ingresado por una infección que ya estaba incubando al ingreso desarrolla síntomas a los tres días. ¿Cómo se clasifica?",
+      "options": [
+        "Siempre es IAAS, porque apareció durante la hospitalización.",
+        "Es IAAS solo si requiere antibióticos.",
+        "No es IAAS, salvo que exista evidencia clínica o de laboratorio de una nueva infección.",
+        "Es IAAS solo si el paciente tiene un dispositivo invasivo."
+      ],
+      "correctIndex": 2,
+      "explanation": "La definición excluye la complicación o extensión de una infección presente o incubándose al ingreso. Solo se clasifica como IAAS si hay evidencia de una infección nueva.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-02-1",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las cinco fases del proceso de vigilancia epidemiológica de las IAAS?",
+      "answer": "Plan de vigilancia, recolección de datos, análisis e interpretación, comunicación y uso de la información, y evaluación de la vigilancia. La IPRESS elabora el plan anualmente e incluye los tipos de IAAS, los factores de riesgo y los servicios vigilados.",
+      "explanation": "Las cinco fases forman un ciclo: lo que se recoge se analiza, se comunica y sirve para decidir; luego se evalúa la propia vigilancia. El plan anual es el punto de partida.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            5
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "vigilancia"
+      ]
+    },
+    {
+      "id": "card-iaas-02-2",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "multiple",
+      "prompt": "¿Hasta cuándo tiene la IPRESS para notificar la vigilancia de IAAS en el aplicativo del CDC?",
+      "options": [
+        "Hasta el último día del mes vigilado.",
+        "Hasta el primer día hábil del mes siguiente.",
+        "Hasta el séptimo día hábil del mes siguiente al mes vigilado.",
+        "Al cierre del año epidemiológico, sin notificación mensual."
+      ],
+      "correctIndex": 2,
+      "explanation": "La notificación local se realiza hasta el séptimo día hábil del mes siguiente al mes vigilado. El nivel regional consolida y controla la calidad de la información notificada.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "notificación"
+      ]
+    },
+    {
+      "id": "card-iaas-02-3",
+      "topicId": "topic-iaas-vigilancia",
+      "sheetId": "sheet-iaas-02",
+      "type": "application",
+      "prompt": "En un servicio se identifican 12 casos nuevos de IAAS entre 400 pacientes libres de infección al inicio del mes. ¿Cuál es la incidencia acumulada?",
+      "options": [
+        "3%.",
+        "12%.",
+        "30%.",
+        "48%."
+      ],
+      "correctIndex": 0,
+      "explanation": "La incidencia acumulada es (12 / 400) × 100 = 3%. El denominador son las personas susceptibles y libres de enfermedad al inicio del periodo.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            7
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-03-1",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "concept",
+      "prompt": "¿Para qué sirven los resultados de la vigilancia en la prevención de las IAAS?",
+      "answer": "Permiten establecer la línea base, detectar desviaciones respecto de las tasas habituales, identificar factores de riesgo, evaluar si las medidas preventivas fueron eficaces y orientar la educación del personal. También son indicadores de la calidad de la gestión.",
+      "explanation": "La vigilancia no es un fin en sí misma: genera información para decidir y corregir. Sin análisis y uso de los datos, no se puede saber si una intervención funcionó.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            8,
+            9
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "prevención"
+      ]
+    },
+    {
+      "id": "card-iaas-03-2",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "multiple",
+      "prompt": "Después de una supervisión, ¿qué corresponde a la IPRESS?",
+      "options": [
+        "Esperar el siguiente año para revisar los hallazgos.",
+        "Remitir el informe al CDC sin hacer cambios internos.",
+        "Suspender la vigilancia hasta corregir todos los problemas.",
+        "Elaborar un plan de intervención con medidas correctivas, etapas y metas por cada hallazgo."
+      ],
+      "correctIndex": 3,
+      "explanation": "La supervisión debe traducirse en un plan de intervención con medidas correctivas, etapas y metas. La IPRESS es responsable de implementarlo y el nivel regional consolida los hallazgos para el CDC.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "supervisión"
+      ]
+    },
+    {
+      "id": "card-iaas-03-3",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-03",
+      "type": "application",
+      "prompt": "La tasa de infección del torrente sanguíneo asociada a catéter venoso central aumenta por encima de la línea base. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Mantener la vigilancia sin cambios y esperar que la tasa baje sola.",
+        "Revisar los datos, identificar factores de riesgo e implementar y evaluar medidas correctivas.",
+        "Dejar de notificar los casos hasta confirmar el aumento.",
+        "Atribuir el aumento al azar sin analizarlo."
+      ],
+      "correctIndex": 1,
+      "explanation": "Un aumento sobre la línea base exige verificar los datos, analizar los factores de riesgo y aplicar medidas cuyo efecto se evaluará con la misma vigilancia. La NTS prevé este ciclo de análisis y mejora.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            9,
+            12
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    },
+    {
+      "id": "card-iaas-04-1",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "concept",
+      "prompt": "¿Qué situaciones se consideran brote epidémico de IAAS según la NTS 163?",
+      "answer": "Un número de casos mayor que el esperado (aumento a partir de un caso), la aparición de un microorganismo con un nuevo perfil de resistencia en el servicio o en la IPRESS, o un cambio del perfil de resistencia dentro de un periodo, lugar y población específicos.",
+      "explanation": "El brote no se define solo por el número de casos: también puede ser un cambio en el patrón de resistencia. Esto permite detectar problemas emergentes aunque el número de casos aún sea pequeño.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "brote"
+      ]
+    },
+    {
+      "id": "card-iaas-04-2",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "multiple",
+      "prompt": "¿En qué plazo y por qué vías notifica la IPRESS un brote de IAAS?",
+      "options": [
+        "Dentro de las 24 horas, por la web y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC.",
+        "Dentro de los 7 días hábiles, solo por correo postal.",
+        "Al cierre del mes vigilado, en el aplicativo del CDC.",
+        "Cuando el laboratorio confirme el microorganismo, únicamente al Comité Local de Control de Infecciones."
+      ],
+      "correctIndex": 0,
+      "explanation": "Los brotes se notifican dentro de las 24 horas de constatado el evento, mediante la web indicada y por correo electrónico a la DIRIS/DIRESA/GERESA y al CDC. Es un plazo más corto que el de la notificación mensual rutinaria.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "notificación"
+      ]
+    },
+    {
+      "id": "card-iaas-04-3",
+      "topicId": "topic-iaas-prevencion",
+      "sheetId": "sheet-iaas-04",
+      "type": "application",
+      "prompt": "En una UCI aparecen tres casos de Pseudomonas aeruginosa resistente a carbapenemes en una semana. ¿Qué corresponde hacer primero?",
+      "options": [
+        "Esperar a tener diez casos para considerarlo brote.",
+        "Notificar solo en el informe mensual.",
+        "Notificar dentro de las 24 horas, conservar las cepas e iniciar la investigación.",
+        "Suspender los cultivos de vigilancia."
+      ],
+      "correctIndex": 2,
+      "explanation": "La aparición de un microorganismo con un perfil de resistencia de alerta puede constituir un brote. Corresponde notificar en 24 horas, conservar las cepas para su derivación y realizar la investigación epidemiológica con el Comité Local de Control de Infecciones.",
+      "sourceRefs": [
+        {
+          "sourceId": "src-vigilancia-iaas",
+          "pages": [
+            10,
+            11
+          ]
+        }
+      ],
+      "tags": [
+        "IAAS",
+        "aplicación"
+      ]
+    }
+  ]
+}

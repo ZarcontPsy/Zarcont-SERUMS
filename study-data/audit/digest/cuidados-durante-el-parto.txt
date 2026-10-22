@@ -1,0 +1,218 @@
+FILE cuidados-durante-el-parto.pdf | pages 210 | chars 857738
+
+== HEADINGS (candidates) ==
+p1 [30.0] Recomendaciones de la OMS
+p1 [35.0] Cuidados durante el parto para una
+p1 [35.0] experiencia de parto positiva
+p2 [28.0] Recomendaciones de la OMS
+p2 [28.0] Cuidados durante el parto para una
+p2 [28.0] experiencia de parto positiva
+p4 [20.0] Índice
+p6 [20.0] Prefacio
+p7 [20.0] Agradecimientos
+p8 [20.0] Siglas y abreviaturas
+p10 [20.0] Resumen de orientación
+p12 [11.0] Resumen de recomendaciones para los cuidados durante el parto para una experiencia de parto positiva
+p17 [20.0] 1.	 Antecedentes
+p19 [20.0] 2.	 Métodos
+p28 [20.0] 3.	 Evidencia y recomendaciones
+p28 [11.0] Resumen de la evidencia y consideraciones
+p34 [11.0] Resumen de la evidencia y consideraciones
+p38 [11.0] Resumen de la evidencia y consideraciones
+p44 [11.0] Resumen de la evidencia y consideraciones
+p48 [11.0] Resumen de la evidencia y consideraciones
+p55 [11.0] Resumen de la evidencia y consideraciones
+p61 [11.0] Resumen de la evidencia y consideraciones
+p65 [11.0] Resumen de la evidencia y consideraciones
+p70 [11.0] Resumen de la evidencia y consideraciones
+p73 [11.0] Resumen de la evidencia y consideraciones
+p79 [11.0] Resumen de la evidencia y consideraciones
+p84 [11.0] Resumen de la evidencia y consideraciones
+p92 [11.0] Resumen de la evidencia y consideraciones
+p102 [11.0] Resumen de la evidencia y consideraciones
+p115 [11.0] Resumen de la evidencia y consideraciones
+p120 [11.0] Resumen de la evidencia y consideraciones
+p129 [11.0] Resumen de la evidencia y consideraciones
+p134 [11.0] Resumen de la evidencia y consideraciones
+p138 [11.0] Resumen de la evidencia y consideraciones
+p142 [11.0] Resumen de la evidencia y consideraciones
+p145 [11.0] Resumen de la evidencia y consideraciones
+p148 [11.0] Resumen de la evidencia y consideraciones
+p159 [11.0] Resumen de la evidencia y consideraciones
+p164 [11.0] Resumen de la evidencia y consideraciones
+p177 [20.0] 4.	 Aplicación de esta directriz: introducción del
+p177 [20.0] modelo de atención durante el parto de la OMS
+p180 [20.0] 5.	 Consecuencias para la investigación
+p182 [20.0] 6.	 Difusión
+p183 [20.0] 7.	 Cuestiones de aplicabilidad
+p184 [20.0] 8.	 Actualización de la directriz
+p185 [20.0] 9.	 Referencias bibliográficas1
+p193 [20.0] Anexo 1.	 Preguntas y parámetros de valoración
+p193 [20.0] prioritarios en la directriz
+p197 [20.0] Anexo 2. Expertos externos y personal de la OMS
+p197 [20.0] involucrados en la elaboración de esta
+p197 [20.0] directriz
+p201 [20.0] Anexo 3. 	Resumen de las declaraciones de intereses
+p201 [20.0] de los miembros del Grupo de Elaboración
+p201 [20.0] de Directrices y el Grupo de Trabajo Técnico
+p201 [20.0] y forma en la que se gestionaron
+p204 [20.0] Anexo 4. Consideraciones sobre la puesta en
+p204 [20.0] práctica específicas para recomendaciones
+p204 [20.0] concretasa
+p210 [11.0] Para más información póngase en contacto con:
+p210 [11.0] Familia, Promoción de la Salud y Curso de Vida (FPL)
+p210 [11.0] http://www.paho.org
+p210 [11.0] Centro Lationoamericano de Perinatología, Salud de la Mujer y Reproductiva
+p210 [11.0] http://www.paho.org/clap
+
+== FIRST PAGES ==
+
+--- p1 ---
+Recomendaciones de la OMS
+Cuidados durante el parto para una
+experiencia de parto positiva
+
+--- p2 ---
+Recomendaciones de la OMS
+Cuidados durante el parto para una
+experiencia de parto positiva
+
+--- p3 ---
+Versión oficial en español de la obra original en inglés
+WHO recommendations: intrapartum care for a positive childbirth experience
+© World Health Organization 2018
+ISBN: 978-92-4-155021-5
+Recomendaciones de la OMS: cuidados durante el parto para una experiencia de parto positiva
+ISBN:   978-92-75-32093-8
+eISBN: 978-92-75-32102-7
+© Organización Panamericana de la Salud 2019
+Algunos derechos reservados. Esta obra está disponible en virtud de la licencia 3.0 OIG Reconocimiento-NoComercial-
+CompartirIgual de Creative Commons (CC BY-NC-SA 3.0 IGO; https://creativecommons.org/licenses/by-nc-sa/3.0/igo).
+Con arreglo a las condiciones de la licencia, se permite copiar, redistribuir y adaptar la obra para fines no comerciales,
+siempre que se cite correctamente, como se indica a continuación. En ningún uso que se haga de esta obra debe darse
+a entender que la Organización Panamericana de la Salud (OPS) refrenda una organización, productos o servicios
+específicos. No está permitido utilizar el logotipo de la OPS. En caso de adaptación, debe concederse a la obra resultante
+la misma licencia o una licencia equivalente de Creative Commons. Si se hace una adaptación de la obra, incluso
+traducciones, debe añadirse la siguiente nota de descargo junto con la forma de cita propuesta: “La presente adaptación
+no es obra de la Organización Panamericana de la Salud (OPS). La OPS no se hace responsable del contenido ni de la
+exactitud de la adaptación. La edición original en inglés será el texto auténtico y vinculante”.
+Toda mediación relativa a las controversias que se deriven con respecto a la licencia se llevará a cabo de conformidad con
+las Reglas de Mediación de la Organización Mundial de la Propiedad Intelectual.
+Forma de cita propuesta. Recomendaciones de la OMS: cuidados durante el parto para una experiencia de parto positiva.
+Washington, D.C.: Organización Panamericana de la Salud; 2019. Licencia: CC BY-NC-SA 3.0 IGO.
+Catalogación (CIP): Puede consultarse en http://iris.paho.org
+Ventas, derechos y licencias. Para comprar publicaciones de la OPS, véase www.publications.paho.org. Para presentar
+solicitudes de uso comercial y consultas sobre derechos y licencias, véase www.paho.org/permissions.
+Materiales de terceros. Si se desea reutilizar material contenido en esta obra que sea propiedad de terceros, por ejemplo
+cuadros, figuras o imágenes, corresponde al usuario determinar si se necesita autorización para tal reutilización y obtener
+la autorización del titular del derecho de autor.  Recae exclusivamente sobre el usuario el riesgo de que se deriven
+reclamaciones de la infracción de los derechos de uso de un elemento que sea propiedad de terceros.
+Notas de descargo generales. Las denominaciones empleadas en esta publicación y la forma en que aparecen
+presentados los datos que contiene no implican, por parte de la Organización Panamericana de la Salud (OPS), juicio
+alguno sobre la condición jurídica de países, territorios, ciudades o zonas, o de sus autoridades, ni respecto del trazado de
+sus fronteras o límites. Las líneas discontinuas en los mapas representan de manera aproximada fronteras respecto de las
+cuales puede que no haya pleno acuerdo.
+La mención de determinadas sociedades mercantiles o de nombres comerciales de ciertos productos no implica que la
+OPS los apruebe o recomiende con preferencia a otros análogos. Salvo error u omisión, las denominaciones de productos
+patentados llevan letra inicial mayúscula.
+La OPS ha adoptado todas las precauci
+
+--- p4 ---
+iii
+ÍNDICE
+Índice
+Prefacio
+v
+Agradecimientos
+vi
+Siglas y abreviaturas
+vii
+Resumen de orienta ción
+1
+Introducción
+1
+Pública destinatario
+1
+Métodos de elaboración de las di rectrices
+1
+Recomendaciones
+2
+1.
+Antecedentes
+8
+1.1
+Público destinatario
+9
+1.2 	 Alcance de la directriz
+9
+2.
+Métodos
+10
+2.1 	 Grupo Consultivo de la OMS
+10
+2.2 	 Grupo de Elaboración de las Directrices
+10
+2.3 	 Grupo de Revisión Externo
+10
+2.4 	 Grupo de Trabajo Técnico
+10
+2.5 	 Asociados y observadores externos
+11
+2.6 	 Identificación de cuestiones y resultados prioritarios
+11
+2.7 	 Integración de recomendaciones de directrices de la OMS ya publicadas
+13
+2.8 	 Centros de interés y enfoque
+13
+2.9 	 Identificación y obtención de la evidencia
+13
+2.10 	Evaluación de la calidad y clasificación de la evidencia
+14
+2.11 	 Formulación de las recomendaciones
+15
+2.12 	 Toma de decisiones durante las reuniones del GDC
+16
+2.13 	 Declaración de intereses por parte de los contribuyentes externos
+17
+2.14 	Preparación de los documentos y arbitraje externo
+17
+2.15 	 Presentación del contenido de las directrices
+17
+3.
+Evidencia y recomendaciones
+19
+3.1 	 Atención durante el trabajo de parto y el nacimiento
+19
+3.2 	 Periodo de dilatación
+35
+3.3 	 Periodo expulsivo
+120
+3.4 	 Alumbramiento
+159
+3.5 	 Atención del recién nacido
+162
+3.6 	 Atención de la mujer tras el nacimiento
+165
+4.
+Aplicación de esta directriz: introducción del modelo de atención durante el part o de la OMS
+168
+5.
+Consecuencias para la investigación
+171
+6.
+Difusión
+173
+7.
+Cuestiones de aplicabilidad
+174
+7.1
+Repercusión prevista de la directriz en la organización de la atención durante el parto
+174
+7.2 	 Seguimiento y evaluación de la repercusión de la directriz
+174
+8.
+Actualización de la directriz
+175
+9.
+Referencias bibliográficas
+176

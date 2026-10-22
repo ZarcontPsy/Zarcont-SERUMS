@@ -1,0 +1,190 @@
+FILE nt-adolescente.pdf | pages 74 | chars 155052
+
+== HEADINGS (candidates) ==
+p1 [15.1] DIRECCIÓN GENERAL DE INTERVENCIONES ESTRATÉGICAS
+p1 [15.1] EN SALUD PÚBLICA
+p1 [11.7] Dirección de Intervenciones por Curso de Vida y Cuidado Integral
+p1 [11.7] Etapa de Vida Adolescente y Joven
+p1 [28.0] NORMA TÉCNICA DE SALUD PARA
+p1 [28.0] LA ATENCIÓN INTEGRAL DE
+p1 [38.0] SALUD DE
+p1 [38.0] ADOLESCENTES
+p5 [14.0] Dirección General de Intervenciones Estratégicas en Salud Pública
+p5 [13.0] Dirección de Intervenciones por Curso de Vida y Cuidado Integral
+p5 [13.0] Etapa de Vida Adolescente
+p5 [13.3] DIRECCIÓN GENERAL DE INTERVENCIONES ESTRATÉGICAS
+p5 [13.3] EN SALUD PÚBLICA
+p5 [11.0] Etapa de Vida Adolescente y Joven
+p5 [27.4] NORMA TÉCNICA DE SALUD PARA
+p5 [27.4] LA ATENCIÓN INTEGRAL DE
+p5 [37.2] SALUD DE
+p5 [37.2] ADOLESCENTES
+p10 [11.0] Personas que colaboraron en la actualización de la presente Norma:
+p15 [48.2] Índice
+p17 [14.0] I. FINALIDAD
+p17 [14.0] II. OBJETIVO
+p17 [14.0] III. ÁMBITO DE APLICACIÓN
+p17 [14.0] IV. BASE LEGAL
+p20 [14.0] V. DISPOSICIONES GENERALES
+p20 [11.0] 5.1 DEFINICIONES OPERATIVAS
+p20 [11.0] Adolescente tamizado: Es aquel adolescente a quien se le ha realizado una evaluación
+p20 [11.0] Atención integral de salud de adolescentes: Comprende la provisión continua, integrada y
+p20 [11.0] Componente educativo: Comprende las sesiones educativas de salud sexual y reproductiva,
+p20 [11.0] Consejería integral: Es un proceso de diálogo e interacción entre el consejero y el/la consultante,
+p20 [11.0] Evaluación integral de las necesidades y expectativas de salud de la población adolescente:
+p20 [11.0] Equipo básico de salud adolescente: Conformado por médico, obstetra, enfermera y técnico
+p20 [11.0] Equipo multidisciplinario completo de salud adolescente: Conformado por médico, obstetra,
+p20 [11.0] Equipo multidisciplinario capacitado y especializado de salud adolescente: Conformado
+p20 [11.0] Estrategia de salud: Conjunto de tácticas y acciones que, para el caso de la presente Norma
+p21 [11.0] 5.2 POBLACIÓN OBJETIVO
+p21 [11.0] 5.3 ESTRATEGIAS PARA LA ATENCIÓN DE LOS ADOLESCENTES
+p22 [11.0] 5.4 ENFOQUES PARA LA ATENCIÓN INTEGRAL DE ADOLESCENTES
+p22 [11.0] Derechos y ciudadanía
+p22 [11.0] Desarrollo positivo
+p22 [11.0] Género
+p22 [11.0] Diversidad
+p23 [11.0] Interculturalidad
+p23 [11.0] Inclusión social
+p23 [11.0] Curso de Vida
+p23 [11.0] Enfoque territorial
+p23 [11.0] 5.5 DE LA COBERTURA DE ASEGURAMIENTO PARA ADOLESCENTES
+p24 [14.0] VI. DISPOSICIONES ESPECÍFICAS
+p24 [11.0] 6.1 COMPONENTE DE ORGANIZACIÓN
+p24 [11.0] Atención Integral de Salud para Adolescentes en todos los establecimientos de salud
+p25 [11.0] 6.1.1 Prestación del servicio
+p25 [11.0] Accesibilidad geográfica: Los servicios de salud deben estar instalados en el área urbana
+p25 [11.0] Accesibilidad horaria: Los servicios de salud deben brindar atención integral de salud a
+p25 [11.0] Accesibilidad cultural: Los servicios de salud deben adaptarse según la cultura local,
+p26 [11.0] Privacidad: Los ser vicios de salud deben guardar la confidencialidad y privacidad en la
+p26 [11.0] Participación de adolescentes: Los establecimientos de salud deben tener en cuenta
+p26 [11.0] Oportunidad de la atención: Los establecimientos de salud deben garantizar que la
+p26 [11.0] Continuidad de la atención: El personal del establecimiento de salud debe garantizar que
+p26 [11.0] 6.1.2 Servicios de salud para la atención integral de salud de adolescentes
+p26 [11.0] A. Servicios diferenciados intramurales
+p26 [11.0] Servicios con ambientes exclusivos
+p26 [12.2] Todos los establecimientos de salud a nivel nacional, sin excepción
+p26 [12.2] alguna, deben brindar atención integral de salud a adolescentes.
+p27 [11.0] Servicios especializados
+p27 [11.0] B. Servicios extramurales
+p27 [11.0] Servicios coordinados con instituciones educativas
+p27 [11.0] Servicios coordinados con otras instituciones
+p28 [11.0] Centros de Desarrollo Juvenil (CDJ)
+p28 [11.0] 6.1.3 Recursos humanos
+p28 [11.0] Perfil de los equipos
+p28 [11.0] La capacitación de los equipos de salud adolescente
+p29 [11.0] Ámbitos
+p29 [11.0] Competencias
+p30 [11.0] 6.1.4 Equipamiento y mobiliario
+p31 [11.0] 6.1.5 Referencia y contrarreferencia
+p31 [11.0] 6.1.6 Normas y documentos normativos
+p31 [11.0] 6.2 COMPONENTE DE PROVISIÓN
+p32 [11.0] 6.2.1 Proceso de atención
+p32 [11.0] 6.2.1.1 Captación
+p32 [11.0] 6.2.1.2 Admisión
+p32 [11.0] 6.2.1.3 Atención en el servicio
+p33 [11.0] Atención del motivo de consulta
+p33 [11.0] La evaluación de las necesidades de atención integral de salud de adolescentes
+p33 [11.0] El Plan de Atención Integral de Salud para Adolescentes
+p34 [11.0] Desarrollo y seguimiento del plan
+p34 [11.0] Visita domiciliaria
+p34 [11.0] 6.3 COMPONENTE DE GESTIÓN
+p34 [11.0] 6.3.1 Programación
+p35 [11.0] 6.3.2 Asistencia técnica, supervisión, monitoreo y evaluación
+p35 [11.0] 6.3.3 Gestión del conocimiento
+p36 [11.0] 6.3.4 Gestión de la información
+p36 [11.0] 6.3.5 Investigación e innovación
+p36 [11.0] 6.3.6 Vigilancia epidemiológica
+p37 [11.0] 6.3.7 Indicadores
+p37 [11.0] A. De estructura:
+p37 [11.0] B. De proceso:
+p38 [11.0] C. De resultado:
+p38 [11.0] D. De impacto:
+p39 [11.0] 6.4 COMPONENTE DE FINANCIAMIENTO
+p39 [11.0] 6.5 ROLES SEGÚN NIVELES
+p39 [11.0] 6.5.1 Nivel Nacional: Ministerio de Salud
+p40 [11.0] 6.5.2 Nivel Regional: Gerencias o Direcciones Regionales
+p41 [11.0] 6.5.3 Establecimientos de salud
+p41 [11.0] 6.5.4 Los puestos y centros de salud
+p42 [11.0] Unidades ejecutoras
+p42 [14.0] VII. RESPONSABILIDADES
+p42 [11.0] 7.1 NIVEL NACIONAL
+p42 [11.0] 7.2 NIVEL REGIONAL
+p42 [11.0] 7.3 NIVEL LOCAL
+p43 [15.0] VIII. ANEXOS
+p43 [12.0] ANEXO 1
+p43 [12.0] ANEXO 2
+p43 [12.0] ANEXO 3
+p43 [12.0] ANEXO 4
+p43 [12.0] ANEXO 5
+p43 [12.0] ANEXO 6
+p43 [12.0] ANEXO 7
+p43 [12.0] ANEXO 8
+p43 [12.0] ANEXO 9
+p44 [14.0] ANEXO 1
+p44 [12.0] PAQUETE DE ATENCIÓN INTEGRAL DE SALUD PARA ADOLESCENTES
+p44 [11.0] I. PAQUETE BÁSICO DE ATENCIÓN INTEGRAL
+p44 [11.0] Prestaciones para identificar factores de riesgo en los adolescentes:
+p44 [11.0] Prestaciones que fortalecen los factores protectores de los adolescentes:
+p45 [11.0] II. PAQUETE COMPLETO DE ATENCIÓN INTEGRAL
+p45 [11.0] Prestaciones para identificar factores de riesgo:
+p45 [11.0] Exámenes de laboratorio:
+p46 [11.0] III. PAQUETE ESPECIALIZADO DE ATENCIÓN INTEGRAL
+p46 [11.0] Además de los exámenes de laboratorio del paquete completo, se adicionan:
+p46 [11.0] IV. PRESTACIONES COLECTIVAS QUE FORTALECEN FACTORES PROTECTORES EN
+p46 [11.0] ADOLESCENTES Y COMPLEMENTAN LOS PAQUETES DE ATENCIÓN INTEGRAL
+p47 [14.0] ANEXO 2
+p47 [12.0] TEMAS EDUCATIVOS PARA ACTIVIDADES INTRAMURALES Y EXTRAMURALES PARA
+p47 [12.0] ADOLESCENTES DE 12 A 14 AÑOS
+p49 [14.0] ANEXO 3
+p49 [12.0] TEMAS EDUCATIVOS PARA ACTIVIDADES INTRAMURALES Y EXTRAMURALES PARA
+p49 [12.0] ADOLESCENTES DE 15 A 17 AÑOS
+p51 [14.0] ANEXO 4
+p51 [12.0] EQUIPOS, MATERIALES E INSUMOS PARA LOS SERVICIOS DE ATENCIÓN DE SALUD
+p51 [12.0] INTEGRAL Y DIFERENCIADA PARA ADOLESCENTES
+p53 [14.0] ANEXO 5
+p53 [12.0] FÓRMULAS DE LOS INDICADORES SANITARIOS EN SALUD ADOLESCENTE
+p53 [12.0] INDICADORES DE ESTRUCTURA
+p55 [12.0] INDICADORES DE PROCESO22
+p62 [12.0] INDICADORES DE RESULTADO
+p64 [12.0] INDICADORES DE IMPACTO
+p65 [14.0] ANEXO 6
+p65 [12.0] FACTORES PROTECTORES PARA ADOLESCENTES, SU FAMILIA Y COMUNIDAD
+p65 [11.0] TIPO
+p65 [11.0] FACTORES PROTECTORES
+p65 [11.0] SI
+p65 [11.0] NO
+p66 [11.0] TIPO
+p66 [11.0] FACTORES PROTECTORES
+p66 [11.0] SI
+p66 [11.0] NO
+p67 [14.0] ANEXO 7
+p67 [12.0] FACTORES DE RIESGO EN ADOLESCENTES
+p69 [14.0] ANEXO 8
+p69 [14.0] GRÁFICAS DE CRECIMIENTO CORPORAL - OMS
+p70 [14.0] ANEXO 9
+p70 [12.0] PERCENTILES DE PERÍMETRO ABDOMINAL PARA ADOLESCENTES
+p74 [13.0] Av. Salaverry 801 - Lima 11
+p74 [13.0] INFOSALUD 113
+p74 [13.0] www.minsa.gob.pe
+
+== FIRST PAGES ==
+
+--- p1 ---
+DIRECCIÓN GENERAL DE INTERVENCIONES ESTRATÉGICAS
+EN SALUD PÚBLICA
+Dirección de Intervenciones por Curso de Vida y Cuidado Integral
+Etapa de Vida Adolescente y Joven
+NORMA TÉCNICA DE SALUD PARA
+LA ATENCIÓN INTEGRAL DE
+2019
+SALUD DE
+ADOLESCENTES
+
+--- p2 ---
+
+
+--- p3 ---
+
+
+--- p4 ---
+

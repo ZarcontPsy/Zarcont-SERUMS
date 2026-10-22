@@ -1,0 +1,1493 @@
+===== PAGE 1 =====
+Documento Técnico:  
+“Política Nacional de Salud Ambiental 2011 – 2020” 
+ 
+  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 2 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Política Nacional de Salud Ambiental 
+2011 - 2020 
+ 
+ 
+ 
+ 
+ 
+RM N° 258-2011/MINSA. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dirección General de Salud Ambiental  
+Ministerio de Salud 
+Lima – Perú 
+2011
+
+===== PAGE 3 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+Catalogación hecha por la Biblioteca Central del Ministerio de Salud 
+ 
+Política Nacional de Salud Ambiental 2011 – 2020: Documento técnico (R.M. 
+Nº 258-2011/MINSA) /  Ministerio de Salud.  Dirección General de Salud 
+Ambiental -- Lima: Ministerio de Salud; 2011. 
+    32 p.; ilus. 
+ 
+SALUD AMBIENTAL / POLÍTICA DE SALUD / DIAGNÓSTICO DE LA SITUACIÓN EN 
+SALUD / PLANES Y PROGRAMAS DE SALUD / NORMAS TÉCNICAS 
+ 
+ 
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú N°  2011-06074 
+ 
+Documento Técnico: “Política Nacional de Salud Ambiental 2011 – 2020” 
+ 
+Elaborado por: Dirección General de Salud Ambiental del Ministerio de Salud 
+ 
+© MINSA, Abril 2011 
+ 
+Ministerio de Salud.  Dirección General de Salud Ambiental 
+Las Amapolas N°350-Lince- Lima 14-Perú 
+Telef. : (51-1) 4428353 
+http:// www.digesa.minsa.gob.pe 
+http://webmaster@digesa.minsa.gob.pe 
+ 
+1ra. Edición, 2011 
+Tiraje: 1000 unidades 
+ 
+ 
+ 
+Imprenta: ASKHA E.I.R.L. 
+Dirección: JR. MARISCAL JOSÉ LA MAR N° 771-B 
+Distrito:    LA VICTORIA 
+Teléfono: 3241303 
+ 
+ 
+ 
+Versión digital disponible:  
+http://www.minsa.gob.pe/bvsminsa.asp                                                         
+http://www.minsa.gob.pe/webftp.asp?ruta=normaslegales/2011/RM258-2011-MINSA.pdf
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 4 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DR. ALAN GARCÍA PÉREZ 
+Presidente de la República 
+ 
+DR. ÓSCAR UGARTE UBILLUZ 
+Ministro de Salud 
+ 
+DRA. ZARELA SOLIS VÁSQUEZ 
+Vice Ministra de Salud 
+ 
+DR. EDWARD CRUZ SÁNCHEZ 
+Director General 
+Dirección General de Salud Ambiental 
+ 
+ 
+
+===== PAGE 5 =====
+ 
+ 
+ 
+
+===== PAGE 6 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 7 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 8 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ÍNDICE 
+ 
+ 
+ 
+ 
+PÁG.
+PRESENTACIÓN 
+09
+INTRODUCCIÓN 
+ 
+10
+I. 
+FINALIDAD 
+ 
+13
+II. 
+OBJETIVO 
+13
+III. BASE LEGAL 
+ 
+13
+IV. ÁMBITO DE APLICACIÓN 
+14
+V. PRINCIPIOS QUE SUSTENTAN LA POLÍTICA DE SALUD AMBIENTAL 
+14
+5.1 RESPETO A LA VIDA EN UN ENTORNO SALUDABLE 
+14
+5.2 ENFOQUE PREVENTIVO  
+14
+5.3 DECISIONES BASADAS EN EVIDENCIA CIENTÍFICA  
+14
+5.4 FACILITACIÓN DEL COMERCIO QUE FOMENTA LA SALUD 
+14
+5.5 TRANSPARENCIA Y PARTICIPACIÓN 
+15
+VI. SITUACIÓN DE LA SALUD AMBIENTAL EN EL PERÚ  
+15
+6.1 AGUA PARA CONSUMO HUMANO Y RECURSOS HÍDRICOS 
+16
+6.2 CONTAMINACIÓN DEL AIRE 
+ 
+17
+6.3 INOCUIDAD DE LOS ALIMENTOS 
+18
+6.4 VECTORES Y ROEDORES EN SALUD PÚBLICA  
+19
+6.5 RESIDUOS SÓLIDOS 
+19
+6.6 CONTROL SANITARIO DE LAS ZOONOSIS 
+21
+6.7 SALUD OCUPACIONAL  
+ 
+22
+6.8 SUSTANCIAS Y PRODUCTOS PELIGROSOS PARA LA SALUD 
+23
+6.9 SALUD AMBIENTAL EN EMERGENCIAS Y DESASTRES NATURALES 
+23
+VII. POLÍTICAS NACIONALES DE SALUD AMBIENTAL 2011-2020 
+ 
+25
+
+===== PAGE 9 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 
+ 
+PÁG.
+7.1 PRIMERA POLÍTICA:  
+ASEGURAR LA VIGILANCIA DE LA CALIDAD DEL AGUA DE 
+CONSUMO HUMANO PARA LOS CIUDADANOS DEL PERÚ 
+25
+7.2 SEGUNDA POLÍTICA:  
+GARANTÍA DE LA VIGILANCIA DE LA INOCUIDAD DE LOS 
+ALIMENTOS 
+26
+7.3 TERCERA POLÍTICA:  
+VIGILANCIA 
+DE 
+LA 
+CALIDAD 
+DEL 
+AIRE 
+PARA 
+LOS 
+CIUDADANOS DEL PERÚ 
+27
+7.4 CUARTA POLÍTICA:  
+VIGILANCIA DE PELIGROS Y ALERTAS EN SALUD AMBIENTAL  
+28
+7.5 QUINTA POLÍTICA:  
+FORTALECIMIENTO DE LA DESCENTRALIZACIÓN EN SALUD 
+AMBIENTAL 
+30
+7.6 SEXTA POLÍTICA:  
+GESTIÓN EN SALUD AMBIENTAL EN EMERGENCIAS Y DESASTRES
+31
+VIII. REFERENCIAS BIBLIOGRÁFICAS 
+ 
+32
+ 
+
+===== PAGE 10 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 9 
+ 
+PRESENTACIÓN 
+ 
+ 
+El Ministerio de Salud como organismo rector del Sistema de Salud en el Perú, se 
+encuentra en la actualidad en un Proceso de Reforma Sectorial a través del desarrollo 
+de la estrategia de Descentralización en Salud y Aseguramiento Universal en Salud.  
+ 
+Este 
+proceso 
+de 
+reforma 
+sectorial 
+involucra 
+cambios 
+en 
+la 
+organización, 
+funcionamiento, prestación, financiamiento y del cuidado de la salud de los 
+ciudadanos en el Perú; con ello, se busca esencialmente mejorar el acceso a la 
+atención de salud de los ciudadanos. 
+ 
+En este marco, tenemos la obligación de garantizar la protección de la salud de las 
+personas ante los riesgos en el ambiente; por ello debemos priorizar la atención de los 
+riesgos a la salud que implica la gestión del agua y saneamiento, los residuos sólidos, 
+residuos peligrosos, la contaminación del aire y los riesgos ocupacionales.  
+ 
+En ese sentido, ha sido elaborado el  presente Documento Técnico con la finalidad de 
+contribuir a mejorar el estado de la salud, la calidad de vida de la población y el 
+crecimiento económico del país propiciando un entorno de vida saludable, 
+previniendo la exposición a factores de riesgos sanitarios y ambientales.  
+ 
+En el Documento Técnico Política Nacional de Salud Ambiental 2011 - 2020, se definen 
+el conjunto de lineamientos, objetivos y estrategias que se deben desarrollar en los 
+próximos años, para reducir los riesgos ambientales relacionados a la salud, 
+contribuyendo con ello a mejorar el estado de salud y la calidad de vida de los 
+ciudadanos de Perú. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Edward Cruz Sánchez 
+Director General 
+Dirección De Salud Ambiental.
+
+===== PAGE 11 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 10 
+ 
+INTRODUCCIÓN 
+ 
+La salud de la población refleja el nivel de desarrollo económico y social alcanzado 
+por un país y depende de una serie de factores, entre otros, alimentación inocua y de 
+calidad, vivienda saludable, 
+trabajo 
+digno, educación integral, condiciones 
+ambientales saludables,  por ello es importante resaltar la salud ambiental como una 
+condición indispensable del desarrollo humano y medio fundamental para alcanzar el 
+bienestar individual y colectivo. 
+Las relaciones de causalidad entre el ambiente insalubre o contaminado y la salud 
+humana son múltiples y complejas, reflejándose en el incremento de enfermedades 
+diarreicas y parasitarias por la deficiente disponibilidad de agua y alimentos no seguros 
+para el consumo humano, de las infecciones respiratorias agudas por contaminación 
+del aire, enfermedades transmisibles por la proliferación de vectores y roedores, entre 
+otros. Por ello es necesario que se ejecuten acciones de vigilancia y control que 
+permitan prevenir o mitigar los efectos negativos en la salud de las personas, que 
+usualmente son padecidos por los más pobres. En este contexto, la prevención y 
+protección de la salud de las personas, trasciende al sector salud y requiere de una 
+articulación multisectorial y multilateral.  
+La Salud Ambiental representa una tarea de todos, es de considerarse que el artículo 
+25º de la Declaración Universal de Derechos Humanos establece que toda persona 
+tiene derecho a un nivel de vida adecuado que le asegure, así como a su familia la 
+salud y el bienestar.  
+Asimismo, el numeral 22 del artículo 2º de la Constitución Política del Perú dispone que 
+toda persona tiene derecho a gozar de un ambiente equilibrado y adecuado al 
+desarrollo de su vida; lo que incluye una variada gama de derechos y 
+responsabilidades que incluyen desde la preservación de la naturaleza hasta el control 
+de las sustancias nocivas y la protección de la salubridad.       
+El Acuerdo Nacional es el conjunto de políticas de Estado elaboradas y aprobadas 
+sobre la base del diálogo y del consenso, luego de un proceso de talleres y consultas a 
+nivel nacional, con el fin de definir un rumbo para el desarrollo sostenible del país y 
+afirmar su gobernabilidad democrática. En ese sentido, el Acuerdo Nacional define 
+como Políticas de Estado para el tratamiento multisectorial de la problemática de 
+
+===== PAGE 12 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 11 
+salud ambiental en el Perú la “Reducción de la Pobreza”;  “Acceso Universal a los 
+Servicios de Salud y a la Seguridad Social”, el “Acceso al Empleo Pleno, Digno y 
+Productivo”; la “Promoción de la Seguridad Alimentaria y Nutrición” y  el “Desarrollo 
+Sostenible y Gestión Ambiental”. 
+La Salud Ambiental es un derecho social y como tal es transversal a todos los sectores 
+del Estado. Mediante el Decreto Supremo N° 027-2007-PCM, se han establecido las 
+Políticas Nacionales de obligatorio cumplimiento para las entidades del  Gobierno 
+Nacional, con el propósito de definir objetivos prioritarios, lineamientos y contenidos 
+principales de política pública así como los estándares nacionales de cumplimiento y 
+provisión que deben ser alcanzados para asegurar una adecuada prestación de los 
+servicios y el normal desarrollo de las actividades privadas, entre otras, en materia de 
+descentralización, igualdad de hombres y mujeres, de juventud, en relación a los 
+Pueblos Andinos, Amazónicos, Afroperuanos y Asiáticoperuanos; en relación a 
+personas con discapacidad, en materia de extensión tecnológica, medioambiente y 
+competitividad; aumento de capacidades sociales, en materia de empleo y MYPES; 
+en materia de simplificación administrativa. Las mencionadas Políticas están 
+relacionadas a diversas políticas sectoriales aprobadas. 
+De otro lado, es preciso mencionar que mediante Decreto Supremo Nº 012-2009-
+MINAM se aprobó la “Política Nacional del Ambiente”, cuyo objetivo general es 
+mejorar la calidad de vida de las personas, garantizando la existencia de ecosistemas 
+saludables, viables y funcionales en el largo plazo; y el desarrollo sostenible del país, 
+mediante la prevención, protección y recuperación del ambiente y sus componentes, 
+la conservación y el aprovechamiento sostenible de recursos naturales, de una 
+manera responsable y congruente con el respeto de los derechos fundamentales de 
+la persona.  
+El Ministerio de Salud, como ente rector a través de la Dirección General de Salud 
+Ambiental, viene desarrollando esfuerzos con otros sectores públicos y privados para 
+atender los problemas de salud pública producidos por factores de riesgo ambientales 
+y ocupacionales  generados por actividades productivas o de servicios incluyendo la 
+atención de las emergencias o desastres.  
+El Plan Nacional Concertado de Salud propone trabajar en la protección de la salud 
+de las personas a través de los determinantes de la salud, por tener un gran potencial 
+para reducir los efectos negativos de las enfermedades y promover la salud de la 
+
+===== PAGE 13 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 12 
+población, a través de estilos de vida saludables, condiciones del ambiente 
+saludables, de trabajo y acceso a los servicios sanitarios.  
+La Dirección General de Salud Ambiental, es el órgano de línea técnico – normativo 
+del Ministerio de Salud, a quien le corresponde proponer la Política Nacional de Salud 
+Ambiental, acorde con el artículo 48° del Reglamento de Organización y Funciones del 
+Ministerio de Salud, establecido en el Decreto Supremo N° 023-2005-SA, en los aspectos 
+relacionados a la protección del ambiente para la salud de las personas, de 
+saneamiento básico, de vigilancia y control de vectores, de higiene alimentaria, 
+zoonosis y de vigilancia de la contaminación del ambiente. 
+En ese sentido, a través del presente documento técnico Política Nacional de Salud 
+Ambiental, se definen el conjunto de lineamientos, objetivos y estrategias que se 
+deben desarrollar en los próximos años, para reducir los riesgos ambientales 
+relacionados a la salud, contribuyendo con ello a mejorar el estado de salud y la 
+calidad de vida de los ciudadanos de Perú. 
+
+===== PAGE 14 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 13 
+I. 
+FINALIDAD 
+Contribuir a mejorar el estado de la salud, la calidad de vida de la población y el 
+crecimiento económico del país propiciando un entorno de vida saludable, 
+previniendo la exposición a factores de riesgos sanitarios y ambientales.  
+II. 
+OBJETIVO 
+Establecer la Política Nacional de Salud Ambiental que fortalezca la prevención y 
+el control de riesgos sanitarios y ambientales relacionados a los daños a la salud 
+de los ciudadanos en el marco del proceso de descentralización en salud.  
+III. BASE LEGAL  
+1. 
+Acuerdo Nacional - Política de Estado Perú – 2002. 
+2. 
+Ley Nº 26790, Ley de Modernización de la Seguridad Social en Salud  
+3. 
+Ley Nº 26842, Ley General de Salud. 
+4. 
+Ley N° 27265, Ley de Protección a los Animales Domésticos y a los Animales 
+Silvestres Mantenidos en Cautiverio. 
+5. 
+Ley N° 27314, Ley General de Residuos Sólidos y su modificatoria mediante 
+Decreto Legislativo Nº 1065. 
+6. 
+Ley N° 27596, Ley que Regula el Régimen Jurídico de Canes y su Reglamento. 
+7. 
+Ley Nº 27657, Ley del Ministerio de Salud. 
+8. 
+Ley Nº 27783, Ley de Bases de la Descentralización. 
+9. 
+Ley Nº 27867, Ley Orgánica  de Gobiernos Regionales. 
+10. Ley Nº 28478, Ley del Sistema de Seguridad y Defensa Nacional. 
+11. Ley N° 29338, Ley de Recursos Hídricos. 
+12. Decreto Legislativo N° 1062, que prueba la Ley de Inocuidad de los Alimentos.  
+13. Decreto Supremo Nº 009-97-SA, y su modificación D.S. Nº 003-98-SA, del 
+Reglamento de la Ley de Modernización de la Seguridad Social en Salud.  
+14. Decreto Supremo N° 007-98 SA. que aprueba el Reglamento sobre Vigilancia y 
+Control Sanitario de Alimentos y Bebidas.  
+15. Decreto Supremo Nº 003-98-SA, Normas Técnicas del Seguro Complementario 
+de Trabajo de Riesgo. 
+16. Decreto Supremo Nº 013-2002-SA, que aprueba el Reglamento de la Ley del 
+Ministerio de Salud. 
+17. Decreto Supremo Nº 057-2004-PCM-Reglamentación de la Ley N° 27314 Ley 
+General de Residuos Sólidos. 
+18. Decreto Supremo Nº 023-2005-SA y sus modificatorias, que aprueba el 
+Reglamento de Organización y Funciones del Ministerio de Salud. 
+19. Decreto Supremo N° 034-2009-AG que aprueba el Reglamento de la Ley de 
+Inocuidad de los Alimentos. 
+
+===== PAGE 15 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 14 
+20. Decreto Supremo N° 001-2010-AG que aprueba el Reglamento de la Ley de 
+Recursos Hídricos. 
+21. Resolución Legislativa N° 26407 “Aprueban Acuerdo por el que se establece la 
+Organización Mundial del Comercio y los Acuerdos Comerciales Multilaterales 
+contenidos en el Acta Final de la Ronda Uruguay” – 1995. 
+22. Resolución Ministerial Nº 608-2004/MINSA, Aprueban la Guía Sanitaria sobre 
+Tenencia Responsable de Animales de Compañía.  
+23. Resolución Ministerial Nº 826-2005/MINSA, que aprueba las “Normas para la 
+elaboración de Documentos Normativos del Ministerio de Salud”.  
+24. Resolución Ministerial N° 589-2007/MINSA, que aprobó el “Plan Nacional 
+Concertado de Salud”. 
+IV. ÁMBITO DE APLICACIÓN 
+La Política de Salud Ambiental es de cumplimiento obligatorio para la Autoridad 
+de Salud en sus niveles Nacional, Regional y Local; así como, por las entidades 
+públicas y privadas vinculadas al sector. 
+V. PRINCIPIOS QUE SUSTENTAN LA POLÍTICA DE SALUD AMBIENTAL  
+La Política de Salud Ambiental se sustenta fundamentalmente en los siguientes 
+principios: 
+5.1 RESPETO A LA VIDA EN UN ENTORNO SALUDABLE 
+ 
+La Autoridad de Salud, los agentes productivos y la sociedad en su conjunto, 
+tienen el deber general de actuar respetando y promoviendo el derecho a la 
+vida en un entorno saludable y al consumo de recursos y bienes inocuos, toda 
+vez que la salud ambiental es implícita a las funciones esenciales de salud 
+pública; 
+y 
+como 
+tal, 
+integra 
+el 
+contenido 
+esencial 
+del 
+derecho 
+constitucionalmente reconocido a la salud.  
+5.2 ENFOQUE PREVENTIVO 
+ 
+La Autoridad de Salud competente priorizará las actividades preventivas y de 
+difusión de la Política y Legislación en Salud Ambiental, así como las 
+actividades de los Sistemas de Prevención, Control de Riesgos y  Peligros, 
+involucrando a la sociedad civil organizada.  
+5.3 DECISIONES BASADAS EN EVIDENCIA CIENTÍFICA 
+ 
+Las decisiones en materia de salud ambiental y las medidas para la gestión de 
+los riesgos deben estar sustentadas en la evaluación de los riesgos, así como 
+en la mejor evidencia científica disponible.  
+5.4 FACILITACIÓN DEL COMERCIO QUE FOMENTA LA SALUD  
+ 
+La Autoridad de Salud debe asegurar la inocuidad de los alimentos y 
+productos libres de sustancias nocivas que son objeto del comercio nacional 
+e internacional, favoreciendo el intercambio comercial. 
+
+===== PAGE 16 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 15 
+5.5 TRANSPARENCIA Y PARTICIPACIÓN 
+ 
+La población y los agentes productivos deben disponer de mecanismos de 
+participación adecuados y de fácil acceso en temas de salud ambiental, 
+siendo deber de las Autoridades de Salud de nivel Nacional, Regional y Local 
+brindar de manera oportuna, confiable y transparente, toda la información 
+necesaria para que puedan ejercer dicha participación. 
+VI. SITUACIÓN DE LA SALUD AMBIENTAL EN EL PERÚ 
+El Perú tiene una extensión territorial de 1, 285,216 km2 divididos en tres grandes 
+regiones naturales (Costa, Sierra y Selva) y 84 zonas de vida de las 103 existentes 
+en el mundo. 
+Se define como un país multicultural, plurilingüe, multiétnico, de diversidad 
+geográfica, lo que da una idea de la enorme complejidad natural, histórica y 
+social que ha ido conformando la realidad actual del país.  
+Enfermedades con la mayor contribución causal del medio ambiente  
+(OMS  2006) 
+ 
+Fuente: La barra verde oscura más la barra verde clara del diagrama representan la carga de morbilidad total. 
+Retraso mental (causado por el plomo), tal como se define en la lista de enfermedades de la OMS correspondiente a 
+2002, accesible en Internet (www.who.int/evidence). 
+AVAD: una medida ponderada de la mortalidad, la morbilidad y la discapacidad. 
+En el año 2006, la OMS, reportó que de las 102 enfermedades, grupos de 
+enfermedades y traumatismos a nivel mundial, los factores ambientales y 
+ocupacionales contribuyeron a la carga de morbilidad en 85 categorías. 
+
+===== PAGE 17 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 16 
+Asimismo, en regiones en desarrollo el 25% de la carga de mortalidad eran 
+atribuibles a factores ambientales y ocupacionales, mientras que en regiones 
+desarrolladas sólo el 17% se atribuye a estas causas. Las enfermedades con la 
+mayor carga absoluta atribuible a estos factores son la diarrea, las infecciones de 
+las vías respiratorias inferiores, las lesiones accidentales, la malaria, el retraso 
+mental causado por plomo, etc.1 
+La población peruana asciende aproximadamente a 28 millones de habitantes, 
+de los cuales casi el 75% reside en áreas urbanas, en dicho contexto, los 
+problemas ambientales y ocupacionales generados en las grandes ciudades y 
+áreas rurales, debido a los inadecuados e insuficientes sistemas de abastecimiento 
+de agua y de saneamiento, manejo inadecuado del medio ambiente y/o 
+desarrollo de proyectos sin el adecuado estudio de impacto ambiental que 
+incluyan estudios de línea base en salud, así como los malos hábitos de higiene y 
+desconocimiento por parte de los pobladores, actividades antropogénicas, 
+patrones culturales que han producido consecuencias que incluyen entre otros la 
+presencia de diversas enfermedades como las diarreicas, malaria, dengue, 
+enfermedad de chagas, transmisión de zoonosis, entre otras, así como la 
+generación de conflictos socio ambientales. 
+6.1 AGUA PARA CONSUMO HUMANO Y RECURSOS HÍDRICOS 
+A nivel de País se tiene una cobertura de servicio de agua del 75% que 
+representa una población atendida de 20, 428,042 habitantes; representando 
+una población de 16, 433,881 y 3, 999,161 en área urbana y rural 
+respectivamente. Sin embargo un aspecto muy importante al margen de la 
+cobertura es la calidad del agua y el riesgo asociado a los agentes biológicos 
+patogénicos que podrían estar presentes, así como los agentes químicos que 
+ocasionan graves problemas de salud, no sólo por la cronicidad de sus 
+efectos, sino también por la falta de capacidad de los servicios de atención 
+de salud para diagnosticar y tratar este tipo de patologías.  
+La cobertura del tratamiento de aguas residuales es bastante baja y 
+representa el principal riesgo sanitario; a nivel nacional sólo el 18% de los 
+desagües se tratan, situación que contribuye directamente con la calidad de 
+los recursos hídricos por disponerse directamente al mar, con tratamientos 
+insuficientes. Este problema debe revertirse en el menor plazo posible, para 
+ello es importante intensificar la vigilancia de la calidad del agua de consumo 
+humano y evaluar la disposición sanitaria de las excretas. 
+En cuanto a los recursos hídricos, sus principales fuentes de contaminación son 
+las descargas directas de aguas servidas domesticas e industriales, así como 
+productos químicos entre otros. En el País hay un déficit generalizado del 
+tratamiento adecuado de las aguas servidas para su disposición sanitaria en 
+el cuerpo receptor, salvo, en algunos casos, que se da en las industrias 
+                                                          
+1 Pruus-Unstun & C. Corvalán. 2006. Ambientes Saludables y Prevención de enfermedades. OMS. 
+16 pp. 
+
+===== PAGE 18 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 17 
+formales con relación al tratamiento de los desechos industriales más tóxicos, 
+ existiendo aún un gran porcentaje de industrias informales. 
+El vertimiento de desechos sólidos en los cuerpos de agua cercanos a los 
+centros urbanos y zonas rurales, así como su exposición en vertederos abiertos, 
+son también otras fuentes comunes de contaminación. 
+En el año 2009, la vigilancia sanitaria de la calidad de los recursos hídricos, ha 
+evaluado 455 recursos hídricos, entre lagos, lagunas, bahías, esteros y ríos 
+principalmente, de los cuales el 40% superó los valores límites establecidos, 
+principalmente 
+en 
+contaminación 
+bacteriana 
+(coliformes 
+totales 
+y 
+termotolerantes), carga orgánica (demanda bioquímica de oxigeno – DBO) y 
+aceites y grasas en recursos hídricos de la costa y metales entre los cuales 
+predomina el plomo y en menor porcentaje el cobre y arsénico en la zonas 
+de la actividad minera en la Sierra, en tanto el mercurio constituye un 
+parámetro crítico en los ríos de Madre de Dios, debido a la presencia de la 
+minería informal.  
+En la región Selva donde predomina la actividad de exploración y 
+explotación de hidrocarburos se encontró la presencia de aceites y grasas e 
+hidrocarburos totales de petróleo. 
+6.2 CONTAMINACIÓN DEL AIRE 
+La contaminación del aire afecta la salud, nutrición y capacidades de la 
+gente aumentando su vulnerabilidad e intensificando las condiciones de 
+pobreza de las mismas. Según la Encuesta Demográfica y de Salud del Perú 
+del año 2000, alrededor de 87% de los hogares rurales y el 11% de los hogares 
+urbanos del Perú queman combustibles tradicionales como madera, carbón 
+vegetal, derivados del carbón y estiércol para satisfacer sus necesidades 
+domesticas. Según el Análisis Ambiental de País realizado por el Banco 
+Mundial en coordinación con el CONAM, se calcula que en el Perú la 
+contaminación del aire es responsable de 3,900 fallecimientos prematuros y 
+de 3,800 nuevos casos de bronquitis crónica al año.  
+El transporte es causante de las mayores emisiones de CO2 (31%), NO2 (67%) y 
+CO (70%) a nivel nacional. La producción de metales es causante por su lado 
+de las mayores emisiones de Plomo (97%) y SO (82%) a nivel nacional y el 
+segundo en las emisiones de CO2 (18%) y CO (13%), a través de la minería 
+formal y artesanal. 
+En ciudades como Chimbote y Pisco, la principal causa de la contaminación 
+por material particulado, SO2 y H2S es la industria pesquera. En Arequipa el 
+total de las emisiones de origen antropogénico emitidas en la cuenca 
+atmosférica de Arequipa son 87,416 toneladas al año aproximadamente, de 
+las cuales el 78% son generadas por las emisiones vehiculares y el 22% son 
+generadas por emisiones de fuentes estacionarias. En Huancayo el inventario 
+de emisiones contaminantes realizado por el gesta zonal (grupo de estudio 
+técnico ambiental) de dicha ciudad, indica que el total de emisiones 
+
+===== PAGE 19 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 18 
+asciende a 35,320 TM/año, el 56.5% corresponde a CO (19,939 TM/año) y el 
+21.7% a NO2 (7,675 TM/año). Las fuentes móviles son el 92.5% del total de 
+emisiones, de las que el 30.6% corresponde a los automóviles. El detalle es 
+revelador pues corresponde a una ciudad ubicada en altura. 
+Según el diagnóstico de línea base estipulado en el Reglamento de 
+Estándares Nacionales de Calidad Ambiental del aire, según Decreto 
+Supremo N° 074-2001-PCM, se han realizado el monitoreo de calidad del aire 
+en 13 ciudades prioritarias (Arequipa, Chimbote, Chiclayo, Huancayo, Ilo, la 
+Oroya, Lima, Callao, Cerro de Pasco, Piura, Pisco, Iquitos, Cusco y Trujillo). De 
+los resultados obtenidos se encontró que en dichas ciudades se exceden, por 
+algunos días, los estándares de calidad ambiental del Aire referidos al 
+contaminante material particulado menor a 10 micras y 2.5 micras (valor 
+referencial).  
+En lo referente a contaminantes gaseosos, solamente en la ciudad de la 
+Oroya se encuentran elevados niveles de dióxido de azufre, mientras que en 
+las demás ciudades prioritarias los valores de contaminantes gaseosos se 
+encuentran por debajo de los estándares de calidad ambiental del aire para 
+dióxido de azufre y dióxido de nitrógeno. 
+6.3 INOCUIDAD DE LOS ALIMENTOS  
+A nivel mundial, el 33% de las enfermedades transmisibles, son ocasionadas 
+por el consumo de alimentos contaminados (Enfermedades Transmisibles por 
+los Alimentos – ETAs y del total de enfermedades diarreicas agudas – EDAs), 
+cuyo promedio es de 1,500 millones de casos anuales, el 70% se vincula a 
+causas alimentarias. Las ETAs son la segunda causa de mortalidad infantil en 
+niños menores de 5 años y en el mundo mueren más de 480,000/año.  
+En el contexto internacional, surge preocupación por nuevos peligros 
+alimentarios que ocasionan las alertas llamadas “Crisis Alimentarias”, como la 
+de la Unión Europea (UE) por la Encefalopatía Espongiforme Bovina (EEB), o 
+enfermedad de las “vacas locas”; la presencia de dioxina en alimentos y 
+piensos (Bélgica) y recientemente en China la crisis por leche contaminada 
+intencionalmente con melamina.  
+En el Perú, se registran anualmente cerca de 1, 700,000 casos de 
+enfermedades infecciosas intestinales (2008), y constituye la tercera causa de 
+morbilidad, las mismas que guardan relación con una inadecuada 
+manipulación de los alimentos en el hogar, dentro de los servicios de 
+alimentación, micro y  pequeñas empresas, entre otros.  
+Desde la 53° Asamblea Mundial de la Salud - 2000, se insta a la OMS y a sus 
+Estados Miembros a reconocer la inocuidad de los alimentos como un 
+aspecto esencial de la salud pública. En tal sentido, el país orienta esfuerzos 
+hacia una regulación moderna, armonizada con el Codex Alimentarius, con 
+un enfoque de autocontrol sanitario en la cadena alimentaria, para lo cual la 
+Ley de Inocuidad de los Alimentos crea la Comisión Multisectorial Permanente 
+
+===== PAGE 20 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 19 
+de Inocuidad Alimentaria - COMPIAL, instancia de coordinación intrasectorial 
+dándose especial énfasis a la incorporación de nuestros alimentos en el 
+mercado internacional en el marco de los Tratados de Libre Comercio - TLC. 
+6.4 VECTORES Y ROEDORES EN SALUD PÚBLICA 
+Las deficiencias en saneamiento básico y por ende el deterioro de la calidad 
+de vida de la población en las grandes ciudades, los cambios eco sistémicos 
+relacionados al cambio climático y el desconocimiento del riesgo o falta de 
+buenos hábitos de higiene de la población, crean las condiciones favorables 
+para la ocurrencia de enfermedades transmitidas por vectores – ETVs, como 
+la malaria, dengue, etc., y la aparición de plagas de roedores que transmiten 
+otras enfermedades, de importancia en salud pública.   
+El control de estas enfermedades tiene un importante costo para el Estado, 
+pero además el impacto económico de éstas recae en especial en las 
+familias que habitan en áreas endémicas. Se estima que alrededor del 60% de 
+peruanos reside en diferentes estratos de riesgo de estas enfermedades.  
+La malaria, dengue, bartonelosis, leishmaniosis y tripanosomiasis son las 
+principales enfermedades transmitidas por vectores (ETV), que se constituyen 
+en verdaderos problemas de salud pública. En los últimos años estas 
+enfermedades han incidido en diversas zonas del país, constituyendo 
+principales problemas a abordar desde los servicios y la población por la 
+elevada mortalidad y letalidad que han venido mostrando.  
+La forma clásica de control vectorial, se da a través de la aplicación de 
+insecticidas, sin embargo en los últimos años el Instituto Nacional de Salud 
+viene reportando que algunos vectores ya han desarrollado o están en 
+proceso de desarrollo de resistencia a los plaguicidas que son utilizados para 
+el control vectorial, lo cual limita la eficacia de este tipo de intervenciones. 
+6.5 RESIDUOS SÓLIDOS 
+A nivel Nacional se estima que se genera alrededor de 22, 475,79 toneladas 
+diarias de residuos sólidos del ámbito municipal (generación per cápita 
+promedio de 1,08 kg/hab/día)2. Lima se encuentra en primer lugar de 
+generación diaria con alrededor de 8, 938.57 toneladas2, sin embargo la 
+cobertura de servicios es muy baja, se recolecta aproximadamente el 70% y 
+sólo el 65% tiene alguna disposición final. No obstante la cobertura de la 
+disposición final de residuos sólidos en rellenos sanitarios autorizados a nivel 
+nacional está en el 26%, disponiéndose en un 46% de residuos sólidos en 
+botaderos a cielo abierto sin las mínimas consideraciones técnicas sanitarias y 
+de seguridad, situación que pone en riesgo la salud pública, debido a los 
+                                                          
+2 Informe de EVALUACIÓN DE LA GESTIÓN DE LOS RESIDUOS SÓLIDOS EN EL PERÚ, elaborado por 
+el Ministerio del Ambiente el año 2008 
+
+===== PAGE 21 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 20 
+olores molestos por los gases que se generan a causa de la descomposición 
+de los componentes orgánicos de los residuos, proliferación de vectores y 
+roedores, y a la falta de Sistemas de Recolección y/o Tratamiento de 
+Lixiviados, entre otros, deteriorando la calidad ambiental (aire, agua, suelo). 
+Por ello es necesario el fortalecimiento del Sistema de Vigilancia Sanitaria del 
+manejo de residuos sólidos municipales en el marco de la legislación actual. 
+En el país la producción per cápita de residuos sólidos domiciliarios en 
+promedio es de aproximadamente 0.796 kilos por persona y por día, de los 
+cuales el 55% es materia orgánica, mientras que los materiales altamente 
+reciclables como el papel, cartón, plásticos, metales, textiles, cueros, caucho 
+y maderas representan el 26%, si los todos estos residuos sólidos se 
+reaprovecharían sólo el 19% debería disponerse en un relleno sanitario.  
+Los residuos sólidos que se generan en los establecimientos de salud y en los 
+servicios médicos de apoyo son producto de las actividades asistenciales y 
+constituyen un potencial peligro de daño para la salud de las personas. Estos 
+residuos, tienen un componente importante de residuos comunes y una 
+proporción de residuos peligrosos (biocontaminados  y especiales).  El peligro 
+de los residuos sólidos biocontaminados radica en las características 
+patogénicas propias de las secreciones, fluidos corporales, piezas anátomo 
+patológicas, residuos de cultivos de laboratorio y además se tienen los 
+residuos sólidos punzo cortantes; asimismo, entre los residuos sólidos especiales 
+se encuentran las sustancias químicas y radiactivas. 
+Actualmente, el manejo de los residuos sólidos a nivel Nacional está 
+concitando el interés de las instituciones públicas y privadas, impulsado por el 
+desarrollo de la seguridad y salud en el trabajo hospitalario, la protección al 
+ambiente y la calidad en los servicios de salud. El inadecuado manejo de los 
+residuos sólidos ocasiona situaciones de peligro desde la generación hasta la 
+disposición final, por falta de capacitación y sensibilización en el personal de 
+salud al realizar la segregación de los residuos sólidos, al no contar con los 
+insumos y materiales adecuados, el no disponer de áreas de almacenamiento 
+de acuerdo con la normativa y sobre todo no contar con sistemas de 
+tratamiento de residuos sólidos biocontaminados (solo 04 regiones cuentan 
+con Sistema de Tratamiento por Autoclave; Lima – Hospital Sergio Bernales, La 
+Libertad - Hospital Regional de Trujillo, Loreto - Hospital Regional de Iquitos, 
+Cuzco - Hospital Regional del Cuzco); asimismo, hay insuficientes rellenos de 
+seguridad para la disposición final de los  residuos peligrosos biocontaminados 
+(solo 03 regiones cuentan con rellenos de seguridad; Piura, Lima y 
+Cajamarca).        
+Para contribuir con el control de los riesgos de daño a la salud de las personas 
+expuestas en los establecimientos de salud y servicios médicos. El Ministerio de 
+Salud, en el marco del Programa de Fortalecimiento de los Servicios de Salud, 
+ha realizado desde el año 1995, un “Diagnóstico Situacional del Manejo de los 
+Residuos Sólidos de Hospitales Administrados por el Ministerio de Salud”, ha 
+elaborado el documento técnico sobre “Tecnologías de Tratamiento de 
+
+===== PAGE 22 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 21 
+Residuos Sólidos de Establecimientos de Salud y Servicios Médicos de Apoyo”, 
+realiza la asistencia técnica sobre el marco normativo y los aspectos técnicos 
+del manejo de residuos sólidos, asimismo, la Dirección General de Salud 
+Ambiental elaboró, dada la importancia del tema, el “Plan Nacional de 
+Gestión  de Residuos en Establecimientos de Salud y Servicios Médicos de 
+Apoyo 2010-2012”, con la finalidad de evaluar y supervisar la gestión y el 
+manejo de los residuos sólidos y evitar el contagio de enfermedades en las 
+personas expuestas en los establecimientos públicos del Ministerio de Salud a 
+nivel nacional, el cual fue aprobado con Resolución Ministerial N° 373-
+2010/MINSA.  
+La implementación de éste Plan Nacional tendrá un impacto favorable en la 
+Salud Pública y en el ambiente. Cabe señalar que la implementación de este 
+Plan se inicia en el año 2010 con la asistencia técnica y capacitación a 3,145 
+trabajadores de salud en 16 hospitales referenciales de Lima, siguiendo con la 
+dotación de insumos y materiales a fin de mejorar el manejo de residuos 
+sólidos en dichos establecimientos de salud.  
+Para el año 2011 se continuará con la implementación del “Plan Nacional de 
+Gestión de Residuos en Establecimientos de Salud y Servicios Médicos de 
+Apoyo 2010-2012”, en 12 regiones a nivel nacional; Tumbes, Lambayeque, 
+Piura, San Martín, Madre de Dios, Ica, Huancavelica, Ayacucho, Amazonas, 
+Abancay, Tacna y Junín.   
+6.6 CONTROL SANITARIO DE LAS ZOONOSIS 
+Las deficiencias en la calidad de vida de la población, el cambio climático, el 
+desconocimiento del riesgo, la deficiencia en los hábitos de higiene, sumado 
+a las malas prácticas en la crianza de animales domésticos y tenencia de 
+animales de compañía, crean condiciones para la presencia de factores de 
+riesgo relacionados a las zoonosis. Así tenemos, rabia, peste, carbunco, 
+leptospirosis, 
+brucelosis, 
+toxoplasmosis, 
+zoonosis 
+alimentarias 
+que 
+comprometen la inocuidad de los alimentos, y las consideradas por la OMS 
+como “desatendidas”: fasciolasis, equinococcosis quística o hidatidosis y el 
+complejo teniasis - cisticercosis, que afectan principalmente a poblaciones 
+vulnerables.  
+En la última década, la rabia urbana transmitida por los canes muestra un  
+marcado descenso, no registra ningún caso en el 2001 - 2004 solo con casos 
+aislados en el 2005 (Chucuito - Puno) y en el 2006 (San Román – Puno) y desde 
+el año 2007 al 2009 no se han registrado casos3. La DIGESA ha venido 
+desarrollando estrategias para la prevención y control de la rabia urbana, 
+tales como la “Tenencia responsable de animales de compañía” y la 
+“Vacunación masiva de la población canina”, realizada a través de 
+campañas anuales y en forma gratuita, alcanzando coberturas de 1, 108,599 
+                                                          
+3 Declaración y Mantenimiento de Territorios libres de rabia canina en el Perú, Proyecto de 
+Cooperación Técnica Chile-Perú-OPS: Perú Abril 2010 
+
+===== PAGE 23 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 22 
+canes vacunados4 en el 2008 representando un 36.59% y 2, 152,864 canes 
+vacunados en el 2009 representando un 62.93%.  
+Sin embargo la rabia transmitida por el murciélago hematófago se ha venido 
+presentando principalmente en la Selva, con 204 casos de rabia humana en 
+el periodo 2002-2009, en los departamentos  de Amazonas, Loreto, Ayacucho 
+y Madre de Dios, donde se reportó el último caso4. 
+Las llamadas zoonosis “desatendidas” teniasis-cisticercosis y leptospirosis son 
+prevalentes en comunidades con deficiente saneamiento básico, expuestas 
+por prácticas inseguras en el consumo de alimentos. La tasa por 100 000 
+habitantes de cisticercosis humana en la Costa es de 34, en la Sierra de 28,4, 
+en Selva Alta de 46,7 y en Selva Baja 55,8. Estudios de investigación nos 
+muestran que la leptospirosis tiene alta tasa de prevalencia5 siendo la mayor 
+en Ayacucho 30.6%, Lima 11.1%, Loreto 21.6%, Cusco 14.8% y Madre de Dios 
+11.6%. En cuanto a la brucelosis, se asocia principalmente a la elaboración 
+artesanal de quesos a partir de leche sin pasteurizar y al comercio informal. 
+6.7 SALUD OCUPACIONAL 
+La Salud Ocupacional comprende a la PEA (8, 339,455 hombres y 6, 711,779 
+mujeres) haciendo un total de 15, 051,234  personas. Asimismo, de un total de 
+2, 518,617 MYPES; 648,147 son formales, lo que representa el 26%, y 1, 860,470 
+son informales, lo que representa el 74%, los cuales en su mayoría 
+corresponden a un sector de la población atendida por el Ministerio de Salud.  
+Por otro lado, se ha identificado como población vulnerable expuesta a 
+factores de riesgo en el ambiente de trabajo a 160,000 Trabajadores de Salud 
+a nivel nacional aproximadamente6, para los cuales el Ministerio de Salud 
+viene desarrollando el Plan Nacional de Prevención del VHB, VIH y la TB, por 
+Riesgo Ocupacional en los Trabajadores de Salud 2010 - 2015, que tiene por 
+finalidad proteger la salud de los Trabajadores de Salud y fortalecer la 
+atención de los Servicios de Salud del Perú a través de una gestión inclusiva 
+de la salud ocupacional en los establecimientos de salud en el ámbito 
+nacional, regional y local. 
+En los servicios públicos de salud se han reportado en el periodo del año 2004 
+al 2009 un total de 27,634 accidentes de trabajo los que son registrados en los 
+establecimientos de salud7.  
+De otro lado, el Ministerio de Salud viene aplicando la Matriz de Exposición 
+Potencial a Polvo de Sílice. De un total de 978,867 trabajadores de las 
+                                                          
+4  Reporte de las DISAs y DIRESAs del Ministerio de Salud 
+5  Instituto Nacional Salud - Ministerio de Salud. Perú 
+6  Resolución Ministerial N° 768-2010/MINSA, que aprueba el Plan nacional de Prevención del VHB, 
+VIH y la TB por Riesgo ocupacional en los Trabajadores de salud 2010-2015 
+7 Sistema de Vigilancia de Salud Ocupacional (SIVISO) de la Dirección de Salud Ocupacional-
+DIGESA/MINSA, 2010. 
+
+===== PAGE 24 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 23 
+diferentes actividades económicas 359,089 trabajadores8 estarían expuestos a 
+polvo de sílice (SiO2), agente mineral involucrado en la neumoconiosis. 
+La silicosis, una antigua enfermedad profesional, de carácter grave, 
+potencialmente mortal, irreversible y comúnmente progresiva, que se 
+produce por la inhalación de polvo que contiene sílice (SiO2); es una 
+enfermedad ocupacional reconocida como uno de los problemas prioritarios 
+de salud ocupacional en el mundo, lo que plantea el reto de enfrentar esta 
+problemática. 
+6.8 SUSTANCIAS Y PRODUCTOS PELIGROSOS PARA LA SALUD 
+Una gran preocupación en el Perú es el riesgo para la salud pública que se 
+genera por la exposición continua a productos químicos contenidos en las 
+aguas residuales, los residuos sólidos peligrosos (industriales y hospitalarios), 
+productos (juguetes, útiles de escritorio, útiles escolares) y las emisiones a la 
+atmósfera causadas por las industrias y otras actividades económicas y de 
+servicios, generando intoxicaciones crónicas que afectan severamente el 
+desarrollo humano, especialmente en los grupos más vulnerables como son 
+los niños y población de tercera edad, en zonas con alto índice de pobreza. 
+Estos factores de riesgo incrementan la morbilidad por enfermedades 
+crónicas, de ahí la importancia de ser tomados en cuenta. Los principales 
+daños a la salud por exposición crónica al plomo son la disminución del 
+desarrollo psicomotriz de los niños especialmente los menores de 6 años, con 
+efectos sobre el nivel del coeficiente intelectual, incremento de la anemia, el 
+bajo peso y la disminución del crecimiento. Las intoxicaciones crónicas 
+reportadas con mayor frecuencia en nuestro medio son: plomo, mercurio, 
+arsénico, cobre y aluminio.  
+Además mientras la exposición del plomo en la primera infancia disminuye 
+entre 1 y 2 puntos el valor medio del cociente intelectual, un poco más de 2 
+mil niños sufren anualmente una pérdida del cociente intelectual suficiente 
+para causar retrasos mentales ligeros9. Se calcula que el Perú pierde cada 
+año, debido a estos factores de riesgo ambiental, 210 mil años de vida 
+ajustados por discapacidad, una pérdida enorme para una economía con un 
+capital humano limitado9.  
+Los determinantes ambientales que pueden afectar directamente a la salud 
+de las personas pueden aparecer tanto de fuentes naturales como causadas 
+por el ser humano. 
+ 
+ 
+                                                          
+8 Dirección de Salud Ocupacional-DIGESA/MINSA - Matriz de Exposición Potencial a Polvo de 
+Sílice, 2010. 
+9 Informe  del Banco Mundial. Política de Salud Ambiental, Ernesto Sánchez Triana y Yewande 
+Awe, 2006. http://www.bvsde.paho.org/bvsacd/cd66/ErnestoSanchez.pdf 
+
+===== PAGE 25 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 24 
+6.9 SALUD AMBIENTAL EN EMERGENCIAS Y DESASTRES 
+Dado el hecho que el Perú está ubicado en una zona geográficamente 
+vulnerable a desastres naturales y emergencias, es propenso a eventos 
+adversos como sismos, lluvias torrenciales con los consecuentes aluviones, 
+deslizamientos y derrumbes, friajes en la zona de sierra, generando falta o 
+deterioro de la calidad del agua para consumo humano, así como 
+inadecuada disposición sanitaria de los residuos sólidos domésticos, 
+escombros, 
+residuos 
+peligrosos 
+entre 
+otros, 
+pudiendo 
+ocasionar 
+la 
+contaminación de cursos de agua, áreas de cultivo agrícola y por ende de 
+los alimentos, además de la presencia no controlada de vectores y roedores, 
+que impactan en la vida y salud de la población. 
+Los recientes sismos de gran magnitud ocurridos en Sud América y en el Perú, 
+pueden volver a ocurrir en cualquier momento; cabe recordar el sismo de 
+magnitud 7.9 grados en la escala de Richter ocurrido el 15 de agosto de 2007, 
+cuyo epicentro se localizó en el mar de Pisco, departamento de Ica, 
+causando graves daños en varios departamentos del sur del país. En el 
+mencionado suceso resultaron afectadas 21 provincias y 148 distritos, con 
+655,674 personas entre damnificadas y afectadas, un total de 596 fallecidos y 
+pérdidas millonarias en daños materiales.  
+Durante el año 2008, se registraron un total de cuatro mil quinientas noventa y 
+nueve emergencias ocasionadas por la ocurrencia de fenómenos naturales, 
+a nivel nacional, dejando un saldo de un millón cuatrocientos sesenta y 
+cuatro mil veintinueve personas entre damnificadas y afectadas, ciento 
+setenta y un mil seiscientos treinta y tres viviendas afectadas y destruidas y 
+ciento veintidós mil quinientos cuarenta y cuatro hectáreas de cultivo 
+afectadas. Apurímac fue la región con mayor número de emergencias, 
+registró un total de 508, y la que registró el menor número de eventos fue la 
+Libertad con 18 emergencias. 
+El Perú en la última década viene sufriendo los efectos de heladas y friajes, 
+que vienen afectando con severidad a las poblaciones andinas y selváticas 
+del Perú causando daños a las poblaciones de más de 10 regiones del país 
+dejando un saldo de más de 455 mil personas entre damnificadas y afectadas 
+en el año 2008. Igualmente al inicio del año 2010 las precipitaciones fluviales 
+se intensificaron ocasionando aluviones, inundaciones y deslizamientos en 
+diferentes ámbitos del departamento del Cusco, lo que impidió el ingreso a la 
+ciudadela de Machu Picchu con graves daños al turismo10. 
+ 
+ 
+ 
+                                                          
+10  Fuente: INDECI – Compendios Estadísticos para la atención y prevención de desastres 
+
+===== PAGE 26 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 25 
+VII. POLÍTICAS NACIONALES DE SALUD AMBIENTAL 2011 - 2020 
+7.1 PRIMERA POLÍTICA:  
+ASEGURAR LA VIGILANCIA DE LA CALIDAD DEL AGUA DE CONSUMO 
+HUMANO PARA LOS CIUDADANOS DEL PERÚ  
+La Autoridad de Salud participa en la gestión para asegurar la calidad y la 
+inocuidad del agua para consumo humano, para ello se deberá fortalecer 
+la vigilancia y fiscalización sanitaria del agua para consumo humano a 
+través de la supervisión del cumplimiento de los planes de control de 
+calidad y adecuación sanitaria, así como, de la supervisión del 
+cumplimiento de los límites máximos permisibles de los parámetros 
+microbiológicos y parasitológicos y de sustancias orgánicas e inorgánicas. 
+Para ello es necesario desarrollar un Sistema de Vigilancia de la Calidad de 
+agua de consumo humano adecuado a la realidad geográfica del país. 
+Asimismo, 
+se 
+deberá 
+promover 
+complementariamente el 
+uso 
+de 
+tecnologías que favorezcan el tratamiento intradomiciliario del agua 
+priorizando poblaciones excluidas y dispersas en situación de pobreza.  
+7.1.1 
+Objetivo Estratégico 
+Asegurar la vigilancia sanitaria del agua para consumo humano y 
+su sostenibilidad en el tiempo, para la protección de la salud, 
+exigiendo el cumplimiento de los parámetros microbiológicos, 
+parasitológicos, químicos, físicos y organolépticos, aprobados por la 
+Autoridad de Salud. 
+Estrategias: 
+1. 
+Implementación y desarrollo de planes articulados para el 
+fortalecimiento de la vigilancia de la calidad de agua de 
+consumo 
+humano 
+en 
+coordinación 
+con 
+los 
+Gobiernos 
+Regionales y Locales. 
+2. 
+Vigilancia de la calidad de agua de consumo humano y la 
+comunicación de riesgos sanitarios. 
+3. 
+Utilización 
+de 
+tecnologías 
+apropiadas 
+de 
+tratamiento 
+intradomiciliario del agua en poblaciones excluidas y dispersas. 
+4. 
+Participación activa de la población en las acciones de 
+vigilancia de la calidad del agua, difundiendo en la población 
+la necesidad e importancia del consumo del agua segura. 
+5. 
+Coordinación intersectorial e intergubernamental entre los 3 
+niveles de Gobierno Nacional, Regional y Local para mejorar la 
+asignación de recursos y capacitación  de recursos humanos 
+del Sector Salud, para revertir las condiciones de riesgo 
+
+===== PAGE 27 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 26 
+sanitario de los sistemas de abastecimiento de agua para 
+consumo humano. 
+7.2 SEGUNDA POLÍTICA:  
+GARANTÍA DE LA VIGILANCIA DE LA INOCUIDAD DE LOS ALIMENTOS  
+Garantizar la Vigilancia de los Alimentos que se consumen en el país con la 
+finalidad que los mismos sean inocuos e impedir la transmisión de daños a 
+la salud, para ello se deberá promover que la producción, la 
+comercialización, importación y exportación se realicen de acuerdo a las 
+normas nacionales armonizadas con las del Codex Alimentarius y en el 
+marco de los acuerdos de medidas sanitarias y fitosanitarias (MSF). 
+Se requiere una activa colaboración público – privada, a partir de los roles 
+y responsabilidades de cada actor. Así, los distintos actores de la cadena 
+alimentaria de producción son los responsables principales de proporcionar 
+alimentos inocuos y aptos para el consumo desarrollando los mecanismos 
+de prevención y control que le permitan cumplir las regulaciones y 
+requerimientos de los distintos mercados. 
+Esta Política constituye el marco de acción a partir del cual se desarrollará 
+un moderno e integrado sistema nacional para la inocuidad de los 
+alimentos, estableciéndose explícitamente los objetivos, lineamientos 
+estratégicos y las prioridades que el país tiene en este ámbito. Ello 
+posibilitará una acción más coherente, eficiente y participativa así como 
+un desempeño más articulado e integrado de los distintos actores, públicos 
+y privados.  
+7.2.1 
+Objetivo Estratégico 
+Garantizar la vigilancia de la inocuidad de los alimentos 
+producidos, comercializados y exportados en el país con el fin de 
+asegurar una protección de la salud de las personas y de los 
+derechos de los consumidores además de favorecer el desarrollo 
+competitivo y exportador de la industria de los alimentos. Esto a 
+través de un moderno, integrado, eficiente y transparente sistema 
+nacional de inocuidad de los alimentos.  
+Estrategias: 
+1. 
+Desarrollar y fortalecer Sistemas de Vigilancia de peligros en 
+alimentos y de alerta sanitaria.  
+2. 
+Perfeccionar el marco regulatorio haciéndolo más consistente 
+con el objetivo de proteger la salud de las personas y los 
+derechos de los consumidores, en concordancia con el Codex 
+Alimentarius. 
+
+===== PAGE 28 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 27 
+3. 
+Desarrollar las capacidades técnicas y sanitarias necesarias 
+para hacer más consistente y eficiente la evaluación y gestión 
+de los riesgos alimentarios. 
+4. 
+Modernizar los sistemas de vigilancia y control sanitario de los 
+alimentos de tal forma que sean preventivos e integrados y con 
+mayor capacidad de respuesta ante crisis alimentarias. 
+5. 
+Mejoramiento de procesos de control y certificación de las 
+exportaciones 
+y 
+actualización 
+de 
+procedimientos 
+de 
+autorización sanitaria de alimentos. 
+6. 
+Desarrollar sistemas de análisis de riesgos para la conducción 
+de la vigilancia de la inocuidad de los alimentos con un 
+enfoque sistémico.  
+7.3 TERCERA POLÍTICA:  
+VIGILANCIA DE LA CALIDAD DEL AIRE PARA LOS CIUDADANOS DEL 
+PERÚ 
+La Autoridad de Salud debe regular un conjunto de estándares de calidad 
+de aire relacionados a la salud, así como desarrollar estudios nacionales de 
+costo efectividad que asocien contaminación del aire y daños a la salud 
+que permitan establecer estrategias e intervenciones específicas de 
+mejora de la calidad de aire para la protección de la salud. 
+7.3.1 
+Objetivo Estratégico 
+Garantizar la vigilancia de la calidad sanitaria del aire bajo 
+estándares establecidos por  la Autoridad de Salud, que disminuya 
+los riesgos a la salud de los ciudadanos.  
+Estrategias: 
+1. 
+Vigilancia de la calidad sanitaria del aire que permita 
+implementar estados de alerta en los principales centros 
+urbanos del país, a través de un sistema de telemetría. 
+2. 
+Investigación operativa de costo efectividad o de costos en 
+salud en general que relacionen contaminación ambiental con 
+daños a la salud de los ciudadanos. 
+3. 
+Promover que los Gobiernos Regionales y Locales desarrollen la 
+infraestructura y equipamiento para la vigilancia de la calidad 
+del aire. 
+4. 
+Desarrollar capacidades técnicas en los recursos humanos del 
+nivel regional y local para garantizar la vigilancia de la calidad 
+sanitaria del aire.  
+ 
+
+===== PAGE 29 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 28 
+7.4 CUARTA POLÍTICA:  
+VIGILANCIA DE PELIGROS Y ALERTAS EN SALUD AMBIENTAL 
+La Autoridad Sanitaria deberá contar con Sistema de Vigilancia Sanitaria 
+de alertas en salud ambiental, que permita identificar riesgos ambientales 
+que tengan impacto en la salud de los ciudadanos. 
+7.4.1 
+Objetivo Estratégico:  
+Asegurar la vigilancia de la calidad sanitaria de los recursos hídricos 
+bajo estándares establecidos por la Autoridad de Salud.  
+Estrategias: 
+1. 
+Establecer estándares sanitarios de los cuerpos de agua que 
+permitan evitar riesgos a la salud de las personas. 
+2. 
+Implementación de planes nacionales, regionales y locales de 
+vigilancia sanitaria de los recursos hídricos incluidas las aguas 
+minero y termo medicinales.  
+3. 
+Realizar estudios de investigación de nuevos contaminantes de 
+los cuerpos de agua de lagunas, ríos, etc. 
+4. 
+Establecer el uso de tecnologías limpias que permitan disminuir 
+la contaminación de los recursos hídricos. 
+7.4.2 
+Objetivo Estratégico: 
+Asegurar el manejo sanitario de los residuos sólidos, para prevenir el 
+deterioro de la calidad sanitaria del aire, agua, suelo y proteger la 
+salud de la población. 
+Estrategias: 
+1. 
+Asistencia técnica a Gobiernos Regionales y Locales para el 
+manejo de los residuos sólidos. 
+2. 
+Establecer la implementación de planes de manejo de residuos 
+sólidos en establecimientos de salud y servicios médicos de 
+apoyo públicos y privados. 
+3. 
+Promoción de la participación privada en el tratamiento de 
+residuos sólidos en establecimientos de salud y servicios 
+médicos de apoyo. 
+4. 
+Promover convenios para el fortalecimiento de la gestión y 
+manejo de residuos sólidos con las municipalidades. 
+5. 
+Promoción de la inversión privada para la implementación de 
+la infraestructura de los residuos sólidos. 
+ 
+
+===== PAGE 30 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 29 
+7.4.3 
+Objetivo Estratégico:  
+Reducir los riesgos asociados al manejo de las sustancias químicas, 
+en 
+todo 
+su 
+ciclo 
+de 
+vida, 
+producción, 
+uso, 
+transporte, 
+almacenamiento y eliminación final, a fin de proteger la salud de 
+los ciudadanos. 
+Estrategias: 
+1. 
+Proponer y desarrollar el marco normativo aplicable a la 
+gestión segura de las sustancias químicas y productos 
+peligrosos para la salud.  
+2. 
+Vigilancia y control de las sustancias químicas, residuos sólidos 
+industriales y productos peligrosos para la salud. 
+3. 
+Promover el análisis de riesgo en el ciclo de vida de las 
+sustancias químicas y productos peligrosos para la salud. 
+4. 
+Generar y aplicar instrumentos de gestión para mejorar el 
+manejo de las sustancias químicas y productos peligrosos para 
+la salud, con énfasis en las pequeñas y medianas empresas. 
+5. 
+Promover la capacitación e investigación en materia de 
+seguridad química y productos peligrosos para la salud. 
+7.4.4 
+Objetivo Estratégico:  
+Fortalecer la prevención y control de vectores y reservorios 
+transmisores de enfermedades, así como de los factores de riesgo 
+asociados a su dispersión y proliferación, generados por las 
+deficiencias existentes en los servicios de saneamiento básico, 
+migración permanente de la población y la modificación 
+indiscriminada del medio ambiente. 
+Estrategias: 
+1. 
+Desarrollo de nuevas y eficaces intervenciones en control 
+integrado de vectores y optimizar las existentes. 
+2. 
+Desarrollo de estrategias de intervención en viviendas y 
+entornos para la prevención y el control de vectores y 
+reservorios. 
+3. 
+Fortalecimiento de la gestión intersectorial para la prevención y 
+control de vectores y reservorios transmisores de enfermedades. 
+4. 
+Vigilancia vectorial de transmisores de enfermedades. 
+5. 
+Fortalecimiento de capacidades para la prevención y control 
+de vectores y reservorios en salud pública a nivel de Gobiernos 
+Regionales y locales. 
+ 
+
+===== PAGE 31 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 30 
+7.4.5 
+Objetivo Estratégico:  
+Mejorar la prevención de las zoonosis de impacto en salud pública, 
+incorporando modelos eficientes de intervención sanitaria basados 
+en la prevención y control de riesgos, priorizando a la población 
+más vulnerable con enfoque de derecho e interculturalidad. 
+Estrategias: 
+1. 
+Desarrollar la intervención sanitaria integral para la prevención 
+y control de las zoonosis relacionadas a los animales de 
+compañía y reservorios domésticos y silvestres. 
+2. 
+Evaluación de riesgos de la presencia de zoonosis y agentes 
+zoonóticos en comunidades vulnerables. 
+3. 
+Vigilancia de los reservorios animales y ambientales de las 
+zoonosis y agentes zoonóticos. 
+4. 
+Promover 
+la 
+participación 
+ciudadana 
+y 
+compromiso 
+multisectorial en la prevención y control sanitario de las 
+zoonosis. 
+7.4.6 
+Objetivo Estratégico:  
+Promover ambientes de trabajo saludables, donde los trabajadores 
+y los empleadores colaboran en la aplicación de un proceso de 
+mejora continua para proteger y promover la salud, la seguridad y 
+el bienestar de todos los trabajadores y la sostenibilidad del 
+ambiente de trabajo. 
+Estrategias: 
+1.  Desarrollar y analizar la situación de la salud en los ambientes 
+de trabajo a nivel nacional, y normar los aspectos de higiene y 
+seguridad en los ambientes de trabajo. 
+2. 
+Desarrollar planes y/o proyectos nacionales, regionales y 
+locales de intervención para la protección de la salud en los 
+ambientes de trabajo dirigidos a poblaciones más vulnerables y 
+desprotegidas, con énfasis en los propios Trabajadores de 
+Salud. 
+7.5 QUINTA POLÍTICA: 
+FORTALECIMIENTO DE LA DESCENTRALIZACIÓN EN SALUD AMBIENTAL 
+ 
+El proceso de Descentralización en Salud, debe ser fortalecido en el 
+ejercicio de funciones y facultades transferidas en salud ambiental, para lo 
+cual se deberá acompañar de manera periódica y sostenida el desarrollo 
+de capacidades a nivel de Gobierno Regionales y Locales.  
+
+===== PAGE 32 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 31 
+7.5.1 
+Objetivo Estratégico:  
+Contribuir a mejorar el ejercicio de funciones y facultades 
+transferidas en salud ambiental, a nivel de Gobiernos Regionales y 
+Locales.  
+Estrategias: 
+1. 
+Planes de fortalecimiento de capacidades a Gobiernos 
+Regionales y Locales en Salud Ambiental para el ejercicio de 
+funciones y facultades.  
+2. 
+Transferencia de procedimientos administrativos a Gobiernos 
+Regionales para el ejercicio de funciones y facultades. 
+7.6 SEXTA POLÍTICA:  
+GESTIÓN EN SALUD AMBIENTAL EN EMERGENCIAS Y DESASTRES 
+Se deberá establecer un conjunto de dispositivos y planes que articulen la 
+respuesta ante eventuales emergencias y desastres de las intervenciones 
+de salud ambiental, definiendo mecanismos de Gestión Ambiental 
+oportuna y que tenga impacto ante este tipo de situaciones. 
+7.6.1 
+Objetivo Estratégico:  
+Garantizar la adecuada respuesta del sector salud a la condiciones 
+de riesgo ambiental ante situaciones de emergencias y desastres. 
+Estrategia: 
+1. 
+Establecer la implementación de planes para la adecuada 
+respuesta del sector salud a condiciones de riesgo ambiental 
+ante situaciones de emergencia y desastres a nivel regional y 
+local.  
+
+===== PAGE 33 =====
+“POLÍTICA NACIONAL DE SALUD AMBIENTAL 2011 – 2020” 
+ 
+ 
+ 
+ 32 
+VIII.  REFERENCIAS BIBLIOGRÁFICAS: 
+1. 
+Organización Mundial de la Salud, Subsanar las Desigualdades de una 
+Generación, Primera Edición, Ediciones Journal S.A., 2009, Suiza. 
+2. 
+Cecilio Morón, Oficial Principal de Políticas Alimentarias y Nutrición. 
+Documento de Sala AC 05/2 Sistemas nacionales para la inocuidad de los 
+alimentos en las América y el Caribe: análisis de la situación. En: Conferencia 
+Regional FAO/OMS sobre Inocuidad de Alimentos para las Américas y el 
+Caribe. Costa Rica, 2005. Pg.1-pg 10. 
+3. 
+Dirección General de Epidemiología. Análisis de la Situación de Salud del 
+Perú 2005. Ministerio de Salud; 2005. Perú.  
+4. 
+OMS. Word Health Report 2002. OMS; 2002.  
+5. 
+World Health Organization, Occupational Health. A Manual for Primary 
+Health care Workers, Design by John Shinwell, 2000, Egypt.  
+6. 
+Ministerio de Salud. Impacto Económico de la Malaria en el Perú, pág. 
+127,1999. Perú.  
+7. 
+Organización Mundial de la Salud, Salud de los Trabajadores: Plan de Acción 
+Mundial, OMS, 2007, Suiza. 
+8. 
+Organización Mundial del Comercio. Acuerdo sobre Obstáculos Técnicos al 
+Comercio (OTC) y Sobre medidas Sanitarias y Fitosanitarias (MSF). País. 
+Marruecos, 
+Marrakech, 
+15 
+de 
+abril 
+de 
+1994. 
+Disponible 
+en: 
+http://www.wto.org/spanish/docs_s/legal_s/17-tbt.pdf Consultado el 21 de 
+marzo del año 2011 
+9. 
+Ministerio del Ambiente, Informe de Evaluación de la Gestión de los Residuos 
+Sólidos en el Perú, año 2008. Perú.  
+ 
+
+===== PAGE 34 =====
+ 
+ 
+ 
+ 

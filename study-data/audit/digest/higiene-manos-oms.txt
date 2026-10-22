@@ -1,0 +1,378 @@
+FILE higiene-manos-oms.pdf | pages 32 | chars 94549
+
+== HEADINGS (candidates) ==
+p1 [26.0] SAVE LIVES
+p1 [18.0] Clean Your Hands
+p1 [21.8] Manual técnico de referencia para
+p1 [22.0] la higiene de las manos
+p1 [16.0] Dirigido a los profesionales sanitarios, a los formadores y
+p1 [18.1] a los observadores de las prácticas de higiene de las manos
+p1 [16.0] Patient Safety
+p2 [11.0] © Organización Mundial de la Salud, 2009
+p2 [11.0] © de la traducción, Ministerio de Sanidad, Política Social e Igualdad, 2010
+p3 [24.0] CONTENIDO
+p3 [11.0] DEFINICIONES
+p3 [11.0] PARTE I – INFECCIONES RELACIONADAS CON LA ATENCIÓN SANITARIA E HIGIENE DE LAS
+p3 [12.0] MANOS
+p3 [12.0] I.1.
+p3 [12.0] I.2.
+p3 [12.0] I.3.
+p3 [12.0] I.4.
+p3 [12.0] I.5.
+p3 [11.0] PARTE II – PRÁCTICA, FORMACIÓN Y OBSERVACIÓN DE LA HIGIENE DE LAS
+p3 [12.0] II.1.
+p3 [12.0] II.1.1 La zona del paciente.
+p3 [12.0] II.1.2 El área asistencial.
+p3 [12.0] II.1.3 El contacto con el paciente y su entorno.
+p3 [12.0] II.2.
+p3 [12.0] II.3.
+p3 [12.0] II.4.
+p3 [12.0] II.5.
+p3 [12.0] II.5.1 Indicación (momento) 1: antes del contacto con el paciente.
+p3 [12.0] II.5.2 Indicación (momento) 2: antes de un procedimiento limpio / aséptico.
+p3 [12.0] II.5.3 Indicación (momento) 3: después del riesgo de exposición a fluidos corporales.
+p3 [12.0] II.5.4 Indicación (momento) 4: después del contacto con el paciente.
+p3 [12.0] II.5.5 Indicación (momento) 5: después del contacto con el entorno del paciente.
+p3 [12.0] II.5.6 Comprender los cinco momentos en la secuencia de la prestación asistencial.
+p3 [12.0] II.6.
+p4 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p4 [11.0] PARTE III – LA OBSERVACIÓN DE LA PRÁCTICA DE HIGIENE DE LAS MANOS                                   18
+p4 [12.0] III.1.
+p4 [12.0] III.2.
+p4 [12.0] III.3.
+p4 [12.0] III.4.
+p4 [12.0] III.5.
+p4 [12.0] III.6.
+p4 [12.0] III.7.
+p4 [12.0] III.8.
+p4 [12.0] PARTE I – OTROS ASPECTOS DE LA HIGIENE DE LAS MANOS
+p4 [12.0] IV.1.
+p4 [12.0] IV.2.
+p4 [12.0] PARTE V – LISTA DE REFERENCIAS ESCOGIDAS
+p4 [11.0] APÉNDICE – FORMULARIOS DE OBSERVACIÓN Y CÁLCULO
+p5 [24.0] DEFINICIONES
+p6 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p6 [24.0] RESUMEN
+p7 [24.7] PARTE I
+p7 [24.0] LA HIGIENE DE LAS MANOS Y LAS INFECCIONES
+p7 [24.0] RELACIONADAS CON LA ATENCIÓN SANITARIA
+p7 [13.0] I.1 ¿QUÉ ES UNA INFECCIÓN RELACIONADA CON LA ATENCIÓN SANITARIA Y QUÉ
+p7 [13.0] IMPACTO TIENE EN LA SEGURIDAD DEL PACIENTE?
+p7 [13.0] I.2 ¿QUÉ PAPEL DESEMPEÑAN LAS MANOS EN LA TRANSMISIÓN DE LOS
+p7 [13.0] GÉRMENES?
+p7 [13.0] I.3 ¿QUÉ PAPEL DESEMPEÑA LA HIGIENE DE LAS MANOS EN LA PREVENCIÓN DE
+p7 [13.0] LAS INFECCIONES RELACIONADAS CON LA ATENCIÓN SANITARIA?
+p7 [13.0] I.4 ¿CÓMO SE REALIZA LA HIGIENE DE LAS MANOS?
+p8 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p8 [13.0] I.5 ¿CUÁNDO SE REALIZA LA HIGIENE DE
+p8 [13.0] MANOS?
+p9 [12.0] I.5.1 El modelo de «Los cinco momentos
+p9 [12.0] para la higiene de las manos»
+p9 [11.0] Los cinco momentos para la higiene de las
+p9 [11.0] manos
+p10 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p10 [24.7] PARTE II
+p10 [24.0] LA PRÁCTICA, LA ENSEÑANZA Y LA
+p10 [24.0] OBSERVACIÓN DE LA HIGIENE DE LAS MANOS
+p10 [13.0] II.1 LA APLICACIÓN PRÁCTICA DE
+p10 [13.0] «LOS CINCO MOMENTOS PARA LA
+p10 [13.0] HIGIENE DE LAS MANOS»
+p10 [12.0] II.1.1 La zona del paciente
+p10 [12.0] II.1.2 El área de asistencia
+p11 [12.0] II.1.3 El contacto con el paciente y con su
+p11 [12.0] entorno
+p11 [13.0] II.2 LOS PROFESIONALES SANITARIOS
+p11 [13.0] A LOS QUE INCUMBE LA HIGIENE DE
+p11 [13.0] LAS MANOS
+p11 [13.0] II.3 ACTIVIDADES ASISTENCIALES E
+p11 [13.0] INDICACIONES
+p11 [13.0] II.4 INDICACIONES Y ACCIONES DE
+p11 [13.0] HIGIENE DE MANOS
+p12 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p12 [13.0] II.5 HACIA UNA MAYOR COMPRENSIÓN
+p12 [13.0] DE LA APLICACIÓN DE LOS CINCO
+p12 [13.0] MOMENTOS
+p12 [13.0] II.5.1 Indicación (momento) 1: antes del
+p12 [13.0] contacto con el paciente
+p12 [12.0] Cuándo: antes de tocar al paciente al acercarse a él. Esta indicación
+p13 [12.0] II.5.2 Indicación (momento) 2: antes de un
+p13 [12.0] procedimiento limpio/aséptico (en un punto
+p13 [12.0] crítico
+p13 [12.0] con
+p13 [12.0] riesgo
+p13 [12.0] infeccioso
+p13 [12.0] para
+p13 [12.0] el
+p13 [12.0] paciente)
+p14 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p14 [12.0] II.5.3 Indicación (momento) 3: después del
+p14 [12.0] riesgo de exposición a fluidos corporales
+p14 [12.0] II.5.4 Indicación (momento) 4: después del
+p14 [12.0] contacto con el paciente
+p15 [12.0] Figura 6.d
+p15 [12.0] I.5.5 Indicación (momento) 5: después del
+p15 [12.0] contacto con el entorno del paciente
+p16 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p16 [12.0] II.5.6 Comprensión de los cinco momentos
+p16 [12.0] dentro de la secuencia asistencial
+p17 [13.0] II.6 INDICACIONES PARA LA HIGIENE
+p17 [13.0] DE LAS MANOS CUANDO SE NECESITA
+p17 [13.0] UTILIZAR GUANTES MÉDICOS
+p18 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p18 [24.7] PARTE III
+p18 [24.0] LA OBSERVACIÓN DE LA PRÁCTICA DE LA
+p18 [24.0] HIGIENE DE LAS MANOS
+p18 [13.0] III.1
+p18 [13.0] EL
+p18 [13.0] PROPÓSITO
+p18 [13.0] DE
+p18 [13.0] LA
+p18 [13.0] OBSERVACIÓN
+p18 [13.0] III.2 LA OBSERVACIÓN DIRECTA DE LA
+p18 [13.0] PRÁCTICA DE HIGIENE DE LAS MANOS
+p18 [13.0] III.3 LAS REGLAS DE LA OBSERVACIÓN
+p18 [13.0] III.4 EL OBSERVADOR Y SU PAPEL
+p19 [13.0] III.5 LAS OPORTUNIDADES PARA LA
+p19 [13.0] HIGIENE DE LAS MANOS
+p19 [13.0] III.6 LA ACCIÓN DE HIGIENE DE MANOS
+p19 [13.0] VISTA POR EL OBSERVADOR
+p20 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p20 [13.0] III.7 INFORMAR SOBRE EL
+p20 [13.0] CUMPLIMIENTO DE LA HIGIENE DE LAS
+p20 [13.0] MANOS
+p20 [13.0] III.8 METODOLOGÍA DE OBSERVACIÓN
+p22 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p22 [12.0] III.8.1 El formulario de observación
+p24 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p24 [12.0] III.8.2 El formulario de cálculo básico
+p26 [24.7] PARTE IV
+p26 [24.0] OTROS ASPECTOS DE LA HIGIENE DE LAS
+p26 [24.0] MANOS
+p26 [13.0] IV.1 La seguridad de las manos
+p26 [13.0] IV.2 El cuidado de la piel de las manos
+p27 [24.7] PARTE V
+p27 [24.0] LISTA DE REFERENCIAS ESCOGIDAS
+p28 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p28 [13.0] APÉNDICE EL FORMULARIO DE OBSERVACIÓN Y CÁLCULO
+p30 [12.0] MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+p32 [26.0] SAVE LIVES
+p32 [18.0] Clean Your Hands
+p32 [16.0] Patient Safety
+
+== FIRST PAGES ==
+
+--- p1 ---
+2
+ANTES DE REALIZAR
+UNA TAREA LIMPIA O
+ASÉPTICA
+4
+DESPUÉS DEL
+CONTACTO CON
+EL PACIENTE
+3
+DESPUÉS
+EXPOSICIÓN A
+FLUIDOS
+CORPORALES
+5
+DESPUÉS DEL
+CONTACTO CON
+EL ENTORNO
+DEL PACIENTE
+1
+ANTES DEL
+CONTACTO
+DIRECTO CON
+EL PACIENTE
+2
+ANTES DE REALIZAR
+UNA TAREA LIMPIA O
+ASÉPTICA
+2
+ANTES DE REALIZAR
+UNA TAREA LIMPIA O
+ASÉPTICA
+4
+DESPUÉS DEL
+CONTACTO CON
+EL PACIENTE
+4
+DESPUÉS DEL
+CONTACTO CON
+EL PACIENTE
+3
+DESPUÉS
+EXPOSICIÓN A
+FLUIDOS
+CORPORALES
+3
+DESPUÉS
+EXPOSICIÓN A
+FLUIDOS
+CORPORALES
+5
+DESPUÉS DEL
+CONTACTO CON
+EL ENTORNO
+DEL PACIENTE
+5
+DESPUÉS DEL
+CONTACTO CON
+EL ENTORNO
+DEL PACIENTE
+1
+ANTES DEL
+CONTACTO
+DIRECTO CON
+EL PACIENTE
+1
+ANTES DEL
+CONTACTO
+DIRECTO CON
+EL PACIENTE
+SAVE LIVES
+Clean Your Hands
+Manual técnico de referencia para
+la higiene de las manos
+Dirigido a los profesionales sanitarios, a los formadores y
+a los observadores de las prácticas de higiene de las manos
+Patient Safety
+A World Alliance for Safer Health Care
+
+--- p2 ---
+Publicado por la Organización Mundial de la Salud en 2.009 con el título Hand
+higiene Technical Referente Manual
+© Organización Mundial de la Salud, 2009
+WHO/IER/PSP/2009.02
+Se reservan todos los derechos. Las publicaciones de la organización Mundial de la Salud
+pueden solicitarse a WHO Press, World Health Organization, 20 Avenue Appia, 1211
+Geneva 27, Switzerland Tel: +41 22 791 3264; Fax: +41 22 791 4857; e-mail:
+bookorders@who.int. Las solicitudes de autorización para reproducir o traducir las
+publicaciones de la OMS – ya sea para la venta o la distribución sin fines comerciales –
+deben dirigirse a WHO Press, a la dirección mencionada.
+Las denominaciones utilizadas en esta publicación no implican, por parte de la OMS, juicio
+alguno sobre la condición jurídica de países, territorios, ciudades o zonas, o de sus
+autoridades, ni respecto a la delimitación de sus fronteras. Las líneas discontinuas de los
+mapas representan de forma aproximada fronteras con respecto a las cuales puede que no
+haya pleno acuerdo.
+La mención de empresas específicas o de productos de determinados fabricantes no implica
+que la  OMS los apruebe o recomiende con preferencia a otros de naturaleza similar que no
+son mencionados. Salvo error u omisión, los nombres de los productos patentados figuran
+en mayúsculas.
+La Organización Mundial de la Salud ha adoptado todas las precauciones razonables para
+verificar la información que figura en el presente documento.  Sin embargo, el material
+publicado se distribuye sin garantía de ningún tipo, ni explícita ni implícita. El lector es
+responsable de la interpretación y el uso que haga de este material, y la Organización
+Mundial de la Salud no responderá en ningún caso de los daños que se deriven de su
+utilización.
+El Director General de la Organización Mundial de la Salud ha concedido al
+Ministerio de Sanidad y Política Social los derechos de traducción para realizar una
+edición en español, de la que este Ministerio es el único responsable.
+© de la traducción, Ministerio de Sanidad, Política Social e Igualdad, 2010
+
+--- p3 ---
+CONTENIDO
+CONTENIDO
+DEFINICIONES
+5
+PARTE I – INFECCIONES RELACIONADAS CON LA ATENCIÓN SANITARIA E HIGIENE DE LAS
+MANOS
+7
+I.1.
+¿Qué es una infección relacionada con la atención sanitaria y qué impacto tiene en la seguridad del paciente?
+7
+I.2.
+¿Qué papel desempeñan las manos en la transmisión de los microorganismos?
+7
+I.3.
+¿Qué papel desempeña la higiene de las manos en la prevención de las infecciones relacionadas con la atención
+sanitaria?
+7
+I.4.
+¿Cómo debe realizarse la higiene de las manos?
+7
+I.5.
+¿Cuándo debe realizarse la higiene de las manos?
+8
+I.5.1 El concepto de «Mis cinco momentos para la higiene de las manos».
+9
+PARTE II – PRÁCTICA, FORMACIÓN Y OBSERVACIÓN DE LA HIGIENE DE LAS
+MANOS
+10
+II.1.
+La aplicación práctica de «Los cinco momentos para la higiene de las manos».
+10
+II.1.1 La zona del paciente.
+10
+II.1.2 El área asistencial.
+10
+II.1.3 El contacto con el paciente y su entorno.
+11
+II.2.
+Profesionales sanitarios a los que incumbe la higiene de las manos.
+11
+II.3.
+Actividades asistenciales e indicaciones.
+11
+II.4.
+Indicaciones y acciones de higiene de las manos.
+11
+II.5.
+Hacia una mayor comprensión de la aplicación de los cinco momentos
+12
+II.5.1 Indicación (momento) 1: antes del contacto con el paciente.
+12
+II.5.2 Indicación (momento) 2: antes de un procedimiento limpio / aséptico.
+13
+II.5.3 Indicación (momento) 3: después del riesgo de exposición a fluidos corporales.
+14
+II.5.4 Indicación (momento) 4: después del contacto con el paciente.
+14
+II.5.5 Indicación (momento) 5: después del contacto con el entorno del paciente.
+15
+II.5.6 Comprender los cinco momentos en la secuencia de la prestación asistencial.
+16
+II.6.
+Indicaciones para la higiene de las manos cuando se necesita utilizar guantes.
+17
+
+--- p4 ---
+MANUAL TÉCNICO DE REFERENCIA PARA LA HIGIENE DE LAS MANOS
+PARTE III – LA OBSERVACIÓN DE LA PRÁCTICA DE HIGIENE DE LAS MANOS                                   18
+III.1.
+El propósito de la observación                                                                                                                                        18
+III.2.
+La observación directa de las prácticas de higiene de las manos                                                                                  18
+III.3.
+Las reglas de la observación                                                                                                                                          18
+III.4.
+El observador y su papel.
+18
+III.5.
+Las oportunidades para realizar la higiene de las manos.
+19
+III.6.
+La acción de higiene de manos vista por el observador.
+19
+III.7.
+Informar sobre el cumplimiento de la higiene de las manos.
+20
+III.8.
+Metodología de observación.
+20
+III.8.1 El formulario de observación.
+22
+III.8.2 El formulario de cálculo básico.
+24
+PARTE I – OTROS ASPECTOS DE LA HIGIENE DE LAS MANOS
+26
+IV.1.
+Seguridad de las manos.                                                                                                                                                  26
+IV.2.
+Cuidado de la piel de las manos.                                                                                                                                       26
+PARTE V – LISTA DE REFERENCIAS ESCOGIDAS
+27
+APÉNDICE – FORMULARIOS DE OBSERVACIÓN Y CÁLCULO
+28
+4

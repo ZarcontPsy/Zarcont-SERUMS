@@ -1,0 +1,251 @@
+FILE gt-nutricion-adultos.pdf | pages 36 | chars 71867
+
+== TOC ==
+p2: Blank Page
+p35: Blank Page
+p1: Blank Page
+
+== HEADINGS (candidates) ==
+p3 [32.0] GUÍA TÉCNICA PARA LA
+p3 [32.0] VALORACIÓN NUTRICIONAL
+p3 [32.0] ANTROPOMÉTRICA DE LA
+p3 [32.0] PERSONA ADULTA
+p3 [12.0] Elaborado por:
+p3 [17.0] Lima, 2012
+p5 [19.0] MINISTERIO DE SALUD
+p5 [15.0] Ministra
+p5 [15.0] Midori de Habich Rospigliosi
+p5 [15.0] Viceministro
+p5 [15.0] José Carlos del Carmen Sara
+p5 [15.0] DIRECCIÓN GENERAL DE SALUD DE LAS PERSONAS
+p5 [15.0] Directora General
+p5 [15.0] Ada Graciela Pastor Goyzueta
+p5 [17.0] INSTITUTO NACIONAL DE SALUD
+p5 [15.0] Jefe
+p5 [15.0] César Cabezas Sánchez
+p5 [15.0] Subjefe
+p5 [15.0] Marco Antonio Bartolo Marchena
+p5 [15.0] CENTRO NACIONAL DE ALIMENTACIÓN Y NUTRICIÓN
+p5 [15.0] Director General
+p5 [15.0] Oscar Samuel Aquino Vivanco
+p5 [15.0] Dirección Ejecutiva de Prevención de Riesgo y Daño Nutricional
+p5 [15.0] Director Ejecutivo
+p5 [15.0] Víctor Iván Gómez-Sánchez Prieto
+p5 [15.0] Dirección Ejecutiva de Vigilancia Alimentaria y Nutricional
+p5 [15.0] José Ramón Sánchez Abanto
+p6 [11.3] EQUIPO TÉCNICO RESPONSABLE DE LA ELABORACIÓN DE LA GUÍA TÉCNICA
+p6 [11.3] REVISORES DE LA GUÍA TÉCNICA
+p6 [11.3] PARTICIPARON EN LA VALIDACIÓN DE LA GUÍA TÉCNICA
+p6 [11.3] Centro Nacional de Alimentación y
+p6 [11.3] Nutrición - INS
+p6 [11.3] Dirección General de Salud de
+p6 [11.3] las Personas - MINSA
+p6 [11.3] CARE Perú
+p6 [11.3] Secretaría General -
+p6 [11.3] MINSA
+p6 [11.3] Correctores de estilo: Daniel Cárdenas Rojas, Josefina Vásquez Awad.
+p6 [11.3] Direcciones Regionales de Salud
+p6 [11.3] Direcciones de Salud
+p6 [11.3] AGRADECIMIENTO
+p9 [11.0] Guía técnica para la valoración
+p9 [11.0] nutricional antropométrica de la persona adulta
+p9 [20.0] CONTENIDO
+p10 [11.0] Guía técnica para la valoración
+p10 [11.0] nutricional antropométrica de la persona adulta
+p10 [20.0] PRESENTACIÓN
+p10 [11.0] “Guía técnica para la valoración nutricional antropométrica de la persona adulta”.
+p11 [14.0] GUÍA TÉCNICA PARA LA VALORACIÓN NUTRICIONAL
+p11 [14.0] ANTROPOMÉTRICA DE LA PERSONA ADULTA
+p11 [11.0] I.	 FINALIDAD
+p11 [11.0] II.	 OBJETIVOS
+p11 [11.0] 2.1. OBJETIVO GENERAL
+p11 [11.0] 2.2. OBJETIVOS ESPECÍFICOS
+p11 [11.0] III.	ÁMBITO DE APLICACIÓN
+p11 [11.0] IV.	PROCESO O PROCEDIMIENTO A ESTANDARIZAR: VALORACIÓN NUTRICIONAL
+p11 [11.0] ANTROPOMÉTRICA DE LA PERSONA ADULTA1
+p11 [11.0] V.	 CONSIDERACIONES GENERALES
+p11 [11.0] 5.1.  DEFINICIONES OPERATIVAS
+p12 [11.0] Guía técnica para la valoración
+p12 [11.0] nutricional antropométrica de la persona adulta
+p12 [11.0] 5.2.  CONCEPTOS BÁSICOS
+p13 [11.0] Guía técnica para la valoración
+p13 [11.0] nutricional antropométrica de la persona adulta
+p13 [11.0] 5.3.	REQUERIMIENTOS BÁSICOS
+p13 [11.0] 5.3.1.	 Infraestructura
+p13 [11.0] 5.3.2.	 Recursos humanos
+p13 [11.0] 5.3.3.	 Recursos materiales
+p14 [11.0] Guía técnica para la valoración
+p14 [11.0] nutricional antropométrica de la persona adulta
+p14 [11.0] VI	CONSIDERACIONES ESPECÍFICAS
+p15 [11.0] Guía técnica para la valoración
+p15 [11.0] nutricional antropométrica de la persona adulta
+p15 [11.0] 6.1.	MEDICIONES ANTROPOMÉTRICAS
+p15 [11.0] 6.1.1.	 TOMA DEL PESO
+p16 [11.0] Guía técnica para la valoración
+p16 [11.0] nutricional antropométrica de la persona adulta
+p17 [11.0] Guía técnica para la valoración
+p17 [11.0] nutricional antropométrica de la persona adulta
+p17 [11.0] 6.1.2.	MEDICIÓN DE LA TALLA
+p18 [11.0] Guía técnica para la valoración
+p18 [11.0] nutricional antropométrica de la persona adulta
+p19 [11.0] Guía técnica para la valoración
+p19 [11.0] nutricional antropométrica de la persona adulta
+p19 [11.0] 6.1.3.  MEDICIÓN DEL PERÍMETRO ABDOMINAL - PAB
+p20 [11.0] Guía técnica para la valoración
+p20 [11.0] nutricional antropométrica de la persona adulta
+p20 [11.0] 6.2.	DETERMINACIÓN DE LA VALORACIÓN NUTRICIONAL ANTROPOMÉTRICA
+p20 [11.0] 6.2.1. CLASIFICACIÓN DE LA VALORACIÓN NUTRICIONAL SEGÚN IMC
+p20 [11.0] 6.2.2. 	 DETERMINACIÓN DEL RIESGO DE ENFERMAR EN LA PERSONA ADULTA
+p20 [11.0] SEGÚN PERÍMETRO ABDOMINAL (PAB)
+p20 [11.0] 6.2.2.1.  Clasificación del riesgo de enfermar según sexo y perímetro abdominal
+p21 [11.0] Guía técnica para la valoración
+p21 [11.0] nutricional antropométrica de la persona adulta
+p21 [11.0] 6.3. INTERPRETACIÓN DE LOS RESULTADOS DE LA VALORACIÓN NUTRICIONAL
+p21 [11.0] ANTROPOMÉTRICA
+p21 [11.0] 6.3.1.	 INTERPRETACIÓN DE LOS VALORES DE ÍNDICE DE MASA CORPORAL (IMC):
+p21 [11.0] 6.3.2. 	INTERPRETACIÓN DE LOS VALORES DEL PERÍMETRO ABDOMINAL (PAB)
+p22 [11.0] Guía técnica para la valoración
+p22 [11.0] nutricional antropométrica de la persona adulta
+p22 [11.0] 6.3.3.	DETERMINACIÓN DEL RIESGO DE COMORBILIDAD ASOCIADA ENTRE IMC Y
+p22 [11.0] PAB
+p22 [11.0] 6.3.4.	SIGNOS DE ALERTA NUTRICIONAL
+p22 [11.0] 6.4.	 USO DE LA TABLA RÁPIDA DE CLASIFICACIÓN NUTRICIONAL
+p23 [11.0] Guía técnica para la valoración
+p23 [11.0] nutricional antropométrica de la persona adulta
+p23 [11.0] 6.5.  INTERVENCIÓN NUTRICIONAL
+p23 [11.0] INTERVENCIONES INDIVIDUALES SEGÚN IMC
+p24 [11.0] Guía técnica para la valoración
+p24 [11.0] nutricional antropométrica de la persona adulta
+p24 [11.0] 6.5.2.   INTERVENCIONES COLECTIVAS
+p25 [11.0] Guía técnica para la valoración
+p25 [11.0] nutricional antropométrica de la persona adulta
+p25 [11.0] 6.6. REGISTRO DE LA ATENCIÓN
+p25 [11.0] VII.   RECOMENDACIONES
+p25 [11.0] VIII.  ANEXOS
+p26 [11.0] Guía técnica para la valoración
+p26 [11.0] nutricional antropométrica de la persona adulta
+p26 [14.0] ANEXO 1
+p27 [11.0] Guía técnica para la valoración
+p27 [11.0] nutricional antropométrica de la persona adulta
+p27 [14.0] ANEXO 2
+p28 [11.0] Guía técnica para la valoración
+p28 [11.0] nutricional antropométrica de la persona adulta
+p28 [14.0] ANEXO 3
+p28 [11.0] CÓDIGOS HIS PARA LA VALORACIÓN NUTRICIONAL ANTROPOMÉTRICA DE
+p28 [11.0] PERSONAS ADULTAS
+p28 [14.0] ANEXO 4
+p28 [11.0] EJERCICIOS DE APLICACIÓN DEL USO DE LA TABLA DE VALORACIÓN
+p28 [11.0] NUTRICIONAL ANTROPOMÉTRICA PARA PERSONAS ADULTAS
+p28 [12.1] PESOS (kg)
+p28 [10.9] III
+p28 [10.9] <16
+p28 [10.9] II
+p28 [10.9] ≥16
+p28 [10.9] I
+p28 [10.9] ≥17
+p28 [10.9] ≥18,5
+p28 [10.9] ≥25
+p28 [10.9] ≥30
+p28 [10.9] ≥35
+p28 [10.9] ≥40
+p28 [10.8] 1,43
+p28 [10.8] 32,7 34,7
+p28 [10.8] 37,8
+p28 [10.8] 51,1
+p28 [10.8] 61,3 71,5 81,7
+p29 [11.0] Guía técnica para la valoración
+p29 [11.0] nutricional antropométrica de la persona adulta
+p29 [12.0] PESOS (kg)
+p29 [10.8] III
+p29 [10.8] <16
+p29 [10.8] II
+p29 [10.8] ≥16
+p29 [10.8] I
+p29 [10.8] ≥17
+p29 [10.8] ≥18,5
+p29 [10.8] ≥25
+p29 [10.8] ≥30
+p29 [10.8] ≥35
+p29 [10.8] ≥40
+p29 [10.7] 1,68
+p29 [10.7] 45,1 47,9
+p29 [10.7] 52,2
+p29 [10.7] 70,5
+p29 [10.7] 84,6 98,7 112,8
+p30 [11.0] Guía técnica para la valoración
+p30 [11.0] nutricional antropométrica de la persona adulta
+p30 [13.0] ANEXO 5
+p30 [11.0] EJERCICIOS DE APLICACIÓN DEL SISTEMA HIS
+p30 [11.0] CONSIDERACIONES
+p31 [11.0] Guía técnica para la valoración
+p31 [11.0] nutricional antropométrica de la persona adulta
+p32 [11.0] Guía técnica para la valoración
+p32 [11.0] nutricional antropométrica de la persona adulta
+p32 [13.0] ANEXO 6
+p32 [11.0] FLUJOGRAMA: INTERVENCIÓN NUTRICIONAL PARA LA ATENCIÓN DE LA
+p32 [11.0] PERSONA ADULTA SEGÚN NIVEL DE COMPLEJIDAD Y RECURSO HUMANO
+p33 [11.0] Guía técnica para la valoración
+p33 [11.0] nutricional antropométrica de la persona adulta
+p33 [14.0] ANEXO 7
+p33 [11.0] MEDICIÓN DE LA TALLA EN CASO DE INVESTIGACIONES U OTROS ESTUDIOS
+p34 [11.0] Guía técnica para la valoración
+p34 [11.0] nutricional antropométrica de la persona adulta
+p34 [11.0] IX
+p34 [11.0] BIBLIOGRAFÍA
+
+== FIRST PAGES ==
+
+--- p1 ---
+
+
+--- p2 ---
+
+
+--- p3 ---
+GUÍA TÉCNICA PARA LA
+VALORACIÓN NUTRICIONAL
+ANTROPOMÉTRICA DE LA
+PERSONA ADULTA
+Elaborado por:
+Luis Aguilar Esenarro
+Mariela Contreras Rojas
+Juan del Canto y Dorador
+Walter Vílchez Dávila
+Lima, 2012
+
+--- p4 ---
+Catalogación hecha por el Centro de Información y Documentación Científica del INS
+ISBN: 978-612-310-010-0
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú Nº 2012-13215
+Tiraje: 8000 ejemplares
+1ra. Edición (noviembre 2012)
+© Ministerio de Salud, 2012
+Av. Salaverry cuadra 8 s/n, Jesús María, Lima, Perú
+Teléfono: (511) 431-0410
+Telefax: 01 – 3156600 anexo 2669
+Página web: www.minsa.gob.pe
+postmaster@ins.gob.pe
+www.ins.gob.pe
+© Instituto Nacional de Salud, 2012
+Cápac Yupanqui 1400, Jesús María, Lima, Perú
+Teléfono.: 748-0000
+Correo electrónico:
+Página Web:
+La versión electrónica de este documento se encuentra disponible en forma gratuita en www.ins.gob.pe
+Se autoriza su reproducción total o parcial, siempre y cuando se cite la fuente.
+Guía técnica para la valoración nutricional antropométrica de la persona adulta /
+Elaborado  por  Luis Ángel Aguilar Esenarro, Mariela Constanza Contreras Rojas,
+Juan Segundo Del Canto Y Dorador… [et al.] -- Lima: Ministerio de  Salud, Instituto
+Nacional de Salud, 2012.
+32 p. : graf., il., tab. 20.5 x 29.5 cm.
+1.
+ESTADO NUTRICIONAL 2. ANTROPOMETRÍA 3. GUÍA 4.PERÚ
+I.
+Aguilar Esenarro, Luis Ángel
+II.
+Contreras Rojas, Mariela Constanza
+III. Del Canto Y Dorador, Juan Segundo
+IV. Vílchez Dávila, Walter
+V.
+Perú. Ministerio de Salud
+VI. Instituto Nacional de Salud (Perú)

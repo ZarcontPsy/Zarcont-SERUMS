@@ -312,7 +312,7 @@
     var heroTitle = st.hasActivity ? "Aprender también es volver." : "Un mapa claro para estudiar.";
     var heroText = st.hasActivity
       ? "Tu progreso se construye ficha a ficha. Retoma la lectura, revisa tus pendientes y convierte lo aprendido en práctica."
-      : "Explora cinco áreas, lee fichas breves y practica con flashcards. Cada avance que ves aquí viene de tu actividad real.";
+      : "Explora " + C.areas.length + " áreas, lee fichas breves y practica con flashcards. Cada avance que ves aquí viene de tu actividad real.";
 
     var areas = C.areas.map(areaCard).join("");
     var today = st.today;
@@ -365,7 +365,7 @@
 
       '<section class="dash-section">',
         '<div class="dash-section-head">',
-          '<div><span class="s-kicker"><span class="dot"></span>Cinco perspectivas</span><h2>Áreas del temario</h2></div>',
+          '<div><span class="s-kicker"><span class="dot"></span>' + C.areas.length + ' perspectivas</span><h2>Áreas del temario</h2></div>',
           '<span class="s-small s-muted">' + st.totalTopics + ' temas · ' + st.totalSheets + ' fichas</span>',
         '</div>',
         '<div class="area-grid">' + areas + '</div>',
@@ -395,7 +395,7 @@
       '<section class="library-head">',
         '<span class="s-kicker"><span class="dot"></span>Biblioteca de estudio</span>',
         '<h1>' + (area ? esc(area.title) : "El temario completo") + '</h1>',
-        '<p>' + (area ? esc(area.description) : "Cinco áreas, catorce temas y fichas breves con conceptos, procedimientos y referencias a la fuente. Lee en modo rápido o completo.") + '</p>',
+        '<p>' + (area ? esc(area.description) : "El temario reúne " + C.areas.length + " áreas, " + C.topics.length + " temas y " + C.sheets.length + " fichas breves con conceptos, procedimientos y referencias a la fuente. Lee en modo rápido o completo.") + '</p>',
         '<div class="library-tools">',
           '<label class="search-field" for="library-search">' + icon("search", 17) +
             '<input id="library-search" type="search" autocomplete="off" placeholder="Buscar tema, ficha o concepto" value="' + esc(state.libraryQuery) + '">' +
@@ -572,14 +572,15 @@
     var prev = idx > 0 ? allSheets[idx - 1] : null;
     var next = idx >= 0 && idx < allSheets.length - 1 ? allSheets[idx + 1] : null;
     var p = topic ? Store.getTopicProgress(topic.id) : null;
-    var deck = topic ? Store.getDeckStats(topic.id) : null;
+    var topicDeck = topic ? Store.getDeckStats(topic.id) : null;
+    var deck = Store.getDeckStats(sheet.id);
     var sections = m === "quick" ? sheet.sections.filter(function (s) { return s.depth === "core"; }) : sheet.sections;
     var extra = sheet.sections.length - sections.length;
     var source = sheet.sourceRefs && sheet.sourceRefs.length ? Store.getSource(sheet.sourceRefs[0].sourceId) : null;
     var fromFlash = state.fromFlashcards && state.entrySheetId === sheet.id;
-    var backHref = fromFlash && topic ? flashcardsHref(topic.id, "free", sheet.id) : "#/biblioteca";
+    var backHref = fromFlash && topic ? flashcardsHref(state.fromDeck || sheet.id, "free", sheet.id) : "#/biblioteca";
     var backLabel = fromFlash ? "Volver a flashcards" : "Biblioteca";
-    var practiceHref = topic ? flashcardsHref(topic.id, "free", sheet.id) : "../study-flashcards/index.html";
+    var practiceHref = flashcardsHref(sheet.id, "free", sheet.id);
 
     var sources = sheet.sourceRefs && sheet.sourceRefs.length ? sheet.sourceRefs.map(function (ref) {
       var src = Store.getSource(ref.sourceId);
@@ -628,8 +629,14 @@
 
             '<section class="reader-practice">',
               '<span class="reader-practice-icon">' + icon("cards", 23) + '</span>',
-              '<div class="reader-practice-copy"><span class="s-kicker">Recuperación activa</span><h2>Practica este tema</h2><p>' + (deck ? deck.total + ' tarjetas te esperan en Study Flashcards. La ficha queda abierta para volver cuando la necesites.' : 'Este tema todavía no tiene tarjetas asociadas.') + '</p></div>',
-              (deck && deck.total) ? '<a class="s-btn" href="' + esc(practiceHref) + '">' + icon("play", 15) + ' Practicar con flashcards</a>' : '<a class="s-btn s-btn--ghost" href="../study-flashcards/index.html">Ver mazos</a>',
+              '<div class="reader-practice-copy"><span class="s-kicker">Recuperación activa</span><h2>Practica esta ficha</h2><p>' + (deck.total ? deck.total + ' tarjetas de esta ficha te esperan en Study Flashcards. La ficha queda abierta para volver cuando la necesites.' : 'Esta ficha todavía no tiene tarjetas asociadas.') + '</p>' +
+                '<div class="reader-meta">' +
+                  '<span class="s-chip">' + icon("cards", 13) + deck.total + ' total</span>' +
+                  '<span class="s-chip">' + icon("rotate", 13) + (deck.due + deck.newCards) + ' pendientes</span>' +
+                  '<span class="s-chip">' + icon("checkCircle", 13) + deck.mastered + ' dominadas</span>' +
+                  '<span class="s-chip">' + icon("alert", 13) + deck.errors + ' errores</span>' +
+                '</div></div>',
+              deck.total ? '<a class="s-btn" href="' + esc(practiceHref) + '">' + icon("play", 15) + ' Practicar con flashcards</a>' : '<a class="s-btn s-btn--ghost" href="../study-flashcards/index.html">Ver mazos</a>',
             '</section>',
 
             '<section class="reader-refs">',
@@ -653,7 +660,7 @@
             '</div>',
             topic ? '<div class="rail-card">' +
               '<span class="s-kicker">Tema</span><h3>' + esc(topic.title) + '</h3><p class="s-small s-soft">' + esc(topic.summary) + '</p>' +
-              '<div class="rail-topic-meta"><span>' + icon("book", 13) + (p ? p.total : 0) + ' fichas</span><span>' + icon("cards", 13) + (deck ? deck.total : 0) + ' tarjetas</span></div>' +
+              '<div class="rail-topic-meta"><span>' + icon("book", 13) + (p ? p.total : 0) + ' fichas</span><span>' + icon("cards", 13) + (topicDeck ? topicDeck.total : 0) + ' tarjetas</span></div>' +
               '<a class="s-link s-small" href="#/biblioteca/' + esc(topic.areaId) + '" data-nav>Ver el área completa</a>' +
             '</div>' : "",
             '<div class="rail-card">',
@@ -768,7 +775,7 @@
 
       '<div class="progress-grid">',
         '<section class="progress-panel activity-panel">',
-          '<div class="progress-panel-head"><div><span class="s-kicker">Últimos 14 días</span><h2>Actividad de estudio</h2></div><span class="s-chip">' + activeDays + ' días activos</span></div>',
+          '<div class="progress-panel-head"><div><span class="s-kicker">Últimos 14 días</span><h2>Actividad de estudio</h2></div><span class="s-chip">' + activeDays + ' ' + plural(activeDays, "día activo", "días activos") + '</span></div>',
           '<div class="activity-chart" role="img" aria-label="Actividad de los últimos 14 días: ' + periodTotal + ' acciones en total">',
             days.map(function (d) {
               var h = d.value ? Math.max(8, Math.round((d.value / max) * 100)) : 2;
@@ -808,7 +815,7 @@
         '</section>',
 
         '<section class="progress-panel areas-panel">',
-          '<div class="progress-panel-head"><div><span class="s-kicker">Cinco áreas</span><h2>Avance por área</h2></div></div>',
+          '<div class="progress-panel-head"><div><span class="s-kicker">' + C.areas.length + ' áreas</span><h2>Avance por área</h2></div></div>',
           '<div class="progress-areas">' + areaRows + '</div>',
         '</section>',
 

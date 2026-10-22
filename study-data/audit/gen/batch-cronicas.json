@@ -1,0 +1,597 @@
+{
+  "sources": [
+    {
+      "id": "src-dm2",
+      "title": "Guía de práctica clínica para el diagnóstico, tratamiento y control de la diabetes mellitus tipo 2 en el primer nivel de atención",
+      "short": "DM2",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica aprobada por R.M. N° 719-2015/MINSA; incluye criterios diagnósticos, metas y esquema de tratamiento.",
+      "file": "../study-data/fuentes/gpc-dm2.pdf"
+    },
+    {
+      "id": "src-hta",
+      "title": "Guía de práctica clínica para el diagnóstico, tratamiento y control de la enfermedad hipertensiva",
+      "short": "HTA",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía técnica del MINSA para el manejo de la hipertensión arterial en el primer nivel de atención.",
+      "file": "../study-data/fuentes/gpc-hta.pdf"
+    },
+    {
+      "id": "src-climaterio",
+      "title": "Guía de práctica clínica para diagnóstico y tratamiento del climaterio",
+      "short": "Climaterio",
+      "authors": "Hospital Nacional Hipólito Unanue — Ministerio de Salud",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional de 2024 para la atención de mujeres en etapa de climaterio; incluye escala MRS y criterios de terapia hormonal.",
+      "file": "../study-data/fuentes/gpc-climaterio-menopausia.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-cronicas",
+      "title": "Enfermedades crónicas y salud de la mujer adulta",
+      "short": "Crónicas",
+      "description": "Diagnóstico, tratamiento y seguimiento de diabetes, hipertensión y climaterio en el primer nivel de atención.",
+      "accent": "#C98F6B",
+      "icon": "chart",
+      "sourceIds": ["src-dm2", "src-hta", "src-climaterio"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-dm2-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "Diabetes tipo 2: diagnóstico y metas",
+      "summary": "El diagnóstico se confirma con glucemia en ayunas, síntomas con glucemia casual o prueba de tolerancia oral; las metas guían el control.",
+      "sourceIds": ["src-dm2"],
+      "keywords": ["diabetes", "diagnóstico", "hemoglobina glucosilada", "metas"]
+    },
+    {
+      "id": "topic-dm2-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "Tratamiento y referencia de la DM2",
+      "summary": "Estilos de vida, metformina como primera línea y criterios claros de referencia estructuran el manejo en el primer nivel.",
+      "sourceIds": ["src-dm2"],
+      "keywords": ["metformina", "estilos de vida", "referencia", "complicaciones"]
+    },
+    {
+      "id": "topic-hta-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "Hipertensión: medición y riesgo",
+      "summary": "La clasificación de la presión arterial y la estratificación del riesgo cardiovascular orientan el manejo.",
+      "sourceIds": ["src-hta"],
+      "keywords": ["hipertensión", "presión arterial", "riesgo cardiovascular"]
+    },
+    {
+      "id": "topic-hta-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "Tratamiento y signos de alarma en HTA",
+      "summary": "Los cambios de estilo de vida, la terapia farmacológica escalonada y el reconocimiento de la emergencia hipertensiva son claves.",
+      "sourceIds": ["src-hta"],
+      "keywords": ["tratamiento", "estilos de vida", "emergencia hipertensiva"]
+    },
+    {
+      "id": "topic-climaterio",
+      "areaId": "area-cronicas",
+      "title": "Climaterio y menopausia",
+      "summary": "El diagnóstico es clínico; el manejo combina estilos de vida, evaluación de síntomas y terapia hormonal individualizada cuando corresponde.",
+      "sourceIds": ["src-climaterio"],
+      "keywords": ["climaterio", "menopausia", "terapia hormonal", "MRS"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-dm2-01",
+      "topicId": "topic-dm2-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "DM2: cómo se confirma y qué metas buscar",
+      "kicker": "Crónicas · Diabetes",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La diabetes tipo 2 puede ser asintomática durante años. El diagnóstico se confirma con glucemia en ayunas repetida, síntomas con glucemia casual o una prueba de tolerancia oral. Las metas de control reducen complicaciones.",
+      "keyConcepts": [
+        "Glucemia en ayunas ≥126 mg/dL en dos oportunidades confirma el diagnóstico.",
+        "Una glucemia casual ≥200 mg/dL con síntomas de hiperglucemia también confirma.",
+        "La prueba oral de 75 g con glucemia ≥200 mg/dL a las 2 horas es otro criterio.",
+        "Las metas incluyen HbA1c <7%, glucemia en ayunas 70-130 mg/dL y PA <140/80 mmHg."
+      ],
+      "sections": [
+        {
+          "title": "Tres caminos diagnósticos",
+          "depth": "core",
+          "body": [
+            "El primer criterio es la glucemia en ayunas ≥126 mg/dL en plasma venoso, confirmada en dos mediciones separadas por no más de 72 horas. El ayuno implica al menos 8 horas sin ingesta calórica. La persona puede no tener síntomas.",
+            "El segundo criterio es una glucemia casual ≥200 mg/dL acompañada de síntomas clásicos: poliuria, polidipsia y pérdida inexplicable de peso. El tercero es una glucemia ≥200 mg/dL dos horas después de una carga oral de 75 g de glucosa."
+          ]
+        },
+        {
+          "title": "Metas de control cardiometabólico",
+          "depth": "core",
+          "table": {
+            "headers": ["Indicador", "Meta"],
+            "rows": [
+              ["Glucemia en ayunas", "70-130 mg/dL"],
+              ["Glucemia postprandial", "<180 mg/dL"],
+              ["Hemoglobina glucosilada", "<7%"],
+              ["Colesterol LDL", "<100 mg/dL"],
+              ["Colesterol HDL", ">50 mg/dL"],
+              ["Triglicéridos", "<150 mg/dL"],
+              ["Presión arterial", "<140/80 mmHg"]
+            ]
+          }
+        },
+        {
+          "title": "Diagnóstico no es sinónimo de derivación",
+          "depth": "full",
+          "body": [
+            "El diagnóstico y el inicio del tratamiento pueden hacerse en el primer nivel. La derivación se reserva para situaciones específicas: falta de control pese a tratamiento adecuado, sospecha de complicación, necesidad de insulina o evaluación especializada.",
+            "Confirmar el diagnóstico no es un motivo de referencia. Tampoco lo es iniciar tratamiento ni la falta de adherencia aislada: primero se trabaja con la persona y su contexto."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No confundir control con curación",
+            "text": "La DM2 es crónica. El objetivo es sostener el control y prevenir complicaciones, no dar el alta definitiva."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-dm2", "pages": [29, 30, 31, 44, 45, 79] }
+      ]
+    },
+    {
+      "id": "sheet-dm2-02",
+      "topicId": "topic-dm2-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "DM2: estilos de vida, metformina y cuándo referir",
+      "kicker": "Crónicas · Diabetes",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tratamiento parte de la educación y los cambios intensivos de estilo de vida. La metformina es la primera línea farmacológica; la derivación se activa por falta de control, complicaciones o necesidad de insulina.",
+      "keyConcepts": [
+        "La intervención intensiva sobre alimentación y actividad física es el pilar del tratamiento.",
+        "La metformina se inicia con dosis bajas y se titula de forma progresiva.",
+        "Se debe evaluar complicaciones y comorbilidades al diagnóstico.",
+        "La falta de control tras 3-6 meses con tratamiento adecuado es criterio de referencia."
+      ],
+      "sections": [
+        {
+          "title": "El pilar no es solo la pastilla",
+          "depth": "core",
+          "body": [
+            "El manejo incluye educación en autocuidado, plan de alimentación, actividad física y apoyo familiar. Idealmente participa un equipo con médico, enfermera, nutricionista y psicólogo. Los cambios de estilo de vida se sostienen durante 3 a 4 meses antes de intensificar el tratamiento farmacológico, salvo que el riesgo exija otra conducta.",
+            "La metformina es la primera línea. Se inicia con 500 u 850 mg al día y se incrementa cada 1 a 2 semanas hasta alcanzar el control o la dosis máxima de 2550 mg. Se toma con o inmediatamente después de las comidas principales."
+          ]
+        },
+        {
+          "title": "Efectos adversos y alternativas",
+          "depth": "core",
+          "table": {
+            "headers": ["Fármaco", "Puntos clave"],
+            "rows": [
+              ["Metformina", "Náuseas, diarrea y dolor abdominal; acidosis láctica en falla renal/hepática o infarto. Hipoglucemia rara."],
+              ["Glibenclamida", "Alternativa si no se tolera metformina; riesgo de hipoglucemia y aumento de peso."],
+              ["Glimepirida", "Uso en mayores de 65 años o enfermedad renal leve-moderada; inicio por especialista."],
+              ["Insulina", "Indicada en situaciones específicas; requiere educación y seguimiento."]
+            ]
+          }
+        },
+        {
+          "title": "Cuándo referir",
+          "depth": "full",
+          "bullets": [
+            "Control metabólico inadecuado tras 3 a 6 meses de tratamiento no farmacológico y farmacológico en monoterapia, con adherencia y dosis adecuadas.",
+            "Albuminuria >300 mg/24 h, creatinina >1,5 mg/dL o TFG <60 mL/min.",
+            "Neuropatía dolorosa o autonómica, enfermedad vascular periférica o pie diabético Wagner ≥2.",
+            "Retinopatía moderada-severa o proliferativa, enfermedad coronaria, insuficiencia cardíaca III-IV o antecedente de ACV.",
+            "Diabetes con hipertensión arterial o infección aguda severa."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Contrarreferencia",
+            "text": "La persona estabilizada y con control glucémico debe volver a su establecimiento de origen para continuar el seguimiento."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-dm2", "pages": [44, 47, 48, 60, 62, 63, 73, 75, 80] }
+      ]
+    },
+    {
+      "id": "sheet-hta-01",
+      "topicId": "topic-hta-diagnostico",
+      "areaId": "area-cronicas",
+      "title": "HTA: medir bien, clasificar y estratificar el riesgo",
+      "kicker": "Crónicas · Hipertensión",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La hipertensión es en gran medida asintomática. El diagnóstico exige mediciones repetidas y una evaluación del riesgo cardiovascular y del daño de órgano blanco.",
+      "keyConcepts": [
+        "Se debe medir la presión arterial a toda persona de 18 años o más.",
+        "Normal: <120/80; prehipertensión: 120-139/80-89; hipertensión: ≥140/90.",
+        "El estadio 1 es 140-159/90-99; el estadio 2 es ≥160/100.",
+        "La estratificación del riesgo combina presión, factores de riesgo, daño de órgano blanco y eventos previos."
+      ],
+      "sections": [
+        {
+          "title": "Cribado y clasificación",
+          "depth": "core",
+          "body": [
+            "La presión arterial se mide en toda persona mayor de 18 años. Si está en rango normal y no hay factores de riesgo, puede repetirse cada 5 años. Si hay factores de riesgo o valores de 120-139/80-89 mmHg, el control debe ser anual.",
+            "La clasificación operativa es: normal <120/80; prehipertensión 120-139/80-89; hipertensión ≥140/90, con estadio 1 (140-159/90-99) y estadio 2 (≥160/100)."
+          ]
+        },
+        {
+          "title": "Qué evalúa el riesgo",
+          "depth": "core",
+          "table": {
+            "headers": ["Componente", "Ejemplos"],
+            "rows": [
+              ["Factores de riesgo", "Edad, sexo masculino, tabaquismo, dislipidemia, diabetes, obesidad, antecedente familiar."],
+              ["Daño asintomático", "Hipertrofia ventricular, engrosamiento carotídeo, retinopatía, reducción de TFG, microalbuminuria."],
+              ["Enfermedad manifiesta", "Ictus, infarto, insuficiencia cardíaca, enfermedad arterial periférica, ERC avanzada."]
+            ]
+          }
+        },
+        {
+          "title": "El examen que no se puede saltar",
+          "depth": "full",
+          "bullets": [
+            "Peso, talla, IMC y perímetro abdominal.",
+            "Medición de presión, pulso y frecuencia cardíaca.",
+            "Examen cardiovascular, pulmonar, abdominal y de pulsos periféricos.",
+            "Fondo de ojo y evaluación de edema.",
+            "Laboratorio: glucosa, creatinina, perfil lipídico, orina y electrolitos; ECG según capacidad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "La HTA no se diagnostica con una sola toma aislada",
+            "text": "Se requieren mediciones repetidas y una evaluación integral; una cifra alta en una consulta puede ser transitoria."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-hta", "pages": [8, 9, 10, 11, 12] }
+      ]
+    },
+    {
+      "id": "sheet-hta-02",
+      "topicId": "topic-hta-tratamiento",
+      "areaId": "area-cronicas",
+      "title": "HTA: tratar, controlar y reconocer la alarma",
+      "kicker": "Crónicas · Hipertensión",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El tratamiento combina cambios de estilo de vida y fármacos según riesgo y cifras. La meta general es <140/90 mmHg, con ajustes en diabetes, proteinuria y octogenarios. La emergencia hipertensiva exige referencia.",
+      "keyConcepts": [
+        "Reducir sal a menos de 5 g/día, controlar peso y hacer actividad física regular.",
+        "La meta general es <140/90 mmHg; en proteinuria, <130/80; en octogenarios, PAS 140-150.",
+        "La terapia farmacológica se indica según riesgo y nivel de presión.",
+        "Presión ≥180/110 con daño agudo de órgano blanco es una emergencia hipertensiva."
+      ],
+      "sections": [
+        {
+          "title": "Estilos de vida con efectos medibles",
+          "depth": "core",
+          "bullets": [
+            "Reducir la ingesta de sal a no más de 5 g al día.",
+            "Evitar o moderar el alcohol.",
+            "Consumir frutas, verduras y alimentos bajos en grasa.",
+            "Reducir y controlar el peso; mantener IMC 18,5-24,9.",
+            "Realizar al menos 30 minutos diarios o 150 minutos semanales de actividad aeróbica.",
+            "Evitar el humo de tabaco y reducir exposiciones ocupacionales."
+          ]
+        },
+        {
+          "title": "Cuándo iniciar fármacos",
+          "depth": "core",
+          "table": {
+            "headers": ["Situación", "Conducta"],
+            "rows": [
+              ["Riesgo bajo", "Estilos de vida 3-6 meses; si no alcanza la meta, iniciar fármaco."],
+              ["PA ≥160/100", "Iniciar tratamiento farmacológico independientemente de otros parámetros."],
+              ["Riesgo moderado o mayor", "Iniciar fármaco independentemente de la cifra."],
+              ["Diabetes", "Meta <140/80; considerar combinación según riesgo."],
+              ["Proteinuria", "Meta <130/80."],
+              ["Octogenario", "Mantener PAS entre 140 y 150."]
+            ]
+          }
+        },
+        {
+          "title": "La alarma que no espera",
+          "depth": "full",
+          "body": [
+            "Una presión ≥180/110 mmHg con evidencia de complicación aguda —síndrome coronario agudo, insuficiencia cardíaca, encefalopatía, disección de aorta— es una emergencia hipertensiva y requiere referencia inmediata al segundo o tercer nivel.",
+            "La hipertensión primaria no se da de alta: el objetivo es mantener el control y el seguimiento de por vida. La decisión de derivar por riesgo alto, daño de órgano blanco o falta de control debe ser explícita y con contrarreferencia."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No bajar la presión de golpe sin evaluar",
+            "text": "La conducta depende de si hay daño agudo de órgano blanco. Ante la duda, referir y no improvisar."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-hta", "pages": [12, 13, 14, 15, 17, 18] }
+      ]
+    },
+    {
+      "id": "sheet-climaterio-01",
+      "topicId": "topic-climaterio",
+      "areaId": "area-cronicas",
+      "title": "Climaterio: diagnóstico clínico y decisión terapéutica",
+      "kicker": "Crónicas · Salud de la mujer",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "El climaterio es una etapa de transición hormonal con síntomas físicos, emocionales y sexuales. El diagnóstico es clínico y la terapia hormonal se indica solo en síntomas moderados a severos, de forma individualizada.",
+      "keyConcepts": [
+        "La menopausia se diagnostica de forma retrospectiva tras 12 meses de amenorrea sin otra causa.",
+        "Los síntomas vasomotores, genitourinarios, psicológicos y musculoesqueléticos afectan la calidad de vida.",
+        "La escala MRS ayuda a graduar la intensidad y orientar la conducta.",
+        "La terapia hormonal exige evaluación de riesgos, dosis baja, tiempo corto y seguimiento."
+      ],
+      "sections": [
+        {
+          "title": "Qué es y cómo se reconoce",
+          "depth": "core",
+          "body": [
+            "El climaterio abarca la transición hacia la menopausia y el periodo posterior, debido al declive de la función ovárica. La menopausia es la última menstruación; se confirma retrospectivamente cuando han pasado 12 meses de amenorrea sin otra causa patológica o fisiológica.",
+            "El diagnóstico es fundamentalmente clínico. La FSH y el estradiol pueden apoyar, pero no son obligatorios. Es importante descartar otras causas de amenorrea o sangrado y evaluar síntomas vasomotores, sequedad vaginal, alteraciones del sueño, ánimo y dolor musculoesquelético."
+          ]
+        },
+        {
+          "title": "Escala MRS y orientación",
+          "depth": "core",
+          "table": {
+            "headers": ["Puntaje MRS", "Orientación"],
+            "rows": [
+              ["Total ≥15", "Terapia hormonal muy recomendable; tratar según intensidad."],
+              ["Total ≥8, somático ≥8 o psicológico ≥6", "Cualquier terapia hormonal según evaluación individual."],
+              ["Urogenital ≥3", "Considerar terapia local o sistémica según caso."],
+              ["Síntomas leves", "Estilos de vida, medidas no farmacológicas y seguimiento."]
+            ]
+          }
+        },
+        {
+          "title": "Terapia hormonal: indicación y límites",
+          "depth": "full",
+          "body": [
+            "La terapia hormonal menopáusica se prescribe en síndrome climatérico con síntomas moderados a severos que afectan la calidad de vida. Debe ser individualizada, con dosis bajas, tiempo corto y controles periódicos. La vía transdérmica puede preferirse en algunas mujeres con riesgo trombótico o metabólico.",
+            "Es fundamental revisar contraindicaciones: sangrado vaginal sin explicación, enfermedad hepática, trombosis venosa o embolia pulmonar, trombofilia, hipertensión no tratada y antecedente de cáncer de mama o endometrio. En mujeres con útero intacto, el estrógeno debe acompañarse de progestágeno para proteger el endometrio."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No es una receta universal",
+            "text": "La decisión depende de síntomas, riesgos, preferencias y seguimiento. No se indica en síntomas leves ni sin evaluación previa."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-climaterio", "pages": [13, 14, 15, 16, 24, 25, 26, 28, 30, 31, 35] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-dm2-01-1",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "concept",
+      "prompt": "¿Con qué criterios se confirma el diagnóstico de diabetes mellitus tipo 2?",
+      "answer": "Con cualquiera de estos: glucemia en ayunas ≥126 mg/dL en dos oportunidades separadas por no más de 72 horas; glucemia casual ≥200 mg/dL con síntomas de hiperglucemia; o glucemia ≥200 mg/dL dos horas después de una carga oral de 75 g de glucosa.",
+      "explanation": "Los tres criterios reflejan hiperglucemia crónica o sintomática. Una sola cifra aislada no basta salvo que haya síntomas claros o prueba de tolerancia.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [29, 30, 31] }],
+      "tags": ["diabetes", "diagnóstico"]
+    },
+    {
+      "id": "card-dm2-01-2",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la meta de hemoglobina glucosilada en el control de la DM2 según la guía?",
+      "options": ["<6%", "<7%", "<8%", "<9%"],
+      "correctIndex": 1,
+      "explanation": "La guía establece como meta una hemoglobina glucosilada menor de 7%. Las otras cifras no corresponden a la meta general de control.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [45] }],
+      "tags": ["diabetes", "opción múltiple"]
+    },
+    {
+      "id": "card-dm2-01-3",
+      "topicId": "topic-dm2-diagnostico",
+      "sheetId": "sheet-dm2-01",
+      "type": "application",
+      "prompt": "Una persona asintomática tiene una glucemia en ayunas de 130 mg/dL. ¿Cuál es la conducta correcta?",
+      "options": [
+        "Diagnosticar diabetes con una sola medición.",
+        "Repetir la glucemia en ayunas en un plazo no mayor de 72 horas para confirmar.",
+        "Indicar insulina de inmediato.",
+        "Descartar diabetes porque no tiene síntomas."
+      ],
+      "correctIndex": 1,
+      "explanation": "El criterio exige dos mediciones ≥126 mg/dL separadas por no más de 72 horas. La ausencia de síntomas no descarta diabetes; la insulina no es el paso inicial.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [29] }],
+      "tags": ["diabetes", "aplicación"]
+    },
+    {
+      "id": "card-dm2-02-1",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "concept",
+      "prompt": "¿Cuál es el pilar del tratamiento de la DM2 y cómo se usa la metformina?",
+      "answer": "El pilar es la intervención intensiva sobre estilos de vida: alimentación, actividad física, educación y apoyo familiar. La metformina es la primera línea farmacológica; se inicia con 500 u 850 mg al día y se titula cada 1-2 semanas hasta el control o la dosis máxima de 2550 mg, con las comidas.",
+      "explanation": "El fármaco no reemplaza los cambios de estilo de vida. La titulación progresiva reduce efectos gastrointestinales.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [47, 60] }],
+      "tags": ["diabetes", "tratamiento"]
+    },
+    {
+      "id": "card-dm2-02-2",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "multiple",
+      "prompt": "¿En cuál de estos casos NO corresponde referir a la persona con DM2?",
+      "options": [
+        "Inadecuado control tras 3-6 meses con tratamiento y adherencia adecuada.",
+        "Pie diabético Wagner ≥2.",
+        "Solo para confirmar el diagnóstico en el primer nivel.",
+        "Diabetes con hipertensión arterial."
+      ],
+      "correctIndex": 2,
+      "explanation": "La guía indica expresamente que no se debe referir para confirmar el diagnóstico ni para iniciar tratamiento. Los otros supuestos sí son criterios de referencia.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [73, 75, 77, 79] }],
+      "tags": ["diabetes", "opción múltiple"]
+    },
+    {
+      "id": "card-dm2-02-3",
+      "topicId": "topic-dm2-tratamiento",
+      "sheetId": "sheet-dm2-02",
+      "type": "application",
+      "prompt": "Una persona con DM2 tiene albuminuria de 350 mg/24 h y edema. ¿Qué conducta corresponde?",
+      "options": [
+        "Ajustar solo la metformina y controlar en un año.",
+        "Referir al segundo o tercer nivel por sospecha de complicación renal.",
+        "Suspender todo tratamiento y esperar.",
+        "Indicar solo dieta hiposódica sin evaluación."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una albuminuria >300 mg/24 h es criterio de referencia por complicación crónica. Requiere evaluación especializada y manejo integral.",
+      "sourceRefs": [{ "sourceId": "src-dm2", "pages": [75] }],
+      "tags": ["diabetes", "aplicación"]
+    },
+    {
+      "id": "card-hta-01-1",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "concept",
+      "prompt": "¿Cómo se clasifica la presión arterial en adultos y qué significa prehipertensión?",
+      "answer": "Normal: <120/80 mmHg. Prehipertensión: 120-139/80-89 mmHg. Hipertensión: ≥140/90 mmHg, con estadio 1 (140-159/90-99) y estadio 2 (≥160/100). La prehipertensión no es enfermedad establecida, pero exige control anual y manejo de factores de riesgo.",
+      "explanation": "La clasificación orienta el seguimiento y el tratamiento. La prehipertensión es una señal de riesgo, no un diagnóstico de HTA.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [9] }],
+      "tags": ["hipertensión", "diagnóstico"]
+    },
+    {
+      "id": "card-hta-01-2",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "multiple",
+      "prompt": "¿Qué elementos se usan para estratificar el riesgo cardiovascular en hipertensión?",
+      "options": [
+        "Solo la cifra de presión arterial.",
+        "Presión arterial, factores de riesgo, daño de órgano blanco y enfermedad cardiovascular o renal manifiesta.",
+        "Solo la edad y el sexo.",
+        "Únicamente el colesterol total."
+      ],
+      "correctIndex": 1,
+      "explanation": "La estratificación combina el nivel de presión con factores de riesgo, daño asintomático y eventos manifiestos. La cifra aislada no alcanza para decidir el manejo.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [6, 7, 10] }],
+      "tags": ["hipertensión", "opción múltiple"]
+    },
+    {
+      "id": "card-hta-01-3",
+      "topicId": "topic-hta-diagnostico",
+      "sheetId": "sheet-hta-01",
+      "type": "application",
+      "prompt": "Una persona de 45 años tiene presión de 150/95 mmHg en dos controles y no presenta otros factores de riesgo. ¿Qué corresponde?",
+      "options": [
+        "Considerarla normal y citarla en 5 años.",
+        "Clasificarla como hipertensión estadio 1 e iniciar evaluación integral y manejo.",
+        "Derivarla de inmediato a emergencia.",
+        "Indicarle solo un analgésico."
+      ],
+      "correctIndex": 1,
+      "explanation": "150/95 corresponde a hipertensión estadio 1. Requiere evaluación de riesgo, daño de órgano blanco y plan de manejo; no es una emergencia ni un valor normal.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [9] }],
+      "tags": ["hipertensión", "aplicación"]
+    },
+    {
+      "id": "card-hta-02-1",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las metas de presión arterial en hipertensión general, diabetes, proteinuria y octogenarios?",
+      "answer": "En hipertensos en general, <140/90 mmHg. En diabetes, <140/80. En personas con proteinuria, <130/80. En octogenarios, mantener la presión sistólica entre 140 y 150 mmHg. Las metas se individualizan según tolerancia y comorbilidad.",
+      "explanation": "Las metas no son idénticas para todos: la proteinuria y la diabetes exigen un control más estricto, mientras que en el muy anciano se evita bajar demasiado la sistólica.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [12] }],
+      "tags": ["hipertensión", "metas"]
+    },
+    {
+      "id": "card-hta-02-2",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "multiple",
+      "prompt": "¿Cuándo se considera una emergencia hipertensiva?",
+      "options": [
+        "Cualquier presión ≥140/90 mmHg.",
+        "Presión ≥180/110 mmHg con evidencia de daño agudo de órgano blanco.",
+        "Presión ≥160/100 mmHg sin síntomas.",
+        "Una sola medición alta en una consulta."
+      ],
+      "correctIndex": 1,
+      "explanation": "La emergencia requiere cifras ≥180/110 y complicación aguda: síndrome coronario, insuficiencia cardíaca, encefalopatía, disección de aorta, entre otras. Una cifra alta aislada no define emergencia.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [17] }],
+      "tags": ["hipertensión", "opción múltiple"]
+    },
+    {
+      "id": "card-hta-02-3",
+      "topicId": "topic-hta-tratamiento",
+      "sheetId": "sheet-hta-02",
+      "type": "application",
+      "prompt": "Un paciente hipertenso con riesgo bajo ha hecho cambios de estilo de vida durante 6 meses y sigue con presión 145/92 mmHg. ¿Qué corresponde?",
+      "options": [
+        "Esperar otros 6 meses sin cambios.",
+        "Iniciar tratamiento farmacológico y mantener los cambios de estilo de vida.",
+        "Suspender el seguimiento.",
+        "Derivarlo directamente a cirugía."
+      ],
+      "correctIndex": 1,
+      "explanation": "En riesgo bajo, si tras 3-6 meses de cambios de estilo de vida no se alcanza la meta, se inicia terapia farmacológica. Los estilos de vida se mantienen.",
+      "sourceRefs": [{ "sourceId": "src-hta", "pages": [14] }],
+      "tags": ["hipertensión", "aplicación"]
+    },
+    {
+      "id": "card-climaterio-01-1",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "concept",
+      "prompt": "¿Cómo se diagnostica la menopausia y qué es el climaterio?",
+      "answer": "El climaterio es la etapa de transición hormonal que abarca el periodo previo y posterior a la menopausia. La menopausia es la última menstruación y se diagnostica retrospectivamente tras 12 meses de amenorrea sin otra causa. El diagnóstico es clínico; las hormonas pueden apoyar pero no son obligatorias.",
+      "explanation": "No se necesita una prueba hormonal para diagnosticar menopausia en una mujer típica. La confirmación retrospectiva evita confundirla con otras causas de amenorrea.",
+      "sourceRefs": [{ "sourceId": "src-climaterio", "pages": [13, 25] }],
+      "tags": ["climaterio", "diagnóstico"]
+    },
+    {
+      "id": "card-climaterio-01-2",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es una contraindicación absoluta de la terapia hormonal menopáusica?",
+      "options": [
+        "Sofocos moderados.",
+        "Antecedente de cáncer de mama o endometrio.",
+        "Sequedad vaginal.",
+        "Menopausia a los 50 años."
+      ],
+      "correctIndex": 1,
+      "explanation": "El antecedente de cáncer de mama o endometrio es una contraindicación absoluta. Los sofocos y la sequedad son síntomas que pueden motivar evaluación, no contraindicaciones.",
+      "sourceRefs": [{ "sourceId": "src-climaterio", "pages": [31] }],
+      "tags": ["climaterio", "opción múltiple"]
+    },
+    {
+      "id": "card-climaterio-01-3",
+      "topicId": "topic-climaterio",
+      "sheetId": "sheet-climaterio-01",
+      "type": "application",
+      "prompt": "Una mujer de 52 años consulta por sofocos intensos que afectan su sueño y trabajo. No tiene contraindicaciones. ¿Cuál es la conducta más adecuada?",
+      "options": [
+        "Indicar terapia hormonal sin evaluación.",
+        "Evaluar síntomas y riesgos, ofrecer terapia hormonal individualizada a dosis baja con seguimiento y reforzar estilos de vida.",
+        "Decirle que los síntomas son normales y no requieren manejo.",
+        "Indicar solo antibióticos."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los síntomas moderados a severos que afectan la calidad de vida justifican evaluar terapia hormonal individualizada. Siempre se revisan contraindicaciones y se acompaña con estilos de vida y controles.",
+      "sourceRefs": [{ "sourceId": "src-climaterio", "pages": [24, 30, 31] }],
+      "tags": ["climaterio", "aplicación"]
+    }
+  ]
+}

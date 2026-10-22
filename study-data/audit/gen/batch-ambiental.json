@@ -1,0 +1,694 @@
+{
+  "sources": [
+    {
+      "id": "src-agua-reglamento",
+      "title": "Reglamento de la Calidad del Agua para Consumo Humano (D.S. N° 031-2010-SA)",
+      "short": "Calidad del agua",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Reglamento",
+      "provenance": "Reglamento nacional que establece la gestión, vigilancia, control y requisitos de calidad del agua para consumo humano.",
+      "file": "../study-data/fuentes/calidad-del-agua.pdf"
+    },
+    {
+      "id": "src-salud-ambiental-politica",
+      "title": "Política Nacional de Salud Ambiental 2011-2020",
+      "short": "Política salud ambiental",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Política nacional",
+      "provenance": "Documento técnico aprobado por R.M. N° 258-2011/MINSA; define principios, situación y seis políticas nacionales de salud ambiental.",
+      "file": "../study-data/fuentes/politica-nacional-salud-ambiental.pdf"
+    },
+    {
+      "id": "src-metales",
+      "title": "Vigilancia epidemiológica de factores de riesgo por exposición e intoxicación por metales pesados y metaloides (NTS N° 111-2014)",
+      "short": "Metales pesados",
+      "authors": "Ministerio de Salud del Perú — Dirección General de Epidemiología",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 006-2015/MINSA; organiza la notificación, investigación y respuesta ante exposición a metales pesados.",
+      "file": "../study-data/fuentes/vigilancia-metales-pesados.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-ambiental",
+      "title": "Salud ambiental y determinantes del entorno",
+      "short": "Salud ambiental",
+      "description": "Agua segura, aire, residuos, sustancias peligrosas y vigilancia de riesgos ambientales para proteger la salud de la población.",
+      "accent": "#86B7A8",
+      "icon": "drop",
+      "sourceIds": ["src-agua-reglamento", "src-salud-ambiental-politica", "src-metales"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-agua-calidad",
+      "areaId": "area-ambiental",
+      "title": "Calidad e inocuidad del agua",
+      "summary": "El reglamento fija requisitos microbiológicos, organolépticos, químicos y radiactivos, y distribuye responsabilidades entre autoridad, proveedor y consumidor.",
+      "sourceIds": ["src-agua-reglamento"],
+      "keywords": ["agua", "inocuidad", "límites máximos permisibles", "cloro residual"]
+    },
+    {
+      "id": "topic-agua-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Vigilancia y control del agua",
+      "summary": "La vigilancia sanitaria y el control de calidad detectan desviaciones y activan medidas correctivas y de comunicación.",
+      "sourceIds": ["src-agua-reglamento"],
+      "keywords": ["vigilancia sanitaria", "control de calidad", "medidas correctivas", "DIGESA"]
+    },
+    {
+      "id": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Política nacional de salud ambiental",
+      "summary": "La política prioriza agua, alimentos, aire, peligros ambientales, descentralización y emergencias.",
+      "sourceIds": ["src-salud-ambiental-politica"],
+      "keywords": ["salud ambiental", "política", "riesgos", "determinantes"]
+    },
+    {
+      "id": "topic-metales-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Metales pesados: exposición y casos",
+      "summary": "La norma define exposición, caso sospechoso, probable y confirmado, y establece la notificación obligatoria.",
+      "sourceIds": ["src-metales"],
+      "keywords": ["metales pesados", "exposición", "intoxicación", "notificación"]
+    },
+    {
+      "id": "topic-metales-respuesta",
+      "areaId": "area-ambiental",
+      "title": "Investigación y respuesta ante metales",
+      "summary": "La investigación epidemiológica, el laboratorio y la respuesta intersectorial permiten confirmar casos y controlar la fuente.",
+      "sourceIds": ["src-metales"],
+      "keywords": ["investigación", "laboratorio", "contingencia", "RENACE"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-agua-01",
+      "topicId": "topic-agua-calidad",
+      "areaId": "area-ambiental",
+      "title": "Agua para consumo humano: qué debe cumplir",
+      "kicker": "Salud ambiental · Agua",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "El Reglamento de la Calidad del Agua fija requisitos para que el agua sea inocua y apta para consumo y uso doméstico. No basta con que sea transparente: debe cumplir límites microbiológicos, organolépticos, químicos y radiactivos.",
+      "keyConcepts": [
+        "El agua apta para consumo humano debe estar exenta de coliformes totales, termotolerantes y E. coli.",
+        "El cloro residual libre debe mantenerse al menos en 0,5 mg/L en la red de distribución.",
+        "Los límites máximos permisibles incluyen parámetros microbiológicos, organolépticos, químicos y radiactivos.",
+        "La responsabilidad es compartida entre autoridad sanitaria, proveedor y consumidor."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa agua apta",
+          "depth": "core",
+          "body": [
+            "El reglamento define el agua de consumo humano como aquella apta para beber y para todo uso doméstico habitual, incluida la higiene personal. El agua tratada es la que fue sometida a procesos físicos, químicos o biológicos para volverla inocua.",
+            "La norma busca garantizar la inocuidad, prevenir factores de riesgo sanitario y proteger la salud. Se aplica a toda persona natural o jurídica, pública o privada, que produzca, transporte, almacene o suministre agua."
+          ]
+        },
+        {
+          "title": "Límites que importan en la práctica",
+          "depth": "core",
+          "table": {
+            "headers": ["Parámetro", "Referencia"],
+            "rows": [
+              ["Coliformes totales, termotolerantes y E. coli", "0 UFC/100 mL"],
+              ["Bacterias heterotróficas", "menos de 500 UFC/mL a 35 °C"],
+              ["Cloro residual libre", "no menos de 0,5 mg/L en la red"],
+              ["pH", "6,5 a 8,5"],
+              ["Turbiedad", "5 UNT"],
+              ["Arsénico", "0,010 mg/L"],
+              ["Plomo", "0,010 mg/L"],
+              ["Mercurio", "0,001 mg/L"]
+            ]
+          }
+        },
+        {
+          "title": "Roles y obligaciones",
+          "depth": "full",
+          "bullets": [
+            "DIGESA: política nacional, normas de vigilancia y consolidación de información.",
+            "DIRESA, GRS o DISA: vigilancia y control en su jurisdicción.",
+            "Proveedor: plan de control de calidad, tratamiento, muestreo y medidas correctivas.",
+            "Consumidor: usar y almacenar el agua de forma segura y colaborar con el cuidado de la fuente."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No todo pozo es una fuente segura",
+            "text": "La vigilancia debe cubrir también camiones cisterna, surtidores y conexiones provisionales, no solo la red formal."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-agua-reglamento", "pages": [10, 11, 13, 14, 29, 30, 31, 39, 40, 41] }
+      ]
+    },
+    {
+      "id": "sheet-agua-02",
+      "topicId": "topic-agua-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Cuando el agua falla: vigilancia y medidas correctivas",
+      "kicker": "Salud ambiental · Agua",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "La vigilancia sanitaria detecta problemas que el proveedor no ve y activa respuestas. Ante contaminación microbiológica o químicas fuera de límite, el proveedor debe investigar, corregir y comunicar a la autoridad.",
+      "keyConcepts": [
+        "La vigilancia sanitaria es distinta del control de calidad que realiza el proveedor.",
+        "Ante coliformes en la red, se investiga la causa y se recolectan muestras diarias hasta tener dos resultados negativos consecutivos.",
+        "Ante un parámetro químico fuera de límite, se repite el muestreo y se comunica a la autoridad sanitaria.",
+        "Las excepciones por desastres naturales son temporales y no deben causar daño a la salud."
+      ],
+      "sections": [
+        {
+          "title": "Vigilar no es lo mismo que controlar",
+          "depth": "core",
+          "body": [
+            "El proveedor controla la calidad de su sistema: trata, muestrea y corrige. La autoridad sanitaria vigila la calidad del agua que llega a la población y fiscaliza el cumplimiento. Ambas funciones se complementan, pero no se sustituyen.",
+            "La vigilancia incluye inspecciones, muestreos, revisión de registros y análisis de información. Si detecta un riesgo, puede emitir medidas de seguridad y sanciones."
+          ]
+        },
+        {
+          "title": "Respuesta ante un resultado adverso",
+          "depth": "core",
+          "table": {
+            "headers": ["Hallazgo", "Respuesta inmediata"],
+            "rows": [
+              ["Coliformes totales o termotolerantes en la red", "Investigar causas, corregir y muestrear a diario hasta dos resultados negativos consecutivos."],
+              ["Parámetro químico sobre el límite", "Repetir el muestreo; si se confirma, investigar y comunicar a la autoridad sanitária."],
+              ["Emergencia o desastre natural", "Excepción temporal otorgada por la autoridad, sin daño a la salud."],
+              ["Incumplimiento del proveedor", "Fiscalización, medidas de seguridad y sanción."]
+            ]
+          }
+        },
+        {
+          "title": "Comunicar también es proteger",
+          "depth": "full",
+          "body": [
+            "La norma incluye la difusión y el acceso a la información sobre la calidad del agua. Una comunidad informada puede exigir mejoras, proteger sus reservorios y adoptar prácticas seguras de almacenamiento.",
+            "El registro oportuno de muestras, resultados y acciones correctivas permite reconstruir lo ocurrido y evaluar si la respuesta fue suficiente."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Para recordar",
+            "text": "Un resultado negativo aislado no cierra el problema: hay que demostrar que la corrección funcionó."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-agua-reglamento", "pages": [15, 16, 17, 18, 30, 31, 32] }
+      ]
+    },
+    {
+      "id": "sheet-ambiental-politica-01",
+      "topicId": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Salud ambiental: riesgos que se pueden prevenir",
+      "kicker": "Salud ambiental · Política",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La Política Nacional de Salud Ambiental 2011-2020 reconoce que el ambiente insalubre produce enfermedades evitables y que la respuesta exige prevención, evidencia, transparencia y participación.",
+      "keyConcepts": [
+        "La salud ambiental es un derecho social transversal a todos los sectores del Estado.",
+        "Los riesgos prioritarios incluyen agua, aire, alimentos, residuos, vectores, zoonosis y sustancias peligrosas.",
+        "Las decisiones deben basarse en evidencia científica y en un enfoque preventivo.",
+        "La transparencia y la participación son principios de la política."
+      ],
+      "sections": [
+        {
+          "title": "El ambiente como determinante",
+          "depth": "core",
+          "body": [
+            "La política señala que la salud depende de alimentación inocua, vivienda saludable, trabajo digno, educación y condiciones ambientales adecuadas. El agua contaminada, el aire sucio, los residuos mal manejados y los vectores producen enfermedades que afectan sobre todo a los más pobres.",
+            "La salud ambiental no es un tema exclusivo del sector salud: es transversal y requiere articulación con vivienda, agricultura, ambiente, trabajo y gobiernos locales."
+          ]
+        },
+        {
+          "title": "Cinco principios",
+          "depth": "core",
+          "bullets": [
+            "Respeto a la vida en un entorno saludable.",
+            "Enfoque preventivo, antes que remedial.",
+            "Decisiones basadas en evidencia científica.",
+            "Facilitación del comercio que fomenta la salud.",
+            "Transparencia y participación de la población."
+          ]
+        },
+        {
+          "title": "Los problemas prioritarios",
+          "depth": "full",
+          "table": {
+            "headers": ["Ámbito", "Ejemplo de riesgo"],
+            "rows": [
+              ["Agua y recursos hídricos", "Contaminación bacteriana, metales, vertimientos."],
+              ["Aire", "Partículas y gases de transporte, industria y cocina."],
+              ["Alimentos", "Contaminación microbiológica y química."],
+              ["Residuos sólidos", "Vertederos abiertos y quema informal."],
+              ["Vectores y zoonosis", "Dengue, roedores, animales de compañía."],
+              ["Sustancias peligrosas", "Plaguicidas, mercurio, plomo y otros químicos."]
+            ]
+          },
+          "callout": {
+            "tone": "info",
+            "title": "Mirada de equidad",
+            "text": "Los riesgos ambientales no se distribuyen por igual: suelen concentrarse en las poblaciones con menos recursos y menor capacidad de exigir protección."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-salud-ambiental-politica", "pages": [11, 12, 13, 14, 15, 16, 17, 18] }
+      ]
+    },
+    {
+      "id": "sheet-ambiental-politica-02",
+      "topicId": "topic-salud-ambiental-politica",
+      "areaId": "area-ambiental",
+      "title": "Seis políticas para actuar sobre el entorno",
+      "kicker": "Salud ambiental · Política",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La política se operativiza en seis frentes: agua, alimentos, aire, peligros y alertas, descentralización y emergencias. Cada uno tiene objetivos y estrategias verificables.",
+      "keyConcepts": [
+        "La primera política asegura la vigilancia del agua de consumo humano.",
+        "La segunda busca la inocuidad de los alimentos; la tercera, la calidad del aire.",
+        "La cuarta vigila peligros y alertas ambientales, incluidos residuos, químicos, vectores y zoonosis.",
+        "La quinta fortalece la descentralización y la sexta la respuesta en emergencias y desastres."
+      ],
+      "sections": [
+        {
+          "title": "Las seis políticas",
+          "depth": "core",
+          "table": {
+            "headers": ["Política", "Foco"],
+            "rows": [
+              ["1. Agua de consumo humano", "Vigilancia y fiscalización sanitaria; tecnologías intradomiciliarias en zonas dispersas."],
+              ["2. Inocuidad de alimentos", "Producción, comercio y control sanitario; referencia al Codex Alimentarius."],
+              ["3. Calidad del aire", "Estándares, estudios de costo-efectividad e intervenciones."],
+              ["4. Peligros y alertas", "Recursos hídricos, residuos, químicos, vectores y zoonosis."],
+              ["5. Descentralización", "Fortalecer capacidades regionales y locales."],
+              ["6. Emergencias y desastres", "Planes de respuesta del sector salud."]
+            ]
+          }
+        },
+        {
+          "title": "Qué se espera del nivel local",
+          "depth": "core",
+          "body": [
+            "La política no se ejecuta solo desde Lima. Las DIRESA y los gobiernos locales deben vigilar el agua, los alimentos y los riesgos ambientales de su jurisdicción, con planes operativos y personal responsable.",
+            "La descentralización implica transferir funciones y capacidades, no solo responsabilidades. Sin presupuesto, laboratorio y personal capacitado, la vigilancia se queda en el papel."
+          ]
+        },
+        {
+          "title": "Emergencias: prepararse antes",
+          "depth": "full",
+          "body": [
+            "Inundaciones, deslizamientos, derrames y otros eventos pueden contaminar el agua, afectar los alimentos y generar brotes. La política pide planes articulados y capacidad de respuesta oportuna.",
+            "La preparación incluye identificar fuentes de riesgo, mantener reservas y protocolos, y coordinar con defensa civil, gobiernos locales y otros sectores."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "La emergencia no crea el riesgo",
+            "text": "Muchas veces lo visibiliza: agua insegura, viviendas mal ubicadas y sistemas de salud frágiles ya existían antes del desastre."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-salud-ambiental-politica", "pages": [26, 27, 28, 29, 30, 31, 32] }
+      ]
+    },
+    {
+      "id": "sheet-metales-01",
+      "topicId": "topic-metales-vigilancia",
+      "areaId": "area-ambiental",
+      "title": "Metales pesados: exposición, caso y notificación",
+      "kicker": "Salud ambiental · Metales",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La norma distingue exposición de intoxicación y define casos sospechosos, probables y confirmados. La notificación es obligatoria y la respuesta ante contingencias es inmediata.",
+      "keyConcepts": [
+        "Un caso sospechoso es una persona expuesta a una fuente confirmada, sin síntomas.",
+        "El caso probable requiere hallazgos clínicos o de laboratorio compatibles; el confirmado requiere confirmación.",
+        "La notificación de casos es mensual y obligatoria; la contingencia se notifica de inmediato.",
+        "Las poblaciones expuestas viven o trabajan cerca de fuentes naturales o antropogénicas."
+      ],
+      "sections": [
+        {
+          "title": "Exposición no es lo mismo que intoxicación",
+          "depth": "core",
+          "body": [
+            "La exposición es el contacto con una fuente de metales pesados o metaloides. La intoxicación implica daño a la salud. Una persona puede estar expuesta sin síntomas y aun así requerir seguimiento.",
+            "La norma define factor de riesgo como cualquier condición, característica o exposición que pueda producir daño. Las fuentes pueden ser naturales o antropogénicas: minería, fundición, industria, agua contaminada, alimentos o suelo."
+          ]
+        },
+        {
+          "title": "Definiciones de caso",
+          "depth": "core",
+          "table": {
+            "headers": ["Tipo de caso", "Criterio"],
+            "rows": [
+              ["Sospechoso (expuesto)", "Antecedente de exposición a fuente confirmada, sin manifestaciones clínicas."],
+              ["Probable", "Cuadro clínico o resultado de laboratorio compatible, sin confirmación completa."],
+              ["Confirmado", "Caso con confirmación clínica, epidemiológica o de laboratorio según la norma."],
+              ["Descartado", "Investigación que excluye la exposición o la intoxicación."]
+            ]
+          }
+        },
+        {
+          "title": "Notificación y vigilancia",
+          "depth": "full",
+          "bullets": [
+            "Notificación mensual obligatoria de casos sospechosos, probables y confirmados.",
+            "Notificación negativa cuando no se presentan casos.",
+            "Notificación inmediata de contingencias por exposición.",
+            "Vigilancia pasiva a partir de las atenciones y vigilancia centinela en establecimientos seleccionados."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No esperar síntomas",
+            "text": "La exposición puede ser silenciosa. La vigilancia busca identificar riesgo antes de que aparezca el daño clínico."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-metales", "pages": [13, 14, 15, 16, 17, 18, 19, 20] }
+      ]
+    },
+    {
+      "id": "sheet-metales-02",
+      "topicId": "topic-metales-respuesta",
+      "areaId": "area-ambiental",
+      "title": "Investigación y respuesta ante metales pesados",
+      "kicker": "Salud ambiental · Metales",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "Ante un caso o contingencia, el equipo de salud investiga la fuente, toma muestras biológicas y ambientales, y reporta en plazos definidos. La respuesta es intersectorial y se sostiene en la red de epidemiología.",
+      "keyConcepts": [
+        "La investigación epidemiológica busca la fuente de exposición y las personas afectadas.",
+        "El informe preliminar se remite dentro de las 72 horas; luego se envían seguimiento y informe final.",
+        "Las muestras biológicas se toman con bioseguridad y se articulan con el laboratorio.",
+        "La RENACE y los establecimientos centinela sostienen la vigilancia en los niveles local, regional y nacional."
+      ],
+      "sections": [
+        {
+          "title": "Investigar antes de concluir",
+          "depth": "core",
+          "body": [
+            "La investigación epidemiológica reconstruye la cadena de exposición: fuente, vía, tiempo, población afectada y factores de riesgo. No basta con un resultado de laboratorio aislado; hay que interpretarlo con la historia de exposición y el cuadro clínico.",
+            "El equipo debe identificar localidades en riesgo, personas expuestas, actividades económicas y posibles fuentes ambientales: aire, agua, suelo y alimentos."
+          ]
+        },
+        {
+          "title": "Plazos y productos",
+          "depth": "core",
+          "table": {
+            "headers": ["Producto", "Plazo"],
+            "rows": [
+              ["Notificación de contingencia", "Inmediata"],
+              ["Informe preliminar de investigación", "Dentro de 72 horas"],
+              ["Informe de seguimiento", "Según evolución del evento"],
+              ["Informe final", "Al concluir la investigación"],
+              ["Notificación mensual de casos", "Cada mes, incluida la negativa"]
+            ]
+          }
+        },
+        {
+          "title": "Una respuesta que no termina en el laboratorio",
+          "depth": "full",
+          "body": [
+            "Confirmar un caso exige comunicar, orientar y derivar a la atención correspondiente. También implica coordinar con ambiente, minería, agricultura y gobiernos locales para controlar la fuente.",
+            "La información debe retroalimentar a los niveles local y regional mediante boletines, reportes y salas de situación. La vigilancia sirve para decidir, no solo para registrar."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Pregunta clave",
+            "text": "Si se confirma un caso, ¿ya sabemos de dónde viene la exposición y quiénes más están expuestos?"
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-metales", "pages": [19, 21, 22, 23, 24, 25, 26, 27] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-agua-01-1",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "concept",
+      "prompt": "¿Qué significa que el agua sea apta para consumo humano según el reglamento peruano?",
+      "answer": "Significa que es inocua para la salud y cumple los requisitos de calidad establecidos: límites microbiológicos y parasitológicos, organolépticos, químicos y radiactivos. Debe estar exenta de coliformes y E. coli, mantener cloro residual suficiente y no superar los límites de sustancias tóxicas.",
+      "explanation": "La aptitud no se juzga solo por el aspecto. Un agua transparente puede contener microorganismos o metales por encima del límite.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [10, 29, 39, 41, 43] }],
+      "tags": ["agua", "concepto"]
+    },
+    {
+      "id": "card-agua-01-2",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el límite máximo permisible de coliformes totales en el agua para consumo humano?",
+      "options": ["0 UFC/100 mL", "10 UFC/100 mL", "100 UFC/100 mL", "500 UFC/100 mL"],
+      "correctIndex": 0,
+      "explanation": "El Anexo I establece 0 UFC/100 mL para coliformes totales, E. coli y coliformes termotolerantes. El valor de 500 UFC/mL corresponde a bacterias heterotróficas, no a coliformes.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [39] }],
+      "tags": ["agua", "opción múltiple"]
+    },
+    {
+      "id": "card-agua-01-3",
+      "topicId": "topic-agua-calidad",
+      "sheetId": "sheet-agua-01",
+      "type": "application",
+      "prompt": "Una comunidad recibe agua de un camión cisterna. El agua se ve limpia, pero no hay registro de cloración ni de análisis. ¿Qué corresponde?",
+      "options": [
+        "Consumirla porque está transparente.",
+        "Verificar la autorización del proveedor, exigir el control de calidad y realizar vigilancia sanitaria del agua suministrada.",
+        "Hervirla solo si alguien presenta diarrea.",
+        "Esperar al próximo mes para incluirla en el muestreo rutinario."
+      ],
+      "correctIndex": 1,
+      "explanation": "Los camiones cisterna son proveedores en condiciones especiales y están sujetos a autorización, control y vigilancia. La transparencia no garantiza inocuidad y la respuesta no debe esperar a que aparezcan casos.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [12, 14, 15, 45] }],
+      "tags": ["agua", "aplicación"]
+    },
+    {
+      "id": "card-agua-02-1",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre control de calidad y vigilancia sanitaria del agua?",
+      "answer": "El control de calidad lo realiza el proveedor: trata, muestrea y corrige su sistema. La vigilancia sanitaria la ejerce la autoridad de salud: verifica que el agua llegue en condiciones seguras, fiscaliza el cumplimiento y adopta medidas de seguridad. Son funciones complementarias.",
+      "explanation": "El proveedor puede tener un plan de control impecable y aun así existir un problema en la red. La vigilancia aporta una mirada externa y pública.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [10, 13, 15, 16, 17] }],
+      "tags": ["agua", "vigilancia"]
+    },
+    {
+      "id": "card-agua-02-2",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "multiple",
+      "prompt": "Si se detectan coliformes en la red de distribución, ¿qué medida corresponde además de investigar la causa?",
+      "options": [
+        "Suspender todo el abastecimiento durante un mes.",
+        "Recolectar muestras diarias hasta obtener al menos dos resultados consecutivos negativos.",
+        "Aumentar la turbiedad permitida.",
+        "Esperar el siguiente muestreo trimestral."
+      ],
+      "correctIndex": 1,
+      "explanation": "El artículo 67 exige investigar y tomar medidas correctivas, recolectando muestras diarias en el punto afectado hasta que dos muestras consecutivas no presenten coliformes totales ni termotolerantes. Suspender un mes o esperar el siguiente muestreo no es la conducta indicada.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [31] }],
+      "tags": ["agua", "opción múltiple"]
+    },
+    {
+      "id": "card-agua-02-3",
+      "topicId": "topic-agua-vigilancia",
+      "sheetId": "sheet-agua-02",
+      "type": "application",
+      "prompt": "El proveedor detecta arsénico por encima del límite en la salida de la planta. ¿Qué secuencia es correcta?",
+      "options": [
+        "Ocultar el resultado hasta el informe anual.",
+        "Repetir el muestreo, investigar la causa, corregir y comunicar a la autoridad sanitaria.",
+        "Solo aumentar el cloro para eliminar el arsénico.",
+        "Distribuir el agua y avisar si alguien se enferma."
+      ],
+      "correctIndex": 1,
+      "explanation": "Ante un parámetro químico fuera de límite, el reglamento exige un nuevo muestreo y, si se confirma, investigación, medidas correctivas y comunicación inmediata a la autoridad sanitaria. El cloro no elimina metales.",
+      "sourceRefs": [{ "sourceId": "src-agua-reglamento", "pages": [31] }],
+      "tags": ["agua", "aplicación"]
+    },
+    {
+      "id": "card-ambiental-politica-01-1",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "concept",
+      "prompt": "¿Por qué la salud ambiental se considera un derecho social transversal?",
+      "answer": "Porque la salud depende de condiciones ambientales seguras —agua, aire, alimentos, vivienda, trabajo— que no produce solo el sector salud. Su protección involucra a todos los sectores del Estado y a la sociedad, y su vulneración afecta desproporcionadamente a los más pobres.",
+      "explanation": "El enfoque transversal implica que vivienda, agricultura, energía, transporte y gobiernos locales también son responsables de prevenir riesgos ambientales.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [11, 12, 13] }],
+      "tags": ["salud ambiental", "concepto"]
+    },
+    {
+      "id": "card-ambiental-politica-01-2",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes NO es uno de los principios de la Política Nacional de Salud Ambiental?",
+      "options": [
+        "Respeto a la vida en un entorno saludable.",
+        "Decisiones basadas en evidencia científica.",
+        "Transparencia y participación.",
+        "Priorizar la atención curativa sobre la prevención."
+      ],
+      "correctIndex": 3,
+      "explanation": "La política adopta un enfoque preventivo, no curativo prioritario. Los otros tres sí son principios, junto con la facilitación del comercio que fomenta la salud.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [15, 16] }],
+      "tags": ["salud ambiental", "opción múltiple"]
+    },
+    {
+      "id": "card-ambiental-politica-01-3",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-01",
+      "type": "application",
+      "prompt": "En una ciudad, los casos de asma aumentan cerca de una zona industrial. ¿Qué lectura es más coherente con la política de salud ambiental?",
+      "options": [
+        "Es un problema exclusivamente clínico: hay que recetar más broncodilatadores.",
+        "Es un riesgo ambiental que requiere vigilancia del aire, evaluación de la fuente y articulación intersectorial.",
+        "No se puede hacer nada hasta que la industria se mude.",
+        "Basta con recomendar a las familias que no salgan de casa."
+      ],
+      "correctIndex": 1,
+      "explanation": "La política prioriza la vigilancia de la calidad del aire y la acción sobre los determinantes. La respuesta clínica es necesaria, pero insuficiente si no se controla la exposición.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [17, 18, 28] }],
+      "tags": ["salud ambiental", "aplicación"]
+    },
+    {
+      "id": "card-ambiental-politica-02-1",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son las seis políticas nacionales de salud ambiental 2011-2020?",
+      "answer": "1) Vigilancia del agua de consumo humano; 2) inocuidad de los alimentos; 3) calidad del aire; 4) vigilancia de peligros y alertas en salud ambiental; 5) fortalecimiento de la descentralización; 6) gestión en emergencias y desastres.",
+      "explanation": "Las seis cubren los riesgos prioritarios y las condiciones institucionales para responder: agua, alimentos, aire, peligros, descentralización y emergencias.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [26, 27, 28, 29, 30, 31, 32] }],
+      "tags": ["salud ambiental", "políticas"]
+    },
+    {
+      "id": "card-ambiental-politica-02-2",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "multiple",
+      "prompt": "¿Qué busca la cuarta política de salud ambiental?",
+      "options": [
+        "Solo vigilar la calidad del aire.",
+        "Vigilar peligros y alertas ambientales, incluidos recursos hídricos, residuos, químicos, vectores y zoonosis.",
+        "Construir plantas de tratamiento en todas las ciudades.",
+        "Eliminar la participación ciudadana."
+      ],
+      "correctIndex": 1,
+      "explanation": "La cuarta política es la vigilancia de peligros y alertas en salud ambiental, con objetivos específicos para recursos hídricos, residuos sólidos, sustancias químicas, vectores y zoonosis. El aire corresponde a la tercera.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [28, 29, 30, 31] }],
+      "tags": ["salud ambiental", "opción múltiple"]
+    },
+    {
+      "id": "card-ambiental-politica-02-3",
+      "topicId": "topic-salud-ambiental-politica",
+      "sheetId": "sheet-ambiental-politica-02",
+      "type": "application",
+      "prompt": "Tras un deslizamiento, el agua de una localidad se enturbia y hay riesgo de brote diarreico. ¿Qué acción corresponde a la política de salud ambiental?",
+      "options": [
+        "Esperar a que el agua se aclare sola.",
+        "Activar el plan de respuesta, vigilar la calidad del agua, distribuir agua segura y coordinar con defensa civil y gobierno local.",
+        "Suspender la vigilancia hasta que termine la emergencia.",
+        "Atender solo a las personas que llegan al hospital."
+      ],
+      "correctIndex": 1,
+      "explanation": "La sexta política exige preparación y respuesta articulada ante emergencias. La vigilancia del agua y la distribución de agua segura son medidas inmediatas para prevenir brotes.",
+      "sourceRefs": [{ "sourceId": "src-salud-ambiental-politica", "pages": [31, 32] }],
+      "tags": ["salud ambiental", "aplicación"]
+    },
+    {
+      "id": "card-metales-01-1",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "concept",
+      "prompt": "¿Cuál es la diferencia entre un caso sospechoso y un caso confirmado de exposición a metales pesados?",
+      "answer": "El caso sospechoso es una persona con antecedente de exposición a una fuente confirmada, sin manifestaciones clínicas. El caso confirmado cuenta con confirmación clínica, epidemiológica o de laboratorio según la norma. Entre ambos está el caso probable, con hallazgos compatibles pero sin confirmación completa.",
+      "explanation": "La vigilancia no espera síntomas: identifica expuestos y los sigue. La confirmación requiere más evidencia que el simple contacto con la fuente.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [14, 15] }],
+      "tags": ["metales", "concepto"]
+    },
+    {
+      "id": "card-metales-01-2",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "multiple",
+      "prompt": "¿Cómo se notifican los casos de exposición o intoxicación por metales pesados?",
+      "options": [
+        "Solo cuando hay síntomas graves.",
+        "De forma mensual y obligatoria, incluida la notificación negativa; las contingencias se notifican de inmediato.",
+        "Solo al final del año epidemiológico.",
+        "Únicamente por el nivel nacional."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma exige notificación mensual obligatoria de casos sospechosos, probables y confirmados, con notificación negativa si no hay casos. Las situaciones de contingencia requieren notificación inmediata.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [18, 19] }],
+      "tags": ["metales", "opción múltiple"]
+    },
+    {
+      "id": "card-metales-01-3",
+      "topicId": "topic-metales-vigilancia",
+      "sheetId": "sheet-metales-01",
+      "type": "application",
+      "prompt": "Un puesto de salud atiende a una familia que vive junto a una fundición y refiere exposición al plomo, pero ningún integrante tiene síntomas. ¿Qué corresponde?",
+      "options": [
+        "No registrar nada porque no hay enfermedad.",
+        "Registrar como casos sospechosos (expuestos), notificar y iniciar investigación de la fuente.",
+        "Derivar solo al niño con mayor peso.",
+        "Esperar a que aparezcan síntomas para notificar."
+      ],
+      "correctIndex": 1,
+      "explanation": "La exposición a una fuente confirmada sin síntomas define caso sospechoso. La norma busca identificar y seguir a los expuestos, no esperar el daño clínico.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [14, 18, 19] }],
+      "tags": ["metales", "aplicación"]
+    },
+    {
+      "id": "card-metales-02-1",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "concept",
+      "prompt": "¿Qué debe contener la investigación epidemiológica de un evento por metales pesados?",
+      "answer": "Debe identificar la fuente y la vía de exposición, las personas afectadas y expuestas, el tiempo y lugar, las actividades económicas relacionadas y los factores de riesgo ambientales. También debe integrar muestras biológicas y ambientales y emitir recomendaciones de control.",
+      "explanation": "Un resultado de laboratorio sin investigación de fuente no permite interrumpir la exposición ni proteger a otras personas.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [21, 22, 44] }],
+      "tags": ["metales", "investigación"]
+    },
+    {
+      "id": "card-metales-02-2",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "multiple",
+      "prompt": "¿En qué plazo debe remitirse el informe preliminar de una investigación por contingencia?",
+      "options": ["24 horas", "72 horas", "7 días", "30 días"],
+      "correctIndex": 1,
+      "explanation": "La norma establece el informe preliminar dentro de las 72 horas, seguido del informe de seguimiento y del informe final al concluir la investigación.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [22] }],
+      "tags": ["metales", "opción múltiple"]
+    },
+    {
+      "id": "card-metales-02-3",
+      "topicId": "topic-metales-respuesta",
+      "sheetId": "sheet-metales-02",
+      "type": "application",
+      "prompt": "Se confirma un caso de intoxicación por mercurio en una comunidad minera. ¿Cuál es la respuesta más completa?",
+      "options": [
+        "Tratar al paciente y cerrar el caso.",
+        "Tratar y seguir al paciente, investigar la fuente, identificar otros expuestos, coordinar el control de la fuente y notificar a los niveles correspondientes.",
+        "Prohibir la minería sin evaluación ni alternativa económica.",
+        "Esperar el informe anual para decidir."
+      ],
+      "correctIndex": 1,
+      "explanation": "La respuesta incluye atención, investigación, búsqueda de otros expuestos, control de la fuente y notificación. Tratar solo al caso índice deja intacta la exposición comunitaria.",
+      "sourceRefs": [{ "sourceId": "src-metales", "pages": [21, 22, 25, 26, 27] }],
+      "tags": ["metales", "aplicación"]
+    }
+  ]
+}

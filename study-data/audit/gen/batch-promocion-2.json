@@ -1,0 +1,247 @@
+{
+  "sources": [
+    {
+      "id": "src-escuelas",
+      "title": "Programa de Promoción de la Salud en las Instituciones Educativas — Escuelas Saludables",
+      "short": "Escuelas saludables",
+      "authors": "Ministerio de Salud del Perú — DIGESA",
+      "kind": "Documento técnico",
+      "provenance": "Programa nacional de promoción de la salud en instituciones educativas, publicado en 2005.",
+      "file": "../study-data/fuentes/instituciones-educativas-saludables.pdf"
+    },
+    {
+      "id": "src-agente",
+      "title": "Orientaciones para el fortalecimiento de la labor del Agente Comunitario de Salud",
+      "short": "Agente comunitario",
+      "authors": "Ministerio de Salud del Perú — DGPS",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico aprobado por R.M. N° 411-2014/MINSA; define roles, capacitación y sostenibilidad del agente comunitario.",
+      "file": "../study-data/fuentes/labor-agente-comunitario-salud.pdf"
+    }
+  ],
+  "areas": [],
+  "topics": [
+    {
+      "id": "topic-escuelas",
+      "areaId": "area-promocion",
+      "title": "Escuelas saludables",
+      "summary": "La institución educativa es un escenario clave para promover comportamientos y entornos saludables con toda la comunidad educativa.",
+      "sourceIds": ["src-escuelas"],
+      "keywords": ["escuela", "promoción", "entornos saludables", "comunidad educativa"]
+    },
+    {
+      "id": "topic-agente",
+      "areaId": "area-promocion",
+      "title": "Agente comunitario de salud",
+      "summary": "El agente comunitario es un líder voluntario que articula la comunidad con los servicios de salud y desarrolla roles progresivos.",
+      "sourceIds": ["src-agente"],
+      "keywords": ["agente comunitario", "participación", "roles", "capacitación"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-escuelas-01",
+      "topicId": "topic-escuelas",
+      "areaId": "area-promocion",
+      "title": "Escuela saludable: algo más que una charla",
+      "kicker": "Promoción · Escuelas",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "Una institución educativa saludable mejora su entorno y sostiene comportamientos saludables en estudiantes, docentes y familias. El programa combina educación, entornos, políticas y trabajo intersectorial.",
+      "keyConcepts": [
+        "La escuela saludable involucra a toda la comunidad educativa.",
+        "Sus líneas de acción son comportamientos saludables, entornos saludables, intersectorialidad y políticas que promueven salud.",
+        "El consejo educativo institucional incluye a docentes, estudiantes, familias y personal de salud.",
+        "Los ejes temáticos incluyen alimentación, higiene, actividad física, salud sexual, habilidades para la vida, seguridad vial y salud mental."
+      ],
+      "sections": [
+        {
+          "title": "Qué es una escuela saludable",
+          "depth": "core",
+          "body": [
+            "El programa busca contribuir al desarrollo humano integral de los estudiantes y de la comunidad educativa mediante acciones de promoción de la salud en las instituciones educativas. Una escuela saludable es aquella que ha alcanzado estándares de mejora en su entorno y cuya comunidad mantiene comportamientos saludables en la vida cotidiana.",
+            "No se trata solo de transmitir información: se interviene sobre el ambiente físico, las relaciones interpersonales, las políticas escolares y la participación de las familias."
+          ]
+        },
+        {
+          "title": "Cuatro líneas de acción",
+          "depth": "core",
+          "table": {
+            "headers": ["Línea", "Qué implica"],
+            "rows": [
+              ["Comportamientos saludables", "Educación y desarrollo de habilidades para la alimentación, higiene, actividad física, salud sexual y salud mental."],
+              ["Entornos saludables", "Espacios físicos seguros, limpios, ventilados y con condiciones para la actividad física."],
+              ["Intersectorialidad", "Articulación entre salud, educación, municipalidad y organizaciones locales."],
+              ["Políticas que promueven salud", "Normas escolares sobre tabaco, alimentación, convivencia y actividad física."]
+            ]
+          }
+        },
+        {
+          "title": "Cómo se organiza",
+          "depth": "full",
+          "body": [
+            "El consejo educativo institucional reúne al director, subdirector, representantes de docentes y estudiantes, y al personal de salud de la jurisdicción. El sector salud brinda asistencia técnica y capacitación; la escuela lidera la implementación.",
+            "Los ejes temáticos se adaptan a la realidad local. Se recomienda usar materiales educativos pertinentes y formar a docentes para que repliquen las sesiones con estudiantes y familias."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El ejemplo también educa",
+            "text": "Una escuela que vende comida ultraprocesada en su kiosco y no facilita actividad física contradice el mensaje que enseña."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-escuelas", "pages": [9, 10, 25, 26, 27] }
+      ]
+    },
+    {
+      "id": "sheet-agente-01",
+      "topicId": "topic-agente",
+      "areaId": "area-promocion",
+      "title": "Agente comunitario: puente entre la comunidad y la salud",
+      "kicker": "Promoción · Participación comunitaria",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El agente comunitario de salud es un líder elegido o reconocido por su comunidad, que realiza acciones voluntarias de promoción y prevención y articula a la población con los servicios de salud.",
+      "keyConcepts": [
+        "El ACS es elegido o reconocido por su comunidad y actúa de forma voluntaria.",
+        "Sus roles son progresivos: educador sanitario, supervisor-capacitador y gestor comunal.",
+        "Debe conocer sus límites: educa, identifica riesgos y refiere; no reemplaza al personal de salud.",
+        "La capacitación inicial, la continua y la recalificación sostienen su labor."
+      ],
+      "sections": [
+        {
+          "title": "Quién es y qué hace",
+          "depth": "core",
+          "body": [
+            "El agente comunitario de salud (ACS) es una persona elegida o reconocida por su comunidad. Realiza acciones voluntarias de promoción de la salud y prevención de enfermedades en coordinación con el personal de salud y otras instituciones locales, y cumple un rol articulador entre la comunidad y las autoridades.",
+            "Su labor se centra inicialmente en salud materno-perinatal y nutrición infantil, y luego se amplía a otras etapas de vida. Apoya campañas, vigilancia comunitaria y actividades de educación."
+          ]
+        },
+        {
+          "title": "Tres niveles de rol",
+          "depth": "core",
+          "table": {
+            "headers": ["Nivel", "Rol"],
+            "rows": [
+              ["Básico", "Educador sanitario: promueve comportamientos saludables, primeros auxilios y referencia de riesgos."],
+              ["Intermedio", "Supervisor-capacitador: apoya y capacita a otros agentes."],
+              ["Avanzado", "Gestor comunal: articula con autoridades, presupuesto participativo y determinantes sociales."]
+            ]
+          }
+        },
+        {
+          "title": "Formación y sostenibilidad",
+          "depth": "full",
+          "bullets": [
+            "Capacitación básica inicial para ser reconocido como ACS.",
+            "Capacitación continua y recalificación anual.",
+            "Criterios de calificación: >80% de asistencia, >75% de logros de aprendizaje y evaluación.",
+            "Compromiso mínimo de dos años; inactividad tras tres meses sin reportar actividades.",
+            "Evitar que el ACS financie de su bolsillo sus traslados o alimentación; gestionar incentivos y reconocimiento."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Voluntario no significa sin apoyo",
+            "text": "La sostenibilidad depende de capacitación, reconocimiento, condiciones y compensación de gastos operativos."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-agente", "pages": [10, 14, 16, 17, 18, 19, 20, 25, 26, 29] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-escuelas-01-1",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "concept",
+      "prompt": "¿Qué es una institución educativa saludable?",
+      "answer": "Es aquella que ha alcanzado estándares de mejora en su entorno y cuya comunidad educativa mantiene comportamientos saludables en su vida cotidiana. Involucra a estudiantes, docentes, directivos y familias, y combina educación, entornos, políticas y trabajo intersectorial.",
+      "explanation": "La definición no se limita a actividades aisladas: exige cambios sostenidos en el entorno y en las prácticas de toda la comunidad educativa.",
+      "sourceRefs": [{ "sourceId": "src-escuelas", "pages": [25] }],
+      "tags": ["escuela", "concepto"]
+    },
+    {
+      "id": "card-escuelas-01-2",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es una de las líneas de acción del programa de escuelas saludables?",
+      "options": [
+        "Desarrollar entornos saludables.",
+        "Aumentar las horas de clase teórica.",
+        "Suspender la participación de las familias.",
+        "Eliminar el consejo educativo institucional."
+      ],
+      "correctIndex": 0,
+      "explanation": "El programa plantea cuatro líneas: comportamientos saludables, entornos saludables, intersectorialidad y políticas que promueven salud. Las otras opciones contradicen su enfoque participativo.",
+      "sourceRefs": [{ "sourceId": "src-escuelas", "pages": [10, 26] }],
+      "tags": ["escuela", "opción múltiple"]
+    },
+    {
+      "id": "card-escuelas-01-3",
+      "topicId": "topic-escuelas",
+      "sheetId": "sheet-escuelas-01",
+      "type": "application",
+      "prompt": "Una escuela quiere reducir el sobrepeso en sus estudiantes. ¿Qué acción es más coherente con el programa?",
+      "options": [
+        "Dar una charla anual sobre alimentación.",
+        "Mejorar el kiosco escolar, promover actividad física y acordar políticas con docentes y familias.",
+        "Prohibir que los estudiantes traigan comida.",
+        "Medir el peso una vez al año sin intervenir."
+      ],
+      "correctIndex": 1,
+      "explanation": "La escuela saludable actúa sobre el entorno, las políticas y las prácticas, no solo sobre la información. La opción B combina kiosco, actividad física y participación.",
+      "sourceRefs": [{ "sourceId": "src-escuelas", "pages": [26, 27] }],
+      "tags": ["escuela", "aplicación"]
+    },
+    {
+      "id": "card-agente-01-1",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "concept",
+      "prompt": "¿Qué es el agente comunitario de salud y cuál es su rol articulador?",
+      "answer": "Es una persona elegida o reconocida por su comunidad que realiza acciones voluntarias de promoción y prevención en coordinación con el personal de salud y otras instituciones. Articula a la comunidad con los servicios y autoridades, facilita la participación y apoya la vigilancia comunitaria.",
+      "explanation": "El ACS no reemplaza al personal de salud: acerca los servicios, educa, identifica riesgos y refiere. Su legitimidad viene de la comunidad.",
+      "sourceRefs": [{ "sourceId": "src-agente", "pages": [10, 14] }],
+      "tags": ["agente comunitario", "concepto"]
+    },
+    {
+      "id": "card-agente-01-2",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el rol básico de todo agente comunitario de salud?",
+      "options": [
+        "Gestor comunal.",
+        "Supervisor-capacitador.",
+        "Educador sanitario.",
+        "Médico de la comunidad."
+      ],
+      "correctIndex": 2,
+      "explanation": "El rol básico es educador sanitario. Los roles de supervisor-capacitador y gestor comunal son niveles posteriores; el ACS no es médico ni prescribe tratamiento.",
+      "sourceRefs": [{ "sourceId": "src-agente", "pages": [16, 18] }],
+      "tags": ["agente comunitario", "opción múltiple"]
+    },
+    {
+      "id": "card-agente-01-3",
+      "topicId": "topic-agente",
+      "sheetId": "sheet-agente-01",
+      "type": "application",
+      "prompt": "Un ACS detecta a una gestante con sangrado vaginal. ¿Qué corresponde?",
+      "options": [
+        "Indicarle un tratamiento y controlarla en su casa.",
+        "Acompañarla o facilitar su referencia inmediata al establecimiento de salud y comunicar la situación.",
+        "Esperar a que tenga dolor para referir.",
+        "Decirle que es normal y que no consulte."
+      ],
+      "correctIndex": 1,
+      "explanation": "El ACS identifica signos de riesgo y refiere; no trata ni minimiza. El sangrado en el embarazo requiere evaluación inmediata.",
+      "sourceRefs": [{ "sourceId": "src-agente", "pages": [21] }],
+      "tags": ["agente comunitario", "aplicación"]
+    }
+  ]
+}

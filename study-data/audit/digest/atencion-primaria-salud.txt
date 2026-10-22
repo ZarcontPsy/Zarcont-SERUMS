@@ -1,0 +1,353 @@
+FILE atencion-primaria-salud.pdf | pages 6 | chars 26306
+
+== HEADINGS (candidates) ==
+p1 [17.8] Artículo de revisión
+p1 [13.7] Atributos de la Atención Primaria de Salud (A.P.S): Una visión desde la Medicina
+p1 [13.7] Familiar
+p1 [12.0] Primary Health Care Characteristics: A view from Family Medicine Standpoint
+p1 [11.0] Acta Med Per 30(1) 2013
+p2 [11.0] Acta Med Per 30(1) 2013
+p3 [11.0] Acta Med Per 30(1) 2013
+p4 [11.0] Acta Med Per 30(1) 2013
+p5 [11.0] Acta Med Per 30(1) 2013
+p6 [10.7] Ingrese gratuitamente al portal electrónico de Acta Médica Peruana desde www.cmp.org.pe
+p6 [37.1] Acta Médica Peruana
+p6 [14.3] Órgano Oficial de difusión científica del Colegio Médico del Perú
+p6 [22.5] Ñ
+p6 [22.5] O
+p6 [22.5] A
+p6 [22.5] S
+p6 [14.4] ú
+p6 [14.4] r
+p6 [14.4] e
+p6 [14.4] l s
+p6 [14.4] P
+p6 [14.4] l
+p6 [14.4] v
+p6 [14.4] d
+p6 [14.4] i
+p6 [14.4] c
+p6 [14.4] s
+p6 [14.4] o
+p6 [14.4] de
+p6 [14.4] é
+p6 [14.4] to
+p6 [14.4] M
+p6 [14.4] os l
+p6 [14.4] os
+p6 [11.0] Acta Med Per 30(1) 2013
+
+== FIRST PAGES ==
+
+--- p1 ---
+Artículo de revisión
+Atributos de la Atención Primaria de Salud (A.P.S): Una visión desde la Medicina
+Familiar
+Alex Moisés Rosas Prieto , Victor Narciso Zarate , María Sofía Cuba Fuentes
+1
+2
+3
+RESUMEN
+En el presente artículo invitamos al lector a conocer mejor la Atención
+Primaria, sus diferencias con la atención especializada y su importancia
+en los sistemas de salud actuales.  Además, hablaremos sobre los cuatro
+atributos que debe cumplir la Atención Primaria, descritos por Bárbara
+Starfield: Accesibilidad y primer contacto, donde debe existir un fácil
+acceso al sistema sanitario; Longitudinalidad, donde se debe establecer
+una relación personal y continua entre el médico y paciente;
+Integralidad, que da solución a las necesidades de salud más frecuentes
+de la comunidad; y Coordinación, que significa un trabajo en conjunto
+entre los médicos de Atención Primaria y otros especialistas.
+Palabras clave:
+servicios de salud, Medicina Familiar y Comunitaria . (DeSC)
+Atención primaria de salud, Accesibilidad a los
+SUMMARY
+In this article we invite our readers to know about primary care,their
+differences with the secondary care and its importance in the current
+health systems. We talk about the four attributes of primary care
+described by Barbara Starfield : Accessibility and first contact where
+there should be easy access to the health system; Longitudinality, which
+must establish a personal relationship between the physician and
+continuous patient .Integrity,which gives solution to the most common
+health needsof the community and Coordination, where there isa joint
+effort between primary care physicians and other specialists.
+Key words:
+practice. (MeSH)
+Primary health care, Health Services Accessibility, family
+UNA REFLEXIÓN SOBRE LA ATENCIÓN
+PRIMARIA
+Érase una vez un portero y un mago. El trabajo del portero
+consistía en decidir quién debía ver al mago. La mayoría
+de las personas que veían al portero no veían luego al
+mago, pues normalmente tenían enfermedades leves y el
+portero decidía muy bien quien necesitaba llegar hasta el
+mago. Y mayormente los que veían al mago estaban muy
+enfermas, y el mago podía darles una pócima para
+mejorarlas.
+El mago y el portero se necesitaban el uno al otro, ambos
+habían estudiado juntos. El problema fue que, a medida
+que  la gente oía lo de la poción mágica del mago, más y
+más lo querían ver y las listas de espera aumentaban sin
+cesar. A veces el portero tenía que volverlos a mandar al
+mago porque no habían conseguido suficiente poción
+mágica. La gente se enfadó y se le contó a la reina. La
+reina dijo: "Dejad que quien quiera ver al mago vaya
+directamente y que le pague por ello".  Quienes podían
+pagar se sintieron muy felices.
+El problema fue que  las listas de espera crecieron más ya
+1. Residente de Medicina Familiar de la UNMSM. Dirección de Salud V Lima
+Ciudad.
+2. Residente de Medicina Familiar de la UPCH , Policlínico Juan José Rodríguez
+Lazo-EsSalud.
+3. Presidenta de la Sociedad Peruana de Medicina Familiar y Comunitaria
+(SOPEMFYC), Profesora de la Residencia y de la Maestría en Medicina
+Familiar de la Universidad Peruana Cayetano Heredia, Jefe Médico-Quirúrgico
+del Policlínico Juan José Rodríguez Lazo-EsSalud.
+que el mago dedicaba cada vez más tiempo a los pacientes
+que podían pagarle. De hecho, su maravillosa bola de
+cristal empezó a dar más y más respuestas equivocadas.
+"Descubrid qué está pasando", gritó la reina.
+Finalmente alguien le dijo: “El mago es muy bueno
+diciendo quien está muy enfermo, pe
+
+--- p2 ---
+tres tendencias particularmente preocupantes :
+?
+Los sistemas de salud demasiado centrados en  una
+oferta restringida de atención curativa especializada;
+?
+Los sistemas de salud que por aplicar un enfoque de
+mando y control a la lucha contra las enfermedades,
+centrándose en resultados a  corto plazo, provocan una
+fragmentación de la prestación de servicios;
+?
+Los sistemas de salud que basan la gobernanza en la
+no intervención o laissez-faire, lo que permite que
+prospere la atención de carácter comercial no regulada.
+Esas tendencias son contrarias a una respuesta global y
+equilibrada a las necesidades sanitarias; en algunos
+países, la falta de acceso equitativo, los gastos
+empobrecedores y la pérdida de confianza en la atención
+de salud que provocan suponen una amenaza para la
+estabilidad social.
+En los estudios de investigación de servicios se
+demuestran los buenos resultados de una Atención
+Primaria fuerte en el control del gasto sanitario y la salud
+de la población . Estas buenas marcas no se reflejan en el
+estatus profesional, las condiciones de trabajo, los
+ingresos y los recursos destinados a la Atención Primaria.
+El espejismo tecnológico del último siglo casi ha borrado
+la importancia de la Medicina General y ha acrecentado la
+importancia de los especialistas, los diagnósticos y la
+tecnología. La atención especializada consume recursos
+incesantemente y su brillo tecnológico deslumbra a los
+pacientes (de todas las clases sociales) y  a los propios
+profesionales de salud .
+El manejo integral de las necesidades básicas de la
+población requiere la implementación de sistemas de
+salud más equitativos , integradores, eficaces  y justos.
+Una Atención Primaria fuerte se basa en el prestigio de
+los equipos que trabajan en ella, en el número y la
+remuneración de sus trabajadores, en la fuerza de sus
+organizaciones profesionales y científicas, además de su
+relación con otros niveles.
+En esta revisión se intentará conocer los principales
+atributos que caracterizan a la Atención Primaria de
+Salud, desde las publicaciones de la Dra. Bárbara
+Starfield (18 de diciembre de 1932 - 10 de junio de 2011),
+médico pediatra quien dedicó gran parte de su vida al
+estudio de la misma.
+El fortalecimiento del primer nivel de atención de salud
+es la estrategia a nivel mundial con mejores resultados
+según  estudios de Bárbara Starfield y queda demostrado
+que en los países que invierten más en una Atención
+Primaria sólida, son más costo efectivos y tiene mejores
+niveles de salud poblacional . La Atención Primaria está
+orientada a la persona, no a la enfermedad, esta es una de
+las características que la hacen tan importante para el
+éxito de los sistemas sanitarios .
+2
+3
+4
+5
+DEFINICIÓN DE ATENCIÓN PRIMARIA
+LA ATENCIÓN PRIMARIA VS. ATENCIÓN
+ESPECIALIZADA
+Según Alma Ata
+“La Atención Primaria es la Asistencia Sanitaria basada
+en métodos y tecnologías sencillas, científicamente
+fundamentadas y socialmente aceptables, que estén al
+alcance de los individuos, familias y comunidad; a un
+costo aceptable por la comunidad y el país para que pueda
+cubrir cada una de las etapas del desarrollo” .
+Según el Instituto de Medicina de Norteamérica (
+IOM)
+“Atención Primaria es la provisión de servicios de salud
+integrados y accesibles, por profesionales eficientes en la
+cobertura de la mayoría de las necesidades de salud de las
+personas, que desarrollan una relación continuada con
+sus pacientes, y que realizan su práctica dentro del
+contexto de la familia y la comunidad” .
+Según el do
+
+--- p3 ---
+proporcionado por médicos mejor formados y entrenados
+en Atención Primaria, refiere Bárbara Starfield, quien
+demostró con trabajos de investigación que los médicos
+familiares, internistas y pediatras, son más efectivos y
+eficientes que los demás especialistas para la prestación
+de las funciones propias de la Atención Primaria de salud.
+La mayoría de países industrializados tienen sistemas
+sanitarios basados en Atención Primaria con resultados
+positivos, los cuales cuentan con médicos familiares que
+coordinan su labor con médicos especialistas de otros
+niveles de atención.
+En el sistema sanitario peruano, muchas veces se tienen a
+especialistas del nivel secundario en centros de Atención
+Primaria, esto sucede sobretodo en Lima y otras
+ciudades, donde se saturan de algunos especialistas, que
+son ubicados en centros de primer nivel de atención; sin
+duda, esto trae desventajas para el sistema, para los
+pacientes y para el mismo profesional quien no puede
+hacer uso de todas sus competencias en beneficios de los
+pacientes. Además, los médicos especialistas no
+generalistas tienden a sobreestimar la posibilidad de
+enfermedades graves (por su formación en centros de
+atención terciaria donde se encuentran  pacientes con
+enfermedades no comunes) y  tratar en exceso, buscando
+sólo a un agente específico sin tomar en cuenta el entorno
+en el que aparece y vive el paciente.
+A continuación se describen los 4 principales atributos de
+la Atención Primaria de Salud (APS) según Bárbara
+Starfield (Ver Tabla 2).
+CARACTERÍSTICAS DE LOS ATRIBUTOS DE
+LA ATENCIÓN PRIMARIA
+TABLA 1: Características de la Atención Primaria vs. la Atención Especializada
+ATENCIÓN PRIMARIA
+ATENCIÓN ESPECIALIZADA
+Atención
+personas y la comunidad. Debe ser de acceso universal.
+centrada a la atención básica de salud efectiva de las
+Atención eficaz a enfermedades
+necesidades y urgencias médicas.
+especificas. Ligado a
+Su objetivo es mantener a las personas con vida.
+La enfermedad se presentan en estadios
+cuando el paciente ha sido derivado.
+más avanzados,
+Capacitados para atender las
+la población, capaces de manejar varios problemas al mismo
+tiempo.
+enfermedades más prevalentes de
+Capacitados para atender enfermedades
+profundidad, incluyendo las más raras.
+específicas a
+Adaptado de Bárbara Starfield, Atención Primaria. Equilibrio entre necesidades de salud, servicios y tecnología.
+Puerta de entrada al sistema de
+a los servicios especializados.
+salud: punto de inicio de la atención y filtro para acceder
+Cubre
+Ofrece servicios preventivos y curativos, refiriéndolos cuando sea necesario.
+todas las necesidades de salud (orgánico, psíquico y social).
+TABLA 2. Definición de los Atributos de Atención Primaria
+Adaptado de Bárbara Starfield, Atención Primaria. Equilibrio entre necesidades de salud, servicios y tecnología.
+1. ACCESIBILIDAD Y PRIMER CONTACTO: EL
+"FILTRO”
+"Muchos pacientes que acuden a Emergencia, no
+presentan una verdadera emergencia; acuden por dolor de
+garganta, tos o muchas veces porque se les acabo el
+medicamento. Como médico puedo intentar explicarles
+que no es una emergencia y que deben acudir a
+consultorio; pero ellos siempre responden: "Doctor; no
+hay cita".  Lo más triste es que tienen razón.  Todas las
+veces que hago consultorio, hay muchos que me piden
+adicionales; y varias veces les tengo que negar porque ya
+se acaba mi turno en consulta. Esto es preocupante ya que
+sólo algunos consiguen esa cita y me pregunto: ¿qué pasa
+con los demás?”
+Opinión de Médico Residente de 2do. 
+
+--- p4 ---
+Ventajas de la Accesibilidad y Primer Contacto
+?
+El acceso fácil a la atención médica disminuye la
+mortalidad y morbilidad.
+?
+Al mejorar el acceso a la Atención Primaria, se va a
+poder identificar y resolver mejor los problemas de los
+pacientes.
+?
+Se asocia a una mejor continuidad asistencial con el
+médico.
+?
+Al realizar un buen "filtro", se va a conseguir un
+menor uso de especialistas y de urgencias .
+?
+Se obtiene un menor porcentaje en costos globales en
+salud.
+?
+Se logra un menor uso de pruebas diagnósticas ya que
+se ha demostrado que el uso de éstas en pacientes con bajo
+riesgo de enfermarse, presentan resultado no será
+concluyente y en muchos, casos pueden originar otras
+pruebas diagnósticas o tratamientos innecesarios.
+El acceso adecuado y filtro de los pacientes en Atención
+Primaria conllevará al rápido diagnóstico y tratamiento
+de las dolencias de los pacientes; así como también,
+disminuirá las referencias a los especialistas y por tanto
+disminuirá el tiempo de tratamiento, agilizará la consulta
+de los pacientes que sí necesitan evaluación especializada
+y se ahorrará más en salud debido a que  disminuirá el
+pedido de pruebas diagnósticas.
+"Tengo 20 años atendiendo en el mismo centro de salud y
+siempre he tratado de mantener una buena relación con
+mis pacientes.  Hace poco vino un paciente mío que no ha
+venido a consultarme desde hace más de 2 años.  Cuando
+ingresó lo veía muy preocupado y casi ni me respondió el
+saludo.  Vino a consultarme sobre diversos dolores que
+presenta en la cabeza, cuello, el pecho y la espalda  que le
+vienen molestando desde hace 2 meses y que no mejoran
+a pesar de haber visto a diversos especialistas que sus
+amigos le habían recomendado.  Acudió a mí porque yo
+lo atendía durante su adolescencia.  Luego de contarme
+sus dolencias observé los diversos resultados de
+exámenes que se había tomado y las recetas de los
+fármacos que estaba tomando.  Decidí conversar con él
+sobre su familia y su trabajo; me cuenta que perdió su
+trabajo hace 2 meses y estaba muy preocupado por los
+gastos de la casa y su salud.  Luego de escucharlo estuvo
+más tranquilo y decidí darle un nuevo tratamiento.  Lo
+estoy tratando desde entonces y cada día se siente más
+tranquilo; inclusive ya consiguió un nuevo empleo”
+Médico generalista de un centro de salud.
+La longitdinalidad es la relación personal que se
+establece a largo plazo entre el médico y sus pacientes.
+Es diferente a la continuidad, ya que en este atributo
+2. EL CUPO Y LA LONGITUDINALIDAD
+puede haber interrupciones en las atenciones sin perder
+esta relación.  La atención longitudinal significa que la
+población identifica a un centro asistencial como "el
+suyo" y el  equipo proveedor brinda una asistencia
+centrada en la persona, considerando sus valores y
+preferencias .
+Los sistemas de salud basados en Atención Primaria,
+adscriben la población a un prestador, el médico tiene un
+cupo de pacientes (un número de pacientes que están a su
+cargo), sobre el cual es responsable; sin responsabilidad y
+relación con los pacientes es difícil obtener resultados
+sanitarios óptimos.
+Ventajas de la Longitudinalidad
+?
+Facilita el cumplimiento del tratamiento de
+enfermedades crónicas.
+?
+Se asocia a una mayor identificación de problemas
+asistenciales debido a que se crea un grado de
+familiaridad con el paciente.
+?
+Se establecen diagnósticos más precisos y
+tratamientos adecuados debido a que los médicos
+conocen mejor a sus pacientes.
+?
+Aumenta la satisfacción de los pacientes,
+especialmente de aq

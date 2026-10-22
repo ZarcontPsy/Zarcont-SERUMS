@@ -1,0 +1,303 @@
+FILE gpc-nino-expuesto-vih.pdf | pages 9 | chars 18343
+
+== HEADINGS (candidates) ==
+p1 [12.0] GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO
+p1 [12.0] DEL NIÑO EXPUESTO AL VIH
+p1 [11.0] I.
+p1 [11.0] FINALIDAD:
+p1 [11.0] II.
+p1 [11.0] OBJETIVO:
+p1 [11.0] III.
+p1 [11.0] ÁMBITO DE APLICACIÓN:
+p1 [11.0] IV.
+p1 [11.0] NOMBRE DEL PROCESO O PROCEDIMIENTOS A ESTANDARIZAR:
+p1 [11.0] V.
+p1 [11.0] DISPOSICIONES GENERALES
+p1 [11.0] 5.1. DEFINICIÓN:
+p1 [11.0] 5.2. ETIOLOGÍA:
+p1 [11.0] 5.3. FISIOPATOLOGÍA:
+p2 [11.0] 5.4. ASPECTOS EPIDEMIOLÓGICOS:
+p2 [11.0] 5.5. FACTORES DE RIESGO ASOCIADOS
+p2 [11.0] VI.
+p2 [11.0] DISPOSICIONES  ESPECÍFICAS
+p2 [11.0] 6.1. CUADRO CLÍNICO
+p2 [11.0] 6.2. DIAGNÓSTICO
+p3 [11.0] 6.2.1. DIAGNÓSTICO DIFERENCIAL:
+p3 [11.0] 6.3. EXÁMENES AUXILIARES
+p3 [11.0] 6.3.1. De patología Clínica:
+p3 [11.0] 6.3.2. Exámenes especializados complementarios:
+p3 [11.0] 6.4. MANEJO SEGÚN NIVEL DE COMPLEJIDAD Y CAPACIDAD RESOLUTIVA.
+p3 [11.0] 6.4.1. Medidas generales y preventivas
+p3 [11.0] 6.4.2. Terapéutica
+p4 [11.0] ● Escenario 1: Profilaxis con Zidovudina
+p4 [11.0] ● Escenario 2: Profilaxis con zidovudina según el escenario 1. Si la
+p4 [11.0] ● Escenario 3: El recién nacido recibirá Zidovudina (AZT),
+p4 [11.0] 6.4.3. Efectos adversos o colaterales del tratamiento y su manejo
+p4 [11.0] 6.4.4. Signos de alarma
+p5 [11.0] 6.5. CRITERIOS DE ALTA
+p5 [11.0] 6.6. SEGUIMIENTO
+p5 [11.0] 6.6. PRONÓSTICO
+p5 [11.0] 6.8. COMPLICACIONES
+p5 [11.0] 6.9. CRITERIOS DE REFERENCIA Y CONTRARREFERENCIA
+p6 [11.0] VII.
+p6 [11.0] ANEXOS:
+p6 [11.0] Anexo N°01: Proceso de diagnóstico del niño expuesto al VIH.
+p6 [11.0] Anexo N° 02: Escenarios para la prevención de la transmisión materno
+p6 [11.0] infantil del VIH
+p6 [11.0] Anexo N° 03: Inmunizaciones del niño expuesto al VIH.
+p7 [11.0] Anexo N° 04: Categorías clínicas para niños menores de 13 años con
+p7 [11.0] infección por VIH.
+p9 [11.0] VIII.
+p9 [11.0] BIBLIOGRAFÍA
+
+== FIRST PAGES ==
+
+--- p1 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+283
+GUÍA DE PRÁCTICA CLÍNICA PARA EL DIAGNÓSTICO Y TRATAMIENTO
+DEL NIÑO EXPUESTO AL VIH
+I.
+FINALIDAD:
+Contribuir con la disminución de la morbilidad y mortalidad del Niño expuesto al
+VIH en el Instituto Nacional Materno Perinatal.
+II.
+OBJETIVO:
+Estandarizar y optimizar la atención del neonato expuesto al VIH.
+III.
+ÁMBITO DE APLICACIÓN:
+La presente guía de práctica clínica es de cumplimiento obligatorio en los
+diferentes servicios de atención neonatal del INMP.
+IV.
+NOMBRE DEL PROCESO O PROCEDIMIENTOS A ESTANDARIZAR:
+Diagnóstico y tratamiento del niño expuesto al VIH en los servicios de
+neonatología del INMP. con el código CIE 10: Z206.1; y con código CPMS: 87535
+Detección cualitativa de ácidos nucleicos (ADN/ARN) de VIH-1 por PCR en tiempo
+real
+V.
+DISPOSICIONES GENERALES
+5.1. DEFINICIÓN:
+El niño expuesto al VIH es todo recién nacido de madre con infección por VIH.
+5.2. ETIOLOGÍA:
+El VIH pertenece a la familia de los lentivirus y se clasifica en dos tipos: VIH-1
+y VIH-2 que tienen un 40-50% de homología genética y una organización
+genómica similar. El VIH-1 es el causante de la pandemia mundial de
+Síndrome de Inmunodeficiencia Adquirida - SIDA. Las cepas del VIH-1 se
+clasifican en tres grandes grupos según su homología, estos son el grupo M
+(main o principal), el grupo O (outlier), y el grupo N (no M, no O). El grupo M
+se ha dividido en 9 subtipos (A, B, C, D, F, G, H, J, K) y en cepas
+recombinantes entre ellos, denominados CRF (formas recombinantes
+circulantes). Los CRF se forman por recombinación de fragmentos genómicos
+de distintos subtipos.
+5.3. FISIOPATOLOGÍA:
+Un hijo de madre con VIH puede haber sido infectado por el virus por la
+transmisión del VIH de la madre durante el embarazo (a través de la
+placenta), durante el parto (al ponerse en contacto el feto con las secreciones
+vaginales y la sangre materna en el canal del parto) o en el periodo de
+
+--- p2 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+284
+lactancia (a través de la leche materna). Sin ninguna intervención,
+aproximadamente un 20% de los niños se infectan antes de nacer (infección
+prenatal o intrauterina), mientras que entre un 50–80% lo hacen durante el
+parto (infección intraparto); por otro lado, la lactancia materna puede
+incrementar en un 15-20% el riesgo de transmisión. Los mecanismos
+moleculares de la transmisión vertical aún no han sido completamente
+aclarados, sin embargo, se informa que ciertos genotipos menores son
+transmitidos por las madres a sus hijos. Por otra parte, se sabe que el
+fenotipo macrófago-tropo (R5) está involucrado en la transmisión vertical de
+esta infección.
+La transmisión del virus tanto por la vía sexual y la transmisión vertical, ocurre
+por contacto directo con las células libres de viriones, que a su vez son
+permisivas por la interacción entre las células infectadas y las células blanco
+(infección cis), o bien por transferencia viral entre las células no infectadas
+(como las células dendríticas y las células B) con las células CD4+ mediante
+sinapsis virológica
+5.4. ASPECTOS EPIDEMIOLÓGICOS:
+Las tasas de transmisión materno infantil o vertical (RN con VIH/100
+gestantes con VIH) son:
+● EEUU: < 2 por ciento (2019).
+● Perú: 4 por ciento (2019).
+5.5. FACTORES DE RIESGO ASOCIADOS
+● Madre sin tratamiento antirretroviral.
+● Lactancia materna.
+● Parto vaginal.
+VI.
+DISPOSICIONES  ESPECÍFICAS
+6.1. CUADRO CLÍNICO
+● En la etapa neonatal, asintomático > 90%
+● Cuadro clínico del niño con VIH (Anexo 4)
+6.2. DIAGNÓSTICO
+A todo recién nacido expuesto al VIH se debe realizar obligatoriamente la
+prueba de reacción de cadena polimerasa (PCR-ADN-VIH-1), con las
+siguientes consideraciones (Anexo 1):
+● La prueba de PCR-ADN-VIH-1 se realiza al primer y tercer mes de edad,
+con el fin de conocer su condición de infectado por el VIH.
+● Si el resultado del primer PCR-ADN-VIH-1 es positivo, se repetirá
+inmediatamente un segundo PCR-ADN-VIH-1.
+
+--- p3 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+285
+● Si el resultado es positivo en dos oportunidades se considerará al niño
+como infectado por VIH.
+● Si hay discordancia entre el primer y segundo resultado de PCR-ADN-VIH-
+1, se considera al niño como indeterminado y se solicita una nueva prueba
+de PCR-ADN-VIH-1 a las cuatro (4) semanas de la última toma.
+● Si se identifica que el niño recibió lactancia materna, se debe repetir una
+nueva muestra para PCR-ADN-VIH-1 de forma inmediata.
+● Se realizará una prueba de PCR-DNA-VIH-1 al nacer, en recién nacidos
+expuestos con alto riesgo de transmisión del VIH. Estos incluyen:
+⮚ Gestantes sin atención prenatal.
+⮚ Gestantes que no recibieron tratamiento antirretroviral durante el
+embarazo.
+⮚ Gestantes diagnosticadas de infección aguda.
+⮚ Gestantes con carga viral ≥ de 1,000 copias en el tercer trimestre.
+6.2.1. DIAGNÓSTICO DIFERENCIAL:
+No aplica
+6.3. EXÁMENES AUXILIARES
+6.3.1. De patología Clínica:
+● Hemoglobina/hematocrito
+● Grupo sanguíneo y Rh
+6.3.2. Exámenes especializados complementarios:
+● PCR-ADN-VIH-1.
+6.4. MANEJO SEGÚN NIVEL DE COMPLEJIDAD Y CAPACIDAD RESOLUTIVA.
+6.4.1. Medidas generales y preventivas
+● El nacimiento del niño debe ser programado por vía cesárea en
+establecimiento de salud que aplica la Prevención de la
+Transmisión Materno Infantil del VIH (Nivel II-2, III).
+● Inmediatamente luego del parto se debe bañar al recién nacido con
+abundante agua temperada y jabón. Realizar el secado con una
+toalla suave para evitar laceraciones en la piel del niño.
+● Aspirar delicadamente las secreciones de las vías respiratorias
+evitando traumatismo de las mucosas.
+● Está contraindicada la lactancia materna y la lactancia cruzada
+(lactancia materna al niño dada por otra mujer). Se indicará
+sucedáneos de leche materna (SLM).
+6.4.2. Terapéutica
+
+--- p4 ---
+PERÚ
+MINISTERIO
+DE SALUD
+Viceministerio de Prestaciones y
+Aseguramiento en Salud
+Instituto Nacional
+Materno Perinatal
+Dirección Ejecutiva de
+Investigación, Docencia y Atención
+en Neonatología
+Departamento de
+Neonatología
+Versión 3
+Decenio de la Igualdad de Oportunidades para Mujeres y Hombres
+Año del Fortalecimiento de la Soberanía Nacional
+286
+La profilaxis antirretroviral dependerá del escenario de manejo del
+Plan de Prevención de la transmisión materno infantil (PTMI) del VIH
+dispuesto por el Ministerio de Salud (Anexo 2):
+● Escenario 1: Profilaxis con Zidovudina
+⮚ Para recién nacidos ≥ 35 semanas de edad gestacional:
+Zidovudina (AZT): 4 mg/kg/dosis de peso, por vía oral cada 12
+horas por cuatro (4) semanas.
+⮚ Para recién nacidos entre 30 a 35 semanas de edad
+gestacional: Zidovudina (AZT): 2 mg/kg/dosis de peso, por vía
+oral cada 12 horas por dos (2) semanas, luego 3 mg/kg/dosis
+de peso, por vía oral cada 12 horas por dos (2) semanas
+adicionales.
+⮚ Para recién nacidos < 30 semanas de edad gestacional:
+Zidovudina (AZT): 2 mg/kg/dosis de peso, por vía oral cada 12
+horas por cuatro (4) semanas.
+● Escenario 2: Profilaxis con zidovudina según el escenario 1. Si la
+carga viral materna es mayor a 1,000 copias por mililitro, la
+profilaxis antirretroviral será como escenario 3.
+● Escenario 3: El recién nacido recibirá Zidovudina (AZT),
+Lamivudina (3TC) y Nevirapina (NVP) en las siguientes dosis:
+⮚ AZT: dosis según esquema del escenario 1
+⮚ 3TC: 2 mg/kg/dosis VO cada 12 horas por seis (6) semanas
+⮚ NVP: 12 mg vía oral, en tres dosis: al nacimiento, al 3er día y
+al 7mo día.
+Como parte del tratamiento nutricional el niño expuesto recibirá SLM
+según esquema:
+Fases/ Meses
+Fase 1
+Fase 2
+TOTAL
+1m
+2m
+3m
+4m
+5m
+6m
+7m
+8m
+9m
+10m
+11m
+12m
+N° de latas de
+*400 gr.
+9
+11
+13
+14
+14
+15
+9
+9
+9
+7
+7
+7
+124
+*Para cálculo del número total de latas de SLM, se ha calculado en base a la
+presentación de 400 gr. lo que no limita la adquisición de otras presentaciones que
+sean equivalentes.
+6.4.3. Efectos adversos o colaterales del tratamiento y su manejo
+La profilaxis con zidovudina puede causar anemia en el neonato o
+lactante la que es reversible con la suspensión del medicamento
+6.4.4. Signos de alarma
+No existen

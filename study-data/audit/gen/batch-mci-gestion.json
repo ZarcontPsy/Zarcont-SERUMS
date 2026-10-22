@@ -1,0 +1,232 @@
+{
+  "sources": [],
+  "areas": [],
+  "topics": [
+    {
+      "id": "topic-mci-gestion",
+      "areaId": "area-mci",
+      "title": "Organización territorial y redes integradas",
+      "summary": "El MCI organiza el cuidado en un territorio y una población asignada, con redes integradas y flujos de atención centrados en la persona.",
+      "sourceIds": ["src-mci"],
+      "keywords": ["RIS", "territorio", "redes integradas", "gestión local"]
+    },
+    {
+      "id": "topic-mci-financiamiento",
+      "areaId": "area-mci",
+      "title": "Gestión de la calidad y financiamiento",
+      "summary": "La gestión por resultados, la calidad, la información y el aseguramiento universal sostienen la implementación del modelo.",
+      "sourceIds": ["src-mci"],
+      "keywords": ["calidad", "financiamiento", "aseguramiento", "incentivos"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-mci-07",
+      "topicId": "topic-mci-gestion",
+      "areaId": "area-mci",
+      "title": "Territorio y redes: dónde se organiza el cuidado",
+      "kicker": "MCI · Organización",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "El MCI organiza el cuidado en redes integradas de salud (RIS) con población y territorio definidos. La gestión territorial articula autoridades, equipos y comunidad para responder a las necesidades locales.",
+      "keyConcepts": [
+        "La RIS se delimita por población, cobertura, accesibilidad, densidad y circunscripción política.",
+        "La población y las familias están nominalizadas y asignadas a equipos multidisciplinarios.",
+        "El Plan Local de Salud aborda los determinantes y articula actores del territorio.",
+        "La captación y el triaje son oportunidades para ofrecer el cuidado integral."
+      ],
+      "sections": [
+        {
+          "title": "La RIS como unidad de gestión",
+          "depth": "core",
+          "body": [
+            "La Red Integrada de Salud define objetivos para la persona, familia y comunidad según sus necesidades. Se delimita por tamaño de población, cobertura prestacional, accesibilidad geográfica, densidad poblacional y relación con la circunscripción político-administrativa.",
+            "La población está nominalizada y las familias se asignan a equipos multidisciplinarios. La RIS articula la provisión de servicios y el abordaje de determinantes, optimizando recursos y estableciendo metas de salud."
+          ]
+        },
+        {
+          "title": "Gestión territorial",
+          "depth": "core",
+          "table": {
+            "headers": ["Elemento", "Función"],
+            "rows": [
+              ["Autoridad local de salud", "Presenta el Plan Local de Salud y articula actores."],
+              ["Comité o consejo local", "Coordina, monitorea y da seguimiento a los indicadores."],
+              ["Equipo de gestión de la RIS", "Coordina con autoridades y organiza los servicios."],
+              ["Acuerdos de gestión", "Ordenan responsibilities entre niveles y sectores."],
+              ["Comunidad organizada", "Participa en diagnóstico, priorización y control social."]
+            ]
+          }
+        },
+        {
+          "title": "Flujos centrados en la persona",
+          "depth": "full",
+          "body": [
+            "La captación puede ocurrir en una atención recuperativa, en la comunidad o mediante alianzas con instituciones locales. El triaje no es solo clasificación: es una oportunidad para reincorporar a la persona al cuidado integral.",
+            "La cartera de servicios se ordena según los cuidados que requiere la población y los equipos establecen flujos horizontales dentro de la RIS. La historia clínica electrónica única facilita la continuidad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Red no es solo derivar",
+            "text": "Una red integrada comparte población, información, metas y recursos; no es una suma de establecimientos desconectados."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-mci", "pages": [59, 60, 61, 62] }
+      ]
+    },
+    {
+      "id": "sheet-mci-08",
+      "topicId": "topic-mci-financiamiento",
+      "areaId": "area-mci",
+      "title": "Calidad, información y financiamiento del modelo",
+      "kicker": "MCI · Gestión y financiamiento",
+      "minutes": 7,
+      "level": "Avanzado",
+      "summary": "El MCI se sostiene con gestión por resultados, estándares de calidad, sistemas de información y aseguramiento universal. Sin financiamiento y medición, el modelo queda en el discurso.",
+      "keyConcepts": [
+        "La calidad exige servicios efectivos, seguros, centrados en las personas, oportunos, equitativos, integrados y eficientes.",
+        "La gestión por resultados usa indicadores de estructura, proceso y resultado.",
+        "El aseguramiento universal busca eliminar la barrera económica.",
+        "Los incentivos deben alinear a gobiernos locales y equipos de salud con las metas."
+      ],
+      "sections": [
+        {
+          "title": "Qué significa calidad",
+          "depth": "core",
+          "body": [
+            "Un servicio de calidad es efectivo (basado en evidencia), seguro (minimiza eventos adversos), centrado en las personas (respeta preferencias y valores), oportuno (evita retrasos), equitativo (elimina barreras evitables), integrado (coordina la atención) y eficiente (evita desperdicio).",
+            "La calidad no es un lujo: sin confianza, las personas no usan los servicios. Por eso el MCI incluye protocolos, seguridad del paciente y medición sistemática."
+          ]
+        },
+        {
+          "title": "Medir para decidir",
+          "depth": "core",
+          "table": {
+            "headers": ["Instrumento", "Uso"],
+            "rows": [
+              ["Indicadores de estructura", "Recursos, equipamiento y organización disponibles."],
+              ["Indicadores de proceso", "Si las actividades se realizan como están previstas."],
+              ["Indicadores de resultado", "Cambios en salud, cobertura y calidad."],
+              ["Cuadro de mando", "Información estratégica para la gestión y rendición de cuentas."],
+              ["Historia clínica electrónica", "Registro longitudinal y fuente para la gestión clínica y de políticas."]
+            ]
+          }
+        },
+        {
+          "title": "Financiamiento y sostenibilidad",
+          "depth": "full",
+          "bullets": [
+            "Aseguramiento universal para eliminar la barrera económica.",
+            "Mejora de la eficiencia y calidad del gasto.",
+            "Actualización periódica del PEAS.",
+            "Incentivos a gobiernos locales por abordar determinantes.",
+            "Incentivos a equipos multidisciplinarios por metas de cuidado.",
+            "Inversión en recursos humanos, infraestructura, tecnología e información."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Sin presupuesto no hay modelo",
+            "text": "El MCI requiere financiamiento sostenido y reglas claras; de lo contrario, la coordinación y la continuidad quedan como buenas intenciones."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-mci", "pages": [62, 63, 64, 65, 70, 71, 72, 73] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-mci-07-1",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "concept",
+      "prompt": "¿Cómo se delimita una Red Integrada de Salud (RIS) en el MCI?",
+      "answer": "Se delimita por tamaño de población, cobertura prestacional, accesibilidad geográfica, densidad poblacional y relación con la circunscripción político-administrativa. La población se nominaliza y las familias se asignan a equipos multidisciplinarios.",
+      "explanation": "La RIS no es un espacio arbitrario: se organiza para responder a una población concreta con recursos y servicios articulados.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [59, 61] }],
+      "tags": ["MCI", "organización"]
+    },
+    {
+      "id": "card-mci-07-2",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "multiple",
+      "prompt": "¿Cuál es el instrumento local que aborda los determinantes sociales y articula actores del territorio?",
+      "options": [
+        "El Plan Local de Salud.",
+        "El Petitorio Nacional de Medicamentos.",
+        "La historia clínica perinatal.",
+        "El registro de defunciones."
+      ],
+      "correctIndex": 0,
+      "explanation": "La Autoridad Local de Salud presenta el Plan Local de Salud, que aborda los determinantes y articula a los actores del territorio. Los otros instrumentos no cumplen esa función de planificación territorial.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [59, 60] }],
+      "tags": ["MCI", "opción múltiple"]
+    },
+    {
+      "id": "card-mci-07-3",
+      "topicId": "topic-mci-gestion",
+      "sheetId": "sheet-mci-07",
+      "type": "application",
+      "prompt": "Una persona llega al establecimiento por un dolor agudo. ¿Cómo se aprovecha esa atención para el cuidado integral?",
+      "options": [
+        "Atender solo el dolor y no preguntar nada más.",
+        "Usar la captación y el triaje para identificar necesidades de cuidado integral y ofrecer las prestaciones correspondientes.",
+        "Derivarla siempre al hospital.",
+        "Pedirle que vuelva otro día para la evaluación integral."
+      ],
+      "correctIndex": 1,
+      "explanation": "El MCI considera la atención recuperativa una oportunidad de captación. El triaje permite identificar riesgos y reincorporar a la persona al cuidado integral.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [62] }],
+      "tags": ["MCI", "aplicación"]
+    },
+    {
+      "id": "card-mci-08-1",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "concept",
+      "prompt": "¿Cuáles son las características de un servicio de salud de calidad según el MCI?",
+      "answer": "Efectivo, seguro, centrado en las personas, oportuno, equitativo, integrado y eficiente. Estas características se concretan con protocolos basados en evidencia, seguridad del paciente, participación de la persona y coordinación en red.",
+      "explanation": "La calidad es multidimensional. Un servicio puede ser oportuno y aun así ser inseguro o no centrado en la persona.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [63] }],
+      "tags": ["MCI", "calidad"]
+    },
+    {
+      "id": "card-mci-08-2",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "multiple",
+      "prompt": "¿Qué busca el componente de financiamiento del MCI?",
+      "options": [
+        "Aumentar el gasto de bolsillo de las familias.",
+        "Garantizar el acceso universal mediante aseguramiento, eficiencia del gasto e incentivos.",
+        "Eliminar el PEAS.",
+        "Financiar solo la atención hospitalaria."
+      ],
+      "correctIndex": 1,
+      "explanation": "El MCI busca eliminar la barrera económica con aseguramiento universal, mejorar la eficiencia y calidad del gasto, actualizar el PEAS y usar incentivos para alinear a los actores.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [71, 72, 73] }],
+      "tags": ["MCI", "opción múltiple"]
+    },
+    {
+      "id": "card-mci-08-3",
+      "topicId": "topic-mci-financiamiento",
+      "sheetId": "sheet-mci-08",
+      "type": "application",
+      "prompt": "Un equipo de salud cumple las metas de cuidado de su población asignada. ¿Qué mecanismo del MCI reconoce ese desempeño?",
+      "options": [
+        "El pago directo de los usuarios.",
+        "Los incentivos a los equipos multidisciplinarios por el cumplimiento de indicadores.",
+        "La eliminación del Plan Local de Salud.",
+        "La reducción del horario de atención."
+      ],
+      "correctIndex": 1,
+      "explanation": "El MCI plantea incentivos anuales a los equipos multidisciplinarios por el cumplimiento de indicadores de resultado, en el marco de las normas de incentivos del sector público.",
+      "sourceRefs": [{ "sourceId": "src-mci", "pages": [73] }],
+      "tags": ["MCI", "aplicación"]
+    }
+  ]
+}

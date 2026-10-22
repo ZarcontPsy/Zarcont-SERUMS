@@ -1,0 +1,364 @@
+FILE politica-promocion-salud.pdf | pages 34 | chars 89281
+
+== TOC ==
+p1: Page 1
+p1: Page 2
+p1: Page 3
+p2: Page 4
+p3: Page 5
+p4: Page 6
+p5: Page 7
+p6: Page 8
+p7: Page 9
+p8: Page 10
+p9: Page 11
+p10: Page 12
+p11: Page 13
+p12: Page 14
+p13: Page 15
+p14: Page 16
+p15: Page 17
+p16: Page 18
+p17: Page 19
+p18: Page 20
+p19: Page 21
+p20: Page 22
+p21: Page 23
+p22: Page 24
+p23: Page 25
+p24: Page 26
+p25: Page 27
+p26: Page 28
+p27: Page 29
+p28: Page 30
+p29: Page 31
+p30: Page 32
+p31: Page 33
+p32: Page 34
+p33: Page 35
+p34: Page 36
+
+== HEADINGS (candidates) ==
+p1 [10.8] DOCUMENTO TÉCNICO
+p1 [13.4] Lineamientos de Política de Promoción de la Salud en el Perú
+p2 [10.5] ÍNDICE
+p3 [10.9] INTRODUCCIÓN
+p4 [10.9] FINALIDAD
+p4 [10.9] OBJETIVO
+p4 [10.9] BASE LEGAL
+p5 [11.0] ÁMBITO DE APLICACIÓN
+p5 [10.9] CONTENIDO
+p5 [10.9] 5.1. DEFINICIONES OPERATIVAS
+p5 [10.8] a. Acción Interinstitucional
+p6 [10.7] b. Acción Intergubernamental
+p6 [10.7] c. Acción Intersectorial
+p6 [10.7] d. Equidad en Salud
+p6 [10.7] e. Empoderamiento social
+p6 [10.7] f. Gobernanza
+p6 [10.7] g. Gobernabilidad
+p6 [32.1] li,:•
+p6 [22.2] o ,,I,1
+p6 [17.4] .a ,,,
+p6 [31.2] --..,„.--
+p6 [38.0] 03,10 o
+p6 [24.6] S i> la
+p6 [14.7] \
+p7 [10.7] h. Gradiente social
+p7 [10.7] i. Justicia Social
+p7 [10.7] Inequidad en Salud
+p7 [10.7] k. Participación Ciudadana
+p7 [10.9] I. Participación Social
+p7 [10.6] m. Políticas Públicas
+p8 [10.7] n. Promoción de la Salud
+p8 [10.7] o. Salud en Todas las Políticas
+p8 [10.7] p. Sector Salud
+p8 [10.7] q. Vigilancia Ciudadana
+p9 [10.7] 5.2. MARCO CONCEPTUAL
+p9 [10.7] 5.2.1. Enfoques
+p9 [10.7] Enfoque Territorial
+p9 [10.7] Enfoque de Equidad en Salud
+p10 [11.4] Enfoque de Derechos Humanos
+p10 [11.1] Enfoque de Interculturalidad
+p10 [33.5] ONU
+p10 [33.5] Declaración
+p10 [33.5] Universal
+p10 [33.5] de
+p10 [33.5] los
+p10 [33.5] Derechos
+p10 [33.5] ht03:1/www.derechoshumanos.net/normahvainormas/1948
+p10 [33.5] OMS
+p10 [33.5] Enfoque
+p10 [33.5] Salud
+p10 [33.5] Basado
+p10 [33.5] en
+p10 [11.5] Janeiro, 2011, 48
+p11 [11.2] 5.2.2. Atención Primaria de la Salud
+p11 [11.2] 5.2.3. Atención Primaria de Salud Renovada 26.
+p11 [11.3] 5.2.4. Determinantes de la salud
+p12 [10.7] 5.2.5. Determinantes Sociales de la Salud (DSS)
+p13 [10.7] Figura 1. Marco de Determinantes Sociales de la Salud 28
+p14 [136.5] n:
+p14 [20.1] Co d
+p14 [10.5] a. Determinantes Estructurales de la Salud
+p14 [11.8] a.1. Contexto socioeconómico y político. Se refiere a factores
+p15 [11.2] Posición socioeconómica.
+p15 [12.6] Estos ejes determinan las
+p15 [12.6] población en diversos grupos con diferente posición
+p15 [10.8] b. Determinantes Intermedios de la Salud
+p16 [10.6] 5.2.6. Inequidad en Salud
+p17 [10.7] 5.2.7. Gestión Territorial en Salud
+p17 [10.7] a. Pasar de una gestión fragmentada en salud a una gestión integrada
+p17 [10.7] b. Empezar desde un territorio
+p18 [11.1] El trabajo intersectorial a nivel de distrito permite la participación social,
+p18 [11.2] c. Del trabajo por escenarios al trabajo por territorio
+p19 [10.8] d. De la prestación de servicios a la articulación de actores sociales
+p19 [10.6] 5.2.8. Intersectorialidad
+p20 [11.3] 1. Informativa: Presentación de los resultados del análisis o problema a
+p20 [11.0] 2. De Cooperación: Interacción entre sectores para lograr mayor eficiencia
+p20 [11.1] 3. De Coordinación: Trabajo conjunto que implica el ajuste de las políticas
+p20 [11.1] 4. De Integración: Trabajo integrado que implica definir de forma conjunta
+p20 [11.3] 5. Salud en todas las políticas: Estrategia gubernamental que busca
+p21 [10.6] 5.2.9. Participación social
+p21 [10.7] 5.2.10. Medición y Vigilancia de los Determinantes Sociales de la Salud
+p22 [10.8] 6. LINEAMIENTOS DE POLÍTICA DE PROMOCIÓN DE LA SALUD EN EL PERÚ
+p22 [10.9] Lineamiento de Política 1: La Salud como eje fundamental e integrador de
+p22 [10.7] todas las políticas públicas.
+p23 [11.3] Lineamiento de Política 2: La persona, la familia y la comunidad como centro
+p23 [11.3] de la gestión territorial en salud.
+p25 [11.2] Lineamiento de Política 3: Abordaje de los determinantes sociales de la
+p25 [10.7] salud para el cierre de brechas de inequidad en salud.
+p27 [11.7] 7. ANEXOS
+p28 [10.8] ANEXO N° 01:
+p28 [10.7] CONFERENCIAS MUNDIALES DE PROMOCIÓN DE LA SALUD.
+p28 [11.4] Ottawa: Primera Conferencia internacional de Promoción de la Salud
+p28 [12.0] "Salud para Todos en el año 2000. Se estableció que la
+p28 [11.3] Adelaida: Segunda Conferencia Internacional de Promoción de la Salud
+p28 [12.4] "Políticas a favor de la salud". Se estableció que la
+p28 [11.3] Sundsval Tercera Conferencia Internacional de Promoción de la Salud.
+p28 [11.9] "Entornos propicios para la salud". Se enfatizó que la
+p28 [11.4] Yakarta: Cuarta Conferencia Internacional de Promoción de la Salud
+p28 [11.5] "Nuevo actor para una nueva era: llevar la promoción de la
+p28 [11.3] salud hacia el siglo XXI". Se reconoció que la promoción de la
+p28 [11.4] México: Quinta Conferencia Internacional de Promoción de la Salud.
+p28 [11.9] "Promoción de la salud: hacia una mayor equidad". Se
+p28 [11.5] Bangkok: Sexta Conferencia Internacional de Promoción de la Salud.
+p28 [11.8] "Carta de Bangkok para la promoción de la salud en un
+p28 [11.9] mundo globalizado". Se establecieron las medidas, los
+p28 [11.3] Nairobi: Séptima Conferencia Internacional de Promoción de la Salud.
+p28 [11.5] "La llamada a la acción de Nairobi para cerrar la brecha de
+p28 [11.4] implementación en promoción de la salud". Se reconoció que
+p29 [10.8] Adelaida: Reunión Internacional sobre la Salud en Todas las Políticas.
+p29 [11.1] "Hacia una gobernanza compartida en pro de la salud y el
+p29 [11.3] bienestar'. Se determinó la necesidad de establecer un nuevo
+p29 [11.0] Rio de Conferencia Mundial sobre los Determinantes Sociales de la
+p29 [11.0] Janeiro Salud. CERRANDO LA BRECHA: La política de acción sobre los
+p29 [10.9] Helsinki: Octava Conferencia Internacional de Promoción de la Salud.
+p30 [11.7] 2016 Shangai: Novena Conferencia Mundial de Promoción de la Salud. En
+p31 [11.1] ANEXO N° 02:
+p31 [11.0] DOCUMENTOS Y ANTECEDENTES RELACIONADOS AL ABORDAJE DE
+p31 [11.0] DETERMINANTES SOCIALES DE LA SALUD
+p31 [49.2] 1974 Canadá
+p31 [10.8] INFORME LALONDE 33
+p31 [11.7] 1980 Reino Unido INFORME BLACK
+p31 [12.5] También encontró que la principal causa de estas
+p31 [11.5] 2002 Washington DESAFÍO A LA FALTA DE EQUIDAD EN LA SALUD: DE LA
+p31 [49.2] D.C. 	ÉTICA A LA ACCIÓN
+p31 [49.2] 2005 Lima 	DETERMINANTES SOCIALES DE LA SALUD EN EL PERÚ —
+p31 [10.8] MINISTERIO DE SALUD
+p32 [49.2] 2008 Ginebra
+p32 [11.3] SUBSANAR DESIGUALDADES EN UNA GENERACIÓN —
+p32 [11.1] COMISIÓN DE DETERMINANTES SOCIALES DE LA SALUD
+p32 [10.8] — ORGANIZACIÓN MUNDIAL DE LA SALUD
+p32 [10.8] Lima
+p32 [11.3] MODELO DE ATENCIÓN INTEGRAL DE SALUD BASADO
+p32 [10.9] EN FAMILIA Y COMUNIDAD - MINISTERIO DE SALUD
+p32 [12.5] ciudadana individual y colectiva. Sin embargo, su
+p32 [11.2] 2012 Nueva York EL FUTURO QUE DESEAMOS — NACIONES UNIDAS
+p33 [49.2] 2013 Ginebra
+p33 [11.4] SALUD EN TODAS LAS POLÍTICAS — MARCO PARA LA
+p33 [11.1] ACCIÓN DE LOS PAÍSES.
+p33 [11.3] 8. BIBLIOGRAFÍA:
+p33 [11.5] 8.1. LALONDE, M., 1974 A New Perspective on the Health of Canadians. A
+p33 [12.7] MINSA, Univ.
+p33 [14.6] Wiener, OPS, 2005, 84 p.
+p34 [13.7] shared governance for health and well-being" 4.p
+p34 [45.3] 33 p.
+
+== FIRST PAGES ==
+
+--- p1 ---
+Documento Técnico
+Lineamientos de Política de Promoción de la Salud en el Perú
+DOCUMENTO TÉCNICO
+Lineamientos de Política de Promoción de la Salud en el Perú
+1
+
+--- p2 ---
+7
+Documento Técnico
+Lineamientos de Política de Promoción de la Salud en el Perú
+ÍNDICE
+Introducción
+3
+1.
+Finalidad
+4
+2.
+Objetivo
+4
+3.
+Base legal
+4
+4.
+Ambito de aplicación
+5
+5.
+Contenido
+5
+5.1. Definiciones operativas
+5
+5.2. Marco Conceptual
+9
+5.2.1.
+Enfoques
+9
+5.2.2.
+Atención Primaria de la Salud
+11
+5.2.3.
+Atención Primaria de la Salud Renovada
+11
+5.2.4.
+Determinantes de la salud
+11
+5.2.5.
+Determinantes Sociales de la Salud
+12
+5.2.6.
+Inequidad en salud
+16
+5.2.7.
+Gestión Territorial en Salud
+17
+5.2.8.
+Intersectorialidad
+19
+5.2.9.
+Participación social
+21
+5.2.10. Medición y vigilancia de los Determinantes Sociales de la Salud 21
+6.
+Lineamientos de Política de Promoción de la Salud en el Perú
+22
+Lineamiento 1. La Salud como eje fundamental e integrador de todas
+las políticas públicas
+22
+Lineamiento 2. La persona, la familia y la comunidad como el centro
+de la gestión territorial en salud
+23
+Lineamiento 3. Abordaje de los determinantes sociales de la salud
+para el cierre de brechas de inequidad en salud.
+25
+Lineamiento 4. Empoderamiento y participación social en salud
+26
+7. Anexos
+27
+8.
+Bibliografía
+33
+
+--- p3 ---
+Documento Técnico
+Lineamientos de Política de Promoción de la Salud en el Perú
+INTRODUCCIÓN
+Han transcurrido más de 10 años de la aprobación del documento denominado
+"Lineamientos de Política de Promoción de la Salud" aprobado mediante Resolución
+Ministerial N° 111-2005/MINSA. Durante ese lapso de tiempo han ocurrido una serie
+de sucesos trascendentes para la salud pública en el país, se inició el proceso de
+descentralización y modernización del Estado, se implementó el Seguro Integral de
+Salud y la gestión por resultados, se aplicó el plan de incentivos a la gestión municipal
+y regional, así como también ocurrieron cambios en el perfil epidemiológico el cual se
+refleja en el incremento de las enfermedades crónico degenerativas entre otros.
+En el ámbito internacional, dos corrientes de política en salud, refrendadas en la
+Declaración de Río 2011 y Helsinki, 2013, sobre Determinantes Sociales de la Salud y
+salud en todas las políticas respectivamente, han puesto en la agenda pública de la
+región, la importancia estratégica de impulsar acciones intersectoriales y políticas
+públicas saludables, como elementos centrales de la promoción de la salud.
+En este contexto de cambios, resulta indispensable proponer acciones estratégicas
+que vayan más allá del ámbito de la prestación de servicios de salud hacia la gestión
+territorial, enfoque desde el cual, se fortalece la coordinación intersectorial e
+intergubernamental, haciendo posible el abordaje de determinantes sociales que
+afectan la salud de la población. Asimismo, la Reforma de Salud, busca también
+mejorar las condiciones de vida de la población y la equidad sanitaria, a través del
+consenso y de intervenciones interinstitucionales e intergubernamentales, que
+promuevan el enfoque de Salud en Todas las Políticas.
+El presente documento, brinda orientación técnica para implementar la promoción de
+la salud en todas las políticas, tomando como marco de referencia los 04 enfoques del
+Modelo de Atención Integral de Salud Basado en Familia y Comunidad (MAIS BF y C)
+aprobado mediante Resolución Ministerial N° 464-2011/MINSA: enfoque de derechos
+humanos, interculturalidad, equidad de género y gestión territorial.
+3
+
+--- p4 ---
+Documento Técnico
+Lineamientos de Política de Promoción de la Salud en el Perú
+1.
+FINALIDAD
+Contribuir a la mejora de la salud pública del país, mediante el fortalecimiento de la
+Promoción de la Salud como función esencial de la salud pública en todas las políticas
+de las instituciones públicas y privadas en el país.
+2.
+OBJETIVO
+Establecer los Lineamientos de Política de Promoción de la Salud, así como los
+principios y doctrinas que orienten la formulación y ejecución de políticas sanitarias en
+todos los sectores en los tres niveles de gobierno, para fortalecer dicha función
+esencial de salud pública en el país.
+3.
+BASE LEGAL
+•
+Ley N° 26300, Ley de los Derechos de Participación y Control Ciudadanos.
+•
+Ley N° 26842, Ley General de Salud.
+•
+Ley N° 27658, Ley Marco de la Modernización de la Gestión del Estado.
+•
+Ley N° 27783, Ley de Bases de la Descentralización.
+•
+Ley N° 27813, Ley del Sistema Nacional Coordinado y Descentralizado de Salud.
+•
+Ley N° 27867 Ley Orgánica de Gobiernos Regionales.
+•
+Ley N° 27972, Ley Orgánica de Municipalidades.
+•
+Ley N° 28056, Ley Marco del Presupuesto Participativo.
+•
+Ley N° 29124, Ley que establece la cogestión y participación ciudadana para el
+primer nivel de atención en los establecimientos de salud del Ministerio de Salud
+y de las Regiones.
+•
+Ley N° 29158, Ley Orgánica del Poder Ejecutivo.
+•
+Ley N° 29785, Ley del derecho a la consulta previa a los pueblos indígenas u
+originarios, reconocidos en el Convenio 169 de la Organización Internacional del
+Trabajo (01T).
+•
+Decreto Legislativo N° 1161, Ley de Organización y Funciones del Ministerio de
+Salud.
+•
+Decreto Legislativo NI° 1166, que aprueba la conformación y funcionamiento de
+la Redes Integradas de Atención Primaria de Salud.
+•
+Decreto Supremo NI° 008-2017-SA, que aprueba el Reglamento de Organización
+y Funciones del Ministerio de Salud.
+•
+Decreto Supremo N° 020-2014-SA, que aprueba el Texto Único Ordenado de la
+Ley N° 29344, Ley Marco de Aseguramiento Universal en Salud
+•
+Decreto Supremo N° 04-2013-PCM, que aprueba la Política Nacional de
+Modernización de la Gestión Pública
+•
+Decreto Supremo N° 017-2008-SA, que aprueba el Reglamento de la Ley NI°
+29124, que establece la Cogestión y Participación Ciudadana para el primer
+nivel de atención en los establecimientos de Salud del Ministerio de Salud y de
+las Regiones
+4

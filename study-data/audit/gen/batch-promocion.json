@@ -1,0 +1,606 @@
+{
+  "sources": [
+    {
+      "id": "src-ottawa",
+      "title": "Carta de Ottawa para la Promoción de la Salud",
+      "short": "Ottawa",
+      "authors": "Organización Mundial de la Salud",
+      "kind": "Declaración internacional",
+      "provenance": "Carta adoptada en la Primera Conferencia Internacional sobre Promoción de la Salud, Ottawa, 1986.",
+      "file": "../study-data/fuentes/carta-ottawa-promocion-salud.pdf"
+    },
+    {
+      "id": "src-promocion-politica",
+      "title": "Lineamientos de Política de Promoción de la Salud en el Perú",
+      "short": "Política de promoción",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico de la Dirección General de Promoción de la Salud que orienta la promoción de la salud en los tres niveles de gobierno.",
+      "file": "../study-data/fuentes/politica-promocion-salud.pdf"
+    },
+    {
+      "id": "src-modelo-abordaje",
+      "title": "Modelo de Abordaje de Promoción de la Salud en el Perú",
+      "short": "Modelo de abordaje",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Documento técnico de 2006 que organiza la promoción de la salud por sujetos, escenarios, ejes temáticos y programas.",
+      "file": "../study-data/fuentes/abordaje-promocion-salud.pdf"
+    },
+    {
+      "id": "src-municipios",
+      "title": "Programa de Municipios y Comunidades Saludables",
+      "short": "Municipios saludables",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Documento técnico",
+      "provenance": "Programa nacional de promoción de la salud en el ámbito municipal y comunal, publicado en 2005.",
+      "file": "../study-data/fuentes/municipios-comunidades-saludables.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-promocion",
+      "title": "Promoción de la salud y participación comunitaria",
+      "short": "Promoción",
+      "description": "Estrategias, políticas y programas para actuar sobre los determinantes sociales y fortalecer la participación de personas, familias y comunidades.",
+      "accent": "#E0B36A",
+      "icon": "sun",
+      "sourceIds": ["src-ottawa", "src-promocion-politica", "src-modelo-abordaje", "src-municipios"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-ottawa-estrategias",
+      "areaId": "area-promocion",
+      "title": "Carta de Ottawa y estrategias de promoción",
+      "summary": "La promoción de la salud actúa sobre los determinantes y combina cinco estrategias complementarias.",
+      "sourceIds": ["src-ottawa"],
+      "keywords": ["promoción", "Ottawa", "determinantes", "participación", "políticas públicas"]
+    },
+    {
+      "id": "topic-promocion-politicas",
+      "areaId": "area-promocion",
+      "title": "Salud en todas las políticas",
+      "summary": "Lineamientos para incorporar la salud en las decisiones de todos los sectores y cerrar brechas de inequidad.",
+      "sourceIds": ["src-promocion-politica"],
+      "keywords": ["determinantes sociales", "gestión territorial", "equidad", "intersectorialidad"]
+    },
+    {
+      "id": "topic-modelo-sujetos",
+      "areaId": "area-promocion",
+      "title": "Sujetos, escenarios y ejes temáticos",
+      "summary": "El modelo peruano organiza la promoción en la persona, la familia y la comunidad, en escenarios y ejes concretos.",
+      "sourceIds": ["src-modelo-abordaje"],
+      "keywords": ["modelo de abordaje", "escenarios", "ejes temáticos", "etapas de vida"]
+    },
+    {
+      "id": "topic-modelo-programas",
+      "areaId": "area-promocion",
+      "title": "Programas de promoción de la salud",
+      "summary": "Los programas de familias, municipios, escuelas y centros laborales traducen el modelo en acciones territoriales.",
+      "sourceIds": ["src-modelo-abordaje"],
+      "keywords": ["familias saludables", "escuelas saludables", "centros laborales", "municipios"]
+    },
+    {
+      "id": "topic-municipios-fases",
+      "areaId": "area-promocion",
+      "title": "Municipios y comunidades saludables",
+      "summary": "El programa municipal se implementa en cinco fases con un comité multisectorial y evaluación participativa.",
+      "sourceIds": ["src-municipios"],
+      "keywords": ["municipio saludable", "comité multisectorial", "fases", "evaluación participativa"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-ottawa-01",
+      "topicId": "topic-ottawa-estrategias",
+      "areaId": "area-promocion",
+      "title": "Ottawa: promoción de la salud, no solo prevención",
+      "kicker": "Promoción · Fundamentos",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "La promoción de la salud no se limita a evitar enfermedades: busca que las personas y comunidades ganen control sobre su salud actuando sobre las condiciones de vida. La Carta de Ottawa propone cinco estrategias complementarias.",
+      "keyConcepts": [
+        "La salud es un recurso para la vida cotidiana, no solo la ausencia de enfermedad.",
+        "La promoción exige paz, educación, vivienda, alimentación, renta, ecosistema estable, justicia social y equidad.",
+        "Las cinco estrategias de Ottawa son: política pública sana, ambientes favorables, acción comunitaria, aptitudes personales y reorientación de los servicios.",
+        "La intersectorialidad y la participación comunitaria son condiciones para sostener los cambios."
+      ],
+      "sections": [
+        {
+          "title": "Salud como recurso cotidiano",
+          "depth": "core",
+          "body": [
+            "La Carta de Ottawa define la promoción de la salud como el proceso de proporcionar a las personas los medios necesarios para mejorar su salud y ejercer un mayor control sobre ella. La salud se entiende como un recurso para la vida diaria, no como el objetivo último de la existencia.",
+            "Para alcanzarla se requieren condiciones básicas: paz, educación, vivienda, alimentación, renta, un ecosistema estable, justicia social y equidad. Sin esas bases, las acciones educativas aisladas tienen poco efecto."
+          ],
+          "bullets": [
+            "La promoción actúa sobre las condiciones que producen salud, no solo sobre la enfermedad.",
+            "La equidad es el centro: reducir diferencias evitables e injustas.",
+            "El sector salud no puede solo: necesita gobiernos, sectores sociales, comunidad y medios."
+          ]
+        },
+        {
+          "title": "Las cinco estrategias",
+          "depth": "core",
+          "table": {
+            "headers": ["Estrategia", "Qué busca"],
+            "rows": [
+              ["Política pública sana", "Que todos los sectores consideren las consecuencias de sus decisiones sobre la salud."],
+              ["Ambientes favorables", "Crear entornos de vida, trabajo y ocio seguros y estimulantes."],
+              ["Acción comunitaria", "Que la comunidad fije prioridades y participe en las decisiones y en la ejecución."],
+              ["Aptitudes personales", "Información, educación y habilidades para la vida que amplíen las opciones de autocuidado."],
+              ["Reorientación de servicios", "Que los servicios sanitarios incorporen la promoción y respondan a las necesidades culturales."]
+            ]
+          }
+        },
+        {
+          "title": "Qué implica en el primer nivel",
+          "depth": "full",
+          "body": [
+            "La Carta no propone una campaña única sino una combinación de estrategias. El primer nivel puede abogar por ordenanzas saludables, mejorar sus propios entornos, facilitar la participación de la comunidad y reorientar la consulta hacia la prevención y el acompañamiento.",
+            "La mediación entre intereses contrapuestos es parte del rol: no se trata solo de informar, sino de construir acuerdos con otros sectores para que la opción saludable sea también la más fácil."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Idea para retener",
+            "text": "Promoción no es repartir folletos: es cambiar las condiciones que hacen difícil cuidarse y facilitar las que lo hacen posible."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-ottawa", "pages": [1, 2, 3, 4] }
+      ]
+    },
+    {
+      "id": "sheet-promocion-politica-01",
+      "topicId": "topic-promocion-politicas",
+      "areaId": "area-promocion",
+      "title": "Salud en todas las políticas: cuatro lineamientos para el territorio",
+      "kicker": "Promoción · Política y territorio",
+      "minutes": 8,
+      "level": "Intermedio",
+      "summary": "La política peruana de promoción propone incorporar la salud en todas las políticas, actuar sobre los determinantes sociales y organizar la acción en el territorio con participación ciudadana.",
+      "keyConcepts": [
+        "Salud en Todas las Políticas implica evaluar las consecuencias sanitarias de las decisiones de otros sectores.",
+        "Los determinantes estructurales (poder, ingresos, educación) generan inequidades; los intermedios son las condiciones de vida.",
+        "La gestión territorial toma el distrito como unidad operativa y articula actores públicos y sociales.",
+        "La participación social y la vigilancia ciudadana son mecanismos de control y sostenibilidad."
+      ],
+      "sections": [
+        {
+          "title": "Enfoques y determinantes",
+          "depth": "core",
+          "body": [
+            "La política se apoya en cuatro enfoques: territorial, de equidad en salud, de derechos humanos y de interculturalidad. El territorio no es solo un espacio físico: es un sistema de relaciones entre actores, instituciones, ambiente y cultura.",
+            "Las inequidades en salud son diferencias evitables e injustas. Para cerrarlas hay que actuar sobre los determinantes estructurales —gobernanza, políticas macroeconómicas, posición socioeconómica— y sobre los intermedios —condiciones materiales, trabajo, vivienda, alimentación—."
+          ]
+        },
+        {
+          "title": "Los cuatro lineamientos",
+          "depth": "core",
+          "table": {
+            "headers": ["Lineamiento", "Foco"],
+            "rows": [
+              ["1. Salud como eje de todas las políticas", "Incorporar la salud en la agenda de todos los sectores y niveles de gobierno."],
+              ["2. Persona, familia y comunidad en el centro", "Gestión territorial con participación y decisión local."],
+              ["3. Abordaje de determinantes para cerrar brechas", "Articular educación, vivienda, trabajo, ambiente y protección social."],
+              ["4. Empoderamiento y participación social", "Fortalecer capacidades y control ciudadano sobre las decisiones."]
+            ]
+          }
+        },
+        {
+          "title": "Del discurso a la gestión territorial",
+          "depth": "full",
+          "body": [
+            "La unidad territorial básica propuesta es el distrito. Allí se pueden articular autoridades locales, instituciones, organizaciones sociales y sector salud. La coordinación intersectorial puede ser informativa, de cooperación, de coordinación o de integración; no son etapas rígidas y pueden coexistir.",
+            "La participación social tiene valor intrínseco —derecho a decidir sobre lo que afecta— y valor instrumental —mejora la pertinencia y sostenibilidad de las intervenciones—. La vigilancia ciudadana completa el ciclo al exigir rendición de cuentas."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Cuidado con la trampa sectorial",
+            "text": "Si salud planifica sola y luego pide apoyo, la intersectorialidad se vuelve trámite. Debe participar desde el diagnóstico y la priorización."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-promocion-politica", "pages": [9, 10, 13, 17, 18, 21, 22, 23, 24, 25, 26, 27] }
+      ]
+    },
+    {
+      "id": "sheet-modelo-sujetos-01",
+      "topicId": "topic-modelo-sujetos",
+      "areaId": "area-promocion",
+      "title": "Persona, familia y comunidad: los sujetos del modelo",
+      "kicker": "Promoción · Modelo peruano",
+      "minutes": 7,
+      "level": "Base",
+      "summary": "El Modelo de Abordaje organiza la promoción en tres sujetos —persona, familia y comunidad—, cinco escenarios y siete ejes temáticos, con enfoques de equidad, género e interculturalidad.",
+      "keyConcepts": [
+        "La persona se aborda según su etapa de vida y su contexto biopsicosocial.",
+        "La familia es la unidad de intervención de mayor eficacia potencial en promoción.",
+        "Los escenarios incluyen vivienda, municipio, escuela, centro laboral y comunidad.",
+        "Los ejes temáticos son alimentación, higiene, actividad física, salud sexual, habilidades para la vida, seguridad vial y salud mental."
+      ],
+      "sections": [
+        {
+          "title": "Tres sujetos, distintas necesidades",
+          "depth": "core",
+          "body": [
+            "El modelo reconoce a la persona como ser biopsicosocial inmerso en relaciones políticas, sociales, culturales y ecológicas. Las intervenciones son más efectivas cuando se adaptan a cada etapa de vida: niño, adolescente, joven, adulto y adulto mayor.",
+            "La familia es el espacio donde se aprenden normas, valores y conductas de salud; por eso se considera la unidad de intervención de mayor eficacia potencial. La comunidad aporta participación, reflexión, cooperación y movilización para sostener las acciones."
+          ]
+        },
+        {
+          "title": "Escenarios donde se vive la salud",
+          "depth": "core",
+          "table": {
+            "headers": ["Escenario", "Qué se promueve"],
+            "rows": [
+              ["Vivienda", "Saneamiento, ventilación, higiene, prevención de accidentes y convivencia."],
+              ["Municipio", "Políticas públicas locales, espacios públicos y entornos saludables."],
+              ["Institución educativa", "Habilidades para la vida, alimentación, actividad física y convivencia."],
+              ["Centro laboral", "Entornos y conductas saludables para trabajadores y sus familias."],
+              ["Comunidad", "Participación, redes sociales y movilización de recursos locales."]
+            ]
+          }
+        },
+        {
+          "title": "Los siete ejes temáticos",
+          "depth": "full",
+          "bullets": [
+            "Alimentación y nutrición saludable.",
+            "Higiene y ambiente.",
+            "Actividad física.",
+            "Salud sexual y reproductiva.",
+            "Habilidades para la vida.",
+            "Seguridad vial y cultura de tránsito.",
+            "Promoción de la salud mental, buen trato y cultura de paz."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No son compartimentos",
+            "text": "Una intervención escolar sobre alimentación también puede fortalecer habilidades para la vida y salud mental. Los ejes se combinan en cada escenario."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-modelo-abordaje", "pages": [29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40] }
+      ]
+    },
+    {
+      "id": "sheet-modelo-programas-01",
+      "topicId": "topic-modelo-programas",
+      "areaId": "area-promocion",
+      "title": "Programas de promoción: de la familia al municipio",
+      "kicker": "Promoción · Programas",
+      "minutes": 6,
+      "level": "Intermedio",
+      "summary": "El modelo se operativiza mediante programas de familias y viviendas saludables, municipios y comunidades saludables, instituciones educativas y centros laborales.",
+      "keyConcepts": [
+        "El programa de familias y viviendas saludables actúa sobre la vivienda y las prácticas familiares.",
+        "Municipios y comunidades saludables buscan incorporar la salud en la agenda local.",
+        "Las instituciones educativas trabajan con toda la comunidad educativa, no solo con estudiantes.",
+        "Los centros laborales son un escenario clave por el tiempo que las personas pasan en ellos."
+      ],
+      "sections": [
+        {
+          "title": "Familias y viviendas saludables",
+          "depth": "core",
+          "body": [
+            "El programa busca que las familias adopten prácticas de cuidado y que la vivienda ofrezca condiciones seguras: saneamiento básico, ventilación, higiene, cocina saludable y prevención de accidentes. La vivienda se entiende como parte del entorno que condiciona la salud, no solo como un espacio físico.",
+            "Las acciones se conciertan con otros sectores para mejorar infraestructura, saneamiento y actividades productivas. La familia es el punto de entrada para cambiar rutinas de alimentación, higiene y convivencia."
+          ]
+        },
+        {
+          "title": "Municipios, escuelas y centros laborales",
+          "depth": "core",
+          "bullets": [
+            "Municipio saludable: autoridades, instituciones y sociedad civil mejoran condiciones de vida y entornos con políticas públicas locales.",
+            "Institución educativa saludable: involucra a docentes, directivos, familias, estudiantes y líderes escolares en comportamientos y entornos saludables.",
+            "Centro laboral saludable: aprovecha el tiempo de trabajo para promover actividad física, alimentación, salud mental y prevención de riesgos."
+          ]
+        },
+        {
+          "title": "Cómo se articulan",
+          "depth": "full",
+          "body": [
+            "Los programas comparten enfoques y estrategias: abogacía y políticas públicas, comunicación y educación para la salud, participación comunitaria y acción intersectorial. No son campañas aisladas: cada uno debe insertarse en el plan operativo de la institución y en el presupuesto disponible.",
+            "El sector salud cumple un rol facilitador: sensibiliza, brinda asistencia técnica, articula actores y acompaña la evaluación. La sostenibilidad depende de que la comunidad y las autoridades locales asuman el proceso."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Regla práctica",
+            "text": "Un programa sin actor local que lo sostenga se apaga cuando termina la campaña."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-modelo-abordaje", "pages": [45, 46, 129, 130, 131] }
+      ]
+    },
+    {
+      "id": "sheet-municipios-01",
+      "topicId": "topic-municipios-fases",
+      "areaId": "area-promocion",
+      "title": "Municipios y comunidades saludables: cinco fases",
+      "kicker": "Promoción · Gestión local",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "El programa municipal y comunal se implementa en cinco fases: sensibilización, organización, planificación participativa, ejecución y seguimiento con evaluación participativa transversal.",
+      "keyConcepts": [
+        "Un municipio saludable incorpora la salud en la agenda y las políticas del gobierno local.",
+        "El comité multisectorial es la instancia que organiza, planifica y evalúa el proceso.",
+        "Las cinco fases son secuenciales y la evaluación participativa acompaña todo el ciclo.",
+        "La evaluación mira participación, intersectorialidad, políticas públicas y sostenibilidad."
+      ],
+      "sections": [
+        {
+          "title": "Qué es un municipio saludable",
+          "depth": "core",
+          "body": [
+            "Es un espacio territorial donde las políticas públicas han consolidado entornos y comportamientos saludables para personas, familias y comunidades. Requiere la participación de autoridades políticas y civiles, instituciones, organizaciones y ciudadanía.",
+            "El programa tiene dos componentes: el municipio (gobierno local, espacios públicos) y la comunidad (organizaciones, barrios, zonas rurales y urbano marginales). Ambos comparten las mismas fases."
+          ]
+        },
+        {
+          "title": "Las cinco fases",
+          "depth": "core",
+          "table": {
+            "headers": ["Fase", "Producto o sentido"],
+            "rows": [
+              ["1. Sensibilización", "Identificar el municipio, capacitar al personal y lograr el acta de compromiso."],
+              ["2. Organización", "Conformar el comité multisectorial distrital o provincial."],
+              ["3. Planificación participativa", "Elaborar y aprobar el plan de acción con los actores locales."],
+              ["4. Ejecución", "Implementar las acciones y proyectos priorizados."],
+              ["5. Seguimiento y evaluación participativa", "Revisar avances y ajustar; acompaña todo el proceso."]
+            ]
+          }
+        },
+        {
+          "title": "Actores y evaluación",
+          "depth": "full",
+          "body": [
+            "El personal de salud facilita el proceso, articula recursos y brinda acompañamiento técnico. La municipalidad lidera la política local; la comunidad organizada participa en la identificación de problemas y en las decisiones.",
+            "La evaluación no es solo un informe final: es un proceso continuo de reflexión sobre lo logrado. Se evalúan la participación social, la intersectorialidad, las ordenanzas y políticas públicas y la sostenibilidad de los procesos."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El acta no es el final",
+            "text": "Firmar el compromiso abre el proceso; la fase de organización y el plan participativo son las que lo vuelven operativo."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-municipios", "pages": [20, 21, 22, 23, 34, 35, 36, 40] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-ottawa-01-1",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "concept",
+      "prompt": "¿Qué distingue la promoción de la salud de la prevención de enfermedades?",
+      "answer": "La prevención busca reducir factores de riesgo y evitar la aparición o progresión de enfermedades. La promoción actúa sobre las condiciones de vida y busca que las personas y comunidades ganen control sobre su salud, mediante políticas públicas, entornos favorables, participación y habilidades. Son procesos complementarios, no opuestos.",
+      "explanation": "La diferencia está en el foco: la prevención se dirige al riesgo específico; la promoción, a los determinantes y al empoderamiento. En la práctica se combinan.",
+      "sourceRefs": [{ "sourceId": "src-ottawa", "pages": [1, 2, 3] }],
+      "tags": ["promoción", "concepto"]
+    },
+    {
+      "id": "card-ottawa-01-2",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de las siguientes NO es una de las cinco estrategias de la Carta de Ottawa?",
+      "options": [
+        "Elaborar una política pública sana.",
+        "Crear ambientes favorables.",
+        "Reforzar la acción comunitaria.",
+        "Aumentar la prescripción de medicamentos en la consulta."
+      ],
+      "correctIndex": 3,
+      "explanation": "Ottawa propone política pública sana, ambientes favorables, acción comunitaria, aptitudes personales y reorientación de los servicios. Aumentar la prescripción no es una estrategia de promoción; la reorientación de servicios busca integrar la promoción, no sustituirla por fármacos.",
+      "sourceRefs": [{ "sourceId": "src-ottawa", "pages": [2, 3] }],
+      "tags": ["promoción", "opción múltiple"]
+    },
+    {
+      "id": "card-ottawa-01-3",
+      "topicId": "topic-ottawa-estrategias",
+      "sheetId": "sheet-ottawa-01",
+      "type": "application",
+      "prompt": "Un distrito quiere reducir la obesidad infantil. ¿Qué conjunto de acciones corresponde mejor a un enfoque de promoción de la salud?",
+      "options": [
+        "Entregar folletos en el centro de salud y citar a los niños con obesidad.",
+        "Regular la publicidad de alimentos ultraprocesados, crear espacios deportivos y involucrar a escuelas y familias.",
+        "Aumentar las consultas de nutrición y derivar a todos los casos al hospital.",
+        "Esperar a que los niños presenten complicaciones para iniciar tratamiento."
+      ],
+      "correctIndex": 1,
+      "explanation": "La opción B combina política pública, entorno favorable y acción comunitaria, tres estrategias de Ottawa. Las demás se centran en la atención individual o en la reacción tardía y no modifican las condiciones que sostienen el problema.",
+      "sourceRefs": [{ "sourceId": "src-ottawa", "pages": [2, 3] }],
+      "tags": ["promoción", "aplicación"]
+    },
+    {
+      "id": "card-promocion-politica-01-1",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "concept",
+      "prompt": "¿Qué significa adoptar el enfoque de Salud en Todas las Políticas?",
+      "answer": "Significa que todos los sectores evalúan sistemáticamente las consecuencias de sus decisiones sobre la salud, buscan sinergias y evitan impactos perjudiciales. No se limita al sector salud: implica gobernanza compartida, rendición de cuentas y participación en los tres niveles de gobierno.",
+      "explanation": "El enfoque reconoce que la salud se produce en gran medida fuera del sistema sanitario. Por eso vivienda, educación, transporte, agricultura y economía deben incorporar el criterio de salud.",
+      "sourceRefs": [{ "sourceId": "src-promocion-politica", "pages": [8, 22] }],
+      "tags": ["política", "determinantes"]
+    },
+    {
+      "id": "card-promocion-politica-01-2",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es uno de los cuatro lineamientos de la política peruana de promoción de la salud?",
+      "options": [
+        "Concentrar la promoción en el tercer nivel de atención.",
+        "Abordar los determinantes sociales para cerrar brechas de inequidad.",
+        "Sustituir la participación comunitaria por campañas masivas.",
+        "Limitar la promoción a las enfermedades transmisibles."
+      ],
+      "correctIndex": 1,
+      "explanation": "El tercer lineamiento es precisamente el abordaje de los determinantes sociales para cerrar brechas. La política busca lo contrario de concentrar, sustituir o limitar: articula sectores, participación y determinantes.",
+      "sourceRefs": [{ "sourceId": "src-promocion-politica", "pages": [22, 25] }],
+      "tags": ["política", "opción múltiple"]
+    },
+    {
+      "id": "card-promocion-politica-01-3",
+      "topicId": "topic-promocion-politicas",
+      "sheetId": "sheet-promocion-politica-01",
+      "type": "application",
+      "prompt": "En un distrito con alta anemia infantil, el equipo de salud propone un plan. ¿Cuál acción es más coherente con la gestión territorial en salud?",
+      "options": [
+        "Repartir hierro en el puesto de salud y registrar la entrega.",
+        "Coordinar con educación, agricultura, municipalidad y organizaciones sociales para mejorar alimentación, agua y acceso a controles.",
+        "Derivar a todos los niños anémicos al hospital regional.",
+        "Capacitar solo al personal de salud y esperar que la comunidad acuda."
+      ],
+      "correctIndex": 1,
+      "explanation": "La anemia tiene determinantes alimentarios, sanitarios y socioeconómicos. La opción B articula sectores y actúa sobre esos determinantes; las otras se quedan en la entrega de insumos o en la derivación y no modifican las causas.",
+      "sourceRefs": [{ "sourceId": "src-promocion-politica", "pages": [17, 18, 22, 25] }],
+      "tags": ["política", "aplicación"]
+    },
+    {
+      "id": "card-modelo-sujetos-01-1",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "concept",
+      "prompt": "¿Por qué la familia es considerada la unidad de intervención de mayor eficacia potencial en promoción de la salud?",
+      "answer": "Porque en la familia se aprenden y sostienen normas, valores, hábitos y conductas de salud. Es el espacio donde se organizan la alimentación, la higiene, el cuidado de los niños y el apoyo ante la enfermedad. Intervenir allí permite llegar a varias personas a la vez y modificar rutinas cotidianas.",
+      "explanation": "La familia media entre el individuo y la comunidad. Sin cambios en el hogar, las recomendaciones de la consulta suelen diluirse.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [31, 45] }],
+      "tags": ["modelo", "familia"]
+    },
+    {
+      "id": "card-modelo-sujetos-01-2",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "multiple",
+      "prompt": "¿Cuál de los siguientes es un escenario de intervención del Modelo de Abordaje de Promoción de la Salud?",
+      "options": [
+        "El centro laboral.",
+        "La sala de operaciones.",
+        "El laboratorio de anatomía patológica.",
+        "La unidad de cuidados intensivos."
+      ],
+      "correctIndex": 0,
+      "explanation": "El modelo reconoce vivienda, municipio, institución educativa, centro laboral y comunidad como escenarios de promoción. Los otros espacios son servicios clínicos especializados, no escenarios comunitarios del modelo.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [32, 33, 131] }],
+      "tags": ["modelo", "opción múltiple"]
+    },
+    {
+      "id": "card-modelo-sujetos-01-3",
+      "topicId": "topic-modelo-sujetos",
+      "sheetId": "sheet-modelo-sujetos-01",
+      "type": "application",
+      "prompt": "Una comunidad rural tiene altos índices de diarrea infantil. ¿Qué intervención articula mejor los escenarios del modelo?",
+      "options": [
+        "Capacitar solo a las madres en el centro de salud.",
+        "Mejorar el agua y el saneamiento con la municipalidad, promover lavado de manos en escuelas y viviendas y organizar vigilancia comunitaria.",
+        "Entregar medicamentos antidiarreicos a todos los niños.",
+        "Prohibir el consumo de agua de la zona sin ofrecer alternativa."
+      ],
+      "correctIndex": 1,
+      "explanation": "La opción B combina vivienda, escuela, municipio y comunidad, y actúa sobre el determinante principal: agua y saneamiento. Las demás son medidas aisladas, coercitivas o puramente curativas.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [32, 35, 46] }],
+      "tags": ["modelo", "aplicación"]
+    },
+    {
+      "id": "card-modelo-programas-01-1",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "concept",
+      "prompt": "¿Qué caracteriza a una institución educativa saludable?",
+      "answer": "Es una escuela que promueve comportamientos y entornos saludables en toda la comunidad educativa: estudiantes, docentes, directivos y familias. Trabaja alimentación, actividad física, habilidades para la vida, convivencia y prevención de riesgos, con participación de los actores escolares y articulación intersectorial.",
+      "explanation": "No se limita a una charla para estudiantes: modifica el entorno escolar, las prácticas docentes y la relación con las familias.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [129] }],
+      "tags": ["programas", "escuela"]
+    },
+    {
+      "id": "card-modelo-programas-01-2",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el objetivo del programa de familias y viviendas saludables?",
+      "options": [
+        "Construir viviendas nuevas para todas las familias.",
+        "Mejorar las condiciones de la vivienda y las prácticas de cuidado de la familia.",
+        "Reemplazar el control de crecimiento y desarrollo por visitas sociales.",
+        "Capacitar solo a las madres en alimentación."
+      ],
+      "correctIndex": 1,
+      "explanation": "El programa busca mejorar el entorno físico y las prácticas familiares: saneamiento, ventilación, higiene, alimentación y prevención de accidentes. No es un programa de construcción ni sustituye los controles de salud.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [45] }],
+      "tags": ["programas", "opción múltiple"]
+    },
+    {
+      "id": "card-modelo-programas-01-3",
+      "topicId": "topic-modelo-programas",
+      "sheetId": "sheet-modelo-programas-01",
+      "type": "application",
+      "prompt": "Una empresa quiere mejorar la salud de sus trabajadores. ¿Qué acción se alinea mejor con el programa de centros laborales saludables?",
+      "options": [
+        "Obligar a los trabajadores a asistir a una charla anual.",
+        "Facilitar pausas activas, alimentación saludable y entornos seguros, con participación de trabajadores y empleadores.",
+        "Aumentar las horas de trabajo para compensar las pausas.",
+        "Derivar a los trabajadores con hipertensión al hospital y no intervenir en el centro laboral."
+      ],
+      "correctIndex": 1,
+      "explanation": "El centro laboral es un escenario de promoción: se interviene sobre el entorno y las conductas, con participación de trabajadores y empleadores. Una charla aislada o la derivación no cambian las condiciones del trabajo.",
+      "sourceRefs": [{ "sourceId": "src-modelo-abordaje", "pages": [131] }],
+      "tags": ["programas", "aplicación"]
+    },
+    {
+      "id": "card-municipios-01-1",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "concept",
+      "prompt": "¿Qué es un municipio saludable?",
+      "answer": "Es un espacio territorial donde las políticas públicas han consolidado entornos y comportamientos saludables para personas, familias y comunidades, con participación de autoridades, instituciones y ciudadanía. No es solo un municipio que hace campañas: incorpora la salud en su agenda y en sus decisiones.",
+      "explanation": "La definición combina política pública, entorno y participación. Un municipio saludable se reconoce por sus decisiones y por la sostenibilidad de los procesos, no por una actividad puntual.",
+      "sourceRefs": [{ "sourceId": "src-municipios", "pages": [20, 21] }],
+      "tags": ["municipios", "concepto"]
+    },
+    {
+      "id": "card-municipios-01-2",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es la secuencia correcta de las fases del programa de municipios y comunidades saludables?",
+      "options": [
+        "Organización, sensibilización, ejecución, planificación, evaluación.",
+        "Sensibilización, organización, planificación participativa, ejecución y seguimiento con evaluación.",
+        "Planificación, ejecución, sensibilización, organización, evaluación.",
+        "Ejecución, evaluación, sensibilización, planificación, organización."
+      ],
+      "correctIndex": 1,
+      "explanation": "El programa parte de la sensibilización y el acta de compromiso, sigue con la conformación del comité, luego el plan participativo, la ejecución y el seguimiento con evaluación participativa transversal.",
+      "sourceRefs": [{ "sourceId": "src-municipios", "pages": [34, 35, 36] }],
+      "tags": ["municipios", "opción múltiple"]
+    },
+    {
+      "id": "card-municipios-01-3",
+      "topicId": "topic-municipios-fases",
+      "sheetId": "sheet-municipios-01",
+      "type": "application",
+      "prompt": "Un alcalde firma un acta para implementar el programa, pero no se conforma ningún comité ni se elabora un plan. ¿Qué fase falta y por qué importa?",
+      "options": [
+        "Falta la sensibilización; sin ella no hay compromiso.",
+        "Faltan la organización y la planificación participativa; sin comité y plan no hay responsable ni acciones priorizadas.",
+        "Falta la evaluación final; sin ella no se puede ejecutar.",
+        "No falta nada; el acta equivale a la implementación."
+      ],
+      "correctIndex": 1,
+      "explanation": "El acta cierra la sensibilización, pero el proceso continúa con la organización (comité multisectorial) y la planificación participativa (plan de acción). Sin esas fases la ejecución queda sin conducción ni prioridades.",
+      "sourceRefs": [{ "sourceId": "src-municipios", "pages": [34, 35, 36] }],
+      "tags": ["municipios", "aplicación"]
+    }
+  ]
+}

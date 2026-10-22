@@ -1,0 +1,610 @@
+{
+  "sources": [
+    {
+      "id": "src-adolescente-nts",
+      "title": "Norma Técnica de Salud para la Atención Integral de Salud de Adolescentes (NTS N° 157)",
+      "short": "Adolescentes",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 1001-2019/MINSA; organiza la atención integral de adolescentes de 12 a 17 años.",
+      "file": "../study-data/fuentes/nt-adolescente.pdf"
+    },
+    {
+      "id": "src-nino-expuesto",
+      "title": "Guía de práctica clínica para el diagnóstico y tratamiento del niño expuesto al VIH",
+      "short": "Niño expuesto al VIH",
+      "authors": "Instituto Nacional Materno Perinatal — MINSA",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional del INMP, versión 3, para la atención del neonato expuesto al VIH.",
+      "file": "../study-data/fuentes/gpc-nino-expuesto-vih.pdf"
+    },
+    {
+      "id": "src-sifilis",
+      "title": "Guía de práctica clínica para el diagnóstico y tratamiento de sífilis congénita",
+      "short": "Sífilis congénita",
+      "authors": "Instituto Nacional Materno Perinatal — MINSA",
+      "kind": "Guía de práctica clínica",
+      "provenance": "Guía institucional del INMP, versión 3, para el diagnóstico y tratamiento de sífilis congénita.",
+      "file": "../study-data/fuentes/gpc-sifilis-congenita.pdf"
+    },
+    {
+      "id": "src-vih-navv",
+      "title": "Norma Técnica de Salud para la Atención Integral de Niñas, Niños y Adolescentes con Infección por VIH (NTS N° 167)",
+      "short": "VIH pediátrico",
+      "authors": "Ministerio de Salud del Perú",
+      "kind": "Norma técnica de salud",
+      "provenance": "Norma técnica aprobada por R.M. N° 167-MINSA/2020/DGIESP; organiza diagnóstico, TAR, adherencia y seguimiento.",
+      "file": "../study-data/fuentes/nt-nino-adolescente-vih.pdf"
+    }
+  ],
+  "areas": [
+    {
+      "id": "area-adolescencia-vih",
+      "title": "Adolescencia y VIH pediátrico",
+      "short": "Adolescencia y VIH",
+      "description": "Atención integral del adolescente, prevención y manejo del VIH en niñas, niños y adolescentes, y sífilis congénita.",
+      "accent": "#8FA8C9",
+      "icon": "path",
+      "sourceIds": ["src-adolescente-nts", "src-nino-expuesto", "src-sifilis", "src-vih-navv"]
+    }
+  ],
+  "topics": [
+    {
+      "id": "topic-adolescente-atencion",
+      "areaId": "area-adolescencia-vih",
+      "title": "Atención integral del adolescente",
+      "summary": "La NTS 157 organiza paquetes de atención, servicios diferenciados y un enfoque de derechos para adolescentes de 12 a 17 años.",
+      "sourceIds": ["src-adolescente-nts"],
+      "keywords": ["adolescente", "atención integral", "servicios diferenciados", "confidencialidad"]
+    },
+    {
+      "id": "topic-adolescente-proceso",
+      "areaId": "area-adolescencia-vih",
+      "title": "Proceso de atención y consejería",
+      "summary": "Captación, admisión, evaluación biopsicosocial, plan individual y referencia sostienen la continuidad del cuidado adolescente.",
+      "sourceIds": ["src-adolescente-nts"],
+      "keywords": ["captación", "consejería", "plan de atención", "referencia"]
+    },
+    {
+      "id": "topic-nino-expuesto",
+      "areaId": "area-adolescencia-vih",
+      "title": "Niño expuesto al VIH",
+      "summary": "El hijo de madre con VIH requiere profilaxis, PCR y seguimiento hasta conocer su estado serológico definitivo.",
+      "sourceIds": ["src-nino-expuesto"],
+      "keywords": ["VIH", "transmisión vertical", "profilaxis", "PCR"]
+    },
+    {
+      "id": "topic-sifilis",
+      "areaId": "area-adolescencia-vih",
+      "title": "Sífilis congénita",
+      "summary": "La sífilis congénita se diagnostica por criterios epidemiológicos, serológicos, clínicos o directos y requiere tratamiento oportuno.",
+      "sourceIds": ["src-sifilis"],
+      "keywords": ["sífilis", "congénita", "VDRL", "penicilina"]
+    },
+    {
+      "id": "topic-vih-navv",
+      "areaId": "area-adolescencia-vih",
+      "title": "VIH en niñas, niños y adolescentes",
+      "summary": "El equipo multidisciplinario, el TAR y el seguimiento virológico mejoran la supervivencia y la calidad de vida.",
+      "sourceIds": ["src-vih-navv"],
+      "keywords": ["VIH pediátrico", "TAR", "carga viral", "adherencia"]
+    }
+  ],
+  "sheets": [
+    {
+      "id": "sheet-adolescente-01",
+      "topicId": "topic-adolescente-atencion",
+      "areaId": "area-adolescencia-vih",
+      "title": "Adolescente: una atención distinta, no una consulta cualquiera",
+      "kicker": "Adolescencia · Atención integral",
+      "minutes": 8,
+      "level": "Base",
+      "summary": "La atención integral del adolescente comprende promoción, prevención, recuperación y rehabilitación, con paquetes básico, completo y especializado. La confidencialidad y la participación son condiciones del servicio.",
+      "keyConcepts": [
+        "La población objetivo son adolescentes de 12 a 17 años, 11 meses y 29 días.",
+        "El paquete básico se brinda en el primer nivel; el completo y el especializado añaden laboratorio, estomatología y especialistas.",
+        "La atención debe ser confidencial, privada y sin negar el servicio si el adolescente acude solo.",
+        "Los servicios diferenciados facilitan el acceso y la participación adolescente."
+      ],
+      "sections": [
+        {
+          "title": "Tres paquetes, distintos niveles",
+          "depth": "core",
+          "table": {
+            "headers": ["Paquete", "Qué incluye"],
+            "rows": [
+              ["Básico", "Prestaciones esenciales de promoción, prevención y atención en el primer nivel."],
+              ["Completo", "Añade laboratorio, estomatología, evaluación clínica y ocular."],
+              ["Especializado", "Añade evaluación por especialistas ante riesgos identificados."]
+            ]
+          }
+        },
+        {
+          "title": "Confidencialidad y acceso",
+          "depth": "core",
+          "body": [
+            "La atención debe garantizar privacidad y confidencialidad, incluido el manejo de datos personales. Todo adolescente puede recibir atención preventiva, solo o acompañado de un adulto de confianza.",
+            "Si acude solo, no se le debe negar la atención: se le atiende en presencia de otro personal del establecimiento, respetando su autonomía progresiva. Los servicios diferenciados deben tener horarios, ambientes y trato amigables."
+          ]
+        },
+        {
+          "title": "Enfoques que orientan la atención",
+          "depth": "full",
+          "bullets": [
+            "Derechos y ciudadanía: el adolescente es sujeto de derechos.",
+            "Desarrollo positivo: fortalecer potencialidades, no solo riesgos.",
+            "Género y diversidad: respeto a identidades y necesidades particulares.",
+            "Interculturalidad e inclusión social: superar barreras y discriminación.",
+            "Curso de vida y territorio: entender el contexto familiar y comunitario."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "No es un adulto pequeño",
+            "text": "La adolescencia tiene necesidades propias de desarrollo, salud mental, sexualidad y participación. La atención debe adaptarse, no al revés."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-adolescente-nts", "pages": [20, 21, 22, 23, 24, 26, 28, 30] }
+      ]
+    },
+    {
+      "id": "sheet-adolescente-02",
+      "topicId": "topic-adolescente-proceso",
+      "areaId": "area-adolescencia-vih",
+      "title": "Del motivo de consulta al plan individual",
+      "kicker": "Adolescencia · Proceso de atención",
+      "minutes": 7,
+      "level": "Intermedio",
+      "summary": "La atención empieza por el motivo que trae al adolescente y continúa con una evaluación biopsicosocial, un plan individualizado y la referencia cuando se requiere.",
+      "keyConcepts": [
+        "La captación puede ser en el establecimiento, la escuela, la comunidad o por referencia.",
+        "Se debe respetar el motivo de consulta y usarlo como puerta de entrada.",
+        "La evaluación integral incluye salud sexual, mental, física y nutricional.",
+        "El plan debe acordarse con el adolescente y evaluarse al finalizar."
+      ],
+      "sections": [
+        {
+          "title": "Captación y admisión",
+          "depth": "core",
+          "body": [
+            "La captación puede ocurrir en la consulta, por derivación de otros servicios, por agentes comunitarios, por instituciones educativas o en intervenciones extramurales. Se prioriza a los grupos en mayor vulnerabilidad.",
+            "En admisión se apertura la historia clínica de atención integral del adolescente, se registra la identificación y se brinda un trato empático y respetuoso. El carné de salud ayuda a ordenar las atenciones."
+          ]
+        },
+        {
+          "title": "Evaluación y plan",
+          "depth": "core",
+          "table": {
+            "headers": ["Momento", "Qué se hace"],
+            "rows": [
+              ["Motivo de consulta", "Atender la necesidad que trae el adolescente, sin postergarla."],
+              ["Evaluación integral", "Explorar salud sexual y reproductiva, mental, física y nutricional."],
+              ["Priorización", "Acordar qué necesidades se atienden primero."],
+              ["Plan individual", "Definir prestaciones, tiempos y responsables con el adolescente."],
+              ["Seguimiento", "Evaluar cumplimiento e impacto; referir si es necesario."]
+            ]
+          }
+        },
+        {
+          "title": "Referencia y trabajo en red",
+          "depth": "full",
+          "body": [
+            "Cuando el riesgo supera la capacidad resolutiva, se refiere a un establecimiento de mayor complejidad y se asegura la contrarreferencia. También se articula con comisarías de familia, fiscalías, DEMUNA, CEM y casas de acogida cuando corresponde.",
+            "La adolescente embarazada tiene derecho a atención integral y diferenciada durante embarazo, parto y puerperio, incluida la atención de su recién nacido."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "No fragmentar",
+            "text": "Atender solo el motivo de consulta y no ofrecer el paquete integral pierde la oportunidad de detectar riesgos y prevenir."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-adolescente-nts", "pages": [24, 31, 32, 33, 34] }
+      ]
+    },
+    {
+      "id": "sheet-nino-expuesto-01",
+      "topicId": "topic-nino-expuesto",
+      "areaId": "area-adolescencia-vih",
+      "title": "Niño expuesto al VIH: profilaxis y seguimiento",
+      "kicker": "VIH · Transmisión vertical",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "Todo recién nacido de madre con VIH es un niño expuesto. Requiere profilaxis antirretroviral, alimentación segura y pruebas de PCR para conocer su estado serológico.",
+      "keyConcepts": [
+        "El niño expuesto es todo recién nacido de madre con infección por VIH.",
+        "La profilaxis depende del escenario de riesgo y de la carga viral materna.",
+        "Se solicita PCR-ADN-VIH-1 al primer y tercer mes de vida.",
+        "El seguimiento continúa hasta conocer el estado serológico definitivo."
+      ],
+      "sections": [
+        {
+          "title": "Riesgo y profilaxis",
+          "depth": "core",
+          "body": [
+            "Sin intervención, aproximadamente 20% de los niños se infectan antes de nacer y 50-80% durante el parto; la lactancia puede aumentar el riesgo. La profilaxis antirretroviral reduce la transmisión.",
+            "El esquema depende del escenario: zidovudina sola en el escenario 1; en el escenario 3 se agregan lamivudina y nevirapina. La carga viral materna >1000 copias/mL en el tercer trimestre indica mayor riesgo."
+          ]
+        },
+        {
+          "title": "Diagnóstico y alimentación",
+          "depth": "core",
+          "table": {
+            "headers": ["Aspecto", "Conducta"],
+            "rows": [
+              ["PCR al nacer", "En alto riesgo: madre sin control prenatal, sin TAR, infección aguda o carga viral ≥1000."],
+              ["PCR a los 1 y 3 meses", "Seguimiento habitual del niño expuesto."],
+              ["Lactancia", "Se indica sucedáneo de leche materna; la lactancia materna aumenta el riesgo."],
+              ["Confirmación", "Dos PCR positivos confirman infección; discordancia exige nueva prueba."]
+            ]
+          }
+        },
+        {
+          "title": "Alta y seguimiento",
+          "depth": "full",
+          "bullets": [
+            "Alta con profilaxis iniciada, alimentación segura y consejería a la madre.",
+            "Tarjeta de recién nacido de riesgo y control por consultorio externo.",
+            "Citas conjuntas con la madre cuando sea posible.",
+            "Vacunas según calendario; valorar vacunas atenuadas según inmunosupresión.",
+            "Niño con PCR negativos: alta del seguimiento al año de edad."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "El objetivo es cerrar la transmisión",
+            "text": "Profilaxis, alimentación segura y seguimiento oportuno son una cadena; si falla un eslabón, el riesgo aumenta."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-nino-expuesto", "pages": [1, 2, 3, 4, 5] }
+      ]
+    },
+    {
+      "id": "sheet-sifilis-01",
+      "topicId": "topic-sifilis",
+      "areaId": "area-adolescencia-vih",
+      "title": "Sífilis congénita: sospechar, confirmar y tratar",
+      "kicker": "VIH · Sífilis congénita",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La sífilis congénita se adquiere intraútero de una madre no tratada o mal tratada. La mayoría de los recién nacidos son asintomáticos, por lo que el tamizaje y los criterios diagnósticos son esenciales.",
+      "keyConcepts": [
+        "Es una treponematosis neonatal adquirida intraútero.",
+        "El 75% de los recién nacidos puede estar asintomático.",
+        "Se diagnostica por criterio epidemiológico, serológico, clínico o directo.",
+        "El tratamiento de elección es penicilina; el seguimiento serológico es obligatorio."
+      ],
+      "sections": [
+        {
+          "title": "Cuatro criterios diagnósticos",
+          "depth": "core",
+          "table": {
+            "headers": ["Criterio", "Qué exige"],
+            "rows": [
+              ["Epidemiológico", "Madre con sífilis no tratada o mal tratada, o prueba reactiva en el parto."],
+              ["Serológico", "VDRL/RPR del niño con títulos cuatro veces mayores que los maternos."],
+              ["Clínico", "Lesiones palmoplantares, rinitis, hepatoesplenomegalia, pseudoparálisis, alteraciones óseas o hematológicas."],
+              ["Directo", "Demostración de Treponema pallidum en lesiones, secreciones, placenta o autopsia."]
+            ]
+          }
+        },
+        {
+          "title": "Tratamiento",
+          "depth": "core",
+          "body": [
+            "El tratamiento de elección es penicilina. En el recién nacido con enfermedad comprobada o muy probable se usa penicilina G sódica 100 000 UI/kg/día los primeros 7 días y luego 150 000 UI/kg/día hasta completar 10 días.",
+            "Si el niño es asintomático y los estudios (LCR, hematología, radiografía de huesos) son negativos, puede usarse penicilina benzatínica 50 000 UI/kg IM una vez, con seguimiento serológico cada 3 meses."
+          ]
+        },
+        {
+          "title": "Seguimiento y prevención",
+          "depth": "full",
+          "bullets": [
+            "RPR cuantitativo a los 6 meses, 1 año y 2 años; los títulos deben descender.",
+            "VDRL en LCR a los 6 meses y 2 años si hubo neurosífilis.",
+            "Comprobar el tratamiento de la madre antes del alta.",
+            "Entregar tarjeta de recién nacido de riesgo y asegurar el control.",
+            "La prevención primaria es el tamizaje y tratamiento oportuno de la gestante."
+          ],
+          "callout": {
+            "tone": "warn",
+            "title": "Asintomático no significa sano",
+            "text": "Tres de cada cuatro recién nacidos con sífilis congénita no tienen signos evidentes al nacer. El tamizaje materno y el seguimiento son la clave."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-sifilis", "pages": [1, 2, 3, 4, 5] }
+      ]
+    },
+    {
+      "id": "sheet-vih-navv-01",
+      "topicId": "topic-vih-navv",
+      "areaId": "area-adolescencia-vih",
+      "title": "VIH pediátrico: equipo, TAR y adherencia",
+      "kicker": "VIH · Niñas, niños y adolescentes",
+      "minutes": 8,
+      "level": "Avanzado",
+      "summary": "La atención del VIH en menores de 18 años requiere un equipo multidisciplinario, diagnóstico temprano, TAR oportuno y seguimiento virológico e inmunológico.",
+      "keyConcepts": [
+        "El equipo incluye pediatra, enfermería, psicología, obstetricia, trabajo social, farmacia y laboratorio.",
+        "El TAR se inicia con esquemas según grupo etario y se ajusta por peso, edad y comorbilidad.",
+        "La carga viral se controla a los 3, 6 y 12 meses, y luego semestralmente.",
+        "La adherencia es un determinante central del éxito terapéutico."
+      ],
+      "sections": [
+        {
+          "title": "Un equipo, no un profesional aislado",
+          "depth": "core",
+          "body": [
+            "La evaluación clínica, el inicio del TAR y el seguimiento se realizan en establecimientos con equipo multidisciplinario capacitado. Participan pediatría, enfermería, psicología, obstetricia, trabajo social, farmacia y laboratorio.",
+            "El equipo acompaña la revelación del diagnóstico, maneja reacciones adversas, previene infecciones oportunistas y coordina la referencia cuando se requiere mayor complejidad."
+          ]
+        },
+        {
+          "title": "TAR y monitoreo",
+          "depth": "core",
+          "table": {
+            "headers": ["Momento", "Conducta"],
+            "rows": [
+              ["Antes del TAR", "Carga viral, CD4 y genotipificación basales; no retrasar el inicio por esperar resultados."],
+              ["Control", "Carga viral a los 3, 6 y 12 meses; luego semestral."],
+              ["CD4", "A los 6 y 12 meses; luego anual si la carga viral es indetectable."],
+              ["Falla virológica", "Carga viral >1000 copias/mL en dos determinaciones separadas por 4 semanas."],
+              ["Adherencia", "Involucrar a cuidadores, adaptar horarios y educar sin juzgar."]
+            ]
+          }
+        },
+        {
+          "title": "Prevención y derechos",
+          "depth": "full",
+          "bullets": [
+            "Vacunación según calendario, con precauciones en inmunosupresión severa.",
+            "Consejería sobre sexualidad segura y entrega de preservativos en adolescentes.",
+            "Confidencialidad y protección de datos personales.",
+            "Revelación progresiva del diagnóstico, adaptada a la edad y con apoyo psicológico.",
+            "Tamizaje de contactos y prevención de la transmisión materno-infantil."
+          ],
+          "callout": {
+            "tone": "info",
+            "title": "Adherencia no es obediencia",
+            "text": "Es un acuerdo sostenido con la persona y su familia, basado en información, apoyo y adaptación a la vida cotidiana."
+          }
+        }
+      ],
+      "sourceRefs": [
+        { "sourceId": "src-vih-navv", "pages": [23, 24, 28, 30, 31, 32, 33, 34, 35, 36] }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-adolescente-01-1",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "concept",
+      "prompt": "¿Qué comprende la atención integral de salud del adolescente?",
+      "answer": "Comprende la provisión continua, integrada y con calidad de acciones de promoción, prevención, recuperación y rehabilitación, en el contexto de la familia, la institución educativa y la comunidad. Se concreta en paquetes básico, completo y especializado, según capacidad resolutiva.",
+      "explanation": "No es una consulta aislada: es un proceso con prestaciones definidas y seguimiento, adaptado al contexto del adolescente.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [20, 21] }],
+      "tags": ["adolescente", "concepto"]
+    },
+    {
+      "id": "card-adolescente-01-2",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "multiple",
+      "prompt": "¿Qué debe hacer el establecimiento si un adolescente acude solo a una atención preventiva?",
+      "options": [
+        "Negarle la atención hasta que venga un adulto.",
+        "Atenderlo, protegiendo su privacidad y confidencialidad, con otro personal presente.",
+        "Enviarlo a la comisaría.",
+        "Pedirle autorización escrita de sus padres para cualquier atención."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma indica que no se le debe negar la atención. Se le atiende en presencia de otro personal del establecimiento, considerando su autonomía progresiva y protegiendo su privacidad.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [26] }],
+      "tags": ["adolescente", "opción múltiple"]
+    },
+    {
+      "id": "card-adolescente-01-3",
+      "topicId": "topic-adolescente-atencion",
+      "sheetId": "sheet-adolescente-01",
+      "type": "application",
+      "prompt": "Un adolescente de 15 años acude por una molestia leve, pero se niega a hablar de sexualidad. ¿Qué corresponde?",
+      "options": [
+        "Obligarlo a responder todas las preguntas.",
+        "Atender su motivo de consulta, respetar su ritmo y ofrecer el paquete integral sin presionar.",
+        "Decirle que vuelva cuando quiera hablar.",
+        "Registrar que no colabora y cerrar la historia."
+      ],
+      "correctIndex": 1,
+      "explanation": "Se debe respetar el motivo de consulta y la autonomía del adolescente, ofreciendo las prestaciones sin coerción. La confianza se construye progresivamente.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [30, 33] }],
+      "tags": ["adolescente", "aplicación"]
+    },
+    {
+      "id": "card-adolescente-02-1",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "concept",
+      "prompt": "¿Cuáles son los momentos del proceso de atención integral del adolescente?",
+      "answer": "Captación, admisión, atención del motivo de consulta, evaluación integral de necesidades y expectativas, elaboración y ejecución del plan individual, seguimiento y evaluación. La referencia se activa cuando el riesgo supera la capacidad resolutiva.",
+      "explanation": "El proceso asegura que la consulta no se agote en el síntoma y que el adolescente reciba las prestaciones que necesita.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [32, 33, 34] }],
+      "tags": ["adolescente", "proceso"]
+    },
+    {
+      "id": "card-adolescente-02-2",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "multiple",
+      "prompt": "¿Qué se debe hacer si un adolescente presenta un riesgo que no puede manejarse en el nivel de atención?",
+      "options": [
+        "Mantenerlo en el mismo establecimiento sin seguimiento.",
+        "Referirlo a un establecimiento de mayor capacidad resolutiva y asegurar la continuidad.",
+        "Darle el alta y pedirle que vuelva si empeora.",
+        "Ocultar la referencia a la familia."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma exige referir según el sistema de referencia y contrarreferencia, garantizando continuidad y oportunidad. El alta sin seguimiento no protege al adolescente.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [31, 34] }],
+      "tags": ["adolescente", "opción múltiple"]
+    },
+    {
+      "id": "card-adolescente-02-3",
+      "topicId": "topic-adolescente-proceso",
+      "sheetId": "sheet-adolescente-02",
+      "type": "application",
+      "prompt": "Una adolescente de 16 años está embarazada. ¿Qué corresponde al sistema de salud?",
+      "options": [
+        "Atender solo el embarazo y no hablar de otros temas.",
+        "Garantizar atención integral y diferenciada durante embarazo, parto y puerperio, y la atención de su recién nacido.",
+        "Exigirle que vuelva con un adulto para cualquier control.",
+        "Derivarla siempre al hospital sin evaluación inicial."
+      ],
+      "correctIndex": 1,
+      "explanation": "La norma garantiza atención integral y diferenciada a la adolescente embarazada, incluida la atención del recién nacido. No se limita a lo obstétrico ni se condiciona el acceso.",
+      "sourceRefs": [{ "sourceId": "src-adolescente-nts", "pages": [24, 34] }],
+      "tags": ["adolescente", "aplicación"]
+    },
+    {
+      "id": "card-nino-expuesto-01-1",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "concept",
+      "prompt": "¿Qué es un niño expuesto al VIH y cómo se confirma la infección?",
+      "answer": "Es todo recién nacido de madre con infección por VIH. La infección se confirma con dos resultados positivos de PCR-ADN-VIH-1; si hay discordancia, se repite la prueba a las 4 semanas. En mayores de 18 meses se usan pruebas serológicas específicas.",
+      "explanation": "La confirmación requiere más de una prueba porque los anticuerpos maternos pueden interferir. El seguimiento continúa hasta conocer el estado definitivo.",
+      "sourceRefs": [{ "sourceId": "src-nino-expuesto", "pages": [1, 3, 5] }],
+      "tags": ["VIH", "concepto"]
+    },
+    {
+      "id": "card-nino-expuesto-01-2",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "multiple",
+      "prompt": "¿Cuándo se solicita PCR-ADN-VIH-1 al nacer en un recién nacido expuesto?",
+      "options": [
+        "En todos los recién nacidos sin excepción.",
+        "En alto riesgo: madre sin control prenatal, sin TAR, infección aguda o carga viral ≥1000 en el tercer trimestre.",
+        "Solo si el bebé tiene síntomas.",
+        "Únicamente a los 18 meses."
+      ],
+      "correctIndex": 1,
+      "explanation": "La prueba al nacer se reserva para recién nacidos con alto riesgo de transmisión. En el resto, el seguimiento habitual incluye PCR al primer y tercer mes.",
+      "sourceRefs": [{ "sourceId": "src-nino-expuesto", "pages": [3] }],
+      "tags": ["VIH", "opción múltiple"]
+    },
+    {
+      "id": "card-nino-expuesto-01-3",
+      "topicId": "topic-nino-expuesto",
+      "sheetId": "sheet-nino-expuesto-01",
+      "type": "application",
+      "prompt": "Una madre con VIH tiene carga viral de 1500 copias/mL en el tercer trimestre. ¿Qué corresponde para el recién nacido?",
+      "options": [
+        "Solo observación sin profilaxis.",
+        "Profilaxis combinada según el escenario de mayor riesgo y seguimiento con PCR.",
+        "Lactancia materna exclusiva.",
+        "Alta inmediata sin control."
+      ],
+      "correctIndex": 1,
+      "explanation": "Una carga viral >1000 copias/mL indica mayor riesgo; la profilaxis se intensifica según el escenario 3 y se asegura el seguimiento con PCR. La lactancia materna está contraindicada en este contexto.",
+      "sourceRefs": [{ "sourceId": "src-nino-expuesto", "pages": [2, 4] }],
+      "tags": ["VIH", "aplicación"]
+    },
+    {
+      "id": "card-sifilis-01-1",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "concept",
+      "prompt": "¿Cómo se define la sífilis congénita y cuáles son sus criterios diagnósticos?",
+      "answer": "Es una treponematosis neonatal adquirida intraútero de una madre infectada no tratada o inadecuadamente tratada. Se diagnostica por criterio epidemiológico, serológico (títulos cuatro veces mayores que los maternos), clínico o por demostración directa del treponema.",
+      "explanation": "La mayoría de los recién nacidos son asintomáticos; por eso no basta el examen físico. Los criterios se combinan para no dejar casos sin tratar.",
+      "sourceRefs": [{ "sourceId": "src-sifilis", "pages": [1, 2, 3] }],
+      "tags": ["sífilis", "concepto"]
+    },
+    {
+      "id": "card-sifilis-01-2",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "multiple",
+      "prompt": "¿Cuál es el tratamiento de elección para un recién nacido con sífilis congénita comprobada o muy probable?",
+      "options": [
+        "Penicilina G sódica por 10 días.",
+        "Azitromicina oral por 3 días.",
+        "Ceftriaxona intramuscular una vez.",
+        "Ninguno si está asintomático."
+      ],
+      "correctIndex": 0,
+      "explanation": "El esquema es penicilina G sódica 100 000 UI/kg/día los primeros 7 días y luego 150 000 UI/kg/día hasta completar 10 días. La azitromicina y la ceftriaxona no son el tratamiento estándar de la sífilis congénita.",
+      "sourceRefs": [{ "sourceId": "src-sifilis", "pages": [4] }],
+      "tags": ["sífilis", "opción múltiple"]
+    },
+    {
+      "id": "card-sifilis-01-3",
+      "topicId": "topic-sifilis",
+      "sheetId": "sheet-sifilis-01",
+      "type": "application",
+      "prompt": "Un recién nacido está asintomático, pero su madre tuvo sífilis sin tratamiento adecuado. ¿Qué corresponde?",
+      "options": [
+        "No hacer nada porque el bebé está sano.",
+        "Evaluar con VDRL, LCR, hematología y radiografía, y tratar según el escenario correspondiente.",
+        "Solo repetir la prueba a los 2 años.",
+        "Indicar lactancia materna y alta."
+      ],
+      "correctIndex": 1,
+      "explanation": "El antecedente materno de tratamiento inadecuado es un criterio epidemiológico. Se debe evaluar y tratar según el escenario, aunque el recién nacido esté asintomático.",
+      "sourceRefs": [{ "sourceId": "src-sifilis", "pages": [2, 3, 4] }],
+      "tags": ["sífilis", "aplicación"]
+    },
+    {
+      "id": "card-vih-navv-01-1",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "concept",
+      "prompt": "¿Quiénes conforman el equipo multidisciplinario para la atención del VIH en niñas, niños y adolescentes?",
+      "answer": "Médico pediatra con subespecialidad o capacitado, enfermería, psicología, obstetricia, trabajo social, químico-farmacéutico y laboratorio. El equipo realiza evaluación, inicia y ajusta el TAR, maneja infecciones oportunistas, apoya la adherencia y coordina la referencia.",
+      "explanation": "El VIH pediátrico no se maneja solo con receta: requiere seguimiento clínico, psicológico, social y farmacéutico.",
+      "sourceRefs": [{ "sourceId": "src-vih-navv", "pages": [23, 24] }],
+      "tags": ["VIH pediátrico", "equipo"]
+    },
+    {
+      "id": "card-vih-navv-01-2",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "multiple",
+      "prompt": "¿Cómo se define la falla virológica al TAR?",
+      "options": [
+        "Una carga viral de 50 copias/mL una vez.",
+        "Carga viral >1000 copias/mL en dos determinaciones separadas por 4 semanas, tras haber estado indetectable.",
+        "Un CD4 bajo en una sola medición.",
+        "Cualquier efecto adverso medicamentoso."
+      ],
+      "correctIndex": 1,
+      "explanation": "La falla virológica requiere dos determinaciones >1000 copias/mL separadas por 4 semanas, después de un período indetectable. Una sola cifra o un efecto adverso no la definen.",
+      "sourceRefs": [{ "sourceId": "src-vih-navv", "pages": [36] }],
+      "tags": ["VIH pediátrico", "opción múltiple"]
+    },
+    {
+      "id": "card-vih-navv-01-3",
+      "topicId": "topic-vih-navv",
+      "sheetId": "sheet-vih-navv-01",
+      "type": "application",
+      "prompt": "Un adolescente con VIH tiene carga viral detectable y refiere que a veces olvida tomar su tratamiento. ¿Qué corresponde?",
+      "options": [
+        "Cambiar el esquema de inmediato sin evaluar adherencia.",
+        "Evaluar adherencia, reforzar educación y apoyo, revisar horarios y controlar la carga viral antes de decidir un cambio.",
+        "Suspender el tratamiento.",
+        "Regañarlo y citarlo en un año."
+      ],
+      "correctIndex": 1,
+      "explanation": "Antes de asumir falla terapéutica hay que evaluar y fortalecer la adherencia. El cambio de esquema se decide con criterios virológicos y luego de abordar las barreras.",
+      "sourceRefs": [{ "sourceId": "src-vih-navv", "pages": [35, 36] }],
+      "tags": ["VIH pediátrico", "aplicación"]
+    }
+  ]
+}

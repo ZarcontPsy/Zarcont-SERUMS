@@ -1,0 +1,163 @@
+FILE municipios-comunidades-saludables.pdf | pages 49 | chars 64548
+
+== HEADINGS (candidates) ==
+p2 [20.0] PROGRAMA DE MUNICIPIOS Y
+p2 [20.0] COMUNIDADES SALUDABLES
+p6 [14.0] Se ora
+p6 [14.0] PILAR MAZZETTI SOLER
+p6 [14.0] MINISTRA DE SALUD
+p6 [14.0] Se or
+p6 [14.0] JOSÉ CARLOS DEL CARMEN SARA
+p6 [14.0] VICE MINISTRO DE SALUD
+p6 [14.0] RICARDO BUSTAMANTE QUIROZ
+p6 [14.0] DIRECTOR GENERAL DE PROMOCIÓN DE LA SALUD
+p6 [14.0] NELIDA DORÍS CÁCERES RAMÍREZ
+p6 [14.0] DIRECTORA EJECUTIVA DE PARTICIPACION COMUNITARIA EN SALUD
+p6 [14.0] ñ
+p8 [35.7] ÍNDICE
+p8 [15.0] Contenido
+p8 [15.0] Página
+p10 [26.6] PRESENTACIÓN
+p12 [25.0] CAPÍTULO 1
+p12 [19.0] ASPECTOS GENERALES
+p14 [15.0] Antecedentes y Justificación
+p16 [15.0] Base Legal
+p16 [15.0] Marco Conceptual de Promoción de la Salud
+p17 [15.0] Modelo de Abordaje de Promoción de la Salud en Perú
+p17 [11.6] NIÑO
+p17 [11.6] ADOLESCENTE
+p17 [11.6] ADULTO
+p17 [11.6] ADULTO MAYOR
+p17 [11.6] VIVIENDA
+p17 [11.6] INSTITU-
+p17 [11.6] CIONES
+p17 [11.6] EDUCATIVAS
+p17 [11.6] MUNICIPIOS
+p17 [11.6] CENTROS
+p17 [11.6] LABORALES
+p18 [25.0] CAPÍTULO 2
+p18 [19.0] ASPECTOS ESPECÍFICOS
+p20 [15.0] Definición del Programa de Municipios y Comunidades
+p20 [15.0] Saludables
+p20 [10.6] a) Municipalidad.-
+p20 [10.6] b) Municipio.-
+p20 [10.6] c) Comunidad.-
+p20 [10.6] d)
+p20 [10.6] Municipio Saludable.-
+p20 [11.0] e) Comunidad Saludable.-
+p21 [15.0] Objetivos del Programa
+p21 [15.0] Componentes y Escenarios de intervención
+p21 [14.0] 2.2.1 Objetivo General
+p21 [14.0] 2.2.2 Objetivos Específicos
+p21 [14.0] 2.3.1 Componente Programático Municipio
+p21 [14.0] Componente Programático Comunidad
+p22 [11.0] En el municipio
+p22 [11.0] La municipalidad:
+p22 [11.0] Espacios públicos:
+p22 [11.0] En la comunidad:
+p22 [11.0] En zonas urbanas:
+p22 [11.0] En zonas urbano marginales:
+p22 [11.0] En zonas rurales:
+p22 [11.0] Municipio:
+p22 [11.0] Comunidad:
+p22 [11.0] •
+p22 [15.0] Actores del programa
+p23 [11.0] •
+p23 [11.0] Personal de Salud:
+p23 [11.0] Otros Sectores Públicos y Privados:
+p24 [15.0] Lineas de Acción
+p24 [11.0] •
+p24 [11.0] Fortalecimiento de competencias:
+p24 [11.0] Vigilancia Ciudadana:
+p24 [11.0] Fomento de proyectos/programas vinculados a la promoción de la
+p24 [11.0] salud:
+p24 [15.0] Organización para la implementación
+p24 [14.0] 2.6.1 Nivel nacional: Dirección Ejecutiva de Participación Comunitaria de la
+p24 [14.0] Dirección General de Promoción de la Salud
+p25 [14.0] 2.6.2 Nivel Regional: Direcciones de Salud
+p25 [14.0] 2.6.3 Nivel Local: Direcciones de Red de Servicios de Salud, Microrredes y/o
+p25 [14.0] Establecimientos de Salud.
+p28 [25.0] CAPÍTULO 3
+p28 [19.0] ESTRATEGÍAS DEL PROGRAMA
+p30 [15.0] Estrategias del Programa
+p30 [15.0] Abogacía y Políticas Públicas
+p30 [15.0] Comunicación y Educación para la Salud
+p31 [15.0] Participación Comunitaria y Empoderamiento Social
+p32 [25.0] CAPÍTULO 4
+p32 [19.0] FASES DE IMPLEMENTACIÓN
+p34 [15.0] Fases de Implementación
+p34 [11.0] PRIMERA FASE: Sensibilización.-
+p34 [15.0] Para Municipios Saludables
+p34 [11.0] PRIMERA FASE
+p34 [19.8] Comunidad
+p34 [13.5] Seguimiento y Evaluación Participativa
+p34 [31.4] Municipio
+p34 [12.9] Calificación de Comunidad Saludable
+p34 [19.4] Calificación de Municipio Saludable
+p35 [11.0] SEGUNDA FASE
+p35 [11.0] TERCERA FASE
+p35 [11.0] CUARTA FASE: Ejecución.-
+p35 [11.0] QUINTA FASE
+p35 [11.0] PRIMERA FASE
+p35 [11.0] : Organización.-
+p35 [11.0] : Planificación Participativa .-
+p35 [11.0] : Seguimiento y Evaluación Participativa.-
+p35 [11.0] : Sensibilización.-
+p35 [15.0] Para Comunidades Saludables
+p36 [11.0] : Organización.-
+p36 [11.0] : Planificación Participativa.-
+p36 [11.0] : Gestión y Ejecución -
+p36 [11.0] : Seguimiento y Evaluación Participativa.-
+p36 [11.0] SEGUNDA FASE
+p36 [11.0] TERCERA FASE
+p36 [11.0] CUARTA FASE
+p36 [11.0] QUINTA FASE
+p38 [25.0] CAPÍTULO 5
+p38 [19.0] EVALUACIÓN Y MONITOREO DEL PROGRAMA
+p40 [15.0] Evaluación y Monitoreo del Programa
+p42 [25.0] ANEXOS
+p44 [15.0] ANEXO N° 01
+p44 [15.0] GLOSARIO DE TÉRMINOS
+p44 [11.0] Calidad de vida:
+p44 [11.0] Calificación:
+p44 [11.0] Comunidad
+p44 [11.0] Saludable
+p44 [11.0] Calificada:
+p44 [11.0] Desarrollo comunal:
+p44 [11.0] Desarrollo local:
+p44 [11.0] Determinantes de la salud:
+p44 [11.0] Espacios de concertación:
+p45 [11.0] Estilos de vida saludable:
+p45 [11.0] Entornos saludables:
+p45 [11.0] Municipio saludable calificado:
+p45 [11.0] Participación:
+p45 [11.0] Red social:
+p45 [11.0] Responsabilidad social para la salud:
+p46 [10.5] EJE TEMÁTICO
+p46 [15.0] ANEXO N° 02
+p46 [15.0] CUADRO DESCRIPTIVO DE EJES TEMÁTICOS
+p47 [10.5] EJE TEMÁTICO
+p47 [10.5] PROPUESTA DE INTERVENCIONES COMUNITARIAS Y MUNICIPALES
+p47 [11.0] INTERVENCIONES COMUNITARIAS Y MUNICIPALES
+p48 [22.1] BIBLIOGRAFÍA
+
+== FIRST PAGES ==
+
+--- p1 ---
+
+
+--- p2 ---
+PROGRAMA DE MUNICIPIOS Y
+COMUNIDADES SALUDABLES
+DIRECCIÓN GENERAL DE PROMOCIÓN DE LA SALUD
+MINISTERIO DE SALUD
+PERÚ - 2005
+PROGRAMA DE MUNICIPIOS
+Y COMUNIDADES SALUDABLES
+
+--- p3 ---
+
+
+--- p4 ---
+PROGRAMA DE MUNICIPIOS
+Y COMUNIDADES SALUDABLES

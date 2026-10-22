@@ -1,0 +1,2771 @@
+===== PAGE 1 =====
+ 
+
+===== PAGE 2 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Reglamento de la Calidad del Agua para 
+Consumo Humano 
+ 
+ 
+DS N° 031-2010-SA. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Dirección General de Salud Ambiental  
+Ministerio de Salud 
+Lima – Perú 
+2011 
+
+===== PAGE 3 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+Catalogación hecha por la Biblioteca Central del Ministerio de Salud 
+ 
+Reglamento de la calidad de Agua para Consumo Humano: D.S. N° 031-2010-SA / 
+Ministerio de Salud. Dirección General de Salud Ambiental – Lima: Ministerio de 
+Salud; 2011. 
+     44 p.; ilus. 
+    
+SALUD AMBIENTAL / CONSUMO DE AGUA (Salud Ambiental) / LEGISLACIÓN 
+SANITARIA / CONTROL DE CALIDAD / VIGILANCIA SANITARIA, organización & 
+administración / ABASTECIMIENTO DE AGUA 
+ 
+ 
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú N° 2011-02552 
+ 
+Reglamento de la Calidad del Agua para Consumo Humano  
+ 
+Elaborado por: Dirección General de Salud Ambiental del Ministerio de Salud 
+ 
+© MINSA, Febrero 2011 
+ 
+Ministerio de Salud.  Dirección General de Salud Ambiental 
+Las Amapolas N°350-Lince- Lima 14-Perú 
+Telef. : (51-1) 4428353 
+http:// www.digesa.minsa.gob.pe 
+http://webmaster@digesa.minsa.gob.pe 
+ 
+1ra. Edición, 2011 
+Tiraje: 1000 unidades 
+ 
+ 
+ 
+Imprenta: J.B. GRAFIC E.I.R.L. 
+Dirección: AV. IGNACIO MERINO N° 1681 
+Distrito:    LINCE 
+Teléfono: 4700108 
+ 
+ 
+ 
+Versión digital disponible:  
+http://www.minsa.gob.pe/bvsminsa.asp                                                         
+http://www.minsa.gob.pe/webftp.asp?ruta=normaslegales/2010/DS031-2010-SA.pdf
+
+===== PAGE 4 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+DR. ALAN GARCÍA PÉREZ 
+Presidente de la República 
+ 
+DR. ÓSCAR UGARTE UBILLUZ 
+Ministro de Salud 
+ 
+DRA. ZARELA SOLIS VÁSQUEZ  
+Vice Ministra de Salud 
+ 
+DR. EDWARD CRUZ SÁNCHEZ 
+Director General 
+Dirección General de Salud Ambiental 
+ 
+ 
+ 
+ 
+
+===== PAGE 5 =====
+ 
+
+===== PAGE 6 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+
+===== PAGE 7 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 8 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+ 
+ 
+ÍNDICE 
+ 
+ 
+ 
+Pág.
+PRESENTACIÓN 
+08 
+TÍTULO I 
+: 
+DISPOSICIONES GENERALES 
+09 
+TÍTULO II 
+: 
+GESTIÓN DE LA CALIDAD DEL AGUA PARA CONSUMO HUMANO 
+12 
+TÍTULO III 
+: 
+DE LA AUTORIDAD COMPETENTE PARA LA GESTIÓN DE LA 
+CALIDAD DEL AGUA PARA CONSUMO HUMANO 
+14 
+TÍTULO IV 
+: 
+VIGILANCIA SANITARIA 
+16 
+TÍTULO V 
+: 
+CONTROL DE CALIDAD 
+18 
+TÍTULO VI 
+: 
+FISCALIZACIÓN SANITARIA 
+20 
+TÍTULO VII 
+: 
+APROBACIÓN, REGISTRO Y AUTORIZACIÓN SANITARIA 
+21 
+TÍTULO VIII 
+: 
+ABASTECIMIENTO DE AGUA, PROVEEDOR Y CONSUMIDOR 
+24 
+ 
+ 
+Capítulo I   : 
+SISTEMA DE ABASTECIMIETO DE AGUA 
+24 
+ 
+ 
+Capítulo II  : 
+DEL PROVEEDOR DEL AGUA PARA CONSUMO 
+HUMANO 
+25 
+ 
+ 
+Capítulo III  : 
+DEL CONSUMIDOR 
+27 
+TÍTULO IX 
+: 
+REQUISITOS DE CALIDAD DEL AGUA PARA CONSUMO HUMANO 
+28 
+TÍTULO X 
+: 
+MEDIDAS DE SEGURIDAD Y SANCIONES 
+31 
+ 
+ 
+DISPOSICIONES  COMPLEMENTARIAS 
+34 
+ 
+ 
+DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS 
+36 
+ANEXOS 
+ 
+ 
+ 
+ANEXO I 
+: 
+LÍMITES 
+MÁXIMOS 
+PERMISIBLES 
+DE 
+PARÁMETROS 
+MICROBIOLÓGICOS Y PARASITOLÓGICOS 
+38 
+ANEXO II 
+: 
+LÍMITES MÁXIMOS PERMISIBLES DE PARÁMETROS DE CALIDAD 
+ORGANOLÉPTICA 
+39 
+ANEXO III 
+: 
+LÍMITES MÁXIMOS PERMISIBLES DE PARÁMETROS QUÍMICOS 
+INORGÁNICOS Y ORGÁNICOS 
+40 
+ANEXO IV 
+: 
+LÍMITES MÁXIMOS PERMISIBLES DE PARÁMETROS RADIACTIVOS 
+43 
+ANEXO V 
+: 
+AUTORIZACION SANITARIA, REGISTRO DE LOS SISTEMAS DE 
+ABASTECIMIENTO 
+44 
+ 
+
+===== PAGE 9 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+ 
+8
+ 
+PRESENTACIÓN 
+ 
+El agua es uno de los bienes más importantes y escasos que tienen las 
+personas alrededor del mundo, nuestro país no es una excepción; muchas de 
+nuestras poblaciones se ven obligados a beber de fuentes cuya calidad deja 
+mucho que desear y produce un sin fin de enfermedades a niños y adultos. 
+El acceso al agua potable es una necesidad primaria y por lo tanto un 
+derecho humano fundamental1, en este contexto era necesario actualizar el 
+Reglamento de los requisitos Oficiales Físicos, Químicos y Bacteriológicos que 
+deben reunir las aguas de bebida para ser consideradas potables, que por su 
+antigüedad (1946), se hacia inaplicable; es entonces que en el año 2000, la 
+Dirección General de Salud Ambiental, asume la tarea de elaborar el 
+“Reglamento de la Calidad del Agua para Consumo Humano”, tarea que el 
+26 de setiembre del 2010, a través del D.S. N° 031-2010-SA, se vio felizmente 
+culminada. 
+Este nuevo Reglamento, a través de sus 10 títulos, 81 artículos, 12 disposiciones 
+complementarias, transitorias y finales y 5 anexos; no solo establece límites 
+máximos permisibles, en lo que a parámetros  microbiológicos, parasitológicos, 
+organolépticos, químicos orgánicos e inorgánicos y parámetros radiactivos,  se 
+refiere; sino también le asigna nuevas y mayores responsabilidades a los 
+Gobiernos Regionales, respecto a la Vigilancia de la Calidad del Agua para 
+Consumo humano; además de fortalecer a la DIGESA, en el posicionamiento 
+como Autoridad Sanitaria frente a estos temas.  
+Queda pues ahora el compromiso y la responsabilidad de cada uno de los 
+trabajadores del sector Salud, para desarrollar acciones en forma conjunta y 
+multisectorialmente, a efectos de poder implementar en los plazos previstos,  
+este nuevo reglamento, para bien de la salud de nuestras poblaciones, que 
+son el fin de nuestro trabajo. 
+ 
+Edward Cruz Sánchez 
+Director General 
+Dirección De Salud Ambiental. 
+                                                          
+1 KOFI ANNAN, Secretario General de la ONU 
+
+===== PAGE 10 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 
+9
+TÍTULO I 
+DISPOSICIONES GENERALES  
+Artículo 1°.- De la finalidad  
+El presente Reglamento establece las disposiciones generales con relación a la gestión 
+de la calidad del agua para consumo humano, con la finalidad de garantizar su 
+inocuidad, prevenir los factores de riesgos sanitarios, así como proteger y promover la 
+salud y bienestar de la población. 
+Artículo 2°.- Objeto 
+Con arreglo a la Ley Nº 26842 - Ley General de Salud, el presente Reglamento tiene 
+como objeto normar los siguientes aspectos: 
+1. 
+La gestión de la calidad del agua;  
+2. 
+La vigilancia sanitaria del agua;  
+3. 
+El control y supervisión de la calidad del agua;  
+4. 
+La fiscalización, las autorizaciones, registros y aprobaciones sanitarias respecto a 
+los sistemas de abastecimiento de agua para consumo humano; 
+5. 
+Los requisitos físicos, químicos, microbiológicos y parasitológicos del agua para 
+consumo humano; y 
+6. 
+La difusión y acceso a la información sobre la calidad del agua para consumo 
+humano. 
+Artículo 3°.- Ámbito de Aplicación  
+3.1 El presente Reglamento y las normas sanitarias complementarias que dicte el 
+Ministerio de Salud son de obligatorio cumplimiento para toda persona natural o 
+jurídica, 
+pública 
+o 
+privada, 
+dentro 
+del 
+territorio 
+nacional, 
+que 
+tenga 
+responsabilidad de acuerdo a ley o participe o intervenga en cualquiera de las 
+actividades de gestión, administración, operación, mantenimiento, control, 
+supervisión o fiscalización del abastecimiento del agua para consumo humano, 
+desde la fuente hasta su consumo; 
+3.2 No se encuentran comprendidas en el ámbito de aplicación del presente 
+Reglamento: 
+1. 
+Las aguas minerales naturales reconocidas por la autoridad competente; y 
+2. 
+Las aguas que por sus características físicas y químicas, sean calificadas como 
+productos medicinales. 
+Artículo 4°.- Mención a referencias 
+Cualquier mención en el presente Reglamento a: 
+ 
+«Reglamento» se entenderá que está referida al presente Reglamento; y 
+ 
+«Calidad del agua», debe entenderse que está referida a la frase «calidad del 
+agua para consumo humano». 
+Artículo  5°.- Definiciones 
+Para efectos del presente reglamento, se debe considerar las siguientes definiciones: 
+1. 
+Agua cruda: Es aquella agua, en estado natural, captada para abastecimiento 
+que no ha sido sometido a procesos de tratamiento.  
+
+===== PAGE 11 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 10
+2. 
+Agua tratada: Toda agua sometida a procesos físicos, químicos y/ó biológicos 
+para convertirla en un producto inocuo para el consumo humano. 
+3. 
+Agua de consumo humano: Agua apta para consumo humano y para todo uso 
+doméstico habitual, incluida la higiene personal. 
+4. 
+Camión cisterna: Vehículo motorizado con tanque cisterna autorizado para 
+transportar agua para consumo humano desde la estación de surtidores hasta el 
+consumidor final. 
+5. 
+Consumidor: Persona que hace uso del agua suministrada por el proveedor para 
+su consumo. 
+6. 
+Cloro residual libre: Cantidad de cloro presente en el agua en forma de ácido 
+hipocloroso e hipoclorito  que debe quedar en el agua de consumo humano para 
+proteger de posible contaminación microbiológica, posterior a la cloración como 
+parte del tratamiento. 
+7. 
+Fiscalización sanitaria: Atribución de la Autoridad de Salud para verificar, 
+sancionar y establecer medidas de seguridad cuando el proveedor incumpla las 
+disposiciones del presente Reglamento y las normas sanitarias de calidad del agua 
+que la Autoridad de Salud emita. 
+8. 
+Gestión de la calidad de agua de consumo humano: Conjunto  de  acciones  
+técnico administrativas u operativas que tienen la finalidad de lograr que la 
+calidad del agua para consumo de la población cumpla con los límites máximos 
+permisibles establecidos en el presente reglamento. 
+9. 
+Inocuidad: Que no hace daño a la salud humana. 
+10. Límite máximo permisible: Son los valores máximos admisibles de los parámetros 
+representativos de la calidad del agua.  
+11. Monitoreo: 
+Seguimiento 
+y 
+verificación 
+de 
+parámetros 
+físicos, 
+químicos, 
+microbiológicos u otros señalados en el presente Reglamento, y de factores de 
+riesgo en los sistemas de abastecimiento del agua.  
+12. Organización comunal: Son juntas administradoras de servicios de saneamiento, 
+asociación, comité u otra forma de organización, elegidas voluntariamente por la 
+comunidad constituidas con el propósito de administrar, operar y mantener los 
+servicios de saneamiento. 
+13. Parámetros 
+microbiológicos: 
+Son 
+los 
+microorganismos 
+indicadores 
+de 
+contaminación y/o microorganismos patógenos para el ser humano analizados en 
+el agua de consumo humano. 
+14.  Parámetros 
+organolépticos: 
+Son 
+los 
+parámetros 
+físicos, 
+químicos 
+y/o 
+microbiológicos cuya presencia en el agua para consumo humano pueden ser 
+percibidos por el consumidor a través de su percepción sensorial. 
+15. Parámetros inorgánicos: Son los compuestos formados por distintos elementos pero 
+que no poseen enlaces carbono-hidrógeno analizados en el agua de consumo 
+humano. 
+16. Parámetros de control obligatorio (PCO): Son los parámetros que todo proveedor 
+de agua debe realizar obligatoriamente al agua para consumo humano. 
+17. Parámetros adicionales de control obligatorio (PACO): Parámetros que de 
+exceder los Límites Máximos Permisibles se incorporarán a la lista de parámetros de 
+control obligatorio hasta que el proveedor demuestre que dichos parámetros 
+cumplen con los límites establecidos en un plazo que la Autoridad de Salud de la 
+jurisdicción determine. 
+
+===== PAGE 12 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 11
+18. Plan de control de la calidad (PCC) : Instrumento técnico a través del cual se 
+establecen un conjunto de medidas necesarias para aplicar, asegurar y hacer 
+cumplir la norma sanitaria a fin de proveer agua inocua, con el fin de  proteger la 
+salud de los consumidores. 
+19. Programa de adecuación sanitaria (PAS): Es un instrumento técnico - legal 
+aprobado por la Autoridad de Salud, que busca formalizar y facilitar la 
+adecuación sanitaria a los proveedores de agua de consumo humano al presente 
+Reglamento y a las normas sanitarias de calidad del agua que emita la autoridad 
+competente, en donde se establecen objetivos, metas, indicadores, actividades, 
+inversiones y otras obligaciones, que serán realizadas de acuerdo a un 
+cronograma. 
+20. Proveedor del servicio de agua para el consumo humano: Toda persona natural o 
+jurídica bajo cualquier modalidad empresarial, junta administradora, organización 
+vecinal, comunal u otra organización que provea agua para consumo humano. 
+Así como proveedores del servicio en condiciones especiales.  
+21. Proveedores de servicios en condiciones especiales: Son aquellos que se brindan a 
+través 
+de 
+camiones 
+cisterna, 
+surtidores, 
+reservorios 
+móviles, 
+conexiones 
+provisionales. Se exceptúa la recolección individual directa de fuentes de agua 
+como lluvia, río, manantial.    
+22. Sistemas de abastecimiento de agua para consumo humano: Conjunto de 
+componentes hidráulicos e instalaciones físicas que son accionadas por procesos 
+operativos, administrativos y equipos necesarios desde la captación hasta el 
+suministro del agua. 
+23. Sistema de análisis de peligros y de puntos críticos de control: Sistema que permite 
+identificar, evaluar y controlar peligros que son importantes para la inocuidad del 
+agua para consumo humano. 
+24. Sistema de tratamiento de agua: Conjunto de componentes hidráulicos; de 
+unidades 
+de 
+procesos 
+físicos, 
+químicos 
+y 
+biológicos; 
+y 
+de 
+equipos 
+electromecánicos y métodos de control que tiene la finalidad de producir agua 
+apta para el consumo humano. 
+25. Supervisión: Acción de evaluación periódica y sistemática para verificar el 
+cumplimiento del presente reglamento y de aquellas normas sanitarias de calidad 
+del agua que emita la Autoridad de Salud, así como  los procesos administrativos y 
+técnicos de competencia del proveedor  de agua de consumo humano, a fin de 
+aplicar correctivos administrativos o técnicos que permitan el cumplimiento 
+normativo. 
+26. Surtidor: Punto de abastecimiento autorizado de agua para consumo humano 
+que provee a camiones cisterna y otros sistemas de abastecimiento en 
+condiciones especiales. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 13 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 12
+TÍTULO II 
+GESTIÓN DE LA CALIDAD DEL AGUA 
+PARA CONSUMO HUMANO 
+Artículo 6°.- Lineamientos de gestión  
+El presente Reglamento se enmarca dentro de la política nacional de salud y los 
+principios establecidos en la Ley N° 26842 - Ley General de Salud. La gestión de la 
+calidad del agua para consumo humano garantiza su inocuidad y se rige 
+específicamente por los siguientes lineamientos: 
+1. 
+Prevención de enfermedades transmitidas a través del consumo del agua de 
+dudosa o mala calidad; 
+2. 
+Aseguramiento de la aplicación de los requisitos sanitarios para garantizar la 
+inocuidad del agua para consumo humano; 
+3. 
+Desarrollo de acciones de promoción, educación y capacitación para asegurar 
+que el abastecimiento, la vigilancia y el control de la calidad del agua para 
+consumo, sean  eficientes, eficaces y sostenibles; 
+4. 
+Calidad del servicio mediante la adopción de métodos y procesos adecuados de 
+tratamiento, distribución y almacenamiento del agua para consumo humano, a 
+fin de garantizar la inocuidad del producto;  
+5. 
+Responsabilidad solidaria por parte de los usuarios del recurso hídrico con respecto 
+a la protección de la cuenca, fuente de abastecimiento del agua para consumo 
+humano; 
+6. 
+Control de la calidad del agua para consumo humano por parte del proveedor 
+basado en el análisis de peligros y de puntos críticos de control; y 
+7. 
+Derecho a la información sobre la calidad del agua consumida. 
+Artículo 7°.- De la gestión de la calidad del agua de consumo humano 
+La gestión de la calidad del agua se desarrolla principalmente por las siguientes 
+acciones: 
+1. 
+Vigilancia sanitaria del agua para consumo humano; 
+2. 
+Vigilancia epidemiológica de enfermedades transmitidas por el agua para 
+consumo humano; 
+3. 
+Control y supervisión de calidad del agua para consumo humano; 
+4. 
+Fiscalización sanitaria del abastecimiento del agua para consumo humano; 
+5. 
+Autorización, registros y aprobaciones sanitarias de los sistemas de abastecimiento 
+del agua para consumo humano;  
+6. 
+Promoción y educación en la calidad y el uso del agua para consumo humano; y 
+7. 
+Otras que establezca la Autoridad de Salud de nivel nacional. 
+ 
+Artículo 8°.- Entidades de la gestión de la calidad del agua de consumo humano 
+Las entidades que son responsables y/o participan en la gestión para asegurar la 
+calidad del agua para consumo humano en lo que le corresponde de acuerdo a su 
+competencia, en todo el país son las siguientes: 
+ 
+
+===== PAGE 14 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 13
+1. 
+Ministerio de Salud; 
+2. 
+Ministerio de Vivienda, Construcción y Saneamiento; 
+3. 
+Superintendencia Nacional de Servicios de Saneamiento; 
+4. 
+Gobiernos Regionales; 
+5. 
+Gobiernos Locales Provinciales y Distritales; 
+6. 
+Proveedores del agua para consumo humano; y 
+7. 
+Organizaciones comunales y civiles representantes de los consumidores. 
+ 
+ 
+ 
+ 
+ 
+TÍTULO III 
+DE LA AUTORIDAD COMPETENTE PARA LA GESTIÓN DE LA CALIDAD DEL AGUA 
+PARA CONSUMO HUMANO 
+Artículo 9°.- Ministerio de Salud 
+La Autoridad de Salud del nivel nacional para la gestión de la calidad del agua para 
+consumo humano, es el Ministerio de Salud, y la ejerce a través de la Dirección 
+General de Salud Ambiental (DIGESA); en tanto, que la autoridad a nivel regional son 
+las Direcciones Regionales de Salud (DIRESA) o Gerencias Regionales de Salud (GRS) o 
+la que haga sus veces en el ámbito regional, y las Direcciones de Salud (DISA) en el 
+caso de Lima, según corresponda. Sus competencias son las siguientes: 
+DIGESA: 
+Establece la política nacional de calidad del agua que comprende las siguientes 
+funciones: 
+1. 
+Diseñar la política nacional de calidad del agua para consumo humano; 
+2. 
+Normar la vigilancia sanitaria del agua para consumo humano; 
+3. 
+Normar los procedimientos técnicos administrativos para la autorización sanitaria 
+de los sistemas de tratamiento del agua para consumo humano previsto en el 
+Reglamento; 
+4. 
+Elaborar las guías y protocolos para el monitoreo y análisis de parámetros físicos, 
+químicos, microbiológicos y parasitológicos del agua para consumo humano; 
+5. 
+Normar los requisitos físicos, químicos, microbiológicos y parasitológicos del agua 
+para consumo humano; 
+6. 
+Normar el procedimiento para la declaración de emergencia sanitaria por las 
+Direcciones Regionales de Salud respecto de los sistemas de abastecimiento de 
+agua para consumo humano; 
+7. 
+Supervisar el cumplimiento de las normas señaladas en el presente Reglamento en 
+los programas de vigilancia de la calidad de agua para consumo humano en las 
+regiones; 
+8. 
+Otorgar autorización sanitaria a los sistemas de tratamiento de agua para 
+consumo humano de acuerdo a lo señalado en la décima disposición 
+complementaria, transitoria y final del presente reglamento; el proceso de la 
+autorización será realizado luego que el expediente técnico sea aprobado por el 
+ente sectorial o regional competente antes de su construcción;  
+
+===== PAGE 15 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 14
+9. 
+Normar los registros señalados en el presente Reglamento y administrar aquellos 
+que establece el artículo 35°, 36° y 38°  del presente Reglamento; 
+10. Normar el plan de control de calidad del agua a cargo del proveedor, para su 
+respectiva 
+aprobación 
+por 
+la 
+Autoridad 
+de 
+Salud 
+de 
+la 
+jurisdicción 
+correspondiente;  
+11. Consolidar y publicar la información de la vigilancia sanitaria del agua para 
+consumo humano en el país;  
+12. Realizar estudios de investigación del riesgo de daño a la salud por agua para 
+consumo humano en coordinación con la Dirección General de Epidemiología;  
+13. Si como resultado de la vigilancia epidemiológica se identifica que alguno de los 
+parámetros a pesar que cumple con el valor establecido en el presente 
+reglamento significa un factor de riesgo al existir otras fuentes de exposición, la 
+Autoridad de Salud podrá exigir valores menores; y 
+14. Otras responsabilidades establecidas en el presente Reglamento. 
+DIRESA, GRS o DISA: 
+1. 
+Vigilar la calidad del agua en su jurisdicción; 
+2. 
+Elaborar y aprobar los planes operativos anuales de las actividades del programa 
+de vigilancia de la calidad del agua en el ámbito de su competencia y en el 
+marco de la política nacional de Salud establecida por el MINSA - DIGESA; 
+3. 
+Fiscalizar el cumplimiento de las normas señaladas en el presente Reglamento en 
+su jurisdicción y de ser el caso aplicar las sanciones que correspondan; 
+4. 
+Otorgar y administrar los registros señalados en el presente Reglamento, sobre los  
+sistemas de abastecimiento del agua para consumo humano en su jurisdicción; 
+5. 
+Consolidar y reportar la información de vigilancia a entidades del Gobierno 
+Nacional, Regional y Local; 
+6. 
+Otorgar registro de las fuentes de los sistemas de abastecimiento de agua para 
+consumo humano; 
+7. 
+Aprobar el plan de control de calidad del agua; 
+8. 
+Declarar la emergencia sanitaria el sistema de abastecimiento del agua para 
+consumo humano cuando se requiera prevenir y controlar todo riesgo a la salud, 
+en sujeción a las normas establecidas por la Autoridad de Salud de nivel nacional; 
+9. 
+Establecer las medidas preventivas, correctivas y de seguridad, ésta última 
+señalada en el artículo 130° de la Ley N° 26842, Ley General de Salud, a fin de 
+evitar que las operaciones y procesos empleados en el sistema de abastecimiento 
+de agua generen riesgos a la salud de los consumidores; y 
+10. Otras responsabilidades establecidas en el presente Reglamento. 
+Articulo 10°.- Ministerio de Vivienda, Construcción  y Saneamiento 
+El Ministerio de Vivienda, Construcción y Saneamiento en sujeción a sus competencias 
+de ley, está facultado para la gestión de la calidad del agua para consumo humano, 
+a: 
+1. 
+Prever en las normas de su sector la aplicación de las disposiciones y de los 
+requisitos sanitarios establecidos en el presente Reglamento; 
+2. 
+Establecer en los planes, programas y proyectos de abastecimiento de agua para 
+consumo humano la aplicación de las normas sanitarias señalados en el presente 
+Reglamento; 
+
+===== PAGE 16 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 15
+3. 
+Disponer las medidas que sean necesarias en su sector, a consecuencia de la 
+declaratoria de emergencia sanitaria del abastecimiento del agua por parte de la 
+autoridad de salud de la jurisdicción, para revertir las causas que la  generaron; y 
+4. 
+Generar las condiciones necesarias para el acceso a los servicios de agua en 
+niveles de calidad y sostenibilidad  en su prestación, en concordancia a las 
+disposiciones sanitarias, en especial de los sectores de menores recursos 
+económicos. 
+Artículo 11°.- Superintendencia Nacional de Servicios de Saneamiento  
+La Superintendencia Nacional de Servicios de Saneamiento (SUNASS) está facultada 
+para la gestión de la calidad del agua para consumo, en sujeción a sus competencias 
+de ley, que se detallan a continuación: 
+1. 
+Formular o adecuar las directivas, herramientas e instrumentos de supervisión  de 
+su competencia a las normas sanitarias establecidas en este Reglamento para su 
+aplicación por los proveedores de su ámbito de competencia; 
+2. 
+Supervisar el cumplimiento de las disposiciones del presente Reglamento en el 
+servicio de agua para consumo humano de su competencia; y  
+3. 
+Informar a la Autoridad de Salud de su jurisdicción, los incumplimientos en los que 
+incurran los proveedores de su ámbito de competencia, a los requisitos de calidad 
+sanitaria de agua normados en el presente reglamento. 
+Artículo 12°.- Gobiernos Locales Provinciales y Distritales 
+Los gobiernos locales provinciales y distritales están facultados para la gestión de la 
+calidad del agua para consumo humano en sujeción a sus competencias de ley, que 
+se detallan a continuación: 
+1. 
+Velar por la sostenibilidad de los sistemas de abastecimiento de agua para 
+consumo humano; 
+2. 
+Supervisar el cumplimiento de las disposiciones del presente Reglamento en los 
+servicios de agua para consumo humano de su competencia; 
+3. 
+Informar a la autoridad de salud de la jurisdicción y tomar las medidas que la ley 
+les faculta cuando los proveedores de su ámbito de competencia no estén 
+cumpliendo los requisitos de calidad sanitaria normados en el presente 
+Reglamento; y 
+4. 
+Cooperar con los proveedores del ámbito de su competencia la implementación 
+de las disposiciones sanitarias normadas en el presente Reglamento. 
+Lo señalado en los numerales 2 y 3 del presente artículo es aplicable para los gobiernos 
+locales provinciales en el ámbito urbano y periurbano; y por los gobiernos locales 
+distritales en el ámbito rural. Cuando se trate de entidades prestadoras de régimen 
+privado el Gobierno Local deberá comunicar a la SUNASS para la acción de ley que 
+corresponda.  
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 17 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 16
+TÍTULO IV 
+VIGILANCIA SANITARIA  
+Artículo 13°.- Vigilancia Sanitaria  
+La vigilancia sanitaria del agua para consumo humano es una atribución de la 
+Autoridad de Salud, que se define y rige como: 
+1. 
+La sistematización de un conjunto de actividades realizadas por la Autoridad de 
+Salud, para identificar y evaluar factores de riesgo que se presentan en los 
+sistemas de abastecimiento de agua para consumo humano, desde la captación 
+hasta la entrega del producto al consumidor, con la finalidad de proteger la salud 
+de los consumidores en cumplimiento de los requisitos normados en este 
+Reglamento; 
+2. 
+Un sistema conducido por la Autoridad de Salud, el cual está conformado por 
+consumidores, proveedores, instituciones de salud y de supervisión  de ámbito 
+local, regional y nacional; y 
+3. 
+El establecimiento de prioridades y de estrategias para la prevención o 
+eliminación de los factores de riesgo en el abastecimiento del agua, que la 
+Autoridad de Salud establezca para el cumplimiento por el proveedor. 
+Artículo 14°.- Programa de vigilancia  
+La DIGESA y las Direcciones de Salud o las Direcciones Regionales de Salud o las 
+Gerencias Regionales de Salud en todo el país, administran el programa de vigilancia 
+sanitaria del abastecimiento del agua, concordante a sus competencias y con arreglo 
+al presente Reglamento. Las acciones del programa de vigilancia se organizan de 
+acuerdo a los siguientes criterios: 
+1. 
+Registro.- Identificación de los proveedores y caracterización de los sistemas de 
+abastecimiento de agua; 
+2. 
+Ámbito.-  Definición de las zonas de la actividad básica del programa de 
+vigilancia, distinguiendo el ámbito de residencia: urbano, peri urbano y rural, a fin 
+de determinar la zona de trabajo en áreas geográficas homogéneas en cuanto a 
+tipo de suministro, fuente y administración del sistema de abastecimiento del 
+agua; 
+3. 
+Autorización sanitaria : Permiso que otorga la autoridad de salud que verifica los 
+procesos de potabilización el agua para consumo humano, garantizando la 
+remoción de sustancias o elementos contaminantes para la protección de la 
+salud; 
+4. 
+Monitoreo.- 
+Seguimiento 
+y 
+verificación 
+de 
+parámetros 
+físicos, 
+químicos, 
+microbiológicos u otros señalados en el presente Reglamento, y de factores de 
+riesgo en los sistemas de abastecimiento del agua;  
+5. 
+Calidad del agua.- Determinación de la calidad del agua suministrada por el 
+proveedor, de acuerdo a los requisitos físicos, químicos, microbiológicos y 
+parasitológicos del agua para consumo humano establecidos en el presente 
+Reglamento; y 
+6. 
+Desarrollo de indicadores.- Procesamiento y análisis de los resultados de los 
+monitoreos de la calidad del agua, del sistema de abastecimiento y del impacto 
+en la morbilidad de las enfermedades de origen o vinculación al consumo del 
+agua. 
+ 
+ 
+
+===== PAGE 18 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 17
+Artículo 15°.- Sistema de información 
+La DIGESA norma, organiza y administra el Sistema Nacional de Información de la 
+vigilancia sanitaria del agua para consumo humano, a través de la estructura 
+orgánica de las DIRESAs, GRSs, DISAs, Gobiernos Locales, Proveedores, Organismos de 
+supervisión y Consumidores. 
+Artículo 16°.- Difusión de información 
+La DIGESA consolida la información nacional referente a la calidad del agua, así como 
+las autorizaciones y registros normados en este Reglamento, publicándose y 
+distribuyéndose periódicamente. La DISA o DIRESA  o GRS, según corresponda, 
+consolidará la información de su jurisdicción, para lo cual se ajustará a las directivas 
+que sobre la materia la DIGESA emita. 
+Artículo 17°.- Vigilancia epidemiológica  
+La Dirección General de Epidemiología (DGE) del Ministerio de Salud es responsable 
+de la organización y coordinación de la vigilancia epidemiológica de las 
+enfermedades vinculadas al consumo del agua y le corresponde: 
+1. 
+Definir y organizar el registro y la notificación de enfermedades indicadoras del 
+riesgo de transmisión de organismos patógenos por vía hídrica; 
+2. 
+Sistematizar las acciones de investigación para identificar y evaluar los factores de 
+riesgo y brotes de enfermedades de origen hídrico; 
+3. 
+Consolidar y suministrar información para establecer las prioridades y estrategias 
+para la prevención o eliminación de los factores que condicionan las 
+enfermedades de origen hídrico, en coordinación con la DIGESA; y 
+4. 
+Informar a la DIGESA los hallazgos de la vigilancia epidemiológica relacionados a 
+valores de parámetros de calidad de agua para consumo humano que cumplen 
+con lo dispuesto en el presente Reglamento pero que puedan constituir un riesgo 
+a la salud de las personas. 
+Artículo 18°.-  Vigilancia epidemiológica en el ámbito local 
+La Dirección General de Epidemiología del Ministerio de Salud dictará las normas y 
+guías para regular las acciones previstas en el artículo precedente. La DISA o DIRESA o 
+GRS, a través de la Dirección Ejecutiva de Epidemiología, o la que haga sus veces, 
+aplicará en su jurisdicción las normas y directivas para operar en el ámbito local el 
+sistema de vigilancia epidemiológica de enfermedades vinculadas al consumo del 
+agua, y coordinarán con la Dirección Ejecutiva de Salud Ambiental, o la que haga sus 
+veces, para tomar las medidas necesarias para la prevención de brotes epidémicos. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 19 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 18
+TÍTULO V 
+CONTROL Y SUPERVISION DE CALIDAD 
+Artículo 19°.- Control de calidad  
+El control de calidad del agua para consumo humano es ejercido por el proveedor en 
+el sistema de abastecimiento de agua potable. En este sentido, el proveedor a través 
+de sus procedimientos garantiza el cumplimiento de las disposiciones y requisitos 
+sanitarios del presente reglamento, y a través de prácticas de autocontrol, identifica 
+fallas y adopta las medidas correctivas necesarias para asegurar la inocuidad del 
+agua que provee. 
+Artículo 20°.- Supervisión de Calidad  
+La Autoridad de Salud, la SUNASS, y las Municipalidades en sujeción a sus 
+competencias de ley, supervisan en los sistemas de abastecimiento de agua para 
+consumo humano de su competencia el cumplimiento de las disposiciones y los 
+requisitos sanitarios del presente reglamento. 
+Artículo 21°.- Autocontrol de calidad  
+El autocontrol de la calidad del agua para consumo humano es una responsabilidad 
+del proveedor, que se define y rige como: 
+1. 
+El conjunto de actividades realizadas, para identificar, eliminar o controlar todo 
+riesgo en los sistemas de abastecimiento del agua, desde la captación hasta el 
+punto en donde hace entrega el producto al consumidor, sea éste en la conexión 
+predial, pileta pública, surtidor de tanques cisterna o el punto de entrega 
+mediante camión cisterna, para asegurar que el agua de consumo se ajuste a los 
+requisitos normados en el presente Reglamento; 
+2. 
+La verificación de la eficiencia y calidad sanitaria de los componentes del sistema 
+de abastecimiento;  
+3. 
+La sistematización de los reclamos y quejas de los consumidores sobre la calidad 
+del agua que se suministra u otros riesgos sanitarios generados por el sistema de 
+abastecimiento, a fin de adoptar las medidas correctivas correspondientes; y 
+4. 
+La aplicación del plan de contingencia para asegurar la calidad del agua para 
+consumo en casos de emergencia. 
+Artículo 22°.-  Plan de control de calidad del agua (PCC) 
+El autocontrol que el proveedor debe aplicar es sobre la base del Plan de Control de 
+Calidad (PCC) del sistema de abastecimiento del agua para consumo humano que se 
+sustenta en los siguientes principios: 
+1. 
+Identificación de peligros, estimación de riesgos y establecimiento de las medidas 
+para controlarlos; 
+2. 
+Identificación de los puntos donde el control es crítico para el manejo de la 
+inocuidad del agua para consumo humano; 
+3. 
+Establecimiento de límites críticos para el cumplimiento de los puntos de control; 
+4. 
+Establecimiento de procedimientos para vigilar el cumplimiento de los límites 
+críticos de los puntos de control; 
+5. 
+Establecimiento de medidas correctivas que han de adoptarse cuando el 
+monitoreo indica que un determinado punto crítico de control  no está 
+controlado; 
+
+===== PAGE 20 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 19
+6. 
+Establecimiento de procedimientos de comprobación para confirmar que el 
+sistema de análisis de peligros y de puntos críticos de control funciona en forma 
+eficaz; y 
+7. 
+Establecimiento de un sistema de documentación sobre todos los procedimientos 
+y los registros apropiados para estos principios y su aplicación. 
+Artículo 23°.-  Niveles de plan de control de calidad del agua 
+De acuerdo a los sistemas de abastecimiento y ámbitos de residencia, se establecen 
+tres niveles de planes de control de calidad: 
+1. 
+Plan de control de calidad de nivel I (PCC-I) 
+ 
+Proveedores que abastecen de agua mediante sistemas convencionales en áreas 
+urbanas y periurbanas; 
+2. 
+Plan de control de calidad de nivel II (PCC-II) 
+ 
+Proveedores que abastecen de agua mediante camiones cisternas u otros 
+servicios prestados en condiciones especiales en las áreas urbanas y periurbanas; 
+y 
+3. 
+Plan de control de calidad de nivel III (PCC-III) 
+ 
+Proveedores que abastecen de agua mediante sistemas convencionales y otros 
+servicios prestados en condiciones especiales en áreas rurales. 
+La Autoridad de Salud de nivel nacional normará los planes de control de calidad 
+descritos en el presente artículo. 
+Artículo 24°.-  Análisis de peligros y de puntos críticos de control 
+El plan de control de calidad señalado en el artículo 22° se aplica con arreglo a lo 
+siguiente: 
+1. 
+El proveedor prepara el plan de control de calidad del agua sustentado en el 
+análisis de peligros y de puntos críticos de control que incluye la fuente, la 
+captación, producción, sistema de tratamiento y sistema de distribución, 
+ciñéndose al presente Reglamento y la norma que emita la Autoridad de Salud de 
+nivel nacional; 
+2. 
+El proveedor presentará a la Dirección Regional de Salud o Gerencia Regional de 
+Salud o Dirección de Salud de la jurisdicción en donde opera, el plan de control 
+de calidad del agua sustentado en el análisis de peligros y de puntos críticos de 
+control, para fines de aprobación, registro y auditorías  correspondientes; 
+3. 
+El proveedor deberá efectuar periódicamente todas las verificaciones y controles 
+que sean necesarias para corroborar la correcta aplicación del plan de control 
+de calidad del agua sustentado en el análisis de peligros y de puntos críticos de 
+control; y 
+4. 
+Cada vez que ocurran cambios en las operaciones o procesos, tanto en el sistema 
+de tratamiento como en el sistema de distribución del agua, que modifique la 
+información sobre el análisis de riesgos en los puntos de control críticos, el 
+proveedor efectuará las verificaciones correspondientes orientadas a determinar 
+si el plan de control de calidad del agua sustentado en el análisis de peligros y de 
+puntos críticos de control es apropiado o requiere modificaciones para cumplir los 
+requerimientos sanitarios, los cuales  serán informados a la DIRESA o GRS o DISA. 
+Artículo 25°.-  Registro de información 
+Los proveedores del agua para consumo humano están obligados por un plazo no 
+menor de cinco (05) años a mantener toda la documentación relacionada con el 
+registro de la información que sustenta la aplicación del Plan de Control de la Calidad 
+
+===== PAGE 21 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 20
+del agua, consignando los  procedimientos de control y seguimiento de los puntos 
+críticos aplicados, los resultados obtenidos y las medidas correctivas adoptadas. La 
+información debe ser manejada en forma precisa y eficiente y estar a disposición de la 
+Autoridad de Salud, la SUNASS, la Municipalidad correspondiente y del Sistema de 
+Información Sectorial en Saneamiento (SIAS).  
+Artículo 26.-  Responsabilidad solidaria 
+El titular de la entidad proveedora y el profesional encargado del control de calidad, 
+son solidariamente responsables de la calidad e inocuidad del agua, que se entrega 
+para el consumo humano. Asimismo, esta disposición alcanza a los propietarios tanto 
+del surtidor como del camión cisterna cuando la provisión es mediante esta 
+modalidad. 
+Artículo 27°.- Programación de las acciones de supervisión 
+Las entidades a que se refiere el artículo 20 deberán programar las acciones de 
+supervisión para cada proveedor de su ámbito de competencia, las que incluyen la 
+fuente de agua, el sistema de tratamiento, sistema de almacenamiento y sistema de 
+distribución, de acuerdo a su competencia. La copia del reporte de la acción de 
+supervisión será remitida a la Autoridad de Salud de la jurisdicción. 
+Artículo 28°.- Programación de acciones de control adicionales  
+En aquellos sistemas de abastecimiento de agua para consumo humano donde se ha 
+comprobado la presencia de cualquiera de los parámetros que exceden los Límites 
+Máximos Permisibles señalados en el Anexo II y Anexo III del presente Reglamento, 
+serán objeto de acciones de control adicionales por parte del proveedor. 
+ 
+ 
+ 
+ 
+ 
+TÍTULO VI 
+FISCALIZACIÓN SANITARIA 
+Artículo 29°.- Fiscalización sanitaria 
+La fiscalización sanitaria en los sistemas de abastecimiento de agua para consumo 
+humano, es una atribución de la Autoridad de Salud competente, que comprende: 
+1. 
+Toda 
+acción 
+de 
+vigilancia 
+y/o 
+denuncia 
+que 
+determine 
+un 
+supuesto 
+incumplimiento de lo establecido en el presente Reglamento, genera las acciones 
+de fiscalización por la Autoridad de Salud; 
+2. 
+La verificación del cumplimiento de las medidas  preventivas y correctivas 
+establecidas en la acción de supervisión  y  la vigilancia sanitaria;  
+3. 
+Se inicia el Proceso Sancionador por incumplimiento de lo dispuesto en el presente 
+reglamento, estableciéndose las medidas correctivas indicadas en el numeral 
+anterior o de las disposiciones técnicas o formales señaladas en el presente 
+Reglamento; y  
+4. 
+La imposición de medidas de seguridad y sanciones a los proveedores en sujeción 
+a las disposiciones establecidas en el Título X del presente Reglamento y a las 
+normas legales señaladas en la cuarta disposición complementaria, transitoria y 
+final del presente Reglamento en lo que corresponda. 
+ 
+
+===== PAGE 22 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 21
+Artículo 30°.- De la implementación de medidas correctivas 
+Al recibir el informe técnico de la acción de  supervisión o vigilancia del 
+incumplimiento de alguna de las disposiciones del presente Reglamento, la DISA o la 
+DIRESA o GRS comunicará al proveedor la implementación de las medidas correctivas 
+en un plazo razonable a fin de prevenir o controlar cualquier factor de riesgo a la salud 
+de la población; si dichas medidas no son atendidas en el plazo establecido; se 
+aplicarán las sanciones de acuerdo a lo indicado en el Título X del presente 
+Reglamento. 
+Artículo 31°.- Resarcimiento en caso de brotes epidémicos 
+Los daños que ocasione el proveedor a la población por todo brote epidémico de 
+enfermedades cuya transmisión se ha originado por el sistema de abastecimiento de 
+agua para consumo humano, deben ser resarcidos en la forma y modo previsto en la 
+legislación vigente. 
+Artículo 32°.- Supervisión de autorizaciones y registros 
+Toda autorización o registro que la DIGESA emita al amparo del presente Reglamento 
+será puesto en conocimiento de la DIRESA o GRS  o DISA correspondiente, para fines 
+de supervisión u otras acciones que requiera realizar la Autoridad de Salud de la 
+jurisdicción. 
+ 
+ 
+ 
+ 
+ 
+TÍTULO VII 
+APROBACIÓN, REGISTRO Y AUTORIZACIÓN SANITARIA 
+Artículo 33°.- Administración de la autorización y registro 
+La Autoridad de Salud de nivel nacional norma los aspectos técnicos y formales para 
+las autorizaciones y registros señalados en el presente Reglamento. 
+Artículo 34°.- Requisitos sanitarios para los sistemas de abastecimiento de agua para 
+consumo humano 
+Todo sistema de abastecimiento de agua para consumo humano existente, nuevo, 
+ampliación o mejoramiento debe contar con registro de sus fuentes, registro del 
+sistema de abastecimiento y autorización sanitaria de sistemas de tratamiento, plan de 
+control de calidad (PCC), a fin de garantizar la inocuidad del agua de consumo 
+humano para la protección de la salud según lo señalado en el Anexo V. 
+Artículo 35°.- Registro de sistemas de abastecimiento de agua  
+35.1 La DIRESA, GRS o DISA es responsable en su jurisdicción de otorgar registro a los 
+sistemas de abastecimiento de agua para consumo humano que son 
+administrados 
+por 
+empresas 
+privadas 
+o 
+públicas, 
+municipales, 
+juntas 
+administradoras u otra organización comunal que haga dicha función en sujeción 
+al presente Reglamento y las normas técnicas que se emitan.  
+35.2 Para otorgar dicho registro la Autoridad de Salud correspondiente, deberá 
+evaluar: 
+
+===== PAGE 23 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 22
+1. El informe de la fuente del agua del sistema de abastecimiento, el cual deberá 
+incluir la calidad físico-química, bacteriológica y parasitológica expedido por 
+un laboratorio; caudal promedio y tipo de captación;  
+2. Memoria descriptiva del sistema de abastecimiento del agua para consumo 
+humano, el cual describirá por lo menos los componentes del sistema, 
+distinguiendo el tratamiento de la distribución; población atendida; tipos de 
+suministro: 
+conexiones 
+prediales, 
+piletas, 
+surtidores 
+u 
+otros; 
+cobertura; 
+continuidad del servicio y calidad del agua suministrada; y 
+3. Otros requisitos que la DIGESA establezca. 
+35.3 Toda entidad o institución que financie y/o ejecute la construcción de sistemas de 
+abastecimiento de agua, está obligada a asegurar el registro del sistema previo a 
+la entrega de la obra a los proveedores, en concordancia a la disposición del 
+presente artículo. 
+35.4 La DIGESA consolidará anualmente la información de la DIRESAs, GRSs y DISAs 
+respecto a los sistemas de abastecimiento de agua registrados, debiendo remitir 
+este compendio al Viceministerio de Construcción y Saneamiento del Ministerio de 
+Vivienda, Construcción y Saneamiento cada mes de marzo para su uso en la 
+planificación de sus planes sectoriales. 
+Artículo 36°.- Registro de las fuentes de agua para consumo humano 
+El expediente para el registro de la fuente de agua, otorgada por la DIRESA, GRS o 
+DISA, deberá contar con la licencia de uso de agua emitida por el sector 
+correspondiente,  estudio de factibilidad de fuentes de agua; la caracterización de la 
+calidad física, química, microbiológica y parasitológica de la fuente seleccionada, la 
+que estará sustentada con análisis realizados por un laboratorio acreditado en los 
+métodos de análisis de agua para consumo humano; además de otros requisitos 
+técnicos y formales que la legislación de la materia imponga.  
+Artículo 37°.- Autorización sanitaria del sistema de tratamiento de agua.  
+El expediente para la autorización sanitaria del sistema de tratamiento de agua para 
+consumo humano, existente, nuevo, ampliación o mejoramiento a ser presentado en 
+la DIGESA deberá contar con el registro de la fuente de agua; además de otros 
+requisitos técnicos y formales que la legislación de la materia imponga. 
+Artículo 38°.- Registro sanitario de desinfectantes y otros insumos utilizados en el 
+tratamiento del agua para consumo humano 
+Las empresas dedicadas a la producción y comercialización de desinfectantes u otros 
+insumos químicos o bioquímicos utilizados en el tratamiento del agua para consumo 
+humano, están obligadas a inscribir sus productos en el registro sanitario que la DIGESA 
+administra. 
+Artículo 39°.- Autorización sanitaria de estaciones de surtidores y proveedores 
+mediante camiones cisterna u otros medios en condiciones especiales de distribución 
+de agua 
+La DIRESA o GRS o DISA en su jurisdicción otorgará la respectiva autorización sanitaria a 
+la estación de surtidores de agua y proveedores mediante camiones cisterna u otros 
+medios en condiciones especiales de distribución del agua para consumo humano, 
+con sujeción al presente Reglamento y las normas técnicas que se emitan, el cual será 
+requisito para la licencia de funcionamiento o documento equivalente expedido por 
+la municipalidad de la jurisdicción. La copia de la autorización señalada en este 
+artículo deberá ser remitida a la DIGESA.  
+
+===== PAGE 24 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 23
+Artículo 40°.- Aprobación del plan de control de calidad 
+1. 
+Todo proveedor formulará su Plan de Control de Calidad de agua para consumo 
+humano de acuerdo a las normas sanitarias establecidas en el presente 
+Reglamento y las específicas que emita la Autoridad de Salud de nivel nacional, el 
+cual debe estar suscrito, por un ingeniero sanitario colegiado habilitado o 
+ingeniero colegiado habilitado de otra especialidad afín con especialización en 
+tratamiento de agua otorgado por una universidad y/o experiencia acreditada, 
+quien será responsable de la formulación y de la dirección técnica del mismo; 
+2. 
+El plan de control de calidad debe establecer el programa de monitoreo de los 
+parámetros de control obligatorio. También serán incluidos como obligatorios los 
+parámetros adicionales de control establecidos en este Reglamento, cuando los 
+resultados del estudio de caracterización del agua (físico-química, microbiológica 
+y parasitológica) sustentados con análisis realizados en un laboratorio que cumpla 
+con lo dispuesto en el artículo 72° verifiquen niveles que sobrepasen los límites 
+máximos permisibles, establecidos en el presente reglamento o se determine el 
+riesgo a través de la acción de vigilancia y supervisión y de las actividades de la 
+cuenca; 
+3. 
+El plan de control de calidad así como el estudio de caracterización se aplicará 
+en la fuente, a la salida del sistema de tratamiento, el almacenamiento, sistema 
+de distribución y hasta la caja de registro o en su ausencia hasta el límite del 
+predio del usuario; 
+4. 
+El proveedor presentará a la Autoridad de Salud de la jurisdicción su plan de 
+control de calidad para su respectiva aprobación mediante Resolución Directoral; 
+y 
+5. 
+Para aquellas comunidades con población menor o igual a 2000 habitantes 
+considerando las condiciones de pobreza, el Ministerio de Salud en coordinación 
+con el Gobierno Regional, a través de la Gerencia Regional de Vivienda brindará 
+la asistencia técnica para la aprobación del Plan de Control de Calidad, que se 
+ajustarán a la directiva que para tales efectos elaborará el Ministerio de Salud. 
+Artículo 41°.-  Los procedimientos para aprobación, autorización y registro 
+Los procedimientos administrativos de aprobación, autorización y registro, están sujetos 
+al presente reglamento y a las demás disposiciones pertinentes según corresponda. 
+Para el caso de lo establecido en los artículos 34°, 35°, 36°, 37°, 38° y 39° del presente 
+Reglamento, los documentos técnicos deberán estar suscritos por el Ingeniero Sanitario 
+Colegiado o ingeniero colegiado habilitado de otra especialidad afín con 
+especialización en tratamiento de agua otorgado por una universidad y/o experiencia 
+acreditada, quien deberá ser responsable del proyecto o de la actividad. 
+Artículo 42°.- Requisitos para aprobación, autorización y registro 
+La DIGESA de acuerdo a su competencia señalada en el presente Reglamento, 
+establecerá los requisitos correspondientes que los administrados deberán presentar 
+para solicitar aprobación, autorización o registro que el presente Reglamento ha 
+establecido, los que estarán descritos en el Texto Único de Procedimientos 
+Administrativos -TUPA de la institución. 
+ Artículo 43°.- Vigencia y renovación de la autorización y registro  
+Las autorizaciones y los registros normados en el presente Reglamento tienen una 
+vigencia de cuatro (04) años contados a partir de la fecha de su otorgamiento; con 
+excepción del registro para estaciones de surtidores y camiones cisterna, los cuales 
+tendrán una vigencia de dos (02) años y con excepción de la aprobación del Plan de 
+
+===== PAGE 25 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 24
+Control de Calidad previsto en el artículo 40º cuya vigencia será de acuerdo a lo 
+señalado en el artículo 53º del presente Reglamento. 
+La renovación de la misma será previa solicitud presentada por el titular o 
+representante legal, con seis (06) meses de anterioridad a la fecha de su vencimiento. 
+Artículo 44°.- De la tramitación para la exoneración de pagos 
+Los sistemas de abastecimiento de agua de las comunidades del ámbito rural, 
+administrados por juntas administradoras u otra organización comunal, que hayan sido 
+financiados por el gobierno local con recursos del Fondo de Compensación Municipal 
+o por la misma comunidad, podrán estar exceptuados del pago de todo derecho 
+administrativo que se origine por este Reglamento, mediante Ley expresa.  
+ 
+ 
+ 
+ 
+TÍTULO VIII 
+ABASTECIMIENTO DE AGUA, PROVEEDOR Y CONSUMIDOR 
+Capítulo I 
+Sistema de Abastecimiento de Agua 
+Artículo 45°.-  Sistema de abastecimiento de agua 
+Para efectos de la aplicación del presente Reglamento, se define como sistema de 
+abastecimiento de agua para consumo humano, al conjunto de componentes 
+hidráulicos e instalaciones físicas que son accionadas por procesos operativos, 
+administrativos y equipos necesarios desde la captación hasta el suministro del agua 
+mediante conexión domiciliaria, para un abastecimiento convencional cuyos 
+componentes cumplan las normas de diseño del Ministerio de Vivienda Construcción y 
+Saneamiento; así como aquellas modalidades que no se ajustan a esta definición, 
+como el abastecimiento mediante camiones cisterna u otras alternativas, se 
+entenderán como servicios en condiciones especiales.  
+Artículo 46°.-  Tipos de suministro 
+El sistema de abastecimiento de agua atiende a los consumidores a través de los 
+siguientes tipos de suministro: 
+1. 
+Conexiones domiciliarias; 
+2. 
+Piletas públicas; 
+3. 
+Camiones cisterna; y 
+4. 
+Mixtos, combinación de  los anteriores. 
+En caso que el abastecimiento sea directo mediante pozo, lluvia, río, manantial entre 
+otros, se entenderá como recolección individual el tipo de suministro. 
+Artículo 47°.-  Componentes hidráulicos del sistema de abastecimiento 
+Los principales componentes hidráulicos en los sistemas de abastecimiento de agua 
+para consumo humano, de acuerdo al tipo de suministro, son los siguientes: 
+1. 
+Estructuras de captación para aguas superficiales o subterráneas; 
+2. 
+Pozos; 
+3. 
+Reservorios; 
+
+===== PAGE 26 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 25
+4. 
+Cámaras de bombeos y rebombeo; 
+5. 
+Cámara rompe presión; 
+6. 
+Planta de tratamiento;  
+7. 
+Líneas de aducción, conducción y red de distribución; 
+8. 
+Punto de suministro; y 
+9. 
+Otros. 
+Artículo 48°.- Requisitos sanitarios de los componentes de los sistemas de 
+abastecimiento de agua  
+La Autoridad de Salud del nivel nacional normará los requisitos sanitarios que deben 
+reunir los componentes de los sistemas de abastecimiento de agua para consumo 
+humano en concordancia con las normas de diseño del Ministerio de Vivienda, 
+Construcción y Saneamiento, los que serán vigilados por la Autoridad de Salud del 
+nivel regional, los mismos que deberá considerar sistemas de protección, condiciones 
+sanitarias internas y externas de las instalaciones, sistema de desinfección y otros 
+requisitos de índole sanitario. 
+ 
+Capítulo II 
+Del Proveedor del Agua para Consumo Humano 
+Artículo 49.-  Proveedor del agua para consumo humano 
+Para efectos del presente Reglamento deberá entenderse como proveedor de agua 
+para consumo humano, a toda persona natural o jurídica bajo cualquier modalidad 
+empresarial, junta administradora, organización vecinal, comunal u otra organización 
+que provea agua para consumo humano. Así como proveedores de servicios en 
+condiciones especiales. 
+Artículo 50°.- Obligaciones del proveedor  
+El proveedor de agua para consumo humano está obligado a: 
+1. 
+Suministrar agua para consumo humano cumpliendo con los requisitos físicos, 
+químicos, 
+microbiológicos 
+y 
+parasitológicos 
+establecidos 
+en 
+el 
+presente 
+Reglamento; 
+2. 
+Controlar la calidad del agua que suministra para el consumo humano de 
+acuerdo a lo normado en el presente Reglamento; 
+3. 
+Inscribirse en los registros que la Autoridad de Salud administra en sujeción al 
+presente Reglamento;  
+4. 
+Suministrar a la Autoridad de Salud y al órgano de control toda información 
+vinculada con el control de calidad del agua, con carácter de declaración 
+jurada; 
+5. 
+Colaborar en las acciones de protección y recuperación de las fuentes hídricas 
+que la autoridad establezca;  
+6. 
+Informar a la Autoridad de Salud y al órgano de control así como a los 
+consumidores de las alteraciones, modificaciones o contingencias presentadas en 
+el servicio de suministro del agua en forma oportuna e indicando las medidas 
+preventivas y correctivas a tomar; 
+
+===== PAGE 27 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 26
+7. 
+Obtener los registros, aprobaciones y autorizaciones sanitarias que establece el 
+presente Reglamento;  
+8. 
+Brindar las facilidades que se requiera a los representantes autorizados del órgano 
+de supervisión  y de salud, para realizar las acciones de vigilancia y supervisión; y 
+9. 
+Cumplir con las demás disposiciones del presente Reglamento y de las normas 
+técnicas que emitan la autoridad de salud de nivel nacional.  
+Artículo 51°.- Uso de desinfectantes y otros insumos químicos 
+Todo proveedor de agua para consumo humano sólo podrá hacer uso de aquellos 
+desinfectantes, insumos químicos y bioquímicos que posean registro sanitario.  
+Articulo 52°.- Obligatoriedad de cumplimiento del plan de control de calidad 
+El proveedor es responsable por la calidad del agua para consumo humano que 
+suministra y está obligado a aplicar un plan de control de calidad (PCC), que incluya 
+la fuente, la captación, producción y distribución, a fin de asegurar el cumplimiento 
+de los requisitos de calidad del agua establecidos en el presente Reglamento.  
+Artículo 53°.-  Presentación del plan de control de calidad 
+El plan de control de calidad del agua para consumo humano que el proveedor 
+aplica debe ser formulado de acuerdo a lo dispuesto en el presente Reglamento y a 
+las normas técnicas que  emita la Autoridad de Salud de nivel nacional.  Dicho plan se 
+formulará sobre la base del análisis de riesgos verificados a partir de una 
+caracterización del agua o se determine el riesgo a través de la acción de vigilancia y 
+supervisión y de las actividades de la cuenca que establezca los parámetros 
+microbiológicos, inorgánicos, orgánicos y organolépticos y los puntos de muestreo o 
+críticos de control del sistema de abastecimiento, y será el patrón de referencia para 
+la posterior acción de supervisión y vigilancia sanitaria. Los planes de control de 
+calidad, deberán: 
+1. 
+Ser aprobados por la Dirección Regional de Salud o Gerencia Regional de Salud o 
+Dirección de Salud de la jurisdicción donde desarrolla la actividad el proveedor, 
+por un periodo de vigencia que determinará dicha Autoridad de Salud; 
+2. 
+La vigencia señalada en el numeral precedente está entre dos (02) a seis (06) 
+años, considerándose el tipo de fuente, tamaño y complejidad del sistema de 
+abastecimiento; y 
+3. 
+El proveedor iniciará la gestión para la renovación de la vigencia del plan de 
+control de la calidad ante la Autoridad de Salud, seis (06) meses antes de la fecha 
+de vencimiento de la Resolución Directoral con la que fue aprobada. 
+Artículo 54°.-  Plan de contingencia 
+En casos de emergencia tales como desastres naturales, sequías u otras causas el 
+proveedor aplicará su plan de contingencia consignado en los instrumentos 
+ambientales aprobados por el Ministerio de Vivienda, Construcción y Saneamiento, 
+con el propósito de asegurar el suministro y la calidad del agua durante el periodo que 
+dure la emergencia. Dicho plan identificará las fuentes alternas y tratamiento que 
+permita que la calidad del agua a ser suministrada cumpla con las normas del Título IX 
+del presente Reglamento.                           
+ 
+ 
+ 
+
+===== PAGE 28 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 27
+Artículo 55.-  Comunidades del ámbito rural 
+Cuando se tenga que normar, vigilar, supervisar, fiscalizar y autorizar los aspectos 
+sanitarios de los sistemas de tratamiento de agua para consumo humano que son 
+administrados por juntas administradoras u otra organización comunal, se deberá tener 
+en cuenta las condiciones socioeconómicas e infraestructura rural, sin afectar la 
+calidad del agua a suministrar a la población.  
+ 
+Capítulo III 
+Del Consumidor 
+Artículo 56°.- Obligaciones y derechos del consumidor  
+El consumidor tiene derecho y está obligado a: 
+1. Comunicar a los proveedores, la municipalidad, la SUNASS y a la Autoridad de 
+Salud, cuando detecte cualquier alteración organoléptica en el agua o falla en el 
+sistema; 
+2. Almacenar el agua para consumo humano con el cuidado necesario a fin de 
+evitar la contaminación, aplicando hábitos de higiene adecuados y previendo 
+depósitos con cierre o tapa segura;  
+3. Facilitar las labores de inspección al personal técnico de las entidades 
+proveedoras y a las  autoridades de salud y de supervisión , debidamente 
+identificados;  
+4. Cumplir las disposiciones referidas al pago de la tarifa o cuota aprobada del 
+suministro para contribuir con la sostenibilidad de calidad del agua;  
+5. Participar en campañas de protección y uso del agua, que las autoridades 
+competentes promuevan;  
+6. Contar con un suministro de agua para consumo humano que cumpla con los 
+requisitos establecidos en el presente Reglamento;  
+7. Acceder a la información sobre la calidad del agua en forma gratuita y oportuna; 
+y 
+8. Hacer uso racional del agua y acatar las disposiciones que la Autoridad Sanitaria 
+disponga en caso de emergencia. 
+Artículo 57°.- Precauciones en casos de corte de servicio 
+En caso de almacenamiento debido al corte de servicio, el consumidor podrá hacer 
+uso de aquellos desinfectantes que cuenten con registro sanitario que otorga la 
+DIGESA. Cuando éstos son soluciones cloradas, el consumidor deberá tomar las 
+precauciones que la Autoridad de Salud ha establecido o las instrucciones que están 
+consignadas en él rotulo del producto, con respecto al uso de las cantidades para 
+asegurar una concentración adecuada. 
+Artículo 58°.- Precauciones en casos de emergencia 
+En casos de desastres naturales, sequías u otras causas, el consumidor, deberá hervir el 
+agua antes de consumirla y tomar los máximos cuidados de higiene en su 
+manipulación. 
+ 
+ 
+
+===== PAGE 29 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 28
+TÍTULO IX 
+REQUISITOS DE CALIDAD  
+DEL AGUA PARA CONSUMO HUMANO 
+Artículo 59°.- Agua apta para el consumo humano 
+Es toda agua inocua para la salud que cumple los requisitos de calidad establecidos 
+en el presente Reglamento. 
+Artículo 60°.- Parámetros microbiológicos y otros organismos 
+Toda agua destinada para el consumo humano, como se indica en el Anexo I, debe 
+estar exenta de: 
+1. 
+Bacterias coliformes totales, termotolerantes  y  Escherichia coli,  
+2. 
+Virus; 
+3. 
+Huevos y larvas de helmintos, quistes y ooquistes de protozoarios patógenos;  
+4. 
+Organismos de vida libre, como algas, protozoarios, copépedos, rotíferos y 
+nemátodos en todos sus estadios evolutivos; y  
+5. 
+Para el caso de Bacterias Heterotróficas menos de 500 UFC/ml a 35°C. 
+Artículo 61°.- Parámetros de calidad organoléptica 
+El noventa por ciento (90%) de las muestras tomadas en la red de distribución en cada 
+monitoreo establecido en el plan de control, correspondientes a los parámetros 
+químicos que afectan la calidad estética y organoléptica del agua para consumo 
+humano, no deben exceder las concentraciones o valores señalados en el Anexo II del 
+presente Reglamento. Del diez por ciento (10%) restante, el proveedor evaluará las 
+causas que originaron el incumplimiento y tomará medidas para cumplir con los 
+valores establecidos en el presente Reglamento. 
+Artículo 62°.- Parámetros inorgánicos y orgánicos 
+Toda agua destinada para el consumo humano, no deberá exceder los límites 
+máximos permisibles para los parámetros inorgánicos y orgánicos señalados en la 
+Anexo III del presente Reglamento. 
+Artículo 63°.- Parámetros de control obligatorio (PCO) 
+Son parámetros de control obligatorio para todos los proveedores de agua, los 
+siguientes: 
+1. 
+Coliformes totales; 
+2. 
+Coliformes termotolerantes; 
+3. 
+Color; 
+4. 
+Turbiedad;  
+5. 
+Residual de desinfectante; y 
+6. 
+pH. 
+En caso de resultar positiva la prueba de coliformes termotolerantes, el proveedor 
+debe realizar el análisis de bacterias Escherichia coli, como prueba confirmativa de la 
+contaminación fecal. 
+ 
+
+===== PAGE 30 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 29
+Artículo 64°.- Parámetros adicionales de control obligatorio (PACO) 
+De comprobarse en los resultados de la caracterización del agua la presencia de los 
+parámetros señalados en los numerales del presente artículo, en los diferentes puntos 
+críticos de control o muestreo del plan de control de calidad (PCC) que exceden los 
+límites máximos permisibles (LMP) establecidos en el presente Reglamento, o a través 
+de la acción de vigilancia y supervisión y de las actividades de la cuenca, se 
+incorporarán éstos como parámetros adicionales de control (PACO) obligatorio a los 
+indicados en el artículo precedente. 
+1. 
+Parámetros microbiológicos 
+Bacterias heterotróficas; virus; huevos y larvas de helmintos, quistes y ooquistes de 
+protozoarios patógenos; y organismos de vida libre, como algas, protozoarios, 
+copépedos, rotíferos y nemátodos en todos sus estadios evolutivos.  
+2. 
+Parámetros organolépticos 
+Sólidos totales disueltos, amoniaco, cloruros, sulfatos, dureza total, hierro, 
+manganeso, aluminio, cobre, sodio y zinc, conductividad; 
+3. 
+Parámetros inorgánicos 
+Plomo, arsénico, mercurio, cadmio, cromo total, antimonio, níquel, selenio, bario, 
+fluor y cianuros, nitratos, boro, clorito clorato, molibdbeno y uranio. 
+4. 
+Parámetros radiactivos 
+Esta condición permanecerá hasta que el proveedor demuestre que dichos 
+parámetros cumplen con los límites establecidos en la presente norma, en un plazo 
+que la Autoridad de Salud de la jurisdicción determine. 
+En caso tengan que hacerse análisis de los parámetros orgánicos del Anexo III y que 
+no haya capacidad técnica para su determinación en el país, el proveedor de 
+servicios se hará responsable de cumplir con esta caracterización, las veces que la 
+autoridad de salud determine.  
+En caso que el proveedor excediera los plazos que la autoridad ha dispuesto para 
+cumplir con los LMP para el parámetro adicional de control, la Autoridad de Salud 
+aplicará medidas preventivas y correctivas que correspondan de acuerdo a ley sobre 
+el proveedor, y deberá efectuar las coordinaciones necesarias con las autoridades 
+previstas en los artículos 10°, 11° y 12° del presente Reglamento, para tomar medidas 
+que protejan la salud y prevengan todo brote de enfermedades causado por el 
+consumo de dicha agua. 
+Artículo 65º.- Parámetros inorgánicos y orgánicos adicionales de control 
+Si en la vigilancia sanitaria o en la acción de supervisión  del agua para consumo 
+humano de acuerdo al plan de control de calidad (PCC) se comprobase la presencia 
+de cualquiera de los parámetros que exceden los LMP señalados en el Anexo III del 
+presente Reglamento, la Autoridad de Salud y los proveedores de agua procederán 
+de acuerdo a las disposiciones señaladas en el artículo precedente.  
+Artículo 66°.- Control de desinfectante 
+Antes de la distribución del agua para consumo humano, el proveedor realizará la 
+desinfección con un desinfectante eficaz para eliminar todo microorganismo y dejar 
+un residual a fin de proteger el agua de posible contaminación microbiológica en la 
+distribución. En caso de usar cloro o solución clorada como desinfectante, las muestras 
+tomadas en cualquier punto de la red de distribución, no deberán contener menos de 
+0.5 mgL-1 de cloro residual libre en el noventa por ciento (90%) del total de muestras 
+tomadas durante un mes. Del diez por ciento (10%) restante, ninguna debe contener 
+menos de 0.3 mgL-1 y la turbiedad deberá ser menor de 5 unidad nefelométrica de 
+turbiedad (UNT). 
+
+===== PAGE 31 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 30
+Artículo 67°.- Control por contaminación microbiológica 
+Si en una muestra tomada en la red de distribución se detecta la presencia de 
+bacterias 
+totales 
+y/o 
+coliformes 
+termotolerantes, 
+el 
+proveedor 
+investigará 
+inmediatamente las causas para adoptar las medidas correctivas, a fin de eliminar 
+todo riesgo sanitario, y garantizar que el agua en ese punto tenga no menos de 0.5 
+mgL-1 de cloro residual libre. Complementariamente se debe recolectar muestras 
+diarias en el punto donde se detectó el problema, hasta que por lo menos en dos 
+muestras consecutivas no se presenten bacterias coliformes totales ni termotolerantes. 
+Artículo 68°.- Control de parámetros químicos  
+Cuando se detecte la presencia de uno o más parámetros químicos que supere el 
+límite  máximo  permisible, en una muestra tomada en la salida de la planta de 
+tratamiento, fuentes subterráneas, reservorios o en la red de distribución, el proveedor 
+efectuará un nuevo muestreo y de corroborarse el resultado del primer muestreo 
+investigará las causas para adoptar las medidas correctivas, e inmediatamente 
+comunicará a la Autoridad de Salud de la jurisdicción, bajo responsabilidad, a fin de 
+establecer medidas sanitarias para proteger la salud de los consumidores y otras que 
+se requieran en coordinación con otras instituciones del sector. 
+Artículo 69°.- Tratamiento del agua cruda  
+El proveedor suministrará agua para consumo humano previo tratamiento del agua 
+cruda. El tratamiento se realizará de acuerdo a la calidad del agua cruda, en caso que 
+ésta provenga de una fuente subterránea  y cumpla los límites máximos permisibles (LMP) 
+señalados en los Anexos del presente Reglamento, deberá ser desinfectada previo al 
+suministro a los consumidores.  
+Artículo 70°.-  Sistema de tratamiento de agua 
+El Ministerio de Salud a través de la DIGESA emitirá la norma sanitaria que regula las 
+condiciones que debe presentar un sistema de tratamiento de agua para consumo 
+humano en concordancia con las normas técnicas de diseño del MVCS, tanto para el 
+ámbito urbano como para el ámbito rural. 
+Artículo 71.- Muestreo, frecuencia y análisis de parámetros 
+La frecuencia de muestreo, el número de muestras y los métodos analíticos 
+correspondientes para cada parámetro normado en el presente Reglamento, serán 
+establecidos mediante Resolución Ministerial del Ministerio de Salud, la misma que 
+deberá estar sustentada en un informe técnico emitido por DIGESA.  
+Artículo 72°.- Pruebas analíticas confiables  
+Las pruebas analíticas deben realizarse en laboratorios que tengan como responsables 
+de los análisis a profesionales colegiados habilitados de ciencias e ingeniería, además 
+deben contar con métodos, procedimientos y técnicas debidamente confiables y 
+basados en métodos normalizados para el análisis de agua para consumo humano de 
+reconocimiento internacional, en donde aseguren que los límites de detección del 
+método para cada parámetro a analizar estén por debajo de los límites máximos 
+permisibles señalados en el presente Reglamento. 
+Las indicaciones señaladas en el párrafo anterior son aplicables para el caso de los 
+parámetros orgánicos del Anexo III y radioactivos del Anexo IV que tengan que ser 
+determinados en laboratorios del  exterior. 
+ 
+ 
+
+===== PAGE 32 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 31
+Artículo 73°.- Excepción por desastres naturales 
+En caso de emergencias por desastres naturales, la DIRESA o GRS o la DISA podrán 
+conceder excepciones a los proveedores en cuanto al cumplimiento de las 
+concentraciones de los parámetros establecidos en el Anexo II del presente Reglamento 
+siempre y cuando no cause daño a la salud, por el periodo que dure la emergencia, la 
+misma que comunicará a la Autoridad de Salud de nivel nacional. 
+Artículo 74º.- Revisión de los requisitos de calidad del agua   
+Los requisitos de calidad del agua para consumo humano establecidos por el presente 
+Reglamento se someterán a  revisión  por la Autoridad de Salud del nivel nacional, cada 
+cinco (05) años.  
+Artículo 75º.- Excepción para LMP de parámetros químicos asociados a la calidad 
+estética y organoléptica 
+Los proveedores podrán solicitar temporalmente a la Autoridad de Salud la excepción 
+del cumplimiento de los valores límites máximos permisibles de parámetros químicos 
+asociados a la calidad estética y organoléptica, señalados en la Anexo II. Dicha solicitud 
+deberá estar acompañada de un estudio técnico que sustente que la salud de la 
+población no está en riesgo por el consumo del agua suministrada y que la característica 
+organoléptica es de aceptación por el consumidor. 
+ 
+ 
+ 
+ 
+ 
+TÍTULO X 
+MEDIDAS DE SEGURIDAD Y SANCIONES 
+Artículo 76°.- De las medidas de seguridad  
+Las medidas de seguridad que podrán disponerse cuando la calidad de agua de 
+consumo humano represente riesgo significativo a la salud de las personas son las 
+siguientes: 
+1. 
+Comunicación, a través de los medios masivos de difusión que se tenga a 
+disposición en la localidad afectada, sobre el peligro de daño a la salud de la 
+población; 
+2. 
+Incremento de la cobertura y frecuencia del control o de la vigilancia sanitaria; 
+3. 
+Suspensión temporal del servicio; 
+4. 
+Cierre parcial del sistema de tratamiento o de distribución de agua; y 
+5. 
+Otras medidas que la Autoridad de Salud disponga para evitar que se cause daño 
+a la salud de la población. 
+Las medidas de seguridad son adoptadas por las entidades responsables y/o que 
+participan en la gestión de la calidad de agua de consumo humano. 
+Artículo 77°.- De las infracciones 
+Sin perjuicio de las acciones constitucionales, civiles o penales a que hubiere lugar, se 
+considera infracción, toda acción u omisión de los proveedores de agua o entidades 
+que administran sistemas de agua para consumo humano, así como de los 
+consumidores que incumplieren o infringieren las disposiciones contenidas en el 
+
+===== PAGE 33 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 32
+presente Reglamento y sus normas correspondientes. Constituyen infracciones, según 
+corresponda, las siguientes: 
+1. 
+Infracciones leves: 
+a. 
+Proveedores que no proporcionen la información solicitada por las 
+autoridades señaladas en el presente Reglamento; 
+b. 
+Proveedores que no informen a la población sobre la calidad del agua de 
+consumo humano, a través de medio escrito u otro  medio adecuado para el 
+consumidor;  
+c. 
+Consumidor que no utilice el agua para consumo humano de acuerdo a lo 
+señalado en el artículo 56° y siguientes del presente Reglamento; y, 
+d. 
+Otras infracciones al presente Reglamento y a las normas sanitarias que emita 
+la Autoridad de Salud, que no revistan mayor riesgo en la calidad del agua 
+para consumo humano. 
+ 2. Infracciones graves: 
+a. 
+Proveedor que no informe y oriente a la población la ocurrencia de un caso 
+fortuito o de fuerza mayor que afecte el abastecimiento del agua para 
+consumo humano; 
+b. 
+Incumplimiento de los requisitos sanitarios que deben reunir los componentes 
+hidráulicos e instalaciones físicas de los sistemas de abastecimiento de agua; 
+c. 
+Negligencia en el mantenimiento, funcionamiento y control del sistema de 
+abastecimiento de agua para consumo humano; 
+d. 
+Proveedor que no cuente  con la información que sustenta la aplicación del 
+plan de control de la calidad del agua; 
+e. 
+Proveedor que no esté inscrito en el registro de la Autoridad de Salud; 
+f. 
+Proveedor que no cumpla con la presentación de resultados de laboratorio 
+sustentado en pruebas analíticas confiables; 
+g. 
+Proveedor que no cumpla con el resarcimiento de los daños ocasionados a la 
+población afectada en caso de brote epidémico de origen hídrico; 
+h. 
+El uso de desinfectantes u otros insumos químicos o bioquímicos utilizados en el 
+tratamiento del agua para consumo humano, que no estén autorizados por la 
+DIGESA; 
+i. 
+Proveedor que no cuente con su plan de contingencia;  
+j. 
+Proveedores que no atiendan reclamos de consumidores dentro de un plazo 
+no mayor de 72 horas bajo responsabilidad sobre la calidad del agua 
+suministrada; 
+k. 
+Proveedor que impida, obstaculice o interfiera las labores de supervisión y 
+fiscalización sanitaria del Sector; 
+l. 
+Toda persona que altere la calidad del agua por actos indebidos en alguno 
+de los componentes del sistema de abastecimiento de agua para consumo 
+humano; y 
+m.   Otras infracciones al presente Reglamento y a las normas sanitarias que emita 
+la Autoridad de Salud, que generen riesgos a la calidad del agua para 
+consumo humano. 
+ 
+ 
+
+===== PAGE 34 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 33
+3. 
+Infracciones muy graves: 
+a. 
+Proveedor que suministre agua sin cumplir los requisitos de calidad 
+establecidos  en el presente Reglamento; con excepción de lo dispuesto en el 
+artículo 75º; 
+b. 
+Proveedor que no aplique el  plan de control de calidad (PCC); 
+c. 
+Proveedor que no implemente las medidas de seguridad establecidas por la 
+Autoridad de Salud; 
+d. 
+Proveedor que no cuente con su respectivo plan de control de calidad (PCC) 
+aprobado por la Autoridad de Salud correspondiente; 
+e. 
+Sistemas de abastecimiento de agua para consumo humano, que no 
+cuenten  con el registro de la fuente de agua y autorización sanitaria del 
+sistema  de tratamiento; 
+f. 
+Estaciones de surtidores de agua, camiones cisterna u otros medios de 
+distribución del agua para consumo humano en condiciones especiales, que 
+no cuenten con autorización sanitaria otorgada por la Autoridad de Salud 
+correspondiente; 
+g. 
+Proveedor que no implemente su programa de adecuación sanitaria (PAS) 
+para cumplir las normas  establecidas en el presente Reglamento; y 
+h. 
+Otras infracciones al presente Reglamento y a las normas sanitarias que emita 
+la Autoridad de Salud, que generen riesgos a la salud de los consumidores.                                      
+Artículo 78°. - De las sanciones 
+La Autoridad de Salud dentro del marco del procedimiento sancionador, impondrá a 
+quienes incurran en las infracciones tipificadas en el artículo 77º una o más de las 
+siguientes sanciones:  
+1. 
+Amonestación;   
+2. 
+Multa comprendida entre una (1) y treinta (30) unidades impositivas tributarias 
+(UIT). En caso de reincidencia, la multa será duplicada;  
+3. 
+Suspensión de la autorización sanitaria o registro sanitario por un plazo que 
+determine la Autoridad de Salud; y 
+4. 
+Cancelación de la autorización sanitaria o registro sanitario. 
+Artículo 79°.- De la escala de sanciones 
+La escala de sanciones previstas para cada tipo de infracción que corresponde 
+aplicar es la siguiente: 
+1. 
+Infracciones Leves: 
+a. 
+Amonestación por escrito;  
+b. 
+Multa comprendida 1 UIT hasta  5 UIT. 
+2. 
+Infracciones Graves: 
+a. 
+Multa comprendida 6 UIT hasta 15 UIT. 
+3. 
+Infracciones muy Graves: 
+a. 
+Multa comprendida 16 UIT hasta 30 UIT, 
+b. 
+Suspensión de la autorización sanitaria o registro sanitario por un plazo que 
+determine la Autoridad de Salud;  
+
+===== PAGE 35 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 34
+c. 
+Cancelación de la autorización sanitaria o registro sanitario. 
+En caso que se reviertan las condiciones que dieron origen a la cancelación el 
+proveedor deberá tramitar un nuevo registro o autorización sanitaria. Las sanciones 
+antes mencionadas serán aplicadas teniendo en consideración los criterios 
+establecido en el artículo 135° de la Ley N° 26842 – Ley General de Salud. 
+Artículo 80°.-Del uso de los recursos recaudados por concepto de multas 
+De los recursos provenientes de la cancelación de las multas, el 70% será destinado a 
+la DIRESA o GRS o a la DISA para las actividades de vigilancia sanitaria del 
+abastecimiento de agua en su jurisdicción y el 30% a la DIGESA para las acciones de 
+asesoramiento técnico especializado, capacitación, investigación y otras actividades 
+conexas. Para tal efecto el Ministerio de Salud solicitará al Banco de la Nación la 
+apertura de códigos para el depósito por conceptos de pago de multas por 
+incumplimiento a lo dispuesto en el presente Reglamento; así mismo realizará los 
+desembolsos correspondientes al porcentaje establecido en las cuentas de las DIRESAs 
+o GRSs o DISAs. 
+Artículo 81°- De los plazos  para pago de las multas 
+La multa deberá pagarse dentro del plazo máximo de quince (15) días hábiles, 
+contados a partir del día siguiente de notificada la sanción. En caso de 
+incumplimiento, la Autoridad de Salud, ordenará su cobranza coactiva con arreglo al 
+procedimiento de Ley. 
+ 
+ 
+ 
+ 
+ 
+DISPOSICIONES COMPLEMENTARIAS FINALES 
+Primera.-  Vigencia del Reglamento 
+El presente Reglamento entrará en vigencia a los noventa (90) días calendario 
+contados desde su publicación en el Diario Oficial El Peruano. 
+Corresponde a las autoridades competentes señaladas en el presente reglamento su 
+difusión por los medios más adecuados para su conocimiento y aplicación, debiendo 
+estar publicado en la página web de cada institución. 
+Segunda.-  Registro de los sistemas de abastecimiento de agua 
+Los proveedores de agua para consumo humano según corresponda, deberán 
+regularizar su respectivo registro de acuerdo a lo señalado en el artículo 35° del 
+presente Reglamento, en un plazo de sesenta (60) días calendarios contados desde la 
+vigencia.  
+ 
+Tercera.- Emisión de reglamentos y normas técnicas 
+En un plazo no mayor de trescientos sesenta y cinco (365) días calendarios posteriores 
+a la entrada en vigencia del presente Reglamento, el Ministerio de Salud aprobará 
+mediante Resolución Ministerial los documentos  normativos formulados por la DIGESA, 
+sobre las siguientes materias:  
+1. 
+Formulación y aplicación del plan de control de calidad (PCC) por los 
+proveedores de agua para consumo humano; De los requisitos sanitarios de las 
+instalaciones físicas y componentes hidráulicos de los sistemas de abastecimiento 
+
+===== PAGE 36 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 35
+de agua para consumo humano; De los requisitos sanitarios de las plantas de 
+tratamiento de agua para consumo humano; Del muestreo, frecuencia y análisis 
+de los parámetros de calidad del agua para consumo humano y De inspecciones 
+para los sistemas de abastecimiento de agua para consumo humano; 
+2. 
+Abastecimiento de agua para consumo humano mediante estaciones de 
+surtidores y camiones cisterna; 
+3. 
+Formulación y aplicación del programa de adecuación sanitaria (PAS) de los 
+proveedores de agua para consumo humano;  
+4. 
+Procedimientos para la declaración de emergencia sanitaria de los sistemas de 
+abastecimiento de agua para consumo humano;  
+5. 
+Sistema de información de la vigilancia sanitaria del agua para consumo humano; 
+y 
+6. 
+Criterios para la determinación del monto a aplicar a las sanciones; 
+Cuarta.- Recursos para cumplimiento de la norma 
+Los Gobiernos Regionales asignarán recursos presupuestales a las Direcciones 
+Regionales de Salud (DIRESA) o Gerencias Regionales de Salud (GRS) para 
+implementar en sus jurisdicciones las disposiciones del presente Reglamento y cumplir 
+con los planes operativos anuales del programa de vigilancia de calidad del agua 
+para consumo humano. 
+Quinta.- Destino de los fondos  
+Los recursos provenientes del pago por los procedimientos administrativos establecidos 
+en el presente Reglamento y los generados por los servicios de los laboratorios de 
+análisis de agua de las DISAs, GRSs y DIRESAs al nivel que correspondan, deberán ser 
+destinados a las actividades de vigilancia sanitaria de abastecimiento de agua para 
+consumo humano, cuyo cumplimiento será de responsabilidad de la Autoridad de 
+Salud de la jurisdicción. 
+Sexta.- Opinión técnica y refrendo de normas en materia de salud ambiental 
+En  aplicación  a lo establecido en el artículo 126° de  la  Ley N° 26842 - Ley General de 
+Salud, no se podrá formular ni dictar normas que reglamenten leyes o que tengan 
+jerarquía equivalente, que incidan en materia de salud ambiental con relación a la 
+gestión de la calidad del agua para consumo humano, sin la opinión técnica y el 
+refrendo respectivo de la Autoridad de Salud de nivel nacional. 
+Sétima.- Aprobación de normas complementarias  
+Por Resolución Ministerial del Ministerio de Salud se aprobarán las disposiciones 
+complementarias, así como los documentos de gestión necesarios que faciliten la 
+aplicación del presente Reglamento. 
+Octava.- Casos especiales 
+Para las fuentes de agua para consumo humano con características naturales 
+hidrogeológicas,  la Autoridad de Salud podrá admitir concentraciones de Arsénico en 
+el agua tratada, de hasta 0.05 miligramo/litro, siempre que no afecte la salud de las 
+personas.    
+ 
+ 
+ 
+
+===== PAGE 37 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 36
+DISPOSICIONES COMPLEMENTARIAS TRANSITORIAS  
+Primera.- Programa de Adecuación Sanitaria (PAS) 
+Los proveedores que estén operando sistemas de abastecimiento de agua para 
+consumo 
+humano 
+antes 
+de 
+entrar 
+en 
+vigencia 
+el 
+presente 
+Reglamento, 
+implementarán un programa de adecuación sanitaria (PAS) para cumplir las normas 
+técnicas y formales establecidas en el presente Reglamento. La Autoridad de Salud 
+del Nivel Nacional o Regional, según corresponda, aprobarán el PAS. Dicha 
+adecuación se iniciará con la presentación de la propuesta de aprobación del 
+respectivo PAS en un plazo no mayor de ciento ochenta (180) días calendarios 
+contados a partir del día siguiente de cumplido el plazo de la tercera Disposición 
+Complementaria Final del presente Reglamento. Asimismo, la implementación del PAS 
+aprobado no podrá superar el periodo de cinco (05) años, luego de su aprobación. 
+En tanto los proveedores no cuenten con el PAS aprobado, deberán cumplir con los 
+parámetros de control obligatorio establecidos en el artículo 63º del presente 
+Reglamento. Para el caso de los proveedores regulados por la SUNASS, se mantendrán 
+los parámetros fijados por esta entidad reguladora en directivas previas, y hasta la 
+aprobación del  indicado PAS. 
+Para aquellas comunidades con población menor o igual a 2000 habitantes 
+considerando las condiciones de pobreza, el Ministerio de Salud, a través de la 
+DIGESA, en coordinación con el Gobierno Regional, Gerencia Regional de Vivienda, 
+brindará la asistencia técnica para la aprobación del Programa de Adecuación 
+sanitaria (PAS), que se ajustarán a la directiva que para tales efectos elaborará el 
+Ministerio de Salud. 
+Segunda.- Aplicación de los parámetros obligatorios y los adicionales de control 
+A partir del día siguiente de la entrada en vigencia del presente Reglamento serán 
+aplicados y exigidos el cumplimiento de los parámetros de control obligatorio y los 
+parámetros 
+adicionales 
+de 
+control 
+señalados 
+en 
+los 
+artículos 
+63° 
+y 
+64° 
+respectivamente, de acuerdo a los criterios señalados para ambos tipos de 
+parámetros. 
+Disponer el plazo de (02) dos años para la implementación de los alcances del 
+presente Reglamento en las comunidades rurales a las que hace referencia los 
+artículos 40° numeral 5 y la primera disposición complementaria transitoria del presente 
+reglamento.  
+Tercera.- Transferencia de funciones 
+Durante los veinticuatro (24) meses siguientes contados a partir de la entrada en 
+vigencia del presente reglamento, la aprobación de los planes críticos de control 
+(PCC) y programas de adecuación sanitaria (PAS) estarán a cargo de la DIGESA, la 
+que durante este plazo formulará los instrumentos técnicos necesarios para el 
+ordenamiento de los procedimientos. Culminado este plazo las citadas funciones serán 
+transferidas a las DIRESAs/GRSs, las cuales deberán acreditar que cuentan con el 
+recurso humano calificado y cuyos procedimientos deberán ser incorporados en su 
+Texto Único de Procedimientos Administrativos de cada Gobierno Regional. 
+Durante los doce (12) meses siguientes contados a partir de la entrada en vigencia del 
+presente reglamento, la aprobación de la Autorización Sanitaria del sistema de 
+tratamiento de agua potable y Registro Sanitario de desinfectante estarán a cargo de 
+la DIGESA, la que durante este plazo formulará los instrumentos técnicos necesarios 
+para el ordenamiento de los procedimientos. Culminado este plazo las citadas 
+funciones serán transferidas a las DIRESAs/GRSs, las cuales deberán acreditar que 
+cuentan con el recurso humano calificado y cuyos procedimientos deberán ser 
+
+===== PAGE 38 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 37
+incorporados en su Texto Único de Procedimientos Administrativos de cada Gobierno 
+Regional. 
+Cuarta.-  Función supervisora de la SUNASS 
+En tanto los proveedores pertenecientes al ámbito de competencia de la SUNASS no 
+cuentan con el plan de control de calidad del agua, debidamente aprobado, la 
+función supervisora se ejerce de acuerdo a lo establecido en el Reglamento de la 
+Calidad de Prestación de Servicios de Saneamiento aprobado mediante Resolución 
+de Consejo Directivo N° 011-2007-SUNASS-CD.   
+ 
+ 
+
+===== PAGE 39 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 38
+ 
+ANEXO I 
+ 
+LÍMITES MÁXIMOS PERMISIBLES DE PARÁMETROS 
+MICROBIOLÓGICOS Y PARASITOLÓGICOS 
+ 
+Parámetros 
+Unidad de 
+medida 
+Límite máximo 
+permisible 
+1. Bactérias Coliformes Totales. 
+UFC/100 mL a 
+35ºC 
+0 (*) 
+2. E. Coli  
+UFC/100 mL a 
+44,5ºC 
+ 
+0 (*) 
+3. Bactérias Coliformes Termotolerantes 
+o Fecales. 
+UFC/100 mL a 
+44,5ºC 
+ 
+0 (*) 
+ 
+ 
+4. Bactérias Heterotróficas 
+UFC/mL a 35ºC 
+ 
+500 
+ 
+5. Huevos y larvas de Helmintos, quistes 
+y 
+ooquistes 
+de 
+protozoarios 
+patógenos. 
+Nº org/L 
+ 
+ 
+0 
+ 
+6. Vírus 
+UFC / mL 
+0 
+7. Organismos de vida libre, como 
+algas, 
+protozoarios, 
+copépodos, 
+rotíferos, nemátodos en todos  sus 
+estadios evolutivos 
+Nº org/L 
+0 
+UFC = Unidad formadora de colonias 
+(*)      En caso de analizar por la técnica del NMP por tubos múltiples = < 1,8 /100 ml 
+ 
+ 
+
+===== PAGE 40 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 39
+ANEXO II 
+ 
+LÍMITES MÁXIMOS PERMISIBLES DE PARÁMETROS  DE  
+CALIDAD ORGANOLÉPTICA 
+ 
+Parámetros 
+Unidad de medida 
+Límite máximo permisible 
+1. 
+Olor 
+2. 
+Sabor 
+3. 
+Color 
+4. 
+Turbiedad 
+5. 
+pH 
+6. 
+Conductividad (25°C) 
+7. 
+Sólidos totales disueltos 
+8. 
+Cloruros  
+9. 
+Sulfatos  
+10. Dureza total 
+11. Amoniaco 
+12. Hierro 
+13. Manganeso 
+14. Aluminio 
+15. Cobre 
+16. Zinc 
+17. Sodio 
+--- 
+--- 
+UCV escala Pt/Co 
+UNT 
+Valor de pH 
+µmho/cm 
+mgL-1 
+mg Cl -  L-1 
+mg SO4 = L-1 
+mg CaCO3  L-1 
+mg N L-1 
+mg Fe L-1 
+mg Mn L-1 
+mg Al L-1 
+mg Cu L-1 
+mg  Zn L-1 
+mg Na L-1 
+Aceptable 
+Aceptable 
+15 
+5 
+6,5  a  8,5 
+1 500 
+1 000 
+250 
+250 
+500 
+1,5 
+0,3 
+0,4 
+0,2 
+2,0 
+3,0 
+200 
+    UCV  =  Unidad de color verdadero 
+    UNT  =  Unidad nefelométrica de turbiedad 
+ 
+ 
+
+===== PAGE 41 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 40
+ANEXO  III 
+ 
+LÍMITES MÁXIMOS PERMISIBLES DE 
+PARÁMETROS QUÍMICOS INORGÁNICOS Y ORGÁNICOS 
+ 
+ Parámetros Inorgánicos 
+Unidad de medida 
+Límite máximo permisible 
+1.  Antimonio 
+2.  Arsénico (nota 1) 
+3.  Bario 
+4.  Boro 
+5.  Cadmio 
+6.  Cianuro 
+7.  Cloro (nota 2) 
+8.  Clorito 
+9.  Clorato 
+10. Cromo total 
+11. Flúor 
+12. Mercurio 
+13. Niquel 
+14. Nitratos 
+15. Nitritos 
+ 
+16. Plomo 
+17. Selenio 
+18. Molibdeno 
+19. Uranio 
+mg Sb L-1 
+mg As L-1 
+mg Ba L-1 
+mg B L-1 
+mg Cd L-1 
+mg CN-  L-1 
+mg  L-1 
+mg  L-1 
+mg  L-1 
+mg Cr L-1 
+mg F- L-1 
+mg Hg L-1 
+mg Ni L-1 
+mg NO3 L-1 
+mg NO2 L-1 
+ 
+mg Pb L-1 
+mg Se L-1 
+mg Mo L-1 
+mg U L-1 
+0,020 
+0,010 
+0,700 
+1,500 
+0,003 
+0,070  
+5 
+0,7 
+0,7 
+0,050 
+1,000 
+0,001 
+0,020 
+50,00 
+3,00 Exposición corta 
+0,20 Exposición larga 
+0,010 
+0,010 
+0,07 
+0,015 
+Parámetros Orgánicos 
+Unidad de medida 
+Límite máximo permisible 
+1.  Trihalometanos totales (nota 3) 
+2.  Hidrocarburo disuelto o                  
+emulsionado; aceite mineral 
+3.  Aceites y grasas 
+ 
+ 
+mgL-1 
+mgL-1 
+1,00 
+ 
+0,01 
+0,5 
+4.  Alacloro 
+5.  Aldicarb 
+6.  Aldrín y dieldrín 
+7.  Benceno 
+8.  Clordano (total de isómeros) 
+9.  DDT (total de isómeros) 
+10. Endrin 
+11. Gamma HCH (lindano) 
+12. Hexaclorobenceno 
+13. Heptacloro y  
+      heptacloroepóxido 
+14. Metoxicloro 
+15. Pentaclorofenol 
+16. 2,4-D 
+17. Acrilamida 
+18. Epiclorhidrina 
+19. Cloruro de vinilo 
+20. Benzopireno 
+21. 1,2-dicloroetano 
+22. Tetracloroeteno 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+ 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+0,020 
+0,010 
+0,00003 
+0,010 
+0,0002 
+0,001 
+0,0006 
+0,002 
+0,001 
+ 
+0,00003 
+0,020 
+0,009 
+0,030 
+0,0005 
+0,0004 
+0,0003 
+0,0007 
+0,03 
+0,04 
+
+===== PAGE 42 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 41
+ Parámetros Orgánicos 
+Unidad de medida 
+Límite máximo permisible 
+23. Monocloramina 
+24. Tricloroeteno 
+25. Tetracloruro de carbono 
+26. Ftalato de di (2-etilhexilo) 
+27. 1,2- Diclorobenceno 
+28. 1,4- Diclorobenceno 
+29. 1,1- Dicloroeteno 
+30. 1,2- Dicloroeteno 
+31. Diclorometano 
+32. Ácido edético (EDTA) 
+33. Etilbenceno 
+34. Hexaclorobutadieno 
+35. Acido Nitrilotriacético 
+36. Estireno 
+37. Tolueno 
+38. Xileno 
+39. Atrazina 
+40. Carbofurano 
+41. Clorotoluron 
+42. Cianazina 
+43. 2,4- DB 
+44. 1,2- Dibromo-3- Cloropropano 
+45. 1,2- Dibromoetano 
+46. 1,2- Dicloropropano (1,2- DCP) 
+47. 1,3- Dicloropropeno 
+48. Dicloroprop 
+49. Dimetato 
+50. Fenoprop 
+51. Isoproturon 
+52. MCPA 
+53. Mecoprop 
+54. Metolacloro 
+55. Molinato 
+56. Pendimetalina 
+57. Simazina 
+58. 2,4,5- T 
+59. Terbutilazina 
+60. Trifluralina 
+61. Cloropirifos 
+62. Piriproxifeno 
+63. Microcistin-LR 
+ 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+ 
+3 
+0,07 
+0,004 
+0,008 
+1 
+0,3 
+0,03 
+0,05 
+0,02 
+0,6 
+0,3 
+0,0006 
+0,2 
+0,02 
+0,7 
+0,5 
+0,002 
+0,007 
+0,03 
+0,0006 
+0,09 
+0,001 
+0,0004 
+0,04 
+0,02 
+0,1 
+0,006 
+0,009 
+0,009 
+0,002 
+0,01 
+0,01 
+0,006 
+0,02 
+0,002 
+0,009 
+0,007 
+0,02 
+0,03 
+0,3 
+0,001 
+ 
+ 
+ 
+
+===== PAGE 43 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 42
+Parámetros Orgánicos 
+Unidad de 
+medida 
+Límite máximo permisible 
+64. Bromato 
+ 
+65. Bromodiclorometano  
+66. Bromoformo  
+ 
+67. Hidrato de cloral 
+      (tricloroacetaldehido) 
+68. Cloroformo 
+ 
+69. Cloruro de cianógeno (como 
+CN) 
+70. Dibromoacetonitrilo 
+71. Dibromoclorometano  
+72. Dicloroacetato 
+ 
+73. Dicloroacetonitrilo 
+74. Formaldehído 
+ 
+75. Monocloroacetato 
+76. Tricloroacetato 
+77. 2,4,6- Triclorofenol 
+mgL-1 
+mgL-1 
+mgL-1 
+ 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+mgL-1 
+0,01 
+0,06 
+0,1 
+ 
+0,01 
+0,2 
+0,07 
+0,07 
+0,1 
+0,05 
+0,02 
+0,9 
+0,02 
+0,2 
+0,2 
+ 
+Nota 1: En caso de los sistemas existentes se establecerá en los Planes de Adecuación 
+Sanitaria el plazo para lograr el límite máximo permisible para el arsénico de 0,010 mgL-1. 
+ 
+Nota 2: Para una desinfección eficaz en las redes de distribución la concentración residual 
+libre de cloro no debe ser menor de 0,5 mgL-1. 
+ 
+Nota 3: La suma de los cocientes de la concentración de cada uno de los parámetros 
+(Cloroformo, Dibromoclorometano, Bromodiclorometano y Bromoformo) con respecto a sus 
+límites máximos permisibles no deberá exceder el valor de 1,00 de acuerdo con la siguiente 
+fórmula: 
+ 
+Ccloroformo + 
+CDibromoclorometano 
++ 
+CBromodiclorometano + 
+CBromoformo 
+≤ 1 
+LMPcloroformo LMPDibromoclorometano 
+LMPBromodiclorometano 
+LMPBromoformo 
+ 
+donde, C: concentración en mg/L, y LMP: límite máximo permisible en mg/L 
+
+===== PAGE 44 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 43
+ 
+ 
+ANEXO IV 
+ 
+LÍMITES MÁXIMOS PERMISIBLES DE 
+PARÁMETROS RADIACTIVOS 
+ 
+Parámetros 
+Unidad de 
+medida 
+Límite máximo permisible 
+ 
+1. Dosis de referencia total 
+(nota 1) 
+2.   Actividad global α 
+3.   Actividad global β 
+ 
+ 
+mSv/año 
+ 
+Bq/L 
+Bq/L 
+ 
+ 
+0,1 
+ 
+0,5 
+1,0 
+ 
+     
+Nota 1: Si la actividad global α de una muestra es mayor a 0,5 Bq/L o la actividad global β es 
+mayor a 1 Bq/L, se deberán determinar las concentraciones de los distintos radionúclidos y 
+calcular la dosis de referencia total; si ésta es mayor a 0,1 mSv/año se deberán examinar 
+medidas correctivas; si es menor a 0,1 mSv/año el agua se puede seguir utilizando para el 
+consumo. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
+===== PAGE 45 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 44
+ 
+ANEXO V 
+ 
+AUTORIZACION SANITARIA, REGISTRO DE LOS SISTEMAS DE ABASTECIMIENTO  
+ 
+(1) Nota: De acuerdo a la décima disposición transitoria, complementaria y final. 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+Componente 
+del Sistema de 
+Abastecimiento 
+Registro 
+Autorización  
+Sanitaria 
+Aprobaciones 
+¿Requiere? Entidad que 
+registra 
+¿Requiere? 
+Entidad que 
+autoriza 
+¿Requiere? 
+Entidad que 
+autoriza 
+Fuente 
+de 
+abastecimiento 
+de agua 
+SI 
+DIRESA, 
+GRS, DISA 
+ 
+ 
+ 
+ 
+Sistemas 
+de 
+abastecimiento 
+de agua 
+SI 
+DIRESA, GRS 
+DISA 
+ 
+ 
+ 
+ 
+Plantas 
+de 
+tratamiento de 
+agua potable 
+ 
+ 
+Si 
+DIGESA (1) 
+DIRESA, GRS 
+ 
+ 
+Plan de control 
+de 
+calidad 
+(PCC) 
+ 
+ 
+ 
+ 
+Si 
+DIGESA (1) 
+DIRESA, GRS 
+Planes 
+de 
+Adecuación 
+sanitaria (PAS) 
+ 
+ 
+ 
+ 
+Si 
+DIGESA (1) 
+DIRESA, GRS 
+Surtidores 
+de 
+agua 
+ 
+ 
+SI 
+DIRESA, GRS 
+DISA 
+ 
+ 
+Camiones 
+cisterna 
+ 
+ 
+SI 
+DIRESA, GRS 
+ 
+ 
+Desinfectantes 
+de agua  
+SI 
+DIGESA (1) 
+DIRESA, GRS  
+ 
+ 
+ 
+ 
+
+===== PAGE 46 =====
+Reglamento de la Calidad del Agua para Consumo Humano 
+ 
+ 
+ 45
+ 
+ 
+ 

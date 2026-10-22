@@ -1,0 +1,463 @@
+FILE gt-nutricion-ninos-0-11.pdf | pages 88 | chars 165794
+
+== HEADINGS (candidates) ==
+p1 [14.8] Lima, 2025
+p1 [49.3] GUÍA TÉCNICA
+p1 [36.8] PARA LA VALORACIÓN NUTRICIONAL
+p1 [52.7] ANTROPOMÉTRICA DE LA
+p1 [41.3] NIÑA Y EL NIÑO DE 0 A 11 AÑOS
+p3 [16.0] ELABORADO POR: LUIS ANGEL AGUILAR ESENARRO
+p4 [11.0] Catalogación hecha por el Centro de Información y Documentación Científica del INS
+p5 [12.9] MINISTERIO DE SALUD
+p5 [13.0] Ministro
+p5 [13.0] Luis Napoleón Quiroz Avilés
+p5 [13.0] Viceministro de Salud Pública
+p5 [13.0] Leonardo Ronyald Rojas Mezarina
+p5 [13.0] Viceministra de Prestaciones y Aseguramiento en Salud
+p5 [13.0] Shirley Monzón Villegas
+p5 [12.9] DIRECCIÓN GENERAL DE INTERVENCIONES ESTRATÉGICAS EN SALUD PÚBLICA
+p5 [13.0] Director General
+p5 [14.0] Cristian Díaz Vélez
+p5 [12.9] INSTITUTO NACIONAL DE SALUD
+p5 [13.0] Presidente Ejecutivo
+p5 [14.0] Diego Rolando Venegas Ojeda
+p5 [13.0] Gerente General
+p5 [14.0] José Fernando Reyes Llanos
+p5 [12.9] CENTRO NACIONAL DE ALIMENTACIÓN, NUTRICIÓN Y VIDA SALUDABLE
+p5 [13.0] Director
+p5 [14.0] Walter Vilchez Dávila
+p5 [12.9] Subdirección de Investigación y Tecnologías en Alimentación y Vida Saludable
+p5 [13.0] Subdirectora
+p5 [14.0] Patricia Velarde Delgado
+p9 [36.0] CONTENIDOS
+p10 [48.7] E
+p10 [36.0] PRESENTACIÓN
+p11 [25.0] I.	 FINALIDAD
+p11 [25.0] II.	OBJETIVOS
+p11 [13.5] 2.1. OBJETIVO GENERAL
+p11 [13.5] 2.2. OBJETIVOS ESPECÍFICOS
+p11 [25.0] III.	ÁMBITO DE APLICACIÓN
+p11 [25.0] IV.	PROCEDIMIENTO A ESTANDARIZAR:
+p11 [25.0] VALORACIÓN NUTRICIONAL ANTROPOMÉTRICA DE LA NIÑA
+p11 [25.0] Y EL NIÑO
+p11 [31.0] GUÍA TÉCNICA PARA LA VALORACIÓN
+p11 [31.0] NUTRICIONAL ANTROPOMÉTRICA DE LA NIÑA Y
+p11 [31.0] EL NIÑO DE 0 A 11 AÑOS
+p12 [57.2] V.
+p12 [57.2] CONSIDERACIONES
+p12 [57.2] GENERALES
+p13 [11.0] Antropometrista: Es el/la profesional de la salud nutricionista y, en ausencia de este/esta, es el/la
+p13 [11.0] Asistente de antropometrista: Es el personal técnico o auxiliar asistencial de la salud que apoya al
+p13 [11.0] Bajo peso: Es la clasificación de la valoración nutricional antropométrica donde el peso es inferior a lo
+p13 [11.0] Capacitación en medición antropométrica: Es la capacitación teórico práctico en los procedimientos
+p13 [11.0] Capacitación en valoración nutricional antropométrica: Es la capacitación teórico práctico en
+p13 [11.0] Cartera de Servicios de Salud: Es el conjunto de las diferentes prestaciones de salud que brinda un
+p13 [11.0] Clasificación de la valoración nutricional antropométrica: Son escalas de valoración nutricional
+p13 [11.0] Consejería: Es un proceso educativo comunicacional concebido como un diálogo participativo que
+p13 [31.0] DEFINICIONES OPERATIVAS
+p14 [11.0] Consejería nutricional a madres, padres y/o cuidadores de niñas y niños: Es un proceso
+p14 [11.0] Consulta nutricional: Es el proceso de atención en nutrición que incluye la evaluación, diagnóstico,
+p14 [11.0] Control del crecimiento y desarrollo: Es el conjunto de actividades periódicas y sistemáticas
+p14 [11.0] Crecimiento adecuado: Es la condición en la niña y el niño que evidencia ganancia de peso
+p14 [11.0] Crecimiento inadecuado: Es la condición en la niña y el niño que evidencia la no ganancia
+p14 [11.0] Cuidado integral de salud: Son las acciones e intervenciones a la persona, familia y comunidad
+p14 [11.0] Delgadez: Es la clasificación de la valoración nutricional antropométrica caracterizada por una
+p14 [11.0] Desnutrición: Es el estado patológico, inespecífico, sistémico, potencialmente reversible de un individuo;
+p14 [11.0] Estado nutricional: Es la situación de salud en que se encuentra una persona como resultado de su
+p15 [11.0] Estatura: Es la medida que se toma a niñas y niños de 2 años a más, en posición vertical desde el
+p15 [11.0] Longitud: Es la medida que se toma a niñas y niños menores de 2 años en posición horizontal desde
+p15 [11.0] Malnutrición: Es el estado nutricional anormal causado por la deficiencia o exceso de energía,
+p15 [11.0] Monitoreo de crecimiento: Es la recolección rutinaria de la información sobre la valoración o
+p15 [11.0] Neonata o neonato: Es la nacida viva o el nacido vivo de una gestación, cuya edad abarca desde el
+p15 [11.0] Niña o niño: Es la persona cuya edad está comprendida desde la etapa del/de la recién nacido/a
+p15 [11.0] Obesidad: Es la clasificación de la valoración nutricional antropométrica, donde el peso es excesivamente
+p15 [11.0] Perímetro abdominal: Es la medida de la circunferencia abdominal que se realiza en una persona
+p15 [11.0] Perímetro cefálico: Es la medida de la circunferencia de la cabeza que se realiza a toda niña y a todo
+p15 [11.0] Perímetro torácico: Es la medida del tórax en su parte más amplia que se realiza a toda recién nacida
+p15 [11.0] Peso: Es la estimación de la masa corporal de una persona, expresada en kilogramos, siguiendo los
+p15 [11.0] Recién nacido/a normal: Es todo/a recién nacido/a único/a o múltiple con peso mayor o igual a
+p15 [11.0] Recién nacido/a pre término (prematuro/a): Es el/la recién nacido/a de menos de 37 semanas
+p15 [11.0] Recién nacido/a a término: Es el/la recién nacido/a de 37 semanas a menos de 42 semanas completas
+p15 [11.0] Riesgo de bajo peso: Es la probabilidad de padecer desnutrición por bajo peso para la talla (longitud)
+p15 [11.0] Riesgo de sobrepeso: Es la probabilidad de padecer sobrepeso por exceso de P/T o por exceso de
+p15 [11.0] Riesgo de talla baja: Es la probabilidad de padecer talla baja, según el indicador de talla para la edad
+p16 [11.0] Sobrepeso: Es la clasificación de la valoración nutricional antropométrica, donde el peso es superior a
+p16 [11.0] Talla: Es la medida de la longitud o estatura de la persona, siguiendo los procedimientos establecidos
+p16 [11.0] Valoración nutricional: Es el conjunto de procedimientos que realiza el/la profesional de la salud
+p16 [11.0] Valoración nutricional antropométrica: Es la determinación del estado nutricional de una persona,
+p17 [25.0] 5.2.1. Recursos humanos
+p17 [25.0] 5.2.2. Infraestructura
+p17 [25.0] 5.2.3. Equipamiento
+p17 [13.5] Equipo antropométrico básico
+p17 [31.0] REQUERIMIENTOS BÁSICOS
+p18 [13.5] Mobiliario
+p18 [25.0] 5.2.4. Otros recursos materiales
+p18 [13.5] Historia clínica
+p18 [13.5] Materiales de apoyo
+p19 [57.2] VI.
+p19 [57.2] CONSIDERACIONES
+p19 [57.2] ESPECÍFICAS
+p20 [31.0] CONSIDERACIONES ESPECÍFICAS
+p20 [34.0] VI.
+p21 [25.0] 6.1.1. CLASIFICACIÓN DE LA VALORACIÓN NUTRICIONAL
+p21 [25.0] ANTROPOMÉTRICA DURANTE LA ATENCIÓN DE LA RECIÉN
+p21 [25.0] NACIDA O DEL RECIÉN NACIDO
+p21 [13.0] A)	 PESO AL NACER
+p21 [13.5] B)	 PESO PARA LA EDAD GESTACIONAL
+p21 [26.0] DETERMINACIÓN DE LA VALORACIÓN NUTRICIONAL
+p21 [26.0] ANTROPOMÉTRICA DE LA NIÑA Y EL NIÑO
+p22 [13.5] C)	 LONGITUD AL NACER
+p22 [13.5] D)	 PERÍMETRO CEFÁLICO AL NACER
+p22 [13.5] E)	 PERÍMETRO TORÁCICO AL NACER
+p23 [25.0] 6.1.2. CLASIFICACIÓN DE LA VALORACIÓN NUTRICIONAL
+p23 [25.0] ANTROPOMÉTRICA DURANTE LA ATENCIÓN DE NIÑAS Y NIÑOS
+p23 [25.0] MENORES DE 5 AÑOS
+p23 [13.5] A)	 PESO PARA LA EDAD
+p23 [13.5] B)	 PESO PARA LA TALLA
+p24 [13.5] C)	 TALLA PARA LA EDAD
+p24 [13.5] D)	 PERÍMETRO CEFÁLICO PARA LA EDAD
+p25 [25.0] 6.1.3. CLASIFICACIÓN DE LA VALORACIÓN NUTRICIONAL
+p25 [25.0] ANTROPOMÉTRICA DURANTE LA ATENCIÓN DE NIÑAS Y NIÑOS
+p25 [25.0] DE 5 A 11 AÑOS
+p25 [13.5] A)	 ÍNDICE DE MASA CORPORAL PARA LA EDAD
+p25 [13.5] B)	 TALLA PARA LA EDAD
+p26 [13.5] C)	 PERÍMETRO ABDOMINAL PARA LA EDAD
+p27 [25.0] 6.2.1. CRITERIOS DE RIESGO O SIGNOS DE ALERTA DE
+p27 [25.0] MALNUTRICIÓN
+p27 [26.0] INTERPRETACIÓN DE LOS RESULTADOS DE LA
+p27 [26.0] VALORACIÓN NUTRICIONAL ANTROPOMÉTRICA
+p27 [26.0] DE LA NIÑA Y EL NIÑO
+p29 [25.0] 6.3.1. GRÁFICAS DE CURVAS CLÍNICAS DE CRECIMIENTO
+p29 [13.5] Procedimiento para el uso de las gráficas de curvas clínicas de crecimiento:
+p29 [25.0] 6.3.2. TABLAS DE VALORACIÓN NUTRICIONAL ANTROPOMÉTRICA
+p29 [11.0] •	 Para neonatas y neonatos (Anexos 7 y 8): Los cuales cuentan con los valores referenciales límite,
+p29 [11.0] •	 Para niñas y niños menores de 5 años (Anexos 9 y 10): Los cuales cuentan con los valores
+p29 [11.0] •	 Para niñas y niños de 5 a 11 Años (Anexo 11): Las cuales cuentan con los valores referenciales
+p29 [26.0] INSTRUMENTOS PARA LA VALORACIÓN NUTRICIONAL
+p29 [26.0] ANTROPOMÉTRICA DE LA NIÑA Y DEL NIÑO
+p30 [25.0] 6.4.1. ATENCIÓN A NIVEL INDIVIDUAL
+p30 [13.5] Cuando la velocidad de crecimiento estén disminuidos (longitud o talla baja,
+p30 [13.5] bajo peso y/o delgadez) o esté disminuyendo (riesgo de desnutrición):
+p30 [26.0] ATENCIÓN A NIVEL INDIVIDUAL Y COLECTIVO
+p31 [13.5] Cuando el P/T y/o el P/E esté adecuado y aumentando en el canal
+p31 [13.5] correspondiente:
+p31 [13.5] Cuando el P/T y/o el P/E esté aumentado (obesidad y sobrepeso) o esté
+p31 [13.5] aumentando por encima del canal:
+p31 [25.0] 6.4.2. ATENCIÓN A NIVEL COLECTIVO
+p32 [65.0] VII.
+p32 [50.0] RECOMENDACIONES
+p33 [11.0] Anexo 1.	 Medición del peso.
+p33 [11.0] Anexo 2.	 Medición de la talla (longitud y estatura).
+p33 [11.0] Anexo 3.	 Medición del perímetro cefálico.
+p33 [11.0] Anexo 4.	 Medición del perímetro torácico.
+p33 [11.0] Anexo 5.	 Medición del perímetro abdominal.
+p33 [11.0] Anexo 6.	 Tabla de Peso al Nacer (kg) para la Edad Gestacional (Williams).
+p33 [11.0] Anexo 7.	 Tablas de referencia OMS 2006 para neonatas:
+p33 [11.0] Anexo 8.	 Tablas de referencia OMS 2006 para neonatos:
+p33 [11.0] Anexo 9.	 Tablas de referencia OMS 2006 para niñas menores de 5 años:
+p33 [11.0] Anexo 10.	 Tablas de referencia OMS 2006 para niños menores de 5 años:
+p33 [11.0] Anexo 11.	 Tablas de referencia OMS 2007 para niñas y niños de 5 a 11 años:
+p33 [36.0] VIII. ANEXOS
+p34 [11.0] Anexo 12.	 Gráficas de crecimiento OMS 2006 para neonatas:
+p34 [11.0] Anexo 13.	 Gráficas de crecimiento OMS 2006 para neonatos:
+p34 [11.0] Anexo 14.	 Gráficas de crecimiento OMS 2006 para niñas < 5 años:
+p34 [11.0] Anexo 15.	 Gráficas de crecimiento OMS 2006 para niños < 5 años:
+p34 [11.0] Anexo 16.	 Gráfica del crecimiento corporal OMS 2007: Índice de masa corporal para la Edad y Talla
+p34 [11.0] Anexo 17.	 Gráfica del crecimiento corporal OMS 2007: Índice de masa corporal para la Edad y Talla
+p34 [11.0] Anexo 18.	 Tabla de referencia OMS 2006 de Perímetro cefálico para la Edad en niñas y niños.
+p34 [11.0] Anexo 19. 	Ejemplos de ganancia inadecuada de peso y talla en niñas y niños.
+p34 [11.0] Anexo 20. 	Flujograma de atención para la valoración nutricional antropométrica de la niña y el niño.
+p35 [25.0] Condiciones:
+p35 [25.0] Equipo antropométrico:
+p35 [11.0] Balanza pediátrica (mecánica o digital): Instrumento para pesar niñas y niños menores de 2 años,
+p35 [11.0] Balanza digital de pie: Instrumento para pesar personas, de pesas con resolución de, por lo menos,
+p35 [11.0] Balanza de plataforma (mecánica o digital): Instrumento para pesar personas, de pesas con
+p35 [28.0] MEDICIÓN DEL PESO
+p35 [32.0] ANEXO 1
+p36 [25.0] Limpieza y cuidado de los equipos antropométricos:
+p36 [25.0] Ubicación de las balanzas:
+p36 [25.0] Procedimientos para la medición del peso en niñas y niños
+p36 [25.0] menores de 2 años:
+p36 [13.5] Balanza pediátrica mecánica (de pesas deslizantes):
+p36 [13.5] Balanza pediátrica digital:
+p37 [25.0] Procedimientos para la medición del peso en niñas y niños
+p37 [25.0] de 2 años a más:
+p37 [13.5] Balanza digital de pie:
+p37 [12.0] Nota:
+p37 [13.5] Balanza de plataforma mecánica:
+p38 [25.0] Condiciones:
+p38 [24.0] MEDICIÓN DE LA TALLA (LONGITUD Y ESTATURA)
+p38 [32.0] ANEXO 2
+p39 [25.0] Equipo antropométrico:
+p39 [11.0] •	 Infantómetro fijo de madera: Instrumento que se emplea para medir la longitud de niñas y de
+p39 [11.0] •	 Tallímetro fijo de madera: Instrumento que se emplea para medir la estatura de una persona
+p39 [11.0] •	 Tallímetro móvil de madera: Instrumento que se emplea para medir la estatura de una persona
+p39 [25.0] Limpieza y cuidado de los equipos antropométricos:
+p39 [25.0] Ubicación del equipo:
+p39 [25.0] Procedimiento para la medición de la longitud en niñas y
+p39 [25.0] niños menores de 2 años:
+p41 [25.0] Procedimiento para la medición de la estatura en niñas y
+p41 [25.0] niños de 2 años a más:
+p43 [28.0] MEDICIÓN DEL PERÍMETRO CEFÁLICO
+p43 [32.0] ANEXO 3
+p43 [25.0] Condiciones
+p43 [13.5] Ambiente:
+p43 [13.5] Instrumento:
+p43 [13.5] Procedimiento:
+p44 [28.0] MEDICIÓN DEL PERÍMETRO TORÁCICO
+p44 [32.0] ANEXO 4
+p44 [25.0] Condiciones
+p44 [13.5] Ambiente:
+p44 [13.5] Instrumento:
+p44 [13.5] Procedimiento:
+p45 [28.0] MEDICIÓN DEL PERÍMETRO ABDOMINAL
+p45 [32.0] ANEXO 5
+p45 [25.0] Condiciones
+p45 [13.5] Ambiente:
+p45 [13.5] Instrumento:
+p45 [13.5] Procedimiento:
+p46 [12.0] Nota:
+p47 [28.0] TABLA DE PESO AL NACER (kg) PARA LA
+p47 [28.0] EDAD GESTACIONAL (WILLIAMS)
+p47 [32.0] ANEXO 6
+p47 [11.0] PESO (kg)
+p47 [12.0] NEONATO
+p47 [12.0] NEONATA
+p48 [28.0] TABLAS DE REFERENCIA OMS 2006
+p48 [28.0] PARA NEONATAS
+p48 [32.0] ANEXO 7
+p48 [11.0] TABLA 7.1: PESO (kg) PARA LA EDAD (días) EN NEONATAS
+p49 [11.0] TABLA 7.2: LONGITUD (cm) PARA LA EDAD (días) EN NEONATAS
+p50 [11.0] TABLA 7.3: PESO (kg) PARA LA LONGITUD (cm) DE 45 cm A 65 cm EN NEONATAS
+p51 [11.0] TABLA 7.4: PERÍMETRO CEFÁLICO (cm) PARA LA EDAD (días) EN NEONATAS
+p51 [11.0] 31,6
+p51 [11.0] 32,6
+p51 [11.0] 33,8
+p51 [11.0] 35,1
+p51 [11.0] 36,1
+p51 [11.0] 32,3
+p51 [11.0] 33,3
+p51 [11.0] 34,5
+p51 [11.0] 35,7
+p51 [11.0] 36,7
+p51 [11.0] 33,0
+p51 [11.0] 34,0
+p51 [11.0] 35,2
+p51 [11.0] 36,4
+p51 [11.0] 37,3
+p51 [11.0] 33,6
+p51 [11.0] 34,6
+p51 [11.0] 35,8
+p51 [11.0] 37,0
+p51 [11.0] 38,0
+p51 [11.0] 34,1
+p51 [11.0] 36,3
+p51 [11.0] 37,5
+p51 [11.0] 38,5
+p52 [28.0] TABLAS DE REFERENCIA OMS 2006
+p52 [28.0] PARA NEONATOS
+p52 [32.0] ANEXO 8
+p52 [11.0] TABLA 8.1: PESO (kg) PARA LA EDAD (días) EN NEONATOS
+p53 [11.0] TABLA 8.2: LONGITUD (cm) PARA LA EDAD (días) EN NEONATOS
+p53 [11.0] 44,2
+p53 [11.0] 46,1
+p53 [11.0] 48,0
+p53 [11.0] 49,9
+p53 [11.0] 51,8
+p53 [11.0] 53,7
+p53 [11.0] 55,6
+p53 [11.0] 45,4
+p53 [11.0] 47,3
+p53 [11.0] 49,2
+p53 [11.0] 51,1
+p53 [11.0] 53,0
+p53 [11.0] 54,9
+p53 [11.0] 56,8
+p53 [11.0] 46,6
+p53 [11.0] 48,5
+p53 [11.0] 50,4
+p53 [11.0] 52,3
+p53 [11.0] 54,3
+p53 [11.0] 56,2
+p53 [11.0] 58,1
+p53 [11.0] 47,6
+p53 [11.0] 49,5
+p53 [11.0] 51,5
+p53 [11.0] 53,4
+p53 [11.0] 55,3
+p53 [11.0] 57,2
+p53 [11.0] 59,2
+p53 [11.0] 48,6
+p53 [11.0] 50,5
+p53 [11.0] 52,4
+p53 [11.0] 54,4
+p53 [11.0] 56,3
+p53 [11.0] 58,3
+p53 [11.0] 60,2
+p54 [11.0] TABLA 8.3: PESO (kg) PARA LA LONGITUD (cm) DE 45 cm A 65 cm EN NEONATOS
+p55 [11.0] TABLA 8.4: PERÍMETRO CEFÁLICO (cm) PARA LA EDAD (días) EN NEONATOS
+p55 [11.0] 32,0
+p55 [11.0] 33,1
+p55 [11.0] 34,4
+p55 [11.0] 35,7
+p55 [11.0] 36,8
+p55 [11.0] 32,8
+p55 [11.0] 33,8
+p55 [11.0] 35,1
+p55 [11.0] 36,4
+p55 [11.0] 37,4
+p55 [11.0] 33,6
+p55 [11.0] 34,6
+p55 [11.0] 35,8
+p55 [11.0] 37,0
+p55 [11.0] 38,0
+p55 [11.0] 34,3
+p55 [11.0] 35,3
+p55 [11.0] 36,5
+p55 [11.0] 37,7
+p55 [11.0] 38,7
+p55 [11.0] 34,8
+p55 [11.0] 38,3
+p55 [11.0] 39,2
+p56 [28.0] TABLAS DE REFERENCIA OMS 2006
+p56 [28.0] PARA NIÑAS MENORES DE 5 AÑOS
+p56 [32.0] ANEXO 9
+p56 [11.0] TABLA 9.1: PESO (kg) PARA LA EDAD (años/meses) EN NIÑAS MENORES DE 5 AÑOS
+p57 [11.0] TABLA 9.2: PESO (Kg) PARA LA LONGITUD (cm) DE 45 cm A 110 cm
+p57 [11.0] EN NIÑAS MENORES DE 2 AÑOS
+p58 [11.0] TABLA 9.3: PESO (Kg) PARA LA TALLA (cm) DE 65 cm A 120 cm
+p58 [11.0] EN NIÑAS DE 2 AÑOS A MENORES DE 5 AÑOS
+p59 [11.0] TABLA 9.4: LONGITUD (cm) PARA LA EDAD EN NIÑAS < 2 AÑOS Y TALLA (cm) PARA LA
+p59 [11.0] EDAD (años/meses) EN NIÑAS DE 2 AÑOS A MENORES DE 5 AÑOS
+p60 [28.0] TABLAS DE REFERENCIA OMS 2006
+p60 [28.0] PARA NIÑOS MENORES DE 5 AÑOS
+p60 [32.0] ANEXO 10
+p60 [11.0] TABLA 10.1: PESO (kg) PARA LA EDAD (años/meses) EN NIÑOS MENORES DE 5 AÑOS
+p61 [11.0] TABLA 10.2: PESO (kg) PARA LA LONGITUD (cm) DE 45 cm A 110cm
+p61 [11.0] EN NIÑOS MENORES DE 2 AÑOS
+p62 [11.0] TABLA 10.3: PESO (kg) PARA LA TALLA (cm) DE 65 cm A 120 cm
+p62 [11.0] EN NIÑOS DE 2 AÑOS A MENORES DE 5 AÑOS
+p63 [11.0] TABLA 10.4: LONGITUD (cm) PARA LA EDAD EN NIÑOS < 2 AÑOS y TALLA (cm) PARA LA
+p63 [11.0] EDAD (años/meses) EN NIÑOS DE 2 AÑOS A MENORES DE 5 AÑOS
+p64 [28.0] TABLAS DE REFERENCIA OMS 2007
+p64 [28.0] PARA NIÑAS Y NIÑOS DE 5 A 11 AÑOS
+p64 [32.0] ANEXO 11
+p64 [11.0] TABLAS 11.1: TALLA PARA LA EDAD DE NIÑAS Y NIÑOS DE 5 A 11 AÑOS
+p65 [11.0] TABLAS 11.2: ÍNDICE DE MASA CORPORAL PARA LA EDAD DE NIÑAS Y NIÑOS
+p65 [11.0] DE 5 A 11 AÑOS
+p66 [21.0] GRÁFICAS DE CRECIMIENTO OMS 2006 PARA NEONATAS
+p66 [32.0] ANEXO 12
+p66 [11.0] GRÁFICA 12.1: PESO (kg) PARA LA EDAD (meses) Y LONGITUD (cm)
+p66 [11.0] PARA LA EDAD (días) EN NEONATAS
+p67 [11.0] GRÁFICA 12.2: PESO (Kg) PARA LA LONGITUD (cm) Y PERÍMETRO CEFÁLICO (cm)
+p67 [11.0] PARA LA EDAD (días) EN NEONATAS
+p68 [21.0] GRÁFICAS DE CRECIMIENTO OMS 2006 PARA NEONATOS
+p68 [32.0] ANEXO 13
+p68 [11.0] GRÁFICA 13.1: PESO (Kg) PARA LA EDAD (meses) Y LONGITUD (cm)
+p68 [11.0] PARA LA EDAD (días) EN NEONATOS
+p69 [11.0] GRÁFICA 13.1: PESO (Kg) PARA LA EDAD (meses) Y LONGITUD (cm)
+p69 [11.0] PARA LA EDAD (días) EN NEONATOS
+p70 [19.0] GRÁFICAS DE CRECIMIENTO OMS 2006 PARA NIÑAS < 5 AÑOS
+p70 [32.0] ANEXO 14
+p70 [11.0] GRÁFICA 14.1: LONGITUD (cm) PARA LA EDAD (meses), TALLA (cm) PARA LA EDAD
+p70 [11.0] (meses) Y PESO (Kg) PARA LA EDAD (meses) EN NIÑAS MENORES DE 5 AÑOS
+p70 [11.1] GRÁFICA DE CRECIMIENTO OMS 2006
+p71 [11.0] GRÁFICA 14.2: PESO (Kg) PARA LA LONGITUD (cm) Y PESO (Kg)
+p71 [11.0] PARA LA TALLA (cm) EN NIÑAS MENORES DE 5 AÑOS
+p71 [11.5] GRÁFICA DE CRECIMIENTO OMS 2006
+p72 [19.0] GRÁFICAS DE CRECIMIENTO OMS 2006 PARA NIÑOS < 5 AÑOS
+p72 [32.0] ANEXO 15
+p72 [11.0] GRÁFICA 15.1: LONGITUD (cm) PARA LA EDAD (meses), TALLA (cm) PARA LA EDAD
+p72 [11.0] (meses) Y PESO (Kg) PARA LA EDAD (meses) EN NIÑOS MENORES DE 5 AÑOS
+p72 [11.4] GRÁFICA DE CRECIMIENTO OMS 2006
+p73 [11.0] GRÁFICA 15.2: PESO (Kg) PARA LA LONGITUD (cm) Y PESO (Kg)
+p73 [11.0] PARA LA TALLA (cm) EN NIÑOS MENORES DE 5 AÑOS
+p73 [12.0] GRÁFICA DE CRECIMIENTO OMS 2006
+p74 [15.0] GRÁFICA DEL CRECIMIENTO CORPORAL OMS 2007: ÍNDICE DE MASA
+p74 [15.0] CORPORAL PARA LA EDAD Y TALLA PARA LA EDAD EN NIÑAS DE 5 A 11 AÑOS
+p74 [32.0] ANEXO 16
+p75 [15.0] GRÁFICA DEL CRECIMIENTO CORPORAL OMS 2007: ÍNDICE DE MASA
+p75 [15.0] CORPORAL PARA LA EDAD Y TALLA PARA LA EDAD EN NIÑOS DE 5 A 11 AÑOS
+p75 [32.0] ANEXO 17
+p76 [23.0] TABLA DE REFERENCIA OMS 2006 DE PERÍMETRO
+p76 [23.0] CEFÁLICO PARA LA EDAD EN NIÑAS Y NIÑOS
+p76 [32.0] ANEXO 18
+p76 [11.0] NIÑAS
+p77 [11.0] NIÑOS
+p78 [25.0] EJEMPLOS DE GANANCIA INADECUADA DE
+p78 [25.0] PESO Y TALLA EN NIÑAS Y NIÑOS
+p78 [32.0] ANEXO 19
+p78 [25.0] 1.	RIESGO DE BAJO PESO:
+p78 [13.5] Riesgo de bajo peso utilizando el indicador P/T (Longitud):
+p79 [13.5] Riesgo de bajo peso utilizando el indicador P/E:
+p79 [11.0] tiempo, indica
+p79 [11.0] riesgo nutricional.
+p79 [11.0] DE, significa riesgo
+p79 [11.0] nutricional.
+p80 [11.0] indica riesgo
+p80 [11.0] nutricional.
+p81 [25.0] 2.	RIESGO DE SOBREPESO:
+p81 [13.5] Riesgo de sobrepeso utilizando el indicador P/T (Longitud):
+p81 [13.5] Riesgo de sobrepeso utilizando el indicador P/E:
+p81 [11.0] indica riesgo
+p81 [11.0] nutricional.
+p82 [25.0] 3.	RIESGO DE LONGITUD BAJA:
+p82 [11.0] indica riesgo
+p82 [11.0] nutricional.
+p83 [11.0] Niña o niño acude a
+p83 [11.0] establecimiento de salud
+p83 [21.0] FLUJOGRAMA DE ATENCIÓN PARA LA VALORACIÓN
+p83 [21.0] NUTRICIONAL ANTROPOMÉTRICA DE LA NIÑA Y EL NIÑO
+p83 [32.0] ANEXO 20
+p83 [11.0] Consulta nutricional
+p83 [11.0] (atención en nutrición)
+p84 [36.0] IX. BIBLIOGRAFÍA
+p88 [14.0] INSTITUTO NACIONAL DE SALUD
+p88 [13.0] Jirón Cápac Yupanqui 1400, Jesús María, Lima, Perú
+p88 [13.0] Teléfonos: (511) 748-0000 / 748-1111
+p88 [13.0] Página web: www.ins.gob.pe
+
+== FIRST PAGES ==
+
+--- p1 ---
+Lima, 2025
+GUÍA TÉCNICA
+PARA LA VALORACIÓN NUTRICIONAL
+ANTROPOMÉTRICA DE LA
+NIÑA Y EL NIÑO DE 0 A 11 AÑOS
+
+--- p2 ---
+
+
+--- p3 ---
+ELABORADO POR: LUIS ANGEL AGUILAR ESENARRO
+
+--- p4 ---
+ISBN: 978-612-310-181-7
+Hecho el Depósito Legal en la Biblioteca Nacional del Perú Nº 2025-12104
+1ra edición digital (noviembre 2025)
+©Instituto Nacional de Salud, 2025
+Cápac Yupanqui 1400, Jesús María, Lima, Perú
+Teléfono: (511) 748-1111
+Correo electrónico: postmaster@ins.gob.pe
+Página web: www.ins.gob.pe
+©Ministerio de Salud, 2025
+Av. Salaverry cuadra 8 s/n, Jesús María, Lima, Perú
+Teléfono: (511) 315-6600
+Página web: www.minsa.gob.pe
+Se terminó de reproducir en noviembre 2025
+La versión electrónica de este documento se encuentra disponible en forma gratuita en www.ins.gob.pe
+Se autoriza su reproducción total o parcial, siempre y cuando se cite la fuente.
+Catalogación hecha por el Centro de Información y Documentación Científica del INS
+Guía técnica para la valoración nutricional antropométrica de la niña y el niño de 0 a 11
+años / elaborado por Luis Angel Aguilar Esenarro. -- Lima: Ministerio de Salud, Instituto
+Nacional de Salud, 2025.
+84p. : ilus, tab.
+1.	 ANTROPOMETRÍA 2. EVALUACIÓN NUTRICIONAL 3. DESARROLLO INFANTIL
+4. ESTILO DE VIDA SALUDABLE 5. PERÚ
+I.
+Aguilar Esenarro, Luis Angel
+II.	 Perú. Ministerio de Salud
+III.	 Instituto Nacional de Salud (PERU), Centro Nacional de Alimentación, Nutrición y Vida
+Saludable. Sub Dirección de Investigación y Tecnologías en Alimentación y Vida Saludable –
+(Lima)
