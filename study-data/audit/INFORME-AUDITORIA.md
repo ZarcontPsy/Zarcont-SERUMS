@@ -1,5 +1,7 @@
 # Informe de auditoría — Study Dashboard y Study Flashcards
 
+> **Actualización (22/10/2026):** este informe describe la auditoría de los 42 PDF clínicos. La integración posterior de las cinco guías de Psicología se documenta en `INFORME-PSICOLOGIA.md`; los totales vigentes son 48 fuentes, 23 áreas, 86 temas, 210 fichas y 630 tarjetas, con 90/90 ítems del temario de Psicología cubiertos.
+
 **Fecha:** 22 de octubre de 2026  
 **Alcance:** 42 PDF de `study-data/fuentes/`, currículo compartido `study-data/temario.js`, dashboard, flashcards y persistencia.  
 **Objetivo:** verificar incorporación de temas y subtemas, detectar defectos, corregirlos y medir cobertura real sin inventar métricas.

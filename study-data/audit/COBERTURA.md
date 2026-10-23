@@ -1,5 +1,7 @@
 # Cobertura del temario Study
 
+> **Actualización (22/10/2026):** la cobertura del temario de Psicología se documenta en `COBERTURA-PSICOLOGIA.md` (90/90 ítems, 92 fichas y 276 tarjetas). Este archivo conserva la matriz de los 42 PDF clínicos.
+
 Generado desde `study-data/audit/merged.json` y los PDF de `study-data/fuentes/`.
 
 ## Resumen
