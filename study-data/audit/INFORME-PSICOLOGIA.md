@@ -4,6 +4,8 @@
 **Alcance:** PDF oficial del temario (3 páginas, 90 ítems), cinco guías de estudio de Psicología, Study Dashboard, Study Flashcards y `study-data/temario.js`.
 **Resultado:** **90/90 ítems del temario cubiertos** por **92 fichas** y **276 tarjetas**, sin ninguna mención a la marca en el contenido de las aplicaciones.
 
+> **Actualización del 24/10/2026:** las 92 fichas de Psicología fueron profundizadas (9-12 secciones, caso razonado y errores frecuentes por ficha), sin cambiar IDs, tarjetas ni fuentes. Ver `INFORME-PROFUNDIZACION.md`.
+
 ## 1. Fuentes incorporadas
 
 Se copiaron a `study-data/fuentes/` con nombres neutros y se registraron como fuentes del temario:

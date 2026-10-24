@@ -113,3 +113,4 @@ Generado desde `study-data/temario.js`, `psi/import/index.json` y `matriz-psicol
 - No se conserva ninguna mención a la marca, marcas de agua ni avisos de derechos de autor en el contenido del temario.
 - Los casos prácticos se rotulan como «Caso de estudio» o «Ejemplo práctico».
 - Las fichas que ya existían se actualizaron conservando su identificador y su progreso.
+- **Profundización del 24/10/2026:** las 92 fichas se ampliaron a 9-12 secciones con fundamentos, mecanismos, clasificación, procedimiento, caso razonado y errores frecuentes, sin cambiar IDs, tarjetas ni fuentes. Ver `INFORME-PROFUNDIZACION.md`.
