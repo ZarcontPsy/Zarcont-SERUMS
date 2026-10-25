@@ -1,7 +1,8 @@
 # SERUMS HUB — Sistema de diseño (Premium Glass UI)
 
-Estándar visual del lanzador **SERUMS HUB** y de sus cuatro aplicaciones:
-**BANQUEO · Examen Studio**, **PLAZAS SERUMS**, **Study Dashboard** y **Study Flashcards**.
+Estándar visual del lanzador **SERUMS HUB** y de sus cinco aplicaciones:
+**BANQUEO · Examen Studio**, **PLAZAS SERUMS**, **Study Dashboard**, **Study Flashcards**
+y **SERUMS QUEST**.
 Toda modificación futura debe respetar estas reglas y reutilizar los tokens definidos
 en `index.html` (HUB), `EXAMEN STUDIO/styles.css` (Banqueo) y `study-shared/base.css` (Study).
 
@@ -12,7 +13,7 @@ en `index.html` (HUB), `EXAMEN STUDIO/styles.css` (Banqueo) y `study-shared/base
 | Referencia | Función obligatoria |
 |---|---|
 | Imagen 1 (MOKOTO) | Identidad: paleta negro/blanco/rojo, tipografía geométrica, transparencias controladas, esquinas muy redondeadas. |
-| Imagen 2 (lanzador de referencia) | HUB: escena cálida envolvente, barra superior flotante, carrusel coverflow de cuatro tarjetas, dock lateral y control inferior con profundidad. |
+| Imagen 2 (lanzador de referencia) | HUB: escena cálida envolvente, barra superior flotante, carrusel coverflow de cinco tarjetas, dock lateral y control inferior con profundidad. |
 | Imagen 3 (Steary) | Interfaces interiores: cristal selectivo + densidad informativa, paneles amplios, jerarquía clara y controles compactos. |
 | Banco de preguntas | La información manda: listado denso, detalle legible, evidencia documental y estados visibles sin decoración que compita con el contenido. |
 | Study | Lectura y recuperación activa: fichas resumidas, tarjetas, progreso verificable y navegación cruzada sin convertir ambas apps en un dashboard único. |
@@ -42,6 +43,8 @@ el rojo sigue reservado para selección, foco y acento.
 |---|---|---|
 | `--accent` | `#E6B566` | Ámbar de Study Dashboard: lectura, progreso y fichas. |
 | `--green` | `#8FD3B0` | Verde menta de Study Flashcards: práctica y recuperación. |
+| `--quest` | `#7A9CFF` | Azul eléctrico de SERUMS QUEST: progresión y acción principal. |
+| `--quest-violet` | `#B79BFF` | Violeta de hitos, jefes y logros de SERUMS QUEST. |
 | `--bg` (claro) | `#F3F0E8` | Fondo claro de Study. |
 | `--text` (claro) | `#1D1B17` | Texto principal en tema claro. |
 
@@ -121,8 +124,8 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 ### HUB
 
 - **Barra superior** flotante: marca + acceso anterior/siguiente + aplicación actual + posición
-  (`1 / 4`) + acciones (pantalla completa, atajos, acerca de). En ≤1020 px se oculta el centro.
-- **Carrusel coverflow** de cuatro tarjetas: la activa ocupa el centro; las laterales se
+  (`1 / 5`) + acciones (pantalla completa, atajos, acerca de). En ≤1020 px se oculta el centro.
+- **Carrusel coverflow** de cinco tarjetas: la activa ocupa el centro; las laterales se
   desplazan `0.88 × ancho de tarjeta`, con escala `.78`, opacidad `.72` y perspectiva.
   Cada tarjeta combina arte CSS, categoría, nombre, descripción, metadatos y CTA.
   BANQUEO/PLAZAS conservan su identidad; Study usa ámbar y verde menta.
@@ -131,7 +134,7 @@ del color; siempre se acompaña de texto, icono, borde o posición.
   laterales muestran el arte completo con el título al pie.
 - **Navegación**: clic en lateral para seleccionar; clic central para abrir; flechas de la
   barra superior e inferior, dock vertical, puntos, swipe horizontal y teclado
-  (`←`/`→`, `1`–`4`, `Enter`/`Espacio`). La selección se refleja en barra, dock y puntos.
+  (`←`/`→`, `1`–`5`, `Enter`/`Espacio`). La selección se refleja en barra, dock y puntos.
 - **Control inferior** glass: app actual, resumen contextual (progreso real de Study) y
   botón «Abrir». El dock vertical se oculta ≤1100 px y los laterales ≤900 px.
 - **Progreso y reanudación**: barra + `completadas/total`, nota de actividad y último punto.
@@ -178,9 +181,25 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 - **Navegación cruzada**: conserva mazo, ficha y origen; si no hay contenido, estado
   informativo con alternativas.
 
+### SERUMS QUEST
+
+- **Identidad**: azul eléctrico `#7A9CFF` y violeta `#B79BFF` sobre fondo negro azulado;
+  tipografía Inter para la interfaz y Zen Dots para la marca.
+- **Inicio**: recomendación prioritaria, nivel/rango/racha, cinco áreas y accesos a modos.
+- **Mapa**: cinco rutas con nodos de misión, jefes, estados textuales y requisitos visibles.
+- **Juego**: una pregunta por pantalla, alternativas amplias, cronómetro, vidas y feedback
+  inmediato o diferido según el modo. La clave y la fuente nunca se inventan.
+- **Resultados**: precisión, cobertura, XP, monedas, logros, etapa, rango y revisión de las
+  respuestas realmente registradas.
+- **Recuperación**: errores programados, enlace real a la ficha de Study y registro de la
+  recuperación posterior; abrir una ficha no marca dominio.
+- **Perfil, logros y registro local**: métricas reales, sin usuarios simulados.
+- **Estados**: carga, error de contenido, contenido insuficiente, sesión bloqueada,
+  recuperación de estado dañado, vacío y finalización.
+
 ## 7. Accesibilidad y responsive
 
-- Teclado en HUB: `1`–`4` abre cada acceso; `←` `→` `↑` `↓` recorre las tarjetas;
+- Teclado en HUB: `1`–`5` abre cada acceso; `←` `→` `↑` `↓` recorre las tarjetas;
   `Enter` abre la enfocada; `Esc` cierra modales. Los modales atrapan el foco y las
   regiones de fondo quedan `inert`.
 - Teclado en Study: `/` busca en la biblioteca; `Espacio` revela; `1`–`4` califica o
@@ -211,7 +230,7 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 
 ### Estado actual
 
-- `index.html` — SERUMS HUB v2.2.0: carrusel coverflow de cuatro accesos, progreso real,
+- `index.html` - SERUMS HUB v2.3.0: carrusel coverflow de cinco accesos, progreso real,
   reanudación y navegación por clic, flechas, dock, puntos, swipe y teclado.
 - `EXAMEN STUDIO/` — BANQUEO v2.1.1: 51 exámenes reales, 5.100 preguntas, banco por
   profesión, revisión, importación, práctica, historial y ranking local.

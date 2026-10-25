@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Pruebas · SERUMS QUEST</title>
+<style>
+  :root { color-scheme: dark; --bg:#07080c; --panel:#10131c; --line:rgba(255,255,255,.1); --text:#f4f6fb; --soft:#bdc5d6; --muted:#828b9f; --blue:#7aa2ff; --green:#5fd3a0; --red:#f07178; --amber:#f5b85c; }
+  * { box-sizing:border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:14px/1.55 Inter, ui-sans-serif, system-ui, "Segoe UI", sans-serif; }
+  .wrap { width:min(980px, calc(100vw - 32px)); margin:0 auto; padding:32px 0 70px; }
+  h1 { font-size:clamp(26px,4vw,42px); letter-spacing:-.04em; margin:0 0 6px; }
+  p { color:var(--muted); margin:0; }
+  .bar { display:flex; gap:8px; flex-wrap:wrap; margin:18px 0; }
+  .pill { padding:6px 10px; border-radius:999px; border:1px solid var(--line); background:var(--panel); font-size:11px; color:var(--soft); }
+  .pill b { color:var(--text); }
+  .pill.ok { border-color:rgba(95,211,160,.3); color:var(--green); }
+  .pill.bad { border-color:rgba(240,113,120,.3); color:var(--red); }
+  .list { display:flex; flex-direction:column; gap:6px; }
+  .test { border:1px solid var(--line); border-radius:10px; background:var(--panel); padding:11px 13px; display:flex; align-items:flex-start; gap:10px; }
+  .test .dot { width:8px; height:8px; border-radius:50%; flex:none; margin-top:6px; background:var(--muted); }
+  .test.pass .dot { background:var(--green); box-shadow:0 0 10px rgba(95,211,160,.5); }
+  .test.fail { border-color:rgba(240,113,120,.35); }
+  .test.fail .dot { background:var(--red); }
+  .test b { display:block; font-size:12px; font-weight:600; }
+  .test small { display:block; color:var(--muted); font-size:10.5px; margin-top:2px; }
+  .test pre { margin:7px 0 0; padding:8px; border-radius:7px; background:rgba(240,113,120,.08); color:#ffb7bb; font-size:10.5px; white-space:pre-wrap; overflow:auto; }
+  a { color:var(--blue); }
+  .empty { color:var(--muted); padding:20px; border:1px dashed var(--line); border-radius:10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Pruebas de SERUMS QUEST</h1>
+  <p>Verificación de reglas, persistencia, contenido, recompensas y resultados con el código real de la aplicación.</p>
+  <div class="bar" id="summary"><span class="pill">Ejecutando…</span></div>
+  <div class="list" id="list"><div class="empty">Cargando el entorno de pruebas.</div></div>
+  <p style="margin-top:20px"><a href="../index.html">Volver a SERUMS QUEST</a> · <a href="../../index.html">Volver al HUB</a></p>
+</div>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.0.4"></script>
+<script src="../js/icons.js?v=1.0.1"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/store.js?v=1.0.4"></script>
+<script src="../js/content.js?v=1.0.6"></script>
+<script src="../js/engine.js?v=1.0.5"></script>
+<script src="tests.js?v=1.0.7"></script>
+</body>
+</html>

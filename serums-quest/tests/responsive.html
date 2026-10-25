@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Responsive · SERUMS QUEST</title>
+<style>
+  :root { color-scheme: dark; --bg:#07080c; --panel:#10131c; --line:rgba(255,255,255,.1); --text:#f4f6fb; --muted:#858da2; --blue:#7aa2ff; --green:#5fd3a0; --red:#f07178; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:13px/1.5 Inter, system-ui, sans-serif; }
+  .wrap { padding:20px; }
+  h1 { font-size:22px; margin:0 0 4px; letter-spacing:-.03em; }
+  p { margin:0; color:var(--muted); font-size:11px; }
+  .bar { display:flex; gap:6px; flex-wrap:wrap; margin:14px 0; }
+  button { padding:7px 11px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--text); font:inherit; font-size:11px; cursor:pointer; }
+  button.on { border-color:rgba(122,162,255,.45); background:rgba(122,162,255,.12); color:var(--blue); }
+  .stage { display:flex; justify-content:center; padding:10px; border:1px dashed var(--line); border-radius:14px; background:rgba(255,255,255,.02); }
+  iframe { border:1px solid var(--line); border-radius:12px; background:#07080c; box-shadow:0 20px 60px -30px #000; transition:width .2s ease, height .2s ease; }
+  .result { margin-top:12px; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:6px; }
+  .row { border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:10.5px; color:var(--muted); }
+  .row b { color:var(--text); }
+  .ok { color:var(--green); }
+  .bad { color:var(--red); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Comprobación responsive</h1>
+  <p>El iframe cambia el viewport real: las media queries se evalúan con su ancho, no con el de esta página.</p>
+  <div class="bar">
+    <button data-w="390" class="on">390 × 844</button>
+    <button data-w="768">768 × 900</button>
+    <button data-w="1280">1280 × 900</button>
+  </div>
+  <div class="stage"><iframe id="frame" src="../index.html?embed=1#/" width="390" height="844" title="SERUMS QUEST en viewport de prueba"></iframe></div>
+  <div class="result" id="result"></div>
+</div>
+<script>
+  var frame = document.getElementById("frame");
+  var result = document.getElementById("result");
+  function check() {
+    var w = frame.contentWindow;
+    var d = frame.contentDocument;
+    if (!w || !d) return;
+    var inner = d.documentElement.clientWidth;
+    var overflow = d.documentElement.scrollWidth - inner;
+    var grid = w.getComputedStyle(d.querySelector(".q-home-grid")).gridTemplateColumns;
+    var nav = w.getComputedStyle(d.querySelector(".q-nav"));
+    var appbar = w.getComputedStyle(d.querySelector(".q-appbar-inner"));
+    var modes = w.getComputedStyle(d.querySelector(".q-mode-grid"));
+    var rows = [
+      ["Viewport interno", inner + " px", true],
+      ["Sin desbordamiento horizontal", overflow <= 1 ? "OK (" + overflow + "px)" : "FALLA (" + overflow + "px)", overflow <= 1],
+      ["Hero en columnas", grid, inner <= 1050 ? grid.split(" ").length === 1 : grid.split(" ").length >= 2],
+      ["Nav con scroll horizontal", nav.overflowX, inner <= 900 ? nav.overflowX === "auto" : true],
+      ["Appbar con wrap", appbar.flexWrap, inner <= 900 ? appbar.flexWrap === "wrap" : true],
+      ["Modos en rejilla", modes.gridTemplateColumns.split(" ").length + " columnas", true]
+    ];
+    result.innerHTML = rows.map(function (r) {
+      return '<div class="row">' + r[0] + ': <b class="' + (r[2] ? "ok" : "bad") + '">' + r[1] + "</b></div>";
+    }).join("");
+  }
+  document.querySelectorAll("[data-w]").forEach(function (button) {
+    button.addEventListener("click", function () {
+      document.querySelectorAll("[data-w]").forEach(function (b) { b.classList.remove("on"); });
+      button.classList.add("on");
+      var width = Number(button.getAttribute("data-w"));
+      frame.style.width = width + "px";
+      frame.setAttribute("width", width);
+      frame.style.height = (width <= 390 ? 844 : 900) + "px";
+      frame.setAttribute("height", width <= 390 ? 844 : 900);
+      setTimeout(check, 500);
+    });
+  });
+  frame.addEventListener("load", function () { setTimeout(check, 900); });
+</script>
+</body>
+</html>

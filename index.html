@@ -739,6 +739,59 @@
   .art-flash .flash-dots i{ width: 3px; height: 3px; border-radius: 50%; background: #b4c4ba; }
   .art-flash .flash-dots i:first-child{ background: #3e8d6b; }
 
+  /* ============ Arte: SERUMS QUEST ============ */
+  .app-card--quest{
+    --app: #7A9CFF; --app-soft: rgba(122, 156, 255, .17); --app-line: rgba(122, 156, 255, .38);
+  }
+  .app-card--quest .app-art{
+    background:
+      radial-gradient(62% 62% at 76% 14%, rgba(122, 156, 255, .42), transparent 66%),
+      radial-gradient(55% 60% at 10% 92%, rgba(74, 44, 142, .64), transparent 72%),
+      linear-gradient(155deg, #090d20, #07070f);
+  }
+  .art-quest .art-orb{ width: 200px; height: 200px; right: -45px; top: -55px; background: rgba(122, 156, 255, .20); }
+  .art-quest .quest-q{
+    position: absolute; right: 3%; top: -2%;
+    font-family: var(--font-display); font-size: 230px; line-height: .8;
+    color: rgba(255, 255, 255, .035); pointer-events: none;
+  }
+  .art-quest .quest-orbit{
+    position: absolute; left: 50%; top: 48%; width: 260px; height: 260px;
+    border: 1px solid rgba(183, 155, 255, .16); border-radius: 50%;
+    transform: translate(-50%, -50%) rotate(-14deg);
+  }
+  .art-quest .quest-orbit::after{
+    content: ""; position: absolute; inset: 28px; border-radius: 50%;
+    border: 1px dashed rgba(122, 156, 255, .18);
+  }
+  .art-quest .quest-map{ position: absolute; inset: 6% 4% 4%; width: 92%; height: 88%; overflow: visible; }
+  .art-quest .quest-path-glow{
+    fill: none; stroke: rgba(122, 156, 255, .20); stroke-width: 9; stroke-linecap: round;
+    filter: blur(7px);
+  }
+  .art-quest .quest-path{
+    fill: none; stroke: rgba(174, 194, 255, .55); stroke-width: 1.6;
+    stroke-linecap: round; stroke-dasharray: 3 7;
+  }
+  .art-quest .quest-node{ fill: #0b1020; stroke: rgba(174, 194, 255, .65); stroke-width: 1.4; }
+  .art-quest .quest-node.is-on{ fill: #7A9CFF; stroke: #DCE6FF; filter: drop-shadow(0 0 9px rgba(122, 156, 255, .9)); }
+  .art-quest .quest-node.is-violet{ fill: #B79BFF; stroke: #EDE4FF; filter: drop-shadow(0 0 9px rgba(183, 155, 255, .75)); }
+  .art-quest .quest-ring{ fill: none; stroke: rgba(122, 156, 255, .34); stroke-width: 1; }
+  .art-quest .quest-pulse{
+    fill: none; stroke: rgba(122, 156, 255, .45); stroke-width: 1;
+    transform-origin: 232px 180px; animation: questPulse 3.4s ease-out infinite;
+  }
+  @keyframes questPulse{ 0%, 100%{ transform: scale(.8); opacity: .15; } 50%{ opacity: .75; } 75%{ transform: scale(1.5); opacity: 0; } }
+  .art-quest .quest-caption{
+    position: absolute; left: 7%; bottom: 7%; display: flex; align-items: center; gap: 6px;
+    padding: 6px 9px; border-radius: 8px;
+    border: 1px solid rgba(174, 194, 255, .18); background: rgba(9, 13, 32, .62);
+    color: rgba(220, 230, 255, .64); font-size: 6px; letter-spacing: .13em; text-transform: uppercase;
+    -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
+  }
+  .art-quest .quest-caption .dot{ width: 4px; height: 4px; border-radius: 50%; background: #7A9CFF; box-shadow: 0 0 8px #7A9CFF; }
+  .art-quest .quest-caption b{ color: rgba(244, 246, 255, .9); font-weight: 650; letter-spacing: .04em; }
+
   /* ============ Dock lateral ============ */
   .dock{
     position: fixed; z-index: 40; left: 18px; top: 50%;
@@ -1092,7 +1145,7 @@
         </button>
       </div>
     </div>
-    <div class="tb-center"><span class="dot-live"></span><b id="tbNow">BANQUEO</b><span class="tb-count" id="tbPos">1 / 4</span></div>
+    <div class="tb-center"><span class="dot-live"></span><b id="tbNow">BANQUEO</b><span class="tb-count" id="tbPos">1 / 5</span></div>
     <div class="tb-right">
       <button class="icon-btn" id="btnFs" data-tip="Pantalla completa" aria-label="Pantalla completa">
         <svg class="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -1152,7 +1205,7 @@
           <span class="app-open-pill">Abrir
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="app-badge">01 / 04</span>
+          <span class="app-badge">01 / 05</span>
         </div>
         <div class="app-body">
           <span class="app-kicker">Banco de exámenes</span>
@@ -1204,7 +1257,7 @@
           <span class="app-open-pill">Abrir
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="app-badge">02 / 04</span>
+          <span class="app-badge">02 / 05</span>
         </div>
         <div class="app-body">
           <span class="app-kicker">Explorador territorial</span>
@@ -1251,7 +1304,7 @@
           <span class="app-open-pill">Abrir
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="app-badge">03 / 04</span>
+          <span class="app-badge">03 / 05</span>
         </div>
         <div class="app-body">
           <span class="app-kicker">Lectura y progreso</span>
@@ -1278,7 +1331,7 @@
       </a>
 
       <!-- STUDY FLASHCARDS -->
-      <a class="app-card app-card--flashcards is-left" data-app="flashcards" data-index="3" data-study-card="flashcards" href="./study-flashcards/index.html">
+      <a class="app-card app-card--flashcards is-hidden" data-app="flashcards" data-index="3" data-study-card="flashcards" href="./study-flashcards/index.html">
         <div class="app-art" aria-hidden="true">
           <div class="art-scene art-flash">
             <span class="art-orb"></span>
@@ -1301,7 +1354,7 @@
           <span class="app-open-pill">Abrir
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
           </span>
-          <span class="app-badge">04 / 04</span>
+          <span class="app-badge">04 / 05</span>
         </div>
         <div class="app-body">
           <span class="app-kicker">Recuperación activa</span>
@@ -1323,6 +1376,56 @@
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
             </span>
             <span class="app-tag">Práctica</span>
+          </div>
+        </div>
+      </a>
+
+      <!-- SERUMS QUEST -->
+      <a class="app-card app-card--quest is-left" data-app="quest" data-index="4" data-study-card="quest" href="./serums-quest/index.html">
+        <div class="app-art" aria-hidden="true">
+          <div class="art-scene art-quest">
+            <span class="art-orb"></span>
+            <span class="quest-q">Q</span>
+            <span class="quest-orbit"></span>
+            <svg class="quest-map" viewBox="0 0 360 300" fill="none" aria-hidden="true">
+              <path class="quest-path-glow" d="M32 252C82 232 74 180 136 166S218 206 242 150 274 78 330 58"/>
+              <path class="quest-path" d="M32 252C82 232 74 180 136 166S218 206 242 150 274 78 330 58"/>
+              <circle class="quest-ring" cx="242" cy="150" r="17"/>
+              <circle class="quest-pulse" cx="242" cy="150" r="17"/>
+              <circle class="quest-node" cx="32" cy="252" r="4.5"/>
+              <circle class="quest-node" cx="136" cy="166" r="4.5"/>
+              <circle class="quest-node is-on" cx="242" cy="150" r="7"/>
+              <circle class="quest-node is-violet" cx="274" cy="78" r="5"/>
+              <circle class="quest-node" cx="330" cy="58" r="4"/>
+            </svg>
+            <div class="quest-caption"><span class="dot"></span><b>5 rutas</b> · misiones</div>
+            <div class="art-stat"><b>300</b><span>preguntas</span></div>
+          </div>
+          <span class="app-open-pill">Abrir
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"/><path d="M8 7h9v9"/></svg>
+          </span>
+          <span class="app-badge">05 / 05</span>
+        </div>
+        <div class="app-body">
+          <span class="app-kicker">Aprendizaje gamificado</span>
+          <h2>SERUMS QUEST</h2>
+          <p class="app-desc">Misiones, desafíos diarios y recuperación de errores con XP, rangos y logros.</p>
+          <ul class="app-meta">
+            <li>5 rutas</li>
+            <li>13 misiones</li>
+            <li>300 preguntas</li>
+          </ul>
+          <div class="app-progress is-empty" data-progress="quest">
+            <div class="app-progress-head"><span>Nivel y XP</span><b data-progress-value>—</b></div>
+            <div class="app-progress-track"><span data-progress-bar></span></div>
+            <p class="app-progress-note" data-progress-note>Sin actividad registrada todavía</p>
+          </div>
+          <p class="app-last" data-last="quest" hidden><span>Última sesión</span><b data-last-text></b></p>
+          <div class="app-foot">
+            <span class="app-cta">Abrir SERUMS QUEST
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="m13 6 6 6-6 6"/></svg>
+            </span>
+            <span class="app-tag">Progresión</span>
           </div>
         </div>
       </a>
@@ -1366,7 +1469,7 @@
       </button>
     </div>
     <ul class="keys">
-      <li><span class="k"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd></span><span>Abrir una aplicación</span></li>
+      <li><span class="k"><kbd>1</kbd><kbd>2</kbd><kbd>3</kbd><kbd>4</kbd><kbd>5</kbd></span><span>Abrir una aplicación</span></li>
       <li><span class="k"><kbd>←</kbd><kbd>→</kbd></span><span>Girar el carrusel</span></li>
       <li><span class="k"><kbd>Enter</kbd></span><span>Abrir la aplicación central</span></li>
       <li><span class="k"><kbd>Esc</kbd></span><span>Cerrar este panel</span></li>
@@ -1392,15 +1495,15 @@
       </span>
       <span class="about-id">
         <span class="about-wordmark">ZARCONT</span>
-        <span class="about-sub">SERUMS HUB · <span id="aboutVersion">v2.2.0</span></span>
+        <span class="about-sub">SERUMS HUB · <span id="aboutVersion">v2.3.0</span></span>
       </span>
     </div>
     <ul class="keys about-list">
       <li><span>Autoría</span><span>ZARCONT</span></li>
       <li><span>Licencia</span><span>Propietaria — todos los derechos reservados</span></li>
-      <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-2.2.0</span></li>
+      <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-2.3.0</span></li>
     </ul>
-    <p class="modal-note">Interfaz <b>Premium Glass 2.0</b> con carrusel de aplicaciones, dock lateral y control inferior. Incluye <b>BANQUEO</b> (Examen Studio v2.1.1), <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v2.0.0), <b>Study Dashboard</b> y <b>Study Flashcards</b>, dos aplicaciones de estudio con temario compartido. Las librerías de terceros conservan sus propias licencias.</p>
+    <p class="modal-note">Interfaz <b>Premium Glass 2.0</b> con carrusel de aplicaciones, dock lateral y control inferior. Incluye <b>BANQUEO</b> (Examen Studio v2.1.1), <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v2.0.0), <b>Study Dashboard</b>, <b>Study Flashcards</b> y <b>SERUMS QUEST</b>, la capa de aprendizaje gamificado conectada al banco y al temario. Las librerías de terceros conservan sus propias licencias.</p>
   </div>
 
   <!-- Overlay de apertura -->
@@ -1417,7 +1520,7 @@
   </div>
 
 <script>
-/* © 2026 ZARCONT — SERUMS HUB · Identificador: ZARCONT-SRH-2.2.0 · Licencia propietaria (ver LICENSE) */
+/* © 2026 ZARCONT — SERUMS HUB · Identificador: ZARCONT-SRH-2.3.0 · Licencia propietaria (ver LICENSE) */
 (function(){
   "use strict";
 
@@ -1431,14 +1534,16 @@
       banqueo:   "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
       plazas:    "./serums map/serums-map-explorer/index.html",
       dashboard: "./study-dashboard/index.html",
-      flashcards:"./study-flashcards/index.html"
+      flashcards:"./study-flashcards/index.html",
+      quest:     "./serums-quest/index.html"
     },
     duracionTransicion: 650,
     abrirEnNuevaPestana: false,
-    version: "2.2.0",
-    build: "ZARCONT-SRH-2.2.0"
+    version: "2.3.0",
+    build: "ZARCONT-SRH-2.3.0"
   };
   const SNAPSHOT_KEY = "studyhub:snapshot:v1";
+  const QUEST_SNAPSHOT_KEY = "serumsquest:snapshot:v1";
   /* ================================================================== */
 
   const REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
@@ -1481,7 +1586,8 @@
     banqueo: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="8" y="2.5" width="8" height="4" rx="1.2"/><path d="M16 4.5h2a2 2 0 0 1 2 2V20a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6.5a2 2 0 0 1 2-2h2"/><path d="m9.5 13.5 1.8 1.8 3.7-3.8"/></svg>',
     plazas: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>',
     dashboard: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/><path d="M8 7h8M8 11h6"/></svg>',
-    flashcards: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2"/><path d="M7 12h6M7 16h4"/></svg>'
+    flashcards: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="7" width="14" height="14" rx="2"/><path d="M7 7V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2h-2"/><path d="M7 12h6M7 16h4"/></svg>',
+    quest: '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V8l5-4 6 5 5-3v12l-5 3-6-5-5 4Z"/><path d="M9 4v12M15 9v12"/><circle cx="19" cy="4" r="2"/></svg>'
   };
   function icon(id){ return ICONS[id] || ""; }
 
@@ -1489,7 +1595,8 @@
     banqueo:   { name: "BANQUEO",          tagline: "Banco de exámenes",       color: "#E33A45", icon: icon("banqueo") },
     plazas:    { name: "PLAZAS SERUMS",    tagline: "Explorador territorial",  color: "#F08A5D", icon: icon("plazas") },
     dashboard: { name: "STUDY DASHBOARD",  tagline: "Lectura y progreso",      color: "#E2B15B", icon: icon("dashboard") },
-    flashcards:{ name: "STUDY FLASHCARDS", tagline: "Recuperación activa",     color: "#8FD3B0", icon: icon("flashcards") }
+    flashcards:{ name: "STUDY FLASHCARDS", tagline: "Recuperación activa",     color: "#8FD3B0", icon: icon("flashcards") },
+    quest:     { name: "SERUMS QUEST",     tagline: "Aprendizaje gamificado",  color: "#7A9CFF", icon: icon("quest") }
   };
 
   /* ==================================================================
@@ -1498,6 +1605,15 @@
   function readSnapshot(){
     try {
       const raw = localStorage.getItem(SNAPSHOT_KEY);
+      if (!raw) return null;
+      const snap = JSON.parse(raw);
+      return snap && typeof snap === "object" ? snap : null;
+    } catch (err){ return null; }
+  }
+
+  function readQuestSnapshot(){
+    try {
+      const raw = localStorage.getItem(QUEST_SNAPSHOT_KEY);
       if (!raw) return null;
       const snap = JSON.parse(raw);
       return snap && typeof snap === "object" ? snap : null;
@@ -1557,7 +1673,7 @@
     if (!barSub) return;
     const id = activeId();
     let sub = APPS[id] ? APPS[id].tagline : "";
-    if (id === "dashboard" || id === "flashcards"){
+    if (id === "dashboard" || id === "flashcards" || id === "quest"){
       const box = document.querySelector('[data-study-card="' + id + '"] [data-progress="' + id + '"]');
       const note = box && box.querySelector("[data-progress-note]");
       if (box && !box.classList.contains("is-empty") && note && note.textContent) sub = note.textContent;
@@ -1614,8 +1730,39 @@
     syncBarSub();
   }
 
+  function applyQuestSnapshot(){
+    const snap = readQuestSnapshot();
+    if (!snap) {
+      setProgress("quest", {
+        has: false,
+        known: false,
+        value: "—",
+        percent: 0,
+        note: "Sin actividad registrada todavía",
+        lastTitle: "",
+        href: CONFIG.apps.quest
+      });
+      syncBarSub();
+      return;
+    }
+    const has = !!snap.hasActivity;
+    setProgress("quest", {
+      has: has,
+      known: true,
+      value: "Nv " + (Number(snap.level) || 1),
+      percent: Number(snap.levelPercent) || 0,
+      note: has
+        ? (snap.rank || "Bachiller") + " · " + (Number(snap.xp) || 0) + " XP · " + (Number(snap.answered) || 0) + " respuestas"
+        : "Sin actividad registrada todavía",
+      lastTitle: snap.lastSession && snap.lastSession.title ? snap.lastSession.title : "",
+      href: CONFIG.apps.quest
+    });
+    syncBarSub();
+  }
+
   function refreshStudyCards(){
     applySnapshot(readSnapshot());
+    applyQuestSnapshot();
   }
 
   /* Relleno del panel «Acerca de» */
@@ -1643,7 +1790,7 @@
 
   refreshStudyCards();
   window.addEventListener("storage", function(e){
-    if (e.key === SNAPSHOT_KEY) refreshStudyCards();
+    if (e.key === SNAPSHOT_KEY || e.key === QUEST_SNAPSHOT_KEY) refreshStudyCards();
   });
   window.addEventListener("pageshow", refreshStudyCards);
   document.addEventListener("visibilitychange", function(){
@@ -1677,7 +1824,7 @@
       card.classList.toggle("is-active", active);
       card.classList.toggle("is-right", delta === 1);
       card.classList.toggle("is-left", delta === n - 1);
-      card.classList.toggle("is-hidden", delta === 2);
+      card.classList.toggle("is-hidden", delta >= 2 && delta !== n - 1);
       card.tabIndex = active ? 0 : -1;
       card.setAttribute("aria-current", active ? "true" : "false");
       const app = APPS[order[i]];
@@ -1862,7 +2009,7 @@
       return;
     }
     if (e.metaKey || e.ctrlKey || e.altKey) return;
-    if (/^[1-4]$/.test(e.key)){
+    if (/^[1-5]$/.test(e.key)){
       const index = Number(e.key) - 1;
       const card = cards[index];
       if (!card) return;

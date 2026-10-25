@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#08090D">
+<meta name="author" content="ZARCONT">
+<meta name="description" content="SERUMS QUEST: misiones, recuperación de errores, desafíos diarios y progresión basada en preguntas oficiales de Psicología.">
+<title>SERUMS QUEST · Aprendizaje gamificado</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2308090D'/%3E%3Cpath d='M16 46 26 18l6 17 6-17 10 28' fill='none' stroke='%237AA2FF' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='16' r='6' fill='%23C49BFF'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=1.0.5">
+<script>
+  try {
+    var t = localStorage.getItem("serumsquest:theme");
+    if (t === "light") document.documentElement.setAttribute("data-theme", "light");
+  } catch (e) {}
+</script>
+</head>
+<body>
+<a class="q-skip" href="#main">Saltar al contenido</a>
+<div class="q-ambient" aria-hidden="true">
+  <span class="q-ambient-a"></span>
+  <span class="q-ambient-b"></span>
+</div>
+
+<header class="q-appbar" id="q-appbar">
+  <div class="q-appbar-inner">
+    <a class="q-brand" href="#/" data-nav aria-label="SERUMS QUEST, inicio">
+      <span class="q-brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" fill="none"><path d="M6 25 12 7l4 10 4-10 6 18" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><circle cx="26" cy="6" r="3" fill="currentColor"/></svg>
+      </span>
+      <span class="q-brand-copy">
+        <span class="q-brand-name">SERUMS</span>
+        <span class="q-brand-sub">QUEST</span>
+      </span>
+    </a>
+
+    <nav class="q-nav" aria-label="Navegación principal">
+      <a class="q-navlink" href="#/" data-nav data-route="home"><span data-icon="home"></span><span>Inicio</span></a>
+      <a class="q-navlink" href="#/mapa" data-nav data-route="map"><span data-icon="map"></span><span>Mapa</span></a>
+      <a class="q-navlink" href="#/errores" data-nav data-route="errors"><span data-icon="rotate"></span><span>Errores</span><span class="q-nav-badge" data-errors-badge hidden>0</span></a>
+      <a class="q-navlink" href="#/perfil" data-nav data-route="profile"><span data-icon="user"></span><span>Perfil</span></a>
+      <a class="q-navlink q-navlink--more" href="#/logros" data-nav data-route="achievements" aria-label="Logros"><span data-icon="award"></span><span>Logros</span></a>
+      <a class="q-navlink q-navlink--more" href="#/registro" data-nav data-route="ranking" aria-label="Registro local"><span data-icon="chart"></span><span>Registro</span></a>
+      <a class="q-navlink q-navlink--more" href="#/ajustes" data-nav data-route="settings" aria-label="Ajustes"><span data-icon="settings"></span><span>Ajustes</span></a>
+    </nav>
+
+    <div class="q-appbar-actions">
+      <span class="q-stage-chip" data-stage-pill title="Etapa adaptativa actual"><span class="q-dot"></span><span data-stage-name>Iniciación</span></span>
+      <span class="q-currency" data-level-pill title="Nivel y experiencia"><b>Nv 1</b><span data-level-xp>0 XP</span></span>
+      <span class="q-currency q-currency--coins" data-coins-pill title="Monedas virtuales"><span data-icon="coins"></span><b>0</b></span>
+      <button class="q-iconbtn" type="button" data-theme-toggle data-action="toggle-setting" data-setting="theme" aria-label="Cambiar tema" title="Cambiar tema"></button>
+      <a class="q-iconbtn q-iconbtn--resume" href="#/jugar" data-resume-slot hidden aria-label="Continuar sesión" title="Continuar sesión"><span data-icon="play"></span></a>
+    </div>
+  </div>
+</header>
+
+<main id="main" tabindex="-1">
+  <div id="q-boot" class="q-boot" aria-live="polite">
+    <div class="q-boot-hero q-skeleton"></div>
+    <div class="q-boot-grid">
+      <div class="q-skeleton q-skeleton--card"></div>
+      <div class="q-skeleton q-skeleton--card"></div>
+      <div class="q-skeleton q-skeleton--card"></div>
+    </div>
+    <p class="q-boot-text">Cargando SERUMS QUEST…</p>
+  </div>
+  <div id="view" class="q-view" hidden></div>
+</main>
+
+<div class="q-toast-stack" id="q-toast-stack" aria-live="polite" aria-atomic="true"></div>
+<div class="q-sr-only" id="q-live" aria-live="polite"></div>
+
+<footer class="q-footer">
+  <div class="q-footer-inner">
+    <span>Progreso guardado en este navegador · sin backend remoto</span>
+    <span class="q-footer-links">
+      <a href="../index.html">HUB</a>
+      <a href="../study-dashboard/index.html">Study Dashboard</a>
+      <a href="tests/tests.html">Pruebas</a>
+    </span>
+  </div>
+</footer>
+
+<dialog id="q-dialog" class="q-dialog"></dialog>
+<input type="file" id="import-file" accept="application/json,.json" hidden>
+
+<noscript>
+  <div class="q-noscript">SERUMS QUEST necesita JavaScript para funcionar. Actívalo en este navegador.</div>
+</noscript>
+
+<script src="../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../study-data/temario.js?v=2.5.0"></script>
+<script src="../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="data/quest-map.js?v=1.0.2"></script>
+<script src="js/config.js?v=1.0.4"></script>
+<script src="js/icons.js?v=1.0.1"></script>
+<script src="js/util.js?v=1.0.4"></script>
+<script src="js/progression.js?v=1.0.5"></script>
+<script src="js/store.js?v=1.0.4"></script>
+<script src="js/content.js?v=1.0.6"></script>
+<script src="js/engine.js?v=1.0.5"></script>
+<script src="js/app.js?v=1.0.6"></script>
+</body>
+</html>
