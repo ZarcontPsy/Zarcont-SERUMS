@@ -5,6 +5,7 @@
   var C = window.STUDY_CONTENT;
   var UI = window.StudyUI;
   var Store = window.StudyStore;
+  var TAX = window.StudyTaxonomy;
   var esc = UI.escapeHTML;
   var icon = UI.icon;
   var qs = UI.qs;
@@ -96,6 +97,19 @@
     return { name: "notfound" };
   }
   function plural(n, one, many) { return UI.plural(n, one, many); }
+  function primaryAreas() {
+    return TAX && TAX.primaryAreas().length ? TAX.primaryAreas() : C.areas;
+  }
+  function categoriesOf(areaId) {
+    return TAX ? TAX.categoriesForArea(areaId) : [];
+  }
+  function areaForTopic(topic) {
+    if (!topic) return null;
+    return TAX ? TAX.area(topic.primaryAreaId || topic.areaId) : Store.getArea(topic.areaId);
+  }
+  function categoryForSheet(sheet) {
+    return sheet && TAX ? TAX.categoryForSheet(sheet) : null;
+  }
   function shuffle(list) {
     var a = list.slice();
     for (var i = a.length - 1; i > 0; i--) {
@@ -401,13 +415,14 @@
 
   function deckCard(sheet) {
     var topic = Store.getTopic(sheet.topicId);
-    var area = topic ? Store.getArea(topic.areaId) : null;
+    var area = topic ? areaForTopic(topic) : null;
+    var category = categoryForSheet(sheet);
     var stats = Store.getDeckStats(sheet.id);
     var active = Store.getFlashSession(sheet.id);
     var last = stats.lastReviewAt ? UI.formatRelative(stats.lastReviewAt) : "Sin practicar";
     return '<article class="deck-card" style="--area:' + esc(area ? area.accent : "var(--accent)") + '">' +
       '<a class="deck-card-head" href="' + deckHref(sheet.id) + '" data-nav>' +
-        '<span class="deck-card-top"><span class="deck-area-label">' + esc(area ? area.short : "") + '</span>' +
+        '<span class="deck-card-top"><span class="deck-area-label">' + esc(category ? category.short : area ? area.short : "") + '</span>' +
           (active ? '<span class="s-chip s-chip--accent">' + icon("play", 11) + 'En curso</span>' : '') +
         '</span>' +
         '<h3>' + esc(sheet.title) + '</h3>' +
@@ -431,24 +446,35 @@
       '</article>';
   }
 
+  function categoryDeckBlock(category, sheets) {
+    if (!sheets.length) return "";
+    return '<div class="deck-category">' +
+      '<div class="deck-category-head"><span class="s-kicker">' + esc(category.short) + '</span><h3>' + esc(category.title) + '</h3><span class="s-small s-muted">' + sheets.length + ' ' + plural(sheets.length, "mazo", "mazos") + '</span></div>' +
+      '<div class="deck-grid">' + sheets.map(deckCard).join("") + '</div>' +
+      '</div>';
+  }
+
   function renderDecks() {
     var totals = deckTotals();
     var active = Store.getFlashSession();
     var sheets = C.sheets.filter(function (s) { return cardsFor(s.id).length > 0; });
-    var areasHTML = C.areas.map(function (area) {
+    var areasHTML = primaryAreas().map(function (area) {
       var areaSheets = sheets.filter(function (s) {
         var topic = Store.getTopic(s.topicId);
-        return topic && topic.areaId === area.id;
+        return topic && (topic.primaryAreaId || topic.areaId) === area.id;
       });
       if (!areaSheets.length) return "";
-      var source = Store.getSource(area.sourceIds[0]);
+      var source = Store.getSource((area.sourceIds || [])[0]);
+      var categoriesHTML = categoriesOf(area.id).map(function (category) {
+        return categoryDeckBlock(category, areaSheets.filter(function (s) { return s.categoryId === category.id; }));
+      }).join("");
       return '<section class="deck-area" style="--area:' + esc(area.accent) + '">' +
         '<div class="deck-area-head">' +
           '<span class="deck-area-icon">' + icon(area.icon || "cards", 18) + '</span>' +
           '<div><h2>' + esc(area.title) + '</h2><p>' + esc(area.description) + '</p></div>' +
           '<span class="deck-area-meta">' + areaSheets.length + ' ' + plural(areaSheets.length, "mazo", "mazos") + (source ? ' · ' + esc(source.short) : '') + '</span>' +
         '</div>' +
-        '<div class="deck-grid">' + areaSheets.map(deckCard).join("") + '</div>' +
+        categoriesHTML +
         '</section>';
     }).join("");
 
@@ -530,7 +556,9 @@
   }
 
   function renderDeck(deck) {
-    var area = deck.topic ? Store.getArea(deck.topic.areaId) : null;
+    var area = deck.topic ? areaForTopic(deck.topic) : null;
+    var category = deck.kind === "sheet" && deck.sheet ? categoryForSheet(deck.sheet) :
+      (deck.topic && TAX ? TAX.categoryForTopic(deck.topic.id) : null);
     var stats = Store.getDeckStats(deck.id);
     var cards = cardsFor(deck.id);
     var active = Store.getFlashSession(deck.id);
@@ -543,13 +571,13 @@
     }
     var sessions = (Store.getState().sessions || []).filter(function (s) { return s.deckId === deck.id; }).slice(0, 3);
     var crumb = '<div class="deck-breadcrumb"><span class="deck-area-dot"></span><span>' + esc(area ? area.title : "") + '</span>' + icon("chevronRight", 12) +
-      (deck.kind === "sheet" && deck.topic ? '<span>' + esc(deck.topic.title) + '</span>' + icon("chevronRight", 12) : '') +
+      (category ? '<span>' + esc(category.title) + '</span>' + icon("chevronRight", 12) : '') +
       '<span>' + (deck.kind === "sheet" ? "Ficha" : "Mazo") + '</span></div>';
 
     if (!cards.length) {
       return '<div class="deck-view">' +
         '<a class="flash-back" href="' + esc(backHref) + '"' + (state.fromDashboard ? "" : ' data-nav') + '>' + icon("arrowLeft", 15) + ' ' + esc(backLabel) + '</a>' +
-        '<section class="deck-head"><span class="s-kicker">' + esc(area ? area.short : "") + '</span><h1>' + esc(deck.title) + '</h1><p>' + esc(deck.summary) + '</p></section>' +
+        '<section class="deck-head"><span class="s-kicker">' + esc(category ? category.short : area ? area.short : "") + '</span><h1>' + esc(deck.title) + '</h1><p>' + esc(deck.summary) + '</p></section>' +
         UI.emptyState({
           icon: "cards", title: "Este mazo todavía no tiene tarjetas",
           text: "La ficha resumen sí puede estar disponible. Consulta el temario o elige otro mazo para practicar.",

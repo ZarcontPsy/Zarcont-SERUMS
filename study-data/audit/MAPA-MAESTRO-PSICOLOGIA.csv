@@ -1,0 +1,91 @@
+﻿area,subarea,codigo,item,pagina,fichas,tarjetas,estado_mapeo,estado_contenido,brecha
+Salud pública,Métodos y aplicaciones,SP 1.1,"Conceptos básicos de salud pública (definiciones, FESP)",1,sheet-psi-sp-1-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.2,"Epidemiologia (conceptos básicos, mediciones e indicadores)",1,sheet-psi-sp-1-2,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.3,"Causalidad y Riesgo (definición, criterios de Dolly Hill, medición de riesgo individual poblacional, etc.)",1,sheet-psi-sp-1-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.4,"Demografía en salud (Transición demográfica y epidemiológica, indicadores de estructura y dinámica poblacional)",1,sheet-psi-sp-1-4,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.5,Historia natural del proceso salud enfermedad,1,sheet-psi-sp-1-5,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.6,"Etapas y niveles de prevención (primaria, secundaria, terciaria y cuaternaria)",1,sheet-psi-sp-1-6,3,Cubierto,Desarrollado,
+Salud pública,Métodos y aplicaciones,SP 1.7,"Pruebas diagnósticas (sensibilidad, especificidad, valor predictivo positivo, valor predictivo negativo)",1,sheet-psi-sp-1-7,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.8,"Brotes, epidemias, epizootias, pandemias y endemias.",1,sheet-psi-sp-1-8,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.9,"Vigilancia en salud pública y epidemiológica (definición, componentes, usos y aplicaciones)",1,sheet-psi-sp-1-9,3,Cubierto,Parcial,Atributos y modalidades de vigilancia; revisar duplicación con SP 1.13.
+Salud pública,Métodos y aplicaciones,SP 1.10,Prevención y Control de infecciones (conceptos diferencias y usos),1,sheet-psi-sp-1-10,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.11,Uso racional de medicamentos y su impacto en la salud pública,1,sheet-psi-sp-1-11,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Métodos y aplicaciones,SP 1.12,Análisis situacional de salud,1,sheet-psi-sp-1-12,3,Cubierto,Desarrollado,
+Salud pública,Métodos y aplicaciones,SP 1.13,"Sistema de Vigilancia Epidemiológica en el país (notificación de enfermedades, composición, difusión de información)",1,sheet-psi-sp-1-13,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.1,Determinantes sociales de la salud (intermedios y estructurales). [Aparece dos veces en el PDF; se trata una vez],1,sheet-psi-sp-2-1,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.2,"Determinantes ambientales de salud (entorno, ambiente, saneamiento básico).",1,sheet-psi-sp-2-2,3,Cubierto,Parcial,Solapa metales pesados con CI 2.18; delimitar alcance ambiental.
+Salud pública,Salud comunitaria,SP 2.3,Participación social y comunitaria.,1,sheet-psi-sp-2-3,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.4,Sectorización y ficha familiar.,1,sheet-psi-sp-2-4,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.5,Intervenciones comunitarias en salud.,1,sheet-psi-sp-2-5,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.6,Trabajo intersectorial en salud.,1,sheet-psi-sp-2-6,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.7,Plan de salud local.,1,sheet-psi-sp-2-7,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.8,"Sistemas de información y TICs en salud (HIS, receta electrónica, Historia clínica y SIS)",1,sheet-psi-sp-2-8,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Salud comunitaria,SP 2.9,Alimentación y Nutrición e inocuidad alimentaria,1,sheet-psi-sp-2-9,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Salud comunitaria,SP 2.10,Gestión y manejo de los residuos sólidos (importancia en la salud comunitaria).,1,sheet-psi-sp-2-10,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.11,"Salud ocupacional (Prevención y control riesgos laborales, identificación de riesgos psicosocial en el trabajador de salud).",1,sheet-psi-sp-2-11,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Salud pública,Salud comunitaria,SP 2.12,Modelo de salud mental comunitaria.,1,sheet-psi-sp-2-12,3,Cubierto,Desarrollado,
+Salud pública,Salud comunitaria,SP 2.13,"Accesibilidad a los servicios de salud (barreras sociales, geográficas, económicas y culturales).",1,sheet-psi-sp-2-13,3,Cubierto,Desarrollado,
+Salud pública,Promoción y prevención del riesgo y daño,SP 3.1,"Promoción de la salud (Conceptos, estrategias, enfoques, escenarios, ejes temáticos e intervenciones)",1,sheet-psi-sp-3-1,3,Cubierto,Desarrollado,
+Salud pública,Promoción y prevención del riesgo y daño,SP 3.2,"Información, educación y comunicación para la salud",1,sheet-psi-sp-3-2,3,Cubierto,Desarrollado,
+Salud pública,Promoción y prevención del riesgo y daño,SP 3.3,"Bioseguridad (enfocado a la protección de las personas y medio ambiente, conceptos, usos y aplicación)",1,sheet-psi-sp-3-3,3,Cubierto,Parcial,Bioseguridad y ambiente; revisar referencias.
+Salud pública,Promoción y prevención del riesgo y daño,SP 3.4,Gestión del riesgo en situaciones de emergencias y desastres en salud,1,sheet-psi-sp-3-4,3,Cubierto,Parcial,Gestión del riesgo; referencias parciales.
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.1,"Evaluación psicológica, técnicas de entrevista, observación y pruebas psicológicas.",1,"sheet-psi-ci-1-1a, sheet-psi-ci-1-1b",6,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.2,Cuidados de la salud mental de las personas.,1,sheet-psi-ci-1-2,3,Cubierto,Desarrollado,
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.3,Enfoques psicoterapéuticos basados en evidencias.,1,sheet-psi-ci-1-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.4,"Problemas psicosociales y trastornos mentales, con énfasis en violencia, depresión, psicosis, conducta suicida, TEA, TDH, ansiedad, consumo de alcohol y otras drogas.",2,"sheet-psi-ci-1-4, sheet-psi-ci-1-4b",6,Cubierto,Desarrollado,
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.5,Rapport psicólogo – paciente.,2,sheet-psi-ci-1-5,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas específicos (APS y cuidado integral),CI 1.6,Aspectos legales en la atención de salud mental.,2,sheet-psi-ci-1-6,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.1,Atención Primaria de salud (conceptos y principios).,2,sheet-psi-ci-2-1,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.2,"Cuidado integral en salud por curso de vida para la persona, familia y comunidad (definición, componentes, enfoques).",2,sheet-psi-ci-2-2,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.3,Paquete del cuidado integral de salud prenatal.,2,sheet-psi-ci-2-3,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.4,Paquete del cuidado integral de salud del niño.,2,sheet-psi-ci-2-4,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.5,Paquete de cuidado integral de salud del adolescente.,2,sheet-psi-ci-2-5,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.6,Paquete del cuidado integral de salud del joven.,2,sheet-psi-ci-2-6,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.7,Paquete del cuidado integral de salud del adulto.,2,sheet-psi-ci-2-7,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.8,Paquete del cuidado integral de salud del adulto mayor.,2,"sheet-psi-ci-2-8, sheet-psi-ci-2-8b",6,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.9,"Prevención y control del Cáncer: identificación de factores de riesgo, prevención primaria y secundaria, con énfasis en cáncer de cuello uterino, mama, próstata, colon recto, piel.",2,sheet-psi-ci-2-9,3,Cubierto,Parcial,Faltan edades/intervalos explícitos de tamizaje por localización.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.10,"Tuberculosis y salud mental, búsqueda activa de casos y medidas de control de infecciones en Tuberculosis en los servicios de salud.",2,sheet-psi-ci-2-10,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.11,Esquema nacional de vacunación en el Perú.,2,sheet-psi-ci-2-11,3,Cubierto,Parcial,Verificar vigencia y alcance de NTS 246-2026 y grupos especiales.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.12,Prevención y control de anemia y otros problemas de malnutrición.,2,sheet-psi-ci-2-12,3,Cubierto,Desarrollado,
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.13,"Atención integral de las infecciones de transmisión sexual, VIH y hepatitis: consejería y salud mental.",2,sheet-psi-ci-2-13,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.14,"Prevención combinada del VIH con énfasis evaluación de riesgo, consejería.",2,sheet-psi-ci-2-14,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.15,"Prevención de la trasmisión materno infantil del VIH, sífilis y hepatitis B.",2,sheet-psi-ci-2-15,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.16,Prevención y control de enfermedades no transmisibles (factores de riesgo).,2,sheet-psi-ci-2-16,3,Cubierto,Parcial,Ampliar factores de riesgo y tamizajes en APS.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.17,"Contención del trauma en enfermedades crónicas, raras y huérfanas.",2,sheet-psi-ci-2-17,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.18,"Exposición a metales pesados y otras sustancias químicas (factores de riesgo, manifestaciones clínicas).",2,sheet-psi-ci-2-18,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.19,Infecciones asociadas a la atención de salud.,2,sheet-psi-ci-2-19,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.20,Climaterio y menopausia (cuidado de la salud mental).,2,sheet-psi-ci-2-20,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Cuidado integral,Temas transversales (APS y cuidado integral),CI 2.21,Medidas preventivas en salud bucal a la persona con énfasis en técnica de cepillado y uso de hilo dental.,2,sheet-psi-ci-2-21,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Ética e interculturalidad,"Ética, bioética",ET 1.1,Ética en la función pública (trato digno y humanización de la atención; confidencialidad y manejo de la información),2,sheet-psi-et-1-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Ética e interculturalidad,"Ética, bioética",ET 1.2,Código de ética y deontología profesional,2,sheet-psi-et-1-2,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Ética e interculturalidad,"Ética, bioética",ET 1.3,Derechos y deberes de los usuarios de los servicios de salud,2,sheet-psi-et-1-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Ética e interculturalidad,Atención intercultural en salud,ET 2.1,Comunicación y diálogo intercultural en salud,2,sheet-psi-et-2-1,3,Cubierto,Desarrollado,
+Ética e interculturalidad,Atención intercultural en salud,ET 2.2,"Diversidad cultural, promoción de la inclusión y la equidad",2,sheet-psi-et-2-2,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Ética e interculturalidad,Atención intercultural en salud,ET 2.3,Atención en salud con enfoque intercultural y pertinencia cultural,2,sheet-psi-et-2-3,3,Cubierto,Desarrollado,
+Ética e interculturalidad,Atención intercultural en salud,ET 2.4,Promoción del Parto vertical,2,sheet-psi-et-2-4,3,Cubierto,Desarrollado,
+Ética e interculturalidad,Atención intercultural en salud,ET 2.5,"Medicina tradicional, complementaria y alternativa",2,sheet-psi-et-2-5,3,Cubierto,Desarrollado,
+Ética e interculturalidad,Atención intercultural en salud,ET 2.s,"Prevención de la estigma y discriminación étnico - cultural a poblaciones clave y vulnerables, y otras. [Sin número en el PDF]",2,sheet-psi-et-2-s,3,Cubierto,Desarrollado,
+Investigación,Conceptos y clasificación,IN 1.1,Conceptos básicos de investigación,3,sheet-psi-in-1-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Investigación,Conceptos y clasificación,IN 1.2,"Enfoques (cualitativo, cuantitativo y mixto)",3,sheet-psi-in-1-2,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Investigación,Conceptos y clasificación,IN 1.3,"Tipos de investigación (descriptivo, analítico y experimental)",3,sheet-psi-in-1-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Investigación,Metodología,IN 2.1,Instrumentos de recolección de datos y su validación,3,sheet-psi-in-2-1,3,Cubierto,Desarrollado,
+Investigación,Metodología,IN 2.2,Procesamiento y análisis de datos,3,sheet-psi-in-2-2,3,Cubierto,Desarrollado,
+Investigación,Ejecución,IN 3.1,Elaboración y publicación de los resultados de investigación,3,sheet-psi-in-3-1,3,Cubierto,Desarrollado,
+Investigación,Ejecución,IN 3.2,Aspectos éticos de la investigación en salud,3,sheet-psi-in-3-2,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Planificación y presupuesto,GE 1.1,"Planeamiento Estratégico: concepto, marco legal",3,sheet-psi-ge-1-1,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Planificación y presupuesto,GE 1.2,"Análisis estratégico institucional (misión, visión, valores de la organización y FODA)",3,sheet-psi-ge-1-2,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Planificación y presupuesto,GE 1.3,"Planeamiento Institucional: PEI, POI (definición, elaboración, seguimiento y evaluación)",3,sheet-psi-ge-1-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Organización de los servicios,GE 2.1,"Documentos Técnicos Normativos de Gestión Institucional: ROF, MOP (definición e importancia)",3,sheet-psi-ge-2-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Organización de los servicios,GE 2.2,Clasificación de establecimientos de salud por categorías,3,sheet-psi-ge-2-2,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Organización de los servicios,GE 2.3,UPSS y Cartera de servicios de Salud,3,sheet-psi-ge-2-3,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Organización de los servicios,GE 2.4,"Sistema de referencia y contrarreferencia de los establecimientos de salud (definición, niveles, criterios y procedimientos)",3,sheet-psi-ge-2-4,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Organización de los servicios,GE 2.5,Gestión de la Historia Clínica,3,sheet-psi-ge-2-5,3,Cubierto,Parcial,Verificar plazos de conservación y copia en NTS 139 vigente.
+Gestión de servicios de salud,Organización de los servicios,GE 2.6,Redes integradas de salud (RIS),3,sheet-psi-ge-2-6,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Organización de los servicios,GE 2.7,Telesalud,3,sheet-psi-ge-2-7,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Administración de los servicios,GE 3.1,"Gestión de Recursos Humanos (definición, asistencia y permanencia)",3,sheet-psi-ge-3-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Administración de los servicios,GE 3.2,Control de inventario y stock de medicamentos,3,sheet-psi-ge-3-2,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Administración de los servicios,GE 3.3,Coordinación intersectorial y alianzas estratégicas,3,sheet-psi-ge-3-3,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Administración de los servicios,GE 3.4,Liderazgo de los servicios de salud,3,sheet-psi-ge-3-4,3,Cubierto,Desarrollado,
+Gestión de servicios de salud,Administración de los servicios,GE 3.5,Trabajo colaborativo y eficaz en los servicios de salud,3,sheet-psi-ge-3-4,3,Cubierto,Desarrollado con limitación,Comparte ficha y tarjetas con GE 3.4; no tiene tarjetas propias.
+Gestión de servicios de salud,Sistema de gestión de la calidad,GE 4.1,"Garantía y mejora de la calidad de los servicios de salud (seguridad del paciente, proceso de mejora continua)",3,sheet-psi-ge-4-1,3,Cubierto,Mapeado,Sin revisión de profundidad en esta iteración.
+Gestión de servicios de salud,Sistema de gestión de la calidad,GE 4.2,Clima organizacional y Cultura organizacional,3,sheet-psi-ge-4-2,3,Cubierto,Desarrollado,

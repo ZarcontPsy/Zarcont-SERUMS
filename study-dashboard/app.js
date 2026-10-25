@@ -5,6 +5,7 @@
   var C = window.STUDY_CONTENT;
   var UI = window.StudyUI;
   var Store = window.StudyStore;
+  var TAX = window.StudyTaxonomy;
   var esc = UI.escapeHTML;
   var icon = UI.icon;
   var qs = UI.qs;
@@ -20,6 +21,7 @@
     libraryQuery: "",
     libraryFilter: "all",
     libraryArea: "",
+    libraryCategory: "",
     currentSheetId: null,
     readStarted: 0,
     scrollRatio: 0,
@@ -59,17 +61,77 @@
       try { return decodeURIComponent(p); } catch (e) { return p; }
     });
     if (parts[0] === "ficha" && parts[1]) return { name: "sheet", sheetId: parts[1] };
-    if (parts[0] === "biblioteca") return { name: "library", areaId: parts[1] || "" };
+    if (parts[0] === "biblioteca") return { name: "library", areaId: parts[1] || "", categoryId: parts[2] || "" };
     if (parts[0] === "progreso") return { name: "progress" };
     return { name: "notfound" };
   }
-  function isArea(id) { return !!(C && C.areas.some(function (a) { return a.id === id; })); }
+  function isArea(id) {
+    return !!(id && TAX ? TAX.canonicalAreaId(id) : C && C.areas.some(function (a) { return a.id === id; }));
+  }
   function topicTitle(id) {
     var t = Store.getTopic(id);
     return t ? t.title : "";
   }
-  function areaOfTopic(topic) {
-    return topic ? Store.getArea(topic.areaId) : null;
+  function primaryAreas() {
+    return TAX && TAX.primaryAreas().length ? TAX.primaryAreas() : C.areas;
+  }
+  function primaryArea(id) {
+    if (!id) return null;
+    if (TAX) {
+      var canonical = TAX.canonicalAreaId(id);
+      return canonical ? TAX.area(canonical) : null;
+    }
+    return Store.getArea(id);
+  }
+  function categoriesOf(areaId) {
+    return TAX ? TAX.categoriesForArea(areaId) : [];
+  }
+  function categoryOf(id) {
+    return TAX ? TAX.category(id) : null;
+  }
+  function categoryOfSheet(sheet) {
+    return sheet && TAX ? TAX.categoryForSheet(sheet) : null;
+  }
+  function primaryAreaForSheet(sheet) {
+    if (!sheet) return null;
+    return primaryArea(sheet.primaryAreaId || sheet.areaId);
+  }
+  function primaryAreaForTopic(topic) {
+    if (!topic) return null;
+    return primaryArea(topic.primaryAreaId || topic.areaId);
+  }
+  function sheetsOfArea(areaId) {
+    return C.sheets.filter(function (s) { return (s.primaryAreaId || s.areaId) === areaId; });
+  }
+  function sheetsOfCategory(categoryId) {
+    return C.sheets.filter(function (s) { return s.categoryId === categoryId; });
+  }
+  function categoryStats(categoryId) {
+    var sheets = sheetsOfCategory(categoryId);
+    var completed = 0, viewed = 0;
+    var topicIds = {};
+    var official = 0;
+    sheets.forEach(function (s) {
+      var st = Store.getSheetState(s.id);
+      if (st && st.completedAt) completed += 1;
+      if (st && st.viewedAt) viewed += 1;
+      var topic = Store.getTopic(s.topicId);
+      if (topic && topic.isContainer) official += 1;
+      else if (s.topicId) topicIds[s.topicId] = true;
+    });
+    return {
+      sheets: sheets.length,
+      topics: Object.keys(topicIds).length,
+      official: official,
+      completed: completed,
+      viewed: viewed,
+      percent: sheets.length ? Math.round((completed / sheets.length) * 100) : 0
+    };
+  }
+  function categoryMeta(st) {
+    if (st.topics && st.official) return st.topics + " " + plural(st.topics, "tema", "temas") + " + " + st.official + " " + plural(st.official, "ficha oficial", "fichas oficiales") + " · " + st.sheets + " " + plural(st.sheets, "ficha", "fichas");
+    if (st.official && !st.topics) return st.official + " " + plural(st.official, "ficha oficial", "fichas oficiales") + " · " + st.sheets + " " + plural(st.sheets, "ficha", "fichas");
+    return st.topics + " " + plural(st.topics, "tema", "temas") + " · " + st.sheets + " " + plural(st.sheets, "ficha", "fichas");
   }
   function plural(n, one, many) { return UI.plural(n, one, many); }
 
@@ -165,11 +227,26 @@
       document.title = "Study Dashboard · SERUMS";
       root.innerHTML = renderHome();
     } else if (route.name === "library") {
-      document.title = "Biblioteca · Study Dashboard";
-      if (route.areaId && !isArea(route.areaId)) {
-        root.innerHTML = renderNotFound("Esa área no existe", "Puede que el enlace esté incompleto o que el contenido haya cambiado.");
+      var canonicalArea = route.areaId ? (TAX ? TAX.canonicalAreaId(route.areaId) : route.areaId) : "";
+      var routeCategory = route.categoryId ? categoryOf(route.categoryId) : null;
+      if (route.areaId && !canonicalArea) {
+        document.title = "Área no encontrada · Study Dashboard";
+        root.innerHTML = renderNotFound("Esa área no existe", "Puede que el enlace esté incompleto o que el contenido haya cambiado. Las cinco áreas oficiales siguen disponibles.");
+      } else if (routeCategory && routeCategory.areaId !== canonicalArea) {
+        document.title = "Categoría no encontrada · Study Dashboard";
+        root.innerHTML = renderNotFound("Esa categoría no pertenece al área", "El enlace mezcla un área y una categoría distintas. Vuelve a la biblioteca para elegir una ruta válida.");
       } else {
-        state.libraryArea = route.areaId || "";
+        if (canonicalArea && canonicalArea !== route.areaId) {
+          var canonicalHash = "#/biblioteca/" + canonicalArea + (route.categoryId ? "/" + route.categoryId : "");
+          try { history.replaceState(null, "", canonicalHash); } catch (e) { location.hash = canonicalHash; }
+          route.areaId = canonicalArea;
+          state.route = route;
+        }
+        state.libraryArea = canonicalArea;
+        state.libraryCategory = routeCategory ? routeCategory.id : "";
+        var libraryArea = primaryArea(state.libraryArea);
+        var libraryCategory = categoryOf(state.libraryCategory);
+        document.title = (libraryCategory ? libraryCategory.title : libraryArea ? libraryArea.title : "Biblioteca") + " · Study Dashboard";
         root.innerHTML = renderLibrary();
         updateLibraryResults();
       }
@@ -231,16 +308,20 @@
   /* ------------------------------------------------------------------ */
 
   function compileAreaStats(areaId) {
-    var topics = C.topics.filter(function (t) { return t.areaId === areaId; });
-    var sheets = C.sheets.filter(function (s) { return s.areaId === areaId; });
-    var completed = 0, viewed = 0;
+    var sheets = sheetsOfArea(areaId);
+    var completed = 0, viewed = 0, moduleIds = {};
     sheets.forEach(function (s) {
       var st = Store.getSheetState(s.id);
       if (st && st.completedAt) completed += 1;
       if (st && st.viewedAt) viewed += 1;
+      moduleIds[s.topicId] = true;
     });
+    var categories = categoriesOf(areaId);
+    var modules = Object.keys(moduleIds).length;
     return {
-      topics: topics.length,
+      categories: categories.length,
+      modules: modules,
+      topics: modules,
       sheets: sheets.length,
       completed: completed,
       viewed: viewed,
@@ -248,17 +329,42 @@
     };
   }
 
+  function categoryChips(areaId, limit) {
+    var cats = categoriesOf(areaId);
+    var shown = typeof limit === "number" ? cats.slice(0, limit) : cats;
+    var html = shown.map(function (cat) {
+      return '<span class="area-cat">' + esc(cat.short) + '</span>';
+    }).join("");
+    if (typeof limit === "number" && cats.length > limit) {
+      html += '<span class="area-cat is-more">+' + (cats.length - limit) + '</span>';
+    }
+    return html;
+  }
+
   function areaCard(area) {
     var a = compileAreaStats(area.id);
-    var source = Store.getSource(area.sourceIds[0]);
+    var source = Store.getSource((area.sourceIds || [])[0]);
     return '<a class="area-card" href="#/biblioteca/' + esc(area.id) + '" data-nav style="--area:' + esc(area.accent) + '">' +
       '<span class="area-icon">' + icon(area.icon || "book", 19) + '</span>' +
-      '<span class="area-kicker">' + esc(source ? source.short : "Temario") + '</span>' +
+      '<span class="area-kicker">' + esc(source ? source.short : "Temario oficial") + ' · ' + a.categories + ' categorías</span>' +
       '<h3>' + esc(area.title) + '</h3>' +
       '<p>' + esc(area.description) + '</p>' +
-      '<span class="area-meta">' + a.topics + ' temas · ' + a.sheets + ' fichas</span>' +
+      '<span class="area-cats">' + categoryChips(area.id, 3) + '</span>' +
+      '<span class="area-meta">' + a.modules + ' módulos · ' + a.sheets + ' fichas</span>' +
       UI.progressBar(a.percent, "Progreso de " + area.title) +
       '<span class="area-foot"><span>' + (a.completed ? a.completed + " de " + a.sheets + " completadas" : "Sin empezar") + '</span>' + icon("arrow", 15) + '</span>' +
+      '</a>';
+  }
+
+  function categoryCard(category, area) {
+    var st = categoryStats(category.id);
+    return '<a class="category-card" href="#/biblioteca/' + esc(area.id) + '/' + esc(category.id) + '" data-nav style="--area:' + esc(area.accent) + '">' +
+      '<span class="category-card-kicker">' + esc(category.short) + '</span>' +
+      '<h3>' + esc(category.title) + '</h3>' +
+      '<p>' + esc(category.description) + '</p>' +
+      '<span class="category-card-meta">' + esc(categoryMeta(st)) + '</span>' +
+      UI.progressBar(st.percent, "Progreso de " + category.title) +
+      '<span class="category-card-foot"><span>' + (st.completed ? st.completed + " de " + st.sheets + " completadas" : "Sin empezar") + '</span>' + icon("arrow", 13) + '</span>' +
       '</a>';
   }
 
@@ -308,13 +414,15 @@
       ? (last.context || (lastTopic ? lastTopic.title : "Continúa tu recorrido")) + " · " + UI.formatRelative(last.at)
       : "No hay actividad previa. La biblioteca está organizada por áreas y temas para que empieces por donde necesites.";
     var resumeAction = lastSheet ? "Retomar lectura" : "Explorar el temario";
-    var heroKicker = st.hasActivity ? "Continúa donde lo dejaste" : "Tu temario, en contexto";
-    var heroTitle = st.hasActivity ? "Aprender también es volver." : "Un mapa claro para estudiar.";
+    var lastArea = lastSheet ? primaryAreaForSheet(lastSheet) : null;
+    var lastCategory = lastSheet ? categoryOfSheet(lastSheet) : null;
+    var heroKicker = st.hasActivity ? "Continúa donde lo dejaste" : "Temario oficial SERUMS 2026-II";
+    var heroTitle = st.hasActivity ? "Aprender también es volver." : "Cinco áreas. Un mapa claro.";
     var heroText = st.hasActivity
       ? "Tu progreso se construye ficha a ficha. Retoma la lectura, revisa tus pendientes y convierte lo aprendido en práctica."
-      : "Explora " + C.areas.length + " áreas, lee fichas breves y practica con flashcards. Cada avance que ves aquí viene de tu actividad real.";
+      : "Las cinco áreas oficiales de Psicología organizan " + st.totalTopics + " módulos y " + st.totalSheets + " fichas. Entra por el área que necesitas y avanza por sus categorías.";
 
-    var areas = C.areas.map(areaCard).join("");
+    var areas = primaryAreas().map(areaCard).join("");
     var today = st.today;
     var streakText = st.streak > 0 ? st.streak + (st.streak === 1 ? " día" : " días") : "—";
 
@@ -344,13 +452,21 @@
         '</div>',
       '</section>',
 
+      '<section class="dash-section dash-areas">',
+        '<div class="dash-section-head">',
+          '<div><span class="s-kicker"><span class="dot"></span>5 áreas oficiales</span><h2>El temario, en cinco áreas.</h2></div>',
+          '<span class="s-small s-muted">20 categorías · ' + st.totalTopics + ' módulos · ' + st.totalSheets + ' fichas</span>',
+        '</div>',
+        '<div class="area-grid">' + areas + '</div>',
+      '</section>',
+
       '<section class="dash-resume-grid">',
         '<a class="resume-card" href="' + esc(resumeHref) + '"' + (lastSheet ? ' data-nav' : '') + '>',
           '<span class="resume-label">' + icon(lastSheet ? "play" : "spark", 14) + (lastSheet ? " Último punto de trabajo" : " Empieza aquí") + '</span>',
           '<h2>' + esc(resumeTitle) + '</h2>',
           '<p>' + esc(resumeText) + '</p>',
           '<span class="resume-cta">' + esc(resumeAction) + ' ' + icon("arrow", 15) + '</span>',
-          lastSheet ? '<span class="resume-area" style="--area:' + esc((Store.getArea(lastSheet.areaId) || {}).accent || "var(--accent)") + '">' + esc((Store.getArea(lastSheet.areaId) || {}).title || "") + '</span>' : "",
+          lastSheet ? '<span class="resume-area" style="--area:' + esc((lastArea || {}).accent || "var(--accent)") + '">' + esc(lastArea ? (lastCategory ? lastCategory.short : lastArea.short) : "") + '</span>' : "",
         '</a>',
         goalCard(st),
       '</section>',
@@ -361,14 +477,6 @@
           '<a class="dash-textlink" href="#/biblioteca" data-nav>Ver biblioteca ' + icon("arrow", 14) + '</a>',
         '</div>',
         '<div class="rec-grid">' + recs.map(recCard).join("") + '</div>',
-      '</section>',
-
-      '<section class="dash-section">',
-        '<div class="dash-section-head">',
-          '<div><span class="s-kicker"><span class="dot"></span>' + C.areas.length + ' perspectivas</span><h2>Áreas del temario</h2></div>',
-          '<span class="s-small s-muted">' + st.totalTopics + ' temas · ' + st.totalSheets + ' fichas</span>',
-        '</div>',
-        '<div class="area-grid">' + areas + '</div>',
       '</section>',
 
       '<section class="dash-quote">',
@@ -384,18 +492,32 @@
   /* ------------------------------------------------------------------ */
 
   function renderLibrary() {
-    var area = state.libraryArea ? Store.getArea(state.libraryArea) : null;
+    var area = state.libraryArea ? primaryArea(state.libraryArea) : null;
+    var cat = state.libraryCategory ? categoryOf(state.libraryCategory) : null;
     var filters = [
       ["all", "Todas"], ["progress", "En curso"], ["completed", "Completadas"], ["favorites", "Favoritas"]
     ];
     var filterHTML = filters.map(function (f) {
       return '<button type="button" data-action="library-filter" data-filter="' + f[0] + '" aria-pressed="' + (state.libraryFilter === f[0]) + '">' + f[1] + '</button>';
     }).join("");
+    var kicker = cat ? (area ? area.title : "Categoría") : area ? "Área oficial · " + categoriesOf(area.id).length + " categorías" : "Temario oficial SERUMS 2026-II";
+    var title = cat ? cat.title : area ? area.title : "Las cinco áreas del temario";
+    var description = cat ? cat.description : area ? area.description :
+      "Las cinco áreas oficiales de Psicología organizan 20 categorías, " + C.topics.length + " módulos y " + C.sheets.length + " fichas. Entra por un área, recorre sus categorías y abre la ficha que necesites.";
+    var context = "";
+    if (cat && area) {
+      context = '<div class="library-context"><a href="#/biblioteca/' + esc(area.id) + '" data-nav class="s-chip s-chip--accent">' + icon("grid", 12) + esc(area.short) + '</a>' +
+        '<a href="#/biblioteca/' + esc(area.id) + '" data-nav class="dash-textlink">Todas las categorías ' + icon("arrowLeft", 12) + '</a>' +
+        '<a href="#/biblioteca" data-nav class="dash-textlink">Biblioteca completa ' + icon("close", 12) + '</a></div>';
+    } else if (area) {
+      context = '<div class="library-context"><span class="s-chip s-chip--accent">' + icon("layers", 12) + categoriesOf(area.id).length + ' categorías</span>' +
+        '<a href="#/biblioteca" data-nav class="dash-textlink">Ver las cinco áreas ' + icon("close", 12) + '</a></div>';
+    }
     return [
       '<section class="library-head">',
-        '<span class="s-kicker"><span class="dot"></span>Biblioteca de estudio</span>',
-        '<h1>' + (area ? esc(area.title) : "El temario completo") + '</h1>',
-        '<p>' + (area ? esc(area.description) : "El temario reúne " + C.areas.length + " áreas, " + C.topics.length + " temas y " + C.sheets.length + " fichas breves con conceptos, procedimientos y referencias a la fuente. Lee en modo rápido o completo.") + '</p>',
+        '<span class="s-kicker"><span class="dot"></span>' + esc(kicker) + '</span>',
+        '<h1>' + esc(title) + '</h1>',
+        '<p>' + esc(description) + '</p>',
         '<div class="library-tools">',
           '<label class="search-field" for="library-search">' + icon("search", 17) +
             '<input id="library-search" type="search" autocomplete="off" placeholder="Buscar tema, ficha o concepto" value="' + esc(state.libraryQuery) + '">' +
@@ -403,46 +525,90 @@
           '</label>',
           '<div class="s-seg library-filters" role="group" aria-label="Filtrar temas">' + filterHTML + '</div>',
         '</div>',
-        area ? '<div class="library-context"><span class="s-chip s-chip--accent">' + icon("filter", 12) + esc(area.short) + '</span><a href="#/biblioteca" data-nav class="dash-textlink">Quitar filtro de área ' + icon("close", 12) + '</a></div>' : "",
+        context,
       '</section>',
       '<div id="library-summary" class="library-summary" aria-live="polite"></div>',
       '<div id="library-results"></div>'
     ].join("");
   }
 
-  function filteredTopics() {
-    var topics = C.topics.slice();
-    if (state.libraryArea) topics = topics.filter(function (t) { return t.areaId === state.libraryArea; });
+  function scopeSheets() {
+    var sheets = C.sheets;
+    if (state.libraryArea) {
+      sheets = sheets.filter(function (s) { return (s.primaryAreaId || s.areaId) === state.libraryArea; });
+    }
+    if (state.libraryCategory) {
+      sheets = sheets.filter(function (s) { return s.categoryId === state.libraryCategory; });
+    }
+    return sheets;
+  }
+
+  function sheetSearchText(sheet) {
+    return [sheet.title, sheet.summary, (sheet.keyConcepts || []).join(" "), sheet.kicker || ""].join(" ").toLowerCase();
+  }
+
+  function topicSearchText(topic) {
+    var area = primaryAreaForTopic(topic);
+    var cat = categoryOf(topic.categoryId);
+    return [topic.title, topic.summary, (topic.keywords || []).join(" "), area ? area.title : "", cat ? cat.title : ""].join(" ").toLowerCase();
+  }
+
+  function passesLibraryFilter(sheet) {
+    var st = Store.getSheetState(sheet.id);
+    if (state.libraryFilter === "progress") return !!(st && st.viewedAt && !st.completedAt);
+    if (state.libraryFilter === "completed") return !!(st && st.completedAt);
+    if (state.libraryFilter === "favorites") return !!(st && st.favorite);
+    return true;
+  }
+
+  function filteredGroups() {
     var q = state.libraryQuery.trim().toLowerCase();
-    if (q) {
-      topics = topics.filter(function (t) {
-        var area = Store.getArea(t.areaId);
-        var sheets = C.sheets.filter(function (s) { return s.topicId === t.id; });
-        var hay = [t.title, t.summary, (t.keywords || []).join(" "), area ? area.title : ""]
-          .concat(sheets.map(function (s) { return [s.title, s.summary, (s.keyConcepts || []).join(" ")].join(" "); }))
-          .join(" ").toLowerCase();
-        return hay.indexOf(q) !== -1;
-      });
-    }
-    if (state.libraryFilter === "progress") {
-      topics = topics.filter(function (t) {
-        var p = Store.getTopicProgress(t.id);
-        return p && p.viewed > 0 && p.completed < p.total;
-      });
-    } else if (state.libraryFilter === "completed") {
-      topics = topics.filter(function (t) {
-        var p = Store.getTopicProgress(t.id);
-        return p && p.total > 0 && p.completed === p.total;
-      });
-    } else if (state.libraryFilter === "favorites") {
-      topics = topics.filter(function (t) {
-        return C.sheets.some(function (s) {
-          var st = Store.getSheetState(s.id);
-          return s.topicId === t.id && st && st.favorite;
+    var scoped = scopeSheets();
+    var buckets = {};
+    scoped.forEach(function (sheet) {
+      (buckets[sheet.topicId] = buckets[sheet.topicId] || []).push(sheet);
+    });
+    var groups = [];
+    primaryAreas().forEach(function (area) {
+      categoriesOf(area.id).forEach(function (cat) {
+        C.topics.forEach(function (topic) {
+          if (topic.isContainer) return;
+          var all = (buckets[topic.id] || []).filter(function (s) { return s.categoryId === cat.id; });
+          if (!all.length) return;
+          var matching = all;
+          if (q) {
+            var topicHit = topicSearchText(topic).indexOf(q) !== -1;
+            var sheetHits = all.filter(function (s) { return sheetSearchText(s).indexOf(q) !== -1; });
+            if (!topicHit && !sheetHits.length) return;
+            matching = topicHit && !sheetHits.length ? all : sheetHits;
+          }
+          if (state.libraryFilter !== "all") {
+            matching = matching.filter(passesLibraryFilter);
+            if (!matching.length) return;
+          }
+          groups.push({ area: area, category: cat, topic: topic, sheets: matching });
         });
+
+        var containerSheets = scoped.filter(function (s) {
+          if (s.categoryId !== cat.id) return false;
+          var t = Store.getTopic(s.topicId);
+          return !!(t && t.isContainer);
+        });
+        if (containerSheets.length) {
+          var matchingLoose = containerSheets;
+          if (q) {
+            matchingLoose = containerSheets.filter(function (s) { return sheetSearchText(s).indexOf(q) !== -1; });
+            if (!matchingLoose.length) return;
+          }
+          if (state.libraryFilter !== "all") {
+            matchingLoose = matchingLoose.filter(passesLibraryFilter);
+            if (!matchingLoose.length) return;
+          }
+          groups.push({ area: area, category: cat, topic: null, sheets: matchingLoose });
+        }
       });
-    }
-    return topics;
+    });
+    return groups;
   }
 
   function sheetRow(sheet) {
@@ -461,20 +627,25 @@
       '</a>';
   }
 
-  function topicBlock(topic, area, openByDefault) {
-    var p = Store.getTopicProgress(topic.id);
-    var status = p.completed === p.total && p.total > 0 ? "Completada" : (p.viewed > 0 ? "En curso" : "Sin empezar");
-    var sheets = C.sheets.filter(function (s) { return s.topicId === topic.id; });
-    return '<details class="topic-block" ' + (openByDefault ? "open" : "") + ' data-topic="' + esc(topic.id) + '">' +
+  function topicBlock(topic, area, sheets, category, openByDefault) {
+    if (!sheets || !sheets.length) return "";
+    var viewed = 0, completed = 0;
+    sheets.forEach(function (s) {
+      var st = Store.getSheetState(s.id);
+      if (st && st.viewedAt) viewed += 1;
+      if (st && st.completedAt) completed += 1;
+    });
+    var status = completed === sheets.length ? "Completada" : (viewed > 0 ? "En curso" : "Sin empezar");
+    return '<details class="topic-block" ' + (openByDefault ? "open" : "") + ' data-topic="' + esc(topic.id) + '" data-category="' + esc(category ? category.id : "") + '">' +
       '<summary class="topic-summary">' +
         '<span class="topic-marker" style="--area:' + esc(area.accent) + '">' + icon(area.icon || "book", 16) + '</span>' +
-        '<span class="topic-copy"><span class="topic-kicker">' + esc(area.short) + ' · ' + sheets.length + ' ' + plural(sheets.length, "ficha", "fichas") + '</span>' +
+        '<span class="topic-copy"><span class="topic-kicker">' + esc(category ? category.short : area.short) + ' · ' + sheets.length + ' ' + plural(sheets.length, "ficha", "fichas") + '</span>' +
           '<span class="topic-title">' + esc(topic.title) + '</span>' +
           '<span class="topic-summary-text">' + esc(topic.summary) + '</span>' +
         '</span>' +
         '<span class="topic-progress">' +
-          '<span class="topic-status ' + (p.completed === p.total && p.total ? "is-complete" : p.viewed ? "is-progress" : "") + '">' + status + '</span>' +
-          '<span class="topic-count">' + p.completed + '/' + p.total + '</span>' +
+          '<span class="topic-status ' + (completed === sheets.length ? "is-complete" : viewed ? "is-progress" : "") + '">' + status + '</span>' +
+          '<span class="topic-count">' + completed + '/' + sheets.length + '</span>' +
           '<span class="topic-chevron">' + icon("chevronDown", 16) + '</span>' +
         '</span>' +
       '</summary>' +
@@ -482,8 +653,57 @@
       '</details>';
   }
 
+  function categorySection(area, category, groups, openFirst) {
+    var st = categoryStats(category.id);
+    var body = groups.map(function (g, i) {
+      if (g.topic && !g.topic.isContainer) {
+        var anyViewed = g.sheets.some(function (s) { var st = Store.getSheetState(s.id); return !!(st && st.viewedAt); });
+        return topicBlock(g.topic, area, g.sheets, category, (openFirst && i === 0) || anyViewed);
+      }
+      return '<div class="topic-sheets topic-sheets--loose"><div class="loose-label">' + icon("book", 12) + ' Fichas oficiales del temario</div>' + g.sheets.map(sheetRow).join("") + '</div>';
+    }).join("");
+    return '<section class="library-category" id="category-' + esc(category.id) + '">' +
+      '<div class="library-category-head" style="--area:' + esc(area.accent) + '">' +
+        '<div><span class="s-kicker"><span class="dot"></span>' + esc(category.short) + '</span><h2>' + esc(category.title) + '</h2><p>' + esc(category.description) + '</p></div>' +
+        '<span class="library-area-meta">' + esc(categoryMeta(st)) + '</span>' +
+      '</div>' +
+      '<div class="topic-list">' + body + '</div>' +
+      '</section>';
+  }
+
+  function renderCategoryGroups(groups) {
+    var html = [];
+    var seen = {};
+    groups.forEach(function (g) {
+      var key = g.area.id + "|" + g.category.id;
+      if (seen[key]) {
+        seen[key].groups.push(g);
+      } else {
+        var bucket = { area: g.area, category: g.category, groups: [g] };
+        seen[key] = bucket;
+        html.push(bucket);
+      }
+    });
+    return html.map(function (bucket) {
+      return categorySection(bucket.area, bucket.category, bucket.groups, false);
+    }).join("");
+  }
+
+  function renderAreaIndex(area) {
+    var as = compileAreaStats(area.id);
+    var cats = categoriesOf(area.id);
+    return '<section class="library-area" id="area-' + esc(area.id) + '">' +
+      '<div class="library-area-head" style="--area:' + esc(area.accent) + '">' +
+        '<span class="library-area-icon">' + icon(area.icon || "book", 18) + '</span>' +
+        '<div><h2>' + esc(area.title) + '</h2><p>' + esc(area.description) + '</p></div>' +
+        '<span class="library-area-meta">' + as.categories + ' categorías · ' + as.modules + ' módulos · ' + as.sheets + ' fichas</span>' +
+      '</div>' +
+      '<div class="category-grid">' + cats.map(function (cat) { return categoryCard(cat, area); }).join("") + '</div>' +
+      '</section>';
+  }
+
   function emptyLibrary() {
-    var hasFilters = state.libraryQuery || state.libraryArea || state.libraryFilter !== "all";
+    var hasFilters = state.libraryQuery || state.libraryArea || state.libraryCategory || state.libraryFilter !== "all";
     return UI.emptyState({
       icon: "search",
       title: hasFilters ? "No hay coincidencias" : "La biblioteca está vacía",
@@ -496,36 +716,38 @@
     var summary = qs("#library-summary");
     var results = qs("#library-results");
     if (!summary || !results) return;
-    var topics = filteredTopics();
-    var sheetCount = topics.reduce(function (n, t) {
-      return n + C.sheets.filter(function (s) { return s.topicId === t.id; }).length;
-    }, 0);
-    summary.innerHTML = '<span><b>' + topics.length + '</b> ' + plural(topics.length, "tema", "temas") + ' · <b>' + sheetCount + '</b> ' + plural(sheetCount, "ficha", "fichas") + '</span>' +
-      (state.libraryQuery ? '<span class="s-small s-muted">Buscando “' + esc(state.libraryQuery) + '”</span>' : "");
+    var groups = filteredGroups();
+    var sheetCount = groups.reduce(function (n, g) { return n + g.sheets.length; }, 0);
+    var topicIds = {}, catIds = {}, areaIds = {};
+    groups.forEach(function (g) {
+      if (g.topic && !g.topic.isContainer) topicIds[g.topic.id] = true;
+      catIds[g.category.id] = true;
+      areaIds[g.area.id] = true;
+    });
+    var topicCount = Object.keys(topicIds).length;
+    if (groups.some(function (g) { return !g.topic; })) topicCount += 1;
+    var catCount = Object.keys(catIds).length;
+    summary.innerHTML = '<span><b>' + topicCount + '</b> ' + plural(topicCount, "módulo", "módulos") + ' · <b>' + sheetCount + '</b> ' + plural(sheetCount, "ficha", "fichas") + '</span>' +
+      '<span class="s-small s-muted">' + catCount + ' ' + plural(catCount, "categoría", "categorías") + ' · ' + Object.keys(areaIds).length + ' ' + plural(Object.keys(areaIds).length, "área", "áreas") +
+      (state.libraryQuery ? ' · Buscando “' + esc(state.libraryQuery) + '”' : '') + '</span>';
     qsa(".library-filters button").forEach(function (b) {
       b.setAttribute("aria-pressed", String(b.getAttribute("data-filter") === state.libraryFilter));
     });
-    if (!topics.length) {
+    var browsing = !state.libraryQuery && state.libraryFilter === "all";
+    if (browsing && !state.libraryCategory && !state.libraryArea) {
+      results.innerHTML = primaryAreas().map(renderAreaIndex).join("");
+      return;
+    }
+    if (browsing && state.libraryArea && !state.libraryCategory) {
+      var area = primaryArea(state.libraryArea);
+      results.innerHTML = area ? renderAreaIndex(area) : emptyLibrary();
+      return;
+    }
+    if (!groups.length) {
       results.innerHTML = emptyLibrary();
       return;
     }
-    var groups = C.areas.map(function (area) {
-      return { area: area, topics: topics.filter(function (t) { return t.areaId === area.id; }) };
-    }).filter(function (g) { return g.topics.length > 0; });
-    var firstOpen = !state.libraryQuery && state.libraryFilter === "all" && !state.libraryArea;
-    results.innerHTML = groups.map(function (g) {
-      var a = compileAreaStats(g.area.id);
-      return '<section class="library-area">' +
-        '<div class="library-area-head" style="--area:' + esc(g.area.accent) + '">' +
-          '<span class="library-area-icon">' + icon(g.area.icon || "book", 18) + '</span>' +
-          '<div><h2>' + esc(g.area.title) + '</h2><p>' + esc(g.area.description) + '</p></div>' +
-          '<span class="library-area-meta">' + a.completed + '/' + a.sheets + ' completadas</span>' +
-        '</div>' +
-        '<div class="topic-list">' + g.topics.map(function (t, i) {
-          return topicBlock(t, g.area, firstOpen && g.area.id === C.areas[0].id && i === 0 || (Store.getTopicProgress(t.id) || {}).viewed > 0);
-        }).join("") + '</div>' +
-        '</section>';
-    }).join("");
+    results.innerHTML = renderCategoryGroups(groups);
   }
 
   /* ------------------------------------------------------------------ */
@@ -562,7 +784,8 @@
 
   function renderSheet(sheet, restoring) {
     var topic = Store.getTopic(sheet.topicId);
-    var area = topic ? Store.getArea(topic.areaId) : null;
+    var area = primaryAreaForSheet(sheet);
+    var category = categoryOfSheet(sheet);
     var st = Store.getSheetState(sheet.id) || {};
     var done = !!st.completedAt;
     var fav = !!st.favorite;
@@ -578,8 +801,9 @@
     var extra = sheet.sections.length - sections.length;
     var source = sheet.sourceRefs && sheet.sourceRefs.length ? Store.getSource(sheet.sourceRefs[0].sourceId) : null;
     var fromFlash = state.fromFlashcards && state.entrySheetId === sheet.id;
-    var backHref = fromFlash && topic ? flashcardsHref(state.fromDeck || sheet.id, "free", sheet.id) : "#/biblioteca";
-    var backLabel = fromFlash ? "Volver a flashcards" : "Biblioteca";
+    var categoryHref = area && category ? "#/biblioteca/" + area.id + "/" + category.id : "#/biblioteca";
+    var backHref = fromFlash && topic ? flashcardsHref(state.fromDeck || sheet.id, "free", sheet.id) : categoryHref;
+    var backLabel = fromFlash ? "Volver a flashcards" : "Categoría";
     var practiceHref = flashcardsHref(sheet.id, "free", sheet.id);
 
     var sources = sheet.sourceRefs && sheet.sourceRefs.length ? sheet.sourceRefs.map(function (ref) {
@@ -603,7 +827,7 @@
         '</div>',
 
         '<header class="reader-head">',
-          '<div class="reader-breadcrumb"><span>' + esc(area ? area.title : "") + '</span>' + icon("chevronRight", 12) + '<span>' + esc(topic ? topic.title : "") + '</span>' + (fromFlash ? '<span class="s-chip s-chip--accent">Desde flashcards</span>' : "") + '</div>',
+          '<div class="reader-breadcrumb"><span>' + esc(area ? area.title : "") + '</span>' + icon("chevronRight", 12) + '<span>' + esc(category ? category.title : "") + '</span>' + icon("chevronRight", 12) + '<span>' + esc(topic ? topic.title : "") + '</span>' + (fromFlash ? '<span class="s-chip s-chip--accent">Desde flashcards</span>' : "") + '</div>',
           '<h1>' + esc(sheet.title) + '</h1>',
           '<p class="reader-summary">' + esc(sheet.summary) + '</p>',
           '<div class="reader-meta">',
@@ -659,9 +883,9 @@
               '<p class="s-xs s-muted">Tu progreso se guarda en este navegador.</p>',
             '</div>',
             topic ? '<div class="rail-card">' +
-              '<span class="s-kicker">Tema</span><h3>' + esc(topic.title) + '</h3><p class="s-small s-soft">' + esc(topic.summary) + '</p>' +
+              '<span class="s-kicker">' + (category ? esc(category.short) : "Tema") + '</span><h3>' + esc(topic.title) + '</h3><p class="s-small s-soft">' + esc(topic.summary) + '</p>' +
               '<div class="rail-topic-meta"><span>' + icon("book", 13) + (p ? p.total : 0) + ' fichas</span><span>' + icon("cards", 13) + (topicDeck ? topicDeck.total : 0) + ' tarjetas</span></div>' +
-              '<a class="s-link s-small" href="#/biblioteca/' + esc(topic.areaId) + '" data-nav>Ver el área completa</a>' +
+              '<a class="s-link s-small" href="' + esc(categoryHref) + '" data-nav>Ver la categoría completa</a>' +
             '</div>' : "",
             '<div class="rail-card">',
               '<span class="s-kicker">Tipo de contenido</span>',
@@ -752,10 +976,10 @@
     var history = Store.getHistory(12);
     var goal = st.goal || 2;
     var todayPct = Math.min(100, Math.round(((st.today.sheetsCompleted || 0) / goal) * 100));
-    var areaRows = C.areas.map(function (a) {
+    var areaRows = primaryAreas().map(function (a) {
       var as = compileAreaStats(a.id);
       return '<a class="progress-area-row" href="#/biblioteca/' + esc(a.id) + '" data-nav style="--area:' + esc(a.accent) + '">' +
-        '<span class="progress-area-dot"></span><span class="s-grow"><b>' + esc(a.title) + '</b><small>' + as.completed + ' de ' + as.sheets + ' fichas</small></span>' +
+        '<span class="progress-area-dot"></span><span class="s-grow"><b>' + esc(a.title) + '</b><small>' + as.completed + ' de ' + as.sheets + ' fichas · ' + as.categories + ' categorías</small></span>' +
         '<span class="progress-area-num">' + as.percent + '%</span>' + icon("chevronRight", 14) + '</a>';
     }).join("");
 
@@ -815,7 +1039,7 @@
         '</section>',
 
         '<section class="progress-panel areas-panel">',
-          '<div class="progress-panel-head"><div><span class="s-kicker">' + C.areas.length + ' áreas</span><h2>Avance por área</h2></div></div>',
+          '<div class="progress-panel-head"><div><span class="s-kicker">5 áreas · 20 categorías</span><h2>Avance por área</h2></div></div>',
           '<div class="progress-areas">' + areaRows + '</div>',
         '</section>',
 
@@ -865,7 +1089,7 @@
     } else if (action === "clear-library") {
       state.libraryQuery = "";
       state.libraryFilter = "all";
-      if (state.libraryArea) {
+      if (state.libraryArea || state.libraryCategory) {
         location.hash = "#/biblioteca";
       } else {
         var input = qs("#library-search");

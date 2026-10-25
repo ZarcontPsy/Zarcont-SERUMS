@@ -2,7 +2,7 @@
    Fuentes documentales aportadas por el usuario. Las fichas son síntesis de estudio:
    no sustituyen la norma vigente ni el juicio clínico. Cada referencia apunta al PDF. */
 window.STUDY_CONTENT = {
-  "version": "2.3.0",
+  "version": "2.5.0",
   "meta": {
     "title": "Temario de estudio",
     "subtitle": "48 fuentes: documentos de atención primaria, curso de vida, salud pública, salud materno-neonatal, enfermedades crónicas, VIH, promoción de la salud, salud ambiental y las cinco guías del temario de Psicología del SERUMS 2026-II.",
@@ -669,7 +669,7 @@ window.STUDY_CONTENT = {
     },
     {
       "id": "area-psi-salud-publica",
-      "title": "Salud pública",
+      "title": "Área I · Salud pública",
       "short": "Salud pública",
       "description": "Métodos y aplicaciones de salud pública, salud comunitaria y promoción de la salud, según el temario SERUMS 2026-II de Psicología.",
       "accent": "#86B7A8",
@@ -681,7 +681,7 @@ window.STUDY_CONTENT = {
     },
     {
       "id": "area-psi-cuidado-integral",
-      "title": "Cuidado integral de salud",
+      "title": "Área II · Cuidado integral de salud",
       "short": "Cuidado integral",
       "description": "Temas específicos de salud mental y temas transversales de atención primaria por curso de vida, según el temario SERUMS 2026-II de Psicología.",
       "accent": "#A9B8E0",
@@ -693,7 +693,7 @@ window.STUDY_CONTENT = {
     },
     {
       "id": "area-psi-etica",
-      "title": "Ética e interculturalidad",
+      "title": "Área III · Ética e interculturalidad",
       "short": "Ética e interculturalidad",
       "description": "Ética, bioética, derechos de las personas usuarias y atención intercultural en salud, según el temario SERUMS 2026-II de Psicología.",
       "accent": "#C9A7D6",
@@ -705,7 +705,7 @@ window.STUDY_CONTENT = {
     },
     {
       "id": "area-psi-investigacion",
-      "title": "Investigación",
+      "title": "Área IV · Investigación",
       "short": "Investigación",
       "description": "Conceptos, enfoques y tipos de investigación, metodología y ética de la investigación en salud, según el temario SERUMS 2026-II de Psicología.",
       "accent": "#B6C77A",
@@ -717,7 +717,7 @@ window.STUDY_CONTENT = {
     },
     {
       "id": "area-psi-gestion",
-      "title": "Gestión de servicios de salud",
+      "title": "Área V · Gestión de servicios de salud",
       "short": "Gestión de servicios",
       "description": "Planificación, organización, administración y calidad de los servicios de salud, según el temario SERUMS 2026-II de Psicología.",
       "accent": "#C9A66B",
@@ -1838,7 +1838,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-sp-1",
       "areaId": "area-psi-salud-publica",
-      "title": "Métodos y aplicaciones de salud pública",
+      "title": "Subárea 1 · Métodos y aplicaciones de salud pública",
       "summary": "Conceptos básicos, epidemiología, causalidad, demografía, prevención, pruebas diagnósticas, vigilancia y análisis de la situación de salud.",
       "sourceIds": [
         "src-psi-sp",
@@ -1862,7 +1862,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-sp-2",
       "areaId": "area-psi-salud-publica",
-      "title": "Salud comunitaria",
+      "title": "Subárea 2 · Salud comunitaria",
       "summary": "Determinantes sociales y ambientales, participación comunitaria, sectorización y ficha familiar, intervenciones comunitarias, trabajo intersectorial, plan de salud local, información y TIC, alimentación e inocuidad, residuos sólidos, salud ocupacional, salud mental comunitaria y barreras de acceso.",
       "sourceIds": [
         "src-psi-sp",
@@ -1885,7 +1885,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-sp-3",
       "areaId": "area-psi-salud-publica",
-      "title": "Promoción de la salud y prevención del riesgo y daño",
+      "title": "Subárea 3 · Promoción de la salud y prevención del riesgo y daño",
       "summary": "Promoción de la salud, información, educación y comunicación, bioseguridad y gestión del riesgo en emergencias y desastres.",
       "sourceIds": [
         "src-psi-sp",
@@ -1904,7 +1904,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ci-1",
       "areaId": "area-psi-cuidado-integral",
-      "title": "Temas específicos de atención primaria y cuidado integral",
+      "title": "Subárea 1 · Temas específicos de atención primaria y cuidado integral",
       "summary": "Evaluación psicológica, entrevista y examen mental, continuidad en salud mental, psicoterapias basadas en evidencia, problemas prioritarios de salud mental, riesgo suicida, rapport y aspectos legales.",
       "sourceIds": [
         "src-psi-ci",
@@ -1928,7 +1928,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ci-2",
       "areaId": "area-psi-cuidado-integral",
-      "title": "Temas transversales de atención primaria y cuidado integral",
+      "title": "Subárea 2 · Temas transversales de atención primaria y cuidado integral",
       "summary": "Paquetes de cuidado integral por curso de vida y temas transversales: cáncer, tuberculosis, vacunación, anemia, ITS, VIH y hepatitis, prevención combinada, transmisión maternoinfantil, enfermedades no transmisibles, trauma, metales pesados, IAAS, climaterio y salud bucal.",
       "sourceIds": [
         "src-psi-ci",
@@ -1956,7 +1956,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-et-1",
       "areaId": "area-psi-etica",
-      "title": "Ética y bioética",
+      "title": "Subárea 1 · Ética y bioética",
       "summary": "Ética en la función pública, código de ética y deontología profesional, y derechos y deberes de las personas usuarias de los servicios de salud.",
       "sourceIds": [
         "src-psi-et",
@@ -1976,7 +1976,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-et-2",
       "areaId": "area-psi-etica",
-      "title": "Atención intercultural en salud",
+      "title": "Subárea 2 · Atención intercultural en salud",
       "summary": "Comunicación intercultural, diversidad y equidad, enfoque intercultural, promoción del parto vertical, medicina tradicional y prevención del estigma y la discriminación.",
       "sourceIds": [
         "src-psi-et",
@@ -1995,7 +1995,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-in-1",
       "areaId": "area-psi-investigacion",
-      "title": "Conceptos y clasificación de las investigaciones",
+      "title": "Subárea 1 · Conceptos y clasificación de las investigaciones",
       "summary": "Conceptos básicos de investigación, enfoques cualitativo, cuantitativo y mixto, y tipos de investigación descriptiva, analítica y experimental.",
       "sourceIds": [
         "src-psi-in",
@@ -2014,7 +2014,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-in-2",
       "areaId": "area-psi-investigacion",
-      "title": "Metodología de la investigación",
+      "title": "Subárea 2 · Metodología de la investigación",
       "summary": "Instrumentos de recolección de datos y su validación, y procesamiento y análisis de datos.",
       "sourceIds": [
         "src-psi-in",
@@ -2030,7 +2030,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-in-3",
       "areaId": "area-psi-investigacion",
-      "title": "Ejecución de la investigación",
+      "title": "Subárea 3 · Ejecución de la investigación",
       "summary": "Elaboración y publicación de los resultados de investigación, y aspectos éticos de la investigación en salud.",
       "sourceIds": [
         "src-psi-in",
@@ -2046,7 +2046,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ge-1",
       "areaId": "area-psi-gestion",
-      "title": "Planificación y presupuesto en salud",
+      "title": "Subárea 1 · Planificación y presupuesto en salud",
       "summary": "Planeamiento estratégico, análisis estratégico institucional (misión, visión, valores y FODA) y planeamiento institucional (PEI y POI).",
       "sourceIds": [
         "src-psi-ge",
@@ -2063,7 +2063,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ge-2",
       "areaId": "area-psi-gestion",
-      "title": "Organización de los servicios de salud",
+      "title": "Subárea 2 · Organización de los servicios de salud",
       "summary": "Documentos técnicos normativos (ROF y MOP), categorías de establecimientos, UPSS y cartera de servicios, referencia y contrarreferencia, historia clínica, redes integradas de salud y telesalud.",
       "sourceIds": [
         "src-psi-ge",
@@ -2084,7 +2084,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ge-3",
       "areaId": "area-psi-gestion",
-      "title": "Administración de los servicios de salud",
+      "title": "Subárea 3 · Administración de los servicios de salud",
       "summary": "Gestión de recursos humanos, control de inventario y stock de medicamentos, coordinación intersectorial, liderazgo y trabajo colaborativo.",
       "sourceIds": [
         "src-psi-ge",
@@ -2104,7 +2104,7 @@ window.STUDY_CONTENT = {
     {
       "id": "topic-psi-ge-4",
       "areaId": "area-psi-gestion",
-      "title": "Sistema de gestión de la calidad",
+      "title": "Subárea 4 · Sistema de gestión de la calidad",
       "summary": "Garantía y mejora de la calidad, seguridad del paciente, mejora continua, clima y cultura organizacional.",
       "sourceIds": [
         "src-psi-ge",
@@ -12809,7 +12809,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 1.6 · Niveles de prevención",
       "minutes": 16,
       "level": "Base",
-      "summary": "Los niveles de prevención se eligen por el momento del proceso salud-enfermedad y por la intención de la intervención, no por la actividad aislada. La primordial actúa antes de que existan los factores de riesgo; la primaria evita la aparición de la enfermedad; la secundaria detecta en fase subclínica; la terciaria limita secuelas y la cuaternaria protege del daño por sobreuso. Identificar el momento evita confundir promoción, tamizaje y rehabilitación.",
+      "summary": "Los niveles de prevención se eligen por el momento del proceso salud-enfermedad y por la intención de la intervención, no por la actividad aislada. La primordial actúa antes de que existan los factores de riesgo; la primaria evita la aparición de la enfermedad; la secundaria detecta en fase subclínica; la terciaria limita secuelas y la cuaternaria protege del daño por sobreuso. Identificar el momento evita confundir promoción, tamizaje y rehabilitación. La ficha incorpora la lectura de los niveles de prevención en el primer nivel y en el MCI.",
       "keyConcepts": [
         "Prevención primordial: actúa sobre las condiciones y patrones sociales que generan factores de riesgo, antes de que estos se distribuyan en la población.",
         "Prevención primaria: reduce la aparición de enfermedad en personas expuestas mediante promoción de la salud y protección específica.",
@@ -12817,7 +12817,8 @@ window.STUDY_CONTENT = {
         "Prevención terciaria: limita el daño cuando la enfermedad ya se manifestó, reduce secuelas y sostiene la rehabilitación.",
         "Prevención cuaternaria: evita intervenciones innecesarias y protege a la persona del daño por sobreuso diagnóstico o terapéutico.",
         "Fase subclínica: etapa en que el proceso patológico ya comenzó sin manifestaciones clínicas reconocibles.",
-        "Historia natural: secuencia de periodo prepatogénico, patogénico subclínico y clínico que ordena la elección del nivel."
+        "Historia natural: secuencia de periodo prepatogénico, patogénico subclínico y clínico que ordena la elección del nivel.",
+        "La prevención en APS se decide por el momento del proceso y la intención, no por la actividad aislada."
       ],
       "sections": [
         {
@@ -12904,11 +12905,11 @@ window.STUDY_CONTENT = {
           "depth": "full",
           "body": [
             "Caso ficticio. En un centro de salud de una zona urbano-marginal de Arequipa, el equipo de salud mental observa que varios adolescentes de dos colegios intentaron suicidarse en el mismo mes. El psicólogo propone dos acciones. La primera es aplicar un cuestionario de tamizaje a todo el nivel secundario. La segunda es coordinar con la municipalidad y los colegios la restricción del acceso a plaguicidas domésticos y la capacitación docente en señales de alarma. La dirección cuestiona por qué se tamiza si no hay casos confirmados y pide priorizar solo charlas informativas.",
-            "El equipo distingue dos niveles: la restricción de un método disponible y la capacitación docente modifican condiciones que sostienen el riesgo, mientras el tamizaje busca a quienes ya presentan ideación. Ninguna de las dos acciones sustituye la evaluación individual ni la ruta de referencia."
+            "El equipo distingue niveles: la restricción del método es prevención primaria porque actúa sobre un factor de riesgo específico; la capacitación docente en señales de alarma es prevención secundaria porque busca detección temprana; el tamizaje también es secundario. La prevención primordial actuaría antes, sobre condiciones estructurales que generan el riesgo. Ninguna de estas acciones sustituye la evaluación individual ni la ruta de referencia."
           ],
           "bullets": [
-            "Lectura del caso: la restricción del método y la capacitación docente actúan sobre condiciones que generan riesgo, por lo que corresponden a prevención primordial.",
-            "Lectura del caso: el tamizaje en estudiantes aparentemente sanos corresponde a prevención secundaria y exige entrevista y referencia antes de informar resultados.",
+            "Lectura del caso: la restricción del método es prevención primaria; la capacitación docente en señales de alarma es prevención secundaria.",
+            "Lectura del caso: el tamizaje en estudiantes aparentemente sanos es prevención secundaria y exige entrevista y referencia antes de informar resultados.",
             "Alternativa descartada: limitar la respuesta a charlas confunde promoción con prevención y no modifica la exposición ni detecta casos.",
             "Error que se evita: llamar prevención primaria al tamizaje, lo que promete detección sin confirmación ni tratamiento disponible."
           ]
@@ -12948,12 +12949,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "APS y niveles de prevención",
+          "depth": "full",
+          "body": [
+            "En APS la prevención no es una campaña añadida: es una forma de organizar el cuidado. La prevención primordial actúa sobre las condiciones sociales que generan riesgo; la primaria evita la aparición; la secundaria detecta y trata temprano; la terciaria reduce complicaciones y discapacidad; la cuaternaria evita intervenciones innecesarias.",
+            "El primer nivel es el escenario donde coinciden el tamizaje, la consejería, la vacunación, el control del daño y la continuidad. La decisión no depende solo del nombre de la actividad, sino del momento del proceso salud-enfermedad y de la intención de la intervención.",
+            "El MCI organiza el cuidado por curso de vida y en escenarios —hogar, institución educativa, centro laboral, municipio y comunidad—; la prevención se integra a ese cuidado y no se reduce a campañas. La prevención primordial actúa sobre las condiciones estructurales; la primaria sobre factores de riesgo específicos; la secundaria sobre detección temprana; la terciaria sobre complicaciones y la cuaternaria sobre intervenciones innecesarias."
+          ],
+          "bullets": [
+            "Tamizaje no es diagnóstico: un resultado positivo abre evaluación y no confirma por sí solo.",
+            "La prevención cuaternaria evita tratar hallazgos que no producirán daño o que no cambiarán el curso.",
+            "La prevención primordial requiere acción intersectorial sobre vivienda, agua, empleo y entornos.",
+            "La continuidad en APS evita que la prevención secundaria se pierda después del resultado anormal."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: OMS/EMRO — Noncommunicable diseases: a major challenge to public health in the Region, distinción entre prevención primordial y primaria.",
             "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 1: historia natural y niveles de prevención.",
-            "Fuente: CDC Perú — Vigilancia de enfermedades prevenibles por vacunas, sarampión-rubéola: definiciones de caso."
+            "Fuente: CDC Perú — Vigilancia de enfermedades prevenibles por vacunas, sarampión-rubéola: definiciones de caso.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: OMS — Informe mundial 2008: APS renovada y prevención a lo largo del curso de vida."
           ]
         }
       ],
@@ -12963,6 +12981,15 @@ window.STUDY_CONTENT = {
           "pages": [
             21,
             22
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            43,
+            44,
+            45,
+            46
           ]
         }
       ]
@@ -13898,7 +13925,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 1.12 · ASIS y sala situacional",
       "minutes": 17,
       "level": "Intermedio",
-      "summary": "El Análisis de Situación de Salud reúne datos epidemiológicos, sociales y ambientales junto con la mirada de la comunidad para precisar qué problemas existen, a quiénes afectan y por qué. Con esa base se priorizan necesidades y se planifican acciones con responsables e indicadores. La sala situacional mantiene información actualizada para seguir cambios, alertas, brechas y avances, y para ajustar decisiones. El valor del análisis se mide por las decisiones que habilita y no por el volumen del informe.",
+      "summary": "El Análisis de Situación de Salud reúne datos epidemiológicos, sociales y ambientales junto con la mirada de la comunidad para precisar qué problemas existen, a quiénes afectan y por qué. Con esa base se priorizan necesidades y se planifican acciones con responsables e indicadores. La sala situacional mantiene información actualizada para seguir cambios, alertas, brechas y avances, y para ajustar decisiones. El valor del análisis se mide por las decisiones que habilita y no por el volumen del informe. El ASIS se presenta como insumo del plan local y de la organización territorial de la APS.",
       "keyConcepts": [
         "ASIS: proceso que describe y explica problemas, determinantes, brechas y recursos de una población para priorizar y actuar.",
         "Sala situacional: espacio y proceso de análisis continuo que organiza información actualizada para decidir y ajustar.",
@@ -13907,7 +13934,8 @@ window.STUDY_CONTENT = {
         "Triangulación: contraste de datos cuantitativos, cualitativos y comunitarios para interpretar un mismo problema.",
         "Indicador: expresión medible de un fenómeno, que requiere denominador, periodo y fuente definidos para poder compararse.",
         "Brecha: diferencia entre la situación observada y la deseable, o entre grupos, que orienta la acción.",
-        "Presupuesto participativo: espacio de decisión local donde las prioridades sanitarias compiten con otras necesidades del territorio."
+        "Presupuesto participativo: espacio de decisión local donde las prioridades sanitarias compiten con otras necesidades del territorio.",
+        "ASIS: diagnóstico territorial que alimenta prioridades, plan local e indicadores de la RIS."
       ],
       "sections": [
         {
@@ -14084,12 +14112,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "ASIS, APS y planificación territorial",
+          "depth": "core",
+          "body": [
+            "El ASIS es la base diagnóstica de la gestión territorial en APS. No se limita a describir daños: caracteriza la población y el territorio, identifica determinantes, mide brechas y explica por qué ciertos grupos enferman más o acceden menos.",
+            "El producto del ASIS debe alimentar el plan local de salud y la cartera de la RIS. Un informe que no se traduce en prioridades, responsables, recursos e indicadores no cambia la respuesta del sistema.",
+            "El ASIS local lo elabora el equipo de gestión de la RIS con el gobierno local y las instituciones de la RIS. Usa HIS, REUNIS, ENDES, ENAHO e INEI, y complementa con la sala situacional, que incluye autoridades, sectores y representantes comunales. La priorización se ordena en magnitud, trascendencia (gravedad), vulnerabilidad (equidad), factibilidad y percepción social; la tendencia se lee dentro de magnitud y trascendencia."
+          ],
+          "bullets": [
+            "Caracterizar población, territorio, determinantes y respuesta de los servicios.",
+            "Triangular datos cuantitativos, cualitativos y la voz de la comunidad.",
+            "Priorizar con magnitud, gravedad, tendencia, factibilidad y equidad.",
+            "Convertir prioridades en objetivos, indicadores y responsables del plan local."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Metodología para el análisis de situación de salud local, documento técnico de ASIS local.",
             "Fuente: OMS — Primary health care, servicios integrados, acción multisectorial y participación.",
-            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, ejes temáticos, escenarios y enfoques transversales."
+            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, ejes temáticos, escenarios y enfoques transversales.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017."
           ]
         }
       ],
@@ -14099,6 +14144,24 @@ window.STUDY_CONTENT = {
           "pages": [
             38,
             39
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            46,
+            47,
+            59
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            17,
+            18,
+            19,
+            20,
+            21
           ]
         }
       ]
@@ -14111,7 +14174,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 1.13 · Sistema Nacional de Vigilancia",
       "minutes": 18,
       "level": "Base",
-      "summary": "El Sistema Nacional de Vigilancia articula establecimientos, redes, direcciones regionales y nivel nacional para detectar eventos, notificar, investigar y responder. La definición de caso estandariza quién se registra y hace comparables los datos; el flujo de información respeta canales y plazos, sin que una urgencia quede postergada. La investigación epidemiológica verifica el diagnóstico, busca contactos y controla el foco, y el análisis se devuelve a quienes deciden. La vigilancia se juzga por la respuesta que activa.",
+      "summary": "El Sistema Nacional de Vigilancia articula establecimientos, redes, direcciones regionales y nivel nacional para detectar eventos, notificar, investigar y responder. La definición de caso estandariza quién se registra y hace comparables los datos; el flujo de información respeta canales y plazos, sin que una urgencia quede postergada. La investigación epidemiológica verifica el diagnóstico, busca contactos y controla el foco, y el análisis se devuelve a quienes deciden. La vigilancia se juzga por la respuesta que activa. La ficha concreta la arquitectura nacional, los tipos de notificación, los plazos y la difusión.",
       "keyConcepts": [
         "Sistema Nacional de Vigilancia: articula establecimientos, redes, direcciones regionales y nivel nacional en un flujo único de información y respuesta.",
         "Definición de caso: conjunto de criterios que estandariza a quién se registra y permite comparar entre servicios y territorios.",
@@ -14120,7 +14183,8 @@ window.STUDY_CONTENT = {
         "Notificación regular: reporte periódico que sostiene el análisis de tendencias y la comparación entre periodos.",
         "Investigación epidemiológica: verifica el diagnóstico, identifica contactos y expuestos, y orienta el control del foco.",
         "Mapa epidemiológico: representación de casos en el territorio que orienta hipótesis y no prueba causalidad por sí sola.",
-        "Respuesta: conjunto de medidas de control que se activan en paralelo a la investigación."
+        "Respuesta: conjunto de medidas de control que se activan en paralelo a la investigación.",
+        "Notificación: inmediata (24 h), semanal o mensual según el evento; la red va de la unidad notificante al CDC."
       ],
       "sections": [
         {
@@ -14295,12 +14359,33 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Arquitectura y flujo nacional de notificación",
+          "depth": "core",
+          "body": [
+            "La vigilancia epidemiológica peruana se organiza en una red nacional. El nivel nacional es conducido por el CDC Perú / Dirección General de Epidemiología; el nivel regional por las DIRIS, DIRESA o GERESA; y el nivel local por las unidades notificantes (establecimientos de salud) y las redes. La notificación no es un acto aislado: alimenta la investigación, la respuesta y la difusión.",
+            "La Directiva Sanitaria N° 046-MINSA/DGE-V.01 establece que la notificación puede ser inmediata, semanal o mensual según el evento. Los eventos de notificación inmediata se reportan dentro de las 24 horas; la notificación semanal se consolida según el calendario epidemiológico y las DIRIS/DIRESA/GERESA envían la información al CDC los martes antes de las 14:00. Los brotes y epizootias tienen circuito inmediato propio.",
+            "La información se registra en los sistemas oficiales (NOTISP y SIEPIBROTE, según el evento), se analiza por persona, tiempo y lugar, y se devuelve a los equipos y a la población mediante boletines, sala situacional y alertas. Sin retroalimentación, la unidad notificante pierde sentido: notificar no es llenar un formato, es activar una respuesta."
+          ],
+          "bullets": [
+            "Nacional: CDC Perú / Dirección General de Epidemiología; conduce, analiza y difunde.",
+            "Regional: DIRIS, DIRESA o GERESA; consolida, verifica y apoya la respuesta.",
+            "Local: unidad notificante y red; detecta, registra y notifica.",
+            "Inmediata: dentro de 24 horas para los eventos definidos.",
+            "Semanal: consolidación según calendario; envío al CDC los martes antes de las 14:00.",
+            "Mensual: solo para los eventos que la norma lo indica.",
+            "Difusión: boletín, sala situacional, alertas y retroalimentación a la unidad."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Notificación de enfermedades y eventos sujetos a vigilancia epidemiológica, definiciones operativas.",
             "Fuente: CDC Perú — Vigilancia de enfermedades prevenibles por vacunas.",
-            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 1: causalidad e historia natural."
+            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 1: causalidad e historia natural.",
+            "Fuente: MINSA — Directiva Sanitaria N.° 046-MINSA/DGE-V.01, notificación de enfermedades y eventos sujetos a vigilancia epidemiológica, RM N.° 506-2012/MINSA, 18/06/2012.",
+            "Fuente: CDC Perú — Calendario epidemiológico 2026: notificación semanal consolidada al CDC los martes antes de las 14:00; notificación inmediata dentro de 24 horas.",
+            "Fuente: MINSA — Directiva Sanitaria N.° 047-MINSA/DGE-V.01, notificación de brotes, epidemias y otros eventos de importancia para la salud pública, RM N.° 545-2012/MINSA."
           ]
         }
       ],
@@ -14323,7 +14408,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.1 · Determinantes sociales",
       "minutes": 19,
       "level": "Base",
-      "summary": "Los determinantes sociales son las condiciones en que las personas nacen, crecen, viven, trabajan y envejecen, junto con la distribución de poder, dinero y recursos. El marco de la OMS los ordena en estructurales e intermedios e incluye el sistema de salud entre los intermedios. Esa arquitectura explica por qué enferman distintos grupos y por qué la respuesta requiere acción intersectorial. También permite distinguir inequidad de desigualdad y orientar la priorización hacia las brechas evitables.",
+      "summary": "Los determinantes sociales son las condiciones en que las personas nacen, crecen, viven, trabajan y envejecen, junto con la distribución de poder, dinero y recursos. El marco de la OMS los ordena en estructurales e intermedios e incluye el sistema de salud entre los intermedios. Esa arquitectura explica por qué enferman distintos grupos y por qué la respuesta requiere acción intersectorial. También permite distinguir inequidad de desigualdad y orientar la priorización hacia las brechas evitables. La ficha conecta los determinantes con la acción territorial de la APS y la RIS.",
       "keyConcepts": [
         "Determinantes sociales: condiciones de vida y distribución de poder, dinero y recursos que influyen en la salud de los grupos.",
         "Determinantes estructurales: contexto político, económico y social, y posición socioeconómica construida por educación, ocupación, ingresos, clase, género y etnia.",
@@ -14333,7 +14418,8 @@ window.STUDY_CONTENT = {
         "Inequidad: diferencia injusta, evitable y sistemática; no toda diferencia en salud es inequidad.",
         "Equidad: respuesta diferenciada a necesidades diferentes, no entrega idéntica de recursos.",
         "Curso de vida: acumulación de ventajas y desventajas desde la gestación hasta la vejez, con efectos que se suman.",
-        "Sistema de salud: determinante intermedio cuya cobertura, acceso y trato pueden reducir o reproducir inequidades."
+        "Sistema de salud: determinante intermedio cuya cobertura, acceso y trato pueden reducir o reproducir inequidades.",
+        "La APS actúa sobre determinantes; sin intersectorialidad, la respuesta individual deja intacta la exposición."
       ],
       "sections": [
         {
@@ -14431,38 +14517,41 @@ window.STUDY_CONTENT = {
           "depth": "full",
           "table": {
             "headers": [
-              "Nivel de acción",
-              "Qué modifica",
-              "Límite"
+              "Determinante estructural",
+              "Sector o actores competentes",
+              "Ejemplo de acción"
             ],
             "rows": [
               [
-                "Individual",
-                "Conducta, comprensión y acceso personal a recursos",
-                "No cambia la distribución de oportunidades"
+                "Posición social/clase",
+                "Todos los ministerios",
+                "Reducir brechas entre quintiles"
               ],
               [
-                "Familiar",
-                "Organización del cuidado y redes de apoyo",
-                "Puede reproducir roles que generan inequidad"
+                "Género",
+                "MIDIS, MIMP, MTPE, MINEDU, MEF",
+                "Reducir asimetrías de acceso y carga de cuidado"
               ],
               [
-                "Comunitario",
-                "Entorno, participación y control social",
-                "Requiere continuidad y no solo campañas"
+                "Raza/etnia",
+                "MIDIS, MINCUL, MIMP, MINEDU",
+                "Combatir discriminación y exclusión étnico-racial"
               ],
               [
-                "Intersectorial",
-                "Educación, vivienda, trabajo y saneamiento",
-                "Depende de acuerdos y de voluntad política"
+                "Educación",
+                "MINEDU, MTC, MEF, MIDIS",
+                "Acceso y calidad educativa en el quintil inferior"
               ],
               [
-                "Político",
-                "Reglas que distribuyen recursos y derechos",
-                "Su efecto es lento y difícil de atribuir"
+                "Ocupación",
+                "MINTRA, MINSA, MEF",
+                "Empleo formal, seguridad social y salario digno"
               ]
             ]
-          }
+          },
+          "body": [
+            "La inequidad se reporta como brecha absoluta y razón entre el grupo más y menos favorecido, no como promedio. Cada determinante tiene un sector competente; sin esa asignación, la intersectorialidad queda declarativa."
+          ]
         },
         {
           "title": "Caso razonado",
@@ -14514,12 +14603,28 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "APS y acción sobre los determinantes",
+          "depth": "core",
+          "body": [
+            "La APS no se limita a la consulta: organiza la acción sobre los determinantes estructurales e intermedios. Ingreso, educación, ocupación, género, etnia, vivienda, trabajo y entorno explican por qué dos personas con el mismo diagnóstico tienen trayectorias distintas.",
+            "La acción sobre determinantes exige intersectorialidad y participación. El sector salud puede liderar la lectura y la abogacía, pero no puede resolver solo vivienda, transporte, empleo o violencia. La RIS y el gobierno local son espacios concretos para acordar responsabilidades."
+          ],
+          "bullets": [
+            "Distinguir determinantes estructurales (poder, ingresos, educación, género, etnia) de intermedios (vivienda, trabajo, conductas, sistema de salud).",
+            "Evitar explicar la enfermedad solo por decisiones individuales.",
+            "Acordar con otros sectores objetivos, recursos y responsables verificables.",
+            "Medir inequidades y no solo promedios poblacionales."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: OMS — A conceptual framework for action on the social determinants of health, secciones 5.5-5.6.",
             "Fuente: OMS — Primary health care, servicios integrados, acción multisectorial y participación.",
-            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, ejes temáticos y enfoques transversales."
+            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, ejes temáticos y enfoques transversales.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017."
           ]
         }
       ],
@@ -14529,6 +14634,29 @@ window.STUDY_CONTENT = {
           "pages": [
             43,
             44
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            36,
+            37,
+            38,
+            46,
+            47
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19
           ]
         }
       ]
@@ -14541,7 +14669,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.4 · Sectorización y ficha familiar",
       "minutes": 17,
       "level": "Base",
-      "summary": "La sectorización divide el territorio en sectores con población asignada y responsabilidad sanitaria, mientras la ficha familiar registra la composición, las condiciones de vida y las necesidades de cada familia. Ambos instrumentos permiten seguimiento nominal, priorización de familias vulnerables y continuidad del cuidado. Su valor depende de la visita domiciliaria, el mapa del sector, la actualización periódica y el uso confidencial de la información para acción sanitaria.",
+      "summary": "La sectorización divide el territorio en sectores con población asignada y responsabilidad sanitaria, mientras la ficha familiar registra la composición, las condiciones de vida y las necesidades de cada familia. Ambos instrumentos permiten seguimiento nominal, priorización de familias vulnerables y continuidad del cuidado. Su valor depende de la visita domiciliaria, el mapa del sector, la actualización periódica y el uso confidencial de la información para acción sanitaria. La sectorización y la ficha familiar se presentan como herramientas operativas de la APS territorial.",
       "keyConcepts": [
         "Sectorización: división del territorio con población asignada y responsabilidad definida para conocer riesgos, familias y recursos.",
         "Ficha familiar: registro nominal de composición, condiciones de vida, necesidades y riesgos de una familia.",
@@ -14549,7 +14677,8 @@ window.STUDY_CONTENT = {
         "Seguimiento nominal: identificación de cada familia y persona para priorizar visitas y asegurar continuidad.",
         "Mapa del sector: representación de viviendas, riesgos y recursos que orienta la asignación territorial.",
         "Actualización periódica: revisión de los datos cuando cambia la composición o la condición de la familia.",
-        "Confidencialidad: protección de la información familiar y uso restringido a la acción sanitaria."
+        "Confidencialidad: protección de la información familiar y uso restringido a la acción sanitaria.",
+        "Sectorización: población nominal asignada a un equipo, no solo división geográfica."
       ],
       "sections": [
         {
@@ -14581,39 +14710,39 @@ window.STUDY_CONTENT = {
           "title": "Criterios de sectorización y aplicación",
           "depth": "full",
           "body": [
-            "Un sector útil se define por varios criterios a la vez y no solo por la cercanía de las viviendas. La revisión periódica de esos criterios evita que la asignación se vuelva obsoleta cuando crece la población o cambia el equipo."
+            "El sector se delimita con los cinco criterios del MCI: tamaño de la población, cobertura prestacional, accesibilidad geográfica, densidad poblacional y circunscripción política administrativa. Se registra en SISFAC y se representa en el mapeo geosanitario; la revisión periódica evita que la asignación quede obsoleta cuando crece la población o cambia el equipo."
           ],
           "table": {
             "headers": [
-              "Criterio",
+              "Criterio oficial",
               "Pregunta que ordena",
-              "Riesgo si se omite"
+              "Uso operativo"
             ],
             "rows": [
               [
-                "Territorial",
-                "¿Los límites son reconocibles y coinciden con barreras físicas o sociales?",
-                "Se asignan familias a sectores que no comparten accesos ni referencias."
+                "Tamaño de la población",
+                "¿Cuántas personas y familias se asignan?",
+                "Equilibrar carga del equipo"
               ],
               [
-                "Poblacional",
-                "¿Cuántas familias y personas viven en el sector y cómo se distribuyen?",
-                "La carga supera la capacidad del equipo y el seguimiento se vuelve irregular."
+                "Cobertura prestacional",
+                "¿Qué cartera se ofrece en el sector?",
+                "Evitar duplicidad y brechas"
               ],
               [
-                "De riesgo",
-                "¿Qué zonas concentran vulnerabilidad, exposición o barreras de acceso?",
-                "El sector se organiza por comodidad del equipo y no por necesidad."
+                "Accesibilidad geográfica",
+                "¿Puede llegarse en tiempo razonable?",
+                "Definir rutas y visitas"
               ],
               [
-                "Operativo",
-                "¿Cuánto demora el traslado y qué accesibilidad existe?",
-                "Las visitas se planifican sin tiempo real de desplazamiento."
+                "Densidad poblacional",
+                "¿Cómo se distribuye la población?",
+                "Ajustar frecuencia y prioridad"
               ],
               [
-                "De continuidad",
-                "¿El equipo asignado permanece y conoce el sector?",
-                "Cada rotación borra el conocimiento acumulado del territorio."
+                "Circunscripción política",
+                "¿Coincide con límites distritales o comunales?",
+                "Facilitar gobernanza local"
               ]
             ]
           }
@@ -14720,12 +14849,27 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Sectorización, ficha familiar y APS",
+          "depth": "core",
+          "body": [
+            "La sectorización organiza el territorio y asigna población nominal a un equipo. No es solo dividir un mapa: permite conocer familias, riesgos, recursos y prioridades, y sostener el seguimiento en el tiempo.",
+            "La ficha familiar registra composición, vivienda, condiciones de vida, riesgos y necesidades. Es un instrumento de cuidado y de planificación, no un formulario para archivar. Su uso exige actualización, confidencialidad y devolución de la información a la familia."
+          ],
+          "bullets": [
+            "Definir sectores con población y equipo responsables.",
+            "Actualizar la ficha en visitas y contactos, no solo al inicio.",
+            "Usar la información para priorizar familias y coordinar apoyos.",
+            "Proteger datos nominales y compartir solo lo necesario."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Metodología para el análisis de situación de salud local, territorio, población y recursos.",
             "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, escenarios y participación.",
-            "Fuente: MINSA — NTS N.° 138-MINSA/2017/DGIESP, RM 574-2017/MINSA, funciones del Centro de Salud Mental Comunitaria."
+            "Fuente: MINSA — NTS N.° 138-MINSA/2017/DGIESP, RM 574-2017/MINSA, funciones del Centro de Salud Mental Comunitaria.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial."
           ]
         }
       ],
@@ -14734,6 +14878,14 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             48
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            59,
+            60
           ]
         }
       ]
@@ -14746,7 +14898,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.5 · Intervenciones comunitarias",
       "minutes": 15,
       "level": "Intermedio",
-      "summary": "Una intervención comunitaria responde a un problema priorizado con la comunidad, define población y objetivo medible, elige una estrategia viable y culturalmente aceptable, y establece indicadores de proceso y resultado. La teoría de cambio ordena recursos, actividades, productos y resultados para saber qué se espera y cómo se verificará. La evaluación mira cobertura, calidad, cambio y sostenibilidad, mientras la intervención vertical se corrige con participación y adaptación territorial.",
+      "summary": "Una intervención comunitaria responde a un problema priorizado con la comunidad, define población y objetivo medible, elige una estrategia viable y culturalmente aceptable, y establece indicadores de proceso y resultado. La teoría de cambio ordena recursos, actividades, productos y resultados para saber qué se espera y cómo se verificará. La evaluación mira cobertura, calidad, cambio y sostenibilidad, mientras la intervención vertical se corrige con participación y adaptación territorial. La intervención comunitaria se enmarca en la APOC y en la gestión territorial de la APS.",
       "keyConcepts": [
         "Intervención comunitaria: acción planificada sobre un problema priorizado, con población, objetivo y estrategia definidos.",
         "Diagnóstico participativo: lectura del territorio que identifica el problema sentido y los recursos disponibles.",
@@ -14754,7 +14906,8 @@ window.STUDY_CONTENT = {
         "Indicador de proceso: mide ejecución, cobertura y calidad de las actividades.",
         "Indicador de resultado: mide cambios en acceso, comportamiento, funcionamiento o salud.",
         "Intervención vertical: acción diseñada desde arriba que se aplica sin adaptación ni participación local.",
-        "Línea de base: medición inicial que permite comparar el cambio observado con la situación previa."
+        "Línea de base: medición inicial que permite comparar el cambio observado con la situación previa.",
+        "APOC: combina clínica preventiva y acción comunitaria; no es una campaña aislada."
       ],
       "sections": [
         {
@@ -14770,7 +14923,8 @@ window.STUDY_CONTENT = {
           "title": "Fundamentos teóricos y mecanismos",
           "depth": "core",
           "body": [
-            "Una intervención comunitaria se sostiene en una explicación del cambio: qué mecanismo se activará, en quiénes y bajo qué condiciones. Cuando esa explicación falta, el equipo confunde actividades visibles con efectos y atribuye al taller lo que dependió del acceso o del apoyo social."
+            "Una intervención comunitaria se sostiene en una explicación del cambio: qué mecanismo se activará, en quiénes y bajo qué condiciones. Cuando esa explicación falta, el equipo confunde actividades visibles con efectos y atribuye al taller lo que dependió del acceso o del apoyo social.",
+            "La APOC opera en dos fases: primero inventaría factores de riesgo y protectores del territorio —lluvias, basurales, humos, derrumbes, pandillaje, alcohol, vectores—; luego despliega un paquete de educación, vigilancia, salud ambiental, salud ocupacional y preparación para emergencias. El agente comunitario capta, convoca y sostiene el vínculo; no reemplaza al equipo de salud."
           ],
           "bullets": [
             "La teoría de cambio obliga a declarar supuestos: si se supone que la información basta para cambiar una conducta, la intervención fallará ante barreras de acceso o normas sociales adversas.",
@@ -14926,12 +15080,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "APOC e intervención comunitaria en APS",
+          "depth": "core",
+          "body": [
+            "La Atención Primaria Orientada a la Comunidad (APOC) combina la clínica preventiva con el diagnóstico y la acción comunitaria. No es una campaña masiva ni una suma de talleres: es una forma de organizar el cuidado con la comunidad y sobre sus prioridades.",
+            "Una intervención comunitaria en APS parte de un problema priorizado, define población y objetivo medible, elige una estrategia viable y culturalmente aceptable, y establece indicadores de proceso y resultado. La teoría de cambio ayuda a explicitar por qué se espera que funcione."
+          ],
+          "bullets": [
+            "Diagnóstico participativo antes de diseñar la intervención.",
+            "Objetivo medible y población delimitada.",
+            "Estrategia viable, pertinente y sostenible.",
+            "Indicadores de proceso, resultado e impacto.",
+            "Evaluación con la comunidad y ajuste del plan."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, ejes temáticos y escenarios.",
             "Fuente: MINSA — Metodología para el análisis de situación de salud local, priorización y participación de actores.",
-            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas."
+            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017."
           ]
         }
       ],
@@ -14940,6 +15111,13 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             49
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            58
           ]
         }
       ]
@@ -14952,7 +15130,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.6 · Trabajo intersectorial",
       "minutes": 15,
       "level": "Base",
-      "summary": "Los problemas complejos de salud se responden con acción intersectorial: salud coordina con educación, municipalidad, protección, justicia, trabajo y organizaciones sociales. La multisectorialidad reúne sectores y puede quedarse en el intercambio de información; la intersectorialidad exige un problema común, roles, plazos, seguimiento y retroalimentación. La conducción sanitaria no se diluye: cada sector aporta según su competencia, y las derivaciones sin cierre fragmentan el cuidado.",
+      "summary": "Los problemas complejos de salud se responden con acción intersectorial: salud coordina con educación, municipalidad, protección, justicia, trabajo y organizaciones sociales. La multisectorialidad reúne sectores y puede quedarse en el intercambio de información; la intersectorialidad exige un problema común, roles, plazos, seguimiento y retroalimentación. La conducción sanitaria no se diluye: cada sector aporta según su competencia, y las derivaciones sin cierre fragmentan el cuidado. La intersectorialidad se presenta como condición para abordar determinantes desde la APS.",
       "keyConcepts": [
         "Trabajo intersectorial: acción integrada de varios sectores sobre un problema común con objetivos y responsabilidades compartidas.",
         "Multisectorialidad: concurrencia de sectores que puede limitarse al intercambio de información.",
@@ -14960,7 +15138,8 @@ window.STUDY_CONTENT = {
         "Conducción sanitaria: responsabilidad del sector salud de orientar técnicamente la respuesta sin sustituir a otros.",
         "Derivación con cierre: referencia que incluye retroalimentación, seguimiento y verificación de la atención.",
         "Gobernanza en red: coordinación sostenida entre actores autónomos con reglas, confianza y rendición de cuentas.",
-        "Ruta de atención: secuencia acordada de pasos, responsables y plazos entre instituciones."
+        "Ruta de atención: secuencia acordada de pasos, responsables y plazos entre instituciones.",
+        "Intersectorialidad: objetivos, responsabilidades y recursos compartidos; no solo concurrencia de sectores."
       ],
       "sections": [
         {
@@ -14992,38 +15171,41 @@ window.STUDY_CONTENT = {
           "depth": "full",
           "table": {
             "headers": [
-              "Nivel",
-              "Criterio",
-              "Riesgo si se confunde"
+              "Tipo de acción intersectorial",
+              "Qué implica",
+              "Riesgo o costo"
             ],
             "rows": [
               [
-                "Informativo",
-                "Los sectores comparten datos sobre el problema.",
-                "Se confunde con articulación y no se acuerdan acciones."
+                "Informativa",
+                "Un sector presenta datos o recomendaciones a otro",
+                "Relación unidireccional; no compromete acciones"
               ],
               [
-                "Consultivo",
-                "Se piden opiniones sobre decisiones de un sector.",
-                "La consulta no compromete recursos ni responsabilidades."
+                "Cooperación",
+                "Interacción para ganar eficiencia en un tema de interés común",
+                "Pérdida parcial de autonomía; suele quedarse en ejecución"
               ],
               [
-                "Coordinado",
-                "Se acuerdan acciones paralelas con responsables.",
-                "Cada sector ejecuta su parte sin integrar el resultado."
+                "Coordinación",
+                "Ajuste de políticas y trabajo horizontal en red",
+                "Mayor dependencia y necesidad de financiamiento común"
               ],
               [
-                "Integrado",
-                "Se comparte el objetivo, la ruta y el seguimiento.",
-                "Exige renunciar a protagonismos y sostener reuniones útiles."
+                "Integración",
+                "Política o programa único con varios sectores",
+                "Exige gestión transversal y acuerdos explícitos"
               ],
               [
-                "Cogobernanza",
-                "Se comparte decisión y rendición de cuentas.",
-                "Requiere madurez institucional y reglas escritas."
+                "Salud en todas las políticas",
+                "Decisiones de otros sectores consideran su efecto en salud y equidad",
+                "Requiere gobernanza y rendición de cuentas"
               ]
             ]
-          }
+          },
+          "body": [
+            "Cada nivel cede autonomía y exige acuerdo escrito; la salud en todas las políticas es el nivel más alto, no un sinónimo de reunión. La instancia local es el Comité Multisectorial o Consejo Local de Salud."
+          ]
         },
         {
           "title": "Sectores, competencias y aportes",
@@ -15139,12 +15321,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Intersectorialidad y APS",
+          "depth": "core",
+          "body": [
+            "La APS actúa sobre problemas que exceden al sector salud. La intersectorialidad exige objetivos compartidos, responsabilidades definidas, recursos y mecanismos de seguimiento; no se agota en reuniones o declaraciones conjuntas.",
+            "La diferencia con la multisectorialidad es operativa: varios sectores pueden concurrir sin integrar sus acciones. La salud en todas las políticas propone que las decisiones de otros sectores consideren sus efectos en la salud y la equidad."
+          ],
+          "bullets": [
+            "Definir un problema común y un resultado esperado.",
+            "Asignar responsabilidades y recursos a cada sector.",
+            "Acordar indicadores y rendición de cuentas.",
+            "Gestionar conflictos de competencia e intereses.",
+            "Verificar que el acuerdo se traduzca en acciones."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: OMS — Primary health care, acción multisectorial y participación.",
             "Fuente: MIMP — Lineamientos de coordinación CEM-UPE-DEMUNA, RM 237-2024-MIMP.",
-            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, enfoques transversales y escenarios."
+            "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, enfoques transversales y escenarios.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial."
           ]
         }
       ],
@@ -15153,6 +15352,21 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             50
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            19,
+            20,
+            21
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            46,
+            47
           ]
         }
       ]
@@ -15165,7 +15379,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.7 · Plan local de salud",
       "minutes": 16,
       "level": "Avanzado",
-      "summary": "El plan local de salud traduce las prioridades del territorio en objetivos, actividades, responsables, recursos, cronograma e indicadores. Un problema bien formulado precisa población, magnitud, lugar y efecto; un objetivo específico expresa un cambio medible y temporal; cada indicador requiere fórmula, fuente, frecuencia, unidad y meta. La autoridad local de salud conduce el proceso y los actores participan según sus competencias. El monitoreo revisa la ejecución y la evaluación valora los resultados y la sostenibilidad.",
+      "summary": "El plan local de salud traduce las prioridades del territorio en objetivos, actividades, responsables, recursos, cronograma e indicadores. Un problema bien formulado precisa población, magnitud, lugar y efecto; un objetivo específico expresa un cambio medible y temporal; cada indicador requiere fórmula, fuente, frecuencia, unidad y meta. La autoridad local de salud conduce el proceso y los actores participan según sus competencias. El monitoreo revisa la ejecución y la evaluación valora los resultados y la sostenibilidad. El plan local se conecta con el ASIS, la RIS y la gestión territorial de la APS.",
       "keyConcepts": [
         "Plan local de salud: instrumento que convierte prioridades territoriales en objetivos, acciones y metas verificables.",
         "Priorización: selección argumentada de problemas según magnitud, gravedad, tendencia, factibilidad y equidad.",
@@ -15173,7 +15387,8 @@ window.STUDY_CONTENT = {
         "Objetivo específico: cambio medible y temporal en una población definida.",
         "Indicador: enunciado con fórmula, fuente, unidad, frecuencia, línea de base y meta.",
         "Plan operativo: desagregación anual o trimestral del plan en actividades, responsables y recursos.",
-        "Monitoreo y evaluación: el monitoreo corrige la ejecución; la evaluación valora resultados y sostenibilidad."
+        "Monitoreo y evaluación: el monitoreo corrige la ejecución; la evaluación valora resultados y sostenibilidad.",
+        "Plan local: traduce prioridades del ASIS en objetivos, responsables, recursos e indicadores."
       ],
       "sections": [
         {
@@ -15216,14 +15431,14 @@ window.STUDY_CONTENT = {
                 "Se prioriza lo visible o lo que reporta más demanda."
               ],
               [
-                "Gravedad",
+                "Trascendencia (gravedad)",
                 "¿Qué consecuencias produce si no se atiende?",
                 "Se posterga un problema silencioso pero grave."
               ],
               [
-                "Tendencia",
-                "¿Está aumentando, estabilizándose o disminuyendo?",
-                "Se responde cuando el problema ya se desbordó."
+                "Vulnerabilidad (equidad)",
+                "¿Afecta con mayor intensidad a grupos en desventaja?",
+                "El promedio oculta brechas por territorio o pertenencia."
               ],
               [
                 "Factibilidad",
@@ -15231,17 +15446,20 @@ window.STUDY_CONTENT = {
                 "Se promete lo que no puede ejecutarse."
               ],
               [
-                "Equidad",
-                "¿Afecta con mayor intensidad a grupos en desventaja?",
-                "El promedio oculta brechas por territorio o pertenencia."
-              ],
-              [
-                "Participación",
+                "Percepción social",
                 "¿La comunidad reconoce el problema como prioritario?",
                 "El plan se ejecuta sin apropiación ni demanda sostenida."
+              ],
+              [
+                "Decisión argumentada",
+                "¿Cómo se combinan los criterios y por qué?",
+                "Se llena la matriz sin explicar el resultado."
               ]
             ]
-          }
+          },
+          "body": [
+            "La lista canónica del ASIS local se ordena en magnitud, trascendencia (gravedad), vulnerabilidad (equidad), factibilidad y percepción social; la tendencia se lee dentro de magnitud y trascendencia. La decisión final debe explicar cómo se combinaron los criterios, porque la matriz no reemplaza el juicio."
+          ]
         },
         {
           "title": "Del problema al indicador",
@@ -15295,6 +15513,9 @@ window.STUDY_CONTENT = {
             "Coordinación: las actividades que dependen de otro sector requieren acuerdo previo y confirmación.",
             "Riesgos: prever qué puede fallar y qué alternativa existe evita suspender la actividad completa.",
             "Seguimiento: definir reuniones, responsables y tablero de indicadores antes de empezar la ejecución."
+          ],
+          "body": [
+            "El plan lo conduce el gobierno local con el Comité Local de Salud y se encadena al plan de desarrollo local y al POI mediante acuerdos de gestión. El municipio distrital o provincial lidera la convocatoria; la Autoridad Local de Salud presenta el plan y la RIS aporta la lectura sanitaria. Sin decisión política municipal, diagnóstico basal, financiamiento y gestión por resultados, el plan queda como documento."
           ]
         },
         {
@@ -15357,12 +15578,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Plan local y APS",
+          "depth": "core",
+          "body": [
+            "El plan local de salud traduce las prioridades del ASIS en objetivos, actividades, responsables, recursos, cronograma e indicadores. En APS es el puente entre el diagnóstico territorial y la acción cotidiana del equipo.",
+            "Un plan no se evalúa por la cantidad de actividades, sino por los cambios en acceso, continuidad y condiciones de vida. La participación comunitaria y la articulación intersectorial son condiciones de implementación, no adornos del documento.",
+            "El plan local no es un anexo del ASIS: es el instrumento que traduce prioridades en objetivos, responsables, recursos, cronograma e indicadores. Su seguimiento se hace con la comunidad y con el Comité Local de Salud, y se ajusta cuando cambia el territorio."
+          ],
+          "bullets": [
+            "Problema priorizado con población, magnitud y territorio.",
+            "Objetivo medible y temporal.",
+            "Actividades con responsable, recurso y plazo.",
+            "Indicadores de proceso, resultado e impacto.",
+            "Monitoreo y evaluación con la comunidad."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Metodología para el análisis de situación de salud local, priorización y agenda sanitaria.",
             "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, enfoques transversales y escenarios.",
-            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas."
+            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017."
           ]
         }
       ],
@@ -15373,6 +15612,23 @@ window.STUDY_CONTENT = {
             51,
             52,
             53
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            59,
+            60
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            17,
+            18,
+            19,
+            20,
+            21
           ]
         }
       ]
@@ -15402,7 +15658,8 @@ window.STUDY_CONTENT = {
           "body": [
             "Un sistema de información sanitaria reúne registros, procesos y plataformas que transforman la atención cotidiana en insumos para decidir. Lo integran el registro de atenciones del sistema de información en salud, la historia clínica, la receta electrónica y los datos de aseguramiento. A ello se suman las plataformas que permiten intercambiar información entre servicios. Ninguno de esos componentes sirve por separado: el valor aparece cuando el conjunto conserva la identidad de la persona y el significado de cada variable.",
             "El registro describe lo que ocurrió en una atención concreta; el indicador resume un fenómeno en una población y un periodo. Confundirlos lleva a conclusiones falsas, porque una cifra puede crecer por más tamizajes y no por más enfermedad. La cadena se completa cuando el dato se analiza y sostiene una decisión verificable, con responsable y seguimiento.",
-            "La tecnología es un medio y no sustituye el consentimiento informado, el juicio clínico ni la responsabilidad profesional. Un formulario nuevo o una tableta no corrigen prácticas de registro deficientes; las hacen más visibles. Por eso la calidad del dato se gestiona con reglas, capacitación y devolución periódica de resultados al equipo que registra."
+            "La tecnología es un medio y no sustituye el consentimiento informado, el juicio clínico ni la responsabilidad profesional. Un formulario nuevo o una tableta no corrigen prácticas de registro deficientes; las hacen más visibles. Por eso la calidad del dato se gestiona con reglas, capacitación y devolución periódica de resultados al equipo que registra.",
+            "El denominador de la RIS sale del padrón nominal de población asignada. SISFAC registra familia, vivienda y entorno; el HIS registra la atención; REUNIS, ENDES, ENAHO e INEI aportan contexto y denominadores poblacionales; RENHICE sostiene la historia clínica electrónica y la interoperabilidad. Sin población nominalizada, la cobertura se infla y las brechas desaparecen."
           ]
         },
         {
@@ -16044,7 +16301,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.3 · Participación comunitaria",
       "minutes": 18,
       "level": "Base",
-      "summary": "La participación comunitaria es la intervención activa de la población en el diagnóstico, la priorización, la planificación, la ejecución y la evaluación de las acciones de salud. No se mide por la asistencia a reuniones, sino por la capacidad real de deliberar, decidir y sostener acuerdos. Este tema distingue niveles de participación, actores y espacios como el consejo de salud, y muestra cómo se gestionan los conflictos para que la apropiación comunitaria haga sostenible la intervención.",
+      "summary": "La participación comunitaria es la intervención activa de la población en el diagnóstico, la priorización, la planificación, la ejecución y la evaluación de las acciones de salud. No se mide por la asistencia a reuniones, sino por la capacidad real de deliberar, decidir y sostener acuerdos. Este tema distingue niveles de participación, actores y espacios como el consejo de salud, y muestra cómo se gestionan los conflictos para que la apropiación comunitaria haga sostenible la intervención. La participación se articula con el consejo de salud, el plan local y la acción territorial de la APS.",
       "keyConcepts": [
         "Participación comunitaria: intervención activa de la población en todo el ciclo de una acción de salud, desde el diagnóstico hasta la evaluación.",
         "Participación situada: organización en un territorio concreto con actores, familias, organizaciones, recursos y conflictos identificables.",
@@ -16052,7 +16309,8 @@ window.STUDY_CONTENT = {
         "Mapeo de actores: lectura del territorio que reconoce liderazgos, organizaciones, recursos y tensiones antes de convocar.",
         "Consejo de salud: espacio de encuentro entre población organizada y servicios para priorizar, acordar y vigilar acciones.",
         "Presupuesto participativo: mecanismo municipal que permite a la población incidir en la asignación de recursos públicos.",
-        "Apropiación comunitaria: capacidad de la comunidad de sostener el proceso y las acciones cuando termina el impulso externo."
+        "Apropiación comunitaria: capacidad de la comunidad de sostener el proceso y las acciones cuando termina el impulso externo.",
+        "Participación efectiva: deliberar, decidir, ejecutar y evaluar; no solo asistir o validar."
       ],
       "sections": [
         {
@@ -16071,7 +16329,7 @@ window.STUDY_CONTENT = {
             "La participación no depende solo de la voluntad de convocar: se explica por el poder disponible, las redes de confianza y las expectativas que cada actor tiene sobre los demás. Estos mecanismos permiten prever qué espacio sostendrá acuerdos y cuál se vaciará cuando cambie la coyuntura."
           ],
           "bullets": [
-            "La escalera de Arnstein ordena la participación según el poder cedido, desde la información hasta el control ciudadano; sirve para nombrar el nivel real y no confundirlo con el deseado.",
+            "El espectro IAP2 (informar, consultar, involucrar, colaborar y empoderar) ordena la participación según el poder cedido; la escalera de Arnstein es otra propuesta clásica de ocho peldaños y no debe confundirse con el espectro IAP2.",
             "El capital social, entendido como redes, confianza y reciprocidad, reduce los costos de coordinar y hace más probable que los acuerdos se cumplan sin vigilancia permanente.",
             "La autoeficacia colectiva explica por qué una comunidad participa cuando comprueba que su acción produce efectos; sin resultados visibles el interés se agota.",
             "La acción colectiva depende de incentivos, costos y expectativas mutuas: si cada actor espera que los demás no cumplirán, la convocatoria se vacía aunque el problema sea grave.",
@@ -16083,7 +16341,7 @@ window.STUDY_CONTENT = {
           "title": "Niveles de participación y criterios de aplicación",
           "depth": "full",
           "body": [
-            "Los niveles no forman una escalera que siempre deba recorrerse completa: describen cuánto poder se comparte en un momento dado. Un servicio puede informar sobre un tema y colaborar en otro, siempre que explicite el nivel y no prometa decisión donde solo habrá consulta."
+            "Los niveles del espectro IAP2 no forman una escalera que siempre deba recorrerse completa: describen cuánto poder se comparte en un momento dado. Un servicio puede informar sobre un tema y colaborar en otro, siempre que explicite el nivel y no prometa decisión donde solo habrá consulta."
           ],
           "table": {
             "headers": [
@@ -16200,12 +16458,31 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Participación y APS",
+          "depth": "core",
+          "body": [
+            "La participación comunitaria es un componente de la APS, no un acto protocolario. Implica que la población intervenga en la identificación de problemas, la deliberación, la priorización, la ejecución y la evaluación de las acciones de salud.",
+            "Participar no es solo asistir a una reunión ni firmar un acta. La participación efectiva exige información comprensible, capacidad de decisión y rendición de cuentas. El consejo de salud, el presupuesto participativo y los comités locales son espacios posibles, no garantías automáticas.",
+            "La participación tiene dos vías: la comunitaria —diagnóstico, priorización, ejecución y evaluación— y la vigilancia ciudadana del cumplimiento y la rendición de cuentas. El Comité Local de Salud, con la RIS y la sociedad civil organizada, es un espacio de deliberación y monitoreo, no solo de convocatoria."
+          ],
+          "bullets": [
+            "Diferenciar información, consulta, deliberación, decisión y cogestión.",
+            "Mapear actores, intereses y conflictos antes de convocar.",
+            "Acordar qué se decide, quién decide y cómo se verificará.",
+            "Evitar convocar solo para validar una decisión ya tomada."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Metodología para el análisis de situación de salud local, participación de actores y priorización.",
             "Fuente: OMS — Primary health care, servicios integrados, acción multisectorial y participación.",
-            "Fuente: MINSA — NTS N.° 138-MINSA/2017/DGIESP, RM 574-2017/MINSA, funciones del Centro de Salud Mental Comunitaria."
+            "Fuente: MINSA — NTS N.° 138-MINSA/2017/DGIESP, RM 574-2017/MINSA, funciones del Centro de Salud Mental Comunitaria.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017.",
+            "Fuente: OMS — Carta de Ottawa, 21/11/1986; cinco campos de acción para la promoción de la salud.",
+            "Fuente: International Association for Public Participation (IAP2) — Spectrum of Public Participation.",
+            "Fuente: Arnstein SR. — A ladder of citizen participation. J Am Inst Plann. 1969;35(4):216-224."
           ]
         }
       ],
@@ -16214,6 +16491,20 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             47
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            21,
+            22,
+            23
+          ]
+        },
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            3
           ]
         }
       ]
@@ -16226,7 +16517,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.10 · Residuos sólidos en salud",
       "minutes": 19,
       "level": "Intermedio",
-      "summary": "La gestión segura de residuos en servicios de salud empieza donde se generan y continúa con el acondicionamiento, el almacenamiento, el transporte, el tratamiento y la disposición final. La ficha ordena las clases de residuos, el color o recipiente que corresponde a cada una y los puntos de control de la ruta. Separar bien protege al personal, a las personas atendidas y al ambiente, y reduce el volumen peligroso. La regla operativa se resume en rojo para biocontaminado, amarillo para especial, negro para común y recipiente rígido para punzocortantes.",
+      "summary": "La gestión segura de residuos en servicios de salud empieza donde se generan y continúa con el acondicionamiento, el almacenamiento, el transporte, el tratamiento y la disposición final. La ficha ordena las clases de residuos, el color o recipiente que corresponde a cada una y los puntos de control de la ruta. Separar bien protege al personal, a las personas atendidas y al ambiente, y reduce el volumen peligroso. La regla operativa se resume en rojo para biocontaminado, amarillo para especial, negro para común y recipiente rígido para punzocortantes. La ficha distingue el ciclo municipal del manejo intrahospitalario y lo conecta con la salud comunitaria.",
       "keyConcepts": [
         "Segregación: separación de residuos en el momento y lugar donde se generan, según su clase y su riesgo.",
         "Residuo biocontaminado: material con sangre, fluidos, cultivos u otros agentes con riesgo biológico.",
@@ -16235,7 +16526,8 @@ window.STUDY_CONTENT = {
         "Punzocortante: aguja, lanceta, hoja o ampolla rota que debe ir en recipiente rígido.",
         "Acondicionamiento: uso de la bolsa o recipiente adecuado según la clase de residuo identificada.",
         "Tratamiento: proceso que reduce la carga o el volumen del residuo antes de su disposición final.",
-        "Riesgo ocupacional: probabilidad de daño por exposición a un residuo peligroso durante su manejo."
+        "Riesgo ocupacional: probabilidad de daño por exposición a un residuo peligroso durante su manejo.",
+        "Residuos y salud comunitaria: ciclo municipal (generación, recolección, disposición) además de la NTS 144 intrahospitalaria."
       ],
       "sections": [
         {
@@ -16425,13 +16717,34 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Ciclo municipal y comunitario de los residuos",
+          "depth": "core",
+          "body": [
+            "El ítem pide residuos sólidos y salud comunitaria, no solo residuos de establecimientos de salud. El ciclo municipal incluye generación domiciliaria y comunitaria, segregación, almacenamiento, recolección, transferencia, transporte, tratamiento y disposición final. La quema y el botadero a cielo abierto son prácticas de riesgo que persisten en muchos territorios.",
+            "La salud comunitaria se afecta por criaderos de vectores, contaminación del agua y del suelo, exposición de recicladores informales, animales y olores. El municipio es responsable de la gestión y el sector salud de la vigilancia, la educación y la articulación. La NTS 144 regula los residuos de establecimientos de salud; no reemplaza la normativa municipal de residuos sólidos.",
+            "La respuesta exige separar en origen, asegurar frecuencia de recolección, formalizar el reciclaje, cerrar botaderos y educar con la comunidad. La participación comunitaria y la vigilancia sanitaria permiten identificar puntos críticos y sostener el cambio."
+          ],
+          "bullets": [
+            "Generación: domiciliaria, comercial, institucional y de servicios de salud.",
+            "Segregación: orgánico, reciclable, no aprovechable y peligroso.",
+            "Recolección y transferencia: frecuencia, rutas y puntos críticos.",
+            "Disposición final: relleno sanitario; evitar quema y botadero a cielo abierto.",
+            "Reciclaje informal: riesgo ocupacional y oportunidad de formalización.",
+            "Vigilancia: criaderos, agua, suelo, vectores y exposición humana.",
+            "Participación: municipio, comunidad, recicladores y sector salud."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 144-MINSA/2018/DIGESA, gestión y manejo de residuos sólidos en establecimientos de salud y servicios médicos de apoyo.",
             "Fuente: MINSA — RM N.° 1295-2018-MINSA, aprueba la NTS N.° 144-MINSA/2018/DIGESA.",
             "Fuente: MINSA — RM N.° 250-2022-MINSA, modifica la NTS N.° 144-MINSA/2018/DIGESA.",
-            "Fuente: MINSA — RM N.° 901-2024-MINSA, modifica la NTS N.° 144-MINSA/2018/DIGESA."
+            "Fuente: MINSA — RM N.° 901-2024-MINSA, modifica la NTS N.° 144-MINSA/2018/DIGESA.",
+            "Fuente: Perú — Decreto Legislativo N.° 1278, Ley de Gestión Integral de Residuos Sólidos, y su reglamento.",
+            "Fuente: MINSA — NTS N.° 144-MINSA/2018/DIGESA, gestión y manejo de residuos sólidos en establecimientos de salud y servicios médicos de apoyo, RM N.° 1295-2018/MINSA.",
+            "Fuente: Perú — Ley N.° 27972, Ley Orgánica de Municipalidades; competencias municipales en residuos sólidos y salud."
           ]
         }
       ],
@@ -16663,7 +16976,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.12 · Modelo comunitario de salud mental",
       "minutes": 20,
       "level": "Intermedio",
-      "summary": "El modelo comunitario de salud mental atiende lo más cerca posible de la vida cotidiana, con énfasis en derechos y recuperación. El primer nivel, los Centros de Salud Mental Comunitaria, los hospitales y los hogares protegidos trabajan con la familia y la comunidad para reducir síntomas y recuperar autonomía, vínculos, funcionamiento e inclusión. La alternativa efectiva menos restrictiva guía la decisión y la hospitalización se reserva para cuando corresponde. La derivación no elimina la responsabilidad de coordinación y seguimiento entre servicios.",
+      "summary": "El modelo comunitario de salud mental atiende lo más cerca posible de la vida cotidiana, con énfasis en derechos y recuperación. El primer nivel, los Centros de Salud Mental Comunitaria, los hospitales y los hogares protegidos trabajan con la familia y la comunidad para reducir síntomas y recuperar autonomía, vínculos, funcionamiento e inclusión. La alternativa efectiva menos restrictiva guía la decisión y la hospitalización se reserva para cuando corresponde. La derivación no elimina la responsabilidad de coordinación y seguimiento entre servicios. La ficha recentra el modelo comunitario en el CSMC, la continuidad y la recuperación, y ubica la orfandad como componente de red.",
       "keyConcepts": [
         "Modelo comunitario: atención cercana al entorno cotidiano, con énfasis en derechos, recuperación e inclusión social.",
         "Recuperación: proceso que reduce síntomas y recupera autonomía, vínculos, funcionamiento y proyecto de vida.",
@@ -16672,7 +16985,8 @@ window.STUDY_CONTENT = {
         "Rehabilitación psicosocial: conjunto de apoyos para recuperar habilidades, funcionamiento e inclusión en comunidad.",
         "Red de apoyo: articulación de apoyos cercanos, organizaciones comunitarias e instituciones según su competencia.",
         "Continuidad del cuidado: sostenimiento del vínculo y del plan entre servicios, con seguimiento verificable.",
-        "Interés superior del niño: criterio que orienta las medidas de protección en la infancia."
+        "Interés superior del niño: criterio que orienta las medidas de protección en la infancia.",
+        "Modelo comunitario: CSMC + primer nivel + red; recuperación e inclusión, no solo reducción de síntomas."
       ],
       "sections": [
         {
@@ -16867,13 +17181,32 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Núcleo del modelo comunitario",
+          "depth": "core",
+          "body": [
+            "El núcleo del modelo comunitario es la atención cercana al entorno, con continuidad, derechos y recuperación. El Centro de Salud Mental Comunitaria (CSMC) atiende a personas con trastornos mentales graves y problemas psicosociales, y a la vez brinda asistencia técnica y supervisión al primer nivel.",
+            "La hospitalización es una alternativa cuando la intensidad del riesgo o la complejidad lo exige, no la respuesta por defecto. La recuperación incluye autonomía, vínculos, funcionamiento e inclusión; no se limita a reducir síntomas. La derivación no elimina la responsabilidad de coordinación y seguimiento.",
+            "La orfandad y la protección infantil son un componente de red, pero no definen el modelo comunitario. Deben ubicarse como un caso de articulación con DEMUNA, UPE, INABIF y otros servicios, no como el eje de la ficha."
+          ],
+          "bullets": [
+            "CSMC: atención especializada cercana, continuidad y apoyo al primer nivel.",
+            "Primer nivel: detección, atención inicial, seguimiento y coordinación.",
+            "Hospital: crisis o complejidad; evitar institucionalización prolongada.",
+            "Hogares protegidos y apoyos comunitarios: vida cotidiana e inclusión.",
+            "Recuperación: síntomas, autonomía, vínculos y funcionamiento.",
+            "Derechos: consentimiento, confidencialidad y alternativa menos restrictiva."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS 138-MINSA/2017/DGIESP, RM 574-2017/MINSA, funciones del Centro de Salud Mental Comunitaria.",
             "Fuente: MIMP — Lineamientos de coordinación CEM-UPE-DEMUNA, RM 237-2024-MIMP.",
             "Fuente: Congreso de la República — Ley 29973, Ley General de la Persona con Discapacidad, artículos 70-73.",
-            "Fuente: INABIF — Asistencia económica para casos de orfandad, 2026."
+            "Fuente: MINSA — NTS 138-MINSA/2017/DGIESP, funciones del Centro de Salud Mental Comunitaria, RM N.° 574-2017/MINSA.",
+            "Fuente: Perú — Ley N.° 30947, Ley de Salud Mental, 22/05/2019; publicada el 23/05/2019.",
+            "Fuente: MINSA — DS N.° 007-2020-SA, Reglamento de la Ley N.° 30947, 05/03/2020."
           ]
         }
       ],
@@ -16895,7 +17228,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 2.13 · Barreras de acceso a la salud",
       "minutes": 19,
       "level": "Avanzado",
-      "summary": "El acceso efectivo exige que el servicio exista, pueda alcanzarse, resulte aceptable y resuelva con calidad. Las barreras geográficas, económicas, culturales, organizativas y de trato interrumpen la ruta antes o después del contacto con el establecimiento. Tener seguro reduce el costo directo, pero no elimina la distancia, el horario incompatible ni el estigma. Identificar la barrera predominante y medir abandono y oportunidad permite diseñar respuestas proporcionadas y sostener la continuidad del cuidado.",
+      "summary": "El acceso efectivo exige que el servicio exista, pueda alcanzarse, resulte aceptable y resuelva con calidad. Las barreras geográficas, económicas, culturales, organizativas y de trato interrumpen la ruta antes o después del contacto con el establecimiento. Tener seguro reduce el costo directo, pero no elimina la distancia, el horario incompatible ni el estigma. Identificar la barrera predominante y medir abandono y oportunidad permite diseñar respuestas proporcionadas y sostener la continuidad del cuidado. El acceso se articula con la puerta de entrada, la RIS y la continuidad del cuidado.",
       "keyConcepts": [
         "Acceso efectivo: uso real de la prestación necesaria, en el momento oportuno y con continuidad, no solo afiliación o existencia del servicio.",
         "Disponibilidad: el establecimiento cuenta con el recurso humano, el insumo, el espacio y el horario necesarios para atender la demanda.",
@@ -16904,7 +17237,8 @@ window.STUDY_CONTENT = {
         "Calidad: resolución segura y oportuna, con trato digno y sostenida en el tiempo.",
         "Barrera de acceso: condición que impide, retrasa o desalienta el uso del servicio y puede operar antes, durante o después de la atención.",
         "Navegación del usuario: acompañamiento para completar citas, referencias y contrarreferencias dentro de la red.",
-        "Equidad en salud: ausencia de diferencias injustas y evitables en el acceso y en los resultados entre grupos poblacionales."
+        "Equidad en salud: ausencia de diferencias injustas y evitables en el acceso y en los resultados entre grupos poblacionales.",
+        "Acceso efectivo: disponibilidad, accesibilidad, aceptabilidad, calidad y protección financiera."
       ],
       "sections": [
         {
@@ -16912,7 +17246,7 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "body": [
             "El acceso se entiende como la relación entre la necesidad de atención y el uso efectivo del servicio. No basta con que el establecimiento exista ni con que la persona esté afiliada: el acceso se concreta cuando la prestación se obtiene, en el momento oportuno y con capacidad de continuar el cuidado.",
-            "Las cuatro dimensiones clásicas ordenan el análisis. La disponibilidad responde si el servicio existe; la accesibilidad, si puede alcanzarse; la aceptabilidad, si resulta pertinente y respetuoso; la calidad, si resuelve con seguridad. Una misma persona puede enfrentar varias barreras a la vez, y la respuesta debe dirigirse a la que interrumpe la ruta."
+            "Las cinco dimensiones ordenan el análisis: disponibilidad, accesibilidad geográfica y económica, aceptabilidad, calidad y protección financiera. La disponibilidad responde si el servicio existe; la accesibilidad, si puede alcanzarse; la aceptabilidad, si resulta pertinente y respetuoso; la calidad, si resuelve con seguridad; la protección financiera, si el gasto no empobrece. Una misma persona puede enfrentar varias barreras a la vez, y la respuesta debe dirigirse a la que interrumpe la ruta."
           ]
         },
         {
@@ -17056,13 +17390,72 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Acceso efectivo y APS",
+          "depth": "core",
+          "body": [
+            "El acceso efectivo exige disponibilidad, accesibilidad, aceptabilidad y calidad. No basta con que el servicio exista o con que la persona tenga seguro: debe poder llegar, ser atendida, entender y continuar el cuidado.",
+            "La APS organiza la puerta de entrada y la navegación dentro de la red. Las barreras geográficas, económicas, culturales, organizativas y de trato interrumpen la ruta antes o después del contacto. Medir abandono y oportunidad revela barreras que el promedio oculta."
+          ],
+          "bullets": [
+            "Disponibilidad: el servicio existe y tiene recursos.",
+            "Accesibilidad: puede alcanzarse sin barreras evitables.",
+            "Aceptabilidad: es pertinente y respetuoso.",
+            "Calidad: resuelve con seguridad y continuidad.",
+            "Protección financiera: no empobrece a la persona."
+          ]
+        },
+        {
+          "title": "Cascada de acceso y pérdida entre niveles",
+          "depth": "full",
+          "body": [
+            "El acceso se analiza como una cascada: cada nivel se calcula como proporción del anterior y la diferencia revela la barrera que interrumpe la ruta. No basta con medir la cobertura nominal; hay que medir quién llega, quién es atendido, quién comprende y quién continúa."
+          ],
+          "table": {
+            "headers": [
+              "Nivel",
+              "Numerador / denominador",
+              "Pérdida que revela"
+            ],
+            "rows": [
+              [
+                "Disponible",
+                "Población con servicio y horario vigente / población asignada",
+                "Cobertura nominal"
+              ],
+              [
+                "Accesible",
+                "Puede llegar en tiempo y costo razonables / disponibles",
+                "Barrera geográfica y económica"
+              ],
+              [
+                "Aceptable",
+                "Acepta y comprende la oferta / accesibles",
+                "Idioma, trato y estigma"
+              ],
+              [
+                "Contacto",
+                "Usa al menos una vez / aceptables",
+                "Primera barrera de uso"
+              ],
+              [
+                "Efectivo",
+                "Completa el cuidado / contacto",
+                "Continuidad y calidad"
+              ]
+            ]
+          }
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: Congreso de la República — Ley 29344, Ley Marco de Aseguramiento Universal en Salud.",
             "Fuente: Congreso de la República — Incorporación al SIS de peruanos residentes en el exterior, modificación del artículo 3 de la Ley 29344.",
             "Fuente: OMS — Universal health coverage: questions and answers.",
-            "Fuente: OMS — Primary health care, servicios integrados, acción multisectorial y participación."
+            "Fuente: OMS — Primary health care, servicios integrados, acción multisectorial y participación.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: OMS — Informe mundial 2008: cobertura universal y acceso efectivo.",
+            "Fuente: Tanahashi T. — Health service coverage and its evaluation. Bull World Health Organ. 1978;56(2):295-303."
           ]
         }
       ],
@@ -17072,6 +17465,23 @@ window.STUDY_CONTENT = {
           "pages": [
             61,
             62
+          ]
+        },
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            41,
+            42,
+            61
           ]
         }
       ]
@@ -17084,7 +17494,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 3.1 · Promoción de la salud",
       "minutes": 18,
       "level": "Base",
-      "summary": "La promoción de la salud actúa sobre las condiciones que producen salud y sobre la capacidad de personas y comunidades para decidir. Combina políticas públicas, entornos, acción comunitaria, habilidades personales y servicios orientados a la prevención. En el Perú se organiza por ejes temáticos, escenarios y enfoques transversales, que traducen los principios de Ottawa a territorios concretos. Su diferencia con la prevención está en el objeto: transforma condiciones y poder, no solo evita un daño específico.",
+      "summary": "La promoción de la salud actúa sobre las condiciones que producen salud y sobre la capacidad de personas y comunidades para decidir. Combina políticas públicas, entornos, acción comunitaria, habilidades personales y servicios orientados a la prevención. En el Perú se organiza por ejes temáticos, escenarios y enfoques transversales, que traducen los principios de Ottawa a territorios concretos. Su diferencia con la prevención está en el objeto: transforma condiciones y poder, no solo evita un daño específico. La ficha incorpora la cronología Ottawa-Yakarta-Astaná y su relación con la APS.",
       "keyConcepts": [
         "Promoción de la salud: proceso que amplía el control de personas y comunidades sobre los determinantes de su salud.",
         "Determinantes sociales: condiciones de vida, trabajo, educación y territorio que explican las diferencias de salud entre grupos.",
@@ -17093,7 +17503,8 @@ window.STUDY_CONTENT = {
         "Empoderamiento: capacidad real de decidir, actuar y exigir derechos, no solo de recibir información.",
         "Abogacía por la salud: gestión para colocar un problema en la agenda pública y modificar decisiones.",
         "Intersectorialidad: trabajo concertado entre sectores con recursos y responsabilidades compartidas.",
-        "Enfoque de derechos e interculturalidad: reconocimiento de la salud como derecho y del saber y la lengua de cada pueblo."
+        "Enfoque de derechos e interculturalidad: reconocimiento de la salud como derecho y del saber y la lengua de cada pueblo.",
+        "Ottawa 1986: cinco campos de acción; Yakarta 1997: prioridades; Astaná 2018: APS para la cobertura universal."
       ],
       "sections": [
         {
@@ -17125,7 +17536,8 @@ window.STUDY_CONTENT = {
           "title": "Los cinco campos de acción",
           "depth": "full",
           "body": [
-            "Los cinco campos de Ottawa no son actividades alternativas, sino un conjunto que se potencia. La tabla muestra qué transforma cada uno y un ejemplo de aplicación en el primer nivel de atención."
+            "Los cinco campos de Ottawa no son actividades alternativas, sino un conjunto que se potencia. La tabla muestra qué transforma cada uno y un ejemplo de aplicación en el primer nivel de atención.",
+            "Ottawa distingue tres estrategias: abogar por la salud, mediar entre intereses contrapuestos y habilitar a personas y comunidades para aumentar su control sobre la salud. La línea de promoción va de Ottawa a Shanghái (2016); Astaná (2018) pertenece a la línea de APS y reafirma la APS para la cobertura universal, no es un hito de promoción."
           ],
           "table": {
             "headers": [
@@ -17292,12 +17704,65 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Ottawa, Yakarta, Astaná y APS",
+          "depth": "full",
+          "body": [
+            "La promoción de la salud se institucionaliza con la Carta de Ottawa (1986), que propone cinco campos de acción: políticas públicas saludables, ambientes favorables, acción comunitaria, aptitudes personales y reorientación de los servicios. La Declaración de Yakarta (1997) actualizó las prioridades para el siglo XXI y Astaná (2018) reafirmó la APS como base de la cobertura universal.",
+            "La promoción no es prevención. La prevención actúa sobre riesgos y daños específicos; la promoción actúa sobre las condiciones que producen salud y sobre la capacidad de las personas y comunidades para decidir. En APS, ambas se articulan con la acción intersectorial y la participación."
+          ],
+          "table": {
+            "headers": [
+              "Hito",
+              "Año",
+              "Aporte",
+              "No confundir"
+            ],
+            "rows": [
+              [
+                "Alma-Ata",
+                "1978",
+                "APS como estrategia para Salud para Todos",
+                "No es una declaración de promoción"
+              ],
+              [
+                "Ottawa",
+                "1986",
+                "Cinco campos de acción de promoción",
+                "No es lo mismo que prevención"
+              ],
+              [
+                "Yakarta",
+                "1997",
+                "Prioridades de promoción para el siglo XXI",
+                "No reemplaza a Ottawa"
+              ],
+              [
+                "Agenda 2030",
+                "2015",
+                "17 ODS y 169 metas; ODS 3",
+                "No es un tratado de APS"
+              ],
+              [
+                "Astaná",
+                "2018",
+                "APS como base de la cobertura universal",
+                "Hito de APS, no de promoción"
+              ]
+            ]
+          }
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, 2006; ejes temáticos, escenarios y enfoques transversales.",
             "Fuente: OMS — Carta de Ottawa para la promoción de la salud, 1986, principios y cinco campos de acción.",
-            "Fuente: OMS — Primary health care; servicios integrados, acción multisectorial y participación."
+            "Fuente: OMS — Primary health care; servicios integrados, acción multisectorial y participación.",
+            "Fuente: OMS — Carta de Ottawa, 21/11/1986; cinco campos de acción para la promoción de la salud.",
+            "Fuente: OMS — Declaración de Yakarta, 21-25/07/1997; prioridades de promoción para el siglo XXI.",
+            "Fuente: OMS/UNICEF — Declaración de Astaná, 25-26/10/2018; APS como base de la cobertura universal.",
+            "Fuente: OMS — Declaración de Alma-Ata, 12/09/1978; APS como asistencia sanitaria esencial y estrategia para “Salud para Todos”.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017."
           ]
         }
       ],
@@ -17306,6 +17771,25 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             63
+          ]
+        },
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            9,
+            10,
+            11,
+            22,
+            23
           ]
         }
       ]
@@ -17318,7 +17802,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · SP 3.2 · Información, educación y comunicación",
       "minutes": 16,
       "level": "Base",
-      "summary": "La información, educación y comunicación planifica mensajes y experiencias educativas según audiencia, objetivo y contexto. Se apoya en la alfabetización en salud para que las personas comprendan, decidan y actúen, no solo para que reciban datos. La comunicación de riesgo agrega transparencia sobre la incertidumbre y sostiene la confianza cuando la evidencia cambia. Su evaluación mide comprensión, confianza y acción, y reconoce que informar no compensa las barreras del servicio.",
+      "summary": "La información, educación y comunicación planifica mensajes y experiencias educativas según audiencia, objetivo y contexto. Se apoya en la alfabetización en salud para que las personas comprendan, decidan y actúen, no solo para que reciban datos. La comunicación de riesgo agrega transparencia sobre la incertidumbre y sostiene la confianza cuando la evidencia cambia. Su evaluación mide comprensión, confianza y acción, y reconoce que informar no compensa las barreras del servicio. La IEC se presenta como herramienta de APS para la alfabetización y la participación.",
       "keyConcepts": [
         "IEC: proceso planificado que articula mensajes, experiencias educativas, audiencia, objetivo y contexto.",
         "Alfabetización en salud: capacidad de obtener, comprender y usar información para decidir sobre la propia salud.",
@@ -17326,7 +17810,8 @@ window.STUDY_CONTENT = {
         "Pretesteo: prueba del material con personas de la audiencia antes de su difusión.",
         "Comunicación de riesgo: comunicación que explicita lo conocido, lo incierto y lo que se hace para reducir la incertidumbre.",
         "Rumor: información no verificada que circula y se sostiene porque responde a una preocupación real.",
-        "Vocería: fuente reconocida y creíble que sostiene el mensaje y canaliza preguntas."
+        "Vocería: fuente reconocida y creíble que sostiene el mensaje y canaliza preguntas.",
+        "IEC en APS: comprensión, decisión y acción; no solo transmisión de mensajes."
       ],
       "sections": [
         {
@@ -17357,7 +17842,8 @@ window.STUDY_CONTENT = {
           "title": "Información, educación y comunicación",
           "depth": "full",
           "body": [
-            "Los tres componentes se complementan y tienen límites propios. La tabla permite distinguirlos cuando se diseña una intervención o se lee un caso de examen."
+            "Los tres componentes se complementan y tienen límites propios. La tabla permite distinguirlos cuando se diseña una intervención o se lee un caso de examen.",
+            "La IEC no cambia conducta solo con información: incorpora mercadeo social y técnicas de aprendizaje social, diferenciadas por escenario. La consejería, la sesión educativa y la comunicación masiva tienen alcances distintos; ninguna sustituye el acceso, el apoyo social ni la modificación del entorno."
           ],
           "table": {
             "headers": [
@@ -17489,12 +17975,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "IEC y APS",
+          "depth": "core",
+          "body": [
+            "La información, educación y comunicación en APS no busca solo transmitir mensajes: busca que las personas comprendan, decidan y puedan actuar. La alfabetización en salud, la segmentación de audiencias y la comunicación de riesgo son herramientas para reducir barreras, no para culpar a la persona.",
+            "La IEC se articula con la participación comunitaria y con los servicios. Un mensaje sin acceso, sin consejería y sin seguimiento no cambia el comportamiento; una comunicación que ignora la cultura y el contexto puede aumentar la desconfianza."
+          ],
+          "bullets": [
+            "Definir audiencia, objetivo y comportamiento esperado.",
+            "Usar lenguaje claro, pertinente y culturalmente aceptable.",
+            "Verificar comprensión y no solo exposición al mensaje.",
+            "Articular información con acceso, consejería y seguimiento.",
+            "Evaluar cambios en conocimiento, decisión y práctica."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de abordaje de promoción de la salud en el Perú, 2006; educación para la salud y comunicación.",
             "Fuente: OMS — Carta de Ottawa para la promoción de la salud, 1986, principios y campos de acción.",
-            "Fuente: OMS — Primary health care; participación y acción multisectorial."
+            "Fuente: OMS — Primary health care; participación y acción multisectorial.",
+            "Fuente: MINSA — Lineamientos de Política de Promoción de la Salud, RM N.° 366-2017/MINSA, 19/05/2017; publicada el 20/05/2017.",
+            "Fuente: OMS — Carta de Ottawa, 21/11/1986; cinco campos de acción para la promoción de la salud."
           ]
         }
       ],
@@ -17503,6 +18006,16 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-sp",
           "pages": [
             64
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            8,
+            21,
+            22,
+            23,
+            24
           ]
         }
       ]
@@ -17889,6 +18402,22 @@ window.STUDY_CONTENT = {
             "title": "PAP no es debriefing",
             "text": "Los primeros auxilios psicológicos ofrecen seguridad, escucha y conexión con apoyos; no son un interrogatorio ni una sesión obligatoria de relato. El distractor frecuente propone revivir el evento para prevenir secuelas, cuando la prioridad es proteger, atender necesidades y derivar si hay riesgo."
           }
+        },
+        {
+          "title": "Comunicación de riesgo y reconstrucción",
+          "depth": "full",
+          "body": [
+            "La respuesta incluye comunicación de riesgo: decir qué se sabe, qué no se sabe y qué se está haciendo, con vocería única, canales locales y lenguaje comprensible. La información debe actualizarse y corregirse sin ocultar incertidumbre; el silencio también comunica y suele aumentar el rumor.",
+            "La reconstrucción restablece servicios, vivienda, agua y continuidad de la atención; cierra el ciclo y reduce el riesgo futuro. No es una fase solo infraestructural: incluye recuperación psicosocial, participación comunitaria y evaluación de lo aprendido."
+          ],
+          "bullets": [
+            "Vocería única y canales locales.",
+            "Mensajes claros, verificables y actualizados.",
+            "Explicar incertidumbre y medidas de protección.",
+            "Evitar estigma y rumores.",
+            "Reconstruir servicios y continuidad.",
+            "Evaluar la respuesta y ajustar planes."
+          ]
         },
         {
           "title": "Fuentes y Referencias",
@@ -18349,7 +18878,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 1.2 · continuidad de cuidados",
       "minutes": 16,
       "level": "Intermedio",
-      "summary": "El cuidado en salud mental se organiza como un plan construido con la persona: objetivos funcionales, intervenciones, responsables, seguimiento y criterios de referencia. La continuidad articula los componentes clínico, psicosocial y de gestión para que la ruta no se corte entre servicios ni niveles. Cuidado, recuperación y rehabilitación se encadenan en el tiempo sin desplazar la respuesta inmediata ante lesiones, peligro o violencia activa.",
+      "summary": "El cuidado en salud mental se organiza como un plan construido con la persona: objetivos funcionales, intervenciones, responsables, seguimiento y criterios de referencia. La continuidad articula los componentes clínico, psicosocial y de gestión para que la ruta no se corte entre servicios ni niveles. Cuidado, recuperación y rehabilitación se encadenan en el tiempo sin desplazar la respuesta inmediata ante lesiones, peligro o violencia activa. La ficha conecta el cuidado de salud mental con la APS, el CSMC y la continuidad entre niveles.",
       "keyConcepts": [
         "Continuidad de cuidados: articulación de acciones clínicas, psicosociales y de gestión a lo largo del tiempo.",
         "Componente clínico: atiende salud mental y física, síntomas y necesidades de la persona y de su cuidador.",
@@ -18359,13 +18888,15 @@ window.STUDY_CONTENT = {
         "Rehabilitación: busca mejorar el funcionamiento y la inclusión.",
         "Adherencia: sostenimiento del plan acordado, condicionado por creencias, efectos, acceso y vínculo.",
         "Plan individualizado: objetivos, intervenciones, responsables y seguimiento acordados con la persona.",
-        "Barrera de acceso: condición económica, geográfica, administrativa o cultural que interrumpe la atención."
+        "Barrera de acceso: condición económica, geográfica, administrativa o cultural que interrumpe la atención.",
+        "Cuidado escalonado: el primer nivel resuelve lo pertinente y coordina lo especializado sin perder continuidad."
       ],
       "sections": [
         {
           "title": "Conceptos que sostienen el tema",
           "depth": "core",
           "body": [
+            "Los cuidados de la salud mental son acciones y actitudes horizontales de los trabajadores y de la comunidad para conservar o recuperar la salud mental, priorizando a las personas vulnerables. Incluyen promoción, prevención, asistencia, acompañamiento y protección; la continuidad es una condición, no la definición.",
             "La continuidad de cuidados es la condición que permite que una persona reciba lo que necesita a lo largo del tiempo, sin que la ruta se interrumpa entre un servicio y otro. No depende de un solo acto, sino de una serie de enlaces verificables.",
             "Se organiza en tres componentes: clínico, psicosocial y de gestión. Los tres son necesarios; un plan clínico correcto fracasa si la persona no puede llegar, no comprende o no tiene con quién sostener el cuidado.",
             "El plan individualizado se construye con la persona y contiene objetivos funcionales, intervenciones, responsables, seguimiento y criterios de referencia. Su valor está en que puede verificarse y ajustarse cuando cambia la situación."
@@ -18530,12 +19061,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "APS, salud mental y continuidad",
+          "depth": "core",
+          "body": [
+            "En APS la salud mental se atiende en el primer nivel, con el CSMC y la red como soporte. El cuidado escalonado organiza la respuesta según complejidad: promoción y prevención, intervención breve, tratamiento especializado y continuidad.",
+            "La continuidad no termina con la derivación. El primer nivel conserva el vínculo, verifica la recepción, participa en el plan y retoma el seguimiento. La historia clínica, el plan individualizado y la contrarreferencia son condiciones para que el cuidado no se fragmente.",
+            "No confundir niveles: el primer nivel no especializado hace detección, casos leves/estables y seguimiento; el CSMC es un establecimiento especializado del primer nivel, eje articulador de casos moderados-graves y apoyo técnico; el hospital atiende crisis, comorbilidad y hospitalización; la emergencia es una condición de riesgo inmediato, no un nivel. La referencia y la contrarreferencia exigen contenido mínimo, responsable y confirmación."
+          ],
+          "bullets": [
+            "Tamizaje y evaluación inicial en el primer nivel.",
+            "Intervención breve y psicoeducación cuando corresponde.",
+            "Derivación con criterio y información suficiente.",
+            "Contrarreferencia y seguimiento en origen.",
+            "Coordinación con familia, comunidad y otros sectores."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Guía técnica de continuidad de cuidados, RM 663-2023/MINSA, 2023, definición de continuidad y sus componentes.",
             "Fuente: MINSA — Plan nacional de fortalecimiento de servicios de salud mental comunitaria 2018-2021, RM 356-2018/MINSA.",
-            "Fuente: MINSA — Guía técnica de salud mental de mujeres en situación de violencia por pareja o expareja, RM 670-2021/MINSA, 26-05-2021."
+            "Fuente: MINSA — Guía técnica de salud mental de mujeres en situación de violencia por pareja o expareja, RM 670-2021/MINSA, 26-05-2021.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial.",
+            "Fuente: Perú — Ley N.° 30947, Ley de Salud Mental, 22/05/2019; modelo comunitario y continuidad de cuidados."
           ]
         }
       ],
@@ -18544,6 +19093,21 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             8
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            57,
+            58,
+            61
+          ]
+        },
+        {
+          "sourceId": "src-psi-sp",
+          "pages": [
+            59,
+            60
           ]
         }
       ]
@@ -18780,7 +19344,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 1.4 · problemas prioritarios de salud mental",
       "minutes": 17,
       "level": "Avanzado",
-      "summary": "Ante un problema de salud mental, la prioridad clínica depende primero de la seguridad y la funcionalidad, no solo del nombre del trastorno. La evaluación diferencia señales orientadoras de diagnósticos aislados, elige tamizajes pertinentes y organiza una ruta continua y coordinada. En depresión leve, la primera respuesta puede ser consejería, psicoeducación y estrategias psicológicas breves con seguimiento acordado.",
+      "summary": "Ante un problema de salud mental, la prioridad clínica depende primero de la seguridad y la funcionalidad, no solo del nombre del trastorno. La evaluación diferencia señales orientadoras de diagnósticos aislados, elige tamizajes pertinentes y organiza una ruta continua y coordinada. En depresión leve, la primera respuesta puede ser consejería, psicoeducación y estrategias psicológicas breves con seguimiento acordado. La ficha incorpora la violencia como problema prioritario con detección, seguridad y ruta intersectorial, sin duplicar el desarrollo legal de CI 1.6.",
       "keyConcepts": [
         "PHQ-9: nueve preguntas sobre síntomas depresivos de las últimas dos semanas.",
         "GDS-15 o Yesavage abreviada: quince preguntas para explorar depresión en personas adultas mayores.",
@@ -18790,7 +19354,8 @@ window.STUDY_CONTENT = {
         "PCCI: añade coordinación y seguimiento intensivo cuando existe problema mental grave o riesgo psicosocial.",
         "Emergencia: situación con riesgo inminente para la vida o la función que exige atención inmediata.",
         "Urgencia: condición que requiere atención prioritaria sin riesgo inmediato de muerte.",
-        "Tamizaje: prueba breve que identifica posibles casos y orienta la evaluación, sin confirmar diagnóstico."
+        "Tamizaje: prueba breve que identifica posibles casos y orienta la evaluación, sin confirmar diagnóstico.",
+        "Violencia: se detecta con entrevista directa y privacidad; la seguridad y la atención preceden a la denuncia."
       ],
       "sections": [
         {
@@ -19012,13 +19577,33 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Violencia: detección, seguridad y ruta",
+          "depth": "full",
+          "body": [
+            "La violencia es un problema de salud pública y un componente explícito del ítem CI 1.4. Incluye violencia de pareja, sexual, infantil, familiar, comunitaria y institucional. No se detecta con una sola pregunta ni se descarta porque la persona no la mencione: exige entrevista directa, privacidad y señales de alerta.",
+            "Ante un caso, la prioridad es la seguridad inmediata. Se explora riesgo actual, lesiones, acceso a armas, presencia de niños, red de apoyo y posibilidad de retorno a un entorno peligroso. La respuesta inicial incluye acogida, atención de lesiones, plan de seguridad, información de derechos y coordinación con CEM, PNP, Ministerio Público y protección cuando corresponde.",
+            "La denuncia y la atención son acciones distintas que no se condicionan entre sí. La atención no se retrasa por trámites, pruebas o decisión de denunciar. La entrevista evita repetir el relato, culpabilizar, confrontar o exigir detalles innecesarios. La ruta clínica y legal se desarrolla con más detalle en CI 1.6."
+          ],
+          "bullets": [
+            "Tipos: pareja, sexual, infantil, familiar, comunitaria e institucional.",
+            "Señales: lesiones, miedo, control de la pareja, aislamiento, amenazas, coerción sexual.",
+            "Seguridad: riesgo actual, armas, niños, terceros, plan de salida y contactos.",
+            "Ruta: atención, kit/PEP cuando corresponde, CEM/PNP/Ministerio Público, protección y seguimiento.",
+            "No revictimizar: privacidad, relato único, explicación de límites y registro cuidadoso.",
+            "Derivación a CI 1.6 para consentimiento, denuncia, confidencialidad y medidas legales."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Guía de práctica clínica para tamizaje, diagnóstico y tratamiento de la depresión en mayores de 18 años, RM 136-2023/MINSA, 10-02-2023.",
             "Fuente: MINSA/OMS — Enfrentando Problemas Plus grupal, anexos de evaluación SRQ-20 y PHQ-9.",
             "Fuente: OMS — Mental disorders, apartado Neurodevelopmental disorders.",
-            "Fuente: MINSA — RM 625-2026-MINSA, artículo 6, modificación de la NTS 042 sobre servicios de emergencia."
+            "Fuente: MINSA — RM 625-2026-MINSA, artículo 6, modificación de la NTS 042 sobre servicios de emergencia.",
+            "Fuente: MINSA — NTS N.° 164-MINSA/2020/DGIESP, atención de la violencia sexual y consentimiento por intervención, RM N.° 649-2020/MINSA.",
+            "Fuente: MINSA — Guía técnica de salud mental de mujeres en situación de violencia por pareja o expareja, RM N.° 670-2021/MINSA.",
+            "Fuente: MIMP — Reglamento de la Ley N.° 30364, artículo 15.1, modificado por DS N.° 004-2019-MIMP."
           ]
         }
       ],
@@ -19461,7 +20046,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 1.6 · Aspectos legales",
       "minutes": 20,
       "level": "Intermedio",
-      "summary": "La práctica psicológica se ordena en obligaciones que se condicionan entre sí: consentimiento informado, confidencialidad, competencia, registro e historia clínica. El consentimiento es un proceso de información, comprensión y voluntariedad, y el asentimiento del menor se integra con la autorización correspondiente salvo excepciones legales. La confidencialidad cede ante riesgo grave o mandato legal, y esa posibilidad debe explicarse al inicio. En violencia sexual y de pareja, atender, denunciar y coordinar son acciones distintas que no se condicionan entre sí.",
+      "summary": "La práctica psicológica se ordena en obligaciones que se condicionan entre sí: consentimiento informado, confidencialidad, competencia, registro e historia clínica. El consentimiento es un proceso de información, comprensión y voluntariedad, y el asentimiento del menor se integra con la autorización correspondiente salvo excepciones legales. La confidencialidad cede ante riesgo grave o mandato legal, y esa posibilidad debe explicarse al inicio. En violencia sexual y de pareja, atender, denunciar y coordinar son acciones distintas que no se condicionan entre sí. La ficha incorpora la Ley 30947 y su reglamento, el modelo comunitario y los límites del internamiento involuntario.",
       "keyConcepts": [
         "Consentimiento informado: proceso voluntario de información y comprensión, no una firma aislada.",
         "Asentimiento: opinión del menor que se integra con la autorización de quien ejerce la representación legal.",
@@ -19471,7 +20056,8 @@ window.STUDY_CONTENT = {
         "Historia clínica: registro obligatorio, legible, trazable y reservado de la atención brindada.",
         "Internamiento: medida de protección o tratamiento que exige evaluación, fundamento y revisión.",
         "Revictimización: repetición innecesaria del relato o condicionamiento de la atención a la denuncia.",
-        "AVISAS: seis dimensiones de la respuesta ante la violencia sexual."
+        "AVISAS: seis dimensiones de la respuesta ante la violencia sexual.",
+        "Ley 30947 (2019) y DS 007-2020-SA: modelo comunitario, derechos y excepcionalidad del internamiento."
       ],
       "sections": [
         {
@@ -19560,14 +20146,19 @@ window.STUDY_CONTENT = {
           "body": [
             "La capacidad se valora con entrevista: comprensión de la información, apreciación de la situación, razonamiento sobre alternativas y expresión de una elección. Ningún diagnóstico elimina por sí solo la capacidad.",
             "El internamiento voluntario requiere consentimiento válido y puede convertirse en involuntario cuando existe peligro para la persona o para terceros y fallan las alternativas menos restrictivas. La decisión exige evaluación, fundamento y revisión periódica.",
-            "En adolescentes, el asentimiento se pide siempre que sea posible. La negativa del menor se considera y se contrasta con el riesgo, sin usar la autorización legal para silenciar su opinión."
+            "En adolescentes, el asentimiento se pide siempre que sea posible. La negativa del menor se considera y se contrasta con el riesgo, sin usar la autorización legal para silenciar su opinión.",
+            "La Ley 30947 distingue internamiento y hospitalización. El internamiento es la atención inmediata de emergencia psiquiátrica por un máximo de 12 horas; la orden médica vale 12 horas y puede repetirse hasta 72 horas, luego de lo cual corresponde el cuidado comunitario. La hospitalización exige soporte asistencial las 24 horas del día y consentimiento; si supera los 30 días, requiere revisión por junta médica. La excepción es la imposibilidad de expresar voluntad, con apoyos y, si faltan, intervención del juzgado de familia."
           ],
           "bullets": [
             "Distinguir capacidad de competencia profesional: la primera se refiere a la persona y la segunda al desempeño del psicólogo.",
             "No confundir una decisión que el equipo considera equivocada con incapacidad para decidir.",
             "Registrar qué información se brindó, cómo se verificó la comprensión y qué respondió la persona.",
             "Revisar el internamiento con plazo definido y criterios de egreso.",
-            "Informar al usuario sobre sus derechos y sobre la vía para solicitar revisión."
+            "Informar al usuario sobre sus derechos y sobre la vía para solicitar revisión.",
+            "Internamiento: emergencia psiquiátrica, 12 h; orden médica 12 h, repetible hasta 72 h.",
+            "Hospitalización: soporte 24 h, consentimiento y revisión por junta médica si supera 30 días.",
+            "Ley 32575 (08/04/2026): el diagnóstico es integral y multidisciplinario; el médico conserva el diagnóstico integral médico.",
+            "El psicólogo participa en el diagnóstico psicosocial; no prescribe psicofármacos ni ordena internamiento."
           ]
         },
         {
@@ -19654,6 +20245,23 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Ley 30947: derechos y modelo comunitario",
+          "depth": "full",
+          "body": [
+            "La Ley 30947, Ley de Salud Mental (22/05/2019; publicada 23/05/2019; vigente desde 24/05/2019), establece el marco para garantizar acceso, promoción, prevención, tratamiento y rehabilitación en salud mental. Reconoce el modelo comunitario, los derechos humanos, la autonomía y la continuidad de cuidados.",
+            "Su reglamento, DS 007-2020-SA (publicado el 05/03/2020), precisa la organización de servicios, los derechos de las personas, el consentimiento, la confidencialidad, las alternativas menos restrictivas y el internamiento involuntario como medida excepcional. No toda discrepancia o conflicto justifica internar; la decisión exige evaluación, fundamento, proporcionalidad y garantías.",
+            "En la práctica, la ley obliga a documentar capacidad, apoyos, consentimiento, riesgo y alternativa menos restrictiva. También exige coordinar con la red, la familia y la comunidad, y evitar la institucionalización prolongada. La telepsicología y la atención remota deben cumplir los mismos estándares de privacidad y consentimiento."
+          ],
+          "bullets": [
+            "Derechos: dignidad, no discriminación, información, consentimiento, confidencialidad y participación.",
+            "Modelo comunitario: atención cerca del entorno, con continuidad y recuperación.",
+            "Internamiento involuntario: excepcional, fundamentado, proporcional y con garantías.",
+            "Capacidad y apoyos: evaluar la decisión concreta, no etiquetar a la persona.",
+            "Coordinación: primer nivel, CSMC, hospital, familia y comunidad.",
+            "Registro: documentar evaluación, decisión, alternativa menos restrictiva y seguimiento."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
@@ -19662,7 +20270,12 @@ window.STUDY_CONTENT = {
             "Fuente: MIMP — Reglamento de la Ley N.° 30364, artículo 15.1, modificado por DS N.° 004-2019-MIMP.",
             "Fuente: Congreso de la República del Perú — Código Penal, artículo 173, Ley N.° 30838, 2018.",
             "Fuente: MIMP — Lineamientos de coordinación CEM-UPE-DEMUNA, RM N.° 237-2024-MIMP.",
-            "Fuente: MINSA — Guía técnica de salud mental de mujeres en situación de violencia por pareja o expareja, RM N.° 670-2021/MINSA."
+            "Fuente: MINSA — Guía técnica de salud mental de mujeres en situación de violencia por pareja o expareja, RM N.° 670-2021/MINSA.",
+            "Fuente: Perú — Ley N.° 30947, Ley de Salud Mental, 22/05/2019; publicada el 23/05/2019; vigente desde el 24/05/2019.",
+            "Fuente: Perú — DS N.° 007-2020-SA, Reglamento de la Ley N.° 30947, publicado el 05/03/2020.",
+            "Fuente: Perú — Ley N.° 32575, publicada el 08/04/2026, que modifica el artículo 25 de la Ley 30947 sobre competencia para el diagnóstico integral.",
+            "Fuente: Perú — Ley N.° 31627, que modifica la Ley 30947 para fortalecer la prevención y promoción de la salud mental.",
+            "Fuente: MINSA — DS N.° 011-2025-SA, publicado el 02/07/2025, que modifica el Reglamento de la Ley 30947 (DS 007-2020-SA)."
           ]
         }
       ],
@@ -19686,49 +20299,220 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.1 · Atención primaria",
       "minutes": 16,
       "level": "Base",
-      "summary": "La Atención Primaria de Salud es una estrategia que organiza el sistema cerca de las personas mediante primer contacto, integralidad, continuidad, coordinación y orientación familiar y comunitaria. No equivale al primer nivel: el primer nivel es la puerta de entrada y resuelve lo frecuente, mientras la APS ordena todo el sistema. Su concreción exige acceso equitativo, actuación sobre los determinantes sociales, participación e intersectorialidad.",
+      "summary": "La Atención Primaria de Salud (APS) es una estrategia de organización de todo el sistema sanitario, no un edificio ni un nivel de complejidad. Nace con Alma-Ata (1978), se renueva con el informe mundial de 2008 y se reafirma en Astaná (2018) como base de la cobertura universal. En el Perú se operativiza mediante el MCI (2020), que sucedió al MAIS-BFC (2011) y al MAIS (2003), ambos sin vigencia; se articula con la Ley 30885 de Redes Integradas de Salud y su reglamento vigente de 2024. La ficha distingue APS de primer nivel, promoción, prevención y atención integral, y precisa los atributos, la normativa, la organización territorial y el rol del psicólogo.",
       "keyConcepts": [
-        "APS: estrategia que organiza el sistema con primer contacto, integralidad, continuidad y coordinación.",
-        "Primer nivel: puerta de entrada que resuelve necesidades frecuentes y articula la red.",
-        "Longitudinalidad: vínculo continuo entre la persona y el equipo a lo largo del tiempo.",
-        "Integralidad: respuesta a necesidades de promoción, prevención, curación y rehabilitación.",
-        "Coordinación: articulación entre servicios y niveles para sostener la continuidad.",
-        "Universalidad: derecho a la salud con acceso equitativo, no solo conteo de asegurados.",
-        "Intersectorialidad: acción conjunta con educación, municipio y otros sectores.",
-        "Determinantes sociales: condiciones de vida que explican buena parte del estado de salud."
+        "APS: estrategia que organiza todo el sistema con primer contacto, longitudinalidad, integralidad, coordinación y orientación familiar y comunitaria.",
+        "Primer nivel: nivel asistencial de puerta de entrada; no es sinónimo de APS.",
+        "Alma-Ata (1978) definió la APS como asistencia sanitaria esencial, con participación y costo asequible; Astaná (2018) la reafirmó como base de la cobertura universal.",
+        "APS renovada (2008): reformas de cobertura universal, prestación de servicios, políticas públicas y liderazgo; no es un paquete selectivo de intervenciones.",
+        "MAIS (2003) y MAIS-BFC (2011) no están vigentes; el MCI (2020) es el modelo vigente y no un simple cambio de nombre.",
+        "MCI: cuatro componentes (provisión, organización, gestión y financiamiento), enfoque de curso de vida, familia y comunidad, y equipos multidisciplinarios territoriales.",
+        "RIS: Ley 30885 (2018) y reglamento vigente DS 019-2024-SA; población y territorio definidos, primer nivel fortalecido y continuidad entre niveles.",
+        "APS no es solo atención de lo simple: resuelve lo frecuente, coordina lo complejo y actúa sobre los determinantes sociales.",
+        "El psicólogo aporta evaluación, tamizaje, intervención breve, trabajo familiar y comunitario, coordinación y continuidad, no solo psicoterapia individual."
       ],
       "sections": [
         {
           "title": "Conceptos que sostienen el tema",
           "depth": "core",
           "body": [
-            "La APS es una estrategia de organización del sistema, no un edificio ni un nivel de complejidad. Su propósito es acercar la respuesta a la vida cotidiana de las personas y sostenerla en el tiempo.",
-            "El primer nivel es la puerta de entrada habitual. Resuelve lo frecuente, deriva lo que excede su capacidad y mantiene la responsabilidad sobre el seguimiento.",
-            "La longitudinalidad se construye con un equipo estable y una historia clínica compartida. La continuidad, en cambio, se refiere a la atención a través de servicios y niveles, incluso cuando cambia el profesional.",
-            "La integralidad combina promoción, prevención, curación y rehabilitación. No se limita a la consulta por enfermedad ni a la entrega de prestaciones aisladas.",
-            "La universalidad no se mide solo por el número de asegurados. Se concreta cuando el acceso es equitativo y se actúa sobre las condiciones que producen enfermedad."
+            "La Atención Primaria de Salud (APS) es la estrategia que organiza el sistema para acercar la respuesta a la vida cotidiana de las personas y sostenerla en el tiempo. No se define por el tamaño del establecimiento ni por una lista de prestaciones: se define por sus atributos y por su vocación de actuar sobre los determinantes sociales.",
+            "La Declaración de Alma-Ata (1978) la formuló como asistencia sanitaria esencial, basada en métodos prácticos y socialmente aceptables, accesible a todos, con participación de la comunidad y a un costo que el país pueda sostener. La Declaración de Astaná (2018) reafirmó esos valores y la situó como base de la cobertura universal de salud.",
+            "APS no es lo mismo que primer nivel. El primer nivel es un nivel asistencial: la puerta de entrada habitual, que resuelve lo frecuente y articula la red. La APS es una forma de organizar todo el sistema —incluidos los niveles de mayor complejidad— para que la atención sea continua, integral y coordinada.",
+            "La APS tampoco es “atención primaria selectiva”, entendida como un paquete mínimo de intervenciones verticales. La APS integral o renovada combina servicios clínicos y de salud pública, actúa sobre los determinantes y exige acción intersectorial. La selectiva puede ser una priorización transitoria, pero no reemplaza la estrategia.",
+            "Alma-Ata fijó ocho elementos: educación sanitaria; alimentación y nutrición; agua y saneamiento; atención maternoinfantil con planificación familiar; inmunización; control de endemias; tratamiento de enfermedades y lesiones comunes; y medicamentos esenciales. La Conferencia (6–12/09/1978), convocada por OMS y UNICEF, adoptó la Declaración el 12/09: es un compromiso político no vinculante y propuso “Salud para Todos en el año 2000”. Astaná (25–26/10/2018; declaración del 25/10) reafirmó Alma-Ata con cuatro compromisos: decisiones políticas audaces en todos los sectores, APS sostenible, empoderamiento de personas y comunidades, y alineación del apoyo de los actores con las políticas y planes nacionales."
           ]
         },
         {
-          "title": "Fundamentos teóricos y mecanismos",
+          "title": "Línea de tiempo global: de Alma-Ata a Astaná",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Año",
+              "Hito",
+              "Aporte principal",
+              "Confusión frecuente"
+            ],
+            "rows": [
+              [
+                "1978",
+                "Alma-Ata, 6-12 de septiembre; declaración del 12/09",
+                "APS como estrategia para “Salud para Todos”; equidad, participación, intersectorialidad y tecnología apropiada",
+                "“APS = primer nivel” o “APS solo para países pobres”"
+              ],
+              [
+                "1986",
+                "Ottawa, 17-21 de noviembre; Carta del 21/11",
+                "Promoción de la salud; cinco campos de acción; salud como recurso de la vida cotidiana",
+                "“Promoción = prevención” o “solo campañas”"
+              ],
+              [
+                "1997",
+                "Yakarta, 21-25 de julio",
+                "Prioridades de promoción para el siglo XXI; determinantes, alianzas y participación",
+                "“Declaración vinculante” o “reemplaza a Ottawa”"
+              ],
+              [
+                "2008",
+                "Informe mundial de la OMS: APS, más necesaria que nunca",
+                "APS renovada; reformas de cobertura, servicios, políticas y liderazgo",
+                "“APS renovada = paquete selectivo”"
+              ],
+              [
+                "2015",
+                "Agenda 2030, 25 de septiembre",
+                "17 ODS y 169 metas; ODS 3 (salud y bienestar) y cobertura universal",
+                "“Agenda 2030 = Alma-Ata” o “ODS solo de salud”"
+              ],
+              [
+                "2018",
+                "Astaná, 25-26 de octubre",
+                "APS como base de la cobertura universal; cuatro compromisos de los Estados",
+                "“Astaná creó la APS” o “es solo simbólica”"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Hitos peruanos y marco normativo",
+          "depth": "full",
+          "body": [
+            "El Perú llegó a Alma-Ata con una trayectoria de atención primaria y luego construyó modelos sucesivos. El MAIS (2003) organizó la atención por etapas de vida y cuidados esenciales; el MAIS-BFC (2011, derogado) puso a la familia y la comunidad como eje; el MCI (2020) incorporó el curso de vida, los determinantes sociales, la organización territorial y las RIS.",
+            "La RM 030-2020 derogó el MAIS-BFC y la RM 464-2011 había dejado sin efecto el MAIS. Por tanto, MAIS y MAIS-BFC son modelos históricos sin vigencia; el MCI es el modelo vigente. Las normas técnicas operativas de categorías, cartera y telesalud siguen vigentes y deben leerse con el MCI. La vigencia importa: el DS 019-2020-SA fue derogado por el DS 019-2024-SA.",
+            "David Tejada de Rivero, médico peruano, exministro de Salud y alto funcionario de la OMS, fue coordinador general de la Conferencia de Alma-Ata y uno de los artífices de la Declaración. El MCI lo reconoce como responsable de la Conferencia de Alma-Ata y proponente de una visión integral de la APS."
+          ],
+          "table": {
+            "headers": [
+              "Año",
+              "Norma o hito",
+              "Qué aporta",
+              "Vigencia o alcance"
+            ],
+            "rows": [
+              [
+                "1997",
+                "Ley 26842, Ley General de Salud (15/07; publicada 20/07)",
+                "Marco del derecho a la salud y de los deberes del Estado",
+                "Vigente con modificatorias"
+              ],
+              [
+                "2003",
+                "RM 729-2003-SA/DM, MAIS",
+                "Atención integral por etapas de vida y cuidados esenciales",
+                "Dejado sin efecto por RM 464-2011"
+              ],
+              [
+                "2009",
+                "Ley 29344, Aseguramiento Universal en Salud (09/04)",
+                "Aseguramiento, PEAS y acceso progresivo",
+                "Vigente con modificatorias"
+              ],
+              [
+                "2011",
+                "RM 464-2011/MINSA, MAIS-BFC (14/06; publicada 16/06)",
+                "Familia y comunidad como eje; cuatro enfoques: derechos humanos, equidad de género, interculturalidad y territorialidad",
+                "Derogado por RM 030-2020"
+              ],
+              [
+                "2012",
+                "Ley 29889 (publicada 24/06)",
+                "Derechos de personas con problemas de salud mental; enfoque comunitario",
+                "Modificó la Ley 26842"
+              ],
+              [
+                "2018",
+                "Ley 30885, RIS (19/12; vigente 20/12)",
+                "Marco de las Redes Integradas de Salud",
+                "Vigente; reglamento actualizado en 2024"
+              ],
+              [
+                "2019",
+                "Ley 30947, Ley de Salud Mental (23/05; vigente 24/05)",
+                "Modelo comunitario, derechos y continuidad de cuidados",
+                "Vigente; reglamento DS 007-2020-SA"
+              ],
+              [
+                "2020",
+                "RM 030-2020/MINSA, MCI (27/01; publicada 28/01)",
+                "Modelo de cuidado integral por curso de vida; cuatro componentes",
+                "Vigente"
+              ],
+              [
+                "2021",
+                "RM 220-2021/MINSA, Manual MCI (12/02; publicada 15/02)",
+                "Implementación, equipos, territorio y PAIFAM",
+                "Instrumento de implementación, no un modelo"
+              ],
+              [
+                "2024",
+                "DS 019-2024-SA (19/10)",
+                "Nuevo Reglamento de la Ley 30885; deroga el DS 019-2020-SA",
+                "Vigente"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "APS, primer nivel, promoción, prevención y atención integral",
           "depth": "core",
           "body": [
-            "La APS busca mejorar la equidad y la eficiencia al resolver cerca del domicilio y evitar la fragmentación. Un sistema con puerta de entrada fuerte y coordinación reduce la duplicación de pruebas y las interconsultas evitables.",
-            "Los atributos de la atención primaria se evalúan en conjunto. El primer contacto sin longitudinalidad produce consultas episódicas, y la longitudinalidad sin coordinación deja a la persona sola frente a la red.",
-            "El enfoque de determinantes explica por qué la consulta individual no basta. Vivienda, agua, transporte y empleo condicionan la asistencia, y su abordaje exige acción intersectorial.",
-            "La participación comunitaria mejora la pertinencia de las acciones. Cuando la comunidad identifica sus prioridades, las intervenciones se sostienen más allá de la campaña."
+            "Estos conceptos se cruzan, pero no son intercambiables. La APS es la estrategia de organización; el primer nivel es el nivel de entrada; la promoción actúa sobre las condiciones y capacidades; la prevención actúa sobre riesgos y daños; la atención integral organiza el conjunto de cuidados de la persona, la familia y la comunidad.",
+            "Una consulta en el primer nivel puede ser APS si sostiene atributos como longitudinalidad y coordinación; un hospital puede formar parte de una APS fuerte si se articula en red. Del mismo modo, una actividad de promoción no es APS por sí sola si no se integra en una estrategia de cuidado continuo."
           ],
-          "bullets": [
-            "La puerta de entrada ordena la demanda y evita el uso innecesario de emergencia.",
-            "La longitudinalidad permite reconocer cambios sutiles que una consulta aislada no detecta.",
-            "La integralidad evita que el cuidado se reduzca a la queja principal.",
-            "La coordinación sostiene la continuidad cuando la persona requiere otro nivel.",
-            "La intersectorialidad aborda lo que el sector salud no puede resolver solo."
-          ]
+          "table": {
+            "headers": [
+              "Concepto",
+              "Qué designa",
+              "Pregunta que responde",
+              "Error típico"
+            ],
+            "rows": [
+              [
+                "APS",
+                "Estrategia de organización de todo el sistema",
+                "¿Cómo se organiza el sistema para cuidar con equidad y continuidad?",
+                "Reducirla a un puesto o centro de salud"
+              ],
+              [
+                "Primer nivel",
+                "Nivel asistencial de puerta de entrada",
+                "¿Dónde se resuelve lo frecuente y se articula la red?",
+                "Suponer que solo atiende problemas simples"
+              ],
+              [
+                "Promoción",
+                "Acción sobre condiciones, entornos y capacidades",
+                "¿Cómo se generan condiciones para la salud?",
+                "Confundirla con charlas o campañas"
+              ],
+              [
+                "Prevención",
+                "Acción sobre riesgos y daños específicos",
+                "¿Cómo se evita o detecta temprano un problema?",
+                "Llamar prevención a toda educación"
+              ],
+              [
+                "Atención integral",
+                "Cuidados de promoción, prevención, recuperación y rehabilitación",
+                "¿Se cubren las necesidades de la persona y su contexto?",
+                "Sumar prestaciones sin continuidad"
+              ],
+              [
+                "Nivel de complejidad",
+                "Capacidad resolutiva del establecimiento",
+                "¿Qué puede resolver y cuándo debe referir?",
+                "Asociar complejidad con calidad"
+              ]
+            ]
+          }
         },
         {
-          "title": "Clasificación y criterios de aplicación",
-          "depth": "full",
+          "title": "Principios y atributos",
+          "depth": "core",
+          "body": [
+            "Los principios de Alma-Ata siguen vigentes: equidad, participación comunitaria, intersectorialidad, tecnología apropiada, acción sobre los determinantes y responsabilidad del Estado. La APS renovada añade universalidad, solidaridad y sostenibilidad, y la sitúa como base de la cobertura universal.",
+            "Los atributos de Starfield permiten evaluar si la APS funciona: acceso y primer contacto, longitudinalidad, integralidad y coordinación. A ellos se suman la orientación familiar y comunitaria, la continuidad y la calidad. Un servicio puede estar cerca y ser accesible, pero si cambia de equipo en cada consulta y no coordina, no cumple la estrategia."
+          ],
           "table": {
             "headers": [
               "Atributo",
@@ -19737,19 +20521,19 @@ window.STUDY_CONTENT = {
             ],
             "rows": [
               [
-                "Primer contacto",
-                "Accesibilidad y respuesta inicial oportuna",
-                "La persona acude primero a emergencia o espera hasta agravarse"
+                "Acceso y primer contacto",
+                "Entrada oportuna, sin barreras evitables",
+                "La persona llega tarde, acude a emergencia o no consulta"
               ],
               [
                 "Longitudinalidad",
-                "Vínculo estable con el equipo a lo largo del tiempo",
-                "Cambia de profesional en cada consulta y repite su historia"
+                "Vínculo estable con un equipo a lo largo del tiempo",
+                "Cambia de profesional y repite su historia en cada visita"
               ],
               [
                 "Integralidad",
-                "Respuesta a necesidades preventivas y curativas",
-                "Solo se atiende la queja del día y no se pregunta por riesgos"
+                "Promoción, prevención, recuperación y rehabilitación",
+                "Solo se atiende la queja del día"
               ],
               [
                 "Coordinación",
@@ -19757,114 +20541,403 @@ window.STUDY_CONTENT = {
                 "La referencia se pierde y no hay contrarreferencia"
               ],
               [
+                "Continuidad",
+                "Seguimiento coherente entre servicios y momentos",
+                "El alta interrumpe el plan y nadie retoma el caso"
+              ],
+              [
                 "Orientación familiar y comunitaria",
-                "Lectura del contexto del hogar y de la comunidad",
-                "Se interviene sobre el individuo sin considerar su entorno"
+                "Lectura del hogar, la comunidad y sus recursos",
+                "Se interviene sobre el individuo sin contexto"
               ]
             ]
           }
         },
         {
-          "title": "APS, primer nivel y niveles de atención",
+          "title": "APS renovada, APS selectiva y cobertura universal",
+          "depth": "full",
+          "body": [
+            "La APS selectiva prioriza un conjunto limitado de intervenciones de alto impacto. Puede mejorar indicadores en el corto plazo, pero no corrige la fragmentación ni actúa sobre los determinantes. La APS integral o renovada combina servicios clínicos y de salud pública, equidad, participación y acción intersectorial.",
+            "El informe mundial de 2008 propuso cuatro reformas: cobertura universal, prestación de servicios centrada en las personas, políticas públicas saludables y liderazgo participativo. Astaná (2018) actualizó el compromiso: APS como base de la cobertura universal, con sistemas sostenibles, comunidades empoderadas y alianzas.",
+            "La APS selectiva se propuso en Bellagio (1979) y en Walsh y Warren (NEJM 1979;301:967-74) como estrategia interina de control de enfermedades de alto impacto; no nació en Alma-Ata. UNICEF la tradujo en GOBI (vigilancia del crecimiento, rehidratación oral, lactancia e inmunización) y GOBI-FFF (alimentación, educación femenina y planificación familiar). Es un paquete vertical, no una APS integral. En las Américas, la Declaración de Montevideo (46.º Consejo Directivo de la OPS, 26-30/09/2005; adoptada el 29/09/2005) y el documento de la OPS/OMS de 2007 comprometieron a reorganizar los sistemas sobre la APS; el informe de 2008 sistematizó las cuatro reformas. La cobertura universal tiene tres dimensiones —población, servicios y costos directos— y no equivale a afiliación: se mide con ODS 3.8.1 (cobertura de servicios) y 3.8.2 (gasto catastrófico)."
+          ],
+          "table": {
+            "headers": [
+              "Modelo",
+              "Foco",
+              "Riesgo",
+              "Uso correcto"
+            ],
+            "rows": [
+              [
+                "APS selectiva",
+                "Paquete limitado de intervenciones prioritarias",
+                "Fragmentación y reducción a verticales",
+                "Como medida transitoria dentro de una APS integral"
+              ],
+              [
+                "APS integral o renovada",
+                "Sistema organizado, determinantes, participación y continuidad",
+                "Exigencia de coordinación y financiamiento sostenido",
+                "Estrategia de todo el sistema"
+              ],
+              [
+                "Cobertura universal",
+                "Acceso a servicios sin dificultad financiera",
+                "Confundir afiliación con acceso efectivo",
+                "Marco de financiamiento y derechos"
+              ],
+              [
+                "Atención primaria de salud",
+                "Estrategia organizativa",
+                "Confundirla con “atención básica”",
+                "Organización de servicios y determinantes"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "MAIS, MAIS-BFC y MCI: qué cambió y qué se mantiene",
+          "depth": "core",
+          "body": [
+            "El MAIS (2003) ordenó la atención por etapas de vida y cuidados esenciales. El MAIS-BFC (2011) desplazó el eje hacia la familia y la comunidad y explicitó dimensiones política y operativa. El MCI (2020) mantiene la atención integral, pero incorpora el enfoque de curso de vida, los determinantes sociales, la organización territorial y las RIS.",
+            "El cambio no es solo terminológico. El MCI pasa de una lógica centrada en la enfermedad y en paquetes individuales a una lógica de cuidado continuo, con equipos multidisciplinarios, población y territorio definidos, y responsabilidad compartida entre niveles. La familia y la comunidad siguen siendo unidades de intervención, pero ahora se leen en trayectorias y transiciones."
+          ],
+          "table": {
+            "headers": [
+              "Modelo",
+              "Norma y fecha",
+              "Eje",
+              "Aporte diferencial"
+            ],
+            "rows": [
+              [
+                "MAIS",
+                "RM 729-2003-SA/DM (2003)",
+                "Etapas de vida y cuidados esenciales",
+                "Primer marco de atención integral por etapas; dejado sin efecto"
+              ],
+              [
+                "MAIS-BFC",
+                "RM 464-2011/MINSA (14/06/2011)",
+                "Familia y comunidad",
+                "Dimensiones política y operativa; cuatro enfoques: derechos humanos, equidad de género, interculturalidad y territorialidad; derogado por RM 030-2020"
+              ],
+              [
+                "MCI",
+                "RM 030-2020/MINSA (27/01/2020)",
+                "Curso de vida, persona-familia-comunidad",
+                "Determinantes, territorio, RIS y equipos multidisciplinarios"
+              ],
+              [
+                "Manual MCI",
+                "RM 220-2021/MINSA (12/02/2021)",
+                "Implementación",
+                "PAIFAM, organización territorial y herramientas operativas"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Organización territorial, RIS y continuidad",
+          "depth": "full",
+          "body": [
+            "El MCI organiza el cuidado en un territorio delimitado, con población nominalizada y un equipo multidisciplinario responsable. La RIS articula establecimientos y actores de ese territorio para prestar una cartera integral, con el primer nivel como integrador y coordinador del cuidado.",
+            "La Ley 30885 (2018) define las RIS y su reglamento vigente es el DS 019-2024-SA (2024), que derogó el DS 019-2020-SA. La red no es una suma de establecimientos: exige población y territorio definidos, cartera complementaria, gobernanza, información compartida, referencia y contrarreferencia, y evaluación por resultados sanitarios."
+          ],
+          "bullets": [
+            "Población y territorio definidos: la RIS no se organiza por oferta aislada.",
+            "Primer nivel fortalecido: equipos multidisciplinarios con capacidad resolutiva.",
+            "Cartera complementaria: cada nivel aporta lo que le corresponde.",
+            "Referencia y contrarreferencia: la responsabilidad se comparte; el origen conserva el seguimiento.",
+            "Información integrada: historia clínica y registros que permiten continuidad.",
+            "Gobernanza y rendición de cuentas: acuerdos de gestión y evaluación."
+          ]
+        },
+        {
+          "title": "Determinantes sociales, interculturalidad y participación",
+          "depth": "core",
+          "body": [
+            "La APS actúa sobre los determinantes estructurales e intermedios: ingreso, educación, ocupación, género, etnia, vivienda, trabajo, entorno y acceso a servicios. Sin esa acción, la consulta individual corrige el episodio pero no la exposición que sigue produciendo casos.",
+            "La interculturalidad exige reconocer saberes, lenguas y prácticas, negociar acuerdos y evitar imponer un modelo único. La participación comunitaria no es asistir a una reunión: implica deliberar, decidir, ejecutar y evaluar. La gestión territorial articula a los actores del territorio, no solo al sector salud."
+          ],
+          "bullets": [
+            "Leer el territorio antes de diseñar la intervención.",
+            "Identificar barreras económicas, geográficas, culturales y organizativas.",
+            "Acordar con la comunidad prioridades y responsables.",
+            "Articular con municipio, educación, protección social y organizaciones locales.",
+            "Medir acceso, continuidad y equidad, no solo actividades realizadas."
+          ]
+        },
+        {
+          "title": "Rol del psicólogo en APS",
+          "depth": "core",
+          "body": [
+            "El psicólogo no es solo el profesional que atiende psicoterapia derivada. En APS participa en la puerta de entrada, el tamizaje, la intervención breve, la consejería, el trabajo con familias y comunidades, la coordinación de rutas y la continuidad del cuidado. También aporta lectura de determinantes y diseño de intervenciones comunitarias.",
+            "Sus funciones deben ajustarse a la competencia y al nivel de atención. No reemplaza al médico ni al psiquiatra, no diagnostica con un cuestionario aislado y no confunde tamizaje con diagnóstico. Su valor está en integrar lo clínico, lo familiar y lo comunitario en un plan verificable."
+          ],
+          "table": {
+            "headers": [
+              "Función",
+              "Qué hace",
+              "Límite"
+            ],
+            "rows": [
+              [
+                "Puerta de entrada y acogida",
+                "Escucha, clasifica riesgo y orienta la ruta",
+                "No resuelve urgencias médicas fuera de su competencia"
+              ],
+              [
+                "Tamizaje y evaluación",
+                "Aplica instrumentos, entrevista y observación",
+                "No diagnostica con un puntaje aislado"
+              ],
+              [
+                "Intervención breve",
+                "Consejería, psicoeducación, regulación emocional",
+                "No sustituye psicoterapia especializada cuando se requiere"
+              ],
+              [
+                "Trabajo familiar",
+                "Evalúa dinámica, crisis y cuidadores",
+                "No interviene sin acuerdo ni protección cuando hay violencia"
+              ],
+              [
+                "Trabajo comunitario",
+                "Diagnóstico participativo, promoción y redes",
+                "No decide por la comunidad"
+              ],
+              [
+                "Coordinación y continuidad",
+                "Referencia, contrarreferencia y seguimiento",
+                "No cierra el caso por una derivación"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Prevención y cuidado integral en APS",
+          "depth": "full",
+          "body": [
+            "La APS combina prevención primordial, primaria, secundaria, terciaria y cuaternaria. La prevención primordial actúa sobre condiciones sociales que generan riesgo; la primaria evita la aparición; la secundaria detecta y trata temprano; la terciaria reduce complicaciones y discapacidad; la cuaternaria evita intervenciones innecesarias.",
+            "El cuidado integral no es una lista de paquetes. Se prioriza según riesgo, momento del curso de vida, familia y territorio. La familia es unidad de intervención cuando el plan se acuerda con sus integrantes; la comunidad es escenario y actor cuando participa en la identificación y solución de problemas."
+          ],
+          "table": {
+            "headers": [
+              "Nivel",
+              "Objetivo",
+              "Ejemplo en APS"
+            ],
+            "rows": [
+              [
+                "Primordial",
+                "Evitar que aparezcan condiciones de riesgo",
+                "Políticas de vivienda, agua, empleo y entornos saludables"
+              ],
+              [
+                "Primaria",
+                "Evitar la aparición de la enfermedad",
+                "Vacunación, consejería, entornos protectores"
+              ],
+              [
+                "Secundaria",
+                "Detectar y tratar temprano",
+                "Tamizaje de depresión, anemia, tuberculosis, violencia"
+              ],
+              [
+                "Terciaria",
+                "Reducir complicaciones y discapacidad",
+                "Rehabilitación psicosocial y adherencia"
+              ],
+              [
+                "Cuaternaria",
+                "Evitar intervenciones innecesarias",
+                "No tratar un tamizaje positivo sin confirmación"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Siglas y conceptos imprescindibles",
           "depth": "full",
           "table": {
             "headers": [
-              "Concepto",
-              "Qué designa",
-              "Riesgo de confundirlo"
+              "Sigla",
+              "Desarrollo",
+              "Uso correcto"
             ],
             "rows": [
               [
                 "APS",
-                "Estrategia de organización de todo el sistema",
-                "Reducirla a un establecimiento pequeño"
+                "Atención Primaria de Salud",
+                "Estrategia de organización del sistema"
               ],
               [
-                "Primer nivel",
-                "Nivel asistencial de puerta de entrada",
-                "Suponer que solo atiende problemas simples"
+                "MAIS-BFC",
+                "Modelo de Atención Integral de Salud Basado en Familia y Comunidad",
+                "Modelo peruano de 2011, antecedente del MCI"
               ],
               [
-                "Atención primaria selectiva",
-                "Paquete limitado de intervenciones prioritarias",
-                "Confundir economía de recursos con estrategia integral"
+                "MCI",
+                "Modelo de Cuidado Integral de Salud por Curso de Vida",
+                "Modelo peruano vigente desde 2020"
               ],
               [
-                "Nivel de complejidad",
-                "Capacidad resolutiva del establecimiento",
-                "Asociar complejidad con calidad"
+                "RIS",
+                "Redes Integradas de Salud",
+                "Organización territorial de servicios (Ley 30885)"
+              ],
+              [
+                "IPRESS",
+                "Institución Prestadora de Servicios de Salud",
+                "Establecimiento que presta servicios"
+              ],
+              [
+                "UPSS",
+                "Unidad Productora de Servicios de Salud",
+                "Unidad organizada para producir una prestación"
+              ],
+              [
+                "IAFAS",
+                "Institución Administradora de Fondos de Aseguramiento en Salud",
+                "Financia prestaciones"
+              ],
+              [
+                "ASIS",
+                "Análisis de Situación de Salud",
+                "Diagnóstico territorial para priorizar"
+              ],
+              [
+                "DSS",
+                "Determinantes Sociales de la Salud",
+                "Condiciones estructurales e intermedias"
+              ],
+              [
+                "ODS",
+                "Objetivos de Desarrollo Sostenible",
+                "Agenda 2030; ODS 3 salud y bienestar"
+              ],
+              [
+                "CSU",
+                "Cobertura Universal de Salud",
+                "Acceso a servicios sin dificultad financiera"
+              ],
+              [
+                "CSMC",
+                "Centro de Salud Mental Comunitaria",
+                "Dispositivo comunitario especializado"
+              ],
+              [
+                "APOC",
+                "Atención Primaria Orientada a la Comunidad",
+                "Combina clínica preventiva y acción comunitaria"
               ]
             ]
           }
-        },
-        {
-          "title": "Procedimiento y criterios de decisión",
-          "depth": "full",
-          "bullets": [
-            "1. Identificar la demanda y la necesidad real, no solo el motivo de consulta.",
-            "2. Valorar el riesgo y la capacidad resolutiva del establecimiento.",
-            "3. Resolver en el primer nivel con los recursos disponibles y registrar el plan.",
-            "4. Coordinar con la familia y la comunidad cuando el problema lo requiere.",
-            "5. Referir con información clínica suficiente y criterio explícito cuando se excede la capacidad.",
-            "6. Mantener la responsabilidad compartida y asegurar la contrarreferencia.",
-            "7. Programar el seguimiento y verificar que la persona accedió a la atención.",
-            "8. Evaluar la respuesta y ajustar el plan con la persona y su familia."
-          ]
-        },
-        {
-          "title": "Determinantes sociales y trabajo intersectorial",
-          "depth": "full",
-          "body": [
-            "Los determinantes sociales explican por qué dos personas con el mismo diagnóstico tienen trayectorias distintas. El transporte, el horario laboral y el cuidado de dependientes modifican la asistencia.",
-            "La intersectorialidad no es sumar actividades, sino acordar objetivos y responsabilidades con otros sectores. Una campaña escolar requiere acuerdo con educación, no solo el envío de material.",
-            "La participación comunitaria aporta lectura del territorio y legitimidad. Sin ella, las acciones se diseñan desde el escritorio y suelen abandonarse al terminar el financiamiento."
-          ],
-          "bullets": [
-            "Coordinar con la municipalidad el traslado y los horarios de atención.",
-            "Articular con la escuela la detección y el acompañamiento de adolescentes.",
-            "Usar la ficha familiar para identificar riesgos del hogar y del entorno.",
-            "Acordar con organizaciones comunales acciones de cuidado y vigilancia.",
-            "Registrar los acuerdos y evaluar su cumplimiento."
-          ]
         },
         {
           "title": "Caso razonado",
           "depth": "full",
           "body": [
-            "Caso ficticio. En un distrito de la selva, el equipo de salud detecta que muchas familias no acuden a sus controles. La causa principal es la falta de transporte y los horarios de trabajo en una actividad estacional. La municipalidad ofrece apoyo con traslado y las organizaciones comunales proponen actividades de cuidado en la loza deportiva.",
-            "El jefe del establecimiento plantea concentrar la atención y pedir a las familias que se adapten a los horarios disponibles. El psicólogo advierte que esa medida aumentaría el ausentismo. También se discute derivar a todas las familias a un hospital de mayor complejidad para evitar demoras."
+            "Caso ficticio. En un centro de salud de la sierra de Áncash, una familia llega por el bajo rendimiento escolar de una adolescente. La madre tiene anemia, el padre trabaja fuera y la abuela cuida a dos niños. La familia falta a los controles porque el horario coincide con la feria y el traslado cuesta. La adolescente refiere insomnio y desánimo, y la profesora comenta que dejó de participar.",
+            "El equipo del primer nivel aplica el MCI: lee el caso como unidad familiar, valora el riesgo de la adolescente, actualiza la ficha familiar y coordina con la municipalidad y la escuela. El psicólogo realiza entrevista y tamizaje, descarta riesgo suicida inmediato y acuerda un plan con la familia. La anemia materna se maneja en el establecimiento; la adolescente requiere evaluación más especializada y la abuela necesita apoyo para el cuidado.",
+            "La dirección propone derivar a la adolescente al hospital y cerrar el caso familiar. El equipo advierte que la derivación sin contrarreferencia repetiría el circuito y que el problema del cuidado de los niños seguiría intacto. Se acuerda referencia con hoja completa, coordinación con el hospital y seguimiento en origen; la municipalidad facilita el traslado y la escuela ajusta la acogida."
           ],
           "bullets": [
-            "Lectura del caso: el ausentismo se explica por determinantes de acceso y no por falta de interés de las familias.",
-            "Lectura del caso: ajustar horarios y coordinar traslado actúa sobre la causa y sostiene la continuidad.",
-            "Lectura del caso: la alternativa descartada era derivar a todos al hospital, que traslada el problema sin resolverlo.",
-            "Lectura del caso: el error evitado fue responsabilizar a las familias de un fallo de organización del servicio.",
-            "Lectura del caso: corresponde acordar con la municipalidad y la comunidad, registrar el acuerdo y evaluar el resultado."
+            "Lectura del caso: la demanda escolar expresa determinantes familiares, económicos y de acceso, no solo un problema individual.",
+            "Lectura del caso: la APS organiza la respuesta con el primer nivel, la familia, la escuela y el municipio; no se limita a la consulta.",
+            "Lectura del caso: el MCI aporta lectura de curso de vida, familia y territorio; la RIS aporta la ruta entre niveles.",
+            "Alternativa descartada: derivar y cerrar el caso, porque traslada la responsabilidad sin asegurar continuidad.",
+            "Error que se evita: confundir tamizaje con diagnóstico y atribuir el bajo rendimiento a falta de interés.",
+            "Cierre: se registra el plan, se verifica la referencia y se programa el seguimiento en el primer nivel."
           ]
+        },
+        {
+          "title": "Preguntas tipo examen",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Pregunta",
+              "Respuesta clave",
+              "Distractor típico"
+            ],
+            "rows": [
+              [
+                "¿APS es lo mismo que primer nivel?",
+                "No. La APS es estrategia de organización; el primer nivel es un nivel asistencial.",
+                "“Sí, APS es el puesto de salud”"
+              ],
+              [
+                "¿Qué atributo describe el vínculo estable con un equipo?",
+                "Longitudinalidad.",
+                "Confundirlo con continuidad entre servicios"
+              ],
+              [
+                "¿Qué norma aprueba el MCI?",
+                "RM 030-2020/MINSA, del 27/01/2020.",
+                "RM 464-2011/MINSA (MAIS-BFC)"
+              ],
+              [
+                "¿Qué ley crea las RIS?",
+                "Ley 30885, publicada el 19/12/2018.",
+                "Ley 29344 (AUS) o Ley 26842 (Ley General de Salud)"
+              ],
+              [
+                "¿Qué reglamento RIS está vigente?",
+                "DS 019-2024-SA, publicado el 19/10/2024.",
+                "DS 019-2020-SA, derogado"
+              ],
+              [
+                "¿Alma-Ata y Astaná son lo mismo?",
+                "No. Alma-Ata 1978 definió la APS; Astaná 2018 la reafirmó para la cobertura universal.",
+                "“Astaná creó la APS”"
+              ],
+              [
+                "¿Promoción es prevención?",
+                "No. La promoción actúa sobre condiciones y capacidades; la prevención sobre riesgos y daños.",
+                "“Toda charla es promoción”"
+              ],
+              [
+                "¿Qué es APOC?",
+                "Atención Primaria Orientada a la Comunidad: combina clínica preventiva y acción comunitaria.",
+                "Confundirla con una campaña masiva"
+              ]
+            ]
+          }
         },
         {
           "title": "Errores frecuentes y distinciones",
           "depth": "core",
           "bullets": [
             "Distinción: APS no es primer nivel, porque la primera organiza el sistema y el segundo designa un nivel asistencial.",
-            "Distinción: longitudinalidad no es continuidad, porque la primera es el vínculo con un equipo y la segunda el seguimiento entre servicios.",
-            "Distinción: intersectorialidad no es multisectorialidad, porque la primera implica acuerdos y responsabilidades compartidas.",
-            "Distinción: universalidad no es aseguramiento, porque el derecho no se agota en la afiliación.",
-            "Error: confundir atención primaria con atención simple, porque reduce la estrategia a problemas menores y desprotege casos complejos.",
-            "Error: derivar sin contrarreferencia, porque rompe la continuidad y deja a la persona sin responsable del seguimiento.",
-            "Error: diseñar acciones sin la comunidad, porque la intervención pierde pertinencia y se abandona."
+            "Distinción: longitudinalidad no es continuidad, porque la primera es el vínculo estable con un equipo y la segunda el seguimiento entre servicios.",
+            "Distinción: promoción no es prevención, porque la promoción actúa sobre condiciones y capacidades y la prevención sobre riesgos específicos.",
+            "Distinción: universalidad no es aseguramiento, porque la afiliación no garantiza acceso efectivo.",
+            "Distinción: intersectorialidad no es multisectorialidad, porque la primera exige objetivos, responsabilidades y recursos compartidos.",
+            "Error: reducir la APS a atención simple, porque desprotege casos complejos y fragmenta la red.",
+            "Error: derivar sin contrarreferencia, porque rompe la continuidad y deja el caso sin responsable.",
+            "Error: confundir MAIS-BFC con MCI, porque el MCI reorganiza el cuidado por curso de vida, territorio y RIS.",
+            "Error: citar el DS 019-2020-SA como vigente, porque fue derogado por el DS 019-2024-SA.",
+            "Error: diseñar sin la comunidad, porque la intervención pierde pertinencia y sostenibilidad.",
+            "Distinción: Alma-Ata no es un tratado vinculante, porque es una declaración política; su fuerza está en el compromiso y en la adopción nacional.",
+            "Distinción: APS selectiva no es Alma-Ata ni “APS para pobres”, porque es un paquete vertical de prioridades, no la estrategia integral.",
+            "Distinción: accesibilidad no es primer contacto, porque la primera describe la posibilidad de llegar y el segundo el uso efectivo como puerta de entrada.",
+            "Distinción: APS no es medicina familiar ni APOC, porque la APS es la estrategia del sistema; la medicina familiar es una disciplina y la APOC un modelo comunitario."
           ]
         },
         {
           "title": "Puntos clave",
           "depth": "core",
           "bullets": [
-            "La APS se evalúa por sus atributos, porque un servicio cercano sin continuidad no cumple la estrategia.",
-            "El primer nivel resuelve lo frecuente, porque la mayoría de demandas no requiere tecnología compleja.",
-            "La coordinación protege la continuidad, porque la persona circula entre servicios a lo largo del tiempo.",
-            "La universalidad exige equidad, porque el acceso efectivo no depende solo de la afiliación.",
-            "La participación mejora la pertinencia, porque la comunidad conoce sus prioridades.",
-            "La intersectorialidad amplía la respuesta, porque muchos determinantes están fuera del sector salud."
+            "La APS se evalúa por sus atributos, no por el tamaño del local.",
+            "El primer nivel resuelve lo frecuente y coordina lo complejo; no hace todo solo.",
+            "Alma-Ata (1978), Ottawa (1986), Yakarta (1997), los ODS (2015) y Astaná (2018) son hitos distintos; no se confunden.",
+            "El MCI es el modelo peruano vigente y se apoya en la Ley 30885 y el DS 019-2024-SA.",
+            "La RIS exige población y territorio definidos, primer nivel fuerte y continuidad entre niveles.",
+            "La APS actúa sobre determinantes; sin intersectorialidad y participación, la respuesta es incompleta.",
+            "El psicólogo aporta evaluación, intervención breve, trabajo familiar y comunitario, coordinación y seguimiento.",
+            "La cobertura universal no es solo afiliación: exige acceso efectivo, calidad y protección financiera."
           ]
         },
         {
@@ -19872,16 +20945,87 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "callout": {
             "tone": "info",
-            "title": "Estrategia frente a estructura",
-            "text": "APS es la estrategia que organiza el sistema; el primer nivel es la estructura donde se atiende. El distractor habitual presenta ambos términos como sinónimos o reduce la APS a un puesto de salud. También confunde universalidad con número de afiliados."
+            "title": "Estrategia, nivel y modelo no son sinónimos",
+            "text": "APS es la estrategia; primer nivel es el nivel de entrada; MAIS-BFC y MCI son modelos peruanos sucesivos. El distractor habitual mezcla estas categorías, cita el reglamento RIS derogado o reduce la APS a un paquete de charlas. Para fechas, recuerde: Alma-Ata 1978, Ottawa 1986, Yakarta 1997, ODS 2015, Astaná 2018; MCI 2020 y su manual 2021."
+          }
+        },
+        {
+          "title": "Cómo se miden los atributos de la APS",
+          "depth": "full",
+          "body": [
+            "Los atributos no se declaran: se miden. El Primary Care Assessment Tool (PCAT) explora acceso y primer contacto, longitudinalidad, integralidad, coordinación y orientaciones familiar y comunitaria en usuarios, proveedores y establecimientos. Distingue estructura y proceso, y permite comparar servicios sin confundir satisfacción con calidad.",
+            "En Perú se validó una versión corta de 20 ítems en usuarios de EsSalud (Cuba-Fuentes et al., Acta Med Peru 2024;41(4):270-7); es un estudio de validación, no una encuesta poblacional.",
+            "La medición debe acompañarse de indicadores de acceso efectivo, continuidad y equidad. Un puntaje alto de trato no compensa una barrera de horario o de costo; por eso el PCAT se lee junto con datos de uso, abandono y resultados."
+          ],
+          "table": {
+            "headers": [
+              "Dimensión",
+              "Qué explora",
+              "Ejemplo de indicador"
+            ],
+            "rows": [
+              [
+                "Acceso y primer contacto",
+                "Entrada oportuna y uso del primer nivel",
+                "% que consulta primero en el primer nivel"
+              ],
+              [
+                "Longitudinalidad",
+                "Vínculo estable con el equipo",
+                "% con el mismo equipo a lo largo del año"
+              ],
+              [
+                "Integralidad",
+                "Respuesta a necesidades preventivas y curativas",
+                "% con tamizaje y consejería en el último año"
+              ],
+              [
+                "Coordinación",
+                "Articulación con otros niveles",
+                "% de referencias con contrarreferencia"
+              ],
+              [
+                "Orientación familiar y comunitaria",
+                "Lectura del hogar y del territorio",
+                "% con visita domiciliaria o plan familiar"
+              ],
+              [
+                "Continuidad",
+                "Seguimiento entre servicios y momentos",
+                "% que retoma el cuidado tras el alta"
+              ]
+            ]
           }
         },
         {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
-            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 2020, principios y organización de la atención primaria.",
-            "Fuente: OMS — Primary health care: servicios integrados, acción multisectorial y participación."
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; principios, componentes y organización territorial.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial.",
+            "Fuente: MINSA — MAIS-BFC, RM N.° 464-2011/MINSA, 14/06/2011; derogado por la RM 030-2020/MINSA.",
+            "Fuente: OMS — Declaración de Alma-Ata, 12/09/1978; OMS — Informe mundial 2008; OMS/UNICEF — Declaración de Astaná, 25-26/10/2018.",
+            "OMS — Declaración de Alma-Ata, Alma-Ata, 6-12 de septiembre de 1978; declaración del 12/09/1978. https://www.who.int/publications/i/item/WHO-EURO-1978-3938-43697-61471",
+            "OMS — Carta de Ottawa, Ottawa, 17-21 de noviembre de 1986; carta del 21/11/1986. https://www.who.int/teams/health-promotion/enhanced-wellbeing/first-global-conference",
+            "OMS — Declaración de Yakarta, Yakarta, 21-25 de julio de 1997. https://www.who.int/publications/i/item/WHO-HPR-HEP-4ICHP-BR-97.4",
+            "OMS — Informe sobre la salud en el mundo 2008: la atención primaria de salud, más necesaria que nunca. https://iris.who.int/handle/10665/43949",
+            "ONU — Agenda 2030 para el Desarrollo Sostenible, A/RES/70/1, adoptada el 25/09/2015; 17 ODS y 169 metas. https://sdgs.un.org/2030agenda",
+            "OMS/UNICEF — Declaración de Astaná, Astaná, 25-26 de octubre de 2018. https://www.who.int/publications/i/item/WHO-HIS-SDS-2018.61",
+            "MINSA — RM N.° 030-2020/MINSA, 27/01/2020, aprueba el MCI; publicada el 28/01/2020. https://www.gob.pe/institucion/minsa/normas-legales/414755-030-2020-minsa",
+            "MINSA — RM N.° 220-2021/MINSA, 12/02/2021, aprueba el Manual de Implementación del MCI; publicada el 15/02/2021. https://www.gob.pe/institucion/minsa/normas-legales/1682527-220-2021-minsa",
+            "MINSA — RM N.° 464-2011/MINSA, 14/06/2011, aprueba el MAIS-BFC; publicada el 16/06/2011. https://www.gob.pe/institucion/minsa/normas-legales/243559-464-2011-minsa",
+            "MINSA — RM N.° 729-2003-SA/DM, 20/06/2003, aprueba el MAIS; dejado sin efecto por la RM 464-2011/MINSA. https://www.gob.pe/institucion/minsa/normas-legales/254174-729-2003-minsa",
+            "Perú — Ley N.° 30885, RIS, promulgada el 18/12/2018 y publicada el 19/12/2018; vigente desde el 20/12/2018. https://www.gob.pe/institucion/minsa/normas-legales/235261-30885",
+            "Perú — DS N.° 019-2024-SA, publicado el 19/10/2024, aprueba el Reglamento de la Ley 30885 y deroga el DS 019-2020-SA. https://www.gob.pe/institucion/minsa/normas-legales/6111817-019-2024-sa",
+            "Perú — Ley N.° 26842, Ley General de Salud, 15/07/1997; publicada el 20/07/1997. https://www.gob.pe/institucion/minsa/normas-legales/256661-26842",
+            "Perú — Ley N.° 29344, Ley Marco de Aseguramiento Universal en Salud, 09/04/2009. https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/229356-29344",
+            "Perú — Ley N.° 29889, 23/06/2012; publicada el 24/06/2012. https://www.leyes.congreso.gob.pe/DetLeyNume_1p.aspx?xNorma=6&xNumero=29889&xTipoNorma=0",
+            "Perú — Ley N.° 30947, Ley de Salud Mental, 22/05/2019; publicada el 23/05/2019; vigente desde el 24/05/2019. https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/1423694-30947",
+            "MINSA — RM N.° 366-2017/MINSA, 19/05/2017, aprueba los Lineamientos de Política de Promoción de la Salud; publicada el 20/05/2017. https://www.gob.pe/institucion/minsa/normas-legales/189603-366-2017-minsa",
+            "MINSA — RM N.° 546-2011/MINSA, 13/07/2011, aprueba la NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos. https://www.gob.pe/institucion/minsa/normas-legales/243402-546-2011-minsa",
+            "MINSA — RM N.° 625-2026/MINSA, 16/07/2026, aprueba la NTS N.° 249-MINSA/DGAIN-2026, cartera de servicios. https://www.gob.pe/institucion/minsa/normas-legales/8389687-625-2026-minsa",
+            "OMS — Día Mundial de la Salud, 7 de abril (aniversario de la OMS, 1948). https://www.who.int/campaigns/world-health-day · Día Mundial de la Salud Mental, 10 de octubre. https://www.who.int/campaigns/world-mental-health-day",
+            "Fuente: Cuba-Fuentes MS, Failoc Rojas V, Villarreal-Zegarra D, et al. — Validity of the internal structure of the primary care assessment scale in Peruvian healthcare facilities. Acta Med Peru. 2024;41(4):270-277. doi:10.35663/amp.2024.414.2933"
           ]
         }
       ],
@@ -19890,6 +21034,63 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             23
+          ]
+        },
+        {
+          "sourceId": "src-aps",
+          "pages": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            57,
+            58,
+            59,
+            60,
+            61
+          ]
+        },
+        {
+          "sourceId": "src-ottawa",
+          "pages": [
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21,
+            22
           ]
         }
       ]
@@ -19902,169 +21103,298 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.2 · Curso de vida",
       "minutes": 18,
       "level": "Base",
-      "summary": "El enfoque de curso de vida explica cómo las exposiciones tempranas influyen en la salud posterior mediante periodos críticos y sensibles, trayectorias, acumulación y cadenas de riesgo. El modelo peruano organiza el cuidado en seis etapas, desde el periodo prenatal hasta la persona adulta mayor, y combina acciones con la persona, la familia y la comunidad. Cuatro componentes interrelacionados sostienen la provisión, la organización, la gestión y el financiamiento.",
+      "summary": "El curso de vida explica cómo las exposiciones se acumulan y condicionan la salud posterior a través de periodos críticos, periodos sensibles, trayectorias y transiciones. El Modelo de Cuidado Integral de Salud por Curso de Vida (MCI) del Perú organiza el cuidado de la persona, la familia y la comunidad en seis etapas, con cuatro componentes interrelacionados y un equipo multidisciplinario territorial. El MCI sucede al MAIS (2003) y al MAIS-BFC (2011), se articula con las RIS y exige continuidad entre niveles, participación comunitaria e interculturalidad.",
       "keyConcepts": [
-        "Curso de vida: enfoque sobre trayectorias e influencias acumuladas desde antes del nacimiento.",
-        "Ciclo vital: secuencia de etapas y transiciones del desarrollo individual o familiar.",
-        "Periodo crítico: ventana limitada en la que una exposición produce cambios duraderos.",
-        "Periodo sensible: etapa de mayor plasticidad, con posibilidad de cambio posterior.",
-        "Trayectoria: dirección que sigue una característica de salud a lo largo del tiempo.",
-        "Transición: cambio de rol o de etapa que modifica las demandas y los apoyos.",
-        "Acumulación: suma de exposiciones favorables o adversas que interactúan.",
-        "Cadena de riesgo: una exposición aumenta la probabilidad de otra posterior.",
-        "Familia como unidad de intervención: plan acordado y seguido con el equipo."
+        "Curso de vida: enfoque sobre trayectorias, transiciones y exposiciones acumuladas desde antes del nacimiento.",
+        "Ciclo vital: secuencia de etapas y transiciones; no es sinónimo de curso de vida.",
+        "Periodo crítico: ventana limitada con mayor riesgo de efecto duradero.",
+        "Periodo sensible: etapa de plasticidad; el cambio posterior sigue siendo posible.",
+        "Trayectoria, transición, acumulación y cadena de riesgo: conceptos distintos que explican cómo una etapa influye en la siguiente.",
+        "MCI: modelo peruano vigente (RM 030-2020/MINSA) con cuatro componentes: provisión, organización, gestión y financiamiento.",
+        "Familia y comunidad: unidades de intervención y escenarios de cuidado, no solo destinatarias.",
+        "APOC: Atención Primaria Orientada a la Comunidad; combina clínica preventiva y acción comunitaria.",
+        "RIS: organización territorial que conecta primer nivel, referencia y continuidad."
       ],
       "sections": [
         {
           "title": "Conceptos que sostienen el tema",
           "depth": "core",
           "body": [
-            "El curso de vida no es una lista de edades. Es un enfoque que explica cómo las exposiciones se encadenan y dejan marcas que condicionan la salud posterior.",
-            "El ciclo vital describe la secuencia de etapas y transiciones. El curso de vida analiza procesos, acumulación y momentos de mayor vulnerabilidad.",
-            "Un periodo crítico es una ventana limitada en la que una exposición puede producir un efecto duradero. Un periodo sensible admite mayor plasticidad y posibilidad de recuperación posterior.",
-            "La trayectoria es la dirección que sigue un fenómeno de salud en el tiempo. La transición es el cambio de rol o de etapa que altera las demandas y los apoyos disponibles.",
-            "La acumulación suma exposiciones que pueden compensarse o agravarse. La cadena de riesgo describe cómo una exposición temprana aumenta la probabilidad de otra posterior."
+            "El curso de vida no es una lista de edades. Es un enfoque que explica cómo las exposiciones se encadenan y dejan marcas que condicionan la salud posterior. Importan el momento, la secuencia y la acumulación, no solo la intensidad de un factor.",
+            "El ciclo vital describe etapas y transiciones; el curso de vida analiza procesos, trayectorias y acumulación. Un periodo crítico es una ventana limitada en la que una exposición puede producir un efecto duradero; un periodo sensible admite mayor plasticidad y recuperación posterior.",
+            "La trayectoria es la dirección que sigue un fenómeno de salud en el tiempo; la transición es el cambio de rol o de etapa que altera demandas y apoyos. La acumulación suma exposiciones; la cadena de riesgo muestra cómo una exposición temprana aumenta la probabilidad de otra posterior."
           ]
         },
         {
-          "title": "Fundamentos teóricos y mecanismos",
+          "title": "Antecedentes y marco normativo",
           "depth": "core",
           "body": [
-            "La teoría del curso de vida integra biología, conducta y contexto social. Su aporte central es mostrar que el momento y la secuencia de las exposiciones importan tanto como su intensidad.",
-            "Los mecanismos biológicos incluyen periodos de organización del sistema nervioso y de regulación del estrés. Los mecanismos sociales incluyen el acceso a nutrición, estimulación, protección y educación.",
-            "La ventaja del enfoque es preventiva: permite anticipar consecuencias y actuar antes de que el daño se consolide. También explica por qué una intervención tardía puede ser eficaz pero menos eficiente.",
-            "El enfoque no determina el destino. Las trayectorias pueden modificarse con apoyos oportunos, y esa es la base para justificar el cuidado continuo y no solo la atención de la urgencia."
+            "El Perú tuvo el MAIS (2003), dejado sin efecto por la RM 464-2011, que aprobó el MAIS-BFC; este fue derogado por la RM 030-2020, que aprobó el MCI. Por tanto, MAIS y MAIS-BFC son modelos históricos sin vigencia y el MCI es el modelo vigente. El MCI incorporó el curso de vida, los determinantes sociales, la organización territorial y las RIS.",
+            "El MCI se aprueba con la RM 030-2020/MINSA (27/01/2020) y se implementa con el Manual aprobado por RM 220-2021/MINSA (12/02/2021). Se articula con la Ley 30885 de RIS y su reglamento vigente, el DS 019-2024-SA (19/10/2024), que derogó el DS 019-2020-SA. Citarlo como si el reglamento de 2020 siguiera vigente es un error de actualización."
           ],
-          "bullets": [
-            "La exposición temprana puede modificar la respuesta al estrés y la regulación emocional.",
-            "La acumulación de desventajas reduce la reserva disponible para afrontar nuevas crisis.",
-            "Las transiciones son momentos de oportunidad para la prevención y el acompañamiento.",
-            "La intervención sobre el entorno familiar modifica el efecto de un mismo riesgo individual.",
-            "La continuidad del cuidado permite corregir trayectorias antes de que se consoliden."
-          ]
+          "table": {
+            "headers": [
+              "Hito",
+              "Norma y fecha",
+              "Qué aporta"
+            ],
+            "rows": [
+              [
+                "MAIS",
+                "RM 729-2003-SA/DM (2003)",
+                "Atención integral por etapas; dejado sin efecto por RM 464-2011"
+              ],
+              [
+                "MAIS-BFC",
+                "RM 464-2011/MINSA (14/06/2011)",
+                "Familia y comunidad; derogado por RM 030-2020"
+              ],
+              [
+                "MCI",
+                "RM 030-2020/MINSA (27/01/2020)",
+                "Curso de vida, determinantes, territorio y cuatro componentes"
+              ],
+              [
+                "Manual MCI",
+                "RM 220-2021/MINSA (12/02/2021)",
+                "Implementación, PAIFAM, equipos y gestión territorial"
+              ],
+              [
+                "RIS",
+                "Ley 30885 (19/12/2018); DS 019-2024-SA (19/10/2024)",
+                "Organización territorial y continuidad entre niveles"
+              ]
+            ]
+          }
         },
         {
-          "title": "Clasificación y criterios de aplicación",
+          "title": "Principios y enfoques",
+          "depth": "core",
+          "body": [
+            "El MCI recoge los principios de la APS renovada: integralidad, universalidad, calidad, corresponsabilidad, equidad, solidaridad y eficiencia. No son enunciados decorativos: cada uno tiene consecuencias operativas. La equidad exige asignar según necesidad; la corresponsabilidad exige participación de la persona, la familia y la comunidad; la eficiencia exige no desperdiciar recursos.",
+            "Los enfoques transversales son derechos, curso de vida, género e interculturalidad. El enfoque de derechos obliga a garantizar acceso, no discriminación y prioridad a poblaciones vulnerables. El de género visibiliza desigualdades de poder y carga de cuidado. El intercultural exige pertinencia cultural y diálogo, no imposición."
+          ],
+          "table": {
+            "headers": [
+              "Principio o enfoque",
+              "Qué exige",
+              "Error frecuente"
+            ],
+            "rows": [
+              [
+                "Integralidad",
+                "Promoción, prevención, recuperación y rehabilitación",
+                "Reducir el cuidado a la enfermedad"
+              ],
+              [
+                "Universalidad",
+                "Derecho a la salud con acceso equitativo",
+                "Confundir cobertura con afiliación"
+              ],
+              [
+                "Corresponsabilidad",
+                "Participación de persona, familia y comunidad",
+                "Decidir por la comunidad"
+              ],
+              [
+                "Equidad",
+                "Asignar según necesidad",
+                "Dar lo mismo a todos sin mirar barreras"
+              ],
+              [
+                "Interculturalidad",
+                "Diálogo y pertinencia cultural",
+                "Folclorizar o imponer el modelo biomédico"
+              ],
+              [
+                "Curso de vida",
+                "Anticipar trayectorias y transiciones",
+                "Aplicar paquetes por edad sin contexto"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Componentes del MCI",
           "depth": "full",
+          "body": [
+            "Los cuatro componentes actúan de forma interrelacionada y no son etapas sucesivas de una consulta. Un fallo en el financiamiento se expresa como falta de continuidad; un fallo en la organización, como referencia sin contrarreferencia; un fallo en la gestión, como metas que no reflejan necesidades.",
+            "La provisión incluye cuidados de promoción, prevención, recuperación, rehabilitación y paliativos. La organización ordena servicios, equipos y territorio. La gestión planifica, conduce y evalúa. El financiamiento sostiene el cuidado y debe alinearse con resultados sanitarios, no solo con volumen de producción."
+          ],
+          "table": {
+            "headers": [
+              "Componente",
+              "Qué incluye",
+              "Señal de falla"
+            ],
+            "rows": [
+              [
+                "Provisión",
+                "Cuidados a persona, familia y comunidad en escenarios diversos",
+                "Solo se atiende la demanda espontánea"
+              ],
+              [
+                "Organización",
+                "Equipos, territorio, RIS, referencia e información",
+                "Población no nominalizada y red fragmentada"
+              ],
+              [
+                "Gestión",
+                "Planificación, procesos, calidad, talento humano y evaluación",
+                "Metas por actividad y no por resultado"
+              ],
+              [
+                "Financiamiento",
+                "Aseguramiento, presupuesto, incentivos y eficiencia",
+                "Brechas de acceso y gasto de bolsillo"
+              ]
+            ]
+          }
+        },
+        {
+          "title": "Cuidado por curso de vida",
+          "depth": "full",
+          "body": [
+            "El MCI organiza el cuidado en periodo prenatal; niña y niño (0 a 11 años, 11 meses y 29 días); adolescente (12 a 17 años, 11 meses y 29 días); joven (18 a 29 años, 11 meses y 29 días); persona adulta (30 a 59 años, 11 meses y 29 días); y persona adulta mayor (60 años a más). Las edades son referencias normativas, no compartimentos rígidos.",
+            "Cada etapa combina cuidados individuales, familiares y comunitarios. La priorización depende del riesgo, del momento de la transición y del territorio. Un mismo paquete no se aplica mecánicamente a todas las personas."
+          ],
           "table": {
             "headers": [
               "Etapa",
-              "Edad",
-              "Foco del cuidado"
+              "Foco",
+              "Cuidado típico en APS"
             ],
             "rows": [
               [
                 "Prenatal",
-                "Preconcepción, gestación y nacimiento",
-                "Desarrollo fetal, cuidado materno, soporte y riesgos tempranos"
+                "Desarrollo fetal, salud materna y preparación",
+                "Captación temprana, tamizajes, salud mental perinatal, lactancia"
               ],
               [
                 "Niña y niño",
-                "0 a 11 años, 11 meses y 29 días",
-                "Crecimiento, desarrollo, apego, nutrición y protección"
+                "Crecimiento, desarrollo, apego y protección",
+                "CRED, vacunas, nutrición, desarrollo infantil, violencia"
               ],
               [
                 "Adolescente",
-                "12 a 17 años, 11 meses y 29 días",
-                "Autonomía progresiva, salud mental, sexualidad y proyecto"
+                "Autonomía progresiva, salud mental y proyecto",
+                "Confidencialidad, tamizajes, escuela, sexualidad, riesgo"
               ],
               [
                 "Joven",
-                "18 a 29 años, 11 meses y 29 días",
-                "Autonomía, estudios o trabajo, vínculos, sexualidad y prevención"
+                "Autonomía, estudio/trabajo y prevención",
+                "Consejería, salud mental, ITS/VIH, adherencia"
               ],
               [
                 "Persona adulta",
-                "30 a 59 años, 11 meses y 29 días",
-                "Riesgos crónicos, trabajo, familia, adherencia y funcionamiento"
+                "Riesgos crónicos, trabajo y familia",
+                "Tamizajes, control de NCD, salud mental, adherencia"
               ],
               [
                 "Persona adulta mayor",
-                "60 años a más",
-                "Funcionalidad, cognición, ánimo, autonomía y soporte"
+                "Funcionalidad, cognición y autonomía",
+                "VACAM, caídas, polifarmacia, soporte, continuidad"
               ]
             ]
           }
         },
         {
-          "title": "Mecanismos: por qué una etapa influye en la siguiente",
-          "depth": "full",
+          "title": "Familia y ciclo vital familiar",
+          "depth": "core",
+          "body": [
+            "La familia es unidad de intervención cuando el equipo acuerda acciones con sus integrantes y aborda conjuntamente necesidades y relaciones. No basta con sumar consultas individuales. El plan familiar se construye con la familia, identifica recursos, prioriza y define cómo se verificará el cumplimiento.",
+            "El ciclo vital familiar ayuda a leer momentos de mayor tensión: formación de la pareja, expansión con los hijos, dispersión y contracción. No es una secuencia obligatoria ni un juicio sobre las familias; es una herramienta para anticipar crisis y organizar apoyos."
+          ],
           "table": {
             "headers": [
-              "Mecanismo",
-              "Qué significa",
-              "Ejemplo"
+              "Fase",
+              "Qué ocurre",
+              "Riesgo o necesidad frecuente"
             ],
             "rows": [
               [
-                "Periodo crítico",
-                "Ventana en la que una exposición puede producir un efecto duradero",
-                "Nutrición y desarrollo durante la gestación"
+                "Formación",
+                "Pareja sin hijos; ajuste de roles y proyectos",
+                "Comunicación, planificación familiar, violencia"
               ],
               [
-                "Periodo sensible",
-                "Etapa de mayor plasticidad, aunque el cambio sigue siendo posible",
-                "Lenguaje, apego y regulación emocional"
+                "Expansión",
+                "Nacimiento y crianza de los hijos",
+                "Carga de cuidado, salud mental perinatal, crianza"
               ],
               [
-                "Trayectoria",
-                "Dirección que sigue la salud a lo largo del tiempo",
-                "Riesgo cardiometabólico que aumenta progresivamente"
+                "Dispersión",
+                "Los hijos se emancipan",
+                "Redefinición de roles, soledad, salud mental"
               ],
               [
-                "Acumulación",
-                "Exposiciones protectoras o adversas que se suman",
-                "Pobreza, violencia, estrés y menor acceso"
-              ],
-              [
-                "Cadena de riesgo",
-                "Una exposición aumenta la probabilidad de otra posterior",
-                "Sobrepeso infantil, menor actividad y enfermedad crónica"
+                "Contracción",
+                "Último hijo sale; jubilación o muerte",
+                "Dependencia, duelo, cuidado del adulto mayor"
               ]
             ]
           }
         },
         {
-          "title": "Procedimiento de cuidado por curso de vida",
-          "depth": "full",
+          "title": "Comunidad, APOC y territorio",
+          "depth": "core",
+          "body": [
+            "La comunidad es unidad básica de la salud comunitaria: un grupo de personas que comparte territorio, cultura, valores y relaciones. La Atención Primaria Orientada a la Comunidad (APOC) combina la clínica preventiva con el diagnóstico y la acción comunitaria; no es una campaña sino una forma de organizar el cuidado.",
+            "El MCI propone identificar riesgos y protectores del territorio, priorizar con la comunidad y articular salud ambiental, vigilancia, promoción y participación. La comunidad no es solo destinataria: puede participar en el diagnóstico, la ejecución y la evaluación."
+          ],
           "bullets": [
-            "1. Identificar la etapa de curso de vida y la transición que atraviesa la persona o la familia.",
-            "2. Valorar riesgos, factores protectores y necesidades de la unidad familiar.",
-            "3. Priorizar el paquete de cuidado según riesgo y contexto, no como lista mecánica.",
-            "4. Acordar acciones con la persona, la familia y la comunidad.",
-            "5. Registrar el plan familiar y los responsables de cada acción.",
-            "6. Coordinar con otros servicios y niveles, manteniendo la responsabilidad compartida.",
-            "7. Verificar la adherencia y ajustar el plan en cada contacto.",
-            "8. Asegurar la contrarreferencia y el seguimiento tras el alta."
+            "Delimitar el territorio y caracterizar la población.",
+            "Identificar riesgos y protectores con la comunidad.",
+            "Priorizar problemas y acordar respuestas.",
+            "Articular con municipio, escuela, organizaciones y otros sectores.",
+            "Medir cambios en acceso, continuidad y condiciones de vida."
           ]
         },
         {
-          "title": "Familia como unidad de intervención",
+          "title": "Organización territorial y RIS",
           "depth": "full",
           "body": [
-            "La familia es unidad de intervención cuando el equipo acuerda acciones con sus integrantes y aborda conjuntamente necesidades y relaciones. No basta con sumar consultas individuales.",
-            "El plan familiar se construye con la familia y no para la familia. Requiere identificar recursos, acordar prioridades y definir cómo se verificará el cumplimiento.",
-            "La intervención familiar no sustituye la atención individual. Ambas se complementan cuando el padecimiento de un integrante afecta al conjunto y cuando el entorno sostiene o dificulta el cuidado."
+            "La RIS define objetivos de salud para una población y un territorio, con criterios de tamaño poblacional, cobertura, accesibilidad geográfica, densidad y circunscripción política. La población se nominaliza y las familias se asignan a equipos multidisciplinarios.",
+            "El primer nivel es el integrador y coordinador del cuidado; la red asegura referencia y contrarreferencia, información y continuidad. La RIS no es una suma de establecimientos: exige gobernanza, cartera complementaria, acuerdos de gestión y evaluación por resultados sanitarios."
           ],
           "bullets": [
-            "Explorar la composición del hogar, los roles y las personas con dependencia.",
-            "Identificar conflictos, violencia y barreras de acceso antes de proponer acciones.",
-            "Acordar un objetivo común comprensible para todos los integrantes.",
-            "Registrar el plan en la ficha familiar y actualizarlo en cada visita.",
-            "Coordinar con la comunidad cuando el hogar no puede resolver solo."
+            "Población y territorio definidos, no demanda espontánea únicamente.",
+            "Equipo multidisciplinario con responsabilidad sobre familias asignadas.",
+            "Cartera complementaria y rutas de cuidado entre niveles.",
+            "Referencia y contrarreferencia con cierre verificable.",
+            "Historia clínica e información integrada.",
+            "Evaluación anual de desempeño y rendición de cuentas."
           ]
         },
         {
-          "title": "Cuatro componentes del MCI",
+          "title": "Gestión, calidad y financiamiento",
           "depth": "full",
           "body": [
-            "Los componentes actúan de forma interrelacionada y no son etapas sucesivas de una consulta. Un fallo en el financiamiento se expresa como falta de continuidad; un fallo en la organización, como referencia sin contrarreferencia."
+            "La gestión del MCI se orienta a resultados, procesos y calidad. No se limita a cumplir actividades: mide acceso, continuidad, resolutividad y experiencia de la persona. La calidad incluye efectividad, seguridad, oportunidad, equidad, integralidad y eficiencia.",
+            "El financiamiento debe sostener el cuidado integral y reducir el gasto de bolsillo. El aseguramiento universal es una condición, no una garantía automática de acceso. Los incentivos deben alinear a los equipos con resultados sanitarios y no solo con volumen de producción."
           ],
           "bullets": [
-            "Prestación o provisión: cuidados dirigidos a la persona, la familia y la comunidad.",
-            "Organización: ordena servicios, equipos y articulación territorial.",
-            "Gestión: planifica, conduce y evalúa recursos y procesos.",
-            "Financiamiento: sostiene económicamente el cuidado."
+            "Metas por resultados sanitarios y de experiencia, no solo por actividades.",
+            "Equipos suficientes y con competencias para el territorio.",
+            "Información oportuna para decidir y rendir cuentas.",
+            "Presupuesto alineado con la cartera y las brechas.",
+            "Participación social en la priorización y el control."
+          ]
+        },
+        {
+          "title": "Rol del psicólogo en el MCI",
+          "depth": "core",
+          "body": [
+            "El psicólogo aporta al cuidado integral en todas las etapas: evaluación, tamizaje, intervención breve, salud mental perinatal, crianza, adolescencia, adherencia, duelo, violencia y cuidado del cuidador. También participa en el trabajo familiar y comunitario y en la coordinación de rutas.",
+            "Su función no se limita a la psicoterapia individual. En APS contribuye a la lectura del contexto, al diseño de intervenciones comunitarias, a la capacitación del equipo y a la continuidad del cuidado. Debe distinguir tamizaje de diagnóstico y derivar cuando la complejidad excede su competencia.",
+            "Las modalidades incluyen consejería y psicoeducación individual o grupal, psicoterapia individual o familiar, intervención psicosocial y acción comunitaria. El equipo es interdisciplinario y opera con reunión de caso y plan único; la intervención grupal no es una suma de consultas individuales."
+          ],
+          "bullets": [
+            "Evaluar y tamizar sin confundir el instrumento con el diagnóstico.",
+            "Intervenir brevemente y derivar con criterio cuando corresponde.",
+            "Trabajar con la familia y los cuidadores.",
+            "Participar en el diagnóstico y la acción comunitaria.",
+            "Asegurar la contrarreferencia y el seguimiento."
           ]
         },
         {
@@ -20072,15 +21402,64 @@ window.STUDY_CONTENT = {
           "depth": "full",
           "body": [
             "Caso ficticio. En un centro de salud de Piura, una madre y su hijo adolescente son atendidos por separado. Ella consulta por anemia y él por bajo rendimiento escolar. El equipo advierte conflictos familiares, escaso ingreso y una abuela con dependencia que requiere cuidado permanente.",
-            "La primera respuesta fue sumar las dos consultas y registrar cada diagnóstico por separado. El psicólogo propone revisar el caso como unidad familiar, porque el cuidado de la abuela recae en el adolescente y explica el cansancio y el ausentismo escolar. El equipo discute si corresponde citar solo a la madre para educación alimentaria. La abuela necesita apoyo para movilizarse y la familia no ha solicitado ayuda a la comunidad."
+            "La primera respuesta fue sumar dos consultas y registrar cada diagnóstico por separado. El psicólogo propone revisar el caso como unidad familiar, porque el cuidado de la abuela recae en el adolescente y explica el cansancio y el ausentismo. La abuela necesita apoyo para movilizarse y la familia no ha solicitado ayuda a la comunidad.",
+            "El equipo acuerda un plan familiar: tratamiento de la anemia, evaluación del adolescente, apoyo al cuidador, coordinación con la escuela y visita domiciliaria. Se actualiza la ficha familiar y se programa seguimiento. La referencia al hospital se reserva para la evaluación especializada que el primer nivel no puede resolver, con contrarreferencia y responsable en origen."
           ],
           "bullets": [
             "Lectura del caso: los diagnósticos individuales no explican la relación entre el cuidado de la abuela y el ausentismo escolar.",
             "Lectura del caso: la familia es unidad de intervención cuando se acuerda un plan con sus integrantes y se hace seguimiento.",
-            "Lectura del caso: la alternativa descartada era sumar consultas y derivar a cada integrante por separado.",
-            "Lectura del caso: el error evitado fue tratar el bajo rendimiento como problema exclusivamente escolar.",
-            "Lectura del caso: corresponde acordar un plan familiar, redistribuir el cuidado y coordinar apoyos comunitarios."
+            "Alternativa descartada: sumar consultas y derivar a cada integrante por separado.",
+            "Error que se evita: tratar el bajo rendimiento como problema exclusivamente escolar.",
+            "Cierre: plan familiar, apoyos comunitarios, referencia pertinente y contrarreferencia."
           ]
+        },
+        {
+          "title": "Preguntas tipo examen",
+          "depth": "full",
+          "table": {
+            "headers": [
+              "Pregunta",
+              "Respuesta clave",
+              "Distractor típico"
+            ],
+            "rows": [
+              [
+                "¿Curso de vida es lo mismo que ciclo vital?",
+                "No. El curso de vida explica trayectorias y acumulación; el ciclo vital ordena etapas y transiciones.",
+                "“Son sinónimos”"
+              ],
+              [
+                "¿Qué es un periodo crítico?",
+                "Ventana limitada con mayor riesgo de efecto duradero.",
+                "Confundirlo con periodo sensible"
+              ],
+              [
+                "¿Cuántas etapas organiza el MCI?",
+                "Seis: prenatal, niña y niño, adolescente, joven, persona adulta y persona adulta mayor.",
+                "“Cinco etapas” o “solo infancia”"
+              ],
+              [
+                "¿Qué norma aprueba el MCI?",
+                "RM 030-2020/MINSA, 27/01/2020.",
+                "RM 464-2011/MINSA (MAIS-BFC)"
+              ],
+              [
+                "¿Cuáles son los cuatro componentes?",
+                "Provisión, organización, gestión y financiamiento.",
+                "“Promoción, prevención, curación y rehabilitación”"
+              ],
+              [
+                "¿Qué es APOC?",
+                "Atención Primaria Orientada a la Comunidad.",
+                "Confundirla con una campaña de vacunación"
+              ],
+              [
+                "¿Qué reglamento RIS está vigente?",
+                "DS 019-2024-SA.",
+                "DS 019-2020-SA, derogado"
+              ]
+            ]
+          }
         },
         {
           "title": "Errores frecuentes y distinciones",
@@ -20092,7 +21471,8 @@ window.STUDY_CONTENT = {
             "Distinción: acumulación no es cadena de riesgo, porque la primera suma exposiciones y la segunda las encadena.",
             "Error: aplicar el paquete como lista mecánica, porque se pierde la priorización por riesgo y contexto.",
             "Error: reducir el cuidado a la etapa y olvidar la transición, porque no se anticipan las necesidades del siguiente momento.",
-            "Error: referir sin contrarreferencia, porque se rompe la responsabilidad compartida y la continuidad."
+            "Error: confundir MCI con MAIS-BFC, porque el MCI reorganiza el cuidado por curso de vida, territorio y RIS.",
+            "Error: citar el DS 019-2020-SA como vigente, porque fue derogado por el DS 019-2024-SA."
           ]
         },
         {
@@ -20100,10 +21480,12 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "bullets": [
             "El curso de vida orienta la prevención, porque permite anticipar consecuencias antes de que se consoliden.",
-            "Los periodos críticos explican por qué el momento importa, porque una misma exposición tiene efectos distintos según la edad.",
+            "Los periodos críticos explican por qué el momento importa; los sensibles, por qué la recuperación es posible.",
             "La acumulación justifica el seguimiento largo, porque las desventajas se suman y reducen la reserva.",
             "La familia como unidad cambia la intervención, porque el entorno sostiene o dificulta el cuidado individual.",
-            "Los cuatro componentes se relacionan, porque un fallo en uno se expresa en los demás.",
+            "Los cuatro componentes se relacionan: un fallo en uno se expresa en los demás.",
+            "El MCI es el modelo vigente y se articula con la Ley 30885 y el DS 019-2024-SA.",
+            "La APOC y la participación comunitaria convierten el territorio en escenario de cuidado.",
             "La contrarreferencia mantiene la continuidad, porque devuelve el caso al nivel que sostiene el seguimiento."
           ]
         },
@@ -20113,15 +21495,29 @@ window.STUDY_CONTENT = {
           "callout": {
             "tone": "info",
             "title": "Trayectorias, no etapas aisladas",
-            "text": "El examen suele pedir la diferencia entre curso de vida y ciclo vital. El ciclo ordena etapas y transiciones; el curso de vida explica cómo una exposición influye en la salud posterior. El distractor típico reduce el enfoque a una lista de edades o a una sola etapa."
+            "text": "El examen suele pedir la diferencia entre curso de vida y ciclo vital. El ciclo ordena etapas y transiciones; el curso de vida explica cómo una exposición influye en la salud posterior. También confunde los cuatro componentes del MCI con los niveles de prevención. Recuerde: provisión, organización, gestión y financiamiento."
           }
         },
         {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
-            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 2020, principios, etapas y cuidados por curso de vida.",
-            "Fuente: MINSA — Manual de implementación del Modelo de Cuidado Integral, RM N.° 220-2021/MINSA, 2021, PAIFAM e intervención participativa en la unidad familiar."
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; conceptos, principios, componentes y cuidados por etapa.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; PAIFAM, equipos y gestión territorial.",
+            "Fuente: MINSA — MAIS-BFC, RM N.° 464-2011/MINSA, 14/06/2011; derogado por la RM 030-2020/MINSA.",
+            "OMS — Declaración de Alma-Ata, 12/09/1978. https://www.who.int/publications/i/item/WHO-EURO-1978-3938-43697-61471",
+            "OMS — Informe sobre la salud en el mundo 2008: la atención primaria de salud, más necesaria que nunca. https://iris.who.int/handle/10665/43949",
+            "OMS/UNICEF — Declaración de Astaná, 25-26/10/2018. https://www.who.int/publications/i/item/WHO-HIS-SDS-2018.61",
+            "MINSA — RM N.° 030-2020/MINSA, 27/01/2020, aprueba el MCI; publicada el 28/01/2020. https://www.gob.pe/institucion/minsa/normas-legales/414755-030-2020-minsa",
+            "MINSA — RM N.° 220-2021/MINSA, 12/02/2021, aprueba el Manual de Implementación del MCI; publicada el 15/02/2021. https://www.gob.pe/institucion/minsa/normas-legales/1682527-220-2021-minsa",
+            "MINSA — RM N.° 464-2011/MINSA, 14/06/2011, aprueba el MAIS-BFC; publicada el 16/06/2011. https://www.gob.pe/institucion/minsa/normas-legales/243559-464-2011-minsa",
+            "MINSA — RM N.° 729-2003-SA/DM, 20/06/2003, aprueba el MAIS. https://www.gob.pe/institucion/minsa/normas-legales/254174-729-2003-minsa",
+            "Perú — Ley N.° 30885, RIS, publicada el 19/12/2018; vigente desde el 20/12/2018. https://www.gob.pe/institucion/minsa/normas-legales/235261-30885",
+            "Perú — DS N.° 019-2024-SA, 19/10/2024, Reglamento de la Ley 30885; deroga el DS 019-2020-SA. https://www.gob.pe/institucion/minsa/normas-legales/6111817-019-2024-sa",
+            "Perú — Ley N.° 26842, Ley General de Salud, 15/07/1997; publicada el 20/07/1997. https://www.gob.pe/institucion/minsa/normas-legales/256661-26842",
+            "Perú — Ley N.° 29344, Aseguramiento Universal en Salud, 09/04/2009. https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/229356-29344",
+            "Perú — Ley N.° 30947, Ley de Salud Mental, 22/05/2019; publicada el 23/05/2019; vigente desde el 24/05/2019. https://www.gob.pe/institucion/congreso-de-la-republica/normas-legales/1423694-30947",
+            "MINSA — RM N.° 366-2017/MINSA, 19/05/2017, Lineamientos de Política de Promoción de la Salud; publicada el 20/05/2017. https://www.gob.pe/institucion/minsa/normas-legales/189603-366-2017-minsa"
           ]
         }
       ],
@@ -20132,6 +21528,55 @@ window.STUDY_CONTENT = {
             24,
             25,
             26
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            34,
+            35,
+            36,
+            37,
+            38,
+            39,
+            40,
+            41,
+            42,
+            43,
+            44,
+            45,
+            46,
+            47,
+            48,
+            49,
+            50,
+            51,
+            52,
+            53,
+            54,
+            55,
+            56,
+            57,
+            58,
+            59,
+            60,
+            61
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20,
+            21
           ]
         }
       ]
@@ -20144,7 +21589,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.3 · Gestante y prenatal",
       "minutes": 18,
       "level": "Intermedio",
-      "summary": "El periodo prenatal abarca los cuidados preconcepcionales, la gestación y la preparación para el nacimiento. El paquete incluye evaluación del riesgo, tamizajes de salud mental y violencia, consejería en lactancia, vacunación, suplementación y salud bucal. El enfoque de curso de vida explica por qué las condiciones de esta etapa condicionan trayectorias posteriores. La ficha ordena criterios, procedimiento en el primer nivel, señales de alarma y seguimiento, y distingue intervención psicosocial, psicoterapia y visita domiciliaria.",
+      "summary": "El periodo prenatal abarca los cuidados preconcepcionales, la gestación y la preparación para el nacimiento. El paquete incluye evaluación del riesgo, tamizajes de salud mental y violencia, consejería en lactancia, vacunación, suplementación y salud bucal. El enfoque de curso de vida explica por qué las condiciones de esta etapa condicionan trayectorias posteriores. La ficha ordena criterios, procedimiento en el primer nivel, señales de alarma y seguimiento, y distingue intervención psicosocial, psicoterapia y visita domiciliaria. La ficha incorpora la operativización del paquete prenatal en el primer nivel y la continuidad puerperal.",
       "keyConcepts": [
         "Periodo prenatal: cuidados preconcepcionales, gestación y preparación para el nacimiento, con salud mental perinatal y coordinación obstétrica.",
         "Curso de vida: las exposiciones prenatales influyen en las trayectorias de salud y en el riesgo acumulado de etapas posteriores.",
@@ -20152,7 +21597,8 @@ window.STUDY_CONTENT = {
         "Psicoterapia: proceso estructurado con objetivos clínicos, distinto de la visita domiciliaria, que es una modalidad de atención.",
         "Tamizaje perinatal: búsqueda sistemática de depresión, ansiedad, riesgo suicida y violencia, con respuesta segura y ruta definida.",
         "Consejería en lactancia: apoyo educativo y práctico registrado en el HIS, con criterios distintos según el momento del control.",
-        "Continuidad del cuidado: articulación entre control prenatal, visita domiciliaria, referencia obstétrica y seguimiento puerperal."
+        "Continuidad del cuidado: articulación entre control prenatal, visita domiciliaria, referencia obstétrica y seguimiento puerperal.",
+        "APS prenatal: captación temprana, plan de parto, salud mental perinatal y seguimiento puerperal."
       ],
       "sections": [
         {
@@ -20335,13 +21781,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "En APS el paquete prenatal se activa con la captación temprana de la gestante y se sostiene con controles, visitas y coordinación con obstetricia. La ficha familiar permite identificar barreras de acceso, carga de cuidado y riesgos del hogar; la gestante no es una consulta aislada.",
+            "La continuidad exige plan de parto, educación sobre signos de alarma, preparación para el puerperio y contacto después del alta. La salud mental perinatal, la violencia y el consumo se exploran sin estigma y con ruta de protección cuando corresponde."
+          ],
+          "bullets": [
+            "Captar antes de las 12 semanas y recuperar controles perdidos.",
+            "Articular control prenatal, odontología, nutrición, vacunación y salud mental.",
+            "Plan de parto y signos de alarma explicados con verificación de comprensión.",
+            "Visita o contacto puerperal y seguimiento del recién nacido.",
+            "Coordinar referencia cuando el riesgo excede la capacidad del primer nivel."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 2020, cuidados prenatales.",
-            "Fuente: MINSA — DS N.° 155-MINSA/DGIESP-2024, RM N.° 120-2024/MINSA, intervenciones psicosociales, psicoterapéuticas y visitas domiciliarias.",
             "Fuente: MINSA — Guía Técnica para la Consejería en Lactancia Materna, RM N.° 462-2015/MINSA.",
-            "Fuente: MINSA — NTS N.° 246-MINSA/DGIESP-2026, RM N.° 561-2026/MINSA, consejería en lactancia materna."
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial.",
+            "Fuente: MINSA — NTS N.° 246-MINSA/DGIESP-2026, Esquema Nacional de Vacunación, RM N.° 561-2026/MINSA; no regula la consejería en lactancia materna."
           ]
         }
       ],
@@ -20351,6 +21813,15 @@ window.STUDY_CONTENT = {
           "pages": [
             27,
             28
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            49,
+            50,
+            57,
+            61
           ]
         }
       ]
@@ -20363,7 +21834,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.4 · Niña y niño",
       "minutes": 17,
       "level": "Intermedio",
-      "summary": "La etapa de niña y niño va del nacimiento a los 11 años, 11 meses y 29 días. El cuidado vigila crecimiento, desarrollo, apego, crianza, nutrición, inmunizaciones, violencia y señales del neurodesarrollo. El M-CHAT-R/F estima probabilidad de autismo y ordena la conducta siguiente, pero no confirma diagnóstico ni descarta otras condiciones. La ficha desarrolla el paquete por componentes, la lectura del puntaje, el procedimiento en el primer nivel y la derivación oportuna.",
+      "summary": "La etapa de niña y niño va del nacimiento a los 11 años, 11 meses y 29 días. El cuidado vigila crecimiento, desarrollo, apego, crianza, nutrición, inmunizaciones, violencia y señales del neurodesarrollo. El M-CHAT-R/F estima probabilidad de autismo y ordena la conducta siguiente, pero no confirma diagnóstico ni descarta otras condiciones. La ficha desarrolla el paquete por componentes, la lectura del puntaje, el procedimiento en el primer nivel y la derivación oportuna. La ficha conecta el paquete del niño con el CRED, la familia y la continuidad en APS.",
       "keyConcepts": [
         "Niña y niño: etapa de 0 a 11 años, 11 meses y 29 días, con vigilancia de crecimiento, desarrollo y crianza.",
         "M-CHAT-R/F: tamizaje de probabilidad de autismo en la primera infancia, no diagnóstico ni prueba de TDAH.",
@@ -20371,7 +21842,8 @@ window.STUDY_CONTENT = {
         "Derivación: explicación de hallazgos y coordinación de evaluación e intervenciones según necesidades, sin esperar una etiqueta.",
         "Vigilancia del desarrollo: seguimiento longitudinal que continúa aunque el tamizaje haya resultado negativo.",
         "Periodo sensible: momento del desarrollo en que la estimulación y la detección temprana modifican el curso.",
-        "Riesgo acumulado: varias adversidades simultáneas pesan más que una sola y reducen la reserva del niño."
+        "Riesgo acumulado: varias adversidades simultáneas pesan más que una sola y reducen la reserva del niño.",
+        "APS del niño: CRED, desarrollo, vacunas, nutrición y protección familiar."
       ],
       "sections": [
         {
@@ -20572,12 +22044,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "El paquete del niño se organiza alrededor del CRED, la vacunación, la nutrición, el desarrollo infantil y la protección. En APS el contacto frecuente permite detectar señales de riesgo antes de que se conviertan en daño y acompañar a la familia en la crianza.",
+            "La continuidad requiere registrar hitos, verificar asistencia, coordinar con la escuela y derivar cuando hay retraso del desarrollo, violencia, desnutrición o signos de alarma. La familia y los cuidadores son parte del plan, no espectadores."
+          ],
+          "bullets": [
+            "CRED con evaluación del desarrollo y del entorno familiar.",
+            "Vacunación y recuperación de esquemas incompletos.",
+            "Tamizaje de anemia, violencia y dificultades de desarrollo.",
+            "Coordinación con escuela y otros sectores cuando corresponde.",
+            "Referencia con información suficiente y contrarreferencia."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: Robins, Fein y Barton — M-CHAT-R/F, actualización terminológica de marzo de 2025, algoritmo, edades y derivación por preocupación clínica.",
             "Fuente: Autores M-CHAT — Algoritmo oficial de puntuación del M-CHAT-R/F.",
-            "Fuente: OMS — Guía mhGAP, tercera edición, 2023, tamizaje y evaluación del desarrollo infantil."
+            "Fuente: OMS — Guía mhGAP, tercera edición, 2023, tamizaje y evaluación del desarrollo infantil.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial."
           ]
         }
       ],
@@ -20587,6 +22076,15 @@ window.STUDY_CONTENT = {
           "pages": [
             29,
             30
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            50,
+            51,
+            57,
+            61
           ]
         }
       ]
@@ -20599,7 +22097,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.5 · Adolescente",
       "minutes": 17,
       "level": "Intermedio",
-      "summary": "La adolescencia abarca de 12 a 17 años, 11 meses y 29 días y exige una atención confidencial, amigable, no estigmatizante y sensible a la autonomía progresiva. El cuidado empieza por el motivo de consulta y las urgencias, continúa con un paquete integral adaptado y puede iniciarse en la escuela con condiciones de privacidad. La ficha ordena el procedimiento, la coordinación con docentes y familias y los límites de la confidencialidad.",
+      "summary": "La adolescencia abarca de 12 a 17 años, 11 meses y 29 días y exige una atención confidencial, amigable, no estigmatizante y sensible a la autonomía progresiva. El cuidado empieza por el motivo de consulta y las urgencias, continúa con un paquete integral adaptado y puede iniciarse en la escuela con condiciones de privacidad. La ficha ordena el procedimiento, la coordinación con docentes y familias y los límites de la confidencialidad. La ficha aplica el paquete adolescente a la puerta de entrada y a la coordinación escolar.",
       "keyConcepts": [
         "Adolescencia: etapa de 12 a 17 años, 11 meses y 29 días, con cambios físicos, cognitivos y sociales acelerados.",
         "Autonomía progresiva: capacidad creciente de decisión, reconocida con acompañamiento adulto y marco legal.",
@@ -20607,7 +22105,8 @@ window.STUDY_CONTENT = {
         "TOECE: plan de tutoría, orientación educativa y convivencia escolar que organiza el trabajo en la institución educativa.",
         "Convivencia escolar: mecanismos para diagnosticar, prevenir, evitar, sancionar y erradicar el acoso entre estudiantes.",
         "Riesgo acumulado: consumo, violencia, deserción y conflicto familiar que se suman y reducen la demanda de ayuda.",
-        "Paquete integral: conjunto de prestaciones ajustado a necesidades y pendientes, sin imponer todas en una visita."
+        "Paquete integral: conjunto de prestaciones ajustado a necesidades y pendientes, sin imponer todas en una visita.",
+        "APS adolescente: confidencialidad, participación y tamizaje de riesgos."
       ],
       "sections": [
         {
@@ -20789,13 +22288,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "La APS atiende al adolescente con confidencialidad, respeto a la autonomía progresiva y participación activa. El espacio a solas, la explicación de límites y la ausencia de juicio son condiciones para que revele riesgos de salud mental, violencia, consumo o sexualidad.",
+            "La escuela y la comunidad son escenarios clave. El plan debe incluir consejería, tamizajes pertinentes, coordinación con la institución educativa y referencia cuando hay riesgo. La continuidad se verifica con contacto y no solo con una cita entregada."
+          ],
+          "bullets": [
+            "Confidencialidad explicada con límites y excepciones.",
+            "Tamizaje de salud mental, violencia, consumo y conducta suicida.",
+            "Consejería y participación del adolescente en el plan.",
+            "Coordinación con escuela y familia según el caso.",
+            "Referencia y seguimiento con contacto verificable."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 157-MINSA/2019/DGIESP, RM N.° 1001-2019/MINSA, atención integral del adolescente.",
             "Fuente: Perú — Ley N.° 29719, publicada el 25-06-2011, artículos 1 a 3, convivencia sin violencia en instituciones educativas.",
             "Fuente: MINSA — DA N.° 377-MINSA/DIGEP-2025, RM N.° 378-2025/MINSA, funciones de los psicólogos SERUMS en instituciones educativas.",
-            "Fuente: MINSA — NTS N.° 201-MINSA/DGIESP-2023, RM N.° 356-2023/MINSA, estándares de atención integral de adolescentes."
+            "Fuente: MINSA — NTS N.° 201-MINSA/DGIESP-2023, RM N.° 356-2023/MINSA, estándares de atención integral de adolescentes.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial."
           ]
         }
       ],
@@ -20804,6 +22320,14 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             31
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            52,
+            57,
+            61
           ]
         }
       ]
@@ -20816,7 +22340,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.6 · Joven",
       "minutes": 16,
       "level": "Base",
-      "summary": "La etapa joven comprende de 18 a 29 años, 11 meses y 29 días y se caracteriza por la construcción de autonomía, vínculos, estudios o trabajo y la transición a los servicios de adultos. El cuidado integral no se limita a tratar enfermedades: promueve habilidades para decidir, detecta trastornos frecuentes y riesgo suicida, y anticipa necesidades preventivas como vacunación, salud sexual y factores cardiometabólicos.",
+      "summary": "La etapa joven comprende de 18 a 29 años, 11 meses y 29 días y se caracteriza por la construcción de autonomía, vínculos, estudios o trabajo y la transición a los servicios de adultos. El cuidado integral no se limita a tratar enfermedades: promueve habilidades para decidir, detecta trastornos frecuentes y riesgo suicida, y anticipa necesidades preventivas como vacunación, salud sexual y factores cardiometabólicos. La ficha adapta el paquete joven a la accesibilidad y la autonomía en APS.",
       "keyConcepts": [
         "Etapa joven: periodo de 18 a 29 años, 11 meses y 29 días, con autonomía emergente y roles adultos en construcción.",
         "Autonomía: capacidad de tomar decisiones y sostenerlas, con apoyos y responsabilidades propias de la vida adulta.",
@@ -20824,7 +22348,8 @@ window.STUDY_CONTENT = {
         "Riesgo suicida: probabilidad de conducta suicida que debe explorarse ante síntomas emocionales o factores de riesgo.",
         "Cuidado preventivo: promoción, tamizaje y consejería que se ofrecen aun cuando la persona no tenga una enfermedad.",
         "Adultez emergente: periodo de exploración e inestabilidad de roles que media entre la adolescencia y la vida adulta.",
-        "Determinantes sociales: empleo, vivienda, migración y redes que condicionan el acceso y la continuidad del cuidado."
+        "Determinantes sociales: empleo, vivienda, migración y redes que condicionan el acceso y la continuidad del cuidado.",
+        "APS joven: autonomía, accesibilidad y prevención de riesgos."
       ],
       "sections": [
         {
@@ -20998,12 +22523,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "La etapa joven se atiende desde la autonomía y la prevención, no desde la tutela. El primer nivel compite con horarios laborales, estudios y distancia; por eso la accesibilidad y la teleorientación pertinente importan.",
+            "El plan incluye consejería, salud mental, ITS/VIH, anticoncepción, violencia y adherencia. La continuidad se sostiene con contacto, recordatorios y coordinación con servicios de mayor complejidad cuando se requiere."
+          ],
+          "bullets": [
+            "Horarios y canales accesibles para estudio y trabajo.",
+            "Consejería y tamizajes según riesgo.",
+            "Salud mental, consumo, ITS/VIH y violencia.",
+            "Teleorientación con consentimiento y privacidad.",
+            "Referencia y seguimiento sin perder el vínculo."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA.",
             "Fuente: MINSA — Guía de práctica clínica para tamizaje, diagnóstico y tratamiento de la depresión en mayores de 18 años, RM N.° 136-2023/MINSA.",
-            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19."
+            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial."
           ]
         }
       ],
@@ -21012,6 +22554,15 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             32
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            52,
+            53,
+            57,
+            61
           ]
         }
       ]
@@ -21024,7 +22575,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.7 · Persona adulta",
       "minutes": 15,
       "level": "Intermedio",
-      "summary": "La persona adulta comprende de 30 a 59 años, 11 meses y 29 días. El cuidado integral integra las dimensiones física, mental y social, revisa lo que quedó pendiente y acuerda un plan con fechas y responsables. La norma técnica vigente organiza las prestaciones según necesidades y riesgos, sin aplicar el mismo paquete a todas las personas. La ficha desarrolla el procedimiento, la adherencia, el seguimiento de comorbilidades y las barreras de acceso.",
+      "summary": "La persona adulta comprende de 30 a 59 años, 11 meses y 29 días. El cuidado integral integra las dimensiones física, mental y social, revisa lo que quedó pendiente y acuerda un plan con fechas y responsables. La norma técnica vigente organiza las prestaciones según necesidades y riesgos, sin aplicar el mismo paquete a todas las personas. La ficha desarrolla el procedimiento, la adherencia, el seguimiento de comorbilidades y las barreras de acceso. La ficha aplica el paquete adulto al control de riesgos y a la continuidad en APS.",
       "keyConcepts": [
         "Persona adulta: etapa de 30 a 59 años, 11 meses y 29 días, con riesgo acumulado y enfermedades crónicas frecuentes.",
         "Cuidado integral: enfoque que articula las dimensiones física, mental y social de la persona y su contexto.",
@@ -21032,7 +22583,8 @@ window.STUDY_CONTENT = {
         "Plan acordado: conjunto de acciones con fechas y responsables, construido con la persona y ajustado a su realidad.",
         "Prevención: revisión de inmunizaciones y prestaciones pertinentes al riesgo y al momento del curso de vida.",
         "Comorbilidad: coexistencia de dos o más condiciones que exige seguimiento coordinado y uso seguro de medicamentos.",
-        "Adherencia: comportamiento sostenido por la comprensión, el soporte y las barreras, no un rasgo de carácter."
+        "Adherencia: comportamiento sostenido por la comprensión, el soporte y las barreras, no un rasgo de carácter.",
+        "APS adulta: tamizaje de NCD, salud mental y adherencia."
       ],
       "sections": [
         {
@@ -21206,12 +22758,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "En la persona adulta, la APS concentra el tamizaje y control de enfermedades no transmisibles, la salud mental, la adherencia y la articulación con el trabajo. La consulta por un síntoma es una oportunidad para revisar lo pendiente.",
+            "El plan debe considerar horarios, carga laboral, cuidado de dependientes y acceso a medicamentos. La continuidad se mide por controles efectivos y no solo por recetas entregadas."
+          ],
+          "bullets": [
+            "Tamizaje y control de hipertensión, diabetes y otros riesgos.",
+            "Salud mental, consumo y adherencia.",
+            "Consejería breve y metas realistas.",
+            "Coordinación con trabajo, familia y comunidad.",
+            "Referencia cuando hay complicación o riesgo."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 229-MINSA/DGIESP-2025, cuidado integral de la persona adulta, RM N.° 310-2025-MINSA.",
             "Fuente: MINSA — Guía de práctica clínica para tamizaje, diagnóstico y tratamiento de la depresión en mayores de 18 años, RM N.° 136-2023/MINSA.",
-            "Fuente: OMS — Enfermedades no transmisibles: factores conductuales, ambientales y metabólicos."
+            "Fuente: OMS — Enfermedades no transmisibles: factores conductuales, ambientales y metabólicos.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial."
           ]
         }
       ],
@@ -21220,6 +22789,14 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             33
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            53,
+            57,
+            61
           ]
         }
       ]
@@ -21232,7 +22809,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · CI 2.8 · Persona adulta mayor",
       "minutes": 20,
       "level": "Intermedio",
-      "summary": "La persona adulta mayor comprende desde los 60 años y se valora por su funcionalidad, cognición, ánimo, fragilidad, caídas, soporte y polifarmacia antes que por sus diagnósticos. El delirium, el deterioro cognitivo y la depresión pueden coexistir y exigen decisiones distintas. El cuidado sostiene la autonomía, evalúa la capacidad para cada decisión concreta, previene el maltrato y acompaña a quien cuida.",
+      "summary": "La persona adulta mayor comprende desde los 60 años y se valora por su funcionalidad, cognición, ánimo, fragilidad, caídas, soporte y polifarmacia antes que por sus diagnósticos. El delirium, el deterioro cognitivo y la depresión pueden coexistir y exigen decisiones distintas. El cuidado sostiene la autonomía, evalúa la capacidad para cada decisión concreta, previene el maltrato y acompaña a quien cuida. La ficha aplica el paquete del adulto mayor a la valoración funcional y la continuidad en APS.",
       "keyConcepts": [
         "La persona adulta mayor comprende desde los 60 años y su atención se organiza por función y riesgo.",
         "La funcionalidad en actividades básicas e instrumentales orienta los apoyos y detecta pérdida de autonomía.",
@@ -21241,7 +22818,8 @@ window.STUDY_CONTENT = {
         "La polifarmacia relevante es la que suma riesgo de confusión, caída y fractura, no solo la que suma número.",
         "La capacidad se evalúa para una decisión concreta y no se presume por la edad ni por un diagnóstico.",
         "El maltrato y la sobrecarga del cuidador son riesgos de salud que requieren detección y ruta de protección.",
-        "La vacunación de la persona mayor incluye influenza anual y neumococo según el esquema vigente."
+        "La vacunación de la persona mayor incluye influenza anual y neumococo según el esquema vigente.",
+        "APS adulto mayor: funcionalidad, caídas, polifarmacia y apoyo al cuidador."
       ],
       "sections": [
         {
@@ -21411,12 +22989,28 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Aplicación en APS y continuidad",
+          "depth": "core",
+          "body": [
+            "La persona adulta mayor se cuida desde la funcionalidad, la autonomía y el entorno. La visita domiciliaria, la valoración de caídas, la polifarmacia y el soporte familiar permiten anticipar crisis y evitar hospitalizaciones evitables.",
+            "El plan debe incluir cuidadores, accesibilidad de la vivienda, controles y coordinación con la red. La continuidad es especialmente importante después de una caída, una hospitalización o un cambio de medicación."
+          ],
+          "bullets": [
+            "Valoración integral y funcional, no solo por diagnósticos.",
+            "Revisión de caídas, polifarmacia y entorno.",
+            "Apoyo al cuidador y detección de sobrecarga.",
+            "Coordinación con familia, comunidad y especialidad.",
+            "Seguimiento después de alta o cambio de tratamiento."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA.",
-            "Fuente: MINSA — DS N.° 155-MINSA/DGIESP-2024, RM N.° 120-2024/MINSA, intervenciones psicosociales y visitas domiciliarias.",
-            "Fuente: MINSA — Guía de práctica clínica para tamizaje, diagnóstico y tratamiento de la depresión en mayores de 18 años, RM N.° 136-2023/MINSA."
+            "Fuente: MINSA — Guía de práctica clínica para tamizaje, diagnóstico y tratamiento de la depresión en mayores de 18 años, RM N.° 136-2023/MINSA.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; cuidados por curso de vida.",
+            "Fuente: MINSA — Manual de Implementación del MCI, RM N.° 220-2021/MINSA, 12/02/2021; equipos, PAIFAM y gestión territorial."
           ]
         }
       ],
@@ -21425,6 +23019,14 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             34
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            54,
+            57,
+            61
           ]
         }
       ]
@@ -21620,8 +23222,7 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 207-MINSA/DGIESP-2023, valoración clínica del adulto mayor, RM N.° 789-2023/MINSA.",
-            "Fuente: MINSA — RM N.° 948-2023/MINSA, modificatoria de la NTS N.° 207-MINSA/DGIESP-2023.",
-            "Fuente: MINSA — DS N.° 155-MINSA/DGIESP-2024, RM N.° 120-2024/MINSA, intervenciones psicosociales y visitas domiciliarias."
+            "Fuente: MINSA — RM N.° 948-2023/MINSA, modificatoria de la NTS N.° 207-MINSA/DGIESP-2023."
           ]
         }
       ],
@@ -22072,7 +23673,6 @@ window.STUDY_CONTENT = {
           "bullets": [
             "Fuente: MINSA — NTS N.° 221-MINSA/DGIESP, prevención y control de la tuberculosis.",
             "Fuente: MINSA — Prevención y control de la tuberculosis, numeral 5.2.37, sintomático respiratorio y búsqueda activa.",
-            "Fuente: MINSA — DS N.° 155-MINSA/DGIESP-2024, RM N.° 120-2024/MINSA, intervenciones psicosociales y visitas domiciliarias.",
             "Fuente: NIH — Adherence to the Continuum of Care, evaluación de barreras y apoyo colaborativo, actualización 2024."
           ]
         }
@@ -22372,11 +23972,11 @@ window.STUDY_CONTENT = {
       "id": "sheet-psi-ci-2-12",
       "topicId": "topic-psi-ci-2",
       "areaId": "area-psi-cuidado-integral",
-      "title": "Anemia",
-      "kicker": "Psicología · CI 2.12 · Anemia",
+      "title": "Anemia y otros problemas de malnutrición",
+      "kicker": "Psicología · CI 2.12 · Anemia y malnutrición",
       "minutes": 19,
       "level": "Base",
-      "summary": "La anemia se aborda como un problema de salud pública con determinantes sociales, no como un hallazgo aislado de laboratorio. La sospecha clínica es inespecífica y la confirmación requiere hemoglobina interpretada según edad, sexo, estado fisiológico y altitud. El tamizaje, la suplementación, la consejería alimentaria y el seguimiento sostienen la continuidad; la causa debe investigarse antes de atribuir todo a deficiencia de hierro.",
+      "summary": "La anemia se aborda como un problema de salud pública con determinantes sociales, no como un hallazgo aislado de laboratorio. La sospecha clínica es inespecífica y la confirmación requiere hemoglobina interpretada según edad, sexo, estado fisiológico y altitud. El tamizaje, la suplementación, la consejería alimentaria y el seguimiento sostienen la continuidad; la causa debe investigarse antes de atribuir todo a deficiencia de hierro. La ficha amplía el alcance a desnutrición, sobrepeso, obesidad, micronutrientes y doble carga, y corrige la norma de anemia.",
       "keyConcepts": [
         "La anemia es un problema de salud pública con determinantes sociales, alimentarios y sanitarios que condicionan su aparición y su curso.",
         "La sospecha clínica es inespecífica: fatiga, palidez o mareo orientan, pero no confirman el diagnóstico.",
@@ -22385,7 +23985,8 @@ window.STUDY_CONTENT = {
         "El tamizaje identifica riesgo en poblaciones definidas; el diagnóstico explica el caso individual y su causa.",
         "La suplementación y la consejería alimentaria se sostienen con seguimiento de tolerancia y adherencia.",
         "La consejería alimentaria combina hierro absorbible, facilitadores de la absorción y horarios que evitan interferencias.",
-        "El acompañamiento explora barreras concretas antes de repetir indicaciones o atribuir el abandono al desinterés."
+        "El acompañamiento explora barreras concretas antes de repetir indicaciones o atribuir el abandono al desinterés.",
+        "Malnutrición no es solo anemia: incluye desnutrición, deficiencias, sobrepeso, obesidad y doble carga."
       ],
       "sections": [
         {
@@ -22569,12 +24170,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Otros problemas de malnutrición",
+          "depth": "full",
+          "body": [
+            "El ítem no se limita a anemia. Incluye desnutrición crónica y aguda, deficiencia de micronutrientes, sobrepeso y obesidad, y la doble carga que puede coexistir en una misma familia o comunidad. La anemia es una entrada, no todo el problema.",
+            "La valoración integra antropometría, hemoglobina contextualizada, historia alimentaria, seguridad alimentaria, infecciones, pérdidas y acceso a servicios. La consejería parte de lo que la familia come y puede cambiar; no se limita a entregar una lista de alimentos o un suplemento.",
+            "El psicólogo aporta adherencia, organización de rutinas, apoyo al cuidador y detección de barreras. La derivación a nutrición, pediatría o medicina se decide por riesgo y hallazgos, no por el diagnóstico aislado. La continuidad incluye control de tolerancia, crecimiento y causas."
+          ],
+          "bullets": [
+            "Desnutrición crónica: talla baja para edad; requiere evaluación longitudinal y determinantes.",
+            "Desnutrición aguda: pérdida de peso o peso bajo para talla; puede ser una urgencia.",
+            "Sobrepeso y obesidad: exceso de adiposidad con riesgo cardiometabólico; no es solo “estética”.",
+            "Deficiencia de micronutrientes: hierro, vitamina A, zinc, yodo; puede coexistir con obesidad.",
+            "Doble carga: desnutrición y obesidad en la misma familia o comunidad.",
+            "Consejería: patrón real de comidas, accesibilidad, cultura, tiempo del cuidador y barreras económicas."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: OMS — Anaemia, reconocimiento, confirmación y continuidad del cuidado.",
-            "Fuente: MINSA — NTS N.° 159-MINSA/2019/DGIESP, RM N.° 1138-2019/MINSA, tamizaje materno.",
-            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA."
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA.",
+            "Fuente: MINSA — NTS N.° 213-MINSA/DGIESP-2024, prevención y control de la anemia por deficiencia de hierro, RM N.° 251-2024/MINSA, 10/04/2024; modificada por RM N.° 429-2024/MINSA.",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA; alimentación y nutrición por curso de vida."
           ]
         }
       ],
@@ -22583,6 +24202,15 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ci",
           "pages": [
             47
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            50,
+            51,
+            53,
+            54
           ]
         }
       ]
@@ -23588,7 +25216,6 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Guía técnica de continuidad de cuidados, RM 663-2023/MINSA, definición de continuidad y componentes clínico, psicosocial y de gestión.",
-            "Fuente: MINSA — DS 155-MINSA/DGIESP-2024, RM 120-2024/MINSA, intervenciones psicosociales y psicoterapéuticas y visitas domiciliarias, §6.5.3.c.",
             "Fuente: MINSA — NTS 157-MINSA/2019/DGIESP, RM 1001-2019/MINSA, atención y consejería."
           ]
         }
@@ -24990,11 +26617,26 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Consentimiento intercultural",
+          "depth": "core",
+          "body": [
+            "El consentimiento intercultural exige explicar en lengua comprensible, comprobar la comprensión con las palabras de la persona, usar intérprete competente y registrar el proceso. La firma no acredita comprensión; tampoco la autorización de la familia sustituye la decisión de la persona capaz.",
+            "Cuando hay barreras lingüísticas o culturales, el equipo debe adaptar el formato, dar tiempo, permitir preguntas y evitar tecnicismos. La pertinencia cultural no reduce el estándar de consentimiento: lo hace efectivo."
+          ],
+          "bullets": [
+            "Explicar finalidad, beneficios, riesgos y alternativas.",
+            "Verificar comprensión con preguntas abiertas.",
+            "Usar intérprete competente y confidencial.",
+            "Registrar el proceso y la decisión.",
+            "Respetar la autonomía y los apoyos."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Directiva Administrativa N.° 261-MINSA/2019/DGIESP, RM N.° 228-2019/MINSA, adecuación cultural de los servicios de salud.",
-            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención con pertinencia intercultural.",
+            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención del parto vertical con pertinencia intercultural.",
             "Fuente: Ministerio de Cultura — Enfoque intercultural, definiciones y derechos culturales."
           ]
         }
@@ -25193,7 +26835,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · ET 2.3 · Pertinencia cultural",
       "minutes": 19,
       "level": "Intermedio",
-      "summary": "La atención culturalmente pertinente adapta la organización, la comunicación y el cuidado a los valores y prácticas del territorio sin reducir la calidad. La directiva de adecuación cultural organiza la evaluación del primer nivel en cuatro dimensiones: gestión para la calidad, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y participación ciudadana. Traducir un folleto es insuficiente, porque también deben revisarse la organización, la relación con los saberes locales y la participación de la comunidad. La pertinencia cultural es parte de la calidad y se evalúa con la aceptabilidad.",
+      "summary": "La atención culturalmente pertinente adapta la organización, la comunicación y el cuidado a los valores y prácticas del territorio sin reducir la calidad. La directiva de adecuación cultural organiza la evaluación del primer nivel en cuatro dimensiones: gestión para la calidad, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y participación ciudadana. Traducir un folleto es insuficiente, porque también deben revisarse la organización, la relación con los saberes locales y la participación de la comunidad. La pertinencia cultural es parte de la calidad y se evalúa con la aceptabilidad. La ficha precisa el alcance de la DA 261 y evita usar la NTS 121 como norma general.",
       "keyConcepts": [
         "Pertinencia cultural: adaptar la forma de prestar el cuidado sin reducir seguridad, información ni derechos.",
         "Gestión para la calidad: organización, horarios y condiciones de atención que hacen posible el acceso.",
@@ -25201,7 +26843,8 @@ window.STUDY_CONTENT = {
         "Recursos humanos interculturales: competencias para comunicar y atender sin discriminación.",
         "Participación ciudadana: intervención de la comunidad en la adecuación y mejora del servicio.",
         "Aceptabilidad cultural: criterio de evaluación de la calidad, junto con los resultados clínicos.",
-        "Adecuación cultural: proceso organizacional sostenido, distinto de una actividad aislada de traducción."
+        "Adecuación cultural: proceso organizacional sostenido, distinto de una actividad aislada de traducción.",
+        "DA 261-MINSA/2019/DGIESP: adecuación cultural en el primer nivel; NTS 121 regula parto vertical."
       ],
       "sections": [
         {
@@ -25334,11 +26977,26 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Pertinencia cultural en APS",
+          "depth": "core",
+          "body": [
+            "La pertinencia cultural en APS exige adaptar la organización, la comunicación y el cuidado a los valores, lenguas y prácticas del territorio, sin reducir seguridad, información ni derechos. No es folclorizar la atención ni aceptar cualquier práctica sin evaluación.",
+            "La adecuación cultural se evalúa en cuatro dimensiones: gestión para la calidad de la atención, revaloración del sistema de salud tradicional, recursos humanos que promueven la salud intercultural y participación ciudadana. La DA 261-MINSA/2019/DGIESP orienta la adecuación en el primer nivel; la NTS 121 se reserva para el parto vertical y no debe citarse como norma general de interculturalidad."
+          ],
+          "bullets": [
+            "Explorar lengua, creencias y expectativas antes de explicar.",
+            "Negociar acuerdos y verificar comprensión.",
+            "Adaptar horarios, espacios y materiales.",
+            "Respetar derechos y seguridad; no romantizar prácticas dañinas.",
+            "Evaluar aceptabilidad y acceso con la comunidad."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Directiva Administrativa N.° 261-MINSA/2019/DGIESP, RM N.° 228-2019/MINSA, dimensiones de la adecuación cultural.",
-            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención con pertinencia intercultural.",
+            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención del parto vertical con pertinencia intercultural.",
             "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19."
           ]
         }
@@ -25348,6 +27006,20 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-et",
           "pages": [
             18
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            10,
+            11
           ]
         }
       ]
@@ -25360,7 +27032,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · ET 2.4 · Parto vertical",
       "minutes": 19,
       "level": "Base",
-      "summary": "El parto vertical es una opción de atención que respeta la posición elegida, las condiciones de seguridad y la pertinencia cultural. La norma de 2005 impulsó la adecuación para mejorar el acceso de poblaciones altoandinas y amazónicas y constituye un antecedente histórico. La norma técnica vigente, aprobada en 2016, reemplazó ese marco y regula la atención del parto vertical para gestantes de ámbitos urbanos, urbano-marginales y rurales, sin limitarse a una etnia o región. La posición elegida exige información, respeto de la decisión, personal preparado y seguridad clínica.",
+      "summary": "El parto vertical es una opción de atención que respeta la posición elegida, las condiciones de seguridad y la pertinencia cultural. La norma de 2005 impulsó la adecuación para mejorar el acceso de poblaciones altoandinas y amazónicas y constituye un antecedente histórico. La norma técnica vigente, aprobada en 2016, reemplazó ese marco y regula la atención del parto vertical para gestantes de ámbitos urbanos, urbano-marginales y rurales, sin limitarse a una etnia o región. La posición elegida exige información, respeto de la decisión, personal preparado y seguridad clínica. La ficha incorpora el rol psicológico en la preparación, el acompañamiento y la decisión.",
       "keyConcepts": [
         "Parto vertical: opción de atención que respeta la posición elegida dentro de condiciones de seguridad.",
         "Antecedente de 2005: norma que impulsó la adecuación para poblaciones altoandinas y amazónicas y quedó sin efecto.",
@@ -25368,7 +27040,8 @@ window.STUDY_CONTENT = {
         "Ámbito de aplicación: gestantes urbanas, urbano-marginales y rurales, sin restricción a una etnia o región.",
         "Condiciones de seguridad: personal preparado, capacidad de respuesta y vigilancia del trabajo de parto.",
         "Decisión informada: la posición se elige después de conocer beneficios, riesgos y alternativas.",
-        "Acompañamiento: persona de confianza y trato digno como componentes de la atención y no como concesión."
+        "Acompañamiento: persona de confianza y trato digno como componentes de la atención y no como concesión.",
+        "Parto vertical: el psicólogo acompaña la decisión y el miedo; no sustituye la evaluación obstétrica."
       ],
       "sections": [
         {
@@ -25496,12 +27169,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Rol del psicólogo en el parto vertical",
+          "depth": "core",
+          "body": [
+            "El psicólogo no atiende el parto, pero puede acompañar la decisión y la experiencia. Su aporte incluye contención del miedo y del dolor, apoyo para expresar preferencias, preparación para la posición elegida y coordinación con obstetricia.",
+            "La acompañante y la familia también necesitan información y límites claros. El rol psicológico no sustituye la evaluación obstétrica ni la decisión clínica; ayuda a que la persona comprenda, participe y conserve el control posible en un momento de alta vulnerabilidad."
+          ],
+          "bullets": [
+            "Explorar miedo, dolor, expectativas y experiencias previas.",
+            "Explicar opciones, límites y signos de alarma sin prometer resultados.",
+            "Apoyar la comunicación con obstetricia y la persona acompañante.",
+            "Respetar la decisión informada y la seguridad clínica.",
+            "Registrar el acompañamiento y las coordinaciones."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención del parto vertical con pertinencia intercultural.",
             "Fuente: MINSA — RM N.° 598-2005/MINSA, adecuación del parto vertical, norma dejada sin efecto.",
-            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19."
+            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19.",
+            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, atención del parto vertical con pertinencia intercultural, RM N.° 518-2016/MINSA.",
+            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19, trato digno e intimidad."
           ]
         }
       ],
@@ -25522,7 +27212,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · ET 2.5 · Medicina tradicional",
       "minutes": 17,
       "level": "Base",
-      "summary": "El uso de medicina tradicional y complementaria debe explorarse sin ridiculizarlo, valorando beneficios y riesgos y previniendo interacciones o retrasos peligrosos. Conviene preguntar qué usa la persona, para qué, quién lo indicó y qué efectos observa. La práctica complementaria acompaña al tratamiento necesario, mientras que la sustitución lo reemplaza y puede comprometer la seguridad. Una pregunta respetuosa sobre prácticas tradicionales mejora la seguridad clínica y permite acordar seguimiento y señales de alarma.",
+      "summary": "El uso de medicina tradicional y complementaria debe explorarse sin ridiculizarlo, valorando beneficios y riesgos y previniendo interacciones o retrasos peligrosos. Conviene preguntar qué usa la persona, para qué, quién lo indicó y qué efectos observa. La práctica complementaria acompaña al tratamiento necesario, mientras que la sustitución lo reemplaza y puede comprometer la seguridad. Una pregunta respetuosa sobre prácticas tradicionales mejora la seguridad clínica y permite acordar seguimiento y señales de alarma. La ficha distingue complementaria de alternativa y desarrolla regulación, interacciones y rol psicológico.",
       "keyConcepts": [
         "Medicina tradicional: conjunto de saberes y prácticas de atención propios de una cultura, transmitidos en su contexto.",
         "Uso complementario: la práctica se emplea junto al tratamiento convencional y no lo reemplaza.",
@@ -25530,7 +27220,8 @@ window.STUDY_CONTENT = {
         "Interacción: efecto modificado de un tratamiento por el uso simultáneo de otra preparación o práctica.",
         "Retraso peligroso: postergación de una atención eficaz por confiar en una práctica sin sustento.",
         "Exploración respetuosa: preguntar sin ridiculizar ni juzgar, con preguntas concretas sobre uso y efectos.",
-        "Plan de seguridad: acuerdo de seguimiento con señales de alarma y coordinación con el equipo tratante."
+        "Plan de seguridad: acuerdo de seguimiento con señales de alarma y coordinación con el equipo tratante.",
+        "Complementaria no es alternativa: una acompaña el tratamiento; la otra pretende sustituirlo."
       ],
       "sections": [
         {
@@ -25663,12 +27354,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Alternativa, regulación e interacciones",
+          "depth": "full",
+          "body": [
+            "La medicina tradicional, complementaria y alternativa no es un bloque único. La complementaria acompaña al tratamiento convencional; la alternativa pretende reemplazarlo. La diferencia es decisiva: sustituir un tratamiento eficaz puede retrasar la atención y producir daño.",
+            "El marco peruano reconoce el sistema de salud tradicional y la adecuación intercultural, pero no autoriza cualquier práctica ni exime de seguridad. Las interacciones con psicofármacos, anticoagulantes, antirretrovirales o fármacos para tuberculosis son posibles; la pregunta debe ser específica y el registro, explícito.",
+            "El psicólogo explora sin ridiculizar, identifica riesgos, acuerda un plan complementario y deriva cuando hay señales de alarma. No confunde respeto cultural con ausencia de evaluación."
+          ],
+          "bullets": [
+            "Complementaria: acompaña; alternativa: pretende reemplazar.",
+            "Preguntar producto, dosis, frecuencia, quién lo indicó y efectos.",
+            "Explorar interacciones y contraindicaciones.",
+            "No suspender un tratamiento eficaz sin evaluación.",
+            "Registrar la práctica y acordar seguimiento.",
+            "Derivar ante señales de alarma o empeoramiento."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Directiva Administrativa N.° 261-MINSA/2019/DGIESP, RM N.° 228-2019/MINSA, revaloración del sistema de salud tradicional.",
-            "Fuente: MINSA — NTS N.° 121-MINSA/DGIESP-V.01, RM N.° 518-2016/MINSA, atención con pertinencia intercultural.",
-            "Fuente: Colegio de Psicólogos del Perú — Código de Ética, Resolución de Decanato N.° 801-2024-CDN-C.PS.P, 2024."
+            "Fuente: Colegio de Psicólogos del Perú — Código de Ética, Resolución de Decanato N.° 801-2024-CDN-C.PS.P, 2024.",
+            "Fuente: OMS — Estrategia de la OMS sobre medicina tradicional 2014-2023.",
+            "Fuente: MINSA — DA N.° 261-MINSA/2019/DGIESP, RM N.° 228-2019/MINSA, revaloración del sistema de salud tradicional."
           ]
         }
       ],
@@ -25689,39 +27398,36 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · ET 2.s · Estigma y discriminación",
       "minutes": 18,
       "level": "Intermedio",
-      "summary": "El estigma etiqueta y devalúa a una persona, mientras que la discriminación se expresa en un trato desigual o en la exclusión; ambos deterioran el acceso, la calidad y la recuperación. La adaptación cultural modifica la forma de prestar el cuidado sin reducir seguridad, información ni derechos. El diálogo intercultural exige explorar, reconocer, explicar, acordar y verificar comprensión, y la confidencialidad admite excepciones justificadas, proporcionales y con divulgación mínima. Reducir el estigma requiere cambiar conductas y estructuras, no solo mensajes.",
+      "summary": "El estigma étnico-cultural es un proceso social que etiqueta, devalúa y excluye a personas o grupos por su origen étnico, lengua, cultura, nacionalidad o rasgos fenotípicos. Se entrelaza con el racismo, la pobreza, el género, la discapacidad y la condición de salud, y afecta especialmente a poblaciones clave y vulnerables. La ficha distingue estigma, discriminación directa, indirecta y estructural, poblaciones clave y vulnerables, y ordena la respuesta institucional: atender, proteger, registrar, corregir y reparar.",
       "keyConcepts": [
-        "Estigma: etiqueta y devalúa a la persona por una condición, y reduce su posición social.",
-        "Estereotipo, prejuicio y discriminación: creencia, valoración y conducta, en ese orden.",
-        "Autoestigma: la persona aplica sobre sí misma la valoración negativa del entorno.",
-        "Estigma estructural: reglas y prácticas institucionales que reproducen la desventaja.",
-        "Discriminación directa e indirecta: trato desigual explícito y regla neutra con efecto desigual.",
-        "Lenguaje centrado en la persona: nombrar primero a la persona y no la condición.",
-        "Contacto social: estrategia de reducción basada en la interacción con personas con experiencia vivida."
+        "Estigma: proceso social de etiquetado, devaluación, separación y pérdida de estatus.",
+        "Discriminación: conducta que excluye, niega o trata desigual; puede ser directa, indirecta o estructural.",
+        "Racismo: sistema de poder que jerarquiza por raza o etnia y produce desventaja acumulada.",
+        "Estigma étnico-cultural: exclusión por origen étnico, lengua, cultura, nacionalidad o rasgos fenotípicos.",
+        "Poblaciones clave: mayor exposición y menor acceso (VIH, trabajo sexual, HSH, trans, drogas inyectables, privados de libertad).",
+        "Poblaciones vulnerables: mayor riesgo y menor protección (pueblos indígenas, afroperuanos, migrantes, discapacidad, niñez, mujeres, adulto mayor).",
+        "Interseccionalidad: combinación de ejes que produce experiencias específicas de exclusión.",
+        "La confidencialidad y el trato digno son condiciones de acceso, no favores.",
+        "La respuesta no se limita a campañas: exige cambiar prácticas, reglas y rendición de cuentas."
       ],
       "sections": [
         {
           "title": "Conceptos que sostienen el tema",
           "depth": "core",
           "body": [
-            "El estigma es un proceso social y no una opinión aislada. Se activa cuando una diferencia se etiqueta, se asocia a una creencia negativa y se usa para separar a un grupo del resto. Esa separación produce pérdida de estatus y trato desigual, y en salud se traduce en evitación del servicio, ocultamiento y abandono del tratamiento.",
-            "La discriminación es la parte visible del proceso, pero no la única. Una persona puede sufrir estigma sin que se le niegue formalmente un servicio, porque el trato cotidiano, los comentarios y la organización del espacio ya comunican devaluación. Esa dimensión informal es la más difícil de reclamar y la que más afecta la continuidad del cuidado.",
-            "El estigma también opera dentro del servicio. Cuando el personal usa la condición de la persona como explicación de todo lo que le ocurre, deja de evaluar y empieza a confirmar su etiqueta. Ese mecanismo se denomina cierre de la mirada clínica, porque la etiqueta reemplaza a la pregunta y el diagnóstico previo sustituye a la evaluación actual."
+            "El estigma es un proceso social que etiqueta una diferencia, la asocia a una creencia negativa, separa a las personas en “nosotros” y “ellos”, produce pérdida de estatus y habilita discriminación. No es solo una opinión individual: circula en instituciones, normas, lenguaje y prácticas cotidianas.",
+            "La discriminación es la conducta que excluye, niega, trata desigual o limita derechos. Puede ser directa (trato explícitamente desfavorable), indirecta (regla aparentemente neutra que perjudica de forma desproporcionada) o estructural (patrones institucionales que reproducen desventaja).",
+            "El estigma étnico-cultural se dirige contra personas o grupos por su origen étnico, lengua, cultura, nacionalidad o rasgos fenotípicos. Se cruza con otros ejes —género, pobreza, discapacidad, orientación sexual, condición de salud— y produce experiencias de discriminación que no se explican por un solo factor.",
+            "Las poblaciones clave son grupos con mayor exposición y menor acceso por condiciones sociales y legales, como personas con VIH, trabajadoras sexuales, hombres que tienen sexo con hombres, mujeres trans, usuarios de drogas inyectables y personas privadas de libertad. Las poblaciones vulnerables son grupos con mayor riesgo de daño y menor capacidad de protección, como pueblos indígenas, población afroperuana, migrantes, personas con discapacidad, niñas y niños, mujeres y personas adultas mayores. La distinción es analítica: una persona puede pertenecer a más de un grupo."
           ]
         },
         {
-          "title": "Fundamentos teóricos y mecanismos",
+          "title": "Mecanismos: del estereotipo a la exclusión",
           "depth": "core",
           "body": [
-            "El proceso de estigma se describe en componentes encadenados: se distingue y se etiqueta una diferencia, se asocian creencias negativas, se separa a las personas en un nosotros y un ellos, se produce pérdida de estatus y se ejerce discriminación. La cadena importa porque muestra dónde intervenir: cambiar el lenguaje sin tocar la separación deja intacto el mecanismo.",
-            "El autoestigma explica por qué el daño persiste sin discriminación visible. La persona internaliza la valoración negativa, anticipa rechazo y evita situaciones donde podría ser juzgada, incluida la consulta. El resultado es una barrera que no está en el servicio sino en la expectativa, y que se refuerza con cada experiencia de trato distante.",
-            "El contacto social es la estrategia con mayor sustento para reducir el prejuicio, porque la interacción sostenida con personas del grupo desmiente la generalización. Funciona mejor cuando hay cooperación, igualdad de estatus y respaldo institucional, y fracasa cuando se reduce a una charla testimonial sin condiciones de encuentro."
-          ],
-          "bullets": [
-            "Etiqueta como explicación: atribuir todo síntoma a la condición impide detectar problemas concurrentes y refuerza la desesperanza.",
-            "Ocultamiento: el temor al rechazo reduce la revelación de información y la búsqueda de ayuda en etapas tempranas.",
-            "Efecto del lenguaje: el término despectivo circula en el equipo y legitima el trato distante en la atención.",
-            "Barrera estructural: requisitos, horarios y registros que excluyen a un grupo reproducen la desventaja sin intención explícita."
+            "La cadena del estigma tiene varios eslabones: se identifica una diferencia, se le asigna una etiqueta, se activa un estereotipo, se separa al grupo, se produce pérdida de estatus y se ejerce discriminación. Intervenir solo el lenguaje deja intactos los otros eslabones.",
+            "El estigma internalizado aparece cuando la persona hace propia la valoración negativa, anticipa rechazo y evita servicios, relaciones o espacios. El estigma interpersonal se expresa en comentarios, miradas, burlas o trato distante. El estigma estructural se reproduce en requisitos, horarios, registros, prioridades y presupuesto.",
+            "El racismo es un sistema de poder que jerarquiza grupos por raza o etnia y produce desventaja acumulada. No se agota en actos individuales; persiste en instituciones y decisiones aparentemente neutrales. La interseccionalidad permite ver cómo el racismo se combina con género, clase, migración o discapacidad."
           ]
         },
         {
@@ -25729,67 +27435,107 @@ window.STUDY_CONTENT = {
           "depth": "full",
           "table": {
             "headers": [
-              "Nivel",
+              "Tipo",
               "Cómo se manifiesta",
-              "Qué lo sostiene"
+              "Ejemplo en salud"
             ],
             "rows": [
               [
                 "Estigma público",
-                "Valoraciones y trato despectivo hacia la persona por su condición.",
-                "Creencias extendidas y generalización sobre el grupo."
+                "Creencias y trato despectivo hacia un grupo",
+                "Comentarios sobre “personas sucias” o “peligrosas”"
               ],
               [
                 "Autoestigma",
-                "Anticipación de rechazo, vergüenza y evitación de la consulta.",
-                "Internalización de la valoración negativa del entorno."
+                "Internalización y anticipación de rechazo",
+                "No acudir al servicio por miedo a ser juzgado"
               ],
               [
                 "Estigma estructural",
-                "Reglas, horarios y registros que reproducen la desventaja.",
-                "Decisiones institucionales no revisadas y ausencia de participación."
+                "Reglas, horarios, registros y prioridades que excluyen",
+                "Exigir dirección fija o idioma único para acceder"
               ],
               [
                 "Discriminación directa",
-                "Negativa explícita de un servicio o trato diferenciado por la condición.",
-                "Prejuicio del personal y ausencia de corrección institucional."
+                "Negación explícita o trato diferenciado",
+                "Negar atención por origen étnico o diagnóstico"
               ],
               [
                 "Discriminación indirecta",
-                "Regla neutra que afecta de manera desproporcionada a un grupo.",
-                "Diseño del servicio sin análisis de su efecto."
+                "Regla neutra con efecto desproporcionado",
+                "Citas solo presenciales para población sin transporte"
+              ],
+              [
+                "Discriminación interseccional",
+                "Exclusión por la combinación de varios ejes",
+                "Mujer afroperuana con VIH y discapacidad"
               ]
             ]
-          },
+          }
+        },
+        {
+          "title": "Poblaciones clave y vulnerables: lectura sin estereotipos",
+          "depth": "core",
           "body": [
-            "Los niveles se distinguen para elegir la intervención. El estigma público se trabaja con información y contacto; el autoestigma, con apoyo y participación; el estructural, con revisión de reglas y con rendición de cuentas. Aplicar una sola estrategia a todos los niveles explica por qué muchas campañas no cambian el trato."
+            "Nombrar poblaciones clave no autoriza a etiquetar a una persona por su pertenencia real o percibida. La categoría sirve para orientar políticas, tamizajes y barreras de acceso, no para asignar identidad, conducta o riesgo individual.",
+            "La discriminación étnico-cultural puede afectar a pueblos indígenas y afroperuanos, pero también a migrantes, personas refugiadas y comunidades lingüísticas minorizadas. En salud se expresa en demoras, trato distante, imposición de lengua, exposición de datos, negación de prácticas culturales y menor calidad de la consejería.",
+            "La respuesta debe combinar universalidad y enfoque diferencial: garantizar derechos para todas las personas y ajustar apoyos según barreras concretas. La equidad no es dar lo mismo a todos; es asignar según necesidad y remover obstáculos evitables."
           ]
         },
         {
-          "title": "Procedimiento y criterios de decisión",
+          "title": "Expresiones en los servicios de salud",
+          "depth": "full",
+          "body": [
+            "El estigma puede aparecer antes de la consulta —horarios, requisitos, distancia, idioma—, durante la atención —interrupciones, tono, exposición de datos, preguntas intrusivas— y después —abandono, falta de seguimiento, alta sin plan—.",
+            "En salud mental, el estigma se combina con el “cierre de la mirada clínica”: atribuir todo síntoma a la etiqueta diagnóstica e dejar de evaluar otras causas. En VIH, tuberculosis, salud sexual y discapacidad, el estigma produce ocultamiento, diagnóstico tardío y abandono.",
+            "La confidencialidad es una condición del acceso. La divulgación innecesaria del diagnóstico, del origen étnico o de la condición migratoria puede exponer a la persona a violencia, pérdida de empleo o exclusión familiar. La información debe compartirse solo con quien necesita conocerla para intervenir."
+          ]
+        },
+        {
+          "title": "Marco normativo peruano",
+          "depth": "core",
+          "body": [
+            "La Constitución reconoce la igualdad ante la ley y prohíbe la discriminación por origen, raza, sexo, idioma, religión, opinión, condición económica o cualquier otra índole. La Ley 26772 prohíbe la discriminación en ofertas de empleo y acceso a formación educativa; la Ley 27270 tipifica la discriminación como delito y sanciona actos discriminatorios.",
+            "La Política Nacional para la Transversalización del Enfoque Intercultural (DS 003-2015-MC) establece ejes de gestión intercultural, reconocimiento de la diversidad y eliminación de la discriminación étnico-racial. La DA 261-MINSA/2019/DGIESP orienta la adecuación cultural en el primer nivel; la Ley 27815 y el DS 027-2015-SA refuerzan el trato digno y la protección de datos.",
+            "Estas normas no sustituyen el análisis del caso. La ruta de denuncia y reparación debe precisar instancia, plazo, pruebas y medidas de protección. La atención no se condiciona a que la persona denuncie: primero se protege, se atiende y se documenta."
+          ],
+          "bullets": [
+            "Constitución Política del Perú, artículo 2: igualdad y no discriminación.",
+            "Ley 26772 (17/04/1997): discriminación en empleo y formación educativa.",
+            "Ley 27270 (26/05/2000; publicada 29/05/2000): delito de discriminación.",
+            "DS 003-2015-MC (28/10/2015): Política Nacional para la Transversalización del Enfoque Intercultural.",
+            "Ley 27815 y DS 027-2015-SA: ética pública, trato digno y derechos de usuarios.",
+            "DA 261-MINSA/2019/DGIESP: adecuación cultural en el primer nivel de atención."
+          ]
+        },
+        {
+          "title": "Procedimiento de respuesta institucional",
           "depth": "full",
           "bullets": [
-            "1. Identificar las prácticas y expresiones estigmatizantes del servicio, incluidas las que se consideran normales por costumbre.",
-            "2. Revisar las reglas internas que exponen información o segregan a un grupo, y verificar su justificación y su base.",
-            "3. Asegurar lenguaje centrado en la persona en registros, informes y comunicación interna.",
-            "4. Incorporar a personas con experiencia vivida en el diseño y la evaluación de las actividades.",
-            "5. Promover contacto social con condiciones de igualdad y cooperación, y no solo charlas informativas.",
-            "6. Medir el efecto con indicadores de trato, acceso y continuidad, y no solo con la cantidad de actividades realizadas.",
-            "7. Sostener la estrategia en el tiempo y rendir cuentas de los cambios ante la comunidad y el equipo."
+            "1. Detener la conducta y garantizar seguridad, privacidad y atención inmediata.",
+            "2. Registrar el relato con palabras de la persona, sin exigir pruebas ni revictimizar.",
+            "3. Verificar si hay riesgo, necesidad de protección o derivación urgente.",
+            "4. Informar sobre derechos, rutas de denuncia y medidas disponibles.",
+            "5. Corregir la práctica institucional: lenguaje, registro, horarios, requisitos y trato.",
+            "6. Acompañar y verificar que la persona reciba respuesta y continuidad.",
+            "7. Revisar el caso con el equipo y ajustar protocolos para evitar repetición.",
+            "8. Medir acceso, abandono, satisfacción y representación de grupos afectados."
           ]
         },
         {
           "title": "Caso razonado",
           "depth": "full",
           "body": [
-            "Caso ficticio. En un hospital de Trujillo, una usuaria con diagnóstico de esquizofrenia acude a su control y escucha a la trabajadora de admisión comentar su diagnóstico en voz alta mientras verifica su cita. En la misma semana, una practicante propone que las personas con ese diagnóstico usen un horario separado para no incomodar a los demás usuarios. La jefatura considera que la medida mejoraría el orden del servicio y que el comentario fue involuntario. La usuaria pide que no se divulgue su diagnóstico y duda en volver. El psicólogo revisa la norma interna y advierte que no existe justificación para separar horarios, y observa que el comentario circuló frente a otras personas de la sala de espera. La usuaria refiere que una vecina le preguntó por su tratamiento esa misma tarde."
+            "Caso ficticio. En un hospital de Lima, un hombre afroperuano de 34 años con VIH acude a una consulta dental por dolor. En admisión, una trabajadora comenta en voz alta su diagnóstico y pregunta “si está en tratamiento por lo otro”. En el servicio, el personal demora la atención, usa guantes dobles sin explicación y evita el contacto. La persona pide que no se divulgue su diagnóstico y duda en volver.",
+            "El psicólogo identifica una doble expresión de estigma: étnico-racial y por condición de salud. No reduce el problema a “susceptibilidad” de la persona ni a la intención individual de la trabajadora. Verifica la norma interna, la exposición de datos y el trato diferencial; informa sobre derechos y ruta de denuncia; coordina atención dental oportuna y protege la confidencialidad.",
+            "El equipo corrige la práctica de admisión, revisa el registro y acuerda que el diagnóstico no se mencione en voz alta. Se documenta la respuesta, se ofrece acompañamiento y se programa seguimiento. La persona acepta continuar su atención en el servicio."
           ],
           "bullets": [
-            "Lectura del caso: el comentario en voz alta constituye divulgación indebida, porque la finalidad administrativa no requiere exponer el diagnóstico.",
-            "Lectura del caso: la separación de horarios sería discriminación indirecta, porque una regla neutra en apariencia produce exclusión por la condición.",
-            "Alternativa descartada: aceptar la medida para preservar el orden del servicio, porque la comodidad de otros usuarios no justifica segregar a una persona.",
-            "Error que se evita: reducir el problema a la intención del personal, porque el efecto sobre la usuaria existe aunque el comentario no fuera malicioso.",
-            "Cierre: se corrige la práctica de admisión, se revisa la norma interna y se registra la respuesta a la usuaria."
+            "Lectura del caso: el estigma combina racismo, condición de salud y poder institucional; no es un problema de “piel delgada”.",
+            "Lectura del caso: la divulgación en voz alta y el trato diferencial son discriminación, aunque no haya una negación formal.",
+            "Alternativa descartada: pedir a la persona que “no haga problema” para evitar conflicto.",
+            "Error que se evita: reducir el caso a la intención de la trabajadora y no corregir la práctica institucional.",
+            "Cierre: atención, protección, registro, revisión de la norma y seguimiento."
           ]
         },
         {
@@ -25797,52 +27543,51 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "bullets": [
             "Distinción: estigma no es discriminación, porque el estigma es el proceso de etiquetado y devaluación y la discriminación es la conducta que excluye.",
-            "Distinción: estereotipo no es prejuicio, porque el estereotipo es una creencia sobre el grupo y el prejuicio es la valoración negativa que produce.",
+            "Distinción: prejuicio no es racismo, porque el prejuicio es una actitud y el racismo es un sistema de poder que produce desventaja estructural.",
+            "Distinción: población clave no es población vulnerable, porque la primera se define por mayor exposición y menor acceso y la segunda por mayor riesgo y menor protección.",
+            "Distinción: discriminación directa no es indirecta, porque la primera es explícita y la segunda resulta de una regla aparentemente neutra.",
             "Distinción: igualdad no es equidad, porque la igualdad ofrece el mismo recurso y la equidad ajusta el apoyo a la barrera.",
-            "Distinción: secreto no es confidencialidad, porque el secreto oculta sin criterio y la confidencialidad protege con reglas y excepciones.",
-            "Error: confundir informar con consentir, porque informar transmite datos y consentir exige comprender y decidir.",
-            "Error: reducir el estigma con campañas, porque el cambio de mensaje sin cambio de práctica deja intacto el trato cotidiano.",
-            "Distinción: sensibilización no es política institucional, porque la primera busca modificar actitudes y la segunda modifica reglas y condiciones."
-          ]
-        },
-        {
-          "title": "Estigma y confidencialidad en el servicio",
-          "depth": "full",
-          "body": [
-            "La confidencialidad protege a la persona del estigma que produce la circulación de su diagnóstico. Por eso las excepciones deben ser justificadas, proporcionales y con divulgación mínima, y la información debe llegar solo a quien necesita conocerla para intervenir. Una norma interna que exige exponer el diagnóstico en un grupo abierto no se justifica por costumbre.",
-            "El lenguaje institucional también interviene. Un informe que abre con la etiqueta y describe a la persona por su diagnóstico contribuye al cierre de la mirada clínica. El registro debe ser útil para el tratamiento y no un archivo de juicios, porque lo escrito circula y sobrevive al encuentro."
+            "Error: reducir el estigma a salud mental, porque el ítem incluye estigma étnico-cultural y poblaciones clave.",
+            "Error: tratar el estigma solo con campañas, porque sin cambio de prácticas y reglas el trato cotidiano persiste.",
+            "Error: exponer el diagnóstico o el origen étnico “para concientizar”, porque la divulgación sin consentimiento vulnera derechos.",
+            "Error: exigir denuncia para atender, porque la atención y la protección son prioridad.",
+            "Error: usar la cultura como excusa para no garantizar derechos, porque la pertinencia cultural no suspende la seguridad ni la dignidad."
           ]
         },
         {
           "title": "Puntos clave",
           "depth": "core",
           "bullets": [
-            "Usar lenguaje centrado en la persona, porque el término reduce o refuerza la devaluación según cómo se use.",
-            "Cuestionar prácticas coercitivas o segregadoras, porque la rutina institucional puede producir discriminación sin intención.",
-            "Promover contacto social y participación, porque la interacción sostenida desmiente la generalización.",
-            "Revisar las reglas internas, porque la discriminación indirecta se esconde en requisitos aparentemente neutros.",
-            "Proteger la información con criterios, porque la confidencialidad evita el estigma que produce la divulgación.",
-            "Medir el efecto de las acciones, porque la cantidad de actividades no demuestra cambio en el trato."
+            "El estigma es un proceso social; la discriminación es una conducta que excluye.",
+            "El racismo es estructural y se combina con otros ejes de desigualdad.",
+            "Poblaciones clave y vulnerables son categorías analíticas, no etiquetas individuales.",
+            "La discriminación indirecta se esconde en reglas aparentemente neutras.",
+            "La confidencialidad protege del estigma y es condición de acceso.",
+            "La respuesta exige atender, proteger, registrar, corregir y reparar.",
+            "La norma no se agota en el Código Penal: incluye derechos, ética y política intercultural.",
+            "La atención no se condiciona a la denuncia."
           ]
         },
         {
           "title": "Tips de examen",
           "depth": "core",
           "callout": {
-            "tone": "warn",
-            "title": "Estigma se cambia actuando",
-            "text": "Reducir estigma exige cambiar conductas y estructuras, no solo mensajes. Igualdad es el mismo recurso; equidad es el apoyo según la barrera y la necesidad. Secreto es ocultar sin criterio; confidencialidad es proteger información con reglas. Informar es transmitir datos; consentir es decidir libremente tras comprender. El distractor típico propone una campaña como solución única."
+            "tone": "info",
+            "title": "Estigma étnico-cultural no es solo salud mental",
+            "text": "El distractor típico presenta una ficha genérica de estigma en salud mental. El ítem oficial pide estigma y discriminación étnico-cultural hacia poblaciones clave y vulnerables. Diferencie estigma (proceso), discriminación (conducta), racismo (sistema de poder), población clave (mayor exposición/menor acceso) y población vulnerable (mayor riesgo/menor protección)."
           }
         },
         {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
-            "Fuente: Congreso de la República del Perú — Ley N.° 27815, Código de Ética de la Función Pública, 2002, artículos 6-8.",
-            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19, respeto de la dignidad e intimidad.",
-            "Fuente: Colegio de Psicólogos del Perú — Código de Ética, Resolución de Decanato N.° 801-2024-CDN-C.PS.P, 2024.",
-            "Fuente: Ministerio de Cultura — Enfoque intercultural, definiciones y derechos culturales.",
-            "Fuente: MINSA — Directiva Administrativa N.° 261-MINSA/2019/DGIESP, RM N.° 228-2019/MINSA."
+            "Fuente: MINSA — DA N.° 261-MINSA/2019/DGIESP, adecuación de los servicios de salud con pertinencia cultural en el primer nivel de atención, RM N.° 228-2019/MINSA.",
+            "Fuente: Ministerio de Cultura — Política Nacional para la Transversalización del Enfoque Intercultural, DS N.° 003-2015-MC, 28/10/2015.",
+            "Fuente: Congreso de la República — Ley N.° 26772, 17/04/1997, no discriminación en empleo y formación educativa.",
+            "Fuente: Congreso de la República — Ley N.° 27270, 26/05/2000, Ley contra actos de discriminación.",
+            "Fuente: Congreso de la República — Ley N.° 27815, Código de Ética de la Función Pública, 2002.",
+            "Fuente: MINSA — Reglamento de la Ley N.° 29414, DS N.° 027-2015-SA, artículo 19, trato digno y confidencialidad.",
+            "Fuente: Congreso de la República — Ley N.° 29973, Ley General de la Persona con Discapacidad, 24/12/2012."
           ]
         }
       ],
@@ -25850,12 +27595,22 @@ window.STUDY_CONTENT = {
         {
           "sourceId": "src-psi-et",
           "pages": [
-            21,
-            22,
-            23,
-            24,
-            25,
-            26
+            21
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            42,
+            43
+          ]
+        },
+        {
+          "sourceId": "src-promocion-politica",
+          "pages": [
+            10,
+            11,
+            21
           ]
         }
       ]
@@ -26523,7 +28278,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · IN 2.1 · Instrumentos y psicometría",
       "minutes": 16,
       "level": "Intermedio",
-      "summary": "Un instrumento no es válido en abstracto: la validez es un juicio sobre la interpretación de las puntuaciones en una población y para un uso definidos. La confiabilidad informa consistencia o precisión, y por eso puede ser alta aunque el contenido no cubra el constructo. Contenido, estructura interna, relaciones con otras variables y criterio aportan evidencias distintas. La adaptación cultural y el piloto mejoran la aplicación, pero no reemplazan la validación ni autorizan trasladar puntos de corte.",
+      "summary": "Un instrumento no es válido en abstracto: la validez es un juicio sobre la interpretación de las puntuaciones en una población y para un uso definidos. La confiabilidad informa consistencia o precisión, y por eso puede ser alta aunque el contenido no cubra el constructo. Contenido, estructura interna, relaciones con otras variables y criterio aportan evidencias distintas. La adaptación cultural y el piloto mejoran la aplicación, pero no reemplazan la validación ni autorizan trasladar puntos de corte. La ficha amplía la mirada psicométrica a los instrumentos cualitativos y a su validación.",
       "keyConcepts": [
         "Validez: grado en que la evidencia y la teoría respaldan la interpretación propuesta de las puntuaciones para un uso definido.",
         "Confiabilidad: proporción de la variabilidad observada atribuible a diferencias verdaderas entre personas y no al error.",
@@ -26532,7 +28287,8 @@ window.STUDY_CONTENT = {
         "Validez de constructo: patrón de relaciones internas y externas que coincide con lo que la teoría predice.",
         "Validez de criterio: grado de acuerdo con una referencia externa, concurrente o predictiva, aceptada como patrón.",
         "Invarianza: equivalencia de la medición entre grupos o momentos, requisito para comparar puntuaciones entre ellos.",
-        "Adaptación transcultural: proceso que ajusta lengua, contenido y administración, y produce evidencia psicométrica local."
+        "Adaptación transcultural: proceso que ajusta lengua, contenido y administración, y produce evidencia psicométrica local.",
+        "Instrumento no es sinónimo de test: entrevista, observación, encuesta y revisión también requieren validación."
       ],
       "sections": [
         {
@@ -26699,12 +28455,61 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Instrumentos y validación cualitativa",
+          "depth": "full",
+          "body": [
+            "Un instrumento no es solo una prueba psicométrica. La entrevista, la observación, la encuesta, la lista de cotejo, la revisión documental y los test son instrumentos con lógicas distintas. La elección depende del constructo, la población, el uso y los recursos disponibles.",
+            "La validación cualitativa no busca un coeficiente, sino credibilidad, transferibilidad, dependencia y confirmabilidad. La triangulación de fuentes, la auditoría del proceso y la devolución a participantes fortalecen la interpretación. En métodos mixtos, la validez se juega también en la integración de los datos."
+          ],
+          "table": {
+            "headers": [
+              "Instrumento",
+              "Uso principal",
+              "Cuidado clave"
+            ],
+            "rows": [
+              [
+                "Entrevista",
+                "Explorar experiencia, significado y contexto",
+                "Guía, rapport, registro y análisis"
+              ],
+              [
+                "Observación",
+                "Registrar conducta en contexto",
+                "Definición de unidades y sesgo del observador"
+              ],
+              [
+                "Encuesta",
+                "Medir prevalencia o características",
+                "Muestreo, redacción y modo de aplicación"
+              ],
+              [
+                "Lista de cotejo",
+                "Verificar presencia de criterios",
+                "Categorías claras y acuerdo entre evaluadores"
+              ],
+              [
+                "Prueba psicométrica",
+                "Medir un constructo con normas",
+                "Validez, confiabilidad y población de referencia"
+              ],
+              [
+                "Revisión documental",
+                "Analizar registros y políticas",
+                "Fuente, autenticidad y codificación"
+              ]
+            ]
+          }
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas y evaluación de la medición.",
             "Fuente: OMS/EMRO — Training manual for community-based initiatives: a practical tool for trainers and trainees, Unidad 5.2: revisión de literatura e información.",
-            "Fuente: CDC — Field Epidemiology Manual, recolección de información y análisis de datos."
+            "Fuente: CDC — Field Epidemiology Manual, recolección de información y análisis de datos.",
+            "Fuente: COSMIN — Consensus-based Standards for the selection of health Measurement Instruments; propiedades de medición.",
+            "Fuente: OMS/EMRO — Training manual for community-based initiatives, unidad 5.2: revisión de literatura e información."
           ]
         }
       ],
@@ -26727,7 +28532,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · IN 2.2 · Bioestadística y análisis",
       "minutes": 19,
       "level": "Avanzado",
-      "summary": "La estadística descriptiva resume lo observado y la inferencial extiende esos resultados a la población bajo supuestos declarados. Antes de elegir una prueba hay que conocer la escala de la variable, el número de grupos o mediciones, la independencia o el pareamiento y los supuestos del modelo. El valor p informa compatibilidad con la hipótesis nula y no mide magnitud ni importancia. La estimación del efecto con su intervalo, la relevancia clínica y el control de sesgos completan la lectura.",
+      "summary": "La estadística descriptiva resume lo observado y la inferencial extiende esos resultados a la población bajo supuestos declarados. Antes de elegir una prueba hay que conocer la escala de la variable, el número de grupos o mediciones, la independencia o el pareamiento y los supuestos del modelo. El valor p informa compatibilidad con la hipótesis nula y no mide magnitud ni importancia. La estimación del efecto con su intervalo, la relevancia clínica y el control de sesgos completan la lectura. La ficha incorpora análisis cualitativo e integración mixta, no solo pruebas estadísticas.",
       "keyConcepts": [
         "Estadística descriptiva: resume la distribución observada con medidas de tendencia central, dispersión y forma.",
         "Estadística inferencial: extiende resultados muestrales a la población mediante modelos probabilísticos y supuestos explícitos.",
@@ -26736,7 +28541,8 @@ window.STUDY_CONTENT = {
         "Intervalo de confianza: rango de valores plausibles para el parámetro según el modelo y la variabilidad observada.",
         "Análisis por intención de tratar: analiza a cada participante en el grupo asignado y conserva el beneficio de la aleatorización.",
         "Análisis por protocolo: analiza solo a quienes completaron la intervención y puede sobreestimar el efecto al excluir abandonos.",
-        "Potencia: probabilidad de detectar una diferencia de la magnitud esperada si existe, dependiente del tamaño y la variabilidad."
+        "Potencia: probabilidad de detectar una diferencia de la magnitud esperada si existe, dependiente del tamaño y la variabilidad.",
+        "Análisis cualitativo: transcripción, codificación, categorías, saturación y triangulación."
       ],
       "sections": [
         {
@@ -26960,12 +28766,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Análisis cualitativo e integración mixta",
+          "depth": "full",
+          "body": [
+            "El procesamiento no es solo estadística. En investigación cualitativa, la transcripción, la codificación abierta y axial, la construcción de categorías y el análisis temático permiten responder preguntas sobre significado, procesos y contexto.",
+            "La saturación, la triangulación y la auditoría del análisis sostienen la credibilidad. En métodos mixtos, la integración no es sumar un capítulo cualitativo y otro cuantitativo: exige un punto de conexión, una lógica de complementación y una interpretación conjunta."
+          ],
+          "bullets": [
+            "Transcripción y limpieza con criterios explícitos.",
+            "Codificación abierta, axial y selectiva.",
+            "Categorías, temas y matrices de análisis.",
+            "Saturación y triangulación.",
+            "Integración mixta: convergencia, complementación o contradicción.",
+            "El valor p es continuo; no responde por sí solo la relevancia clínica."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas.",
             "Fuente: CDC — History of Statistics in Public Health at CDC, 1960-2010: the Rise of Statistical Evidence, aplicación de métodos estadísticos en epidemiología y salud pública.",
-            "Fuente: CDC — Field Epidemiology Manual, análisis de datos y diseños transversales."
+            "Fuente: CDC — Field Epidemiology Manual, análisis de datos y diseños transversales.",
+            "Fuente: Cochrane — Manual Cochrane de revisiones sistemáticas de intervenciones; síntesis y forest plot.",
+            "Fuente: NIH/OBSSR — Best practices for mixed methods research in the health sciences."
           ]
         }
       ],
@@ -26990,7 +28814,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · IN 3.1 · Comunicación científica",
       "minutes": 15,
       "level": "Base",
-      "summary": "Comunicar ciencia es hacer verificable lo que se hizo: el resumen sintetiza el estudio completo, la introducción justifica la pregunta, el método permite reconstruir el procedimiento, los resultados presentan estimaciones con incertidumbre y la discusión interpreta sin exceder los datos. La conclusión responde a los objetivos y reconoce los límites del diseño. Las guías de reporte ordenan esa información según el tipo de estudio y reducen las omisiones que impiden la lectura crítica.",
+      "summary": "Comunicar ciencia es hacer verificable lo que se hizo: el resumen sintetiza el estudio completo, la introducción justifica la pregunta, el método permite reconstruir el procedimiento, los resultados presentan estimaciones con incertidumbre y la discusión interpreta sin exceder los datos. La conclusión responde a los objetivos y reconoce los límites del diseño. Las guías de reporte ordenan esa información según el tipo de estudio y reducen las omisiones que impiden la lectura crítica. La ficha distingue informe, tesis y artículo, y desarrolla el proceso editorial.",
       "keyConcepts": [
         "Reporte transparente: descripción suficiente de métodos, resultados y limitaciones para que otra persona juzgue el estudio.",
         "Resumen estructurado: síntesis del estudio completo con objetivo, métodos, resultados principales y conclusión proporcional.",
@@ -26999,7 +28823,8 @@ window.STUDY_CONTENT = {
         "Resultados: presentación ordenada de estimaciones e incertidumbre, sin interpretación ni causalidad no sustentada.",
         "Discusión: comparación con la evidencia, explicación de diferencias, limitaciones e implicaciones para la práctica.",
         "Sesgo de publicación: tendencia a difundir resultados positivos, que distorsiona el conjunto de evidencia disponible.",
-        "Reporte selectivo: omisión de desenlaces o análisis preespecificados, que altera la conclusión del estudio."
+        "Reporte selectivo: omisión de desenlaces o análisis preespecificados, que altera la conclusión del estudio.",
+        "Publicación: elección de revista, revisión por pares, respuesta a revisores y acceso abierto."
       ],
       "sections": [
         {
@@ -27171,12 +28996,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Proceso editorial y publicación",
+          "depth": "full",
+          "body": [
+            "Publicar no es solo enviar un manuscrito. Implica elegir la revista, revisar el alcance y las normas, preparar la carta de presentación, responder a revisores y corregir pruebas. La revisión por pares puede aceptar, solicitar cambios o rechazar; la respuesta debe ser respetuosa y basada en evidencia.",
+            "El acceso abierto, los preprints y las revistas predatorias modifican el panorama. Un preprint no es un artículo revisado; una revista predatoria cobra sin garantizar revisión. La integridad exige declarar conflicto de interés, financiamiento, autoría y disponibilidad de datos."
+          ],
+          "bullets": [
+            "Elegir revista por alcance, público e indexación.",
+            "Revisar instrucciones, ética y guías de reporte.",
+            "Carta de presentación y contribución declarada.",
+            "Revisión por pares y respuesta punto por punto.",
+            "Acceso abierto, preprints y licencias.",
+            "Evitar revistas predatorias y publicación duplicada.",
+            "Correcciones, retractaciones y registro posterior."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: ICMJE — Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals, preparación de manuscritos: resumen, introducción, métodos, resultados y discusión.",
             "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 2: medidas estadísticas.",
-            "Fuente: OMS/EMRO — Training manual for community-based initiatives: a practical tool for trainers and trainees, Unidad 5.2: revisión de literatura e información."
+            "Fuente: OMS/EMRO — Training manual for community-based initiatives: a practical tool for trainers and trainees, Unidad 5.2: revisión de literatura e información.",
+            "Fuente: ICMJE — Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals."
           ]
         }
       ],
@@ -27198,7 +29041,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · IN 3.2 · Ética e integridad",
       "minutes": 17,
       "level": "Intermedio",
-      "summary": "La ética de investigación protege la dignidad y la autonomía de quienes participan, desde el protocolo hasta la difusión. Exige valorar riesgos y beneficios, seleccionar de forma justa, obtener consentimiento comprensible y resguardar la confidencialidad, con salvaguardas adicionales cuando la vulnerabilidad lo demanda. La integridad científica sanciona fabricación, falsificación, plagio y reporte selectivo. La aprobación de un comité habilita el inicio, pero no sustituye el consentimiento ni la vigilancia durante la ejecución.",
+      "summary": "La ética de investigación protege la dignidad y la autonomía de quienes participan, desde el protocolo hasta la difusión. Exige valorar riesgos y beneficios, seleccionar de forma justa, obtener consentimiento comprensible y resguardar la confidencialidad, con salvaguardas adicionales cuando la vulnerabilidad lo demanda. La integridad científica sanciona fabricación, falsificación, plagio y reporte selectivo. La aprobación de un comité habilita el inicio, pero no sustituye el consentimiento ni la vigilancia durante la ejecución. La ficha incorpora el marco peruano de integridad científica y comités de ética.",
       "keyConcepts": [
         "Autonomía: reconocimiento de que la persona decide sobre su participación tras recibir información comprensible y suficiente.",
         "Consentimiento informado: proceso continuo de información, comprensión y decisión voluntaria, documentado y revocable.",
@@ -27207,7 +29050,8 @@ window.STUDY_CONTENT = {
         "Selección justa: distribución de cargas y beneficios entre grupos, evitando concentrar riesgos en poblaciones desfavorecidas.",
         "Confidencialidad: obligación de proteger la identidad y los datos, con acceso limitado y resguardo proporcional al riesgo.",
         "Integridad científica: conjunto de prácticas que sostienen la honestidad en la producción y difusión del conocimiento.",
-        "Autoría responsable: reconocimiento de quienes cumplen contribución sustantiva, aprobación y responsabilidad por el trabajo."
+        "Autoría responsable: reconocimiento de quienes cumplen contribución sustantiva, aprobación y responsabilidad por el trabajo.",
+        "Ética de investigación: comité, consentimiento, datos, vulnerabilidad e integridad científica."
       ],
       "sections": [
         {
@@ -27391,12 +29235,32 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Marco peruano de ética en investigación",
+          "depth": "core",
+          "body": [
+            "La ética de la investigación en el Perú se apoya en el respeto a la dignidad, la autonomía, la beneficencia, la no maleficencia y la justicia, y en el marco de derechos humanos. La revisión por un comité de ética es obligatoria para investigaciones con personas y debe ser independiente, competente y oportuna.",
+            "El Código Nacional de Integridad Científica (CONCYTEC) establece principios, buenas prácticas, infracciones y sanciones. La protección de datos personales, el consentimiento informado y la atención a poblaciones vulnerables son condiciones del proceso, no trámites finales."
+          ],
+          "bullets": [
+            "Comité de ética institucional y revisión independiente.",
+            "Consentimiento informado y asentimiento cuando corresponde.",
+            "Protección de datos y confidencialidad.",
+            "Poblaciones vulnerables y riesgo de coacción.",
+            "Integridad científica: autoría, plagio, fabricación y falsificación.",
+            "Declaración de conflicto de interés y financiamiento.",
+            "Devolución de resultados y acceso a beneficios."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: ICMJE — Recommendations for the Conduct, Reporting, Editing, and Publication of Scholarly Work in Medical Journals, criterios de autoría.",
             "Fuente: OMS/EMRO — Training manual for community-based initiatives: a practical tool for trainers and trainees, Unidad 5.2.",
-            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 1: causalidad e historia natural."
+            "Fuente: CDC — Principles of Epidemiology in Public Health Practice, 3rd edition, lección 1: causalidad e historia natural.",
+            "Fuente: CONCYTEC — Código Nacional de Integridad Científica, Resolución de Presidencia N.° 028-2024-CONCYTEC-P, 07/03/2024.",
+            "Fuente: Perú — Ley N.° 29733, Ley de Protección de Datos Personales, y su reglamento.",
+            "Fuente: CIOMS/OMS — Pautas éticas internacionales para la investigación relacionada con la salud con seres humanos."
           ]
         }
       ],
@@ -27427,7 +29291,8 @@ window.STUDY_CONTENT = {
         "Coherencia vertical: correspondencia entre políticas nacionales, planes sectoriales o territoriales, PEI y POI de una misma cadena.",
         "Coherencia horizontal: consistencia entre objetivos, acciones, indicadores, presupuesto y competencias dentro de un mismo instrumento.",
         "Análisis prospectivo: exploración de tendencias, riesgos y escenarios para anticipar decisiones, sin ejecutar actividades.",
-        "Seguimiento y evaluación: revisión de avances y resultados para decidir si se continúa, ajusta, reformula o descontinúa."
+        "Seguimiento y evaluación: revisión de avances y resultados para decidir si se continúa, ajusta, reformula o descontinúa.",
+        "PEI, POI Multianual y POI Anual son instrumentos distintos; el presupuesto no es el POI."
       ],
       "sections": [
         {
@@ -27545,7 +29410,15 @@ window.STUDY_CONTENT = {
           "body": [
             "El marco legal del planeamiento combina reglas de competencia, procedimiento y presupuesto. La entidad debe verificar que el objetivo no invada funciones de otro nivel y que la acción tenga habilitación presupuestal.",
             "La aprobación por la instancia competente y el registro de la decisión son requisitos de validez práctica. Un plan sin respaldo institucional no obliga a ninguna unidad y se desarma en la primera discrepancia.",
-            "La legalidad no garantiza pertinencia. El análisis técnico acompaña la verificación jurídica y no la sustituye: un instrumento puede ser legal y, al mismo tiempo, irrelevante para el problema que debía resolver."
+            "La legalidad no garantiza pertinencia. El análisis técnico acompaña la verificación jurídica y no la sustituye: un instrumento puede ser legal y, al mismo tiempo, irrelevante para el problema que debía resolver.",
+            "El marco peruano del planeamiento institucional incluye la Ley 27658, Ley Marco de la Modernización de la Gestión del Estado; la Ley 29158, Ley Orgánica del Poder Ejecutivo; la Ley 27867, Ley Orgánica de Gobiernos Regionales; la Ley 27972, Ley Orgánica de Municipalidades; y la Directiva N.° 001-2024-CEPLAN/PCD, con sus modificatorias. El PEI se despliega en el POI Multianual y el POI Anual, y se articula con el presupuesto; no son documentos intercambiables."
+          ],
+          "bullets": [
+            "Ley 27658: modernización de la gestión del Estado.",
+            "Ley 29158: organización y competencias del Poder Ejecutivo.",
+            "Ley 27867 y Ley 27972: gobiernos regionales y municipalidades.",
+            "CEPLAN: Directiva N.° 001-2024-CEPLAN/PCD y Guía para el Planeamiento Institucional.",
+            "PEI (5 años) → POI Multianual (3 años) → POI Anual (1 año) → presupuesto."
           ]
         },
         {
@@ -28261,7 +30134,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 2.2 · Categorías de IPRESS",
       "minutes": 17,
       "level": "Intermedio",
-      "summary": "La categoría fija la capacidad resolutiva mínima que una IPRESS debe sostener con sus recursos, organización, UPSS y Sub UPSS. El primer nivel va de I-1 a I-4; el segundo distingue atención general y especializada; el tercero añade alta complejidad y subespecialidades. Leer la categoría como umbral, no como techo, permite ubicar establecimientos, ordenar referencias y revisar horarios por servicio sin confundir la consulta programada con la continuidad de emergencia, hospitalización y parto.",
+      "summary": "La categoría fija la capacidad resolutiva mínima que una IPRESS debe sostener con sus recursos, organización, UPSS y Sub UPSS. El primer nivel va de I-1 a I-4; el segundo distingue atención general y especializada; el tercero añade alta complejidad y subespecialidades. Leer la categoría como umbral, no como techo, permite ubicar establecimientos, ordenar referencias y revisar horarios por servicio sin confundir la consulta programada con la continuidad de emergencia, hospitalización y parto. La ficha distingue categoría, UPSS y cartera, y sitúa el primer nivel en la APS.",
       "keyConcepts": [
         "Nivel de atención: ordena la oferta según magnitud y severidad de las necesidades y la capacidad de resolución disponible.",
         "Categoría: umbral mínimo de capacidad resolutiva que una IPRESS debe sostener dentro de un nivel de atención.",
@@ -28270,7 +30143,8 @@ window.STUDY_CONTENT = {
         "Internamiento: Sub UPSS del I-4 para permanencia temporal, distinta de la hospitalización del segundo y tercer nivel.",
         "Recategorización: revisión de la categoría cuando cambia la capacidad resolutiva o la complejidad, con vigencia de tres años.",
         "Red de servicios: conjunto de establecimientos articulados por niveles y rutas de referencia.",
-        "Horario por servicio: programación propia de cada prestación, distinta de la continuidad de los servicios críticos."
+        "Horario por servicio: programación propia de cada prestación, distinta de la continuidad de los servicios críticos.",
+        "Categoría (NTS 021) y cartera (NTS 249) son instrumentos distintos; no se confunden."
       ],
       "sections": [
         {
@@ -28329,7 +30203,7 @@ window.STUDY_CONTENT = {
               ],
               [
                 "Tercer nivel general, III-1",
-                "Añade UCI especializadas, hemodiálisis, radioterapia y medicina nuclear",
+                "Añade hemodiálisis y otros servicios de alta complejidad; la UCI ya está en II-2",
                 "Alta complejidad con servicios críticos permanentes"
               ],
               [
@@ -28385,7 +30259,7 @@ window.STUDY_CONTENT = {
           "depth": "core",
           "bullets": [
             "La categoría es un piso exigible: permite comparar establecimientos y decidir referencias sin suponer prestaciones que no existen.",
-            "El primer nivel resuelve lo frecuente y refiere lo que supera su capacidad; el I-4 añade internamiento y farmacia como Sub UPSS.",
+            "El primer nivel resuelve lo frecuente y refiere lo que supera su capacidad; el I-4 añade internamiento como Sub UPSS y farmacia como UPSS.",
             "El segundo nivel general asegura servicios críticos; el especializado profundiza un campo clínico o grupo etario.",
             "El tercer nivel concentra alta complejidad y subespecialidades; el III-2 suma investigación y docencia.",
             "Los horarios se verifican por servicio, porque la continuidad de emergencia, hospitalización y parto no se deduce del horario de consulta.",
@@ -28402,11 +30276,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Categorías, primer nivel y APS",
+          "depth": "core",
+          "body": [
+            "La categoría expresa la capacidad resolutiva mínima que una IPRESS debe sostener con sus recursos, organización, UPSS y Sub UPSS. El primer nivel va de I-1 a I-4; no es un nivel “simple”, sino el espacio donde se resuelve la mayor parte de la demanda y se organiza la continuidad.",
+            "La NTS 021-MINSA/DGSP-V.03 (RM 546-2011/MINSA) sigue siendo la referencia de categorías. La cartera de servicios se actualiza con la NTS 249-MINSA/DGAIN-2026 (RM 625-2026/MINSA); ambas deben leerse juntas, sin confundir categoría con cartera."
+          ],
+          "bullets": [
+            "Categoría: capacidad resolutiva y requisitos mínimos.",
+            "UPSS: unidad productora de una prestación específica.",
+            "Cartera: prestaciones efectivamente disponibles.",
+            "Primer nivel: puerta de entrada y coordinación de la red.",
+            "La categoría no se improvisa por demanda; se acredita y se sostiene."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — RM N.° 546-2011/MINSA, NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos de salud, categoría I-4, pp. 29-30 del anexo.",
-            "Fuente: MINSA — RM N.° 625-2026/MINSA, artículos 2-5 y 9, modificación de la terminología de la NTS N.° 021-MINSA/DGSP-V.03."
+            "Fuente: MINSA — RM N.° 625-2026/MINSA, artículo 5, modificación de la terminología de la NTS N.° 021-MINSA/DGSP-V.03.",
+            "Fuente: MINSA — NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos, RM N.° 546-2011/MINSA, 13/07/2011.",
+            "Fuente: MINSA — NTS N.° 249-MINSA/DGAIN-2026, cartera de servicios, RM N.° 625-2026/MINSA, 16/07/2026.",
+            "Fuente: Perú — Ley N.° 30885, Redes Integradas de Salud, publicada el 19/12/2018; vigente desde el 20/12/2018."
           ]
         }
       ],
@@ -28417,6 +30309,14 @@ window.STUDY_CONTENT = {
             11,
             12,
             13
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            60,
+            61,
+            62
           ]
         }
       ]
@@ -28429,7 +30329,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 2.3 · UPSS y cartera",
       "minutes": 14,
       "level": "Intermedio",
-      "summary": "La cartera de servicios reúne las prestaciones que una IPRESS puede brindar de forma efectiva con sus recursos, su categoría y las modalidades autorizadas. La organización distingue UPS, UPSS y Sub UPSS, y el ciclo de gestión va de la planificación a la evaluación. El RENACSS reúne y difunde las carteras aprobadas. Leerla como capacidad operativa evita confundir una prestación disponible con una expectativa normativa o con un catálogo de procedimientos.",
+      "summary": "La cartera de servicios reúne las prestaciones que una IPRESS puede brindar de forma efectiva con sus recursos, su categoría y las modalidades autorizadas. La organización distingue UPS, UPSS y Sub UPSS, y el ciclo de gestión va de la planificación a la evaluación. El RENACSS reúne y difunde las carteras aprobadas. Leerla como capacidad operativa evita confundir una prestación disponible con una expectativa normativa o con un catálogo de procedimientos. La ficha precisa la diferencia entre cartera, catálogo, UPS y UPSS, y cita la NTS 249-2026.",
       "keyConcepts": [
         "UPS: unidad básica con recursos humanos y tecnológicos organizados para funciones homogéneas.",
         "UPSS: UPS organizada para producir servicios de salud específicos y sostener una cartera.",
@@ -28438,7 +30338,8 @@ window.STUDY_CONTENT = {
         "Capacidad operativa: recursos, espacio, horario y competencia efectivamente disponibles para producir una prestación.",
         "RENACSS: repositorio nacional que reúne, preserva y difunde las carteras aprobadas.",
         "Ciclo de cartera: planificar, elaborar, aprobar, publicar, actualizar y evaluar; no es una lista estática.",
-        "Modalidad: forma fija, móvil o de telesalud en que se entrega una prestación."
+        "Modalidad: forma fija, móvil o de telesalud en que se entrega una prestación.",
+        "Cartera no es catálogo: la primera expresa disponibilidad efectiva; el segundo es nomenclatura."
       ],
       "sections": [
         {
@@ -28575,12 +30476,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Cartera, APS y MCI",
+          "depth": "core",
+          "body": [
+            "La cartera de servicios reúne las prestaciones que una IPRESS puede brindar de forma efectiva con sus recursos, su categoría y las modalidades autorizadas. En el MCI, la cartera se organiza según las necesidades de la persona, la familia y la comunidad a lo largo del curso de vida.",
+            "La NTS 249-MINSA/DGAIN-2026 (RM 625-2026/MINSA) actualiza la cartera de establecimientos, servicios médicos de apoyo y RIS. No debe confundirse con la NTS 021 de categorías ni con el catálogo de procedimientos. La cartera es una promesa de disponibilidad, no una lista aspiracional."
+          ],
+          "bullets": [
+            "UPS, UPSS y Sub UPSS: niveles de organización de la producción.",
+            "Cartera: prestaciones disponibles y autorizadas.",
+            "Catálogo: nomenclatura de procedimientos; no es la cartera.",
+            "La cartera se planifica, aprueba, difunde y evalúa.",
+            "En APS debe responder a las necesidades del territorio y del curso de vida."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 249-MINSA/DGAIN-2026, cartera de servicios de salud, aprobada por RM N.° 625-2026-MINSA.",
-            "Fuente: MINSA — RM N.° 625-2026/MINSA, artículos 2-5 y 9, Repositorio Nacional de Carteras de Servicios de Salud.",
-            "Fuente: MINSA — NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos y UPSS, 2011."
+            "Fuente: MINSA — RM N.° 625-2026/MINSA, artículo 5, Repositorio Nacional de Carteras de Servicios de Salud.",
+            "Fuente: MINSA — NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos y UPSS, 2011.",
+            "Fuente: MINSA — NTS N.° 249-MINSA/DGAIN-2026, cartera de servicios, RM N.° 625-2026/MINSA, 16/07/2026.",
+            "Fuente: MINSA — NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos, RM N.° 546-2011/MINSA, 13/07/2011.",
+            "Fuente: Perú — Ley N.° 30885, Redes Integradas de Salud, publicada el 19/12/2018; vigente desde el 20/12/2018."
           ]
         }
       ],
@@ -28594,6 +30513,14 @@ window.STUDY_CONTENT = {
             17,
             18
           ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            60,
+            61,
+            62
+          ]
         }
       ]
     },
@@ -28605,7 +30532,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 2.4 · Referencia y contrarreferencia",
       "minutes": 15,
       "level": "Base",
-      "summary": "La referencia traslada a una persona hacia un servicio con mayor capacidad resolutiva o competencia necesaria, con coordinación previa y registro suficiente. La contrarreferencia devuelve al origen la información, las indicaciones y las responsabilidades para continuar el cuidado. La responsabilidad se transfiere, pero la continuidad se comparte. Sin circuito de retorno y seguimiento, el traslado se convierte en derivación sin cierre. Sirve para leer la red como ruta y no como suma de establecimientos.",
+      "summary": "La referencia traslada a una persona hacia un servicio con mayor capacidad resolutiva o competencia necesaria, con coordinación previa y registro suficiente. La contrarreferencia devuelve al origen la información, las indicaciones y las responsabilidades para continuar el cuidado. La responsabilidad se transfiere, pero la continuidad se comparte. Sin circuito de retorno y seguimiento, el traslado se convierte en derivación sin cierre. Sirve para leer la red como ruta y no como suma de establecimientos. La ficha incorpora los niveles de referencia y el cierre del circuito en la RIS.",
       "keyConcepts": [
         "Referencia: traslado coordinado de una persona hacia un servicio con mayor capacidad resolutiva o competencia necesaria.",
         "Contrarreferencia: retorno de información, indicaciones y responsabilidades al establecimiento de origen.",
@@ -28614,7 +30541,8 @@ window.STUDY_CONTENT = {
         "Retiro voluntario: interrupción decidida por la persona, con constancia en el registro.",
         "Deserción: interrupción o abandono pese a los esfuerzos por localizar y retomar el tratamiento.",
         "Hoja de referencia: documento que resume identificación, motivo, hallazgos, tratamiento y destino.",
-        "Red de servicios: conjunto articulado de establecimientos por el que circula la persona."
+        "Red de servicios: conjunto articulado de establecimientos por el que circula la persona.",
+        "Referencia y contrarreferencia son un circuito; la derivación sin retorno no es continuidad."
       ],
       "sections": [
         {
@@ -28787,11 +30715,31 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Referencia, APS y continuidad",
+          "depth": "core",
+          "body": [
+            "La referencia traslada a una persona hacia un servicio con mayor capacidad resolutiva o competencia necesaria. La contrarreferencia devuelve información, indicaciones y responsabilidades. En APS, la referencia no cierra el caso: el primer nivel conserva el vínculo y el seguimiento.",
+            "Los niveles de referencia pueden ser intraestablecimiento, entre establecimientos del mismo nivel o entre niveles de atención. La decisión exige criterio clínico, estabilización, coordinación con el receptor, hoja completa y verificación de recepción. La NT 018-MINSA/DGSP-V.01 (2004) sigue siendo referencia, pero debe contrastarse con la organización actual de la RIS.",
+            "La continuidad se organiza mediante vías de cuidado integral; la referencia es un componente, no todo el circuito. El DS 019-2024-SA (art. 15.3) ordena flujos de referencia y contrarreferencia, y la NT 018-2004 debe leerse con esa organización actual. La referencia no cierra el caso: el primer nivel conserva el vínculo y verifica la recepción."
+          ],
+          "bullets": [
+            "Nivel intraestablecimiento: traslado interno con registro.",
+            "Nivel entre establecimientos del mismo nivel: apoyo o complemento.",
+            "Nivel entre niveles: mayor capacidad resolutiva.",
+            "Urgencia: estabilizar, coordinar y trasladar.",
+            "Programada: hoja completa, cita y responsable.",
+            "Cierre: confirmar recepción y contrarreferencia."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NT N.° 018-MINSA/DGSP-V.01, referencia y contrarreferencia, apartados 8 y 9.",
-            "Fuente: MINSA — RM N.° 751-2004, aprueba la NT N.° 018-MINSA/DGSP-V.01 de referencia y contrarreferencia."
+            "Fuente: MINSA — RM N.° 751-2004, aprueba la NT N.° 018-MINSA/DGSP-V.01 de referencia y contrarreferencia.",
+            "Fuente: MINSA — NT N.° 018-MINSA/DGSP-V.01, referencia y contrarreferencia, RM N.° 751-2004/MINSA, 2004; contrastar con la organización actual de la RIS.",
+            "Fuente: Perú — Ley N.° 30885, Redes Integradas de Salud, publicada el 19/12/2018; vigente desde el 20/12/2018.",
+            "Fuente: Perú — DS N.° 019-2024-SA, publicado el 19/10/2024; Reglamento vigente de la Ley 30885 (deroga el DS 019-2020-SA)."
           ]
         }
       ],
@@ -28802,6 +30750,12 @@ window.STUDY_CONTENT = {
             19,
             20,
             21
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            61
           ]
         }
       ]
@@ -29035,7 +30989,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 2.6 · redes integradas de salud",
       "minutes": 16,
       "level": "Base",
-      "summary": "Una Red Integrada de Salud organiza la respuesta sanitaria de un territorio a partir de una población asignada, un primer nivel fortalecido y reglas comunes de gobierno. Coordina establecimientos y otros actores mediante rutas asistenciales, información compartida y responsabilidad sostenida sobre la continuidad. La red no se decreta ni se compra: se reconoce en los hechos cuando la referencia regresa con información y el equipo de origen sigue acompañando a la persona usuaria.",
+      "summary": "Una Red Integrada de Salud organiza la respuesta sanitaria de un territorio a partir de una población asignada, un primer nivel fortalecido y reglas comunes de gobierno. Coordina establecimientos y otros actores mediante rutas asistenciales, información compartida y responsabilidad sostenida sobre la continuidad. La red no se decreta ni se compra: se reconoce en los hechos cuando la referencia regresa con información y el equipo de origen sigue acompañando a la persona usuaria. La ficha cita la Ley 30885 y el reglamento vigente DS 019-2024-SA, y distingue RIS de seguro y de red de referencia.",
       "keyConcepts": [
         "Red Integrada de Salud: coordinación funcional de establecimientos y actores de un territorio con población asignada y responsabilidad sanitaria compartida.",
         "Población asignada: grupo humano delimitado por territorio y adscripción, base para planificar la oferta y responder por resultados.",
@@ -29043,7 +30997,8 @@ window.STUDY_CONTENT = {
         "Gobernanza de red: instancia con reglas, metas y decisiones compartidas que hace exigible la coordinación entre actores.",
         "Ruta asistencial: acuerdo entre niveles sobre criterios de referencia, momento de retorno y responsable de cada paso.",
         "Contrarreferencia: retorno documentado que devuelve hallazgos y plan al equipo de origen para continuar el cuidado.",
-        "Red nominal: conjunto de establecimientos con vínculo administrativo, pero sin coordinación clínica ni continuidad verificable."
+        "Red nominal: conjunto de establecimientos con vínculo administrativo, pero sin coordinación clínica ni continuidad verificable.",
+        "RIS: Ley 30885 (2018) y DS 019-2024-SA (2024); no es un seguro ni una simple red de referencia."
       ],
       "sections": [
         {
@@ -29178,11 +31133,34 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "RIS, APS y MCI",
+          "depth": "core",
+          "body": [
+            "La Ley 30885 (2018) define la RIS como el conjunto de organizaciones que presta o hace arreglos para prestar una cartera de salud equitativa e integral a una población definida, con articulación, coordinación y rendición de cuentas. Su reglamento vigente es el DS 019-2024-SA (2024), que derogó el DS 019-2020-SA.",
+            "La RIS no es una suma de establecimientos ni un seguro. Exige población y territorio definidos, primer nivel fortalecido, cartera complementaria, gobernanza, información integrada, referencia y contrarreferencia. El MCI es el modelo de cuidado que la RIS debe implementar; la APS es su estrategia organizativa.",
+            "El DS 019-2024-SA dispone una implementación progresiva mediante RIS iniciadoras y ubica al Director de la RIS y a los cinco jefes de equipo en el establecimiento público de mayor capacidad resolutiva del primer nivel. La RIS debe garantizar acceso oportuno y equitativo, sin barreras evitables. La continuidad se organiza mediante vías de cuidado integral; la referencia es un componente, no todo el circuito."
+          ],
+          "bullets": [
+            "Población y territorio definidos.",
+            "Primer nivel como integrador y coordinador.",
+            "Cartera complementaria y rutas de cuidado.",
+            "Gobernanza y acuerdos de gestión.",
+            "Información integrada y rendición de cuentas.",
+            "Evaluación por resultados sanitarios.",
+            "RIS iniciadoras: implementación progresiva.",
+            "Director y cinco equipos de gestión en el primer nivel de mayor capacidad.",
+            "Acceso oportuno y equitativo, sin barreras evitables.",
+            "Vías de cuidado integral y referencia/contrarreferencia.",
+            "Evaluación anual y rendición de cuentas."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
-            "Fuente: MINSA — NTS N.° 021-MINSA/DGSP-V.03, categorías de establecimientos de salud y organización del primer nivel de atención.",
-            "Fuente: MINSA — NTS N.° 139-MINSA/2018/DGAIN, gestión de la historia clínica, numerales 5.1 y 5.2.1."
+            "Fuente: Perú — Ley N.° 30885, Redes Integradas de Salud, publicada el 19/12/2018; vigente desde el 20/12/2018.",
+            "Fuente: Perú — DS N.° 019-2024-SA, publicado el 19/10/2024; Reglamento vigente de la Ley 30885 (deroga el DS 019-2020-SA).",
+            "Fuente: MINSA — Modelo de Cuidado Integral de Salud por Curso de Vida, RM N.° 030-2020/MINSA, 27/01/2020; enfoque de curso de vida, componentes y organización territorial."
           ]
         }
       ],
@@ -29191,6 +31169,13 @@ window.STUDY_CONTENT = {
           "sourceId": "src-psi-ge",
           "pages": [
             24
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            60,
+            61
           ]
         }
       ]
@@ -29203,7 +31188,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 2.7 · telesalud",
       "minutes": 15,
       "level": "Intermedio",
-      "summary": "La telesalud usa tecnologías para prestar atención, acompañar el seguimiento, intercambiar opinión entre profesionales, informar y capacitar a distancia. Cada modalidad tiene participantes, finalidad y condiciones propias. La distancia no rebaja estándares: se exige pertinencia clínica, identidad verificada, consentimiento, privacidad, registro y un plan de contingencia. Sin cierre verificable del circuito, la atención remota se vuelve una conversación sin responsable.",
+      "summary": "La telesalud usa tecnologías para prestar atención, acompañar el seguimiento, intercambiar opinión entre profesionales, informar y capacitar a distancia. Cada modalidad tiene participantes, finalidad y condiciones propias. La distancia no rebaja estándares: se exige pertinencia clínica, identidad verificada, consentimiento, privacidad, registro y un plan de contingencia. Sin cierre verificable del circuito, la atención remota se vuelve una conversación sin responsable. La ficha sitúa la telesalud como herramienta de acceso y continuidad en APS, con condiciones éticas y clínicas.",
       "keyConcepts": [
         "Telesalud: uso de tecnologías para atención, gestión, información, educación y fortalecimiento de capacidades a distancia.",
         "Telemedicina: prestación clínica remota que exige pertinencia, identificación, consentimiento, privacidad y registro.",
@@ -29212,7 +31197,8 @@ window.STUDY_CONTENT = {
         "Telemonitoreo: seguimiento remoto de síntomas, adherencia o indicadores, con umbrales de alerta y responsable definido.",
         "Teleorientación: información y guía inicial que no sustituye la evaluación ni se convierte en diagnóstico.",
         "Telecapacitación: actividad educativa a distancia para fortalecer competencias del personal, con objetivo y evaluación.",
-        "Handoff: comunicación estructurada que transfiere información y responsabilidad con confirmación de recepción."
+        "Handoff: comunicación estructurada que transfiere información y responsabilidad con confirmación de recepción.",
+        "Telesalud no reemplaza la atención presencial cuando se requiere examen físico o evaluación urgente."
       ],
       "sections": [
         {
@@ -29354,11 +31340,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Telesalud y acceso en APS",
+          "depth": "core",
+          "body": [
+            "La telesalud usa tecnologías para prestar atención, acompañar el seguimiento, intercambiar opinión entre profesionales, informar y capacitar a distancia. En APS puede reducir barreras geográficas y mejorar la oportunidad, pero no elimina la necesidad de acceso presencial, examen físico o continuidad.",
+            "Cada modalidad tiene condiciones propias: teleconsulta, teleinterconsulta, teleorientación y telecapacitación. La atención remota exige identificación, consentimiento, privacidad, registro, pertinencia clínica y un plan de contingencia. La distancia no reduce los estándares éticos ni clínicos."
+          ],
+          "bullets": [
+            "Teleconsulta: atención a la persona.",
+            "Teleinterconsulta: apoyo entre profesionales.",
+            "Teleorientación: información y guía inicial.",
+            "Telecapacitación: formación del personal.",
+            "Consentimiento, privacidad, registro y derivación.",
+            "Prever fallas tecnológicas y necesidad de atención presencial."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — NTS N.° 235-MINSA/DIGTEL/2025, telesalud, aprobada por RM N.° 664-2025-MINSA.",
-            "Fuente: MINSA — NTS N.° 139-MINSA/2018/DGAIN, gestión de la historia clínica y registro de la atención."
+            "Fuente: MINSA — NTS N.° 139-MINSA/2018/DGAIN, gestión de la historia clínica y registro de la atención.",
+            "Fuente: Perú — Ley N.° 30421, Ley Marco de Telesalud, y su reglamento.",
+            "Fuente: MINSA — NTS N.° 235-MINSA/DIGTEL/2025, telesalud, RM N.° 664-2025-MINSA."
           ]
         }
       ],
@@ -29368,6 +31372,13 @@ window.STUDY_CONTENT = {
           "pages": [
             25,
             26
+          ]
+        },
+        {
+          "sourceId": "src-mci",
+          "pages": [
+            37,
+            70
           ]
         }
       ]
@@ -29567,7 +31578,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 3.2 · inventario y stock",
       "minutes": 16,
       "level": "Intermedio",
-      "summary": "La disponibilidad de insumos depende de programar, adquirir, almacenar, controlar y reponer con trazabilidad. El stock se gobierna con niveles mínimo, máximo y punto de pedido, y con reglas de rotación como FEFO para lo que caduca y FIFO para lo que no. La existencia física no equivale a disponibilidad utilizable, porque vencidos, no conformes y reservas deben descontarse. La auditoría cierra el ciclo al verificar que el registro coincida con lo que existe.",
+      "summary": "La disponibilidad de insumos depende de programar, adquirir, almacenar, controlar y reponer con trazabilidad. El stock se gobierna con niveles mínimo, máximo y punto de pedido, y con reglas de rotación como FEFO para lo que caduca y FIFO para lo que no. La existencia física no equivale a disponibilidad utilizable, porque vencidos, no conformes y reservas deben descontarse. La auditoría cierra el ciclo al verificar que el registro coincida con lo que existe. La ficha incorpora la cadena peruana de suministro y el SISMED.",
       "keyConcepts": [
         "Stock mínimo: nivel de alerta que evita el desabastecimiento antes de la siguiente reposición.",
         "Stock máximo: techo de existencias que limita el sobrestock, los vencimientos y el capital inmovilizado.",
@@ -29577,7 +31588,8 @@ window.STUDY_CONTENT = {
         "Clasificación ABC: ordena los insumos por impacto, valor o criticidad para concentrar el control donde importa.",
         "FEFO: primero vence, primero sale; regla obligada en productos con fecha de caducidad.",
         "Kardex: registro de entradas, salidas y saldos que permite conciliar existencia física y documental.",
-        "Trazabilidad: seguimiento por lote y fecha que permite ubicar y retirar un producto cuando se requiere."
+        "Trazabilidad: seguimiento por lote y fecha que permite ubicar y retirar un producto cuando se requiere.",
+        "SISMED: sistema de seguimiento de medicamentos; la existencia local no reemplaza la cadena de suministro."
       ],
       "sections": [
         {
@@ -29713,11 +31725,30 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Cadena peruana de suministro y SISMED",
+          "depth": "full",
+          "body": [
+            "En el Perú la disponibilidad de medicamentos no depende solo del almacén local. La cadena incluye programación de necesidades, adquisición, almacenamiento, distribución, dispensación y uso. El SISMED registra y sigue el movimiento de productos en los establecimientos y permite consolidar información para la reposición.",
+            "El almacén debe separar productos por condición, controlar temperatura y humedad, registrar lotes y vencimientos, y aplicar FEFO cuando el producto caduca. Los psicotrópicos y estupefacientes exigen control adicional, registro de existencias y trazabilidad. La baja por vencimiento, deterioro o pérdida sigue procedimiento y no se resuelve con un ajuste informal."
+          ],
+          "bullets": [
+            "Programación: consumo histórico, morbilidad, stock y metas.",
+            "Adquisición y distribución: CENARES, DIRESA/GERESA/RIS y establecimiento.",
+            "SISMED: registro, seguimiento y consolidación.",
+            "Almacenamiento: condiciones, segregación, lotes y vencimientos.",
+            "Dispensación: prescripción, registro y consejería.",
+            "Controlados: libro, custodia y trazabilidad.",
+            "Baja: acta, causal y disposición final."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: MINSA — Oficio Múltiple N.° 064-2026-DIGEMID-DG-DFAU-EAM/MINSA, Informe técnico de retiro, acopio, baja patrimonial y disposición final de productos vencidos.",
-            "Fuente: WFP / Global Logistics Cluster — Logistics Operational Guide, Managing Inventory Levels (consulta 19/10/2026)."
+            "Fuente: WFP / Global Logistics Cluster — Logistics Operational Guide, Managing Inventory Levels (consulta 19/10/2026).",
+            "Fuente: MINSA — RM N.° 019-2020/MINSA, Directiva Administrativa N.° 249-MINSA/DGAIN, SISMED.",
+            "Fuente: MINSA — DIGEMID, Buenas Prácticas de Almacenamiento y normativa de productos controlados."
           ]
         }
       ],
@@ -29893,7 +31924,7 @@ window.STUDY_CONTENT = {
       "kicker": "Psicología · GE 3.4, GE 3.5 · liderazgo y trabajo en equipo",
       "minutes": 17,
       "level": "Base",
-      "summary": "El liderazgo orienta el propósito, facilita decisiones y desarrolla capacidades; la gestión ordena recursos, plazos y cumplimiento. El equipo se distingue del grupo por la interdependencia de roles y la responsabilidad compartida por el resultado. Sostenerlo exige metas claras, roles definidos, comunicación oportuna y seguridad psicológica. El liderazgo situacional ajusta dirección y apoyo según la competencia y la tarea. El conflicto gestionado mejora las decisiones; ocultarlo deteriora la coordinación.",
+      "summary": "El liderazgo orienta el propósito, facilita decisiones y desarrolla capacidades; la gestión ordena recursos, plazos y cumplimiento. El equipo se distingue del grupo por la interdependencia de roles y la responsabilidad compartida por el resultado. Sostenerlo exige metas claras, roles definidos, comunicación oportuna y seguridad psicológica. El liderazgo situacional ajusta dirección y apoyo según la competencia y la tarea. El conflicto gestionado mejora las decisiones; ocultarlo deteriora la coordinación. La ficha compartida incorpora el trabajo colaborativo y la eficacia como contenido propio de GE 3.5.",
       "keyConcepts": [
         "Liderazgo: función que orienta el propósito, facilita decisiones y desarrolla capacidades sin reducirse a dar órdenes.",
         "Gestión: función que ordena recursos, plazos, normas y cumplimiento para que la atención ocurra en condiciones previsibles.",
@@ -29902,7 +31933,8 @@ window.STUDY_CONTENT = {
         "Liderazgo situacional: ajuste deliberado de dirección y apoyo según la competencia de la persona y la demanda de la tarea.",
         "Seguridad psicológica: condición que permite plantear dudas, errores y desacuerdos sin temor a humillación o represalia.",
         "Conflicto funcional: discrepancia gestionada con reglas claras que mejora el análisis y la calidad de la decisión.",
-        "Claridad de roles: delimitación de funciones y responsabilidades que evita duplicidades y vacíos en la atención."
+        "Claridad de roles: delimitación de funciones y responsabilidades que evita duplicidades y vacíos en la atención.",
+        "Trabajo colaborativo: roles interdependientes, objetivo común y responsabilidad compartida; no es solo buen clima."
       ],
       "sections": [
         {
@@ -30061,11 +32093,29 @@ window.STUDY_CONTENT = {
           }
         },
         {
+          "title": "Trabajo colaborativo y eficacia",
+          "depth": "core",
+          "body": [
+            "El trabajo colaborativo no es “llevarse bien”. Es la coordinación de roles interdependientes para lograr un resultado que ninguna persona alcanzaría por separado. Exige objetivo común, roles claros, comunicación oportuna, confianza y rendición de cuentas.",
+            "La eficacia se mide por resultados y por la calidad de la coordinación: oportunidad, seguridad, continuidad y experiencia de la persona usuaria. Un equipo puede ser agradable y poco eficaz si evita conflictos, duplica tareas o no cierra los circuitos.",
+            "El liderazgo facilita la colaboración cuando distribuye información, protege la seguridad psicológica y hace seguimiento. La colaboración interprofesional incluye a medicina, enfermería, obstetricia, psicología, trabajo social, agentes comunitarios y otros actores."
+          ],
+          "bullets": [
+            "Objetivo común y resultado esperado explícitos.",
+            "Roles y responsabilidades interdependientes.",
+            "Comunicación oportuna y canales definidos.",
+            "Seguridad psicológica para reportar errores y desacuerdos.",
+            "Rendición de cuentas compartida.",
+            "Evaluación de resultados y de la coordinación."
+          ]
+        },
+        {
           "title": "Fuentes y Referencias",
           "depth": "core",
           "bullets": [
             "Fuente: SERVIR — RPE N.° 150-2017-SERVIR-PE, Guía para la Gestión del Proceso de Cultura y Clima Organizacional, sección 3.3, liderazgo y comunicación interna.",
-            "Fuente: OMS — Funciones esenciales de salud pública, liderazgo y gobernanza de los servicios de salud."
+            "Fuente: OMS — Funciones esenciales de salud pública, liderazgo y gobernanza de los servicios de salud.",
+            "Fuente: SERVIR — RPE N.° 150-2017-SERVIR-PE, Guía para la Gestión del Proceso de Cultura y Clima Organizacional."
           ]
         }
       ],
@@ -30498,7 +32548,8 @@ window.STUDY_CONTENT = {
           "bullets": [
             "Fuente: SERVIR — RPE N.° 150-2017-SERVIR-PE, Guía para la Gestión del Proceso de Cultura y Clima Organizacional, sección 3.3.",
             "Fuente: MINSA — RM N.° 468-2011/MINSA, Metodología para el Estudio del Clima Organizacional V.02.",
-            "Fuente: MINSA — NTS N.° 029-MINSA/DIGEPRES-V.02, numerales 5.4-5.8, gestión de la calidad de la atención."
+            "Fuente: MINSA — NTS N.° 029-MINSA/DIGEPRES-V.02, numerales 5.4-5.8, gestión de la calidad de la atención.",
+            "Criterio: no mezclar denominaciones del marco SERVIR con las de la metodología MINSA; explicitar qué instrumento se usa."
           ]
         }
       ],

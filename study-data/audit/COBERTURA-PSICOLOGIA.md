@@ -1,6 +1,8 @@
 # Cobertura del temario de Psicología (SERUMS 2026-II)
 
-Generado desde `study-data/temario.js`, `psi/import/index.json` y `matriz-psicologia.csv`.
+> **Nota de auditoría (24/10/2026):** la cobertura de esta matriz es **estructural (90/90 ítems mapeados)**; no certifica por sí sola la profundidad de cada ficha. El estado de desarrollo, las brechas y las limitaciones se detallan en `MAPA-MAESTRO-PSICOLOGIA.md` y `INFORME-REORGANIZACION.md`.
+
+Generado desde `study-data/temario.js`, `matriz-psicologia.csv` y el PDF oficial.
 
 ## Resumen
 

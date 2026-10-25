@@ -114,6 +114,10 @@ main { min-height: 62vh; }
 .deck-area-head h2 { font-size: 21px; letter-spacing: -.03em; }
 .deck-area-head p { color: var(--muted); font-size: 11px; line-height: 1.45; margin-top: 2px; }
 .deck-area-meta { color: var(--muted); font-size: 9.5px; white-space: nowrap; }
+.deck-category { margin-top: 13px; }
+.deck-category-head { display: flex; align-items: baseline; gap: 9px; padding: 9px 2px 8px; border-top: 1px solid var(--line); }
+.deck-category-head h3 { font-size: 13px; letter-spacing: -.02em; }
+.deck-category-head .s-small { margin-left: auto; white-space: nowrap; }
 .deck-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
 .deck-card { display: flex; flex-direction: column; padding: 18px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); transition: border-color var(--t-base), transform var(--t-base); }
 .deck-card:hover { border-color: var(--line-strong); transform: translateY(-2px); }
