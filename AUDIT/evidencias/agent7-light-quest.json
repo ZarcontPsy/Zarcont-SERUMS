@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "bodyBg": "rgb(242, 240, 234)",
+  "buttons": [
+    {
+      "kind": "home",
+      "color": "rgb(68, 74, 90)",
+      "bg": "rgb(242, 240, 234)",
+      "contrast": 7.77,
+      "label": "Volver al inicio de SERUMS QUEST"
+    },
+    {
+      "kind": "hub",
+      "color": "rgb(68, 74, 90)",
+      "bg": "rgb(242, 240, 234)",
+      "contrast": 7.77,
+      "label": "Volver al HUB"
+    },
+    {
+      "kind": "fullscreen",
+      "color": "rgb(68, 74, 90)",
+      "bg": "rgb(242, 240, 234)",
+      "contrast": 7.77,
+      "label": "Pantalla completa"
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "generated_at": "2026-10-25T22:19:21.294Z",
+  "chrome": "Chrome/155.0.8059.85",
+  "base": "http://127.0.0.1:8771",
+  "checks": [
+    {
+      "id": "S1",
+      "name": "Tarjeta Dashboard con snapshot: href sin ?sheet=",
+      "ok": true,
+      "expected": "./study-dashboard/index.html",
+      "actual": {
+        "app": "dashboard",
+        "href": "./study-dashboard/index.html"
+      }
+    },
+    {
+      "id": "S2",
+      "name": "Tarjeta Flashcards con snapshot: href sin ?deck=/?resume=",
+      "ok": true,
+      "expected": "./study-flashcards/index.html",
+      "actual": {
+        "app": "flashcards",
+        "href": "./study-flashcards/index.html"
+      }
+    },
+    {
+      "id": "S3",
+      "name": "El «último punto» sigue visible como información (no como URL)",
+      "ok": true,
+      "expected": "texto visible",
+      "actual": {
+        "hidden": false,
+        "text": "Último puntoFicha real"
+      }
+    },
+    {
+      "id": "S4",
+      "name": "Ruta directa ?sheet=<real> abre la ficha y limpia la query",
+      "ok": true,
+      "expected": "#/ficha/sheet-psi-sp-1-1",
+      "actual": {
+        "hash": "#/ficha/sheet-psi-sp-1-1",
+        "search": "",
+        "title": "Salud Pública y Funciones Esenciales · Study Dashboard"
+      }
+    },
+    {
+      "id": "S5",
+      "name": "Ruta directa ?deck=<real>&resume=1 abre mazo/sesión y limpia la query",
+      "ok": true,
+      "expected": "#/mazo/sheet-aps-01",
+      "actual": {
+        "hash": "#/mazo/sheet-aps-01",
+        "search": "",
+        "title": "Una APS fuerte no es un consultorio de segunda · Study Flashcards"
+      }
+    },
+    {
+      "id": "S6",
+      "name": "Snapshot obsoleto: Dashboard/Flashcards sin query (Banqueo conserva ?v= documentado)",
+      "ok": true,
+      "expected": "dashboard y flashcards sin query",
+      "actual": [
+        {
+          "app": "banqueo",
+          "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5"
+        },
+        {
+          "app": "plazas",
+          "href": "./serums map/serums-map-explorer/index.html"
+        },
+        {
+          "app": "dashboard",
+          "href": "./study-dashboard/index.html"
+        },
+        {
+          "app": "flashcards",
+          "href": "./study-flashcards/index.html"
+        },
+        {
+          "app": "quest",
+          "href": "./serums-quest/index.html"
+        }
+      ]
+    }
+  ],
+  "summary": {
+    "checks": 6,
+    "passed": 6,
+    "failed": 0
+  }
+}

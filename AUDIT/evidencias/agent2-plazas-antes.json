@@ -1,0 +1,135 @@
+{
+  "app": "plazas",
+  "steps": [
+    {
+      "name": "0 carga",
+      "url": "http://127.0.0.1:8772/serums%20map/serums-map-explorer/index.html",
+      "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+      "plazas": 7323,
+      "mapReady": false,
+      "errors": "",
+      "key": [
+        "serums_notifs"
+      ],
+      "favs": 0
+    },
+    {
+      "name": "1 favorito + tema + filtro + selección",
+      "acted": {
+        "favClicked": true,
+        "themeClicked": true,
+        "search": true,
+        "prov": true
+      },
+      "afterAct": {
+        "keys": [
+          "serums_favoritos",
+          "serums_theme",
+          "serums_notifs"
+        ],
+        "favs": 1,
+        "adjs": 0,
+        "theme": "light",
+        "search": "",
+        "prov": "ABANCAY (47)",
+        "view": "map",
+        "sideTab": "filters",
+        "quick": "todas",
+        "selectedId": null,
+        "cards": 0,
+        "favBadge": "1"
+      }
+    },
+    {
+      "name": "2 pestaña oculta/visible",
+      "after": {
+        "keys": [
+          "serums_favoritos",
+          "serums_theme",
+          "serums_notifs"
+        ],
+        "favs": 1,
+        "adjs": 0,
+        "theme": "light",
+        "search": "",
+        "prov": "ABANCAY (47)",
+        "view": "map",
+        "sideTab": "filters",
+        "quick": "todas",
+        "selectedId": null,
+        "cards": 0,
+        "favBadge": "1"
+      },
+      "navsDuring": 0
+    },
+    {
+      "name": "3 refrescar",
+      "keys": [
+        "serums_favoritos",
+        "serums_theme",
+        "serums_notifs"
+      ],
+      "favs": 1,
+      "adjs": 0,
+      "theme": "light",
+      "search": "",
+      "prov": "",
+      "view": "map",
+      "sideTab": "filters",
+      "quick": "todas",
+      "selectedId": null,
+      "cards": 25,
+      "favBadge": "1"
+    },
+    {
+      "name": "4 reentrar desde el HUB",
+      "keys": [
+        "serums_favoritos",
+        "serums_theme",
+        "serums_notifs"
+      ],
+      "favs": 1,
+      "adjs": 0,
+      "theme": "light",
+      "search": "",
+      "prov": "",
+      "view": "map",
+      "sideTab": "filters",
+      "quick": "todas",
+      "selectedId": null,
+      "cards": 25,
+      "favBadge": "1"
+    },
+    {
+      "name": "5 atrás/adelante",
+      "back": {
+        "url": "http://127.0.0.1:8772/index.html",
+        "title": "SERUMS HUB — Centro de aplicaciones"
+      },
+      "fwd": {
+        "url": "http://127.0.0.1:8772/serums%20map/serums-map-explorer/index.html",
+        "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+        "cards": 25
+      }
+    },
+    {
+      "name": "6 orientación",
+      "portrait": {
+        "w": 390,
+        "view": "map",
+        "sideOpen": false
+      },
+      "landscape": {
+        "w": 844
+      }
+    },
+    {
+      "name": "7 subvista favoritos",
+      "view": "favoritos",
+      "hash": "",
+      "rows": 1,
+      "tabs": 2
+    }
+  ],
+  "errors": []
+}

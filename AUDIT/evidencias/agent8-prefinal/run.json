@@ -1,0 +1,316 @@
+{
+  "startedAt": "2026-10-25T22:34:23.186Z",
+  "finishedAt": "2026-10-25T22:35:09.072Z",
+  "total": 8,
+  "counts": {
+    "PASS": 8,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "results": [
+    {
+      "id": "PERSIST-01",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Progreso de Study: pestaña nueva, refresh y reentrada desde el HUB conservan la ficha completada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 6643,
+      "observations": {
+        "snapshot": {
+          "completed": 1,
+          "last": {
+            "sheetId": "sheet-aps-01",
+            "topicId": "topic-aps-atributos",
+            "title": "Una APS fuerte no es un consultorio de segunda",
+            "context": "Los cuatro atributos de la APS",
+            "at": "2026-10-25T22:34:26.834Z",
+            "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+          }
+        },
+        "href": "./study-dashboard/index.html",
+        "flashHref": "./study-flashcards/index.html",
+        "reentry": {
+          "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+          "hash": "#/"
+        },
+        "hubProgress": {
+          "text": "SERUMS HUB\nBANQUEO\nFICHA 01\nA\nB\nC\nD\nCLAVE\nVERIFICADA\n51\nEXÁMENES\nAbrir\n01 / 05\nBANCO DE EXÁMENES\nBANQUEO\n\n51 exámenes reales por profesión, con la clave en su página original, revisión y práctica.\n\n51 exámenes\nClaves trazables\nRevisión y práctica\nAbrir aplicación\nPREPARACIÓN\nTERRITORIO\n7 323\nPLAZAS\nEXPLORADOR TERRITORIAL\nPLAZAS SERUMS\nFICHA DE ESTUDIO\n01\nPROGRESO DEL TEMARIO\n5 ÁREAS\n20 CATEGORÍAS\n210\nFICHAS\nLECTURA Y PROGRESO\nSTUDY DASHBOARD\nCONCEPTO\n?\nREPASO ACTIVO\n630\nTARJETAS\nRECUPERACIÓN ACTIVA\nSTUDY FLASHCARDS\nQ\n5 RUTAS\n· MISIONES\n300\nPREGUNTAS\nAPRENDIZAJE GAMIFICADO\nSERUMS QUEST\nBANQUEO\nBanco de exámenes\nAbrir",
+          "value": "1/210",
+          "href": "./study-dashboard/index.html"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:25.551Z"
+    },
+    {
+      "id": "PERSIST-02",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Cerrar y reabrir Chrome conserva progreso de Study y snapshot del HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 3283,
+      "observations": {
+        "before": {
+          "completed": 1,
+          "keys": [
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "completed": 1,
+          "keys": [
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:32.195Z"
+    },
+    {
+      "id": "PERSIST-03",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Orientación landscape/portrait no rompe el progreso ni produce errores",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2450,
+      "observations": {
+        "landscape": {
+          "w": 844,
+          "h": 390,
+          "overflow": 0,
+          "text": "CONTINÚA DONDE LO DEJASTE\nAprender también es volver.\n\nTu progreso se construye ",
+          "completed": 1
+        },
+        "portrait": {
+          "w": 390,
+          "h": 844,
+          "overflow": 0,
+          "completed": 1
+        },
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:35.478Z"
+    },
+    {
+      "id": "PERSIST-04",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Flashcards: sesión y tarjeta revisada sobreviven a refresh y reinicio",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 4983,
+      "observations": {
+        "before": {
+          "session": null,
+          "reviewed": 0,
+          "lastDeck": "sheet-aps-01",
+          "keys": [
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "session": null,
+          "reviewed": 0,
+          "lastDeck": "sheet-aps-01",
+          "keys": [
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ],
+          "resumeHref": null
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:37.928Z"
+    },
+    {
+      "id": "PERSIST-05",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "QUEST: tema, misión y estado versionado sobreviven a cerrar/reabrir",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 6606,
+      "observations": {
+        "before": {
+          "revision": 4,
+          "theme": "light",
+          "answers": 1,
+          "xp": 0,
+          "keys": [
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "revision": 4,
+          "theme": "light",
+          "answers": 1,
+          "xp": 0,
+          "docTheme": "light",
+          "keys": [
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:42.911Z"
+    },
+    {
+      "id": "PERSIST-06",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Plazas: favoritos y preferencias sobreviven a cerrar/reabrir",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 9138,
+      "observations": {
+        "before": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "keys": [
+            "serums_favoritos",
+            "serums_notifs",
+            "serums_theme",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "badge": "1",
+          "keys": [
+            "serums_favoritos",
+            "serums_notifs",
+            "serums_theme",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:49.517Z"
+    },
+    {
+      "id": "PERSIST-07",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Banqueo: intento de práctica persiste en IndexedDB y se lista tras reiniciar",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 9828,
+      "observations": {
+        "databases": [
+          {
+            "name": "examenstudio",
+            "version": 2
+          },
+          {
+            "name": "serumsdb",
+            "version": 1
+          },
+          {
+            "name": "study-serums",
+            "version": 1
+          }
+        ],
+        "after": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n1\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando empieces una práctica y salgas sin entregar, aparecerá aquí para continuarla.\n\n1 intento guardado en I"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:34:58.655Z"
+    },
+    {
+      "id": "PERSIST-08",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Inventario de claves final: ninguna clave esperada se perdió",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1,
+      "observations": {
+        "keys": [
+          "banqueo-profession-v1",
+          "banqueo-review-v1",
+          "banqueo-theme-v1",
+          "es-theme",
+          "serums_favoritos",
+          "serums_notifs",
+          "serums_theme",
+          "serumsquest:backup:v1",
+          "serumsquest:snapshot:v1",
+          "serumsquest:state:v1",
+          "serumsquest:theme",
+          "study-state-v1",
+          "study-theme",
+          "studyhub:snapshot:v1"
+        ],
+        "required": [
+          "study-state-v1",
+          "studyhub:snapshot:v1",
+          "study-theme",
+          "serumsquest:state:v1",
+          "serumsquest:snapshot:v1",
+          "serumsquest:theme",
+          "serums_favoritos",
+          "serums_theme",
+          "banqueo-review-v1",
+          "banqueo-profession-v1"
+        ],
+        "missing": []
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:35:08.483Z"
+    }
+  ]
+}

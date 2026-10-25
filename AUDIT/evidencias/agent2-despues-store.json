@@ -1,0 +1,131 @@
+{
+  "fase": "despues",
+  "steps": [
+    {
+      "name": "1.1 setSheetScroll no borra la posición con un 0 de apertura",
+      "tras_042": 0.42,
+      "tras_cero": 0.42,
+      "tras_071": 0.71,
+      "tras_004": 0.04,
+      "tras_cero_otra_vez": 0
+    },
+    {
+      "name": "2.1 la respuesta conserva el mazo de la sesión (no el tema)",
+      "deckId": "sheet-aps-01",
+      "deckTitle": "Una APS fuerte no es un consultorio de segunda",
+      "last": {
+        "deckId": "sheet-aps-01",
+        "topicId": "topic-aps-atributos",
+        "sheetId": "sheet-aps-01",
+        "title": "Una APS fuerte no es un consultorio de segunda",
+        "at": "2026-10-25T22:17:25.610Z",
+        "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=sheet-aps-01&resume=1"
+      },
+      "activeDeck": "sheet-aps-01",
+      "resumeUrl": "http://127.0.0.1:8772/study-flashcards/index.html?deck=sheet-aps-01&resume=1",
+      "resumeConDeck": true,
+      "snapshotLast": {
+        "deckId": "sheet-aps-01",
+        "topicId": "topic-aps-atributos",
+        "sheetId": "sheet-aps-01",
+        "title": "Una APS fuerte no es un consultorio de segunda",
+        "at": "2026-10-25T22:17:25.610Z",
+        "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=sheet-aps-01&resume=1"
+      }
+    },
+    {
+      "name": "2.2 ?deck=&resume=1 reanuda la sesión correcta",
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html#/sesion",
+      "hash": "#/sesion",
+      "active": true,
+      "deck": "sheet-aps-01",
+      "index": 0,
+      "stage": true
+    },
+    {
+      "name": "2.3 sin sesión activa se mantiene el formato anterior (tema)",
+      "lastDeck": "topic-aps-atributos",
+      "cardTopic": "topic-aps-atributos",
+      "igualAlTema": true,
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=topic-aps-atributos"
+    },
+    {
+      "name": "3.1 revisión entre dos pestañas (antes se perdía una)",
+      "qids": [
+        "2025-i-biologia-q004",
+        "2025-i-biologia-q005",
+        "2025-i-biologia-q006"
+      ],
+      "cross": [
+        "2025-i-biologia-q002",
+        "2025-i-biologia-q001",
+        "2025-i-biologia-q004",
+        "2025-i-biologia-q006"
+      ],
+      "crossB": [
+        "2025-i-biologia-q002",
+        "2025-i-biologia-q001",
+        "2025-i-biologia-q004",
+        "2025-i-biologia-q006",
+        "2025-i-biologia-q005"
+      ],
+      "disk": {
+        "total": 5,
+        "hasA": true,
+        "hasB": true,
+        "memA": 5,
+        "memB": 5
+      },
+      "memA": 5
+    },
+    {
+      "name": "3.2 desmarcar conserva la entrada (no borra historial)",
+      "entry": {
+        "r": 0,
+        "ts": 1792966654027
+      },
+      "sigueExistiendo": true,
+      "total": 5
+    },
+    {
+      "name": "4.1 diario viejo no sustituye al estado más reciente",
+      "journalBefore": {
+        "revision": 6,
+        "xp": 999,
+        "updatedAt": "2026-10-25T22:17:05.011Z"
+      },
+      "injectOld": {
+        "journalXp": 999,
+        "journalRev": 1
+      },
+      "afterOldJournal": {
+        "diskRevision": 6,
+        "diskXp": 999,
+        "memXp": 999,
+        "journalPresent": false
+      }
+    },
+    {
+      "name": "4.2 diario más reciente sí se consolida",
+      "injectNew": {
+        "esperado": 777,
+        "journalRev": 11
+      },
+      "afterNewJournal": {
+        "coins": 777,
+        "revision": 11,
+        "memCoins": 777,
+        "journalPresent": false
+      }
+    },
+    {
+      "name": "5.1 Store.set(undefined) elimina la clave en vez de guardar 'undefined'",
+      "before": "{\"a\":1}",
+      "after": null,
+      "quitada": true,
+      "cacheKeys": 1,
+      "get": 2
+    }
+  ],
+  "errors": []
+}

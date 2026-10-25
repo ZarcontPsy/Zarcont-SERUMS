@@ -1,0 +1,374 @@
+{
+  "generated_at": "2026-10-25T22:11:27.410Z",
+  "finished_at": "2026-10-25T22:11:45.332Z",
+  "base": "http://127.0.0.1:8771",
+  "chrome": "Chrome/155.0.8059.85",
+  "profile_note": "perfil temporal eliminado al terminar",
+  "totals": {
+    "tests": 39,
+    "passed": 37,
+    "failed": 2
+  },
+  "defects": [
+    {
+      "id": "H4.2",
+      "name": "Banqueo ofrece regreso al HUB",
+      "defect": "A1-D4 · EXAMEN STUDIO/js/app.js renderShell() no pinta ningún enlace al hub (solo app.js: el topbar no incluye HUB)"
+    },
+    {
+      "id": "H4.4",
+      "name": "Plazas ofrece regreso al HUB",
+      "defect": "A1-D5 · serums map/serums-map-explorer/index.html no contiene ningún <a> (topbar de botones); sin enlace al hub"
+    },
+    {
+      "id": "H5.2",
+      "name": "Snapshot obsoleto no inyecta ?sheet=/?deck= en las tarjetas (D1)",
+      "defect": "A1-D1 · index.html applySnapshot() reescribe el href de las tarjetas con dashboardHref/flashcardsHref"
+    },
+    {
+      "id": "H5.3",
+      "name": "Snapshot con ids válidos tampoco inyecta query en las tarjetas (D1)",
+      "defect": "A1-D1 · mismo origen: la reanudación debe vivir dentro de la app o en un control aparte"
+    }
+  ],
+  "console_errors": [],
+  "results": [
+    {
+      "id": "H1.1",
+      "name": "El hub carga y expone cinco tarjetas",
+      "ok": true,
+      "expected": "path /index.html",
+      "actual": "/index.html · SERUMS HUB — Centro de aplicaciones"
+    },
+    {
+      "id": "H1.2",
+      "name": "Cinco destinos únicos sin duplicados",
+      "ok": true,
+      "expected": "banqueo,dashboard,flashcards,plazas,quest",
+      "actual": "banqueo,dashboard,flashcards,plazas,quest"
+    },
+    {
+      "id": "H1.3",
+      "name": "Tarjetas Study sin query en el HTML servido (D1)",
+      "ok": true,
+      "expected": "dashboard y flashcards sin '?'",
+      "actual": "sin query"
+    },
+    {
+      "id": "H1.4",
+      "name": "Cada href del hub responde por HTTP",
+      "ok": true,
+      "expected": "5 × HTTP 200",
+      "actual": "banqueo:200 plazas:200 dashboard:200 flashcards:200 quest:200",
+      "evidence": [
+        {
+          "app": "banqueo",
+          "url": "http://127.0.0.1:8771/EXAMEN%20STUDIO/Examen%20Studio.html?v=2.1.5",
+          "status": 200
+        },
+        {
+          "app": "plazas",
+          "url": "http://127.0.0.1:8771/serums%20map/serums-map-explorer/index.html",
+          "status": 200
+        },
+        {
+          "app": "dashboard",
+          "url": "http://127.0.0.1:8771/study-dashboard/index.html",
+          "status": 200
+        },
+        {
+          "app": "flashcards",
+          "url": "http://127.0.0.1:8771/study-flashcards/index.html",
+          "status": 200
+        },
+        {
+          "app": "quest",
+          "url": "http://127.0.0.1:8771/serums-quest/index.html",
+          "status": 200
+        }
+      ]
+    },
+    {
+      "id": "H1.5",
+      "name": "Perfil de prueba sin snapshot previo",
+      "ok": true,
+      "expected": "null",
+      "actual": "null"
+    },
+    {
+      "id": "H2.1",
+      "name": "Hub → Study Dashboard abre la portada (sin query)",
+      "ok": true,
+      "expected": "#/ y sin query",
+      "actual": "#/ · Study Dashboard · SERUMS"
+    },
+    {
+      "id": "H2.2",
+      "name": "La portada del Dashboard es el panel, no una ficha",
+      "ok": true,
+      "expected": "title 'Study Dashboard · SERUMS'",
+      "actual": "Study Dashboard · SERUMS"
+    },
+    {
+      "id": "H2.3",
+      "name": "ID real de ficha obtenido de la biblioteca",
+      "ok": true,
+      "expected": "un id no vacío",
+      "actual": "sheet-psi-sp-1-1"
+    },
+    {
+      "id": "H2.4",
+      "name": "Portada → recurso individual (categoría y ficha reales desde la biblioteca)",
+      "ok": true,
+      "expected": "#/biblioteca/area-psi-salud-publica/cat-sp-metodos → #/ficha/sheet-psi-sp-1-1",
+      "actual": "categoría=#/biblioteca/area-psi-salud-publica/cat-sp-metodos · ficha=#/ficha/sheet-psi-sp-1-1 · Salud Pública y Funciones Esenciales · Study Dashboard"
+    },
+    {
+      "id": "H2.5",
+      "name": "Biblioteca → ficha sin recargar el documento (D4)",
+      "ok": true,
+      "expected": "0 navegaciones de documento",
+      "actual": "0 documento / 3 hash"
+    },
+    {
+      "id": "H2.6",
+      "name": "Recurso → portada con control propio (no history.back)",
+      "ok": true,
+      "expected": "#/ y título de panel",
+      "actual": "#/ · Study Dashboard · SERUMS"
+    },
+    {
+      "id": "H2.7",
+      "name": "Volver a portada no recarga el documento",
+      "ok": true,
+      "expected": "0 navegaciones de documento",
+      "actual": "0 documento / 1 hash"
+    },
+    {
+      "id": "H2.8",
+      "name": "Atrás/adelante del navegador conservan las rutas",
+      "ok": true,
+      "expected": "atrás=#/ficha/sheet-psi-sp-1-1, adelante=#/",
+      "actual": "atrás=#/ficha/sheet-psi-sp-1-1, adelante=#/"
+    },
+    {
+      "id": "H2.9",
+      "name": "Dashboard → HUB con control explícito",
+      "ok": true,
+      "expected": "/index.html vía control «Volver al HUB»",
+      "actual": "/index.html · SERUMS HUB — Centro de aplicaciones"
+    },
+    {
+      "id": "H2.10",
+      "name": "Atrás desde el HUB regresa al Dashboard",
+      "ok": true,
+      "expected": "/study-dashboard/index.html",
+      "actual": "/study-dashboard/index.html"
+    },
+    {
+      "id": "H2.11",
+      "name": "URL directa ?sheet=<real> abre la ficha y limpia la query",
+      "ok": true,
+      "expected": "#/ficha/sheet-psi-sp-1-1 sin query",
+      "actual": "#/ficha/sheet-psi-sp-1-1"
+    },
+    {
+      "id": "H2.12",
+      "name": "URL directa ?sheet=<obsoleto> cae en la portada con aviso",
+      "ok": true,
+      "expected": "#/ con título de panel y aviso de ficha no disponible",
+      "actual": "#/ · Study Dashboard · SERUMS"
+    },
+    {
+      "id": "H3.1",
+      "name": "Hub → Study Flashcards abre la biblioteca de mazos",
+      "ok": true,
+      "expected": "#/ con mazos y nav «Mazos»",
+      "actual": "#/ · Biblioteca de mazos · Study Flashcards · 1 mazos"
+    },
+    {
+      "id": "H3.2",
+      "name": "Biblioteca → mazo individual con enlace real",
+      "ok": true,
+      "expected": "#/mazo/sheet-aps-01",
+      "actual": "#/mazo/sheet-aps-01 · Una APS fuerte no es un consultorio de segunda · Study Flashcards"
+    },
+    {
+      "id": "H3.3",
+      "name": "Abrir un mazo no recarga el documento",
+      "ok": true,
+      "expected": "0 navegaciones de documento",
+      "actual": "0 documento / 1 hash"
+    },
+    {
+      "id": "H3.4",
+      "name": "Mazo: «volver a mazos» y «volver al HUB» son controles distintos",
+      "ok": true,
+      "expected": "backHref #/ y un control de HUB que resuelve a /index.html",
+      "actual": "{\"backHref\":\"#/\",\"backText\":\"Biblioteca\",\"hubHref\":\"http://127.0.0.1:8771/index.html\",\"hubLabel\":\"Volver al HUB\",\"homeHref\":\"#/\"}"
+    },
+    {
+      "id": "H3.5",
+      "name": "Volver del mazo lleva a la biblioteca, no al HUB",
+      "ok": true,
+      "expected": "#/ en /study-flashcards/index.html",
+      "actual": "/study-flashcards/index.html#/"
+    },
+    {
+      "id": "H3.6",
+      "name": "Regreso a la biblioteca sin recargar",
+      "ok": true,
+      "expected": "0 navegaciones de documento",
+      "actual": "0 documento / 1 hash"
+    },
+    {
+      "id": "H3.7",
+      "name": "URL directa ?deck&resume=1 resuelve a una ruta válida y limpia la query",
+      "ok": true,
+      "expected": "#/mazo/… o #/sesion, sin query, con nav de mazos",
+      "actual": "#/mazo/sheet-aps-01 · Una APS fuerte no es un consultorio de segunda · Study Flashcards"
+    },
+    {
+      "id": "H3.8",
+      "name": "URL directa ?deck=<obsoleto> cae en la biblioteca con aviso",
+      "ok": true,
+      "expected": "#/ sin query; obtenido #/ · Biblioteca de mazos · Study Flashcards",
+      "actual": "#/ ·  · Biblioteca de mazos · Study Flashcards"
+    },
+    {
+      "id": "H4.1",
+      "name": "Hub → Banqueo abre #hub",
+      "ok": true,
+      "expected": "#hub",
+      "actual": "#hub · Banqueo · Examen Studio"
+    },
+    {
+      "id": "H4.2",
+      "name": "Banqueo ofrece regreso al HUB",
+      "ok": true,
+      "expected": "≥1 enlace al hub",
+      "actual": "1 enlaces · 8 enlaces en topbar",
+      "defect": "A1-D4 · EXAMEN STUDIO/js/app.js renderShell() no pinta ningún enlace al hub (solo app.js: el topbar no incluye HUB)"
+    },
+    {
+      "id": "H4.3",
+      "name": "Hub → Plazas carga la consola del mapa",
+      "ok": true,
+      "expected": "#topbar presente",
+      "actual": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I · hash=''"
+    },
+    {
+      "id": "H4.4",
+      "name": "Plazas ofrece regreso al HUB",
+      "ok": true,
+      "expected": "≥1 enlace al hub",
+      "actual": "1 enlaces",
+      "defect": "A1-D5 · serums map/serums-map-explorer/index.html no contiene ningún <a> (topbar de botones); sin enlace al hub"
+    },
+    {
+      "id": "H4.5",
+      "name": "Hub → QUEST abre el inicio #/",
+      "ok": true,
+      "expected": "#/",
+      "actual": "#/ · SERUMS QUEST · RPG de aprendizaje"
+    },
+    {
+      "id": "H4.6",
+      "name": "QUEST navega a una ruta individual sin recargar",
+      "ok": true,
+      "expected": "0 navegaciones de documento",
+      "actual": "0 documento / 1 hash"
+    },
+    {
+      "id": "H4.7",
+      "name": "QUEST ofrece regreso al HUB",
+      "ok": true,
+      "expected": "≥1 control que resuelve a /index.html",
+      "actual": "2 enlaces"
+    },
+    {
+      "id": "H4.8",
+      "name": "QUEST → HUB con control explícito",
+      "ok": true,
+      "expected": "/index.html",
+      "actual": "/index.html"
+    },
+    {
+      "id": "H4.9",
+      "name": "Atrás desde el HUB regresa a QUEST conservando la ruta",
+      "ok": true,
+      "expected": "/serums-quest/index.html#/personajes",
+      "actual": "/serums-quest/index.html#/personajes"
+    },
+    {
+      "id": "H5.1",
+      "name": "Las seis entradas abren por URL directa",
+      "ok": true,
+      "expected": "6 entradas con título propio",
+      "actual": "/index.html:SERUMS HUB — Centro de a | study-dashboard/index.html:Study Dashboard · SERUMS | study-flashcards/index.html:Biblioteca de mazos · St | serums-quest/index.html:SERUMS QUEST · RPG de ap | EXAMEN STUDIO/Examen Studio.html:Banqueo · Examen Studio | serums-map-explorer/index.html:SERUMS Map Explorer — Pl",
+      "evidence": [
+        {
+          "path": "/index.html",
+          "hash": "",
+          "title": "SERUMS HUB — Centro de aplicaciones"
+        },
+        {
+          "path": "/study-dashboard/index.html",
+          "hash": "#/",
+          "title": "Study Dashboard · SERUMS"
+        },
+        {
+          "path": "/study-flashcards/index.html",
+          "hash": "#/",
+          "title": "Biblioteca de mazos · Study Flashcards"
+        },
+        {
+          "path": "/serums-quest/index.html",
+          "hash": "#/",
+          "title": "SERUMS QUEST · RPG de aprendizaje"
+        },
+        {
+          "path": "/EXAMEN STUDIO/Examen Studio.html",
+          "hash": "#hub",
+          "title": "Banqueo · Examen Studio"
+        },
+        {
+          "path": "/serums map/serums-map-explorer/index.html",
+          "hash": "",
+          "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I"
+        }
+      ]
+    },
+    {
+      "id": "H5.2",
+      "name": "Snapshot obsoleto no inyecta ?sheet=/?deck= en las tarjetas (D1)",
+      "ok": false,
+      "expected": "dashboard y flashcards sin query",
+      "actual": "[{\"app\":\"banqueo\",\"href\":\"./EXAMEN STUDIO/Examen Studio.html?v=2.1.5\"},{\"app\":\"plazas\",\"href\":\"./serums map/serums-map-explorer/index.html\"},{\"app\":\"dashboard\",\"href\":\"./study-dashboard/index.html?sheet=NO-EXISTE-999\"},{\"app\":\"flashcards\",\"href\":\"./study-flashcards/index.html?deck=NO-EXISTE-999&resume=1\"},{\"app\":\"quest\",\"href\":\"./serums-quest/index.html\"}]",
+      "defect": "A1-D1 · index.html applySnapshot() reescribe el href de las tarjetas con dashboardHref/flashcardsHref"
+    },
+    {
+      "id": "H5.3",
+      "name": "Snapshot con ids válidos tampoco inyecta query en las tarjetas (D1)",
+      "ok": false,
+      "expected": "dashboard y flashcards sin query",
+      "actual": "[{\"app\":\"banqueo\",\"href\":\"./EXAMEN STUDIO/Examen Studio.html?v=2.1.5\"},{\"app\":\"plazas\",\"href\":\"./serums map/serums-map-explorer/index.html\"},{\"app\":\"dashboard\",\"href\":\"./study-dashboard/index.html?sheet=sheet-psi-sp-1-1\"},{\"app\":\"flashcards\",\"href\":\"./study-flashcards/index.html?deck=sheet-aps-01&resume=1\"},{\"app\":\"quest\",\"href\":\"./serums-quest/index.html\"}]",
+      "defect": "A1-D1 · mismo origen: la reanudación debe vivir dentro de la app o en un control aparte"
+    },
+    {
+      "id": "H5.4",
+      "name": "El snapshot de QUEST no altera el destino de la tarjeta",
+      "ok": true,
+      "expected": "./serums-quest/index.html",
+      "actual": "./serums-quest/index.html"
+    },
+    {
+      "id": "H6.1",
+      "name": "No hay history.back()/history.go(-1) como mecanismo de regreso",
+      "ok": true,
+      "expected": "0 ocurrencias en HTML/JS/CSS",
+      "actual": "0 ocurrencias",
+      "evidence": []
+    }
+  ]
+}

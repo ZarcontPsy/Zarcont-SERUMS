@@ -1,0 +1,183 @@
+{
+  "app": "study-dashboard",
+  "steps": [
+    {
+      "name": "0 carga limpia",
+      "url": "http://127.0.0.1:8772/study-dashboard/index.html#/",
+      "sheet": "sheet-aps-02",
+      "store": "indexeddb"
+    },
+    {
+      "name": "1 URL directa ?sheet=",
+      "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02#/ficha/sheet-aps-02",
+      "hash": "#/ficha/sheet-aps-02",
+      "title": "Accesibilidad y longitudinalidad: entrar y permanecer · Study Dashboard",
+      "views": 1,
+      "scroll": 0,
+      "scrollY": 0,
+      "docH": 2453,
+      "navCount": 1
+    },
+    {
+      "name": "2 scroll 60% + pestaña oculta/visible",
+      "scrolled": {
+        "max": 1968,
+        "y": 0
+      },
+      "afterHidden": {
+        "scroll": 0.5767276422764228,
+        "readSeconds": 0,
+        "scrollY": 1181
+      },
+      "afterVisible": {
+        "scrollY": 1181,
+        "docH": 2453,
+        "h1": "Accesibilidad y longitudinalidad: entrar y permanecer",
+        "html": 13132
+      },
+      "navsDuring": 0
+    },
+    {
+      "name": "3 refrescar (hash #/ficha)",
+      "hashBefore": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02#/ficha/sheet-aps-02",
+      "afterReload": {
+        "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02#/ficha/sheet-aps-02",
+        "scrollY": 179,
+        "docH": 2453,
+        "views": 2,
+        "scroll": 0.5767276422764228,
+        "h1": "Accesibilidad y longitudinalidad: entrar y permanecer"
+      }
+    },
+    {
+      "name": "4 panel → ficha de nuevo",
+      "home": true,
+      "panel": {
+        "hash": "#/",
+        "title": "Study Dashboard · SERUMS",
+        "scrollY": 0
+      },
+      "reentry": {
+        "ok": true,
+        "href": "#/ficha/sheet-aps-02"
+      },
+      "afterReentry": {
+        "hash": "#/ficha/sheet-aps-02",
+        "scrollY": 0,
+        "views": 3,
+        "storedScroll": 0.09095528455284553
+      }
+    },
+    {
+      "name": "5 atrás/adelante",
+      "back": {
+        "hash": "#/",
+        "title": "Study Dashboard · SERUMS",
+        "scrollY": 0
+      },
+      "fwd": {
+        "hash": "#/ficha/sheet-aps-02",
+        "title": "Accesibilidad y longitudinalidad: entrar y permanecer · Study Dashboard",
+        "scrollY": 0
+      }
+    },
+    {
+      "name": "6 orientación",
+      "beforeOrient": {
+        "y": 895,
+        "w": 764,
+        "h": 485
+      },
+      "portrait": {
+        "y": 984,
+        "w": 390,
+        "h": 844,
+        "docH": 3601
+      },
+      "landscape": {
+        "y": 984,
+        "w": 844,
+        "h": 390,
+        "docH": 2458
+      },
+      "desktop": {
+        "y": 984,
+        "w": 1280,
+        "h": 800
+      }
+    },
+    {
+      "name": "7 claves y snapshot",
+      "snapshot": {
+        "version": 1,
+        "contentVersion": "2.5.0",
+        "updatedAt": "2026-10-25T22:04:48.318Z",
+        "hasActivity": true,
+        "dashboard": {
+          "totalSheets": 210,
+          "completedSheets": 0,
+          "viewedSheets": 1,
+          "startedTopics": 1,
+          "completedTopics": 0,
+          "percent": 0,
+          "last": {
+            "sheetId": "sheet-aps-02",
+            "topicId": "topic-aps-atributos",
+            "title": "Accesibilidad y longitudinalidad: entrar y permanecer",
+            "context": "Los cuatro atributos de la APS",
+            "at": "2026-10-25T22:04:48.317Z",
+            "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02&topic=topic-aps-atributos"
+          },
+          "todayCompleted": 0,
+          "goal": 2,
+          "streak": 1
+        },
+        "flashcards": {
+          "totalCards": 630,
+          "reviewedCards": 0,
+          "masteredCards": 0,
+          "dueCards": 0,
+          "newCards": 630,
+          "percent": 0,
+          "last": null,
+          "todayReviews": 0
+        }
+      },
+      "stateKeys": [
+        "version",
+        "createdAt",
+        "updatedAt",
+        "sheets",
+        "cards",
+        "sessions",
+        "activity",
+        "goals",
+        "history",
+        "last",
+        "flashSession"
+      ],
+      "stateUpdatedAt": "2026-10-25T22:04:48.317Z",
+      "sheetEntry": {
+        "views": 4,
+        "viewedAt": "2026-10-25T22:04:40.633Z",
+        "lastOpenedAt": "2026-10-25T22:04:48.317Z",
+        "completedAt": null,
+        "favorite": false,
+        "scroll": 0,
+        "readSeconds": 0,
+        "topicId": "topic-aps-atributos"
+      },
+      "localKeys": [
+        "study-state-v1",
+        "study-theme",
+        "studyhub:snapshot:v1"
+      ],
+      "idb": null
+    },
+    {
+      "name": "8 indexedDB"
+    }
+  ],
+  "console": [],
+  "errors": []
+}

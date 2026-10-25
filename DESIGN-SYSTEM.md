@@ -13,7 +13,7 @@ en `index.html` (HUB), `EXAMEN STUDIO/styles.css` (Banqueo) y `study-shared/base
 | Referencia | Función obligatoria |
 |---|---|
 | Imagen 1 (MOKOTO) | Identidad: paleta negro/blanco/rojo, tipografía geométrica, transparencias controladas, esquinas muy redondeadas. |
-| Imagen 2 (lanzador de referencia) | HUB: escena cálida envolvente, barra superior flotante, carrusel coverflow de cinco tarjetas, dock lateral y control inferior con profundidad. |
+| Imagen 2 (lanzador de referencia) | HUB: escena cálida envolvente, barra superior flotante, carrusel coverflow de cinco tarjetas y control inferior con profundidad. |
 | Imagen 3 (Steary) | Interfaces interiores: cristal selectivo + densidad informativa, paneles amplios, jerarquía clara y controles compactos. |
 | Banco de preguntas | La información manda: listado denso, detalle legible, evidencia documental y estados visibles sin decoración que compita con el contenido. |
 | Study | Lectura y recuperación activa: fichas resumidas, tarjetas, progreso verificable y navegación cruzada sin convertir ambas apps en un dashboard único. |
@@ -133,13 +133,16 @@ del color; siempre se acompaña de texto, icono, borde o posición.
   para Dashboard y mazo para Flashcards. El arte ocupa el 60% de la tarjeta activa; los
   laterales muestran el arte completo con el título al pie.
 - **Navegación**: clic en lateral para seleccionar; clic central para abrir; flechas de la
-  barra superior e inferior, dock vertical, puntos, swipe horizontal y teclado
-  (`←`/`→`, `1`–`5`, `Enter`/`Espacio`). La selección se refleja en barra, dock y puntos.
+  barra superior e inferior, puntos, swipe horizontal y teclado
+  (`←`/`→`, `1`–`5`, `Enter`/`Espacio`). La selección se refleja en barra y puntos.
+  El dock lateral se retiró en la revisión 2026-10-25; sus funciones ya estaban cubiertas.
 - **Control inferior** glass: app actual, resumen contextual (progreso real de Study) y
-  botón «Abrir». El dock vertical se oculta ≤1100 px y los laterales ≤900 px.
+  botón «Abrir». Los laterales del carrusel se ocultan ≤900 px. En ventanas de escritorio
+  de poca altura (≤720 px) la cartilla se compacta y la barra/puntos permanecen visibles.
 - **Progreso y reanudación**: barra + `completadas/total`, nota de actividad y último punto.
-  Sin actividad se muestra `—` y un estado informativo, nunca cifras ficticias. El enlace
-  de apertura conserva el último punto real de cada aplicación de Study.
+  Sin actividad se muestra `—` y un estado informativo, nunca cifras ficticias. Las tarjetas
+  abren la portada de cada aplicación; la reanudación del último punto vive dentro de la app
+  («Retomar lectura», «Continuar sesión») y en las rutas directas `?sheet=`/`?deck=&resume=1`.
 - **Modales** de atajos y «Acerca de»: scrim, foco atrapado, `Esc` para cerrar,
   regiones de fondo `inert` y retorno del foco al disparador.
 - **Overlay de apertura** desde la tarjeta elegida, con el color de la aplicación.
@@ -163,21 +166,30 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 
 ### Study Dashboard
 
-- **Topbar** con marca, navegación (Panel, Biblioteca, Progreso, Flashcards), tema y HUB.
+- **Topbar** con marca, navegación (Panel, Biblioteca, Progreso, Flashcards), tema y controles
+  compartidos de Inicio, HUB y pantalla completa.
 - **Panel**: objetivo diario, progreso verificable, recomendaciones reales, actividad y último punto.
-- **Biblioteca**: búsqueda, filtros (todas, en curso, completadas, favoritas), áreas y fichas.
-- **Lector**: modo rápido/completo, conceptos clave, procedimientos, tablas, referencias,
-  favorito, completada y enlace «Practicar con flashcards» conservando el tema.
+- **Biblioteca**: búsqueda, filtros (todas, en curso, completadas, favoritas), áreas y fichas;
+  los temas se despliegan con `<details>` y conservan su estado durante la sesión.
+- **Lector**: modo rápido/completo, conceptos clave, procedimientos, tablas, referencias
+  enlazadas al PDF original, favorito, completada y enlace «Practicar con flashcards»
+  conservando el tema. La posición de lectura se restaura tras refrescar o reabrir la ficha.
 - **Progreso e historial**: solo acciones registradas; sin métricas decorativas.
 
 ### Study Flashcards
 
-- **Home de mazos** y vista de mazo con estado, dominio, tarjetas nuevas/revisadas y modos.
+- **Biblioteca** como portada: resumen compacto de progreso, búsqueda y filtros
+  (todas/pendientes/en curso/completadas), áreas plegables y filas de mazo con dominio,
+  pendientes y última práctica. Sin una tarjeta por dato ni 210 mazos siempre desplegados.
+- **Vista de mazo** con estado, dominio, tarjetas nuevas/revisadas y modos en una sola lista.
 - **Sesión**: tarjeta conceptual (revelar/calificar), opción múltiple (seleccionar/comprobar)
   y aplicación; respuesta explicada, referencia y enlace «Consultar ficha resumen».
 - **Modos**: libre, repaso rápido, examen (respuestas al final) y errores (solo falladas).
 - **Resumen**: acierto, respondidas, refuerzo, revisión de respuestas e historial.
 - **Programación e historial**: intervalos por tarjeta, vencimientos y sesiones reales.
+- **Navegación**: biblioteca ↔ mazo ↔ sesión por hash, sin recargar el documento; se conservan
+  filtros, grupos abiertos y posición al volver. «Volver a la biblioteca» es distinto de
+  «Volver al HUB»; la fila de acceso directo mantiene su URL (`#/mazo/…`).
 - **Navegación cruzada**: conserva mazo, ficha y origen; si no hay contenido, estado
   informativo con alternativas.
 
@@ -207,8 +219,13 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 - Foco visible de marca, contraste suficiente, `aria-current`, `aria-label`,
   `aria-pressed`, `aria-live` y estados textuales además del color.
 - Breakpoints principales: 1100 px, 1020 px, 940 px, 900 px, 820 px, 780 px, 640 px, 480 px.
-- HUB: dock oculto ≤1100 px, centro del topbar ≤1020 px, laterales del carrusel ≤900 px,
-  topbar compacta y tarjeta de ancho fluido ≤600 px.
+- HUB: centro del topbar ≤1020 px, laterales del carrusel ≤900 px, topbar compacta y
+  tarjeta de ancho fluido ≤600 px; en ventanas de escritorio de poca altura (≤720 px) se
+  compacta la cartilla y se oculta solo la cita decorativa para mantener barra y puntos visibles.
+- Controles comunes en el topbar de cada app: **Inicio**, **Volver al HUB** y **Pantalla
+  completa** (44/40 px, etiquetas y estados propios, pantalla completa nativa). En Study la
+  navegación móvil conserva sus iconos (solo se oculta la etiqueta) y la marca mantiene su
+  `aria-label`; en QUEST el topbar pasa a dos filas ≤620/≤380 px sin perder tema ni audio.
 - En `max-width: 820px` el topbar mide `--topbar: 91px`; el detalle del banco se abre
   como hoja fija bajo el topbar, con fondo opaco y cierre por botón o `Escape`.
 - Nada de scroll horizontal. Las tablas y toolbars se apilan antes de desbordar.
@@ -226,20 +243,83 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 8. Al terminar cualquier cambio, revisar teclado, móvil, tema claro/oscuro y movimiento
    reducido.
 
+## 9. SERUMS QUEST · capa RPG
+
+La app conserva la base oscura y el azul eléctrico/violeta de su identidad. La capa RPG
+no introduce una segunda paleta: organiza la misma identidad en torno a una vitrina de
+personajes.
+
+- **Escena antes que tarjetas.** El Game Home usa un escenario grande con el personaje
+  protagonista, no un dashboard de tarjetas pequeñas. Los accesos son compactos y el
+  progreso secundario queda debajo.
+- **Navegación de juego:** cinco destinos primarios (Inicio, Personajes, Inventario,
+  Tienda, Progreso), **Jugar** como acción destacada y barra inferior fija en móvil. La
+  barra superior incluye héroe, monedas, audio y tema; no mezcla progreso con juego.
+- **Profundidad:** escenarios SVG por área con cielo, arquitectura, suelo, niebla,
+  partículas y viñeta. El grado oscuro garantiza contraste; el parallax solo responde a
+  puntero fino y se apaga con movimiento reducido.
+- **Rarezas:** Inicial gris azulado, Común azul acero, Poco común verde azulado, Raro azul
+  eléctrico, Épico violeta, Legendario ámbar. La rareza siempre lleva etiqueta textual;
+  nunca depende solo del color.
+- **Precios:** una sola fuente (`QUEST_CONFIG.rpg.prices`). Las bandas se documentan en
+  `serums-quest/docs/RPG-SYSTEM.md`. No hay moneda real ni moneda paralela.
+- **Personajes:** SVG vectoriales originales con silueta, vestuario, rostro y prop propios.
+  La build 1.2 añade proporciones más adultas, degradados, contornos, pliegues, botas y
+  detalles de identidad. Los cosméticos se componen por capas en el mismo sistema de
+  coordenadas. No se usan emojis como sustituto de ilustración.
+- **Cambio de personaje localizado:** la selección actualiza solo retrato del appbar, nombre,
+  nivel, rareza, atributos, detalle, vecinos, indicadores y escena; no se reemplaza `#view`,
+  no se reinicia la sesión y se conservan scroll, foco y animaciones ajenas. La preferencia de
+  movimiento reducido anula la transición. El estado se guarda con `collection.selectedCharacterId`.
+- **Arena de héroes:** escenario central con vecinos difuminados, flechas y puntos; paneles
+  laterales de identidad y atributos; tira de elenco. La inspección no cambia el personaje
+  activo. En móvil el escenario va primero y los filtros después.
+- **Estudio de equipamiento:** personaje grande con ranuras alrededor, grilla de objetos y
+  barra de guardado fija. El borrador se previsualiza sin guardar; «Guardar atuendo» es
+  explícito y «Restaurar anterior» recupera un nivel de historial.
+- **Audio:** controles discretos, silencio global, sliders separados y prueba de sonido.
+  Nada suena antes de un gesto; la música empieza apagada. El estado del botón se comunica
+  con icono, `aria-pressed` y color.
+- **Movimiento:** respiración sutil en reposo y gestos breves por estado. No hay brillo
+  permanente ni animaciones que tapen preguntas. `prefers-reduced-motion` y las
+  preferencias de presentación desactivan el movimiento sin quitar información. Las
+  animaciones fuera de pantalla se pausan.
+- **Reacciones:** franja estable con retrato, nombre y mensaje breve; se anuncia por
+  `aria-live` y no mueve el foco ni el botón de continuar.
+- **Tema claro:** la barra superior, las tarjetas y el HUD tienen variante clara legible;
+  el escenario del héroe conserva su cine oscuro con texto blanco y no depende de un
+  degradado para ser legible.
+- **Responsive:** a 1280 px se simplifica la arena; a 1120 px el Home pasa a dos columnas;
+  a 900 px el héroe y el equipamiento se apilan, la navegación superior se oculta y aparece
+  la barra inferior de cinco destinos; a 680 px se compactan filtros, ranuras y modales.
+  Sin scroll horizontal.
+
 ---
 
 ### Estado actual
 
-- `index.html` - SERUMS HUB v2.3.0: carrusel coverflow de cinco accesos, progreso real,
-  reanudación y navegación por clic, flechas, dock, puntos, swipe y teclado.
+- `index.html` - SERUMS HUB v2.3.0: carrusel coverflow de cinco accesos, progreso real y
+  navegación por clic, flechas, puntos, swipe y teclado. Dock retirado en la revisión
+  2026-10-25; el hub abre la portada de cada app y muestra el último punto sin inyectar query.
 - `EXAMEN STUDIO/` — BANQUEO v2.1.1: 51 exámenes reales, 5.100 preguntas, banco por
-  profesión, revisión, importación, práctica, historial y ranking local.
-- `serums map/serums-map-explorer/` — PLAZAS SERUMS: mapa, filtros y adjudicación.
+  profesión, revisión, importación, práctica, historial y ranking local. Controles de Inicio,
+  HUB y pantalla completa; el intento en curso se recupera al refrescar.
+- `serums map/serums-map-explorer/` — PLAZAS SERUMS: mapa, filtros y adjudicación; ficha con
+  foco atrapado y cierre por `Esc`; favoritos/adjudicadas persistentes.
 - `study-dashboard/` — Study Dashboard: temario, fichas, lector, favoritos, objetivos,
-  progreso, historial y enlaces a Flashcards.
-- `study-flashcards/` — Study Flashcards: mazos, sesiones, examen, errores, programación,
-  historial y enlaces al Dashboard.
+  progreso, historial y enlaces a Flashcards; restaura la lectura y conserva los temas abiertos.
+- `study-flashcards/` — Study Flashcards: biblioteca jerárquica con filtros, mazos, sesiones,
+  examen, errores, programación, historial y enlaces al Dashboard.
+- `serums-quest/` — SERUMS QUEST v1.2.0: Game Home con escenario, 10 personajes originales,
+  33 cosméticos, arena de héroes, estudio de equipamiento, tienda, audio opcional,
+  desbloqueo cinematográfico y reacciones; cambio de personaje localizado; conserva XP,
+  misiones, recuperación y logros del banco oficial.
+- `serums-chrome.js` + `serums-chrome.css` — controles compartidos de Inicio, HUB y pantalla
+  completa, integrados en el topbar existente de las cinco aplicaciones.
 - `study-shared/` + `study-data/` — base visual, persistencia compartida, temario y fuentes.
+- `tests/e2e/` — arnés QA de navegación, persistencia, responsive, pantalla completa y
+  regresión de contenido (Node 24 + CDP, sin dependencias).
+- `AUDIT/` — evidencias, matrices de persistencia y rutas, informes por agente e informe final.
 
 ---
 

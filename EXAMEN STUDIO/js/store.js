@@ -16,6 +16,7 @@
 
   let db = null;
   let dbError = null;
+  let reviewWatcher = false;
   const fileUrls = new Map();
 
   const state = {
@@ -41,17 +42,72 @@
     try { return JSON.parse(value); } catch { return null; }
   };
 
+  function ensureMap(value) {
+    return value && typeof value === "object" && !Array.isArray(value) ? value : {};
+  }
+
+  /* Lee un mapa de localStorage. Si el JSON está dañado conserva una copia con
+     marca de tiempo antes de continuar: nada se borra en silencio. */
+  function readStoredMap(key) {
+    let text = null;
+    try { text = localStorage.getItem(key); } catch { return {}; }
+    if (!text) return {};
+    const parsed = safeParse(text);
+    if (parsed && typeof parsed === "object" && !Array.isArray(parsed)) return parsed;
+    try {
+      const stamp = new Date().toISOString().replace(/[:.]/g, "-");
+      localStorage.setItem(key + "-corrupt-" + stamp, text);
+    } catch { /* sin espacio: se continúa sin copia, sin romper la app */ }
+    return {};
+  }
+
+  /* Mezcla por pregunta: nunca se pierde una marca escrita por otra pestaña.
+     En conflicto gana la entrada local (la acción que se acaba de hacer) pero
+     conserva los campos que la otra pestaña sí tenía. */
+  function mergeReview(current, incoming) {
+    const out = {};
+    const ids = new Set([...Object.keys(incoming || {}), ...Object.keys(current || {})]);
+    ids.forEach((id) => {
+      const local = (current || {})[id];
+      const disk = (incoming || {})[id];
+      if (!local) { out[id] = disk; return; }
+      if (!disk) { out[id] = local; return; }
+      const localTs = Number(local.ts) || 0;
+      const diskTs = Number(disk.ts) || 0;
+      out[id] = localTs >= diskTs ? { ...disk, ...local } : { ...local, ...disk };
+    });
+    return out;
+  }
+
   function loadReview() {
-    state.review = safeParse(localStorage.getItem(REVIEW_KEY)) || {};
-    state.issueResolved = safeParse(localStorage.getItem(ISSUE_KEY)) || {};
+    state.review = readStoredMap(REVIEW_KEY);
+    state.issueResolved = readStoredMap(ISSUE_KEY);
   }
 
   function saveReview() {
-    try { localStorage.setItem(REVIEW_KEY, JSON.stringify(state.review)); } catch {}
+    try {
+      state.review = mergeReview(state.review, ensureMap(safeParse(localStorage.getItem(REVIEW_KEY))));
+      localStorage.setItem(REVIEW_KEY, JSON.stringify(state.review));
+    } catch {}
   }
 
   function saveIssueState() {
-    try { localStorage.setItem(ISSUE_KEY, JSON.stringify(state.issueResolved)); } catch {}
+    try {
+      state.issueResolved = { ...ensureMap(safeParse(localStorage.getItem(ISSUE_KEY))), ...state.issueResolved };
+      localStorage.setItem(ISSUE_KEY, JSON.stringify(state.issueResolved));
+    } catch {}
+  }
+
+  /* Otra pestaña cambió la revisión: se incorpora sin perder lo local. */
+  function syncReviewFromStorage() {
+    try {
+      const diskReview = ensureMap(safeParse(localStorage.getItem(REVIEW_KEY)));
+      const diskIssues = ensureMap(safeParse(localStorage.getItem(ISSUE_KEY)));
+      const before = Object.keys(state.review).length;
+      state.review = mergeReview(state.review, diskReview);
+      state.issueResolved = { ...diskIssues, ...state.issueResolved };
+      if (Object.keys(state.review).length !== before) computeStats();
+    } catch {}
   }
 
   function openDB() {
@@ -354,6 +410,14 @@
 
   async function init() {
     loadReview();
+    if (!reviewWatcher && typeof window.addEventListener === "function") {
+      reviewWatcher = true;
+      window.addEventListener("storage", (event) => {
+        if (!event) return;
+        if (event.key !== REVIEW_KEY && event.key !== ISSUE_KEY) return;
+        syncReviewFromStorage();
+      });
+    }
     hydrateOfficial();
     buildDuplicateIndex();
     try {

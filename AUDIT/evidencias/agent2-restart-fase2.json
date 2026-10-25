@@ -1,0 +1,80 @@
+{
+  "fase": "2-despues-de-reabrir",
+  "steps": [
+    {
+      "name": "estado tras reabrir el navegador",
+      "keys": [
+        "banqueo-review-v1",
+        "banqueo-theme-v1",
+        "es-theme",
+        "serums_favoritos",
+        "serums_notifs",
+        "serums_theme",
+        "serumsquest:backup:v1",
+        "serumsquest:snapshot:v1",
+        "serumsquest:state:v1",
+        "serumsquest:theme",
+        "study-state-v1",
+        "study-theme",
+        "studyhub:snapshot:v1"
+      ],
+      "review": 2,
+      "plazasFavs": 2,
+      "dash": {
+        "sheets": 3,
+        "favs": [
+          "sheet-aps-02",
+          "sheet-aps-01",
+          "sheet-mci-01"
+        ],
+        "flash": {
+          "id": "session-1792966430990",
+          "index": 1,
+          "answers": 1
+        },
+        "cards": 1,
+        "snapshotLast": {
+          "sheetId": "sheet-mci-01",
+          "topicId": "topic-mci-fundamentos",
+          "title": "Del enfoque curativo al cuidado integral",
+          "context": "Cuidado integral y determinantes",
+          "at": "2026-10-25T22:13:49.145Z",
+          "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-mci-01&topic=topic-mci-fundamentos"
+        }
+      },
+      "quest": {
+        "xp": 10,
+        "coins": 5,
+        "revision": 4,
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "answered": 1
+        }
+      }
+    },
+    {
+      "name": "flashcards reanuda tras reinicio",
+      "active": true,
+      "index": 1,
+      "answers": 1,
+      "stage": true,
+      "h1": "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?"
+    },
+    {
+      "name": "quest reanuda tras reinicio",
+      "active": true,
+      "answered": 1,
+      "playView": true,
+      "hash": "#/jugar"
+    },
+    {
+      "name": "banqueo tras reinicio",
+      "resumeRows": 2,
+      "practice": false,
+      "review": 2
+    },
+    {
+      "name": "banqueo intentos en IndexedDB"
+    }
+  ]
+}

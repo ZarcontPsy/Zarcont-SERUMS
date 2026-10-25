@@ -9,7 +9,7 @@
   Autoría, versiones y registro de cambios: AUTORIA.md · Terceros: NOTICE.md
 -->
 <meta name="author" content="ZARCONT">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <script>document.documentElement.classList.add("js");</script>
 <meta name="color-scheme" content="dark">
 <meta name="theme-color" content="#080808">
@@ -126,6 +126,7 @@
   ::selection{ background: rgba(223, 37, 49, .35); }
   a{ color: inherit; text-decoration: none; }
   button{ font-family: inherit; }
+  [hidden]{ display: none !important; }
   ::-webkit-scrollbar{ width: 10px; }
   ::-webkit-scrollbar-track{ background: transparent; }
   ::-webkit-scrollbar-thumb{ background: #2a2a2a; border-radius: var(--r-full); border: 2px solid #0a0a0a; }
@@ -250,7 +251,7 @@
     margin-left: 1px; padding-left: 6px;
     border-left: 1px solid rgba(255, 255, 255, .10);
   }
-  .tb-arrows .icon-btn{ width: 31px; height: 31px; border-radius: 9px; }
+  .tb-arrows .icon-btn{ width: 34px; height: 34px; border-radius: 9px; }
   .tb-arrows .icon-btn svg{ width: 16px; height: 16px; }
   .tb-center{
     position: absolute; left: 50%; transform: translateX(-50%);
@@ -316,7 +317,7 @@
   .carousel{
     --card-w: clamp(350px, 34vw, 448px);
     --card-h: clamp(480px, calc(100dvh - 248px), 620px);
-    --side-offset: calc(var(--card-w) * .88);
+    --side-offset: min(calc(var(--card-w) * .88), calc(50vw - var(--card-w) * .5 - 10px));
     position: relative;
     width: 100%; height: var(--card-h);
     perspective: 1700px;
@@ -339,11 +340,8 @@
     opacity: 0; pointer-events: none;
     transform: translate(-50%, -50%) scale(.7);
     transition:
-      transform 680ms cubic-bezier(.2, .75, .2, 1),
-      opacity 440ms ease,
-      filter 440ms ease,
-      border-color 440ms ease,
-      box-shadow 440ms ease;
+      transform 520ms cubic-bezier(.2, .75, .2, 1),
+      opacity 320ms ease;
     will-change: transform, opacity;
     outline: none;
   }
@@ -356,6 +354,7 @@
       0 0 0 1px color-mix(in srgb, var(--app) 10%, transparent),
       inset 0 1px 0 rgba(255, 255, 255, .09);
   }
+  .app-card.is-active:active{ transform: translate(-50%, -50%) scale(.992); }
   .app-card.is-right{
     z-index: 3; opacity: .72; pointer-events: auto;
     transform: translate(calc(-50% + var(--side-offset)), -50%) scale(.78) rotateY(-10deg);
@@ -789,37 +788,8 @@
     color: rgba(220, 230, 255, .64); font-size: 6px; letter-spacing: .13em; text-transform: uppercase;
     -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px);
   }
-  .art-quest .quest-caption .dot{ width: 4px; height: 4px; border-radius: 50%; background: #7A9CFF; box-shadow: 0 0 8px #7A9CFF; }
+  .art-quest .quest-caption .quest-dot{ width: 4px; height: 4px; border-radius: 50%; background: #7A9CFF; box-shadow: 0 0 8px #7A9CFF; }
   .art-quest .quest-caption b{ color: rgba(244, 246, 255, .9); font-weight: 650; letter-spacing: .04em; }
-
-  /* ============ Dock lateral ============ */
-  .dock{
-    position: fixed; z-index: 40; left: 18px; top: 50%;
-    transform: translateY(-50%);
-    display: flex; flex-direction: column; gap: 2px;
-    padding: 5px; border-radius: 999px;
-    background: linear-gradient(180deg, rgba(46, 34, 26, .46), rgba(10, 9, 8, .62));
-    border: 1px solid rgba(255, 255, 255, .12);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .08), 0 22px 50px -28px rgba(0, 0, 0, .95);
-    -webkit-backdrop-filter: blur(20px) saturate(150%); backdrop-filter: blur(20px) saturate(150%);
-  }
-  .dock-btn{
-    --dock: #fff;
-    width: 40px; height: 40px;
-    display: grid; place-items: center;
-    border: 1px solid transparent; border-radius: 50%;
-    background: transparent; color: rgba(255, 255, 255, .38);
-    cursor: pointer;
-    transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast), box-shadow var(--t-fast);
-  }
-  .dock-btn svg{ width: 17px; height: 17px; display: block; }
-  .dock-btn:hover{ color: rgba(255, 255, 255, .8); background: rgba(255, 255, 255, .07); }
-  .dock-btn.is-active{
-    color: var(--dock);
-    background: color-mix(in srgb, var(--dock) 13%, rgba(255, 255, 255, .04));
-    border-color: color-mix(in srgb, var(--dock) 28%, transparent);
-    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1), 0 0 20px -8px color-mix(in srgb, var(--dock) 55%, transparent);
-  }
 
   /* ============ Control inferior ============ */
   .carousel-bar{
@@ -844,6 +814,7 @@
     cursor: pointer; transition: color var(--t-fast), background var(--t-fast), border-color var(--t-fast);
   }
   .bar-btn:hover{ color: #fff; background: rgba(255, 255, 255, .08); border-color: rgba(255, 255, 255, .1); }
+  .bar-btn:active{ color: #fff; background: rgba(255, 255, 255, .16); border-color: rgba(255, 255, 255, .16); }
   .bar-btn svg{ width: 17px; height: 17px; display: block; }
   .bar-now{ display: flex; align-items: center; gap: 10px; flex: 1; min-width: 0; padding: 0 2px; }
   .bar-thumb{
@@ -876,19 +847,29 @@
     transition: background var(--t-fast), transform var(--t-fast);
   }
   .bar-open:hover{ background: #fff; transform: translateY(-1px); }
+  .bar-open:active{ transform: translateY(0) scale(.97); }
   .bar-open svg{ width: 13px; height: 13px; }
   .dots{
     position: relative; z-index: 10;
-    display: flex; align-items: center; justify-content: center; gap: 6px;
-    margin-top: 11px; height: 8px;
+    display: flex; align-items: center; justify-content: center; gap: 0;
+    margin-top: 6px; height: 36px;
   }
-  .dot{
-    width: 6px; height: 6px; padding: 0; flex: none;
-    border: 0; border-radius: 999px; background: rgba(255, 255, 255, .22);
-    cursor: pointer; transition: width 360ms var(--ease-out), background 260ms ease;
+  .dots .dot{
+    width: 40px; height: 40px; padding: 0; flex: none;
+    display: grid; place-items: center;
+    border: 0; border-radius: 10px; background: transparent;
+    cursor: pointer;
   }
-  .dot:hover{ background: rgba(255, 255, 255, .5); }
-  .dot.is-active{ width: 22px; background: #f4f1e9; box-shadow: 0 0 16px rgba(255, 255, 255, .18); }
+  .dots .dot::before{
+    content: ""; width: 6px; height: 6px; border-radius: 999px;
+    background: rgba(255, 255, 255, .22);
+    transition: width 300ms var(--ease-out), background 220ms ease, box-shadow 220ms ease;
+  }
+  .dots .dot:hover::before{ background: rgba(255, 255, 255, .5); }
+  .dots .dot:active::before{ background: rgba(255, 255, 255, .72); }
+  .dots .dot.is-active::before{
+    width: 22px; background: #f4f1e9; box-shadow: 0 0 16px rgba(255, 255, 255, .18);
+  }
 
   /* ============ Modales ============ */
   .scrim{
@@ -948,7 +929,6 @@
   body.launching{ overflow: hidden; }
   body.launching .app-card,
   body.launching .topbar,
-  body.launching .dock,
   body.launching .carousel-bar,
   body.launching .dots{ pointer-events: none; }
 
@@ -996,30 +976,30 @@
   }
 
   /* ============ Entrada ============ */
-  .topbar, .carousel-shell, .dock{
+  .topbar, .carousel-shell{
     transition: opacity 740ms ease, transform 740ms var(--ease-out);
   }
   html.js .topbar{ opacity: 0; transform: translateX(-50%) translateY(-12px); }
   html.js .carousel-shell{ opacity: 0; transform: translateY(26px) scale(.985); }
-  html.js .dock{ opacity: 0; transform: translateY(-50%) translateX(-10px); }
   body.ready .topbar{ opacity: 1; transform: translateX(-50%); }
   body.ready .carousel-shell{ opacity: 1; transform: none; }
-  body.ready .dock{ opacity: 1; transform: translateY(-50%); }
   .topbar{ transition-delay: 60ms; }
   .carousel-shell{ transition-delay: 130ms; }
-  .dock{ transition-delay: 230ms; }
 
   /* ============ Responsive ============ */
-  @media (max-width: 1100px){
-    .dock{ display: none; }
-  }
   @media (max-width: 1020px){
     .tb-center{ display: none; }
   }
   @media (max-width: 900px){
-    main#stage{ padding-top: 76px; }
-    .carousel-shell{ width: calc(100vw - 24px); }
-    .topbar{ width: calc(100vw - 24px); }
+    main#stage{
+      padding:
+        calc(76px + env(safe-area-inset-top))
+        env(safe-area-inset-right)
+        calc(20px + env(safe-area-inset-bottom))
+        env(safe-area-inset-left);
+    }
+    .carousel-shell{ width: calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)); }
+    .topbar{ width: calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)); }
     .app-card.is-left,
     .app-card.is-right,
     .app-card.is-hidden{
@@ -1036,17 +1016,30 @@
     }
   }
   @media (max-width: 600px){
-    main#stage{ padding: 68px 0 14px; }
-    .topbar{ top: 10px; height: 50px; border-radius: 14px; padding-left: 9px; }
+    main#stage{
+      padding:
+        calc(68px + env(safe-area-inset-top))
+        env(safe-area-inset-right)
+        calc(8px + env(safe-area-inset-bottom))
+        env(safe-area-inset-left);
+    }
+    .topbar{
+      top: calc(10px + env(safe-area-inset-top)); height: 50px; border-radius: 14px;
+      padding: 0 6px 0 8px; gap: 8px;
+      width: calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right));
+    }
     .topbar .logo{ width: 27px; height: 27px; border-radius: 8px; }
-    .brand{ font-size: 9px; letter-spacing: .11em; }
-    .tb-arrows{ padding-left: 4px; }
-    .tb-arrows .icon-btn{ width: 29px; height: 29px; }
-    .icon-btn{ width: 32px; height: 32px; }
-    #btnFs{ display: none; }
+    .brand{
+      font-size: 8.6px; letter-spacing: .07em;
+      min-width: 0; overflow: hidden; text-overflow: ellipsis;
+    }
+    .tb-left{ gap: 7px; }
+    .tb-arrows{ padding-left: 3px; flex: none; }
+    .tb-arrows .icon-btn{ width: 38px; height: 38px; }
+    .icon-btn{ width: 38px; height: 38px; }
     .carousel{
-      --card-w: min(448px, calc(100vw - 24px));
-      --card-h: clamp(520px, calc(100dvh - 190px), 640px);
+      --card-w: min(448px, calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+      --card-h: clamp(360px, calc(100dvh - 184px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 640px);
     }
     .app-card{ border-radius: 24px; }
     .app-art{ flex-basis: 60%; }
@@ -1066,18 +1059,21 @@
     .app-badge{ right: 13px; top: 13px; }
     .art-stat{ right: 12px; bottom: 12px; }
     .carousel-bar{
-      width: calc(100vw - 24px); height: 58px;
-      margin-top: 10px; padding: 6px 7px; gap: 5px; border-radius: 18px;
+      width: calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)); height: 58px;
+      margin-top: 8px; padding: 6px 7px; gap: 5px; border-radius: 18px;
     }
-    .bar-btn{ width: 34px; height: 34px; }
-    .bar-thumb{ width: 36px; height: 36px; }
-    .bar-thumb svg{ width: 16px; height: 16px; }
+    .bar-btn{ width: 40px; height: 40px; }
+    .bar-thumb{ width: 38px; height: 38px; }
+    .bar-thumb svg{ width: 17px; height: 17px; }
     .bar-now{ gap: 8px; }
     .bar-copy b{ font-size: 10px; }
     .bar-copy span{ font-size: 8.5px; }
-    .bar-open{ width: 36px; height: 36px; padding: 0; justify-content: center; border-radius: 50%; }
+    .bar-open{ width: 40px; height: 40px; padding: 0; justify-content: center; border-radius: 50%; }
     .bar-open span{ display: none; }
-    .dots{ margin-top: 8px; }
+    .dots{ margin-top: 6px; }
+  }
+  @media (max-width: 600px) and (max-height: 700px){
+    .app-card.is-active .app-art{ flex-basis: 52%; }
   }
   @media (max-width: 380px){
     .brand{ display: none; }
@@ -1085,10 +1081,99 @@
     .app-tag{ display: none; }
   }
   @media (max-height: 820px) and (min-width: 821px){
-    .app-art{ flex-basis: 58%; }
+    .app-art{ flex-basis: 56%; }
     .app-desc{ -webkit-line-clamp: 2; }
     .app-meta{ margin-top: 5px; }
     .app-progress{ margin-top: 6px; padding-top: 6px; }
+  }
+
+  /* Móvil en horizontal (390–560 px de alto): cartilla apaisada y compacta.
+     Mantiene arte, título, descripción, progreso y CTA sin scroll vertical. */
+  @media (orientation: landscape) and (max-height: 560px){
+    main#stage{
+      min-height: 100svh;
+      padding:
+        calc(58px + env(safe-area-inset-top))
+        env(safe-area-inset-right)
+        calc(4px + env(safe-area-inset-bottom))
+        env(safe-area-inset-left);
+    }
+    .topbar{
+      top: calc(6px + env(safe-area-inset-top)); height: 46px; border-radius: 13px;
+      width: calc(100vw - 20px - env(safe-area-inset-left) - env(safe-area-inset-right));
+    }
+    .topbar .logo{ width: 25px; height: 25px; border-radius: 8px; }
+    .brand{ font-size: 8.5px; letter-spacing: .08em; }
+    .icon-btn{ width: 36px; height: 36px; }
+    .tb-arrows .icon-btn{ width: 36px; height: 36px; }
+    .carousel-shell{ width: calc(100vw - 20px - env(safe-area-inset-left) - env(safe-area-inset-right)); }
+    .carousel{
+      --card-w: min(820px, calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right)));
+      --card-h: clamp(150px, calc(100dvh - 158px - env(safe-area-inset-top) - env(safe-area-inset-bottom)), 300px);
+    }
+    .app-card{ border-radius: 20px; }
+    .app-card.is-left,
+    .app-card.is-right,
+    .app-card.is-hidden{
+      opacity: 0; pointer-events: none;
+      transform: translate(-50%, -50%) scale(.94);
+      filter: none;
+    }
+    .app-card.is-active{
+      flex-direction: row;
+      transform: translate(-50%, -50%) scale(1);
+    }
+    .app-card.is-active .app-art{ flex: 0 0 32%; height: 100%; }
+    .app-card.is-active .app-art::after{
+      background: linear-gradient(90deg, rgba(0, 0, 0, .10), transparent 32%, rgba(15, 15, 16, .55) 100%);
+    }
+    .app-card.is-active .app-body{
+      position: relative; left: auto; right: auto; bottom: auto;
+      flex: 1 1 auto; padding: 11px 18px 12px;
+    }
+    .app-card.is-active .app-open-pill{ left: 10px; top: 10px; }
+    .app-card.is-active .app-badge{ right: 10px; top: 10px; }
+    .app-card.is-active .app-kicker{ font-size: 8px; }
+    .app-card.is-active h2{ margin: 3px 0; font-size: clamp(20px, 2.6vw, 28px); }
+    .app-card.is-active .app-desc{ -webkit-line-clamp: 2; font-size: 11px; }
+    .app-card.is-active .app-meta{ margin-top: 5px; gap: 3px 10px; }
+    .app-card.is-active .app-quote{ display: none; }
+    .app-card.is-active .app-progress{ margin-top: 6px; padding-top: 6px; }
+    .app-card.is-active .app-progress-note{ font-size: 8px; }
+    .app-card.is-active .app-last{ margin-top: 3px; font-size: 8.5px; }
+    .app-card.is-active .app-foot{ padding-top: 6px; }
+    .app-card.is-active .app-cta{ font-size: 10px; }
+    .carousel-bar{
+      width: min(520px, calc(100vw - 24px - env(safe-area-inset-left) - env(safe-area-inset-right))); height: 50px;
+      margin-top: 6px; padding: 5px 6px; gap: 5px; border-radius: 16px;
+    }
+    .bar-btn{ width: 38px; height: 38px; }
+    .bar-thumb{ width: 38px; height: 38px; }
+    .bar-copy b{ font-size: 10px; }
+    .bar-copy span{ font-size: 8.5px; }
+    .bar-open{ height: 38px; padding: 0 11px; }
+    .dots{ margin-top: 4px; height: 36px; }
+  }
+  @media (orientation: landscape) and (max-height: 360px){
+    .app-card.is-active .app-meta{ display: none; }
+    .app-card.is-active .app-desc{ -webkit-line-clamp: 1; }
+    .app-card.is-active h2{ font-size: 21px; }
+    .app-card.is-active .app-progress{ margin-top: 4px; padding-top: 4px; }
+    .app-card.is-active .app-last{ display: none; }
+  }
+
+  /* Escritorio con poca altura (p. ej. 1366×768 con barras del navegador):
+     la cartilla y la barra caben sin scroll vertical. Se oculta solo la cita
+     decorativa; título, descripción, metadatos, progreso y CTA se conservan. */
+  @media (min-width: 601px) and (min-height: 561px) and (max-height: 720px){
+    main#stage{ padding-top: 72px; padding-bottom: 8px; }
+    .carousel{ --card-h: clamp(360px, calc(100dvh - 208px), 520px); }
+    .app-card.is-active .app-art{ flex-basis: 52%; }
+    .app-card.is-active .app-quote{ display: none; }
+    .carousel-bar{ height: 56px; margin-top: 6px; padding: 6px 8px; }
+    .bar-btn{ width: 38px; height: 38px; }
+    .bar-open{ height: 38px; }
+    .dots{ margin-top: 4px; }
   }
 
   /* ============ Accesibilidad: menos movimiento ============ */
@@ -1101,7 +1186,7 @@
   }
 
   @supports not ((backdrop-filter: blur(1px)) or (-webkit-backdrop-filter: blur(1px))){
-    .topbar, .modal, .dock, .carousel-bar{ background: rgba(12, 11, 10, .96); }
+    .topbar, .modal, .carousel-bar{ background: rgba(12, 11, 10, .96); }
     .app-badge, .art-stat{ background: rgba(12, 11, 10, .9); }
   }
 </style>
@@ -1147,7 +1232,7 @@
     </div>
     <div class="tb-center"><span class="dot-live"></span><b id="tbNow">BANQUEO</b><span class="tb-count" id="tbPos">1 / 5</span></div>
     <div class="tb-right">
-      <button class="icon-btn" id="btnFs" data-tip="Pantalla completa" aria-label="Pantalla completa">
+      <button class="icon-btn" id="btnFs" data-tip="Pantalla completa" aria-label="Pantalla completa" aria-pressed="false" title="Pantalla completa">
         <svg class="i-expand" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
           <path d="M8 3H5a2 2 0 0 0-2 2v3"/><path d="M21 8V5a2 2 0 0 0-2-2h-3"/>
           <path d="M3 16v3a2 2 0 0 0 2 2h3"/><path d="M16 21h3a2 2 0 0 0 2-2v-3"/>
@@ -1180,7 +1265,7 @@
       <section class="carousel" id="carousel" aria-roledescription="carrusel" aria-label="Aplicaciones disponibles">
 
       <!-- BANQUEO -->
-      <a class="app-card app-card--banqueo is-active" data-app="banqueo" data-index="0" href="./EXAMEN STUDIO/Examen Studio.html?v=2.1.5">
+      <a class="app-card app-card--banqueo is-active" data-app="banqueo" data-index="0" href="./EXAMEN STUDIO/Examen Studio.html?v=2.1.6">
         <div class="app-art" aria-hidden="true">
           <div class="art-scene art-ben">
             <span class="art-orb"></span>
@@ -1398,7 +1483,7 @@
               <circle class="quest-node is-violet" cx="274" cy="78" r="5"/>
               <circle class="quest-node" cx="330" cy="58" r="4"/>
             </svg>
-            <div class="quest-caption"><span class="dot"></span><b>5 rutas</b> · misiones</div>
+            <div class="quest-caption"><span class="quest-dot"></span><b>5 rutas</b> · misiones</div>
             <div class="art-stat"><b>300</b><span>preguntas</span></div>
           </div>
           <span class="app-open-pill">Abrir
@@ -1453,11 +1538,10 @@
 
       <div class="dots" id="dots" role="group" aria-label="Seleccionar aplicación"></div>
     </div>
-
-    <aside class="dock" id="dock" aria-label="Ir a una aplicación"></aside>
   </main>
 
   <div class="sr-only" id="carouselLive" aria-live="polite" aria-atomic="true"></div>
+  <div class="sr-only" id="fsLive" aria-live="polite" aria-atomic="true"></div>
 
   <!-- Modal de atajos -->
   <div class="scrim" id="helpScrim" aria-hidden="true"></div>
@@ -1474,7 +1558,7 @@
       <li><span class="k"><kbd>Enter</kbd></span><span>Abrir la aplicación central</span></li>
       <li><span class="k"><kbd>Esc</kbd></span><span>Cerrar este panel</span></li>
     </ul>
-    <p class="modal-note">También puedes tocar una tarjeta lateral para llevarla al centro, usar el dock o deslizar horizontalmente. BANQUEO y PLAZAS conservan su propio almacenamiento.</p>
+    <p class="modal-note">También puedes tocar una tarjeta lateral para llevarla al centro, usar los puntos o las flechas, o deslizar horizontalmente. BANQUEO y PLAZAS conservan su propio almacenamiento.</p>
   </div>
 
   <!-- Modal «Acerca de» -->
@@ -1503,7 +1587,7 @@
       <li><span>Licencia</span><span>Propietaria — todos los derechos reservados</span></li>
       <li><span>Identificador</span><span id="aboutBuild">ZARCONT-SRH-2.3.0</span></li>
     </ul>
-    <p class="modal-note">Interfaz <b>Premium Glass 2.0</b> con carrusel de aplicaciones, dock lateral y control inferior. Incluye <b>BANQUEO</b> (Examen Studio v2.1.1), <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v2.0.0), <b>Study Dashboard</b>, <b>Study Flashcards</b> y <b>SERUMS QUEST</b>, la capa de aprendizaje gamificado conectada al banco y al temario. Las librerías de terceros conservan sus propias licencias.</p>
+    <p class="modal-note">Interfaz <b>Premium Glass 2.0</b> con carrusel de aplicaciones, flechas, puntos y control inferior. Incluye <b>BANQUEO</b> (Examen Studio v2.1.1), <b>PLAZAS SERUMS</b> (SERUMS Map Explorer v2.0.0), <b>Study Dashboard</b>, <b>Study Flashcards</b> y <b>SERUMS QUEST</b>, la capa de aprendizaje gamificado conectada al banco y al temario. Las librerías de terceros conservan sus propias licencias.</p>
   </div>
 
   <!-- Overlay de apertura -->
@@ -1526,12 +1610,13 @@
 
   /* ==================================================================
      CONFIGURACIÓN — rutas base de las aplicaciones.
-     Cada tarjeta conserva su href real; si Study tiene un último punto,
-     se reemplaza por el enlace de reanudación.
+     D1: las tarjetas abren siempre la portada (sin query). El progreso y
+     el último punto se muestran como información; la reanudación se hace
+     dentro de cada app o con una ruta directa explícita.
      ================================================================== */
   const CONFIG = {
     apps: {
-      banqueo:   "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+      banqueo:   "./EXAMEN STUDIO/Examen Studio.html?v=2.1.6",
       plazas:    "./serums map/serums-map-explorer/index.html",
       dashboard: "./study-dashboard/index.html",
       flashcards:"./study-flashcards/index.html",
@@ -1558,7 +1643,6 @@
   const barTitle = document.getElementById("barTitle");
   const barSub = document.getElementById("barSub");
   const openCurrent = document.getElementById("openCurrent");
-  const dock = document.getElementById("dock");
   const dots = document.getElementById("dots");
   const carouselLive = document.getElementById("carouselLive");
   const prevTop = document.getElementById("prevTop");
@@ -1620,18 +1704,14 @@
     } catch (err){ return null; }
   }
 
+  /* D1 — el acceso principal del hub es la portada, sin query. La reanudación de un punto
+     concreto sigue viva dentro de cada app («Continuar», «Continuar sesión») y en las rutas
+     directas ?sheet=<id> / ?deck=<id>&resume=1, que no se eliminan. `snap` se conserva en la
+     firma porque applySnapshot() lo pasa; ya no altera la URL de la tarjeta. */
   function dashboardHref(snap){
-    const last = snap && snap.dashboard ? snap.dashboard.last : null;
-    if (last && last.sheetId){
-      return "./study-dashboard/index.html?sheet=" + encodeURIComponent(last.sheetId);
-    }
     return CONFIG.apps.dashboard;
   }
   function flashcardsHref(snap){
-    const last = snap && snap.flashcards ? snap.flashcards.last : null;
-    if (last && last.deckId){
-      return "./study-flashcards/index.html?deck=" + encodeURIComponent(last.deckId) + "&resume=1";
-    }
     return CONFIG.apps.flashcards;
   }
 
@@ -1801,10 +1881,6 @@
      Carrusel: selección, navegación y estado visual
      ================================================================== */
   function buildNav(){
-    dock.innerHTML = cards.map(function(card, i){
-      const app = APPS[order[i]];
-      return '<button class="dock-btn" type="button" data-index="' + i + '" style="--dock:' + app.color + '" aria-label="Ver ' + app.name + '" aria-pressed="false">' + app.icon + '</button>';
-    }).join("");
     dots.innerHTML = cards.map(function(card, i){
       const app = APPS[order[i]];
       return '<button class="dot" type="button" data-index="' + i + '" aria-label="Ver ' + app.name + ', ' + (i + 1) + ' de ' + cards.length + '" aria-current="false"></button>';
@@ -1847,13 +1923,6 @@
       syncBarSub();
     }
 
-    if (dock){
-      Array.prototype.forEach.call(dock.children, function(btn, i){
-        const on = i === activeIndex;
-        btn.classList.toggle("is-active", on);
-        btn.setAttribute("aria-pressed", on ? "true" : "false");
-      });
-    }
     if (dots){
       Array.prototype.forEach.call(dots.children, function(dot, i){
         const on = i === activeIndex;
@@ -1882,11 +1951,6 @@
   if (prevBtn) prevBtn.addEventListener("click", function(){ move(-1, { focus: false }); });
   if (nextBtn) nextBtn.addEventListener("click", function(){ move(1, { focus: false }); });
   if (openCurrent) openCurrent.addEventListener("click", function(){ launch(cards[activeIndex]); });
-  if (dock) dock.addEventListener("click", function(e){
-    const btn = e.target.closest("[data-index]");
-    if (!btn) return;
-    setActive(Number(btn.getAttribute("data-index")), { focus: false });
-  });
   if (dots) dots.addEventListener("click", function(e){
     const dot = e.target.closest("[data-index]");
     if (!dot) return;
@@ -1969,24 +2033,36 @@
     });
   });
 
-  /* Gesto táctil / arrastre horizontal */
+  /* Gesto táctil / arrastre horizontal. touch-action: pan-y deja libre el
+     scroll vertical; solo se captura el gesto cuando el eje dominante es X. */
   if (carousel){
     carousel.addEventListener("pointerdown", function(e){
+      if (!e.isPrimary) return;
       if (e.pointerType === "mouse" && e.button !== 0) return;
-      swipeStart = { x: e.clientX, y: e.clientY };
+      swipeStart = { x: e.clientX, y: e.clientY, id: e.pointerId, horizontal: false };
+    });
+    carousel.addEventListener("pointermove", function(e){
+      if (!swipeStart || e.pointerId !== swipeStart.id) return;
+      const dx = e.clientX - swipeStart.x;
+      const dy = e.clientY - swipeStart.y;
+      if (Math.abs(dx) > 28 && Math.abs(dx) > Math.abs(dy) * 1.35){
+        swipeStart.horizontal = true;
+        suppressClick = true;
+      }
     });
     carousel.addEventListener("pointerup", function(e){
-      if (!swipeStart) return;
+      if (!swipeStart || e.pointerId !== swipeStart.id) return;
       const dx = e.clientX - swipeStart.x;
       const dy = e.clientY - swipeStart.y;
       swipeStart = null;
-      if (Math.abs(dx) > 48 && Math.abs(dx) > Math.abs(dy) * 1.3){
-        suppressClick = true;
+      if (Math.abs(dx) > 44 && Math.abs(dx) > Math.abs(dy) * 1.3){
         move(dx < 0 ? 1 : -1, { focus: false });
-        window.setTimeout(function(){ suppressClick = false; }, 450);
+        window.setTimeout(function(){ suppressClick = false; }, 420);
+      } else {
+        window.setTimeout(function(){ suppressClick = false; }, 0);
       }
     });
-    carousel.addEventListener("pointercancel", function(){ swipeStart = null; });
+    carousel.addEventListener("pointercancel", function(){ swipeStart = null; suppressClick = false; });
     carousel.addEventListener("dragstart", function(e){ e.preventDefault(); });
   }
 
@@ -2068,24 +2144,42 @@
   aboutScrim.addEventListener("click", closeModal);
 
   /* ==================================================================
-     Pantalla completa
+     Pantalla completa (API nativa; el CSS solo refleja el estado real)
      ================================================================== */
+  const fsLive = document.getElementById("fsLive");
+  function syncFsState(){
+    const on = !!document.fullscreenElement;
+    document.documentElement.classList.toggle("is-fs", on);
+    const label = on ? "Salir de pantalla completa" : "Pantalla completa";
+    btnFs.setAttribute("aria-label", label);
+    btnFs.setAttribute("aria-pressed", on ? "true" : "false");
+    btnFs.setAttribute("title", label);
+    btnFs.dataset.tip = label;
+  }
+  function fsFailed(){
+    syncFsState();
+    if (fsLive) fsLive.textContent = "No se pudo cambiar el modo de pantalla completa.";
+  }
   if (!document.fullscreenEnabled){
     btnFs.hidden = true;
   } else {
     btnFs.addEventListener("click", function(){
       try {
-        if (document.fullscreenElement) document.exitFullscreen();
-        else document.documentElement.requestFullscreen();
-      } catch (err) { /* requiere gesto del usuario */ }
+        const action = document.fullscreenElement
+          ? document.exitFullscreen()
+          : document.documentElement.requestFullscreen();
+        if (action && typeof action.catch === "function") action.catch(fsFailed);
+      } catch (err) {
+        fsFailed();
+      }
     });
     document.addEventListener("fullscreenchange", function(){
-      const on = !!document.fullscreenElement;
-      document.documentElement.classList.toggle("is-fs", on);
-      const label = on ? "Salir de pantalla completa" : "Pantalla completa";
-      btnFs.setAttribute("aria-label", label);
-      btnFs.dataset.tip = label;
+      syncFsState();
+      if (fsLive) fsLive.textContent = document.fullscreenElement
+        ? "Pantalla completa activada."
+        : "Pantalla completa desactivada.";
     });
+    document.addEventListener("fullscreenerror", fsFailed);
   }
 
   /* Restaurar la interfaz si el usuario vuelve con «Atrás» */
@@ -2095,6 +2189,7 @@
     overlay.classList.remove("animating", "show");
     overlay.setAttribute("aria-hidden", "true");
     overlay.style.clipPath = "";
+    syncFsState();
   });
 })();
 </script>

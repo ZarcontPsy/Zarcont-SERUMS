@@ -1,0 +1,122 @@
+{
+  "app": "dashboard",
+  "viewport": "nativo",
+  "steps": [
+    {
+      "step": "inicial",
+      "state": {
+        "fsElement": null,
+        "enabled": true,
+        "inner": {
+          "w": 1424,
+          "h": 805
+        },
+        "screen": {
+          "w": 800,
+          "h": 600
+        },
+        "pressed": "false",
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "iconState": "off",
+        "displayMode": false,
+        "bodyClass": ""
+      }
+    },
+    {
+      "step": "click_entrar",
+      "state": {
+        "fsElement": "HTML#",
+        "enabled": true,
+        "inner": {
+          "w": 800,
+          "h": 600
+        },
+        "screen": {
+          "w": 800,
+          "h": 600
+        },
+        "pressed": "true",
+        "label": "Salir de pantalla completa",
+        "title": "Salir de pantalla completa",
+        "iconState": "on",
+        "displayMode": true,
+        "bodyClass": ""
+      },
+      "clicked": {
+        "x": 1335.5,
+        "y": 32,
+        "w": 40,
+        "h": 40
+      }
+    },
+    {
+      "step": "esc",
+      "state": {
+        "fsElement": null,
+        "enabled": true,
+        "inner": {
+          "w": 1424,
+          "h": 805
+        },
+        "screen": {
+          "w": 800,
+          "h": 600
+        },
+        "pressed": "false",
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "iconState": "off",
+        "displayMode": false,
+        "bodyClass": ""
+      }
+    },
+    {
+      "step": "click_entrar_2",
+      "state": {
+        "fsElement": "HTML#",
+        "enabled": true,
+        "inner": {
+          "w": 800,
+          "h": 600
+        },
+        "screen": {
+          "w": 800,
+          "h": 600
+        },
+        "pressed": "true",
+        "label": "Salir de pantalla completa",
+        "title": "Salir de pantalla completa",
+        "iconState": "on",
+        "displayMode": true,
+        "bodyClass": ""
+      }
+    },
+    {
+      "step": "click_salir",
+      "state": {
+        "fsElement": null,
+        "enabled": true,
+        "inner": {
+          "w": 1424,
+          "h": 805
+        },
+        "screen": {
+          "w": 800,
+          "h": 600
+        },
+        "pressed": "false",
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "iconState": "off",
+        "displayMode": false,
+        "bodyClass": ""
+      }
+    }
+  ],
+  "api": {
+    "hub": "http://127.0.0.1:8777/index.html",
+    "fs": {},
+    "home": true
+  }
+}

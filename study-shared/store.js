@@ -106,6 +106,9 @@
     document.addEventListener("visibilitychange", function () {
       if (!document.hidden) syncFromStorage();
     });
+    /* Vuelta desde la caché de retroceso (bfcache) o desde otra app: el estado en
+       memoria puede ser anterior a lo que otra pestaña ya guardó. */
+    window.addEventListener("pageshow", function () { syncFromStorage(); });
   }
   function notify() {
     var payload = { state: state, snapshot: readSnapshot() };
@@ -427,8 +430,15 @@
   }
   function setSheetScroll(sheetId, ratio) {
     var st = ensureSheet(sheetId);
-    st.scroll = Math.max(0, Math.min(1, Number(ratio) || 0));
+    var next = Math.max(0, Math.min(1, Number(ratio) || 0));
+    var previous = Number(st.scroll) || 0;
+    /* Abrir una ficha que no se reanuda deja el scroll en 0; ese 0 no debe borrar
+       la posición de lectura ya guardada. Solo se conserva la posición cuando la
+       lectura previa era significativa. */
+    if (next === 0 && previous > 0.05) return previous;
+    st.scroll = next;
     save();
+    return next;
   }
   function toggleSheetComplete(sheetId) {
     var sheet = sheetById(sheetId);
@@ -478,6 +488,35 @@
     }
     return { box: box, dueAt: due };
   }
+  /* «Último mazo» para el HUB y para `?deck=&resume=1`. Mientras hay una sesión
+     activa manda su mazo: responder una tarjeta no debe cambiar el contexto que
+     se usa para reanudar (antes se guardaba el tema de la tarjeta y la reanudación
+     apuntaba a otro mazo, donde no existía sesión). */
+  function rememberDeckContext(card) {
+    var active = state.flashSession;
+    var activeDeck = active && active.deckId ? deckKind(active.deckId) : null;
+    if (activeDeck && activeDeck.kind !== "missing") {
+      state.last.flashcards = {
+        deckId: active.deckId,
+        topicId: deckTopicId(activeDeck),
+        sheetId: activeDeck.kind === "sheet" ? activeDeck.sheet.id : "",
+        title: deckTitle(activeDeck),
+        at: nowISO(),
+        url: lastFlashcardsUrl(active.deckId, true)
+      };
+      return state.last.flashcards;
+    }
+    var topic = topicById(card.topicId);
+    state.last.flashcards = {
+      deckId: card.topicId,
+      topicId: card.topicId,
+      sheetId: card.sheetId || "",
+      title: topic ? topic.title : card.prompt,
+      at: nowISO(),
+      url: lastFlashcardsUrl(card.topicId)
+    };
+    return state.last.flashcards;
+  }
   function applyReview(cardId, rating, meta) {
     var card = cardById(cardId);
     if (!card) return null;
@@ -502,14 +541,7 @@
     activity.cardReviews += 1;
     if (correct) activity.correct += 1;
     else activity.wrong += 1;
-    var topic = topicById(card.topicId);
-    state.last.flashcards = {
-      deckId: card.topicId,
-      topicId: card.topicId,
-      title: topic ? topic.title : card.prompt,
-      at: nowISO(),
-      url: lastFlashcardsUrl(card.topicId)
-    };
+    rememberDeckContext(card);
     return st;
   }
   function recordReview(cardId, rating, meta) {

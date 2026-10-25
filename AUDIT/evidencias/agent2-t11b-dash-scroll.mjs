@@ -1,0 +1,24 @@
+/* A2-DASH-SCROLL-2 — reentrada por hash (sin ?sheet=) y salida: ¿se conserva la posición? */
+import { connect, newPage, navigate, evalJS, sleep, ORIGIN, report } from "./agent2-lib.mjs";
+const b = await connect();
+const page = await newPage(b, ORIGIN + "/study-dashboard/index.html");
+await sleep(1600);
+const id = await evalJS(page, "window.STUDY_CONTENT.sheets[9].id");
+await evalJS(page, `window.StudyStore.setSheetScroll(${JSON.stringify(id)}, 0)`);
+await navigate(page, ORIGIN + "/study-dashboard/index.html?sheet=" + encodeURIComponent(id));
+await sleep(1500);
+await evalJS(page, `window.scrollTo(0, Math.round((document.documentElement.scrollHeight - innerHeight) * 0.66))`);
+await sleep(300);
+await evalJS(page, `document.querySelector('.s-navlink[href="#/"]').click()`);
+await sleep(800);
+const afterLeave1 = await evalJS(page, `({ stored: window.StudyStore.getSheetState(${JSON.stringify(id)}).scroll, hash: location.hash })`);
+await evalJS(page, `location.hash = "#/ficha/" + encodeURIComponent(${JSON.stringify(id)})`);
+await sleep(900);
+const reentry = await evalJS(page, `({ hash: location.hash, y: Math.round(window.scrollY), stored: window.StudyStore.getSheetState(${JSON.stringify(id)}).scroll })`);
+await evalJS(page, `document.querySelector('.s-navlink[href="#/"]').click()`);
+await sleep(800);
+const afterLeave2 = await evalJS(page, `({ stored: window.StudyStore.getSheetState(${JSON.stringify(id)}).scroll, hash: location.hash })`);
+console.log(JSON.stringify({ afterLeave1, reentry, afterLeave2 }, null, 1));
+report("AUDIT/evidencias/agent2-dash-scroll2-despues.json", { afterLeave1, reentry, afterLeave2 });
+await b.send("Target.closeTarget", { targetId: page.targetId });
+b.close();

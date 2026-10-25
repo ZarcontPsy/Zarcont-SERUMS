@@ -1,0 +1,8 @@
+{
+  "event": "fullscreenerror",
+  "rejection": "TypeError",
+  "pressed": "false",
+  "label": "Pantalla completa",
+  "status": "No se pudo activar la pantalla completa.",
+  "fsElement": null
+}

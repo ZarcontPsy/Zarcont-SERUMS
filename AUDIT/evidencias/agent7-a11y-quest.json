@@ -1,0 +1,207 @@
+{
+  "groupsBefore": 1,
+  "groupsAfterDoubleMount": 1,
+  "reducedMotion": true,
+  "buttons": [
+    {
+      "kind": "home",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al inicio de SERUMS QUEST",
+      "title": "Volver al inicio de SERUMS QUEST",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(192, 199, 215)",
+      "bg": "rgb(7, 8, 12)",
+      "contrast": 11.81,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "hub",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al HUB",
+      "title": "Volver al HUB",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(192, 199, 215)",
+      "bg": "rgb(7, 8, 12)",
+      "contrast": 11.81,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "fullscreen",
+      "tag": "BUTTON",
+      "type": "button",
+      "form": false,
+      "label": "Pantalla completa",
+      "title": "Pantalla completa",
+      "pressed": "false",
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(192, 199, 215)",
+      "bg": "rgb(7, 8, 12)",
+      "contrast": 11.81,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    }
+  ],
+  "duplicateChromeLabels": [],
+  "iconCount": 3,
+  "forms": 0,
+  "tabOrder": [
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "SERUMS QUEST, inicio",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Personaje seleccionado: Ilan Vega. Cambiar de personaje.",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Jugar",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Silenciar audio",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": "home",
+      "label": "Volver al inicio de SERUMS QUEST",
+      "outline": "2px solid rgb(244, 246, 251)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "A",
+      "kind": "hub",
+      "label": "Volver al HUB",
+      "outline": "2px solid rgb(244, 246, 251)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": "fullscreen",
+      "label": "Pantalla completa",
+      "outline": "2px solid rgb(244, 246, 251)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Usar tema claro",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Comenzar misión",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Cambiar héroe",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(255, 255, 255, 0.03)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Héroes1 / 10",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(8, 12, 20, 0.52)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Inventario0 cosméticos",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(8, 12, 20, 0.52)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "TiendaEquipa tu ruta",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(8, 12, 20, 0.52)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "ProgresoNv 1 · Bachiller",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(8, 12, 20, 0.52)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Comenzar misión",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Ver mapa",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Ver catálogo",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Ilan Vega, en uso",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Mara Solís, bloqueado",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Noa Iturbe, bloqueado",
+      "outline": "2px solid rgb(109, 141, 255)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "startFocus": "Saltar al contenido"
+}

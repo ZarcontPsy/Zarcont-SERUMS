@@ -1,0 +1,52 @@
+{
+  "app": "smoke",
+  "steps": [
+    {
+      "name": "study-dashboard",
+      "probe": {
+        "ready": true,
+        "mode": "indexeddb",
+        "h1": "Aprender también es volver."
+      },
+      "errors": []
+    },
+    {
+      "name": "study-flashcards",
+      "probe": {
+        "ready": true,
+        "mode": "indexeddb",
+        "h1": "Recupera lo que sabes."
+      },
+      "errors": []
+    },
+    {
+      "name": "serums-quest",
+      "probe": {
+        "ready": true,
+        "mode": "local",
+        "h1": "Ilan Vega"
+      },
+      "errors": []
+    },
+    {
+      "name": "examen-studio",
+      "probe": {
+        "ready": true,
+        "db": true,
+        "questions": 5100,
+        "h1": "Tu profesión.Tu banco."
+      },
+      "errors": []
+    },
+    {
+      "name": "plazas",
+      "probe": {
+        "ready": true,
+        "plazas": 7323,
+        "storeKeys": 4,
+        "h1": "Panorama SERUMS"
+      },
+      "errors": []
+    }
+  ]
+}

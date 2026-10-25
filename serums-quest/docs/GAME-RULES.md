@@ -150,3 +150,73 @@ La precisión se calcula sobre respuestas registradas (no sobre preguntas omitid
 - El estado se escribe en un único documento con diario y respaldo.
 - Si la escritura falla, la transacción no se aplica al estado en memoria.
 - Un estado dañado o de una versión futura bloquea la escritura, se archiva y se ofrece recuperación; no se sobrescribe silenciosamente.
+
+## 10. Colección, personajes y cosméticos
+
+La colección usa el mismo documento persistente y la misma moneda. No hay una segunda economía ni pagos con dinero real.
+
+### 10.1 Personajes
+
+| id | Rareza | Precio | Desbloqueo |
+| --- | --- | ---: | --- |
+| Ilan Vega | Inicial | 0 | Disponible desde el primer arranque |
+| Mara Solís | Común | 480 | Compra |
+| Noa Iturbe | Poco común | 950 | Compra |
+| Teo Alcázar | Poco común | 1.100 | Compra |
+| Lía Márquez | Raro | 1.750 | Compra |
+| Kian Ferro | Raro | 1.950 | Compra |
+| Amaru Cielo | Raro | 0 | 5 misiones completadas (recompensa, no compra) |
+| Ona Beltrán | Épico | 3.200 | Compra |
+| Iris Calderón | Épico | 3.600 | Compra |
+| Zenón Atlas | Legendario | 5.400 | Nivel 8 + compra |
+
+- Solo el personaje inicial está disponible desde el principio.
+- El requisito se evalúa con XP/nivel, misiones completadas o logros reales.
+- Amaru se entrega al cerrar una sesión cuando el contador de misiones completadas llega a 5; no cuesta monedas.
+- Los personajes no otorgan XP, monedas, precisión ni facilidad adicional. Sus atributos y ventajas son descriptivos y de presentación.
+
+### 10.2 Cosméticos
+
+- Categorías: cabeza, peinado, torso, piernas, accesorio principal, accesorio adicional, amuleto, efecto y marco.
+- Cada objeto declara personajes compatibles y una ranura. Un objeto incompatible no se puede equipar.
+- Kian y Zenón no tienen ranura de peinado; Amaru no tiene ranura de cabeza.
+- Los objetos de logro no se compran con monedas; muestran su requisito y progreso.
+- El equipamiento se guarda por personaje. Cambiar de personaje no elimina objetos del inventario.
+- Se conserva un atuendo anterior por personaje para restaurarlo desde la personalización.
+
+### 10.3 Precios y bandas
+
+| Rareza | Personajes | Cosméticos |
+| --- | --- | --- |
+| Común | 400–800 | 60–140 |
+| Poco común | 900–1.500 | 150–260 |
+| Raro | 1.600–2.400 | 280–420 |
+| Épico | 2.800–4.000 | 480–680 |
+| Legendario | 5.000–7.000 | 750–1.000 |
+
+Los precios exactos están en `QUEST_CONFIG.rpg.prices`. Una prueba comprueba que cada precio coincida con la configuración y su banda. El catálogo no declara precios propios.
+
+### 10.4 Reglas de compra
+
+1. El objeto debe existir y no estar en la colección.
+2. El requisito de desbloqueo debe estar cumplido.
+3. El saldo debe alcanzar el precio.
+4. El descuento y la concesión ocurren en el mismo `commit`; si algo falla, no se aplica nada.
+5. La transacción se registra con objeto, precio y saldo resultante.
+6. Está prohibido el saldo negativo y la doble compra.
+7. Abrir la tienda o navegar por ella no otorga monedas.
+
+### 10.5 Migración
+
+El esquema 2 añade `collection`, `economy` y `presentation`. La migración desde el esquema 1 conserva XP, monedas, preguntas, errores, misiones, logros, sesiones y perfil; crea la colección con Ilan y no reinicia la economía.
+
+### 10.6 Presentación y reacciones
+
+- Estados: `idle`, `correct`, `streak`, `wrong`, `defeat`, `victory`, `levelup`, `unlock`.
+- Las reacciones no interrumpen la pregunta ni bloquean el botón de continuar.
+- Los mensajes varían según la personalidad del personaje y rotan para no repetirse de inmediato.
+- `prefers-reduced-motion` y las preferencias de presentación desactivan animaciones sin quitar funciones.
+- El estudio de equipamiento (`#/inventario/:id`, alias `#/personalizar/:id`) guarda un atuendo por personaje; probar un objeto no lo compra ni lo equipa hasta guardar. No concede ventajas académicas.
+- Los escenarios son decorativos: no contienen pistas, respuestas ni información necesaria para responder.
+- El audio es opcional: no se reproduce antes de un gesto, no altera XP/monedas y la música empieza desactivada.
+- Los detalles técnicos están en `docs/RPG-SYSTEM.md`; la procedencia de assets, en `docs/ASSETS.md`.

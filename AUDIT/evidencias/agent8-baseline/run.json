@@ -1,0 +1,245 @@
+{
+  "startedAt": "2026-10-25T22:29:33.427Z",
+  "finishedAt": "2026-10-25T22:30:08.299Z",
+  "total": 10,
+  "counts": {
+    "PASS": 10,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "results": [
+    {
+      "id": "BANQ-01",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Carga del hub: 51 exámenes, 5.100 preguntas, 17 profesiones y 100% de cobertura declarada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 11569,
+      "observations": {
+        "title": "Banqueo · Examen Studio",
+        "body": "Saltar al contenido\nBANQUEO\nEXAMEN STUDIO\nBanqueo\nBanco\nImportar\nRevisión\n15\nProgreso\nBANCO SERUMS\nTrazable al PDF original\nTu profesión.\nTu banco.\n\n51 exámenes oficiales, clasificados por contenido y por convocatoria. Entra directo a las preguntas, revisa la clave en su página original o entrena con el examen completo.\n\nExplorar el banco\nImportar PDFs\nRevisar\n51\nEXÁMENES\n5,100\nPREGUNTAS\n100%\nCOBERTURA\n17\nPROFESIONES\nPDFs originales preservados. Claves identificadas por resaltado, nunca inventad",
+        "totals": {
+          "professions": 17,
+          "exams": 51,
+          "questions": 5100,
+          "validAnswers": 5100,
+          "duplicateGroups": 580,
+          "duplicateQuestions": 2695
+        },
+        "bootVisible": false,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:34.105Z"
+    },
+    {
+      "id": "BANQ-02",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Hub de Banqueo → banco → pregunta, sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1670,
+      "observations": {
+        "bank": {
+          "hash": "#bank/medicina",
+          "count": 300,
+          "h1": "Banco de preguntas"
+        },
+        "detail": {
+          "selected": "2026-ii-medicina-q001",
+          "detail": "Pregunta 1\nMedicina Humana\n2026-II\npágina 1\n8489155-medicina.pdf\nEn actividad extramuros de vacunación del adolescente en su jurisdicción, usted acude a centro educativo identificando en un adolescente tatuajes extensos ",
+          "keyVisible": true
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:45.674Z"
+    },
+    {
+      "id": "BANQ-03",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Banco → inicio de Banqueo y URL directa al banco",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2077,
+      "observations": {
+        "home": "#hub",
+        "direct": {
+          "hash": "#bank/medicina",
+          "h1": "Banco de preguntas",
+          "rows": 300
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:47.344Z"
+    },
+    {
+      "id": "BANQ-04",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Banqueo → HUB (control compartido o enlace explícito)",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1035,
+      "observations": {
+        "selector": "[data-serums-chrome=\"hub\"]",
+        "url": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:49.421Z"
+    },
+    {
+      "id": "BANQ-05",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Atrás/adelante del navegador entre banco y hub de Banqueo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1068,
+      "observations": {
+        "back": "#hub",
+        "forward": "#bank/medicina"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:50.456Z"
+    },
+    {
+      "id": "BANQ-06",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Práctica (Examen Studio): configuración → sesión → responder → resultado",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 4402,
+      "observations": {
+        "started": {
+          "setup": {
+            "hash": "#practice/2026-ii-medicina",
+            "count": "25",
+            "exam": "2026-ii-medicina",
+            "disabled": false
+          },
+          "session": {
+            "hash": "#practice/session",
+            "question": "¿Ante qué tipo de problema estamos, si se recoge información que nos permite saber cómo están los pr",
+            "options": 4,
+            "timer": true
+          }
+        },
+        "answered": {
+          "selected": 1,
+          "feedback": "La clave es B. Resaltado amarillo en la página 3.\nVer PDF"
+        },
+        "second": {
+          "index": "Pregunta 2 de 25 · 1 respondida\n2026-II · p. 9",
+          "options": 4
+        },
+        "result": {
+          "hash": "#practice/result/attempt-29f9acc2-1c1e-4b52-963f-c2eb173a81bf",
+          "text": "0%\n0/25\nRESULTADO DE LA PRÁCTICA\nHay margen para mejorar.\n\nMedicina Humana · SERUMS 2026-II · Invitado · 25 oct. 2026\n\n0\nCORRECTAS\n1\nINCORRECTAS\n24\nEN BLANCO\n0:01\nTIEMPO\nRepetir\nVer banco\nHistorial\nRevisión del intento\n0 CORRECTAS · 1 INCORRECTAS · 24 EN BLANCO\n1 · Incorrecta\nElegiste A\n¿Ante qué tipo de problema estam"
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:51.524Z"
+    },
+    {
+      "id": "BANQ-07",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Persistencia del intento: visible en Progreso tras refresh",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2637,
+      "observations": {
+        "before": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n0\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando em"
+        },
+        "after": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n0\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando em"
+        },
+        "shot": "AUDIT/evidencias/agent8-baseline/img/banq-progreso-refresh.png"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:55.926Z"
+    },
+    {
+      "id": "BANQ-08",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Persistencia de revisión de pregunta (banqueo-review-v1) tras refresh",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3288,
+      "observations": {
+        "before": null,
+        "after": {
+          "stored": "{\"2026-i-medicina-q001\":{\"r\":1,\"ts\":1792967399697}}",
+          "pressed": null
+        },
+        "refreshed": {
+          "stored": "{\"2026-i-medicina-q001\":{\"r\":1,\"ts\":1792967399697}}",
+          "pressed": null
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:29:58.563Z"
+    },
+    {
+      "id": "BANQ-09",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Sin recargas al cambiar filtro de preguntas y búsqueda",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2529,
+      "observations": {
+        "filter": "Validadas300",
+        "rows": 176,
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:30:01.851Z"
+    },
+    {
+      "id": "BANQ-10",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Pantalla completa de Banqueo con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2679,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true"
+        },
+        "off": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-25T22:30:04.380Z"
+    }
+  ]
+}

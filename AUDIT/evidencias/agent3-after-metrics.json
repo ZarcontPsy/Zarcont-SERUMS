@@ -1,0 +1,4274 @@
+{
+  "mode": "after",
+  "url": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+  "timestamp": "2026-10-25T22:16:19.612Z",
+  "viewports": [
+    {
+      "mode": null,
+      "viewport": {
+        "width": 320,
+        "height": 568,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 320,
+        "clientWidth": 320,
+        "scrollHeight": 568,
+        "clientHeight": 568,
+        "bodyScrollWidth": 320,
+        "innerWidth": 320,
+        "innerHeight": 568,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(448px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(360px, calc(100dvh - 184px - 0px - 0px), 640px)",
+        "grid": "min(448px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 320,
+          "h": 568,
+          "top": 0,
+          "right": 320,
+          "bottom": 568,
+          "left": 0
+        },
+        "clientHeight": 568,
+        "scrollHeight": 568,
+        "paddingTop": "68px",
+        "paddingBottom": "8px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "w": 296,
+          "h": 50,
+          "top": 10,
+          "right": 308,
+          "bottom": 60,
+          "left": 12
+        },
+        "scrollWidth": 309,
+        "clientWidth": 294,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 21,
+              "y": 16,
+              "w": 116,
+              "h": 38,
+              "top": 16,
+              "right": 137,
+              "bottom": 54,
+              "left": 21
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 183,
+              "y": 16,
+              "w": 118,
+              "h": 38,
+              "top": 16,
+              "right": 301,
+              "bottom": 54,
+              "left": 183
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 12,
+          "y": 68,
+          "w": 296,
+          "h": 384,
+          "top": 68,
+          "right": 308,
+          "bottom": 452,
+          "left": 12
+        },
+        "cardW": {
+          "x": 12,
+          "y": 68,
+          "w": 296,
+          "h": 384,
+          "top": 68,
+          "right": 308,
+          "bottom": 452,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 68,
+          "w": 296,
+          "h": 384,
+          "top": 68,
+          "right": 308,
+          "bottom": 452,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 69,
+          "w": 294,
+          "h": 198.6,
+          "top": 69,
+          "right": 307,
+          "bottom": 267.6,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 12,
+          "y": 460,
+          "w": 296,
+          "h": 58,
+          "top": 460,
+          "right": 308,
+          "bottom": 518,
+          "left": 12
+        },
+        "scrollWidth": 294,
+        "clientWidth": 294
+      },
+      "dots": {
+        "rect": {
+          "x": 60,
+          "y": 524,
+          "w": 200,
+          "h": 36,
+          "top": 524,
+          "right": 260,
+          "bottom": 560,
+          "left": 60
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 12,
+        "y": 68,
+        "w": 296,
+        "h": 492,
+        "top": 68,
+        "right": 308,
+        "bottom": 560,
+        "left": 12
+      },
+      "bodyContent": {
+        "clientHeight": 183,
+        "scrollHeight": 183,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 290.6,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 319.3,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 335.9,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 352.9,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 415,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 436,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 40,
+          "h": 40,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 183,
+          "y": 16,
+          "w": 38,
+          "h": 38,
+          "top": 16,
+          "right": 221,
+          "bottom": 54,
+          "left": 183
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": ""
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 320,
+        "clientWidth": 320
+      },
+      "name": "320x568",
+      "cssWidth": 320,
+      "cssHeight": 568,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 183.4,
+          "client": 183,
+          "scroll": 183,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 198.6,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 183.4,
+          "client": 183,
+          "scroll": 183,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 198.6,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 183.4,
+          "client": 183,
+          "scroll": 183,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 198.6,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 183.4,
+          "client": 183,
+          "scroll": 183,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 198.6,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 183.4,
+          "client": 183,
+          "scroll": 183,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 198.6,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 360,
+        "height": 640,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 360,
+        "clientWidth": 360,
+        "scrollHeight": 640,
+        "clientHeight": 640,
+        "bodyScrollWidth": 360,
+        "innerWidth": 360,
+        "innerHeight": 640,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(448px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(360px, calc(100dvh - 184px - 0px - 0px), 640px)",
+        "grid": "min(448px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 360,
+          "h": 640,
+          "top": 0,
+          "right": 360,
+          "bottom": 640,
+          "left": 0
+        },
+        "clientHeight": 640,
+        "scrollHeight": 640,
+        "paddingTop": "68px",
+        "paddingBottom": "8px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "w": 336,
+          "h": 50,
+          "top": 10,
+          "right": 348,
+          "bottom": 60,
+          "left": 12
+        },
+        "scrollWidth": 349,
+        "clientWidth": 334,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 21,
+              "y": 16,
+              "w": 116,
+              "h": 38,
+              "top": 16,
+              "right": 137,
+              "bottom": 54,
+              "left": 21
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 223,
+              "y": 16,
+              "w": 118,
+              "h": 38,
+              "top": 16,
+              "right": 341,
+              "bottom": 54,
+              "left": 223
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 12,
+          "y": 68,
+          "w": 336,
+          "h": 456,
+          "top": 68,
+          "right": 348,
+          "bottom": 524,
+          "left": 12
+        },
+        "cardW": {
+          "x": 12,
+          "y": 68,
+          "w": 336,
+          "h": 456,
+          "top": 68,
+          "right": 348,
+          "bottom": 524,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 68,
+          "w": 336,
+          "h": 456,
+          "top": 68,
+          "right": 348,
+          "bottom": 524,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 69,
+          "w": 334,
+          "h": 236.1,
+          "top": 69,
+          "right": 347,
+          "bottom": 305.1,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 12,
+          "y": 532,
+          "w": 336,
+          "h": 58,
+          "top": 532,
+          "right": 348,
+          "bottom": 590,
+          "left": 12
+        },
+        "scrollWidth": 334,
+        "clientWidth": 334
+      },
+      "dots": {
+        "rect": {
+          "x": 80,
+          "y": 596,
+          "w": 200,
+          "h": 36,
+          "top": 596,
+          "right": 280,
+          "bottom": 632,
+          "left": 80
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 12,
+        "y": 68,
+        "w": 336,
+        "h": 564,
+        "top": 68,
+        "right": 348,
+        "bottom": 632,
+        "left": 12
+      },
+      "bodyContent": {
+        "clientHeight": 218,
+        "scrollHeight": 218,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 328.1,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 356.8,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 392.4,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 409.4,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 471.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 508,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 40,
+          "h": 40,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 223,
+          "y": 16,
+          "w": 38,
+          "h": 38,
+          "top": 16,
+          "right": 261,
+          "bottom": 54,
+          "left": 223
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 360,
+        "clientWidth": 360
+      },
+      "name": "360x640",
+      "cssWidth": 360,
+      "cssHeight": 640,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 217.9,
+          "client": 218,
+          "scroll": 218,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 236.1,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 217.9,
+          "client": 218,
+          "scroll": 218,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 236.1,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 217.9,
+          "client": 218,
+          "scroll": 218,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 236.1,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 217.9,
+          "client": 218,
+          "scroll": 218,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 236.1,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 217.9,
+          "client": 218,
+          "scroll": 218,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 236.1,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 390,
+        "height": 844,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 390,
+        "clientWidth": 390,
+        "scrollHeight": 844,
+        "clientHeight": 844,
+        "bodyScrollWidth": 390,
+        "innerWidth": 390,
+        "innerHeight": 844,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(448px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(360px, calc(100dvh - 184px - 0px - 0px), 640px)",
+        "grid": "min(448px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 390,
+          "h": 844,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "left": 0
+        },
+        "clientHeight": 844,
+        "scrollHeight": 844,
+        "paddingTop": "68px",
+        "paddingBottom": "8px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "w": 366,
+          "h": 50,
+          "top": 10,
+          "right": 378,
+          "bottom": 60,
+          "left": 12
+        },
+        "scrollWidth": 379,
+        "clientWidth": 364,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 21,
+              "y": 16,
+              "w": 205.9,
+              "h": 38,
+              "top": 16,
+              "right": 226.9,
+              "bottom": 54,
+              "left": 21
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 253,
+              "y": 16,
+              "w": 118,
+              "h": 38,
+              "top": 16,
+              "right": 371,
+              "bottom": 54,
+              "left": 253
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 12,
+          "y": 78,
+          "w": 366,
+          "h": 640,
+          "top": 78,
+          "right": 378,
+          "bottom": 718,
+          "left": 12
+        },
+        "cardW": {
+          "x": 12,
+          "y": 78,
+          "w": 366,
+          "h": 640,
+          "top": 78,
+          "right": 378,
+          "bottom": 718,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 78,
+          "w": 366,
+          "h": 640,
+          "top": 78,
+          "right": 378,
+          "bottom": 718,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 79,
+          "w": 364,
+          "h": 382.8,
+          "top": 79,
+          "right": 377,
+          "bottom": 461.8,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 12,
+          "y": 726,
+          "w": 366,
+          "h": 58,
+          "top": 726,
+          "right": 378,
+          "bottom": 784,
+          "left": 12
+        },
+        "scrollWidth": 364,
+        "clientWidth": 364
+      },
+      "dots": {
+        "rect": {
+          "x": 95,
+          "y": 790,
+          "w": 200,
+          "h": 36,
+          "top": 790,
+          "right": 295,
+          "bottom": 826,
+          "left": 95
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 12,
+        "y": 78,
+        "w": 366,
+        "h": 748,
+        "top": 78,
+        "right": 378,
+        "bottom": 826,
+        "left": 12
+      },
+      "bodyContent": {
+        "clientHeight": 255,
+        "scrollHeight": 255,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 484.8,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 515.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 551.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 568.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 630.3,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 702,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 40,
+          "h": 40,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 253,
+          "y": 16,
+          "w": 38,
+          "h": 38,
+          "top": 16,
+          "right": 291,
+          "bottom": 54,
+          "left": 253
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 390,
+        "clientWidth": 390
+      },
+      "name": "390x844",
+      "cssWidth": 390,
+      "cssHeight": 844,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 414,
+        "height": 896,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 414,
+        "clientWidth": 414,
+        "scrollHeight": 896,
+        "clientHeight": 896,
+        "bodyScrollWidth": 414,
+        "innerWidth": 414,
+        "innerHeight": 896,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(448px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(360px, calc(100dvh - 184px - 0px - 0px), 640px)",
+        "grid": "min(448px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 414,
+          "h": 896,
+          "top": 0,
+          "right": 414,
+          "bottom": 896,
+          "left": 0
+        },
+        "clientHeight": 896,
+        "scrollHeight": 896,
+        "paddingTop": "68px",
+        "paddingBottom": "8px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 12,
+          "y": 10,
+          "w": 390,
+          "h": 50,
+          "top": 10,
+          "right": 402,
+          "bottom": 60,
+          "left": 12
+        },
+        "scrollWidth": 403,
+        "clientWidth": 388,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 21,
+              "y": 16,
+              "w": 205.9,
+              "h": 38,
+              "top": 16,
+              "right": 226.9,
+              "bottom": 54,
+              "left": 21
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 277,
+              "y": 16,
+              "w": 118,
+              "h": 38,
+              "top": 16,
+              "right": 395,
+              "bottom": 54,
+              "left": 277
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 12,
+          "y": 104,
+          "w": 390,
+          "h": 640,
+          "top": 104,
+          "right": 402,
+          "bottom": 744,
+          "left": 12
+        },
+        "cardW": {
+          "x": 12,
+          "y": 104,
+          "w": 390,
+          "h": 640,
+          "top": 104,
+          "right": 402,
+          "bottom": 744,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 104,
+          "w": 390,
+          "h": 640,
+          "top": 104,
+          "right": 402,
+          "bottom": 744,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 105,
+          "w": 388,
+          "h": 382.8,
+          "top": 105,
+          "right": 401,
+          "bottom": 487.8,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 12,
+          "y": 752,
+          "w": 390,
+          "h": 58,
+          "top": 752,
+          "right": 402,
+          "bottom": 810,
+          "left": 12
+        },
+        "scrollWidth": 388,
+        "clientWidth": 388
+      },
+      "dots": {
+        "rect": {
+          "x": 107,
+          "y": 816,
+          "w": 200,
+          "h": 36,
+          "top": 816,
+          "right": 307,
+          "bottom": 852,
+          "left": 107
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 12,
+        "y": 104,
+        "w": 390,
+        "h": 748,
+        "top": 104,
+        "right": 402,
+        "bottom": 852,
+        "left": 12
+      },
+      "bodyContent": {
+        "clientHeight": 255,
+        "scrollHeight": 255,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 510.8,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 541.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 577.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 594.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 637.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 728,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 40,
+          "h": 40,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 40,
+          "h": 40,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 277,
+          "y": 16,
+          "w": 38,
+          "h": 38,
+          "top": 16,
+          "right": 315,
+          "bottom": 54,
+          "left": 277
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 414,
+        "clientWidth": 414
+      },
+      "name": "414x896",
+      "cssWidth": 414,
+      "cssHeight": 896,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 768,
+        "height": 1024,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 768,
+        "clientWidth": 768,
+        "scrollHeight": 1024,
+        "clientHeight": 1024,
+        "bodyScrollWidth": 768,
+        "innerWidth": 768,
+        "innerHeight": 1024,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(448px, calc(100vw - 40px))",
+        "cardH": "clamp(520px, calc(100dvh - 222px), 640px)",
+        "grid": "min(448px, calc(100vw - 40px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 768,
+          "h": 1024,
+          "top": 0,
+          "right": 768,
+          "bottom": 1024,
+          "left": 0
+        },
+        "clientHeight": 1024,
+        "scrollHeight": 1024,
+        "paddingTop": "76px",
+        "paddingBottom": "20px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 12,
+          "y": 14,
+          "w": 744,
+          "h": 54,
+          "top": 14,
+          "right": 756,
+          "bottom": 68,
+          "left": 12
+        },
+        "scrollWidth": 757,
+        "clientWidth": 742,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 24,
+              "y": 24,
+              "w": 228.4,
+              "h": 34,
+              "top": 24,
+              "right": 252.4,
+              "bottom": 58,
+              "left": 24
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 641,
+              "y": 24,
+              "w": 106,
+              "h": 34,
+              "top": 24,
+              "right": 747,
+              "bottom": 58,
+              "left": 641
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 12,
+          "y": 162,
+          "w": 744,
+          "h": 640,
+          "top": 162,
+          "right": 756,
+          "bottom": 802,
+          "left": 12
+        },
+        "cardW": {
+          "x": 160,
+          "y": 162,
+          "w": 448,
+          "h": 640,
+          "top": 162,
+          "right": 608,
+          "bottom": 802,
+          "left": 160
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 160,
+          "y": 162,
+          "w": 448,
+          "h": 640,
+          "top": 162,
+          "right": 608,
+          "bottom": 802,
+          "left": 160
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 161,
+          "y": 163,
+          "w": 446,
+          "h": 382.8,
+          "top": 163,
+          "right": 607,
+          "bottom": 545.8,
+          "left": 161
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 104,
+          "y": 814,
+          "w": 560,
+          "h": 62,
+          "top": 814,
+          "right": 664,
+          "bottom": 876,
+          "left": 104
+        },
+        "scrollWidth": 558,
+        "clientWidth": 558
+      },
+      "dots": {
+        "rect": {
+          "x": 284,
+          "y": 882,
+          "w": 200,
+          "h": 36,
+          "top": 882,
+          "right": 484,
+          "bottom": 918,
+          "left": 284
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 12,
+        "y": 162,
+        "w": 744,
+        "h": 756,
+        "top": 162,
+        "right": 756,
+        "bottom": 918,
+        "left": 12
+      },
+      "bodyContent": {
+        "clientHeight": 255,
+        "scrollHeight": 255,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 569.8,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 599.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 638.1,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 656.1,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 703.1,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 784,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 73.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 641,
+          "y": 24,
+          "w": 34,
+          "h": 34,
+          "top": 24,
+          "right": 675,
+          "bottom": 58,
+          "left": 641
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 768,
+        "clientWidth": 768
+      },
+      "name": "768x1024",
+      "cssWidth": 768,
+      "cssHeight": 1024,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 255.2,
+          "client": 255,
+          "scroll": 255,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 382.8,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 1024,
+        "height": 768,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1024,
+        "clientWidth": 1024,
+        "scrollHeight": 768,
+        "clientHeight": 768,
+        "bodyScrollWidth": 1024,
+        "innerWidth": 1024,
+        "innerHeight": 768,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "clamp(350px, 34vw, 448px)",
+        "cardH": "clamp(480px, calc(100dvh - 248px), 620px)",
+        "grid": "clamp(350px, 34vw, 448px)"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1024,
+          "h": 768,
+          "top": 0,
+          "right": 1024,
+          "bottom": 768,
+          "left": 0
+        },
+        "clientHeight": 768,
+        "scrollHeight": 768,
+        "paddingTop": "82px",
+        "paddingBottom": "20px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 22,
+          "y": 14,
+          "w": 980,
+          "h": 54,
+          "top": 14,
+          "right": 1002,
+          "bottom": 68,
+          "left": 22
+        },
+        "scrollWidth": 993,
+        "clientWidth": 978,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 34,
+              "y": 24,
+              "w": 228.4,
+              "h": 34,
+              "top": 24,
+              "right": 262.4,
+              "bottom": 58,
+              "left": 34
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 460.5,
+              "y": 35,
+              "w": 103.1,
+              "h": 12,
+              "top": 35,
+              "right": 563.5,
+              "bottom": 47,
+              "left": 460.5
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 887,
+              "y": 24,
+              "w": 106,
+              "h": 34,
+              "top": 24,
+              "right": 993,
+              "bottom": 58,
+              "left": 887
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 16,
+          "y": 97,
+          "w": 992,
+          "h": 520,
+          "top": 97,
+          "right": 1008,
+          "bottom": 617,
+          "left": 16
+        },
+        "cardW": {
+          "x": 337,
+          "y": 97,
+          "w": 350,
+          "h": 520,
+          "top": 97,
+          "right": 687,
+          "bottom": 617,
+          "left": 337
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 337,
+          "y": 97,
+          "w": 350,
+          "h": 520,
+          "top": 97,
+          "right": 687,
+          "bottom": 617,
+          "left": 337
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 338,
+          "y": 98,
+          "w": 348,
+          "h": 290.1,
+          "top": 98,
+          "right": 686,
+          "bottom": 388.1,
+          "left": 338
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 232,
+          "y": 629,
+          "w": 560,
+          "h": 62,
+          "top": 629,
+          "right": 792,
+          "bottom": 691,
+          "left": 232
+        },
+        "scrollWidth": 558,
+        "clientWidth": 558
+      },
+      "dots": {
+        "rect": {
+          "x": 412,
+          "y": 697,
+          "w": 200,
+          "h": 36,
+          "top": 697,
+          "right": 612,
+          "bottom": 733,
+          "left": 412
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 16,
+        "y": 97,
+        "w": 992,
+        "h": 636,
+        "top": 97,
+        "right": 1008,
+        "bottom": 733,
+        "left": 16
+      },
+      "bodyContent": {
+        "clientHeight": 228,
+        "scrollHeight": 228,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 412.1,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 441.9,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 480.4,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 496.4,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 562.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 599,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 73.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 887,
+          "y": 24,
+          "w": 34,
+          "h": 34,
+          "top": 24,
+          "right": 921,
+          "bottom": 58,
+          "left": 887
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 1024,
+        "clientWidth": 1024
+      },
+      "name": "1024x768",
+      "cssWidth": 1024,
+      "cssHeight": 768,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 227.9,
+          "client": 228,
+          "scroll": 228,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 290.1,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 227.9,
+          "client": 228,
+          "scroll": 228,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 290.1,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 227.9,
+          "client": 228,
+          "scroll": 228,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 290.1,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 227.9,
+          "client": 228,
+          "scroll": 228,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 290.1,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 227.9,
+          "client": 228,
+          "scroll": 228,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 290.1,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 1280,
+        "height": 800,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 800,
+        "clientHeight": 800,
+        "bodyScrollWidth": 1280,
+        "innerWidth": 1280,
+        "innerHeight": 800,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "clamp(350px, 34vw, 448px)",
+        "cardH": "clamp(480px, calc(100dvh - 248px), 620px)",
+        "grid": "clamp(350px, 34vw, 448px)"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 800,
+          "top": 0,
+          "right": 1280,
+          "bottom": 800,
+          "left": 0
+        },
+        "clientHeight": 800,
+        "scrollHeight": 800,
+        "paddingTop": "82px",
+        "paddingBottom": "20px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 150,
+          "y": 14,
+          "w": 980,
+          "h": 54,
+          "top": 14,
+          "right": 1130,
+          "bottom": 68,
+          "left": 150
+        },
+        "scrollWidth": 993,
+        "clientWidth": 978,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 162,
+              "y": 24,
+              "w": 228.4,
+              "h": 34,
+              "top": 24,
+              "right": 390.4,
+              "bottom": 58,
+              "left": 162
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 588.5,
+              "y": 35,
+              "w": 103.1,
+              "h": 12,
+              "top": 35,
+              "right": 691.5,
+              "bottom": 47,
+              "left": 588.5
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 1015,
+              "y": 24,
+              "w": 106,
+              "h": 34,
+              "top": 24,
+              "right": 1121,
+              "bottom": 58,
+              "left": 1015
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 20,
+          "y": 97,
+          "w": 1240,
+          "h": 552,
+          "top": 97,
+          "right": 1260,
+          "bottom": 649,
+          "left": 20
+        },
+        "cardW": {
+          "x": 422.4,
+          "y": 97,
+          "w": 435.2,
+          "h": 552,
+          "top": 97,
+          "right": 857.6,
+          "bottom": 649,
+          "left": 422.4
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 422.4,
+          "y": 97,
+          "w": 435.2,
+          "h": 552,
+          "top": 97,
+          "right": 857.6,
+          "bottom": 649,
+          "left": 422.4
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 423.4,
+          "y": 98,
+          "w": 433.2,
+          "h": 308,
+          "top": 98,
+          "right": 856.6,
+          "bottom": 406,
+          "left": 423.4
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 360,
+          "y": 661,
+          "w": 560,
+          "h": 62,
+          "top": 661,
+          "right": 920,
+          "bottom": 723,
+          "left": 360
+        },
+        "scrollWidth": 558,
+        "clientWidth": 558
+      },
+      "dots": {
+        "rect": {
+          "x": 540,
+          "y": 729,
+          "w": 200,
+          "h": 36,
+          "top": 729,
+          "right": 740,
+          "bottom": 765,
+          "left": 540
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 20,
+        "y": 97,
+        "w": 1240,
+        "h": 668,
+        "top": 97,
+        "right": 1260,
+        "bottom": 765,
+        "left": 20
+      },
+      "bodyContent": {
+        "clientHeight": 242,
+        "scrollHeight": 242,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 430,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 466,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 504.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 520.5,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 593,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 631,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 73.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 1015,
+          "y": 24,
+          "w": 34,
+          "h": 34,
+          "top": 24,
+          "right": 1049,
+          "bottom": 58,
+          "left": 1015
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 1280,
+        "clientWidth": 1280
+      },
+      "name": "1280x800",
+      "cssWidth": 1280,
+      "cssHeight": 800,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 242,
+          "client": 242,
+          "scroll": 242,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 308,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 242,
+          "client": 242,
+          "scroll": 242,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 308,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 242,
+          "client": 242,
+          "scroll": 242,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 308,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 242,
+          "client": 242,
+          "scroll": 242,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 308,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 242,
+          "client": 242,
+          "scroll": 242,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 308,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 1440,
+        "height": 900,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1440,
+        "clientWidth": 1440,
+        "scrollHeight": 900,
+        "clientHeight": 900,
+        "bodyScrollWidth": 1440,
+        "innerWidth": 1440,
+        "innerHeight": 900,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "clamp(350px, 34vw, 448px)",
+        "cardH": "clamp(480px, calc(100dvh - 248px), 620px)",
+        "grid": "clamp(350px, 34vw, 448px)"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1440,
+          "h": 900,
+          "top": 0,
+          "right": 1440,
+          "bottom": 900,
+          "left": 0
+        },
+        "clientHeight": 900,
+        "scrollHeight": 900,
+        "paddingTop": "82px",
+        "paddingBottom": "20px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 230,
+          "y": 14,
+          "w": 980,
+          "h": 54,
+          "top": 14,
+          "right": 1210,
+          "bottom": 68,
+          "left": 230
+        },
+        "scrollWidth": 993,
+        "clientWidth": 978,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 242,
+              "y": 24,
+              "w": 228.4,
+              "h": 34,
+              "top": 24,
+              "right": 470.4,
+              "bottom": 58,
+              "left": 242
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 668.5,
+              "y": 35,
+              "w": 103.1,
+              "h": 12,
+              "top": 35,
+              "right": 771.5,
+              "bottom": 47,
+              "left": 668.5
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 1095,
+              "y": 24,
+              "w": 106,
+              "h": 34,
+              "top": 24,
+              "right": 1201,
+              "bottom": 58,
+              "left": 1095
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 100,
+          "y": 113,
+          "w": 1240,
+          "h": 620,
+          "top": 113,
+          "right": 1340,
+          "bottom": 733,
+          "left": 100
+        },
+        "cardW": {
+          "x": 496,
+          "y": 113,
+          "w": 448,
+          "h": 620,
+          "top": 113,
+          "right": 944,
+          "bottom": 733,
+          "left": 496
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 496,
+          "y": 113,
+          "w": 448,
+          "h": 620,
+          "top": 113,
+          "right": 944,
+          "bottom": 733,
+          "left": 496
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 497,
+          "y": 114,
+          "w": 446,
+          "h": 370.8,
+          "top": 114,
+          "right": 943,
+          "bottom": 484.8,
+          "left": 497
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 440,
+          "y": 745,
+          "w": 560,
+          "h": 62,
+          "top": 745,
+          "right": 1000,
+          "bottom": 807,
+          "left": 440
+        },
+        "scrollWidth": 558,
+        "clientWidth": 558
+      },
+      "dots": {
+        "rect": {
+          "x": 620,
+          "y": 813,
+          "w": 200,
+          "h": 36,
+          "top": 813,
+          "right": 820,
+          "bottom": 849,
+          "left": 620
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 100,
+        "y": 113,
+        "w": 1240,
+        "h": 736,
+        "top": 113,
+        "right": 1340,
+        "bottom": 849,
+        "left": 100
+      },
+      "bodyContent": {
+        "clientHeight": 247,
+        "scrollHeight": 247,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 508.8,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 546.8,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 585.3,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 603.3,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 678.3,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 715,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 73.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 1095,
+          "y": 24,
+          "w": 34,
+          "h": 34,
+          "top": 24,
+          "right": 1129,
+          "bottom": 58,
+          "left": 1095
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 1440,
+        "clientWidth": 1440
+      },
+      "name": "1440x900",
+      "cssWidth": 1440,
+      "cssHeight": 900,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 247.2,
+          "client": 247,
+          "scroll": 247,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 370.8,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 247.2,
+          "client": 247,
+          "scroll": 247,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 370.8,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 247.2,
+          "client": 247,
+          "scroll": 247,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 370.8,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 247.2,
+          "client": 247,
+          "scroll": 247,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 370.8,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 247.2,
+          "client": 247,
+          "scroll": 247,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 370.8,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 568,
+        "height": 320,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 568,
+        "clientWidth": 568,
+        "scrollHeight": 320,
+        "clientHeight": 320,
+        "bodyScrollWidth": 568,
+        "innerWidth": 568,
+        "innerHeight": 320,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(820px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(150px, calc(100dvh - 158px - 0px - 0px), 300px)",
+        "grid": "min(820px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 568,
+          "h": 320,
+          "top": 0,
+          "right": 568,
+          "bottom": 320,
+          "left": 0
+        },
+        "clientHeight": 320,
+        "scrollHeight": 320,
+        "paddingTop": "58px",
+        "paddingBottom": "4px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 10,
+          "y": 6,
+          "w": 548,
+          "h": 46,
+          "top": 6,
+          "right": 558,
+          "bottom": 52,
+          "left": 10
+        },
+        "scrollWidth": 562,
+        "clientWidth": 546,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 19,
+              "y": 11,
+              "w": 199.8,
+              "h": 36,
+              "top": 11,
+              "right": 218.8,
+              "bottom": 47,
+              "left": 19
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 439,
+              "y": 11,
+              "w": 112,
+              "h": 36,
+              "top": 11,
+              "right": 551,
+              "bottom": 47,
+              "left": 439
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 10,
+          "y": 58,
+          "w": 548,
+          "h": 162,
+          "top": 58,
+          "right": 558,
+          "bottom": 220,
+          "left": 10
+        },
+        "cardW": {
+          "x": 12,
+          "y": 58,
+          "w": 544,
+          "h": 162,
+          "top": 58,
+          "right": 556,
+          "bottom": 220,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 58,
+          "w": 544,
+          "h": 162,
+          "top": 58,
+          "right": 556,
+          "bottom": 220,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 59,
+          "w": 173.4,
+          "h": 160,
+          "top": 59,
+          "right": 186.4,
+          "bottom": 219,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 24,
+          "y": 226,
+          "w": 520,
+          "h": 50,
+          "top": 226,
+          "right": 544,
+          "bottom": 276,
+          "left": 24
+        },
+        "scrollWidth": 518,
+        "clientWidth": 518
+      },
+      "dots": {
+        "rect": {
+          "x": 184,
+          "y": 280,
+          "w": 200,
+          "h": 36,
+          "top": 280,
+          "right": 384,
+          "bottom": 316,
+          "left": 184
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 10,
+        "y": 58,
+        "w": 548,
+        "h": 258,
+        "top": 58,
+        "right": 558,
+        "bottom": 316,
+        "left": 10
+      },
+      "bodyContent": {
+        "clientHeight": 160,
+        "scrollHeight": 160,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 80,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 104.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 123.2,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 0,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 0,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 207,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 40,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 439,
+          "y": 11,
+          "w": 36,
+          "h": 36,
+          "top": 11,
+          "right": 475,
+          "bottom": 47,
+          "left": 439
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 568,
+        "clientWidth": 568
+      },
+      "name": "568x320-landscape",
+      "cssWidth": 568,
+      "cssHeight": 320,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 160,
+          "client": 160,
+          "scroll": 160,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 160,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 160,
+          "client": 160,
+          "scroll": 160,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 160,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 160,
+          "client": 160,
+          "scroll": 160,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 160,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 160,
+          "client": 160,
+          "scroll": 160,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 160,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 160,
+          "client": 160,
+          "scroll": 160,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 160,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 844,
+        "height": 390,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 844,
+        "clientWidth": 844,
+        "scrollHeight": 390,
+        "clientHeight": 390,
+        "bodyScrollWidth": 844,
+        "innerWidth": 844,
+        "innerHeight": 390,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "min(820px, calc(100vw - 24px - 0px - 0px))",
+        "cardH": "clamp(150px, calc(100dvh - 158px - 0px - 0px), 300px)",
+        "grid": "min(820px, calc(100vw - 24px - 0px - 0px))"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 844,
+          "h": 390,
+          "top": 0,
+          "right": 844,
+          "bottom": 390,
+          "left": 0
+        },
+        "clientHeight": 390,
+        "scrollHeight": 390,
+        "paddingTop": "58px",
+        "paddingBottom": "4px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 10,
+          "y": 6,
+          "w": 824,
+          "h": 46,
+          "top": 6,
+          "right": 834,
+          "bottom": 52,
+          "left": 10
+        },
+        "scrollWidth": 836,
+        "clientWidth": 822,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 22,
+              "y": 11,
+              "w": 206.8,
+              "h": 36,
+              "top": 11,
+              "right": 228.8,
+              "bottom": 47,
+              "left": 22
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0,
+              "top": 0,
+              "right": 0,
+              "bottom": 0,
+              "left": 0
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 713,
+              "y": 11,
+              "w": 112,
+              "h": 36,
+              "top": 11,
+              "right": 825,
+              "bottom": 47,
+              "left": 713
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 10,
+          "y": 58,
+          "w": 824,
+          "h": 232,
+          "top": 58,
+          "right": 834,
+          "bottom": 290,
+          "left": 10
+        },
+        "cardW": {
+          "x": 12,
+          "y": 58,
+          "w": 820,
+          "h": 232,
+          "top": 58,
+          "right": 832,
+          "bottom": 290,
+          "left": 12
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 12,
+          "y": 58,
+          "w": 820,
+          "h": 232,
+          "top": 58,
+          "right": 832,
+          "bottom": 290,
+          "left": 12
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 13,
+          "y": 59,
+          "w": 261.8,
+          "h": 230,
+          "top": 59,
+          "right": 274.8,
+          "bottom": 289,
+          "left": 13
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 162,
+          "y": 296,
+          "w": 520,
+          "h": 50,
+          "top": 296,
+          "right": 682,
+          "bottom": 346,
+          "left": 162
+        },
+        "scrollWidth": 518,
+        "clientWidth": 518
+      },
+      "dots": {
+        "rect": {
+          "x": 322,
+          "y": 350,
+          "w": 200,
+          "h": 36,
+          "top": 350,
+          "right": 522,
+          "bottom": 386,
+          "left": 322
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 10,
+        "y": 58,
+        "w": 824,
+        "h": 328,
+        "top": 58,
+        "right": 834,
+        "bottom": 386,
+        "left": 10
+      },
+      "bodyContent": {
+        "clientHeight": 230,
+        "scrollHeight": 230,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 80,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 105.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 124.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 140.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 0,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 277,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 36,
+          "h": 36,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 67.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 713,
+          "y": 11,
+          "w": 36,
+          "h": 36,
+          "top": 11,
+          "right": 749,
+          "bottom": 47,
+          "left": 713
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 844,
+        "clientWidth": 844
+      },
+      "name": "844x390-landscape",
+      "cssWidth": 844,
+      "cssHeight": 390,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 230,
+          "client": 230,
+          "scroll": 230,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 230,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 230,
+          "client": 230,
+          "scroll": 230,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 230,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 230,
+          "client": 230,
+          "scroll": 230,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 230,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 230,
+          "client": 230,
+          "scroll": 230,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 230,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 230,
+          "client": 230,
+          "scroll": 230,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 230,
+          "index": 4
+        }
+      ]
+    },
+    {
+      "mode": null,
+      "viewport": {
+        "width": 1280,
+        "height": 720,
+        "dpr": 1
+      },
+      "doc": {
+        "scrollWidth": 1280,
+        "clientWidth": 1280,
+        "scrollHeight": 720,
+        "clientHeight": 720,
+        "bodyScrollWidth": 1280,
+        "innerWidth": 1280,
+        "innerHeight": 720,
+        "horizontalOverflow": false,
+        "verticalOverflow": false
+      },
+      "cardVars": {
+        "cardW": "clamp(350px, 34vw, 448px)",
+        "cardH": "clamp(480px, calc(100dvh - 248px), 620px)",
+        "grid": "clamp(350px, 34vw, 448px)"
+      },
+      "stage": {
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1280,
+          "h": 720,
+          "top": 0,
+          "right": 1280,
+          "bottom": 720,
+          "left": 0
+        },
+        "clientHeight": 720,
+        "scrollHeight": 720,
+        "paddingTop": "82px",
+        "paddingBottom": "20px"
+      },
+      "topbar": {
+        "rect": {
+          "x": 150,
+          "y": 14,
+          "w": 980,
+          "h": 54,
+          "top": 14,
+          "right": 1130,
+          "bottom": 68,
+          "left": 150
+        },
+        "scrollWidth": 993,
+        "clientWidth": 978,
+        "overflowInside": true,
+        "children": [
+          {
+            "cls": "tb-left",
+            "rect": {
+              "x": 162,
+              "y": 24,
+              "w": 228.4,
+              "h": 34,
+              "top": 24,
+              "right": 390.4,
+              "bottom": 58,
+              "left": 162
+            }
+          },
+          {
+            "cls": "tb-center",
+            "rect": {
+              "x": 588.5,
+              "y": 35,
+              "w": 103.1,
+              "h": 12,
+              "top": 35,
+              "right": 691.5,
+              "bottom": 47,
+              "left": 588.5
+            }
+          },
+          {
+            "cls": "tb-right",
+            "rect": {
+              "x": 1015,
+              "y": 24,
+              "w": 106,
+              "h": 34,
+              "top": 24,
+              "right": 1121,
+              "bottom": 58,
+              "left": 1015
+            }
+          }
+        ],
+        "contentOverflow": []
+      },
+      "carousel": {
+        "rect": {
+          "x": 20,
+          "y": 93,
+          "w": 1240,
+          "h": 480,
+          "top": 93,
+          "right": 1260,
+          "bottom": 573,
+          "left": 20
+        },
+        "cardW": {
+          "x": 422.4,
+          "y": 93,
+          "w": 435.2,
+          "h": 480,
+          "top": 93,
+          "right": 857.6,
+          "bottom": 573,
+          "left": 422.4
+        }
+      },
+      "active": {
+        "rect": {
+          "x": 422.4,
+          "y": 93,
+          "w": 435.2,
+          "h": 480,
+          "top": 93,
+          "right": 857.6,
+          "bottom": 573,
+          "left": 422.4
+        },
+        "index": "0",
+        "app": "banqueo",
+        "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+        "ariaCurrent": "true",
+        "tabIndex": 0,
+        "art": {
+          "x": 423.4,
+          "y": 94,
+          "w": 433.2,
+          "h": 267.7,
+          "top": 94,
+          "right": 856.6,
+          "bottom": 361.7,
+          "left": 423.4
+        }
+      },
+      "bar": {
+        "rect": {
+          "x": 360,
+          "y": 585,
+          "w": 560,
+          "h": 62,
+          "top": 585,
+          "right": 920,
+          "bottom": 647,
+          "left": 360
+        },
+        "scrollWidth": 558,
+        "clientWidth": 558
+      },
+      "dots": {
+        "rect": {
+          "x": 540,
+          "y": 653,
+          "w": 200,
+          "h": 36,
+          "top": 653,
+          "right": 740,
+          "bottom": 689,
+          "left": 540
+        },
+        "scrollWidth": 200,
+        "clientWidth": 200
+      },
+      "shell": {
+        "x": 20,
+        "y": 93,
+        "w": 1240,
+        "h": 596,
+        "top": 93,
+        "right": 1260,
+        "bottom": 689,
+        "left": 20
+      },
+      "bodyContent": {
+        "clientHeight": 210,
+        "scrollHeight": 210,
+        "clipped": false,
+        "children": [
+          {
+            "cls": "app-kicker",
+            "bottom": 385.7,
+            "overflows": false
+          },
+          {
+            "cls": "H2",
+            "bottom": 421.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-desc",
+            "bottom": 443.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-meta",
+            "bottom": 459.6,
+            "overflows": false
+          },
+          {
+            "cls": "app-quote",
+            "bottom": 532,
+            "overflows": false
+          },
+          {
+            "cls": "app-foot",
+            "bottom": 555,
+            "overflows": false
+          }
+        ]
+      },
+      "violations": [],
+      "belowFold": [],
+      "targets": {
+        "prevTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "nextTop": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnFs": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnHelp": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "btnAbout": {
+          "w": 34,
+          "h": 34,
+          "display": "grid",
+          "visible": true
+        },
+        "prevBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "nextBtn": {
+          "w": 38,
+          "h": 38,
+          "display": "grid",
+          "visible": true
+        },
+        "openCurrent": {
+          "w": 73.2,
+          "h": 38,
+          "display": "flex",
+          "visible": true
+        },
+        "dot": {
+          "w": 40,
+          "h": 40,
+          "count": 5,
+          "visible": true
+        }
+      },
+      "btnFs": {
+        "visible": true,
+        "hidden": false,
+        "display": "grid",
+        "rect": {
+          "x": 1015,
+          "y": 24,
+          "w": 34,
+          "h": 34,
+          "top": 24,
+          "right": 1049,
+          "bottom": 58,
+          "left": 1015
+        },
+        "ariaLabel": "Pantalla completa",
+        "ariaPressed": "false",
+        "title": "Pantalla completa",
+        "dataTip": "Pantalla completa",
+        "fullscreenEnabled": true,
+        "fullscreenElement": false
+      },
+      "dockPresent": false,
+      "selection": {
+        "dotsActive": 1,
+        "cardsActive": 1,
+        "right": 1,
+        "left": 1,
+        "hidden": 2,
+        "barTitle": "BANQUEO",
+        "tbNow": "BANQUEO",
+        "tbPos": "1 / 5",
+        "openLabel": "Abrir BANQUEO",
+        "live": "BANQUEO, 1 de 5. Banco de exámenes."
+      },
+      "fonts": {
+        "status": "loaded",
+        "zenDots": true,
+        "inter": true
+      },
+      "bottomInsetEnv": 0,
+      "scrollbar": {
+        "innerWidth": 1280,
+        "clientWidth": 1280
+      },
+      "name": "1280x720",
+      "cssWidth": 1280,
+      "cssHeight": 720,
+      "cardsContent": [
+        {
+          "app": "banqueo",
+          "h": 210.3,
+          "client": 210,
+          "scroll": 210,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 267.7,
+          "index": 0
+        },
+        {
+          "app": "plazas",
+          "h": 210.3,
+          "client": 210,
+          "scroll": 210,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 267.7,
+          "index": 1
+        },
+        {
+          "app": "dashboard",
+          "h": 210.3,
+          "client": 210,
+          "scroll": 210,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 267.7,
+          "index": 2
+        },
+        {
+          "app": "flashcards",
+          "h": 210.3,
+          "client": 210,
+          "scroll": 210,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 267.7,
+          "index": 3
+        },
+        {
+          "app": "quest",
+          "h": 210.3,
+          "client": 210,
+          "scroll": 210,
+          "clipped": false,
+          "overflowChildren": [],
+          "art": 267.7,
+          "index": 4
+        }
+      ]
+    }
+  ],
+  "navTest": {
+    "navStart": 0,
+    "navCount": 0,
+    "beforeState": {
+      "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+      "active": "banqueo",
+      "idx": "0",
+      "title": "BANQUEO",
+      "perf": 23287.400000035763,
+      "nav": 1
+    },
+    "steps": [
+      {
+        "step": "click-next",
+        "state": {
+          "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+          "active": "plazas",
+          "idx": "1",
+          "title": "PLAZAS SERUMS",
+          "pos": "2 / 5",
+          "live": "PLAZAS SERUMS, 2 de 5. Explorador territorial.",
+          "pointer": ""
+        },
+        "navsSoFar": 0
+      },
+      {
+        "step": "click-prev",
+        "state": {
+          "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+          "active": "banqueo",
+          "idx": "0",
+          "title": "BANQUEO",
+          "pos": "1 / 5",
+          "live": "BANQUEO, 1 de 5. Banco de exámenes.",
+          "pointer": ""
+        },
+        "navsSoFar": 0
+      },
+      {
+        "step": "click-dot-3",
+        "state": {
+          "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+          "active": "dashboard",
+          "idx": "2",
+          "title": "STUDY DASHBOARD",
+          "pos": "3 / 5",
+          "live": "STUDY DASHBOARD, 3 de 5. Lectura y progreso.",
+          "pointer": ""
+        },
+        "navsSoFar": 0
+      },
+      {
+        "step": "click-lateral",
+        "state": {
+          "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+          "active": "flashcards",
+          "idx": "3",
+          "title": "STUDY FLASHCARDS",
+          "pos": "4 / 5",
+          "live": "STUDY FLASHCARDS, 4 de 5. Recuperación activa.",
+          "pointer": ""
+        },
+        "navsSoFar": 0
+      },
+      {
+        "step": "click-top-next",
+        "state": {
+          "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+          "active": "quest",
+          "idx": "4",
+          "title": "SERUMS QUEST",
+          "pos": "5 / 5",
+          "live": "SERUMS QUEST, 5 de 5. Aprendizaje gamificado.",
+          "pointer": ""
+        },
+        "navsSoFar": 0
+      }
+    ],
+    "keyboardArrowRight": {
+      "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+      "active": "banqueo",
+      "idx": "0",
+      "pos": "1 / 5",
+      "live": "BANQUEO, 1 de 5. Banco de exámenes."
+    },
+    "afterState": {
+      "href": "http://127.0.0.1:8773/index.html?a3=1792966578633",
+      "active": "banqueo",
+      "idx": "0",
+      "nav": 1
+    },
+    "navigations": [],
+    "navCountAfterSwipe": 0
+  },
+  "errors": [],
+  "swipeTest": [
+    {
+      "name": "horizontal",
+      "dx": -120,
+      "dy": 10,
+      "active": "plazas"
+    },
+    {
+      "name": "vertical",
+      "dx": 5,
+      "dy": 150,
+      "active": "plazas"
+    }
+  ]
+}

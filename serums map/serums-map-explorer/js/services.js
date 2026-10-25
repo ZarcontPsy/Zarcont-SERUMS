@@ -5,7 +5,14 @@
 /* ---------- Store: prefs + overrides + geocache (localStorage) + dataset (IndexedDB) ---------- */
 window.Store = (function () {
   var LS = { get: function (k, d) { try { var v = localStorage.getItem(k); return v == null ? d : JSON.parse(v); } catch (e) { return d; } },
-             set: function (k, v) { try { localStorage.setItem(k, JSON.stringify(v)); } catch (e) {} } };
+             set: function (k, v) {
+               try {
+                 /* «Restablecer preferencias» pasa undefined: se elimina la clave
+                    en lugar de guardar la cadena "undefined". */
+                 if (typeof v === 'undefined') { localStorage.removeItem(k); return; }
+                 localStorage.setItem(k, JSON.stringify(v));
+               } catch (e) {}
+             } };
   var idb = null;
   function openDb() {
     return new Promise(function (res) {
@@ -135,7 +142,14 @@ window.ExcelParser = (function () {
 window.Geocoder = (function () {
   function key() { return (window.App && window.App.apiKey()) || ''; }
   function cache() { return window.Store.get('geocache', {}); }
-  function saveCache(c) { window.Store.set('geocache', c); }
+  /* Se mezcla con lo que ya haya en disco: dos pestañas geocodificando a la vez
+     no deben borrarse entradas entre sí. */
+  function saveCache(c) {
+    var disk = window.Store.get('geocache', {}) || {};
+    var merged = Object.assign({}, disk, c || {});
+    window.Store.set('geocache', merged);
+    return merged;
+  }
   function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
   function query(p, level) {
     var e = p.establecimiento + ' ', d = p.distrito + ', ', pr = p.provincia + ', ', dep = p.departamento + ', Peru';

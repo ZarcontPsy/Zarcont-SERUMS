@@ -1,0 +1,1536 @@
+{
+  "generated_at": "2026-10-25T17:22:46",
+  "repo_root": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS",
+  "totals": {
+    "html_files": 16,
+    "links_total": 220,
+    "local": 168,
+    "external": 25,
+    "fragment": 26,
+    "empty": 1,
+    "ok": 168,
+    "missing": 0,
+    "case": 0,
+    "outside": 0,
+    "with_query": 144
+  },
+  "result": "ok",
+  "missing": [],
+  "case_mismatch": [],
+  "outside": [],
+  "links": [
+    {
+      "file": "index.html",
+      "line": 1268,
+      "attr": "href",
+      "raw": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/Examen Studio.html",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "index.html",
+      "line": 1315,
+      "attr": "href",
+      "raw": "./serums map/serums-map-explorer/index.html",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/index.html",
+      "query": ""
+    },
+    {
+      "file": "index.html",
+      "line": 1367,
+      "attr": "href",
+      "raw": "./study-dashboard/index.html",
+      "status": "ok",
+      "resolved": "study-dashboard/index.html",
+      "query": ""
+    },
+    {
+      "file": "index.html",
+      "line": 1419,
+      "attr": "href",
+      "raw": "./study-flashcards/index.html",
+      "status": "ok",
+      "resolved": "study-flashcards/index.html",
+      "query": ""
+    },
+    {
+      "file": "index.html",
+      "line": 1469,
+      "attr": "href",
+      "raw": "./serums-quest/index.html",
+      "status": "ok",
+      "resolved": "serums-quest/index.html",
+      "query": ""
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 12,
+      "attr": "href",
+      "raw": "styles.css?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/styles.css",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 13,
+      "attr": "href",
+      "raw": "../serums-chrome.css?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.css",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 48,
+      "attr": "src",
+      "raw": "../serums-chrome.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 49,
+      "attr": "src",
+      "raw": "datos/banco-oficial.js?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 50,
+      "attr": "src",
+      "raw": "js/store.js?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/js/store.js",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 51,
+      "attr": "src",
+      "raw": "js/parser.js?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/js/parser.js",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "EXAMEN STUDIO/Examen Studio.html",
+      "line": 52,
+      "attr": "src",
+      "raw": "js/app.js?v=2.1.5",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/js/app.js",
+      "query": "v=2.1.5"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 15,
+      "attr": "href",
+      "raw": "styles.css?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/styles.css",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 16,
+      "attr": "href",
+      "raw": "../../serums-chrome.css?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.css",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 395,
+      "attr": "src",
+      "raw": "datos/datos_plazas.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/datos/datos_plazas.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 396,
+      "attr": "src",
+      "raw": "datos/datos_adjudicados.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/datos/datos_adjudicados.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 397,
+      "attr": "src",
+      "raw": "js/utils.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/utils.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 398,
+      "attr": "src",
+      "raw": "js/services.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/services.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 399,
+      "attr": "src",
+      "raw": "js/filters.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/filters.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 400,
+      "attr": "src",
+      "raw": "js/mapview.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/mapview.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 401,
+      "attr": "src",
+      "raw": "js/panels.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/panels.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 402,
+      "attr": "src",
+      "raw": "js/adjudicacion.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/adjudicacion.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 403,
+      "attr": "src",
+      "raw": "../../serums-chrome.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums map/serums-map-explorer/index.html",
+      "line": 412,
+      "attr": "src",
+      "raw": "js/app.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "serums map/serums-map-explorer/js/app.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 14,
+      "attr": "href",
+      "raw": "styles.css?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/styles.css",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 15,
+      "attr": "href",
+      "raw": "styles-rpg.css?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/styles-rpg.css",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 16,
+      "attr": "href",
+      "raw": "styles-game.css?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/styles-game.css",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 17,
+      "attr": "href",
+      "raw": "../serums-chrome.css?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.css",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 95,
+      "attr": "href",
+      "raw": "../index.html",
+      "status": "ok",
+      "resolved": "index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 96,
+      "attr": "href",
+      "raw": "../study-dashboard/index.html",
+      "status": "ok",
+      "resolved": "study-dashboard/index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 97,
+      "attr": "href",
+      "raw": "tests/tests.html",
+      "status": "ok",
+      "resolved": "serums-quest/tests/tests.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 109,
+      "attr": "src",
+      "raw": "../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 110,
+      "attr": "src",
+      "raw": "../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 111,
+      "attr": "src",
+      "raw": "../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 112,
+      "attr": "src",
+      "raw": "data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 113,
+      "attr": "src",
+      "raw": "js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 114,
+      "attr": "src",
+      "raw": "js/icons.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 115,
+      "attr": "src",
+      "raw": "js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 116,
+      "attr": "src",
+      "raw": "js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 117,
+      "attr": "src",
+      "raw": "js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 118,
+      "attr": "src",
+      "raw": "js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 119,
+      "attr": "src",
+      "raw": "js/scenes.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/scenes.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 120,
+      "attr": "src",
+      "raw": "js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 121,
+      "attr": "src",
+      "raw": "js/audio.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/audio.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 122,
+      "attr": "src",
+      "raw": "js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 123,
+      "attr": "src",
+      "raw": "js/store.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/store.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 124,
+      "attr": "src",
+      "raw": "js/content.js?v=1.0.6",
+      "status": "ok",
+      "resolved": "serums-quest/js/content.js",
+      "query": "v=1.0.6"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 125,
+      "attr": "src",
+      "raw": "js/engine.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/engine.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 126,
+      "attr": "src",
+      "raw": "../serums-chrome.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/index.html",
+      "line": 136,
+      "attr": "src",
+      "raw": "js/app.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/app.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 31,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 32,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 33,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 34,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 35,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 36,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.1.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.1.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 37,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 38,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 39,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 40,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 41,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/art-preview.html",
+      "line": 42,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/launcher-check.html",
+      "line": 7,
+      "attr": "src",
+      "raw": "../../index.html",
+      "status": "ok",
+      "resolved": "index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 5,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 6,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 7,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 8,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 9,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 10,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.1.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.1.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 11,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 12,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 13,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 14,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 15,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/one.html",
+      "line": 16,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/perf-check.html",
+      "line": 33,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/perf-check.html",
+      "line": 34,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/perf-check.html",
+      "line": 35,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/perf-check.html",
+      "line": 36,
+      "attr": "src",
+      "raw": "../js/scenes.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/scenes.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/responsive.html",
+      "line": 37,
+      "attr": "src",
+      "raw": "../index.html#/",
+      "status": "ok",
+      "resolved": "serums-quest/index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/tests/responsive.html",
+      "line": 38,
+      "attr": "src",
+      "raw": "../index.html#/personajes",
+      "status": "ok",
+      "resolved": "serums-quest/index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 16,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 17,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 18,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 19,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 20,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 21,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 22,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 23,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 24,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 25,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 26,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 27,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/selection-check.html",
+      "line": 28,
+      "attr": "src",
+      "raw": "../js/store.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/store.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 38,
+      "attr": "href",
+      "raw": "../index.html",
+      "status": "ok",
+      "resolved": "serums-quest/index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 38,
+      "attr": "href",
+      "raw": "../../index.html",
+      "status": "ok",
+      "resolved": "index.html",
+      "query": ""
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 40,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 41,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 42,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 43,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 44,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 45,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.1.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.1.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 46,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 47,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 48,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 49,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 50,
+      "attr": "src",
+      "raw": "../js/scenes.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/scenes.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 51,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 52,
+      "attr": "src",
+      "raw": "../js/audio.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/audio.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 53,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 54,
+      "attr": "src",
+      "raw": "../js/store.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/store.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 55,
+      "attr": "src",
+      "raw": "../js/content.js?v=1.0.6",
+      "status": "ok",
+      "resolved": "serums-quest/js/content.js",
+      "query": "v=1.0.6"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 56,
+      "attr": "src",
+      "raw": "../js/engine.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/engine.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/tests.html",
+      "line": 57,
+      "attr": "src",
+      "raw": "tests.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/tests/tests.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 16,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 17,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 18,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 19,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 20,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 21,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.1.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.1.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 22,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 23,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 24,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 25,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 26,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 27,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/ui-check.html",
+      "line": 28,
+      "attr": "src",
+      "raw": "../js/store.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/store.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 6,
+      "attr": "src",
+      "raw": "../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "EXAMEN STUDIO/datos/banco-oficial.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 7,
+      "attr": "src",
+      "raw": "../../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 8,
+      "attr": "src",
+      "raw": "../../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 9,
+      "attr": "src",
+      "raw": "../data/quest-map.js?v=1.0.2",
+      "status": "ok",
+      "resolved": "serums-quest/data/quest-map.js",
+      "query": "v=1.0.2"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 10,
+      "attr": "src",
+      "raw": "../js/config.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/config.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 11,
+      "attr": "src",
+      "raw": "../js/icons.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/icons.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 12,
+      "attr": "src",
+      "raw": "../js/util.js?v=1.0.4",
+      "status": "ok",
+      "resolved": "serums-quest/js/util.js",
+      "query": "v=1.0.4"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 13,
+      "attr": "src",
+      "raw": "../js/progression.js?v=1.0.5",
+      "status": "ok",
+      "resolved": "serums-quest/js/progression.js",
+      "query": "v=1.0.5"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 14,
+      "attr": "src",
+      "raw": "../js/characters.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/characters.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 15,
+      "attr": "src",
+      "raw": "../js/character-art.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/character-art.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 16,
+      "attr": "src",
+      "raw": "../js/reactions.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/reactions.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 17,
+      "attr": "src",
+      "raw": "../js/scenes.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/scenes.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 18,
+      "attr": "src",
+      "raw": "../js/audio.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/audio.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 19,
+      "attr": "src",
+      "raw": "../js/collection.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/collection.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "serums-quest/tests/visual-seed.html",
+      "line": 20,
+      "attr": "src",
+      "raw": "../js/store.js?v=1.2.0",
+      "status": "ok",
+      "resolved": "serums-quest/js/store.js",
+      "query": "v=1.2.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 13,
+      "attr": "href",
+      "raw": "../study-shared/base.css",
+      "status": "ok",
+      "resolved": "study-shared/base.css",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 14,
+      "attr": "href",
+      "raw": "styles.css?v=2.2.0",
+      "status": "ok",
+      "resolved": "study-dashboard/styles.css",
+      "query": "v=2.2.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 15,
+      "attr": "href",
+      "raw": "../serums-chrome.css?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.css",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 43,
+      "attr": "href",
+      "raw": "../study-flashcards/index.html",
+      "status": "ok",
+      "resolved": "study-flashcards/index.html",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 71,
+      "attr": "href",
+      "raw": "../study-flashcards/index.html",
+      "status": "ok",
+      "resolved": "study-flashcards/index.html",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 72,
+      "attr": "href",
+      "raw": "../index.html",
+      "status": "ok",
+      "resolved": "index.html",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 77,
+      "attr": "src",
+      "raw": "../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 78,
+      "attr": "src",
+      "raw": "../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 79,
+      "attr": "src",
+      "raw": "../study-shared/icons.js",
+      "status": "ok",
+      "resolved": "study-shared/icons.js",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 80,
+      "attr": "src",
+      "raw": "../study-shared/ui.js",
+      "status": "ok",
+      "resolved": "study-shared/ui.js",
+      "query": ""
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 81,
+      "attr": "src",
+      "raw": "../study-shared/store.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "study-shared/store.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 82,
+      "attr": "src",
+      "raw": "../serums-chrome.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-dashboard/index.html",
+      "line": 92,
+      "attr": "src",
+      "raw": "app.js?v=2.2.0",
+      "status": "ok",
+      "resolved": "study-dashboard/app.js",
+      "query": "v=2.2.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 13,
+      "attr": "href",
+      "raw": "../study-shared/base.css",
+      "status": "ok",
+      "resolved": "study-shared/base.css",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 14,
+      "attr": "href",
+      "raw": "styles.css?v=2.1.0",
+      "status": "ok",
+      "resolved": "study-flashcards/styles.css",
+      "query": "v=2.1.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 15,
+      "attr": "href",
+      "raw": "../serums-chrome.css?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.css",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 43,
+      "attr": "href",
+      "raw": "../study-dashboard/index.html",
+      "status": "ok",
+      "resolved": "study-dashboard/index.html",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 71,
+      "attr": "href",
+      "raw": "../study-dashboard/index.html",
+      "status": "ok",
+      "resolved": "study-dashboard/index.html",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 72,
+      "attr": "href",
+      "raw": "../index.html",
+      "status": "ok",
+      "resolved": "index.html",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 77,
+      "attr": "src",
+      "raw": "../study-data/temario.js?v=2.5.0",
+      "status": "ok",
+      "resolved": "study-data/temario.js",
+      "query": "v=2.5.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 78,
+      "attr": "src",
+      "raw": "../study-shared/taxonomy.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "study-shared/taxonomy.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 79,
+      "attr": "src",
+      "raw": "../study-shared/icons.js",
+      "status": "ok",
+      "resolved": "study-shared/icons.js",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 80,
+      "attr": "src",
+      "raw": "../study-shared/ui.js",
+      "status": "ok",
+      "resolved": "study-shared/ui.js",
+      "query": ""
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 81,
+      "attr": "src",
+      "raw": "../study-shared/store.js?v=2.0.0",
+      "status": "ok",
+      "resolved": "study-shared/store.js",
+      "query": "v=2.0.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 82,
+      "attr": "src",
+      "raw": "../serums-chrome.js?v=1.0.0",
+      "status": "ok",
+      "resolved": "serums-chrome.js",
+      "query": "v=1.0.0"
+    },
+    {
+      "file": "study-flashcards/index.html",
+      "line": 92,
+      "attr": "src",
+      "raw": "app.js?v=2.1.0",
+      "status": "ok",
+      "resolved": "study-flashcards/app.js",
+      "query": "v=2.1.0"
+    }
+  ],
+  "legacy": []
+}

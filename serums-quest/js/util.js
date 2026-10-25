@@ -44,6 +44,11 @@
     return Math.round((Number(part) / Number(total)) * 1000) / 10;
   }
 
+  function formatNumber(value) {
+    var n = Math.round(Number(value) || 0);
+    return String(n).replace(/\B(?=(\d{3})+(?!\d))/g, ".");
+  }
+
   function pad(n) { return String(n).padStart(2, "0"); }
 
   function dateKey(date) {
@@ -281,6 +286,7 @@
     safeInt: safeInt,
     plural: plural,
     percent: percent,
+    formatNumber: formatNumber,
     pad: pad,
     dateKey: dateKey,
     isoWeekKey: isoWeekKey,

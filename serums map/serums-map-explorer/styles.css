@@ -476,6 +476,21 @@ details.acc[open] summary{margin-bottom:10px}
   .rail button{width:40px;height:40px}
   .rail button svg{width:18px;height:18px}
 }
+/* Barra superior en móvil: los botones de la app no se comprimen por flex y
+   conservan un área táctil de 36 px; los controles comunes mantienen 44 px.
+   En el ancho mínimo se oculta solo la marca (el mapa sigue en el rail). */
+@media (max-width: 600px) {
+  #topbar .btn { flex: 0 0 auto; }
+  #topbar .btn.icon:not([data-serums-chrome]) { width: 36px; height: 36px; min-width: 36px; min-height: 36px; }
+  #btnExport { min-width: 36px; min-height: 36px; }
+}
+@media (max-width: 400px) {
+  #topbar { gap: 4px; }
+  #btnExport { width: 36px; }
+}
+@media (max-width: 380px) {
+  #brandHome { display: none; }
+}
 
 /* ---------- Centro de adjudicación (subvista del dock, sin mapa) ---------- */
 .adjcollage{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:14px}

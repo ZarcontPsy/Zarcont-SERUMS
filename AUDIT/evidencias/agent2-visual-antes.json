@@ -1,0 +1,55 @@
+{
+  "app": "estado-visual",
+  "steps": [
+    {
+      "name": "1 flashcards acordeón + pestaña",
+      "opened": {
+        "ok": true,
+        "count": 5,
+        "id": "area-psi-etica",
+        "wasOpen": true
+      },
+      "afterTab": {
+        "openNow": [
+          {
+            "id": "area-psi-salud-publica",
+            "open": false
+          },
+          {
+            "id": "area-psi-cuidado-integral",
+            "open": false
+          },
+          {
+            "id": "area-psi-etica",
+            "open": true
+          },
+          {
+            "id": "area-psi-investigacion",
+            "open": false
+          },
+          {
+            "id": "area-psi-gestion",
+            "open": false
+          }
+        ]
+      }
+    },
+    {
+      "name": "2 dashboard biblioteca: filtro y acordeón",
+      "filter": {
+        "query": "APS",
+        "details": 8,
+        "secondOpen": true
+      },
+      "afterTabDash": {
+        "query": "APS",
+        "secondOpen": false,
+        "results": 23
+      },
+      "afterReloadDash": {
+        "query": "",
+        "hash": "#/biblioteca"
+      }
+    }
+  ]
+}

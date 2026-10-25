@@ -89,9 +89,9 @@
   };
 
   var CONFIG = {
-    version: "1.0.0",
-    build: "ZARCONT-SQ-1.0.0",
-    schemaVersion: 1,
+    version: "1.2.0",
+    build: "ZARCONT-SQ-1.2.0",
+    schemaVersion: 2,
     appName: "SERUMS QUEST",
     appSubtitle: "Aprender también es avanzar",
     storage: {
@@ -565,6 +565,138 @@
       mastery: "dominio",
       question: "pregunta",
       questions: "preguntas"
+    },
+    /* ------------------------------------------------------------------
+       Capa RPG: rarezas, precios, ranuras y preferencias de presentación.
+       Los precios viven solo aquí; el catálogo nunca los duplica.
+       ------------------------------------------------------------------ */
+    rpg: {
+      rarities: {
+        inicial: {
+          id: "inicial", label: "Inicial", code: "I", order: 0,
+          color: "#A7B0C4", soft: "rgba(167, 176, 196, .14)",
+          description: "Punto de partida del jugador."
+        },
+        comun: {
+          id: "comun", label: "Común", code: "C", order: 1,
+          color: "#8FB4D9", soft: "rgba(143, 180, 217, .14)",
+          description: "Diseño de base, fácil de integrar en una colección."
+        },
+        poco_comun: {
+          id: "poco_comun", label: "Poco común", code: "PC", order: 2,
+          color: "#69D3C1", soft: "rgba(105, 211, 193, .14)",
+          description: "Detalles y accesorios propios de un rol definido."
+        },
+        raro: {
+          id: "raro", label: "Raro", code: "R", order: 3,
+          color: "#7AA2FF", soft: "rgba(122, 162, 255, .16)",
+          description: "Identidad marcada y animación de victoria distintiva."
+        },
+        epico: {
+          id: "epico", label: "Épico", code: "E", order: 4,
+          color: "#B79BFF", soft: "rgba(183, 155, 255, .18)",
+          description: "Pieza de colección con marco y presencia propios."
+        },
+        legendario: {
+          id: "legendario", label: "Legendario", code: "L", order: 5,
+          color: "#F5B85C", soft: "rgba(245, 184, 92, .16)",
+          description: "Hito de la colección; no otorga ventaja académica."
+        }
+      },
+      priceBands: {
+        personaje: {
+          comun: [400, 800],
+          poco_comun: [900, 1500],
+          raro: [1600, 2400],
+          epico: [2800, 4000],
+          legendario: [5000, 7000]
+        },
+        cosmetico: {
+          comun: [60, 140],
+          poco_comun: [150, 260],
+          raro: [280, 420],
+          epico: [480, 680],
+          legendario: [750, 1000]
+        }
+      },
+      prices: {
+        characters: {
+          ilan: 0,
+          mara: 480,
+          noa: 950,
+          teo: 1100,
+          lia: 1750,
+          kian: 1950,
+          amaru: 0,
+          ona: 3200,
+          iris: 3600,
+          zenon: 5400
+        },
+        cosmetics: {
+          "c-cabeza-diadema": 330,
+          "c-cabeza-casco": 560,
+          "c-cabeza-gorro": 90,
+          "c-cabeza-corona": 900,
+          "c-cabeza-auriculares": 220,
+          "c-peinado-coleta": 100,
+          "c-peinado-rizos": 180,
+          "c-peinado-mecha": 340,
+          "c-peinado-mono": 110,
+          "c-torso-abrigo": 380,
+          "c-torso-bata": 240,
+          "c-torso-manto": 620,
+          "c-torso-chaleco": 130,
+          "c-torso-poncho": 360,
+          "c-piernas-ruta": 95,
+          "c-piernas-falda": 190,
+          "c-piernas-grebas": 350,
+          "c-accesorios-gafas": 210,
+          "c-accesorios-brujula": 85,
+          "c-accesorios-bolso": 120,
+          "c-accesorios-pluma": 320,
+          "c-amuleto-enfoque": 300,
+          "c-amuleto-sello": 540,
+          "c-amuleto-nudo": 170,
+          "c-amuleto-criterio": 600,
+          "c-efecto-aura": 330,
+          "c-efecto-chispas": 200,
+          "c-efecto-bruma": 90,
+          "c-efecto-constelacion": 950,
+          "c-marco-bronce": 140,
+          "c-marco-platino": 400,
+          "c-marco-vacio": 650,
+          "c-marco-constelacion": 1000
+        }
+      },
+      slots: [
+        { id: "cabeza", label: "Cabeza", icon: "crown", order: 1 },
+        { id: "peinado", label: "Peinado", icon: "spark", order: 2 },
+        { id: "torso", label: "Torso", icon: "shield", order: 3 },
+        { id: "piernas", label: "Piernas", icon: "layers", order: 4 },
+        { id: "accesorios", label: "Accesorio principal", icon: "sliders", order: 5 },
+        { id: "extras", label: "Accesorio adicional", icon: "bag", order: 6 },
+        { id: "amuletos", label: "Amuleto", icon: "star", order: 7 },
+        { id: "efectos", label: "Efecto", icon: "flame", order: 8 },
+        { id: "marcos", label: "Marco", icon: "circle", order: 9 }
+      ],
+      attributes: [
+        { id: "enfoque", label: "Enfoque", hint: "Capacidad de sostener la atención en una tarea." },
+        { id: "perseverancia", label: "Perseverancia", hint: "Constancia para volver sobre lo difícil." },
+        { id: "curiosidad", label: "Curiosidad", hint: "Apertura a explorar y preguntar." },
+        { id: "estrategia", label: "Estrategia", hint: "Lectura del conjunto antes de decidir." },
+        { id: "adaptabilidad", label: "Adaptabilidad", hint: "Ajuste del plan cuando cambia el caso." }
+      ],
+      shop: {
+        featuredCharacterIds: ["ona", "iris", "zenon"],
+        featuredCosmeticIds: ["c-torso-manto", "c-efecto-aura", "c-accesorios-pluma"],
+        maxTransactions: 200
+      },
+      presentationDefaults: {
+        animationPreferences: { idle: true, reactions: true, celebrate: true },
+        visualPreferences: { rarityFrames: true, particles: true },
+        audioPreferences: { muted: false, sfxVolume: 0.55, musicVolume: 0.22, music: false }
+      },
+      reactionHoldMs: 6200
     }
   };
 

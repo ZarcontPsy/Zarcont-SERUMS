@@ -29,7 +29,14 @@
     initialSheet: "",
     fromFlashcards: false,
     fromDeck: "",
-    entrySheetId: ""
+    entrySheetId: "",
+    pendingNotice: "",
+    restoring: false,
+    restoreRatio: 0,
+    restoreTimer: null,
+    suppressScrollRestore: false,
+    /* Estado de interfaz de la sesión: qué temas están desplegados. */
+    openTopics: {}
   };
 
   var MODE_KEY = "study-dashboard-mode";
@@ -44,6 +51,16 @@
     try { localStorage.setItem(MODE_KEY, value === "full" ? "full" : "quick"); } catch (e) {}
   }
   function sheetHref(id) { return "#/ficha/" + encodeURIComponent(id); }
+  function cleanQueryTo(hash) {
+    try {
+      var u = new URL(location.href);
+      u.search = "";
+      u.hash = hash || "";
+      history.replaceState(null, "", u.pathname + u.search + u.hash);
+    } catch (e) {
+      if (hash) location.hash = hash;
+    }
+  }
   function flashcardsHref(deckId, fmode, sheetId) {
     try {
       var u = new URL("../study-flashcards/index.html", location.href);
@@ -192,9 +209,61 @@
     if (seconds >= 3) Store.recordSheetTime(state.currentSheetId, seconds);
     saveScroll();
   }
+  function scrollMax() {
+    return Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+  }
+  function cancelScrollRestore() {
+    state.restoring = false;
+    state.restoreRatio = 0;
+    if (state.restoreTimer) {
+      window.clearTimeout(state.restoreTimer);
+      state.restoreTimer = null;
+    }
+  }
+  function applyScrollRatio(ratio) {
+    var max = scrollMax();
+    if (max <= 120) return;
+    scrollToInstant(Math.round(Math.max(0, Math.min(1, ratio)) * max));
+  }
+  /* base.css define scroll-behavior:smooth; la navegación y la restauración
+     deben ser inmediatas para no guardar posiciones intermedias. */
+  function scrollToInstant(top) {
+    var el = document.documentElement;
+    var previous = el.style.scrollBehavior;
+    el.style.scrollBehavior = "auto";
+    window.scrollTo(0, Math.max(0, top));
+    if (previous) el.style.scrollBehavior = previous;
+    else el.style.removeProperty("scroll-behavior");
+  }
+  /* Restaura la lectura cuando el layout ya está estable (doble rAF, fuentes y
+     un margen de seguridad). Mientras dura, no se guarda la posición provisional. */
+  function restoreScroll(ratio) {
+    cancelScrollRestore();
+    state.restoring = true;
+    state.restoreRatio = Math.max(0, Math.min(1, Number(ratio) || 0));
+    var reposition = function () {
+      if (!state.restoring) return;
+      applyScrollRatio(state.restoreRatio);
+    };
+    window.requestAnimationFrame(function () {
+      window.requestAnimationFrame(function () {
+        reposition();
+        if (document.fonts && document.fonts.ready && typeof document.fonts.ready.then === "function") {
+          document.fonts.ready.then(reposition, function () {});
+        }
+      });
+    });
+    state.restoreTimer = window.setTimeout(function () {
+      if (!state.restoring) return;
+      reposition();
+      state.restoring = false;
+      state.restoreRatio = 0;
+      state.restoreTimer = null;
+    }, 900);
+  }
   function saveScroll() {
-    if (!state.currentSheetId) return;
-    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (!state.currentSheetId || state.restoring) return;
+    var max = scrollMax();
     if (max <= 120) return;
     var ratio = Math.max(0, Math.min(1, window.scrollY / max));
     var st = Store.getSheetState(state.currentSheetId);
@@ -205,13 +274,20 @@
   }
   function recordScrollOnly() {
     if (!state.currentSheetId) return;
-    var max = document.documentElement.scrollHeight - window.innerHeight;
+    if (state.restoring) {
+      /* Un desplazamiento real del usuario cancela la restauración en curso. */
+      var expected = Math.round(state.restoreRatio * scrollMax());
+      if (Math.abs(window.scrollY - expected) > 24) cancelScrollRestore();
+      else return;
+    }
+    var max = scrollMax();
     if (max <= 120) return;
     state.scrollRatio = Math.max(0, Math.min(1, window.scrollY / max));
   }
 
   function renderRoute(opts) {
     opts = opts || {};
+    cancelScrollRestore();
     var route = parseRoute();
     if (state.currentSheetId && !(route.name === "sheet" && route.sheetId === state.currentSheetId)) {
       flushReading();
@@ -222,6 +298,7 @@
 
     var y = opts.scrollY != null ? opts.scrollY : 0;
     var resumeSheet = opts.resumeSheet || null;
+    var resumeRatio = null;
 
     if (route.name === "home") {
       document.title = "Study Dashboard · SERUMS";
@@ -264,11 +341,10 @@
           state.scrollRatio = (Store.getSheetState(sheet.id) || {}).scroll || 0;
           state.readStarted = Date.now();
         }
-        root.innerHTML = renderSheet(sheet, resumeSheet === sheet.id);
-        if (resumeSheet === sheet.id) {
-          var max = document.documentElement.scrollHeight - window.innerHeight;
-          y = state.scrollRatio * Math.max(0, max);
-        }
+        var restore = resumeSheet === sheet.id ||
+          (opts.restoreScroll && opts.scrollY == null && isNew && state.scrollRatio > 0.02);
+        root.innerHTML = renderSheet(sheet, restore);
+        if (restore) resumeRatio = state.scrollRatio;
       }
     } else if (route.name === "progress") {
       document.title = "Mi progreso · Study Dashboard";
@@ -284,9 +360,14 @@
       y = state.forceScrollY;
       state.forceScrollY = null;
     }
-    window.requestAnimationFrame(function () {
-      window.scrollTo(0, Math.max(0, y));
-    });
+    if (resumeRatio != null) {
+      restoreScroll(resumeRatio);
+    } else {
+      window.requestAnimationFrame(function () {
+        if (state.restoring) return;
+        scrollToInstant(y);
+      });
+    }
     if (opts.focus) {
       var h = root.querySelector("h1");
       if (h) {
@@ -658,7 +739,11 @@
     var body = groups.map(function (g, i) {
       if (g.topic && !g.topic.isContainer) {
         var anyViewed = g.sheets.some(function (s) { var st = Store.getSheetState(s.id); return !!(st && st.viewedAt); });
-        return topicBlock(g.topic, area, g.sheets, category, (openFirst && i === 0) || anyViewed);
+        var openDefault = (openFirst && i === 0) || anyViewed;
+        var open = Object.prototype.hasOwnProperty.call(state.openTopics, g.topic.id)
+          ? state.openTopics[g.topic.id]
+          : openDefault;
+        return topicBlock(g.topic, area, g.sheets, category, open);
       }
       return '<div class="topic-sheets topic-sheets--loose"><div class="loose-label">' + icon("book", 12) + ' Fichas oficiales del temario</div>' + g.sheets.map(sheetRow).join("") + '</div>';
     }).join("");
@@ -809,7 +894,12 @@
     var sources = sheet.sourceRefs && sheet.sourceRefs.length ? sheet.sourceRefs.map(function (ref) {
       var src = Store.getSource(ref.sourceId);
       if (!src) return "";
-      return '<div class="reader-source-row"><span class="reader-source-badge">' + esc(src.short) + '</span><div><b>' + esc(src.title) + '</b><p>' + esc(src.provenance) + ' · p. ' + esc((ref.pages || []).join(", ")) + '</p></div></div>';
+      var pages = (ref.pages || []).join(", ");
+      var href = src.file + (ref.pages && ref.pages.length ? "#page=" + ref.pages[0] : "");
+      return '<a class="reader-source-row" href="' + esc(href) + '" target="_blank" rel="noopener" title="Abrir ' + esc(src.title) + ' en el PDF original">' +
+        '<span class="reader-source-badge">' + esc(src.short) + '</span>' +
+        '<span class="reader-source-copy"><b>' + esc(src.title) + '</b><p>' + esc(src.provenance) + (pages ? ' · p. ' + esc(pages) : '') + '</p></span>' +
+        '<span class="reader-source-open" aria-hidden="true">' + icon("external", 14) + '</span></a>';
     }).join("") : '<p class="s-small s-muted">Esta ficha no tiene una referencia documental asociada.</p>';
 
     return [
@@ -1075,6 +1165,9 @@
       if (href && href.charAt(0) === "#" && href === location.hash) {
         e.preventDefault();
         renderRoute({ focus: false });
+      } else {
+        /* El paginador anterior/siguiente abre la ficha desde el principio. */
+        state.suppressScrollRestore = !!nav.closest(".reader-pager");
       }
       return;
     }
@@ -1151,16 +1244,23 @@
       state.entrySheetId = qSheet;
       state.fromFlashcards = qFrom === "flashcards";
       state.fromDeck = UI.getQuery("deck");
-      try { history.replaceState(null, "", "#/ficha/" + encodeURIComponent(qSheet)); } catch (e) { location.hash = "#/ficha/" + encodeURIComponent(qSheet); }
+      cleanQueryTo("#/ficha/" + encodeURIComponent(qSheet));
       return true;
     }
     if (qSheet) {
+      /* Enlace guardado de una ficha que ya no existe: la portada es el punto
+         de entrada correcto. Se limpia la query para no repetir el aviso ni
+         dejar una ruta antigua en el historial. */
       state.initialSheet = "";
-      try { history.replaceState(null, "", "#/ficha/" + encodeURIComponent(qSheet)); } catch (e) { location.hash = "#/ficha/" + encodeURIComponent(qSheet); }
+      state.entrySheetId = "";
+      state.fromFlashcards = false;
+      state.fromDeck = "";
+      state.pendingNotice = "La ficha guardada ya no está disponible; abre la biblioteca para elegir otra.";
+      cleanQueryTo("#/");
       return false;
     }
     if (!location.hash) {
-      try { history.replaceState(null, "", "#/"); } catch (e) { location.hash = "#/"; }
+      cleanQueryTo("#/");
     }
     return false;
   }
@@ -1189,10 +1289,22 @@
     document.addEventListener("click", onDocumentClick);
     document.addEventListener("input", onInput);
     document.addEventListener("keydown", onKeydown);
+    /* El evento toggle de <details> no burbujea: se captura en el documento para
+       conservar qué temas están desplegados durante la sesión (estado de interfaz). */
+    document.addEventListener("toggle", function (e) {
+      var block = e.target;
+      if (!block || !block.classList || !block.classList.contains("topic-block")) return;
+      var topicId = block.getAttribute("data-topic");
+      if (topicId) state.openTopics[topicId] = !!block.open;
+    }, true);
     window.addEventListener("hashchange", function () {
-      renderRoute({ focus: true });
+      var restore = !state.suppressScrollRestore;
+      state.suppressScrollRestore = false;
+      renderRoute({ focus: true, restoreScroll: restore });
     });
     window.addEventListener("scroll", recordScrollOnly, { passive: true });
+    window.addEventListener("wheel", function () { if (state.restoring) cancelScrollRestore(); }, { passive: true });
+    window.addEventListener("touchstart", function () { if (state.restoring) cancelScrollRestore(); }, { passive: true });
     window.addEventListener("pagehide", function () {
       flushReading();
       saveScroll();
@@ -1205,8 +1317,13 @@
       }
     });
     window.setInterval(flushReading, 30000);
-    renderRoute({ resumeSheet: resume ? state.initialSheet : null, focus: false });
+    renderRoute({ resumeSheet: resume ? state.initialSheet : null, restoreScroll: true, focus: false });
     if (resume) announce("Ficha restaurada desde tu último punto.");
+    if (state.pendingNotice) {
+      announce(state.pendingNotice);
+      UI.toast(state.pendingNotice);
+      state.pendingNotice = "";
+    }
   }
 
   bootApp();

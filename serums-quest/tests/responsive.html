@@ -14,51 +14,95 @@
   .bar { display:flex; gap:6px; flex-wrap:wrap; margin:14px 0; }
   button { padding:7px 11px; border-radius:999px; border:1px solid var(--line); background:var(--panel); color:var(--text); font:inherit; font-size:11px; cursor:pointer; }
   button.on { border-color:rgba(122,162,255,.45); background:rgba(122,162,255,.12); color:var(--blue); }
-  .stage { display:flex; justify-content:center; padding:10px; border:1px dashed var(--line); border-radius:14px; background:rgba(255,255,255,.02); }
+  .stage { display:flex; justify-content:center; gap:20px; flex-wrap:wrap; padding:10px; border:1px dashed var(--line); border-radius:14px; background:rgba(255,255,255,.02); }
   iframe { border:1px solid var(--line); border-radius:12px; background:#07080c; box-shadow:0 20px 60px -30px #000; transition:width .2s ease, height .2s ease; }
   .result { margin-top:12px; display:grid; grid-template-columns:repeat(2, minmax(0,1fr)); gap:6px; }
   .row { border:1px solid var(--line); border-radius:8px; padding:8px 10px; font-size:10.5px; color:var(--muted); }
   .row b { color:var(--text); }
   .ok { color:var(--green); }
   .bad { color:var(--red); }
+  h2 { font-size:13px; margin:18px 0 6px; }
 </style>
 </head>
 <body>
 <div class="wrap">
   <h1>Comprobación responsive</h1>
-  <p>El iframe cambia el viewport real: las media queries se evalúan con su ancho, no con el de esta página.</p>
+  <p>Los iframes cambian el viewport real: las media queries se evalúan con su ancho. Incluye Game Home, navegación inferior y selector de héroes.</p>
   <div class="bar">
     <button data-w="390" class="on">390 × 844</button>
     <button data-w="768">768 × 900</button>
     <button data-w="1280">1280 × 900</button>
   </div>
-  <div class="stage"><iframe id="frame" src="../index.html?embed=1#/" width="390" height="844" title="SERUMS QUEST en viewport de prueba"></iframe></div>
+  <div class="stage">
+    <iframe id="frame" src="../index.html#/" width="390" height="844" title="Inicio en viewport de prueba"></iframe>
+    <iframe id="chars" src="../index.html#/personajes" width="390" height="844" title="Personajes en viewport móvil"></iframe>
+  </div>
+  <h2>Game Home</h2>
   <div class="result" id="result"></div>
+  <h2>Selector de héroes (390 px)</h2>
+  <div class="result" id="charsResult"></div>
 </div>
 <script>
   var frame = document.getElementById("frame");
-  var result = document.getElementById("result");
-  function check() {
+  var chars = document.getElementById("chars");
+  function row(label, value, ok) {
+    return '<div class="row">' + label + ': <b class="' + (ok ? "ok" : "bad") + '">' + value + "</b></div>";
+  }
+  function checkHome() {
     var w = frame.contentWindow;
     var d = frame.contentDocument;
-    if (!w || !d) return;
+    if (!w || !d || !d.querySelector(".q-hero-stage")) return;
     var inner = d.documentElement.clientWidth;
     var overflow = d.documentElement.scrollWidth - inner;
-    var grid = w.getComputedStyle(d.querySelector(".q-home-grid")).gridTemplateColumns;
+    var hero = w.getComputedStyle(d.querySelector(".q-hero-stage"));
     var nav = w.getComputedStyle(d.querySelector(".q-nav"));
-    var appbar = w.getComputedStyle(d.querySelector(".q-appbar-inner"));
-    var modes = w.getComputedStyle(d.querySelector(".q-mode-grid"));
-    var rows = [
-      ["Viewport interno", inner + " px", true],
-      ["Sin desbordamiento horizontal", overflow <= 1 ? "OK (" + overflow + "px)" : "FALLA (" + overflow + "px)", overflow <= 1],
-      ["Hero en columnas", grid, inner <= 1050 ? grid.split(" ").length === 1 : grid.split(" ").length >= 2],
-      ["Nav con scroll horizontal", nav.overflowX, inner <= 900 ? nav.overflowX === "auto" : true],
-      ["Appbar con wrap", appbar.flexWrap, inner <= 900 ? appbar.flexWrap === "wrap" : true],
-      ["Modos en rejilla", modes.gridTemplateColumns.split(" ").length + " columnas", true]
-    ];
-    result.innerHTML = rows.map(function (r) {
-      return '<div class="row">' + r[0] + ': <b class="' + (r[2] ? "ok" : "bad") + '">' + r[1] + "</b></div>";
-    }).join("");
+    var bottom = w.getComputedStyle(d.querySelector(".q-bottomnav"));
+    var bottomLinks = d.querySelectorAll(".q-bottomlink").length;
+    var homeBottom = d.querySelector(".q-home-bottom");
+    var figure = d.querySelector(".q-hero-figure");
+    var figureHeight = figure ? Math.round(figure.getBoundingClientRect().height) : 0;
+    document.getElementById("result").innerHTML = [
+      row("Viewport interno", inner + " px", true),
+      row("Sin desbordamiento horizontal", overflow <= 1 ? "OK (" + overflow + "px)" : "FALLA (" + overflow + "px)", overflow <= 1),
+      row("Hero en una columna (≤900)", hero.gridTemplateColumns.split(" ").length === 1 ? "sí" : hero.gridTemplateColumns, hero.gridTemplateColumns.split(" ").length === 1),
+      row("Nav superior oculto en móvil", nav.display, nav.display === "none"),
+      row("Navegación inferior visible", bottom.display + " · " + bottomLinks + " enlaces", bottom.display === "flex" && bottomLinks === 5),
+      row("Home en una columna", homeBottom ? w.getComputedStyle(homeBottom).gridTemplateColumns.split(" ").length + " col" : "—", homeBottom ? w.getComputedStyle(homeBottom).gridTemplateColumns.split(" ").length === 1 : false),
+      row("Personaje visible", figureHeight + " px", figureHeight >= 300)
+    ].join("");
+  }
+  function checkCharacters() {
+    var w = chars.contentWindow;
+    var d = chars.contentDocument;
+    if (!w || !d || !d.querySelector(".q-heroes-arena")) return;
+    var inner = d.documentElement.clientWidth;
+    var overflow = d.documentElement.scrollWidth - inner;
+    var arena = w.getComputedStyle(d.querySelector(".q-heroes-arena"));
+    var stage = d.querySelector(".q-heroes-stage");
+    var strip = d.querySelector(".q-heroes-strip");
+    var buttons = d.querySelectorAll("[data-action='char-prev'], [data-action='char-next']");
+    var card = d.querySelector(".q-strip-card");
+    var detail = d.querySelector(".q-heroes-detail");
+    var detailStyle = detail ? w.getComputedStyle(detail) : null;
+    document.getElementById("charsResult").innerHTML = [
+      row("Viewport interno", inner + " px", true),
+      row("Sin desbordamiento horizontal", overflow <= 1 ? "OK (" + overflow + "px)" : "FALLA (" + overflow + "px)", overflow <= 1),
+      row("Arena en una columna (≤900)", arena.gridTemplateColumns.split(" ").length === 1 ? "sí" : arena.gridTemplateColumns, arena.gridTemplateColumns.split(" ").length === 1),
+      row("Escenario del héroe", stage ? Math.round(stage.getBoundingClientRect().height) + " px" : "—", !!stage && stage.getBoundingClientRect().height >= 400),
+      row("Botones anterior/siguiente", String(buttons.length), buttons.length === 2),
+      row("Tira de héroes deslizable", strip ? w.getComputedStyle(strip).overflowX : "—", strip ? (w.getComputedStyle(strip).overflowX === "auto" || w.getComputedStyle(strip).overflowX === "scroll") : false),
+      row("Tarjeta visible", card ? Math.round(card.getBoundingClientRect().width) + " px" : "—", !!card && card.getBoundingClientRect().width > 90),
+      row("Detalle en una columna", detailStyle ? detailStyle.display : "—", detailStyle ? detailStyle.display === "flex" : false)
+    ].join("");
+  }
+  function checkDesktop() {
+    var w = frame.contentWindow;
+    var d = frame.contentDocument;
+    if (!w || !d || !d.querySelector(".q-hero-stage")) return;
+    var nav = w.getComputedStyle(d.querySelector(".q-nav"));
+    var bottom = w.getComputedStyle(d.querySelector(".q-bottomnav"));
+    document.getElementById("result").innerHTML += row("1280 px · nav superior", nav.display, nav.display === "flex") +
+      row("1280 px · nav inferior oculta", bottom.display, bottom.display === "none");
   }
   document.querySelectorAll("[data-w]").forEach(function (button) {
     button.addEventListener("click", function () {
@@ -69,10 +113,11 @@
       frame.setAttribute("width", width);
       frame.style.height = (width <= 390 ? 844 : 900) + "px";
       frame.setAttribute("height", width <= 390 ? 844 : 900);
-      setTimeout(check, 500);
+      setTimeout(function () { checkHome(); if (width >= 1280) checkDesktop(); }, 450);
     });
   });
-  frame.addEventListener("load", function () { setTimeout(check, 900); });
+  frame.addEventListener("load", function () { setTimeout(checkHome, 1000); });
+  chars.addEventListener("load", function () { setTimeout(checkCharacters, 1300); });
 </script>
 </body>
 </html>

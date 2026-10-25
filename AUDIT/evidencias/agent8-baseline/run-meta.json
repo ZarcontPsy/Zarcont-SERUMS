@@ -1,0 +1,201 @@
+{
+  "startedAt": "2026-10-25T22:29:33.022Z",
+  "finishedAt": "2026-10-25T22:30:08.300Z",
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/155.0.8059.85",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-7qthFL"
+  },
+  "repo": {
+    "git": {
+      "head": "2a808b7",
+      "status": [
+        " M AUTORIA.md",
+        " M DESIGN-SYSTEM.md",
+        " M \"EXAMEN STUDIO/Examen Studio.html\"",
+        " M \"EXAMEN STUDIO/js/app.js\"",
+        " M \"EXAMEN STUDIO/js/store.js\"",
+        " M \"EXAMEN STUDIO/styles.css\"",
+        " M INTEGRITY.sha256",
+        " M NOTICE.md",
+        " M index.html",
+        " M \"serums map/serums-map-explorer/index.html\"",
+        " M \"serums map/serums-map-explorer/js/app.js\"",
+        " M \"serums map/serums-map-explorer/js/services.js\"",
+        " M \"serums map/serums-map-explorer/styles.css\"",
+        " M serums-quest/README.md",
+        " M serums-quest/docs/GAME-RULES.md",
+        " M serums-quest/docs/QA-REPORT.md",
+        " M serums-quest/index.html",
+        " M serums-quest/js/app.js",
+        " M serums-quest/js/config.js",
+        " M serums-quest/js/engine.js",
+        " M serums-quest/js/icons.js",
+        " M serums-quest/js/store.js",
+        " M serums-quest/js/util.js",
+        " M serums-quest/tests/responsive.html",
+        " M serums-quest/tests/tests.html",
+        " M serums-quest/tests/tests.js",
+        " M study-dashboard/app.js",
+        " M study-dashboard/index.html",
+        " M study-dashboard/styles.css",
+        " M study-flashcards/app.js",
+        " M study-flashcards/index.html",
+        " M study-flashcards/styles.css",
+        " M study-shared/base.css",
+        " M study-shared/store.js",
+        "?? AUDIT/",
+        "?? serums-chrome.css",
+        "?? serums-chrome.js",
+        "?? serums-quest/docs/ASSETS.md",
+        "?? serums-quest/docs/RPG-SYSTEM.md",
+        "?? serums-quest/docs/vista-ajustes.png",
+        "?? serums-quest/docs/vista-inicio.png",
+        "?? serums-quest/docs/vista-inventario.png",
+        "?? serums-quest/docs/vista-personajes.png",
+        "?? serums-quest/docs/vista-progreso.png",
+        "?? serums-quest/docs/vista-tablet-inicio.png",
+        "?? serums-quest/docs/vista-tablet-personajes.png",
+        "?? serums-quest/docs/vista-tema-claro.png",
+        "?? serums-quest/docs/vista-tienda.png",
+        "?? serums-quest/js/audio.js",
+        "?? serums-quest/js/character-art.js",
+        "?? serums-quest/js/characters.js",
+        "?? serums-quest/js/collection.js",
+        "?? serums-quest/js/reactions.js",
+        "?? serums-quest/js/scenes.js",
+        "?? serums-quest/styles-game.css",
+        "?? serums-quest/styles-rpg.css",
+        "?? serums-quest/tests/art-preview.html",
+        "?? serums-quest/tests/launcher-check.html",
+        "?? serums-quest/tests/one.html",
+        "?? serums-quest/tests/perf-check.html",
+        "?? serums-quest/tests/selection-check.html",
+        "?? serums-quest/tests/ui-check.html",
+        "?? serums-quest/tests/visual-seed.html",
+        "?? tests/",
+        "?? tools/"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 102804,
+        "mtimeMs": 1792967310975,
+        "sha1ish": "e20ac2bd1fe641d775a8e29ad98fcc9d91301d9e"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 4106,
+        "mtimeMs": 1792967281545,
+        "sha1ish": "1ddded403f855305c52ee68bb0aa6b9fd1c64dac"
+      },
+      "study-dashboard/app.js": {
+        "size": 67742,
+        "mtimeMs": 1792966998192,
+        "sha1ish": "7e9e0c707aae339d55561c4c4e05ef479e01018a"
+      },
+      "study-flashcards/index.html": {
+        "size": 4121,
+        "mtimeMs": 1792967289685,
+        "sha1ish": "39b9281105740cc9700ca079af79adc62f9f2eb4"
+      },
+      "study-flashcards/app.js": {
+        "size": 82916,
+        "mtimeMs": 1792967271150,
+        "sha1ish": "11251542fc843de3052517d590b6b6a7af3338c7"
+      },
+      "study-shared/store.js": {
+        "size": 34865,
+        "mtimeMs": 1792966553500,
+        "sha1ish": "f4902e5dd2de423ef54f6cfe4904c7b233d46a99"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6874,
+        "mtimeMs": 1792534578045,
+        "sha1ish": "2ea5d76059f141ad0dbf730b9dafe0b34c3fc235"
+      },
+      "study-shared/base.css": {
+        "size": 16478,
+        "mtimeMs": 1792966256066,
+        "sha1ish": "e2654ad8ed2fa4fa1a7979df0278c432dca7349f"
+      },
+      "serums-quest/index.html": {
+        "size": 7571,
+        "mtimeMs": 1792967302590,
+        "sha1ish": "7c4b5cdf78fdd93e7288db3c5550b2deb9a0abda"
+      },
+      "serums-quest/js/app.js": {
+        "size": 222268,
+        "mtimeMs": 1792967092276,
+        "sha1ish": "0449dba01525d5d9d87124995f169b93665a3962"
+      },
+      "serums-quest/js/store.js": {
+        "size": 24673,
+        "mtimeMs": 1792966561915,
+        "sha1ish": "1e6e210dbd01978856eb57f89936bb860ce7495a"
+      },
+      "serums-quest/js/characters.js": {
+        "size": 32779,
+        "mtimeMs": 1792960973740,
+        "sha1ish": "cac068de57e721261edd9d73b086c7503696df35"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2442,
+        "mtimeMs": 1792967310861,
+        "sha1ish": "c291185cb6ebaed005dcab6bbe9fca6fd4264fce"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 146260,
+        "mtimeMs": 1792966302552,
+        "sha1ish": "793fa114f40a5b45cdafeba2c6dea3e41a7c8db8"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 28802,
+        "mtimeMs": 1792967314605,
+        "sha1ish": "de5da67f5bd4a7503b289359a4766a123c3aef8b"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 67505,
+        "mtimeMs": 1792966847704,
+        "sha1ish": "fe883309ce70c422b51b49a67dfd7576b2bf9724"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 43488,
+        "mtimeMs": 1792967277739,
+        "sha1ish": "0a0101f6b0a7bd1025e7bbc31dd31513818d8c78"
+      }
+    },
+    "changedDuringRun": []
+  }
+}

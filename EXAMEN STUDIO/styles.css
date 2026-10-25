@@ -244,6 +244,9 @@ hr { border: 0; border-top: 1px solid var(--line); }
   font-size: 10px; font-weight: 700;
 }
 .top-actions { display: flex; align-items: center; gap: 6px; }
+/* Controles comunes (Inicio · HUB · Pantalla completa) montados por serums-chrome.js */
+.top-chrome { display: inline-flex; align-items: center; gap: 6px; }
+.top-chrome:empty { display: none; }
 .icon-btn {
   width: 38px; height: 38px;
   display: inline-grid; place-items: center;
@@ -1347,4 +1350,9 @@ input[type="checkbox"], input[type="radio"] { width: auto; min-height: 0; accent
   .nav a { font-size: 9.5px; padding: 0 6px; }
   .hub-hero h1 { font-size: 35px; }
   .prof-title h1 { font-size: 24px; }
+  /* En el ancho mínimo las acciones de convocatoria se apilan para no
+     recortarse dentro de la tarjeta de profesión. */
+  .exam-actions { flex-wrap: wrap; }
+  .exam-actions .btn { flex: 1 1 auto; min-width: 0; }
+  .top-actions { gap: 2px; }
 }

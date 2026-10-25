@@ -1,0 +1,1895 @@
+[
+  {
+    "title": "Study Dashboard · SERUMS",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 390,
+      "h": 844
+    },
+    "docScrollW": 375,
+    "bodyScrollW": 375,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 59,
+      "right": 375,
+      "bottom": 59
+    },
+    "topbarScroll": {
+      "scrollW": 375,
+      "clientW": 375,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Dashboard",
+        "title": "Volver al inicio de Study Dashboard",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 210.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 250.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 252.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 292.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 294.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 334.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 6
+      },
+      {
+        "k": "hub",
+        "i": 7
+      },
+      {
+        "k": "fullscreen",
+        "i": 8
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Dashboard",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 9,
+    "homeIndex": 6,
+    "hubIndex": 7,
+    "fsIndex": 8,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "dashboard",
+    "viewport": "390x844"
+  },
+  {
+    "title": "Biblioteca de mazos · Study Flashcards",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 390,
+      "h": 844
+    },
+    "docScrollW": 375,
+    "bodyScrollW": 375,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 59,
+      "right": 375,
+      "bottom": 59
+    },
+    "topbarScroll": {
+      "scrollW": 375,
+      "clientW": 375,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Flashcards",
+        "title": "Volver al inicio de Study Flashcards",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 210.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 250.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 252.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 292.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 294.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 334.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 5
+      },
+      {
+        "k": "hub",
+        "i": 6
+      },
+      {
+        "k": "fullscreen",
+        "i": 7
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Flashcards",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 8,
+    "homeIndex": 5,
+    "hubIndex": 6,
+    "fsIndex": 7,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "flashcards",
+    "viewport": "390x844"
+  },
+  {
+    "title": "SERUMS QUEST · RPG de aprendizaje",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 390,
+      "h": 844
+    },
+    "docScrollW": 375,
+    "bodyScrollW": 375,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 96,
+      "right": 375,
+      "bottom": 96
+    },
+    "topbarScroll": {
+      "scrollW": 375,
+      "clientW": 375,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de SERUMS QUEST",
+        "title": "Volver al inicio de SERUMS QUEST",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 158.8,
+          "y": 49,
+          "w": 40,
+          "h": 40,
+          "right": 198.8,
+          "bottom": 89
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "13.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 201.8,
+          "y": 49,
+          "w": 40,
+          "h": 40,
+          "right": 241.8,
+          "bottom": 89
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "13.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 244.8,
+          "y": 49,
+          "w": 40,
+          "h": 40,
+          "right": 284.8,
+          "bottom": 89
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "13.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 5
+      },
+      {
+        "k": "hub",
+        "i": 6
+      },
+      {
+        "k": "fullscreen",
+        "i": 7
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de SERUMS QUEST",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 8,
+    "homeIndex": 5,
+    "hubIndex": 6,
+    "fsIndex": 7,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      11.68,
+      11.68,
+      11.68
+    ],
+    "app": "quest",
+    "viewport": "390x844"
+  },
+  {
+    "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 390,
+      "h": 844
+    },
+    "docScrollW": 390,
+    "bodyScrollW": 390,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 8,
+      "y": 8,
+      "w": 374,
+      "h": 58,
+      "right": 382,
+      "bottom": 66
+    },
+    "topbarScroll": {
+      "scrollW": 372,
+      "clientW": 372,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 122.8,
+          "y": 15,
+          "w": 44,
+          "h": 44,
+          "right": 166.8,
+          "bottom": 59
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 168.8,
+          "y": 15,
+          "w": 44,
+          "h": 44,
+          "right": 212.8,
+          "bottom": 59
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 2,
+    "chromeOrder": [
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": -1,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      1,
+      1
+    ],
+    "app": "plazas",
+    "viewport": "390x844"
+  },
+  {
+    "title": "Banqueo · Examen Studio",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 390,
+      "h": 844
+    },
+    "docScrollW": 375,
+    "bodyScrollW": 375,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 375,
+      "h": 105,
+      "right": 375,
+      "bottom": 105
+    },
+    "topbarScroll": {
+      "scrollW": 375,
+      "clientW": 375,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#hub",
+        "label": "Volver al inicio de Banqueo",
+        "title": "Volver al inicio de Banqueo",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 158,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 198,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "../index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 200,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 240,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 242,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 282,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 7
+      },
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Banqueo",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": 7,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      9.26,
+      9.26,
+      9.26
+    ],
+    "app": "banqueo",
+    "viewport": "390x844"
+  },
+  {
+    "title": "Study Dashboard · SERUMS",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 768,
+      "h": 1024
+    },
+    "docScrollW": 753,
+    "bodyScrollW": 753,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 753,
+      "h": 59,
+      "right": 753,
+      "bottom": 59
+    },
+    "topbarScroll": {
+      "scrollW": 753,
+      "clientW": 753,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Dashboard",
+        "title": "Volver al inicio de Study Dashboard",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 567.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 607.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 613.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 653.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 659.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 699.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 6
+      },
+      {
+        "k": "hub",
+        "i": 7
+      },
+      {
+        "k": "fullscreen",
+        "i": 8
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Dashboard",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 9,
+    "homeIndex": 6,
+    "hubIndex": 7,
+    "fsIndex": 8,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "dashboard",
+    "viewport": "768x1024"
+  },
+  {
+    "title": "Biblioteca de mazos · Study Flashcards",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 768,
+      "h": 1024
+    },
+    "docScrollW": 753,
+    "bodyScrollW": 753,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 753,
+      "h": 59,
+      "right": 753,
+      "bottom": 59
+    },
+    "topbarScroll": {
+      "scrollW": 753,
+      "clientW": 753,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Flashcards",
+        "title": "Volver al inicio de Study Flashcards",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 567.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 607.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 613.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 653.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 659.5,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 699.5,
+          "bottom": 49
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 5
+      },
+      {
+        "k": "hub",
+        "i": 6
+      },
+      {
+        "k": "fullscreen",
+        "i": 7
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Flashcards",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 8,
+    "homeIndex": 5,
+    "hubIndex": 6,
+    "fsIndex": 7,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "flashcards",
+    "viewport": "768x1024"
+  },
+  {
+    "title": "SERUMS QUEST · RPG de aprendizaje",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 768,
+      "h": 1024
+    },
+    "docScrollW": 753,
+    "bodyScrollW": 753,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 753,
+      "h": 63,
+      "right": 753,
+      "bottom": 63
+    },
+    "topbarScroll": {
+      "scrollW": 753,
+      "clientW": 753,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de SERUMS QUEST",
+        "title": "Volver al inicio de SERUMS QUEST",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 563.5,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 603.5,
+          "bottom": 51
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 609.5,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 649.5,
+          "bottom": 51
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 655.5,
+          "y": 11,
+          "w": 40,
+          "h": 40,
+          "right": 695.5,
+          "bottom": 51
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 5
+      },
+      {
+        "k": "hub",
+        "i": 6
+      },
+      {
+        "k": "fullscreen",
+        "i": 7
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de SERUMS QUEST",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 8,
+    "homeIndex": 5,
+    "hubIndex": 6,
+    "fsIndex": 7,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      11.68,
+      11.68,
+      11.68
+    ],
+    "app": "quest",
+    "viewport": "768x1024"
+  },
+  {
+    "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 768,
+      "h": 1024
+    },
+    "docScrollW": 768,
+    "bodyScrollW": 768,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 8,
+      "y": 8,
+      "w": 752,
+      "h": 58,
+      "right": 760,
+      "bottom": 66
+    },
+    "topbarScroll": {
+      "scrollW": 750,
+      "clientW": 750,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 347.1,
+          "y": 15,
+          "w": 44,
+          "h": 44,
+          "right": 391.1,
+          "bottom": 59
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 397.1,
+          "y": 15,
+          "w": 44,
+          "h": 44,
+          "right": 441.1,
+          "bottom": 59
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 2,
+    "chromeOrder": [
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": -1,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      1,
+      1
+    ],
+    "app": "plazas",
+    "viewport": "768x1024"
+  },
+  {
+    "title": "Banqueo · Examen Studio",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 768,
+      "h": 1024
+    },
+    "docScrollW": 753,
+    "bodyScrollW": 753,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 753,
+      "h": 105,
+      "right": 753,
+      "bottom": 105
+    },
+    "topbarScroll": {
+      "scrollW": 753,
+      "clientW": 753,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#hub",
+        "label": "Volver al inicio de Banqueo",
+        "title": "Volver al inicio de Banqueo",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 517,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 557,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "../index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 563,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 603,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 609,
+          "y": 9,
+          "w": 40,
+          "h": 40,
+          "right": 649,
+          "bottom": 49
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 7
+      },
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Banqueo",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": 7,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      9.26,
+      9.26,
+      9.26
+    ],
+    "app": "banqueo",
+    "viewport": "768x1024"
+  },
+  {
+    "title": "Study Dashboard · SERUMS",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 1440,
+      "h": 900
+    },
+    "docScrollW": 1425,
+    "bodyScrollW": 1425,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 1425,
+      "h": 65,
+      "right": 1425,
+      "bottom": 65
+    },
+    "topbarScroll": {
+      "scrollW": 1425,
+      "clientW": 1425,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Dashboard",
+        "title": "Volver al inicio de Study Dashboard",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1235.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1275.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1281.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1321.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1327.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1367.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 6
+      },
+      {
+        "k": "hub",
+        "i": 7
+      },
+      {
+        "k": "fullscreen",
+        "i": 8
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Dashboard",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 9,
+    "homeIndex": 6,
+    "hubIndex": 7,
+    "fsIndex": 8,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "dashboard",
+    "viewport": "1440x900"
+  },
+  {
+    "title": "Biblioteca de mazos · Study Flashcards",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 1440,
+      "h": 900
+    },
+    "docScrollW": 1425,
+    "bodyScrollW": 1425,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 1425,
+      "h": 65,
+      "right": 1425,
+      "bottom": 65
+    },
+    "topbarScroll": {
+      "scrollW": 1425,
+      "clientW": 1425,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de Study Flashcards",
+        "title": "Volver al inicio de Study Flashcards",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1235.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1275.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1281.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1321.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn s-iconbtn",
+        "rect": {
+          "x": 1327.5,
+          "y": 12,
+          "w": 40,
+          "h": 40,
+          "right": 1367.5,
+          "bottom": 52
+        },
+        "color": "rgb(189, 184, 174)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 5
+      },
+      {
+        "k": "hub",
+        "i": 6
+      },
+      {
+        "k": "fullscreen",
+        "i": 7
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Study Flashcards",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 8,
+    "homeIndex": 5,
+    "hubIndex": 6,
+    "fsIndex": 7,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      10.02,
+      10.02,
+      10.02
+    ],
+    "app": "flashcards",
+    "viewport": "1440x900"
+  },
+  {
+    "title": "SERUMS QUEST · RPG de aprendizaje",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 1440,
+      "h": 900
+    },
+    "docScrollW": 1425,
+    "bodyScrollW": 1425,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 1425,
+      "h": 71,
+      "right": 1425,
+      "bottom": 71
+    },
+    "topbarScroll": {
+      "scrollW": 1425,
+      "clientW": 1425,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#/",
+        "label": "Volver al inicio de SERUMS QUEST",
+        "title": "Volver al inicio de SERUMS QUEST",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 1237.5,
+          "y": 15,
+          "w": 40,
+          "h": 40,
+          "right": 1277.5,
+          "bottom": 55
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 1283.5,
+          "y": 15,
+          "w": 40,
+          "h": 40,
+          "right": 1323.5,
+          "bottom": 55
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn q-iconbtn",
+        "rect": {
+          "x": 1329.5,
+          "y": 15,
+          "w": 40,
+          "h": 40,
+          "right": 1369.5,
+          "bottom": 55
+        },
+        "color": "rgb(192, 199, 215)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "14.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 10
+      },
+      {
+        "k": "hub",
+        "i": 11
+      },
+      {
+        "k": "fullscreen",
+        "i": 12
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de SERUMS QUEST",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": 13,
+    "homeIndex": 10,
+    "hubIndex": 11,
+    "fsIndex": 12,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      11.68,
+      11.68,
+      11.68
+    ],
+    "app": "quest",
+    "viewport": "1440x900"
+  },
+  {
+    "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 1440,
+      "h": 900
+    },
+    "docScrollW": 1440,
+    "bodyScrollW": 1440,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 84,
+      "y": 10,
+      "w": 1346,
+      "h": 62,
+      "right": 1430,
+      "bottom": 72
+    },
+    "topbarScroll": {
+      "scrollW": 1344,
+      "clientW": 1344,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "http://127.0.0.1:8777/index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 630,
+          "y": 19,
+          "w": 44,
+          "h": 44,
+          "right": 674,
+          "bottom": 63
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn btn sm icon",
+        "rect": {
+          "x": 680,
+          "y": 19,
+          "w": 44,
+          "h": 44,
+          "right": 724,
+          "bottom": 63
+        },
+        "color": "rgb(255, 255, 255)",
+        "bg": "rgba(255, 255, 255, 0.06)",
+        "fontSize": "12.5px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 2,
+    "chromeOrder": [
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": -1,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      1,
+      1
+    ],
+    "app": "plazas",
+    "viewport": "1440x900"
+  },
+  {
+    "title": "Banqueo · Examen Studio",
+    "hasApi": true,
+    "apiVersion": "1.0.0",
+    "fullscreenEnabled": true,
+    "fullscreenElement": null,
+    "inner": {
+      "w": 1440,
+      "h": 900
+    },
+    "docScrollW": 1425,
+    "bodyScrollW": 1425,
+    "pageOverflowX": false,
+    "topbar": {
+      "x": 0,
+      "y": 0,
+      "w": 1425,
+      "h": 74,
+      "right": 1425,
+      "bottom": 74
+    },
+    "topbarScroll": {
+      "scrollW": 1425,
+      "clientW": 1425,
+      "overflow": false
+    },
+    "buttons": [
+      {
+        "kind": "home",
+        "tag": "A",
+        "href": "#hub",
+        "label": "Volver al inicio de Banqueo",
+        "title": "Volver al inicio de Banqueo",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 1185,
+          "y": 16.5,
+          "w": 40,
+          "h": 40,
+          "right": 1225,
+          "bottom": 56.5
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "hub",
+        "tag": "A",
+        "href": "../index.html",
+        "label": "Volver al HUB",
+        "title": "Volver al HUB",
+        "pressed": null,
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 1231,
+          "y": 16.5,
+          "w": 40,
+          "h": 40,
+          "right": 1271,
+          "bottom": 56.5
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      },
+      {
+        "kind": "fullscreen",
+        "tag": "BUTTON",
+        "href": null,
+        "label": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "cls": "serums-chrome-btn icon-btn",
+        "rect": {
+          "x": 1277,
+          "y": 16.5,
+          "w": 40,
+          "h": 40,
+          "right": 1317,
+          "bottom": 56.5
+        },
+        "color": "rgb(180, 177, 172)",
+        "bg": "rgba(0, 0, 0, 0)",
+        "fontSize": "15px",
+        "touch": true,
+        "hitSelf": true,
+        "visible": true
+      }
+    ],
+    "chromeCount": 3,
+    "chromeOrder": [
+      {
+        "k": "home",
+        "i": 7
+      },
+      {
+        "k": "hub",
+        "i": 8
+      },
+      {
+        "k": "fullscreen",
+        "i": 9
+      }
+    ],
+    "labels": [
+      "home:Volver al inicio de Banqueo",
+      "hub:Volver al HUB",
+      "fullscreen:Pantalla completa"
+    ],
+    "themeIndex": -1,
+    "homeIndex": 7,
+    "hubIndex": 8,
+    "fsIndex": 9,
+    "mountPresents": 1,
+    "reducedMotion": false,
+    "ready": "complete",
+    "contrast": [
+      9.26,
+      9.26,
+      9.26
+    ],
+    "app": "banqueo",
+    "viewport": "1440x900"
+  }
+]

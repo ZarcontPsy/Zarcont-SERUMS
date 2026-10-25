@@ -1,0 +1,70 @@
+{
+  "app": "corrupt",
+  "steps": [
+    {
+      "name": "1 STUDY localStorage dañado",
+      "before": {
+        "cards": 1,
+        "sheets": 6
+      },
+      "afterCorrupt": {
+        "ready": true,
+        "mode": "indexeddb",
+        "cards": 1,
+        "sheets": 6,
+        "raw": "{\"version\":1,\"createdAt\":\"2026"
+      }
+    },
+    {
+      "name": "2 QUEST estado dañado (con respaldo)",
+      "qBefore": {
+        "xp": 999,
+        "revision": 11,
+        "backup": true
+      },
+      "corruptQuest": {
+        "backupKeys": [
+          "serumsquest:snapshot:v1",
+          "serumsquest:theme",
+          "serumsquest:backup:v1",
+          "serumsquest:state:v1"
+        ]
+      },
+      "qAfter": {
+        "blocked": false,
+        "xp": 999,
+        "recovered": true,
+        "archived": [
+          "serumsquest:archive:corrupt-state-2026-10-25T22-20-13-240Z"
+        ],
+        "fatalVisible": false,
+        "keys": [
+          "serumsquest:snapshot:v1",
+          "serumsquest:backup:v1",
+          "serumsquest:theme",
+          "serumsquest:archive:corrupt-state-2026-10-25T22-20-13-240Z",
+          "serumsquest:state:v1"
+        ]
+      }
+    },
+    {
+      "name": "3 BANQUEO revisión dañada",
+      "bBefore": {
+        "review": 5,
+        "ready": true
+      },
+      "bAfter": {
+        "ready": true,
+        "review": 0,
+        "questions": 5100
+      }
+    },
+    {
+      "name": "4 PLAZAS favoritos dañados",
+      "ready": true,
+      "plazas": 7323,
+      "favs": 0,
+      "raw": "{roto"
+    }
+  ]
+}

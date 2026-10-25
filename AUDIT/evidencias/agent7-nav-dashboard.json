@@ -1,0 +1,33 @@
+{
+  "app": "dashboard",
+  "route": "#/biblioteca",
+  "before": {
+    "hash": "#/biblioteca",
+    "url": "http://127.0.0.1:8777/study-dashboard/index.html#/biblioteca",
+    "heading": "Las cinco áreas del temario"
+  },
+  "homeClick": {
+    "clicked": {
+      "x": 1255.5,
+      "y": 32,
+      "w": 40,
+      "h": 40
+    },
+    "after": {
+      "hash": "#/",
+      "url": "http://127.0.0.1:8777/study-dashboard/index.html#/",
+      "heading": "Cinco áreas. Un mapa claro.",
+      "active": "H1"
+    },
+    "frameNavigationsDuringHome": []
+  },
+  "hub": {
+    "attr": "http://127.0.0.1:8777/index.html",
+    "resolved": "http://127.0.0.1:8777/index.html"
+  },
+  "afterHub": {
+    "url": "http://127.0.0.1:8777/index.html",
+    "title": "SERUMS HUB — Centro de aplicaciones",
+    "hasHubCards": true
+  }
+}

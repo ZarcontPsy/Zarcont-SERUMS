@@ -1,0 +1,223 @@
+{
+  "app": "study-flashcards",
+  "steps": [
+    {
+      "name": "0 portada",
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html#/",
+      "deckId": "sheet-aps-01",
+      "active": false,
+      "navs": 1
+    },
+    {
+      "name": "1 URL directa ?mode=free crea sesión",
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html#/sesion",
+      "hash": "#/sesion",
+      "title": "Sesión · Study Flashcards",
+      "session": {
+        "id": "session-1792965965453",
+        "mode": "free",
+        "index": 0,
+        "len": 3,
+        "answers": 0
+      },
+      "stage": true,
+      "hasRating": false,
+      "hasReveal": true,
+      "hasOptions": 0
+    },
+    {
+      "name": "2 revelar y calificar",
+      "revealed": {
+        "hasRating": true,
+        "hasReveal": false
+      },
+      "rated": {
+        "ok": true,
+        "rating": "again"
+      },
+      "afterAnswer": {
+        "index": 1,
+        "answers": 1,
+        "correct": 0,
+        "stage": true,
+        "hasRating": false,
+        "h1": "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?"
+      },
+      "navsDuring": 0
+    },
+    {
+      "name": "3 pestaña oculta/visible",
+      "yBefore": 0,
+      "afterTab": {
+        "index": 1,
+        "answers": 1,
+        "hash": "#/sesion",
+        "scrollY": 0,
+        "hasRating": false,
+        "hasReveal": false,
+        "hasOptions": 4
+      },
+      "navsDuring": 0
+    },
+    {
+      "name": "4 estado intermedio + pestaña",
+      "midBefore": {
+        "index": 1,
+        "selected": 1,
+        "reveal": false
+      },
+      "midAfter": {
+        "selected": 1,
+        "reveal": false,
+        "rating": false,
+        "index": 1
+      }
+    },
+    {
+      "name": "5 refrescar en sesión",
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html#/sesion",
+      "hash": "#/sesion",
+      "session": {
+        "index": 1,
+        "answers": 1,
+        "len": 3
+      },
+      "stage": true,
+      "h1": "¿Qué atributo de la APS se refiere a una relación personal y continua entre la persona y el equipo de salud a lo largo del tiempo?"
+    },
+    {
+      "name": "6 salir al inicio y reentrar por la barra",
+      "home": {
+        "hash": "#/",
+        "banner": true,
+        "bannerHref": "#/sesion"
+      },
+      "reentry": {
+        "hash": "#/sesion",
+        "index": 1,
+        "answers": 1,
+        "stage": true
+      }
+    },
+    {
+      "name": "7 atrás/adelante",
+      "back": {
+        "hash": "#/",
+        "title": "Study Flashcards · SERUMS"
+      },
+      "fwd": {
+        "hash": "#/sesion",
+        "title": "Sesión · Study Flashcards",
+        "stage": true
+      }
+    },
+    {
+      "name": "8 orientación",
+      "portrait": {
+        "w": 390,
+        "hash": "#/sesion",
+        "stage": true,
+        "options": 4
+      },
+      "landscape": {
+        "w": 844,
+        "hash": "#/sesion",
+        "stage": true
+      }
+    },
+    {
+      "name": "9 terminar sesión",
+      "hash": "#/sesion",
+      "active": true,
+      "sessions": 0,
+      "last": null,
+      "summaryVisible": false,
+      "title": "Sesión · Study Flashcards"
+    },
+    {
+      "name": "10 estado persistido",
+      "flashSession": {
+        "id": "session-1792965965453",
+        "mode": "free",
+        "deckId": "sheet-aps-01",
+        "queue": [
+          "card-aps-01-1",
+          "card-aps-01-2",
+          "card-aps-01-3"
+        ],
+        "index": 1,
+        "answers": {
+          "card-aps-01-1": {
+            "correct": false,
+            "rating": "again",
+            "selected": null,
+            "at": "2026-10-25T22:06:07.639Z"
+          }
+        },
+        "correct": 0,
+        "wrong": 1,
+        "status": "active",
+        "startedAt": "2026-10-25T22:06:05.453Z",
+        "updatedAt": "2026-10-25T22:06:07.641Z"
+      },
+      "sessions": 0,
+      "cards": 1,
+      "lastFlash": {
+        "deckId": "topic-aps-atributos",
+        "topicId": "topic-aps-atributos",
+        "title": "Los cuatro atributos de la APS",
+        "at": "2026-10-25T22:06:07.640Z",
+        "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=topic-aps-atributos"
+      },
+      "snap": {
+        "version": 1,
+        "contentVersion": "2.5.0",
+        "updatedAt": "2026-10-25T22:06:11.163Z",
+        "hasActivity": true,
+        "dashboard": {
+          "totalSheets": 210,
+          "completedSheets": 0,
+          "viewedSheets": 1,
+          "startedTopics": 1,
+          "completedTopics": 0,
+          "percent": 0,
+          "last": {
+            "sheetId": "sheet-aps-02",
+            "topicId": "topic-aps-atributos",
+            "title": "Accesibilidad y longitudinalidad: entrar y permanecer",
+            "context": "Los cuatro atributos de la APS",
+            "at": "2026-10-25T22:05:24.354Z",
+            "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02&topic=topic-aps-atributos"
+          },
+          "todayCompleted": 0,
+          "goal": 2,
+          "streak": 1
+        },
+        "flashcards": {
+          "totalCards": 630,
+          "reviewedCards": 1,
+          "masteredCards": 0,
+          "dueCards": 0,
+          "newCards": 629,
+          "percent": 0,
+          "last": {
+            "deckId": "topic-aps-atributos",
+            "topicId": "topic-aps-atributos",
+            "title": "Los cuatro atributos de la APS",
+            "at": "2026-10-25T22:06:07.640Z",
+            "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=topic-aps-atributos"
+          },
+          "todayReviews": 1
+        }
+      },
+      "sameInLocal": true,
+      "localKeys": [
+        "study-state-v1",
+        "study-theme",
+        "studyhub:snapshot:v1"
+      ]
+    }
+  ],
+  "errors": [],
+  "console": []
+}

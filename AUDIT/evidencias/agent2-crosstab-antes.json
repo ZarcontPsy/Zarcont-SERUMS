@@ -1,0 +1,85 @@
+{
+  "app": "crosstab",
+  "steps": [
+    {
+      "name": "1 STUDY dos pestañas (favorito en cada una)",
+      "favA": {
+        "id": "sheet-aps-01",
+        "fav": true
+      },
+      "favB": {
+        "id": "sheet-aps-02",
+        "fav": true
+      },
+      "memoriaB": [
+        "sheet-aps-02",
+        "sheet-aps-01"
+      ],
+      "disco": [
+        "sheet-aps-02",
+        "sheet-aps-01"
+      ]
+    },
+    {
+      "name": "2 QUEST dos pestañas (xp en A, monedas en B)",
+      "qa": {
+        "ok": true,
+        "xp": 10,
+        "rev": 3
+      },
+      "qb": {
+        "ok": true,
+        "coins": 5,
+        "xp": 10,
+        "rev": 4
+      },
+      "discoYA": {
+        "xp": 10,
+        "coins": 5,
+        "name": "B",
+        "revision": 4,
+        "memXp": 10,
+        "memCoins": 5
+      }
+    },
+    {
+      "name": "3 BANQUEO dos pestañas (revisión)",
+      "qids": [
+        "2025-i-biologia-q001",
+        "2025-i-biologia-q002"
+      ],
+      "revA": {
+        "ok": true,
+        "keys": [
+          "2025-i-biologia-q001"
+        ]
+      },
+      "revB": {
+        "ok": true,
+        "keys": [
+          "2025-i-biologia-q002"
+        ]
+      },
+      "disco": {
+        "total": 1,
+        "hasQ1": false,
+        "hasQ2": true,
+        "memA": 1
+      },
+      "memoriaB": 1
+    },
+    {
+      "name": "4 PLAZAS pestaña B tras favorito en A",
+      "favPlazas": {
+        "key": "00005055|ENFERMERIA",
+        "n": 0
+      },
+      "plBView": {
+        "favs": 0,
+        "badge": "1",
+        "view": "map"
+      }
+    }
+  ],
+  "errors": []
+}

@@ -1,0 +1,346 @@
+{
+  "app": "serums-quest",
+  "steps": [
+    {
+      "name": "0 arranque",
+      "url": "http://127.0.0.1:8772/serums-quest/index.html#/",
+      "hash": "#/",
+      "xp": 0,
+      "revision": 0,
+      "keys": [
+        "serumsquest:snapshot:v1",
+        "study-state-v1",
+        "studyhub:snapshot:v1",
+        "serumsquest:theme",
+        "study-theme",
+        "serumsquest:state:v1"
+      ],
+      "theme": "dark",
+      "char": "ilan"
+    },
+    {
+      "name": "1 iniciar sesión",
+      "modePage": {
+        "hash": "#/modo/supervivencia",
+        "title": "Supervivencia · SERUMS QUEST",
+        "startBtn": true
+      },
+      "started": {
+        "ok": true
+      },
+      "dialog": {
+        "open": true,
+        "title": "Aceptar Supervivencia",
+        "confirm": "Aceptar y empezar"
+      },
+      "afterStart": {
+        "hash": "#/jugar",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 1,
+        "answered": 0,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 0,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": "2026-10-25T22:08:53.388Z"
+        }
+      }
+    },
+    {
+      "name": "2 primera respuesta",
+      "answered": {
+        "ok": true,
+        "letter": "A"
+      },
+      "afterAnswer": {
+        "hash": "#/jugar",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 2,
+        "answered": 1,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 1,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": "2026-10-25T22:08:53.388Z"
+        }
+      },
+      "keys": [
+        "serumsquest:snapshot:v1",
+        "study-state-v1",
+        "serumsquest:theme",
+        "serumsquest:backup:v1",
+        "studyhub:snapshot:v1",
+        "study-theme",
+        "serumsquest:state:v1"
+      ]
+    },
+    {
+      "name": "3 pestaña oculta/visible",
+      "afterTab": {
+        "hash": "#/jugar",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 2,
+        "answered": 1,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 1,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": "2026-10-25T22:08:53.388Z"
+        }
+      },
+      "navsDuring": 0
+    },
+    {
+      "name": "4 refrescar #/jugar",
+      "hash": "#/jugar",
+      "xp": 0,
+      "coins": 0,
+      "level": 1,
+      "revision": 2,
+      "answered": 1,
+      "sessions": 0,
+      "daily": {
+        "lastCompletedDate": null,
+        "lastDate": null,
+        "streak": 0,
+        "bestStreak": 0,
+        "totalCompleted": 0
+      },
+      "active": {
+        "id": "session_mvodpryd_0dc0f1",
+        "mode": "survival",
+        "answered": 1,
+        "status": "active",
+        "endsAt": null,
+        "questionEndsAt": "2026-10-25T22:08:53.388Z"
+      }
+    },
+    {
+      "name": "5 HUB: snapshot de QUEST",
+      "hubSnapshot": {
+        "quest": {
+          "version": "1.2.0",
+          "schemaVersion": 2,
+          "updatedAt": "2026-10-25T22:08:10.224Z",
+          "level": 1,
+          "levelPercent": 0,
+          "xp": 0,
+          "xpToNext": 80,
+          "coins": 0,
+          "rank": "Bachiller",
+          "rankColor": "#AEB6C8",
+          "stage": 1,
+          "stageName": "Iniciación",
+          "answered": 1,
+          "accuracy": 0,
+          "missions": 0,
+          "bosses": 0,
+          "mastered": 0,
+          "streak": 0,
+          "hasActivity": true,
+          "selectedCharacterId": "ilan",
+          "selectedCharacterName": "Ilan Vega",
+          "selectedCharacterTitle": "Brújula del Alba",
+          "selectedCharacterRarity": "inicial",
+          "charactersOwned": 1,
+          "charactersTotal": 10,
+          "cosmeticsOwned": 0,
+          "lastSession": null
+        },
+        "cards": [
+          {
+            "id": "banqueo",
+            "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.5"
+          },
+          {
+            "id": "plazas",
+            "href": "./serums map/serums-map-explorer/index.html"
+          },
+          {
+            "id": "dashboard",
+            "href": "./study-dashboard/index.html?sheet=sheet-aps-02"
+          },
+          {
+            "id": "flashcards",
+            "href": "./study-flashcards/index.html?deck=topic-aps-atributos&resume=1"
+          },
+          {
+            "id": "quest",
+            "href": "./serums-quest/index.html"
+          }
+        ]
+      }
+    },
+    {
+      "name": "6 URL directa #/jugar",
+      "hash": "#/jugar",
+      "xp": 0,
+      "coins": 0,
+      "level": 1,
+      "revision": 2,
+      "answered": 1,
+      "sessions": 0,
+      "daily": {
+        "lastCompletedDate": null,
+        "lastDate": null,
+        "streak": 0,
+        "bestStreak": 0,
+        "totalCompleted": 0
+      },
+      "active": {
+        "id": "session_mvodpryd_0dc0f1",
+        "mode": "survival",
+        "answered": 1,
+        "status": "active",
+        "endsAt": null,
+        "questionEndsAt": "2026-10-25T22:08:53.388Z"
+      }
+    },
+    {
+      "name": "7 atrás/adelante",
+      "back": {
+        "hash": "",
+        "title": "SERUMS HUB — Centro de aplicaciones"
+      },
+      "fwd": {
+        "hash": "#/jugar",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 2,
+        "answered": 1,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 1,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": "2026-10-25T22:08:53.388Z"
+        }
+      }
+    },
+    {
+      "name": "8 orientación",
+      "portrait": {
+        "w": 390,
+        "hash": "#/jugar",
+        "options": 4
+      },
+      "landscape": {
+        "w": 844,
+        "hash": "#/jugar"
+      }
+    },
+    {
+      "name": "9 reapertura tras ausencia (cronómetro)",
+      "aged": {
+        "ok": true,
+        "answerCountBefore": 1,
+        "oldEnds": 1792966095623
+      },
+      "afterExpire": {
+        "answers": 1,
+        "omitted": 1,
+        "status": "active",
+        "note": "",
+        "hash": "#/jugar"
+      }
+    },
+    {
+      "name": "10 cerrar pestaña y reabrir",
+      "beforeClose": {
+        "hash": "#/jugar",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 2,
+        "answered": 1,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 1,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": 1792966095623
+        }
+      },
+      "afterReopen": {
+        "hash": "#/",
+        "xp": 0,
+        "coins": 0,
+        "level": 1,
+        "revision": 2,
+        "answered": 1,
+        "sessions": 0,
+        "daily": {
+          "lastCompletedDate": null,
+          "lastDate": null,
+          "streak": 0,
+          "bestStreak": 0,
+          "totalCompleted": 0
+        },
+        "active": {
+          "id": "session_mvodpryd_0dc0f1",
+          "mode": "survival",
+          "answered": 1,
+          "status": "active",
+          "endsAt": null,
+          "questionEndsAt": 1792966095623
+        }
+      }
+    }
+  ],
+  "errors": []
+}

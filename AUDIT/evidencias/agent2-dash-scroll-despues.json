@@ -1,0 +1,36 @@
+{
+  "app": "study-dashboard-scroll",
+  "steps": [
+    {
+      "name": "1 lectura al 70 % + pestaña oculta/visible",
+      "stored": 0.6785714285714286,
+      "y": 1372,
+      "views": 1
+    },
+    {
+      "name": "2 refrescar en #/ficha",
+      "y": 1398,
+      "stored": 0.6785714285714286,
+      "views": 2,
+      "max": 1960
+    },
+    {
+      "name": "3 reentrada por biblioteca (sin reanudar)",
+      "hash": "#/biblioteca",
+      "y": 0,
+      "stored": 0.713265306122449
+    },
+    {
+      "name": "4 salir desde el inicio de la ficha",
+      "stored": 0.713265306122449,
+      "hash": "#/"
+    },
+    {
+      "name": "5 reentrada directa ?sheet=",
+      "y": 1398,
+      "max": 1960,
+      "stored": 0.713265306122449
+    }
+  ],
+  "errors": []
+}

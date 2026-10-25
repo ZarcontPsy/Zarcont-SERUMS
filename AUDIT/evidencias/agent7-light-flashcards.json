@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "bodyBg": "rgb(243, 240, 232)",
+  "buttons": [
+    {
+      "kind": "home",
+      "color": "rgb(87, 81, 72)",
+      "bg": "rgb(243, 240, 232)",
+      "contrast": 6.89,
+      "label": "Volver al inicio de Study Flashcards"
+    },
+    {
+      "kind": "hub",
+      "color": "rgb(87, 81, 72)",
+      "bg": "rgb(243, 240, 232)",
+      "contrast": 6.89,
+      "label": "Volver al HUB"
+    },
+    {
+      "kind": "fullscreen",
+      "color": "rgb(87, 81, 72)",
+      "bg": "rgb(243, 240, 232)",
+      "contrast": 6.89,
+      "label": "Pantalla completa"
+    }
+  ]
+}

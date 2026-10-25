@@ -52,6 +52,18 @@ flashcards son una **síntesis de estudio** con referencias al documento y pági
 sustituyen la norma vigente ni el juicio clínico. El proyecto no reclama autoría sobre
 los documentos originales. No se inventaron claves, estadísticas ni contenido oficial.
 
+## SERUMS QUEST: assets originales
+
+SERUMS QUEST no incorpora imágenes, sprites, tilesets, muestras de audio ni música de
+terceros. Los personajes (10), los cosméticos (33 capas), los escenarios (5), la
+iconografía y los efectos/pad de audio (17 + ambiente) son originales creados en código
+SVG/WebAudio por ZARCONT. Las tipografías son las de Google Fonts indicadas arriba.
+
+Se evaluaron cuatro repositorios visuales y varios packs CC0 de audio; **no se descargó
+ni integró ninguno**. La auditoría con URLs, licencias, motivos de rechazo y supuestos
+está en `serums-quest/docs/ASSETS.md`. El arte de personajes es provisional y declara una
+ruta de sustitución por ilustración final.
+
 ## Notas operativas
 
 - La aplicación del mapa incluye una **clave de demostración de Google Maps** con cuota

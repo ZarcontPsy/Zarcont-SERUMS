@@ -12,7 +12,8 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Dots&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=2.0.0">
+<link rel="stylesheet" href="styles.css?v=2.0.1">
+<link rel="stylesheet" href="../../serums-chrome.css?v=1.0.0">
 <style>#btnTheme .i-moon{display:none}#btnTheme .i-sun{display:block}:root[data-theme="light"] #btnTheme .i-moon{display:block}:root[data-theme="light"] #btnTheme .i-sun{display:none}</style>
 <!-- SheetJS para importar/exportar Excel -->
 <script src="https://cdn.sheetjs.com/xlsx-0.20.3/package/dist/xlsx.full.min.js"></script>
@@ -41,6 +42,7 @@
       <b>Serums · Map</b>
       <small id="datasetBadge">Cargando datos…</small>
     </button>
+    <span data-chrome-mount></span>
     <span class="pill" id="recPill" title="Registros del conjunto activo">—</span>
     <span class="pill" id="geoPill" title="Plazas geolocalizadas">—</span>
     <span class="pill" id="apiBadge" title="Estado de la clave de Google Maps">Maps: …</span>
@@ -392,12 +394,21 @@
 
 <script src="datos/datos_plazas.js?v=2.0.0"></script>
 <script src="datos/datos_adjudicados.js?v=2.0.0"></script>
-<script src="js/utils.js?v=2.0.0"></script>
-<script src="js/services.js?v=2.0.0"></script>
-<script src="js/filters.js?v=2.0.0"></script>
-<script src="js/mapview.js?v=2.0.0"></script>
-<script src="js/panels.js?v=2.0.0"></script>
-<script src="js/adjudicacion.js?v=2.0.0"></script>
-<script src="js/app.js?v=2.0.0"></script>
+<script src="js/utils.js?v=2.0.1"></script>
+<script src="js/services.js?v=2.0.1"></script>
+<script src="js/filters.js?v=2.0.1"></script>
+<script src="js/mapview.js?v=2.0.1"></script>
+<script src="js/panels.js?v=2.0.1"></script>
+<script src="js/adjudicacion.js?v=2.0.1"></script>
+<script src="../../serums-chrome.js?v=1.0.0"></script>
+<script>
+  window.SerumsChrome.mount("#topbar [data-chrome-mount]", {
+    appName: "Plazas SERUMS",
+    buttonClass: "btn sm icon",
+    fullscreen: true,
+    order: ["hub", "fullscreen"]
+  });
+</script>
+<script src="js/app.js?v=2.0.1"></script>
 </body>
 </html>

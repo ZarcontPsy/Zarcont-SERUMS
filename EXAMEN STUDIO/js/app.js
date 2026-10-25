@@ -221,6 +221,28 @@
     try { localStorage.setItem(key, value); } catch {}
   }
 
+  /* Estado efímero de la sesión de práctica (no es progreso permanente):
+     permite retomar el intento tras un refresco en la misma pestaña. */
+  const ACTIVE_ATTEMPT_KEY = "banqueo-active-attempt-v1";
+  function sessionGet(key) {
+    try { return sessionStorage.getItem(key) || ""; } catch { return ""; }
+  }
+  function sessionSet(key, value) {
+    try { if (value) sessionStorage.setItem(key, value); else sessionStorage.removeItem(key); } catch {}
+  }
+
+  function numberPref(key, fallback, { min = 0, max = 999 } = {}) {
+    const raw = Number(localGet(key));
+    if (!Number.isFinite(raw) || raw < min || raw > max) return fallback;
+    return raw;
+  }
+  function boolPref(key, fallback) {
+    const raw = localGet(key);
+    if (raw === "1") return true;
+    if (raw === "0") return false;
+    return fallback;
+  }
+
   function normalize(value) {
     return String(value || "").normalize("NFD").replace(/[\u0300-\u036f]/g, "").toUpperCase().replace(/[^A-Z0-9]+/g, " ").trim();
   }
@@ -455,12 +477,35 @@
         <a href="#prog/history" ${navActive("prog") ? 'aria-current="page"' : ""}>${icon("trophy")} Progreso</a>
       </nav>
       <div class="top-actions">
+        <span class="top-chrome" data-chrome-mount></span>
         <button class="icon-btn" type="button" data-act="info" aria-label="Cómo se procesó el banco" title="Cómo se procesó">${icon("info")}</button>
         <button class="icon-btn theme-toggle" type="button" data-act="theme" aria-label="Cambiar tema" title="Cambiar tema">${icon("sun", "sun")}${icon("moon", "moon")}</button>
       </div>`;
     foot.innerHTML = `
       <span>${Store.dbReady ? `<span class="status-dot ok"></span> Procesamiento local · ${fmt(Store.state.stats.exams)} exámenes · ${fmt(Store.state.stats.questions)} preguntas` : `<span class="status-dot warn"></span> Sin persistencia local: el progreso no se conservará al recargar`}</span>
       <span>© 2026 ZARCONT · PDFs originales preservados · <button class="text-link" type="button" data-act="info">Cómo se procesó</button></span>`;
+    mountChrome();
+  }
+
+  /* Controles comunes del ecosistema (Agente 7). Si el módulo aún no está
+     cargado, la app sigue funcionando sin ellos: nunca se pinta un botón muerto. */
+  function mountChrome() {
+    if (!topbar) return;
+    const host = topbar.querySelector("[data-chrome-mount]");
+    if (!host) return;
+    const chrome = window.SerumsChrome;
+    if (!chrome || typeof chrome.mount !== "function") return;
+    try {
+      chrome.mount(host, {
+        hubHref: "../index.html",
+        homeHref: "#hub",
+        buttonClass: "icon-btn",
+        fullscreen: true,
+        order: ["home", "hub", "fullscreen"],
+      });
+    } catch (error) {
+      if (window.console) console.warn("SerumsChrome: no se pudieron montar los controles comunes.", error);
+    }
   }
 
   function routeViewKey(route = APP.route) {
@@ -517,7 +562,9 @@
     const route = parseRoute();
     const wasPractice = APP.practice.session && !(route.name === "practice" && route.section === "session");
     if (wasPractice) {
-      saveSessionProgress();
+      /* El guardado diferido se descartaba al vaciar la sesión; aquí se guarda
+         el intento de inmediato para no perder la última respuesta marcada. */
+      persistSession(APP.practice.session);
       APP.practice.session = null;
       clearPracticeTimer();
     }
@@ -581,6 +628,17 @@
       }
       if (route.section === "setup" && route.examId) {
         APP.practice.setup.examId = route.examId;
+      }
+      if (route.section === "session" && !APP.practice.session) {
+        /* Refresco o reentrada directa a la sesión: se recupera el intento en
+           curso marcado en esta pestaña, con sus respuestas ya guardadas. */
+        const activeId = sessionGet(ACTIVE_ATTEMPT_KEY);
+        const attempt = activeId ? Store.attemptById(activeId) : null;
+        if (attempt && attempt.status === "prog" && (attempt.order || []).length) {
+          APP.practice.session = sessionFromAttempt(attempt);
+        } else if (activeId) {
+          sessionSet(ACTIVE_ATTEMPT_KEY, "");
+        }
       }
     }
     if (route.name === "prog" && route.tab) APP.prog.tab = route.tab;
@@ -1741,10 +1799,38 @@
       status: "prog",
     };
     APP.practice.session = session;
+    sessionSet(ACTIVE_ATTEMPT_KEY, session.id);
     go("#practice/session");
     Store.saveAttempt({ ...session }).catch(() => {
       toast("La sesión funciona, pero no se pudo guardar el progreso local.", "warn");
     });
+  }
+
+  function persistSession(session) {
+    if (!session || session.status !== "prog") return;
+    clearTimeout(practiceSaveTimer);
+    practiceSaveTimer = null;
+    Store.saveAttempt({ ...session, savedAt: Date.now() }).catch(() => {});
+  }
+
+  function sessionFromAttempt(attempt) {
+    if (!attempt) return null;
+    const order = Array.isArray(attempt.order) ? attempt.order.slice() : [];
+    return {
+      id: attempt.id,
+      examId: attempt.examId,
+      name: attempt.name || "Invitado",
+      startedAt: attempt.startedAt || Date.now(),
+      order,
+      answers: { ...(attempt.answers || {}) },
+      marks: { ...(attempt.marks || {}) },
+      index: clamp(attempt.index || 0, 0, Math.max(0, order.length - 1)),
+      count: Math.max(1, attempt.count || order.length || 1),
+      mode: attempt.mode || "practice",
+      minutes: attempt.minutes || 0,
+      feedback: (attempt.mode || "practice") !== "eval",
+      status: "prog",
+    };
   }
 
   function saveSessionProgress() {
@@ -1853,6 +1939,7 @@
     };
     delete attempt.finishing;
     APP.practice.session = null;
+    sessionSet(ACTIVE_ATTEMPT_KEY, "");
     APP.practice.result = attempt;
     location.hash = `#practice/result/${encodeURIComponent(attempt.id)}`;
     toast("Intento guardado en tu progreso local.", "ok");
@@ -1864,21 +1951,9 @@
   async function resumeAttempt(attemptId) {
     const attempt = Store.attemptById(attemptId);
     if (!attempt) { toast("No se encontró el intento.", "warn"); return; }
-    APP.practice.session = {
-      id: attempt.id,
-      examId: attempt.examId,
-      name: attempt.name || "Invitado",
-      startedAt: attempt.startedAt || Date.now(),
-      order: attempt.order || [],
-      answers: attempt.answers || {},
-      marks: attempt.marks || {},
-      index: Math.min(attempt.index || 0, (attempt.order || []).length - 1),
-      count: attempt.count || (attempt.order || []).length,
-      mode: attempt.mode || "practice",
-      minutes: attempt.minutes || 0,
-      feedback: attempt.mode !== "eval",
-      status: "prog",
-    };
+    if (attempt.status !== "prog") { toast("Ese intento ya fue entregado.", "warn"); return; }
+    APP.practice.session = sessionFromAttempt(attempt);
+    sessionSet(ACTIVE_ATTEMPT_KEY, attempt.id);
     go("#practice/session");
   }
 
@@ -2106,13 +2181,14 @@
         if (session) await Store.saveAttempt({ ...session, savedAt: Date.now() });
         const examId = session?.examId;
         APP.practice.session = null;
+        sessionSet(ACTIVE_ATTEMPT_KEY, "");
         clearPracticeTimer();
         go(`#practice/${encodeURIComponent(examId || "")}`);
       }
       return;
     }
     if (action === "practice-resume") { await resumeAttempt(id); return; }
-    if (action === "practice-retry") { const examId = target.dataset.exam; APP.practice.session = null; go(`#practice/${encodeURIComponent(examId)}`); return; }
+    if (action === "practice-retry") { const examId = target.dataset.exam; APP.practice.session = null; sessionSet(ACTIVE_ATTEMPT_KEY, ""); go(`#practice/${encodeURIComponent(examId)}`); return; }
     if (action === "prog-tab") { APP.prog.tab = target.dataset.tab; replaceApp(progView()); return; }
     if (action === "open-attempt") { go(`#practice/result/${encodeURIComponent(id)}`); return; }
   }
@@ -2144,14 +2220,17 @@
     }
     if (target.matches("[data-practice-name]")) {
       APP.practice.setup.name = target.value;
+      localSet("banqueo-name", String(target.value || "").trim().slice(0, 40));
       return;
     }
     if (target.matches("[data-practice-count]")) {
       APP.practice.setup.count = Number(target.value) || 25;
+      localSet("banqueo-practice-count", String(APP.practice.setup.count));
       return;
     }
     if (target.matches("[data-practice-minutes]")) {
       APP.practice.setup.minutes = Number(target.value) || 0;
+      localSet("banqueo-practice-minutes", String(APP.practice.setup.minutes));
       return;
     }
   }
@@ -2181,10 +2260,12 @@
     }
     if (target.matches("[data-practice-shuffle]")) {
       APP.practice.setup.shuffle = target.checked;
+      localSet("banqueo-practice-shuffle", target.checked ? "1" : "0");
       return;
     }
     if (target.matches('input[name="practice-mode"]')) {
       APP.practice.setup.mode = target.value;
+      localSet("banqueo-practice-mode", target.value === "eval" ? "eval" : "practice");
       return;
     }
     if (target.matches("[data-import-ocr]")) {
@@ -2251,9 +2332,18 @@
   window.addEventListener("blur", hideFloatingTip);
   window.addEventListener("beforeunload", (event) => {
     if (APP.practice.session) {
-      saveSessionProgress();
+      /* Marcador + guardado inmediato: el temporizador diferido no llega a
+         ejecutarse durante la descarga de la página. */
+      sessionSet(ACTIVE_ATTEMPT_KEY, APP.practice.session.id);
+      persistSession(APP.practice.session);
       event.preventDefault();
       event.returnValue = "";
+    }
+  });
+  document.addEventListener("visibilitychange", () => {
+    if (document.hidden && APP.practice.session) {
+      sessionSet(ACTIVE_ATTEMPT_KEY, APP.practice.session.id);
+      persistSession(APP.practice.session);
     }
   });
 
@@ -2272,6 +2362,10 @@
     if (!location.hash) history.replaceState(null, "", "#hub");
     APP.practice.setup.examId = APP.practice.setup.examId || Store.examList()[0]?.id || null;
     APP.practice.setup.name = localGet("banqueo-name") || "";
+    APP.practice.setup.count = numberPref("banqueo-practice-count", APP.practice.setup.count, { min: 1, max: 200 });
+    APP.practice.setup.minutes = numberPref("banqueo-practice-minutes", APP.practice.setup.minutes, { min: 0, max: 240 });
+    APP.practice.setup.shuffle = boolPref("banqueo-practice-shuffle", APP.practice.setup.shuffle);
+    APP.practice.setup.mode = localGet("banqueo-practice-mode") === "eval" ? "eval" : "practice";
     document.getElementById("boot")?.remove();
     onRoute();
     document.documentElement.dataset.ready = "1";

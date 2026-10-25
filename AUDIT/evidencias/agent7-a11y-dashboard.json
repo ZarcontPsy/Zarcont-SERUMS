@@ -1,0 +1,207 @@
+{
+  "groupsBefore": 1,
+  "groupsAfterDoubleMount": 1,
+  "reducedMotion": true,
+  "buttons": [
+    {
+      "kind": "home",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al inicio de Study Dashboard",
+      "title": "Volver al inicio de Study Dashboard",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "hub",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al HUB",
+      "title": "Volver al HUB",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "fullscreen",
+      "tag": "BUTTON",
+      "type": "button",
+      "form": false,
+      "label": "Pantalla completa",
+      "title": "Pantalla completa",
+      "pressed": "false",
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    }
+  ],
+  "duplicateChromeLabels": [],
+  "iconCount": 3,
+  "forms": 0,
+  "tabOrder": [
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Study Dashboard, inicio",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Panel",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(26, 26, 30)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Biblioteca",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Progreso",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Abrir Study Flashcards",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(230, 181, 102, 0.13)"
+    },
+    {
+      "tag": "A",
+      "kind": "home",
+      "label": "Volver al inicio de Study Dashboard",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "A",
+      "kind": "hub",
+      "label": "Volver al HUB",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": "fullscreen",
+      "label": "Pantalla completa",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Usar tema claro",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Explorar el temario",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(230, 181, 102)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Abrir flashcards",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Salud pública · 3 categoríasÁrea I · Sal",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Cuidado integral · 8 categoríasÁrea II ·",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Ética e interculturalidad · 2 categorías",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Investigación · 3 categoríasÁrea IV · In",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Gestión de servicios · 4 categoríasÁrea ",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Empieza aquíElige tu primera fichaNo hay",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Bajar el objetivo diario",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Subir el objetivo diario",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "LecturaEmpieza por Los cuatro atributos ",
+      "outline": "2px solid rgb(230, 181, 102)",
+      "bg": "rgb(20, 20, 23)"
+    }
+  ],
+  "startFocus": "Saltar al contenido"
+}

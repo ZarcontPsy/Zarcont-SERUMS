@@ -1,0 +1,20 @@
+{
+  "theme": "light",
+  "bodyBg": "rgb(244, 240, 236)",
+  "buttons": [
+    {
+      "kind": "hub",
+      "color": "rgb(29, 21, 23)",
+      "bg": "rgb(244, 240, 236)",
+      "contrast": 15.81,
+      "label": "Volver al HUB"
+    },
+    {
+      "kind": "fullscreen",
+      "color": "rgb(29, 21, 23)",
+      "bg": "rgb(244, 240, 236)",
+      "contrast": 15.81,
+      "label": "Pantalla completa"
+    }
+  ]
+}

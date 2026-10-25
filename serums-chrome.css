@@ -1,0 +1,102 @@
+/* ============================================================
+   serums-chrome.css — controles compartidos SERUMS
+   Inicio de la app · Volver al HUB · Pantalla completa
+   © 2026 ZARCONT — Todos los derechos reservados.
+   Se apoya en las clases de botón de cada aplicación; no crea
+   barras, paneles ni contenedores nuevos.
+   ============================================================ */
+
+/* Grupo: tres controles dentro del topbar existente. */
+.serums-chrome {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  flex: none;
+  min-width: 0;
+}
+
+/* Base mínima: asegura área táctil ≥ 40 px aunque la clase de la
+   app mida menos (Study 38/35, QUEST 36/33, Banqueo 38/34). */
+.serums-chrome-btn {
+  min-width: 40px;
+  min-height: 40px;
+  flex: none;
+  display: inline-grid;
+  place-items: center;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.serums-chrome-btn > svg {
+  width: 18px;
+  height: 18px;
+  pointer-events: none;
+}
+
+/* Foco de teclado inequívoco: color de texto real de cada app.
+   Study/QUEST/Banqueo exponen --text; Plazas expone --ink. */
+.serums-chrome-btn:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 3px;
+  color: var(--text, var(--ink, currentColor));
+  background: rgba(127, 127, 127, .16);
+}
+
+/* Estado de pantalla completa activa: no depende solo del icono
+   (aria-pressed + title + aria-label ya se sincronizan en JS). */
+.serums-chrome-btn[data-serums-chrome="fullscreen"][aria-pressed="true"] {
+  background: rgba(127, 127, 127, .18);
+  box-shadow: inset 0 0 0 1px currentColor;
+}
+
+.serums-chrome-btn[data-serums-chrome="fullscreen"][data-state="on"] > svg {
+  transform: none;
+}
+
+/* Región de estado solo para lectores de pantalla (errores de fullscreen). */
+.serums-chrome-status {
+  position: absolute !important;
+  width: 1px; height: 1px;
+  padding: 0; margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Sin animaciones añadidas; si la app anima, se respeta reduced-motion. */
+@media (prefers-reduced-motion: reduce) {
+  .serums-chrome,
+  .serums-chrome * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+/* Compactación en pantallas estrechas: mantiene los tres controles
+   visibles y con 40 px de área táctil, sin desbordar el appbar. */
+@media (max-width: 620px) {
+  .serums-chrome { gap: 2px; }
+  .serums-chrome-btn { min-width: 40px; min-height: 40px; }
+}
+
+/* Banqueo (≤620 px): la copia textual de la marca deja sitio a los
+   controles; el enlace conserva el icono, «Banqueo, inicio» como
+   nombre accesible y el título de la app sigue en el contenido. */
+@media (max-width: 620px) {
+  .topbar .brand-copy { display: none; }
+}
+
+/* Study (≤380 px): el atajo cruzado del topbar es prescindible en el
+   ancho mínimo (sigue en el pie y en la navegación interna); así los
+   tres controles y el tema conservan su área táctil sin recortes. */
+@media (max-width: 380px) {
+  .s-appbar-actions .dash-cross,
+  .s-appbar-actions .flash-cross { display: none; }
+}
+
+/* En Plazas el botón de la app ya mide 44 px; se conserva. */
+#topbar .serums-chrome-btn {
+  min-width: 40px;
+  min-height: 40px;
+}

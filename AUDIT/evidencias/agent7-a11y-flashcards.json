@@ -1,0 +1,207 @@
+{
+  "groupsBefore": 1,
+  "groupsAfterDoubleMount": 1,
+  "reducedMotion": true,
+  "buttons": [
+    {
+      "kind": "home",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al inicio de Study Flashcards",
+      "title": "Volver al inicio de Study Flashcards",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "hub",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al HUB",
+      "title": "Volver al HUB",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "fullscreen",
+      "tag": "BUTTON",
+      "type": "button",
+      "form": false,
+      "label": "Pantalla completa",
+      "title": "Pantalla completa",
+      "pressed": "false",
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(11, 11, 13)",
+      "contrast": 9.96,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    }
+  ],
+  "duplicateChromeLabels": [],
+  "iconCount": 3,
+  "forms": 0,
+  "tabOrder": [
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Study Flashcards, inicio",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Mazos",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgb(26, 26, 30)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Historial",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Abrir Study Dashboard",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(143, 211, 176, 0.12)"
+    },
+    {
+      "tag": "A",
+      "kind": "home",
+      "label": "Volver al inicio de Study Flashcards",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "A",
+      "kind": "hub",
+      "label": "Volver al HUB",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": "fullscreen",
+      "label": "Pantalla completa",
+      "outline": "2px solid rgb(244, 241, 233)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Usar tema claro",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Empezar a practicar",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgb(143, 211, 176)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Consultar temario",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "INPUT",
+      "kind": null,
+      "label": "",
+      "outline": "3px none rgb(244, 241, 233)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Todas210",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgb(20, 20, 23)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Pendientes210",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "En curso0",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Completadas0",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SELECT",
+      "kind": null,
+      "label": "Todas las áreasÁrea I · Salud públicaÁre",
+      "outline": "3px none rgb(189, 184, 174)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Expandir áreas",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SUMMARY",
+      "kind": null,
+      "label": "Área I · Salud pública3 categorías · 43 ",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SUMMARY",
+      "kind": null,
+      "label": "Área II · Cuidado integral de salud8 cat",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "SUMMARY",
+      "kind": null,
+      "label": "Área III · Ética e interculturalidad2 ca",
+      "outline": "2px solid rgb(143, 211, 176)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "startFocus": "Saltar al contenido"
+}

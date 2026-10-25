@@ -1,0 +1,21 @@
+{
+  "app": "plazas",
+  "route": "",
+  "before": {
+    "hash": "",
+    "url": "http://127.0.0.1:8777/serums%20map/serums-map-explorer/index.html",
+    "heading": "Panorama SERUMS"
+  },
+  "homeClick": {
+    "skipped": "sin botón Inicio"
+  },
+  "hub": {
+    "attr": "http://127.0.0.1:8777/index.html",
+    "resolved": "http://127.0.0.1:8777/index.html"
+  },
+  "afterHub": {
+    "url": "http://127.0.0.1:8777/index.html",
+    "title": "SERUMS HUB — Centro de aplicaciones",
+    "hasHubCards": true
+  }
+}

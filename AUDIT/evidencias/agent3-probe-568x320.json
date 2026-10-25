@@ -1,0 +1,254 @@
+{
+  "viewport": "568x320",
+  "cases": [
+    {
+      "cardH": 162,
+      "cards": [
+        {
+          "app": "banqueo",
+          "cardH": 162,
+          "bodyH": 160,
+          "inner": 137,
+          "natural": 160,
+          "free": 0,
+          "padT": 11,
+          "padB": 12,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 70,
+              "bottom": 80
+            },
+            {
+              "cls": "H2",
+              "h": 21.6,
+              "mt": 3,
+              "mb": 3,
+              "top": 83,
+              "bottom": 104.6
+            },
+            {
+              "cls": "app-desc",
+              "h": 15.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 107.6,
+              "bottom": 123.2
+            },
+            {
+              "cls": "app-foot",
+              "h": 20,
+              "mt": 63.7656,
+              "mb": 0,
+              "top": 187,
+              "bottom": 207
+            }
+          ]
+        },
+        {
+          "app": "plazas",
+          "cardH": 162,
+          "bodyH": 160,
+          "inner": 137,
+          "natural": 160,
+          "free": 0,
+          "padT": 11,
+          "padB": 12,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 70,
+              "bottom": 80
+            },
+            {
+              "cls": "H2",
+              "h": 21.6,
+              "mt": 3,
+              "mb": 3,
+              "top": 83,
+              "bottom": 104.6
+            },
+            {
+              "cls": "app-desc",
+              "h": 15.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 107.6,
+              "bottom": 123.2
+            },
+            {
+              "cls": "app-foot",
+              "h": 20,
+              "mt": 63.7656,
+              "mb": 0,
+              "top": 187,
+              "bottom": 207
+            }
+          ]
+        },
+        {
+          "app": "dashboard",
+          "cardH": 162,
+          "bodyH": 160,
+          "inner": 137,
+          "natural": 160,
+          "free": 0,
+          "padT": 11,
+          "padB": 12,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 70,
+              "bottom": 80
+            },
+            {
+              "cls": "H2",
+              "h": 21.6,
+              "mt": 3,
+              "mb": 3,
+              "top": 83,
+              "bottom": 104.6
+            },
+            {
+              "cls": "app-desc",
+              "h": 15.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 107.6,
+              "bottom": 123.2
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 43.2,
+              "mt": 4,
+              "mb": 0,
+              "top": 127.2,
+              "bottom": 170.4
+            },
+            {
+              "cls": "app-foot",
+              "h": 20,
+              "mt": 16.5781,
+              "mb": 0,
+              "top": 187,
+              "bottom": 207
+            }
+          ]
+        },
+        {
+          "app": "flashcards",
+          "cardH": 162,
+          "bodyH": 160,
+          "inner": 137,
+          "natural": 160,
+          "free": 0,
+          "padT": 11,
+          "padB": 12,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 70,
+              "bottom": 80
+            },
+            {
+              "cls": "H2",
+              "h": 21.6,
+              "mt": 3,
+              "mb": 3,
+              "top": 83,
+              "bottom": 104.6
+            },
+            {
+              "cls": "app-desc",
+              "h": 15.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 107.6,
+              "bottom": 123.2
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 43.2,
+              "mt": 4,
+              "mb": 0,
+              "top": 127.2,
+              "bottom": 170.4
+            },
+            {
+              "cls": "app-foot",
+              "h": 20,
+              "mt": 16.5781,
+              "mb": 0,
+              "top": 187,
+              "bottom": 207
+            }
+          ]
+        },
+        {
+          "app": "quest",
+          "cardH": 162,
+          "bodyH": 160,
+          "inner": 137,
+          "natural": 160,
+          "free": 0,
+          "padT": 11,
+          "padB": 12,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 70,
+              "bottom": 80
+            },
+            {
+              "cls": "H2",
+              "h": 21.6,
+              "mt": 3,
+              "mb": 3,
+              "top": 83,
+              "bottom": 104.6
+            },
+            {
+              "cls": "app-desc",
+              "h": 15.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 107.6,
+              "bottom": 123.2
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 43.2,
+              "mt": 4,
+              "mb": 0,
+              "top": 127.2,
+              "bottom": 170.4
+            },
+            {
+              "cls": "app-foot",
+              "h": 20,
+              "mt": 16.5781,
+              "mb": 0,
+              "top": 187,
+              "bottom": 207
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

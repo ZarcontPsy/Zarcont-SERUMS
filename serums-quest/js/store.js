@@ -8,6 +8,32 @@
   var U = window.QuestUtil;
   var P = window.QuestProgression;
 
+  function collectionDefaults() {
+    if (window.QuestCollection) return window.QuestCollection.defaultCollection();
+    return {
+      ownedCharacterIds: ["ilan"],
+      ownedCosmeticIds: [],
+      selectedCharacterId: "ilan",
+      equipped: {},
+      previousOutfits: {},
+      unlockedBy: { ilan: { method: "starter", at: null, price: 0 } }
+    };
+  }
+
+  function economyDefaults() {
+    if (window.QuestCollection) return window.QuestCollection.defaultEconomy();
+    return { transactions: [], lifetimeSpent: 0 };
+  }
+
+  function presentationDefaults() {
+    if (window.QuestCollection) return window.QuestCollection.defaultPresentation();
+    return {
+      animationPreferences: { idle: true, reactions: true, celebrate: true },
+      visualPreferences: { rarityFrames: true, particles: true },
+      audioPreferences: { muted: false, sfxVolume: 0.55, musicVolume: 0.22, music: false }
+    };
+  }
+
   function defaultState(now) {
     var at = U.nowISO(now || new Date());
     var byArea = {};
@@ -57,6 +83,9 @@
         timedAce: 0,
         simulacros: 0
       },
+      collection: collectionDefaults(),
+      economy: economyDefaults(),
+      presentation: presentationDefaults(),
       counters: {
         date: countersKey,
         coins: 0,
@@ -161,6 +190,15 @@
     out.modeStats.survivalWins = number(out.modeStats.survivalWins, 0);
     out.modeStats.timedAce = number(out.modeStats.timedAce, 0);
     out.modeStats.simulacros = number(out.modeStats.simulacros, 0);
+    if (window.QuestCollection) {
+      out.collection = window.QuestCollection.normalizeCollection(raw.collection, { collection: raw.collection || {} });
+      out.economy = window.QuestCollection.normalizeEconomy(raw.economy);
+      out.presentation = window.QuestCollection.normalizePresentation(raw.presentation);
+    } else {
+      out.collection = raw.collection || base.collection;
+      out.economy = raw.economy || base.economy;
+      out.presentation = raw.presentation || base.presentation;
+    }
     out.counters = Object.assign({}, base.counters, raw.counters || {});
     out.counters.date = out.counters.date || U.dateKey(now || new Date());
     out.counters.coins = number(out.counters.coins, 0);
@@ -183,6 +221,11 @@
     if (!Array.isArray(state.sessions)) errors.push("sessions inválido.");
     if (state.activeSession && typeof state.activeSession !== "object") errors.push("activeSession inválido.");
     if (!state.profile || typeof state.profile !== "object") errors.push("profile inválido.");
+    if (!state.collection || !Array.isArray(state.collection.ownedCharacterIds)) errors.push("collection inválida.");
+    if (!state.economy || !Array.isArray(state.economy.transactions)) errors.push("economy inválida.");
+    if (window.QuestCollection && state.collection && state.collection.ownedCharacterIds) {
+      window.QuestCollection.validate(state).forEach(function (message) { errors.push(message); });
+    }
     return { ok: errors.length === 0, errors: errors };
   }
 
@@ -270,15 +313,32 @@
       return key;
     }
 
+    /* Antigüedad de un documento guardado: revisión y luego marca de tiempo.
+       Sirve para no dejar que un diario viejo pise un estado más reciente. */
+    function freshness(doc) {
+      if (!doc || typeof doc !== "object") return -1;
+      var rev = Number(doc.revision);
+      var stamp = Date.parse(doc.updatedAt || "");
+      return (isFinite(rev) ? rev : 0) * 1e13 + (isFinite(stamp) ? stamp : 0);
+    }
+
     function loadRaw() {
       var stateEntry = readRaw(keys.state);
       var journalEntry = readRaw(keys.journal);
       if (journalEntry.present && journalEntry.value && journalEntry.value.state) {
-        try {
-          writeJSON(keys.state, journalEntry.value.state);
+        var journalIsNewer = !stateEntry.present || !!stateEntry.error ||
+          freshness(journalEntry.value.state) >= freshness(stateEntry.value);
+        if (journalIsNewer) {
+          try {
+            writeJSON(keys.state, journalEntry.value.state);
+            cleanupJournal();
+            return { raw: journalEntry.value.state, recovered: false, fromJournal: true };
+          } catch (e) { /* el diario se ignora si no se puede consolidar */ }
+        } else {
+          /* El diario es de una escritura anterior ya consolidada: no sustituye
+             a un estado más reciente. */
           cleanupJournal();
-          return { raw: journalEntry.value.state, recovered: false, fromJournal: true };
-        } catch (e) { /* el diario se ignora si no se puede consolidar */ }
+        }
       }
       if (stateEntry.present && !stateEntry.error) {
         return { raw: stateEntry.value, recovered: false, fromJournal: false };
@@ -395,6 +455,9 @@
       var rank = P.rankFor(stats);
       var level = P.levelFromXp(state.xp);
       var last = state.sessions && state.sessions.length ? state.sessions[0] : null;
+      var collection = window.QuestCollection && state ? state.collection : null;
+      var selectedId = window.QuestCollection ? window.QuestCollection.selectedCharacterId(state) : "ilan";
+      var selected = window.QuestCharacters ? window.QuestCharacters.byId(selectedId) : null;
       return {
         version: C.version,
         schemaVersion: C.schemaVersion,
@@ -415,6 +478,13 @@
         mastered: stats.mastered,
         streak: state.daily.streak,
         hasActivity: stats.answered > 0 || state.xp > 0 || state.sessions.length > 0,
+        selectedCharacterId: selectedId,
+        selectedCharacterName: selected ? selected.name : "",
+        selectedCharacterTitle: selected ? selected.title : "",
+        selectedCharacterRarity: selected ? selected.rarity : "",
+        charactersOwned: collection ? collection.ownedCharacterIds.length : 0,
+        charactersTotal: window.QuestCharacters ? window.QuestCharacters.characters.length : 0,
+        cosmeticsOwned: collection ? collection.ownedCosmeticIds.length : 0,
         lastSession: last ? {
           id: last.id,
           mode: last.mode,

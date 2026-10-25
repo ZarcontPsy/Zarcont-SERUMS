@@ -1,0 +1,969 @@
+{
+  "url": "http://127.0.0.1:8773/index.html?a3i=1792966537334",
+  "errors": [
+    "Failed to load resource: the server responded with a status of 404 (File not found)"
+  ],
+  "probeDot": [
+    {
+      "x": 315,
+      "y": 82,
+      "els": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "art-scene art-ben",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "app-art",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "app-card app-card--banqueo is-active",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "SECTION",
+          "id": "carousel",
+          "cls": "carousel",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "carousel-shell",
+          "rect": [
+            12,
+            78,
+            366,
+            748
+          ]
+        }
+      ]
+    },
+    {
+      "x": 314,
+      "y": 81,
+      "els": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "art-scene art-ben",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "app-art",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "app-card app-card--banqueo is-active",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "SECTION",
+          "id": "carousel",
+          "cls": "carousel",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "carousel-shell",
+          "rect": [
+            12,
+            78,
+            366,
+            748
+          ]
+        }
+      ]
+    },
+    {
+      "x": 318,
+      "y": 84,
+      "els": [
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "art-scene art-ben",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "app-art",
+          "rect": [
+            13,
+            79,
+            364,
+            382.8
+          ]
+        },
+        {
+          "tag": "A",
+          "id": "",
+          "cls": "app-card app-card--banqueo is-active",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "SECTION",
+          "id": "carousel",
+          "cls": "carousel",
+          "rect": [
+            12,
+            78,
+            366,
+            640
+          ]
+        },
+        {
+          "tag": "DIV",
+          "id": "",
+          "cls": "carousel-shell",
+          "rect": [
+            12,
+            78,
+            366,
+            748
+          ]
+        }
+      ]
+    }
+  ],
+  "controls": {
+    "topbar": {
+      "left": 12,
+      "right": 378,
+      "w": 366
+    },
+    "buttons": [
+      {
+        "id": "prevTop",
+        "cls": "icon-btn",
+        "label": "Aplicación anterior",
+        "tip": "Anterior",
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          38,
+          38
+        ]
+      },
+      {
+        "id": "nextTop",
+        "cls": "icon-btn",
+        "label": "Aplicación siguiente",
+        "tip": "Siguiente",
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          38,
+          38
+        ]
+      },
+      {
+        "id": "btnFs",
+        "cls": "icon-btn",
+        "label": "Pantalla completa",
+        "tip": "Pantalla completa",
+        "title": "Pantalla completa",
+        "pressed": "false",
+        "current": null,
+        "rect": [
+          38,
+          38
+        ]
+      },
+      {
+        "id": "btnHelp",
+        "cls": "icon-btn",
+        "label": "Atajos de teclado",
+        "tip": "Atajos de teclado",
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          38,
+          38
+        ]
+      },
+      {
+        "id": "btnAbout",
+        "cls": "icon-btn",
+        "label": "Acerca de",
+        "tip": "Acerca de",
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          38,
+          38
+        ]
+      },
+      {
+        "id": "prevBtn",
+        "cls": "bar-btn",
+        "label": "Aplicación anterior",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "openCurrent",
+        "cls": "bar-open",
+        "label": "Abrir BANQUEO",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "nextBtn",
+        "cls": "bar-btn",
+        "label": "Aplicación siguiente",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": null,
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "",
+        "cls": "dot is-active",
+        "label": "Ver BANQUEO, 1 de 5",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": "true",
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "",
+        "cls": "dot",
+        "label": "Ver PLAZAS SERUMS, 2 de 5",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": "false",
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "",
+        "cls": "dot",
+        "label": "Ver STUDY DASHBOARD, 3 de 5",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": "false",
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "",
+        "cls": "dot",
+        "label": "Ver STUDY FLASHCARDS, 4 de 5",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": "false",
+        "rect": [
+          40,
+          40
+        ]
+      },
+      {
+        "id": "",
+        "cls": "dot",
+        "label": "Ver SERUMS QUEST, 5 de 5",
+        "tip": null,
+        "title": null,
+        "pressed": null,
+        "current": "false",
+        "rect": [
+          40,
+          40
+        ]
+      }
+    ],
+    "fullscreenEnabled": true
+  },
+  "fullscreen": {
+    "fsBefore": {
+      "pressed": "false",
+      "label": "Pantalla completa",
+      "isFs": false,
+      "fsEl": false,
+      "display": "grid"
+    },
+    "fsAfter": {
+      "pressed": "true",
+      "label": "Salir de pantalla completa",
+      "title": "Salir de pantalla completa",
+      "tip": "Salir de pantalla completa",
+      "isFs": true,
+      "fsEl": true,
+      "fsTag": "HTML",
+      "live": "Pantalla completa activada."
+    },
+    "fsExit": {
+      "pressed": "false",
+      "label": "Pantalla completa",
+      "isFs": false,
+      "fsEl": false,
+      "live": "Pantalla completa desactivada."
+    }
+  },
+  "fullscreenError": {
+    "pressed": "false",
+    "label": "Pantalla completa",
+    "isFs": false,
+    "live": "No se pudo cambiar el modo de pantalla completa."
+  },
+  "safeArea": {
+    "supported": true,
+    "topbar": {
+      "top": 57,
+      "bottom": 107
+    },
+    "card": {
+      "top": 115,
+      "bottom": 694
+    },
+    "bar": {
+      "top": 702,
+      "bottom": 760
+    },
+    "dots": {
+      "top": 766,
+      "bottom": 802
+    },
+    "doc": {
+      "sw": 390,
+      "cw": 390,
+      "sh": 844,
+      "ch": 844,
+      "ih": 844
+    },
+    "stagePadTop": "115px",
+    "stagePadBottom": "42px",
+    "cardH": "clamp(360px, calc(100dvh - 184px - 47px - 34px), 640px)"
+  },
+  "safeAreaLandscape": {
+    "supported": true,
+    "tb": [
+      57,
+      787
+    ],
+    "card": [
+      59,
+      785
+    ],
+    "bar": [
+      162,
+      682
+    ],
+    "doc": {
+      "sw": 844,
+      "cw": 844,
+      "sh": 390,
+      "ch": 390
+    },
+    "safeLeft": 47,
+    "safeRight": 47,
+    "viewport": 844
+  },
+  "helpModal": {
+    "open": true,
+    "text": "También puedes tocar una tarjeta lateral para llevarla al centro, usar los puntos o las flechas, o deslizar horizontalmente. BANQUEO y PLAZAS conservan su propio almacenamiento.",
+    "focus": "helpClose",
+    "inert": true
+  },
+  "helpClosed": {
+    "open": false,
+    "focus": "btnHelp",
+    "inert": false
+  },
+  "aboutModal": {
+    "text": "Interfaz Premium Glass 2.0 con carrusel de aplicaciones, flechas, puntos y control inferior. Incluye BANQUEO (Examen Studio v2.1.1), PLAZAS SERUMS (SERUMS Map Explorer v2.0.0), Study Dashboard, Study Flashcards y SERUMS QUEST, la capa de aprendizaje gamificado conectada al banco y al temario. Las librerías de terceros conservan sus propias licencias."
+  },
+  "dotsTest": [
+    {
+      "clicked": 0,
+      "active": "banqueo",
+      "index": "0",
+      "ariaCurrent": "true",
+      "dotsActive": 1,
+      "rects": [
+        {
+          "left": 95,
+          "right": 135,
+          "w": 40,
+          "h": 40,
+          "current": "true",
+          "label": "Ver BANQUEO, 1 de 5"
+        },
+        {
+          "left": 135,
+          "right": 175,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver PLAZAS SERUMS, 2 de 5"
+        },
+        {
+          "left": 175,
+          "right": 215,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY DASHBOARD, 3 de 5"
+        },
+        {
+          "left": 215,
+          "right": 255,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY FLASHCARDS, 4 de 5"
+        },
+        {
+          "left": 255,
+          "right": 295,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver SERUMS QUEST, 5 de 5"
+        }
+      ],
+      "overlaps": []
+    },
+    {
+      "clicked": 1,
+      "active": "plazas",
+      "index": "1",
+      "ariaCurrent": "true",
+      "dotsActive": 1,
+      "rects": [
+        {
+          "left": 95,
+          "right": 135,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver BANQUEO, 1 de 5"
+        },
+        {
+          "left": 135,
+          "right": 175,
+          "w": 40,
+          "h": 40,
+          "current": "true",
+          "label": "Ver PLAZAS SERUMS, 2 de 5"
+        },
+        {
+          "left": 175,
+          "right": 215,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY DASHBOARD, 3 de 5"
+        },
+        {
+          "left": 215,
+          "right": 255,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY FLASHCARDS, 4 de 5"
+        },
+        {
+          "left": 255,
+          "right": 295,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver SERUMS QUEST, 5 de 5"
+        }
+      ],
+      "overlaps": []
+    },
+    {
+      "clicked": 2,
+      "active": "dashboard",
+      "index": "2",
+      "ariaCurrent": "true",
+      "dotsActive": 1,
+      "rects": [
+        {
+          "left": 95,
+          "right": 135,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver BANQUEO, 1 de 5"
+        },
+        {
+          "left": 135,
+          "right": 175,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver PLAZAS SERUMS, 2 de 5"
+        },
+        {
+          "left": 175,
+          "right": 215,
+          "w": 40,
+          "h": 40,
+          "current": "true",
+          "label": "Ver STUDY DASHBOARD, 3 de 5"
+        },
+        {
+          "left": 215,
+          "right": 255,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY FLASHCARDS, 4 de 5"
+        },
+        {
+          "left": 255,
+          "right": 295,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver SERUMS QUEST, 5 de 5"
+        }
+      ],
+      "overlaps": []
+    },
+    {
+      "clicked": 3,
+      "active": "flashcards",
+      "index": "3",
+      "ariaCurrent": "true",
+      "dotsActive": 1,
+      "rects": [
+        {
+          "left": 95,
+          "right": 135,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver BANQUEO, 1 de 5"
+        },
+        {
+          "left": 135,
+          "right": 175,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver PLAZAS SERUMS, 2 de 5"
+        },
+        {
+          "left": 175,
+          "right": 215,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY DASHBOARD, 3 de 5"
+        },
+        {
+          "left": 215,
+          "right": 255,
+          "w": 40,
+          "h": 40,
+          "current": "true",
+          "label": "Ver STUDY FLASHCARDS, 4 de 5"
+        },
+        {
+          "left": 255,
+          "right": 295,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver SERUMS QUEST, 5 de 5"
+        }
+      ],
+      "overlaps": []
+    },
+    {
+      "clicked": 4,
+      "active": "quest",
+      "index": "4",
+      "ariaCurrent": "true",
+      "dotsActive": 1,
+      "rects": [
+        {
+          "left": 95,
+          "right": 135,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver BANQUEO, 1 de 5"
+        },
+        {
+          "left": 135,
+          "right": 175,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver PLAZAS SERUMS, 2 de 5"
+        },
+        {
+          "left": 175,
+          "right": 215,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY DASHBOARD, 3 de 5"
+        },
+        {
+          "left": 215,
+          "right": 255,
+          "w": 40,
+          "h": 40,
+          "current": "false",
+          "label": "Ver STUDY FLASHCARDS, 4 de 5"
+        },
+        {
+          "left": 255,
+          "right": 295,
+          "w": 40,
+          "h": 40,
+          "current": "true",
+          "label": "Ver SERUMS QUEST, 5 de 5"
+        }
+      ],
+      "overlaps": []
+    }
+  ],
+  "resizeTest": [
+    {
+      "vw": 390,
+      "vh": 844,
+      "sw": 390,
+      "cw": 390,
+      "sh": 844,
+      "fits": true,
+      "card": [
+        366,
+        640,
+        78,
+        718
+      ],
+      "bar": [
+        726,
+        784
+      ],
+      "dots": [
+        790,
+        826
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "390x844"
+    },
+    {
+      "vw": 390,
+      "vh": 760,
+      "sw": 390,
+      "cw": 390,
+      "sh": 760,
+      "fits": true,
+      "card": [
+        366,
+        576,
+        68,
+        644
+      ],
+      "bar": [
+        652,
+        710
+      ],
+      "dots": [
+        716,
+        752
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "390x760"
+    },
+    {
+      "vw": 390,
+      "vh": 700,
+      "sw": 390,
+      "cw": 390,
+      "sh": 700,
+      "fits": true,
+      "card": [
+        366,
+        516,
+        68,
+        584
+      ],
+      "bar": [
+        592,
+        650
+      ],
+      "dots": [
+        656,
+        692
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "390x700"
+    },
+    {
+      "vw": 360,
+      "vh": 640,
+      "sw": 360,
+      "cw": 360,
+      "sh": 640,
+      "fits": true,
+      "card": [
+        336,
+        456,
+        68,
+        524
+      ],
+      "bar": [
+        532,
+        590
+      ],
+      "dots": [
+        596,
+        632
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "360x640"
+    },
+    {
+      "vw": 320,
+      "vh": 568,
+      "sw": 320,
+      "cw": 320,
+      "sh": 568,
+      "fits": true,
+      "card": [
+        296,
+        384,
+        68,
+        452
+      ],
+      "bar": [
+        460,
+        518
+      ],
+      "dots": [
+        524,
+        560
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "320x568"
+    },
+    {
+      "vw": 844,
+      "vh": 390,
+      "sw": 844,
+      "cw": 844,
+      "sh": 390,
+      "fits": true,
+      "card": [
+        820,
+        232,
+        58,
+        290
+      ],
+      "bar": [
+        296,
+        346
+      ],
+      "dots": [
+        350,
+        386
+      ],
+      "topbar": [
+        6,
+        52
+      ],
+      "requested": "844x390"
+    },
+    {
+      "vw": 568,
+      "vh": 320,
+      "sw": 568,
+      "cw": 568,
+      "sh": 320,
+      "fits": true,
+      "card": [
+        544,
+        162,
+        58,
+        220
+      ],
+      "bar": [
+        226,
+        276
+      ],
+      "dots": [
+        280,
+        316
+      ],
+      "topbar": [
+        6,
+        52
+      ],
+      "requested": "568x320"
+    },
+    {
+      "vw": 390,
+      "vh": 844,
+      "sw": 390,
+      "cw": 390,
+      "sh": 844,
+      "fits": true,
+      "card": [
+        366,
+        640,
+        78,
+        718
+      ],
+      "bar": [
+        726,
+        784
+      ],
+      "dots": [
+        790,
+        826
+      ],
+      "topbar": [
+        10,
+        60
+      ],
+      "requested": "390x844"
+    }
+  ],
+  "mobileEmulation": {
+    "vw": 390,
+    "vh": 844,
+    "sw": 390,
+    "cw": 390,
+    "sh": 844,
+    "hOver": false,
+    "vOver": false,
+    "card": [
+      366,
+      640,
+      78,
+      718
+    ],
+    "bar": [
+      726,
+      784
+    ],
+    "dots": [
+      790,
+      826
+    ],
+    "fsVisible": true
+  },
+  "keyboardOpen": {
+    "navigations": [
+      "http://127.0.0.1:8773/serums%20map/serums-map-explorer/index.html"
+    ],
+    "href": "http://127.0.0.1:8773/serums%20map/serums-map-explorer/index.html"
+  }
+}

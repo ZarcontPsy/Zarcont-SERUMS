@@ -5,13 +5,16 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="theme-color" content="#08090D">
 <meta name="author" content="ZARCONT">
-<meta name="description" content="SERUMS QUEST: misiones, recuperación de errores, desafíos diarios y progresión basada en preguntas oficiales de Psicología.">
-<title>SERUMS QUEST · Aprendizaje gamificado</title>
+<meta name="description" content="SERUMS QUEST: RPG educativo con personajes coleccionables, cosméticos, misiones, recuperación de errores y progresión basada en preguntas oficiales de Psicología.">
+<title>SERUMS QUEST · RPG de aprendizaje</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2308090D'/%3E%3Cpath d='M16 46 26 18l6 17 6-17 10 28' fill='none' stroke='%237AA2FF' stroke-width='5' stroke-linecap='round' stroke-linejoin='round'/%3E%3Ccircle cx='48' cy='16' r='6' fill='%23C49BFF'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Zen+Dots&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles.css?v=1.0.5">
+<link rel="stylesheet" href="styles.css?v=1.2.1">
+<link rel="stylesheet" href="styles-rpg.css?v=1.2.1">
+<link rel="stylesheet" href="styles-game.css?v=1.2.1">
+<link rel="stylesheet" href="../serums-chrome.css?v=1.0.0">
 <script>
   try {
     var t = localStorage.getItem("serumsquest:theme");
@@ -40,18 +43,21 @@
 
     <nav class="q-nav" aria-label="Navegación principal">
       <a class="q-navlink" href="#/" data-nav data-route="home"><span data-icon="home"></span><span>Inicio</span></a>
-      <a class="q-navlink" href="#/mapa" data-nav data-route="map"><span data-icon="map"></span><span>Mapa</span></a>
-      <a class="q-navlink" href="#/errores" data-nav data-route="errors"><span data-icon="rotate"></span><span>Errores</span><span class="q-nav-badge" data-errors-badge hidden>0</span></a>
-      <a class="q-navlink" href="#/perfil" data-nav data-route="profile"><span data-icon="user"></span><span>Perfil</span></a>
-      <a class="q-navlink q-navlink--more" href="#/logros" data-nav data-route="achievements" aria-label="Logros"><span data-icon="award"></span><span>Logros</span></a>
-      <a class="q-navlink q-navlink--more" href="#/registro" data-nav data-route="ranking" aria-label="Registro local"><span data-icon="chart"></span><span>Registro</span></a>
-      <a class="q-navlink q-navlink--more" href="#/ajustes" data-nav data-route="settings" aria-label="Ajustes"><span data-icon="settings"></span><span>Ajustes</span></a>
+      <a class="q-navlink" href="#/personajes" data-nav data-route="characters"><span data-icon="users"></span><span>Personajes</span></a>
+      <a class="q-navlink" href="#/inventario" data-nav data-route="inventory"><span data-icon="layers"></span><span>Inventario</span></a>
+      <a class="q-navlink" href="#/tienda" data-nav data-route="shop"><span data-icon="bag"></span><span>Tienda</span></a>
+      <a class="q-navlink" href="#/perfil" data-nav data-route="progress"><span data-icon="chart"></span><span>Progreso</span></a>
     </nav>
 
     <div class="q-appbar-actions">
-      <span class="q-stage-chip" data-stage-pill title="Etapa adaptativa actual"><span class="q-dot"></span><span data-stage-name>Iniciación</span></span>
-      <span class="q-currency" data-level-pill title="Nivel y experiencia"><b>Nv 1</b><span data-level-xp>0 XP</span></span>
+      <a class="q-hero-chip" href="#/personajes" data-hero-chip title="Personaje seleccionado" aria-label="Cambiar de personaje">
+        <span class="q-hero-portrait" data-char-portrait aria-hidden="true"></span>
+        <span class="q-hero-copy"><b data-player-name>Serumista</b><small data-char-level>Nv 1 · Bachiller</small><span class="q-hero-xprow" aria-hidden="true"><span class="q-hero-xp"><i data-xp-bar style="width:0%"></i></span><em data-xp-num>0 XP</em></span></span>
+      </a>
       <span class="q-currency q-currency--coins" data-coins-pill title="Monedas virtuales"><span data-icon="coins"></span><b>0</b></span>
+      <a class="q-play-btn" href="#/mapa" data-play-btn title="Ir a misiones"><span data-icon="play"></span><span>Jugar</span></a>
+      <button class="q-iconbtn q-soundbtn" type="button" data-action="toggle-audio" data-audio-toggle aria-label="Silenciar audio" title="Audio" aria-pressed="false"><span data-icon="volume"></span></button>
+      <span data-chrome-mount></span>
       <button class="q-iconbtn" type="button" data-theme-toggle data-action="toggle-setting" data-setting="theme" aria-label="Cambiar tema" title="Cambiar tema"></button>
       <a class="q-iconbtn q-iconbtn--resume" href="#/jugar" data-resume-slot hidden aria-label="Continuar sesión" title="Continuar sesión"><span data-icon="play"></span></a>
     </div>
@@ -73,6 +79,14 @@
 
 <div class="q-toast-stack" id="q-toast-stack" aria-live="polite" aria-atomic="true"></div>
 <div class="q-sr-only" id="q-live" aria-live="polite"></div>
+
+<nav class="q-bottomnav" aria-label="Navegación de juego">
+  <a class="q-bottomlink" href="#/" data-nav data-route="home"><span data-icon="home"></span><span>Inicio</span></a>
+  <a class="q-bottomlink" href="#/personajes" data-nav data-route="characters"><span data-icon="users"></span><span>Personajes</span></a>
+  <a class="q-bottomlink" href="#/inventario" data-nav data-route="inventory"><span data-icon="layers"></span><span>Inventario</span></a>
+  <a class="q-bottomlink" href="#/tienda" data-nav data-route="shop"><span data-icon="bag"></span><span>Tienda</span></a>
+  <a class="q-bottomlink" href="#/perfil" data-nav data-route="progress"><span data-icon="chart"></span><span>Progreso</span></a>
+</nav>
 
 <footer class="q-footer">
   <div class="q-footer-inner">
@@ -96,13 +110,29 @@
 <script src="../study-data/temario.js?v=2.5.0"></script>
 <script src="../study-shared/taxonomy.js?v=1.0.0"></script>
 <script src="data/quest-map.js?v=1.0.2"></script>
-<script src="js/config.js?v=1.0.4"></script>
-<script src="js/icons.js?v=1.0.1"></script>
-<script src="js/util.js?v=1.0.4"></script>
-<script src="js/progression.js?v=1.0.5"></script>
-<script src="js/store.js?v=1.0.4"></script>
-<script src="js/content.js?v=1.0.6"></script>
-<script src="js/engine.js?v=1.0.5"></script>
-<script src="js/app.js?v=1.0.6"></script>
+<script src="js/config.js?v=1.2.1"></script>
+<script src="js/icons.js?v=1.2.1"></script>
+<script src="js/util.js?v=1.2.1"></script>
+<script src="js/progression.js?v=1.2.1"></script>
+<script src="js/characters.js?v=1.2.1"></script>
+<script src="js/character-art.js?v=1.2.1"></script>
+<script src="js/scenes.js?v=1.2.1"></script>
+<script src="js/reactions.js?v=1.2.1"></script>
+<script src="js/audio.js?v=1.2.1"></script>
+<script src="js/collection.js?v=1.2.1"></script>
+<script src="js/store.js?v=1.2.1"></script>
+<script src="js/content.js?v=1.2.1"></script>
+<script src="js/engine.js?v=1.2.1"></script>
+<script src="../serums-chrome.js?v=1.0.0"></script>
+<script>
+  window.SerumsChrome.mount(".q-appbar-actions [data-chrome-mount]", {
+    homeHref: "#/",
+    appName: "SERUMS QUEST",
+    buttonClass: "q-iconbtn",
+    fullscreen: true,
+    order: ["home", "hub", "fullscreen"]
+  });
+</script>
+<script src="js/app.js?v=1.2.1"></script>
 </body>
 </html>

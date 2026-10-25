@@ -1,0 +1,207 @@
+{
+  "groupsBefore": 1,
+  "groupsAfterDoubleMount": 1,
+  "reducedMotion": true,
+  "buttons": [
+    {
+      "kind": "home",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al inicio de Banqueo",
+      "title": "Volver al inicio de Banqueo",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(180, 177, 172)",
+      "bg": "rgb(7, 7, 8)",
+      "contrast": 9.42,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "hub",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al HUB",
+      "title": "Volver al HUB",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(180, 177, 172)",
+      "bg": "rgb(7, 7, 8)",
+      "contrast": 9.42,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "fullscreen",
+      "tag": "BUTTON",
+      "type": "button",
+      "form": false,
+      "label": "Pantalla completa",
+      "title": "Pantalla completa",
+      "pressed": "false",
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(180, 177, 172)",
+      "bg": "rgb(7, 7, 8)",
+      "contrast": 9.42,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    }
+  ],
+  "duplicateChromeLabels": [],
+  "iconCount": 3,
+  "forms": 0,
+  "tabOrder": [
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Banqueo, inicio",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Banqueo",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(255, 255, 255, 0.075)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Banco",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Importar",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Revisión15",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Progreso",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": "home",
+      "label": "Volver al inicio de Banqueo",
+      "outline": "2px solid rgb(244, 242, 238)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "A",
+      "kind": "hub",
+      "label": "Volver al HUB",
+      "outline": "2px solid rgb(244, 242, 238)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": "fullscreen",
+      "label": "Pantalla completa",
+      "outline": "2px solid rgb(244, 242, 238)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Cómo se procesó el banco",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Cambiar tema",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Explorar el banco",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgb(229, 42, 59)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Importar PDFs",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(255, 255, 255, 0.043)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Revisar",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "INPUT",
+      "kind": null,
+      "label": "Buscar profesión",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgb(11, 11, 13)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Biología300 preguntas · Ciencias de la s",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Enfermería300 preguntas · Ciencias de la",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Farmacia300 preguntas · Ciencias de la s",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Ingeniería Sanitaria300 preguntas · Cien",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Medicina300 preguntas · Ciencias de la s",
+      "outline": "2px solid rgb(255, 90, 103)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "startFocus": "Saltar al contenido"
+}

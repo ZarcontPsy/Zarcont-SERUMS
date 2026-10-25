@@ -1,0 +1,33 @@
+{
+  "app": "flashcards",
+  "route": "#/historial",
+  "before": {
+    "hash": "#/historial",
+    "url": "http://127.0.0.1:8777/study-flashcards/index.html#/historial",
+    "heading": "Historial y programación."
+  },
+  "homeClick": {
+    "clicked": {
+      "x": 1255.5,
+      "y": 32,
+      "w": 40,
+      "h": 40
+    },
+    "after": {
+      "hash": "#/",
+      "url": "http://127.0.0.1:8777/study-flashcards/index.html#/",
+      "heading": "Recupera lo que sabes.",
+      "active": "H1"
+    },
+    "frameNavigationsDuringHome": []
+  },
+  "hub": {
+    "attr": "http://127.0.0.1:8777/index.html",
+    "resolved": "http://127.0.0.1:8777/index.html"
+  },
+  "afterHub": {
+    "url": "http://127.0.0.1:8777/index.html",
+    "title": "SERUMS HUB — Centro de aplicaciones",
+    "hasHubCards": true
+  }
+}

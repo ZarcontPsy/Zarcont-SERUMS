@@ -278,8 +278,13 @@ main { min-height: 62vh; }
 .reader-practice h2 { margin: 4px 0; font-size: 22px; letter-spacing: -.035em; }
 .reader-practice p { color: var(--text-soft); font-size: 12px; line-height: 1.55; }
 .reader-refs { margin-top: 33px; padding-top: 22px; border-top: 1px solid var(--line); }
-.reader-source-row { display: flex; gap: 11px; margin-top: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+.reader-source-row { display: flex; gap: 11px; margin-top: 12px; padding: 12px 0; border-bottom: 1px solid var(--line); color: inherit; text-decoration: none; border-radius: var(--r-xs); transition: background var(--t-fast), border-color var(--t-fast); }
+.reader-source-row:hover { background: var(--surface-2); border-bottom-color: var(--accent-line); }
+.reader-source-row:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
 .reader-source-row:last-child { border-bottom: 0; }
+.reader-source-copy { min-width: 0; flex: 1 1 auto; }
+.reader-source-open { flex: none; align-self: center; color: var(--muted); display: inline-flex; }
+.reader-source-row:hover .reader-source-open { color: var(--accent); }
 .reader-source-badge { flex: none; align-self: flex-start; padding: 4px 7px; border-radius: var(--r-xs); background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent-line); font-size: 8.5px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; }
 .reader-source-row b { display: block; font-size: 11.5px; font-weight: 550; }
 .reader-source-row p { color: var(--muted); font-size: 10.5px; line-height: 1.45; margin-top: 2px; }

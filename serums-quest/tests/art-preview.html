@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>Galería de arte · SERUMS QUEST</title>
+<style>
+  :root { color-scheme: dark; --bg:#07080c; --panel:#11141d; --line:rgba(255,255,255,.1); --text:#f4f6fb; --muted:#8b93a7; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--text); font:13px/1.5 Inter, system-ui, sans-serif; padding:28px; }
+  h1 { font-size:26px; margin:0 0 4px; letter-spacing:-.03em; }
+  h2 { font-size:16px; margin:30px 0 12px; color:#cfd6e6; }
+  p { color:var(--muted); margin:0 0 8px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fill,minmax(170px,1fr)); gap:10px; }
+  .card { border:1px solid var(--line); border-radius:12px; background:var(--panel); overflow:hidden; }
+  .art { height:240px; background:radial-gradient(70% 60% at 50% 10%, rgba(122,162,255,.12), transparent 70%), #0a0d14; }
+  .art svg { width:100%; height:100%; display:block; }
+  .cap { padding:7px 9px; font-size:10px; color:var(--muted); border-top:1px solid var(--line); }
+  .cap b { color:var(--text); display:block; font-size:11px; }
+  .thumb .art { height:170px; }
+  a { color:#8fb0ff; }
+</style>
+</head>
+<body>
+<h1>Galería de arte vectorial</h1>
+<p>Personajes originales y capas cosméticas sobre un maniquí neutro. Página de QA visual.</p>
+<div id="chars"></div>
+<h2>Cosméticos por capa</h2>
+<div class="grid" id="items"></div>
+<h2>Personaje con atuendo completo</h2>
+<div class="grid" id="outfit"></div>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/icons.js?v=1.1.0"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/reactions.js?v=1.0.0"></script>
+<script src="../js/collection.js?v=1.2.0"></script>
+<script>
+(function () {
+  "use strict";
+  var C = window.QuestCharacters;
+  var Art = window.QuestCharacterArt;
+  var chars = document.getElementById("chars");
+  var html = '<h2>Elenco (' + C.characters.length + ')</h2><div class="grid">';
+  C.characters.forEach(function (c) {
+    html += '<div class="card"><div class="art">' + Art.portrait(c.id, {}, { state: "idle" }) + '</div><div class="cap"><b>' + c.name + '</b>' + c.title + " · " + c.rarityLabel + " · " + c.slots.length + " ranuras</div></div>";
+  });
+  html += "</div>";
+  chars.innerHTML = html;
+  var items = document.getElementById("items");
+  items.innerHTML = C.cosmetics.map(function (cosmetic) {
+    return '<div class="card thumb"><div class="art">' + Art.mannequin(cosmetic.id) + '</div><div class="cap"><b>' + cosmetic.name + '</b>' + cosmetic.category + " · " + cosmetic.rarityLabel + "</div></div>";
+  }).join("");
+  var outfit = {
+    "cabeza": "c-cabeza-diadema", "peinado": "c-peinado-coleta", "torso": "c-torso-abrigo",
+    "accesorios": "c-accesorios-gafas", "amuletos": "c-amuleto-enfoque",
+    "efectos": "c-efecto-aura", "marcos": "c-marco-platino"
+  };
+  document.getElementById("outfit").innerHTML = ["ilan", "mara", "noa", "iris", "zenon"].map(function (id) {
+    return '<div class="card"><div class="art">' + Art.portrait(id, outfit, {}) + '</div><div class="cap"><b>' + C.byId(id).name + '</b>Atuendo de prueba compartido</div></div>';
+  }).join("");
+})();
+</script>
+</body></html>

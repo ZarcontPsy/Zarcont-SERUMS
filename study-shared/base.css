@@ -310,18 +310,30 @@ hr { border: 0; border-top: 1px solid var(--line); }
 @media (max-width: 900px) {
   .s-appbar-inner { min-height: 58px; }
   .s-product-name { display: none; }
-  .s-navlink span { display: none; }
-  .s-navlink { padding: 8px; }
+  /* Solo la etiqueta; el icono [data-icon] debe seguir visible. */
+  .s-navlink > span:last-child { display: none; }
+  .s-navlink { width: 40px; height: 40px; padding: 0; justify-content: center; }
 }
 @media (max-width: 620px) {
   body { font-size: 14px; }
   .s-page { width: min(var(--page), calc(100vw - 28px)); }
-  .s-appbar-inner { width: calc(100vw - 22px); gap: 8px; }
+  .s-appbar-inner { width: calc(100vw - 22px); gap: 4px; }
+  /* La marca conserva el icono y su aria-label; el texto competía con
+     los controles de app/HUB/pantalla completa en 390 px y se solapaba. */
+  .s-brand { flex: none; }
+  .s-brand-copy { display: none; }
   .s-brand-name { font-size: 8.5px; }
   .s-brand-mark { width: 29px; height: 29px; border-radius: 9px; }
-  .s-appbar-actions { gap: 4px; }
+  .s-nav { gap: 2px; }
+  .s-appbar-actions { gap: 2px; }
   .s-iconbtn { width: 35px; height: 35px; }
   .s-btn { min-height: 40px; padding: 9px 14px; }
+}
+@media (max-width: 340px) {
+  /* En el ancho mínimo la navegación pasa a una segunda fila para que
+     los tres destinos y los tres controles conserven 40 px de área. */
+  .s-appbar-inner { flex-wrap: wrap; row-gap: 2px; padding: 6px 0; }
+  .s-nav { order: 3; flex-basis: 100%; justify-content: center; }
 }
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {

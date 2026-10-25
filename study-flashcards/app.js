@@ -49,15 +49,23 @@
     selected: null,
     revealed: false,
     returnSheet: "",
-    fromDashboard: false,
-    borrowedDeck: "",
     currentDeck: null,
     currentDeckType: "",
-    notice: ""
+    notice: "",
+    /* Biblioteca: filtros, grupos abiertos y contexto de regreso. */
+    library: { filter: "todas", area: "", q: "", open: [] },
+    librarySaved: { hash: "#/", scroll: 0 },
+    restoreScroll: 0
   };
 
-  function sheetHref() { return ""; }
-  function deckHref(id) { return "#/mazo/" + encodeURIComponent(id); }
+  function deckHref(id) { return "#/mazo/" + encodeURIComponent(id); }  function libraryHash(lib) {
+    var parts = [];
+    if (lib.filter && lib.filter !== "todas") parts.push("estado=" + encodeURIComponent(lib.filter));
+    if (lib.area) parts.push("area=" + encodeURIComponent(lib.area));
+    if (lib.q) parts.push("q=" + encodeURIComponent(lib.q));
+    if (lib.open && lib.open.length) parts.push("abiertas=" + lib.open.map(encodeURIComponent).join(","));
+    return "#/" + (parts.length ? "?" + parts.join("&") : "");
+  }
   function dashboardHref(sheetId, deckId) {
     try {
       var u = new URL("../study-dashboard/index.html", location.href);
@@ -78,15 +86,18 @@
   function rememberOrigin(sheet, deck) {
     try { sessionStorage.setItem(ORIGIN_KEY, JSON.stringify({ sheet: sheet || "", deck: deck || "" })); } catch (e) {}
   }
-  function cleanHash() {
-    try { history.replaceState(null, "", location.pathname + (location.hash || "#/")); } catch (e) {}
-  }
   function replaceHash(hash) {
-    try { history.replaceState(null, "", location.pathname + hash); } catch (e) { location.hash = hash; }
+    try { history.replaceState(null, "", location.pathname + location.search + hash); } catch (e) { location.hash = hash; }
   }
   function parseRoute() {
     var raw = location.hash.replace(/^#\/?/, "");
-    if (!raw) return { name: "decks" };
+    var search = "";
+    var split = raw.indexOf("?");
+    if (split >= 0) {
+      search = raw.slice(split + 1);
+      raw = raw.slice(0, split);
+    }
+    if (!raw) return { name: "decks", library: parseLibraryParams(search) };
     var parts = raw.split("/").filter(Boolean).map(function (p) {
       try { return decodeURIComponent(p); } catch (e) { return p; }
     });
@@ -249,6 +260,16 @@
     renderRoute({ scrollY: 0 });
   }
 
+  function previousCard() {
+    var s = Store.getFlashSession();
+    if (!s || s.index <= 0) return;
+    Store.updateFlashSession({ index: s.index - 1 });
+    state.selected = null;
+    state.revealed = false;
+    renderRoute({ scrollY: window.scrollY, focus: false });
+    announce("Tarjeta anterior.");
+  }
+
   function finishCurrentSession() {
     var s = Store.getFlashSession();
     if (!s) return;
@@ -319,9 +340,11 @@
     setActiveNav();
     state.currentDeck = null;
     state.currentDeckType = "";
+    suppressToggle = true;
 
     if (route.name === "decks") {
-      document.title = "Study Flashcards · SERUMS";
+      state.library = route.library || parseLibraryParams("");
+      document.title = "Biblioteca de mazos · Study Flashcards";
       root.innerHTML = renderDecks();
     } else if (route.name === "deck") {
       var deck = deckInfo(route.deckId);
@@ -358,7 +381,14 @@
     boot.hidden = true;
     root.hidden = false;
     var y = opts.scrollY != null ? opts.scrollY : 0;
-    requestAnimationFrame(function () { window.scrollTo(0, Math.max(0, y)); });
+    if (state.restoreScroll) {
+      y = state.restoreScroll;
+      state.restoreScroll = 0;
+    }
+    requestAnimationFrame(function () {
+      window.scrollTo(0, Math.max(0, y));
+      suppressToggle = false;
+    });
     if (opts.focus) {
       var h = root.querySelector("h1");
       if (h) { h.setAttribute("tabindex", "-1"); h.focus({ preventScroll: true }); }
@@ -372,8 +402,10 @@
 
   function deckTotals() {
     var st = Store.getDashboardStats();
-    var cards = Store.getState().cards || {};
     var errors = Store.getErrorCards();
+    var dueIds = {};
+    Store.getDueCards().forEach(function (c) { dueIds[c.id] = true; });
+    var extraErrors = errors.filter(function (c) { return !dueIds[c.id]; }).length;
     return {
       total: st.totalCards,
       reviewed: st.reviewedCards,
@@ -381,152 +413,458 @@
       due: st.dueCards,
       newCards: st.newCards,
       errors: errors.length,
-      accuracy: overallAccuracy()
+      pending: st.newCards + st.dueCards + extraErrors,
+      accuracy: overallAccuracy(),
+      percent: st.totalCards ? Math.round((st.masteredCards / st.totalCards) * 100) : 0
     };
   }
 
-  function modeExplainer() {
-    return '<div class="mode-grid">' + Object.keys(MODES).map(function (key, i) {
-      var m = MODES[key];
-      return '<div class="mode-card">' +
-        '<span class="mode-number">0' + (i + 1) + '</span>' +
-        '<span class="mode-icon">' + icon(m.icon, 19) + '</span>' +
-        '<h3>' + esc(m.label) + '</h3><p>' + esc(m.description) + '</p></div>';
-    }).join("") + '</div>';
+  var LIB_FILTERS = [
+    { id: "todas", label: "Todas" },
+    { id: "pendientes", label: "Pendientes", hint: "Con tarjetas nuevas o que ya toca repasar" },
+    { id: "curso", label: "En curso", hint: "Empezados y todavía sin dominar del todo" },
+    { id: "completadas", label: "Completadas", hint: "Todas sus tarjetas dominadas" }
+  ];
+
+  function validFilter(id) {
+    return LIB_FILTERS.some(function (f) { return f.id === id; });
+  }
+  function parseLibraryParams(search) {
+    var params = {};
+    try { params = Object.fromEntries(new URLSearchParams(search || "")); } catch (e) { params = {}; }
+    var areaId = String(params.area || "");
+    var exists = primaryAreas().some(function (a) { return a.id === areaId; });
+    return {
+      filter: validFilter(params.estado) ? params.estado : "todas",
+      area: exists ? areaId : "",
+      q: String(params.q || "").slice(0, 80),
+      open: String(params.abiertas || "").split(",").filter(Boolean)
+    };
+  }
+  function normText(value) {
+    try { return String(value || "").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, ""); }
+    catch (e) { return String(value || "").toLowerCase(); }
+  }
+  function miniBar(pct, label) {
+    var v = Math.max(0, Math.min(100, Math.round(Number(pct) || 0)));
+    return '<span class="mini-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + esc(label || "Progreso") + '"><span style="width:' + v + '%"></span></span>';
+  }
+  function pluralDecks(n) { return n + ' ' + plural(n, "mazo", "mazos"); }
+  function pluralCards(n) { return n + ' ' + plural(n, "tarjeta", "tarjetas"); }
+
+  /* Tarjetas que aún requieren trabajo: nuevas, vencidas y errores que el
+     repaso espaciado todavía no trae de vuelta. */
+  function pendingCount(deckId, stats) {
+    var base = stats.newCards + stats.due;
+    if (!stats.errors) return base;
+    var dueIds = {};
+    Store.getDueCards(deckId).forEach(function (c) { dueIds[c.id] = true; });
+    var extra = 0;
+    Store.getErrorCards(deckId).forEach(function (c) {
+      if (!dueIds[c.id]) extra += 1;
+    });
+    return base + extra;
   }
 
-  function activeSessionBanner(session) {
-    if (!session) return "";
-    var deck = state.currentDeck && state.currentDeck.id === session.deckId ? state.currentDeck : deckInfo(session.deckId);
-    var m = modeMeta(session.mode);
-    var done = session.index;
-    var total = session.queue.length;
-    var pct = total ? Math.round((done / total) * 100) : 0;
-    return '<a class="active-session" href="#/sesion" data-nav>' +
-      '<span class="active-session-icon">' + icon("play", 18) + '</span>' +
-      '<span class="active-session-copy"><span class="s-kicker">Sesión en curso · ' + esc(m.short) + '</span>' +
-        '<b>' + esc(deck.title) + '</b>' +
-        '<small>' + (done + 1) + ' de ' + total + ' · continúa donde quedaste</small>' +
-        UI.progressBar(pct, "Avance de la sesión") +
-      '</span>' +
-      '<span class="s-btn s-btn--sm">Continuar ' + icon("arrow", 14) + '</span>' +
-      '</a>';
-  }
-
-  function deckCard(sheet) {
+  /* Un mazo con su estado real, calculado una vez por render. */
+  function deckModel(sheet) {
     var topic = Store.getTopic(sheet.topicId);
     var area = topic ? areaForTopic(topic) : null;
     var category = categoryForSheet(sheet);
     var stats = Store.getDeckStats(sheet.id);
     var active = Store.getFlashSession(sheet.id);
-    var last = stats.lastReviewAt ? UI.formatRelative(stats.lastReviewAt) : "Sin practicar";
-    return '<article class="deck-card" style="--area:' + esc(area ? area.accent : "var(--accent)") + '">' +
-      '<a class="deck-card-head" href="' + deckHref(sheet.id) + '" data-nav>' +
-        '<span class="deck-card-top"><span class="deck-area-label">' + esc(category ? category.short : area ? area.short : "") + '</span>' +
-          (active ? '<span class="s-chip s-chip--accent">' + icon("play", 11) + 'En curso</span>' : '') +
-        '</span>' +
-        '<h3>' + esc(sheet.title) + '</h3>' +
-        '<p>' + esc(sheet.summary) + '</p>' +
-      '</a>' +
-      '<div class="deck-progress">' +
-        '<span class="deck-progress-copy"><b>' + stats.percent + '%</b><small>dominio</small></span>' +
-        UI.progressBar(stats.percent, "Dominio de " + sheet.title) +
-      '</div>' +
-      '<div class="deck-stats">' +
-        '<span><b>' + stats.total + '</b><small>tarjetas</small></span>' +
-        '<span><b>' + stats.newCards + '</b><small>nuevas</small></span>' +
-        '<span><b>' + stats.due + '</b><small>por repasar</small></span>' +
-        '<span><b>' + stats.errors + '</b><small>con error</small></span>' +
-      '</div>' +
-      '<div class="deck-card-foot">' +
-        '<span class="deck-last">' + esc(last) + '</span>' +
-        '<span class="deck-actions"><a href="' + deckHref(sheet.id) + '" data-nav class="s-btn s-btn--ghost s-btn--sm">Abrir</a>' +
-        '<button class="s-btn s-btn--sm" type="button" data-action="start-session" data-mode="quick" data-deck="' + esc(sheet.id) + '">' + icon("rotate", 13) + ' Repasar</button></span>' +
-      '</div>' +
-      '</article>';
+    var pending = pendingCount(sheet.id, stats);
+    var completed = stats.total > 0 && stats.mastered >= stats.total;
+    var lastAt = stats.lastReviewAt ? Date.parse(stats.lastReviewAt) : 0;
+    if (!lastAt || isNaN(lastAt)) lastAt = 0;
+    return {
+      sheet: sheet, topic: topic, area: area, category: category, stats: stats,
+      active: active, pending: pending, completed: completed, lastAt: lastAt,
+      last: lastAt ? UI.formatRelative(stats.lastReviewAt) : "Sin practicar",
+      inCourse: (stats.reviewed > 0 || !!active) && !completed,
+      hay: normText([sheet.title, sheet.summary, topic && topic.title,
+        category && category.title, category && category.short, area && area.title].join(" "))
+    };
+  }
+  function areaTotals(models) {
+    var t = { cards: 0, reviewed: 0, mastered: 0, pending: 0, errors: 0, lastAt: 0 };
+    models.forEach(function (m) {
+      t.cards += m.stats.total;
+      t.reviewed += m.stats.reviewed;
+      t.mastered += m.stats.mastered;
+      t.pending += m.pending;
+      t.errors += m.stats.errors;
+      if (m.lastAt > t.lastAt) t.lastAt = m.lastAt;
+    });
+    t.percent = t.cards ? Math.round((t.mastered / t.cards) * 100) : 0;
+    t.last = t.lastAt ? UI.formatRelative(new Date(t.lastAt).toISOString()) : "Sin practicar";
+    return t;
   }
 
-  function categoryDeckBlock(category, sheets) {
-    if (!sheets.length) return "";
-    return '<div class="deck-category">' +
-      '<div class="deck-category-head"><span class="s-kicker">' + esc(category.short) + '</span><h3>' + esc(category.title) + '</h3><span class="s-small s-muted">' + sheets.length + ' ' + plural(sheets.length, "mazo", "mazos") + '</span></div>' +
-      '<div class="deck-grid">' + sheets.map(deckCard).join("") + '</div>' +
-      '</div>';
+  /* Los modelos se recalculan solo cuando cambia el estado guardado: filtrar,
+     buscar o plegar grupos no vuelve a recorrer las 630 tarjetas. */
+  var modelCache = { key: "", models: null };
+  function libraryModels() {
+    var st = Store.getState() || {};
+    var session = st.flashSession || {};
+    var key = [st.updatedAt || "", session.id || "", session.updatedAt || "",
+      session.index, C.sheets.length, C.cards.length].join("|");
+    if (modelCache.key === key && modelCache.models) return modelCache.models;
+    var models = C.sheets.filter(function (s) { return cardsFor(s.id).length > 0; }).map(deckModel);
+    modelCache = { key: key, models: models };
+    return models;
+  }
+  function computeLibrary() {
+    var lib = state.library;
+    var models = libraryModels();
+    var qn = normText(lib.q);
+    var filtering = lib.filter !== "todas" || !!lib.q || !!lib.area;
+    var base = models.filter(function (m) {
+      if (lib.area && (!m.area || m.area.id !== lib.area)) return false;
+      if (qn && m.hay.indexOf(qn) < 0) return false;
+      return true;
+    });
+    var counts = { todas: base.length, pendientes: 0, curso: 0, completadas: 0 };
+    base.forEach(function (m) {
+      if (m.pending > 0) counts.pendientes += 1;
+      if (m.stats.reviewed > 0 && !m.completed) counts.curso += 1;
+      if (m.completed) counts.completadas += 1;
+    });
+    var shown = base.filter(function (m) {
+      if (lib.filter === "pendientes") return m.pending > 0;
+      if (lib.filter === "curso") return m.stats.reviewed > 0 && !m.completed;
+      if (lib.filter === "completadas") return m.completed;
+      return true;
+    });
+    var areas = primaryAreas().map(function (area) {
+      var inArea = models.filter(function (m) { return m.area && m.area.id === area.id; });
+      var visible = shown.filter(function (m) { return m.area && m.area.id === area.id; });
+      var categories = categoriesOf(area.id).map(function (category) {
+        var all = inArea.filter(function (m) { return m.sheet.categoryId === category.id; });
+        var decks = visible.filter(function (m) { return m.sheet.categoryId === category.id; });
+        return { category: category, total: all.length, decks: decks };
+      }).filter(function (entry) { return entry.decks.length; });
+      return {
+        area: area, total: inArea.length, decks: visible,
+        categories: categories,
+        /* Con filtros activos el resumen del área describe lo que se ve. */
+        stats: areaTotals(filtering ? visible : inArea)
+      };
+    }).filter(function (group) {
+      return group.total > 0 && (!filtering || group.decks.length > 0);
+    });
+    return {
+      all: models, areas: areas, counts: counts, shown: shown.length,
+      cards: shown.reduce(function (n, m) { return n + m.stats.total; }, 0),
+      pending: shown.reduce(function (n, m) { return n + m.pending; }, 0),
+      totalCards: models.reduce(function (n, m) { return n + m.stats.total; }, 0),
+      filtered: filtering
+    };
+  }
+
+  /* ------------------------------------------------------------------ */
+  /* Biblioteca: hero compacto, filtros y progreso                       */
+  /* ------------------------------------------------------------------ */
+
+  function renderLibraryHero(totals, active, model) {
+    var pending = totals.pending;
+    var accuracy = totals.accuracy ? totals.accuracy + "%" : "—";
+    var startDeck = null;
+    var models = model ? model.all : [];
+    models.some(function (m) { if (m.pending > 0) { startDeck = m; return true; } return false; });
+    if (!startDeck) startDeck = models[0] || null;
+    var primary = active
+      ? '<a class="s-btn" href="#/sesion" data-nav>' + icon("play", 16) + ' Continuar sesión</a>'
+      : '<a class="s-btn" href="' + (startDeck ? deckHref(startDeck.sheet.id) : "#/") + '" data-nav' + (startDeck ? ' title="Empezar por ' + esc(startDeck.sheet.title) + '"' : '') + '>' + icon("play", 16) + ' Empezar a practicar</a>';
+    var sessionLine = "";
+    if (active) {
+      var activeDeck = deckInfo(active.deckId);
+      sessionLine = '<p class="lib-session-line">' + icon("play", 12) +
+        ' <span>Sesión en curso · ' + esc(modeMeta(active.mode).short) + ' · ' + esc(activeDeck.kind === "missing" ? "mazo guardado" : activeDeck.title) +
+        ' · tarjeta ' + (active.index + 1) + ' de ' + active.queue.length + '</span></p>';
+    }
+    return '<section class="lib-hero">' +
+      '<div class="lib-hero-copy">' +
+        '<span class="s-kicker"><span class="dot"></span>Biblioteca de estudio</span>' +
+        '<h1>Recupera <em>lo que sabes.</em></h1>' +
+        '<p class="lib-hero-line">' + pluralCards(totals.total) + ' · ' +
+          totals.reviewed + ' ' + plural(totals.reviewed, "revisada", "revisadas") + ' · ' +
+          totals.mastered + ' ' + plural(totals.mastered, "dominada", "dominadas") + ' · ' +
+          pending + ' ' + plural(pending, "pendiente", "pendientes") + ' · ' + accuracy + ' de acierto</p>' +
+        '<div class="lib-hero-meter">' + miniBar(totals.percent, "Dominio global de los mazos") + '<span>' + totals.percent + '% de dominio global</span></div>' +
+        '<div class="lib-hero-actions">' + primary +
+          '<a class="s-btn s-btn--ghost" href="../study-dashboard/index.html">' + icon("book", 16) + ' Consultar temario</a>' +
+        '</div>' +
+        sessionLine +
+      '</div>' +
+      '<div class="lib-hero-visual" aria-hidden="true">' +
+        '<div class="card-stack">' +
+          '<div class="stack-card stack-card-back"><span>03</span><p>APLICAR</p></div>' +
+          '<div class="stack-card stack-card-mid"><span>02</span><p>EXPLICAR</p></div>' +
+          '<div class="stack-card stack-card-front"><span class="stack-tag">CONCEPTO</span><p>¿Por qué la APS no es una atención de segunda categoría?</p><span class="stack-line"></span><span class="stack-line short"></span><span class="stack-mark">' + icon("brain", 20) + '</span></div>' +
+        '</div>' +
+        '<span class="hero-visual-note">' + icon("loop", 13) + ' recordar · aplicar · volver</span>' +
+      '</div>' +
+      '</section>';
+  }
+
+  function libraryCountText(model) {
+    if (!model.shown) return "Ningún mazo coincide con los filtros activos.";
+    var text = pluralDecks(model.shown) + ' · ' + pluralCards(model.cards) + ' · ' + model.pending + ' ' + plural(model.pending, "pendiente", "pendientes");
+    if (model.filtered) {
+      if (model.areas.length > 1) text += ' · ' + model.areas.length + ' ' + plural(model.areas.length, "área", "áreas");
+      text += ' · filtros activos';
+      var anyOpen = model.areas.some(function (g) { return state.library.open.indexOf(g.area.id) >= 0; });
+      if (!anyOpen) text += ' · abre un área para ver los resultados';
+    }
+    return text;
+  }
+
+  function renderLibraryTools(model) {
+    var lib = state.library;
+    var stateButtons = LIB_FILTERS.map(function (f) {
+      return '<button type="button" data-state="' + f.id + '" aria-pressed="' + (lib.filter === f.id) + '"' +
+        (f.hint ? ' title="' + esc(f.hint) + '"' : '') + '>' + esc(f.label) + '<b>' + model.counts[f.id] + '</b></button>';
+    }).join("");
+    var areaOptions = '<option value="">Todas las áreas</option>' + primaryAreas().map(function (a) {
+      return '<option value="' + esc(a.id) + '"' + (lib.area === a.id ? " selected" : "") + '>' + esc(a.title) + '</option>';
+    }).join("");
+    var anyOpen = model.areas.some(function (g) { return lib.open.indexOf(g.area.id) >= 0; });
+    return '<section class="lib-tools" aria-label="Buscar y filtrar mazos">' +
+      '<label class="lib-search" for="lib-search">' + icon("search", 15) +
+        '<span class="s-sr-only">Buscar mazo</span>' +
+        '<input id="lib-search" type="search" placeholder="Buscar mazo, tema o categoría" value="' + esc(lib.q) + '" autocomplete="off" enterkeyhint="search" maxlength="80" aria-describedby="library-count">' +
+      '</label>' +
+      '<div class="s-seg lib-seg" role="group" aria-label="Filtrar por estado">' + stateButtons + '</div>' +
+      '<label class="lib-select">' + icon("filter", 14) + '<span class="s-sr-only">Filtrar por área</span><select id="lib-area">' + areaOptions + '</select></label>' +
+      '<button class="lib-expand" type="button" data-action="' + (anyOpen ? "collapse-all" : "expand-all") + '" aria-expanded="' + anyOpen + '">' +
+        icon(anyOpen ? "chevronDown" : "layers", 14) + (anyOpen ? ' Contraer áreas' : ' Expandir áreas') + '</button>' +
+      '</section>' +
+      '<p class="lib-count" id="library-count" aria-live="polite">' + esc(libraryCountText(model)) + '</p>';
+  }
+
+  function libraryEmpty() {
+    var active = state.library.filter !== "todas" || !!state.library.q || !!state.library.area;
+    return UI.emptyState({
+      icon: "search",
+      title: state.library.q ? "Ningún mazo coincide con «" + state.library.q + "»" : "Ningún mazo en este filtro",
+      text: "Prueba con otra palabra, cambia el área o vuelve a ver todos los mazos. Las tarjetas y el progreso no cambian.",
+      actions: active ? '<button class="s-btn" type="button" data-action="clear-filters">Limpiar filtros</button>' : ""
+    });
+  }
+
+  function deckRowHTML(m) {
+    var href = deckHref(m.sheet.id);
+    var title = m.sheet.title;
+    var category = m.category ? m.category.title : (m.area ? m.area.title : "");
+    var chip = m.active
+      ? '<span class="s-chip s-chip--accent">' + icon("play", 10) + 'En curso</span>'
+      : (m.completed ? '<span class="s-chip s-chip--green">' + icon("checkCircle", 10) + 'Dominada</span>' : "");
+    var errorBadge = m.stats.errors
+      ? '<span class="deck-row-error">' + icon("alert", 11) + m.stats.errors + ' con error</span>' : "";
+    var primary = m.active
+      ? '<a class="s-btn s-btn--sm deck-row-cta" href="#/sesion" data-nav>' + icon("play", 12) + ' Continuar</a>'
+      : '<a class="s-btn s-btn--ghost s-btn--sm deck-row-cta" href="' + href + '" data-nav>Abrir</a>';
+    return '<li class="deck-row" data-deck="' + esc(m.sheet.id) + '" style="--area:' + esc(m.area ? m.area.accent : "var(--accent)") + '">' +
+      '<a class="deck-row-link" href="' + href + '" data-nav aria-label="' +
+        esc(title + ". " + category + ". " + pluralCards(m.stats.total) + ", " + m.stats.percent + " % de dominio, " + m.pending + " pendientes. " + m.last) + '">' +
+        '<span class="deck-row-title">' + esc(title) + '</span>' +
+        '<span class="deck-row-meta">' +
+          '<span><b>' + m.stats.total + '</b> ' + plural(m.stats.total, "tarjeta", "tarjetas") + '</span>' +
+          '<span><b>' + m.stats.percent + '%</b> dominio</span>' +
+          '<span><b>' + m.pending + '</b> ' + plural(m.pending, "pendiente", "pendientes") + '</span>' +
+          '<span class="deck-row-last">' + esc(m.last) + '</span>' +
+          errorBadge +
+        '</span>' +
+      '</a>' +
+      '<span class="deck-row-state">' + chip + '</span>' +
+      '<span class="deck-row-actions">' + primary + rowMenuHTML(m) + '</span>' +
+      '</li>';
+  }
+
+  function rowMenuHTML(m) {
+    var id = esc(m.sheet.id);
+    var items = [];
+    if (m.pending > 0) items.push('<button type="button" data-action="start-session" data-mode="quick" data-deck="' + id + '">' + icon("rotate", 13) + '<span>Repaso rápido</span></button>');
+    if (m.stats.errors) items.push('<button type="button" data-action="start-session" data-mode="errors" data-deck="' + id + '">' + icon("alert", 13) + '<span>Errores · ' + m.stats.errors + '</span></button>');
+    items.push('<button type="button" data-action="start-session" data-mode="exam" data-deck="' + id + '"' + (m.stats.total ? "" : " disabled") + '>' + icon("target", 13) + '<span>Examen</span></button>');
+    items.push('<button type="button" data-action="start-session" data-mode="free" data-deck="' + id + '">' + icon("cards", 13) + '<span>Estudio libre</span></button>');
+    items.push('<a href="' + esc(dashboardHref(m.sheet.id, m.sheet.id)) + '">' + icon("book", 13) + '<span>Ficha resumen</span></a>');
+    return '<details class="row-menu"><summary aria-label="Más acciones para ' + esc(m.sheet.title) + '" title="Más acciones">' + icon("menu", 14) + '</summary>' +
+      '<div class="row-menu-panel">' + items.join("") + '</div></details>';
+  }
+
+  function areaDescriptionHTML(area) {
+    var source = Store.getSource((area.sourceIds || [])[0]);
+    return '<p class="lib-area-desc">' + esc(area.description || "") +
+      (source ? ' <a class="lib-area-source" href="' + esc(source.file) + '" target="_blank" rel="noopener" title="' + esc(source.title) + '">' +
+        icon("external", 11) + '<span>' + esc(source.short) + '</span></a>' : "") +
+      '</p>';
+  }
+
+  function areaCategoriesHTML(group) {
+    return areaDescriptionHTML(group.area) + group.categories.map(function (entry) {
+      var count = entry.decks.length < entry.total
+        ? entry.decks.length + ' de ' + pluralDecks(entry.total)
+        : pluralDecks(entry.total);
+      return '<div class="lib-cat">' +
+        '<div class="lib-cat-head"><h3>' + esc(entry.category.title) + '</h3><span>' + count + '</span></div>' +
+        '<ul class="lib-deck-list">' + entry.decks.map(deckRowHTML).join("") + '</ul>' +
+        '</div>';
+    }).join("");
+  }
+
+  function areaGroupHTML(group) {
+    var area = group.area;
+    var st = group.stats;
+    var open = state.library.open.indexOf(area.id) >= 0;
+    var filtering = state.library.filter !== "todas" || !!state.library.q || !!state.library.area;
+    var deckText = filtering
+      ? group.decks.length + ' de ' + pluralDecks(group.total)
+      : pluralDecks(group.total);
+    return '<details class="lib-area"' + (open ? " open" : "") + ' data-area-id="' + esc(area.id) + '" style="--area:' + esc(area.accent) + '">' +
+      '<summary class="lib-area-sum">' +
+        '<span class="lib-area-icon">' + icon(area.icon || "cards", 18) + '</span>' +
+        '<span class="lib-area-copy"><b>' + esc(area.title) + '</b>' +
+          '<small>' + group.categories.length + ' ' + plural(group.categories.length, "categoría", "categorías") +
+          ' · ' + deckText + ' · ' + pluralCards(st.cards) + '</small></span>' +
+        '<span class="lib-area-stats">' +
+          '<span><b>' + st.percent + '%</b> dominio</span>' +
+          '<span><b>' + st.pending + '</b> ' + plural(st.pending, "pendiente", "pendientes") + '</span>' +
+          '<span class="lib-area-last">' + esc(st.last) + '</span>' +
+        '</span>' +
+        '<span class="lib-area-bar">' + miniBar(st.percent, "Dominio de " + area.title) + '</span>' +
+        '<span class="lib-area-caret">' + icon("chevronDown", 16) + '</span>' +
+      '</summary>' +
+      /* El contenido de un grupo cerrado se genera al abrirlo: menos DOM y
+         menos trabajo de cálculo en la portada. */
+      '<div class="lib-area-body" data-area-body="' + esc(area.id) + '">' + (open ? areaCategoriesHTML(group) : "") + '</div>' +
+      '</details>';
+  }
+
+  function libraryBodyHTML(model) {
+    if (!model.shown) return libraryEmpty();
+    return '<div class="lib-areas">' + model.areas.map(areaGroupHTML).join("") + '</div>';
+  }
+
+  function libHelpHTML() {
+    return '<details class="lib-help">' +
+      '<summary>' + icon("compass", 15) + '<span>Cuatro formas de practicar</span>' + icon("chevronDown", 14) + '</summary>' +
+      '<p class="lib-help-intro">Practica con tarjetas que te obligan a recordar, aplicar y explicar. El repaso se adapta a lo que dominas y a lo que todavía necesita otra vuelta.</p>' +
+      '<div class="lib-help-grid">' + Object.keys(MODES).map(function (key) {
+        var m = MODES[key];
+        return '<div class="lib-help-item"><span class="mode-icon">' + icon(m.icon, 17) + '</span>' +
+          '<div><b>' + esc(m.label) + '</b><p>' + esc(m.description) + '</p></div></div>';
+      }).join("") + '</div>' +
+      '<p class="lib-help-note">' + icon("info", 13) + ' Las tarjetas nuevas no cuentan como error. Solo verás en «Errores» lo que hayas fallado de verdad. Sin rachas inventadas: solo tu actividad.</p>' +
+      '</details>';
   }
 
   function renderDecks() {
     var totals = deckTotals();
     var active = Store.getFlashSession();
-    var sheets = C.sheets.filter(function (s) { return cardsFor(s.id).length > 0; });
-    var areasHTML = primaryAreas().map(function (area) {
-      var areaSheets = sheets.filter(function (s) {
-        var topic = Store.getTopic(s.topicId);
-        return topic && (topic.primaryAreaId || topic.areaId) === area.id;
-      });
-      if (!areaSheets.length) return "";
-      var source = Store.getSource((area.sourceIds || [])[0]);
-      var categoriesHTML = categoriesOf(area.id).map(function (category) {
-        return categoryDeckBlock(category, areaSheets.filter(function (s) { return s.categoryId === category.id; }));
-      }).join("");
-      return '<section class="deck-area" style="--area:' + esc(area.accent) + '">' +
-        '<div class="deck-area-head">' +
-          '<span class="deck-area-icon">' + icon(area.icon || "cards", 18) + '</span>' +
-          '<div><h2>' + esc(area.title) + '</h2><p>' + esc(area.description) + '</p></div>' +
-          '<span class="deck-area-meta">' + areaSheets.length + ' ' + plural(areaSheets.length, "mazo", "mazos") + (source ? ' · ' + esc(source.short) : '') + '</span>' +
-        '</div>' +
-        categoriesHTML +
-        '</section>';
-    }).join("");
-
     if (!totals.total) return showEmptyContent();
-
+    var model = computeLibrary();
     return [
-      '<section class="flash-hero">',
-        '<div class="flash-hero-copy">',
-          '<span class="s-kicker"><span class="dot"></span>Recuperación activa</span>',
-          '<h1>Recupera<br><em>lo que sabes.</em></h1>',
-          '<p>Practica con tarjetas que te obligan a recordar, aplicar y explicar. El repaso se adapta a lo que dominas y a lo que todavía necesita otra vuelta.</p>',
-          '<div class="flash-hero-actions">',
-            '<a class="s-btn s-btn--lg" href="' + (active ? "#/sesion" : (C.sheets[0] ? deckHref(C.sheets[0].id) : "#/")) + '" data-nav>' + icon("play", 16) + ' ' + (active ? "Continuar sesión" : "Empezar a practicar") + '</a>',
-            '<a class="s-btn s-btn--ghost s-btn--lg" href="../study-dashboard/index.html">' + icon("book", 16) + ' Consultar temario</a>',
-          '</div>',
-          '<div class="flash-stats">',
-            '<div><b>' + totals.reviewed + '</b><span>revisadas</span></div>',
-            '<div><b>' + totals.mastered + '</b><span>dominadas</span></div>',
-            '<div><b>' + totals.due + '</b><span>por repasar</span></div>',
-            '<div><b>' + (totals.accuracy || "—") + (totals.accuracy ? "%" : "") + '</b><span>acierto real</span></div>',
-          '</div>',
-        '</div>',
-        '<div class="flash-hero-visual" aria-hidden="true">',
-          '<div class="card-stack">',
-            '<div class="stack-card stack-card-back"><span>03</span><p>APLICAR</p></div>',
-            '<div class="stack-card stack-card-mid"><span>02</span><p>EXPLICAR</p></div>',
-            '<div class="stack-card stack-card-front"><span class="stack-tag">CONCEPTO</span><p>¿Por qué la APS no es una atención de segunda categoría?</p><span class="stack-line"></span><span class="stack-line short"></span><span class="stack-mark">' + icon("brain", 22) + '</span></div>',
-          '</div>',
-          '<span class="hero-visual-note">' + icon("loop", 14) + ' recordar · aplicar · volver</span>',
-        '</div>',
+      renderLibraryHero(totals, active, model),
+      '<section class="lib-library" aria-labelledby="lib-title">',
+        '<div class="lib-library-head"><div><span class="s-kicker"><span class="dot"></span>Mazos por área</span><h2 id="lib-title">Tu temario, en tarjetas</h2></div>' +
+          '<span class="s-small s-muted">' + pluralDecks(model.all.length) + ' · ' + pluralCards(model.totalCards) + '</span></div>',
+        renderLibraryTools(model),
+        '<div id="library-body">' + libraryBodyHTML(model) + '</div>',
       '</section>',
-      active ? activeSessionBanner(active) : "",
-      '<section class="flash-section">',
-        '<div class="flash-section-head"><div><span class="s-kicker"><span class="dot"></span>Cuatro formas</span><h2>Elige cómo practicar</h2></div><span class="s-small s-muted">Sin rachas inventadas. Solo tu actividad.</span></div>',
-        modeExplainer(),
-      '</section>',
-      '<section class="flash-section">',
-        '<div class="flash-section-head"><div><span class="s-kicker"><span class="dot"></span>Mazos por área</span><h2>Tu temario, en tarjetas</h2></div><span class="s-small s-muted">' + sheets.length + ' mazos · ' + totals.total + ' tarjetas</span></div>',
-        areasHTML,
-      '</section>',
+      libHelpHTML(),
       '<section class="flash-quote">',
-        '<span>' + icon("brain", 22) + '</span>',
+        '<span>' + icon("brain", 20) + '</span>',
         '<p>La sensación de haber leído no es lo mismo que poder recordarlo. Volver a intentarlo es parte del método.</p>',
       '</section>'
     ].join("");
+  }
+
+  function refreshLibraryBody(model) {
+    suppressToggle = true;
+    var body = qs("#library-body");
+    if (body) body.innerHTML = libraryBodyHTML(model);
+    var count = qs("#library-count");
+    if (count) count.textContent = libraryCountText(model);
+    var expand = qs(".lib-expand");
+    if (expand) {
+      var anyOpen = model.areas.some(function (g) { return state.library.open.indexOf(g.area.id) >= 0; });
+      expand.setAttribute("data-action", anyOpen ? "collapse-all" : "expand-all");
+      expand.setAttribute("aria-expanded", String(anyOpen));
+      expand.innerHTML = icon(anyOpen ? "chevronDown" : "layers", 14) + (anyOpen ? ' Contraer áreas' : ' Expandir áreas');
+    }
+    qsa(".lib-seg [data-state]").forEach(function (btn) {
+      var id = btn.getAttribute("data-state");
+      btn.setAttribute("aria-pressed", String(state.library.filter === id));
+      var badge = btn.querySelector("b");
+      if (badge) badge.textContent = model.counts[id];
+    });
+    var select = qs("#lib-area");
+    if (select) select.value = state.library.area;
+    setTimeout(function () { suppressToggle = false; }, 0);
+  }
+
+  var AUTO_OPEN_LIMIT = 48;
+
+  function applyLibrary(patch, opts) {
+    if (state.route.name !== "decks") return;
+    Object.assign(state.library, patch || {});
+    var model = computeLibrary();
+    var active = state.library.filter !== "todas" || !!state.library.q;
+    if (opts && opts.autoOpen && active) {
+      var matched = model.areas.filter(function (g) { return g.decks.length; }).map(function (g) { return g.area.id; });
+      /* Conserva solo grupos con coincidencias y evita abrir 200 filas de golpe:
+         con muchas coincidencias el resumen por área sigue siendo la guía. */
+      state.library.open = state.library.open.filter(function (id) { return matched.indexOf(id) >= 0; });
+      if (model.shown <= AUTO_OPEN_LIMIT) state.library.open = matched;
+      else if (!state.library.open.length) state.library.open = matched.slice(0, 1);
+    }
+    refreshLibraryBody(model);
+    replaceHash(libraryHash(state.library));
+  }
+
+  function clearLibrary() {
+    var input = qs("#lib-search");
+    if (input) input.value = "";
+    state.library.filter = "todas";
+    state.library.area = "";
+    state.library.q = "";
+    state.library.open = [];
+    var model = computeLibrary();
+    refreshLibraryBody(model);
+    replaceHash("#/");
+    if (input) input.focus();
+  }
+
+  function toggleAllAreas() {
+    var model = computeLibrary();
+    var anyOpen = model.areas.some(function (g) {
+      return state.library.open.indexOf(g.area.id) >= 0;
+    });
+    state.library.open = anyOpen ? [] : model.areas.map(function (g) { return g.area.id; });
+    refreshLibraryBody(model);
+    replaceHash(libraryHash(state.library));
+  }
+
+  function closeRowMenus(except) {
+    qsa("details.row-menu[open]").forEach(function (el) {
+      if (el !== except) el.removeAttribute("open");
+    });
+  }
+
+  function goLibrary() {
+    var target = state.librarySaved.hash || "#/";
+    state.restoreScroll = state.librarySaved.scroll || 0;
+    if (location.hash === target) renderRoute({ scrollY: state.restoreScroll });
+    else location.hash = target;
   }
 
   /* ------------------------------------------------------------------ */
   /* Vista de mazo                                                       */
   /* ------------------------------------------------------------------ */
 
-  function modeAction(modeKey, deckId) {
+  function modeButton(modeKey, deckId, primary) {
     var m = MODES[modeKey];
     var cards = cardsFor(deckId);
     var stats = Store.getDeckStats(deckId);
@@ -537,10 +875,10 @@
     else if (modeKey === "quick") { count = Math.min(20, stats.due + stats.newCards); if (!count) { disabled = true; note = "Nada pendiente"; } }
     else if (modeKey === "exam") { count = Math.min(20, cards.filter(function (c) { return c.type !== "concept"; }).length); if (!count) { disabled = true; note = "Sin tarjetas de examen"; } }
     else if (modeKey === "errors") { count = stats.errors; if (!count) { disabled = true; note = "Sin errores"; } }
-    return '<button class="mode-action ' + (disabled ? "is-disabled" : "") + '" type="button" data-action="start-session" data-mode="' + modeKey + '" data-deck="' + esc(deckId) + '"' + (disabled ? ' disabled aria-disabled="true"' : '') + '>' +
-      '<span class="mode-action-icon">' + icon(m.icon, 19) + '</span>' +
-      '<span class="mode-action-copy"><b>' + esc(m.label) + '</b><small>' + (note || count + ' ' + plural(count, "tarjeta", "tarjetas")) + '</small></span>' +
-      icon("arrow", 15) + '</button>';
+    return '<button class="mode-btn' + (primary ? " is-primary" : "") + (disabled ? " is-disabled" : "") + '" type="button" data-action="start-session" data-mode="' + modeKey + '" data-deck="' + esc(deckId) + '"' + (disabled ? ' disabled aria-disabled="true"' : '') + '>' +
+      icon(m.icon, 17) +
+      '<span class="mode-btn-copy"><b>' + esc(m.label) + '</b><small>' + (note || count + ' ' + plural(count, "tarjeta", "tarjetas")) + '</small></span>' +
+      '</button>';
   }
 
   function cardListRow(card) {
@@ -563,68 +901,61 @@
     var cards = cardsFor(deck.id);
     var active = Store.getFlashSession(deck.id);
     var sheet = deck.kind === "sheet" ? deck.sheet : (deck.topic ? originSheetFor(deck.topic.id) : null);
-    var backHref = "#/";
-    var backLabel = "Todos los mazos";
-    if (state.fromDashboard) {
-      backHref = sheet ? dashboardHref(sheet.id, deck.id) : "../study-dashboard/index.html";
-      backLabel = sheet ? "Volver a la ficha" : "Volver al dashboard";
-    }
+    var backHref = state.librarySaved.hash || libraryHash(state.library);
     var sessions = (Store.getState().sessions || []).filter(function (s) { return s.deckId === deck.id; }).slice(0, 3);
     var crumb = '<div class="deck-breadcrumb"><span class="deck-area-dot"></span><span>' + esc(area ? area.title : "") + '</span>' + icon("chevronRight", 12) +
       (category ? '<span>' + esc(category.title) + '</span>' + icon("chevronRight", 12) : '') +
       '<span>' + (deck.kind === "sheet" ? "Ficha" : "Mazo") + '</span></div>';
+    var fichaHref = esc(sheet ? dashboardHref(sheet.id, deck.id) : "../study-dashboard/index.html");
+    var backLink = '<div class="deck-topline">' +
+      '<a class="flash-back" href="' + esc(backHref) + '" data-nav data-restore-library>' + icon("arrowLeft", 15) + ' Biblioteca</a>' +
+      '<span class="deck-topline-actions">' +
+        (active ? '<a class="s-btn s-btn--sm" href="#/sesion" data-nav>' + icon("play", 13) + ' Continuar sesión</a>' : '') +
+        '<a class="s-btn s-btn--ghost s-btn--sm" href="' + fichaHref + '">' + icon("book", 14) + ' Ficha resumen</a>' +
+      '</span></div>';
+    var pending = pendingCount(deck.id, stats);
 
     if (!cards.length) {
-      return '<div class="deck-view">' +
-        '<a class="flash-back" href="' + esc(backHref) + '"' + (state.fromDashboard ? "" : ' data-nav') + '>' + icon("arrowLeft", 15) + ' ' + esc(backLabel) + '</a>' +
+      return '<div class="deck-view">' + backLink +
         '<section class="deck-head"><span class="s-kicker">' + esc(category ? category.short : area ? area.short : "") + '</span><h1>' + esc(deck.title) + '</h1><p>' + esc(deck.summary) + '</p></section>' +
         UI.emptyState({
           icon: "cards", title: "Este mazo todavía no tiene tarjetas",
           text: "La ficha resumen sí puede estar disponible. Consulta el temario o elige otro mazo para practicar.",
-          actions: '<a class="s-btn" href="' + esc(sheet ? dashboardHref(sheet.id, deck.id) : "../study-dashboard/index.html") + '">Consultar ficha resumen</a><a class="s-btn s-btn--ghost" href="#/" data-nav>Elegir otro mazo</a>'
+          actions: '<a class="s-btn" href="' + fichaHref + '">Consultar ficha resumen</a>' +
+            '<a class="s-btn s-btn--ghost" href="' + esc(backHref) + '" data-nav data-restore-library>Elegir otro mazo</a>'
         }) + '</div>';
     }
 
     return [
       '<div class="deck-view">',
-        '<a class="flash-back" href="' + esc(backHref) + '"' + (state.fromDashboard ? "" : ' data-nav') + '>' + icon("arrowLeft", 15) + ' ' + esc(backLabel) + '</a>',
-        '<section class="deck-head" style="--area:' + esc(area ? area.accent : "var(--accent)") + '">',
+        backLink,
+        '<header class="deck-head" style="--area:' + esc(area ? area.accent : "var(--accent)") + '">',
           crumb,
           '<h1>' + esc(deck.title) + '</h1>',
           '<p>' + esc(deck.summary) + '</p>',
-          '<div class="deck-head-meta">',
-            '<span class="s-chip">' + icon("cards", 13) + stats.total + ' tarjetas</span>',
-            '<span class="s-chip">' + icon("checkCircle", 13) + stats.mastered + ' dominadas</span>',
-            '<span class="s-chip">' + icon("rotate", 13) + stats.due + ' por repasar</span>',
-            '<span class="s-chip">' + icon("alert", 13) + stats.errors + ' con error</span>',
+          '<div class="deck-facts">',
+            '<span><b>' + stats.total + '</b> ' + plural(stats.total, "tarjeta", "tarjetas") + '</span>',
+            '<span><b>' + stats.reviewed + '</b> de ' + stats.total + ' revisadas</span>',
+            '<span><b>' + stats.mastered + '</b> ' + plural(stats.mastered, "dominada", "dominadas") + '</span>',
+            '<span><b>' + pending + '</b> ' + plural(pending, "pendiente", "pendientes") + '</span>',
+            stats.errors ? '<span class="deck-fact-error"><b>' + stats.errors + '</b> con error</span>' : '',
+            '<span class="deck-last">' + (stats.lastReviewAt ? 'Última práctica: ' + esc(UI.formatRelative(stats.lastReviewAt)) : 'Sin practicar todavía') + '</span>',
           '</div>',
-          '<div class="deck-head-actions">',
-            '<a class="s-btn s-btn--ghost" href="' + esc(sheet ? dashboardHref(sheet.id, deck.id) : "../study-dashboard/index.html") + '">' + icon("book", 15) + ' Consultar ficha resumen</a>',
-            active ? '<a class="s-btn" href="#/sesion" data-nav>' + icon("play", 14) + ' Continuar sesión</a>' : '',
-          '</div>',
-        '</section>',
-
-        active ? activeSessionBanner(active) : "",
-
-        '<section class="deck-dashboard">',
-          '<div class="deck-progress-panel">',
-            '<div class="deck-progress-ring" style="--p:' + stats.percent + '"><div><b>' + stats.percent + '%</b><span>dominio</span></div></div>',
-            '<div class="deck-progress-copy"><span class="s-kicker">Estado del mazo</span><h2>' + stats.reviewed + ' de ' + stats.total + ' revisadas</h2><p class="s-small s-soft">' + (stats.lastReviewAt ? "Última práctica: " + esc(UI.formatRelative(stats.lastReviewAt)) : "Todavía no practicaste este mazo.") + '</p>' +
-              UI.progressBar(stats.percent, "Dominio de " + deck.title) +
-              '<div class="deck-progress-legend"><span><b>' + stats.newCards + '</b> nuevas</span><span><b>' + stats.reviewed + '</b> revisadas</span><span><b>' + stats.mastered + '</b> dominadas</span></div>' +
-            '</div>',
-          '</div>',
-          '<div class="mode-actions">' + ["free", "quick", "exam", "errors"].map(function (m) { return modeAction(m, deck.id); }).join("") + '</div>',
-        '</section>',
+          '<div class="deck-meter">' + miniBar(stats.percent, "Dominio de " + deck.title) + '<span>' + stats.percent + '% de dominio</span></div>',
+          active ? '<p class="deck-live">' + icon("play", 12) + ' Sesión en curso · ' + esc(modeMeta(active.mode).short) + ' · tarjeta ' + (active.index + 1) + ' de ' + active.queue.length + '</p>' : '',
+          '<div class="deck-modes">' + ["free", "quick", "exam", "errors"].map(function (m) {
+            return modeButton(m, deck.id, !active && m === "free");
+          }).join("") + '</div>',
+        '</header>',
 
         '<section class="flash-section deck-cards-section">',
-          '<div class="flash-section-head"><div><span class="s-kicker"><span class="dot"></span>Contenido</span><h2>Tarjetas del mazo</h2></div><span class="s-small s-muted">' + cards.length + ' ' + plural(cards.length, "tarjeta", "tarjetas") + '</span></div>',
+          '<div class="flash-section-head"><div><span class="s-kicker"><span class="dot"></span>Contenido</span><h2>Tarjetas del mazo</h2></div><span class="s-small s-muted">' + stats.newCards + ' ' + plural(stats.newCards, "nueva", "nuevas") + ' · ' + stats.reviewed + ' ' + plural(stats.reviewed, "revisada", "revisadas") + ' · ' + stats.mastered + ' ' + plural(stats.mastered, "dominada", "dominadas") + '</span></div>',
           '<div class="flash-card-list">' + cards.map(cardListRow).join("") + '</div>',
         '</section>',
 
         sessions.length ? '<section class="flash-section"><div class="flash-section-head"><div><span class="s-kicker"><span class="dot"></span>Reciente</span><h2>Últimas sesiones</h2></div><a class="s-link s-small" href="#/historial" data-nav>Ver historial</a></div><div class="session-mini-list">' + sessions.map(sessionMiniRow).join("") + '</div></section>' : '',
 
-        '<div class="deck-note">' + icon("info", 15) + '<p>Las tarjetas nuevas no cuentan como error. Solo verás en «Errores» lo que hayas fallado de verdad.</p></div>',
+        '<p class="deck-note">' + icon("info", 14) + ' Las tarjetas nuevas no cuentan como error. Solo verás en «Errores» lo que hayas fallado de verdad.</p>',
       '</div>'
     ].join("");
   }
@@ -648,7 +979,10 @@
     var total = s.queue.length;
     var pct = total ? Math.round((s.index / total) * 100) : 0;
     return '<div class="session-header">' +
-      '<a class="flash-back" href="' + deckHref(s.deckId) + '" data-nav>' + icon("arrowLeft", 15) + ' Salir al mazo</a>' +
+      '<div class="session-header-left">' +
+        '<a class="flash-back" href="' + deckHref(s.deckId) + '" data-nav>' + icon("arrowLeft", 15) + ' Volver al mazo</a>' +
+        '<a class="session-library" href="#/" data-nav data-restore-library title="Volver a la biblioteca de mazos">' + icon("layers", 13) + ' Biblioteca</a>' +
+      '</div>' +
       '<div class="session-header-meta"><span class="s-chip s-chip--accent">' + icon(m.icon, 12) + esc(m.label) + '</span><span class="session-deck-name">' + esc(deck.title) + '</span></div>' +
       '<button class="s-btn s-btn--ghost s-btn--sm" type="button" data-action="end-session">Terminar</button>' +
       '</div>' +
@@ -656,6 +990,12 @@
         (s.mode === "exam" ? '<span>' + Object.keys(s.answers).length + ' respondidas</span>' : '<span>' + s.correct + ' correctas · ' + s.wrong + ' por reforzar</span>') +
       '</div>' + UI.progressBar(pct, "Avance de la sesión") + '</div>';
   }
+
+  function prevButton(s) {
+    if (!s || s.index <= 0) return "";
+    return '<button class="s-btn s-btn--ghost s-btn--sm" type="button" data-action="prev" title="Tarjeta anterior (←)">' + icon("arrowLeft", 14) + ' Anterior</button>';
+  }
+
 
   function cardShell(s, card, inner) {
     var m = modeMeta(s.mode);
@@ -695,16 +1035,17 @@
       if (!revealed) {
         return cardShell(s, card,
           '<div class="reveal-zone"><button class="s-btn s-btn--lg" type="button" data-action="reveal">' + icon("eye", 17) + ' Mostrar respuesta</button>' +
-          '<p class="key-hint">' + icon("info", 13) + ' Intenta recordarlo antes de revelar. También puedes pulsar Espacio.</p></div>'
+          '<p class="key-hint">' + icon("info", 13) + ' Intenta recordarlo antes de revelar. También puedes pulsar Espacio.</p></div>' +
+          (s.index > 0 ? '<div class="session-actions session-actions--muted">' + prevButton(s) + '</div>' : '')
         );
       }
       var answerBlock = '<div class="answer-block"><span class="answer-label">Respuesta</span><p>' + esc(card.answer) + '</p>' +
         (card.explanation ? '<div class="answer-explanation"><b>Por qué importa</b><p>' + esc(card.explanation) + '</p></div>' : '') +
         sourceChips + fichaLink + '</div>';
       if (checked) {
-        return cardShell(s, card, answerBlock + '<div class="session-actions"><button class="s-btn" type="button" data-action="next">' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button></div>');
+        return cardShell(s, card, answerBlock + '<div class="session-actions">' + prevButton(s) + '<button class="s-btn" type="button" data-action="next">' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button></div>');
       }
-      return cardShell(s, card, answerBlock + '<p class="rating-prompt">¿Cómo te fue al recordarlo?</p>' + ratingButtons() + '<div class="session-actions session-actions--muted">' + fichaLink + '</div>');
+      return cardShell(s, card, answerBlock + '<p class="rating-prompt">¿Cómo te fue al recordarlo?</p>' + ratingButtons() + '<div class="session-actions session-actions--muted">' + prevButton(s) + fichaLink + '</div>');
     }
 
     var optionsHTML = '<div class="option-list" role="group" aria-label="Opciones de respuesta">' + (card.options || []).map(function (opt, i) {
@@ -729,11 +1070,11 @@
     }
     var actions;
     if (isExam) {
-      actions = '<div class="session-actions"><button id="session-primary" class="s-btn" type="button" data-action="exam-next"' + (selected == null ? " disabled" : "") + '>' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button></div>';
+      actions = '<div class="session-actions">' + prevButton(s) + '<button id="session-primary" class="s-btn" type="button" data-action="exam-next"' + (selected == null ? " disabled" : "") + '>' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button></div>';
     } else if (checked) {
-      actions = '<div class="session-actions"><button class="s-btn" type="button" data-action="next">' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button>' + fichaLink + '</div>';
+      actions = '<div class="session-actions">' + prevButton(s) + '<button class="s-btn" type="button" data-action="next">' + esc(nextLabel) + ' ' + icon("arrow", 15) + '</button>' + fichaLink + '</div>';
     } else {
-      actions = '<div class="session-actions"><button id="session-primary" class="s-btn" type="button" data-action="check"' + (selected == null ? " disabled" : "") + '>' + icon("check", 15) + ' Comprobar</button><span class="key-hint">' + icon("info", 13) + ' Selecciona una opción para comprobar.</span></div>';
+      actions = '<div class="session-actions">' + prevButton(s) + '<button id="session-primary" class="s-btn" type="button" data-action="check"' + (selected == null ? " disabled" : "") + '>' + icon("check", 15) + ' Comprobar</button><span class="key-hint">' + icon("info", 13) + ' Selecciona una opción para comprobar.</span></div>';
     }
     return cardShell(s, card, optionsHTML + feedback + actions);
   }
@@ -818,7 +1159,10 @@
 
     return [
       '<div class="summary-view">',
-        '<a class="flash-back" href="' + (deck.kind === "missing" ? "#/" : deckHref(deck.id)) + '" data-nav>' + icon("arrowLeft", 15) + ' Volver al mazo</a>',
+        '<div class="summary-topline">' +
+          (deck.kind === "missing" ? '' : '<a class="flash-back" href="' + deckHref(deck.id) + '" data-nav>' + icon("arrowLeft", 15) + ' Volver al mazo</a>') +
+          '<a class="summary-library" href="#/" data-nav data-restore-library>' + icon("layers", 13) + ' Biblioteca</a>' +
+        '</div>',
         '<section class="summary-hero" style="--area:' + esc(area ? area.accent : "var(--accent)") + '">',
           '<div class="summary-score"><span class="summary-score-label">' + (s.mode === "exam" ? "Resultado del examen" : "Sesión completada") + '</span><b>' + esc(score) + '</b><span>' + s.accuracy + '% de acierto</span></div>',
           '<div class="summary-copy"><span class="s-kicker">' + icon(m.icon, 13) + ' ' + esc(m.label) + '</span><h1>' + (s.correct === s.total && s.total ? "Buen trabajo." : "Sigue afinando.") + '</h1><p>' + esc(deck.kind === "missing" ? "Sesión de estudio" : deck.title) + ' · ' + esc(UI.formatRelative(s.endedAt)) + '</p>' +
@@ -938,9 +1282,76 @@
   /* Eventos                                                             */
   /* ------------------------------------------------------------------ */
 
+  var suppressToggle = false;
+  var applySearch = UI.debounce(function () {
+    var input = qs("#lib-search");
+    if (!input) return;
+    applyLibrary({ q: input.value.trim().slice(0, 80) }, { autoOpen: true });
+  }, 180);
+
+  function onLibraryInput(e) {
+    if (state.route.name !== "decks") return;
+    if (!e.target || e.target.id !== "lib-search") return;
+    applySearch();
+  }
+
+  function onLibraryChange(e) {
+    if (state.route.name !== "decks") return;
+    if (!e.target || e.target.id !== "lib-area") return;
+    applyLibrary({ area: e.target.value }, { autoOpen: true });
+  }
+
+  function onLibraryToggle(e) {
+    var el = e.target;
+    if (!el || !el.classList || suppressToggle) return;
+    if (el.classList.contains("row-menu")) {
+      if (el.open) {
+        closeRowMenus(el);
+        /* Si no cabe bajo la fila, el panel se abre hacia arriba. */
+        el.classList.remove("is-up");
+        var panel = el.querySelector(".row-menu-panel");
+        if (panel && panel.getBoundingClientRect().bottom > window.innerHeight - 8) {
+          el.classList.add("is-up");
+        }
+      }
+      return;
+    }
+    if (!el.classList.contains("lib-area")) return;
+    var id = el.getAttribute("data-area-id");
+    if (!id) return;
+    var list = state.library.open.slice();
+    var at = list.indexOf(id);
+    if (el.open && at < 0) list.push(id);
+    else if (!el.open && at >= 0) list.splice(at, 1);
+    state.library.open = list;
+    if (el.open) {
+      var body = el.querySelector("[data-area-body]");
+      if (body && !body.innerHTML.trim()) {
+        var model = computeLibrary();
+        var group = model.areas.filter(function (g) { return g.area.id === id; })[0];
+        body.innerHTML = group ? areaCategoriesHTML(group) : libraryEmpty();
+      }
+    }
+    if (state.route.name === "decks") replaceHash(libraryHash(state.library));
+    var expand = qs(".lib-expand");
+    if (expand) {
+      var anyOpen = qsa("details.lib-area[open]").length > 0;
+      expand.setAttribute("data-action", anyOpen ? "collapse-all" : "expand-all");
+      expand.setAttribute("aria-expanded", String(anyOpen));
+      expand.innerHTML = icon(anyOpen ? "chevronDown" : "layers", 14) + (anyOpen ? ' Contraer áreas' : ' Expandir áreas');
+    }
+  }
+
   function onDocumentClick(e) {
+    if (!e.target.closest(".row-menu")) closeRowMenus();
     var nav = e.target.closest("a[data-nav]");
     if (nav) {
+      if (nav.hasAttribute("data-restore-library") && !(e.ctrlKey || e.metaKey || e.shiftKey)) {
+        e.preventDefault();
+        closeRowMenus();
+        goLibrary();
+        return;
+      }
       var href = nav.getAttribute("href") || "";
       if (href && href.charAt(0) === "#" && href === location.hash) {
         e.preventDefault();
@@ -948,10 +1359,20 @@
       }
       return;
     }
+    var stateButton = e.target.closest("[data-state]");
+    if (stateButton && state.route.name === "decks") {
+      e.preventDefault();
+      applyLibrary({ filter: stateButton.getAttribute("data-state") }, { autoOpen: true });
+      return;
+    }
     var el = e.target.closest("[data-action]");
     if (!el) return;
     var action = el.getAttribute("data-action");
-    if (action === "retry") {
+    if (action === "expand-all" || action === "collapse-all") {
+      toggleAllAreas();
+    } else if (action === "clear-filters") {
+      clearLibrary();
+    } else if (action === "retry") {
       location.reload();
     } else if (action === "start-session") {
       startSession(el.getAttribute("data-mode"), el.getAttribute("data-deck"));
@@ -978,6 +1399,8 @@
       examAnswer();
     } else if (action === "next") {
       advanceSession();
+    } else if (action === "prev") {
+      previousCard();
     } else if (action === "rate") {
       var rating = el.getAttribute("data-rating");
       var rs = currentSession();
@@ -1029,12 +1452,48 @@
 
   function onKeydown(e) {
     if (e.ctrlKey || e.metaKey || e.altKey) return;
-    if (e.target.closest("input, textarea, select")) return;
+    var inField = !!e.target.closest("input, textarea, select");
+    if (state.route.name === "decks") {
+      if (e.key === "/" && !inField) {
+        e.preventDefault();
+        var search = qs("#lib-search");
+        if (search) search.focus();
+        return;
+      }
+      if (e.key === "Escape") {
+        closeRowMenus();
+        var input = qs("#lib-search");
+        if (input && input === document.activeElement) {
+          if (input.value) {
+            input.value = "";
+            applyLibrary({ q: "" }, { autoOpen: true });
+          } else input.blur();
+        }
+        return;
+      }
+      return;
+    }
     if (state.route.name !== "session") return;
+    if (inField) return;
     var s = currentSession();
     var card = currentCard(s);
     if (!s || !card) return;
     var key = e.key;
+
+    if (key === "ArrowLeft") {
+      if (s.index > 0) {
+        e.preventDefault();
+        previousCard();
+      }
+      return;
+    }
+    if (key === "ArrowRight") {
+      if (answerFor(s, card.id)) {
+        e.preventDefault();
+        advanceSession();
+      }
+      return;
+    }
 
     if (card.type === "concept") {
       var revealed = state.revealed;
@@ -1084,26 +1543,29 @@
   /* Arranque                                                            */
   /* ------------------------------------------------------------------ */
 
+  /* Retira solo los parámetros de entrada ya consumidos: el resto del
+     contexto legítimo (por ejemplo, un origen compartido) se conserva. */
+  function cleanEntryQuery() {
+    try {
+      var u = new URL(location.href);
+      ["deck", "mode", "resume", "sheet", "from"].forEach(function (key) {
+        u.searchParams.delete(key);
+      });
+      var rest = u.searchParams.toString();
+      history.replaceState(null, "", u.pathname + (rest ? "?" + rest : "") + u.hash);
+    } catch (e) { UI.cleanQuery(); }
+  }
+
   function readEntry() {
     var deck = UI.getQuery("deck");
     var mode = UI.getQuery("mode");
     var resume = UI.getQuery("resume");
     var sheet = UI.getQuery("sheet");
-    var from = UI.getQuery("from");
-    if (sheet) {
-      state.returnSheet = sheet;
-      state.fromDashboard = from === "dashboard";
-      rememberOrigin(sheet, deck);
-    } else {
-      var origin = readOrigin();
-      if (origin) {
-        state.returnSheet = origin.sheet || "";
-        if (origin.deck && !deck) state.borrowedDeck = origin.deck;
-      }
-      if (from === "dashboard") state.fromDashboard = true;
-    }
-    if (deck && mode) rememberOrigin(sheet || state.returnSheet, deck);
-    UI.cleanQuery();
+    var origin = readOrigin();
+    if (sheet) state.returnSheet = sheet;
+    else if (origin) state.returnSheet = origin.sheet || "";
+    if (deck || sheet) rememberOrigin(sheet || state.returnSheet, deck || (origin && origin.deck) || "");
+    cleanEntryQuery();
     return { deck: deck, mode: mode, resume: resume };
   }
 
@@ -1128,7 +1590,8 @@
 
     var entry = readEntry();
     var initialHash = location.hash;
-    var entryDeck = entry.deck ? deckInfo(entry.deck) : null;
+    var entryExists = entry.deck && (Store.getSheet(entry.deck) || Store.getTopic(entry.deck));
+    var entryDeck = entryExists ? deckInfo(entry.deck) : (entry.deck ? { kind: "missing" } : null);
     if (entry.deck && entryDeck.kind !== "missing") {
       var wantsSession = entry.mode && MODES[entry.mode];
       if (wantsSession || entry.resume === "1") {
@@ -1149,14 +1612,23 @@
         replaceHash(deckHref(entry.deck));
       }
     } else if (entry.deck) {
-      replaceHash(deckHref(entry.deck));
+      replaceHash("#/");
+      state.notice = "El mazo guardado ya no está disponible; elige otro en la biblioteca.";
     } else if (!initialHash || initialHash === "#") {
       replaceHash("#/");
     }
 
     document.addEventListener("click", onDocumentClick);
     document.addEventListener("keydown", onKeydown);
-    window.addEventListener("hashchange", function () { renderRoute({ focus: true }); });
+    document.addEventListener("input", onLibraryInput);
+    document.addEventListener("change", onLibraryChange);
+    document.addEventListener("toggle", onLibraryToggle, true);
+    window.addEventListener("hashchange", function () {
+      if (state.route.name === "decks") {
+        state.librarySaved = { hash: libraryHash(state.library), scroll: window.scrollY };
+      }
+      renderRoute({ focus: true });
+    });
     document.addEventListener("visibilitychange", function () {
       if (!document.hidden && Store.isReady()) renderRoute({ scrollY: window.scrollY });
     });

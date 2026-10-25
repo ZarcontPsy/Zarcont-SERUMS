@@ -1,0 +1,27 @@
+{
+  "app": "bfcache",
+  "steps": [
+    {
+      "name": "1 dashboard → flashcards",
+      "sheetId": "sheet-mci-03",
+      "flashUrl": "http://127.0.0.1:8772/study-flashcards/index.html#/"
+    },
+    {
+      "name": "2 vuelta atrás al dashboard",
+      "url": "http://127.0.0.1:8772/study-dashboard/index.html#/",
+      "navigationType": "navigate",
+      "persisted": false,
+      "completedVisible": false,
+      "completeBtnText": null,
+      "storeSays": "2026-10-25T22:15:18.620Z",
+      "domSays": true
+    },
+    {
+      "name": "3 pageshow.persisted",
+      "url": "http://127.0.0.1:8772/study-dashboard/index.html#/",
+      "navType": "navigate",
+      "storeCompleted": "2026-10-25T22:15:18.620Z",
+      "domCompleted": false
+    }
+  ]
+}

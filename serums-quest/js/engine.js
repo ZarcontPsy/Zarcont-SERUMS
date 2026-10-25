@@ -598,6 +598,18 @@
       achievementXp += Number(a.reward.xp) || 0;
       achievementCoins += Number(a.reward.coins) || 0;
     });
+    var charactersUnlocked = [];
+    if (window.QuestCollection) {
+      charactersUnlocked = window.QuestCollection.syncUnlocks(state, atISO).map(function (character) {
+        return {
+          id: character.id,
+          name: character.name,
+          title: character.title,
+          rarity: character.rarity,
+          rarityLabel: character.rarityLabel
+        };
+      });
+    }
     var levelAfter = levelOf(state);
     var rankAfter = rankOf(state);
     var recommendations = [];
@@ -637,6 +649,7 @@
       achievements: unlocked.map(function (a) {
         return { id: a.def.id, name: a.def.name, xp: a.reward.xp, coins: a.reward.coins };
       }),
+      charactersUnlocked: charactersUnlocked,
       stageChange: stageChange,
       levelBefore: session.levelAtStart || 1,
       levelAfter: levelAfter,

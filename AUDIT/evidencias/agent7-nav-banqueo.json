@@ -1,0 +1,33 @@
+{
+  "app": "banqueo",
+  "route": "#review",
+  "before": {
+    "hash": "#review",
+    "url": "http://127.0.0.1:8777/EXAMEN%20STUDIO/Examen%20Studio.html#review",
+    "heading": "Revisión y auditoría"
+  },
+  "homeClick": {
+    "clicked": {
+      "x": 1205,
+      "y": 36.5,
+      "w": 40,
+      "h": 40
+    },
+    "after": {
+      "hash": "#hub",
+      "url": "http://127.0.0.1:8777/EXAMEN%20STUDIO/Examen%20Studio.html#hub",
+      "heading": "Tu profesión.Tu banco.",
+      "active": "BODY"
+    },
+    "frameNavigationsDuringHome": []
+  },
+  "hub": {
+    "attr": "../index.html",
+    "resolved": "http://127.0.0.1:8777/index.html"
+  },
+  "afterHub": {
+    "url": "http://127.0.0.1:8777/index.html",
+    "title": "SERUMS HUB — Centro de aplicaciones",
+    "hasHubCards": true
+  }
+}

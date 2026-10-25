@@ -1,0 +1,310 @@
+{
+  "viewport": "1440x900",
+  "cases": [
+    {
+      "cardH": 620,
+      "cards": [
+        {
+          "app": "banqueo",
+          "cardH": 620,
+          "bodyH": 247.2,
+          "inner": 216,
+          "natural": 247.2,
+          "free": -0.2,
+          "padT": 14,
+          "padB": 17,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 498.8,
+              "bottom": 508.8
+            },
+            {
+              "cls": "H2",
+              "h": 33,
+              "mt": 5,
+              "mb": 5,
+              "top": 513.8,
+              "bottom": 546.8
+            },
+            {
+              "cls": "app-desc",
+              "h": 33.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 551.8,
+              "bottom": 585.3
+            },
+            {
+              "cls": "app-meta",
+              "h": 11,
+              "mt": 7,
+              "mb": 0,
+              "top": 592.3,
+              "bottom": 603.3
+            },
+            {
+              "cls": "app-quote",
+              "h": 60,
+              "mt": 15,
+              "mb": 0,
+              "top": 618.3,
+              "bottom": 678.3
+            },
+            {
+              "cls": "app-foot",
+              "h": 23,
+              "mt": 13.6562,
+              "mb": 0,
+              "top": 692,
+              "bottom": 715
+            }
+          ]
+        },
+        {
+          "app": "plazas",
+          "cardH": 620,
+          "bodyH": 247.2,
+          "inner": 216,
+          "natural": 247.2,
+          "free": -0.2,
+          "padT": 14,
+          "padB": 17,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 498.8,
+              "bottom": 508.8
+            },
+            {
+              "cls": "H2",
+              "h": 33,
+              "mt": 5,
+              "mb": 5,
+              "top": 513.8,
+              "bottom": 546.8
+            },
+            {
+              "cls": "app-desc",
+              "h": 33.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 551.8,
+              "bottom": 585.3
+            },
+            {
+              "cls": "app-meta",
+              "h": 11,
+              "mt": 7,
+              "mb": 0,
+              "top": 592.3,
+              "bottom": 603.3
+            },
+            {
+              "cls": "app-quote",
+              "h": 36.5,
+              "mt": 15,
+              "mb": 0,
+              "top": 618.3,
+              "bottom": 654.8
+            },
+            {
+              "cls": "app-foot",
+              "h": 23,
+              "mt": 37.1719,
+              "mb": 0,
+              "top": 692,
+              "bottom": 715
+            }
+          ]
+        },
+        {
+          "app": "dashboard",
+          "cardH": 620,
+          "bodyH": 247.2,
+          "inner": 216,
+          "natural": 247.2,
+          "free": -0.2,
+          "padT": 14,
+          "padB": 17,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 498.8,
+              "bottom": 508.8
+            },
+            {
+              "cls": "H2",
+              "h": 33,
+              "mt": 5,
+              "mb": 5,
+              "top": 513.8,
+              "bottom": 546.8
+            },
+            {
+              "cls": "app-desc",
+              "h": 16.8,
+              "mt": 0,
+              "mb": 0,
+              "top": 551.8,
+              "bottom": 568.5
+            },
+            {
+              "cls": "app-meta",
+              "h": 11,
+              "mt": 7,
+              "mb": 0,
+              "top": 575.5,
+              "bottom": 586.5
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 47.9,
+              "mt": 8,
+              "mb": 0,
+              "top": 594.5,
+              "bottom": 642.4
+            },
+            {
+              "cls": "app-foot",
+              "h": 23,
+              "mt": 49.5781,
+              "mb": 0,
+              "top": 692,
+              "bottom": 715
+            }
+          ]
+        },
+        {
+          "app": "flashcards",
+          "cardH": 620,
+          "bodyH": 247.2,
+          "inner": 216,
+          "natural": 247.2,
+          "free": -0.2,
+          "padT": 14,
+          "padB": 17,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 498.8,
+              "bottom": 508.8
+            },
+            {
+              "cls": "H2",
+              "h": 33,
+              "mt": 5,
+              "mb": 5,
+              "top": 513.8,
+              "bottom": 546.8
+            },
+            {
+              "cls": "app-desc",
+              "h": 33.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 551.8,
+              "bottom": 585.3
+            },
+            {
+              "cls": "app-meta",
+              "h": 11,
+              "mt": 7,
+              "mb": 0,
+              "top": 592.3,
+              "bottom": 603.3
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 47.9,
+              "mt": 8,
+              "mb": 0,
+              "top": 611.3,
+              "bottom": 659.2
+            },
+            {
+              "cls": "app-foot",
+              "h": 23,
+              "mt": 32.7969,
+              "mb": 0,
+              "top": 692,
+              "bottom": 715
+            }
+          ]
+        },
+        {
+          "app": "quest",
+          "cardH": 620,
+          "bodyH": 247.2,
+          "inner": 216,
+          "natural": 247.2,
+          "free": -0.2,
+          "padT": 14,
+          "padB": 17,
+          "kids": [
+            {
+              "cls": "app-kicker",
+              "h": 10,
+              "mt": 0,
+              "mb": 0,
+              "top": 498.8,
+              "bottom": 508.8
+            },
+            {
+              "cls": "H2",
+              "h": 33,
+              "mt": 5,
+              "mb": 5,
+              "top": 513.8,
+              "bottom": 546.8
+            },
+            {
+              "cls": "app-desc",
+              "h": 33.6,
+              "mt": 0,
+              "mb": 0,
+              "top": 551.8,
+              "bottom": 585.3
+            },
+            {
+              "cls": "app-meta",
+              "h": 11,
+              "mt": 7,
+              "mb": 0,
+              "top": 592.3,
+              "bottom": 603.3
+            },
+            {
+              "cls": "app-progress is-empty",
+              "h": 47.9,
+              "mt": 8,
+              "mb": 0,
+              "top": 611.3,
+              "bottom": 659.2
+            },
+            {
+              "cls": "app-foot",
+              "h": 23,
+              "mt": 32.7969,
+              "mb": 0,
+              "top": 692,
+              "bottom": 715
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

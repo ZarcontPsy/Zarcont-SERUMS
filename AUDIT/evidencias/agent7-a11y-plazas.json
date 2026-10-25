@@ -1,0 +1,189 @@
+{
+  "groupsBefore": 1,
+  "groupsAfterDoubleMount": 1,
+  "reducedMotion": true,
+  "buttons": [
+    {
+      "kind": "hub",
+      "tag": "A",
+      "type": null,
+      "form": false,
+      "label": "Volver al HUB",
+      "title": "Volver al HUB",
+      "pressed": null,
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(8, 8, 8)",
+      "contrast": 20.03,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    },
+    {
+      "kind": "fullscreen",
+      "tag": "BUTTON",
+      "type": "button",
+      "form": false,
+      "label": "Pantalla completa",
+      "title": "Pantalla completa",
+      "pressed": "false",
+      "minW": "40px",
+      "minH": "40px",
+      "transition": "0s",
+      "anim": "none",
+      "color": "rgb(255, 255, 255)",
+      "bg": "rgb(8, 8, 8)",
+      "contrast": 20.03,
+      "outlineWidth": "3px",
+      "outlineStyle": "none"
+    }
+  ],
+  "duplicateChromeLabels": [],
+  "iconCount": 2,
+  "forms": 0,
+  "tabOrder": [
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Estadísticas",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Geolocalización",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Favoritos",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Adjudicación",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Comparador",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Configuración",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Serums · Map\n      7,323 registros · 6,9",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": "hub",
+      "label": "Volver al HUB",
+      "outline": "2px solid rgb(255, 255, 255)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": "fullscreen",
+      "label": "Pantalla completa",
+      "outline": "2px solid rgb(255, 255, 255)",
+      "bg": "rgba(127, 127, 127, 0.16)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Exportar",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Importar Excel",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(255, 255, 255, 0.06)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Cambiar tema",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(255, 255, 255, 0.06)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Notificaciones",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(255, 255, 255, 0.06)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Combinaciones de teclas",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "DIV",
+      "kind": null,
+      "label": "Mapa",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "DIV",
+      "kind": null,
+      "label": "783 plazas",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Controles de visualización del mapa",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgb(255, 255, 255)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Abre esta zona en Google Maps (se abre en una nueva ventana)",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "BUTTON",
+      "kind": null,
+      "label": "Combinaciones de teclas",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    },
+    {
+      "tag": "A",
+      "kind": null,
+      "label": "Términos (se abre en una nueva pestaña)",
+      "outline": "2px solid rgb(223, 37, 49)",
+      "bg": "rgba(0, 0, 0, 0)"
+    }
+  ],
+  "startFocus": "Explorar mapa"
+}

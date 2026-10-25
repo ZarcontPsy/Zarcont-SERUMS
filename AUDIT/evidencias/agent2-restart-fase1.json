@@ -1,0 +1,71 @@
+{
+  "fase": "1-antes-de-cerrar",
+  "steps": [
+    {
+      "name": "dashboard"
+    },
+    {
+      "name": "flashcards",
+      "deck": "sheet-aps-01",
+      "id": "session-1792966430990",
+      "index": 1,
+      "answers": 1,
+      "correct": 1
+    },
+    {
+      "name": "B",
+      "xp": 10,
+      "coins": 5,
+      "revision": 4,
+      "active": {
+        "id": "session_mvodpryd_0dc0f1",
+        "answered": 1
+      }
+    },
+    {
+      "name": "banqueo",
+      "banInfo": {
+        "qid": "2025-i-biologia-q001",
+        "review": [
+          "2025-i-biologia-q002",
+          "2025-i-biologia-q001"
+        ]
+      },
+      "banSession": {
+        "url": "http://127.0.0.1:8772/EXAMEN%20STUDIO/Examen%20Studio.html#practice/session",
+        "practice": true
+      }
+    },
+    {
+      "name": "plazas",
+      "favs": [
+        "00005055|ENFERMERIA",
+        "00004849|ENFERMERIA"
+      ],
+      "theme": "light"
+    },
+    {
+      "name": "estado en disco antes de cerrar",
+      "studyState": "2026-10-25T22:13:59.742Z",
+      "snapshot": true,
+      "quest": true,
+      "review": 2,
+      "plazasFavs": 2,
+      "keys": [
+        "banqueo-review-v1",
+        "banqueo-theme-v1",
+        "es-theme",
+        "serums_favoritos",
+        "serums_notifs",
+        "serums_theme",
+        "serumsquest:backup:v1",
+        "serumsquest:snapshot:v1",
+        "serumsquest:state:v1",
+        "serumsquest:theme",
+        "study-state-v1",
+        "study-theme",
+        "studyhub:snapshot:v1"
+      ]
+    }
+  ]
+}

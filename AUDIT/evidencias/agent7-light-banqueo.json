@@ -1,0 +1,27 @@
+{
+  "theme": "light",
+  "bodyBg": "rgb(241, 239, 233)",
+  "buttons": [
+    {
+      "kind": "home",
+      "color": "rgb(87, 85, 90)",
+      "bg": "rgb(241, 239, 233)",
+      "contrast": 6.4,
+      "label": "Volver al inicio de Banqueo"
+    },
+    {
+      "kind": "hub",
+      "color": "rgb(87, 85, 90)",
+      "bg": "rgb(241, 239, 233)",
+      "contrast": 6.4,
+      "label": "Volver al HUB"
+    },
+    {
+      "kind": "fullscreen",
+      "color": "rgb(87, 85, 90)",
+      "bg": "rgb(241, 239, 233)",
+      "contrast": 6.4,
+      "label": "Pantalla completa"
+    }
+  ]
+}

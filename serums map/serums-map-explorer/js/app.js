@@ -135,6 +135,9 @@ window.App = (function () {
   }
   /* Cambios de estado (favorito / adjudicada / bloqueada): refrescan tarjetas, contadores y marcadores. */
   function afterStateChange() {
+    /* Las listas filtradas dependen de las marcas del usuario: sin invalidar
+       la caché, el listado quedaba desfasado respecto de los contadores. */
+    _filteredCache = null;
     renderFavBadge(); renderQuick(); renderTallies(); renderChips();
     if (S.view === 'map' || S.view === 'results') { window.Results.render(); window.MapView.updateIcons(); }
     if (S.view === 'favoritos') renderFavoritos();
@@ -505,10 +508,37 @@ window.App = (function () {
     var card = document.getElementById('selectedCard');
     if (card && card.classList.contains('open')) renderSelectionCard(p);
   }
+  /* ---------- modales accesibles (ficha, clave, exportación) ---------- */
+  var modalReturnFocus = null;
+  function openBackdrop(id, focusSelector) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    if (!el.classList.contains('open')) modalReturnFocus = document.activeElement;
+    if (!el.hasAttribute('role')) el.setAttribute('role', 'dialog');
+    el.setAttribute('aria-modal', 'true');
+    el.classList.add('open');
+    var target = focusSelector ? el.querySelector(focusSelector) : null;
+    if (target) window.setTimeout(function () { try { target.focus(); } catch (e) {} }, 30);
+  }
+  function closeBackdrop(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.classList.remove('open');
+    if (modalReturnFocus && document.contains(modalReturnFocus) && typeof modalReturnFocus.focus === 'function') {
+      try { modalReturnFocus.focus(); } catch (e) {}
+    }
+    modalReturnFocus = null;
+  }
   function selectPlaza(id, opts) {
     opts = opts || {};
     S.selectedId = id;
     var p = byId(id); if (!p) return;
+    /* En móvil el panel lateral tapa el mapa: al elegir una plaza se cierra
+       para que la tarjeta contextual quede visible. */
+    if (isMobileSide()) {
+      var side = document.getElementById('side');
+      if (side && side.classList.contains('open')) { side.classList.remove('open'); syncSideButton(); }
+    }
     window.Results.render();
     if (p.lat != null) {
       window.MapView.focus(p);
@@ -521,7 +551,8 @@ window.App = (function () {
     var p = byId(id); if (!p) return;
     document.getElementById('detailTitle').textContent = p.establecimiento;
     document.getElementById('detailBody').innerHTML = window.Results.detailHtml(p);
-    document.getElementById('detailModal').classList.add('open');
+    document.getElementById('detailModal').setAttribute('aria-labelledby', 'detailTitle');
+    openBackdrop('detailModal', '#detailClose');
     wireDetailButtons(p);
   }
   /* botones de estado dentro de la ficha (favorita / adjudicada / bloqueada) */
@@ -562,7 +593,7 @@ window.App = (function () {
       applyOverrides(); refresh(false);
       window.toast('Ubicación guardada.');
       notify('Ubicación corregida manualmente: ' + p.establecimiento, 'ok');
-      document.getElementById('detailModal').classList.remove('open');
+      closeBackdrop('detailModal');
     };
   }
 
@@ -657,7 +688,7 @@ window.App = (function () {
         '<div class="stat"><b>' + window.fmtNum(list.filter(function (p) { return p.lat != null; }).length) + '</b><span>Con coordenadas</span></div></div>' +
         '<div class="mini" style="margin-top:10px"><b>Filtros aplicados:</b> ' + window.esc(act) + '<br><b>Orden:</b> ' + window.esc(S.sort.key + ' ' + S.sort.dir) +
         '<br><b>Fuente:</b> ' + window.esc(S.source) + ' · valores originales preservados.</div>';
-      document.getElementById('exportModal').classList.add('open');
+      openBackdrop('exportModal', '#exportClose');
       notify('Exportación ' + kind.toUpperCase() + ': ' + window.fmtNum(list.length) + ' registros', 'ok');
     } catch (e) { window.toast('Exportación fallida: ' + e.message); notify('Exportación fallida: ' + e.message, 'err'); }
   }
@@ -848,6 +879,9 @@ window.App = (function () {
     window.Store.open().then(function () { window.Store.loadDataset().then(function (saved) { if (saved && saved.length) setData(saved, 'guardado local'); }); });
     loadOfficial();
     renderFavBadge(); renderCmpBadge(); renderNotifs();
+    /* El contador de adjudicadas debe reflejar lo guardado desde el arranque,
+       no solo después del primer cambio de estado. */
+    if (window.AdjCenter) window.AdjCenter.badge();
 
     /* navegación */
     Array.prototype.forEach.call(document.querySelectorAll('[data-nav]'), function (b) {
@@ -946,7 +980,7 @@ window.App = (function () {
     document.getElementById('btnExport').onclick = function (e) { e.stopPropagation(); em.classList.toggle('open'); this.setAttribute('aria-expanded', em.classList.contains('open')); };
     document.addEventListener('click', function () { em.classList.remove('open'); });
     Array.prototype.forEach.call(em.querySelectorAll('[data-exp]'), function (b) { b.onclick = function () { doExport(b.getAttribute('data-exp')); }; });
-    document.getElementById('exportClose').onclick = function () { document.getElementById('exportModal').classList.remove('open'); };
+    document.getElementById('exportClose').onclick = function () { closeBackdrop('exportModal'); };
 
     /* importación */
     document.getElementById('btnImport').onclick = function () { window.ImportWiz.open(); };
@@ -955,19 +989,28 @@ window.App = (function () {
     document.getElementById('impNext').onclick = window.ImportWiz.next;
 
     /* ficha y correcciones */
-    document.getElementById('detailClose').onclick = function () { document.getElementById('detailModal').classList.remove('open'); };
+    document.getElementById('detailClose').onclick = function () { closeBackdrop('detailModal'); };
+    document.addEventListener('keydown', function (e) {
+      if (e.key !== 'Escape') return;
+      ['detailModal', 'keyModal', 'exportModal'].forEach(function (id) {
+        var el = document.getElementById(id);
+        if (el && el.classList.contains('open')) closeBackdrop(id);
+      });
+      var nd = document.getElementById('notifDrawer');
+      if (nd) nd.classList.remove('open');
+    });
 
     /* clave API */
     document.getElementById('btnKey').onclick = function () {
       document.getElementById('keyInput').value = apiKey() === DEMO_KEY ? '' : apiKey();
-      document.getElementById('keyModal').classList.add('open');
+      openBackdrop('keyModal', '#keyInput');
     };
-    document.getElementById('keyClose').onclick = function () { document.getElementById('keyModal').classList.remove('open'); };
+    document.getElementById('keyClose').onclick = function () { closeBackdrop('keyModal'); };
     document.getElementById('keySave').onclick = function () {
       var v = document.getElementById('keyInput').value.trim();
       if (!v) { window.toast('Ingresa una clave válida.'); return; }
       window.Store.set('gmaps_key', v);
-      document.getElementById('keyModal').classList.remove('open');
+      closeBackdrop('keyModal');
       var e = document.getElementById('mapError'); e.innerHTML = ''; e.style.display = 'none';
       window.MapView.load(v); window.toast('Clave guardada. Recargando mapa…');
       notify('Clave de Google Maps actualizada', 'ok');
