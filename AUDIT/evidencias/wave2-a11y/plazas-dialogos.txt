@@ -1,0 +1,92 @@
+﻿shape {"sideVisible":"visible","drawerVisible":"hidden","plazasType":"object","isArray":true,"len":7323}
+{
+  "opened": {
+    "open": true,
+    "role": "dialog",
+    "modal": "true",
+    "label": "importTitle",
+    "appInert": true,
+    "active": "impClose",
+    "activeTag": "BUTTON"
+  },
+  "tabs": [
+    {
+      "id": "impNext",
+      "cls": "btn primary",
+      "inside": true
+    },
+    {
+      "id": "impClose",
+      "cls": "btn",
+      "inside": true
+    },
+    {
+      "id": "impNext",
+      "cls": "btn primary",
+      "inside": true
+    },
+    {
+      "id": "impClose",
+      "cls": "btn",
+      "inside": true
+    },
+    {
+      "id": "impNext",
+      "cls": "btn primary",
+      "inside": true
+    },
+    {
+      "id": "impClose",
+      "cls": "btn",
+      "inside": true
+    }
+  ],
+  "closed": {
+    "open": false,
+    "appInert": false,
+    "active": "btnImport",
+    "activeTag": "BUTTON"
+  },
+  "detail": {
+    "open": true,
+    "role": "dialog",
+    "modal": "true",
+    "label": "detailTitle",
+    "appInert": true,
+    "active": "detailClose",
+    "activeTag": "BUTTON"
+  },
+  "detailTabs": [
+    {
+      "id": "",
+      "cls": "btn sm",
+      "inside": true
+    },
+    {
+      "id": "",
+      "cls": "btn sm",
+      "inside": true
+    },
+    {
+      "id": "",
+      "cls": "btn sm",
+      "inside": true
+    },
+    {
+      "id": "",
+      "cls": "",
+      "inside": true
+    },
+    {
+      "id": "",
+      "cls": "",
+      "inside": true
+    }
+  ],
+  "detailClosed": {
+    "open": false,
+    "appInert": false,
+    "active": "btnImport",
+    "activeTag": "BUTTON"
+  }
+}

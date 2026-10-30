@@ -247,8 +247,16 @@ window.Stats = (function () {
 /* ---------- Import wizard ---------- */
 window.ImportWiz = (function () {
   var st = { step: 1, wb: null, fileName: '', sheets: [], sheet: '', aoa: [], headerRow: 0, headers: [], map: {}, rows: [], report: null, combine: false };
-  function open() { st.step = 1; document.getElementById('importModal').classList.add('open'); draw(); }
-  function close() { document.getElementById('importModal').classList.remove('open'); }
+  function open() {
+    st.step = 1;
+    if (window.App && window.App.openBackdrop) window.App.openBackdrop('importModal', '#impClose');
+    else document.getElementById('importModal').classList.add('open');
+    draw();
+  }
+  function close() {
+    if (window.App && window.App.closeBackdrop) window.App.closeBackdrop('importModal');
+    else document.getElementById('importModal').classList.remove('open');
+  }
   function draw() {
     document.querySelectorAll('#importModal .step').forEach(function (s) {
       s.classList.toggle('a', Number(s.getAttribute('data-s')) === st.step);

@@ -1,0 +1,24 @@
+﻿{
+  "initial": {
+    "hash": "#/mapa",
+    "view": "map"
+  },
+  "stats": {
+    "hash": "#/estadisticas",
+    "view": "stats",
+    "open": true
+  },
+  "direct": {
+    "hash": "#/estadisticas",
+    "view": "stats",
+    "open": true
+  },
+  "fav": {
+    "hash": "#/favoritos",
+    "view": "favoritos"
+  },
+  "back": {
+    "hash": "#/estadisticas",
+    "view": "stats"
+  }
+}

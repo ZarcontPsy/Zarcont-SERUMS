@@ -1,0 +1,108 @@
+﻿{
+  "rowId": "2026-i-medicina-q001",
+  "opened": {
+    "panel": true,
+    "role": "dialog",
+    "modal": "true",
+    "label": "Detalle de la pregunta",
+    "active": "icon-btn mobile-close#bank-close",
+    "inside": true,
+    "topInert": true,
+    "footInert": true
+  },
+  "tabs": [
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "text-link#open-pdf",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    },
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "#null",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    },
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "btn btn-sm#bank-next",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    },
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "btn btn-sm #bank-review",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    },
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "btn btn-sm #bank-flag",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    },
+    {
+      "panel": true,
+      "role": "dialog",
+      "modal": "true",
+      "label": "Detalle de la pregunta",
+      "active": "btn btn-sm#open-pdf",
+      "inside": true,
+      "topInert": true,
+      "footInert": true
+    }
+  ],
+  "closed": {
+    "rowId": "2026-i-medicina-q001",
+    "activeId": "2026-i-medicina-q001",
+    "activeAct": "bank-select",
+    "topInert": false,
+    "panelRole": null,
+    "detailOpen": null
+  },
+  "desktop": {
+    "panel": true,
+    "role": null,
+    "modal": null,
+    "label": null,
+    "active": "app-banqueo#null",
+    "inside": false,
+    "topInert": false,
+    "footInert": false
+  },
+  "info": {
+    "open": true,
+    "label": "modal-title-1793317229050",
+    "labelText": "C├│mo se construy├│ Banqueo",
+    "appInert": true,
+    "topInert": true,
+    "active": "btn btn-primary",
+    "inside": true
+  },
+  "infoClosed": {
+    "modal": false,
+    "appInert": false,
+    "activeAct": "info",
+    "activeLabel": "C├│mo se proces├│ el banco"
+  }
+}

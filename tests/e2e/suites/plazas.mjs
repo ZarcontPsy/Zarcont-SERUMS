@@ -182,6 +182,30 @@ export async function runPlazas({ h, page, baseURL }) {
     { severity: "media", page },
   );
 
+  await h.test(
+    "PLAZAS-08",
+    "Vistas con historial: hash directo, cambio de rail y atrás",
+    async () => {
+      await page.goto(appURL(baseURL, "plazas") + "#/estadisticas", { settle: 1500 });
+      const direct = await page.eval(`({ hash: location.hash, view: window.App.S.view, open: document.getElementById('subStats').classList.contains('open') })`);
+      assertEq(direct.hash, "#/estadisticas", "hash canónico de estadísticas");
+      assertEq(direct.view, "stats", "vista directa de estadísticas");
+      await page.click('#rail [data-nav="favoritos"]');
+      await sleep(500);
+      const fav = await page.eval(`({ hash: location.hash, view: window.App.S.view })`);
+      assertEq(fav.hash, "#/favoritos", "hash de favoritos");
+      assertEq(fav.view, "favoritos", "vista de favoritos");
+      const history = await page.conn.send("Page.getNavigationHistory");
+      await page.conn.send("Page.navigateToHistoryEntry", { entryId: history.entries[history.currentIndex - 1].id });
+      await sleep(700);
+      const back = await page.eval(`({ hash: location.hash, view: window.App.S.view })`);
+      assertEq(back.hash, "#/estadisticas", "atrás vuelve a estadísticas");
+      assertEq(back.view, "stats", "la vista se restaura desde el hash");
+      return { direct, fav, back };
+    },
+    { severity: "media", page },
+  );
+
   /* ------------------------------ Serums Map ------------------------------ */
   h.suite("Serums Map");
   h.state.app = "Serums Map";

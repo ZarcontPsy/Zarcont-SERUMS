@@ -99,7 +99,7 @@
 
   function progressBar(value, label, extraClass) {
     var v = Math.max(0, Math.min(100, Number(value) || 0));
-    return '<div class="q-progress ' + (extraClass || "") + '" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(v) + '" aria-label="' + esc(label || "Progreso") + '"><span style="width:' + v + '%"></span></div>';
+    return '<div class="q-progress ' + (extraClass || "") + '" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + Math.round(v) + '" aria-label="' + esc(label || "Progreso") + '"><span style="--p:' + (v / 100) + '"></span></div>';
   }
 
   function levelRing(percent, level, size, extra) {
@@ -1961,6 +1961,8 @@
       host.setAttribute("data-parallax-bound", "1");
       if (reduce || window.matchMedia("(pointer: coarse)").matches) return;
       var raf = 0;
+      var scene = qs(".q-scene-svg", host);
+      var figure = qs(".q-hero-figure, .q-heroes-figure, .q-equip-figure", host);
       host.addEventListener("pointermove", function (event) {
         if (raf) return;
         raf = window.requestAnimationFrame(function () {
@@ -1969,13 +1971,13 @@
           if (!rect.width || !rect.height) return;
           var px = ((event.clientX - rect.left) / rect.width - 0.5) * 2;
           var py = ((event.clientY - rect.top) / rect.height - 0.5) * 2;
-          host.style.setProperty("--px", px.toFixed(3));
-          host.style.setProperty("--py", py.toFixed(3));
+          if (scene) scene.style.transform = "translate3d(" + (px * 9).toFixed(2) + "px," + (py * 6).toFixed(2) + "px,0) scale(1.03)";
+          if (figure) figure.style.transform = "translate3d(" + (px * -7).toFixed(2) + "px," + (py * -4).toFixed(2) + "px,0)";
         });
       });
       host.addEventListener("pointerleave", function () {
-        host.style.setProperty("--px", "0");
-        host.style.setProperty("--py", "0");
+        if (scene) scene.style.transform = "";
+        if (figure) figure.style.transform = "";
       });
     });
     if (!("IntersectionObserver" in window)) return;
@@ -2175,7 +2177,7 @@
     var levelLine = qs("[data-char-level]");
     if (levelLine) levelLine.textContent = "Nv " + level.level + " · " + rank.short;
     var xpBar = qs("[data-xp-bar]");
-    if (xpBar) xpBar.style.width = level.percent + "%";
+    if (xpBar) xpBar.style.transform = "scaleX(" + (Math.max(0, Math.min(100, level.percent || 0)) / 100) + ")";
     var xpNum = qs("[data-xp-num]");
     if (xpNum) xpNum.textContent = fmt(state.xp) + " XP";
     var heroChip = qs("[data-hero-chip]");
@@ -2984,8 +2986,10 @@
     document.documentElement.classList.toggle("q-no-particles", visual.particles === false);
     if (state.settings.reducedMotion) {
       qsa("[data-parallax]").forEach(function (host) {
-        host.style.setProperty("--px", "0");
-        host.style.setProperty("--py", "0");
+        var scene = qs(".q-scene-svg", host);
+        var figure = qs(".q-hero-figure, .q-heroes-figure, .q-equip-figure", host);
+        if (scene) scene.style.transform = "";
+        if (figure) figure.style.transform = "";
       });
     }
     try { localStorage.setItem("serumsquest:theme", state.settings.theme === "light" ? "light" : "dark"); } catch (e) {}

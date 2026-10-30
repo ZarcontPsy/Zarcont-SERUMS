@@ -211,7 +211,8 @@ window.AdjCenter = (function () {
     if (window.innerWidth <= 780) {
       setTimeout(function () {
         var ins = document.getElementById('adjInspector');
-        if (ins && ins.scrollIntoView) ins.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (ins && ins.scrollIntoView) ins.scrollIntoView({ behavior: reduce ? 'auto' : 'smooth', block: 'start' });
       }, 40);
     }
   }

@@ -1,0 +1,161 @@
+{
+  "startedAt": "2026-10-29T21:36:16.378Z",
+  "finishedAt": "2026-10-29T21:36:51.594Z",
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/156.0.8078.49",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-YVXvIL"
+  },
+  "repo": {
+    "git": {
+      "head": "f188788",
+      "status": [
+        " M DESIGN-SYSTEM.md",
+        " M \"EXAMEN STUDIO/Examen Studio.html\"",
+        " M \"EXAMEN STUDIO/js/app.js\"",
+        " M \"EXAMEN STUDIO/styles.css\"",
+        " M index.html",
+        " M \"serums map/serums-map-explorer/index.html\"",
+        " M \"serums map/serums-map-explorer/js/adjudicacion.js\"",
+        " M \"serums map/serums-map-explorer/js/app.js\"",
+        " M \"serums map/serums-map-explorer/styles.css\"",
+        " M serums-quest/index.html",
+        " M serums-quest/js/app.js",
+        " M serums-quest/styles-game.css",
+        " M serums-quest/styles-rpg.css",
+        " M serums-quest/styles.css",
+        " M study-dashboard/index.html",
+        " M study-dashboard/styles.css",
+        " M study-flashcards/app.js",
+        " M study-flashcards/index.html",
+        " M study-flashcards/styles.css",
+        " M study-shared/base.css",
+        " M study-shared/ui.js",
+        "?? AUDIT/evidencias/baseline-2026-10-29/",
+        "?? AUDIT/evidencias/wave1-full/",
+        "?? AUDIT/evidencias/wave1-quick/",
+        "?? serums-mobile.css"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 100660,
+        "mtimeMs": 1793309735874,
+        "sha1ish": "bbb7b2c09779d8a55e5cadd358fedaedb8a8d920"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 4618,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "8a5ea0226a8c744e052d3d3aa256a165083026d8"
+      },
+      "study-dashboard/app.js": {
+        "size": 67742,
+        "mtimeMs": 1792966998192,
+        "sha1ish": "7e9e0c707aae339d55561c4c4e05ef479e01018a"
+      },
+      "study-flashcards/index.html": {
+        "size": 4634,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "cb20a702ceb531ba7cbbe9250884c2af7a2a6343"
+      },
+      "study-flashcards/app.js": {
+        "size": 83605,
+        "mtimeMs": 1793300546844,
+        "sha1ish": "d14fa001e869fb7739c9d74bea2637cb92cc9843"
+      },
+      "study-shared/store.js": {
+        "size": 34865,
+        "mtimeMs": 1792966553500,
+        "sha1ish": "f4902e5dd2de423ef54f6cfe4904c7b233d46a99"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6920,
+        "mtimeMs": 1793300449858,
+        "sha1ish": "f9799d2bcb4e1f44c378a8bff9ab0b4adc250918"
+      },
+      "study-shared/base.css": {
+        "size": 16882,
+        "mtimeMs": 1793308704330,
+        "sha1ish": "b41961a0db43d18fdb33a471dce12f10b70ed57d"
+      },
+      "serums-quest/index.html": {
+        "size": 7817,
+        "mtimeMs": 1793308543046,
+        "sha1ish": "746158724b84c14bea0f3bd1b828b28facfea7e4"
+      },
+      "serums-quest/js/app.js": {
+        "size": 222750,
+        "mtimeMs": 1793301144156,
+        "sha1ish": "ddfde0bfdb697f99b0749fd3662e4e8ba0fb270c"
+      },
+      "serums-quest/js/store.js": {
+        "size": 24673,
+        "mtimeMs": 1792966561915,
+        "sha1ish": "1e6e210dbd01978856eb57f89936bb860ce7495a"
+      },
+      "serums-quest/js/characters.js": {
+        "size": 32779,
+        "mtimeMs": 1792960973740,
+        "sha1ish": "cac068de57e721261edd9d73b086c7503696df35"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2529,
+        "mtimeMs": 1793308543043,
+        "sha1ish": "bdc13a9ac55e6f8a8fff5c092a706b9b9490e3cf"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 146395,
+        "mtimeMs": 1793309750636,
+        "sha1ish": "b7b59b32fa2263f4d48c1fd47c7d0a79a5b804bc"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 29096,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "fbf20444a796d0e8e16021ac3e6c7170f5f45dbf"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 67661,
+        "mtimeMs": 1793303298256,
+        "sha1ish": "e7a1c477dc6378af72ba02a48965ba528dad953f"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 45232,
+        "mtimeMs": 1793308704328,
+        "sha1ish": "f81319bd0947af66e869b4367ad72b20cc02fcd2"
+      }
+    },
+    "changedDuringRun": []
+  }
+}

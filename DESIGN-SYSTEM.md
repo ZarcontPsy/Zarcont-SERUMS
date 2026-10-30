@@ -114,8 +114,12 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 - Radios: 8 / 12 / 18 / 24 / 32 / 999 px. Tarjeta protagonista del HUB: 28 px.
 - Sombras difusas (`--shadow-sm/md/lg`, `--shadow`, `--shadow-soft`) + acento rojo solo
   para elementos activos.
-- Transiciones: 160 / 220 / 520 ms con ease-out. Entrada escalonada, hover discreto,
-  selección con transformación. Nada de movimiento ornamental.
+- Transiciones: 160 / 220 ms con ease-out; navegación del carrusel 360 ms y apertura de
+  aplicación ≤ 380 ms. Entradas de página ≤ 320 ms. Hover de tarjetas y botones: solo
+  color, borde o fondo; los popovers/tooltips pueden usar transform anclado a su origen.
+  Nada de movimiento ornamental.
+- Animar solo `transform` y `opacity`. Las barras de progreso usan `scaleX`, nunca
+  `width`/`height`; las tarjetas no usan `will-change` permanente.
 - `prefers-reduced-motion: reduce` reduce todo a duración ~0 sin romper la funcionalidad.
   Las capturas visuales se toman con movimiento desactivado.
 
@@ -141,8 +145,10 @@ del color; siempre se acompaña de texto, icono, borde o posición.
   de poca altura (≤720 px) la cartilla se compacta y la barra/puntos permanecen visibles.
 - **Progreso y reanudación**: barra + `completadas/total`, nota de actividad y último punto.
   Sin actividad se muestra `—` y un estado informativo, nunca cifras ficticias. Las tarjetas
-  abren la portada de cada aplicación; la reanudación del último punto vive dentro de la app
+  abren la portada de cada aplicación (D1); la reanudación del último punto vive dentro de la app
   («Retomar lectura», «Continuar sesión») y en las rutas directas `?sheet=`/`?deck=&resume=1`.
+  El botón inferior cambia a **«Continuar»** cuando el snapshot expone `last.url` (Study y
+  Flashcards); en las demás aplicaciones conserva «Abrir». El `href` de la tarjeta no cambia.
 - **Modales** de atajos y «Acerca de»: scrim, foco atrapado, `Esc` para cerrar,
   regiones de fondo `inert` y retorno del foco al disparador.
 - **Overlay de apertura** desde la tarjeta elegida, con el color de la aplicación.
@@ -163,6 +169,14 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 - **Práctica**: configuración, sesión con cronómetro, feedback, entrega, resultado,
   historial y ranking local.
 - **Estados vacíos y de error**: icono, título, explicación y acción real.
+
+### Plazas SERUMS
+
+- **Vistas con historial**: `#/mapa`, `#/estadisticas`, `#/geolocalizacion`, `#/favoritos`,
+  `#/adjudicacion`, `#/comparador`, `#/configuracion` y `#/datos`. La vista directa, el rail y
+  atrás/adelante restauran la sección; los filtros todavía no se serializan en la URL.
+- **Ficha y filtros**: la ficha mantiene foco atrapado, `Esc` y retorno al disparador; los
+  cajones cerrados no reciben foco.
 
 ### Study Dashboard
 
@@ -187,6 +201,8 @@ del color; siempre se acompaña de texto, icono, borde o posición.
 - **Modos**: libre, repaso rápido, examen (respuestas al final) y errores (solo falladas).
 - **Resumen**: acierto, respondidas, refuerzo, revisión de respuestas e historial.
 - **Programación e historial**: intervalos por tarjeta, vencimientos y sesiones reales.
+- **Cierre seguro**: «Terminar» con tarjetas pendientes muestra una confirmación inline con el
+  número restante y las acciones «Seguir» / «Terminar ahora»; el foco queda en «Seguir».
 - **Navegación**: biblioteca ↔ mazo ↔ sesión por hash, sin recargar el documento; se conservan
   filtros, grupos abiertos y posición al volver. «Volver a la biblioteca» es distinto de
   «Volver al HUB»; la fila de acceso directo mantiene su URL (`#/mazo/…`).
@@ -218,14 +234,20 @@ del color; siempre se acompaña de texto, icono, borde o posición.
   elige alternativa; `Enter` avanza; `Esc` cierra/retrocede cuando corresponde.
 - Foco visible de marca, contraste suficiente, `aria-current`, `aria-label`,
   `aria-pressed`, `aria-live` y estados textuales además del color.
-- Breakpoints principales: 1100 px, 1020 px, 940 px, 900 px, 820 px, 780 px, 640 px, 480 px.
+- Base de breakpoints compartida: 1180 px, 1020 px, 940 px, 900 px, 820 px, 780 px,
+  640 px, 480 px. Cada app conserva umbrales intermedios (620/600/520/420/380) justificados
+  por su topbar, mapa o lector; no se consolidan sin una matriz visual completa.
 - HUB: centro del topbar ≤1020 px, laterales del carrusel ≤900 px, topbar compacta y
   tarjeta de ancho fluido ≤600 px; en ventanas de escritorio de poca altura (≤720 px) se
   compacta la cartilla y se oculta solo la cita decorativa para mantener barra y puntos visibles.
 - Controles comunes en el topbar de cada app: **Inicio**, **Volver al HUB** y **Pantalla
-  completa** (44/40 px, etiquetas y estados propios, pantalla completa nativa). En Study la
-  navegación móvil conserva sus iconos (solo se oculta la etiqueta) y la marca mantiene su
-  `aria-label`; en QUEST el topbar pasa a dos filas ≤620/≤380 px sin perder tema ni audio.
+  completa** (44/40 px, etiquetas y estados propios, pantalla completa nativa). En puntero
+  grueso todos los iconos de topbar alcanzan al menos 40 px. En Study la navegación móvil
+  conserva sus iconos (solo se oculta la etiqueta) y la marca mantiene su `aria-label`; en
+  QUEST el topbar pasa a dos filas ≤620/≤380 px sin perder tema ni audio.
+- `prefers-reduced-transparency: reduce` retira el blur del chrome flotante y usa superficies
+  sólidas; `prefers-contrast: more` refuerza el foco a 3 px y los bordes del chrome con
+  `currentColor`. Las tarjetas de contenido y el arte no se aplanan.
 - En `max-width: 820px` el topbar mide `--topbar: 91px`; el detalle del banco se abre
   como hoja fija bajo el topbar, con fondo opaco y cierre por botón o `Escape`.
 - Nada de scroll horizontal. Las tablas y toolbars se apilan antes de desbordar.
@@ -305,7 +327,7 @@ personajes.
   profesión, revisión, importación, práctica, historial y ranking local. Controles de Inicio,
   HUB y pantalla completa; el intento en curso se recupera al refrescar.
 - `serums map/serums-map-explorer/` — PLAZAS SERUMS: mapa, filtros y adjudicación; ficha con
-  foco atrapado y cierre por `Esc`; favoritos/adjudicadas persistentes.
+  foco atrapado y cierre por `Esc`; favoritos/adjudicadas persistentes; vistas con hash e historial.
 - `study-dashboard/` — Study Dashboard: temario, fichas, lector, favoritos, objetivos,
   progreso, historial y enlaces a Flashcards; restaura la lectura y conserva los temas abiertos.
 - `study-flashcards/` — Study Flashcards: biblioteca jerárquica con filtros, mazos, sesiones,

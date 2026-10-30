@@ -1,0 +1,9 @@
+﻿{
+  "bf": "none",
+  "bg": "rgb(243, 240, 232)",
+  "border": "rgb(29, 27, 23)",
+  "media": [
+    true,
+    true
+  ]
+}

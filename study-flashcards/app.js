@@ -52,6 +52,7 @@
     currentDeck: null,
     currentDeckType: "",
     notice: "",
+    confirmEnd: false,
     /* Biblioteca: filtros, grupos abiertos y contexto de regreso. */
     library: { filter: "todas", area: "", q: "", open: [] },
     librarySaved: { hash: "#/", scroll: 0 },
@@ -228,6 +229,7 @@
     state.summary = null;
     state.selected = null;
     state.revealed = false;
+    state.confirmEnd = false;
     if (!opts.silent) {
       if (location.hash === "#/sesion") renderRoute({ scrollY: 0 });
       else location.hash = "#/sesion";
@@ -257,6 +259,7 @@
     Store.updateFlashSession({ index: next });
     state.selected = null;
     state.revealed = false;
+    state.confirmEnd = false;
     renderRoute({ scrollY: 0 });
   }
 
@@ -266,6 +269,7 @@
     Store.updateFlashSession({ index: s.index - 1 });
     state.selected = null;
     state.revealed = false;
+    state.confirmEnd = false;
     renderRoute({ scrollY: window.scrollY, focus: false });
     announce("Tarjeta anterior.");
   }
@@ -276,6 +280,7 @@
     state.summary = Store.finishSession();
     state.selected = null;
     state.revealed = false;
+    state.confirmEnd = false;
     if (!state.summary) {
       UI.toast("Sesión cerrada sin respuestas. No se guardó en el historial.");
       if (s.deckId) location.hash = "#/mazo/" + encodeURIComponent(s.deckId);
@@ -447,7 +452,7 @@
   }
   function miniBar(pct, label) {
     var v = Math.max(0, Math.min(100, Math.round(Number(pct) || 0)));
-    return '<span class="mini-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + esc(label || "Progreso") + '"><span style="width:' + v + '%"></span></span>';
+    return '<span class="mini-bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + esc(label || "Progreso") + '"><span style="--p:' + (v / 100) + '"></span></span>';
   }
   function pluralDecks(n) { return n + ' ' + plural(n, "mazo", "mazos"); }
   function pluralCards(n) { return n + ' ' + plural(n, "tarjeta", "tarjetas"); }
@@ -973,6 +978,10 @@
   /* Sesión                                                              */
   /* ------------------------------------------------------------------ */
 
+  function pendingEnd(s) {
+    return state.confirmEnd && s.queue.length > Object.keys(s.answers || {}).length;
+  }
+
   function sessionHeader(s) {
     var deck = state.currentDeck && state.currentDeck.id === s.deckId ? state.currentDeck : deckInfo(s.deckId);
     var m = modeMeta(s.mode);
@@ -984,11 +993,22 @@
         '<a class="session-library" href="#/" data-nav data-restore-library title="Volver a la biblioteca de mazos">' + icon("layers", 13) + ' Biblioteca</a>' +
       '</div>' +
       '<div class="session-header-meta"><span class="s-chip s-chip--accent">' + icon(m.icon, 12) + esc(m.label) + '</span><span class="session-deck-name">' + esc(deck.title) + '</span></div>' +
-      '<button class="s-btn s-btn--ghost s-btn--sm" type="button" data-action="end-session">Terminar</button>' +
+      (pendingEnd(s) ? "" : '<button class="s-btn s-btn--ghost s-btn--sm" type="button" data-action="end-session">Terminar</button>') +
       '</div>' +
       '<div class="session-progress"><div class="session-progress-copy"><span>Tarjeta ' + (s.index + 1) + ' de ' + total + '</span>' +
         (s.mode === "exam" ? '<span>' + Object.keys(s.answers).length + ' respondidas</span>' : '<span>' + s.correct + ' correctas · ' + s.wrong + ' por reforzar</span>') +
       '</div>' + UI.progressBar(pct, "Avance de la sesión") + '</div>';
+  }
+
+  function sessionEndConfirm(s) {
+    if (!pendingEnd(s)) return "";
+    var remaining = Math.max(0, s.queue.length - Object.keys(s.answers || {}).length);
+    return '<div class="session-end-confirm" role="alert">' +
+      '<span><b>Quedan ' + remaining + ' tarjeta' + (remaining === 1 ? "" : "s") + '.</b> El resumen incluirá solo lo que ya respondiste.</span>' +
+      '<div class="session-end-actions">' +
+        '<button class="s-btn s-btn--ghost s-btn--sm" type="button" data-action="cancel-end">Seguir</button>' +
+        '<button class="s-btn s-btn--danger s-btn--sm" type="button" data-action="end-session">Terminar ahora</button>' +
+      '</div></div>';
   }
 
   function prevButton(s) {
@@ -1095,7 +1115,7 @@
         actions: '<button class="s-btn" type="button" data-action="end-session">Ver resumen</button><a class="s-btn s-btn--ghost" href="#/" data-nav>Volver a mazos</a>'
       }) + '</div>';
     }
-    return '<div class="session-view">' + sessionHeader(s) + '<div id="session-stage">' + stageHTML() + '</div>' +
+    return '<div class="session-view">' + sessionHeader(s) + sessionEndConfirm(s) + '<div id="session-stage">' + stageHTML() + '</div>' +
       '<div class="session-foot-note">' + icon("info", 13) + ' Tu respuesta se guarda al comprobar o al pasar a la siguiente tarjeta.</div></div>';
   }
 
@@ -1410,7 +1430,23 @@
       announce(rating === "again" ? "Marcada para volver a intentarlo." : "Respuesta registrada.");
       advanceSession();
     } else if (action === "end-session") {
+      var active = Store.getFlashSession();
+      var answered = active ? Object.keys(active.answers || {}).length : 0;
+      if (active && answered < active.queue.length && !state.confirmEnd) {
+        state.confirmEnd = true;
+        renderRoute({ scrollY: window.scrollY, focus: false });
+        var keep = document.querySelector('[data-action="cancel-end"]');
+        if (keep) keep.focus();
+        announce("Quedan tarjetas sin responder. Confirma para terminar o sigue practicando.");
+        return;
+      }
       finishCurrentSession();
+    } else if (action === "cancel-end") {
+      state.confirmEnd = false;
+      renderRoute({ scrollY: window.scrollY, focus: false });
+      var end = document.querySelector('[data-action="end-session"]');
+      if (end) end.focus();
+      announce("Sesión reanudada.");
     } else if (action === "view-session") {
       var id = el.getAttribute("data-session");
       var found = (Store.getState().sessions || []).filter(function (s) { return s.id === id; })[0];

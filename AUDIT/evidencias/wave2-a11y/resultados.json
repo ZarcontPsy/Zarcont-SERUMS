@@ -1,0 +1,48 @@
+{
+  "date": "2026-10-29",
+  "environment": "Chrome 156 headless + CDP; servidor 127.0.0.1:8784",
+  "cases": [
+    {
+      "id": "A11Y-PLAZAS-01",
+      "scope": "Importador Excel",
+      "result": "PASS",
+      "observed": "role=dialog, aria-modal=true, aria-labelledby=importTitle, foco inicial #impClose, #app.inert=true, 6 Tab dentro, Escape cierra, foco vuelve a #btnImport"
+    },
+    {
+      "id": "A11Y-PLAZAS-02",
+      "scope": "Ficha de plaza",
+      "result": "PASS",
+      "observed": "role=dialog, aria-modal=true, aria-labelledby=detailTitle, foco inicial #detailClose, #app.inert=true, Tab dentro, Escape cierra, #app.inert=false"
+    },
+    {
+      "id": "A11Y-PLAZAS-03",
+      "scope": "Confirmación y cajones",
+      "result": "PASS",
+      "observed": "Confirmación con foco #confirmOk y Tab dentro; #side y #notifDrawer cerrados con visibility=hidden; abiertos visibles; aria-expanded false/true"
+    },
+    {
+      "id": "A11Y-BANQ-01",
+      "scope": "Hoja de detalle móvil (Banco)",
+      "result": "PASS",
+      "observed": "390x844: role=dialog, aria-modal=true, foco .mobile-close, topbar/foot inert, 6 Tab dentro, Escape cierra y enfoca la fila bank-select"
+    },
+    {
+      "id": "A11Y-BANQ-02",
+      "scope": "Hoja de detalle móvil (Revisión)",
+      "result": "PASS",
+      "observed": "role=dialog, foco review-close, Escape cierra y enfoca la fila review-select"
+    },
+    {
+      "id": "A11Y-BANQ-03",
+      "scope": "Escritorio",
+      "result": "PASS",
+      "observed": "1440x900: .qdetail-panel sin role/aria-modal, topbar/foot no inertes"
+    },
+    {
+      "id": "A11Y-BANQ-04",
+      "scope": "Modal genérico y anidado",
+      "result": "PASS",
+      "observed": "role=dialog con aria-labelledby resuelto a 'Cómo se construyó Banqueo'; #app.inert=true; Escape cierra y enfoca el disparador; modal anidado sobre hoja conserva la hoja y devuelve foco a bank-flag"
+    }
+  ]
+}

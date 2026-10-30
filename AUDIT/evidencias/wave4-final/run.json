@@ -1,0 +1,3960 @@
+{
+  "startedAt": "2026-10-30T02:36:42.644Z",
+  "finishedAt": "2026-10-30T02:41:25.771Z",
+  "total": 88,
+  "counts": {
+    "PASS": 87,
+    "FAIL": 0,
+    "SKIP": 1
+  },
+  "results": [
+    {
+      "id": "CONTENT-01",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Study: 5 áreas, 20 categorías, 86 módulos, 210 fichas, 630 tarjetas e IDs únicos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1079,
+      "observations": {
+        "version": "2.5.0",
+        "primaryAreas": 5,
+        "categories": 20,
+        "topics": 86,
+        "sheets": 210,
+        "cards": 630,
+        "sources": 48,
+        "uniqueAreas": 5,
+        "uniqueCategories": 20,
+        "uniqueTopics": 86,
+        "uniqueSheets": 210,
+        "uniqueCards": 630,
+        "duplicateSheetIds": [],
+        "duplicateCardIds": [],
+        "cardsPerSheetMin": 3,
+        "cardsPerSheetMax": 3,
+        "firstSheet": "sheet-aps-01",
+        "lastSheet": "sheet-psi-ge-4-2",
+        "firstCard": "card-aps-01-1",
+        "lastCard": "card-psi-ge-4-2-3"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:43.298Z"
+    },
+    {
+      "id": "CONTENT-02",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Banqueo: 51 exámenes, 5.100 preguntas, 5.100 claves, 17 profesiones",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 995,
+      "observations": {
+        "version": "1.0.0",
+        "totals": {
+          "professions": 17,
+          "exams": 51,
+          "questions": 5100,
+          "validAnswers": 5100,
+          "duplicateGroups": 580,
+          "duplicateQuestions": 2695
+        },
+        "professions": 17,
+        "examList": 51,
+        "allQuestionsValid": true,
+        "sampleExam": {
+          "id": "2025-i-biologia",
+          "file": "7084225-biologia.pdf"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:44.378Z"
+    },
+    {
+      "id": "CONTENT-03",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Plazas: 7.323 plazas y 7.297 registros de adjudicación, sin pérdida",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1904,
+      "observations": {
+        "plazas": 7323,
+        "cols": 20,
+        "adjudicados": 7297,
+        "geoPuntos": 1,
+        "badge": "7,323 registros · 6,971 con coordenadas · oficial 2026-I",
+        "recPill": "7,323 plazas"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:45.373Z"
+    },
+    {
+      "id": "CONTENT-04",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "QUEST: 10 personajes, 33 cosméticos, 9 ranuras y 300 preguntas mapeadas",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 854,
+      "observations": {
+        "characters": 10,
+        "cosmetics": 33,
+        "slots": 9,
+        "starterId": "ilan",
+        "mappedQuestions": 300,
+        "mapMeta": {
+          "version": "1.0.2",
+          "schema": 1,
+          "generatedAt": "2026-10-25T06:38:11.660259+00:00",
+          "source": {
+            "banco": "EXAMEN STUDIO/datos/banco-oficial.js",
+            "bancoVersion": "1.0.0",
+            "bancoSchema": 1,
+            "bancoHash": "73298db5e31b80f50000fd30f1c20a84a6f8ffe60977aba5bbfc9934c9d3c33b",
+            "temario": "study-data/temario.js",
+            "temarioVersion": "2.5.0",
+            "temarioHash": "cc9a0885994b43d74d7b7cd09284c9e2b2380ba11fc0b88093635fd729b8c15a"
+          },
+          "method": "Afinidad léxico-temática determinista con anclas editoriales. No es una clasificación oficial del examen.",
+          "totalPsychologyExams": 3,
+          "totalQuestions": 300,
+          "mappedQuestions": 300,
+          "invalidQuestions": 0,
+          "invalid": [],
+          "areaCounts": {
+            "area-psi-salud-publica": 79,
+            "area-psi-cuidado-integral": 100,
+            "area-psi-etica": 21,
+            "area-psi-investigacion": 23,
+            "area-psi-gestion": 49
+          },
+          "confidence": {
+            "alta": 164,
+            "media": 68,
+            "baja": 40,
+            "sin clasificar": 28
+          },
+          "manualOverrides": 10,
+          "unclassified": 28,
+          "areas": [
+            {
+              "id": "area-psi-salud-publica",
+              "label": "Salud pública",
+              "questions": 79
+            },
+            {
+              "id": "area-psi-cuidado-integral",
+              "label": "Cuidado integral",
+              "questions": 100
+            },
+            {
+              "id": "area-psi-etica",
+              "label": "Ética e interculturalidad",
+              "questions": 21
+            },
+            {
+              "id": "area-psi-investigacion",
+              "label": "Investigación",
+              "questions": 23
+            },
+            {
+              "id": "area-psi-gestion",
+              "label": "Gestión de servicios",
+              "questions": 49
+            }
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:47.277Z"
+    },
+    {
+      "id": "CONTENT-05",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Catálogo de claves de almacenamiento: presentes y sin renombrar",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2014,
+      "observations": {
+        "allKeys": [
+          "banqueo-theme-v1",
+          "es-theme",
+          "serums_notifs",
+          "serums_theme",
+          "serumsquest:snapshot:v1",
+          "serumsquest:state:v1",
+          "serumsquest:theme",
+          "study-state-v1",
+          "study-theme",
+          "studyhub:snapshot:v1"
+        ],
+        "required": [
+          "study-state-v1",
+          "studyhub:snapshot:v1",
+          "serumsquest:state:v1",
+          "serumsquest:snapshot:v1",
+          "serumsquest:theme",
+          "study-theme",
+          "serums_theme"
+        ],
+        "missing": [],
+        "themeKeys": [
+          "banqueo-theme-v1",
+          "es-theme",
+          "serums_theme",
+          "serumsquest:theme",
+          "study-theme"
+        ]
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:48.131Z"
+    },
+    {
+      "id": "CONTENT-06",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "IndexedDB: bases study-serums y examenstudio declaradas (sin borrar datos)",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2,
+      "observations": {
+        "databases": [
+          {
+            "name": "examenstudio",
+            "version": 2
+          },
+          {
+            "name": "serumsdb",
+            "version": 1
+          },
+          {
+            "name": "study-serums",
+            "version": 1
+          }
+        ],
+        "names": [
+          "examenstudio",
+          "serumsdb",
+          "study-serums"
+        ]
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:50.145Z"
+    },
+    {
+      "id": "CONTENT-07",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Fuentes y dependencias externas: PDF.js/Tesseract/Google Maps solo por CDN",
+      "severity": "baja",
+      "status": "PASS",
+      "durationMs": 2131,
+      "observations": {
+        "pdfjs": [
+          "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+        ],
+        "mapKey": "configurada"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:50.147Z"
+    },
+    {
+      "id": "HUB-01",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Carga inicial: 5 tarjetas, carrusel y sin errores de producto",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1111,
+      "observations": {
+        "title": "SERUMS HUB — Centro de aplicaciones",
+        "cards": [
+          {
+            "id": "banqueo",
+            "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.6",
+            "active": true
+          },
+          {
+            "id": "plazas",
+            "href": "./serums map/serums-map-explorer/index.html",
+            "active": false
+          },
+          {
+            "id": "dashboard",
+            "href": "./study-dashboard/index.html",
+            "active": false
+          },
+          {
+            "id": "flashcards",
+            "href": "./study-flashcards/index.html",
+            "active": false
+          },
+          {
+            "id": "quest",
+            "href": "./serums-quest/index.html",
+            "active": false
+          }
+        ],
+        "pos": "1 / 5",
+        "now": "BANQUEO",
+        "dots": 5,
+        "dock": false,
+        "version": "v2.3.0",
+        "fsEnabled": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:52.279Z"
+    },
+    {
+      "id": "HUB-02",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Selección con flechas y puntos: cambia tarjeta sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1822,
+      "observations": {
+        "start": "banqueo",
+        "afterArrow": "plazas",
+        "afterPrev": "banqueo",
+        "afterDot": "flashcards",
+        "dotCount": 5,
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:53.390Z"
+    },
+    {
+      "id": "HUB-03",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → BANQUEO (Abrir) y URL/título correctos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8046,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/EXAMEN%20STUDIO/Examen%20Studio.html?v=2.1.6#hub",
+        "title": "Banqueo · Examen Studio"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:36:55.212Z"
+    },
+    {
+      "id": "HUB-04",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → Study Dashboard (Abrir) y portada de la app",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8028,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+        "h1": "Cinco áreas. Un mapa claro."
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:03.258Z"
+    },
+    {
+      "id": "HUB-05",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → Study Flashcards (Abrir) y portada de la app",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5141,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/study-flashcards/index.html#/",
+        "h1": "Recupera lo que sabes."
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:11.286Z"
+    },
+    {
+      "id": "HUB-06",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → SERUMS QUEST (Abrir)",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5073,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/serums-quest/index.html#/",
+        "h1": "Ilan Vega"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:16.427Z"
+    },
+    {
+      "id": "HUB-07",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → PLAZAS SERUMS (Abrir) y carga de datos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8032,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/serums%20map/serums-map-explorer/index.html#/mapa",
+        "badge": "7,323 registros · 6,971 con coordenadas · oficial 2026-I"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:21.500Z"
+    },
+    {
+      "id": "HUB-08",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Modales de atajos y Acerca de: abren, cierran con Esc y devuelven el foco",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1268,
+      "observations": {
+        "helpText": "Atajos de teclado\n1\n2\n3\n4\n5\nAbrir una aplicación\n←\n→\nGirar el carrusel\nEnter\nAbrir la aplicación central\nEsc\nCerrar este",
+        "aboutText": "Acerca de\nZARCONT\nSERUMS HUB · v2.3.0\nAutoría\nZARCONT\nLicencia\nPropietaria — todos los derechos reservados\nIdentificador\nZARCONT-SRH-2.3.0\n\nInterfaz Premium Gla"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:29.532Z"
+    },
+    {
+      "id": "HUB-09",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Pantalla completa del HUB con gesto real (headless)",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2894,
+      "observations": {
+        "on": {
+          "element": true,
+          "enabled": true,
+          "aria": "Salir de pantalla completa",
+          "cls": "icon-btn"
+        },
+        "off": {
+          "element": false,
+          "aria": "Pantalla completa"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:30.800Z"
+    },
+    {
+      "id": "HUB-10",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Responsive: 360×640, 390×844, 768×1024, 1024×768, 1440×900 y landscape",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5921,
+      "observations": [
+        {
+          "label": "360x640",
+          "innerWidth": 360,
+          "innerHeight": 640,
+          "scrollWidth": 360,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 68,
+            "w": 336,
+            "h": 456
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-360x640.png"
+        },
+        {
+          "label": "390x844",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollWidth": 390,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 78,
+            "w": 366,
+            "h": 640
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-390x844.png"
+        },
+        {
+          "label": "768x1024",
+          "innerWidth": 768,
+          "innerHeight": 1024,
+          "scrollWidth": 768,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 160,
+            "y": 162,
+            "w": 448,
+            "h": 640
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-768x1024.png"
+        },
+        {
+          "label": "1024x768",
+          "innerWidth": 1024,
+          "innerHeight": 768,
+          "scrollWidth": 1024,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 337,
+            "y": 97,
+            "w": 350,
+            "h": 520
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-1024x768.png"
+        },
+        {
+          "label": "1440x900",
+          "innerWidth": 1440,
+          "innerHeight": 900,
+          "scrollWidth": 1440,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 496,
+            "y": 113,
+            "w": 448,
+            "h": 620
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-1440x900.png"
+        },
+        {
+          "label": "844x390-landscape",
+          "innerWidth": 1144,
+          "innerHeight": 529,
+          "scrollWidth": 1144,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 58,
+            "w": 820,
+            "h": 232
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/wave4-final/img/hub-844x390-landscape.png"
+        }
+      ],
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:33.694Z"
+    },
+    {
+      "id": "HUB-11",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Persistencia de la tarjeta activa del carrusel entre recargas",
+      "severity": "baja",
+      "status": "PASS",
+      "durationMs": 2183,
+      "observations": {
+        "before": "plazas",
+        "after": "plazas"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:39.615Z"
+    },
+    {
+      "id": "HUB-12",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "App → HUB con control compartido y URL directa al HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 948,
+      "observations": {
+        "click": "[data-serums-chrome=\"hub\"]",
+        "url": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:41.798Z"
+    },
+    {
+      "id": "HUB-13",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Decisión D2: dock eliminado y navegación del carrusel conservada",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1101,
+      "observations": {
+        "dock": false,
+        "carousel": true,
+        "bar": true,
+        "dots": 5,
+        "arrows": true,
+        "keys": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:42.746Z"
+    },
+    {
+      "id": "HUB-14",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Decisión D1: con snapshot sembrado, las tarjetas Study siguen abriendo portada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 11114,
+      "observations": {
+        "hrefs": {
+          "dashboard": "./study-dashboard/index.html",
+          "flashcards": "./study-flashcards/index.html"
+        },
+        "dash": {
+          "hash": "#/",
+          "path": "/study-dashboard/index.html"
+        },
+        "flash": {
+          "hash": "#/",
+          "path": "/study-flashcards/index.html"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:43.847Z"
+    },
+    {
+      "id": "HUB-15",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Continuar: el botón inferior reanuda el último punto sin cambiar el href de la tarjeta",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 13833,
+      "observations": {
+        "cardHref": "./study-dashboard/index.html",
+        "label": "Continuar",
+        "aria": "Continuar en STUDY DASHBOARD",
+        "continuation": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:37:54.962Z"
+    },
+    {
+      "id": "DASH-01",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Carga directa de la portada, 210 fichas y sin errores de producto",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 813,
+      "observations": {
+        "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+        "title": "Study Dashboard · SERUMS",
+        "navigations": 1,
+        "hash": "#/",
+        "totalVisible": true,
+        "hero": true,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:08.795Z"
+    },
+    {
+      "id": "DASH-02",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Inicio → Biblioteca → área → ficha, sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1015,
+      "observations": {
+        "libraryTitle": "Las cinco áreas del temario",
+        "areaLink": "#/biblioteca/area-psi-salud-publica/cat-sp-metodos",
+        "sheetHref": "#/ficha/sheet-psi-sp-1-1",
+        "sheet": {
+          "hash": "#/ficha/sheet-psi-sp-1-1",
+          "h1": "Métodos y análisis de salud pública",
+          "text": "Saltar al contenido\nSERUMS STUDY\nDashboard de estudio\nPanel\nBiblioteca\nProgreso\nFlashcards\nÁREA I · SALUD PÚBLICA\nMétodos y análisis de salud pública\n\nFundamentos, epidemiología, medición, causalidad, demografía, vigilancia y análisis de si"
+        },
+        "navigations": 0,
+        "lastAreaError": ""
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:09.608Z"
+    },
+    {
+      "id": "DASH-03",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Ficha → Inicio (Panel) y ficha → HUB (control compartido)",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2261,
+      "observations": {
+        "homeHash": "#/",
+        "hubUrl": "http://127.0.0.1:8790/index.html",
+        "navigations": 1
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:10.623Z"
+    },
+    {
+      "id": "DASH-04",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "URL directa a una ficha concreta",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1097,
+      "observations": {
+        "hash": "#/ficha/sheet-aps-01",
+        "h1": "Una APS fuerte no es un consultorio de segunda",
+        "hasArticle": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:12.884Z"
+    },
+    {
+      "id": "DASH-05",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Atrás/adelante del navegador entre biblioteca y ficha",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 855,
+      "observations": {
+        "backHash": "#/biblioteca",
+        "forwardHash": "#/ficha/sheet-aps-01",
+        "sheetHref": "#/ficha/sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:13.981Z"
+    },
+    {
+      "id": "DASH-06",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Persistencia: marcar ficha completada, refrescar y conservar progreso",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2350,
+      "observations": {
+        "marked": {
+          "click": "[data-action=\"toggle-complete\"]",
+          "before": {
+            "totalSheets": 210,
+            "completedSheets": 0,
+            "viewedSheets": 2,
+            "startedTopics": 2,
+            "completedTopics": 0,
+            "percent": 0,
+            "last": {
+              "sheetId": "sheet-aps-01",
+              "topicId": "topic-aps-atributos",
+              "title": "Una APS fuerte no es un consultorio de segunda",
+              "context": "Los cuatro atributos de la APS",
+              "at": "2026-10-30T02:38:14.924Z",
+              "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+            },
+            "todayCompleted": 0,
+            "goal": 2,
+            "streak": 1
+          },
+          "after": {
+            "totalSheets": 210,
+            "completedSheets": 1,
+            "viewedSheets": 2,
+            "startedTopics": 2,
+            "completedTopics": 0,
+            "percent": 0,
+            "last": {
+              "sheetId": "sheet-aps-01",
+              "topicId": "topic-aps-atributos",
+              "title": "Una APS fuerte no es un consultorio de segunda",
+              "context": "Los cuatro atributos de la APS",
+              "at": "2026-10-30T02:38:14.924Z",
+              "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+            },
+            "todayCompleted": 1,
+            "goal": 2,
+            "streak": 1
+          }
+        },
+        "afterRefresh": {
+          "completedSheets": 1,
+          "lastSheet": "sheet-aps-01",
+          "aria": "true",
+          "hash": "#/ficha/sheet-aps-01"
+        },
+        "shot": "AUDIT/evidencias/wave4-final/img/dash-progreso-refresh.png"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:14.836Z"
+    },
+    {
+      "id": "DASH-07",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Persistencia: tema claro/oscuro tras refrescar",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1551,
+      "observations": {
+        "before": {
+          "theme": "dark",
+          "stored": "dark"
+        },
+        "toggled": {
+          "theme": "light",
+          "stored": "light"
+        },
+        "after": {
+          "theme": "light",
+          "stored": "light"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:17.186Z"
+    },
+    {
+      "id": "DASH-08",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Sin recargas al filtrar la biblioteca y al cambiar de tema",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1870,
+      "observations": {
+        "filter": "all",
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:18.737Z"
+    },
+    {
+      "id": "DASH-09",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Pantalla completa del Dashboard con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2275,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true",
+          "label": "Salir de pantalla completa"
+        },
+        "off": {
+          "element": false,
+          "pressed": "false"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:20.607Z"
+    },
+    {
+      "id": "FLASH-01",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Carga directa de la biblioteca, 630 tarjetas y sin errores",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 797,
+      "observations": {
+        "title": "Biblioteca de mazos · Study Flashcards",
+        "hash": "#/",
+        "has630": true,
+        "decks": 1,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:22.883Z"
+    },
+    {
+      "id": "FLASH-02",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Biblioteca → mazo → sesión sin recargar, con revelado y calificación",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1805,
+      "observations": {
+        "deckHref": "#/mazo/sheet-aps-01",
+        "deck": {
+          "hash": "#/mazo/sheet-aps-01",
+          "h1": "Una APS fuerte no es un consultorio de segunda",
+          "modes": 4
+        },
+        "session": {
+          "hash": "#/sesion",
+          "hasReveal": true,
+          "hasOption": false
+        },
+        "interaction": "concepto:revelar+calificar",
+        "after": {
+          "hash": "#/sesion",
+          "reviewed": 1,
+          "lastDeck": "sheet-aps-01"
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:23.680Z"
+    },
+    {
+      "id": "FLASH-03",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Sesión → Inicio de la app y sesión → HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1786,
+      "observations": {
+        "home": "#/",
+        "hubUrl": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:25.485Z"
+    },
+    {
+      "id": "FLASH-04",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "URL directa a un mazo",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1084,
+      "observations": {
+        "hash": "#/mazo/sheet-aps-01",
+        "h1": "Una APS fuerte no es un consultorio de segunda",
+        "modes": 4
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:27.271Z"
+    },
+    {
+      "id": "FLASH-05",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Atrás/adelante del navegador entre biblioteca y mazo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 863,
+      "observations": {
+        "back": "#/",
+        "forward": "#/mazo/sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:28.355Z"
+    },
+    {
+      "id": "FLASH-06",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Persistencia: sesión en curso sobrevive a refresh",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2988,
+      "observations": {
+        "before": {},
+        "after": {
+          "hash": "#/sesion",
+          "text": "Volver al mazo\nBiblioteca\nEstudio libre\nUna APS fuerte no es un consultorio de segunda\nTerminar\nTarjeta 2 de 3\n0 correctas · 1 por reforzar\nOPCIÓN MÚLTIPLE\nLos "
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:29.218Z"
+    },
+    {
+      "id": "FLASH-07",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Reanudación por ruta directa (?deck=…&resume=1) conserva el último mazo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2230,
+      "observations": {
+        "snapshotLast": {
+          "deckId": "sheet-aps-01",
+          "topicId": "topic-aps-atributos",
+          "sheetId": "sheet-aps-01",
+          "title": "Una APS fuerte no es un consultorio de segunda",
+          "at": "2026-10-30T02:38:30.614Z",
+          "url": "http://127.0.0.1:8790/study-flashcards/index.html?deck=sheet-aps-01&resume=1"
+        },
+        "deckId": "sheet-aps-01",
+        "resume": {
+          "url": "http://127.0.0.1:8790/study-flashcards/index.html#/sesion",
+          "hash": "#/sesion",
+          "text": "Volver al mazo\nBiblioteca\nEstudio libre\nUna APS fuerte no es un consultorio de segunda\nTerminar\nTarjeta 2 de 3\n0 correctas · 1 por reforzar\nOPCIÓN MÚLTIPLE\nLos cuatro atributos de la APS · 2/3\n¿Qué atributo de la APS se ",
+          "modes": 0,
+          "session": true
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:32.206Z"
+    },
+    {
+      "id": "FLASH-08",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Pantalla completa de Flashcards con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2311,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true"
+        },
+        "off": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:34.436Z"
+    },
+    {
+      "id": "FLASH-09",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Terminar una sesión incompleta pide confirmación y permite seguir",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3257,
+      "observations": {
+        "confirm": {
+          "text": "Quedan 2 tarjetas. El resumen incluirá solo lo que ya respondiste.\nSeguir\nTerminar ahora",
+          "headerEnd": false,
+          "focus": "cancel-end"
+        },
+        "resumed": {
+          "confirm": false,
+          "end": true,
+          "hash": "#/sesion"
+        },
+        "summary": {
+          "summary": true,
+          "text": "Volver al mazo\nBiblioteca\nSESIÓN COMPLETADA\n1/1\n100% de acierto\nESTUDIO LIBRE\nBuen trabajo.\n\nUna APS fuerte no es un con"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:36.747Z"
+    },
+    {
+      "id": "QUEST-01",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Carga del Game Home, 10 personajes y estado persistente",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1344,
+      "observations": {
+        "title": "SERUMS QUEST · RPG de aprendizaje",
+        "hash": "#/",
+        "charactersLinks": 11,
+        "heroes": 10,
+        "schema": 2,
+        "revision": 0,
+        "collection": 0,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:40.004Z"
+    },
+    {
+      "id": "QUEST-02",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Navegación por las cinco secciones sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1173,
+      "observations": {
+        "seen": [
+          {
+            "label": "Personajes",
+            "hash": "#/personajes",
+            "click": "a.q-navlink[data-route=\"characters\"]",
+            "h1": "Elige tu héroe."
+          },
+          {
+            "label": "Inventario",
+            "hash": "#/inventario",
+            "click": "a.q-navlink[data-route=\"inventory\"]",
+            "h1": "Elige tu héroe."
+          },
+          {
+            "label": "Tienda",
+            "hash": "#/tienda",
+            "click": "a.q-navlink[data-route=\"shop\"]",
+            "h1": "Viste a Ilan Vega."
+          },
+          {
+            "label": "Progreso",
+            "hash": "#/perfil",
+            "click": "a.q-navlink[data-route=\"progress\"]",
+            "h1": "Equipa tu ruta."
+          },
+          {
+            "label": "Inicio",
+            "hash": "#/",
+            "click": "a.q-navlink[data-route=\"home\"]",
+            "h1": "Serumista"
+          }
+        ],
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:41.348Z"
+    },
+    {
+      "id": "QUEST-03",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Personajes: foco en otro héroe y filtros sin recarga",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2136,
+      "observations": {
+        "startTitle": "Elige tu héroe.",
+        "target": "mara",
+        "focused": {
+          "url": "http://127.0.0.1:8790/serums-quest/index.html#/personajes",
+          "hash": "#/personajes",
+          "mara": true,
+          "title": "Saltar al contenido\nSERUMS\nQUEST\nInicio\nPersonajes\nInventario\nTienda\nProgreso\nSerumista\nNv 1 · Bachiller\n0 XP\n0\nJugar\nCOLECCIÓN · 1 / 10\nElige tu héroe.\n\nInspec"
+        },
+        "filter": "all",
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:42.522Z"
+    },
+    {
+      "id": "QUEST-04",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Inicio → misión → sesión de juego, sin recarga",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1691,
+      "observations": {
+        "start": {
+          "hash": "#/jugar",
+          "title": "¿Cuál es un factor cuya presencia excesiva o su ausencia relativa es esencial para la ocurrencia de la enfermedad?",
+          "options": 4
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:44.658Z"
+    },
+    {
+      "id": "QUEST-05",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Respuesta y progreso de misión: guarda estado y sobrevive a refresh",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2782,
+      "observations": {
+        "before": {
+          "revision": 1,
+          "active": true,
+          "answers": 0,
+          "xp": 0
+        },
+        "after": {
+          "revision": 3,
+          "active": true,
+          "answers": 1,
+          "xp": 0
+        },
+        "refreshed": {
+          "hash": "#/jugar",
+          "active": true,
+          "answers": 1,
+          "xp": 0,
+          "hasCard": true
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:46.349Z"
+    },
+    {
+      "id": "QUEST-06",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Inicio de la app y HUB desde QUEST",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 978,
+      "observations": {
+        "home": "#/",
+        "hubUrl": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:49.131Z"
+    },
+    {
+      "id": "QUEST-07",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "URL directa a personajes y a misión",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1858,
+      "observations": {
+        "characters": {
+          "hash": "#/personajes",
+          "h1": "Elige tu héroe.",
+          "cards": 22
+        },
+        "mission": {
+          "hash": "#/mision/mission-sp-1",
+          "h1": "Ronda comunitaria",
+          "start": false,
+          "activeLink": true,
+          "text": "Mapa\nSalud pública\nRonda comunitaria\nMISIÓN DE ÁREA\nRonda comunitaria\n\nEmpieza por los determinantes, la participación y las acciones que sostienen la salud de una comunidad.\n\nSalu"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:50.109Z"
+    },
+    {
+      "id": "QUEST-08",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Atrás/adelante del navegador entre inicio y personajes",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 909,
+      "observations": {
+        "back": "#/",
+        "forward": "#/personajes"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:51.967Z"
+    },
+    {
+      "id": "QUEST-09",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Persistencia del tema claro/oscuro tras refresh",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2391,
+      "observations": {
+        "before": {
+          "theme": "dark",
+          "stored": "dark"
+        },
+        "toggled": {
+          "theme": "light",
+          "stored": "light"
+        },
+        "after": {
+          "theme": "light",
+          "stored": "light"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:52.876Z"
+    },
+    {
+      "id": "QUEST-10",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Selección de personaje persistente entre visitas (si el héroe es poseído)",
+      "severity": "media",
+      "status": "SKIP",
+      "durationMs": 1,
+      "observations": null,
+      "error": "No hay un héroe alternativo poseído para cambiar selección (seleccionado=ilan, monedas=undefined).",
+      "evidence": [],
+      "at": "2026-10-30T02:38:55.268Z"
+    },
+    {
+      "id": "QUEST-11",
+      "app": "SERUMS QUEST",
+      "suite": "SERUMS QUEST",
+      "description": "Pantalla completa de QUEST con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2309,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true",
+          "label": "Salir de pantalla completa"
+        },
+        "off": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:55.269Z"
+    },
+    {
+      "id": "PLAZAS-01",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Carga del mapa, 7.323 plazas y Google Maps operativo o fallback visible",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2817,
+      "observations": {
+        "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+        "badge": "7,323 registros · 6,971 con coordenadas · oficial 2026-I",
+        "recPill": "7,323 plazas",
+        "apiBadge": "Maps: error",
+        "mapChildren": 1,
+        "mapError": {
+          "display": "grid",
+          "text": "Google Maps no se pudo cargar.\nCausa probable: clave inválida, sin facturación o sin Maps JavaScript API habilitada.\n\n1) Ve a Google Cloud Console → APIs y serv"
+        },
+        "records": 7323,
+        "favorites": 0,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:38:57.579Z"
+    },
+    {
+      "id": "PLAZAS-02",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Filtro de búsqueda y limpiar filtros sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 3036,
+      "observations": {
+        "count0": "7,323 plazas",
+        "filtered": {
+          "recPill": "272 plazas",
+          "resCount": "272 resultados",
+          "navs": 0
+        },
+        "cleared": "7,323 plazas",
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:00.396Z"
+    },
+    {
+      "id": "PLAZAS-03",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Resultados → ficha de plaza (modal) y marcar favorita",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1955,
+      "observations": {
+        "results": {
+          "rows": 25,
+          "tab": "#sideTabs [data-tab=\"results\"]"
+        },
+        "row": {
+          "id": "0",
+          "text": "COPALLIN DE ARAMANGO\nENFERMERIA · GOBIERNO REGIONAL · 1 vac.\n📍 ARAMANGO · BAGUA · AMAZONAS\nAdjudicación oficial: ALTAMI"
+        },
+        "detail": {
+          "title": "COPALLIN DE ARAMANGO",
+          "body": "COPALLIN DE ARAMANGO\nCódigo RENIPRESS 00005055 · I-2\n☆ Marcar favorita\n✅ Marcar como adjudicada\n🚫 Bloquear\nSin tu marca de adjudicación\nTus marcas (★ favorita, ✅ adjudicada, 🚫 bloqueada) son locales y no modifican la a",
+          "favBtn": true
+        },
+        "beforeFav": 0,
+        "afterFav": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "badge": "1",
+          "pressed": "true"
+        },
+        "lastFavError": ""
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:03.432Z"
+    },
+    {
+      "id": "PLAZAS-04",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Favorito persistente tras refresh y visible en el filtro rápido",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1442,
+      "observations": {
+        "before": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "badge": "1"
+        },
+        "after": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "badge": "1"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:05.387Z"
+    },
+    {
+      "id": "PLAZAS-05",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Navegación interna del rail (Estadísticas, Geolocalización, Configuración) sin recarga",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3584,
+      "observations": {
+        "seen": [
+          {
+            "nav": "stats",
+            "sub": "#subStats",
+            "visible": true
+          },
+          {
+            "nav": "geo",
+            "sub": "#subGeo",
+            "visible": true
+          },
+          {
+            "nav": "config",
+            "sub": "#subConfig",
+            "visible": true
+          },
+          {
+            "nav": "map",
+            "sub": "#mapView",
+            "visible": true
+          }
+        ],
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:06.829Z"
+    },
+    {
+      "id": "PLAZAS-06",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "App → HUB con el control compartido",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 90,
+      "observations": {
+        "click": "[data-serums-chrome=\"hub\"]",
+        "url": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:10.413Z"
+    },
+    {
+      "id": "PLAZAS-07",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Pantalla completa de la app con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3511,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true"
+        },
+        "off": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:10.503Z"
+    },
+    {
+      "id": "PLAZAS-08",
+      "app": "Plaza SERUMS",
+      "suite": "Plaza SERUMS",
+      "description": "Vistas con historial: hash directo, cambio de rail y atrás",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2821,
+      "observations": {
+        "direct": {
+          "hash": "#/estadisticas",
+          "view": "stats",
+          "open": true
+        },
+        "fav": {
+          "hash": "#/favoritos",
+          "view": "favoritos"
+        },
+        "back": {
+          "hash": "#/estadisticas",
+          "view": "stats"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:14.014Z"
+    },
+    {
+      "id": "MAP-01",
+      "app": "Serums Map",
+      "suite": "Serums Map",
+      "description": "URL directa y vista de mapa con marcadores/listado utilizable",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1640,
+      "observations": {
+        "hash": "#/mapa",
+        "title": "SERUMS Map Explorer — Plazas SERUMS Perú 2026-I",
+        "mapReady": true,
+        "apiBadge": "Maps: error",
+        "records": 7323,
+        "results": 25,
+        "mapErrorHidden": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:16.835Z"
+    },
+    {
+      "id": "MAP-02",
+      "app": "Serums Map",
+      "suite": "Serums Map",
+      "description": "Ficha detallada desde el listado y cierre sin perder la vista",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 840,
+      "observations": {
+        "rows": 25,
+        "opened": {
+          "title": "COPALLIN DE ARAMANGO",
+          "tabs": 3
+        },
+        "closed": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:18.475Z"
+    },
+    {
+      "id": "MAP-03",
+      "app": "Serums Map",
+      "suite": "Serums Map",
+      "description": "Preferencias: tema persistente tras refresh",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3147,
+      "observations": {
+        "before": {
+          "theme": "light",
+          "stored": "\"light\""
+        },
+        "toggled": {
+          "theme": "dark",
+          "stored": "\"dark\""
+        },
+        "after": {
+          "theme": "dark",
+          "stored": "\"dark\""
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:19.315Z"
+    },
+    {
+      "id": "MAP-04",
+      "app": "Serums Map",
+      "suite": "Serums Map",
+      "description": "Fallback sin Google Maps: la app sigue usable y avisa",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1643,
+      "observations": {
+        "mapError": "Google Maps no se pudo cargar.\nCausa probable: clave inválida, sin facturación o sin Maps JavaScript API habilitada.\n\n1) Ve a Google Cloud Console → APIs y servicios → Biblioteca y habilita Maps JavaScript API (y Geocoding API si geocodificas).\n2) En Credencia",
+        "apiBadge": "Maps: error",
+        "records": 7323,
+        "listUsable": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:22.462Z"
+    },
+    {
+      "id": "MAP-05",
+      "app": "Serums Map",
+      "suite": "Serums Map",
+      "description": "Cambio de filtro rápido sin recargar el documento",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2365,
+      "observations": {
+        "btn": {
+          "quick": "todas",
+          "text": "Todas\n7,323"
+        },
+        "after": {
+          "recPill": "7,323 plazas",
+          "active": "Todas\n7,323"
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:24.105Z"
+    },
+    {
+      "id": "BANQ-01",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Carga del hub: 51 exámenes, 5.100 preguntas, 17 profesiones y 100% de cobertura declarada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 11248,
+      "observations": {
+        "title": "Banqueo · Examen Studio",
+        "body": "Saltar al contenido\nBANQUEO\nEXAMEN STUDIO\nBanqueo\nBanco\nImportar\nRevisión\n15\nProgreso\nBANCO SERUMS\nTrazable al PDF original\nTu profesión.\nTu banco.\n\n51 exámenes oficiales, clasificados por contenido y por convocatoria. Entra directo a las preguntas, revisa la clave en su página original o entrena con el examen completo.\n\nExplorar el banco\nImportar PDFs\nRevisar\n51\nEXÁMENES\n5,100\nPREGUNTAS\n100%\nCOBERTURA\n17\nPROFESIONES\nPDFs originales preservados. Claves identificadas por resaltado, nunca inventad",
+        "totals": {
+          "professions": 17,
+          "exams": 51,
+          "questions": 5100,
+          "validAnswers": 5100,
+          "duplicateGroups": 580,
+          "duplicateQuestions": 2695
+        },
+        "bootVisible": false,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:26.470Z"
+    },
+    {
+      "id": "BANQ-02",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Hub de Banqueo → banco → pregunta, sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1623,
+      "observations": {
+        "bank": {
+          "hash": "#bank/medicina",
+          "count": 300,
+          "h1": "Banco de preguntas"
+        },
+        "detail": {
+          "selected": "2026-ii-medicina-q001",
+          "detail": "Pregunta 1\nMedicina Humana\n2026-II\npágina 1\n8489155-medicina.pdf\nEn actividad extramuros de vacunación del adolescente en su jurisdicción, usted acude a centro educativo identificando en un adolescente tatuajes extensos ",
+          "keyVisible": true
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:37.718Z"
+    },
+    {
+      "id": "BANQ-03",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Banco → inicio de Banqueo y URL directa al banco",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2153,
+      "observations": {
+        "home": "#hub",
+        "direct": {
+          "hash": "#bank/medicina",
+          "h1": "Banco de preguntas",
+          "rows": 300
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:39.341Z"
+    },
+    {
+      "id": "BANQ-04",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Banqueo → HUB (control compartido o enlace explícito)",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1025,
+      "observations": {
+        "selector": "[data-serums-chrome=\"hub\"]",
+        "url": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:41.494Z"
+    },
+    {
+      "id": "BANQ-05",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Atrás/adelante del navegador entre banco y hub de Banqueo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1167,
+      "observations": {
+        "back": "#hub",
+        "forward": "#bank/medicina"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:42.520Z"
+    },
+    {
+      "id": "BANQ-06",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Práctica (Examen Studio): configuración → sesión → responder → resultado",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 4270,
+      "observations": {
+        "started": {
+          "setup": {
+            "hash": "#practice/2026-ii-medicina",
+            "count": "25",
+            "exam": "2026-ii-medicina",
+            "disabled": false
+          },
+          "session": {
+            "hash": "#practice/session",
+            "question": "En el análisis de datos de una investigación, la ...... es uno de los tipos de medidas de tendencia ",
+            "options": 4,
+            "timer": true
+          }
+        },
+        "answered": {
+          "selected": 1,
+          "feedback": "La clave es B. Resaltado amarillo en la página 7.\nVer PDF"
+        },
+        "second": {
+          "index": "Pregunta 2 de 25 · 1 respondida\n2026-II · p. 10",
+          "options": 4
+        },
+        "result": {
+          "hash": "#practice/result/attempt-80dc1320-a878-401f-8d48-8658199888af",
+          "text": "0%\n0/25\nRESULTADO DE LA PRÁCTICA\nHay margen para mejorar.\n\nMedicina Humana · SERUMS 2026-II · Invitado · 29 oct. 2026\n\n0\nCORRECTAS\n1\nINCORRECTAS\n24\nEN BLANCO\n0:01\nTIEMPO\nRepetir\nVer banco\nHistorial\nRevisión del intento\n0 CORRECTAS · 1 INCORRECTAS · 24 EN BLANCO\n1 · Incorrecta\nElegiste A\nEn el análisis de datos de una i"
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:43.687Z"
+    },
+    {
+      "id": "BANQ-07",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Persistencia del intento: visible en Progreso tras refresh",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2767,
+      "observations": {
+        "before": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n0\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando em"
+        },
+        "after": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n0\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando em"
+        },
+        "shot": "AUDIT/evidencias/wave4-final/img/banq-progreso-refresh.png"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:47.958Z"
+    },
+    {
+      "id": "BANQ-08",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Persistencia de revisión de pregunta (banqueo-review-v1) tras refresh",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3486,
+      "observations": {
+        "before": null,
+        "after": {
+          "stored": "{\"2026-i-medicina-q001\":{\"r\":1,\"ts\":1793327992015}}",
+          "pressed": null
+        },
+        "refreshed": {
+          "stored": "{\"2026-i-medicina-q001\":{\"r\":1,\"ts\":1793327992015}}",
+          "pressed": null
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:50.725Z"
+    },
+    {
+      "id": "BANQ-09",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Sin recargas al cambiar filtro de preguntas y búsqueda",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2588,
+      "observations": {
+        "filter": "Validadas300",
+        "rows": 176,
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:54.211Z"
+    },
+    {
+      "id": "BANQ-10",
+      "app": "Banqueo",
+      "suite": "Banqueo · Examen Studio",
+      "description": "Pantalla completa de Banqueo con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2574,
+      "observations": {
+        "on": {
+          "element": true,
+          "pressed": "true"
+        },
+        "off": false
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:56.799Z"
+    },
+    {
+      "id": "RESP-DASHBOARD",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "Study Dashboard: 6 viewports sin overflow horizontal ni errores, targets críticos ≥24 px",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5686,
+      "observations": {
+        "viewports": [
+          {
+            "label": "360x640",
+            "innerWidth": 360,
+            "innerHeight": 640,
+            "scrollWidth": 360,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 10,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844",
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "scrollWidth": 390,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 11,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "768x1024",
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "scrollWidth": 768,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 14,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1024x768",
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "scrollWidth": 1024,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 14,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900",
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "scrollWidth": 1440,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 16,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390-landscape",
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "scrollWidth": 844,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 11,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          }
+        ],
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:39:59.373Z"
+    },
+    {
+      "id": "RESP-FLASHCARDS",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "Study Flashcards: 6 viewports sin overflow horizontal ni errores, targets críticos ≥24 px",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5552,
+      "observations": {
+        "viewports": [
+          {
+            "label": "360x640",
+            "innerWidth": 360,
+            "innerHeight": 640,
+            "scrollWidth": 360,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 16,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "SELECT",
+                  "cls": "",
+                  "text": "Todas las áreas\nÁrea I · Salud pública\nÁ",
+                  "w": 288,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844",
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "scrollWidth": 390,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 17,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "SELECT",
+                  "cls": "",
+                  "text": "Todas las áreas\nÁrea I · Salud pública\nÁ",
+                  "w": 318,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "768x1024",
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "scrollWidth": 768,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 17,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "SELECT",
+                  "cls": "",
+                  "text": "Todas las áreas\nÁrea I · Salud pública\nÁ",
+                  "w": 190,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1024x768",
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "scrollWidth": 1024,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 17,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "SELECT",
+                  "cls": "",
+                  "text": "Todas las áreas\nÁrea I · Salud pública\nÁ",
+                  "w": 190,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900",
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "scrollWidth": 1440,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 17,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "SELECT",
+                  "cls": "",
+                  "text": "Todas las áreas\nÁrea I · Salud pública\nÁ",
+                  "w": 190,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390-landscape",
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "scrollWidth": 844,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 10,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          }
+        ],
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:05.059Z"
+    },
+    {
+      "id": "RESP-QUEST",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "SERUMS QUEST: 6 viewports sin overflow horizontal ni errores, targets críticos ≥24 px",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 6030,
+      "observations": {
+        "viewports": [
+          {
+            "label": "360x640",
+            "innerWidth": 360,
+            "innerHeight": 640,
+            "scrollWidth": 360,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 16,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844",
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "scrollWidth": 390,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 16,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "768x1024",
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "scrollWidth": 768,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 20,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1024x768",
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "scrollWidth": 1024,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 20,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900",
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "scrollWidth": 1440,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 23,
+              "smallCount": 1,
+              "small": [
+                {
+                  "tag": "A",
+                  "cls": "q-textlink",
+                  "text": "Ver objetivo",
+                  "w": 75,
+                  "h": 15
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390-landscape",
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "scrollWidth": 844,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 14,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          }
+        ],
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:10.611Z"
+    },
+    {
+      "id": "RESP-PLAZAS",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "Plaza SERUMS: 6 viewports sin overflow horizontal ni errores, targets críticos ≥24 px",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 7077,
+      "observations": {
+        "viewports": [
+          {
+            "label": "360x640",
+            "innerWidth": 360,
+            "innerHeight": 640,
+            "scrollWidth": 360,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 23,
+              "smallCount": 3,
+              "small": [
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844",
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "scrollWidth": 390,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 24,
+              "smallCount": 3,
+              "small": [
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          },
+          {
+            "label": "768x1024",
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "scrollWidth": 768,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 25,
+              "smallCount": 4,
+              "small": [
+                {
+                  "tag": "BUTTON",
+                  "cls": "id",
+                  "text": "SERUMS · MAP",
+                  "w": 135,
+                  "h": 20
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          },
+          {
+            "label": "1024x768",
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "scrollWidth": 1024,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 39,
+              "smallCount": 9,
+              "small": [
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900",
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "scrollWidth": 1440,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 46,
+              "smallCount": 16,
+              "small": [
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390-landscape",
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "scrollWidth": 844,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 25,
+              "smallCount": 4,
+              "small": [
+                {
+                  "tag": "BUTTON",
+                  "cls": "id",
+                  "text": "SERUMS · MAP",
+                  "w": 135,
+                  "h": 20
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                },
+                {
+                  "tag": "INPUT",
+                  "cls": "",
+                  "text": "",
+                  "w": 16,
+                  "h": 16
+                }
+              ],
+              "chrome": [
+                {
+                  "action": "hub",
+                  "w": 44,
+                  "h": 44
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 44,
+                  "h": 44
+                }
+              ]
+            }
+          }
+        ],
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:16.641Z"
+    },
+    {
+      "id": "RESP-BANQUEO",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "Banqueo · Examen Studio: 6 viewports sin overflow horizontal ni errores, targets críticos ≥24 px",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5684,
+      "observations": {
+        "viewports": [
+          {
+            "label": "360x640",
+            "innerWidth": 360,
+            "innerHeight": 640,
+            "scrollWidth": 360,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 14,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "390x844",
+            "innerWidth": 390,
+            "innerHeight": 844,
+            "scrollWidth": 390,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 15,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "768x1024",
+            "innerWidth": 768,
+            "innerHeight": 1024,
+            "scrollWidth": 768,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 20,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1024x768",
+            "innerWidth": 1024,
+            "innerHeight": 768,
+            "scrollWidth": 1024,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 19,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "1440x900",
+            "innerWidth": 1440,
+            "innerHeight": 900,
+            "scrollWidth": 1440,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 27,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          },
+          {
+            "label": "844x390-landscape",
+            "innerWidth": 844,
+            "innerHeight": 390,
+            "scrollWidth": 844,
+            "overflowX": 0,
+            "bodyOverflowX": 0,
+            "target": {
+              "visible": 14,
+              "smallCount": 0,
+              "small": [],
+              "chrome": [
+                {
+                  "action": "home",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "hub",
+                  "w": 40,
+                  "h": 40
+                },
+                {
+                  "action": "fullscreen",
+                  "w": 40,
+                  "h": 40
+                }
+              ]
+            }
+          }
+        ],
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:23.718Z"
+    },
+    {
+      "id": "RESP-INTERNAS",
+      "app": "Transversal",
+      "suite": "Responsive",
+      "description": "Vistas internas clave a 390×844: biblioteca/ficha, mazo, personajes, resultados y banco",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 11430,
+      "observations": [
+        {
+          "app": "dashboard",
+          "label": "biblioteca",
+          "overflowX": 0,
+          "text": "Saltar al contenido\nTEMARIO OFICIAL SERUMS 2026-II\nLas cinco áreas del temario\n\nLas cinco áreas oficiales de Psicología organizan 20 categorías, 86 módulos y 21",
+          "target": {
+            "visible": 16,
+            "smallCount": 0,
+            "small": [],
+            "chrome": [
+              {
+                "action": "home",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "hub",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "fullscreen",
+                "w": 40,
+                "h": 40
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-biblioteca-390.png"
+        },
+        {
+          "app": "dashboard",
+          "label": "ficha",
+          "overflowX": 0,
+          "text": "Saltar al contenido\nCategoría\nRápido\nCompleto\nÁrea II · Cuidado integral de salud\nAtención primaria y modelo de cuidado\nLos cuatro atributos de la APS\nUna APS f",
+          "target": {
+            "visible": 14,
+            "smallCount": 1,
+            "small": [
+              {
+                "tag": "A",
+                "cls": "reader-back",
+                "text": "Categoría",
+                "w": 77,
+                "h": 19
+              }
+            ],
+            "chrome": [
+              {
+                "action": "home",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "hub",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "fullscreen",
+                "w": 40,
+                "h": 40
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-ficha-390.png"
+        },
+        {
+          "app": "flashcards",
+          "label": "mazo",
+          "overflowX": 0,
+          "text": "Saltar al contenido\nBiblioteca\nFicha resumen\nÁrea II · Cuidado integral de salud\nAtención primaria y modelo de cuidado\nFicha\nUna APS fuerte no es un consultorio",
+          "target": {
+            "visible": 14,
+            "smallCount": 1,
+            "small": [
+              {
+                "tag": "A",
+                "cls": "flash-back",
+                "text": "Biblioteca",
+                "w": 78,
+                "h": 19
+              }
+            ],
+            "chrome": [
+              {
+                "action": "home",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "hub",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "fullscreen",
+                "w": 40,
+                "h": 40
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-mazo-390.png"
+        },
+        {
+          "app": "quest",
+          "label": "personajes",
+          "overflowX": 0,
+          "text": "Saltar al contenido\n0\nCOLECCIÓN · 1 / 10\nElige tu héroe.\n\nInspecciona sin cambiar tu selección. Cada héroe tiene una voz, un equipo y una silueta propios.\n\n0\nTi",
+          "target": {
+            "visible": 27,
+            "smallCount": 10,
+            "small": [
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Zenón Atlas",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Iris Calderón",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Ona Beltrán",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Amaru Cielo",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Kian Ferro",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Lía Márquez",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Noa Iturbe",
+                "w": 6,
+                "h": 6
+              },
+              {
+                "tag": "BUTTON",
+                "cls": "q-hero-dot",
+                "text": "Teo Alcázar",
+                "w": 6,
+                "h": 6
+              }
+            ],
+            "chrome": [
+              {
+                "action": "home",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "hub",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "fullscreen",
+                "w": 40,
+                "h": 40
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-personajes-390.png"
+        },
+        {
+          "app": "plazas",
+          "label": "mapa",
+          "overflowX": 0,
+          "text": "1\n0\n0\nSERUMS · MAP\nExportar\n36\nSe ha producido un error.\nEsta página no ha cargado Google Maps correctamente. Descubre los detalles técnicos del problema en la ",
+          "target": {
+            "visible": 24,
+            "smallCount": 3,
+            "small": [
+              {
+                "tag": "INPUT",
+                "cls": "",
+                "text": "",
+                "w": 16,
+                "h": 16
+              },
+              {
+                "tag": "INPUT",
+                "cls": "",
+                "text": "",
+                "w": 16,
+                "h": 16
+              },
+              {
+                "tag": "INPUT",
+                "cls": "",
+                "text": "",
+                "w": 16,
+                "h": 16
+              }
+            ],
+            "chrome": [
+              {
+                "action": "hub",
+                "w": 44,
+                "h": 44
+              },
+              {
+                "action": "fullscreen",
+                "w": 44,
+                "h": 44
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-mapa-390.png"
+        },
+        {
+          "app": "banqueo",
+          "label": "banco",
+          "overflowX": 0,
+          "text": "Saltar al contenido\nBanqueo\nBanco\nImportar\nRevisión\n15\nProgreso\nBanqueo\nMedicina Humana\nTodos los exámenes\nBanco de preguntas\n\n3 convocatorias · 300 preguntas d",
+          "target": {
+            "visible": 27,
+            "smallCount": 2,
+            "small": [
+              {
+                "tag": "A",
+                "cls": "",
+                "text": "Banqueo",
+                "w": 46,
+                "h": 17
+              },
+              {
+                "tag": "A",
+                "cls": "",
+                "text": "Medicina Humana",
+                "w": 94,
+                "h": 17
+              }
+            ],
+            "chrome": [
+              {
+                "action": "home",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "hub",
+                "w": 40,
+                "h": 40
+              },
+              {
+                "action": "fullscreen",
+                "w": 40,
+                "h": 40
+              }
+            ]
+          },
+          "shot": "AUDIT/evidencias/wave4-final/img/resp-interna-banco-390.png"
+        }
+      ],
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:29.402Z"
+    },
+    {
+      "id": "PERSIST-01",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Progreso de Study: pestaña nueva, refresh y reentrada desde el HUB conservan la ficha completada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 6217,
+      "observations": {
+        "snapshot": {
+          "completed": 1,
+          "last": {
+            "sheetId": "sheet-aps-01",
+            "topicId": "topic-aps-atributos",
+            "title": "Una APS fuerte no es un consultorio de segunda",
+            "context": "Los cuatro atributos de la APS",
+            "at": "2026-10-30T02:40:43.841Z",
+            "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+          }
+        },
+        "href": "./study-dashboard/index.html",
+        "flashHref": "./study-flashcards/index.html",
+        "reentry": {
+          "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+          "hash": "#/"
+        },
+        "hubProgress": {
+          "text": "SERUMS HUB\nBANQUEO\nFICHA 01\nA\nB\nC\nD\nCLAVE\nVERIFICADA\n51\nEXÁMENES\n01 / 05\nBANCO DE EXÁMENES\nBANQUEO\n\n51 exámenes reales por profesión, con la clave en su página original, revisión y práctica.\n\n51 exámenes\nClaves trazables\nRevisión y práctica\nAbrir aplicación\nPREPARACIÓN\nTERRITORIO\n7 323\nPLAZAS\nEXPLORADOR TERRITORIAL\nPLAZAS SERUMS\nFICHA DE ESTUDIO\n01\nPROGRESO DEL TEMARIO\n5 ÁREAS\n20 CATEGORÍAS\n210\nFICHAS\nLECTURA Y PROGRESO\nSTUDY DASHBOARD\nCONCEPTO\n?\nREPASO ACTIVO\n630\nTARJETAS\nRECUPERACIÓN ACTIVA\nSTUDY FLASHCARDS\nQ\n5 RUTAS\n· MISIONES\n300\nPREGUNTAS\nAPRENDIZAJE GAMIFICADO\nSERUMS QUEST\nBANQUEO\nBanco de exámenes\nAbrir",
+          "value": "1/210",
+          "href": "./study-dashboard/index.html"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:42.591Z"
+    },
+    {
+      "id": "PERSIST-02",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Cerrar y reabrir Chrome conserva progreso de Study y snapshot del HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 3252,
+      "observations": {
+        "before": {
+          "completed": 1,
+          "keys": [
+            "serumshub:active:v1",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "completed": 1,
+          "keys": [
+            "serumshub:active:v1",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:48.808Z"
+    },
+    {
+      "id": "PERSIST-03",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Orientación landscape/portrait no rompe el progreso ni produce errores",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2450,
+      "observations": {
+        "landscape": {
+          "w": 844,
+          "h": 390,
+          "overflow": 0,
+          "text": "CONTINÚA DONDE LO DEJASTE\nAprender también es volver.\n\nTu progreso se construye ",
+          "completed": 1
+        },
+        "portrait": {
+          "w": 390,
+          "h": 844,
+          "overflow": 0,
+          "completed": 1
+        },
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:52.060Z"
+    },
+    {
+      "id": "PERSIST-04",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Flashcards: sesión y tarjeta revisada sobreviven a refresh y reinicio",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 4958,
+      "observations": {
+        "before": {
+          "session": null,
+          "reviewed": 0,
+          "lastDeck": "sheet-aps-01",
+          "keys": [
+            "serumshub:active:v1",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "session": null,
+          "reviewed": 0,
+          "lastDeck": "sheet-aps-01",
+          "keys": [
+            "serumshub:active:v1",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ],
+          "resumeHref": null
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:54.510Z"
+    },
+    {
+      "id": "PERSIST-05",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "QUEST: tema, misión y estado versionado sobreviven a cerrar/reabrir",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 6632,
+      "observations": {
+        "before": {
+          "revision": 4,
+          "theme": "light",
+          "answers": 1,
+          "xp": 0,
+          "keys": [
+            "serumshub:active:v1",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "revision": 4,
+          "theme": "light",
+          "answers": 1,
+          "xp": 0,
+          "docTheme": "light",
+          "keys": [
+            "serumshub:active:v1",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:40:59.468Z"
+    },
+    {
+      "id": "PERSIST-06",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Plazas: favoritos y preferencias sobreviven a cerrar/reabrir",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8533,
+      "observations": {
+        "before": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "keys": [
+            "serums_favoritos",
+            "serums_notifs",
+            "serums_theme",
+            "serumshub:active:v1",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        },
+        "after": {
+          "favs": [
+            "00005055|ENFERMERIA"
+          ],
+          "badge": "1",
+          "keys": [
+            "serums_favoritos",
+            "serums_notifs",
+            "serums_theme",
+            "serumshub:active:v1",
+            "serumsquest:backup:v1",
+            "serumsquest:snapshot:v1",
+            "serumsquest:state:v1",
+            "serumsquest:theme",
+            "study-state-v1",
+            "study-theme",
+            "studyhub:snapshot:v1"
+          ]
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:41:06.100Z"
+    },
+    {
+      "id": "PERSIST-07",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Banqueo: intento de práctica persiste en IndexedDB y se lista tras reiniciar",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 10581,
+      "observations": {
+        "databases": [
+          {
+            "name": "examenstudio",
+            "version": 2
+          },
+          {
+            "name": "serumsdb",
+            "version": 1
+          },
+          {
+            "name": "study-serums",
+            "version": 1
+          }
+        ],
+        "after": {
+          "attempts": 1,
+          "text": "Banqueo\nProgreso\nTu progreso\n\nLos intentos, las preguntas revisadas y el ranking se guardan solo en este dispositivo.\n\nNueva práctica\n1\nINTENTO ENTREGADO\n0%\nMEJOR RESULTADO\n0%\nPROMEDIO\n1\nPREGUNTAS REVISADAS\nHistorial\nRanking local\nÚltimos resultados\nPorcentaje de acierto\nPendientes\nAl día\n\nCuando empieces una práctica y salgas sin entregar, aparecerá aquí para continuarla.\n\n1 intento guardado en I"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:41:14.633Z"
+    },
+    {
+      "id": "PERSIST-08",
+      "app": "Persistencia",
+      "suite": "Persistencia",
+      "description": "Inventario de claves final: ninguna clave esperada se perdió",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1,
+      "observations": {
+        "keys": [
+          "banqueo-profession-v1",
+          "banqueo-review-v1",
+          "banqueo-theme-v1",
+          "es-theme",
+          "serums_favoritos",
+          "serums_notifs",
+          "serums_theme",
+          "serumshub:active:v1",
+          "serumsquest:backup:v1",
+          "serumsquest:snapshot:v1",
+          "serumsquest:state:v1",
+          "serumsquest:theme",
+          "study-state-v1",
+          "study-theme",
+          "studyhub:snapshot:v1"
+        ],
+        "required": [
+          "study-state-v1",
+          "studyhub:snapshot:v1",
+          "study-theme",
+          "serumsquest:state:v1",
+          "serumsquest:snapshot:v1",
+          "serumsquest:theme",
+          "serums_favoritos",
+          "serums_theme",
+          "banqueo-review-v1",
+          "banqueo-profession-v1"
+        ],
+        "missing": []
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-10-30T02:41:25.214Z"
+    }
+  ],
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/156.0.8078.49",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-aSp1YT"
+  },
+  "repo": {
+    "git": {
+      "head": "f188788",
+      "status": [
+        " M DESIGN-SYSTEM.md",
+        " M \"EXAMEN STUDIO/Examen Studio.html\"",
+        " M \"EXAMEN STUDIO/js/app.js\"",
+        " M \"EXAMEN STUDIO/styles.css\"",
+        " M index.html",
+        " M \"serums map/serums-map-explorer/index.html\"",
+        " M \"serums map/serums-map-explorer/js/adjudicacion.js\"",
+        " M \"serums map/serums-map-explorer/js/app.js\"",
+        " M \"serums map/serums-map-explorer/js/panels.js\"",
+        " M \"serums map/serums-map-explorer/styles.css\"",
+        " M serums-quest/index.html",
+        " M serums-quest/js/app.js",
+        " M serums-quest/styles-game.css",
+        " M serums-quest/styles-rpg.css",
+        " M serums-quest/styles.css",
+        " M study-dashboard/index.html",
+        " M study-dashboard/styles.css",
+        " M study-flashcards/app.js",
+        " M study-flashcards/index.html",
+        " M study-flashcards/styles.css",
+        " M study-shared/base.css",
+        " M study-shared/ui.js",
+        " M tests/e2e/suites/hub.mjs",
+        " M tests/e2e/suites/plazas.mjs",
+        " M tests/e2e/suites/study.mjs",
+        "?? AUDIT/EVOLUCION-2026-10-29.md",
+        "?? AUDIT/EVOLUCION-OLA-2-2026-10-29.md",
+        "?? AUDIT/EVOLUCION-OLA-3-2026-10-29.md",
+        "?? AUDIT/evidencias/baseline-2026-10-29/",
+        "?? AUDIT/evidencias/wave1-banq/",
+        "?? AUDIT/evidencias/wave1-final/",
+        "?? AUDIT/evidencias/wave1-quick/",
+        "?? AUDIT/evidencias/wave2-a11y/",
+        "?? AUDIT/evidencias/wave2-final/",
+        "?? AUDIT/evidencias/wave3-final/",
+        "?? AUDIT/evidencias/wave3-probes/",
+        "?? serums-mobile.css"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 101780,
+        "mtimeMs": 1793319676948,
+        "sha1ish": "fe59a5b06bf8205c1058e668a2437b625677e98f"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 4618,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "8a5ea0226a8c744e052d3d3aa256a165083026d8"
+      },
+      "study-dashboard/app.js": {
+        "size": 67742,
+        "mtimeMs": 1792966998192,
+        "sha1ish": "7e9e0c707aae339d55561c4c4e05ef479e01018a"
+      },
+      "study-flashcards/index.html": {
+        "size": 4634,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "cb20a702ceb531ba7cbbe9250884c2af7a2a6343"
+      },
+      "study-flashcards/app.js": {
+        "size": 85373,
+        "mtimeMs": 1793320229441,
+        "sha1ish": "945451c49dea410e0665bfcb42807cc8969cee33"
+      },
+      "study-shared/store.js": {
+        "size": 34865,
+        "mtimeMs": 1792966553500,
+        "sha1ish": "f4902e5dd2de423ef54f6cfe4904c7b233d46a99"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6920,
+        "mtimeMs": 1793300449858,
+        "sha1ish": "f9799d2bcb4e1f44c378a8bff9ab0b4adc250918"
+      },
+      "study-shared/base.css": {
+        "size": 16882,
+        "mtimeMs": 1793308704330,
+        "sha1ish": "b41961a0db43d18fdb33a471dce12f10b70ed57d"
+      },
+      "serums-quest/index.html": {
+        "size": 7817,
+        "mtimeMs": 1793308543046,
+        "sha1ish": "746158724b84c14bea0f3bd1b828b28facfea7e4"
+      },
+      "serums-quest/js/app.js": {
+        "size": 222750,
+        "mtimeMs": 1793301144156,
+        "sha1ish": "ddfde0bfdb697f99b0749fd3662e4e8ba0fb270c"
+      },
+      "serums-quest/js/store.js": {
+        "size": 24673,
+        "mtimeMs": 1792966561915,
+        "sha1ish": "1e6e210dbd01978856eb57f89936bb860ce7495a"
+      },
+      "serums-quest/js/characters.js": {
+        "size": 32779,
+        "mtimeMs": 1792960973740,
+        "sha1ish": "cac068de57e721261edd9d73b086c7503696df35"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2529,
+        "mtimeMs": 1793308543043,
+        "sha1ish": "bdc13a9ac55e6f8a8fff5c092a706b9b9490e3cf"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 151145,
+        "mtimeMs": 1793317347652,
+        "sha1ish": "e57c79c4ba93dd019bc7fe2e608bb008b0102925"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 29377,
+        "mtimeMs": 1793316425387,
+        "sha1ish": "676352815024e966543ef13a954360a0a991ed59"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 71012,
+        "mtimeMs": 1793318335352,
+        "sha1ish": "6c51c9782ce0093252e9f5ae4d5ab404d7cca504"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 45489,
+        "mtimeMs": 1793316676155,
+        "sha1ish": "2e5d7b1d2d3827b0fefd3a671fb5496fb246f190"
+      }
+    },
+    "changedDuringRun": []
+  },
+  "stable": true
+}

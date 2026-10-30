@@ -1,0 +1,27 @@
+﻿{
+  "before": {
+    "hash": "#/sesion",
+    "end": true,
+    "confirm": false,
+    "answered": null
+  },
+  "open": {
+    "hash": "#/sesion",
+    "confirm": true,
+    "text": "Quedan 2 tarjetas. El resumen incluir├í solo lo que ya respondiste.\nSeguir\nTerminar ahora",
+    "headerEnd": false,
+    "active": "cancel-end",
+    "inside": true
+  },
+  "cancelled": {
+    "hash": "#/sesion",
+    "confirm": false,
+    "end": true,
+    "active": "end-session"
+  },
+  "finished": {
+    "hash": "#/resumen",
+    "text": "Volver al mazo\nBiblioteca\nSESI├ôN COMPLETADA\n1/1\n100% de acierto\nESTUDIO LIBRE\nBuen trabajo.\n\nUna APS fuerte no es un consultorio de segunda ",
+    "summary": true
+  }
+}

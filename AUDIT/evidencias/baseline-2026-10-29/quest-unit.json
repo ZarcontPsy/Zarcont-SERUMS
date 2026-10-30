@@ -1,0 +1,262 @@
+{
+  "startedAt": "2026-10-29T20:19:44.115Z",
+  "url": "http://127.0.0.1:8791/serums-quest/tests/tests.html",
+  "result": {
+    "passed": 61,
+    "failed": 0,
+    "total": 61,
+    "results": [
+      {
+        "name": "Curva de nivel centralizada y reversible",
+        "ok": true
+      },
+      {
+        "name": "Rangos exigen XP, precisión, dominio y áreas",
+        "ok": true
+      },
+      {
+        "name": "Una respuesta no cambia la etapa; 12 respuestas con 55% sí",
+        "ok": true
+      },
+      {
+        "name": "La etapa no baja por un error aislado; sí tras 12 recientes bajo 40%",
+        "ok": true
+      },
+      {
+        "name": "Dominio exige 60 respuestas, 72%, 12 dominadas y 6 misiones",
+        "ok": true
+      },
+      {
+        "name": "XP por pregunta, recuperación y anti-repetición",
+        "ok": true
+      },
+      {
+        "name": "El dominio exige aciertos espaciados, no repetición inmediata",
+        "ok": true
+      },
+      {
+        "name": "Recompensa idempotente y subida de nivel sin reinicio",
+        "ok": true
+      },
+      {
+        "name": "Recompensa de finalización única por misión",
+        "ok": true
+      },
+      {
+        "name": "Programación de repaso espaciado",
+        "ok": true
+      },
+      {
+        "name": "Persistencia después de recargar (misma clave)",
+        "ok": true
+      },
+      {
+        "name": "Migración conserva datos y crea respaldo",
+        "ok": true
+      },
+      {
+        "name": "Transacción fallida no altera el estado",
+        "ok": true
+      },
+      {
+        "name": "Exportar e importar progreso",
+        "ok": true
+      },
+      {
+        "name": "Banco de Psicología íntegro y con claves verificables",
+        "ok": true
+      },
+      {
+        "name": "Misiones sin preguntas duplicadas y con contenido válido",
+        "ok": true
+      },
+      {
+        "name": "El mapa no inventa referencias de tema o ficha",
+        "ok": true
+      },
+      {
+        "name": "Preguntas sin clave verificable quedan excluidas",
+        "ok": true
+      },
+      {
+        "name": "Desafío diario determinista, único y bloqueado tras completar",
+        "ok": true
+      },
+      {
+        "name": "Misión: desbloqueos y resultados reflejan respuestas",
+        "ok": true
+      },
+      {
+        "name": "La preferencia de feedback inmediato afecta a las misiones",
+        "ok": true
+      },
+      {
+        "name": "Repetir misión no duplica finalización y reduce la XP",
+        "ok": true
+      },
+      {
+        "name": "Penalización de Supervivencia sin XP negativa",
+        "ok": true
+      },
+      {
+        "name": "Recuperación registra el acierto y programa el siguiente repaso",
+        "ok": true
+      },
+      {
+        "name": "Una misión con 0% no se marca superada ni desbloquea",
+        "ok": true
+      },
+      {
+        "name": "El ledger conserva recompensas permanentes al podar respuestas",
+        "ok": true
+      },
+      {
+        "name": "Un estado dañado se bloquea, se archiva y puede recuperarse",
+        "ok": true
+      },
+      {
+        "name": "Un esquema futuro no se sobrescribe silenciosamente",
+        "ok": true
+      },
+      {
+        "name": "La importación elimina etiquetas peligrosas de campos de estado",
+        "ok": true
+      },
+      {
+        "name": "El temporizador por pregunta rechaza respuestas tardías",
+        "ok": true
+      },
+      {
+        "name": "Nivel máximo no promete un nivel 51",
+        "ok": true
+      },
+      {
+        "name": "formatRelative distingue pasado y futuro",
+        "ok": true
+      },
+      {
+        "name": "Contrarreloj no premia una cobertura insuficiente",
+        "ok": true
+      },
+      {
+        "name": "El resultado no inventa respuestas no registradas",
+        "ok": true
+      },
+      {
+        "name": "Catálogo de personajes: 10 originales, completos y con precio centralizado",
+        "ok": true
+      },
+      {
+        "name": "Catálogo cosmético: categorías, compatibilidad y arte para cada objeto",
+        "ok": true
+      },
+      {
+        "name": "Estado inicial: personaje inicial, cero monedas y preferencias seguras",
+        "ok": true
+      },
+      {
+        "name": "Compra de personaje: descuenta una vez, registra y no repite",
+        "ok": true
+      },
+      {
+        "name": "Saldo insuficiente: no hay saldo negativo ni colección alterada",
+        "ok": true
+      },
+      {
+        "name": "Compra y equipamiento persisten después de recargar",
+        "ok": true
+      },
+      {
+        "name": "El equipamiento se guarda por personaje y se recupera al volver",
+        "ok": true
+      },
+      {
+        "name": "Cosméticos incompatibles y ranuras inexistentes se rechazan",
+        "ok": true
+      },
+      {
+        "name": "Personaje legendario bloqueado por nivel, comprable al cumplirlo",
+        "ok": true
+      },
+      {
+        "name": "Amaru se desbloquea por recorrido y no se compra con monedas",
+        "ok": true
+      },
+      {
+        "name": "Filtros de personajes: estados exclusivos, rareza y orden",
+        "ok": true
+      },
+      {
+        "name": "Migración de esquema conserva progreso académico y crea colección",
+        "ok": true
+      },
+      {
+        "name": "Normalización descarta equipamiento no poseído o incompatible",
+        "ok": true
+      },
+      {
+        "name": "Reacciones: repertorios por personalidad, sin repetición inmediata",
+        "ok": true
+      },
+      {
+        "name": "Arte: retratos originales, estados y capas cosméticas reales",
+        "ok": true
+      },
+      {
+        "name": "Economía: compras nunca generan monedas y el snapshot informa la colección",
+        "ok": true
+      },
+      {
+        "name": "Accesorio principal y adicional coexisten en el atuendo",
+        "ok": true
+      },
+      {
+        "name": "Preferencias de presentación persisten y no alteran el progreso",
+        "ok": true
+      },
+      {
+        "name": "La interfaz declara rutas y acciones reales para la capa RPG",
+        "ok": true
+      },
+      {
+        "name": "Toda acción de interfaz declarada tiene un controlador real",
+        "ok": true
+      },
+      {
+        "name": "El motor entrega el personaje de recompensa al cerrar la quinta misión",
+        "ok": true
+      },
+      {
+        "name": "Cada área tiene un escenario original y utilizable",
+        "ok": true
+      },
+      {
+        "name": "Audio original: preajustes, silencio, volúmenes y sin autoplay",
+        "ok": true
+      },
+      {
+        "name": "El arte se cachea y cambia con el estado y el equipamiento",
+        "ok": true
+      },
+      {
+        "name": "Las preferencias de audio se guardan en el estado",
+        "ok": true
+      },
+      {
+        "name": "El launcher incluye la quinta aplicación y el enlace real",
+        "ok": true
+      },
+      {
+        "name": "La aplicación declara viewport y reglas responsive",
+        "ok": true
+      }
+    ]
+  },
+  "counts": {
+    "passed": 61,
+    "failed": 0,
+    "total": 61
+  },
+  "failures": [],
+  "finishedAt": "2026-10-29T20:19:47.212Z"
+}

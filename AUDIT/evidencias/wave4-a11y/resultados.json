@@ -1,0 +1,36 @@
+{
+  "date": "2026-10-29",
+  "scope": "Ola 4 — accesibilidad del sistema",
+  "cases": [
+    {
+      "id": "OLA4-TOUCH-01",
+      "result": "PASS",
+      "observed": "Con puntero grueso y viewport 390x844, los iconos de topbar miden 40x40 en HUB, Banqueo, Study, Quest y Plazas; no hay overflow de documento."
+    },
+    {
+      "id": "OLA4-TOUCH-02",
+      "result": "PASS",
+      "observed": "A 320x568 los mismos iconos miden 40x40 y siguen visibles; HUB, Banqueo, Study, Quest y Plazas mantienen 320/320 de ancho de documento."
+    },
+    {
+      "id": "OLA4-TRANSPARENCY-01",
+      "result": "PASS",
+      "observed": "Con prefers-reduced-transparency: reduce, HUB, Study, Banqueo, Plazas y Quest pasan backdrop-filter a none y usan fondo sólido."
+    },
+    {
+      "id": "OLA4-TRANSPARENCY-02",
+      "result": "PASS",
+      "observed": "Study en tema claro: .s-appbar sin blur, fondo rgb(243,240,232), borde rgb(29,27,23)."
+    },
+    {
+      "id": "OLA4-CONTRAST-01",
+      "result": "PASS",
+      "observed": "Con prefers-contrast: more y foco por teclado en HUB, el botón enfocado muestra outline 3px solid currentColor con offset 3px."
+    },
+    {
+      "id": "OLA4-BREAKPOINTS-01",
+      "result": "DEFERRED",
+      "observed": "No se consolidaron los 26 anchos de media query. Se documentó la base compartida y las excepciones por app; cambiarlos sin matriz visual completa se considera riesgo alto."
+    }
+  ]
+}

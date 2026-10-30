@@ -53,7 +53,7 @@
   function minutesLabel(min) { return (min || 6) + " min de lectura"; }
   function progressBar(value, label) {
     var v = Math.max(0, Math.min(100, Number(value) || 0));
-    return '<div class="s-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + escapeHTML(label || "Progreso") + '"><span style="width:' + v + '%"></span></div>';
+    return '<div class="s-progress" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="' + v + '" aria-label="' + escapeHTML(label || "Progreso") + '"><span style="--p:' + (Math.max(0, Math.min(100, Number(v) || 0)) / 100) + '"></span></div>';
   }
   function sourceChips(refs) {
     if (!refs || !refs.length) return "";

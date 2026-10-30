@@ -2,19 +2,30 @@
 <html lang="es" data-theme="dark">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="theme-color" content="#0B0B0D">
+<script>
+  try {
+    var studyTheme = localStorage.getItem("study-theme") === "light" ? "light" : "dark";
+    document.documentElement.dataset.theme = studyTheme;
+    if (studyTheme === "light") {
+      var studyMeta = document.querySelector('meta[name="theme-color"]');
+      if (studyMeta) studyMeta.setAttribute("content", "#F3F0E8");
+    }
+  } catch (e) {}
+</script>
 <meta name="description" content="Study Dashboard: organiza el temario, lee fichas resumidas y sigue tu progreso real.">
 <title>Study Dashboard · SERUMS</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Crect x='11' y='13' width='18' height='38' rx='7' fill='%23E6B566'/%3E%3Crect x='35' y='13' width='18' height='38' rx='7' fill='%23F2F2F2'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Zen+Dots&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../study-shared/base.css?v=2.0.1">
-<link rel="stylesheet" href="styles.css?v=2.2.1">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../study-shared/base.css?v=2.0.2">
+<link rel="stylesheet" href="styles.css?v=2.2.2">
 <link rel="stylesheet" href="../serums-chrome.css?v=1.0.0">
+<link rel="stylesheet" href="../serums-mobile.css?v=1.0.0">
 </head>
-<body>
+<body class="app-study app-dashboard">
 <a class="s-skip" href="#main">Saltar al contenido</a>
 
 <header class="s-appbar">

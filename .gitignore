@@ -1,0 +1,13 @@
+# Python bytecode / caches (regenerables)
+__pycache__/
+*.py[cod]
+
+# Dependencias instaladas localmente
+node_modules/
+
+# Entorno local (nunca versionar claves reales)
+.env
+
+# Ruido del sistema operativo
+.DS_Store
+Thumbs.db

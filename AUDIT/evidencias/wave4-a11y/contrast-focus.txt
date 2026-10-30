@@ -1,0 +1,12 @@
+﻿{
+  "tag": "BUTTON",
+  "id": "nextTop",
+  "cls": "icon-btn",
+  "outline": {
+    "w": "3px",
+    "style": "solid",
+    "color": "rgb(184, 184, 184)",
+    "offset": "3px"
+  },
+  "media": true
+}

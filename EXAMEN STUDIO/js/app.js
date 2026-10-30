@@ -286,9 +286,18 @@
     renderShell();
   }
 
+  function setModalBackgroundInert(on) {
+    ["app", "topbar", "foot"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.inert = on;
+    });
+  }
+
   function closeModal() {
     if (modalRoot) modalRoot.innerHTML = "";
     document.removeEventListener("keydown", modalKeys);
+    setModalBackgroundInert(false);
+    syncMobileDetail();
     if (modalLastFocus) {
       try { modalLastFocus.focus(); } catch {}
       modalLastFocus = null;
@@ -315,6 +324,13 @@
   function openModal(html, { onMount, onClose } = {}) {
     modalLastFocus = document.activeElement;
     modalRoot.innerHTML = `<div class="modal-backdrop" data-modal-backdrop><div class="modal" role="dialog" aria-modal="true">${html}</div></div>`;
+    const dialog = modalRoot.querySelector('[role="dialog"]');
+    const heading = modalRoot.querySelector("h2");
+    if (dialog && heading) {
+      if (!heading.id) heading.id = `modal-title-${Date.now()}`;
+      dialog.setAttribute("aria-labelledby", heading.id);
+    }
+    setModalBackgroundInert(true);
     const backdrop = modalRoot.querySelector("[data-modal-backdrop]");
     backdrop.addEventListener("click", (event) => {
       if (event.target === backdrop) {
@@ -415,8 +431,8 @@
   const APP = {
     route: { name: "hub", professionId: null, examId: null, section: null, attemptId: null, tab: null },
     hubQuery: "",
-    bank: { professionId: null, examId: null, query: "", filter: "all", cycle: "", selectedId: null, detailOpen: false, pendingSelect: null },
-    review: { tab: "exams", query: "", filter: "all", examId: null, selectedId: null, detailOpen: false, correctEditor: false, obsAll: false, examQuery: "" },
+    bank: { professionId: null, examId: null, query: "", filter: "all", cycle: "", selectedId: null, detailOpen: false, focusDetail: false, pendingSelect: null },
+    review: { tab: "exams", query: "", filter: "all", examId: null, selectedId: null, detailOpen: false, focusDetail: false, correctEditor: false, obsAll: false, examQuery: "" },
     imports: { selectedId: null, ocr: true, processing: false, scratch: [] },
     practice: { setup: { examId: null, count: 25, shuffle: true, mode: "practice", minutes: 0, name: "" }, session: null, result: null },
     prog: { tab: "history", examId: "" },
@@ -650,6 +666,7 @@
     if (APP.route.name === "import") setupDropZone();
     if (APP.route.name === "practice" && APP.route.section === "session" && APP.practice.session) startPracticeTimer();
     else clearPracticeTimer();
+    syncMobileDetail();
   }
 
   /* ------------------------------------------------------------------------
@@ -876,6 +893,94 @@
      Banco de preguntas
      ------------------------------------------------------------------------ */
   const isDesktop = () => window.matchMedia("(min-width: 941px)").matches;
+  const isMobileDetail = () => window.matchMedia("(max-width: 940px)").matches;
+  const DETAIL_FOCUSABLE = 'a[href], button:not([disabled]), input:not([disabled]):not([type="hidden"]), select:not([disabled]), textarea:not([disabled]), [tabindex]:not([tabindex="-1"])';
+
+  function detailFocusables(root) {
+    return [...root.querySelectorAll(DETAIL_FOCUSABLE)].filter((el) => el.getClientRects().length > 0 && getComputedStyle(el).visibility !== "hidden");
+  }
+
+  function setSheetBackgroundInert(on) {
+    ["topbar", "foot"].forEach((id) => {
+      const el = document.getElementById(id);
+      if (el) el.inert = on;
+    });
+    document.querySelectorAll(".qlist-panel, .bank-head, .bank-toolbar, .review-head, .review-toolbar, .review-tabs").forEach((el) => {
+      el.inert = on;
+    });
+  }
+
+  function syncMobileDetail() {
+    const route = APP.route && APP.route.name;
+    const state = route === "bank" ? APP.bank : route === "review" ? APP.review : null;
+    const panel = document.querySelector(".qdetail-panel");
+    const active = Boolean(state && state.detailOpen && isMobileDetail() && panel && !modalRoot.innerHTML);
+    if (!active) {
+      setSheetBackgroundInert(false);
+      if (panel) {
+        panel.removeAttribute("role");
+        panel.removeAttribute("aria-modal");
+        panel.removeAttribute("tabindex");
+        panel.removeAttribute("aria-label");
+      }
+      return;
+    }
+    panel.setAttribute("role", "dialog");
+    panel.setAttribute("aria-modal", "true");
+    panel.setAttribute("tabindex", "-1");
+    panel.setAttribute("aria-label", route === "bank" ? "Detalle de la pregunta" : "Revisión de la pregunta");
+    setSheetBackgroundInert(true);
+    if (state.focusDetail) {
+      state.focusDetail = false;
+      const close = panel.querySelector(".mobile-close");
+      if (close) setTimeout(() => { try { close.focus(); } catch {} }, 30);
+    }
+  }
+
+  function focusDetailRow(route, id) {
+    if (!id) return;
+    const act = route === "review" ? "review-select" : "bank-select";
+    const row = [...document.querySelectorAll(`[data-act="${act}"]`)].find((el) => el.dataset.id === id);
+    if (row) {
+      try { row.focus(); } catch {}
+    }
+  }
+
+  function closeRouteDetail() {
+    const route = APP.route && APP.route.name;
+    if (route === "bank" && APP.bank.detailOpen) {
+      const id = APP.bank.selectedId;
+      APP.bank.detailOpen = false;
+      APP.bank.focusDetail = false;
+      refreshBank();
+      if (isMobileDetail()) setTimeout(() => focusDetailRow("bank", id), 0);
+      return;
+    }
+    if (route === "review" && APP.review.detailOpen) {
+      const id = APP.review.selectedId;
+      APP.review.detailOpen = false;
+      APP.review.focusDetail = false;
+      refreshReview();
+      if (isMobileDetail()) setTimeout(() => focusDetailRow("review", id), 0);
+    }
+  }
+
+  function trapSheetFocus(event) {
+    const panel = document.querySelector(".qdetail-panel");
+    if (!panel) return;
+    const list = detailFocusables(panel);
+    if (!list.length) { event.preventDefault(); panel.focus(); return; }
+    const first = list[0];
+    const last = list[list.length - 1];
+    const active = document.activeElement;
+    if (event.shiftKey && (active === first || !panel.contains(active))) {
+      event.preventDefault();
+      last.focus();
+    } else if (!event.shiftKey && (active === last || !panel.contains(active))) {
+      event.preventDefault();
+      first.focus();
+    }
+  }
 
   function bankProfession() {
     return Store.professionById(APP.bank.professionId) || activeProfession();
@@ -1100,6 +1205,7 @@
     replaceApp(bankView());
     const detail = document.querySelector(".qdetail-scroll");
     if (detail) detail.scrollTop = 0;
+    syncMobileDetail();
   }
 
   async function openPdf(question) {
@@ -1304,6 +1410,7 @@
     replaceApp(APP.review.examId ? reviewExamView() : reviewView());
     const detail = document.querySelector(".qdetail-scroll");
     if (detail) detail.scrollTop = 0;
+    syncMobileDetail();
   }
 
   async function openIssuePdf(issue) {
@@ -1358,7 +1465,7 @@
       <div class="queue-main">
         <b title="${esc(record.name)}">${esc(record.name)}</b>
         <span>${bytes(record.size)} · ${analysis.pages ? plural(analysis.pages, "página") : ""} ${cycle ? `· ${esc(cycle)}` : ""} ${analysis.questions ? `· ${plural(analysis.questions.length, "pregunta")}` : ""} · ${esc(profession)}</span>
-        ${record.status === "processing" ? `<div class="progressbar"><i style="width:${progress}%"></i></div>` : ""}
+        ${record.status === "processing" ? `<div class="progressbar"><i style="--p:${progress / 100}"></i></div>` : ""}
         <span class="queue-message">${esc(record.message || "")}</span>
       </div>
       <div class="queue-status"><span class="pill ${tone}"><span class="status-dot ${tone}"></span>${label}</span>${actions.join("")}</div>
@@ -1392,7 +1499,7 @@
     if (!record.analysis) {
       return `<section class="review-import glass" id="import-review">
         <div class="review-import-head"><div><h2>${esc(record.name)}</h2><p>${esc(record.message || "Esperando análisis.")}</p></div><span class="pill ${importStatusLabel(record)[1]}">${importStatusLabel(record)[0]}</span></div>
-        ${record.status === "processing" ? `<div class="empty"><div class="spinner"></div><b>Procesando el PDF</b><p>Se están leyendo todas las páginas y detectando los resaltados. Esto puede tardar unos segundos.</p><div class="progressbar" style="width:min(420px,100%);margin-top:14px"><i style="width:${clamp(record.progress || 0, 0, 100)}%"></i></div></div>` : `<div class="empty"><div class="empty-icon">${icon("alert")}</div><b>No hay un análisis disponible</b><p>${esc(record.message || "Reintenta la lectura del archivo original.")}</p><button class="btn btn-primary" type="button" data-act="import-retry" data-id="${esc(record.id)}">${icon("refresh")} Reintentar</button></div>`}
+        ${record.status === "processing" ? `<div class="empty"><div class="spinner"></div><b>Procesando el PDF</b><p>Se están leyendo todas las páginas y detectando los resaltados. Esto puede tardar unos segundos.</p><div class="progressbar" style="width:min(420px,100%);margin-top:14px"><i style="--p:${clamp(record.progress || 0, 0, 100) / 100}"></i></div></div>` : `<div class="empty"><div class="empty-icon">${icon("alert")}</div><b>No hay un análisis disponible</b><p>${esc(record.message || "Reintenta la lectura del archivo original.")}</p><button class="btn btn-primary" type="button" data-act="import-retry" data-id="${esc(record.id)}">${icon("refresh")} Reintentar</button></div>`}
       </section>`;
     }
     const professionId = classification.professionId || classification.suggestedProfessionId || "";
@@ -1484,7 +1591,7 @@
     const item = document.querySelector(`[data-import-id="${record.id}"]`);
     if (!item) return;
     const bar = item.querySelector(".progressbar i");
-    if (bar) bar.style.width = `${clamp(record.progress || 0, 0, 100)}%`;
+    if (bar) bar.style.setProperty("--p", clamp(record.progress || 0, 0, 100) / 100);
     const message = item.querySelector(".queue-message");
     if (message) message.textContent = record.message || "";
   }
@@ -1726,7 +1833,7 @@
         <span class="timer ${session.minutes > 0 && remaining < 120 ? "is-low" : ""}" id="practice-timer">${icon("clock")} ${clock(session.minutes > 0 ? remaining : elapsed)}</span>
         <button class="btn btn-sm" type="button" data-act="practice-finish">Terminar</button>
       </div>
-      <div class="practice-progress"><i style="width:${((session.index + 1) / session.count) * 100}%"></i></div>
+      <div class="practice-progress"><i style="--p:${(session.index + 1) / session.count}"></i></div>
       <div class="practice-card glass">
         <div class="practice-kicker"><span>Pregunta ${session.index + 1} de ${session.count} · ${plural(answeredCount, "respondida", "respondidas")}</span>${marked ? `<span class="marked">${icon("flag")} Marcada para revisar</span>` : `<span>${esc(question.cycle)} · p. ${question.page}</span>`}</div>
         <div class="practice-question">${esc(question.statement)}</div>
@@ -1745,7 +1852,9 @@
           <button class="btn btn-sm" type="button" data-act="practice-prev" ${session.index === 0 ? "disabled" : ""}>${icon("chevron-left")} Anterior</button>
           <button class="btn btn-sm ${marked ? "btn-soft" : ""}" type="button" data-act="practice-mark">${icon("flag")} ${marked ? "Marcada" : "Marcar"}</button>
           <span class="spacer"></span>
-          <button class="btn btn-primary" type="button" data-act="practice-next" ${session.index >= session.count - 1 ? "disabled" : ""}>Siguiente ${icon("chevron-right")}</button>
+          ${session.index >= session.count - 1
+            ? `<button class="btn btn-primary" type="button" data-act="practice-finish">Ver resultados ${icon("check")}</button>`
+            : `<button class="btn btn-primary" type="button" data-act="practice-next">Siguiente ${icon("chevron-right")}</button>`}
         </div>
       </div>
       <div class="palette glass" aria-label="Mapa de preguntas">
@@ -2069,6 +2178,7 @@
       const input = document.querySelector("[data-bank-search]");
       if (input) { input.focus(); try { input.setSelectionRange(caret, caret); } catch {} }
     }
+    syncMobileDetail();
   }
 
   function refreshReviewPreserveSearch() {
@@ -2081,6 +2191,7 @@
       const input = document.querySelector("[data-review-search]");
       if (input) { input.focus(); try { input.setSelectionRange(caret, caret); } catch {} }
     }
+    syncMobileDetail();
   }
 
   async function handleClick(event) {
@@ -2094,9 +2205,9 @@
     if (action === "practice-exam") { go(`#practice/${encodeURIComponent(target.dataset.exam)}`); return; }
     if (action === "open-exam-pdf") { const exam = Store.examById(target.dataset.exam); await openExamPdf(exam); return; }
     if (action === "open-pdf") { const question = Store.state.byId.get(target.dataset.id); await openPdf(question); return; }
-    if (action === "bank-filter") { APP.bank.filter = target.dataset.filter || "all"; APP.bank.selectedId = null; APP.bank.detailOpen = false; refreshBank(); return; }
-    if (action === "bank-select") { APP.bank.selectedId = target.dataset.id; APP.bank.detailOpen = true; refreshBank(); return; }
-    if (action === "bank-close") { APP.bank.detailOpen = false; refreshBank(); return; }
+    if (action === "bank-filter") { APP.bank.filter = target.dataset.filter || "all"; APP.bank.selectedId = null; APP.bank.detailOpen = false; APP.bank.focusDetail = false; refreshBank(); return; }
+    if (action === "bank-select") { APP.bank.selectedId = target.dataset.id; APP.bank.detailOpen = true; APP.bank.focusDetail = true; refreshBank(); return; }
+    if (action === "bank-close") { closeRouteDetail(); return; }
     if (action === "bank-review") { Store.markReviewed(id, !Store.isReviewed(Store.state.byId.get(id))); refreshBank(); return; }
     if (action === "bank-flag") { const question = Store.state.byId.get(id); const note = await flagDialog(question); if (note !== null) { Store.flagQuestion(id, note); refreshBank(); } return; }
     if (action === "bank-prev" || action === "bank-next") {
@@ -2116,8 +2227,8 @@
       return;
     }
     if (action === "review-tab") { APP.review.tab = target.dataset.tab; replaceApp(reviewView()); return; }
-    if (action === "review-select") { APP.review.selectedId = target.dataset.id; APP.review.detailOpen = true; refreshReview(); return; }
-    if (action === "review-close") { APP.review.detailOpen = false; refreshReview(); return; }
+    if (action === "review-select") { APP.review.selectedId = target.dataset.id; APP.review.detailOpen = true; APP.review.focusDetail = true; refreshReview(); return; }
+    if (action === "review-close") { closeRouteDetail(); return; }
     if (action === "review-confirm") { Store.markReviewed(id, !Store.isReviewed(Store.state.byId.get(id))); refreshReview(); return; }
     if (action === "review-flag") { const question = Store.state.byId.get(id); const note = await flagDialog(question); if (note !== null) { Store.flagQuestion(id, note); refreshReview(); } return; }
     if (action === "review-correct") { APP.review.correctEditor = true; refreshReview(); return; }
@@ -2285,9 +2396,19 @@
   }
 
   function handleKey(event) {
+    const routeName = APP.route && APP.route.name;
+    const mobileDetailOpen = !modalRoot?.innerHTML && isMobileDetail() && (
+      (routeName === "bank" && APP.bank.detailOpen) ||
+      (routeName === "review" && APP.review.detailOpen)
+    );
+    if (mobileDetailOpen) {
+      if (event.key === "Escape") { event.preventDefault(); closeRouteDetail(); return; }
+      if (event.key === "Tab") { trapSheetFocus(event); return; }
+      return;
+    }
     if (event.key === "Escape" && !modalRoot?.innerHTML) {
-      if (APP.route.name === "bank" && APP.bank.detailOpen) { APP.bank.detailOpen = false; refreshBank(); return; }
-      if (APP.route.name === "review" && APP.review.detailOpen) { APP.review.detailOpen = false; refreshReview(); return; }
+      if (routeName === "bank" && APP.bank.detailOpen) { closeRouteDetail(); return; }
+      if (routeName === "review" && APP.review.detailOpen) { closeRouteDetail(); return; }
     }
     const typing = event.target.matches("input, textarea, select");
     if (typing) return;
@@ -2307,6 +2428,11 @@
     }
   }
 
+  let detailResizeTimer = null;
+  window.addEventListener("resize", () => {
+    clearTimeout(detailResizeTimer);
+    detailResizeTimer = setTimeout(syncMobileDetail, 120);
+  });
   window.addEventListener("hashchange", onRoute);
   document.addEventListener("click", handleClick);
   document.addEventListener("input", handleInput);

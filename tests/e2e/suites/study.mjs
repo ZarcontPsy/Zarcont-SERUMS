@@ -437,4 +437,54 @@ export async function runFlashcards({ h, page, baseURL }) {
     },
     { severity: "media", page },
   );
+
+  await h.test(
+    "FLASH-09",
+    "Terminar una sesión incompleta pide confirmación y permite seguir",
+    async () => {
+      await page.goto(appURL(baseURL, "flashcards") + "#/mazo/sheet-aps-01", { settle: 900 });
+      await page.waitFor(`!!document.querySelector('[data-action="start-session"]')`, { timeout: 8000 });
+      await page.click('[data-action="start-session"]');
+      await page.waitFor(`location.hash === '#/sesion'`, { timeout: 8000 });
+      await sleep(500);
+      if (await page.eval(`!!document.querySelector('[data-action="reveal"]')`)) {
+        await page.click('[data-action="reveal"]');
+        await sleep(250);
+        await page.click('[data-action="rate"][data-rating="good"]');
+      } else {
+        await page.click('[data-action="select-option"]');
+        await sleep(200);
+        await page.click('[data-action="check"]');
+        await sleep(250);
+        if (await page.eval(`!!document.querySelector('[data-action="rate"][data-rating="good"]')`)) {
+          await page.click('[data-action="rate"][data-rating="good"]');
+        }
+      }
+      await sleep(450);
+      await page.click('[data-action="end-session"]');
+      await page.waitFor(`!!document.querySelector('.session-end-confirm')`, { timeout: 4000 });
+      const confirm = await page.eval(`({
+        text: document.querySelector('.session-end-confirm')?.innerText || "",
+        headerEnd: !!document.querySelector('.session-header [data-action="end-session"]'),
+        focus: document.activeElement.getAttribute('data-action')
+      })`);
+      assertIncludes(confirm.text, "Quedan", "aviso de tarjetas pendientes");
+      assertEq(confirm.headerEnd, false, "el botón único se retira durante la confirmación");
+      assertEq(confirm.focus, "cancel-end", "el foco queda en Seguir");
+      await page.click('[data-action="cancel-end"]');
+      await sleep(350);
+      const resumed = await page.eval(`({ confirm: !!document.querySelector('.session-end-confirm'), end: !!document.querySelector('[data-action="end-session"]'), hash: location.hash })`);
+      assertEq(resumed.confirm, false, "la confirmación se cierra");
+      assertEq(resumed.end, true, "se puede volver a terminar");
+      await page.click('[data-action="end-session"]');
+      await sleep(350);
+      await page.click('.session-end-actions [data-action="end-session"]');
+      await page.waitFor(`location.hash === '#/resumen'`, { timeout: 8000 });
+      await page.waitFor(`!!document.querySelector('.summary-view')`, { timeout: 5000 });
+      const summary = await page.eval(`({ summary: !!document.querySelector('.summary-view'), text: document.getElementById('view-root')?.innerText.slice(0, 120) })`);
+      assert(summary.summary, "resumen renderizado");
+      return { confirm, resumed, summary };
+    },
+    { severity: "media", page },
+  );
 }

@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-29",
+  "scope": "Ola 3 — continuidad",
+  "cases": [
+    {
+      "id": "HUB-CONT-01",
+      "result": "PASS",
+      "observed": "Tras seleccionar Plazas, recargar el HUB restaura Plazas (2/5) desde localStorage."
+    },
+    {
+      "id": "HUB-CONT-02",
+      "result": "PASS",
+      "observed": "Con snapshot de Dashboard, el CTA inferior cambia a 'Continuar', aria-label 'Continuar en STUDY DASHBOARD' y data-continuation apunta a sheet-aps-01; el href de la tarjeta sigue siendo la portada."
+    },
+    {
+      "id": "PLAZAS-HASH-01",
+      "result": "PASS",
+      "observed": "Sin hash inicializa #/mapa; #/estadisticas abre stats; el rail cambia a #/favoritos; atrás vuelve a #/estadisticas y restaura la vista."
+    },
+    {
+      "id": "FLASH-END-01",
+      "result": "PASS",
+      "observed": "Con 2 tarjetas pendientes, Terminar muestra el aviso, enfoca 'Seguir', oculta el botón de cabecera y permite reanudar; 'Terminar ahora' abre #/resumen con el resumen renderizado."
+    }
+  ]
+}

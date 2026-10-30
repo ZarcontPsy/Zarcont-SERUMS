@@ -260,9 +260,16 @@ export async function runHub({ h, page, baseURL }) {
 
   await h.test(
     "HUB-11",
-    "Persistencia de selección del carrusel (si aplica)",
+    "Persistencia de la tarjeta activa del carrusel entre recargas",
     async () => {
-      skip("El HUB no persiste la tarjeta seleccionada entre recargas; el requisito no la exige (matriz: «selección si aplica»).");
+      await gotoHub(page, baseURL);
+      await selectCard(page, "plazas");
+      const before = await selectedApp(page);
+      await page.goto(`${baseURL}/index.html`, { settle: 800 });
+      const after = await selectedApp(page);
+      assertEq(before, "plazas", "tarjeta activa antes de recargar");
+      assertEq(after, "plazas", "tarjeta activa tras recargar");
+      return { before, after };
     },
     { severity: "baja", page },
   );
@@ -335,5 +342,48 @@ export async function runHub({ h, page, baseURL }) {
       return { hrefs, dash, flash };
     },
     { severity: "alta", page },
+  );
+
+  await h.test(
+    "HUB-15",
+    "Continuar: el botón inferior reanuda el último punto sin cambiar el href de la tarjeta",
+    async () => {
+      await gotoHub(page, baseURL);
+      const previous = await page.eval(`localStorage.getItem('studyhub:snapshot:v1')`);
+      try {
+        await page.eval(`localStorage.setItem('studyhub:snapshot:v1', JSON.stringify({
+          version: 1,
+          dashboard: {
+            totalSheets: 210,
+            completedSheets: 1,
+            startedTopics: 1,
+            last: {
+              sheetId: "sheet-aps-01",
+              topicId: "topic-aps",
+              title: "Ficha APS",
+              url: location.origin + "/study-dashboard/index.html?sheet=sheet-aps-01"
+            }
+          }
+        }))`);
+        await page.goto(`${baseURL}/index.html`, { settle: 800 });
+        await selectCard(page, "dashboard");
+        const state = await page.eval(`({
+          cardHref: document.querySelector('[data-app="dashboard"]').getAttribute('href'),
+          label: document.querySelector('#openCurrent span')?.textContent,
+          aria: document.getElementById('openCurrent')?.getAttribute('aria-label'),
+          continuation: document.getElementById('openCurrent')?.dataset.continuation || ""
+        })`);
+        assertEq(state.cardHref.includes("?"), false, `tarjeta sin query (${state.cardHref})`);
+        assertEq(state.label, "Continuar", "CTA inferior en modo continuar");
+        assertIncludes(state.aria || "", "Continuar en", "aria-label de continuación");
+        assert(/sheet-aps-01/.test(state.continuation), `la continuación apunta al último punto (${state.continuation})`);
+        return state;
+      } finally {
+        await page.eval(previous === null
+          ? `localStorage.removeItem('studyhub:snapshot:v1')`
+          : `localStorage.setItem('studyhub:snapshot:v1', ${JSON.stringify(previous)})`);
+      }
+    },
+    { severity: "media", page },
   );
 }

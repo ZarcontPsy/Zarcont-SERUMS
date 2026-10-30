@@ -1,0 +1,42 @@
+﻿{
+  "before": {
+    "side": "hidden",
+    "drawer": "hidden",
+    "sideOpen": false,
+    "expanded": "false"
+  },
+  "sideOpen": {
+    "side": "visible",
+    "open": true
+  },
+  "sideClosed": {
+    "side": "hidden",
+    "open": false
+  },
+  "notifOpen": {
+    "drawer": "visible",
+    "open": true,
+    "expanded": "true"
+  },
+  "notifClosed": {
+    "drawer": "hidden",
+    "open": false,
+    "expanded": "false"
+  },
+  "confirm": {
+    "open": true,
+    "role": "dialog",
+    "modal": "true",
+    "appInert": true,
+    "active": "confirmOk",
+    "inside": true
+  },
+  "confirmTabs": {
+    "inside": true,
+    "active": "confirmOk"
+  },
+  "confirmClosed": {
+    "open": false,
+    "appInert": false
+  }
+}

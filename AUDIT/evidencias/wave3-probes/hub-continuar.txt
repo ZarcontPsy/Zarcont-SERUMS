@@ -1,0 +1,18 @@
+﻿{
+  "selected": {
+    "app": "plazas",
+    "stored": "plazas"
+  },
+  "restored": {
+    "app": "plazas",
+    "pos": "2 / 5"
+  },
+  "cont": {
+    "app": "dashboard",
+    "label": "Continuar",
+    "aria": "Continuar en STUDY DASHBOARD",
+    "cardHref": "./study-dashboard/index.html",
+    "sub": "3 temas iniciados"
+  },
+  "url": "http://127.0.0.1:8784/study-dashboard/index.html#/ficha/sheet-aps-01"
+}

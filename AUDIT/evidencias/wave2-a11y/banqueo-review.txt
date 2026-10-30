@@ -1,0 +1,20 @@
+﻿{
+  "exists": {
+    "rows": 100,
+    "tabs": 0,
+    "body": "Saltar al contenido\nBanqueo\nBanco\nImportar\nRevisi├│n\n15\nProgreso\nBanqueo\nRevisi├│n"
+  },
+  "opened": {
+    "role": "dialog",
+    "modal": "true",
+    "active": "icon-btn mobile-close#review-close",
+    "topInert": true,
+    "inside": true
+  },
+  "closed": {
+    "row": "review-select",
+    "id": "2026-i-medicina-q001",
+    "topInert": false,
+    "role": null
+  }
+}
