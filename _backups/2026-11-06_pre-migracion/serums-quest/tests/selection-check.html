@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<title>Cambio de personaje localizado · SERUMS QUEST</title>
+<style>
+  html, body { margin: 0; background: #07080c; color: #f2f4fa; font: 12px/1.5 ui-monospace, Consolas, monospace; }
+  iframe { width: 1280px; height: 900px; border: 0; display: block; opacity: .18; pointer-events: none; }
+  pre { position: fixed; inset: 0 auto auto 0; width: 100%; max-height: 100vh; overflow: auto; padding: 16px; box-sizing: border-box; background: rgba(7,8,12,.96); margin: 0; white-space: pre-wrap; }
+  .ok { color: #6fe0b0; } .bad { color: #ff8f97; } b { color: #9fc4ff; }
+</style>
+</head>
+<body>
+<iframe id="app" title="SERUMS QUEST"></iframe>
+<pre id="out">Ejecutando prueba de cambio de personaje…</pre>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/icons.js?v=1.2.0"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/reactions.js?v=1.0.0"></script>
+<script src="../js/collection.js?v=1.2.0"></script>
+<script src="../js/store.js?v=1.2.0"></script>
+<script>
+(function () {
+  "use strict";
+  var C = window.QUEST_CONFIG;
+  var Store = window.QuestStore;
+  var Chars = window.QuestCharacters;
+  var frame = document.getElementById("app");
+  var out = document.getElementById("out");
+  var lines = [];
+  var passed = 0;
+  var failed = 0;
+  var metrics = { focus: [], select: [], reload: null, external: [], hub: null, reduced: null, sequence: null };
+  var observer = null;
+  var stat = freshStat();
+
+  var SEL = {
+    info: '[data-sel="hero-info"], .q-heroes-info',
+    detail: '[data-sel="hero-detail"], .q-heroes-detail',
+    stage: '[data-sel="hero-stage"], .q-heroes-stage',
+    figure: '[data-sel="heroes-figure"], .q-heroes-figure',
+    head: '[data-sel="heroes-head"], .q-heroes-head'
+  };
+
+  function freshStat() {
+    return { fullReplace: 0, viewMutations: 0, mutations: 0, portraitsAdded: 0, portraitsRemoved: 0, scenesAdded: 0, nodesAdded: 0 };
+  }
+  function resetStat() { stat = freshStat(); }
+
+  function log(ok, message, detail) {
+    if (ok) passed += 1; else failed += 1;
+    lines.push('<span class="' + (ok ? "ok" : "bad") + '">' + (ok ? "PASS" : "FAIL") + "</span> " + message + (detail ? " · <b>" + detail + "</b>" : ""));
+    out.innerHTML = lines.join("\n");
+  }
+  function sleep(ms) { return new Promise(function (r) { setTimeout(r, ms); }); }
+  async function until(fn, label, timeout) {
+    var limit = Date.now() + (timeout || 8000);
+    while (Date.now() < limit) {
+      try { var v = fn(); if (v) return v; } catch (e) {}
+      await sleep(60);
+    }
+    throw new Error("Tiempo de espera agotado: " + label);
+  }
+  function doc() { return frame.contentDocument; }
+  function win() { return frame.contentWindow; }
+  function q(sel) { return doc().querySelector(sel); }
+  function all(sel) { return Array.prototype.slice.call(doc().querySelectorAll(sel)); }
+  function view() { return q("#view"); }
+  function state() { try { return JSON.parse(localStorage.getItem(C.storage.stateKey) || "null"); } catch (e) { return null; } }
+  function scrollY() { return Math.round(win().scrollY || 0); }
+  function setScroll(y) {
+    var root = doc().documentElement;
+    var previous = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    win().scrollTo(0, y);
+    root.style.scrollBehavior = previous;
+  }
+  function nextFrame() {
+    return new Promise(function (resolve) {
+      win().requestAnimationFrame(function () { win().requestAnimationFrame(function () { resolve(); }); });
+    });
+  }
+  async function settle() { await nextFrame(); await sleep(80); }
+  function sentinelId() { return "a4-sentinel-" + Math.random().toString(36).slice(2, 7); }
+
+  function installObserver() {
+    if (observer) { observer.disconnect(); observer = null; }
+    var host = view();
+    if (!host) return;
+    observer = new MutationObserver(function (records) {
+      stat.mutations += records.length;
+      records.forEach(function (rec) {
+        if (rec.type !== "childList") return;
+        if (rec.target === host) stat.viewMutations += 1;
+        if (rec.target === host && rec.removedNodes.length && rec.addedNodes.length) stat.fullReplace += 1;
+        Array.prototype.forEach.call(rec.addedNodes, function (node) {
+          if (node.nodeType !== 1) return;
+          stat.nodesAdded += 1;
+          var chars = node.classList && node.classList.contains("q-char") ? 1 : node.querySelectorAll(".q-char").length;
+          var scenes = node.classList && node.classList.contains("q-scene") ? 1 : node.querySelectorAll(".q-scene").length;
+          stat.portraitsAdded += chars;
+          stat.scenesAdded += scenes;
+        });
+        Array.prototype.forEach.call(rec.removedNodes, function (node) {
+          if (node.nodeType !== 1) return;
+          var chars = node.classList && node.classList.contains("q-char") ? 1 : node.querySelectorAll(".q-char").length;
+          stat.portraitsRemoved += chars;
+        });
+      });
+    });
+    observer.observe(host, { childList: true, subtree: true });
+  }
+
+  function seed() {
+    localStorage.removeItem(C.storage.stateKey);
+    localStorage.removeItem(C.storage.backupKey);
+    localStorage.removeItem(C.storage.journalKey);
+    localStorage.removeItem(C.storage.snapshotKey);
+    var store = Store.create({ storage: localStorage, now: function () { return new Date(); } });
+    store.init();
+    store.commit(function (draft) {
+      draft.coins = 30000;
+      draft.xp = 5200;
+      draft.profile.name = "Prueba A4";
+      draft.collection.ownedCharacterIds = ["ilan", "mara", "teo", "lia", "zenon"];
+      draft.collection.selectedCharacterId = "ilan";
+      draft.collection.equipped = {};
+      draft.presentation.visualPreferences.rarityFrames = true;
+    });
+  }
+
+  function characterName(id) { var c = Chars.byId(id); return c ? c.name : "?"; }
+  function characterTitle(id) { var c = Chars.byId(id); return c ? c.title : "?"; }
+  function characterRarity(id) { var c = Chars.byId(id); return c ? c.rarityLabel : "?"; }
+  function characterAttrs(id) {
+    var c = Chars.byId(id); return c ? C.rpg.attributes.map(function (a) { return Number(c.attributes[a.id]) || 0; }) : [];
+  }
+
+  function infoPanelText() { var panel = q(SEL.info); return panel ? panel.textContent : ""; }
+  function infoName() { var h = q('[data-sel="hero-info"] h1, .q-heroes-info h1'); return h ? h.textContent.trim() : ""; }
+  function infoTitle() { var el = q('[data-sel="hero-info"] .q-heroes-subtitle, .q-heroes-info .q-heroes-subtitle'); return el ? el.textContent.trim() : ""; }
+  function infoRarity() { var el = q('[data-sel="hero-info"] .q-rarity-chip, .q-heroes-info .q-rarity-chip'); return el ? el.textContent.trim() : ""; }
+  function heroChipLabel() { var el = q("[data-hero-chip]"); return el ? el.getAttribute("aria-label") || "" : ""; }
+  function appbarPortrait() { var el = q('[data-char-portrait] .q-char'); return el ? el.getAttribute("data-char") : ""; }
+  function stageCharacter() { var el = q('[data-sel="hero-stage"] .q-heroes-figure .q-char, .q-heroes-stage .q-heroes-figure .q-char'); return el ? el.getAttribute("data-char") : ""; }
+  function stageRarity() {
+    var el = q(SEL.stage);
+    if (!el) return "";
+    var m = el.className.match(/q-rarity--([a-z_]+)/);
+    return m ? m[1] : "";
+  }
+  function focusedStripId() { var el = q('.q-heroes-strip .q-strip-card[aria-pressed="true"]'); return el ? el.getAttribute("data-character") : ""; }
+  function selectedStripIds() {
+    return all(".q-heroes-strip .q-strip-card").filter(function (card) {
+      return card.getAttribute("aria-current") === "true" || card.classList.contains("is-selected");
+    }).map(function (card) { return card.getAttribute("data-character"); });
+  }
+  function dotCurrentId() { var el = q('.q-hero-dot[aria-current="true"]'); return el ? el.getAttribute("data-character") : ""; }
+  function selectedStateId() { var s = state(); return s && s.collection ? s.collection.selectedCharacterId : ""; }
+  function activeInfo() {
+    var panel = q(SEL.info);
+    var a = doc().activeElement;
+    return !!(panel && a && panel.contains(a));
+  }
+
+  function installSentinels() {
+    var host = view();
+    if (!host) return [];
+    var ids = [];
+    var top = doc().createElement("i");
+    top.id = sentinelId();
+    top.setAttribute("data-a4", "view");
+    host.appendChild(top);
+    ids.push(top.id);
+    var head = q(SEL.head);
+    if (head) {
+      var second = doc().createElement("i");
+      second.id = sentinelId();
+      second.setAttribute("data-a4", "head");
+      head.appendChild(second);
+      ids.push(second.id);
+    }
+    return ids;
+  }
+  function sentinelsAlive(ids) {
+    return ids.every(function (id) { return !!doc().getElementById(id); });
+  }
+
+  async function measureClick(el) {
+    resetStat();
+    var t0 = win().performance.now();
+    el.click();
+    var handler = win().performance.now() - t0;
+    await settle();
+    return { handlerMs: Math.round(handler * 100) / 100, stat: JSON.parse(JSON.stringify(stat)) };
+  }
+
+  function checkFocusSwap(id, measurement) {
+    var name = characterName(id);
+    log(measurement.stat.fullReplace === 0, "Foco " + name + ": sin reconstrucción de #view", "fullReplace=" + measurement.stat.fullReplace);
+    log(measurement.stat.portraitsAdded <= 3, "Foco " + name + ": no se recrean retratos ajenos", "retratos nuevos=" + measurement.stat.portraitsAdded + ", escenas=" + measurement.stat.scenesAdded);
+    log(infoName() === name, "Foco " + name + ": panel de identidad actualizado", infoName());
+    log(infoTitle() === characterTitle(id), "Foco " + name + ": título actualizado", infoTitle());
+    log(stageCharacter() === id, "Foco " + name + ": figura central actualizada", stageCharacter());
+    log(stageRarity() === Chars.byId(id).rarity, "Foco " + name + ": rareza del escenario actualizada", stageRarity());
+    log(focusedStripId() === id, "Foco " + name + ": aria-pressed en la tarjeta inspeccionada", focusedStripId());
+    log(dotCurrentId() === id, "Foco " + name + ": aria-current en el punto de posición", dotCurrentId());
+    log(doc().title.indexOf(name) !== -1, "Foco " + name + ": título del documento actualizado", doc().title);
+  }
+
+  function checkSelection(id, measurement, opts) {
+    opts = opts || {};
+    var name = characterName(id);
+    log(selectedStateId() === id, "Selección " + name + ": estado persistido", selectedStateId());
+    log(measurement.stat.fullReplace === 0, "Selección " + name + ": sin reconstrucción de #view", "fullReplace=" + measurement.stat.fullReplace);
+    log(measurement.stat.portraitsAdded === 0, "Selección " + name + ": ningún retrato recreado", "retratos=" + measurement.stat.portraitsAdded + ", escenas=" + measurement.stat.scenesAdded);
+    log(appbarPortrait() === id, "Selección " + name + ": retrato del appbar actualizado", appbarPortrait());
+    log(heroChipLabel().indexOf(name) !== -1, "Selección " + name + ": chip de héroe actualizado", heroChipLabel());
+    log(infoPanelText().indexOf("Héroe activo") !== -1, "Selección " + name + ": acción convertida en «Héroe activo»");
+    var selected = selectedStripIds();
+    log(selected.length === 1 && selected[0] === id, "Selección " + name + ": un único indicador de selección en el elenco", selected.join(","));
+    log(infoRarity() === characterRarity(id), "Selección " + name + ": rareza coherente", infoRarity());
+    var attrs = all('[data-sel="hero-detail"] .q-attribute b, .q-heroes-detail .q-attribute b').map(function (b) { return Number(b.textContent); });
+    log(JSON.stringify(attrs) === JSON.stringify(characterAttrs(id)), "Selección " + name + ": atributos del personaje correcto", attrs.join("/") + " vs " + characterAttrs(id).join("/"));
+    log(opts.focusKept ? activeInfo() : true, "Selección " + name + ": foco conservado en el panel", doc().activeElement ? doc().activeElement.tagName : "—");
+    var live = q("#q-live");
+    log(!!live && live.textContent.indexOf(name) !== -1, "Selección " + name + ": anuncio accesible", live ? live.textContent : "—");
+  }
+
+  function checkResidual(id) {
+    var forbidden = Chars.characters.filter(function (c) { return c.id !== id; }).map(function (c) { return c.name; });
+    var scope = [
+      q(SEL.info), q(SEL.detail), q('[data-sel="hero-stage"] .q-heroes-figure, .q-heroes-stage .q-heroes-figure'), q('[data-char-portrait]'), q("[data-hero-chip]")
+    ].filter(Boolean);
+    var text = scope.map(function (el) { return el.textContent + " " + (el.getAttribute("aria-label") || "") + " " + (el.getAttribute("title") || ""); }).join(" ");
+    var leftovers = forbidden.filter(function (name) { return text.indexOf(name) !== -1; });
+    log(leftovers.length === 0, "Sin datos residuales de otros personajes en paneles activos", leftovers.join(", "));
+    log(infoName() === characterName(id), "Panel activo corresponde a " + characterName(id), infoName());
+  }
+
+  function scrollInfo(card) {
+    var root = doc().documentElement;
+    return {
+      y: scrollY(),
+      max: Math.max(0, root.scrollHeight - win().innerHeight),
+      height: root.scrollHeight,
+      viewport: win().innerHeight,
+      cardTop: card && card.getBoundingClientRect ? Math.round(card.getBoundingClientRect().top) : null
+    };
+  }
+
+  async function focusHero(id) {
+    var card = await until(function () { return q('.q-heroes-strip [data-action="char-focus"][data-character="' + id + '"]'); }, "tarjeta " + id);
+    setScroll(220);
+    await sleep(40);
+    card.focus({ preventScroll: true });
+    var before = scrollInfo(card);
+    var y = before.y;
+    var ids = installSentinels();
+    var m = await measureClick(card);
+    m.scrollBefore = y;
+    m.scrollAfter = scrollY();
+    m.scrollInfo = { before: before, after: scrollInfo(card) };
+    m.sentinels = sentinelsAlive(ids);
+    m.focusKept = (doc().activeElement && doc().activeElement.getAttribute("data-character")) === id;
+    metrics.focus.push({ id: id, handlerMs: m.handlerMs, fullReplace: m.stat.fullReplace, portraitsAdded: m.stat.portraitsAdded, portraitsRemoved: m.stat.portraitsRemoved, scenesAdded: m.stat.scenesAdded, viewMutations: m.stat.viewMutations, scrollKept: Math.abs(m.scrollAfter - y) <= 1, scrollInfo: m.scrollInfo });
+    log(m.sentinels, "Foco " + characterName(id) + ": centinelas de #view conservados");
+    log(Math.abs(m.scrollAfter - y) <= 1, "Foco " + characterName(id) + ": scroll conservado", y + " → " + m.scrollAfter + " · alto " + before.height + "/" + m.scrollInfo.after.height + " · tarjeta " + before.cardTop + "→" + m.scrollInfo.after.cardTop);
+    log(m.focusKept, "Foco " + characterName(id) + ": foco permanece en la tarjeta", doc().activeElement ? (doc().activeElement.getAttribute("data-character") || doc().activeElement.tagName) : "—");
+    checkFocusSwap(id, m);
+    return m;
+  }
+
+  async function selectHero(id) {
+    var button = await until(function () { return q('[data-action="select-character"][data-character="' + id + '"]'); }, "botón usar " + id);
+    setScroll(220);
+    await sleep(40);
+    button.focus({ preventScroll: true });
+    var before = scrollInfo(button);
+    var y = before.y;
+    var ids = installSentinels();
+    var m = await measureClick(button);
+    m.scrollBefore = y;
+    m.scrollAfter = scrollY();
+    m.scrollInfo = { before: before, after: scrollInfo(button) };
+    m.sentinels = sentinelsAlive(ids);
+    m.focusKept = activeInfo();
+    metrics.select.push({ id: id, handlerMs: m.handlerMs, fullReplace: m.stat.fullReplace, portraitsAdded: m.stat.portraitsAdded, portraitsRemoved: m.stat.portraitsRemoved, scenesAdded: m.stat.scenesAdded, viewMutations: m.stat.viewMutations, scrollKept: Math.abs(m.scrollAfter - y) <= 1, scrollInfo: m.scrollInfo });
+    log(m.sentinels, "Selección " + characterName(id) + ": centinelas de #view conservados");
+    log(Math.abs(m.scrollAfter - y) <= 1, "Selección " + characterName(id) + ": scroll conservado", y + " → " + m.scrollAfter + " · alto " + before.height + "/" + m.scrollInfo.after.height);
+    checkSelection(id, m, { focusKept: true });
+    return m;
+  }
+
+  var navSeq = 0;
+  function navigate(url) {
+    var cut = url.indexOf("#");
+    var base = cut >= 0 ? url.slice(0, cut) : url;
+    var hash = cut >= 0 ? url.slice(cut) : "";
+    var busted = base + (base.indexOf("?") === -1 ? "?" : "&") + "a4=" + (++navSeq) + hash;
+    return new Promise(function (resolve) {
+      var done = false;
+      function finish() {
+        if (done) return;
+        done = true;
+        frame.removeEventListener("load", finish);
+        resolve();
+      }
+      frame.addEventListener("load", finish);
+      frame.src = busted;
+      setTimeout(finish, 14000);
+    });
+  }
+
+  async function bootApp(hash) {
+    await navigate("../index.html" + (hash || "#/personajes"));
+    await until(function () { return q('#view .q-page') && q(SEL.stage); }, "arranque de la app", 15000);
+    await until(function () { return all('.q-heroes-strip .q-strip-card').length === 10; }, "elenco de 10 personajes", 8000);
+    installObserver();
+  }
+
+  async function run() {
+    try {
+      seed();
+      await bootApp("#/personajes");
+      log(true, "Estado sembrado: Ilan, Mara, Teo, Lía y Zenón; Ilan activo");
+
+      await focusHero("mara");
+      await selectHero("mara");
+      checkResidual("mara");
+      await focusHero("lia");
+      await selectHero("lia");
+      checkResidual("lia");
+      await focusHero("ilan");
+      await selectHero("ilan");
+      checkResidual("ilan");
+      await focusHero("zenon");
+      await selectHero("zenon");
+      checkResidual("zenon");
+
+      metrics.sequence = { nodes: view().querySelectorAll("*").length };
+
+      var reloadStart = performance.now();
+      await bootApp("#/personajes");
+      metrics.reload = { ms: Math.round(performance.now() - reloadStart) };
+      await until(function () { return appbarPortrait() === "zenon"; }, "selección tras recargar");
+      log(selectedStateId() === "zenon", "Persistencia: selección tras recargar", selectedStateId());
+      log(infoName() === "Zenón Atlas", "Persistencia: panel tras recargar", infoName());
+      log(appbarPortrait() === "zenon", "Persistencia: retrato del appbar tras recargar", appbarPortrait());
+      log(selectedStripIds().length === 1 && selectedStripIds()[0] === "zenon", "Persistencia: indicador de selección tras recargar", selectedStripIds().join(","));
+
+      var raw = state();
+      raw.collection.selectedCharacterId = "lia";
+      raw.revision = (raw.revision || 0) + 1;
+      raw.updatedAt = new Date(Date.now() + 800).toISOString();
+      localStorage.setItem(C.storage.stateKey, JSON.stringify(raw));
+      await until(function () { return selectedStateId() === "lia" && selectedStripIds()[0] === "lia"; }, "sincronización entre pestañas");
+      log(selectedStripIds()[0] === "lia", "Otra pestaña: selección reflejada en el elenco", selectedStripIds().join(","));
+      log(heroChipLabel().indexOf("Lía") !== -1, "Otra pestaña: chip de héroe actualizado", heroChipLabel());
+      log(appbarPortrait() === "lia", "Otra pestaña: retrato del appbar actualizado", appbarPortrait());
+      metrics.external.push({ id: "lia", observed: true });
+      raw = state();
+      raw.collection.selectedCharacterId = "zenon";
+      raw.revision = (raw.revision || 0) + 1;
+      raw.updatedAt = new Date(Date.now() + 1600).toISOString();
+      localStorage.setItem(C.storage.stateKey, JSON.stringify(raw));
+      await until(function () { return appbarPortrait() === "zenon" && selectedStripIds()[0] === "zenon"; }, "vuelta de pestaña");
+      log(selectedStripIds()[0] === "zenon", "Vuelta de pestaña: selección restaurada", selectedStripIds().join(","));
+
+      var hubStart = performance.now();
+      await navigate("../../index.html");
+      await until(function () { try { return doc() && doc().title && doc().title.length > 0 && doc().querySelector('a[href="./serums-quest/index.html"]'); } catch (e) { return false; } }, "HUB", 15000);
+      await navigate("../index.html#/personajes");
+      await until(function () { return q(SEL.stage); }, "reentrada desde el HUB", 15000);
+      installObserver();
+      metrics.hub = { ms: Math.round(performance.now() - hubStart) };
+      await until(function () { return appbarPortrait() === "zenon"; }, "selección tras el HUB");
+      log(selectedStateId() === "zenon", "HUB y reentrada: selección persistida", selectedStateId());
+
+      doc().documentElement.classList.add("reduce-motion");
+      var figure = q(SEL.figure);
+      figure.classList.add("q-sel-enter");
+      var anim = win().getComputedStyle(q('[data-sel="heroes-figure"] .q-char, .q-heroes-figure .q-char')).animationDuration;
+      metrics.reduced = { animationDuration: anim };
+      log(anim === "0.001ms" || anim === "0s" || parseFloat(anim) < 0.01, "Movimiento reducido: transición anulada por CSS", anim);
+      figure.classList.remove("q-sel-enter");
+      await focusHero("mara");
+      await selectHero("mara");
+      log(appbarPortrait() === "mara", "Movimiento reducido: el cambio funciona sin animación", appbarPortrait());
+      checkResidual("mara");
+      doc().documentElement.classList.remove("reduce-motion");
+
+      installObserver();
+      resetStat();
+      var before = infoName();
+      doc().dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowRight", bubbles: true }));
+      await settle();
+      log(infoName() !== before, "Teclado: flecha derecha cambia el héroe inspeccionado", before + " → " + infoName());
+      log(stat.fullReplace === 0, "Teclado: sin reconstrucción de #view", "fullReplace=" + stat.fullReplace);
+
+      log(true, "Prueba de cambio de personaje completada");
+    } catch (error) {
+      log(false, "Excepción: " + (error && error.message ? error.message : error));
+    }
+    lines.push("");
+    lines.push("<b>Resultado: " + passed + " comprobaciones correctas, " + failed + " fallidas.</b>");
+    out.innerHTML = lines.join("\n");
+    window.__QUEST_SELECTION__ = { passed: passed, failed: failed, results: lines.slice(), metrics: metrics };
+  }
+
+  run();
+})();
+</script>
+</body>
+</html>

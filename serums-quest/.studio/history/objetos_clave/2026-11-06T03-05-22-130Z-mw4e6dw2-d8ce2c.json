@@ -1,0 +1,21 @@
+{
+  "savedAt": "2026-11-06T03:05:22.131Z",
+  "file": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.studio\\history\\objetos_clave\\2026-11-06T03-05-22-130Z-mw4e6dw2-d8ce2c-objetos_clave.svg",
+  "spec": {
+    "file": "assets/objetos_clave.svg",
+    "label": "Objetos clave de las 5 rutas",
+    "size": [
+      1280,
+      512
+    ],
+    "transparent": true
+  },
+  "record": {
+    "slot": "objetos_clave",
+    "file": "assets/objetos_clave.svg",
+    "source": "template",
+    "appliedAt": "2026-11-06T02:24:41.633Z",
+    "license": "MIT (bundled template art, original to dsh-game-studio)",
+    "sha256": "f494fc71a930f607b9bc73dda1905aa3f38d20f8f43b2e3400850cbe482be7ca"
+  }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rendimiento gráfico · SERUMS QUEST</title>
+<style>
+  :root { color-scheme: dark; }
+  body { margin:0; background:#07080c; color:#f4f6fb; font:13px/1.55 Inter, system-ui, sans-serif; }
+  .wrap { max-width:980px; margin:0 auto; padding:32px 22px 60px; }
+  h1 { font-size:26px; letter-spacing:-.03em; margin:0 0 4px; }
+  p { color:#8b93a7; font-size:12px; margin:0; }
+  .grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:10px; margin:18px 0; }
+  .card { border:1px solid rgba(255,255,255,.1); border-radius:12px; padding:14px; background:#10131c; }
+  .card span { display:block; font-size:9px; text-transform:uppercase; letter-spacing:.1em; color:#7b8499; }
+  .card b { display:block; font-size:24px; margin:4px 0 2px; font-variant-numeric:tabular-nums; }
+  .card small { color:#7b8499; font-size:10px; }
+  .ok { color:#5fd3a0; } .bad { color:#f07178; }
+  pre { white-space:pre-wrap; background:#0b0e17; border:1px solid rgba(255,255,255,.08); border-radius:12px; padding:14px; font-size:11px; color:#aab3c8; }
+  .stage { margin-top:12px; display:flex; gap:6px; overflow:hidden; height:180px; opacity:.7; pointer-events:none; }
+  .stage > div { width:90px; height:170px; flex:none; }
+  .stage svg { width:100%; height:100%; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>Rendimiento gráfico</h1>
+  <p>Medición local de generación SVG, caché de retratos y escenarios. Sin red, sin imágenes externas.</p>
+  <div class="grid" id="metrics"></div>
+  <div class="stage" id="stage"></div>
+  <pre id="out">Ejecutando…</pre>
+</div>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/scenes.js?v=1.0.0"></script>
+<script>
+  (function () {
+    "use strict";
+    var Chars = window.QuestCharacters;
+    var Art = window.QuestCharacterArt;
+    var Scenes = window.QuestScenes;
+    var C = window.QUEST_CONFIG;
+    var rows = [];
+    var failed = 0;
+    function record(label, value, ok, detail) {
+      rows.push({ label: label, value: value, ok: ok, detail: detail || "" });
+      if (!ok) failed += 1;
+    }
+    function ms(value) { return value.toFixed(2) + " ms"; }
+
+    var states = ["idle", "victory", "defeat", "levelup", "correct", "wrong"];
+    var outfits = [{}, {
+      "cabeza": "c-cabeza-diadema", "torso": "c-torso-abrigo", "efectos": "c-efectos-aura"
+    }, {
+      "cabeza": "c-cabeza-casco", "peinado": "c-peinado-coleta", "accesorios": "c-accesorios-gafas"
+    }];
+    var t0 = performance.now();
+    var count = 0;
+    Chars.characters.forEach(function (character, index) {
+      states.forEach(function (state, s) {
+        Art.portrait(character.id, outfits[(index + s) % outfits.length], { state: state });
+        count += 1;
+      });
+    });
+    var cold = performance.now() - t0;
+    record("Retratos únicos generados", String(count), true, "10 personajes × 6 estados");
+    record("Generación en frío", ms(cold), cold < 900, "incluye composición SVG, capas y cosméticos");
+
+    var t1 = performance.now();
+    for (var repeat = 0; repeat < 10; repeat += 1) {
+      Chars.characters.forEach(function (character, index) {
+        states.forEach(function (state, s) {
+          Art.portrait(character.id, outfits[(index + s) % outfits.length], { state: state });
+        });
+      });
+    }
+    var cached = performance.now() - t1;
+    record("600 lecturas con caché", ms(cached), cached < 60, "misma clave: reutiliza la cadena ya construida");
+    record("Aceleración de caché", (cold / Math.max(cached / 10, 0.001)).toFixed(0) + "×", cached / 10 < cold, "comparación por retrato");
+
+    var svgSize = Art.portrait("ilan", outfits[1], { state: "idle" }).length;
+    record("Peso de un retrato", (svgSize / 1024).toFixed(1) + " KB", svgSize < 40000, "SVG en memoria; sin archivos de imagen");
+
+    var s0 = performance.now();
+    var sceneBytes = 0;
+    for (var i = 0; i < 100; i += 1) {
+      C.areas.forEach(function (areaId) {
+        sceneBytes += Scenes.scene(areaId, { variant: i % 2 ? "home" : "select" }).length;
+      });
+    }
+    var sceneMs = performance.now() - s0;
+    record("500 escenarios generados", ms(sceneMs), sceneMs < 220, "5 áreas × 100 variantes");
+    record("Peso medio de escena", ((sceneBytes / 500) / 1024).toFixed(1) + " KB", sceneBytes / 500 < 30000, "capas, partículas y niebla en SVG");
+
+    var host = document.getElementById("stage");
+    var d0 = performance.now();
+    Chars.characters.forEach(function (character) {
+      var cell = document.createElement("div");
+      cell.innerHTML = Art.portrait(character.id, {}, { state: "victory", thumb: true });
+      host.appendChild(cell);
+    });
+    var domMs = performance.now() - d0;
+    var nodes = host.querySelectorAll("*").length;
+    record("10 retratos en el DOM", ms(domMs), domMs < 180, "inserción de miniaturas");
+    record("Nodos SVG de 10 retratos", String(nodes), nodes < 4500, "presupuesto para una rejilla de colección");
+
+    document.getElementById("metrics").innerHTML = rows.map(function (row) {
+      return '<div class="card"><span>' + row.label + '</span><b class="' + (row.ok ? "ok" : "bad") + '">' + row.value + '</b><small>' + row.detail + '</small></div>';
+    }).join("");
+    document.getElementById("out").textContent = rows.map(function (row) {
+      return (row.ok ? "PASS" : "FAIL") + " · " + row.label + " · " + row.value + " · " + row.detail;
+    }).join("\n") + "\n\nResultado: " + (rows.length - failed) + " de " + rows.length + " métricas dentro de presupuesto.";
+    window.__QUEST_PERF__ = { failed: failed, rows: rows };
+  })();
+</script>
+</body>
+</html>

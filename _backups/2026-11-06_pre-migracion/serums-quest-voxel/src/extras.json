@@ -1,0 +1,337 @@
+{
+  "categories": [
+    { "id": "mascota", "label": "Mascota" },
+    { "id": "estela", "label": "Estela" },
+    { "id": "titulo", "label": "Título" }
+  ],
+  "cosmetics": [
+    {
+      "id": "x-estela-racha",
+      "name": "Estela de racha",
+      "description": "Una cinta de luz que se alarga con los días de constancia. Nada se pierde si un día se descansa.",
+      "category": "estela",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "streak", "target": 7, "tiers": [14, 30], "metric": "bestStreak" }
+    },
+    {
+      "id": "x-luciernaga-observatorio",
+      "name": "Luciérnaga del observatorio",
+      "description": "Una chispa viva que crece con la constancia. Empieza rara y se vuelve legendaria al llegar a 60 días.",
+      "category": "mascota",
+      "rarity": "raro",
+      "tierRarities": ["raro", "raro", "legendario"],
+      "price": 0,
+      "unlockRequirements": { "kind": "streak", "target": 7, "tiers": [21, 60], "metric": "bestStreak" },
+      "stageLabels": ["Chispa", "Faro", "Constelación"]
+    },
+    {
+      "id": "x-aura-amanecer",
+      "name": "Aura del amanecer",
+      "description": "Un halo cálido que rodea al héroe al empezar una nueva jornada de estudio.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "streak", "target": 14, "metric": "bestStreak" }
+    },
+    {
+      "id": "x-capa-errorario",
+      "name": "Capa del Errorario",
+      "description": "Una capa tejida con cada error que se convirtió en una respuesta recuperada.",
+      "category": "torso",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "recoveries", "target": 10 }
+    },
+    {
+      "id": "x-reloj-arena",
+      "name": "Reloj de arena flotante",
+      "description": "Un pequeño reloj de arena que recuerda las preguntas repasadas dentro de su ventana programada.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "onTimeReviewSessions", "target": 10 }
+    },
+    {
+      "id": "x-cuaderno-orbital",
+      "name": "Cuaderno orbital",
+      "description": "Un cuaderno que gira alrededor del héroe después de practicar errores antes de su cita.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "earlyReviewSessions", "target": 5 }
+    },
+    {
+      "id": "x-dominio-salud",
+      "name": "Tocado de maestría · Salud pública",
+      "description": "Laurel de comunidad y salud pública para quien sostiene el criterio en toda la ruta.",
+      "category": "cabeza",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMastery", "areaId": "area-psi-salud-publica", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-dominio-cuidado",
+      "name": "Tocado de maestría · Cuidado integral",
+      "description": "Una corona de escucha y continuidad para quien completa la ruta del cuidado.",
+      "category": "cabeza",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMastery", "areaId": "area-psi-cuidado-integral", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-dominio-etica",
+      "name": "Tocado de maestría · Ética e interculturalidad",
+      "description": "Un aro de dignidad y confianza para quien sostiene el criterio ético.",
+      "category": "cabeza",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMastery", "areaId": "area-psi-etica", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-dominio-investigacion",
+      "name": "Tocado de maestría · Investigación",
+      "description": "Un prisma de evidencia para quien distingue método, límite y conclusión.",
+      "category": "cabeza",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMastery", "areaId": "area-psi-investigacion", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-dominio-gestion",
+      "name": "Tocado de maestría · Gestión de servicios",
+      "description": "Un engranaje de planificación para quien sostiene sistemas y equipos.",
+      "category": "cabeza",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMastery", "areaId": "area-psi-gestion", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-dominio-salud-oro",
+      "name": "Tocado dorado · Salud pública",
+      "description": "La versión áurea del dominio de Salud pública, reservada para un jefe con 90 % o más.",
+      "category": "cabeza",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMasteryGold", "areaId": "area-psi-salud-publica", "bossId": "boss-sp", "bossAccuracy": 0.9 }
+    },
+    {
+      "id": "x-dominio-cuidado-oro",
+      "name": "Tocado dorado · Cuidado integral",
+      "description": "La versión áurea del dominio del cuidado, con el guardián superado al 90 % o más.",
+      "category": "cabeza",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMasteryGold", "areaId": "area-psi-cuidado-integral", "bossId": "boss-ci", "bossAccuracy": 0.9 }
+    },
+    {
+      "id": "x-dominio-etica-oro",
+      "name": "Tocado dorado · Ética e interculturalidad",
+      "description": "La versión áurea del dominio ético, con el guardián superado al 90 % o más.",
+      "category": "cabeza",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMasteryGold", "areaId": "area-psi-etica", "bossId": "boss-et", "bossAccuracy": 0.9 }
+    },
+    {
+      "id": "x-dominio-investigacion-oro",
+      "name": "Tocado dorado · Investigación",
+      "description": "La versión áurea de la evidencia, con el guardián superado al 90 % o más.",
+      "category": "cabeza",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMasteryGold", "areaId": "area-psi-investigacion", "bossId": "boss-in", "bossAccuracy": 0.9 }
+    },
+    {
+      "id": "x-dominio-gestion-oro",
+      "name": "Tocado dorado · Gestión de servicios",
+      "description": "La versión áurea del sistema, con el guardián superado al 90 % o más.",
+      "category": "cabeza",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "areaMasteryGold", "areaId": "area-psi-gestion", "bossId": "boss-ge", "bossAccuracy": 0.9 }
+    },
+    {
+      "id": "x-trofeo-salud",
+      "name": "Trofeo del Territorio",
+      "description": "Una semilla de luz flotante que recuerda al Custodio del Territorio.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossDefeated", "bossId": "boss-sp" }
+    },
+    {
+      "id": "x-trofeo-cuidado",
+      "name": "Trofeo del Cuidado",
+      "description": "Un faro minúsculo que flota junto al héroe tras vencer al Custodio del Cuidado.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossDefeated", "bossId": "boss-ci" }
+    },
+    {
+      "id": "x-trofeo-etica",
+      "name": "Trofeo de la Confianza",
+      "description": "Un espejo de bolsillo que refleja al Custodio de la Confianza.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossDefeated", "bossId": "boss-et" }
+    },
+    {
+      "id": "x-trofeo-investigacion",
+      "name": "Trofeo de la Evidencia",
+      "description": "Un prisma de luz que recuerda al Custodio de la Evidencia.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossDefeated", "bossId": "boss-in" }
+    },
+    {
+      "id": "x-trofeo-gestion",
+      "name": "Trofeo del Sistema",
+      "description": "Un pequeño engranaje flotante del Custodio del Sistema.",
+      "category": "extras",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossDefeated", "bossId": "boss-ge" }
+    },
+    {
+      "id": "x-arma-destello",
+      "name": "Destello del Territorio",
+      "description": "Partículas de salud pública que recorren el arma y se disipan sin herir.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossMastery", "bossId": "boss-sp", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-arma-marea",
+      "name": "Marea del Cuidado",
+      "description": "Una marea de luz azul alrededor del arma, con el ritmo de la escucha.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossMastery", "bossId": "boss-ci", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-arma-sello",
+      "name": "Sello de la Confianza",
+      "description": "Un sello violeta de luz que se dibuja junto a la empuñadura.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossMastery", "bossId": "boss-et", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-arma-prisma",
+      "name": "Prisma de la Evidencia",
+      "description": "Destellos de evidencia que ordenan el aire alrededor del arma.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossMastery", "bossId": "boss-in", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-arma-orbita",
+      "name": "Órbita del Sistema",
+      "description": "Pequeñas piezas doradas que orbitan el arma como un sistema en equilibrio.",
+      "category": "efectos",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "bossMastery", "bossId": "boss-ge", "accuracy": 0.8 }
+    },
+    {
+      "id": "x-buho-cometa",
+      "name": "Búho cometa",
+      "description": "Un búho de luz que crece con el nivel global y deja una estela de plumas estelares.",
+      "category": "mascota",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "level", "target": 5, "tiers": [15, 30] },
+      "stageLabels": ["Polluelo", "Cometa", "Cósmico"]
+    },
+    {
+      "id": "x-zorro-tinta",
+      "name": "Zorro de tinta",
+      "description": "Un zorro de tinta que deja huellas de luz y colecciona accesorios con los logros.",
+      "category": "mascota",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievements", "target": 3, "tiers": [8, 13] },
+      "stageLabels": ["Tinta", "Cartógrafo", "Archivista"]
+    },
+    {
+      "id": "x-titulo-primer-paso",
+      "name": "Primer paso",
+      "description": "Título para el primer criterio ejercitado.",
+      "category": "titulo",
+      "rarity": "comun",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "primer-paso" }
+    },
+    {
+      "id": "x-titulo-en-ruta",
+      "name": "En ruta",
+      "description": "Título para quien completa su primera misión.",
+      "category": "titulo",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "primera-mision" }
+    },
+    {
+      "id": "x-titulo-cartografo",
+      "name": "Cartógrafo",
+      "description": "Título para quien ha abierto cinco nodos de la campaña.",
+      "category": "titulo",
+      "rarity": "raro",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "cinco-misiones" }
+    },
+    {
+      "id": "x-titulo-criterio",
+      "name": "Criterio",
+      "description": "Título para la precisión sostenida del 80 % con evidencia suficiente.",
+      "category": "titulo",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "precision-80" }
+    },
+    {
+      "id": "x-titulo-primer-custodio",
+      "name": "Primer custodio",
+      "description": "Título para quien vence a su primer guardián.",
+      "category": "titulo",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "primer-jefe" }
+    },
+    {
+      "id": "x-titulo-semana-completa",
+      "name": "Semana completa",
+      "description": "Título para los días de constancia que sostienen una semana de estudio.",
+      "category": "titulo",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "racha-7" }
+    },
+    {
+      "id": "x-titulo-circulo-cerrado",
+      "name": "Círculo cerrado",
+      "description": "Título para quien recupera diez errores con repaso real.",
+      "category": "titulo",
+      "rarity": "epico",
+      "price": 0,
+      "unlockRequirements": { "kind": "achievement", "achievementId": "diez-recuperaciones" }
+    },
+    {
+      "id": "x-titulo-maestro",
+      "name": "Maestro SERUMS",
+      "description": "Título mayor para quien alcanza el rango Maestro SERUMS.",
+      "category": "titulo",
+      "rarity": "legendario",
+      "price": 0,
+      "unlockRequirements": { "kind": "rank", "rankId": "maestro" }
+    }
+  ]
+}

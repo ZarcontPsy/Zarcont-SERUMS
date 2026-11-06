@@ -1,0 +1,21 @@
+{
+  "savedAt": "2026-11-06T03:05:22.127Z",
+  "file": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.studio\\history\\armas_heroes\\2026-11-06T03-05-22-125Z-mw4e6dvx-ac41cc-armas_heroes.svg",
+  "spec": {
+    "file": "assets/armas_heroes.svg",
+    "label": "Armas de los héroes (10)",
+    "size": [
+      1280,
+      256
+    ],
+    "transparent": true
+  },
+  "record": {
+    "slot": "armas_heroes",
+    "file": "assets/armas_heroes.svg",
+    "source": "template",
+    "appliedAt": "2026-11-06T02:24:41.633Z",
+    "license": "MIT (bundled template art, original to dsh-game-studio)",
+    "sha256": "f0fa7966abff91e32b949ea5da2bef351a8f5aad1ba47b9449690d0e8940e46f"
+  }
+}

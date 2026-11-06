@@ -1,0 +1,150 @@
+{
+  "schema": 1,
+  "template": "voxel",
+  "title": "SERUMS QUEST",
+  "runtime": [
+    "three"
+  ],
+  "slots": {
+    "personaje_ilan": {
+      "file": "assets/personaje_ilan.svg",
+      "label": "Ilan Vega · Táctico",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_mara": {
+      "file": "assets/personaje_mara.svg",
+      "label": "Mara Solís · Rastreadora",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_noa": {
+      "file": "assets/personaje_noa.svg",
+      "label": "Noa Iturbe · Analista",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_teo": {
+      "file": "assets/personaje_teo.svg",
+      "label": "Teo Alcázar · Mentor",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_lia": {
+      "file": "assets/personaje_lia.svg",
+      "label": "Lía Márquez · Duelista",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_kian": {
+      "file": "assets/personaje_kian.svg",
+      "label": "Kian Ferro · Guardián",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_amaru": {
+      "file": "assets/personaje_amaru.svg",
+      "label": "Amaru Cielo · Vigía",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_ona": {
+      "file": "assets/personaje_ona.svg",
+      "label": "Ona Beltrán · Arquitecta",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_iris": {
+      "file": "assets/personaje_iris.svg",
+      "label": "Iris Calderón · Protectora",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "personaje_zenon": {
+      "file": "assets/personaje_zenon.svg",
+      "label": "Zenón Atlas · Cronista",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "armas_heroes": {
+      "file": "assets/armas_heroes.svg",
+      "label": "Armas de los héroes (10)",
+      "size": [
+        1280,
+        256
+      ],
+      "transparent": true
+    },
+    "objetos_clave": {
+      "file": "assets/objetos_clave.svg",
+      "label": "Objetos clave de las 5 rutas",
+      "size": [
+        1280,
+        512
+      ],
+      "transparent": true
+    }
+  },
+  "rules": {
+    "version": "Versión final completa",
+    "seed": 41,
+    "worldRadius": 9.2,
+    "heroSpeed": 4.5,
+    "duelHearts": 3,
+    "elapsedToResult": 0.8,
+    "reviewPerSession": 8,
+    "firstReviewMinutes": 20,
+    "missionPass": 0.6,
+    "bossPass": 0.7,
+    "reviewPass": 0.5,
+    "maxLevel": 50,
+    "palette": {
+      "skyTop": "#05070d",
+      "skyBottom": "#0a1120",
+      "fog": "#090e1a",
+      "stone": "#263048",
+      "stoneWarm": "#4a3f34",
+      "gold": "#e4c07a",
+      "ink": "#f2f0ea",
+      "blue": "#7aa2ff",
+      "teal": "#69d3c1",
+      "violet": "#c49bff",
+      "lime": "#b8d46a",
+      "amber": "#f3b562",
+      "rose": "#ff8b9d"
+    },
+    "buildDate": "2026-11-06"
+  },
+  "style": "voxel 3D de fantasía académica, observatorio nocturno de islas flotantes, paleta obsidiana con acentos azul, verde agua, violeta, lima y ámbar, iluminación suave y atmosférica",
+  "orientation": "landscape"
+}

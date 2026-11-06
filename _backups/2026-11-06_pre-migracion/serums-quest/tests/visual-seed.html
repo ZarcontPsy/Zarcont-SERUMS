@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head><meta charset="UTF-8"><title>Sembrar estado de demostración · QA</title></head>
+<body style="background:#08090d;color:#c0c5d4;font:13px system-ui;padding:24px">
+<p id="status">Preparando estado de demostración…</p>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/icons.js?v=1.2.0"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/reactions.js?v=1.0.0"></script>
+<script src="../js/scenes.js?v=1.0.0"></script>
+<script src="../js/audio.js?v=1.0.0"></script>
+<script src="../js/collection.js?v=1.2.0"></script>
+<script src="../js/store.js?v=1.2.0"></script>
+<script>
+(function () {
+  "use strict";
+  var C = window.QUEST_CONFIG;
+  var U = window.QuestUtil;
+  var Store = window.QuestStore;
+  var Collection = window.QuestCollection;
+  var params = new URLSearchParams(location.search);
+  var next = params.get("next") || "";
+  var theme = params.get("theme") || "";
+  var now = new Date();
+  try {
+    localStorage.removeItem(C.storage.stateKey);
+    localStorage.removeItem(C.storage.backupKey);
+    localStorage.removeItem(C.storage.journalKey);
+    var store = Store.create({ storage: localStorage, now: function () { return now; } });
+    store.init();
+    store.commit(function (draft) {
+      draft.profile.name = "Ariana Q.";
+      draft.coins = 24000;
+      draft.xp = 900;
+      draft.stage = 2;
+      if (theme === "light") draft.settings.theme = "light";
+      draft.academic.answered = 70;
+      draft.academic.correct = 52;
+      draft.academic.byArea["area-psi-salud-publica"].answered = 20;
+      draft.academic.byArea["area-psi-salud-publica"].correct = 15;
+      draft.academic.byArea["area-psi-etica"].answered = 16;
+      draft.academic.byArea["area-psi-etica"].correct = 13;
+      draft.daily.streak = 4;
+      draft.daily.bestStreak = 4;
+      var missions = [
+        ["mission-sp-1", "area-psi-salud-publica"],
+        ["mission-sp-2", "area-psi-salud-publica"],
+        ["mission-ci-1", "area-psi-cuidado-integral"],
+        ["mission-ci-2", "area-psi-cuidado-integral"],
+        ["mission-et-1", "area-psi-etica"],
+        ["mission-in-1", "area-psi-investigacion"]
+      ];
+      missions.forEach(function (pair) {
+        draft.missions[pair[0]] = { id: pair[0], kind: "mission", areaId: pair[1], attempts: 1, completedAt: now.toISOString(), bestScore: 100, bestAccuracy: 1, lastAt: now.toISOString() };
+      });
+      draft.achievements["primer-paso"] = { unlockedAt: now.toISOString(), xp: 20, coins: 5 };
+      draft.achievements["primera-mision"] = { unlockedAt: now.toISOString(), xp: 30, coins: 10 };
+      window.QuestCollection.syncUnlocks(draft, U.nowISO(now));
+    });
+    ["mara", "noa", "teo", "lia", "ona", "iris"].forEach(function (id) {
+      store.commit(function (draft) { return Collection.purchaseCharacter(draft, id, U.nowISO(now)); });
+    });
+    ["c-torso-abrigo", "c-torso-manto", "c-peinado-coleta", "c-cabeza-diadema", "c-accesorios-gafas", "c-amuleto-enfoque", "c-efecto-aura", "c-marco-platino", "c-marco-vacio", "c-piernas-grebas", "c-torso-bata"].forEach(function (id) {
+      store.commit(function (draft) { return Collection.purchaseCosmetic(draft, id, U.nowISO(now)); });
+    });
+    store.commit(function (draft) {
+      return Collection.setOutfit(draft, "ilan", {
+        "cabeza": "c-cabeza-diadema",
+        "peinado": "c-peinado-coleta",
+        "torso": "c-torso-abrigo",
+        "accesorios": "c-accesorios-gafas",
+        "amuletos": "c-amuleto-enfoque",
+        "efectos": "c-efecto-aura",
+        "marcos": "c-marco-platino"
+      }, U.nowISO(now));
+    });
+    store.commit(function (draft) {
+      return Collection.setOutfit(draft, "iris", {
+        "torso": "c-torso-manto",
+        "efectos": "c-efecto-aura",
+        "marcos": "c-marco-vacio"
+      }, U.nowISO(now));
+    });
+    store.commit(function (draft) { return Collection.selectCharacter(draft, "ilan"); });
+    document.getElementById("status").textContent = "Estado listo. Abriendo " + (next || "inicio") + "…";
+    if (next === "home") location.replace("../index.html#/");
+    else if (next) location.replace("../index.html#/" + next);
+  } catch (error) {
+    document.getElementById("status").textContent = "No se pudo sembrar el estado: " + (error && error.message ? error.message : error);
+  }
+})();
+</script>
+</body>
+</html>

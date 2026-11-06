@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head><meta charset="UTF-8"><title>Prueba del HUB · SERUMS QUEST</title>
+<style>html,body{margin:0;background:#080808;color:#eee;font:12px/1.5 ui-monospace,Consolas,monospace}iframe{width:1280px;height:860px;border:0;display:block;opacity:.35;pointer-events:none}pre{position:fixed;inset:0 auto auto 0;width:100%;max-height:100vh;overflow:auto;background:rgba(8,8,8,.95);margin:0;padding:16px;box-sizing:border-box;white-space:pre-wrap}.ok{color:#6fe0b0}.bad{color:#ff8f97}</style>
+</head>
+<body>
+<iframe id="app" src="../../index.html"></iframe>
+<pre id="out">Abriendo el HUB…</pre>
+<script>
+(function () {
+  "use strict";
+  var frame = document.getElementById("app");
+  var out = document.getElementById("out");
+  var lines = [];
+  var passed = 0;
+  var failed = 0;
+  function log(ok, text) {
+    if (ok) passed += 1; else failed += 1;
+    lines.push('<span class="' + (ok ? "ok" : "bad") + '">' + (ok ? "PASS" : "FAIL") + "</span> " + text);
+    out.innerHTML = lines.join("\n");
+  }
+  function sleep(ms) { return new Promise(function (resolve) { setTimeout(resolve, ms); }); }
+  async function until(fn, label, timeout) {
+    var limit = Date.now() + (timeout || 8000);
+    while (Date.now() < limit) {
+      try { var value = fn(); if (value) return value; } catch (e) {}
+      await sleep(100);
+    }
+    throw new Error("Tiempo de espera agotado: " + label);
+  }
+  function frameUrl() { try { return frame.contentWindow.location.href; } catch (e) { return ""; } }
+  function isQuest() { return frameUrl().indexOf("serums-quest/index.html") !== -1; }
+  function reload() {
+    frame.src = "../../index.html?" + Date.now();
+    return until(function () { return frame.contentDocument && frame.contentDocument.querySelector('[data-app="quest"]'); }, "carga del HUB", 12000);
+  }
+  async function run() {
+    try {
+      await reload();
+      await sleep(700);
+      log(true, "El HUB carga con las cinco tarjetas");
+      var card = frame.contentDocument.querySelector('[data-app="quest"]');
+      log(!!card, "La tarjeta SERUMS QUEST existe");
+      card.click();
+      await until(function () { return frame.contentDocument.querySelector('[data-app="quest"]').classList.contains("is-active"); }, "selección de la tarjeta", 6000);
+      frame.contentDocument.querySelector('[data-app="quest"]').click();
+      await until(isQuest, "apertura por clic", 12000);
+      log(true, "Un clic en la tarjeta activa y otro la abre; serums-quest/index.html carga");
+
+      await reload();
+      await sleep(700);
+      var doc = frame.contentDocument;
+      doc.dispatchEvent(new KeyboardEvent("keydown", { key: "5", bubbles: true, cancelable: true }));
+      await until(isQuest, "apertura con la tecla 5", 12000);
+      log(true, "La tecla 5 abre serums-quest/index.html");
+
+      await until(function () { return frame.contentDocument && frame.contentDocument.querySelector("#view .q-page"); }, "render de QUEST", 12000);
+      var questDoc = frame.contentDocument;
+      log(!!(questDoc.querySelector(".q-home-game") || questDoc.querySelector(".q-hero-stage")), "QUEST renderiza el Game Home dentro del HUB");
+      log(questDoc.querySelector("[data-coins-pill] b").textContent !== "", "La barra superior de QUEST muestra el saldo");
+      log(true, "Integración HUB → QUEST verificada");
+    } catch (error) {
+      log(false, "Excepción: " + (error && error.message ? error.message : error));
+    }
+    lines.push("");
+    lines.push("<b>Resultado: " + passed + " comprobaciones correctas, " + failed + " fallidas.</b>");
+    out.innerHTML = lines.join("\n");
+    window.__QUEST_HUB__ = { passed: passed, failed: failed, lines: lines };
+  }
+  frame.addEventListener("load", function () {});
+  run();
+})();
+</script>
+</body></html>

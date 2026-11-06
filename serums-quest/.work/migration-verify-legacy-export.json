@@ -1,0 +1,28 @@
+{
+  "scenario": "legacy-export-to-new-import",
+  "legacyTitle": "Ajustes · SERUMS QUEST",
+  "legacyRoute": "#/ajustes",
+  "exportButton": true,
+  "exportFile": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\legacy-export\\serums-quest-progreso-2026-11-06.json",
+  "exportParsed": {
+    "app": "SERUMS QUEST",
+    "build": "ZARCONT-SQ-1.2.0",
+    "hasState": true,
+    "profile": "Serumista",
+    "coins": 0,
+    "xp": 0,
+    "keys": 26
+  },
+  "exportBytes": 3191,
+  "legacyErrors": [],
+  "preview": true,
+  "previewName": "Serumista",
+  "imported": {
+    "name": "Serumista",
+    "coins": 0,
+    "xp": 0,
+    "importedFrom": "SERUMS QUEST 1.2.0",
+    "schema": 2
+  },
+  "errors": []
+}

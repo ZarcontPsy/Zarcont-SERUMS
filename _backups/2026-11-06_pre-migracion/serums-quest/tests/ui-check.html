@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="dark">
+<head><meta charset="UTF-8"><title>Prueba de interfaz · SERUMS QUEST</title>
+<style>
+  html, body { margin: 0; background: #07080c; color: #f2f4fa; font: 12px/1.5 ui-monospace, Consolas, monospace; }
+  iframe { width: 1280px; height: 900px; border: 0; display: block; opacity: .35; pointer-events: none; }
+  pre { position: fixed; inset: 0 auto auto 0; width: 100%; max-height: 100vh; overflow: auto; padding: 16px; box-sizing: border-box; background: rgba(7,8,12,.94); margin: 0; white-space: pre-wrap; }
+  b { color: #9fc4ff; }
+  .ok { color: #6fe0b0; }
+  .bad { color: #ff8f97; }
+</style>
+</head>
+<body>
+<iframe id="app"></iframe>
+<pre id="out">Ejecutando prueba de interfaz…</pre>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/icons.js?v=1.1.0"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/reactions.js?v=1.0.0"></script>
+<script src="../js/collection.js?v=1.2.0"></script>
+<script src="../js/store.js?v=1.2.0"></script>
+<script>
+(function () {
+  "use strict";
+  var C = window.QUEST_CONFIG;
+  var Store = window.QuestStore;
+  var Collection = window.QuestCollection;
+  var Chars = window.QuestCharacters;
+  var frame = document.getElementById("app");
+  var out = document.getElementById("out");
+  var lines = [];
+  var passed = 0;
+  var failed = 0;
+
+  function log(ok, message) {
+    if (ok) passed += 1; else failed += 1;
+    lines.push('<span class="' + (ok ? "ok" : "bad") + '">' + (ok ? "PASS" : "FAIL") + "</span> " + message);
+    out.innerHTML = lines.join("\n");
+  }
+  function state() { return JSON.parse(localStorage.getItem(C.storage.stateKey) || "null"); }
+  function sleep(ms) { return new Promise(function (resolve) { setTimeout(resolve, ms); }); }
+  async function until(fn, label, timeout) {
+    var limit = Date.now() + (timeout || 5000);
+    while (Date.now() < limit) {
+      try {
+        var value = fn();
+        if (value) return value;
+      } catch (e) {}
+      await sleep(80);
+    }
+    throw new Error("Tiempo de espera agotado: " + label);
+  }
+  function doc() { return frame.contentDocument; }
+  function q(sel) { return doc().querySelector(sel); }
+  function all(sel) { return Array.prototype.slice.call(doc().querySelectorAll(sel)); }
+  async function click(sel) {
+    var el = await until(function () { return q(sel); }, "elemento " + sel);
+    el.click();
+    await sleep(260);
+    return el;
+  }
+  function hash(value) {
+    frame.contentWindow.location.hash = value;
+  }
+
+  async function run() {
+    try {
+      localStorage.removeItem(C.storage.stateKey);
+      localStorage.removeItem(C.storage.backupKey);
+      localStorage.removeItem(C.storage.journalKey);
+      var seed = Store.create({ storage: localStorage, now: function () { return new Date(); } });
+      seed.init();
+      seed.commit(function (draft) { draft.coins = 20000; draft.xp = 420; });
+      log(true, "Estado sembrado con 20.000 monedas y personaje inicial");
+
+      frame.src = "../index.html#/personajes";
+      await until(function () { return q(".q-home-game") || q(".q-heroes") || q("#view .q-page"); }, "arranque de la aplicación", 12000);
+      await until(function () { return q('[data-action="char-filter"]'); }, "filtros de personajes");
+      log(true, "La aplicación arranca y renderiza el selector");
+
+      await click('[data-action="char-filter"][data-filter="buy"]');
+      var buyCards = all('.q-strip-card');
+      log(buyCards.length === 7, "Filtro «Por comprar» muestra 7 personajes (recibidos " + buyCards.length + ")");
+      await click('[data-action="char-filter"][data-filter="locked"]');
+      var lockedCards = all('.q-strip-card');
+      log(lockedCards.length === 2, "Filtro «Bloqueados» muestra Amaru y Zenón (recibidos " + lockedCards.length + ")");
+      await click('[data-action="char-filter"][data-filter="all"]');
+
+      hash("#/personaje/mara");
+      await until(function () { return q(".q-heroes-info h1") && q(".q-heroes-info h1").textContent.indexOf("Mara") !== -1; }, "detalle profundo de Mara");
+      await click('[data-action="char-focus"][data-character="ilan"]');
+      await until(function () { return q(".q-heroes-info h1") && q(".q-heroes-info h1").textContent.indexOf("Ilan") !== -1; }, "cambio de foco desde enlace profundo");
+      log(true, "El enlace profundo no bloquea la inspección de otros personajes");
+
+      var keyboardBefore = q(".q-heroes-info h1").textContent;
+      doc().dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowRight", bubbles: true }));
+      await until(function () { return q(".q-heroes-info h1").textContent !== keyboardBefore; }, "navegación por teclado");
+      var keyboardAfter = q(".q-heroes-info h1").textContent;
+      log(keyboardBefore !== keyboardAfter, "Las flechas del teclado cambian el personaje inspeccionado (" + keyboardBefore + " → " + keyboardAfter + ")");
+      doc().dispatchEvent(new KeyboardEvent("keydown", { key: "ArrowLeft", bubbles: true }));
+      await until(function () { return q(".q-heroes-info h1").textContent === keyboardBefore; }, "retorno por teclado");
+
+      await click('[data-action="char-focus"][data-character="mara"]');
+      await until(function () { return q(".q-heroes-info h1") && q(".q-heroes-info h1").textContent.indexOf("Mara") !== -1; }, "detalle de Mara");
+      log(state().collection.selectedCharacterId === "ilan", "Inspeccionar a Mara no cambia el personaje activo");
+      await click('[data-action="buy-character"][data-character="mara"]');
+      await until(function () { return q("[data-dialog-confirm]"); }, "diálogo de compra");
+      var priceDialog = q(".q-dialog").textContent;
+      log(priceDialog.indexOf("480") !== -1, "El diálogo muestra el precio antes de confirmar");
+      await click("[data-dialog-confirm]");
+      await until(function () { return q(".q-unlock"); }, "presentación de desbloqueo", 6000);
+      log(true, "Tras comprar aparece la presentación del personaje");
+      await click("[data-dialog-confirm]");
+      await until(function () { return state().collection.selectedCharacterId === "mara"; }, "selección de Mara");
+      var afterBuy = state();
+      log(afterBuy.coins === 19520, "El saldo se descuenta una sola vez (19520)");
+      log(afterBuy.collection.ownedCharacterIds.indexOf("mara") !== -1, "Mara queda en la colección");
+      log(afterBuy.economy.transactions.length === 1, "Se registra una única transacción");
+      log(q(".q-hero-chip").getAttribute("aria-label").indexOf("Mara") !== -1, "La barra superior refleja el personaje activo");
+
+      hash("#/tienda");
+      await until(function () { return q('[data-action="shop-tab"]'); }, "tienda");
+      await click('[data-action="shop-tab"][data-tab="characters"]');
+      await until(function () { return q('[data-action="shop-rarity"]'); }, "filtro de rareza de la tienda");
+      await click('[data-action="shop-rarity"][data-rarity="legendario"]');
+      await sleep(300);
+      var legendCards = all(".q-shop-card");
+      log(legendCards.length === 1 && legendCards[0].textContent.indexOf("Zenón") !== -1, "El filtro de rareza de la tienda deja solo a Zenón");
+      await click('[data-action="shop-tab"][data-tab="cosmetics"]');
+      var buyButton = await until(function () { return q('[data-action="buy-cosmetic"]'); }, "cosmético comprable");
+      var cosmeticId = buyButton.getAttribute("data-cosmetic");
+      var cosmetic = Chars.cosmeticById(cosmeticId);
+      buyButton.click();
+      await until(function () { return q("[data-dialog-confirm]"); }, "confirmación de cosmético");
+      await click("[data-dialog-confirm]");
+      await until(function () { return state().collection.ownedCosmeticIds.indexOf(cosmeticId) !== -1; }, "cosmético comprado");
+      log(state().coins === 19520 - cosmetic.price, "La compra del cosmético descuenta su precio");
+      log(state().economy.transactions.length === 2, "La transacción del cosmético queda registrada");
+
+      hash("#/inventario");
+      await until(function () { return q('[data-action="inv-focus"]'); }, "inventario");
+      await click('[data-action="inv-category"][data-category="extras"]');
+      await sleep(260);
+      var extraItems = all('[data-action="inv-focus"]');
+      log(extraItems.length === 2, "La categoría «Accesorio adicional» muestra sus dos objetos (recibidos " + extraItems.length + ")");
+      await click('[data-action="inv-category"][data-category="all"]');
+      await click('[data-action="inv-focus"][data-cosmetic="' + cosmeticId + '"]');
+      await until(function () { return q(".q-eq-detail"); }, "detalle del cosmético");
+      var draftSave = await until(function () { return q('[data-action="save-outfit"]:not([disabled])'); }, "guardar atuendo equipado");
+      draftSave.click();
+      await until(function () {
+        var eq = state().collection.equipped["mara"] || {};
+        return eq[cosmetic.category] === cosmeticId;
+      }, "equipamiento persistido");
+      log(true, "El cosmético se equipa y persiste en el estado");
+
+      frame.contentWindow.location.reload();
+      await until(function () { return q("#view .q-page"); }, "recarga", 12000);
+      await sleep(600);
+      log(state().coins === 19520 - cosmetic.price, "El saldo persiste tras recargar");
+      log((state().collection.equipped["mara"] || {})[cosmetic.category] === cosmeticId, "El equipamiento persiste tras recargar");
+      log(q(".q-hero-chip").getAttribute("aria-label").indexOf("Mara") !== -1, "La selección persiste tras recargar");
+
+      hash("#/personalizar/mara");
+      await until(function () { return q(".q-equipment"); }, "personalización");
+      await click('[data-action="custom-slot"][data-slot="' + cosmetic.category + '"]');
+      var pick = await until(function () { return q(".q-eq-item.is-equipped"); }, "cosmético equipado en el selector");
+      log(!!pick, "La personalización marca el cosmético ya equipado");
+      pick.click();
+      await sleep(260);
+      await until(function () { return q('[data-action="custom-clear"]'); }, "acción quitar del atuendo");
+      await click('[data-action="custom-clear"]');
+      var save = await until(function () { return q('[data-action="save-outfit"]'); }, "guardar atuendo");
+      log(save.getAttribute("disabled") === null, "Guardar se habilita al cambiar el atuendo");
+      save.click();
+      await until(function () { return (state().collection.equipped["mara"] || {})[cosmetic.category] === undefined; }, "atuendo guardado");
+      log(true, "La personalización guarda el atuendo confirmado");
+
+      hash("#/mision/mission-sp-1");
+      await until(function () { return q('[data-action="start-mission"]'); }, "detalle de misión");
+      await click('[data-action="start-mission"]');
+      await until(function () { return q(".q-companion") && q(".q-game"); }, "sesión con personaje acompañante");
+      log(true, "La sesión muestra el panel del personaje");
+      var option = await until(function () { return q(".q-option"); }, "opciones de respuesta");
+      option.click();
+      await until(function () { return q(".q-companion").getAttribute("data-state") !== "idle"; }, "reacción del personaje");
+      var companion = q(".q-companion");
+      var reactionState = companion.getAttribute("data-state");
+      log(["correct", "streak", "wrong"].indexOf(reactionState) !== -1, "La reacción se activa con la respuesta (" + reactionState + ")");
+      log(companion.querySelector(".q-companion-line").textContent.trim().length > 8, "El personaje muestra un mensaje propio");
+      log(!!q(".q-option") && !!q('[data-action="next"]'), "La reacción no bloquea la pregunta ni el botón de continuar");
+
+      await click('[data-action="abandon"]');
+      await until(function () { return q("[data-dialog-confirm]"); }, "confirmación de abandono");
+      await click("[data-dialog-confirm]");
+      await until(function () { return q(".q-result-hero"); }, "resultado", 6000);
+      log(!!q(".q-result-companion"), "El resultado incluye la reacción del personaje");
+      log(!!q(".q-result-voice"), "El resultado muestra el mensaje del personaje");
+
+      hash("#/ajustes");
+      await until(function () { return q('[data-action="toggle-setting"][data-setting="reducedMotion"]'); }, "ajustes");
+      await click('[data-action="toggle-setting"][data-setting="reducedMotion"]');
+      log(doc().documentElement.classList.contains("reduce-motion"), "La preferencia de movimiento reducido se aplica al documento");
+      log(state().settings.reducedMotion === true, "La preferencia de movimiento reducido se guarda");
+      await click('[data-action="toggle-setting"][data-setting="reducedMotion"]');
+
+      await click('[data-action="toggle-pref"][data-group="animationPreferences"][data-pref="reactions"]');
+      log(state().presentation.animationPreferences.reactions === false, "Las reacciones del personaje se pueden desactivar");
+      log(doc().documentElement.classList.contains("q-no-reactions"), "La clase de reacciones desactivadas se aplica");
+      await click('[data-action="toggle-pref"][data-group="animationPreferences"][data-pref="reactions"]');
+
+      await click("[data-theme-toggle]");
+      log(doc().documentElement.getAttribute("data-theme") === "light", "El tema claro se aplica a toda la interfaz");
+      log(state().settings.theme === "light", "El tema claro se guarda en el estado");
+      await click("[data-theme-toggle]");
+      log(doc().documentElement.getAttribute("data-theme") === "dark", "Se puede volver al tema oscuro");
+
+      await click('.q-audio-settings [data-action="toggle-audio"]');
+      log(state().presentation.audioPreferences.muted === true, "El botón de audio silencia el juego");
+      log(q("[data-audio-toggle]").getAttribute("aria-pressed") === "true", "La barra superior refleja el silencio");
+      await click('.q-audio-settings [data-action="toggle-audio"]');
+      log(state().presentation.audioPreferences.muted === false, "El audio se puede reactivar");
+      var sfxRange = await until(function () { return q('[data-audio-volume="sfxVolume"]'); }, "volumen de efectos");
+      sfxRange.value = "25";
+      sfxRange.dispatchEvent(new Event("change", { bubbles: true }));
+      await sleep(350);
+      log(Math.abs(state().presentation.audioPreferences.sfxVolume - 0.25) < 0.001, "El volumen de efectos se guarda");
+      await click('.q-audio-settings [data-action="toggle-pref"][data-pref="music"]');
+      log(state().presentation.audioPreferences.music === true, "La música ambiental se puede activar");
+      await click('.q-audio-settings [data-action="toggle-pref"][data-pref="music"]');
+      log(!!q('[data-action="test-audio"]'), "Existe una prueba de sonido accesible");
+
+      log(true, "Prueba de interfaz completada");
+    } catch (error) {
+      log(false, "Excepción: " + (error && error.message ? error.message : error));
+    }
+    lines.push("");
+    lines.push("<b>Resultado: " + passed + " comprobaciones correctas, " + failed + " fallidas.</b>");
+    out.innerHTML = lines.join("\n");
+    window.__QUEST_UI__ = { passed: passed, failed: failed, lines: lines };
+  }
+
+  run();
+})();
+</script>
+</body></html>

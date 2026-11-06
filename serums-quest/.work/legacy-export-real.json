@@ -1,0 +1,143 @@
+{
+  "app": "SERUMS QUEST",
+  "build": "ZARCONT-SQ-1.2.0",
+  "exportedAt": "2026-11-06T11:27:57.983Z",
+  "state": {
+    "schemaVersion": 2,
+    "appVersion": "1.2.0",
+    "revision": 0,
+    "createdAt": "2026-11-06T11:27:55.255Z",
+    "updatedAt": "2026-11-06T11:27:55.255Z",
+    "profile": {
+      "id": "local-4a5b0b922921e4ee",
+      "name": "Serumista",
+      "createdAt": "2026-11-06T11:27:55.255Z"
+    },
+    "xp": 0,
+    "coins": 0,
+    "stage": 1,
+    "academic": {
+      "answered": 0,
+      "correct": 0,
+      "wrong": 0,
+      "totalTimeMs": 0,
+      "sessions": 0,
+      "byArea": {
+        "area-psi-salud-publica": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-cuidado-integral": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-etica": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-investigacion": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-gestion": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        }
+      },
+      "recent": []
+    },
+    "questions": {},
+    "errors": {},
+    "sessions": [],
+    "activeSession": null,
+    "missions": {},
+    "daily": {
+      "lastCompletedDate": null,
+      "lastDate": null,
+      "streak": 0,
+      "bestStreak": 0,
+      "totalCompleted": 0
+    },
+    "rewards": {},
+    "achievements": {},
+    "modeStats": {
+      "survivalWins": 0,
+      "timedAce": 0,
+      "simulacros": 0
+    },
+    "collection": {
+      "ownedCharacterIds": [
+        "ilan"
+      ],
+      "ownedCosmeticIds": [],
+      "selectedCharacterId": "ilan",
+      "equipped": {},
+      "previousOutfits": {},
+      "unlockedBy": {
+        "ilan": {
+          "method": "starter",
+          "at": null,
+          "price": 0
+        }
+      }
+    },
+    "economy": {
+      "transactions": [],
+      "lifetimeSpent": 0
+    },
+    "presentation": {
+      "animationPreferences": {
+        "idle": true,
+        "reactions": true,
+        "celebrate": true
+      },
+      "visualPreferences": {
+        "rarityFrames": true,
+        "particles": true
+      },
+      "audioPreferences": {
+        "muted": false,
+        "sfxVolume": 0.55,
+        "musicVolume": 0.22,
+        "music": false
+      }
+    },
+    "counters": {
+      "date": "2026-11-06",
+      "coins": 0,
+      "xp": 0,
+      "sessions": 0
+    },
+    "settings": {
+      "instantFeedback": true,
+      "timerVisible": true,
+      "theme": "dark",
+      "reducedMotion": false
+    },
+    "events": [],
+    "meta": {
+      "migratedFrom": null,
+      "lastBackupAt": null
+    }
+  }
+}

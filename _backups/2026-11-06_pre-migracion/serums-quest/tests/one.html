@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es"><head><meta charset="UTF-8"><title>Personaje · QA visual</title>
+<style>html,body{margin:0;background:#0a0d14;color:#e8ecf6;font:12px system-ui}main{display:flex;flex-wrap:wrap;gap:16px;padding:20px}.box{width:320px;border:1px solid rgba(255,255,255,.1);border-radius:16px;background:radial-gradient(70% 60% at 50% 8%, rgba(122,162,255,.12), transparent 70%);overflow:hidden}.box svg{width:100%;height:430px;display:block}.cap{padding:8px 10px;border-top:1px solid rgba(255,255,255,.1);color:#9aa3b6}</style>
+</head><body><main id="out"></main>
+<script src="../../EXAMEN STUDIO/datos/banco-oficial.js?v=1.0.0"></script>
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../data/quest-map.js?v=1.0.2"></script>
+<script src="../js/config.js?v=1.2.0"></script>
+<script src="../js/icons.js?v=1.1.0"></script>
+<script src="../js/util.js?v=1.0.4"></script>
+<script src="../js/progression.js?v=1.0.5"></script>
+<script src="../js/characters.js?v=1.2.0"></script>
+<script src="../js/character-art.js?v=1.2.0"></script>
+<script src="../js/reactions.js?v=1.0.0"></script>
+<script src="../js/collection.js?v=1.2.0"></script>
+<script>
+(function(){
+  var Art = window.QuestCharacterArt;
+  var Chars = window.QuestCharacters;
+  var params = new URLSearchParams(location.search);
+  var ids = (params.get("ids") || "iris,zenon,kian,ilan").split(",");
+  var cosmetic = params.get("cosmetic");
+  var states = (params.get("states") || "").split(",").filter(Boolean);
+  document.getElementById("out").innerHTML = ids.map(function (id) {
+    var character = Chars.byId(id);
+    if (!character) return "";
+    if (states.length) {
+      return states.map(function (state) {
+        return '<div class="box">' + Art.portrait(id, cosmetic ? { "torso": cosmetic } : {}, { state: state }) + '<div class="cap">' + character.name + " · " + state + "</div></div>";
+      }).join("");
+    }
+    return '<div class="box">' + Art.portrait(id, {}, {}) + '<div class="cap">' + character.name + " · " + character.title + "</div></div>";
+  }).join("");
+  if (cosmetic) {
+    document.getElementById("out").insertAdjacentHTML("afterbegin", '<div class="box"><div style="height:430px">' + Art.mannequin(cosmetic) + '</div><div class="cap">Maniquí · ' + cosmetic + "</div></div>");
+  }
+})();
+</script>
+</body></html>
