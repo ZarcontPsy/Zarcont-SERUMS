@@ -1,0 +1,63 @@
+{
+  "schema": 1,
+  "template": "collector",
+  "title": "Viales SERUMS",
+  "slots": {
+    "hero": {
+      "file": "assets/hero.svg",
+      "label": "Gota",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "enemy": {
+      "file": "assets/enemy.svg",
+      "label": "Virus",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "pickup": {
+      "file": "assets/pickup.svg",
+      "label": "Vial",
+      "size": [
+        256,
+        256
+      ],
+      "transparent": true
+    },
+    "background": {
+      "file": "assets/background.svg",
+      "label": "Fondo de laboratorio",
+      "size": [
+        512,
+        512
+      ],
+      "transparent": false,
+      "tile": true
+    }
+  },
+  "rules": {
+    "duration": 60,
+    "hearts": 3,
+    "heroSpeed": 320,
+    "enemySpeed": 120,
+    "enemySpeedGrowth": 3,
+    "enemySpawnEvery": 4,
+    "maxEnemies": 8,
+    "maxPickups": 5,
+    "heroSize": 76,
+    "enemySize": 68,
+    "pickupSize": 44,
+    "shield": {
+      "enabled": false,
+      "every": 3,
+      "seconds": 4
+    }
+  },
+  "style": "clean clinical lab illustration, teal and amber palette, soft shading"
+}

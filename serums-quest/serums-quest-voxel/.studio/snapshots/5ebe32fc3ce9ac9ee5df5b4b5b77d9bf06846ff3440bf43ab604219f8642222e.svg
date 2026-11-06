@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="256" viewBox="0 0 1280 256" fill="none">
+  <defs>
+    <linearGradient id="brass" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f1d69c"/>
+      <stop offset=".45" stop-color="#c59a58"/>
+      <stop offset="1" stop-color="#7f5d32"/>
+    </linearGradient>
+    <linearGradient id="wood" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#9b7450"/>
+      <stop offset="1" stop-color="#4e3524"/>
+    </linearGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#e8fbff"/>
+      <stop offset="1" stop-color="#7aa2ff"/>
+    </linearGradient>
+    <linearGradient id="ember" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffd8a1"/>
+      <stop offset="1" stop-color="#ee754c"/>
+    </linearGradient>
+    <linearGradient id="violet" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f4e9ff"/>
+      <stop offset="1" stop-color="#b983f2"/>
+    </linearGradient>
+    <filter id="glowBlue" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="5" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <filter id="glowWarm" x="-80%" y="-80%" width="260%" height="260%">
+      <feGaussianBlur stdDeviation="4" result="blur"/><feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <style>
+      .frame{fill:rgba(9,14,24,.55);stroke:rgba(207,222,255,.12)}
+      .cellname{fill:#e8edf8;font-family:'Segoe UI',sans-serif;font-size:10px;font-weight:700;letter-spacing:.2px;text-anchor:middle}
+      .cellsub{fill:#8190ad;font-family:'Segoe UI',sans-serif;font-size:7.5px;font-weight:600;letter-spacing:.35px;text-anchor:middle;text-transform:uppercase}
+      .edge{stroke:#0b1019;stroke-width:2}
+    </style>
+  </defs>
+
+  <g opacity=".9">
+    <rect x="10" y="15" width="1260" height="226" rx="18" fill="rgba(8,12,21,.22)" stroke="rgba(207,222,255,.1)"/>
+    <path d="M28 105H52M28 115H42" stroke="#69d3c1" stroke-width="1.5" opacity=".7"/>
+    <path d="M1228 151H1252M1238 141H1252" stroke="#e4c07a" stroke-width="1.5" opacity=".7"/>
+  </g>
+
+  <!-- 01 · Brújula de rutas -->
+  <g transform="translate(8 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <circle cx="60" cy="93" r="30" fill="none" stroke="url(#brass)" stroke-width="7"/>
+    <circle cx="60" cy="93" r="22" fill="#101827" stroke="#6e6248" stroke-width="2"/>
+    <path d="M60 74l7 19-7 19-7-19 7-19z" fill="url(#ice)" filter="url(#glowBlue)"/>
+    <path d="M60 80v26" stroke="#0a1220" stroke-width="2"/>
+    <rect x="56" y="50" width="8" height="8" fill="url(#brass)"/>
+    <rect x="56" y="129" width="8" height="7" fill="url(#brass)"/>
+    <rect x="27" y="89" width="7" height="8" fill="url(#brass)"/>
+    <rect x="86" y="89" width="7" height="8" fill="url(#brass)"/>
+    <text x="60" y="175" class="cellname">Brújula de rutas</text>
+    <text x="60" y="188" class="cellsub">Ilan · Táctico</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">01</text>
+  </g>
+
+  <!-- 02 · Bastón mapamundi -->
+  <g transform="translate(136 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="55" y="54" width="7" height="102" rx="2" fill="url(#wood)" class="edge"/>
+    <path d="M58 54c0-12 9-21 21-19 11 2 12 16 3 20-8 4-17-2-17-8" fill="none" stroke="url(#brass)" stroke-width="5" stroke-linecap="square"/>
+    <path d="M40 53h28v36H40z" fill="#bca37a" stroke="#5b4932" stroke-width="2" transform="rotate(-9 54 71)"/>
+    <path d="M45 61h17M43 68h19M46 75h13" stroke="#6b573b" stroke-width="2" transform="rotate(-9 54 71)"/>
+    <path d="M76 48l8-3 5 11-8 3z" fill="#69d3c1" filter="url(#glowBlue)"/>
+    <text x="60" y="175" class="cellname">Bastón mapamundi</text>
+    <text x="60" y="188" class="cellsub">Mara · Rastreadora</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">02</text>
+  </g>
+
+  <!-- 03 · Lente prismática -->
+  <g transform="translate(264 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="52" y="106" width="8" height="45" fill="#25334d" stroke="#0b1019" stroke-width="2"/>
+    <circle cx="56" cy="89" r="31" fill="none" stroke="url(#brass)" stroke-width="6"/>
+    <circle cx="56" cy="89" r="23" fill="#cdefff" fill-opacity=".18" stroke="#dff8ff" stroke-width="2"/>
+    <path d="M45 104l11-31 12 8-14 24-9-1z" fill="url(#ice)" opacity=".8" filter="url(#glowBlue)"/>
+    <path d="M31 50l6-12 6 12M78 43l4-8 4 8" stroke="#7aa2ff" stroke-width="2" filter="url(#glowBlue)"/>
+    <text x="60" y="175" class="cellname">Lente prismática</text>
+    <text x="60" y="188" class="cellsub">Noa · Analista</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">03</text>
+  </g>
+
+  <!-- 04 · Báculo de escucha -->
+  <g transform="translate(392 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="55" y="59" width="7" height="99" fill="url(#wood)" class="edge"/>
+    <path d="M58 59c-1-16 8-29 23-29" fill="none" stroke="url(#violet)" stroke-width="5" stroke-linecap="square"/>
+    <rect x="72" y="29" width="22" height="27" rx="1" fill="#6f4d84" stroke="#d6bbf3" stroke-width="2" transform="rotate(8 83 42)"/>
+    <path d="M77 37h12M77 43h14M77 49h10" stroke="#f1e5ff" stroke-width="1.5" transform="rotate(8 83 42)"/>
+    <path d="M76 63l6 6 8-12 7 11" stroke="#c49bff" stroke-width="2.5" filter="url(#glowWarm)"/>
+    <text x="60" y="175" class="cellname">Báculo de escucha</text>
+    <text x="60" y="188" class="cellsub">Teo · Mentor</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">04</text>
+  </g>
+
+  <!-- 05 · Cronómetro de chispa -->
+  <g transform="translate(520 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <circle cx="60" cy="96" r="28" fill="#3d1c1d" stroke="url(#brass)" stroke-width="6"/>
+    <circle cx="60" cy="96" r="22" fill="#14151f" stroke="#7c6646" stroke-width="2"/>
+    <path d="M60 96V78M60 96l13 8" stroke="#ffe4b1" stroke-width="2.5" stroke-linecap="square"/>
+    <rect x="55" y="57" width="10" height="9" fill="url(#brass)"/>
+    <circle cx="60" cy="96" r="4" fill="url(#ember)" filter="url(#glowWarm)"/>
+    <path d="M41 42c8 1 13 6 16 14M80 42c-8 1-13 6-16 14" stroke="#f3b562" stroke-width="2" opacity=".7"/>
+    <path d="M92 91l9 5-9 4 2 8-8-6-7 6 2-8-9-4 9-5-2-8 7 5 8-5-2 8z" fill="#f3b562" filter="url(#glowWarm)" opacity=".9"/>
+    <text x="60" y="175" class="cellname">Cronómetro de chispa</text>
+    <text x="60" y="188" class="cellsub">Lía · Duelista</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">05</text>
+  </g>
+
+  <!-- 06 · Martillo-sello -->
+  <g transform="translate(648 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="55" y="72" width="8" height="86" fill="url(#wood)" class="edge"/>
+    <rect x="34" y="48" width="50" height="29" rx="2" fill="#6e7b8f" stroke="#d6e1f0" stroke-width="2"/>
+    <rect x="41" y="54" width="36" height="5" fill="#c0cddd"/>
+    <rect x="41" y="64" width="27" height="4" fill="#9fb0c6"/>
+    <path d="M59 76l9-8 9 8-9 8-9-8z" fill="url(#brass)"/>
+    <circle cx="59" cy="68" r="11" fill="none" stroke="#b9c7d8" stroke-width="2" opacity=".55"/>
+    <text x="60" y="175" class="cellname">Martillo-sello</text>
+    <text x="60" y="188" class="cellsub">Kian · Guardián</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">06</text>
+  </g>
+
+  <!-- 07 · Linterna de ruta -->
+  <g transform="translate(776 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="56" y="58" width="7" height="102" fill="url(#wood)" class="edge"/>
+    <path d="M59 59h28M72 54v9" stroke="url(#brass)" stroke-width="3"/>
+    <rect x="72" y="65" width="31" height="39" rx="2" fill="#2f3a37" stroke="url(#brass)" stroke-width="3"/>
+    <rect x="79" y="72" width="17" height="24" fill="#69d3c1" fill-opacity=".7" filter="url(#glowBlue)"/>
+    <path d="M72 104h31M80 109h14" stroke="#b98f55" stroke-width="2"/>
+    <path d="M87 44l4-6 4 6" stroke="#69d3c1" stroke-width="1.5" filter="url(#glowBlue)"/>
+    <text x="60" y="175" class="cellname">Linterna de ruta</text>
+    <text x="60" y="188" class="cellsub">Amaru · Vigía</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">07</text>
+  </g>
+
+  <!-- 08 · Compás de planos -->
+  <g transform="translate(904 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <path d="M60 55l-19 83M60 55l19 83" stroke="#c3d2e8" stroke-width="5" stroke-linecap="square"/>
+    <path d="M35 80c9 5 15 5 24 0" fill="none" stroke="url(#brass)" stroke-width="4"/>
+    <circle cx="60" cy="54" r="7" fill="url(#brass)"/>
+    <path d="M34 139l7-17 6 17M80 139l4-17 5 17" fill="#9fb9ff" opacity=".85"/>
+    <path d="M60 41V27M52 33h16" stroke="#7aa2ff" stroke-width="2" filter="url(#glowBlue)"/>
+    <path d="M91 48h20v26H91z" fill="none" stroke="#7aa2ff" stroke-width="1.5" opacity=".6"/>
+    <path d="M98 56h7M98 63h11" stroke="#7aa2ff" stroke-width="1.5" opacity=".7"/>
+    <text x="60" y="175" class="cellname">Compás de planos</text>
+    <text x="60" y="188" class="cellsub">Ona · Arquitecta</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">08</text>
+  </g>
+
+  <!-- 09 · Farol de custodia -->
+  <g transform="translate(1032 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="56" y="67" width="7" height="92" fill="url(#brass)" class="edge"/>
+    <circle cx="60" cy="80" r="19" fill="#c49bff" fill-opacity=".14" stroke="#e9d8ff" stroke-width="2"/>
+    <path d="M55 45h10v25H55zM50 70h20l5 30H45l5-30z" fill="#46345f" stroke="#d8c3f4" stroke-width="2"/>
+    <path d="M54 78h12v16H54z" fill="#e6d4ff" filter="url(#glowWarm)"/>
+    <path d="M47 100h26M52 105h16M60 36v-7" stroke="#c49bff" stroke-width="2"/>
+    <path d="M87 55l6 6M94 44l4 2" stroke="#f2e8ff" stroke-width="2" opacity=".7"/>
+    <text x="60" y="175" class="cellname">Farol de custodia</text>
+    <text x="60" y="188" class="cellsub">Iris · Protectora</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">09</text>
+  </g>
+
+  <!-- 10 · Bastón de crónica -->
+  <g transform="translate(1160 0)">
+    <circle cx="60" cy="93" r="42" class="frame"/>
+    <rect x="55" y="61" width="7" height="95" fill="url(#wood)" class="edge"/>
+    <circle cx="58" cy="51" r="17" fill="none" stroke="url(#brass)" stroke-width="5"/>
+    <path d="M58 36v30M43 51h30" stroke="url(#brass)" stroke-width="2" opacity=".55"/>
+    <path d="M58 35l3 9 9 3-9 3-3 9-3-9-9-3 9-3 3-9z" fill="#f6e3b9" filter="url(#glowWarm)"/>
+    <path d="M43 73c10 5 20 5 30 0" fill="none" stroke="url(#brass)" stroke-width="3"/>
+    <path d="M80 88l14 8-14 6" stroke="#e4c07a" stroke-width="2" opacity=".65"/>
+    <text x="60" y="175" class="cellname">Bastón de crónica</text>
+    <text x="60" y="188" class="cellsub">Zenón · Cronista</text>
+    <text x="60" y="218" class="cellsub" fill="#4b586e">10</text>
+  </g>
+</svg>

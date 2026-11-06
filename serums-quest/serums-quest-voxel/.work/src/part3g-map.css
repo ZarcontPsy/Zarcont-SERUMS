@@ -1,0 +1,115 @@
+/* =========================================================================
+   FASE 4 · mapa de avance 3D
+   ========================================================================= */
+.mapScreen { position: fixed; inset: 0; z-index: 38; overflow: hidden; pointer-events: auto; background: radial-gradient(ellipse at 50% 35%, #111a2b 0%, #05070d 56%, #03050a 100%); }
+.mapCanvasMount { position: absolute; inset: 0; }
+.mapCanvas { display: block; width: 100%; height: 100%; touch-action: none; outline: none; }
+.mapTop { position: absolute; z-index: 3; top: 0; left: 0; right: 0; display: flex; align-items: center; gap: 12px; padding: 13px 18px; background: linear-gradient(180deg, rgba(4,7,13,.9), rgba(4,7,13,.35) 70%, transparent); pointer-events: none; }
+.mapTop > * { pointer-events: auto; }
+.mapBrand { display: flex; align-items: center; gap: 9px; min-width: 190px; }
+.mapBrand .brandRune { width: 32px; height: 32px; }
+.mapBrand div span { display: block; color: var(--dim); font-size: 7px; font-weight: 800; letter-spacing: .17em; text-transform: uppercase; }
+.mapBrand div b { display: block; margin-top: 2px; font-family: var(--font-serif); font-size: 19px; font-weight: 400; }
+.mapGlobal { display: flex; align-items: center; justify-content: center; gap: 9px; flex: 1; min-width: 0; }
+.mapGlobal span { padding: 6px 9px; border: 1px solid var(--line); border-radius: 7px; background: rgba(8,12,20,.6); color: var(--dim); font-size: 8px; white-space: nowrap; }
+.mapGlobal b { color: var(--ink); font-size: 11px; }
+.mapTopActions { display: flex; align-items: center; gap: 5px; flex: none; }
+.mapTopActions .btn { min-height: 30px; padding: 5px 8px; font-size: 9px; }
+.mapClose { width: 32px; height: 32px; }
+.mapAreaRail { position: absolute; z-index: 4; left: 17px; top: 76px; bottom: 84px; width: 208px; display: flex; flex-direction: column; gap: 6px; padding: 11px; overflow: auto; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(160deg, rgba(11,17,29,.86), rgba(5,9,17,.7)); box-shadow: 0 20px 50px rgba(0,0,0,.28); backdrop-filter: blur(9px); scrollbar-width: thin; }
+.mapRailHead { display: flex; align-items: center; justify-content: space-between; gap: 5px; margin-bottom: 2px; }
+.mapRailHead small { color: var(--dim); font-size: 7.5px; }
+.mapAreaCard { display: flex; align-items: center; gap: 9px; width: 100%; padding: 7px; border: 1px solid transparent; border-radius: 9px; background: rgba(255,255,255,.025); text-align: left; }
+.mapAreaCard:hover { border-color: var(--line); background: rgba(255,255,255,.06); }
+.mapAreaCard.is-active { border-color: color-mix(in srgb, var(--accent) 42%, transparent); background: color-mix(in srgb, var(--accent) 10%, transparent); }
+.mapAreaRing { width: 38px; height: 38px; flex: none; display: grid; place-items: center; border-radius: 50%; background: conic-gradient(var(--accent) 0deg, rgba(255,255,255,.09) 0deg); position: relative; }
+.mapAreaRing::after { content: ""; position: absolute; inset: 5px; border-radius: 50%; background: #0a101b; }
+.mapAreaRing span { position: relative; z-index: 1; color: var(--ink); font-size: 10px; font-weight: 800; }
+.mapAreaRing small { color: var(--dim); font-size: 6px; }
+.mapAreaCopy { min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.mapAreaCopy b { color: var(--ink); font-size: 9.5px; font-weight: 700; line-height: 1.15; }
+.mapAreaCopy small { color: var(--dim); font-size: 7px; line-height: 1.25; }
+.mapLegend { display: grid; grid-template-columns: 1fr 1fr; gap: 4px; margin-top: auto; padding-top: 8px; border-top: 1px solid var(--line); }
+.mapLegendTitle { grid-column: 1 / -1; color: var(--dim); font-size: 7px; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; }
+.mapLegendItem { display: flex; align-items: center; gap: 4px; color: var(--dim); font-size: 7.5px; }
+.mapLegendItem i { width: 5px; height: 5px; border-radius: 50%; flex: none; }
+.mapRailHint { margin-top: 5px; color: var(--dim); font-size: 7.5px; }
+.mapDetail { position: absolute; z-index: 4; right: 17px; top: 76px; bottom: 84px; width: 292px; display: flex; flex-direction: column; min-height: 0; padding: 0; overflow: hidden; border: 1px solid var(--line); border-radius: 14px; background: linear-gradient(160deg, rgba(12,18,31,.9), rgba(6,10,18,.82)); box-shadow: 0 20px 50px rgba(0,0,0,.32); backdrop-filter: blur(10px); }
+.mapDetailScroll { overflow: auto; padding: 14px; scrollbar-width: thin; }
+.mapDetailTop { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.mapStateChip { display: inline-flex; align-items: center; gap: 4px; min-height: 22px; padding: 4px 7px; border: 1px solid color-mix(in srgb, var(--state-color) 48%, transparent); border-radius: 6px; background: color-mix(in srgb, var(--state-color) 10%, transparent); color: var(--state-color); font-size: 8px; font-weight: 800; letter-spacing: .04em; }
+.mapDetail h2 { margin: 9px 0 3px; font-family: var(--font-serif); font-size: 26px; font-weight: 400; line-height: 1.05; }
+.mapDetailSub { margin: 0 0 9px; color: var(--muted); font-size: 10px; line-height: 1.45; }
+.mapMetrics { display: grid; grid-template-columns: repeat(3, 1fr); gap: 5px; }
+.mapMetrics div { padding: 7px; border: 1px solid var(--line); border-radius: 8px; background: rgba(255,255,255,.025); }
+.mapMetrics b { display: block; color: var(--ink); font-size: 14px; font-weight: 700; line-height: 1; }
+.mapMetrics span { display: block; margin-top: 3px; color: var(--dim); font-size: 6.5px; letter-spacing: .03em; text-transform: uppercase; }
+.mapRewardLine, .mapCosmeticLine { display: flex; align-items: flex-start; justify-content: space-between; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--line); font-size: 8.5px; }
+.mapRewardLine span, .mapCosmeticLine span { color: var(--dim); }
+.mapRewardLine b, .mapCosmeticLine b { max-width: 63%; color: var(--ink); font-size: 8.5px; text-align: right; font-weight: 700; }
+.mapCosmeticLine { color: var(--gold); }
+.mapCosmeticLine b { color: var(--gold); }
+.mapBossLine { display: flex; align-items: center; gap: 7px; margin-top: 8px; padding: 7px 8px; border: 1px solid rgba(228,192,122,.25); border-radius: 8px; background: rgba(228,192,122,.06); color: #e7d4b0; font-size: 8.5px; line-height: 1.4; }
+.bossGlyph { width: 22px; height: 22px; display: grid; place-items: center; border: 1px solid rgba(228,192,122,.35); border-radius: 6px; color: var(--gold); font-size: 12px; flex: none; }
+.mapReqBlock { margin-top: 9px; }
+.mapReq { display: flex; align-items: flex-start; gap: 5px; color: var(--dim); font-size: 8.5px; line-height: 1.35; margin-top: 4px; }
+.mapReq.is-met { color: #a9e6d8; }
+.mapReq svg { flex: none; margin-top: 1px; }
+.mapReviewNotice { display: flex; align-items: center; gap: 6px; margin-top: 8px; padding: 7px 8px; border: 1px solid rgba(243,181,98,.27); border-radius: 8px; background: rgba(105,67,20,.12); color: #e8c899; font-size: 8.5px; }
+.mapDetailActions { display: flex; flex-direction: column; gap: 5px; margin-top: 10px; }
+.mapDetailActions .btn { min-height: 35px; font-size: 10.5px; }
+.mapEmpty { padding: 34px 8px; text-align: center; }
+.mapEmpty .iconWrap { width: 44px; height: 44px; margin: 0 auto 10px; display: grid; place-items: center; border: 1px solid var(--line); border-radius: 12px; color: var(--gold); background: rgba(228,192,122,.06); }
+.mapEmpty h3 { margin: 0 0 5px; font-family: var(--font-serif); font-size: 23px; font-weight: 400; }
+.mapEmpty p { margin: 0; color: var(--dim); font-size: 9.5px; line-height: 1.5; }
+.mapBottom { position: absolute; z-index: 4; left: 235px; right: 18px; bottom: 15px; display: flex; align-items: flex-end; gap: 9px; }
+.mapRecommendCard { flex: 1; display: flex; align-items: center; gap: 10px; min-width: 0; padding: 9px 11px; border: 1px solid color-mix(in srgb, var(--accent, var(--gold)) 34%, var(--line)); border-radius: 12px; background: linear-gradient(145deg, rgba(12,18,31,.9), rgba(6,10,18,.78)); box-shadow: 0 16px 38px rgba(0,0,0,.3); backdrop-filter: blur(8px); }
+.mapRecommendCard--review { border-color: rgba(243,181,98,.38); background: linear-gradient(145deg, rgba(42,31,17,.8), rgba(8,12,20,.82)); }
+.mapRecommendCard--done { border-color: rgba(105,211,193,.3); }
+.mapRecIcon { width: 30px; height: 30px; flex: none; display: grid; place-items: center; border: 1px solid color-mix(in srgb, var(--accent, var(--gold)) 38%, transparent); border-radius: 8px; color: var(--accent, var(--gold)); background: color-mix(in srgb, var(--accent, var(--gold)) 8%, transparent); }
+.mapRecommendCard > div { flex: 1; min-width: 0; }
+.mapRecommendCard b { display: block; margin-top: 2px; color: var(--ink); font-family: var(--font-serif); font-size: 16px; font-weight: 400; line-height: 1.1; }
+.mapRecommendCard p { margin: 2px 0 0; color: var(--dim); font-size: 8px; line-height: 1.35; }
+.mapRecommendCard .btn { flex: none; min-height: 29px; font-size: 9px; }
+.mapControlsHint { display: none; }
+.mapScreen .eyebrow { font-size: 8px; }
+.mapScreen .chip { font-size: 7.5px; min-height: 19px; padding: 2px 5px; }
+
+.mapGalleryGrid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 9px; }
+.mapGalleryCard { overflow: hidden; border: 1px solid var(--line); border-radius: 11px; background: #080d16; }
+.mapGalleryCard img { display: block; width: 100%; height: 170px; object-fit: cover; }
+.mapGalleryCard > div { display: flex; align-items: center; justify-content: space-between; gap: 5px; padding: 6px 8px; border-top: 1px solid var(--line); }
+.mapGalleryCard > div b { color: var(--accent); font-size: 8px; }
+
+@media (max-height: 620px) {
+  .mapAreaRail { top: 66px; bottom: 75px; width: 196px; }
+  .mapDetail { top: 66px; bottom: 75px; width: 274px; }
+  .mapBottom { left: 219px; right: 10px; bottom: 10px; }
+  .mapTop { padding: 8px 12px; }
+  .mapBrand div b { font-size: 17px; }
+  .mapAreaCard { padding: 5px 6px; }
+  .mapAreaRing { width: 33px; height: 33px; }
+  .mapDetailScroll { padding: 10px; }
+  .mapDetail h2 { font-size: 22px; }
+  .mapRecommendCard { padding: 7px 9px; }
+  .mapRecommendCard b { font-size: 14px; }
+  .mapGlobal span { padding: 4px 6px; font-size: 7px; }
+  .mapTopActions .btn { min-height: 27px; padding: 4px 6px; }
+}
+@media (max-width: 900px) {
+  .mapAreaRail { width: 160px; top: 78px; bottom: 112px; }
+  .mapAreaCopy small { display: none; }
+  .mapDetail { width: 246px; top: 78px; bottom: 112px; }
+  .mapBottom { left: 172px; right: 10px; bottom: 10px; flex-direction: column; align-items: stretch; }
+  .mapGlobal span:nth-child(2) { display: none; }
+  .mapTopActions .btn span { display: none; }
+}
+@media (max-width: 650px) {
+  .mapAreaRail { display: none; }
+  .mapDetail { left: 9px; right: 9px; top: auto; bottom: 9px; width: auto; max-height: 41vh; }
+  .mapBottom { left: 9px; right: 9px; bottom: calc(41vh + 17px); }
+  .mapGlobal { display: none; }
+  .mapBrand { min-width: 0; flex: 1; }
+  .mapTopActions .btn { display: none; }
+  .mapTopActions .mapClose { display: grid; }
+}
