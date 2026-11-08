@@ -1,0 +1,3415 @@
+{
+  "label": "iter4",
+  "mode": "quick",
+  "generatedAt": "2026-11-06T17:02:52.670Z",
+  "env": {
+    "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "cameraNear": 0.2,
+    "cameraFar": 320,
+    "cameraFov": 42,
+    "shadowTypeInitial": 1,
+    "pcfSoftType": 2,
+    "pcfType": 1,
+    "camera": {
+      "near": 0.2,
+      "far": 320
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "shadowTypeAfterFirstRender": 1
+  },
+  "control": {
+    "changed": 0,
+    "flat": 0,
+    "maxD": 0
+  },
+  "warnings": [],
+  "summary": {
+    "control": {
+      "changed": 0,
+      "flat": 0,
+      "maxD": 0
+    },
+    "heroFlatTotal": 155,
+    "heroFlatWorst": {
+      "id": "teo",
+      "flat": 155,
+      "worst": {
+        "view": "mid",
+        "dist": 3.05,
+        "angle": 0.55,
+        "pitch": 0.16,
+        "targetY": 1.12,
+        "flat": 69,
+        "changed": 915,
+        "maxD": 109
+      }
+    },
+    "heroCoplanarUnresolvedTotal": 284,
+    "heroCoplanarRawCrossColorTotal": 79,
+    "heroCoplanarWorst": {
+      "id": "ona",
+      "exactUnresolvedColorPairs": 41,
+      "unresolvedColorPairs": 41,
+      "crossColorPairs": 14,
+      "audit": {
+        "triangles": 1322,
+        "pairs": 730,
+        "sameMesh": 716,
+        "crossMesh": 14,
+        "colorPairs": 49,
+        "exactColorPairs": 49,
+        "crossColorPairs": 14,
+        "crossExactColorPairs": 14,
+        "sameMeshColorPairs": 35,
+        "sameMeshExactColorPairs": 35,
+        "unresolvedCrossColorPairs": 6,
+        "unresolvedColorPairs": 41,
+        "exactUnresolvedColorPairs": 41,
+        "samples": [
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 1,
+            "plane": 0.485,
+            "u": -0.171,
+            "v": -0.114
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 1,
+            "plane": 0.484,
+            "u": 0.174,
+            "v": -0.068
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.075,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.052,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.052,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.953,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.953,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.95,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.95,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.497,
+            "u": 1.064,
+            "v": 0.05
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.497,
+            "u": 1.064,
+            "v": 0.05
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 6
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "guardianFlatTotal": 0,
+    "guardianFlatWorst": {
+      "areaId": "area-psi-salud-publica",
+      "flat": 0,
+      "worst": {
+        "view": "close",
+        "dist": 2.4,
+        "angle": 2.1,
+        "pitch": 0.08,
+        "targetY": 1.7,
+        "flat": 0,
+        "changed": 1926,
+        "maxD": 105
+      }
+    },
+    "guardianCoplanarUnresolvedTotal": 33,
+    "guardianCoplanarRawCrossColorTotal": 33,
+    "effectFlatTotal": 0,
+    "effectCoplanarUnresolvedTotal": 0,
+    "effectCoplanarRawCrossColorTotal": 0,
+    "effectWorst": [],
+    "cosmeticAuditCases": 0,
+    "cosmeticAuditCrossColorTotal": 0,
+    "cosmeticAuditUnresolvedTotal": 0,
+    "cosmeticAuditSameMeshPairsTotal": 0,
+    "cosmeticAuditSameMeshColorTotal": 0,
+    "cosmeticAuditWorst": [],
+    "flickerTotal": 155,
+    "coplanarUnresolvedTotal": 317,
+    "coplanarRawCrossColorTotal": 112,
+    "ok": false
+  },
+  "cases": [
+    {
+      "kind": "hero",
+      "id": "ilan",
+      "triangles": 1186,
+      "coplanar": {
+        "pairs": 655,
+        "sameMesh": 643,
+        "crossMesh": 12,
+        "colorPairs": 44,
+        "crossColorPairs": 12,
+        "sameMeshColorPairs": 32,
+        "sameMeshExactColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "exactUnresolvedColorPairs": 32,
+        "exactColorPairs": 44,
+        "samples": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.359
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.359
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.359
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.359
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.182,
+            "v": -0.274
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.182,
+            "v": -0.274
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.274
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.261,
+            "u": 2.181,
+            "v": -0.274
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 1.035,
+            "v": 0.064
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 1.013,
+            "v": 0.064
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 1.013,
+            "v": 0.064
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 0.918,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 0.918,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 0.915,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.347,
+            "u": 0.915,
+            "v": -0.014
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "base-body-details <> cosmetic:piernas:c-piernas-falda",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1263,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 27,
+          "flat": 0,
+          "maxD": 54
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 416,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 944,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 604,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 361,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 469,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 511,
+          "flat": 0,
+          "maxD": 89
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 108,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 110,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 108,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 130,
+          "flat": 0,
+          "maxD": 84
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "mara",
+      "triangles": 1184,
+      "coplanar": {
+        "pairs": 650,
+        "sameMesh": 644,
+        "crossMesh": 6,
+        "colorPairs": 38,
+        "crossColorPairs": 6,
+        "sameMeshColorPairs": 32,
+        "sameMeshExactColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "exactUnresolvedColorPairs": 32,
+        "exactColorPairs": 38,
+        "samples": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.42
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.42
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.965,
+            "v": -0.42
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.965,
+            "v": -0.42
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.321
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.321
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.321
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 1.966,
+            "v": -0.321
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.926,
+            "v": 0.072
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.906,
+            "v": 0.072
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.906,
+            "v": 0.072
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.82,
+            "v": -0.017
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.82,
+            "v": -0.017
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.818,
+            "v": -0.017
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.421,
+            "u": 0.818,
+            "v": -0.017
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          },
+          {
+            "pair": "base-body-details <> hero-torso",
+            "count": 2
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1701,
+          "flat": 0,
+          "maxD": 107
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 421,
+          "flat": 0,
+          "maxD": 111
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 1058,
+          "flat": 0,
+          "maxD": 120
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 984,
+          "flat": 0,
+          "maxD": 138
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 752,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 394,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 487,
+          "flat": 0,
+          "maxD": 78
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 767,
+          "flat": 0,
+          "maxD": 81
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 145,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 117,
+          "flat": 0,
+          "maxD": 77
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 146,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 115,
+          "flat": 0,
+          "maxD": 80
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "noa",
+      "triangles": 1254,
+      "coplanar": {
+        "pairs": 687,
+        "sameMesh": 686,
+        "crossMesh": 1,
+        "colorPairs": 37,
+        "crossColorPairs": 1,
+        "sameMeshColorPairs": 36,
+        "sameMeshExactColorPairs": 36,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 36,
+        "exactUnresolvedColorPairs": 36,
+        "exactColorPairs": 37,
+        "samples": [
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 1,
+            "plane": 0.485,
+            "u": -0.161,
+            "v": -0.108
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 1,
+            "plane": 0.484,
+            "u": 0.165,
+            "v": -0.064
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": 0,
+            "v": 0.006
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": 0,
+            "v": 0.006
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": -0.127,
+            "v": 0.128
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": -0.127,
+            "v": 0.128
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": -0.127,
+            "v": 0.13
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "axis": 1,
+            "plane": 1.987,
+            "u": -0.127,
+            "v": 0.13
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.228,
+            "u": 2.252,
+            "v": -0.24
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.228,
+            "u": 2.252,
+            "v": -0.24
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.228,
+            "u": 2.251,
+            "v": -0.24
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.228,
+            "u": 2.251,
+            "v": -0.24
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.258,
+            "u": 1.075,
+            "v": 0.059
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.258,
+            "u": 1.052,
+            "v": 0.059
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.258,
+            "u": 1.052,
+            "v": 0.059
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details · misma malla",
+            "count": 6
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "count": 1
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1448,
+          "flat": 0,
+          "maxD": 84
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 440,
+          "flat": 0,
+          "maxD": 71
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 1083,
+          "flat": 0,
+          "maxD": 93
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1377,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 676,
+          "flat": 0,
+          "maxD": 110
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 523,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 485,
+          "flat": 0,
+          "maxD": 62
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 684,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 143,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 118,
+          "flat": 0,
+          "maxD": 66
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 111,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 162,
+          "flat": 0,
+          "maxD": 147
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "teo",
+      "triangles": 1208,
+      "coplanar": {
+        "pairs": 645,
+        "sameMesh": 633,
+        "crossMesh": 12,
+        "colorPairs": 26,
+        "crossColorPairs": 12,
+        "sameMeshColorPairs": 14,
+        "sameMeshExactColorPairs": 14,
+        "unresolvedCrossColorPairs": 4,
+        "unresolvedColorPairs": 18,
+        "exactUnresolvedColorPairs": 18,
+        "exactColorPairs": 26,
+        "samples": [
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "axis": 2,
+            "plane": 0.259,
+            "u": 0.005,
+            "v": 1.707
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "axis": 2,
+            "plane": 0.259,
+            "u": 0.005,
+            "v": 1.707
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "axis": 2,
+            "plane": 0.259,
+            "u": 0.005,
+            "v": 1.707
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "axis": 2,
+            "plane": 0.259,
+            "u": 0.005,
+            "v": 1.707
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.126,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.126,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.126,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.126,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.127,
+            "v": -0.317
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.127,
+            "v": -0.317
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.127,
+            "v": -0.317
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.305,
+            "u": 2.127,
+            "v": -0.317
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "axis": 1,
+            "plane": 2.446,
+            "u": 1.065,
+            "v": 0.101
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "axis": 1,
+            "plane": 2.446,
+            "u": 1.065,
+            "v": 0.101
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "axis": 1,
+            "plane": -2.203,
+            "u": 1.039,
+            "v": 0.13
+          }
+        ],
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "base-body-details <> cosmetic:piernas:c-piernas-falda",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "count": 6
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 155,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 849,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 524,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 446,
+          "flat": 48,
+          "maxD": 198
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1279,
+          "flat": 0,
+          "maxD": 127
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 915,
+          "flat": 69,
+          "maxD": 109
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 845,
+          "flat": 34,
+          "maxD": 107
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 655,
+          "flat": 4,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 749,
+          "flat": 0,
+          "maxD": 110
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 149,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 161,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 135,
+          "flat": 0,
+          "maxD": 150
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 178,
+          "flat": 0,
+          "maxD": 84
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "lia",
+      "triangles": 1312,
+      "coplanar": {
+        "pairs": 716,
+        "sameMesh": 708,
+        "crossMesh": 8,
+        "colorPairs": 40,
+        "crossColorPairs": 8,
+        "sameMeshColorPairs": 32,
+        "sameMeshExactColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "exactUnresolvedColorPairs": 32,
+        "exactColorPairs": 40,
+        "samples": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.336
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.336
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.336
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.336
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.052,
+            "v": -0.257
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.052,
+            "v": -0.257
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.257
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.245,
+            "u": 2.051,
+            "v": -0.257
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.975,
+            "v": 0.061
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.955,
+            "v": 0.061
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.955,
+            "v": 0.061
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.865,
+            "v": -0.013
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.865,
+            "v": -0.013
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.862,
+            "v": -0.013
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.304,
+            "u": 0.862,
+            "v": -0.013
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          },
+          {
+            "pair": "base-head <> base-head-details-0",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1572,
+          "flat": 0,
+          "maxD": 156
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 300,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 462,
+          "flat": 0,
+          "maxD": 68
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1086,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 772,
+          "flat": 0,
+          "maxD": 107
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 414,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 500,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 563,
+          "flat": 0,
+          "maxD": 100
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 112,
+          "flat": 0,
+          "maxD": 55
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 114,
+          "flat": 0,
+          "maxD": 76
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 110,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 144,
+          "flat": 0,
+          "maxD": 101
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "kian",
+      "triangles": 1268,
+      "coplanar": {
+        "pairs": 673,
+        "sameMesh": 669,
+        "crossMesh": 4,
+        "colorPairs": 20,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 20,
+        "sameMeshExactColorPairs": 20,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 20,
+        "exactUnresolvedColorPairs": 20,
+        "exactColorPairs": 20,
+        "samples": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.463
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.463
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.463
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.463
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.03,
+            "v": -0.353
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.03,
+            "v": -0.353
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.353
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.341,
+            "u": 2.029,
+            "v": -0.353
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.961,
+            "u": 1.481,
+            "v": -0.029
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.961,
+            "u": 1.481,
+            "v": -0.029
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.961,
+            "u": 1.481,
+            "v": -0.013
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.961,
+            "u": 1.481,
+            "v": -0.013
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.961,
+            "u": 1.371,
+            "v": -0.178
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "axis": 0,
+            "plane": 1.661,
+            "u": 1.628,
+            "v": -0.008
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "axis": 0,
+            "plane": 1.661,
+            "u": 1.575,
+            "v": -0.008
+          }
+        ],
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 7
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 5
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1303,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 596,
+          "flat": 0,
+          "maxD": 159
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 343,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1265,
+          "flat": 0,
+          "maxD": 125
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 735,
+          "flat": 0,
+          "maxD": 97
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 676,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 514,
+          "flat": 0,
+          "maxD": 65
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 603,
+          "flat": 0,
+          "maxD": 126
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 165,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 190,
+          "flat": 0,
+          "maxD": 67
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 150,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 158,
+          "flat": 0,
+          "maxD": 67
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "amaru",
+      "triangles": 1200,
+      "coplanar": {
+        "pairs": 653,
+        "sameMesh": 652,
+        "crossMesh": 1,
+        "colorPairs": 33,
+        "crossColorPairs": 1,
+        "sameMeshColorPairs": 32,
+        "sameMeshExactColorPairs": 32,
+        "unresolvedCrossColorPairs": 1,
+        "unresolvedColorPairs": 33,
+        "exactUnresolvedColorPairs": 33,
+        "exactColorPairs": 33,
+        "samples": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.994,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.994,
+            "v": -0.416
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.318
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.318
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.318
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.307,
+            "u": 1.995,
+            "v": -0.318
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.936,
+            "v": 0.07
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.916,
+            "v": 0.07
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.916,
+            "v": 0.07
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.829,
+            "v": -0.016
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.829,
+            "v": -0.016
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.827,
+            "v": -0.016
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.39,
+            "u": 0.827,
+            "v": -0.016
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1777,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 415,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 483,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1066,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 910,
+          "flat": 0,
+          "maxD": 103
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 510,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 477,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 733,
+          "flat": 0,
+          "maxD": 78
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 149,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 164,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 155,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 177,
+          "flat": 0,
+          "maxD": 104
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "ona",
+      "triangles": 1322,
+      "coplanar": {
+        "pairs": 730,
+        "sameMesh": 716,
+        "crossMesh": 14,
+        "colorPairs": 49,
+        "crossColorPairs": 14,
+        "sameMeshColorPairs": 35,
+        "sameMeshExactColorPairs": 35,
+        "unresolvedCrossColorPairs": 6,
+        "unresolvedColorPairs": 41,
+        "exactUnresolvedColorPairs": 41,
+        "exactColorPairs": 49,
+        "samples": [
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 1,
+            "plane": 0.485,
+            "u": -0.171,
+            "v": -0.114
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 1,
+            "plane": 0.484,
+            "u": 0.174,
+            "v": -0.068
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.238,
+            "u": 2.247,
+            "v": -0.252
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.075,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.052,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 1.052,
+            "v": 0.062
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.953,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.953,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.95,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": -0.324,
+            "u": 0.95,
+            "v": -0.014
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.497,
+            "u": 1.064,
+            "v": 0.05
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "axis": 0,
+            "plane": 0.497,
+            "u": 1.064,
+            "v": 0.05
+          }
+        ],
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right · misma malla",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 6
+          },
+          {
+            "pair": "base-weapon <> base-weapon · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1683,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 723,
+          "flat": 0,
+          "maxD": 101
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 752,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1445,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 737,
+          "flat": 0,
+          "maxD": 101
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 614,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 526,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 610,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 102,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 137,
+          "flat": 0,
+          "maxD": 100
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 115,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 122,
+          "flat": 0,
+          "maxD": 78
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "iris",
+      "triangles": 1422,
+      "coplanar": {
+        "pairs": 766,
+        "sameMesh": 745,
+        "crossMesh": 21,
+        "colorPairs": 39,
+        "crossColorPairs": 21,
+        "sameMeshColorPairs": 18,
+        "sameMeshExactColorPairs": 18,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 18,
+        "exactUnresolvedColorPairs": 18,
+        "exactColorPairs": 39,
+        "samples": [
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.597,
+            "v": 0.011
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.597,
+            "v": 0.011
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.597,
+            "v": -0.002
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.597,
+            "v": -0.002
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 0.604,
+            "v": -0.001
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": 0.309,
+            "u": 0.607,
+            "v": 0.042
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.6,
+            "v": 0.029
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.6,
+            "v": 0.029
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.6,
+            "v": 0.045
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.052,
+            "u": 0.6,
+            "v": 0.045
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.258,
+            "u": 2.176,
+            "v": -0.355
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.258,
+            "u": 2.176,
+            "v": -0.355
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.258,
+            "u": 2.176,
+            "v": -0.355
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.258,
+            "u": 2.176,
+            "v": -0.355
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.258,
+            "u": 2.177,
+            "v": -0.271
+          }
+        ],
+        "top": [
+          {
+            "pair": "cosmetic:piernas:c-piernas-falda <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "hero-torso <> hero-torso",
+            "count": 5
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 692,
+          "flat": 0,
+          "maxD": 107
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 292,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 89,
+          "flat": 0,
+          "maxD": 28
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1651,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 564,
+          "flat": 0,
+          "maxD": 101
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 385,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 487,
+          "flat": 0,
+          "maxD": 69
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 437,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 103,
+          "flat": 0,
+          "maxD": 80
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 99,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 95,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 133,
+          "flat": 0,
+          "maxD": 58
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "zenon",
+      "triangles": 1308,
+      "coplanar": {
+        "pairs": 686,
+        "sameMesh": 682,
+        "crossMesh": 4,
+        "colorPairs": 22,
+        "crossColorPairs": 4,
+        "sameMeshColorPairs": 18,
+        "sameMeshExactColorPairs": 18,
+        "unresolvedCrossColorPairs": 4,
+        "unresolvedColorPairs": 22,
+        "exactUnresolvedColorPairs": 22,
+        "exactColorPairs": 22,
+        "samples": [
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.58,
+            "v": 0.012
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.58,
+            "v": 0.012
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.58,
+            "v": -0.002
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.58,
+            "v": -0.002
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "axis": 0,
+            "plane": 0.345,
+            "u": 0.586,
+            "v": -0.001
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": 0.345,
+            "u": 0.59,
+            "v": 0.047
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.582,
+            "v": 0.032
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.582,
+            "v": 0.032
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.582,
+            "v": 0.05
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "axis": 0,
+            "plane": -0.058,
+            "u": 0.582,
+            "v": 0.05
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "axis": 1,
+            "plane": -1.505,
+            "u": -0.005,
+            "v": 0
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "axis": 1,
+            "plane": -1.505,
+            "u": -0.005,
+            "v": 0
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "axis": 1,
+            "plane": -1.505,
+            "u": 0.005,
+            "v": 0
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "axis": 1,
+            "plane": -1.505,
+            "u": 0.005,
+            "v": 0
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "axis": 0,
+            "plane": 0.306,
+            "u": 2.135,
+            "v": -0.416
+          }
+        ],
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+            "count": 8
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right · misma malla",
+            "count": 5
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1104,
+          "flat": 0,
+          "maxD": 121
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 18,
+          "flat": 0,
+          "maxD": 45
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 387,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1509,
+          "flat": 0,
+          "maxD": 171
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 676,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 438,
+          "flat": 0,
+          "maxD": 71
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 483,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 782,
+          "flat": 0,
+          "maxD": 126
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 140,
+          "flat": 0,
+          "maxD": 61
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 111,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 145,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 180,
+          "flat": 0,
+          "maxD": 55
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-salud-publica",
+      "triangles": 330,
+      "coplanar": {
+        "pairs": 165,
+        "sameMesh": 165,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "sameMeshExactColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "exactUnresolvedColorPairs": 0,
+        "exactColorPairs": 0,
+        "samples": [],
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 1288,
+          "flat": 0,
+          "maxD": 61
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1926,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 890,
+          "flat": 0,
+          "maxD": 61
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1437,
+          "flat": 0,
+          "maxD": 133
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 507,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 569,
+          "flat": 0,
+          "maxD": 103
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 591,
+          "flat": 0,
+          "maxD": 60
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 639,
+          "flat": 0,
+          "maxD": 88
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 84,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 84,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 61,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 165,
+          "flat": 0,
+          "maxD": 52
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-cuidado-integral",
+      "triangles": 490,
+      "coplanar": {
+        "pairs": 245,
+        "sameMesh": 245,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "sameMeshExactColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "exactUnresolvedColorPairs": 0,
+        "exactColorPairs": 0,
+        "samples": [],
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 2018,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1577,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 1742,
+          "flat": 0,
+          "maxD": 80
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1654,
+          "flat": 0,
+          "maxD": 66
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 270,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 274,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 196,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 332,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 83,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 49,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 49,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 63,
+          "flat": 0,
+          "maxD": 72
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-etica",
+      "triangles": 188,
+      "coplanar": {
+        "pairs": 94,
+        "sameMesh": 94,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "sameMeshExactColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "exactUnresolvedColorPairs": 0,
+        "exactColorPairs": 0,
+        "samples": [],
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 2500,
+          "flat": 0,
+          "maxD": 144
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1394,
+          "flat": 0,
+          "maxD": 82
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 2045,
+          "flat": 0,
+          "maxD": 160
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 2571,
+          "flat": 0,
+          "maxD": 151
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 726,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 404,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 452,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 686,
+          "flat": 0,
+          "maxD": 82
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 108,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 74,
+          "flat": 0,
+          "maxD": 85
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 96,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 166,
+          "flat": 0,
+          "maxD": 64
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-investigacion",
+      "triangles": 726,
+      "coplanar": {
+        "pairs": 409,
+        "sameMesh": 376,
+        "crossMesh": 33,
+        "colorPairs": 33,
+        "crossColorPairs": 33,
+        "sameMeshColorPairs": 0,
+        "sameMeshExactColorPairs": 0,
+        "unresolvedCrossColorPairs": 33,
+        "unresolvedColorPairs": 33,
+        "exactUnresolvedColorPairs": 33,
+        "exactColorPairs": 33,
+        "samples": [
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.762,
+            "v": 0.155
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.762,
+            "v": 0.155
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.778,
+            "v": 0.315
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.778,
+            "v": 0.315
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.796,
+            "v": 0.315
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.796,
+            "v": 0.315
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.85,
+            "v": 0.055
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.85,
+            "v": 0.055
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.868,
+            "v": 0.055
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.1,
+            "u": 1.868,
+            "v": 0.055
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.42,
+            "u": -2.018,
+            "v": -0.156
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.42,
+            "u": -2.018,
+            "v": -0.25
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.42,
+            "u": -2.018,
+            "v": -0.25
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.42,
+            "u": -1.846,
+            "v": -0.209
+          },
+          {
+            "pair": "guardian-body <> guardian-body",
+            "axis": 1,
+            "plane": 2.42,
+            "u": -1.846,
+            "v": -0.246
+          }
+        ],
+        "top": [
+          {
+            "pair": "guardian-body <> guardian-body",
+            "count": 33
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 2246,
+          "flat": 0,
+          "maxD": 120
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1400,
+          "flat": 0,
+          "maxD": 90
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 2626,
+          "flat": 0,
+          "maxD": 142
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 2126,
+          "flat": 0,
+          "maxD": 91
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 699,
+          "flat": 0,
+          "maxD": 54
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 544,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 512,
+          "flat": 0,
+          "maxD": 60
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 641,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 142,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 151,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 109,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 227,
+          "flat": 0,
+          "maxD": 61
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-gestion",
+      "triangles": 558,
+      "coplanar": {
+        "pairs": 375,
+        "sameMesh": 375,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "sameMeshExactColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "exactUnresolvedColorPairs": 0,
+        "exactColorPairs": 0,
+        "samples": [],
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 955,
+          "flat": 0,
+          "maxD": 89
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1340,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 1005,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1537,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 480,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 302,
+          "flat": 0,
+          "maxD": 50
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 262,
+          "flat": 0,
+          "maxD": 55
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 229,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 36,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 87,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 53,
+          "flat": 0,
+          "maxD": 50
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 93,
+          "flat": 0,
+          "maxD": 54
+        }
+      ]
+    }
+  ]
+}

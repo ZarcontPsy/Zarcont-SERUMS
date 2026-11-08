@@ -14,6 +14,8 @@ var PREIMPORT_KEY = 'serumsquest:voxel:preimport:v1';
 var BACKUP_KEY = 'serumsquest:voxel:backup:v1';
 var CORRUPT_KEY = 'serumsquest:voxel:corrupt:v1';
 var SETTINGS_KEY = 'serumsquest:voxel:settings:v1';
+/* Clave de solo lectura que consume el panel «Nivel y XP» del HUB. */
+var QUEST_SNAPSHOT_KEY = 'serumsquest:snapshot:v1';
 var recoveryInfo = { corrupt: false, raw: null };
 var recoveryLock = false;
 
@@ -313,7 +315,7 @@ function defaultState() {
     },
     daily: { lastCompletedDate: null, streak: 0, bestStreak: 0, totalCompleted: 0, graceWeek: null },
     reviews: { lastCompletedDate: null, completed: 0, onTimeSessions: 0, earlySessions: 0 },
-    settings: { sound: false, ambient: false, muted: false, volume: 0.7, reducedMotion: false, extraTime: false, effectsQuality: 'medio', qualityChosen: false, hide3dFrames: false, textScale: 'normal', highContrast: false, tutorialSeen: false, backupReminder: true },
+    settings: { sound: false, ambient: false, muted: false, volume: 0.7, reducedMotion: false, extraTime: false, effectsQuality: 'medio', qualityChosen: false, hide3dFrames: false, textScale: 'normal', highContrast: false, tutorialSeen: false, backupReminder: true, sourceWeights: { campaign: 0.6, dashboard: 0.15, flashcards: 0.25 }, feedbackMode: 'end', onlyOriginalBank: false },
     modeStats: {
       dailyDate: null,
       claims: {},
@@ -329,7 +331,17 @@ function defaultState() {
     backup: { lastExportedAt: null, lastPromptAt: null },
     importedFrom: null,
     importedAt: null,
-    events: []
+    events: [],
+    v2: {
+      world: {
+        chests: {},
+        guides: {},
+        stations: {},
+        fragments: {},
+        visited: {},
+        restored: {}
+      }
+    }
   };
 }
 
@@ -411,12 +423,39 @@ function normalizeState(raw) {
   out.modeStats.claims = objField(out.modeStats.claims);
   out.modeStats.simulacroHistory = Array.isArray(out.modeStats.simulacroHistory) ? out.modeStats.simulacroHistory.slice(0, 30) : [];
   out.settings = Object.assign({}, base.settings, objField(raw.settings));
+  var rawWeights = objField(out.settings.sourceWeights);
+  function weightField(value, fallback) {
+    var n = Number(value);
+    return isFinite(n) ? Math.max(0, Math.min(1, n)) : fallback;
+  }
+  out.settings.sourceWeights = {
+    campaign: weightField(rawWeights.campaign, base.settings.sourceWeights.campaign),
+    dashboard: weightField(rawWeights.dashboard, base.settings.sourceWeights.dashboard),
+    flashcards: weightField(rawWeights.flashcards, base.settings.sourceWeights.flashcards)
+  };
+  var weightTotal = out.settings.sourceWeights.campaign + out.settings.sourceWeights.dashboard + out.settings.sourceWeights.flashcards;
+  if (!(weightTotal > 0)) out.settings.sourceWeights = Object.assign({}, base.settings.sourceWeights);
   out.settings.textScale = out.settings.textScale === 'grande' ? 'grande' : 'normal';
+  out.settings.feedbackMode = out.settings.feedbackMode === 'each' ? 'each' : 'end';
+  out.settings.onlyOriginalBank = !!out.settings.onlyOriginalBank;
   out.backup = Object.assign({}, base.backup, objField(raw.backup));
   out.schema = SAVE_SCHEMA_VERSION;
   out.events = Array.isArray(raw.events) ? raw.events.slice(-100) : [];
   out.importedFrom = raw.importedFrom || null;
   out.importedAt = raw.importedAt || null;
+  out.v2 = Object.assign({}, base.v2, objField(raw.v2));
+  out.v2.world = Object.assign({}, base.v2.world, objField(out.v2.world));
+  ['chests', 'guides', 'stations', 'fragments', 'visited', 'restored'].forEach(function (key) {
+    var clean = {};
+    var source = objField(out.v2.world[key]);
+    Object.keys(source).forEach(function (id) {
+      if (!id || id.length > 90) return;
+      var value = source[id];
+      if (value && typeof value === 'object' && !Array.isArray(value)) clean[id] = Object.assign({}, value);
+      else clean[id] = value;
+    });
+    out.v2.world[key] = clean;
+  });
   out.updatedAt = raw.updatedAt || base.updatedAt;
   out.createdAt = raw.createdAt || base.createdAt;
   return out;
@@ -445,7 +484,7 @@ var state = loadState();
 function persist() {
   if (recoveryLock) return false;
   state.updatedAt = nowISO();
-  try { window.localStorage.setItem(SAVE_KEY, JSON.stringify(state)); return true; } catch (e) { storageEnabled = false; return false; }
+  try { window.localStorage.setItem(SAVE_KEY, JSON.stringify(state)); writeQuestSnapshot(); return true; } catch (e) { storageEnabled = false; return false; }
 }
 function backupCurrentState(reason) {
   try {
@@ -462,6 +501,89 @@ function loadSettings() {
 }
 function saveSettings() {
   try { window.localStorage.setItem(SETTINGS_KEY, JSON.stringify(state.settings)); } catch (e) {}
+}
+
+/* -------------------------------------------------------------------------
+   Snapshot para el HUB (clave 'serumsquest:snapshot:v1')
+   El HUB solo lee level, levelPercent, rank, xp, answered, hasActivity y
+   lastSession.title (en applyQuestSnapshot). Se escriben además algunos
+   campos de contexto con el mismo nombre que usaba la app 1.2.
+   ------------------------------------------------------------------------- */
+function lastSnapshotSession() {
+  if (lastResult && lastResult.title) {
+    return {
+      id: lastResult.missionId || null,
+      mode: lastResult.mode || null,
+      title: lastResult.title,
+      endedAt: lastResult.finishedAt || nowISO(),
+      score: Number(lastResult.score) || 0,
+      accuracy: Number(lastResult.accuracy) || 0
+    };
+  }
+  var latest = null;
+  Object.keys(state.missions || {}).forEach(function (id) {
+    var rec = state.missions[id];
+    if (!rec) return;
+    var at = rec.lastAt || rec.completedAt;
+    if (!at) return;
+    if (!latest || String(at) > String(latest.at)) latest = { id: id, at: at };
+  });
+  if (!latest) return null;
+  var mission = MISSION_BY_ID[latest.id];
+  if (!mission) return null;
+  var record = state.missions[latest.id] || {};
+  return {
+    id: latest.id,
+    mode: mission.kind === 'boss' ? 'boss' : 'mission',
+    title: mission.title,
+    endedAt: latest.at,
+    score: Number(record.lastScore) || 0,
+    accuracy: Number(record.lastAccuracy) || 0
+  };
+}
+function questSnapshotData() {
+  var level = levelAt(state.xp);
+  var rank = currentRank();
+  var ms = currentMissionStats();
+  var selected = selectedCharacter();
+  var stage = CAMP.rules.stages[String(state.stage)] || {};
+  return {
+    version: APP_VERSION,
+    schemaVersion: SAVE_SCHEMA_VERSION,
+    updatedAt: nowISO(),
+    level: level.level,
+    levelPercent: level.percent,
+    xp: Number(state.xp) || 0,
+    xpToNext: level.maxed ? 0 : Math.max(0, level.needed - level.into),
+    coins: Number(state.coins) || 0,
+    rank: rank.name,
+    rankColor: rank.color || '',
+    stage: state.stage,
+    stageName: stage.name || 'Iniciación',
+    answered: Number(state.academic.answered) || 0,
+    accuracy: state.academic.answered ? Math.round(overallAccuracy() * 1000) / 10 : 0,
+    missions: ms.missions,
+    bosses: ms.bosses,
+    mastered: masteredCount(),
+    streak: Number(state.daily.streak) || 0,
+    hasActivity: Number(state.academic.answered) > 0 || Number(state.xp) > 0 || Number(state.academic.sessions) > 0 || Object.keys(state.missions || {}).length > 0 || !!state.importedAt,
+    selectedCharacterId: selected.id,
+    selectedCharacterName: selected.name,
+    selectedCharacterTitle: selected.title || '',
+    selectedCharacterRarity: selected.rarity || '',
+    charactersOwned: state.collection.ownedCharacterIds.length,
+    charactersTotal: CAMP.characters.length,
+    cosmeticsOwned: state.collection.ownedCosmeticIds.length,
+    lastSession: lastSnapshotSession()
+  };
+}
+function writeQuestSnapshot() {
+  if (recoveryLock || !storageEnabled) return null;
+  try {
+    var snap = questSnapshotData();
+    window.localStorage.setItem(QUEST_SNAPSHOT_KEY, JSON.stringify(snap));
+    return snap;
+  } catch (e) { return null; }
 }
 
 /* -------------------------------------------------------------------------
@@ -674,6 +796,8 @@ function applyXpCoins(xp, coins) {
   state.coins = Math.max(0, state.coins + allowedCoins);
   counters.coins = (Number(counters.coins) || 0) + allowedCoins;
   counters.xp = (Number(counters.xp) || 0) + Math.max(0, Math.round(Number(xp) || 0));
+  /* El HUB debe ver el XP nuevo (y el nivel si cambió) sin esperar al guardado. */
+  writeQuestSnapshot();
   return { before: before, after: currentLevel(), coinsAdded: allowedCoins, coinCap: coinCap, capReached: requested > allowedCoins };
 }
 function applyQuestionResult(questionId, chosen, durationMs, session) {

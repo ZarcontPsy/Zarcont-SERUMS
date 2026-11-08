@@ -1,0 +1,46 @@
+{
+  "edgeHub": {
+    "browser": "edge",
+    "hubTitle": "SERUMS HUB — Centro de aplicaciones",
+    "afterSelect": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/index.html",
+    "landed": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "tutorialOrMenu": true,
+    "title": "SERUMS QUEST",
+    "errors": []
+  },
+  "chromeHub": {
+    "browser": "chrome",
+    "hubTitle": "SERUMS HUB — Centro de aplicaciones",
+    "afterSelect": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/index.html",
+    "landed": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "tutorialOrMenu": true,
+    "title": "SERUMS QUEST",
+    "errors": []
+  },
+  "edgeStub": {
+    "browser": "edge",
+    "route": "serums-quest/index.html (redirección antigua)",
+    "landed": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "title": "SERUMS QUEST",
+    "isDist": true,
+    "gameMounted": true,
+    "errors": []
+  },
+  "chromeStub": {
+    "browser": "chrome",
+    "route": "serums-quest/index.html (redirección antigua)",
+    "landed": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "title": "SERUMS QUEST",
+    "isDist": true,
+    "gameMounted": true,
+    "errors": []
+  },
+  "bar": {
+    "scenario": "barra inferior: Abrir/Continuar",
+    "openLabel": "Abrir",
+    "aria": "Abrir SERUMS QUEST",
+    "landed": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "menu": true,
+    "errors": []
+  }
+}

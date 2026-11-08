@@ -5,10 +5,10 @@
   "orientation": "landscape",
   "build": {
     "artifact": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\dist\\index.html",
-    "buildId": "8f85c51c3a0f",
-    "bytes": 1522208,
+    "buildId": "b6ab87f0a86a",
+    "bytes": 3448508,
     "title": "SERUMS QUEST",
-    "builtAt": "2026-11-06T11:18:39.188Z"
+    "builtAt": "2026-11-07T20:48:38.221Z"
   },
   "slots": {
     "personaje_ilan": {
@@ -211,96 +211,96 @@
   "jobs": [],
   "versions": [
     {
-      "number": 65,
-      "note": "Proyecto principal · migración de nombre",
-      "createdAt": "2026-11-06T11:17:45.624Z",
-      "buildId": "8f85c51c3a0f"
+      "number": 96,
+      "note": "V2.2 · Tienda 3D e interfaz · final etiquetas",
+      "createdAt": "2026-11-07T20:48:30.567Z",
+      "buildId": "b6ab87f0a86a"
     },
     {
-      "number": 64,
-      "note": "Versión final completa",
-      "createdAt": "2026-11-06T10:55:20.672Z",
-      "buildId": "d418c46644c0"
+      "number": 95,
+      "note": "V2.2 · Etiquetas del atrio y restauración limpia",
+      "createdAt": "2026-11-07T20:46:30.712Z",
+      "buildId": "3ff3d9d7c359"
     },
     {
-      "number": 63,
-      "note": "Bloque 3 · cierre (QA final)",
-      "createdAt": "2026-11-06T10:54:21.611Z",
-      "buildId": "fc42902bb3ed"
+      "number": 94,
+      "note": "V2.2 · Tienda 3D e interfaz · final",
+      "createdAt": "2026-11-07T20:44:35.505Z",
+      "buildId": "3966c3d33a56"
     },
     {
-      "number": 62,
-      "note": "Bloque 3 · cierre (QA settings)",
-      "createdAt": "2026-11-06T10:49:47.324Z",
-      "buildId": "65363d14cb9a"
+      "number": 93,
+      "note": "V2.2 · Tienda 3D e interfaz",
+      "createdAt": "2026-11-07T20:39:42.867Z",
+      "buildId": "85bad0cb7722"
     },
     {
-      "number": 61,
-      "note": "Bloque 3 · cierre (QA)",
-      "createdAt": "2026-11-06T10:47:05.400Z",
-      "buildId": "577af011485d"
+      "number": 92,
+      "note": "V2.2 · Tienda 3D e interfaz",
+      "createdAt": "2026-11-07T20:37:47.768Z",
+      "buildId": "3b9183a7472d"
     },
     {
-      "number": 60,
-      "note": "Bloque 3 · cierre (QA)",
-      "createdAt": "2026-11-06T10:43:34.648Z",
-      "buildId": "b77b6b95e8e2"
+      "number": 91,
+      "note": "V2.2 · tarjetas con miniatura y texto completo",
+      "createdAt": "2026-11-07T20:34:48.625Z",
+      "buildId": "f3d47e163191"
     },
     {
-      "number": 59,
-      "note": "Bloque 2 · aprendizaje",
-      "createdAt": "2026-11-06T07:02:23.342Z",
-      "buildId": "b1c8223d5ee1"
+      "number": 90,
+      "note": "V2.2 · altura mínima de tarjeta",
+      "createdAt": "2026-11-07T20:33:58.165Z",
+      "buildId": "5c038f0cab65"
     },
     {
-      "number": 58,
-      "note": "Bloque 2 · aprendizaje",
-      "createdAt": "2026-11-06T06:59:54.806Z",
-      "buildId": "02b3d185c649"
+      "number": 89,
+      "note": "V2.2 · tarjetas en bloque con altura propia",
+      "createdAt": "2026-11-07T20:32:56.204Z",
+      "buildId": "4db5bed5ec80"
     },
     {
-      "number": 57,
-      "note": "Bloque 2 · aprendizaje (QA)",
-      "createdAt": "2026-11-06T06:56:38.067Z",
-      "buildId": "99b17591d36f"
+      "number": 88,
+      "note": "V2.2 · tarjetas de tienda con miniatura visible",
+      "createdAt": "2026-11-07T20:31:35.898Z",
+      "buildId": "02ee9ba29a87"
     },
     {
-      "number": 56,
-      "note": "Bloque 2 · aprendizaje (QA)",
-      "createdAt": "2026-11-06T06:54:02.565Z",
-      "buildId": "e7e84ab130b7"
+      "number": 87,
+      "note": "V2.2 · armas y marcos con geometría propia",
+      "createdAt": "2026-11-07T20:28:29.633Z",
+      "buildId": "a557d63e29a6"
     },
     {
-      "number": 55,
-      "note": "Bloque 2 · aprendizaje (QA)",
-      "createdAt": "2026-11-06T06:52:53.604Z",
-      "buildId": "ad3bc0cc7cd6"
+      "number": 86,
+      "note": "V2.2 · miniaturas visibles, halos suaves, firmas de cosméticos",
+      "createdAt": "2026-11-07T20:24:49.347Z",
+      "buildId": "c80bb7d5e139"
     },
     {
-      "number": 54,
-      "note": "Bloque 1 · modos",
-      "createdAt": "2026-11-06T06:36:12.284Z",
-      "buildId": "5e712df7d082"
+      "number": 85,
+      "note": "V2.2 · QA hooks, tienda, miniaturas y mapa",
+      "createdAt": "2026-11-07T20:15:21.887Z",
+      "buildId": "9694d42e6195"
     },
     {
-      "number": 53,
-      "note": "Bloque 1 · modos (QA errores)",
-      "createdAt": "2026-11-06T06:29:46.488Z",
-      "buildId": "90c33c26ae54"
+      "number": 84,
+      "note": "V2.2 · base tienda 3D, miniaturas, duelo/resumen, mapa y avisos",
+      "createdAt": "2026-11-07T20:08:43.516Z",
+      "buildId": "96522dd0da33"
     },
     {
-      "number": 52,
-      "note": "Bloque 1 · modos (QA final)",
-      "createdAt": "2026-11-06T06:28:40.619Z",
-      "buildId": "8ce6fe930923"
+      "number": 83,
+      "note": "V2.1 · contracción del duelo al atacar",
+      "createdAt": "2026-11-07T18:19:14.046Z",
+      "buildId": "ffc4e8ebd3d2"
     },
     {
-      "number": 51,
-      "note": "Bloque 1 · modos (QA resultados)",
-      "createdAt": "2026-11-06T06:24:49.629Z",
-      "buildId": "09db5553b089"
+      "number": 82,
+      "note": "V2.1 · Correcciones y pulido · final",
+      "createdAt": "2026-11-06T17:30:05.379Z",
+      "buildId": "c08f590d7972"
     }
   ],
   "share": null,
-  "updatedAt": "2026-11-06T11:18:39.198Z"
+  "updatedAt": "2026-11-07T20:48:38.232Z"
 }

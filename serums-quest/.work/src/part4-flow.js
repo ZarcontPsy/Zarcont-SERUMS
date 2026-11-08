@@ -233,6 +233,14 @@ function launchMission(missionId) {
     return;
   }
   var qids = mission.questionIds.filter(function (id) { return !!QUESTION_BY_ID[id]; });
+  var mixedIds = V2.call('feedback', 'mixMissionQuestions', mission, qids.slice());
+  if (Array.isArray(mixedIds) && mixedIds.length) {
+    var safeMixed = mixedIds.filter(function (id) { return !!QUESTION_BY_ID[id]; });
+    if (safeMixed.length >= Math.min(3, qids.length)) qids = safeMixed;
+  }
+  if (state.settings.onlyOriginalBank) {
+    qids = qids.filter(function (id) { return QUESTION_BY_ID[id] && QUESTION_BY_ID[id].source === 'campaign'; });
+  }
   if (!qids.length) { toast('Esta ruta no tiene preguntas disponibles.', 'error'); return; }
   var launchSource = mapLaunchPending ? 'map' : 'hub';
   mapLaunchPending = false;
@@ -362,18 +370,33 @@ function answerCurrent(letter) {
     // La corrección no se revela hasta el informe final.
     lastFeedback.deferred = true;
   } else if (applied.correct) {
-    triggerHeroAttack();
+    var v2HeroHit = V2.call('combat', 'heroAttack', q, applied, session);
+    if (!v2HeroHit) triggerHeroAttack();
     window.setTimeout(function () { sfxCorrect(); }, 150);
   } else {
-    guardianAttackVisual();
-    triggerHeroHurt();
+    var v2GuardianHit = V2.call('combat', 'guardianAttack', q, chosenOption, session);
+    if (!v2GuardianHit) {
+      guardianAttackVisual();
+      triggerHeroHurt();
+    }
     window.setTimeout(function () { sfxWrong(); }, 110);
   }
+  if (!applied.correct) V2.call('combat', 'onHeartsChanged', session, q);
   persist();
   renderScreen();
+  V2.call('duel', 'onAttack', applied.correct);
+  V2.call('feedback', 'onAnswer', q, lastFeedback, session);
+  var autoDelay = V2.call('feedback', 'autoAdvanceDelay', session);
+  if (autoDelay > 0) {
+    var autoToken = lastFeedback;
+    window.setTimeout(function () {
+      if (screen === 'duel' && session && lastFeedback === autoToken && !session.finishing) nextQuestion();
+    }, autoDelay);
+  }
 }
 function nextQuestion() {
   if (screen !== 'duel' || !session || !lastFeedback || session.finishing) return;
+  V2.call('feedback', 'hide');
   if (session.hearts <= 0 && (session.mode === 'survival' || session.mode === 'mission' || session.mode === 'boss' || session.mode === 'review')) { finishSession('hearts'); return; }
   if (session.cursor >= session.questions.length - 1) { finishSession('completed'); return; }
   session.cursor += 1;
@@ -503,15 +526,16 @@ function finishSession(reason) {
   pausedDuel = false;
   lastFeedback = null;
   persist();
+  var v2DefeatHandled = V2.call('combat', 'onSessionEnd', finishedSession, lastResult);
   if (lastResult.pass) {
     triggerHeroCelebrate();
-    if (guardian) {
+    if (guardian && !v2DefeatHandled) {
       spawnSparksAt(arenaWorld(duelPositions.guardian).add(new THREE.Vector3(0, 1.8, 0)), guardian.accent, 22);
       guardian.root.visible = false;
     }
     window.setTimeout(function () { sfxVictory(); }, 140);
   } else {
-    if (guardian) {
+    if (guardian && !v2DefeatHandled) {
       guardian.root.visible = false;
       spawnSparksAt(arenaWorld(duelPositions.hero).add(new THREE.Vector3(0, 1.4, 0)), '#ff8b9d', 10);
     }
@@ -839,6 +863,7 @@ var KEYMAP = {
 };
 window.addEventListener('keydown', function (event) {
   if (isTypingTarget(event.target)) return;
+  if (V2.call('world', 'isOpen')) return;
   if (event.code in KEYMAP) {
     keys[event.code] = true;
     if (screen === 'hub' || screen === 'duel') event.preventDefault();
@@ -885,6 +910,7 @@ window.addEventListener('keydown', function (event) {
     return;
   }
   if (screen === 'duel') {
+    if (V2.call('feedback', 'isOpen')) return;
     if (event.code === 'Escape' || event.code === 'KeyP') { event.preventDefault(); openPause(); return; }
     if (lastFeedback) {
       if (event.code === 'Enter' || event.code === 'NumpadEnter' || event.code === 'Space') { event.preventDefault(); nextQuestion(); }
@@ -1133,7 +1159,14 @@ function frame(now) {
       updateSparks(dt);
       updateCombatEffects(dt);
       updateSceneMotion(dt, now / 1000);
+      V2.call('combat', 'update', dt, now / 1000);
+      V2.call('assets', 'update', dt, now / 1000);
+      V2.call('heroes', 'update', dt, now / 1000);
+      V2.call('feedback', 'update', dt, now / 1000);
+      V2.call('world', 'update', dt, now / 1000);
+      V2.call('perf', 'update', dt, now / 1000);
       placeCamera(dt, now / 1000);
+      V2.call('duel', 'afterCamera', dt, now / 1000);
       if (renderer) renderer.render(scene, camera);
       updateWardrobePreview(dt, now / 1000);
       updateModeClock();
@@ -1325,7 +1358,14 @@ function boot() {
   if (bootUnlocks.length || bootCosmetics.length) persist();
   mountHud();
   rebuildHeroAvatar();
+  V2.call('assets', 'decorateHub');
+  V2.call('heroes', 'boot');
+  V2.call('world', 'boot');
+  V2.call('perf', 'boot');
   enterTitle();
+  /* Mantiene sincronizado el panel «Nivel y XP» del HUB al abrir el juego,
+     sin tocar un snapshot ajeno si el guardado nuevo todavía está vacío. */
+  if (hasProgress()) writeQuestSnapshot();
   setLoading(false);
   initAudio();
   var savedSettings = loadSettings();
@@ -1462,9 +1502,6 @@ function boot() {
       try { startMode(RULES.devStartMode, { seconds: Number(RULES.devModeSeconds) || undefined }); }
       catch (e) { reportError('devStartMode: ' + (e.message || e)); }
     }, 900);
-  }
-  if (!storageEnabled) {
-    window.setTimeout(function () { toast('El navegador bloquea el guardado local. El progreso durará hasta cerrar la pestaña.', 'warn', 7000); }, 1200);
   }
   if (state.importedAt && !state.importToastShown) {
     window.setTimeout(function () { toast('Partida importada disponible. Entra para continuar tu ruta.', 'success', 5000); }, 900);

@@ -125,6 +125,13 @@ function closePracticePicker() {
 }
 function practiceQuestions(areaId) {
   var qs = modeArrayQuestions().filter(function (q) { return q.areaId === areaId; });
+  var mixedPracticeIds = V2.call('feedback', 'mixPracticeQuestions', areaId, qs.map(function (q) { return q.id; }));
+  if (Array.isArray(mixedPracticeIds) && mixedPracticeIds.length) {
+    var mixedPracticeQuestions = mixedPracticeIds.map(function (id) { return QUESTION_BY_ID[id]; }).filter(function (q) {
+      return q && (!state.settings.onlyOriginalBank || q.source === 'campaign');
+    });
+    if (mixedPracticeQuestions.length) qs = mixedPracticeQuestions;
+  }
   qs.sort(function (a, b) {
     var sa = state.questions[a.id] || {}, sb = state.questions[b.id] || {};
     var wa = (Number(sa.wrong) || 0) - (Number(sa.correct) || 0), wb = (Number(sb.wrong) || 0) - (Number(sb.correct) || 0);

@@ -1,0 +1,461 @@
+/* Agent 4 - explicaciones redactadas para las 111 preguntas originales de campaña.
+   Cada entrada se construye SOLO con el enunciado, la clave y el texto de las
+   opciones: no se añaden cifras, normas ni datos clínicos externos.
+   Formato: id -> { explanation, tags } */
+"use strict";
+
+module.exports = {
+  /* ---------------- Área I · Salud pública ---------------- */
+  "2026-i-psicologia-q056": {
+    explanation: "El agente es el factor cuya presencia excesiva o ausencia relativa resulta esencial para que ocurra la enfermedad. Reservorio, transmisión y huésped describen dónde se mantiene el agente, cómo se propaga y quién la padece, no el factor esencial.",
+    tags: ["epidemiología", "tríada ecológica", "salud pública"]
+  },
+  "2026-ii-psicologia-q059": {
+    explanation: "La epidemiología es el estudio de la distribución y los determinantes de la enfermedad en la población humana. Causalidad, demografía y estadística son campos o herramientas auxiliares, no la disciplina que define el enunciado.",
+    tags: ["epidemiología", "conceptos", "salud pública"]
+  },
+  "2025-i-psicologia-q009": {
+    explanation: "La prueba rápida dual (PRD) es la alternativa que corresponde al tamizaje en atención prenatal, salas de parto, emergencias obstétricas y puerperio. ELISA e inmunoensayo en línea son técnicas de laboratorio, y la prueba rápida simple no cubre la doble determinación.",
+    tags: ["tamizaje", "pruebas rápidas", "salud materna"]
+  },
+  "2025-i-psicologia-q025": {
+    explanation: "Frente al factor de riesgo, la vigilancia en salud ocupacional implementa la promoción y la prevención con actividades de educación. Las demás parejas de términos no describen esas actividades educativas.",
+    tags: ["vigilancia", "salud ocupacional", "prevención"]
+  },
+  "2026-i-psicologia-q065": {
+    explanation: "La falta de agua segura y de saneamiento básico, sumada a lluvias frecuentes por el cambio climático, configura un riesgo ambiental para la población. Contaminación ambiental, riesgo físico y químico y pobreza no abarcan el conjunto de condiciones descrito.",
+    tags: ["salud ambiental", "determinantes", "riesgo"]
+  },
+  "2025-i-psicologia-q013": {
+    explanation: "Un terremoto con alerta de tsunami es un evento de origen natural, no provocado por la actividad humana. Las opciones mixto, híbrido y antropogénico suponen intervención humana o combinación de causas.",
+    tags: ["emergencias", "amenazas", "salud pública"]
+  },
+  "2026-i-psicologia-q069": {
+    explanation: "La higiene de manos, la lactancia materna, las inmunizaciones y las pautas de crianza son acciones de promoción de la salud. No corresponden a protección comunitaria, intervención inmediata ni bioseguridad materno infantil.",
+    tags: ["promoción de la salud", "prevención", "comunidad"]
+  },
+  "2026-i-psicologia-q089": {
+    explanation: "El código de colores asigna rojo a los residuos biocontaminados, amarillo a los químicos y negro a los comunes. Las demás combinaciones alteran al menos uno de esos colores.",
+    tags: ["residuos sólidos", "bioseguridad", "salud ambiental"]
+  },
+  "2026-i-psicologia-q026": {
+    explanation: "La búsqueda se realiza sobre registros ya existentes del propio establecimiento, historias clínicas y archivos estadísticos, lo que corresponde a la vigilancia pasiva según la clave. La vigilancia activa busca casos directamente en campo, la centinela se limita a unidades seleccionadas y la retrospectiva se define por el periodo, no por la fuente.",
+    tags: ["vigilancia epidemiológica", "registros", "salud pública"]
+  },
+  "2026-i-psicologia-q091": {
+    explanation: "Ante el aumento de enfermedades infecciosas en una comunidad campesina, la medida de promoción más inmediata es el lavado de manos. Campaña de vacunación, calzado de guantes y cuidado del agua no responden con la misma inmediatez al conjunto de infecciones descrito.",
+    tags: ["promoción de la salud", "higiene", "comunidad"]
+  },
+  "2026-ii-psicologia-q040": {
+    explanation: "Los tamizajes positivos son datos ya procesados por el sistema de información, por lo que corresponden a las medidas consolidadas de salud. La información de datos, las medidas ecológicas o ambientales y las globales aluden a otros niveles de agregación.",
+    tags: ["medición", "indicadores", "salud pública"]
+  },
+  "2025-i-psicologia-q042": {
+    explanation: "La reacción adversa a un agente infeccioso adquirida por el personal en el establecimiento durante la atención es una infección asociada a la atención de salud. Estrés laboral y enfermedad ocupacional no describen una infección, y enfermedad infecciosa es una categoría demasiado general.",
+    tags: ["IAAS", "bioseguridad", "personal de salud"]
+  },
+  "2025-i-psicologia-q037": {
+    explanation: "Los planes operativos anuales de la municipalidad, la Red de Salud y la DIRESA se articulan en la programación de salud local. El planeamiento estratégico define prioridades, la evaluación de necesidades las identifica y el seguimiento verifica resultados.",
+    tags: ["plan de salud local", "gestión", "programación"]
+  },
+  "2026-i-psicologia-q072": {
+    explanation: "La farmacovigilancia es una actividad de salud pública que evalúa la efectividad del medicamento y activa un sistema rápido de alerta sobre reacciones adversas. Las opciones que la ubican en epidemiología o en vigilancia no completan correctamente el enunciado.",
+    tags: ["farmacovigilancia", "salud pública", "medicamentos"]
+  },
+  "2025-i-psicologia-q094": {
+    explanation: "En la primera visita a familias nuevas del sector sanitario se llena la ficha familiar, instrumento de registro de la familia y su entorno. La historia clínica y la hoja de atención registran atenciones individuales, y el censo no es el documento de la visita.",
+    tags: ["ficha familiar", "visita domiciliaria", "APS"]
+  },
+  "2026-ii-psicologia-q053": {
+    explanation: "La prevención cuaternaria busca atenuar o evitar las consecuencias de las intervenciones clínicas innecesarias o excesivas. Primaria, secundaria y terciaria actúan antes de la enfermedad, en su detección temprana o sobre las secuelas.",
+    tags: ["prevención", "prevención cuaternaria", "salud pública"]
+  },
+  "2025-i-psicologia-q018": {
+    explanation: "La campaña de salud mental en las instituciones educativas de la jurisdicción es una actividad de promoción de la salud. Defensa, restauración y cuidado de la salud corresponden a otras funciones del sistema.",
+    tags: ["promoción de la salud", "salud mental", "instituciones educativas"]
+  },
+  "2026-i-psicologia-q086": {
+    explanation: "Capacitar a las personas y a la comunidad para que controlen, mantengan y mejoren su salud es promoción de la salud. Participación comunitaria, familias saludables y entornos saludables son componentes o escenarios de esa estrategia, no la definición del enunciado.",
+    tags: ["promoción de la salud", "educación para la salud", "comunidad"]
+  },
+  "2026-ii-psicologia-q055": {
+    explanation: "El taller de comunicación saludable en el local comunal, con la comunidad convocada, es una acción con participación comunitaria. Las opciones municipal, de familias y del CEM nombran instituciones o grupos específicos que no corresponden al escenario descrito.",
+    tags: ["participación comunitaria", "violencia", "promoción"]
+  },
+  "2026-i-psicologia-q040": {
+    explanation: "Dos o más casos de una misma enfermedad relacionados entre sí configuran un brote. Endemia, epidemia y pandemia describen otros patrones de presentación en la población.",
+    tags: ["epidemiología", "brote", "vigilancia"]
+  },
+  "2026-i-psicologia-q048": {
+    explanation: "La participación de pobladores, personal de salud y autoridades que logra una política pública articulada es trabajo intersectorial en salud. Municipio saludable, familias saludables y trabajo político de la comunidad no describen esa articulación de sectores.",
+    tags: ["intersectorialidad", "políticas públicas", "comunidad"]
+  },
+  "2026-i-psicologia-q077": {
+    explanation: "Los casos nuevos de melanoma aparecidos en el último año son incidentes, porque corresponden a enfermos nuevos en el periodo. Prevalentes y reincidentes aluden a casos existentes o repetidos, y probables a una clasificación diagnóstica.",
+    tags: ["epidemiología", "incidencia", "vigilancia"]
+  },
+  "2026-ii-psicologia-q069": {
+    explanation: "El proceso de enseñanza y aprendizaje con TIC para ampliar conocimientos, habilidades y actitudes del personal de salud es telecapacitación. Telemonitoreo, teleconsulta y teleinterconsulta son prestaciones asistenciales.",
+    tags: ["telesalud", "capacitación", "TIC"]
+  },
+  "2025-i-psicologia-q087": {
+    explanation: "La toma de conciencia de los problemas y la participación de la comunidad en el mejoramiento de su situación es un principio de la participación comunitaria. Determinante social y ambiental describen factores, y sectorización es una técnica de organización del territorio.",
+    tags: ["participación comunitaria", "acción social", "comunidad"]
+  },
+  "2026-ii-psicologia-q063": {
+    explanation: "A las herramientas de gestión de almacén y a las adquisiciones oportunas se suma el uso racional de medicamentos para garantizar el acceso a la atención primaria. Electricidad, agua y residuos sólidos son condiciones de otra índole.",
+    tags: ["acceso", "medicamentos", "APS"]
+  },
+
+  /* ---------------- Área II · Cuidado integral ---------------- */
+  "2026-i-psicologia-q082": {
+    explanation: "La empatía y el rapport son factores básicos que determinan la calidad de la interacción en la entrevista psicológica. Enganche terapéutico, entusiasmo y primer contacto no ocupan ese lugar en el enunciado.",
+    tags: ["entrevista", "rapport", "clínica"]
+  },
+  "2026-ii-psicologia-q075": {
+    explanation: "Entre las opciones, el consumo de alcohol es el único factor que se asocia con mayor riesgo de desarrollar diabetes mellitus tipo 2. Control glucémico, adherencia a la dieta y actividad física corresponden a conductas de control o protección.",
+    tags: ["diabetes", "factores de riesgo", "crónicas"]
+  },
+  "2026-i-psicologia-q028": {
+    explanation: "Las visitas domiciliarias a gestantes forman parte de las intervenciones psicosociales y psicoterapéuticas para evaluar el cuidado de la salud mental. Comunitaria, contextual y sistémica no completan el par que exige el enunciado.",
+    tags: ["gestación", "salud mental", "visita domiciliaria"]
+  },
+  "2025-i-psicologia-q093": {
+    explanation: "La atención primaria garantiza cobertura y accesibilidad con equidad a todos los individuos y familias de la comunidad. Limitar el acceso a un grupo o a una situación específica contradice ese principio.",
+    tags: ["APS", "equidad", "acceso"]
+  },
+  "2026-i-psicologia-q076": {
+    explanation: "Según la clave, el CEM, la Comisaría, la DEMUNA, el OMAPED y el CONADIS integran las redes comunitarias de salud mental terciarias, entendidas como instancias de articulación intersectorial. Las demás opciones nombran otros niveles de la red.",
+    tags: ["redes de salud mental", "aspectos legales", "intersectorialidad"]
+  },
+  "2025-i-psicologia-q097": {
+    explanation: "La sobrecorrección es la técnica que penaliza una conducta desadaptativa y cuyos componentes son la restitución y la práctica positiva. Coste de respuesta y castigo negativo o positivo no incluyen esos dos componentes.",
+    tags: ["terapia cognitivo conductual", "técnicas", "clínica"]
+  },
+  "2026-ii-psicologia-q042": {
+    explanation: "La prevención combinada en poblaciones de alto riesgo de adquirir VIH integra paquetes de intervención conductual y biomédica. Farmacológico y control, laboratorio y médico, y atención y seguimiento no describen ese paquete.",
+    tags: ["VIH", "prevención combinada", "ITS"]
+  },
+  "2026-ii-psicologia-q023": {
+    explanation: "La vigilancia de factores de riesgo por exposición a metales pesados y otras sustancias químicas se desarrolla mediante vigilancia sanitaria y epidemiológica. Médica y laboratorial, intercultural y tradicional, y especializada e integral no corresponden a ese tipo de vigilancia.",
+    tags: ["metales pesados", "vigilancia", "salud ambiental"]
+  },
+  "2026-ii-psicologia-q016": {
+    explanation: "Los talleres para estimular oportunamente a las niñas y niños se enmarcan en los lineamientos de promoción de la salud infantil. Prevención, competencia e intervención no completan el par con del niño o infantil que pide el enunciado.",
+    tags: ["desarrollo infantil", "promoción", "curso de vida"]
+  },
+  "2026-ii-psicologia-q020": {
+    explanation: "La consejería en lactancia materna se inicia desde el embarazo, y las gestantes conocen su importancia y manejo a partir de las 32 semanas. Las demás cifras no corresponden a ese momento según la clave.",
+    tags: ["lactancia materna", "gestación", "consejería"]
+  },
+  "2026-i-psicologia-q034": {
+    explanation: "Los ambientes acondicionados como lactario forman parte de los cuidados comunitarios en el periodo prenatal, que abarca la etapa preconcepcional y el antes, durante y después del embarazo. Locales, individuales y familiares no describen ese nivel de cuidado.",
+    tags: ["lactario", "prenatal", "cuidado integral"]
+  },
+  "2026-i-psicologia-q063": {
+    explanation: "Después de la vacunación se debe mantener un periodo de reposo y observación de 30 minutos. Las opciones de 10, 15 y 20 minutos resultan insuficientes para ese lapso.",
+    tags: ["vacunación", "efectos adversos", "prevención"]
+  },
+  "2026-i-psicologia-q100": {
+    explanation: "Las intervenciones individuales, familiares y comunitarias basadas en evidencia corresponden al componente de prestación del Modelo de Cuidado Integral. Financiamiento, gestión y organización son los otros componentes del modelo.",
+    tags: ["MCI", "componentes", "cuidado integral"]
+  },
+  "2026-i-psicologia-q005": {
+    explanation: "El traslado del usuario de un establecimiento de menor a mayor capacidad resolutiva es la referencia. La contrarreferencia hace el camino inverso, y atención compartida y atención primaria no describen ese procedimiento.",
+    tags: ["referencia", "continuidad", "APS"]
+  },
+  "2026-i-psicologia-q073": {
+    explanation: "Las actividades orientadas a disminuir la sintomatología y mejorar la calidad de vida del usuario y su cuidador pertenecen al componente clínico de la continuidad de cuidados. Psicosocial, de gestión y emocional no corresponden a ese componente.",
+    tags: ["continuidad de cuidados", "clínica", "salud mental"]
+  },
+  "2026-ii-psicologia-q051": {
+    explanation: "Dentro de la prevención combinada, el componente conductual se ejemplifica con la consejería pre test y de reducción de riesgos. Vacunación contra hepatitis B, acceso a preservativos y manejo de ITS son intervenciones biomédicas.",
+    tags: ["VIH", "prevención combinada", "consejería"]
+  },
+  "2026-i-psicologia-q075": {
+    explanation: "En el paquete de cuidado integral del adolescente, la consejería en salud mental es un factor protector. Psicológico, biológico y de riesgo no expresan esa función dentro del paquete.",
+    tags: ["adolescencia", "factores protectores", "salud mental"]
+  },
+  "2025-i-psicologia-q033": {
+    explanation: "Las personas con problemas de salud mental, alcoholismo, farmacodependencia, trastornos psiquiátricos y violencia familiar tienen derecho a la recuperación, rehabilitación y promoción de su salud mental. Las demás opciones omiten alguno de esos componentes.",
+    tags: ["derechos", "salud mental", "recuperación"]
+  },
+  "2026-ii-psicologia-q064": {
+    explanation: "El conjunto ordenado de procedimientos asistenciales y administrativos que envía al usuario desde la comunidad o IPRESS a otra de mayor capacidad resolutiva es el sistema de referencia y contrarreferencia. Admisión integral, aseguramiento universal y catálogo de procedimientos no describen ese flujo.",
+    tags: ["referencia", "contrarreferencia", "gestión"]
+  },
+  "2026-i-psicologia-q011": {
+    explanation: "La relación de alianza y colaboración entre psicólogo y paciente que se compenetra en el proceso de atención se denomina rapport. Empatía es una actitud, y exceso de curiosidad o romper el hielo no definen esa alianza.",
+    tags: ["rapport", "entrevista", "clínica"]
+  },
+  "2025-i-psicologia-q054": {
+    explanation: "Convertir la entrevista diagnóstica en una larga lista de preguntas la vuelve mecánica y disminuye el rapport con el paciente. La conversación, la continuidad y el tema principal no son lo que se pierde según el enunciado.",
+    tags: ["entrevista", "rapport", "clínica"]
+  },
+  "2026-i-psicologia-q018": {
+    explanation: "En el paquete integral de salud de la mujer adulta, las atenciones preventivas incluyen el despistaje de sífilis, VIH/SIDA y cáncer de cérvix. Identificación de maltrato, atención de violencia familiar y tratamiento de daños prevalentes son atenciones de otra naturaleza.",
+    tags: ["paquete adulto", "tamizaje", "mujer"]
+  },
+  "2026-i-psicologia-q023": {
+    explanation: "La evaluación continua del recién nacido hospitalizado cuya madre tuvo ITU o ITS corresponde a una vigilancia de IAAS selectiva, dirigida a pacientes con condiciones específicas. Pasiva, activa y focalizada no describen ese seguimiento dirigido.",
+    tags: ["IAAS", "neonatal", "vigilancia"]
+  },
+  "2026-i-psicologia-q030": {
+    explanation: "Ante un niño de 2 años que llora toda la noche y no responde a estímulos corresponde aplicar el M-CHAT-R, tamizaje de autismo en la primera infancia. SQR18 y PHQ-9 tamizan salud mental en adultos, y NNA no es un instrumento de tamizaje.",
+    tags: ["tamizaje", "autismo", "primera infancia"]
+  },
+  "2026-ii-psicologia-q030": {
+    explanation: "Según la clave, la atención por nutricionista en el primer nivel corresponde al establecimiento I-4. Los niveles I-1, I-2 e I-3 no incluyen a ese profesional en su cartera.",
+    tags: ["nutrición", "niveles de atención", "anemia"]
+  },
+  "2026-ii-psicologia-q035": {
+    explanation: "El derecho del usuario a contar con una segunda opinión médica corresponde al acceso a los servicios de salud. Consentimiento informado, atención y recuperación en salud y acceso a la información son otros derechos.",
+    tags: ["derechos del usuario", "acceso", "ética"]
+  },
+
+  /* ---------------- Área III · Ética e interculturalidad ---------------- */
+  "2025-i-psicologia-q036": {
+    explanation: "Costumbres, preferencias, gustos, vestidos, creencias y tabúes son manifestaciones de los patrones culturales. Deontología profesional, medicina tradicional e interculturalidad nombran otros conceptos.",
+    tags: ["cultura", "patrones culturales", "interculturalidad"]
+  },
+  "2025-i-psicologia-q026": {
+    explanation: "El código de ética de la función pública incluye el principio de veracidad junto con respeto, probidad, eficiencia, idoneidad, lealtad y obediencia, justicia y equidad, y lealtad al Estado de derecho. Compromiso, puntualidad y progreso no completan esa lista.",
+    tags: ["ética pública", "principios", "función pública"]
+  },
+  "2025-i-psicologia-q086": {
+    explanation: "Los principios del código de ética del Colegio de Psicólogos del Perú en materia de aspectos legales son probidad, idoneidad y profesionalismo. Las demás combinaciones incluyen términos que no forman parte de esa tríada.",
+    tags: ["deontología", "colegio de psicólogos", "aspectos legales"]
+  },
+  "2026-ii-psicologia-q012": {
+    explanation: "La situación en la que todas las personas pueden ejercer sus derechos, aprovechar sus habilidades y tomar ventaja de las oportunidades de su medio define la inclusión social. Identidad cultural, programa social y salud intercultural nombran otros conceptos.",
+    tags: ["inclusión social", "derechos", "interculturalidad"]
+  },
+  "2025-i-psicologia-q012": {
+    explanation: "La pertinencia intercultural en la atención del parto incorpora, por ejemplo, el parto vertical y el uso de plantas medicinales. Internamiento, parto convencional y aborto no corresponden a esa incorporación.",
+    tags: ["parto vertical", "interculturalidad", "salud materna"]
+  },
+  "2026-i-psicologia-q007": {
+    explanation: "Una gestante migrante quechua hablante tiene derecho a servicios de salud con adecuación cultural para el parto vertical. Acompañamiento de familia, traductor de idioma original y presencia solo de pareja no agotan ese derecho.",
+    tags: ["adecuación cultural", "parto vertical", "derechos"]
+  },
+  "2026-ii-psicologia-q077": {
+    explanation: "La norma técnica de promoción del parto vertical con enfoque intercultural considera el acceso a la población alto andina y amazónica. Contacto piel a piel, seguimiento de la gestante y control del post parto son otras medidas de atención.",
+    tags: ["parto vertical", "interculturalidad", "norma técnica"]
+  },
+  "2025-i-psicologia-q076": {
+    explanation: "El psicólogo debe rechazar toda orden o disposición que obligue a contravenir las normas de la ética y la deontología profesional. Compromiso, función y competencia no completan la fórmula del código.",
+    tags: ["deontología", "ética", "tratamiento de usuarios"]
+  },
+  "2026-i-psicologia-q014": {
+    explanation: "Explicar con claridad los procedimientos y obtener el consentimiento informado respeta la autonomía del paciente. Justicia, beneficencia y maleficencia aluden a otros principios.",
+    tags: ["consentimiento informado", "autonomía", "bioética"]
+  },
+  "2026-i-psicologia-q041": {
+    explanation: "La equidad, la solidaridad social y el derecho al grado máximo de salud sin distinción corresponden a un sistema sanitario basado en la atención primaria de salud. Las opciones complementaria, integrada y secundaria no nombran ese fundamento.",
+    tags: ["APS", "equidad", "valores"]
+  },
+  "2026-ii-psicologia-q017": {
+    explanation: "La metodología que facilita el acuerdo y la articulación entre los representantes del sistema biomédico y de la medicina tradicional se denomina diálogo intercultural en salud. Medicina popular, promoción de la interculturalidad y salud intercultural nombran otros conceptos.",
+    tags: ["diálogo intercultural", "medicina tradicional", "interculturalidad"]
+  },
+  "2026-i-psicologia-q097": {
+    explanation: "Mencionar el diagnóstico de TBC en la sala de espera frente a otros usuarios expone información clínica y vulnera la confidencialidad. Privacidad se refiere al espacio físico, y autonomía y transparencia a otros derechos.",
+    tags: ["confidencialidad", "derechos del paciente", "ética"]
+  },
+  "2025-i-psicologia-q067": {
+    explanation: "Consultar a la paciente si desea entregar la placenta a sus familiares respeta el enfoque intercultural y mejora el acceso a los servicios de salud. Medicina tradicional, recuperación y acceso a centros comunales no expresan ese efecto.",
+    tags: ["interculturalidad", "parto", "acceso"]
+  },
+  "2026-ii-psicologia-q082": {
+    explanation: "Informar con claridad quiénes atenderán a la paciente y qué procedimientos recibirá, y solicitarlo, corresponde al consentimiento informado. Carta de pertinencia cultural, decreto legal y carta informativa no cumplen esa función.",
+    tags: ["consentimiento informado", "violencia de género", "ética"]
+  },
+  "2026-i-psicologia-q066": {
+    explanation: "Frente a la indiferencia y la discriminación, la respuesta es brindar un trato digno y humanizado. Aceptar la condición del paciente, indicar dónde debe tomar asiento o disimular el rechazo no corrigen la conducta.",
+    tags: ["trato digno", "discriminación", "ética"]
+  },
+  "2026-ii-psicologia-q099": {
+    explanation: "Incluir la práctica de la curandera en el plan de tratamiento mientras se trabaja con pensamientos y habilidades sociales es un ejemplo de interculturalidad en salud. Medicina tradicional y alternativa describen las prácticas, y diálogo intercultural el proceso, no el principio aplicado.",
+    tags: ["interculturalidad", "medicina tradicional", "adolescencia"]
+  },
+  "2026-ii-psicologia-q081": {
+    explanation: "Informar sobre la evolución, los riesgos y los beneficios para que el paciente pueda determinar en consecuencia corresponde al principio de autonomía. Confidencialidad, humanitarismo y veracidad no incluyen la capacidad de decisión del paciente.",
+    tags: ["autonomía", "bioética", "información"]
+  },
+
+  /* ---------------- Área IV · Investigación ---------------- */
+  "2026-ii-psicologia-q085": {
+    explanation: "El consentimiento informado es el primer indicador de mayor atención en la ética de la investigación. Discusión, metodología e interculturalidad corresponden a otras partes o enfoques del estudio.",
+    tags: ["ética de la investigación", "consentimiento informado", "investigación"]
+  },
+  "2025-i-psicologia-q024": {
+    explanation: "El uso de test estandarizados con buena validez y confiabilidad y la contrastación de hipótesis son características de la investigación cuantitativa. Mixta, cualitativa y correlacional nombran enfoques o diseños que no reúnen ambos rasgos.",
+    tags: ["investigación cuantitativa", "método", "validez"]
+  },
+  "2026-i-psicologia-q029": {
+    explanation: "Al validar un cuestionario se consideran fiabilidad, viabilidad y consistencia interna; la aplicabilidad no figura entre esas características. Por eso es la opción que el enunciado pide como no considerada.",
+    tags: ["validación", "instrumentos", "metodología"]
+  },
+  "2026-ii-psicologia-q049": {
+    explanation: "Comparar la eficacia de dos tratamientos en niños con anemia perniciosa implica analizar la relación entre intervención y resultado, propio de un estudio analítico. Descriptiva, prospectiva y predictiva no describen esa comparación.",
+    tags: ["diseño de estudio", "analítico", "metodología"]
+  },
+  "2026-i-psicologia-q036": {
+    explanation: "La entrevista permite recoger información sobre exposiciones anteriores y actuales directamente de la persona. La observación y sus variantes no recuperan con la misma precisión las exposiciones pasadas.",
+    tags: ["recolección de datos", "entrevista", "metodología"]
+  },
+  "2026-ii-psicologia-q021": {
+    explanation: "Cuando el investigador selecciona las unidades muestrales según su propio criterio, el muestreo es no probabilístico. Aleatorio simple, por conglomerados y sistemático se basan en el azar.",
+    tags: ["muestreo", "no probabilístico", "metodología"]
+  },
+  "2026-ii-psicologia-q028": {
+    explanation: "La parte del informe que condensa toda la información de la investigación y tiene un límite de palabras es el resumen. Conclusiones, discusión e introducción cumplen otras funciones.",
+    tags: ["informe de investigación", "resumen", "publicación"]
+  },
+  "2026-ii-psicologia-q043": {
+    explanation: "Determinar la prevalencia de un problema de salud para identificar su utilidad es un estudio descriptivo. Analítico, experimental y predictivo buscan relaciones causales, intervención o pronóstico.",
+    tags: ["diseño descriptivo", "prevalencia", "metodología"]
+  },
+  "2026-i-psicologia-q092": {
+    explanation: "Junto con el nivel de medición de las variables y el diseño de investigación, el análisis de datos depende del tipo de hipótesis formulada. Diseño de los objetivos, estadístico utilizado y resultado hallado no completan esa tríada.",
+    tags: ["análisis de datos", "hipótesis", "metodología"]
+  },
+  "2026-i-psicologia-q009": {
+    explanation: "Entregar cepillos dentales a unos participantes y no a otros introduce una diferencia no justificada en la distribución de beneficios y vulnera la justicia. Respeto, maleficencia y autonomía aluden a otros principios.",
+    tags: ["ética de la investigación", "justicia", "investigación"]
+  },
+  "2026-i-psicologia-q037": {
+    explanation: "La fase en la que se determina cómo analizar los datos y qué herramientas estadísticas son adecuadas es el análisis de datos. Discusión, introducción y resultados cumplen otras funciones.",
+    tags: ["análisis de datos", "fases", "metodología"]
+  },
+  "2026-ii-psicologia-q054": {
+    explanation: "Analizar y reagrupar las expresiones que reflejan la realidad estudiada es propio de la investigación cualitativa. Cuantitativa, mixta y experiencial no describen ese tratamiento de los datos.",
+    tags: ["investigación cualitativa", "datos narrativos", "metodología"]
+  },
+  "2025-i-psicologia-q055": {
+    explanation: "La investigación cualitativa busca comprender un fenómeno mediante la recolección intensiva de datos narrativos, mientras la cuantitativa predice o controla con datos numéricos. Las demás parejas invierten o mezclan esas definiciones.",
+    tags: ["enfoques", "cualitativa", "cuantitativa"]
+  },
+  "2026-ii-psicologia-q026": {
+    explanation: "Un cuestionario estructurado aplicado a los participantes es un instrumento de recolección de datos. Prueba de normalidad, propiedades psicométricas y métodos de confiabilidad son análisis o atributos del instrumento, no el instrumento.",
+    tags: ["instrumentos", "cuestionario", "recolección de datos"]
+  },
+  "2026-i-psicologia-q050": {
+    explanation: "Los estudios sobre tamizaje falso positivo en cáncer de mama muestran ansiedad y estrés en las mujeres afectadas. Sosiego y silencio, afonía y tranquilidad, y angustia y euforia no corresponden a esos hallazgos.",
+    tags: ["tamizaje", "cáncer de mama", "impacto psicológico"]
+  },
+  "2026-i-psicologia-q010": {
+    explanation: "Calcular el número de individuos a partir de la variabilidad o varianza del parámetro que se desea estimar es un procedimiento del enfoque cuantitativo. Cualitativo, mixto y prospectivo no describen ese cálculo.",
+    tags: ["tamaño de muestra", "enfoque cuantitativo", "metodología"]
+  },
+  "2026-i-psicologia-q059": {
+    explanation: "Para medir variables que incluyen la perspectiva del paciente sobre su calidad de vida, los instrumentos más indicados son las entrevistas y los cuestionarios. Registros existentes, observación y registro por el paciente y familiar tienen otras limitaciones.",
+    tags: ["instrumentos", "calidad de vida", "recolección de datos"]
+  },
+  "2026-i-psicologia-q002": {
+    explanation: "Priorizar el cuidado de los participantes y de la vida, usar debidamente el consentimiento informado, los instrumentos y los protocolos, y respetar la diversidad corresponde al respeto de estándares en la investigación. Prohibición del plagio, responsabilidad científica y presentación de resultados son aspectos puntuales o distintos.",
+    tags: ["ética de la investigación", "estándares", "consentimiento informado"]
+  },
+
+  /* ---------------- Área V · Gestión de servicios ---------------- */
+  "2026-ii-psicologia-q046": {
+    explanation: "La programación del Plan Operativo Institucional corresponde a la unidad ejecutora. Establecimiento de salud, zona sanitaria y área sanitaria son instancias de otra naturaleza.",
+    tags: ["POI", "unidad ejecutora", "planificación"]
+  },
+  "2026-i-psicologia-q093": {
+    explanation: "Para garantizar el adecuado desempeño de los recursos humanos se debe considerar sus competencias. Virtudes, valores y caracteres no expresan el criterio de desempeño.",
+    tags: ["recursos humanos", "competencias", "gestión"]
+  },
+  "2026-i-psicologia-q094": {
+    explanation: "El número de historia clínica de una persona de nacionalidad peruana se determina con el Documento Nacional de Identidad. Pasaporte y carnet de extranjería se usan en otras condiciones migratorias, y el número de ingreso no identifica a la persona.",
+    tags: ["historia clínica", "admisión", "gestión"]
+  },
+  "2026-i-psicologia-q055": {
+    explanation: "La misión es la razón de ser de la entidad y está estrechamente alineada con sus objetivos. FODA, política de calidad y visión cumplen otras funciones en la gestión.",
+    tags: ["misión", "herramientas de gestión", "planificación"]
+  },
+  "2026-i-psicologia-q099": {
+    explanation: "El conjunto de creencias, costumbres y valores de una organización es su cultura organizacional. Organización laboral, clima organizacional y sistema de salud nombran otros conceptos.",
+    tags: ["cultura organizacional", "organización", "gestión"]
+  },
+  "2025-i-psicologia-q070": {
+    explanation: "Los valores, prácticas compartidas, líderes, normas y comunicación son elementos de la cultura organizacional. Clima, directiva y visión organizacional no agrupan esos elementos.",
+    tags: ["cultura organizacional", "organización", "gestión"]
+  },
+  "2026-ii-psicologia-q083": {
+    explanation: "En una unidad ejecutora, la oficina que coordina, ejecuta y diseña los programas de fortalecimiento de capacidades del capital humano es Recursos humanos. Organización y racionalización, planeamiento estratégico y desarrollo institucional tienen otras funciones.",
+    tags: ["recursos humanos", "unidad ejecutora", "capacitación"]
+  },
+  "2025-i-psicologia-q060": {
+    explanation: "En el ciclo de planeamiento estratégico, la fase 3 es la encargada del diseño de objetivos y acciones estratégicas sectoriales. Las fases 1, 2 y 4 cumplen otras etapas del ciclo.",
+    tags: ["planeamiento estratégico", "fases", "gestión"]
+  },
+  "2025-i-psicologia-q095": {
+    explanation: "Al encontrar dos medicamentos vencidos en el inventario de farmacia se informa al responsable para su baja respectiva. Considerarlos en el stock, sustituirlos o eliminarlos por cuenta propia no corresponde al procedimiento.",
+    tags: ["inventario", "medicamentos", "administración"]
+  },
+  "2026-ii-psicologia-q092": {
+    explanation: "Antes de la atención de un menor de edad se solicitan y consignan en la historia clínica los datos del padre o apoderado, como parte de la admisión integral. Boleta de pago, financiamiento de la prestación y motivo de consulta no cumplen esa función.",
+    tags: ["admisión", "historia clínica", "gestión"]
+  },
+  "2026-i-psicologia-q042": {
+    explanation: "La imagen sugerente del futuro de la organización corresponde a la visión, que el enunciado presenta junto con los valores que la sostienen. Planeamiento, valores y misión no expresan esa proyección.",
+    tags: ["visión", "herramientas de gestión", "planificación"]
+  },
+  "2025-i-psicologia-q008": {
+    explanation: "La auditoría interna la realiza el propio establecimiento, mientras la externa la ejecuta una instancia superior, otra IPRESS o un comité especial. Las demás parejas de términos no corresponden a esa distinción.",
+    tags: ["auditoría", "calidad", "gestión"]
+  },
+  "2026-i-psicologia-q016": {
+    explanation: "Cuando un equipo de trabajo construye y comparte su misión, visión y valores se está generando cultura organizacional. Calidad de servicios, mejora continua y capacidad resolutiva nombran otros conceptos.",
+    tags: ["cultura organizacional", "equipos", "calidad"]
+  },
+  "2025-i-psicologia-q032": {
+    explanation: "La adecuación de la encuesta y la preparación técnica de la medición del clima organizacional forman parte de la fase de planificación. Evaluación, seguimiento e intervención son fases posteriores.",
+    tags: ["clima organizacional", "medición", "planificación"]
+  },
+  "2026-i-psicologia-q031": {
+    explanation: "En la administración de los servicios de salud, la ausencia de trabajo colaborativo contribuye a explicar la duplicidad de recursos tecnológicos y humanos en una localidad. Disponibilidad de servicios esenciales, liderazgo y mejora de la calidad no se derivan de esa ausencia.",
+    tags: ["trabajo colaborativo", "administración", "recursos"]
+  },
+  "2026-ii-psicologia-q060": {
+    explanation: "El POI es el documento donde se ajustan las metas físicas y las actividades operativas por cambios del entorno o por nuevas disposiciones del ejecutivo o legislativo. ASIS, PSL y PEI cumplen otras funciones.",
+    tags: ["POI", "programación", "gestión"]
+  },
+  "2025-i-psicologia-q096": {
+    explanation: "El MOF describe funciones específicas a nivel de cargo o puesto de trabajo, a partir de la estructura orgánica y de las funciones del ROF. Compuestas, integradas y flexibles no corresponden a esa descripción.",
+    tags: ["MOF", "organización", "documentos de gestión"]
+  },
+  "2026-ii-psicologia-q003": {
+    explanation: "La auditoría de calidad de atención en salud está diseñada para proteger los derechos de los usuarios, con mecanismos y plazos concretos de respuesta. Deberes, servicios e intereses no nombran lo que se protege.",
+    tags: ["auditoría", "calidad", "derechos"]
+  },
+  "2026-ii-psicologia-q045": {
+    explanation: "Responder qué quiero, a quién dirigirme, para qué estoy, a dónde quiero ir, cómo y cuándo corresponde a la visión institucional. Valor, misión y objetivo responden a otras preguntas de la gestión.",
+    tags: ["visión", "herramientas de gestión", "planificación"]
+  },
+  "2026-ii-psicologia-q047": {
+    explanation: "Acordar con los involucrados el plan de implementación de las recomendaciones, con objetivos, metas, plazos y responsabilidades, corresponde al seguimiento de las recomendaciones. Planeamiento, informe final y autoevaluación son otras etapas de la auditoría.",
+    tags: ["auditoría", "seguimiento", "calidad"]
+  },
+  "2025-i-psicologia-q041": {
+    explanation: "Proyectar al centro de salud como líder en atención primaria para el año 2026 constituye la visión de la institución. Meta, estrategia y misión no describen una proyección a futuro.",
+    tags: ["visión", "planificación", "gestión"]
+  },
+  "2026-i-psicologia-q081": {
+    explanation: "El sistema administrativo de gestión de recursos humanos promueve las relaciones humanas y sociales mediante los procesos de seguridad y salud en el trabajo. Evaluación del desempeño, administración de compensaciones e inducción en el puesto corresponden a otros procesos.",
+    tags: ["recursos humanos", "seguridad y salud en el trabajo", "gestión"]
+  },
+  "2026-i-psicologia-q032": {
+    explanation: "La necesidad de personal técnico para cumplir las metas programadas de visitas domiciliarias se atiende en el plan operativo. Plan de salud local, presupuesto por resultados y plan estratégico tienen otro alcance.",
+    tags: ["plan operativo", "recursos humanos", "planificación"]
+  },
+  "2025-i-psicologia-q045": {
+    explanation: "La asistencia técnica, supervisión y capacitación para mejorar las intervenciones clínicas en salud mental en establecimientos no especializados es una actividad del centro de salud mental comunitario. Instituto nacional y coordinaciones de la DIRESA o de la RIS cumplen otras funciones.",
+    tags: ["salud mental", "CSMC", "asistencia técnica"]
+  },
+  "2026-ii-psicologia-q036": {
+    explanation: "En el modelo de Redes Integradas de Salud, el equipo multidisciplinario de médico, enfermera, obstetra y técnico en enfermería constituye la puerta de entrada. Vinculantes, área sanitaria y zona sanitaria nombran otras instancias.",
+    tags: ["RIS", "equipo multidisciplinario", "organización"]
+  }
+};

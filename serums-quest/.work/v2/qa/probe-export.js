@@ -1,0 +1,20 @@
+'use strict';
+const fs = require('fs');
+const path = require('path');
+const { open, sleep } = require('./cdp-lib');
+const save = JSON.parse(fs.readFileSync(path.join(__dirname, 'save-world-empty.json'), 'utf8'));
+let S = null;
+(async () => {
+  const s = await open({ port: 9374, width: 1280, height: 720, gpu: true, bundle: path.join(__dirname, '..', '..', '..', 'export', 'serums-quest.html') });
+  S = s;
+  await s.seed(save);
+  if (await s.ev("!!document.querySelector('[data-action=menu-continue]')")) await s.click('[data-action="menu-continue"]', 900);
+  if (await s.ev("!!document.querySelector('[data-action=backup-off]')")) await s.click('[data-action="backup-off"]', 200);
+  const version = await s.ev("(document.querySelector('.settingsVersionLine,.titleVersion,.titleTop')||{}).textContent || window.__gameState && document.title");
+  const stats = await s.ev('window.__V2.world.stats().counts');
+  await s.ev("window.__V2.world.interact('v2w-chest-salud-publica')"); await sleep(400);
+  const panel = await s.ev("!!document.querySelector('.v2-world-overlay.is-open')");
+  await s.shot(path.join(__dirname, '..', 'evidence', 'export-check.png'));
+  console.log(JSON.stringify({ version: version, stats: stats, panel: panel, title: await s.ev('document.title'), errors: s.errors.slice(0,10), network: s.requests.filter(u=>!/^(file|data|blob):/.test(u)) }, null, 2));
+  await s.close();
+})().catch((e) => { console.error(e); if (S) S.close(); process.exit(1); });

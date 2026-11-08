@@ -1,0 +1,532 @@
+/* =========================================================================
+   SERUMS QUEST · V2.1 · PARTE 7 — DUELO ADAPTATIVO (Agente 4)
+   -------------------------------------------------------------------------
+   Panel acoplado (abajo en vertical / lateral derecho en horizontal), cámara
+   encuadrada en el área libre y contracción a barra mínima durante el golpe.
+
+   Reglas de ocupación:
+   - Vertical (retrato): el panel ocupa como máximo el 40 % del alto de la
+     pantalla. La cámara reserva ese 40 % + padding + separación.
+   - Horizontal (apaisado): hoja lateral de 300-480 px (38 % del ancho, tope
+     480 px) desde debajo del HUD superior. La cámara encuadra en el resto.
+   - Zonas táctiles: mínimo 44-48 px de alto en alternativas.
+   - Todo usa variables del Observatorio; sin imágenes.
+   ========================================================================= */
+
+/* ---------- Sonda de safe-area (la lee part7-duel.js) ---------- */
+.v2d-safe-probe {
+  position: fixed;
+  left: -2px;
+  top: -2px;
+  width: 1px;
+  height: 1px;
+  padding: env(safe-area-inset-top, 0px) env(safe-area-inset-right, 0px) env(safe-area-inset-bottom, 0px) env(safe-area-inset-left, 0px);
+  visibility: hidden;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* ---------- Variables de escala del panel ---------- */
+body.v2d-duel {
+  --v2d-q-size: 16px;
+  --v2d-answer-size: 11px;
+  --v2d-answer-min: 46px;
+  --v2d-head-size: 8.5px;
+  --v2d-pad-x: 16px;
+  --v2d-gap: 8px;
+}
+body.v2d-duel.v2d-compact {
+  --v2d-q-size: 14px;
+  --v2d-answer-size: 10.5px;
+  --v2d-answer-min: 44px;
+  --v2d-head-size: 8px;
+  --v2d-pad-x: 12px;
+  --v2d-gap: 6px;
+}
+body.v2d-duel.v2d-tiny {
+  --v2d-q-size: 13px;
+  --v2d-answer-size: 10px;
+  --v2d-answer-min: 42px;
+  --v2d-head-size: 7.5px;
+  --v2d-pad-x: 10px;
+  --v2d-gap: 5px;
+}
+body.v2d-duel.v2d-large {
+  --v2d-q-size: 17px;
+  --v2d-answer-size: 11.5px;
+  --v2d-answer-min: 48px;
+  --v2d-pad-x: 18px;
+}
+body.v2d-duel.text-large {
+  --v2d-q-size: 17px;
+  --v2d-answer-size: 12px;
+}
+body.v2d-duel.text-large.v2d-compact {
+  --v2d-q-size: 15px;
+  --v2d-answer-size: 11px;
+}
+
+/* ---------- HUD superior: nunca sobre el duelo ---------- */
+body.v2d-duel .duelTop {
+  padding-top: max(13px, calc(env(safe-area-inset-top, 0px) + 6px));
+  padding-right: max(18px, calc(env(safe-area-inset-right, 0px) + 12px));
+  padding-left: max(18px, calc(env(safe-area-inset-left, 0px) + 12px));
+  gap: 10px;
+}
+body.v2d-duel.v2d-compact .duelTop {
+  padding-top: max(8px, calc(env(safe-area-inset-top, 0px) + 4px));
+  padding-right: max(10px, calc(env(safe-area-inset-right, 0px) + 8px));
+  padding-bottom: 8px;
+  padding-left: max(10px, calc(env(safe-area-inset-left, 0px) + 8px));
+  gap: 7px;
+}
+body.v2d-duel .duelChip {
+  min-width: 0;
+  padding: 7px 10px;
+  gap: 8px;
+}
+body.v2d-duel .duelChip > div {
+  min-width: 0;
+}
+body.v2d-duel .duelChip small,
+body.v2d-duel .duelChip b {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+body.v2d-duel.v2d-compact .duelChip {
+  max-width: min(56vw, 340px);
+  padding: 6px 9px;
+  gap: 7px;
+  border-radius: 10px;
+}
+body.v2d-duel.v2d-compact .duelChip small {
+  font-size: 7.5px;
+}
+body.v2d-duel.v2d-compact .duelChip b {
+  font-size: 12px;
+}
+body.v2d-duel.v2d-compact .duelChip .areaGlyph {
+  width: 22px;
+  height: 22px;
+  border-radius: 6px;
+  font-size: 11px;
+}
+body.v2d-duel.v2d-tiny .duelChip small {
+  display: none;
+}
+body.v2d-duel .duelHearts {
+  gap: 6px;
+}
+body.v2d-duel.v2d-compact .duelHearts {
+  gap: 4px;
+}
+body.v2d-duel .duelHearts .heartRow {
+  gap: 3px;
+}
+body.v2d-duel .duelHearts .iconBtn,
+body.v2d-duel .duelTop .iconBtn {
+  flex: none;
+}
+body.v2d-duel.v2d-compact .duelTop .iconBtn {
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  min-height: 34px;
+}
+/* En compacto se ocultan recursos duplicados o secundarios del HUD. */
+body.v2d-duel.v2d-compact .duelCoins,
+body.v2d-duel.v2d-tiny .duelCoins,
+body.v2d-duel.v2d-tiny .duelProgress {
+  display: none;
+}
+body.v2d-duel .duelHudExtra {
+  display: none;
+}
+body.v2d-duel.v2d-large.v2d-dock-side .duelHudExtra {
+  display: flex;
+  top: max(64px, calc(env(safe-area-inset-top, 0px) + 58px));
+  right: calc(clamp(300px, 40vw, 480px) + 22px);
+  max-width: min(58vw, 700px);
+}
+body.v2d-duel .duelStatus {
+  display: none;
+}
+/* El duelo sí está diseñado para vertical (panel inferior). El aviso global
+   «gira el dispositivo» taparía por completo ese layout; se oculta solo
+   mientras dura el duelo y vuelve a mostrarse fuera de él. */
+body.v2d-duel #rotatePrompt {
+  display: none !important;
+}
+
+/* ---------- Panel: base común ---------- */
+body.v2d-duel .duelPanelWrap {
+  position: fixed;
+  z-index: 36;
+  display: flex;
+  pointer-events: none;
+}
+body.v2d-duel .duelPanel {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+  overflow: hidden;
+  transition: height 130ms cubic-bezier(0.2, 0.7, 0.2, 1),
+              max-height 130ms cubic-bezier(0.2, 0.7, 0.2, 1),
+              border-radius 130ms ease;
+}
+body.v2d-duel .duelPanel::before {
+  z-index: 1;
+}
+body.v2d-duel .duelPanelHead {
+  flex: 0 0 auto;
+  padding: 10px var(--v2d-pad-x) 0;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+body.v2d-duel .duelPanelHead .qCategory {
+  min-width: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: var(--v2d-head-size);
+}
+body.v2d-duel .duelPanelHead .qSource {
+  margin-left: auto;
+  font-size: 8px;
+}
+body.v2d-duel .duelPanelHead .tagButtons {
+  margin-left: auto;
+  flex: 0 0 auto;
+}
+body.v2d-duel .duelPanelBody {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 8px var(--v2d-pad-x) 12px;
+  overflow: auto;
+  overscroll-behavior: contain;
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-y;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+body.v2d-duel .questionText {
+  flex: 0 0 auto;
+  margin: 0;
+  color: #f0f2f9;
+  font-family: var(--font-serif);
+  font-size: var(--v2d-q-size);
+  line-height: 1.34;
+  letter-spacing: -0.005em;
+  max-height: 150px;
+  overflow: auto;
+  padding-right: 4px;
+  overscroll-behavior: contain;
+  touch-action: pan-y;
+  scrollbar-width: thin;
+  scrollbar-color: var(--line-strong) transparent;
+}
+body.v2d-duel.v2d-q-scroll .questionText {
+  -webkit-mask-image: linear-gradient(180deg, #000 82%, transparent 100%);
+  mask-image: linear-gradient(180deg, #000 82%, transparent 100%);
+}
+body.v2d-duel .answers {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--v2d-gap);
+  margin-top: 8px;
+}
+body.v2d-duel .answerBtn {
+  align-items: center;
+  min-height: var(--v2d-answer-min);
+  padding: 7px 9px;
+  gap: 7px;
+  font-size: var(--v2d-answer-size);
+  line-height: 1.3;
+  touch-action: manipulation;
+}
+body.v2d-duel .answerBtn .answerKey {
+  width: 20px;
+  height: 20px;
+  font-size: 8.5px;
+}
+body.v2d-duel.v2d-touch .answerBtn {
+  min-height: max(var(--v2d-answer-min), 46px);
+}
+body.v2d-duel .duelFoot {
+  flex: 0 0 auto;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+  min-height: 0;
+}
+body.v2d-duel .duelFoot .hint {
+  font-size: 8px;
+}
+body.v2d-duel.v2d-compact .duelFoot .hint,
+body.v2d-duel.v2d-touch .duelFoot .hint {
+  display: none;
+}
+body.v2d-duel.v2d-compact.v2d-hints-only .duelFoot,
+body.v2d-duel.v2d-touch.v2d-hints-only .duelFoot {
+  display: none;
+}
+body.v2d-duel .feedbackStrip {
+  gap: 8px;
+  padding: 7px 9px;
+  font-size: 10px;
+}
+body.v2d-duel.v2d-compact .feedbackStrip {
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding: 6px 8px;
+  font-size: 9.5px;
+}
+body.v2d-duel.v2d-compact .feedbackText {
+  line-height: 1.38;
+}
+body.v2d-duel.v2d-compact .feedbackText span {
+  font-size: 8px;
+  line-height: 1.35;
+}
+body.v2d-duel.v2d-compact .feedbackIcon {
+  width: 20px;
+  height: 20px;
+}
+body.v2d-duel.v2d-compact .nextBtn {
+  margin-left: auto;
+  min-height: 38px;
+  padding: 6px 10px;
+  font-size: 10px;
+}
+body.v2d-duel.v2d-compact .duelPanelHead {
+  flex-wrap: nowrap;
+}
+body.v2d-duel.v2d-compact .tagBtn {
+  gap: 0;
+  min-width: 30px;
+  min-height: 28px;
+  padding: 4px 6px;
+  font-size: 0;
+  line-height: 0;
+  justify-content: center;
+}
+body.v2d-duel.v2d-tiny .tagBtn {
+  gap: 0;
+  padding: 4px 5px;
+  font-size: 0;
+  line-height: 0;
+}
+body.v2d-duel.v2d-compact .duelPanelHead .chip--generated,
+body.v2d-duel.v2d-tiny .duelPanelHead .chip--generated {
+  display: none;
+}
+/* Pantallas de poca altura (móvil apaisado): cabecera en una sola línea.
+   Las etiquetas y la fuente de la pregunta son secundarias aquí. */
+body.v2d-duel.v2d-short .duelPanelHead {
+  flex-wrap: nowrap;
+  padding-top: 7px;
+  padding-bottom: 0;
+  gap: 6px;
+}
+body.v2d-duel.v2d-short .duelPanelHead .qCategory {
+  flex: 1 1 auto;
+}
+body.v2d-duel.v2d-short .duelPanelHead .tagButtons,
+body.v2d-duel.v2d-short .duelPanelHead .chip--generated,
+body.v2d-duel.v2d-short .duelPanelHead .qSource {
+  display: none;
+}
+/* Tipografía de emergencia para apaisado bajo (~295-390 px de alto):
+   prioriza que las 4 alternativas queden dentro del panel; la pregunta
+   conserva su propio scroll interno. */
+body.v2d-duel.v2d-short {
+  --v2d-q-size: 12.5px;
+  --v2d-answer-size: 9.5px;
+  --v2d-answer-min: 42px;
+  --v2d-head-size: 7.5px;
+  --v2d-pad-x: 10px;
+  --v2d-gap: 5px;
+}
+body.v2d-duel.v2d-short .duelPanelHead {
+  padding-top: 6px;
+}
+body.v2d-duel.v2d-short .duelPanelBody {
+  padding: 6px 10px 8px;
+}
+body.v2d-duel.v2d-short .questionText {
+  max-height: 4.4em;
+  font-size: 12.5px;
+  line-height: 1.28;
+}
+body.v2d-duel.v2d-short .answers {
+  margin-top: 6px;
+  gap: 5px;
+}
+body.v2d-duel.v2d-short .answerBtn {
+  gap: 5px;
+  padding: 5px 7px;
+  line-height: 1.26;
+}
+body.v2d-duel.v2d-short .answerBtn .answerKey {
+  width: 18px;
+  height: 18px;
+  font-size: 8px;
+}
+body.v2d-duel.v2d-short.v2d-dock-side .duelPanelWrap {
+  width: clamp(300px, 42vw, 480px);
+}
+body.v2d-duel.v2d-short.v2d-dock-side .duelPanel {
+  border-radius: 14px 0 0 14px;
+}
+
+/* ---------- Acople inferior (retrato) ---------- */
+body.v2d-duel.v2d-dock-bottom .duelPanelWrap {
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: auto;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 0 max(8px, env(safe-area-inset-right, 0px)) calc(max(8px, env(safe-area-inset-bottom, 0px)) + 2px) max(8px, env(safe-area-inset-left, 0px));
+}
+body.v2d-duel.v2d-dock-bottom .duelPanel {
+  width: min(1080px, 100%);
+  height: var(--v2d-panel-h, auto);
+  max-height: var(--v2d-panel-max-h, 40vh);
+  max-height: var(--v2d-panel-max-h, 40svh);
+}
+body.v2d-duel.v2d-dock-bottom .questionText {
+  max-height: clamp(80px, 16svh, 190px);
+}
+body.v2d-duel.v2d-dock-bottom.v2d-tiny .questionText {
+  max-height: 72px;
+}
+
+/* ---------- Acople lateral derecho (apaisado) ---------- */
+body.v2d-duel.v2d-dock-side .duelPanelWrap {
+  top: var(--v2d-top-hud, calc(env(safe-area-inset-top, 0px) + 64px));
+  right: 0;
+  bottom: 0;
+  left: auto;
+  width: clamp(300px, 40vw, 480px);
+  align-items: flex-end;
+  justify-content: flex-end;
+  padding: 0 max(8px, env(safe-area-inset-right, 0px)) calc(max(8px, env(safe-area-inset-bottom, 0px)) + 2px) 0;
+}
+body.v2d-duel.v2d-dock-side .duelPanel {
+  width: 100%;
+  height: var(--v2d-panel-h, auto);
+  max-height: 100%;
+  border-radius: 16px 0 0 16px;
+}
+body.v2d-duel.v2d-dock-side .questionText {
+  max-height: clamp(64px, 20svh, 160px);
+}
+body.v2d-duel.v2d-dock-side .duelPanelBody {
+  padding-bottom: 14px;
+}
+/* La fuente bibliográfica es secundaria cuando no hay espacio: se oculta en
+   compacto, en lateral y en pantallas bajas (sigue en el informe final). */
+body.v2d-duel.v2d-compact .duelPanelHead .qSource,
+body.v2d-duel.v2d-dock-side .duelPanelHead .qSource {
+  display: none;
+}
+
+/* ---------- Feedback abierto: ceder altura a la explicación ---------- */
+body.v2d-duel.v2d-feedback-open .questionText {
+  max-height: 2.6em;
+}
+
+/* ---------- Contracción durante el golpe ---------- */
+body.v2d-duel .v2d-duel-bar {
+  display: none;
+  flex: 0 0 auto;
+  align-items: center;
+  gap: 10px;
+  min-height: 52px;
+  margin-top: auto;
+  padding: 0 calc(var(--v2d-pad-x) + 2px);
+  color: var(--muted);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body.v2d-duel .v2d-duel-barDot {
+  width: 8px;
+  height: 8px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent, var(--blue));
+  box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent, var(--blue)) 45%, transparent);
+  animation: v2dDuelPulse 900ms ease-out infinite;
+}
+body.v2d-duel.v2d-attacking .duelPanel {
+  height: 52px !important;
+  max-height: 52px !important;
+}
+body.v2d-duel.v2d-attacking .duelPanelHead,
+body.v2d-duel.v2d-attacking .duelPanelBody {
+  display: none !important;
+}
+body.v2d-duel.v2d-attacking .v2d-duel-bar {
+  display: flex;
+}
+body.v2d-duel.v2d-attacking.v2d-dock-side .duelPanelWrap {
+  align-items: flex-end;
+}
+body.v2d-duel.v2d-attacking.v2d-dock-side .duelPanel {
+  border-radius: 16px 0 0 16px;
+}
+@keyframes v2dDuelPulse {
+  0% { box-shadow: 0 0 0 0 color-mix(in srgb, var(--accent, var(--blue)) 45%, transparent); opacity: 1; }
+  70% { box-shadow: 0 0 0 9px transparent; opacity: 0.65; }
+  100% { box-shadow: 0 0 0 0 transparent; opacity: 1; }
+}
+
+/* ---------- Pantallas muy bajas / muy estrechas ---------- */
+@media (max-height: 340px) {
+  body.v2d-duel.v2d-short.v2d-dock-side .duelPanelWrap {
+    width: clamp(280px, 44vw, 420px);
+  }
+  body.v2d-duel .v2d-duel-bar {
+    min-height: 46px;
+  }
+  body.v2d-duel.v2d-attacking .duelPanel {
+    height: 46px !important;
+    max-height: 46px !important;
+  }
+}
+
+/* ---------- Accesibilidad / contraste ---------- */
+body.v2d-duel.text-large .questionText {
+  line-height: 1.4;
+}
+body.v2d-duel.text-large .answers {
+  grid-template-columns: 1fr;
+}
+body.v2d-duel.high-contrast .duelPanel,
+body.v2d-duel.high-contrast .duelTop {
+  border-color: var(--line-strong);
+}
+body.v2d-duel .duelPanel:focus-within {
+  outline: none;
+}
+
+/* Reduce motion: el cambio de altura es funcional, se vuelve instantáneo
+   por la regla global de styles.css; aquí solo se apaga el pulso decorativo. */
+@media (prefers-reduced-motion: reduce) {
+  body.v2d-duel .v2d-duel-barDot {
+    animation: none;
+  }
+  body.v2d-duel .duelPanel {
+    transition: none;
+  }
+}

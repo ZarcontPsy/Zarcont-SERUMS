@@ -116,7 +116,7 @@
     }
   },
   "rules": {
-    "version": "Versión final completa",
+    "version": "V2.2 · Tienda 3D e interfaz",
     "seed": 41,
     "worldRadius": 9.2,
     "heroSpeed": 4.5,
@@ -143,7 +143,7 @@
       "amber": "#f3b562",
       "rose": "#ff8b9d"
     },
-    "buildDate": "2026-11-06"
+    "buildDate": "2026-11-07"
   },
   "style": "voxel 3D de fantasía académica, observatorio nocturno de islas flotantes, paleta obsidiana con acentos azul, verde agua, violeta, lima y ámbar, iluminación suave y atmosférica",
   "orientation": "landscape"

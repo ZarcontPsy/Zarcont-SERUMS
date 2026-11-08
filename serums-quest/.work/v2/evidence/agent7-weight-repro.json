@@ -1,0 +1,115 @@
+{
+  "startedAt": "2026-11-06T13:29:43.124Z",
+  "steps": [
+    {
+      "label": "tras cambiar calidad (sin tocar pesos)",
+      "saveQuality": "bajo",
+      "saveWeights": {
+        "campaign": 0.6,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "settingsKey": {
+        "quality": "bajo",
+        "weights": {
+          "campaign": 0.6,
+          "dashboard": 0.15,
+          "flashcards": 0.25
+        }
+      },
+      "rawSettingsKey": {
+        "length": 317,
+        "head": "{\"sound\":false,\"ambient\":false,\"muted\":false,\"volume\":0.7,\"reducedMotion\":false,\"extraTime\":false,\"effectsQuality\":\"bajo\",\"qualityChosen\":true,\"hide3dFrames\":false,\"textScale\":\"normal\",\"highContrast\":false,\"tutorialSeen\":true,\"backupReminde"
+      },
+      "uiWeights": {
+        "campaign": 0.6,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "htmlWeight": {
+        "matched": true,
+        "value": 0.6,
+        "snippet": "<section class=\"panel settingsPanel settingsPanel--wide v2-feedback-settings\" da"
+      },
+      "storageKeys": [
+        "serumsquest:snapshot:v1",
+        "serumsquest:voxel:settings:v1",
+        "serumsquest:voxel:state:v1"
+      ]
+    },
+    {
+      "label": "tras cambiar peso Campaña a 70 %",
+      "saveQuality": "bajo",
+      "saveWeights": {
+        "campaign": 0.7,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "settingsKey": {
+        "quality": "bajo",
+        "weights": {
+          "campaign": 0.7,
+          "dashboard": 0.15,
+          "flashcards": 0.25
+        }
+      },
+      "rawSettingsKey": {
+        "length": 317,
+        "head": "{\"sound\":false,\"ambient\":false,\"muted\":false,\"volume\":0.7,\"reducedMotion\":false,\"extraTime\":false,\"effectsQuality\":\"bajo\",\"qualityChosen\":true,\"hide3dFrames\":false,\"textScale\":\"normal\",\"highContrast\":false,\"tutorialSeen\":true,\"backupReminde"
+      },
+      "uiWeights": {
+        "campaign": 0.7,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "htmlWeight": {
+        "matched": true,
+        "value": 0.7,
+        "snippet": "<section class=\"panel settingsPanel settingsPanel--wide v2-feedback-settings\" da"
+      },
+      "storageKeys": [
+        "serumsquest:snapshot:v1",
+        "serumsquest:voxel:settings:v1",
+        "serumsquest:voxel:state:v1"
+      ]
+    },
+    {
+      "label": "tras recargar y abrir Ajustes",
+      "saveQuality": "bajo",
+      "saveWeights": {
+        "campaign": 0.7,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "settingsKey": {
+        "quality": "bajo",
+        "weights": {
+          "campaign": 0.7,
+          "dashboard": 0.15,
+          "flashcards": 0.25
+        }
+      },
+      "rawSettingsKey": {
+        "length": 317,
+        "head": "{\"sound\":false,\"ambient\":false,\"muted\":false,\"volume\":0.7,\"reducedMotion\":false,\"extraTime\":false,\"effectsQuality\":\"bajo\",\"qualityChosen\":true,\"hide3dFrames\":false,\"textScale\":\"normal\",\"highContrast\":false,\"tutorialSeen\":true,\"backupReminde"
+      },
+      "uiWeights": {
+        "campaign": 0.7,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      },
+      "htmlWeight": {
+        "matched": true,
+        "value": 0.7,
+        "snippet": "<section class=\"panel settingsPanel settingsPanel--wide v2-feedback-settings\" da"
+      },
+      "storageKeys": [
+        "serumsquest:snapshot:v1",
+        "serumsquest:voxel:settings:v1",
+        "serumsquest:voxel:state:v1"
+      ]
+    }
+  ],
+  "screenshot": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-weight-repro.png",
+  "reproduced": false
+}

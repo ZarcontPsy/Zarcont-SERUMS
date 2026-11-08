@@ -1,0 +1,2050 @@
+{
+  "at": "2026-11-06T12:24:08.901Z",
+  "saveKey": "serumsquest:voxel:state:v1",
+  "snapshotKey": "serumsquest:snapshot:v1",
+  "file": {
+    "scenario": "file://",
+    "hubUrl": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/index.html",
+    "open": {
+      "hubUrl": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/index.html",
+      "hubPanelBefore": {
+        "empty": true,
+        "value": "—",
+        "note": "Sin actividad registrada todavía",
+        "bar": "scaleX(0)",
+        "lastHidden": true,
+        "lastText": ""
+      },
+      "selectedAfterFirstClick": true,
+      "gameUrl": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+      "tutorial": true,
+      "skippedTutorial": true,
+      "title": "SERUMS QUEST"
+    },
+    "play": {
+      "answers": [
+        {
+          "index": 0,
+          "qid": "2026-i-psicologia-q056",
+          "answer": "B",
+          "saveXp": 10,
+          "answered": 1,
+          "snapXp": 10,
+          "snapLevel": 1,
+          "gameXp": 10
+        },
+        {
+          "index": 1,
+          "qid": "2026-ii-psicologia-q059",
+          "answer": "D",
+          "saveXp": 20,
+          "answered": 2,
+          "snapXp": 20,
+          "snapLevel": 1,
+          "gameXp": 20
+        },
+        {
+          "index": 2,
+          "qid": "2025-i-psicologia-q009",
+          "answer": "D",
+          "saveXp": 30,
+          "answered": 3,
+          "snapXp": 30,
+          "snapLevel": 1,
+          "gameXp": 30
+        },
+        {
+          "index": 3,
+          "qid": "2025-i-psicologia-q025",
+          "answer": "D",
+          "saveXp": 40,
+          "answered": 4,
+          "snapXp": 40,
+          "snapLevel": 1,
+          "gameXp": 40
+        },
+        {
+          "index": 4,
+          "qid": "2026-i-psicologia-q065",
+          "answer": "D",
+          "saveXp": 50,
+          "answered": 5,
+          "snapXp": 50,
+          "snapLevel": 1,
+          "gameXp": 50
+        }
+      ],
+      "initialXp": 0,
+      "mission": {
+        "id": "mission-sp-1",
+        "title": "Ronda comunitaria",
+        "total": 5,
+        "questionIds": [
+          "2026-i-psicologia-q056",
+          "2026-ii-psicologia-q059",
+          "2025-i-psicologia-q009",
+          "2025-i-psicologia-q025",
+          "2026-i-psicologia-q065"
+        ]
+      },
+      "afterFirstAnswer": {
+        "save": {
+          "schema": 2,
+          "appVersion": "Versión final completa",
+          "createdAt": "2026-11-06T12:24:13.385Z",
+          "updatedAt": "2026-11-06T12:24:15.694Z",
+          "profile": {
+            "name": "Serumista",
+            "createdAt": "2026-11-06T12:24:13.385Z"
+          },
+          "xp": 10,
+          "coins": 1,
+          "stage": 1,
+          "academic": {
+            "answered": 1,
+            "correct": 1,
+            "wrong": 0,
+            "totalTimeMs": 315,
+            "sessions": 0,
+            "byArea": {
+              "area-psi-salud-publica": {
+                "answered": 1,
+                "correct": 1,
+                "wrong": 0,
+                "totalTimeMs": 315,
+                "reliableAnswered": 1,
+                "reliableCorrect": 1,
+                "reliableWrong": 0
+              },
+              "area-psi-cuidado-integral": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-etica": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-investigacion": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-gestion": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              }
+            },
+            "recent": [
+              {
+                "at": "2026-11-06T12:24:15.692Z",
+                "correct": true,
+                "areaId": "area-psi-salud-publica",
+                "confidence": "media",
+                "durationMs": 315,
+                "mode": "mission"
+              }
+            ]
+          },
+          "questions": {
+            "2026-i-psicologia-q056": {
+              "attempts": 1,
+              "correct": 1,
+              "wrong": 0,
+              "mastery": 1,
+              "streak": 1,
+              "bestStreak": 1,
+              "lastResult": "correct",
+              "lastAttemptAt": "2026-11-06T12:24:15.692Z",
+              "lastCorrectAt": "2026-11-06T12:24:15.692Z",
+              "firstCorrectAt": "2026-11-06T12:24:15.692Z",
+              "recoveryLevel": 0,
+              "nextReviewAt": "2026-11-07T12:24:15.692Z",
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "lastSessionId": "duel-mw4y54b5-ji1np"
+            }
+          },
+          "questionTags": {},
+          "errors": {},
+          "missions": {},
+          "achievements": {},
+          "collection": {
+            "ownedCharacterIds": [
+              "ilan"
+            ],
+            "ownedCosmeticIds": [],
+            "selectedCharacterId": "ilan",
+            "equipped": {}
+          },
+          "daily": {
+            "lastCompletedDate": null,
+            "streak": 0,
+            "bestStreak": 0,
+            "totalCompleted": 0,
+            "graceWeek": null
+          },
+          "reviews": {
+            "lastCompletedDate": null,
+            "completed": 0,
+            "onTimeSessions": 0,
+            "earlySessions": 0
+          },
+          "settings": {
+            "sound": false,
+            "ambient": false,
+            "muted": false,
+            "volume": 0.7,
+            "reducedMotion": false,
+            "extraTime": false,
+            "effectsQuality": "medio",
+            "qualityChosen": false,
+            "hide3dFrames": false,
+            "textScale": "normal",
+            "highContrast": false,
+            "tutorialSeen": true,
+            "backupReminder": true
+          },
+          "modeStats": {
+            "dailyDate": null,
+            "claims": {},
+            "dailyWins": 0,
+            "survivalWins": 0,
+            "survivalBest": 0,
+            "timedRuns": 0,
+            "timedBest": 0,
+            "timedAce": 0,
+            "simulacros": 0,
+            "simulacroHistory": []
+          },
+          "backup": {
+            "lastExportedAt": null,
+            "lastPromptAt": null
+          },
+          "importedFrom": null,
+          "importedAt": null,
+          "events": [],
+          "counters": {
+            "date": "2026-11-06",
+            "coins": 1,
+            "xp": 10,
+            "sessions": 0
+          }
+        },
+        "snap": {
+          "version": "Versión final completa",
+          "schemaVersion": 2,
+          "updatedAt": "2026-11-06T12:24:15.694Z",
+          "level": 1,
+          "levelPercent": 12.5,
+          "xp": 10,
+          "xpToNext": 70,
+          "coins": 1,
+          "rank": "Bachiller",
+          "rankColor": "#AEB6C8",
+          "stage": 1,
+          "stageName": "Iniciación",
+          "answered": 1,
+          "accuracy": 100,
+          "missions": 0,
+          "bosses": 0,
+          "mastered": 0,
+          "streak": 0,
+          "hasActivity": true,
+          "selectedCharacterId": "ilan",
+          "selectedCharacterName": "Ilan Vega",
+          "selectedCharacterTitle": "Brújula del Alba",
+          "selectedCharacterRarity": "inicial",
+          "charactersOwned": 1,
+          "charactersTotal": 10,
+          "cosmeticsOwned": 0,
+          "lastSession": null
+        },
+        "game": {
+          "phase": "playing",
+          "paused": false,
+          "screen": "duel",
+          "mode": "mission",
+          "score": 100,
+          "best": 0,
+          "hearts": 3,
+          "fps": 74,
+          "time": 1,
+          "hero": {
+            "x": 157.55,
+            "y": -64.35
+          },
+          "pickups": [],
+          "enemies": [
+            {
+              "x": 162.45,
+              "y": -64.45
+            }
+          ],
+          "world": {
+            "w": 28,
+            "h": 28,
+            "radius": 9.2
+          },
+          "heroOnScreen": true,
+          "level": 1,
+          "xp": 10,
+          "coins": 1,
+          "stage": 1,
+          "missionsCompleted": 0,
+          "dueReviews": 0,
+          "selectedCharacterId": "ilan",
+          "activeMissionId": "mission-sp-1",
+          "questionIndex": 0,
+          "questionTotal": 5,
+          "feedbackOpen": true,
+          "lastResultPass": null,
+          "renderer": "webgl"
+        }
+      },
+      "finalGame": {
+        "phase": "won",
+        "paused": false,
+        "screen": "result",
+        "mode": "mission",
+        "score": 500,
+        "best": 500,
+        "hearts": 3,
+        "fps": 75,
+        "time": 0,
+        "hero": {
+          "x": 157.55,
+          "y": -64.35
+        },
+        "pickups": [],
+        "enemies": [
+          {
+            "x": 162.45,
+            "y": -64.45
+          }
+        ],
+        "world": {
+          "w": 28,
+          "h": 28,
+          "radius": 9.2
+        },
+        "heroOnScreen": true,
+        "level": 2,
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "missionsCompleted": 1,
+        "dueReviews": 0,
+        "selectedCharacterId": "ilan",
+        "activeMissionId": "mission-sp-1",
+        "questionIndex": null,
+        "questionTotal": null,
+        "feedbackOpen": false,
+        "lastResultPass": true,
+        "renderer": "webgl"
+      },
+      "finalSave": {
+        "schema": 2,
+        "appVersion": "Versión final completa",
+        "createdAt": "2026-11-06T12:24:13.385Z",
+        "updatedAt": "2026-11-06T12:24:20.330Z",
+        "profile": {
+          "name": "Serumista",
+          "createdAt": "2026-11-06T12:24:13.385Z"
+        },
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "academic": {
+          "answered": 5,
+          "correct": 5,
+          "wrong": 0,
+          "totalTimeMs": 3378,
+          "sessions": 1,
+          "byArea": {
+            "area-psi-salud-publica": {
+              "answered": 5,
+              "correct": 5,
+              "wrong": 0,
+              "totalTimeMs": 3378,
+              "reliableAnswered": 5,
+              "reliableCorrect": 5,
+              "reliableWrong": 0
+            },
+            "area-psi-cuidado-integral": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-etica": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-investigacion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-gestion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            }
+          },
+          "recent": [
+            {
+              "at": "2026-11-06T12:24:15.692Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 315,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:16.766Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 762,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:17.845Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 766,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:18.933Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 768,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:20.013Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 767,
+              "mode": "mission"
+            }
+          ],
+          "lastResultAt": "2026-11-06T12:24:20.329Z"
+        },
+        "questions": {
+          "2026-i-psicologia-q056": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:15.692Z",
+            "lastCorrectAt": "2026-11-06T12:24:15.692Z",
+            "firstCorrectAt": "2026-11-06T12:24:15.692Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:15.692Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2026-ii-psicologia-q059": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:16.766Z",
+            "lastCorrectAt": "2026-11-06T12:24:16.766Z",
+            "firstCorrectAt": "2026-11-06T12:24:16.766Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:16.766Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2025-i-psicologia-q009": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:17.845Z",
+            "lastCorrectAt": "2026-11-06T12:24:17.845Z",
+            "firstCorrectAt": "2026-11-06T12:24:17.845Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:17.845Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2025-i-psicologia-q025": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:18.933Z",
+            "lastCorrectAt": "2026-11-06T12:24:18.933Z",
+            "firstCorrectAt": "2026-11-06T12:24:18.933Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:18.933Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2026-i-psicologia-q065": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:20.013Z",
+            "lastCorrectAt": "2026-11-06T12:24:20.013Z",
+            "firstCorrectAt": "2026-11-06T12:24:20.013Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:20.013Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          }
+        },
+        "questionTags": {},
+        "errors": {},
+        "missions": {
+          "mission-sp-1": {
+            "id": "mission-sp-1",
+            "kind": "mission",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "completedAt": "2026-11-06T12:24:20.329Z",
+            "bestScore": 500,
+            "bestAccuracy": 1,
+            "lastAt": "2026-11-06T12:24:20.329Z",
+            "lastScore": 500,
+            "lastAccuracy": 1,
+            "passedAt": "2026-11-06T12:24:20.329Z"
+          }
+        },
+        "achievements": {
+          "primer-paso": {
+            "unlockedAt": "2026-11-06T12:24:20.329Z",
+            "xp": 20,
+            "coins": 5
+          },
+          "primera-mision": {
+            "unlockedAt": "2026-11-06T12:24:20.329Z",
+            "xp": 30,
+            "coins": 10
+          }
+        },
+        "collection": {
+          "ownedCharacterIds": [
+            "ilan"
+          ],
+          "ownedCosmeticIds": [
+            "x-titulo-primer-paso",
+            "x-titulo-en-ruta"
+          ],
+          "selectedCharacterId": "ilan",
+          "equipped": {}
+        },
+        "daily": {
+          "lastCompletedDate": "2026-11-06",
+          "streak": 1,
+          "bestStreak": 1,
+          "totalCompleted": 1,
+          "graceWeek": null
+        },
+        "reviews": {
+          "lastCompletedDate": null,
+          "completed": 0,
+          "onTimeSessions": 0,
+          "earlySessions": 0
+        },
+        "settings": {
+          "sound": false,
+          "ambient": false,
+          "muted": false,
+          "volume": 0.7,
+          "reducedMotion": false,
+          "extraTime": false,
+          "effectsQuality": "medio",
+          "qualityChosen": false,
+          "hide3dFrames": false,
+          "textScale": "normal",
+          "highContrast": false,
+          "tutorialSeen": true,
+          "backupReminder": true
+        },
+        "modeStats": {
+          "dailyDate": null,
+          "claims": {},
+          "dailyWins": 0,
+          "survivalWins": 0,
+          "survivalBest": 0,
+          "timedRuns": 0,
+          "timedBest": 0,
+          "timedAce": 0,
+          "simulacros": 0,
+          "simulacroHistory": []
+        },
+        "backup": {
+          "lastExportedAt": null,
+          "lastPromptAt": null
+        },
+        "importedFrom": null,
+        "importedAt": null,
+        "events": [],
+        "counters": {
+          "date": "2026-11-06",
+          "coins": 28,
+          "xp": 130,
+          "sessions": 0
+        },
+        "activeSession": null
+      },
+      "finalSnapshot": {
+        "version": "Versión final completa",
+        "schemaVersion": 2,
+        "updatedAt": "2026-11-06T12:24:20.330Z",
+        "level": 2,
+        "levelPercent": 38.5,
+        "xp": 130,
+        "xpToNext": 80,
+        "coins": 28,
+        "rank": "Bachiller",
+        "rankColor": "#AEB6C8",
+        "stage": 1,
+        "stageName": "Iniciación",
+        "answered": 5,
+        "accuracy": 100,
+        "missions": 1,
+        "bosses": 0,
+        "mastered": 0,
+        "streak": 1,
+        "hasActivity": true,
+        "selectedCharacterId": "ilan",
+        "selectedCharacterName": "Ilan Vega",
+        "selectedCharacterTitle": "Brújula del Alba",
+        "selectedCharacterRarity": "inicial",
+        "charactersOwned": 1,
+        "charactersTotal": 10,
+        "cosmeticsOwned": 2,
+        "lastSession": {
+          "id": "mission-sp-1",
+          "mode": "mission",
+          "title": "Ronda comunitaria",
+          "endedAt": "2026-11-06T12:24:20.329Z",
+          "score": 500,
+          "accuracy": 1
+        }
+      },
+      "resultText": "DUELO DE CRITERIO · SALUD PÚBLICA\nLa ruta queda sellada.\n\nRonda comunitaria · 5 de 5 respuestas correctas.\n\n100%\nPRECISIÓN\n5\nACIERTOS\n0\nFALLOS\n50\nXP DE RESPUESTAS\n28\nMONEDAS\nRuta superada. Misión superada: la ruta queda registrada.\nNivel 1 → 2 · Bachiller\n\nNo hay repasos pendientes por ahora.\n\nCosméticos nuevos: Primer"
+    },
+    "returnHub": {
+      "backUrl": "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/index.html",
+      "panel": {
+        "empty": false,
+        "value": "Nv 2",
+        "note": "Bachiller · 130 XP · 5 respuestas",
+        "bar": "scaleX(0.385)",
+        "lastHidden": false,
+        "lastText": "Ronda comunitaria"
+      }
+    },
+    "hubAfterReload": {
+      "empty": false,
+      "value": "Nv 2",
+      "note": "Bachiller · 130 XP · 5 respuestas",
+      "bar": "scaleX(0.385)",
+      "lastHidden": false,
+      "lastText": "Ronda comunitaria"
+    },
+    "gameAfterReload": {
+      "snapshot": {
+        "version": "Versión final completa",
+        "schemaVersion": 2,
+        "updatedAt": "2026-11-06T12:24:24.691Z",
+        "level": 2,
+        "levelPercent": 38.5,
+        "xp": 130,
+        "xpToNext": 80,
+        "coins": 28,
+        "rank": "Bachiller",
+        "rankColor": "#AEB6C8",
+        "stage": 1,
+        "stageName": "Iniciación",
+        "answered": 5,
+        "accuracy": 100,
+        "missions": 1,
+        "bosses": 0,
+        "mastered": 0,
+        "streak": 1,
+        "hasActivity": true,
+        "selectedCharacterId": "ilan",
+        "selectedCharacterName": "Ilan Vega",
+        "selectedCharacterTitle": "Brújula del Alba",
+        "selectedCharacterRarity": "inicial",
+        "charactersOwned": 1,
+        "charactersTotal": 10,
+        "cosmeticsOwned": 2,
+        "lastSession": {
+          "id": "mission-sp-1",
+          "mode": "mission",
+          "title": "Ronda comunitaria",
+          "endedAt": "2026-11-06T12:24:20.329Z",
+          "score": 500,
+          "accuracy": 1
+        }
+      },
+      "save": {
+        "schema": 2,
+        "appVersion": "Versión final completa",
+        "createdAt": "2026-11-06T12:24:13.385Z",
+        "updatedAt": "2026-11-06T12:24:20.330Z",
+        "profile": {
+          "name": "Serumista",
+          "createdAt": "2026-11-06T12:24:13.385Z"
+        },
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "academic": {
+          "answered": 5,
+          "correct": 5,
+          "wrong": 0,
+          "totalTimeMs": 3378,
+          "sessions": 1,
+          "byArea": {
+            "area-psi-salud-publica": {
+              "answered": 5,
+              "correct": 5,
+              "wrong": 0,
+              "totalTimeMs": 3378,
+              "reliableAnswered": 5,
+              "reliableCorrect": 5,
+              "reliableWrong": 0
+            },
+            "area-psi-cuidado-integral": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-etica": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-investigacion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-gestion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            }
+          },
+          "recent": [
+            {
+              "at": "2026-11-06T12:24:15.692Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 315,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:16.766Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 762,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:17.845Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 766,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:18.933Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 768,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:20.013Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 767,
+              "mode": "mission"
+            }
+          ],
+          "lastResultAt": "2026-11-06T12:24:20.329Z"
+        },
+        "questions": {
+          "2026-i-psicologia-q056": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:15.692Z",
+            "lastCorrectAt": "2026-11-06T12:24:15.692Z",
+            "firstCorrectAt": "2026-11-06T12:24:15.692Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:15.692Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2026-ii-psicologia-q059": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:16.766Z",
+            "lastCorrectAt": "2026-11-06T12:24:16.766Z",
+            "firstCorrectAt": "2026-11-06T12:24:16.766Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:16.766Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2025-i-psicologia-q009": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:17.845Z",
+            "lastCorrectAt": "2026-11-06T12:24:17.845Z",
+            "firstCorrectAt": "2026-11-06T12:24:17.845Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:17.845Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2025-i-psicologia-q025": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:18.933Z",
+            "lastCorrectAt": "2026-11-06T12:24:18.933Z",
+            "firstCorrectAt": "2026-11-06T12:24:18.933Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:18.933Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          },
+          "2026-i-psicologia-q065": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:20.013Z",
+            "lastCorrectAt": "2026-11-06T12:24:20.013Z",
+            "firstCorrectAt": "2026-11-06T12:24:20.013Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:20.013Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y54b5-ji1np"
+          }
+        },
+        "questionTags": {},
+        "errors": {},
+        "missions": {
+          "mission-sp-1": {
+            "id": "mission-sp-1",
+            "kind": "mission",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "completedAt": "2026-11-06T12:24:20.329Z",
+            "bestScore": 500,
+            "bestAccuracy": 1,
+            "lastAt": "2026-11-06T12:24:20.329Z",
+            "lastScore": 500,
+            "lastAccuracy": 1,
+            "passedAt": "2026-11-06T12:24:20.329Z"
+          }
+        },
+        "achievements": {
+          "primer-paso": {
+            "unlockedAt": "2026-11-06T12:24:20.329Z",
+            "xp": 20,
+            "coins": 5
+          },
+          "primera-mision": {
+            "unlockedAt": "2026-11-06T12:24:20.329Z",
+            "xp": 30,
+            "coins": 10
+          }
+        },
+        "collection": {
+          "ownedCharacterIds": [
+            "ilan"
+          ],
+          "ownedCosmeticIds": [
+            "x-titulo-primer-paso",
+            "x-titulo-en-ruta"
+          ],
+          "selectedCharacterId": "ilan",
+          "equipped": {}
+        },
+        "daily": {
+          "lastCompletedDate": "2026-11-06",
+          "streak": 1,
+          "bestStreak": 1,
+          "totalCompleted": 1,
+          "graceWeek": null
+        },
+        "reviews": {
+          "lastCompletedDate": null,
+          "completed": 0,
+          "onTimeSessions": 0,
+          "earlySessions": 0
+        },
+        "settings": {
+          "sound": false,
+          "ambient": false,
+          "muted": false,
+          "volume": 0.7,
+          "reducedMotion": false,
+          "extraTime": false,
+          "effectsQuality": "medio",
+          "qualityChosen": false,
+          "hide3dFrames": false,
+          "textScale": "normal",
+          "highContrast": false,
+          "tutorialSeen": true,
+          "backupReminder": true
+        },
+        "modeStats": {
+          "dailyDate": null,
+          "claims": {},
+          "dailyWins": 0,
+          "survivalWins": 0,
+          "survivalBest": 0,
+          "timedRuns": 0,
+          "timedBest": 0,
+          "timedAce": 0,
+          "simulacros": 0,
+          "simulacroHistory": []
+        },
+        "backup": {
+          "lastExportedAt": null,
+          "lastPromptAt": null
+        },
+        "importedFrom": null,
+        "importedAt": null,
+        "events": [],
+        "counters": {
+          "date": "2026-11-06",
+          "coins": 28,
+          "xp": 130,
+          "sessions": 0
+        },
+        "activeSession": null
+      },
+      "game": {
+        "phase": "title",
+        "paused": false,
+        "screen": "title",
+        "mode": "hub",
+        "score": 0,
+        "best": 500,
+        "hearts": 3,
+        "fps": 74,
+        "time": 0,
+        "hero": {
+          "x": 0,
+          "y": 3.3
+        },
+        "pickups": [],
+        "enemies": [],
+        "world": {
+          "w": 28,
+          "h": 28,
+          "radius": 9.2
+        },
+        "heroOnScreen": true,
+        "level": 2,
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "missionsCompleted": 1,
+        "dueReviews": 0,
+        "selectedCharacterId": "ilan",
+        "activeMissionId": null,
+        "questionIndex": null,
+        "questionTotal": null,
+        "feedbackOpen": false,
+        "lastResultPass": null,
+        "renderer": "webgl"
+      }
+    },
+    "hubAgain": {
+      "empty": false,
+      "value": "Nv 2",
+      "note": "Bachiller · 130 XP · 5 respuestas",
+      "bar": "scaleX(0.385)",
+      "lastHidden": false,
+      "lastText": "Ronda comunitaria"
+    },
+    "exportImport": {
+      "exportFile": "serums-quest-observatorio-2026-11-06.json",
+      "exported": {
+        "app": "SERUMS QUEST VOXEL",
+        "saveSchema": 2,
+        "xp": 130,
+        "name": "Serumista"
+      },
+      "afterImportSave": {
+        "schema": 2,
+        "appVersion": "Versión final completa",
+        "createdAt": "2026-11-06T12:24:29.540Z",
+        "updatedAt": "2026-11-06T12:24:29.852Z",
+        "profile": {
+          "name": "Offline QA",
+          "createdAt": "2026-11-06T12:24:29.540Z"
+        },
+        "xp": 1640,
+        "coins": 2510,
+        "stage": 3,
+        "academic": {
+          "answered": 42,
+          "correct": 33,
+          "wrong": 9,
+          "totalTimeMs": 0,
+          "sessions": 0,
+          "byArea": {
+            "area-psi-salud-publica": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-cuidado-integral": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-etica": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-investigacion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-gestion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            }
+          },
+          "recent": []
+        },
+        "questions": {},
+        "questionTags": {},
+        "errors": {
+          "2026-i-psicologia-q056": {
+            "questionId": "2026-i-psicologia-q056",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "recoveryLevel": 0,
+            "lastResult": "wrong",
+            "nextReviewAt": "2026-11-05T15:00:00.000Z",
+            "firstWrongAt": "2026-11-01T10:00:00.000Z"
+          },
+          "2026-ii-psicologia-q059": {
+            "questionId": "2026-ii-psicologia-q059",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "recoveryLevel": 0,
+            "lastResult": "wrong",
+            "nextReviewAt": "2026-11-05T15:01:00.000Z",
+            "firstWrongAt": "2026-11-01T10:00:00.000Z"
+          },
+          "2025-i-psicologia-q009": {
+            "questionId": "2025-i-psicologia-q009",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "recoveryLevel": 0,
+            "lastResult": "wrong",
+            "nextReviewAt": "2026-11-05T15:02:00.000Z",
+            "firstWrongAt": "2026-11-01T10:00:00.000Z"
+          }
+        },
+        "missions": {},
+        "achievements": {},
+        "collection": {
+          "ownedCharacterIds": [
+            "ilan",
+            "mara"
+          ],
+          "ownedCosmeticIds": [
+            "c-cabeza-gorro",
+            "c-cabeza-diadema",
+            "x-estela-racha",
+            "x-luciernaga-observatorio",
+            "x-buho-cometa"
+          ],
+          "selectedCharacterId": "ilan",
+          "equipped": {
+            "ilan": {
+              "cabeza": "c-cabeza-gorro"
+            }
+          }
+        },
+        "daily": {
+          "lastCompletedDate": "2026-11-05",
+          "streak": 8,
+          "bestStreak": 8,
+          "totalCompleted": 8,
+          "graceWeek": null
+        },
+        "reviews": {
+          "lastCompletedDate": null,
+          "completed": 0,
+          "onTimeSessions": 0,
+          "earlySessions": 0
+        },
+        "settings": {
+          "sound": false,
+          "ambient": false,
+          "muted": false,
+          "volume": 0.7,
+          "reducedMotion": false,
+          "extraTime": false,
+          "effectsQuality": "medio",
+          "qualityChosen": false,
+          "hide3dFrames": false,
+          "textScale": "normal",
+          "highContrast": false,
+          "tutorialSeen": false,
+          "backupReminder": true
+        },
+        "modeStats": {
+          "dailyDate": null,
+          "claims": {},
+          "dailyWins": 0,
+          "survivalWins": 0,
+          "survivalBest": 0,
+          "timedRuns": 0,
+          "timedBest": 0,
+          "timedAce": 0,
+          "simulacros": 0,
+          "simulacroHistory": []
+        },
+        "backup": {
+          "lastExportedAt": null,
+          "lastPromptAt": null
+        },
+        "importedFrom": "SERUMS QUEST 1.2.x",
+        "importedAt": "2026-11-06T12:24:29.541Z",
+        "events": []
+      },
+      "afterImportSnapshot": {
+        "version": "Versión final completa",
+        "schemaVersion": 2,
+        "updatedAt": "2026-11-06T12:24:29.852Z",
+        "level": 7,
+        "levelPercent": 1.5,
+        "xp": 1640,
+        "xpToNext": 670,
+        "coins": 2510,
+        "rank": "Bachiller",
+        "rankColor": "#AEB6C8",
+        "stage": 3,
+        "stageName": "Especialización",
+        "answered": 42,
+        "accuracy": 78.6,
+        "missions": 0,
+        "bosses": 0,
+        "mastered": 0,
+        "streak": 8,
+        "hasActivity": true,
+        "selectedCharacterId": "ilan",
+        "selectedCharacterName": "Ilan Vega",
+        "selectedCharacterTitle": "Brújula del Alba",
+        "selectedCharacterRarity": "inicial",
+        "charactersOwned": 2,
+        "charactersTotal": 10,
+        "cosmeticsOwned": 5,
+        "lastSession": null
+      },
+      "afterImportGame": {
+        "phase": "playing",
+        "paused": false,
+        "screen": "hub",
+        "mode": "hub",
+        "score": 0,
+        "best": 0,
+        "hearts": 3,
+        "fps": 75,
+        "time": 0,
+        "hero": {
+          "x": 0,
+          "y": 3.3
+        },
+        "pickups": [],
+        "enemies": [],
+        "world": {
+          "w": 28,
+          "h": 28,
+          "radius": 9.2
+        },
+        "heroOnScreen": true,
+        "level": 7,
+        "xp": 1640,
+        "coins": 2510,
+        "stage": 3,
+        "missionsCompleted": 0,
+        "dueReviews": 3,
+        "selectedCharacterId": "ilan",
+        "activeMissionId": null,
+        "questionIndex": null,
+        "questionTotal": null,
+        "feedbackOpen": false,
+        "lastResultPass": null,
+        "renderer": "webgl"
+      },
+      "afterImportText": "◈\nSERUMS\nOBSERVATORIO\nIlan Vega\nNv 7\nBachiller\n1.640 XP\nOBSERVATORIO DE LAS CINCO RUTAS\nObservatorio\n2.510\n3\nMAPA\nMEMORIA EN ESPERA\nTu repaso está listo.\n\n3 preguntas vuelven hoy. Un repaso breve consolida lo que falló.\n\nRepasar 3\nWASD\nmover\nE\ninteractuar\nM\nbi"
+    },
+    "hubAfterImport": {
+      "empty": false,
+      "value": "Nv 7",
+      "note": "Bachiller · 1640 XP · 42 respuestas",
+      "bar": "scaleX(0.015)",
+      "lastHidden": true,
+      "lastText": ""
+    },
+    "hubAfterImportReload": {
+      "empty": false,
+      "value": "Nv 7",
+      "note": "Bachiller · 1640 XP · 42 respuestas",
+      "bar": "scaleX(0.015)",
+      "lastHidden": true,
+      "lastText": ""
+    },
+    "errors": []
+  },
+  "http": {
+    "scenario": "http://",
+    "hubUrl": "http://127.0.0.1:8124/index.html",
+    "origin": "http://127.0.0.1:8124",
+    "open": {
+      "hubUrl": "http://127.0.0.1:8124/index.html",
+      "hubPanelBefore": {
+        "empty": true,
+        "value": "—",
+        "note": "Sin actividad registrada todavía",
+        "bar": "scaleX(0)",
+        "lastHidden": true,
+        "lastText": ""
+      },
+      "selectedAfterFirstClick": true,
+      "gameUrl": "http://127.0.0.1:8124/serums-quest/dist/index.html",
+      "tutorial": true,
+      "skippedTutorial": true,
+      "title": "SERUMS QUEST"
+    },
+    "play": {
+      "answers": [
+        {
+          "index": 0,
+          "qid": "2026-i-psicologia-q056",
+          "answer": "B",
+          "saveXp": 10,
+          "answered": 1,
+          "snapXp": 10,
+          "snapLevel": 1,
+          "gameXp": 10
+        },
+        {
+          "index": 1,
+          "qid": "2026-ii-psicologia-q059",
+          "answer": "D",
+          "saveXp": 20,
+          "answered": 2,
+          "snapXp": 20,
+          "snapLevel": 1,
+          "gameXp": 20
+        },
+        {
+          "index": 2,
+          "qid": "2025-i-psicologia-q009",
+          "answer": "D",
+          "saveXp": 30,
+          "answered": 3,
+          "snapXp": 30,
+          "snapLevel": 1,
+          "gameXp": 30
+        },
+        {
+          "index": 3,
+          "qid": "2025-i-psicologia-q025",
+          "answer": "D",
+          "saveXp": 40,
+          "answered": 4,
+          "snapXp": 40,
+          "snapLevel": 1,
+          "gameXp": 40
+        },
+        {
+          "index": 4,
+          "qid": "2026-i-psicologia-q065",
+          "answer": "D",
+          "saveXp": 50,
+          "answered": 5,
+          "snapXp": 50,
+          "snapLevel": 1,
+          "gameXp": 50
+        }
+      ],
+      "initialXp": 0,
+      "mission": {
+        "id": "mission-sp-1",
+        "title": "Ronda comunitaria",
+        "total": 5,
+        "questionIds": [
+          "2026-i-psicologia-q056",
+          "2026-ii-psicologia-q059",
+          "2025-i-psicologia-q009",
+          "2025-i-psicologia-q025",
+          "2026-i-psicologia-q065"
+        ]
+      },
+      "afterFirstAnswer": {
+        "save": {
+          "schema": 2,
+          "appVersion": "Versión final completa",
+          "createdAt": "2026-11-06T12:24:39.133Z",
+          "updatedAt": "2026-11-06T12:24:41.416Z",
+          "profile": {
+            "name": "Serumista",
+            "createdAt": "2026-11-06T12:24:39.133Z"
+          },
+          "xp": 10,
+          "coins": 1,
+          "stage": 1,
+          "academic": {
+            "answered": 1,
+            "correct": 1,
+            "wrong": 0,
+            "totalTimeMs": 319,
+            "sessions": 0,
+            "byArea": {
+              "area-psi-salud-publica": {
+                "answered": 1,
+                "correct": 1,
+                "wrong": 0,
+                "totalTimeMs": 319,
+                "reliableAnswered": 1,
+                "reliableCorrect": 1,
+                "reliableWrong": 0
+              },
+              "area-psi-cuidado-integral": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-etica": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-investigacion": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              },
+              "area-psi-gestion": {
+                "answered": 0,
+                "correct": 0,
+                "wrong": 0,
+                "totalTimeMs": 0,
+                "reliableAnswered": 0,
+                "reliableCorrect": 0,
+                "reliableWrong": 0
+              }
+            },
+            "recent": [
+              {
+                "at": "2026-11-06T12:24:41.415Z",
+                "correct": true,
+                "areaId": "area-psi-salud-publica",
+                "confidence": "media",
+                "durationMs": 319,
+                "mode": "mission"
+              }
+            ]
+          },
+          "questions": {
+            "2026-i-psicologia-q056": {
+              "attempts": 1,
+              "correct": 1,
+              "wrong": 0,
+              "mastery": 1,
+              "streak": 1,
+              "bestStreak": 1,
+              "lastResult": "correct",
+              "lastAttemptAt": "2026-11-06T12:24:41.415Z",
+              "lastCorrectAt": "2026-11-06T12:24:41.415Z",
+              "firstCorrectAt": "2026-11-06T12:24:41.415Z",
+              "recoveryLevel": 0,
+              "nextReviewAt": "2026-11-07T12:24:41.415Z",
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "lastSessionId": "duel-mw4y5o5k-3l0b0"
+            }
+          },
+          "questionTags": {},
+          "errors": {},
+          "missions": {},
+          "achievements": {},
+          "collection": {
+            "ownedCharacterIds": [
+              "ilan"
+            ],
+            "ownedCosmeticIds": [],
+            "selectedCharacterId": "ilan",
+            "equipped": {}
+          },
+          "daily": {
+            "lastCompletedDate": null,
+            "streak": 0,
+            "bestStreak": 0,
+            "totalCompleted": 0,
+            "graceWeek": null
+          },
+          "reviews": {
+            "lastCompletedDate": null,
+            "completed": 0,
+            "onTimeSessions": 0,
+            "earlySessions": 0
+          },
+          "settings": {
+            "sound": false,
+            "ambient": false,
+            "muted": false,
+            "volume": 0.7,
+            "reducedMotion": false,
+            "extraTime": false,
+            "effectsQuality": "medio",
+            "qualityChosen": false,
+            "hide3dFrames": false,
+            "textScale": "normal",
+            "highContrast": false,
+            "tutorialSeen": true,
+            "backupReminder": true
+          },
+          "modeStats": {
+            "dailyDate": null,
+            "claims": {},
+            "dailyWins": 0,
+            "survivalWins": 0,
+            "survivalBest": 0,
+            "timedRuns": 0,
+            "timedBest": 0,
+            "timedAce": 0,
+            "simulacros": 0,
+            "simulacroHistory": []
+          },
+          "backup": {
+            "lastExportedAt": null,
+            "lastPromptAt": null
+          },
+          "importedFrom": null,
+          "importedAt": null,
+          "events": [],
+          "counters": {
+            "date": "2026-11-06",
+            "coins": 1,
+            "xp": 10,
+            "sessions": 0
+          }
+        },
+        "snap": {
+          "version": "Versión final completa",
+          "schemaVersion": 2,
+          "updatedAt": "2026-11-06T12:24:41.416Z",
+          "level": 1,
+          "levelPercent": 12.5,
+          "xp": 10,
+          "xpToNext": 70,
+          "coins": 1,
+          "rank": "Bachiller",
+          "rankColor": "#AEB6C8",
+          "stage": 1,
+          "stageName": "Iniciación",
+          "answered": 1,
+          "accuracy": 100,
+          "missions": 0,
+          "bosses": 0,
+          "mastered": 0,
+          "streak": 0,
+          "hasActivity": true,
+          "selectedCharacterId": "ilan",
+          "selectedCharacterName": "Ilan Vega",
+          "selectedCharacterTitle": "Brújula del Alba",
+          "selectedCharacterRarity": "inicial",
+          "charactersOwned": 1,
+          "charactersTotal": 10,
+          "cosmeticsOwned": 0,
+          "lastSession": null
+        },
+        "game": {
+          "phase": "playing",
+          "paused": false,
+          "screen": "duel",
+          "mode": "mission",
+          "score": 100,
+          "best": 0,
+          "hearts": 3,
+          "fps": 74,
+          "time": 1,
+          "hero": {
+            "x": 157.55,
+            "y": -64.35
+          },
+          "pickups": [],
+          "enemies": [
+            {
+              "x": 162.45,
+              "y": -64.45
+            }
+          ],
+          "world": {
+            "w": 28,
+            "h": 28,
+            "radius": 9.2
+          },
+          "heroOnScreen": true,
+          "level": 1,
+          "xp": 10,
+          "coins": 1,
+          "stage": 1,
+          "missionsCompleted": 0,
+          "dueReviews": 0,
+          "selectedCharacterId": "ilan",
+          "activeMissionId": "mission-sp-1",
+          "questionIndex": 0,
+          "questionTotal": 5,
+          "feedbackOpen": true,
+          "lastResultPass": null,
+          "renderer": "webgl"
+        }
+      },
+      "finalGame": {
+        "phase": "won",
+        "paused": false,
+        "screen": "result",
+        "mode": "mission",
+        "score": 500,
+        "best": 500,
+        "hearts": 3,
+        "fps": 75,
+        "time": 0,
+        "hero": {
+          "x": 157.55,
+          "y": -64.35
+        },
+        "pickups": [],
+        "enemies": [
+          {
+            "x": 162.45,
+            "y": -64.45
+          }
+        ],
+        "world": {
+          "w": 28,
+          "h": 28,
+          "radius": 9.2
+        },
+        "heroOnScreen": true,
+        "level": 2,
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "missionsCompleted": 1,
+        "dueReviews": 0,
+        "selectedCharacterId": "ilan",
+        "activeMissionId": "mission-sp-1",
+        "questionIndex": null,
+        "questionTotal": null,
+        "feedbackOpen": false,
+        "lastResultPass": true,
+        "renderer": "webgl"
+      },
+      "finalSave": {
+        "schema": 2,
+        "appVersion": "Versión final completa",
+        "createdAt": "2026-11-06T12:24:39.133Z",
+        "updatedAt": "2026-11-06T12:24:46.045Z",
+        "profile": {
+          "name": "Serumista",
+          "createdAt": "2026-11-06T12:24:39.133Z"
+        },
+        "xp": 130,
+        "coins": 28,
+        "stage": 1,
+        "academic": {
+          "answered": 5,
+          "correct": 5,
+          "wrong": 0,
+          "totalTimeMs": 3388,
+          "sessions": 1,
+          "byArea": {
+            "area-psi-salud-publica": {
+              "answered": 5,
+              "correct": 5,
+              "wrong": 0,
+              "totalTimeMs": 3388,
+              "reliableAnswered": 5,
+              "reliableCorrect": 5,
+              "reliableWrong": 0
+            },
+            "area-psi-cuidado-integral": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-etica": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-investigacion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            },
+            "area-psi-gestion": {
+              "answered": 0,
+              "correct": 0,
+              "wrong": 0,
+              "totalTimeMs": 0,
+              "reliableAnswered": 0,
+              "reliableCorrect": 0,
+              "reliableWrong": 0
+            }
+          },
+          "recent": [
+            {
+              "at": "2026-11-06T12:24:41.415Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 319,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:42.506Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 772,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:43.578Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 756,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:44.661Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "alta",
+              "durationMs": 778,
+              "mode": "mission"
+            },
+            {
+              "at": "2026-11-06T12:24:45.734Z",
+              "correct": true,
+              "areaId": "area-psi-salud-publica",
+              "confidence": "media",
+              "durationMs": 763,
+              "mode": "mission"
+            }
+          ],
+          "lastResultAt": "2026-11-06T12:24:46.045Z"
+        },
+        "questions": {
+          "2026-i-psicologia-q056": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:41.415Z",
+            "lastCorrectAt": "2026-11-06T12:24:41.415Z",
+            "firstCorrectAt": "2026-11-06T12:24:41.415Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:41.415Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y5o5k-3l0b0"
+          },
+          "2026-ii-psicologia-q059": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:42.506Z",
+            "lastCorrectAt": "2026-11-06T12:24:42.506Z",
+            "firstCorrectAt": "2026-11-06T12:24:42.506Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:42.506Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y5o5k-3l0b0"
+          },
+          "2025-i-psicologia-q009": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:43.578Z",
+            "lastCorrectAt": "2026-11-06T12:24:43.578Z",
+            "firstCorrectAt": "2026-11-06T12:24:43.578Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:43.578Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y5o5k-3l0b0"
+          },
+          "2025-i-psicologia-q025": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:44.661Z",
+            "lastCorrectAt": "2026-11-06T12:24:44.661Z",
+            "firstCorrectAt": "2026-11-06T12:24:44.661Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:44.661Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "alta",
+            "lastSessionId": "duel-mw4y5o5k-3l0b0"
+          },
+          "2026-i-psicologia-q065": {
+            "attempts": 1,
+            "correct": 1,
+            "wrong": 0,
+            "mastery": 1,
+            "streak": 1,
+            "bestStreak": 1,
+            "lastResult": "correct",
+            "lastAttemptAt": "2026-11-06T12:24:45.734Z",
+            "lastCorrectAt": "2026-11-06T12:24:45.734Z",
+            "firstCorrectAt": "2026-11-06T12:24:45.734Z",
+            "recoveryLevel": 0,
+            "nextReviewAt": "2026-11-07T12:24:45.734Z",
+            "areaId": "area-psi-salud-publica",
+            "confidence": "media",
+            "lastSessionId": "duel-mw4y5o5k-3l0b0"
+          }
+        },
+        "questionTags": {},
+        "errors": {},
+        "missions": {
+          "mission-sp-1": {
+            "id": "mission-sp-1",
+            "kind": "mission",
+            "areaId": "area-psi-salud-publica",
+            "attempts": 1,
+            "completedAt": "2026-11-06T12:24:46.045Z",
+            "bestScore": 500,
+            "bestAccuracy": 1,
+            "lastAt": "2026-11-06T12:24:46.045Z",
+            "lastScore": 500,
+            "lastAccuracy": 1,
+            "passedAt": "2026-11-06T12:24:46.045Z"
+          }
+        },
+        "achievements": {
+          "primer-paso": {
+            "unlockedAt": "2026-11-06T12:24:46.045Z",
+            "xp": 20,
+            "coins": 5
+          },
+          "primera-mision": {
+            "unlockedAt": "2026-11-06T12:24:46.045Z",
+            "xp": 30,
+            "coins": 10
+          }
+        },
+        "collection": {
+          "ownedCharacterIds": [
+            "ilan"
+          ],
+          "ownedCosmeticIds": [
+            "x-titulo-primer-paso",
+            "x-titulo-en-ruta"
+          ],
+          "selectedCharacterId": "ilan",
+          "equipped": {}
+        },
+        "daily": {
+          "lastCompletedDate": "2026-11-06",
+          "streak": 1,
+          "bestStreak": 1,
+          "totalCompleted": 1,
+          "graceWeek": null
+        },
+        "reviews": {
+          "lastCompletedDate": null,
+          "completed": 0,
+          "onTimeSessions": 0,
+          "earlySessions": 0
+        },
+        "settings": {
+          "sound": false,
+          "ambient": false,
+          "muted": false,
+          "volume": 0.7,
+          "reducedMotion": false,
+          "extraTime": false,
+          "effectsQuality": "medio",
+          "qualityChosen": false,
+          "hide3dFrames": false,
+          "textScale": "normal",
+          "highContrast": false,
+          "tutorialSeen": true,
+          "backupReminder": true
+        },
+        "modeStats": {
+          "dailyDate": null,
+          "claims": {},
+          "dailyWins": 0,
+          "survivalWins": 0,
+          "survivalBest": 0,
+          "timedRuns": 0,
+          "timedBest": 0,
+          "timedAce": 0,
+          "simulacros": 0,
+          "simulacroHistory": []
+        },
+        "backup": {
+          "lastExportedAt": null,
+          "lastPromptAt": null
+        },
+        "importedFrom": null,
+        "importedAt": null,
+        "events": [],
+        "counters": {
+          "date": "2026-11-06",
+          "coins": 28,
+          "xp": 130,
+          "sessions": 0
+        },
+        "activeSession": null
+      },
+      "finalSnapshot": {
+        "version": "Versión final completa",
+        "schemaVersion": 2,
+        "updatedAt": "2026-11-06T12:24:46.045Z",
+        "level": 2,
+        "levelPercent": 38.5,
+        "xp": 130,
+        "xpToNext": 80,
+        "coins": 28,
+        "rank": "Bachiller",
+        "rankColor": "#AEB6C8",
+        "stage": 1,
+        "stageName": "Iniciación",
+        "answered": 5,
+        "accuracy": 100,
+        "missions": 1,
+        "bosses": 0,
+        "mastered": 0,
+        "streak": 1,
+        "hasActivity": true,
+        "selectedCharacterId": "ilan",
+        "selectedCharacterName": "Ilan Vega",
+        "selectedCharacterTitle": "Brújula del Alba",
+        "selectedCharacterRarity": "inicial",
+        "charactersOwned": 1,
+        "charactersTotal": 10,
+        "cosmeticsOwned": 2,
+        "lastSession": {
+          "id": "mission-sp-1",
+          "mode": "mission",
+          "title": "Ronda comunitaria",
+          "endedAt": "2026-11-06T12:24:46.045Z",
+          "score": 500,
+          "accuracy": 1
+        }
+      },
+      "resultText": "DUELO DE CRITERIO · SALUD PÚBLICA\nLa ruta queda sellada.\n\nRonda comunitaria · 5 de 5 respuestas correctas.\n\n100%\nPRECISIÓN\n5\nACIERTOS\n0\nFALLOS\n50\nXP DE RESPUESTAS\n28\nMONEDAS\nRuta superada. Misión superada: la ruta queda registrada.\nNivel 1 → 2 · Bachiller\n\nNo hay repasos pendientes por ahora.\n\nCosméticos nuevos: Primer"
+    },
+    "returnHub": {
+      "backUrl": "http://127.0.0.1:8124/index.html",
+      "panel": {
+        "empty": false,
+        "value": "Nv 2",
+        "note": "Bachiller · 130 XP · 5 respuestas",
+        "bar": "scaleX(0.385)",
+        "lastHidden": false,
+        "lastText": "Ronda comunitaria"
+      }
+    },
+    "hubAfterReload": {
+      "empty": false,
+      "value": "Nv 2",
+      "note": "Bachiller · 130 XP · 5 respuestas",
+      "bar": "scaleX(0.385)",
+      "lastHidden": false,
+      "lastText": "Ronda comunitaria"
+    },
+    "errors": []
+  }
+}

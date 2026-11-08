@@ -1,0 +1,108 @@
+/* =========================================================================
+   SERUMS QUEST · V2.1 · AGENTE 6 — ajustes de rendimiento y banco original
+   Solo estilos nuevos con prefijo .v2-perf-; reutiliza .panel, .settingsRow,
+   .toggle, .settingsHelp y .btn del tema.
+   ========================================================================= */
+
+.v2-perf-settings .v2-perf-toggleRow {
+  border-top: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.v2-perf-bankGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 7px;
+  margin: 0 0 10px;
+}
+
+.v2-perf-chip {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  min-height: 26px;
+  padding: 6px 10px;
+  border: 1px solid rgba(190, 208, 245, 0.14);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.035);
+}
+
+.v2-perf-chip em {
+  font-style: normal;
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dim, #6f7c97);
+}
+
+.v2-perf-chip b {
+  font-size: 11px;
+  font-weight: 800;
+  color: var(--ink, #f1f3f8);
+  font-variant-numeric: tabular-nums;
+}
+
+.v2-perf-chip--on {
+  border-color: rgba(105, 211, 193, 0.34);
+  background: rgba(45, 118, 100, 0.14);
+}
+
+.v2-perf-chip--on em {
+  color: #9fe0d2;
+}
+
+.v2-perf-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 7px;
+}
+
+.v2-perf-grid > div {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+  min-height: 30px;
+  padding: 7px 9px;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  border-radius: 7px;
+  background: rgba(255, 255, 255, 0.025);
+}
+
+.v2-perf-grid span {
+  font-size: 8px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--dim, #6f7c97);
+}
+
+.v2-perf-grid b {
+  font-size: 10px;
+  font-weight: 700;
+  color: var(--ink, #f1f3f8);
+  text-align: right;
+  font-variant-numeric: tabular-nums;
+}
+
+.v2-perf-actions {
+  margin-top: 9px;
+}
+
+.v2-perf-note {
+  margin: 7px 0 0;
+  color: var(--dim, #6f7c97);
+}
+
+.reduced-motion .v2-perf-settings .toggle::after {
+  transition: none;
+}
+
+@media (max-width: 680px) {
+  .v2-perf-grid {
+    grid-template-columns: 1fr;
+  }
+  .v2-perf-chip {
+    padding: 5px 8px;
+  }
+}

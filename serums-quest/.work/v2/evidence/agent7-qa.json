@@ -1,0 +1,1661 @@
+{
+  "meta": {
+    "agent": "Agente 7 · QA y rendimiento",
+    "pass": "final",
+    "startedAt": "2026-11-06T13:32:53.374Z",
+    "dist": {
+      "path": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\dist\\index.html",
+      "bytes": 3036252,
+      "sha256": "850400a8e762534abdd66588538326d0462f221f49c4676da14cf618c2e13a6e",
+      "mtime": "2026-11-06T13:28:26.476Z"
+    },
+    "buildId": "850400a8e762",
+    "width": 1280,
+    "height": 720,
+    "chrome": "Chrome/156.0.8078.80 (@fb096c0011f9d50f0a264a9376420cdea9c421e3)",
+    "viewport": {
+      "w": 1280,
+      "h": 720,
+      "dpr": 1
+    },
+    "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+    "swiftShader": false,
+    "distEnd": {
+      "path": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\dist\\index.html",
+      "bytes": 3036252,
+      "sha256": "850400a8e762534abdd66588538326d0462f221f49c4676da14cf618c2e13a6e",
+      "mtime": "2026-11-06T13:28:26.476Z"
+    },
+    "fpsNote": "El entorno headless usa la GPU del host (ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)).",
+    "finishedAt": "2026-11-06T13:36:19.410Z",
+    "durationMs": 206036
+  },
+  "summary": {
+    "total": 51,
+    "pass": 50,
+    "fail": 0,
+    "blocked": 0,
+    "skip": 0,
+    "note": 1
+  },
+  "cases": [
+    {
+      "id": "E00",
+      "area": "Entorno",
+      "title": "Chrome headless y perfil limpio",
+      "status": "PASS",
+      "detail": "Chrome/156.0.8078.80 (@fb096c0011f9d50f0a264a9376420cdea9c421e3) · ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11) · DPR 1 · 1280×720",
+      "evidence": [],
+      "values": {
+        "sha256": "850400a8e762534abdd66588538326d0462f221f49c4676da14cf618c2e13a6e",
+        "mtime": "2026-11-06T13:28:26.476Z",
+        "gpu": "ANGLE (NVIDIA, NVIDIA GeForce RTX 4060 (0x00002882) Direct3D11 vs_5_0 ps_5_0, D3D11)",
+        "swiftShader": false
+      }
+    },
+    {
+      "id": "E01",
+      "area": "Módulos V2",
+      "title": "Namespace y módulos registrados",
+      "status": "PASS",
+      "detail": "{\"call\":true,\"assetsHub\":true,\"assetsMap\":true,\"assetsArena\":true,\"assetsStats\":true,\"heroesMount\":true,\"heroesUpdate\":true,\"combatHero\":true,\"combatGuardian\":true,\"combatDuel\":true,\"feedbackAnswer\":true,\"feedbackSettings\":true,\"feedbackMix\":true}",
+      "evidence": [],
+      "values": {
+        "call": true,
+        "assetsHub": true,
+        "assetsMap": true,
+        "assetsArena": true,
+        "assetsStats": true,
+        "heroesMount": true,
+        "heroesUpdate": true,
+        "combatHero": true,
+        "combatGuardian": true,
+        "combatDuel": true,
+        "feedbackAnswer": true,
+        "feedbackSettings": true,
+        "feedbackMix": true
+      }
+    },
+    {
+      "id": "T01",
+      "area": "Título",
+      "title": "Versión «V2 · Checkpoint 1» visible",
+      "status": "PASS",
+      "detail": "titleVersion=\"V2 · Checkpoint 1\" · document.title=\"SERUMS QUEST\"",
+      "evidence": []
+    },
+    {
+      "id": "T02",
+      "area": "Contenido",
+      "title": "Banco combinado de 951 preguntas y fuentes",
+      "status": "PASS",
+      "detail": "runtime=951 meta=951 sources={\"campaign\":111,\"flashcards\":630,\"dashboard\":210} meta={\"campaign\":111,\"dashboard\":210,\"flashcards\":630}",
+      "evidence": [],
+      "values": {
+        "total": 951,
+        "bySource": {
+          "campaign": 111,
+          "flashcards": 630,
+          "dashboard": 210
+        },
+        "byArea": {
+          "area-psi-salud-publica": 197,
+          "area-psi-cuidado-integral": 565,
+          "area-psi-etica": 54,
+          "area-psi-investigacion": 46,
+          "area-psi-gestion": 89
+        },
+        "metaQuestionCount": 951,
+        "metaSourceCounts": {
+          "campaign": 111,
+          "dashboard": 210,
+          "flashcards": 630
+        },
+        "metaV2": {
+          "added": 840,
+          "skipped": 0,
+          "contentVersion": "2.0.0",
+          "generatedExplanations": 321
+        },
+        "keyAudit": {
+          "checked": 42,
+          "failures": [],
+          "sample": [
+            {
+              "id": "2026-i-psicologia-q056",
+              "answer": "B",
+              "source": "campaign",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "2026-ii-psicologia-q069",
+              "answer": "D",
+              "source": "campaign",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "2026-i-psicologia-q011",
+              "answer": "D",
+              "source": "campaign",
+              "areaId": "area-psi-cuidado-integral"
+            },
+            {
+              "id": "2026-ii-psicologia-q099",
+              "answer": "D",
+              "source": "campaign",
+              "areaId": "area-psi-etica"
+            },
+            {
+              "id": "2026-i-psicologia-q094",
+              "answer": "D",
+              "source": "campaign",
+              "areaId": "area-psi-gestion"
+            },
+            {
+              "id": "2026-ii-psicologia-q036",
+              "answer": "C",
+              "source": "campaign",
+              "areaId": "area-psi-gestion"
+            },
+            {
+              "id": "v2-fc-card-psi-sp-1-5-2",
+              "answer": "A",
+              "source": "flashcards",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "v2-fc-card-agente-01-3",
+              "answer": "B",
+              "source": "flashcards",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "v2-fc-card-psi-sp-1-6-3",
+              "answer": "D",
+              "source": "flashcards",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "v2-fc-card-agua-01-1",
+              "answer": "B",
+              "source": "flashcards",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "v2-fc-card-psi-sp-1-7-1",
+              "answer": "B",
+              "source": "flashcards",
+              "areaId": "area-psi-salud-publica"
+            },
+            {
+              "id": "v2-dash-sheet-agua-02",
+              "answer": "B",
+              "source": "dashboard",
+              "areaId": "area-psi-salud-publica"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "T03",
+      "area": "Contenido",
+      "title": "Muestra de claves y estructura (≥30)",
+      "status": "PASS",
+      "detail": "42 preguntas verificadas · 0 con problemas",
+      "evidence": [],
+      "values": {
+        "checked": 42,
+        "failures": [],
+        "sample": [
+          {
+            "id": "2026-i-psicologia-q056",
+            "answer": "B",
+            "source": "campaign",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "2026-ii-psicologia-q069",
+            "answer": "D",
+            "source": "campaign",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "2026-i-psicologia-q011",
+            "answer": "D",
+            "source": "campaign",
+            "areaId": "area-psi-cuidado-integral"
+          },
+          {
+            "id": "2026-ii-psicologia-q099",
+            "answer": "D",
+            "source": "campaign",
+            "areaId": "area-psi-etica"
+          },
+          {
+            "id": "2026-i-psicologia-q094",
+            "answer": "D",
+            "source": "campaign",
+            "areaId": "area-psi-gestion"
+          },
+          {
+            "id": "2026-ii-psicologia-q036",
+            "answer": "C",
+            "source": "campaign",
+            "areaId": "area-psi-gestion"
+          },
+          {
+            "id": "v2-fc-card-psi-sp-1-5-2",
+            "answer": "A",
+            "source": "flashcards",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "v2-fc-card-agente-01-3",
+            "answer": "B",
+            "source": "flashcards",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "v2-fc-card-psi-sp-1-6-3",
+            "answer": "D",
+            "source": "flashcards",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "v2-fc-card-agua-01-1",
+            "answer": "B",
+            "source": "flashcards",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "v2-fc-card-psi-sp-1-7-1",
+            "answer": "B",
+            "source": "flashcards",
+            "areaId": "area-psi-salud-publica"
+          },
+          {
+            "id": "v2-dash-sheet-agua-02",
+            "answer": "B",
+            "source": "dashboard",
+            "areaId": "area-psi-salud-publica"
+          }
+        ]
+      }
+    },
+    {
+      "id": "H01",
+      "area": "Atrio",
+      "title": "Entrada al observatorio y render 3D",
+      "status": "PASS",
+      "detail": "screen=hub renderer=webgl heroOnScreen=true fps=75",
+      "evidence": []
+    },
+    {
+      "id": "AS01",
+      "area": "Assets",
+      "title": "Atrio decorado por V2.assets",
+      "status": "PASS",
+      "detail": "{\"quality\":\"alto\",\"budget\":{\"props\":12,\"particles\":80,\"decor\":26,\"maxDrawCalls\":150,\"glow\":1},\"hubProps\":60,\"hubVeg\":90,\"minions\":5,\"hubDust\":80,\"skyBuilt\":true,\"arenaActive\":false,\"arenaArea\":null,\"mapIslands\":0,\"mapProps\":0}",
+      "evidence": [],
+      "values": {
+        "quality": "alto",
+        "budget": {
+          "props": 12,
+          "particles": 80,
+          "decor": 26,
+          "maxDrawCalls": 150,
+          "glow": 1
+        },
+        "hubProps": 60,
+        "hubVeg": 90,
+        "minions": 5,
+        "hubDust": 80,
+        "skyBuilt": true,
+        "arenaActive": false,
+        "arenaArea": null,
+        "mapIslands": 0,
+        "mapProps": 0
+      }
+    },
+    {
+      "id": "T04",
+      "area": "Tutorial",
+      "title": "Primer recorrido de 5 pasos y cierre",
+      "status": "PASS",
+      "detail": "inicio={\"eyebrow\":\"Paso 1 de 5\",\"dots\":5,\"active\":0,\"button\":\"Siguiente\"} · fin={\"eyebrow\":\"Paso 5 de 5\",\"dots\":5,\"active\":4,\"button\":\"Terminar\"} · tutorialSeen=true",
+      "evidence": []
+    },
+    {
+      "id": "T05",
+      "area": "Título",
+      "title": "Menú de título completo",
+      "status": "PASS",
+      "detail": "[\"open-map\",\"enter-arena\",\"open-modes\",\"open-wardrobe\",\"open-shop\",\"open-journal\",\"open-settings\",\"open-import\"]",
+      "evidence": []
+    },
+    {
+      "id": "S01",
+      "area": "Héroes",
+      "title": "Selector V2 con carrusel 3D y 10 héroes",
+      "status": "PASS",
+      "detail": "cards=10 pos 3→4 center=teo selected=teo canvas=true fallback=false",
+      "evidence": []
+    },
+    {
+      "id": "H02",
+      "area": "Pausa",
+      "title": "Pausa y accesos",
+      "status": "PASS",
+      "detail": "actions=[\"close-pause\",\"close-pause\",\"open-modes\",\"open-stats\",\"open-map\",\"open-journal\",\"open-heroes\",\"open-wardrobe\",\"open-shop\",\"open-review\",\"open-settings\",\"open-import\",\"exit-title\",\"toggle-sound\",\"toggle-ambient\",\"toggle-muted\",\"toggle-reduced-motion\",\"toggle-extra-time\",\"set-effects-quality\",\"set-effects-quality\"]",
+      "evidence": []
+    },
+    {
+      "id": "ST01",
+      "area": "Ajustes",
+      "title": "Ajustes completos y versión compilada",
+      "status": "PASS",
+      "detail": "quality=[\"bajo\",\"medio\",\"alto\"] · foot=\"V2 · Checkpoint 1 · compilado el 2026-11-06 · sin conexión y sin cuentas\nVolver\"",
+      "evidence": []
+    },
+    {
+      "id": "ST02",
+      "area": "Ajustes",
+      "title": "Pesos de fuentes (60/15/25 → 80/15/25) persisten",
+      "status": "PASS",
+      "detail": "inicial={\"campaign\":0.6,\"dashboard\":0.15,\"flashcards\":0.25} trasUI={\"campaign\":0.8,\"dashboard\":0.15,\"flashcards\":0.25} trasRecarga={\"campaign\":0.8,\"dashboard\":0.15,\"flashcards\":0.25} sliders={\"campaign\":0.8,\"dashboard\":0.15,\"flashcards\":0.25} total=\"100 %\"",
+      "evidence": []
+    },
+    {
+      "id": "ST03",
+      "area": "Ajustes",
+      "title": "Calidad baja/media/alta persiste y activa la UI",
+      "status": "PASS",
+      "detail": "[{\"q\":\"bajo\",\"state\":\"bajo\",\"active\":\"bajo\",\"v2\":\"bajo\",\"particles\":18},{\"q\":\"medio\",\"state\":\"medio\",\"active\":\"medio\",\"v2\":\"medio\",\"particles\":45},{\"q\":\"alto\",\"state\":\"alto\",\"active\":\"alto\",\"v2\":\"alto\",\"particles\":80}]",
+      "evidence": []
+    },
+    {
+      "id": "ST04",
+      "area": "Ajustes",
+      "title": "Pesos persisten tras cambiar antes la calidad (escenario real)",
+      "status": "PASS",
+      "detail": "antes={\"campaign\":0.7,\"dashboard\":0.15,\"flashcards\":0.25} localStorage={\"campaign\":0.7,\"dashboard\":0.15,\"flashcards\":0.25} slidersEfectivos={\"campaign\":0.7,\"dashboard\":0.15,\"flashcards\":0.25} settingsKey={\"campaign\":0.7,\"dashboard\":0.15,\"flashcards\":0.25}",
+      "evidence": []
+    },
+    {
+      "id": "ST05",
+      "area": "Ajustes",
+      "title": "Reducir movimiento persiste y se desactiva",
+      "status": "PASS",
+      "detail": "on=true/true/true · reload=true/true/true · off=false/false",
+      "evidence": []
+    },
+    {
+      "id": "PF01",
+      "area": "Rendimiento",
+      "title": "FPS en el atrio (mín/medio, ≥2 s)",
+      "status": "PASS",
+      "detail": "min=75 avg=75 muestras=18 · <45=0 · calidad=alto",
+      "evidence": [],
+      "values": {
+        "min": 75,
+        "avg": 75,
+        "below45": 0
+      }
+    },
+    {
+      "id": "M01",
+      "area": "Mapa",
+      "title": "Mapa 3D con cinco islas",
+      "status": "PASS",
+      "detail": "screen=map areas=[\"area-psi-salud-publica\",\"area-psi-cuidado-integral\",\"area-psi-etica\",\"area-psi-investigacion\",\"area-psi-gestion\"]",
+      "evidence": []
+    },
+    {
+      "id": "AS02",
+      "area": "Assets",
+      "title": "Islas del mapa decoradas por V2.assets",
+      "status": "PASS",
+      "detail": "{\"quality\":\"alto\",\"budget\":{\"props\":12,\"particles\":80,\"decor\":26,\"maxDrawCalls\":150,\"glow\":1},\"hubProps\":60,\"hubVeg\":90,\"minions\":5,\"hubDust\":80,\"skyBuilt\":true,\"arenaActive\":false,\"arenaArea\":null,\"mapIslands\":5,\"mapProps\":60}",
+      "evidence": []
+    },
+    {
+      "id": "PF02",
+      "area": "Rendimiento",
+      "title": "FPS en el mapa (mín/medio, ≥2 s)",
+      "status": "PASS",
+      "detail": "min=75 avg=75 muestras=18 · <45=0 · islas=5",
+      "evidence": [],
+      "values": {
+        "min": 75,
+        "avg": 75,
+        "below45": 0
+      }
+    },
+    {
+      "id": "PF03",
+      "area": "Rendimiento",
+      "title": "FPS en duelo (mín/medio, ≥2 s)",
+      "status": "PASS",
+      "detail": "min=75 avg=75 muestras=18 · <45=0 · preguntas=5",
+      "evidence": [],
+      "values": {
+        "min": 75,
+        "avg": 75,
+        "below45": 0
+      }
+    },
+    {
+      "id": "AS03",
+      "area": "Assets",
+      "title": "Variante de arena por área",
+      "status": "PASS",
+      "detail": "{\"quality\":\"alto\",\"budget\":{\"props\":12,\"particles\":80,\"decor\":26,\"maxDrawCalls\":150,\"glow\":1},\"hubProps\":60,\"hubVeg\":90,\"minions\":5,\"hubDust\":80,\"skyBuilt\":true,\"arenaActive\":true,\"arenaArea\":\"area-psi-salud-publica\",\"mapIslands\":5,\"mapProps\":60}",
+      "evidence": []
+    },
+    {
+      "id": "H03",
+      "area": "Pausa",
+      "title": "Pausa en duelo y reanudación en la misma pregunta",
+      "status": "PASS",
+      "detail": "pausa=true reanuda=true índice 0→0",
+      "evidence": []
+    },
+    {
+      "id": "C01",
+      "area": "Campaña",
+      "title": "Misión de campaña con 5 preguntas",
+      "status": "PASS",
+      "detail": "questionTotal=5 mission=mission-sp-1",
+      "evidence": []
+    },
+    {
+      "id": "L01",
+      "area": "Repaso",
+      "title": "Marca «difícil» en una pregunta",
+      "status": "PASS",
+      "detail": "qid=2026-i-psicologia-q056 tags={\"2026-i-psicologia-q056\":{\"difficult\":true,\"favorite\":false,\"updatedAt\":\"2026-11-06T13:34:04.351Z\"}}",
+      "evidence": []
+    },
+    {
+      "id": "F01",
+      "area": "Feedback",
+      "title": "Feedback de error con clave y explicación",
+      "status": "PASS",
+      "detail": "kind=wrong clave=B/B explicacion=true why=true flash=true tipo DOM=wrong · captura=960×540",
+      "evidence": [],
+      "values": {
+        "kind": "wrong",
+        "answer": "B",
+        "expected": "B",
+        "events": [
+          "combat",
+          "combat",
+          "combat",
+          "feedback:open"
+        ],
+        "screenshot": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-feedback-error.png",
+        "screenshotSize": {
+          "w": 960,
+          "h": 540
+        }
+      }
+    },
+    {
+      "id": "C02",
+      "area": "Combate",
+      "title": "Ataque visual del guardián (territorio)",
+      "status": "PASS",
+      "detail": "eventos=[\"guardianTelegraph\",\"guardianImpact\"] · cola=[\"duelStart\",\"guardianTelegraph\",\"phase\",\"guardianImpact\"] · captura agent7-cp1-ataque-1-territorio.png",
+      "evidence": []
+    },
+    {
+      "id": "F02",
+      "area": "Feedback",
+      "title": "Flashcard local desde el feedback",
+      "status": "PASS",
+      "detail": "open=true text=FLASHCARD LOCAL\nFicha de estudio\n\n¿Cuál es un factor cuya presencia excesiva o su ausencia relativa es esencial para la ",
+      "evidence": []
+    },
+    {
+      "id": "F03",
+      "area": "Feedback",
+      "title": "Feedback de acierto con clave",
+      "status": "PASS",
+      "detail": "kind=correct clave=A/A explicacion=true · captura=960×540",
+      "evidence": [],
+      "values": {
+        "screenshot": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-feedback-acierto.png",
+        "screenshotSize": {
+          "w": 960,
+          "h": 540
+        }
+      }
+    },
+    {
+      "id": "C03",
+      "area": "Campaña",
+      "title": "Cierre de misión con resultado y premios",
+      "status": "PASS",
+      "detail": "screen=result pass=true score=400 mission={\"id\":\"mission-sp-1\",\"kind\":\"mission\",\"areaId\":\"area-psi-salud-publica\",\"attempts\":1,\"completedAt\":\"2026-11-06T13:34:14.916Z\",\"bestScore\":400,\"bestAccuracy\":0.8,\"lastAt\":\"2026-11-06T13:34:14.916Z\",\"lastScore\":400,\"lastAccuracy\":0.8,\"passedAt\":\"2026-11-06T13:34:14.916Z\"}",
+      "evidence": []
+    },
+    {
+      "id": "P01",
+      "area": "Persistencia",
+      "title": "Misión completada sobrevive a la recarga",
+      "status": "PASS",
+      "detail": "missions=1 xp=150 coins=147",
+      "evidence": []
+    },
+    {
+      "id": "G01",
+      "area": "Modos",
+      "title": "Pantalla de modos con diario, supervivencia, contrarreloj y simulacro",
+      "status": "PASS",
+      "detail": "[\"Desafío diario\",\"Supervivencia\",\"Contrarreloj\",\"Simulacro\"]",
+      "evidence": []
+    },
+    {
+      "id": "G02",
+      "area": "Modos",
+      "title": "Práctica libre por área",
+      "status": "PASS",
+      "detail": "[\"area-psi-salud-publica\",\"area-psi-cuidado-integral\",\"area-psi-etica\",\"area-psi-investigacion\",\"area-psi-gestion\"]",
+      "evidence": []
+    },
+    {
+      "id": "G03",
+      "area": "Modos",
+      "title": "Sesión de práctica libre sin corazones de campaña",
+      "status": "PASS",
+      "detail": "mode=practice total=10",
+      "evidence": []
+    },
+    {
+      "id": "SH01",
+      "area": "Tienda",
+      "title": "Compra de cosmético con confirmación y saldo",
+      "status": "PASS",
+      "detail": "monedas 500→410 · gorro=true · confirm=true",
+      "evidence": []
+    },
+    {
+      "id": "W01",
+      "area": "Inventario",
+      "title": "Equipar y guardar atuendo",
+      "status": "PASS",
+      "detail": "equipped={\"cabeza\":\"c-cabeza-gorro\"} hero=noa",
+      "evidence": []
+    },
+    {
+      "id": "P02",
+      "area": "Persistencia",
+      "title": "Compra y atuendo sobreviven a la recarga",
+      "status": "PASS",
+      "detail": "coins=410 ownedGorro=true equipped={\"noa\":{\"cabeza\":\"c-cabeza-gorro\"}}",
+      "evidence": []
+    },
+    {
+      "id": "IM01",
+      "area": "Importación",
+      "title": "Partida antigua offline-fixture importada por la UI",
+      "status": "PASS",
+      "detail": "name=Offline QA xp=1640 coins=2510 stage=3 errors=3 · preview=Offline QA {\"Nivel\":\"7\",\"Rango\":\"Bachiller\",\"XP\":\"1.640\",\"Monedas\":\"2.510\",\"Héroes\":\"2\",\"Cosméticos\":\"2\",\"Logros\":\"0\",\"Nodos\":\"0\",\"Errores\":\"3\",\"Etapa\":\"3/4\"}",
+      "evidence": []
+    },
+    {
+      "id": "P03",
+      "area": "Persistencia",
+      "title": "Partida antigua importada sobrevive a la recarga",
+      "status": "PASS",
+      "detail": "name=Offline QA xp=1640 coins=2510",
+      "evidence": []
+    },
+    {
+      "id": "R01",
+      "area": "Repaso",
+      "title": "Pantalla de repaso y sesión con errores vencidos",
+      "status": "PASS",
+      "detail": "due={\"disabled\":false,\"text\":\"Repasar lo que toca (3)\"} · text=REPETICIÓN ESPACIADA\nVolver a mirar también es avanzar.\n\nCada fallo entra en un calendario de repaso. La primera cita es a los 20 minutos; después, 1, 3, 7, 14 ",
+      "evidence": []
+    },
+    {
+      "id": "R02",
+      "area": "Repaso",
+      "title": "Sesión de repaso con las preguntas falladas",
+      "status": "PASS",
+      "detail": "mode=review total=3",
+      "evidence": []
+    },
+    {
+      "id": "IM02",
+      "area": "Exportación",
+      "title": "Exportar respaldo JSON desde Ajustes",
+      "status": "PASS",
+      "detail": "vía=download app=SERUMS QUEST VOXEL schema=2 xp=6200 coins=999 nodos=18 cosméticos=69",
+      "evidence": [],
+      "values": {
+        "exportPath": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-exported-save.json",
+        "method": "download"
+      }
+    },
+    {
+      "id": "IM03",
+      "area": "Exportación",
+      "title": "Reimportar el guardado nuevo y comparar XP/monedas/marcas",
+      "status": "PASS",
+      "detail": "xp 6200→6200 · coins 999→999 · nodos 18→18 · cosméticos 69→69 · héroe noa→noa · pesos={\"campaign\":0.6,\"dashboard\":0.15,\"flashcards\":0.25}",
+      "evidence": []
+    },
+    {
+      "id": "P04",
+      "area": "Persistencia",
+      "title": "Reimportación sobrevive a la recarga",
+      "status": "PASS",
+      "detail": "xp=6200 coins=999 nodos=18",
+      "evidence": []
+    },
+    {
+      "id": "S02",
+      "area": "Héroes",
+      "title": "Estados del selector: En ruta, Comprar y Bloqueado",
+      "status": "PASS",
+      "detail": "{\"enRuta\":{\"id\":\"ilan\",\"ctaClass\":\"v2-hero-cta is-current\",\"ctaText\":\"En ruta\",\"pos\":\"1\"},\"comprar\":{\"id\":\"mara\",\"ctaClass\":\"v2-hero-cta is-buy\",\"ctaText\":\"Comprar ◇ 480\",\"pos\":\"2\"},\"bloqueado\":{\"id\":\"noa\",\"ctaClass\":\"v2-hero-cta is-blocked\",\"ctaText\":\"Bloqueado\",\"pos\":\"3\"}}",
+      "evidence": []
+    },
+    {
+      "id": "CP-ATTACKS",
+      "area": "Capturas",
+      "title": "Ataque de los 5 guardianes",
+      "status": "PASS",
+      "detail": "[{\"area\":\"territorio\",\"shot\":\"C:\\\\Users\\\\USARIO\\\\Documents\\\\ZARCONT SERUMS\\\\serums-quest\\\\.work\\\\v2\\\\evidence\\\\agent7-cp1-ataque-1-territorio.png\",\"events\":2},{\"area\":\"cuidado\",\"shot\":\"C:\\\\Users\\\\USARIO\\\\Documents\\\\ZARCONT SERUMS\\\\serums-quest\\\\.work\\\\v2\\\\evidence\\\\agent7-cp1-ataque-2-cuidado.png\",\"events\":2},{\"area\":\"confianza\",\"shot\":\"C:\\\\Users\\\\USARIO\\\\Documents\\\\ZARCONT SERUMS\\\\serums-quest\\\\.work\\\\v2\\\\evidence\\\\agent7-cp1-ataque-3-confianza.png\",\"events\":2},{\"area\":\"evidencia\",\"shot\":\"C:\\\\Users\\\\USARIO\\\\Documents\\\\ZARCONT SERUMS\\\\serums-quest\\\\.work\\\\v2\\\\evidence\\\\agent7-cp1-ataque-4-evidencia.png\",\"events\":1},{\"area\":\"sistema\",\"shot\":\"C:\\\\Users\\\\USARIO\\\\Documents\\\\ZARCONT SERUMS\\\\serums-quest\\\\.work\\\\v2\\\\evidence\\\\agent7-cp1-ataque-5-sistema.png\",\"events\":2}]",
+      "evidence": []
+    },
+    {
+      "id": "N01",
+      "area": "Red",
+      "title": "Cero peticiones de red",
+      "status": "PASS",
+      "detail": "0 no locales de 119 totales · esquemas={\"file\":27,\"data\":92,\"blob\":0,\"about\":0,\"chrome\":0,\"other\":0}",
+      "evidence": []
+    },
+    {
+      "id": "N02",
+      "area": "Errores",
+      "title": "Cero errores de consola y excepciones",
+      "status": "PASS",
+      "detail": "0 errores · ",
+      "evidence": []
+    },
+    {
+      "id": "N02b",
+      "area": "Errores",
+      "title": "Advertencias de consola (no bloqueantes)",
+      "status": "NOTE",
+      "detail": "28 advertencias · THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead.",
+      "evidence": []
+    },
+    {
+      "id": "N03",
+      "area": "Errores",
+      "title": "V2._errors vacío",
+      "status": "PASS",
+      "detail": "0 errores V2",
+      "evidence": []
+    },
+    {
+      "id": "N04",
+      "area": "Entorno",
+      "title": "Build estable durante la pasada",
+      "status": "PASS",
+      "detail": "850400a8e762534abdd66588538326d0462f221f49c4676da14cf618c2e13a6e",
+      "evidence": []
+    }
+  ],
+  "issues": [],
+  "fps": {
+    "hub": {
+      "label": "hub",
+      "seconds": 2.4,
+      "screen": "hub",
+      "quality": "alto",
+      "samples": [
+        {
+          "t": 3,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 136,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 269,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 403,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 537,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 669,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 803,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 936,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1070,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1203,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1336,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1470,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1603,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1737,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 1871,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 2016,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 2150,
+          "fps": 75,
+          "screen": "hub"
+        },
+        {
+          "t": 2283,
+          "fps": 75,
+          "screen": "hub"
+        }
+      ],
+      "values": [
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75
+      ],
+      "min": 75,
+      "max": 75,
+      "avg": 75,
+      "below45": 0
+    },
+    "map": {
+      "label": "map",
+      "seconds": 2.4,
+      "screen": "map",
+      "quality": "alto",
+      "samples": [
+        {
+          "t": 4,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 138,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 271,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 405,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 538,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 685,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 817,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 951,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1084,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1218,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1351,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1484,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1618,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1751,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 1886,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 2018,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 2151,
+          "fps": 75,
+          "screen": "map"
+        },
+        {
+          "t": 2285,
+          "fps": 75,
+          "screen": "map"
+        }
+      ],
+      "values": [
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75
+      ],
+      "min": 75,
+      "max": 75,
+      "avg": 75,
+      "below45": 0
+    },
+    "duel": {
+      "label": "duel",
+      "seconds": 2.4,
+      "screen": "duel",
+      "quality": "alto",
+      "samples": [
+        {
+          "t": 3,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 150,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 296,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 443,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 576,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 710,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 856,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 990,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1124,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1257,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1390,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1536,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1670,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1804,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 1937,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 2071,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 2201,
+          "fps": 75,
+          "screen": "duel"
+        },
+        {
+          "t": 2331,
+          "fps": 75,
+          "screen": "duel"
+        }
+      ],
+      "values": [
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75,
+        75
+      ],
+      "min": 75,
+      "max": 75,
+      "avg": 75,
+      "below45": 0
+    }
+  },
+  "screenshots": [
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-titulo.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-atrio.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-tutorial.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-selector-heroes.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ajustes.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ajustes-accesibilidad.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-mapa.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-1-salud-publica.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-2-cuidado-integral.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-3-etica.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-4-investigacion.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-5-gestion.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-1-territorio.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-feedback-error.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-flashcard.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-feedback-acierto.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-resultado-mision.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-modos.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-tienda.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-inventario.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-importar-antigua.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ajustes-pesos.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-titulo-version.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-atrio.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-selector-heroes.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-selector-en-ruta.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-selector-comprar.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-selector-bloqueado.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-1-territorio.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-2-cuidado.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-3-confianza.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-4-evidencia.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-ataque-5-sistema.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-mapa-completo.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-1-salud-publica.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-2-cuidado-integral.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-3-etica.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-4-investigacion.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2\\evidence\\agent7-cp1-isla-5-gestion.png"
+  ],
+  "counts": {
+    "total": 951,
+    "bySource": {
+      "campaign": 111,
+      "flashcards": 630,
+      "dashboard": 210
+    },
+    "byArea": {
+      "area-psi-salud-publica": 197,
+      "area-psi-cuidado-integral": 565,
+      "area-psi-etica": 54,
+      "area-psi-investigacion": 46,
+      "area-psi-gestion": 89
+    },
+    "metaQuestionCount": 951,
+    "metaSourceCounts": {
+      "campaign": 111,
+      "dashboard": 210,
+      "flashcards": 630
+    },
+    "metaV2": {
+      "added": 840,
+      "skipped": 0,
+      "contentVersion": "2.0.0",
+      "generatedExplanations": 321
+    },
+    "keyAudit": {
+      "checked": 42,
+      "failures": [],
+      "sample": [
+        {
+          "id": "2026-i-psicologia-q056",
+          "answer": "B",
+          "source": "campaign",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "2026-ii-psicologia-q069",
+          "answer": "D",
+          "source": "campaign",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "2026-i-psicologia-q011",
+          "answer": "D",
+          "source": "campaign",
+          "areaId": "area-psi-cuidado-integral"
+        },
+        {
+          "id": "2026-ii-psicologia-q099",
+          "answer": "D",
+          "source": "campaign",
+          "areaId": "area-psi-etica"
+        },
+        {
+          "id": "2026-i-psicologia-q094",
+          "answer": "D",
+          "source": "campaign",
+          "areaId": "area-psi-gestion"
+        },
+        {
+          "id": "2026-ii-psicologia-q036",
+          "answer": "C",
+          "source": "campaign",
+          "areaId": "area-psi-gestion"
+        },
+        {
+          "id": "v2-fc-card-psi-sp-1-5-2",
+          "answer": "A",
+          "source": "flashcards",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "v2-fc-card-agente-01-3",
+          "answer": "B",
+          "source": "flashcards",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "v2-fc-card-psi-sp-1-6-3",
+          "answer": "D",
+          "source": "flashcards",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "v2-fc-card-agua-01-1",
+          "answer": "B",
+          "source": "flashcards",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "v2-fc-card-psi-sp-1-7-1",
+          "answer": "B",
+          "source": "flashcards",
+          "areaId": "area-psi-salud-publica"
+        },
+        {
+          "id": "v2-dash-sheet-agua-02",
+          "answer": "B",
+          "source": "dashboard",
+          "areaId": "area-psi-salud-publica"
+        }
+      ]
+    }
+  },
+  "v2": {
+    "version": "2.0.0-checkpoint1",
+    "has": {
+      "call": true,
+      "assetsHub": true,
+      "assetsMap": true,
+      "assetsArena": true,
+      "assetsStats": true,
+      "heroesMount": true,
+      "heroesUpdate": true,
+      "combatHero": true,
+      "combatGuardian": true,
+      "combatDuel": true,
+      "feedbackAnswer": true,
+      "feedbackSettings": true,
+      "feedbackMix": true
+    },
+    "modules": {
+      "combat": true,
+      "assets": true,
+      "feedback": true
+    },
+    "catalog": {
+      "areas": {
+        "area-psi-salud-publica": 12,
+        "area-psi-cuidado-integral": 12,
+        "area-psi-etica": 12,
+        "area-psi-investigacion": 12,
+        "area-psi-gestion": 12
+      },
+      "minions": 5,
+      "arena": 5,
+      "sky": 5
+    },
+    "ids": {
+      "areas": {
+        "area-psi-salud-publica": 12,
+        "area-psi-cuidado-integral": 12,
+        "area-psi-etica": 12,
+        "area-psi-investigacion": 12,
+        "area-psi-gestion": 12
+      },
+      "minions": 5,
+      "arena": 5,
+      "sky": 5
+    },
+    "hubStats": {
+      "quality": "alto",
+      "budget": {
+        "props": 12,
+        "particles": 80,
+        "decor": 26,
+        "maxDrawCalls": 150,
+        "glow": 1
+      },
+      "hubProps": 60,
+      "hubVeg": 90,
+      "minions": 5,
+      "hubDust": 80,
+      "skyBuilt": true,
+      "arenaActive": false,
+      "arenaArea": null,
+      "mapIslands": 0,
+      "mapProps": 0
+    },
+    "budgetByQuality": [
+      {
+        "q": "bajo",
+        "budget": {
+          "props": 5,
+          "particles": 18,
+          "decor": 10,
+          "maxDrawCalls": 70,
+          "glow": 0.55
+        }
+      },
+      {
+        "q": "medio",
+        "budget": {
+          "props": 8,
+          "particles": 45,
+          "decor": 18,
+          "maxDrawCalls": 105,
+          "glow": 0.8
+        }
+      },
+      {
+        "q": "alto",
+        "budget": {
+          "props": 12,
+          "particles": 80,
+          "decor": 26,
+          "maxDrawCalls": 150,
+          "glow": 1
+        }
+      }
+    ],
+    "mapStats": {
+      "quality": "alto",
+      "budget": {
+        "props": 12,
+        "particles": 80,
+        "decor": 26,
+        "maxDrawCalls": 150,
+        "glow": 1
+      },
+      "hubProps": 60,
+      "hubVeg": 90,
+      "minions": 5,
+      "hubDust": 80,
+      "skyBuilt": true,
+      "arenaActive": false,
+      "arenaArea": null,
+      "mapIslands": 5,
+      "mapProps": 60
+    },
+    "arenaStats": {
+      "quality": "alto",
+      "budget": {
+        "props": 12,
+        "particles": 80,
+        "decor": 26,
+        "maxDrawCalls": 150,
+        "glow": 1
+      },
+      "hubProps": 60,
+      "hubVeg": 90,
+      "minions": 5,
+      "hubDust": 80,
+      "skyBuilt": true,
+      "arenaActive": true,
+      "arenaArea": "area-psi-salud-publica",
+      "mapIslands": 5,
+      "mapProps": 60
+    },
+    "final": {
+      "version": "2.0.0-checkpoint1",
+      "modules": {
+        "combat": true,
+        "assets": true,
+        "feedback": true
+      },
+      "has": {
+        "call": true,
+        "assetsHub": true,
+        "assetsMap": true,
+        "assetsArena": true,
+        "assetsStats": true,
+        "heroesMount": true,
+        "heroesUpdate": true,
+        "combatHero": true,
+        "combatGuardian": true,
+        "combatDuel": true,
+        "feedbackAnswer": true,
+        "feedbackSettings": true,
+        "feedbackMix": true
+      },
+      "errors": [],
+      "events": []
+    },
+    "eventsTail": [],
+    "errors": []
+  },
+  "imports": {
+    "legacy": {
+      "preview": {
+        "name": "Offline QA",
+        "grid": {
+          "Nivel": "7",
+          "Rango": "Bachiller",
+          "XP": "1.640",
+          "Monedas": "2.510",
+          "Héroes": "2",
+          "Cosméticos": "2",
+          "Logros": "0",
+          "Nodos": "0",
+          "Errores": "3",
+          "Etapa": "3/4"
+        },
+        "text": " Partida reconocida\nOffline QA\nNivel\n7\nRango\nBachiller\nXP\n1.640\nMonedas\n2.510\nHéroes\n2\nCosméticos\n2\nLogros\n0\nNodos\n0\nErrores\n3\nEtapa\n3/4\nImportar esta partida\nCancelar vista previa"
+      },
+      "expected": {
+        "name": "Offline QA",
+        "xp": 1640,
+        "coins": 2510,
+        "stage": 3,
+        "errors": 3
+      },
+      "actual": {
+        "name": "Offline QA",
+        "xp": 1640,
+        "coins": 2510,
+        "stage": 3,
+        "errors": 3,
+        "importedFrom": "SERUMS QUEST 1.2.x",
+        "importedAt": "2026-11-06T13:34:36.522Z",
+        "heroes": 2,
+        "cosmetics": 5
+      }
+    },
+    "exportRoundTrip": {
+      "exported": {
+        "xp": 6200,
+        "coins": 999,
+        "missions": 18,
+        "cosmetics": 69,
+        "heroes": 10,
+        "selectedCharacterId": "noa",
+        "profileName": "QA V2",
+        "weights": {
+          "campaign": 0.6,
+          "dashboard": 0.15,
+          "flashcards": 0.25
+        },
+        "quality": "alto"
+      },
+      "reimported": {
+        "xp": 6200,
+        "coins": 999,
+        "missions": 18,
+        "cosmetics": 69,
+        "heroes": 10,
+        "selectedCharacterId": "noa",
+        "profileName": "QA V2",
+        "weights": {
+          "campaign": 0.6,
+          "dashboard": 0.15,
+          "flashcards": 0.25
+        },
+        "quality": "alto"
+      },
+      "preview": {
+        "name": "QA V2",
+        "grid": {
+          "Nivel": "11",
+          "Rango": "Bachiller",
+          "XP": "6.200",
+          "Monedas": "999",
+          "Héroes": "10",
+          "Cosméticos": "69",
+          "Logros": "0",
+          "Nodos": "18",
+          "Errores": "0",
+          "Etapa": "4/4"
+        },
+        "text": " Partida reconocida\nQA V2\nNivel\n11\nRango\nBachiller\nXP\n6.200\nMonedas\n999\nHéroes\n10\nCosméticos\n69\nLogros\n0\nNodos\n18\nErrores\n0\nEtapa\n4/4\nImportar esta partida\nCancelar vista previa"
+      }
+    }
+  },
+  "network": {
+    "total": 119,
+    "nonLocal": [],
+    "allowed": {
+      "file": 27,
+      "data": 92,
+      "blob": 0,
+      "about": 0,
+      "chrome": 0,
+      "other": 0
+    }
+  },
+  "errors": {
+    "total": 0,
+    "items": [],
+    "v2Count": 0
+  },
+  "failedLoads": [],
+  "warnings": [
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:32:54.259Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:32:56.081Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:00.173Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:03.132Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:10.146Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:12.925Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:15.766Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:18.152Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:20.528Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:23.099Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:25.942Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:28.169Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:33:58.988Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:16.539Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:26.939Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:33.632Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:34.692Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:38.695Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:48.582Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:54.279Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:34:55.332Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:04.674Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:11.652Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:22.689Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:33.839Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:44.869Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:35:56.004Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    },
+    {
+      "kind": "console",
+      "at": "2026-11-06T13:36:07.072Z",
+      "text": "THREE.WebGLShadowMap: PCFSoftShadowMap has been removed. Using PCFShadowMap instead."
+    }
+  ],
+  "settingsInitialSnapshot": {
+    "sound": false,
+    "ambient": false,
+    "muted": false,
+    "volume": 0.7,
+    "reducedMotion": false,
+    "extraTime": false,
+    "effectsQuality": "alto",
+    "qualityChosen": true,
+    "hide3dFrames": false,
+    "textScale": "normal",
+    "highContrast": false,
+    "tutorialSeen": true,
+    "backupReminder": false,
+    "sourceWeights": {
+      "campaign": 0.6,
+      "dashboard": 0.15,
+      "flashcards": 0.25
+    }
+  },
+  "warningsTotal": 28
+}

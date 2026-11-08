@@ -1,0 +1,189 @@
+{
+  "app": "SERUMS QUEST VOXEL",
+  "saveSchema": 2,
+  "version": "V2 · Final",
+  "buildDate": "2026-11-06",
+  "exportedAt": "2026-11-06T17:12:42.303Z",
+  "state": {
+    "schema": 2,
+    "appVersion": "V2 · Final",
+    "createdAt": "2026-11-06T17:12:32.145Z",
+    "updatedAt": "2026-11-06T17:12:40.964Z",
+    "profile": {
+      "name": "Offline QA",
+      "createdAt": "2026-11-06T17:12:32.145Z"
+    },
+    "xp": 1640,
+    "coins": 2510,
+    "stage": 3,
+    "academic": {
+      "answered": 42,
+      "correct": 33,
+      "wrong": 9,
+      "totalTimeMs": 0,
+      "sessions": 0,
+      "byArea": {
+        "area-psi-salud-publica": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "totalTimeMs": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-cuidado-integral": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "totalTimeMs": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-etica": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "totalTimeMs": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-investigacion": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "totalTimeMs": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        },
+        "area-psi-gestion": {
+          "answered": 0,
+          "correct": 0,
+          "wrong": 0,
+          "totalTimeMs": 0,
+          "reliableAnswered": 0,
+          "reliableCorrect": 0,
+          "reliableWrong": 0
+        }
+      },
+      "recent": []
+    },
+    "questions": {},
+    "questionTags": {},
+    "errors": {
+      "2026-i-psicologia-q056": {
+        "questionId": "2026-i-psicologia-q056",
+        "areaId": "area-psi-salud-publica",
+        "attempts": 1,
+        "recoveryLevel": 0,
+        "lastResult": "wrong",
+        "nextReviewAt": "2026-11-05T15:00:00.000Z",
+        "firstWrongAt": "2026-11-01T10:00:00.000Z"
+      },
+      "2026-ii-psicologia-q059": {
+        "questionId": "2026-ii-psicologia-q059",
+        "areaId": "area-psi-salud-publica",
+        "attempts": 1,
+        "recoveryLevel": 0,
+        "lastResult": "wrong",
+        "nextReviewAt": "2026-11-05T15:01:00.000Z",
+        "firstWrongAt": "2026-11-01T10:00:00.000Z"
+      },
+      "2025-i-psicologia-q009": {
+        "questionId": "2025-i-psicologia-q009",
+        "areaId": "area-psi-salud-publica",
+        "attempts": 1,
+        "recoveryLevel": 0,
+        "lastResult": "wrong",
+        "nextReviewAt": "2026-11-05T15:02:00.000Z",
+        "firstWrongAt": "2026-11-01T10:00:00.000Z"
+      }
+    },
+    "missions": {},
+    "achievements": {},
+    "collection": {
+      "ownedCharacterIds": [
+        "ilan",
+        "mara"
+      ],
+      "ownedCosmeticIds": [
+        "c-cabeza-gorro",
+        "c-cabeza-diadema",
+        "x-estela-racha",
+        "x-luciernaga-observatorio",
+        "x-buho-cometa"
+      ],
+      "selectedCharacterId": "ilan",
+      "equipped": {
+        "ilan": {
+          "cabeza": "c-cabeza-gorro"
+        }
+      }
+    },
+    "daily": {
+      "lastCompletedDate": "2026-11-05",
+      "streak": 8,
+      "bestStreak": 8,
+      "totalCompleted": 8,
+      "graceWeek": null
+    },
+    "reviews": {
+      "lastCompletedDate": null,
+      "completed": 0,
+      "onTimeSessions": 0,
+      "earlySessions": 0
+    },
+    "settings": {
+      "sound": false,
+      "ambient": false,
+      "muted": false,
+      "volume": 0.7,
+      "reducedMotion": false,
+      "extraTime": false,
+      "effectsQuality": "medio",
+      "qualityChosen": false,
+      "hide3dFrames": false,
+      "textScale": "normal",
+      "highContrast": false,
+      "tutorialSeen": true,
+      "backupReminder": true,
+      "sourceWeights": {
+        "campaign": 0.6,
+        "dashboard": 0.15,
+        "flashcards": 0.25
+      }
+    },
+    "modeStats": {
+      "dailyDate": null,
+      "claims": {},
+      "dailyWins": 0,
+      "survivalWins": 0,
+      "survivalBest": 0,
+      "timedRuns": 0,
+      "timedBest": 0,
+      "timedAce": 0,
+      "simulacros": 0,
+      "simulacroHistory": []
+    },
+    "backup": {
+      "lastExportedAt": "2026-11-06T17:12:42.303Z",
+      "lastPromptAt": "2026-11-06T17:12:40.964Z"
+    },
+    "importedFrom": "SERUMS QUEST 1.2.x",
+    "importedAt": "2026-11-06T17:12:32.146Z",
+    "events": [],
+    "v2": {
+      "world": {
+        "chests": {},
+        "guides": {},
+        "stations": {},
+        "fragments": {},
+        "visited": {}
+      }
+    },
+    "_importToastShown": true
+  }
+}

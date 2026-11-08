@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<title>Harness Agente 2 · estandartes de arena</title>
+<style>
+  html, body { margin: 0; height: 100%; background: #0b1018; overflow: hidden; }
+  canvas { display: block; }
+  #hud {
+    position: fixed; left: 10px; top: 10px; z-index: 2;
+    font: 12px/1.45 ui-monospace, Consolas, monospace;
+    color: #dfe9f5; background: rgba(8, 13, 20, 0.78);
+    border: 1px solid #2a3a4e; border-radius: 6px;
+    padding: 8px 10px; white-space: pre; pointer-events: none;
+  }
+  #hud b { color: #f0d49a; }
+</style>
+</head>
+<body>
+<div id="hud">cargando…</div>
+<script type="module">
+import * as THREE from './vendor/three.module.js';
+window.THREE = THREE;
+
+const qs = new URLSearchParams(location.search);
+const viewName = qs.get('view') || 'duel';
+const timeSec = Number(qs.get('t') || 2.5);
+const motionOn = qs.get('motion') === '1';
+
+/* ---------- stubs mínimos del juego (solo para el harness) ---------- */
+function mulberry32(seed) {
+  let s = Number(seed) || 1;
+  return function () {
+    s |= 0; s = (s + 0x6D2B79F5) | 0;
+    let t = Math.imul(s ^ (s >>> 15), 1 | s);
+    t = (t + Math.imul(t ^ (t >>> 7), 61 | t)) ^ t;
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+window.V2 = {
+  quality: function () { return 'alto'; },
+  budget: function () { return { props: 12, particles: 80, decor: 26, maxDrawCalls: 150, glow: 1 }; },
+  softError: function (area, err) { console.warn('[soft]', area, err); },
+  rand: mulberry32,
+  reducedMotion: function () { return false; },
+  register: function (name, mod) { window.V2[name] = mod; },
+  call: function (name, fn) {
+    const mod = window.V2[name];
+    const args = Array.prototype.slice.call(arguments, 2);
+    if (mod && typeof mod[fn] === 'function') return mod[fn].apply(mod, args);
+    return null;
+  }
+};
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color('#101722');
+scene.fog = new THREE.Fog('#101722', 22, 78);
+window.scene = scene;
+
+const camera = new THREE.PerspectiveCamera(42, 1, 0.1, 500);
+window.camera = camera;
+
+const renderer = new THREE.WebGLRenderer({
+  antialias: true, alpha: true, powerPreference: 'high-performance',
+  preserveDrawingBuffer: true
+});
+renderer.setPixelRatio(1);
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.06;
+renderer.outputColorSpace = THREE.SRGBColorSpace;
+document.body.appendChild(renderer.domElement);
+window.renderer = renderer;
+
+const sceneRoot = new THREE.Group();
+const hubGroup = new THREE.Group();
+const arenaGroup = new THREE.Group();
+scene.add(sceneRoot);
+sceneRoot.add(hubGroup, arenaGroup);
+hubGroup.visible = false;
+arenaGroup.position.set(160, 0, -64);
+arenaGroup.visible = true;
+window.sceneRoot = sceneRoot;
+window.hubGroup = hubGroup;
+window.arenaGroup = arenaGroup;
+
+scene.add(new THREE.HemisphereLight('#cfe6ff', '#1a2230', 1.15));
+const keyLight = new THREE.DirectionalLight('#ffe4c2', 2.3);
+keyLight.position.set(168, 14, -54);
+scene.add(keyLight);
+const rimLight = new THREE.DirectionalLight('#7aa2ff', 1.1);
+rimLight.position.set(150, 8, -74);
+scene.add(rimLight);
+
+/* Suelo de la arena, solo referencia visual. */
+const ground = new THREE.Mesh(
+  new THREE.CircleGeometry(7.4, 56),
+  new THREE.MeshLambertMaterial({ color: '#1a202b' })
+);
+ground.rotation.x = -Math.PI / 2;
+ground.position.set(160, 0.001, -64);
+scene.add(ground);
+
+/* mergedVoxels del juego: aquí basta con cajas sueltas para leer la escena. */
+const boxGeo = new THREE.BoxGeometry(1, 1, 1);
+function mergedVoxels(boxes) {
+  const group = new THREE.Group();
+  for (let i = 0; i < boxes.length; i++) {
+    const b = boxes[i];
+    if (!b || b.length < 7) continue;
+    const mat = b[7]
+      ? new THREE.MeshBasicMaterial({ color: b[6] })
+      : new THREE.MeshLambertMaterial({ color: b[6] });
+    const mesh = new THREE.Mesh(boxGeo, mat);
+    mesh.position.set(b[0], b[1], b[2]);
+    mesh.scale.set(b[3], b[4], b[5]);
+    mesh.castShadow = false;
+    mesh.receiveShadow = false;
+    group.add(mesh);
+  }
+  return group;
+}
+window.mergedVoxels = mergedVoxels;
+function disposeObject(obj) {
+  if (!obj) return;
+  obj.traverse(function (node) {
+    if (node.geometry) node.geometry.dispose();
+    if (node.material) {
+      if (Array.isArray(node.material)) node.material.forEach(function (m) { m.dispose(); });
+      else node.material.dispose();
+    }
+  });
+  if (obj.parent) obj.parent.remove(obj);
+}
+window.disposeObject = disposeObject;
+window.mapState = {};
+window.ARENA_POS = new THREE.Vector3(160, 0, -64);
+window.cameraMode = 'duel';
+
+/* ---------- cargar el código real de part5-assets.js ---------- */
+const useOrig = qs.get('src') === 'orig';
+const srcUrl = useOrig ? './part5-assets.orig.js' : '../../src/part5-assets.js';
+const src = await (await fetch(srcUrl, { cache: 'no-store' })).text();
+(0, eval)(src);
+
+/* Evita que cualquier rebuild del atrio entre en la escena del harness. */
+window.v2aHub.built = true;
+window.v2aHub.quality = 'alto';
+
+window.v2aApplyArenaVariant('area-psi-etica');
+arenaGroup.visible = true;
+
+/* ---------- vistas ---------- */
+const views = {
+  duel:    { pos: [0.7, 5.65, 9.85],  look: [0, 1.8, -0.35] },
+  inside:  { pos: [0.0, 2.2, 0.0],    look: [5.066, 1.9, 2.925] },
+  close30: { pos: [4.95, 2.5, 6.1],   look: [5.066, 1.85, 2.925] },
+  back:    { pos: [0.7, 5.65, -10.5], look: [0, 1.8, -0.35] },
+  side:    { pos: [10.4, 3.1, 3.4],   look: [5.066, 1.8, 2.925] }
+};
+const v = views[viewName] || views.duel;
+camera.position.set(160 + v.pos[0], v.pos[1], -64 + v.pos[2]);
+camera.lookAt(160 + v.look[0], v.look[1], -64 + v.look[2]);
+
+function resize() {
+  const w = window.innerWidth || 1200, h = window.innerHeight || 700;
+  renderer.setSize(w, h, false);
+  camera.aspect = w / h;
+  camera.updateProjectionMatrix();
+}
+window.addEventListener('resize', resize);
+resize();
+
+/* ---------- animación (síncrona: headless no siempre completa RAF) ---------- */
+const FRAMES = 48;
+for (let f = 1; f <= FRAMES; f++) {
+  window.v2aUpdateArena(motionOn, timeSec + f / 60);
+}
+renderer.render(scene, camera);
+
+/* ---------- comprobaciones geométricas, ya con la onda aplicada ---------- */
+const poleHalf = 0.09 / 2;
+const poleCorner = poleHalf * Math.SQRT2;
+const finialBottom = 2.36 - 0.12 / 2;   /* caja stoneDark: centro 2.36, alto 0.12 */
+const topY = 2.24;
+const pennants = window.v2aArena.pennants;
+const p0 = pennants[0] || {};
+const hasCloth = !!(p0 && p0.attr && p0.mesh);
+const check = {
+  view: viewName,
+  mode: hasCloth ? 'mesh' : 'sprite',
+  pennants: pennants.length,
+  pivotLocalX: null,
+  edgeX: null,
+  gap: null,
+  poleHalf: poleHalf,
+  poleCorner: poleCorner,
+  radialClear: null,
+  sweepClear: null,
+  topClear: +(finialBottom - topY).toFixed(4),
+  doubleSide: null,
+  edgeAmp: null,
+  flyAmp: null,
+  verts: null
+};
+let waveFly = 0;
+if (hasCloth) {
+  let minX = Infinity, edgeX = 0, edgeAmp = 0, maxWave = 0;
+  for (const p of pennants) {
+    const attr = p.attr;
+    for (let i = 0; i < attr.array.length; i += 3) {
+      const x = attr.array[i], y = attr.array[i + 1], z = attr.array[i + 2];
+      minX = Math.min(minX, x);
+      edgeX = p.mesh.position.x + minX;
+      const u = Math.max(0, Math.min(1, p.base[i] / p.width));
+      if (u < 1e-6) edgeAmp = Math.max(edgeAmp, Math.abs(z));
+      if (u > 0.995) maxWave = Math.max(maxWave, Math.abs(z));
+    }
+  }
+  check.pivotLocalX = +minX.toFixed(4);
+  check.edgeX = +edgeX.toFixed(4);
+  check.gap = +p0.gap.toFixed(4);
+  check.radialClear = +(edgeX - poleCorner).toFixed(4);
+  /* Barrido de todos los giros posibles del billboard: ningún vértice de la
+     tela entra en la huella cuadrada del palo (0.09 de lado). */
+  let sweepClear = Infinity;
+  for (const p of pennants) {
+    for (let deg = 0; deg < 360; deg += 5) {
+      const c = Math.cos(deg * Math.PI / 180), s = Math.sin(deg * Math.PI / 180);
+      for (let i = 0; i < p.attr.array.length; i += 3) {
+        const lx = p.mesh.position.x + p.attr.array[i];
+        const lz = p.attr.array[i + 2];
+        const wx = lx * c + lz * s;
+        const wz = -lx * s + lz * c;
+        const ddx = Math.max(Math.abs(wx) - poleHalf, 0);
+        const ddz = Math.max(Math.abs(wz) - poleHalf, 0);
+        sweepClear = Math.min(sweepClear, Math.sqrt(ddx * ddx + ddz * ddz));
+      }
+    }
+  }
+  check.sweepClear = +sweepClear.toFixed(4);
+  check.doubleSide = p0.mesh.material.side === THREE.DoubleSide;
+  check.edgeAmp = +edgeAmp.toFixed(5);
+  check.flyAmp = +maxWave.toFixed(4);
+  check.verts = p0.attr.count;
+  waveFly = maxWave;
+}
+window.__check = check;
+
+/* ---------- HUD ---------- */
+const hudLines = [
+  '<b>SERUMS QUEST · Agente 2 · harness de estandartes</b>',
+  'vista=' + viewName + '  t=' + (timeSec + FRAMES / 60).toFixed(2) + 's  frames=' + FRAMES,
+  'fuente=' + (useOrig ? 'part5-assets.ORIGINAL' : 'part5-assets.js corregido'),
+  'reducir movimiento=' + (motionOn ? 'SÍ (onda congelada, billboard activo)' : 'no'),
+  'modo=' + (hasCloth ? 'malla plana con pivote en el borde' : 'SPRITE centrado en el palo'),
+  'banderines=' + check.pennants + '  vértices/malla=' + (check.verts == null ? 'n/a' : check.verts)
+];
+if (hasCloth) {
+  hudLines.push(
+    'pivote geometría X=' + check.pivotLocalX + ' m  borde a eje=' + check.edgeX + ' m',
+    'palo: medio lado=' + poleHalf.toFixed(3) + '  esquina=' + poleCorner.toFixed(4) + ' m',
+    'aire radial mínimo=' + check.radialClear + ' m (positivo = sin tocar)',
+    'barrido 360°: mínimo=' + check.sweepClear + ' m',
+    'aire bajo remate=' + check.topClear + ' m',
+    'material DoubleSide=' + check.doubleSide,
+    'onda en driza=' + check.edgeAmp + '  onda máx vuelo=' + check.flyAmp + ' m',
+    'alpha vivo=' + p0.mesh.material.opacity.toFixed(3),
+    'plano=' + (p0.mesh.geometry.parameters
+      ? p0.mesh.geometry.parameters.width.toFixed(2) + '×' + p0.mesh.geometry.parameters.height.toFixed(2)
+      : '?') + ' m  subdiv=' + (p0.mesh.geometry.parameters
+        ? p0.mesh.geometry.parameters.widthSegments + '×' + p0.mesh.geometry.parameters.heightSegments
+        : '?')
+  );
+} else {
+  const sp = p0.sprite;
+  hudLines.push(
+    'sprite.position=(' + sp.position.x.toFixed(3) + ', ' + sp.position.y.toFixed(3) + ', ' + sp.position.z.toFixed(3) + ')',
+    'palo en x=z local: ' + (Math.cos(Math.PI / 6) * 5.85).toFixed(3) + ', ' + (Math.sin(Math.PI / 6) * 5.85).toFixed(3),
+    'centro del sprite = eje del palo → la tela queda partida por la mitad',
+    'escala sprite=' + sp.scale.x.toFixed(2) + '×' + sp.scale.y.toFixed(2) + ' (pivote central)'
+  );
+}
+document.getElementById('hud').innerHTML = hudLines.join('\n');
+document.title = 'ready';
+window.__ready = true;
+</script>
+</body>
+</html>

@@ -298,6 +298,7 @@ function mapBuildIsland(area, islandCfg) {
     mapCreatePath(previous, bossPoint, area.id, mapMissionState(boss) !== 'locked', boss.id);
   }
   mapState.root.add(group);
+  V2.call('assets', 'decorateMapIsland', area, group, islandCfg);
 }
 function mapCreateNode(parent, localPos, mission, stateKey, accent, boss) {
   var g = new THREE.Group(); g.position.copy(localPos);

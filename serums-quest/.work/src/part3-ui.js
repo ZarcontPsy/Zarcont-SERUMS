@@ -594,6 +594,8 @@ function settingsScreenHTML() {
         '<div class="settingsRow"><div><b>Marcos holográficos 3D</b><small>Oculta los aros flotantes; el marco del retrato se conserva.</small></div><button type="button" class="toggle ' + (!state.settings.hide3dFrames ? 'is-on' : '') + '" data-action="toggle-3d-frames" aria-label="Alternar marcos holográficos" aria-pressed="' + (!state.settings.hide3dFrames) + '"></button></div>' +
         '<p class="settingsHelp">Contraste alto, foco visible y controles por teclado. En móvil, arrastra y usa los botones táctiles. Los colores de rareza no son la única señal: cada estado lleva texto.</p>' +
       '</section>' +
+      (V2.call('feedback', 'settingsHTML') || '') +
+      (V2.call('perf', 'settingsHTML') || '') +
       '<section class="panel settingsPanel settingsPanel--wide"><span class="eyebrow noRule">Datos</span><h3>Progreso local</h3>' + (storageEnabled ? '' : '<div class="notice notice--danger"><b>Almacenamiento bloqueado.</b> Este navegador no permite guardar. Exporta un respaldo antes de cerrar; el progreso de esta sesión no persistirá.</div>') + '<p class="settingsHelp">Tu partida vive solo en este navegador. Exporta un respaldo nuevo (JSON con vista previa al importar) o importa la partida antigua. También puedes guardar una copia local para recuperación.</p><div class="settingsActions"><button type="button" class="btn btn--primary btn--sm" data-action="export-save">' + icon('download', 13) + ' Exportar partida</button><button type="button" class="btn btn--ghost btn--sm" data-action="open-import">' + icon('upload', 13) + ' Importar partida</button><button type="button" class="btn btn--ghost btn--sm" data-action="save-local-backup">' + icon('shield', 13) + ' Guardar copia local</button><button type="button" class="btn btn--danger btn--sm" data-action="reset-progress" data-armed="' + (Date.now() < resetArmedUntil ? 'true' : 'false') + '">' + (Date.now() < resetArmedUntil ? 'Confirmar reinicio' : 'Reiniciar progreso') + '</button></div><div class="settingsActions" style="margin-top:7px"><button type="button" class="btn btn--ghost btn--sm" data-action="open-help">' + icon('bookOpen', 13) + ' Ayuda</button><button type="button" class="btn btn--ghost btn--sm" data-action="open-tutorial">' + icon('compass', 13) + ' Repetir tutorial</button><button type="button" class="btn btn--ghost btn--sm" data-action="open-credits">' + icon('seal', 13) + ' Créditos y licencias</button></div></section>' +
     '</div>' +
     '<div class="settingsFoot"><span>' + settingsVersionLine() + ' · sin conexión y sin cuentas</span><button type="button" class="btn btn--ghost btn--sm" data-action="close-settings">Volver ' + icon('chevronRight', 11) + '</button></div>' +
@@ -647,9 +649,15 @@ function duelScreenHTML() {
   var hudHero = selectedCharacter();
   var hudTitle = typeof titleText === 'function' ? titleText(hudHero.id) : '';
   var hudLevel = levelAt(state.xp);
+  var qSourceChip = '';
+  if (q.generated || q.source === 'dashboard') {
+    qSourceChip = '<span class="chip chip--generated" title="Pregunta pedagógica generada desde una ficha del dashboard">Generada · ' + (q.source === 'dashboard' ? 'ficha' : 'tarjeta') + '</span>';
+  }
   var foot = '';
   if (!feedback) {
     foot = '<div class="duelFoot"><span class="hint"><kbd>A</kbd><kbd>B</kbd><kbd>C</kbd><kbd>D</kbd> responder · <kbd>Esc</kbd> pausa</span><span class="hint" style="margin-left:auto">' + (session.deferred ? 'La clave se verá al final' : 'El golpe depende de tu criterio') + '</span></div>';
+  } else if (V2.call('feedback', 'inlineEnabled') === false) {
+    foot = '';
   } else {
     var nextLabel = ((session.finiteHearts && session.hearts <= 0) || session.cursor >= session.questions.length - 1) ? 'Ver resultado' : 'Siguiente pregunta';
     var feedbackText;
@@ -679,7 +687,7 @@ function duelScreenHTML() {
   '<div class="duelHudExtra"><span>' + icon('user', 11) + ' <b>' + esc(hudHero.name) + '</b>' + (hudTitle ? ' «' + esc(hudTitle) + '»' : '') + '</span><span>Nv <b>' + hudLevel.level + '</b> · ' + formatXP(state.xp) + '</span><span>Precisión del duelo <b>' + (answeredNow ? accuracyNow + '%' : '—') + '</b></span><span>' + icon('coin', 10) + ' <b>' + formatNumber(state.coins) + '</b></span></div>' +
   '<div class="duelStatus">' + esc(guardianName) + ' · ' + (isMode ? esc(modeLabel) : (session.mode === 'review' ? 'Memoria en repaso' : session.mode === 'boss' ? 'Duelo de dominio' : 'Duelo de criterio')) + ' · Pregunta ' + (session.cursor + 1) + ' de ' + session.questions.length + '</div>' +
   '<div class="duelPanelWrap"><section class="duelPanel" style="--accent:' + area.accent + '">' +
-    '<div class="duelPanelHead"><span class="qCategory">' + (session.mode === 'review' ? 'Repaso · ' + esc(area.short) : session.mode === 'practice' ? esc(session.title) : esc(session.title) + ' · ' + esc(area.short)) + '</span>' + tagButtonsHTML(q.id, true) + '<span class="qSource">' + esc(q.examTitle || 'Psicología · SERUMS') + (q.page ? ' · p. ' + q.page : '') + '</span></div>' +
+    '<div class="duelPanelHead"><span class="qCategory">' + (session.mode === 'review' ? 'Repaso · ' + esc(area.short) : session.mode === 'practice' ? esc(session.title) : esc(session.title) + ' · ' + esc(area.short)) + '</span>' + qSourceChip + tagButtonsHTML(q.id, true) + '<span class="qSource">' + esc(q.examTitle || 'Psicología · SERUMS') + (q.page ? ' · p. ' + q.page : '') + '</span></div>' +
     '<div class="duelPanelBody"><p class="questionText">' + esc(q.stem) + '</p>' +
       '<div class="answers">' + optionHtml + '</div>' + foot +
     '</div>' +
@@ -750,12 +758,8 @@ function resultScreenHTML() {
     var recordLine = r.mode === 'survival' ? 'Récord de aciertos en Supervivencia: ' + r.survivalBest : r.mode === 'timed' ? 'Mejor precisión en Contrarreloj: ' + Math.round((r.timedBest || 0) * 100) + '%' : r.mode === 'simulacro' ? 'Simulacros superados: ' + (state.modeStats.simulacros || 0) : r.mode === 'practice' ? 'Práctica sin presión' : 'Racha de estudio: ' + (state.daily.streak || 0) + ((Number(state.daily.streak) || 0) === 1 ? ' día' : ' días');
     modeRecord = '<div class="resultNext"><b>' + esc(recordLine) + '</b><p>' + (r.mode === 'survival' ? 'Tus vidas y respuestas quedan guardadas en el informe.' : r.mode === 'timed' ? 'La velocidad no compensa una respuesta incorrecta.' : r.mode === 'simulacro' ? 'El detalle por área está arriba; los fallos ya están programados para repaso.' : 'El diario ya quedó cerrado por hoy.') + '</p></div>';
   }
-  return '<div class="resultScreen"><section class="resultCard" style="--accent:' + accent + '">' +
-    '<div class="resultHead"><div><span class="eyebrow noRule" style="color:' + accent + '">' + eyebrow + (r.isMode ? '' : ' · ' + esc(area.short)) + '</span><h1>' + esc(heading) + '</h1>' +
-      '<p class="small muted" style="margin:8px 0 0;max-width:580px">' + esc(r.title) + ' · ' + r.correct + ' de ' + r.total + ' respuestas correctas. ' + esc(r.reasonLabel || '') + '</p></div>' +
-      '<div class="resultSeal"><b>' + sealValue + '</b><small>precisión</small></div>' +
-    '</div>' +
-    '<div class="resultBody"><div>' +
+  var v2SummaryHTML = V2.call('summary', 'html', r) || '';
+  var legacyResultLeft =
       '<div class="resultStats"><div class="resultStat resultStat--teal"><b>' + r.correct + '</b><span>aciertos</span></div><div class="resultStat"><b>' + r.wrong + '</b><span>fallos</span></div><div class="resultStat"><b>' + r.questionXp + '</b><span>XP de respuestas</span></div><div class="resultStat resultStat--gold"><b>' + r.coinsEarned + '</b><span>monedas</span></div></div>' +
       '<div class="resultReasons" style="margin-top:12px"><strong>' + (r.pass ? (r.isMode ? 'Modo superado.' : 'Ruta superada.') : (r.isMode ? 'Sin recompensa de cierre en este intento.' : 'Sesión cerrada sin recompensa de ruta.')) + '</strong> ' + esc(r.reason) + '</div>' +
       '<div class="resultNext"><b>' + levelLine + ' · ' + esc(r.rankAfter || '') + '</b><p>' + nextLine + '</p></div>' +
@@ -765,8 +769,13 @@ function resultScreenHTML() {
       nextCosmeticCard +
       (r.achievements && r.achievements.length ? '<div class="resultNext"><b>Logros nuevos</b><p>' + esc(r.achievements.map(function (a) { return a.name; }).join(' · ')) + '</p></div>' : '') +
       (r.unlockedCharacters && r.unlockedCharacters.length ? '<div class="resultNext"><b>Nuevo héroe: ' + esc(r.unlockedCharacters.map(function (c) { return c.name; }).join(', ')) + '</b><p>Ya puedes elegirlo en el observatorio.</p></div>' : '') +
-      '<div class="answerReview">' + answers + '</div>' +
+      '<div class="answerReview">' + answers + '</div>';
+  return '<div class="resultScreen"><section class="resultCard" style="--accent:' + accent + '">' +
+    '<div class="resultHead"><div><span class="eyebrow noRule" style="color:' + accent + '">' + eyebrow + (r.isMode ? '' : ' · ' + esc(area.short)) + '</span><h1>' + esc(heading) + '</h1>' +
+      '<p class="small muted" style="margin:8px 0 0;max-width:580px">' + esc(r.title) + ' · ' + r.correct + ' de ' + r.total + ' respuestas correctas. ' + esc(r.reasonLabel || '') + '</p></div>' +
+      '<div class="resultSeal"><b>' + sealValue + '</b><small>precisión</small></div>' +
     '</div>' +
+    '<div class="resultBody"><div>' + (v2SummaryHTML || legacyResultLeft) + '</div>' +
     '<aside class="resultAside"><h3>' + (r.isMode ? 'Recompensas del modo' : 'Recompensas de la ruta') + '</h3><div class="rewardRows">' + rewards + '</div>' +
       '<div class="resultNext"><b>' + (r.isMode ? 'Registro del modo' : 'Bitácora actualizada') + '</b><p>' + (r.isMode ? (r.mode === 'simulacro' ? 'El informe y el desglose por área quedaron guardados.' : (r.mode === 'daily' ? 'El diario ya quedó cerrado por hoy y cuenta para tu racha.' : 'El intento quedó registrado; puedes repetir el modo sin penalización de monedas.')) : (r.newlyCompleted ? 'Este nodo queda marcado como completado.' : (r.mode === 'review' ? 'Los intervalos de repaso se recalcularon.' : (r.pass ? 'La ruta ya estaba completada; conservas tu mejor marca.' : 'La ruta sigue abierta; este intento no registrará cierre.')))) + '</p></div>' +
       '<div class="resultNext"><b>Próxima memoria</b><p>' + (r.errorsScheduled ? r.errorsScheduled + ' ' + plural(r.errorsScheduled, 'fallo vuelve', 'fallos vuelven') + ' en ' + (RULES.firstReviewMinutes || 20) + ' min.' : 'Sin citas nuevas pendientes.') + (due ? ' ' + due + ' ' + plural(due, 'pregunta espera', 'preguntas esperan') + ' ahora.' : '') + '</p></div>' +
@@ -780,6 +789,11 @@ function resultScreenHTML() {
    Render raíz
    ------------------------------------------------------------------------- */
 function setScreen(next) {
+  V2.call('feedback', 'hide');
+  V2.call('world', 'close');
+  V2.call('duel', 'unmount');
+  V2.call('summary', 'unmount');
+  if (screen === 'heroes' || screen === 'recruit') V2.call('heroes', 'unmount');
   screen = next;
   if (next !== 'hub') EL.prompt.classList.add('hidden');
   syncHUD();
@@ -787,6 +801,7 @@ function setScreen(next) {
 }
 function renderScreen() {
   if (!EL.screen) return;
+  try { if (window.__v22) window.__v22.renderCount = (window.__v22.renderCount || 0) + 1; } catch (e) {}
   if (screen === 'boot') return;
   if (screen === 'title') {
     EL.screen.innerHTML = titleScreenHTML();
@@ -794,12 +809,12 @@ function renderScreen() {
   }
   if (screen === 'hub') { EL.screen.innerHTML = ''; return; }
   if (screen === 'journal') { EL.screen.innerHTML = journalScreenHTML(); return; }
-  if (screen === 'heroes') { EL.screen.innerHTML = heroesScreenHTML(); return; }
-  if (screen === 'recruit') { EL.screen.innerHTML = recruitScreenHTML(); return; }
+  if (screen === 'heroes') { EL.screen.innerHTML = heroesScreenHTML(); V2.call('heroes', 'mount'); return; }
+  if (screen === 'recruit') { EL.screen.innerHTML = recruitScreenHTML(); V2.call('heroes', 'mount'); return; }
   if (screen === 'review') { EL.screen.innerHTML = reviewScreenHTML(); return; }
   if (screen === 'import') { EL.screen.innerHTML = importScreenHTML(); bindImportFile(); return; }
   if (screen === 'pause') { EL.screen.innerHTML = pauseScreenHTML(); return; }
-  if (screen === 'settings') { EL.screen.innerHTML = settingsScreenHTML(); return; }
+  if (screen === 'settings') { EL.screen.innerHTML = settingsScreenHTML(); V2.call('feedback', 'mountSettings'); V2.call('perf', 'mountSettings'); return; }
   if (screen === 'modes') { EL.screen.innerHTML = modesScreenHTML(); return; }
   if (screen === 'stats') { EL.screen.innerHTML = statsScreenHTML(); return; }
   if (screen === 'practicePicker') { EL.screen.innerHTML = practicePickerHTML(); return; }
@@ -810,11 +825,18 @@ function renderScreen() {
   if (screen === 'wardrobe') {
     EL.screen.innerHTML = wardrobeScreenHTML();
     mountWardrobePreview();
+    if (typeof V22 !== 'undefined' && V22.hydrate) V22.hydrate(EL.screen);
     return;
   }
-  if (screen === 'shop') { EL.screen.innerHTML = shopScreenHTML(); return; }
+  if (screen === 'shop') {
+    EL.screen.innerHTML = shopScreenHTML();
+    if (typeof V22 !== 'undefined' && V22.mountShop) V22.mountShop();
+    return;
+  }
   if (screen === 'showcase') { EL.screen.innerHTML = showcaseScreenHTML(); return; }
   if (screen === 'slotGallery') { EL.screen.innerHTML = slotGalleryHTML(); return; }
+  if (screen === 'duel') { EL.screen.innerHTML = duelScreenHTML(); V2.call('duel', 'mount'); return; }
+  if (screen === 'result') { EL.screen.innerHTML = resultScreenHTML(); V2.call('summary', 'mount', lastResult); if (typeof V22 !== 'undefined' && V22.afterResult) V22.afterResult(); return; }
   if (screen === 'map') { EL.screen.innerHTML = mapScreenHTML(); mountMapCanvas(); return; }
   if (screen === 'mapGallery') { EL.screen.innerHTML = mapGalleryHTML(); return; }
   if (screen === 'duel') { EL.screen.innerHTML = duelScreenHTML(); return; }

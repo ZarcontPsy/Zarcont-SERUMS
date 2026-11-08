@@ -1,0 +1,2069 @@
+{
+  "label": "iter2",
+  "mode": "quick",
+  "generatedAt": "2026-11-06T17:00:19.366Z",
+  "env": {
+    "webgl": "ANGLE (Google, Vulkan 1.3.0 (SwiftShader Device (Subzero) (0x0000C0DE)), SwiftShader driver)",
+    "cameraNear": 0.2,
+    "cameraFar": 320,
+    "cameraFov": 42,
+    "shadowTypeInitial": 1,
+    "pcfSoftType": 2,
+    "pcfType": 1,
+    "camera": {
+      "near": 0.2,
+      "far": 320
+    },
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) HeadlessChrome/156.0.0.0 Safari/537.36",
+    "shadowTypeAfterFirstRender": 1
+  },
+  "control": {
+    "changed": 0,
+    "flat": 0,
+    "maxD": 0
+  },
+  "warnings": [],
+  "summary": {
+    "control": {
+      "changed": 0,
+      "flat": 0,
+      "maxD": 0
+    },
+    "heroFlatTotal": 103,
+    "heroFlatWorst": {
+      "id": "teo",
+      "flat": 103,
+      "worst": {
+        "view": "mid",
+        "dist": 3.05,
+        "angle": 0.55,
+        "pitch": 0.16,
+        "targetY": 1.12,
+        "flat": 69,
+        "changed": 926,
+        "maxD": 109
+      }
+    },
+    "heroCoplanarUnresolvedTotal": 281,
+    "heroCoplanarRawCrossColorTotal": 79,
+    "heroCoplanarWorst": {
+      "id": "ona",
+      "unresolvedColorPairs": 41,
+      "crossColorPairs": 14,
+      "audit": {
+        "triangles": 1322,
+        "pairs": 730,
+        "sameMesh": 716,
+        "crossMesh": 14,
+        "colorPairs": 49,
+        "crossColorPairs": 14,
+        "sameMeshColorPairs": 35,
+        "unresolvedCrossColorPairs": 6,
+        "unresolvedColorPairs": 41,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 11
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right",
+            "count": 1
+          }
+        ]
+      }
+    },
+    "guardianFlatTotal": 0,
+    "guardianFlatWorst": {
+      "areaId": "area-psi-salud-publica",
+      "flat": 0,
+      "worst": {
+        "view": "close",
+        "dist": 2.4,
+        "angle": 2.1,
+        "pitch": 0.08,
+        "targetY": 1.7,
+        "flat": 0,
+        "changed": 1926,
+        "maxD": 105
+      }
+    },
+    "guardianCoplanarUnresolvedTotal": 33,
+    "guardianCoplanarRawCrossColorTotal": 33,
+    "effectFlatTotal": 0,
+    "effectCoplanarUnresolvedTotal": 0,
+    "effectCoplanarRawCrossColorTotal": 0,
+    "effectWorst": [],
+    "cosmeticAuditCases": 0,
+    "cosmeticAuditCrossColorTotal": 0,
+    "cosmeticAuditUnresolvedTotal": 0,
+    "cosmeticAuditSameMeshPairsTotal": 0,
+    "cosmeticAuditSameMeshColorTotal": 0,
+    "cosmeticAuditWorst": [],
+    "flickerTotal": 103,
+    "coplanarUnresolvedTotal": 314,
+    "coplanarRawCrossColorTotal": 112,
+    "ok": false
+  },
+  "cases": [
+    {
+      "kind": "hero",
+      "id": "ilan",
+      "triangles": 1186,
+      "coplanar": {
+        "pairs": 655,
+        "sameMesh": 643,
+        "crossMesh": 12,
+        "colorPairs": 44,
+        "crossColorPairs": 12,
+        "sameMeshColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "base-body-details <> cosmetic:piernas:c-piernas-falda",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1263,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 27,
+          "flat": 0,
+          "maxD": 54
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 437,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 944,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 604,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 361,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 473,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 508,
+          "flat": 0,
+          "maxD": 89
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 108,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 110,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 107,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 135,
+          "flat": 0,
+          "maxD": 84
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "mara",
+      "triangles": 1184,
+      "coplanar": {
+        "pairs": 650,
+        "sameMesh": 644,
+        "crossMesh": 6,
+        "colorPairs": 38,
+        "crossColorPairs": 6,
+        "sameMeshColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          },
+          {
+            "pair": "base-body-details <> hero-torso",
+            "count": 2
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1701,
+          "flat": 0,
+          "maxD": 107
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 421,
+          "flat": 0,
+          "maxD": 111
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 1057,
+          "flat": 0,
+          "maxD": 120
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 984,
+          "flat": 0,
+          "maxD": 138
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 733,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 394,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 476,
+          "flat": 0,
+          "maxD": 78
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 767,
+          "flat": 0,
+          "maxD": 81
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 146,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 117,
+          "flat": 0,
+          "maxD": 77
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 146,
+          "flat": 0,
+          "maxD": 60
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 115,
+          "flat": 0,
+          "maxD": 80
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "noa",
+      "triangles": 1254,
+      "coplanar": {
+        "pairs": 687,
+        "sameMesh": 686,
+        "crossMesh": 1,
+        "colorPairs": 37,
+        "crossColorPairs": 1,
+        "sameMeshColorPairs": 36,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 36,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "base-torso-details <> base-torso-details",
+            "count": 6
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right",
+            "count": 1
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1448,
+          "flat": 0,
+          "maxD": 84
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 440,
+          "flat": 0,
+          "maxD": 71
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 1077,
+          "flat": 0,
+          "maxD": 93
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1379,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 676,
+          "flat": 0,
+          "maxD": 110
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 523,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 494,
+          "flat": 0,
+          "maxD": 62
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 683,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 143,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 118,
+          "flat": 0,
+          "maxD": 66
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 110,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 162,
+          "flat": 0,
+          "maxD": 147
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "teo",
+      "triangles": 1208,
+      "coplanar": {
+        "pairs": 645,
+        "sameMesh": 633,
+        "crossMesh": 12,
+        "colorPairs": 26,
+        "crossColorPairs": 12,
+        "sameMeshColorPairs": 14,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 14,
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "base-body-details <> cosmetic:piernas:c-piernas-falda",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 6
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 103,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 895,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 524,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 89,
+          "flat": 0,
+          "maxD": 50
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1279,
+          "flat": 0,
+          "maxD": 127
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 926,
+          "flat": 69,
+          "maxD": 109
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 850,
+          "flat": 34,
+          "maxD": 107
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 547,
+          "flat": 0,
+          "maxD": 69
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 745,
+          "flat": 0,
+          "maxD": 110
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 149,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 161,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 129,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 178,
+          "flat": 0,
+          "maxD": 84
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "lia",
+      "triangles": 1312,
+      "coplanar": {
+        "pairs": 716,
+        "sameMesh": 708,
+        "crossMesh": 8,
+        "colorPairs": 40,
+        "crossColorPairs": 8,
+        "sameMeshColorPairs": 32,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 32,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 4
+          },
+          {
+            "pair": "base-head <> base-head-details-0",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1572,
+          "flat": 0,
+          "maxD": 156
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 300,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 454,
+          "flat": 0,
+          "maxD": 67
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1089,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 764,
+          "flat": 0,
+          "maxD": 107
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 414,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 499,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 562,
+          "flat": 0,
+          "maxD": 100
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 112,
+          "flat": 0,
+          "maxD": 55
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 114,
+          "flat": 0,
+          "maxD": 76
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 106,
+          "flat": 0,
+          "maxD": 114
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 147,
+          "flat": 0,
+          "maxD": 101
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "kian",
+      "triangles": 1268,
+      "coplanar": {
+        "pairs": 673,
+        "sameMesh": 669,
+        "crossMesh": 4,
+        "colorPairs": 20,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 20,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 20,
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 7
+          },
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 5
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1303,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 596,
+          "flat": 0,
+          "maxD": 159
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 338,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1265,
+          "flat": 0,
+          "maxD": 125
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 725,
+          "flat": 0,
+          "maxD": 97
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 672,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 507,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 601,
+          "flat": 0,
+          "maxD": 126
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 165,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 190,
+          "flat": 0,
+          "maxD": 67
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 148,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 157,
+          "flat": 0,
+          "maxD": 67
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "amaru",
+      "triangles": 1200,
+      "coplanar": {
+        "pairs": 653,
+        "sameMesh": 652,
+        "crossMesh": 1,
+        "colorPairs": 33,
+        "crossColorPairs": 1,
+        "sameMeshColorPairs": 32,
+        "unresolvedCrossColorPairs": 1,
+        "unresolvedColorPairs": 33,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1777,
+          "flat": 0,
+          "maxD": 157
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 415,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 486,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1066,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 891,
+          "flat": 0,
+          "maxD": 103
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 515,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 487,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 733,
+          "flat": 0,
+          "maxD": 78
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 151,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 164,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 150,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 177,
+          "flat": 0,
+          "maxD": 104
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "ona",
+      "triangles": 1322,
+      "coplanar": {
+        "pairs": 730,
+        "sameMesh": 716,
+        "crossMesh": 14,
+        "colorPairs": 49,
+        "crossColorPairs": 14,
+        "sameMeshColorPairs": 35,
+        "unresolvedCrossColorPairs": 6,
+        "unresolvedColorPairs": 41,
+        "top": [
+          {
+            "pair": "hero-arm-left <> hero-arm-left",
+            "count": 12
+          },
+          {
+            "pair": "hero-arm-right <> hero-arm-right",
+            "count": 12
+          },
+          {
+            "pair": "base-weapon <> base-weapon",
+            "count": 11
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 4
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left",
+            "count": 1
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right",
+            "count": 1
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1689,
+          "flat": 0,
+          "maxD": 103
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 718,
+          "flat": 0,
+          "maxD": 101
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 776,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1445,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 743,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 599,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 511,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 613,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 97,
+          "flat": 0,
+          "maxD": 79
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 134,
+          "flat": 0,
+          "maxD": 100
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 111,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 124,
+          "flat": 0,
+          "maxD": 78
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "iris",
+      "triangles": 1422,
+      "coplanar": {
+        "pairs": 766,
+        "sameMesh": 745,
+        "crossMesh": 21,
+        "colorPairs": 39,
+        "crossColorPairs": 21,
+        "sameMeshColorPairs": 18,
+        "unresolvedCrossColorPairs": 5,
+        "unresolvedColorPairs": 23,
+        "top": [
+          {
+            "pair": "cosmetic:piernas:c-piernas-falda <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "base-torso-details <> hero-torso",
+            "count": 8
+          },
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left",
+            "count": 5
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right",
+            "count": 5
+          },
+          {
+            "pair": "hero-torso <> hero-torso",
+            "count": 5
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 687,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 292,
+          "flat": 0,
+          "maxD": 58
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 85,
+          "flat": 0,
+          "maxD": 28
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1651,
+          "flat": 0,
+          "maxD": 198
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 564,
+          "flat": 0,
+          "maxD": 101
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 387,
+          "flat": 0,
+          "maxD": 106
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 486,
+          "flat": 0,
+          "maxD": 69
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 437,
+          "flat": 0,
+          "maxD": 87
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 103,
+          "flat": 0,
+          "maxD": 80
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 99,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 94,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 133,
+          "flat": 0,
+          "maxD": 58
+        }
+      ]
+    },
+    {
+      "kind": "hero",
+      "id": "zenon",
+      "triangles": 1308,
+      "coplanar": {
+        "pairs": 686,
+        "sameMesh": 682,
+        "crossMesh": 4,
+        "colorPairs": 22,
+        "crossColorPairs": 4,
+        "sameMeshColorPairs": 18,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 18,
+        "top": [
+          {
+            "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta",
+            "count": 8
+          },
+          {
+            "pair": "hero-leg-left <> hero-leg-left",
+            "count": 5
+          },
+          {
+            "pair": "hero-leg-right <> hero-leg-right",
+            "count": 5
+          },
+          {
+            "pair": "base-floaters <> base-torso-details",
+            "count": 4
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 0.55,
+          "changed": 1103,
+          "flat": 0,
+          "maxD": 121
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 2.1,
+          "changed": 18,
+          "flat": 0,
+          "maxD": 45
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 3.6,
+          "changed": 357,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "close",
+          "dist": 1.12,
+          "angle": 5.15,
+          "changed": 1517,
+          "flat": 0,
+          "maxD": 171
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 0.55,
+          "changed": 673,
+          "flat": 0,
+          "maxD": 104
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 2.1,
+          "changed": 426,
+          "flat": 0,
+          "maxD": 71
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 3.6,
+          "changed": 477,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "mid",
+          "dist": 3.05,
+          "angle": 5.15,
+          "changed": 785,
+          "flat": 0,
+          "maxD": 126
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 0.55,
+          "changed": 142,
+          "flat": 0,
+          "maxD": 108
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 2.1,
+          "changed": 111,
+          "flat": 0,
+          "maxD": 59
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 3.6,
+          "changed": 146,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 8.6,
+          "angle": 5.15,
+          "changed": 173,
+          "flat": 0,
+          "maxD": 55
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-salud-publica",
+      "triangles": 330,
+      "coplanar": {
+        "pairs": 165,
+        "sameMesh": 165,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 1276,
+          "flat": 0,
+          "maxD": 61
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1926,
+          "flat": 0,
+          "maxD": 105
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 890,
+          "flat": 0,
+          "maxD": 61
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1440,
+          "flat": 0,
+          "maxD": 133
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 509,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 569,
+          "flat": 0,
+          "maxD": 103
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 591,
+          "flat": 0,
+          "maxD": 60
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 640,
+          "flat": 0,
+          "maxD": 88
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 85,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 84,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 61,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 164,
+          "flat": 0,
+          "maxD": 52
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-cuidado-integral",
+      "triangles": 490,
+      "coplanar": {
+        "pairs": 245,
+        "sameMesh": 245,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 1977,
+          "flat": 0,
+          "maxD": 109
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1577,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 1742,
+          "flat": 0,
+          "maxD": 80
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1653,
+          "flat": 0,
+          "maxD": 110
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 263,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 273,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 196,
+          "flat": 0,
+          "maxD": 53
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 329,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 83,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 49,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 49,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 70,
+          "flat": 0,
+          "maxD": 72
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-etica",
+      "triangles": 188,
+      "coplanar": {
+        "pairs": 94,
+        "sameMesh": 94,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 2482,
+          "flat": 0,
+          "maxD": 144
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1395,
+          "flat": 0,
+          "maxD": 82
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 2038,
+          "flat": 0,
+          "maxD": 160
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 2568,
+          "flat": 0,
+          "maxD": 151
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 723,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 405,
+          "flat": 0,
+          "maxD": 86
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 452,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 668,
+          "flat": 0,
+          "maxD": 102
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 110,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 74,
+          "flat": 0,
+          "maxD": 85
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 100,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 175,
+          "flat": 0,
+          "maxD": 102
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-investigacion",
+      "triangles": 726,
+      "coplanar": {
+        "pairs": 409,
+        "sameMesh": 376,
+        "crossMesh": 33,
+        "colorPairs": 33,
+        "crossColorPairs": 33,
+        "sameMeshColorPairs": 0,
+        "unresolvedCrossColorPairs": 33,
+        "unresolvedColorPairs": 33,
+        "top": [
+          {
+            "pair": "guardian-body <> guardian-body",
+            "count": 33
+          }
+        ]
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 2246,
+          "flat": 0,
+          "maxD": 120
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1400,
+          "flat": 0,
+          "maxD": 90
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 2626,
+          "flat": 0,
+          "maxD": 142
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 2126,
+          "flat": 0,
+          "maxD": 91
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 699,
+          "flat": 0,
+          "maxD": 54
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 544,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 512,
+          "flat": 0,
+          "maxD": 60
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 641,
+          "flat": 0,
+          "maxD": 51
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 142,
+          "flat": 0,
+          "maxD": 98
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 151,
+          "flat": 0,
+          "maxD": 57
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 109,
+          "flat": 0,
+          "maxD": 52
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 227,
+          "flat": 0,
+          "maxD": 61
+        }
+      ]
+    },
+    {
+      "kind": "guardian",
+      "id": "area-psi-gestion",
+      "triangles": 558,
+      "coplanar": {
+        "pairs": 375,
+        "sameMesh": 375,
+        "crossMesh": 0,
+        "colorPairs": 0,
+        "crossColorPairs": 0,
+        "sameMeshColorPairs": 0,
+        "unresolvedCrossColorPairs": 0,
+        "unresolvedColorPairs": 0,
+        "top": []
+      },
+      "flatTotal": 0,
+      "views": [
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 0.55,
+          "changed": 955,
+          "flat": 0,
+          "maxD": 89
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 2.1,
+          "changed": 1340,
+          "flat": 0,
+          "maxD": 112
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 3.6,
+          "changed": 1005,
+          "flat": 0,
+          "maxD": 64
+        },
+        {
+          "view": "close",
+          "dist": 2.4,
+          "angle": 5.15,
+          "changed": 1537,
+          "flat": 0,
+          "maxD": 96
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 0.55,
+          "changed": 479,
+          "flat": 0,
+          "maxD": 63
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 2.1,
+          "changed": 302,
+          "flat": 0,
+          "maxD": 50
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 3.6,
+          "changed": 262,
+          "flat": 0,
+          "maxD": 55
+        },
+        {
+          "view": "mid",
+          "dist": 5.2,
+          "angle": 5.15,
+          "changed": 229,
+          "flat": 0,
+          "maxD": 48
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 0.55,
+          "changed": 36,
+          "flat": 0,
+          "maxD": 56
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 2.1,
+          "changed": 85,
+          "flat": 0,
+          "maxD": 54
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 3.6,
+          "changed": 53,
+          "flat": 0,
+          "maxD": 50
+        },
+        {
+          "view": "far",
+          "dist": 9.5,
+          "angle": 5.15,
+          "changed": 93,
+          "flat": 0,
+          "maxD": 54
+        }
+      ]
+    }
+  ]
+}

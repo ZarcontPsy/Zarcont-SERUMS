@@ -1,0 +1,43 @@
+{
+  "label": "probe-coleta",
+  "probe": {
+    "probe": "coleta",
+    "audit": {
+      "triangles": 74,
+      "pairs": 37,
+      "sameMesh": 37,
+      "crossMesh": 0,
+      "colorPairs": 0,
+      "exactColorPairs": 0,
+      "crossColorPairs": 0,
+      "crossExactColorPairs": 0,
+      "sameMeshColorPairs": 0,
+      "sameMeshExactColorPairs": 0,
+      "unresolvedCrossColorPairs": 0,
+      "unresolvedColorPairs": 0,
+      "exactUnresolvedColorPairs": 0,
+      "samples": [],
+      "top": []
+    },
+    "meshes": [
+      {
+        "name": "voxels-lambert",
+        "vertices": 100,
+        "triangles": 50,
+        "layer": 0
+      },
+      {
+        "name": "voxels-glow",
+        "vertices": 48,
+        "triangles": 24,
+        "layer": -1
+      }
+    ],
+    "stats": {
+      "boxes": 6,
+      "dropped": 0,
+      "facesKept": 33,
+      "facesCulled": 3
+    }
+  }
+}

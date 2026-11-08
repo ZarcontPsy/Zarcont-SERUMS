@@ -23,7 +23,9 @@ try {
   renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
   renderer.setClearColor(0x000000, 0);
   renderer.shadowMap.enabled = true;
-  renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+  /* three r187 eliminó PCFSoftShadowMap: el renderer avisaba y caía a
+     PCFShadowMap de todos modos. Lo pedimos directamente. */
+  renderer.shadowMap.type = THREE.PCFShadowMap;
   renderer.toneMapping = THREE.ACESFilmicToneMapping;
   renderer.toneMappingExposure = 1.06;
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -41,7 +43,9 @@ if (renderer) {
 
 var scene = new THREE.Scene();
 scene.fog = new THREE.Fog(RULES.palette ? RULES.palette.fog : '#090e1a', 28, 78);
-var camera = new THREE.PerspectiveCamera(42, 1, 0.1, 500);
+/* near/far contenido: 0.1/500 desperdiciaba precisión de profundidad.
+   0.2/320 conserva estrellas (radio máx. ~295 desde la cámara) y arena. */
+var camera = new THREE.PerspectiveCamera(42, 1, 0.2, 320);
 var clock = 0;
 var ARENA_POS = new THREE.Vector3(160, 0, -64);
 var HUB_RADIUS = Number(RULES.worldRadius) || 9.2;
@@ -99,45 +103,296 @@ function makeBlob(radius) {
   return mesh;
 }
 
+/*  Z-FIGHTING VOXEL
+    Las cajas son axis-aligned y muchas comparten planos exactos (pelo/cara,
+    placas sobre el torso, detalles del arma…). Al fusionarlas, esas caras
+    coplanares se disputan el mismo valor de profundidad y parpadean.
+    mergedVoxels ahora:
+      1. normaliza tamaños y descarta cajas degeneradas;
+      2. deduplica cajas idénticas y descarta cajas contenidas;
+      3. culla caras interiores, de contacto y caras coplanares del mismo
+         sentido: la de mayor prioridad (glow y luego orden de lista) gana y
+         la otra se recorta por resta de rectángulos, sin perder color;
+      4. emite cuads con el winding de una plantilla BoxGeometry, así las
+         normales y el sentido de las caras no cambian.
+    El color por vértice y el material glow se conservan. */
+var VOXEL_EPS = 1e-5;
+var VOXEL_TEMPLATE = null;
+var mergedVoxelsStats = {
+  calls: 0, boxes: 0, dropped: 0, facesKept: 0, facesCulled: 0,
+  trianglesBefore: 0, trianglesAfter: 0
+};
+
+function voxelTemplate() {
+  if (VOXEL_TEMPLATE) return VOXEL_TEMPLATE;
+  var geo = new THREE.BoxGeometry(1, 1, 1);
+  var position = geo.attributes.position;
+  var normal = geo.attributes.normal;
+  var index = geo.index.array;
+  var faces = [];
+  for (var f = 0; f < 6; f++) faces.push({ verts: [], tris: [], local: {} });
+  var faceOfVertex = [];
+  for (var v = 0; v < position.count; v++) {
+    var nx = Math.round(normal.getX(v));
+    var ny = Math.round(normal.getY(v));
+    var nz = Math.round(normal.getZ(v));
+    var face = nx === 1 ? 0 : nx === -1 ? 1 : ny === 1 ? 2 : ny === -1 ? 3 : nz === 1 ? 4 : 5;
+    faceOfVertex[v] = face;
+    if (faces[face].local[v] === undefined) {
+      faces[face].local[v] = faces[face].verts.length;
+      faces[face].verts.push(v);
+    }
+  }
+  for (var t = 0; t < index.length; t += 3) {
+    var faceIndex = faceOfVertex[index[t]];
+    faces[faceIndex].tris.push([index[t], index[t + 1], index[t + 2]]);
+  }
+  VOXEL_TEMPLATE = { position: position, faces: faces };
+  return VOXEL_TEMPLATE;
+}
+
+function voxelSameBox(a, b) {
+  for (var i = 0; i < 3; i++) {
+    if (Math.abs(a.min[i] - b.min[i]) > VOXEL_EPS || Math.abs(a.max[i] - b.max[i]) > VOXEL_EPS) return false;
+  }
+  return true;
+}
+function voxelCoversBox(a, b) {
+  for (var i = 0; i < 3; i++) {
+    if (a.min[i] > b.min[i] + VOXEL_EPS || a.max[i] < b.max[i] - VOXEL_EPS) return false;
+  }
+  return true;
+}
+function voxelHigherPriority(a, b) {
+  if (a.glow !== b.glow) return a.glow;
+  return a.index > b.index;
+}
+/* Resta un rectángulo [u0,u1,v0,v1] a una lista de rectángulos. */
+function voxelSubtractRects(rects, cover) {
+  var out = [];
+  for (var i = 0; i < rects.length; i++) {
+    var r = rects[i];
+    var u0 = Math.max(r[0], cover[0]);
+    var u1 = Math.min(r[1], cover[1]);
+    var v0 = Math.max(r[2], cover[2]);
+    var v1 = Math.min(r[3], cover[3]);
+    if (u1 <= u0 + 1e-7 || v1 <= v0 + 1e-7) { out.push(r); continue; }
+    if (r[0] < u0 - 1e-7) out.push([r[0], u0, r[2], r[3]]);
+    if (r[1] > u1 + 1e-7) out.push([u1, r[1], r[2], r[3]]);
+    if (r[2] < v0 - 1e-7) out.push([u0, u1, r[2], v0]);
+    if (r[3] > v1 + 1e-7) out.push([u0, u1, v1, r[3]]);
+  }
+  return out;
+}
+/* Emite un quad de una cara (posible recorte) con el winding de la plantilla. */
+function voxelPushQuad(target, template, faceIndex, axis, sign, plane, u0, u1, v0, v1, tint) {
+  var face = template.faces[faceIndex];
+  var o1 = (axis + 1) % 3;
+  var o2 = (axis + 2) % 3;
+  var base = target.positions.length / 3;
+  var position = template.position;
+  for (var i = 0; i < face.verts.length; i++) {
+    var vi = face.verts[i];
+    var coords = [position.getX(vi), position.getY(vi), position.getZ(vi)];
+    var out = [0, 0, 0];
+    out[axis] = plane;
+    out[o1] = coords[o1] >= 0 ? u1 : u0;
+    out[o2] = coords[o2] >= 0 ? v1 : v0;
+    target.positions.push(out[0], out[1], out[2]);
+    target.normals.push(axis === 0 ? sign : 0, axis === 1 ? sign : 0, axis === 2 ? sign : 0);
+    target.colors.push(tint.r, tint.g, tint.b);
+  }
+  for (var t = 0; t < face.tris.length; t++) {
+    var tri = face.tris[t];
+    target.indices.push(
+      base + face.local[tri[0]],
+      base + face.local[tri[1]],
+      base + face.local[tri[2]]
+    );
+  }
+}
+
 /** Merges a list of boxes into one vertex-coloured mesh per material kind.
  *  Box format: [x, y, z, width, height, depth, colour, glow] */
 function mergedVoxels(boxes) {
-  var groups = [[], []];
-  for (var i = 0; i < boxes.length; i++) groups[boxes[i][7] ? 1 : 0].push(boxes[i]);
+  var template = voxelTemplate();
+  var stats = { boxes: 0, dropped: 0, facesKept: 0, facesCulled: 0 };
+  var list = [];
+  var i, j, b;
+  for (i = 0; i < boxes.length; i++) {
+    b = boxes[i];
+    if (!b || b.length < 6) continue;
+    var w = Math.abs(Number(b[3]) || 0);
+    var h = Math.abs(Number(b[4]) || 0);
+    var d = Math.abs(Number(b[5]) || 0);
+    if (!(w > 1e-6 && h > 1e-6 && d > 1e-6)) continue;
+    var cx = Number(b[0]) || 0;
+    var cy = Number(b[1]) || 0;
+    var cz = Number(b[2]) || 0;
+    var tint = color(b[6] == null ? '#ffffff' : b[6]);
+    list.push({
+      index: list.length,
+      min: [cx - w / 2, cy - h / 2, cz - d / 2],
+      max: [cx + w / 2, cy + h / 2, cz + d / 2],
+      color: tint,
+      glow: !!b[7],
+      dead: false
+    });
+    stats.boxes++;
+  }
+
+  /* 1 · duplicados exactos: gana el glow y, si no, el primero. */
+  for (i = 0; i < list.length; i++) {
+    if (list[i].dead) continue;
+    for (j = i + 1; j < list.length; j++) {
+      if (list[j].dead) continue;
+      if (!voxelSameBox(list[i], list[j])) continue;
+      if (list[j].glow && !list[i].glow) { list[i].dead = true; break; }
+      list[j].dead = true;
+    }
+  }
+  /* 2 · cajas contenidas: no aportan ninguna cara visible. */
+  for (i = 0; i < list.length; i++) {
+    if (list[i].dead) continue;
+    for (j = 0; j < list.length; j++) {
+      if (j === i || list[j].dead) continue;
+      if (voxelCoversBox(list[j], list[i])) { list[i].dead = true; break; }
+    }
+  }
+
+  var groups = [
+    { positions: [], normals: [], colors: [], indices: [], label: 'voxels-lambert' },
+    { positions: [], normals: [], colors: [], indices: [], label: 'voxels-glow' }
+  ];
+  var kept = 0;
+
+  for (i = 0; i < list.length; i++) {
+    var e = list[i];
+    if (e.dead) continue;
+    kept++;
+    for (var f = 0; f < 6; f++) {
+      var axis = f >> 1;
+      var sign = (f & 1) ? -1 : 1;
+      var plane = sign > 0 ? e.max[axis] : e.min[axis];
+      var o1 = (axis + 1) % 3;
+      var o2 = (axis + 2) % 3;
+      var rect = [e.min[o1], e.max[o1], e.min[o2], e.max[o2]];
+      var rects = [rect];
+      var cull = false;
+      for (j = 0; j < list.length; j++) {
+        if (j === i) continue;
+        var o = list[j];
+        if (o.dead) continue;
+        /* Sin solape en el plano de la cara no puede haber z-fighting. */
+        if (o.max[o1] <= e.min[o1] + 1e-7 || o.min[o1] >= e.max[o1] - 1e-7) continue;
+        if (o.max[o2] <= e.min[o2] + 1e-7 || o.min[o2] >= e.max[o2] - 1e-7) continue;
+        /* Cubrir toda la cara oculta la cara entera (interior o contacto);
+           para recortar caras coplanares basta con que se solapen. */
+        var coversFace = o.min[o1] <= e.min[o1] + VOXEL_EPS && o.max[o1] >= e.max[o1] - VOXEL_EPS &&
+          o.min[o2] <= e.min[o2] + VOXEL_EPS && o.max[o2] >= e.max[o2] - VOXEL_EPS;
+        var oMin = o.min[axis];
+        var oMax = o.max[axis];
+        if (oMin < plane - VOXEL_EPS && oMax > plane + VOXEL_EPS) {
+          if (coversFace) { cull = true; break; }
+          continue;
+        }
+        if (sign > 0) {
+          if (Math.abs(oMin - plane) <= VOXEL_EPS && oMax > plane + VOXEL_EPS) {
+            if (coversFace) { cull = true; break; }
+            continue;
+          }
+          if (Math.abs(oMax - plane) <= VOXEL_EPS && oMin < plane - VOXEL_EPS) {
+            if (voxelHigherPriority(o, e)) rects = voxelSubtractRects(rects, [o.min[o1], o.max[o1], o.min[o2], o.max[o2]]);
+          }
+        } else {
+          if (Math.abs(oMax - plane) <= VOXEL_EPS && oMin < plane - VOXEL_EPS) {
+            if (coversFace) { cull = true; break; }
+            continue;
+          }
+          if (Math.abs(oMin - plane) <= VOXEL_EPS && oMax > plane + VOXEL_EPS) {
+            if (voxelHigherPriority(o, e)) rects = voxelSubtractRects(rects, [o.min[o1], o.max[o1], o.min[o2], o.max[o2]]);
+          }
+        }
+      }
+      if (cull) { stats.facesCulled++; continue; }
+      var target = groups[e.glow ? 1 : 0];
+      var emitted = 0;
+      for (var r = 0; r < rects.length; r++) {
+        var rr = rects[r];
+        if (rr[1] - rr[0] <= 1e-7 || rr[3] - rr[2] <= 1e-7) continue;
+        voxelPushQuad(target, template, f, axis, sign, plane, rr[0], rr[1], rr[2], rr[3], e.color);
+        emitted++;
+      }
+      if (emitted) stats.facesKept++;
+      else stats.facesCulled++;
+    }
+  }
+
   var out = new THREE.Group();
   for (var p = 0; p < 2; p++) {
-    if (!groups[p].length) continue;
-    var positions = [], normals = [], colors = [], indices = [];
-    for (var b = 0; b < groups[p].length; b++) {
-      var box = groups[p][b];
-      var geo = new THREE.BoxGeometry(box[3], box[4], box[5]);
-      geo.translate(box[0], box[1], box[2]);
-      var pos = geo.attributes.position, nor = geo.attributes.normal, base = positions.length / 3;
-      var tint = color(box[6]);
-      for (var v = 0; v < pos.count; v++) {
-        positions.push(pos.getX(v), pos.getY(v), pos.getZ(v));
-        normals.push(nor.getX(v), nor.getY(v), nor.getZ(v));
-        colors.push(tint.r, tint.g, tint.b);
-      }
-      var index = geo.index.array;
-      for (var k = 0; k < index.length; k++) indices.push(base + index[k]);
-      geo.dispose();
-    }
+    var group = groups[p];
+    if (!group.indices.length) continue;
     var merged = new THREE.BufferGeometry();
-    merged.setAttribute('position', new THREE.Float32BufferAttribute(positions, 3));
-    merged.setAttribute('normal', new THREE.Float32BufferAttribute(normals, 3));
-    merged.setAttribute('color', new THREE.Float32BufferAttribute(colors, 3));
-    merged.setIndex(indices);
+    merged.setAttribute('position', new THREE.Float32BufferAttribute(group.positions, 3));
+    merged.setAttribute('normal', new THREE.Float32BufferAttribute(group.normals, 3));
+    merged.setAttribute('color', new THREE.Float32BufferAttribute(group.colors, 3));
+    merged.setIndex(group.indices);
     merged.computeBoundingSphere();
     var material = p === 0
       ? new THREE.MeshLambertMaterial({ vertexColors: true })
       : new THREE.MeshBasicMaterial({ vertexColors: true });
+    /* El glow es una capa de acento sobre la superficie: en un empate exacto
+       de profundidad con la capa opaca, gana el glow de forma estable. */
+    if (p === 1) {
+      material.polygonOffset = true;
+      material.polygonOffsetFactor = -1;
+      material.polygonOffsetUnits = -1;
+    }
     var mesh = new THREE.Mesh(merged, material);
+    mesh.name = group.label;
     mesh.castShadow = p === 0;
     mesh.receiveShadow = p === 0;
     out.add(mesh);
   }
+
+  stats.dropped = list.length - kept;
+  out.userData.voxelStats = stats;
+  mergedVoxelsStats.calls++;
+  mergedVoxelsStats.boxes += stats.boxes;
+  mergedVoxelsStats.dropped += stats.dropped;
+  mergedVoxelsStats.facesKept += stats.facesKept;
+  mergedVoxelsStats.facesCulled += stats.facesCulled;
+  mergedVoxelsStats.trianglesBefore += stats.boxes * 12;
+  mergedVoxelsStats.trianglesAfter += (groups[0].indices.length + groups[1].indices.length) / 3;
   return out;
+}
+
+/*  Capas de profundidad para mallas que se apoyan unas sobre otras
+    (pelo/base, tocado/pelo, cosmético/prenda). polygonOffset desempata
+    caras coplanares sin mover la silueta ni el color.
+    Cada capa semántica usa un múltiplo de 10 para no chocar nunca con el
+    desfase automático 0/-1 de la malla glow, y dentro del grupo la malla
+    glow queda un paso más cerca que la opaca. */
+function setVoxelDepthLayer(root, units) {
+  if (!root || !root.traverse) return root;
+  var base = Math.abs(Number(units) || 1);
+  var target = -(base * 10);
+  root.traverse(function (node) {
+    if (!node || !node.isMesh || !node.material) return;
+    var glow = node.name === 'voxels-glow';
+    var materials = Array.isArray(node.material) ? node.material : [node.material];
+    for (var i = 0; i < materials.length; i++) {
+      var material = materials[i];
+      if (!material || material.isSpriteMaterial) continue;
+      material.polygonOffset = true;
+      material.polygonOffsetFactor = -1;
+      var wanted = target - (glow ? 1 : 0);
+      var current = typeof material.polygonOffsetUnits === 'number' ? material.polygonOffsetUnits : 0;
+      material.polygonOffsetUnits = Math.min(current, wanted);
+      material.needsUpdate = true;
+    }
+  });
+  return root;
 }
 
 function addVoxel(parent, boxes) {
@@ -202,6 +457,8 @@ function makeHead(look, id) {
   var pivot = new THREE.Group();
   pivot.position.set(0, 1.68, 0);
   pivot.userData.baseHatGroups = [];
+  pivot.userData.baseHairGroups = [];
+  pivot.userData.baseDetailGroups = [];
   var headColor = look.skin;
   var boxes = [
     [0, 0.06, 0, 0.20, 0.12, 0.18, look.skinShade],
@@ -216,64 +473,78 @@ function makeHead(look, id) {
     [0, 0.255, 0.246, 0.06, 0.12, 0.02, look.skinShade],
     [0, 0.17, 0.243, 0.14, 0.045, 0.012, '#613b35']
   ];
-  addPartBoxes(pivot, boxes);
+  var headMesh = addPartBoxes(pivot, boxes);
+  if (headMesh) headMesh.name = 'base-head';
+  /* El peinado base va en su propia malla (capa 1) para poder ocultarlo
+     entero cuando se equipa un peinado y para que gane los empates de
+     profundidad contra la cabeza. Los accesorios de identidad van aparte
+     (capa 3) y nunca se confunden con el pelo. */
   var ext = [];
+  var hairBoxes = [];
   var hair = look.hair;
   var hs = look.hairStyle;
   if (hs === 'side') {
-    ext.push([0, 0.58, -0.02, 0.52, 0.16, 0.48, hair]);
-    ext.push([-0.23, 0.47, -0.06, 0.08, 0.28, 0.38, hair]);
-    ext.push([0.16, 0.54, 0.23, 0.16, 0.10, 0.08, hair]);
-    ext.push([0, 0.29, -0.24, 0.52, 0.4, 0.10, hair]);
+    hairBoxes.push([0, 0.58, -0.02, 0.52, 0.16, 0.48, hair]);
+    hairBoxes.push([-0.23, 0.47, -0.06, 0.08, 0.28, 0.38, hair]);
+    hairBoxes.push([0.16, 0.54, 0.23, 0.16, 0.10, 0.08, hair]);
+    hairBoxes.push([0, 0.29, -0.24, 0.52, 0.4, 0.10, hair]);
   } else if (hs === 'bob') {
-    ext.push([0, 0.56, -0.01, 0.55, 0.18, 0.50, hair]);
-    ext.push([-0.24, 0.38, -0.02, 0.08, 0.38, 0.46, hair]);
-    ext.push([0.24, 0.38, -0.02, 0.08, 0.38, 0.46, hair]);
-    ext.push([0, 0.25, -0.25, 0.50, 0.55, 0.10, hair]);
-    ext.push([-0.16, 0.51, 0.23, 0.22, 0.09, 0.08, hair]);
+    hairBoxes.push([0, 0.56, -0.01, 0.55, 0.18, 0.50, hair]);
+    hairBoxes.push([-0.24, 0.38, -0.02, 0.08, 0.38, 0.46, hair]);
+    hairBoxes.push([0.24, 0.38, -0.02, 0.08, 0.38, 0.46, hair]);
+    hairBoxes.push([0, 0.25, -0.25, 0.50, 0.55, 0.10, hair]);
+    hairBoxes.push([-0.16, 0.51, 0.23, 0.22, 0.09, 0.08, hair]);
   } else if (hs === 'ponytail') {
-    ext.push([0, 0.58, -0.01, 0.53, 0.15, 0.48, hair]);
-    ext.push([-0.23, 0.46, -0.04, 0.08, 0.28, 0.4, hair]);
-    ext.push([0.2, 0.35, -0.31, 0.18, 0.5, 0.15, hair]);
-    ext.push([0.23, 0.05, -0.36, 0.14, 0.26, 0.12, hair]);
+    hairBoxes.push([0, 0.58, -0.01, 0.53, 0.15, 0.48, hair]);
+    hairBoxes.push([-0.23, 0.46, -0.04, 0.08, 0.28, 0.4, hair]);
+    hairBoxes.push([0.2, 0.35, -0.31, 0.18, 0.5, 0.15, hair]);
+    hairBoxes.push([0.23, 0.05, -0.36, 0.14, 0.26, 0.12, hair]);
   } else if (hs === 'highPony') {
-    ext.push([0, 0.59, -0.04, 0.50, 0.13, 0.44, hair]);
-    ext.push([-0.19, 0.65, -0.1, 0.16, 0.2, 0.18, hair]);
-    ext.push([0.12, 0.72, -0.18, 0.13, 0.42, 0.12, hair]);
-    ext.push([0.18, 0.97, -0.23, 0.12, 0.32, 0.1, hair]);
-    ext.push([-0.23, 0.38, -0.03, 0.07, 0.25, 0.36, hair]);
+    hairBoxes.push([0, 0.59, -0.04, 0.50, 0.13, 0.44, hair]);
+    hairBoxes.push([-0.19, 0.65, -0.1, 0.16, 0.2, 0.18, hair]);
+    hairBoxes.push([0.12, 0.72, -0.18, 0.13, 0.42, 0.12, hair]);
+    hairBoxes.push([0.18, 0.97, -0.23, 0.12, 0.32, 0.1, hair]);
+    hairBoxes.push([-0.23, 0.38, -0.03, 0.07, 0.25, 0.36, hair]);
   } else if (hs === 'bun') {
-    ext.push([0, 0.57, -0.02, 0.52, 0.16, 0.46, hair]);
-    ext.push([0, 0.8, -0.16, 0.27, 0.24, 0.27, hair]);
-    ext.push([-0.23, 0.44, -0.02, 0.07, 0.28, 0.4, hair]);
-    ext.push([0.20, 0.48, 0.23, 0.11, 0.22, 0.07, hair]);
+    hairBoxes.push([0, 0.57, -0.02, 0.52, 0.16, 0.46, hair]);
+    hairBoxes.push([0, 0.8, -0.16, 0.27, 0.24, 0.27, hair]);
+    hairBoxes.push([-0.23, 0.44, -0.02, 0.07, 0.28, 0.4, hair]);
+    hairBoxes.push([0.20, 0.48, 0.23, 0.11, 0.22, 0.07, hair]);
   } else if (hs === 'short') {
-    ext.push([0, 0.56, -0.01, 0.53, 0.16, 0.47, hair]);
-    ext.push([-0.23, 0.45, -0.02, 0.07, 0.22, 0.4, hair]);
-    ext.push([0.23, 0.45, -0.02, 0.07, 0.22, 0.4, hair]);
+    hairBoxes.push([0, 0.56, -0.01, 0.53, 0.16, 0.47, hair]);
+    hairBoxes.push([-0.23, 0.45, -0.02, 0.07, 0.22, 0.4, hair]);
+    hairBoxes.push([0.23, 0.45, -0.02, 0.07, 0.22, 0.4, hair]);
   } else if (hs === 'bald') {
-    ext.push([-0.19, 0.48, 0.23, 0.16, 0.07, 0.03, look.skinShade]);
-    ext.push([0.05, 0.50, 0.235, 0.09, 0.04, 0.02, look.skinShade]);
+    hairBoxes.push([-0.19, 0.48, 0.23, 0.16, 0.07, 0.03, look.skinShade]);
+    hairBoxes.push([0.05, 0.50, 0.235, 0.09, 0.04, 0.02, look.skinShade]);
   } else if (hs === 'bunBeard') {
-    ext.push([0, 0.58, -0.01, 0.53, 0.16, 0.47, hair]);
-    ext.push([-0.23, 0.45, -0.02, 0.08, 0.28, 0.42, hair]);
-    ext.push([0.23, 0.45, -0.02, 0.08, 0.28, 0.42, hair]);
-    ext.push([0, 0.82, -0.13, 0.26, 0.23, 0.26, hair]);
-    ext.push([0, 0.1, 0.26, 0.35, 0.27, 0.12, hair]);
-    ext.push([0, -0.03, 0.22, 0.25, 0.18, 0.09, hair]);
+    hairBoxes.push([0, 0.58, -0.01, 0.53, 0.16, 0.47, hair]);
+    hairBoxes.push([-0.23, 0.45, -0.02, 0.08, 0.28, 0.42, hair]);
+    hairBoxes.push([0.23, 0.45, -0.02, 0.08, 0.28, 0.42, hair]);
+    hairBoxes.push([0, 0.82, -0.13, 0.26, 0.23, 0.26, hair]);
+    hairBoxes.push([0, 0.1, 0.26, 0.35, 0.27, 0.12, hair]);
+    hairBoxes.push([0, -0.03, 0.22, 0.25, 0.18, 0.09, hair]);
   } else if (hs === 'long') {
-    ext.push([0, 0.58, -0.02, 0.54, 0.16, 0.48, hair]);
-    ext.push([-0.25, 0.32, -0.02, 0.1, 0.55, 0.46, hair]);
-    ext.push([0.25, 0.32, -0.02, 0.1, 0.55, 0.46, hair]);
-    ext.push([0, 0.1, -0.28, 0.5, 0.7, 0.11, hair]);
-    ext.push([-0.18, 0.53, 0.23, 0.18, 0.08, 0.08, hair]);
+    hairBoxes.push([0, 0.58, -0.02, 0.54, 0.16, 0.48, hair]);
+    hairBoxes.push([-0.25, 0.32, -0.02, 0.1, 0.55, 0.46, hair]);
+    hairBoxes.push([0.25, 0.32, -0.02, 0.1, 0.55, 0.46, hair]);
+    hairBoxes.push([0, 0.1, -0.28, 0.5, 0.7, 0.11, hair]);
+    hairBoxes.push([-0.18, 0.53, 0.23, 0.18, 0.08, 0.08, hair]);
   } else if (hs === 'longBeard') {
-    ext.push([0, 0.6, -0.02, 0.55, 0.14, 0.5, hair]);
-    ext.push([-0.25, 0.37, -0.03, 0.08, 0.4, 0.44, hair]);
-    ext.push([0.25, 0.37, -0.03, 0.08, 0.4, 0.44, hair]);
-    ext.push([0, 0.62, 0.22, 0.36, 0.08, 0.06, hair]);
-    ext.push([0, 0.04, 0.255, 0.4, 0.4, 0.13, hair]);
-    ext.push([0, -0.23, 0.22, 0.27, 0.25, 0.09, hair]);
+    hairBoxes.push([0, 0.6, -0.02, 0.55, 0.14, 0.5, hair]);
+    hairBoxes.push([-0.25, 0.37, -0.03, 0.08, 0.4, 0.44, hair]);
+    hairBoxes.push([0.25, 0.37, -0.03, 0.08, 0.4, 0.44, hair]);
+    hairBoxes.push([0, 0.62, 0.22, 0.36, 0.08, 0.06, hair]);
+    hairBoxes.push([0, 0.04, 0.255, 0.4, 0.4, 0.13, hair]);
+    hairBoxes.push([0, -0.23, 0.22, 0.27, 0.25, 0.09, hair]);
+  }
+  if (hairBoxes.length) {
+    var hairGroup = new THREE.Group();
+    hairGroup.name = 'base-hair';
+    addPartBoxes(hairGroup, hairBoxes);
+    setVoxelDepthLayer(hairGroup, 1);
+    pivot.add(hairGroup);
+    pivot.userData.baseHairGroups.push(hairGroup);
   }
   if (look.extra === 'headband') {
     ext.push([0, 0.49, 0.23, 0.51, 0.055, 0.04, look.trim, true]);
@@ -281,12 +552,14 @@ function makeHead(look, id) {
   }
   if (look.extra === 'brim') {
     var brim = new THREE.Group();
+    brim.name = 'base-hat-brim';
     addPartBoxes(brim, [
       [0, 0.61, 0.0, 0.82, 0.075, 0.76, look.outfit2],
       [0, 0.69, 0.0, 0.45, 0.18, 0.4, look.outfit],
       [0, 0.61, 0.38, 0.63, 0.05, 0.03, look.trim],
       [0, 0.55, 0.27, 0.22, 0.08, 0.02, look.accent, true]
     ]);
+    setVoxelDepthLayer(brim, 2);
     pivot.add(brim);
     pivot.userData.baseHatGroups.push(brim);
   }
@@ -302,6 +575,7 @@ function makeHead(look, id) {
   }
   if (look.extra === 'hood') {
     var hood = new THREE.Group();
+    hood.name = 'base-hat-hood';
     addPartBoxes(hood, [
       [0, 0.42, -0.07, 0.65, 0.35, 0.58, look.outfit],
       [-0.31, 0.34, 0.0, 0.09, 0.5, 0.45, look.outfit],
@@ -309,11 +583,13 @@ function makeHead(look, id) {
       [0, 0.62, -0.03, 0.56, 0.13, 0.52, look.outfit2],
       [0, 0.42, 0.21, 0.3, 0.26, 0.04, look.accent, true]
     ]);
+    setVoxelDepthLayer(hood, 2);
     pivot.add(hood);
     pivot.userData.baseHatGroups.push(hood);
   }
   if (look.extra === 'cowl') {
     var cowl = new THREE.Group();
+    cowl.name = 'base-hat-cowl';
     addPartBoxes(cowl, [
       [0, 0.48, -0.06, 0.67, 0.3, 0.57, look.outfit],
       [-0.3, 0.35, 0.03, 0.11, 0.48, 0.43, look.outfit2],
@@ -321,12 +597,14 @@ function makeHead(look, id) {
       [0, 0.66, -0.14, 0.32, 0.17, 0.2, look.outfit],
       [0, 0.48, 0.24, 0.24, 0.07, 0.04, look.trim, true]
     ]);
+    setVoxelDepthLayer(cowl, 2);
     pivot.add(cowl);
     pivot.userData.baseHatGroups.push(cowl);
   }
   if (look.extra === 'halo') {
     var haloMat = new THREE.MeshBasicMaterial({ color: color(look.trim) });
     var ring = new THREE.Mesh(new THREE.TorusGeometry(0.32, 0.018, 4, 20), haloMat);
+    ring.name = 'base-halo';
     ring.rotation.x = Math.PI / 2;
     ring.position.y = 0.77;
     pivot.add(ring);
@@ -377,11 +655,19 @@ function makeHead(look, id) {
     ext.push([0.25, 0.24, 0.055, 0.04, 0.11, 0.04, '#d4b36a']);
     ext.push([0, 0.62, 0.18, 0.38, 0.03, 0.035, look.trim]);
   }
-  if (ext.length) addPartBoxes(pivot, ext);
+  if (ext.length) {
+    var detailsGroup = new THREE.Group();
+    detailsGroup.name = 'base-head-details';
+    addPartBoxes(detailsGroup, ext);
+    setVoxelDepthLayer(detailsGroup, 3);
+    pivot.add(detailsGroup);
+    pivot.userData.baseDetailGroups.push(detailsGroup);
+  }
   return pivot;
 }
 function makeHairTail(id, look) {
   var g = new THREE.Group();
+  g.name = 'base-hair-tail';
   if (id === 'mara') {
     g.position.set(0.02, 0.37, -0.28);
     addPartBoxes(g, [
@@ -433,6 +719,7 @@ function makeHairTail(id, look) {
 }
 function makeCapeGroup(id, look) {
   var g = new THREE.Group();
+  g.name = 'base-cape';
   if (id === 'ilan') {
     g.position.set(0, 1.58, -0.26);
     addPartBoxes(g, [
@@ -630,15 +917,29 @@ function makeIdentityDetails(id, look, torso, body, head) {
     ]);
     out.floaters = pages;
   }
-  if (t.length) addPartBoxes(torso, t);
-  if (b.length) addPartBoxes(body, b);
+  if (t.length) {
+    var torsoDetails = addPartBoxes(torso, t);
+    if (torsoDetails) {
+      torsoDetails.name = 'base-torso-details';
+      setVoxelDepthLayer(torsoDetails, 1);
+    }
+  }
+  if (b.length) {
+    var bodyDetails = addPartBoxes(body, b);
+    if (bodyDetails) {
+      bodyDetails.name = 'base-body-details';
+      setVoxelDepthLayer(bodyDetails, 1);
+    }
+  }
   var cape = makeCapeGroup(id, look);
   if (cape) {
+    setVoxelDepthLayer(cape, 1);
     body.add(cape);
     out.cape = cape;
   }
   var tail = makeHairTail(id, look);
   if (tail) {
+    setVoxelDepthLayer(tail, 1);
     head.add(tail);
     out.hairTail = tail;
   }
@@ -827,7 +1128,9 @@ function buildWeapon(prop, look) {
       [0, 0.32, 0, 0.16, 0.05, 0.16, look.trim]
     ];
   }
-  addPartBoxes(g, boxes);
+  var weaponVoxels = addPartBoxes(g, boxes);
+  if (weaponVoxels) weaponVoxels.name = 'base-weapon';
+  setVoxelDepthLayer(g, 1);
   if (prop === 'farol' || prop === 'lantern') {
     var gl = makeGlowSprite(accent, 1.6, 0.55);
     gl.position.set(0, prop === 'farol' ? 1.0 : 0.48, 0);
@@ -844,10 +1147,14 @@ function buildWeapon(prop, look) {
 function buildHeroAvatar(id) {
   var look = heroLook(id);
   var root = new THREE.Group();
+  root.name = 'hero:' + id;
   var body = new THREE.Group();
+  body.name = 'hero-body';
   root.add(body);
   var leftLeg = makeLeg(look, -1, id);
+  leftLeg.name = 'hero-leg-left';
   var rightLeg = makeLeg(look, 1, id);
+  rightLeg.name = 'hero-leg-right';
   body.add(leftLeg, rightLeg);
   var torsoBoxes = [
     [0, 0.33, 0, 0.72, 0.66, 0.39, look.outfit],
@@ -917,13 +1224,17 @@ function buildHeroAvatar(id) {
   }
   var torso = new THREE.Group();
   torso.position.y = 1.0;
+  torso.name = 'hero-torso';
   addPartBoxes(torso, torsoBoxes);
   body.add(torso);
   var head = makeHead(look, id);
+  head.name = 'hero-head';
   head.scale.setScalar(look.body.head || 1);
   body.add(head);
   var leftArm = makeArm(look, -1, id);
+  leftArm.name = 'hero-arm-left';
   var rightArm = makeArm(look, 1, id);
+  rightArm.name = 'hero-arm-right';
   body.add(leftArm, rightArm);
   var identity = makeIdentityDetails(id, look, torso, body, head);
   var weapon = buildWeapon(look.prop, look);
@@ -1028,6 +1339,7 @@ function buildGuardian(areaId) {
       [-1.15, 0.74, 0, 0.58, 0.3, 0.28, '#31624f'],
       [-1.32, 0.94, 0.02, 0.26, 0.2, 0.2, accent, true]
     ]);
+    setVoxelDepthLayer(branchLeft, 1);
     var branchRight = new THREE.Group();
     branchRight.position.set(0.25, 2.02, 0);
     addPartBoxes(branchRight, [
@@ -1036,6 +1348,7 @@ function buildGuardian(areaId) {
       [1.12, 0.84, 0, 0.52, 0.28, 0.28, '#356b56'],
       [1.3, 1.0, 0.02, 0.23, 0.18, 0.2, accent, true]
     ]);
+    setVoxelDepthLayer(branchRight, 1);
     branchLeft.userData.baseY = branchLeft.position.y;
     branchRight.userData.baseY = branchRight.position.y;
     body.add(branchLeft, branchRight);
@@ -1046,6 +1359,7 @@ function buildGuardian(areaId) {
         [0, 0, 0, 0.32, 0.2, 0.26, ti % 2 ? '#3d7962' : '#4b8a69'],
         [0, 0.1, 0.11, 0.16, 0.06, 0.02, accent, true]
       ]);
+      setVoxelDepthLayer(leaf, 2);
       leaf.position.set(-0.85 + (ti % 3) * 0.85, 2.7 + Math.floor(ti / 3) * 0.38, 0.18 + (ti % 2) * 0.12);
       body.add(leaf);
       animated.shards.push({ group: leaf, baseY: leaf.position.y, baseX: leaf.position.x, angle: ti * 1.7, speed: 0.4 + ti * 0.06 });
@@ -1078,6 +1392,7 @@ function buildGuardian(areaId) {
       [-0.2, -0.1, 0, 0.18, 0.38, 0.24, '#283247'],
       [0, 0.03, 0.22, 0.3, 0.06, 0.03, accent, true]
     ]);
+    setVoxelDepthLayer(handL, 1);
     var handR = new THREE.Group();
     handR.position.set(1.12, 0.3, 0.15);
     addPartBoxes(handR, [
@@ -1085,6 +1400,7 @@ function buildGuardian(areaId) {
       [0.2, -0.1, 0, 0.18, 0.38, 0.24, '#283247'],
       [0, 0.03, 0.22, 0.3, 0.06, 0.03, accent, true]
     ]);
+    setVoxelDepthLayer(handR, 1);
     handL.userData.baseY = handL.position.y;
     handR.userData.baseY = handR.position.y;
     body.add(handL, handR);
@@ -1116,6 +1432,7 @@ function buildGuardian(areaId) {
       [-1.1, 0, 0, 2.2, 0.09, 0.11, '#a78b63'],
       [0, 0.04, 0, 0.2, 0.16, 0.18, accent, true]
     ]);
+    setVoxelDepthLayer(beam, 1);
     body.add(beam);
     [-1.08, 1.08].forEach(function (x) {
       var tray = new THREE.Group();
@@ -1126,6 +1443,7 @@ function buildGuardian(areaId) {
         [0, -0.58, 0, 0.25, 0.2, 0.22, '#efd6ad'],
         [0, -0.6, 0.12, 0.12, 0.1, 0.02, accent, true]
       ]);
+      setVoxelDepthLayer(tray, 2);
       body.add(tray);
       animated.trays.push({ group: tray, baseY: tray.position.y, phase: x > 0 ? Math.PI : 0 });
     });
@@ -1135,13 +1453,18 @@ function buildGuardian(areaId) {
     var crystal = new THREE.Mesh(new THREE.OctahedronGeometry(1.02, 0), new THREE.MeshLambertMaterial({ color: color('#425b2b'), emissive: color(accent), emissiveIntensity: 0.28, flatShading: true }));
     crystal.scale.set(0.9, 1.3, 0.9);
     body.add(crystal);
-    addPartBoxes(body, [
+    var prismPlate = addPartBoxes(body, [
       [0, 0.12, 0, 0.56, 0.34, 0.12, '#0d1410'],
       [0, 0.12, 0.12, 0.24, 0.16, 0.02, accent, true],
       [0, 0.66, 0, 0.13, 0.22, 0.13, accent, true],
       [-0.82, -0.18, 0, 0.2, 0.2, 0.2, '#506b35'],
       [0.84, -0.1, 0, 0.2, 0.2, 0.2, '#506b35']
     ]);
+    if (prismPlate) {
+      prismPlate.name = 'guardian-prism-plate';
+      prismPlate.position.z += 0.004;
+      setVoxelDepthLayer(prismPlate, 1);
+    }
     eye = makeGlowSprite(accent, 1.8, 0.7);
     eye.position.set(0, 0.13, 0.35);
     body.add(eye);
@@ -1159,6 +1482,7 @@ function buildGuardian(areaId) {
         [0, 0, 0, 0.34, 0.06, 0.22, '#445b30'],
         [0, 0.02, 0.08, 0.2, 0.02, 0.16, accent, true]
       ]);
+      setVoxelDepthLayer(lens, 2);
       lens.position.set((pl % 2 ? 1 : -1) * (1.55 + (pl % 3) * 0.22), -0.4 + pl * 0.32, -0.25 + (pl % 2) * 0.42);
       body.add(lens);
       animated.shards.push({ group: lens, baseY: lens.position.y, baseX: lens.position.x, angle: pl * 1.2, speed: 0.3 + pl * 0.05 });
@@ -1198,6 +1522,7 @@ function buildGuardian(areaId) {
         [0, 0, 0.026, 0.34, 0.17, 0.008, '#f6e7c8', true],
         [0, 0.16, 0.03, 0.2, 0.03, 0.01, '#f6e7c8', true]
       ]);
+      setVoxelDepthLayer(pane, 2);
       pane.position.set(-1.15 + pg * 1.15, 2.75 + (pg % 2) * 0.34, -0.3 + (pg % 2) * 0.32);
       body.add(pane);
       animated.pages.push({ group: pane, baseY: pane.position.y, baseX: pane.position.x, phase: pg * 2.1 });
@@ -1271,7 +1596,10 @@ moonLight.shadow.camera.top = 13;
 moonLight.shadow.camera.bottom = -13;
 moonLight.shadow.camera.near = 1;
 moonLight.shadow.camera.far = 60;
-moonLight.shadow.bias = -0.001;
+/* PCF 3x3: un sesgo negativo pequeño + normalBias de ~1 texel (26/1024)
+   elimina el acné de las caras voxel sin separar la sombra del contacto. */
+moonLight.shadow.bias = -0.0006;
+moonLight.shadow.normalBias = 0.028;
 scene.add(moonLight, moonLight.target);
 var rimLight = new THREE.DirectionalLight('#7899ff', 0.85);
 rimLight.position.set(-8, 6, -8);
@@ -1364,19 +1692,26 @@ var hubFloor = buildFloor(hubGroup, HUB_RADIUS, new THREE.Vector3(0, 0, 0), pale
 
 /* Pisos y caminos de luz hacia las cinco rutas */
 var GATE_ANGLES = [202, 274, 346, 58, 130].map(function (deg) { return deg * Math.PI / 180; });
+var GATE_ROLES = {
+  'area-psi-salud-publica': 'Territorio y comunidad',
+  'area-psi-cuidado-integral': 'Cuidado y vínculo',
+  'area-psi-etica': 'Ética y confianza',
+  'area-psi-investigacion': 'Método y evidencia',
+  'area-psi-gestion': 'Sistemas y equipo'
+};
 var gateGroups = [];
-CAMP.areas.forEach(function (area, index) {
-  var angle = GATE_ANGLES[index];
-  var gx = Math.cos(angle) * 7.1;
-  var gz = Math.sin(angle) * 7.1;
-  var gate = new THREE.Group();
-  gate.position.set(gx, 0, gz);
-  gate.rotation.y = Math.atan2(-gx, -gz);
+
+/* V2.2 · Cada puerta tiene una arquitectura propia, no solo un color.
+   Se mantiene la base común (umbral, jambas, dintel) para que las cinco
+   entradas sigan siendo legibles como puertas del mismo observatorio. */
+function buildGateArch(area, index) {
+  var accent = area.accent;
   var stone = '#2a3040';
   var stone2 = '#3d4351';
-  var accent = area.accent;
-  var arch = mergedVoxels([
-    [0, 0.1, 0, 3.0, 0.22, 1.1, '#171d28'],
+  var dark = '#171d28';
+  var gold = palette.gold || '#e4c07a';
+  var b = [
+    [0, 0.1, 0, 3.0, 0.22, 1.1, dark],
     [-1.22, 1.55, 0, 0.35, 2.9, 0.45, stone],
     [1.22, 1.55, 0, 0.35, 2.9, 0.45, stone],
     [-1.22, 2.98, 0, 0.55, 0.3, 0.62, stone2],
@@ -1386,11 +1721,121 @@ CAMP.areas.forEach(function (area, index) {
     [-0.85, 0.35, 0.3, 0.16, 0.34, 0.16, accent, true],
     [0.85, 0.35, 0.3, 0.16, 0.34, 0.16, accent, true],
     [0, 1.35, 0.38, 0.42, 1.9, 0.06, accent, true],
-    [-0.30, 1.9, 0.32, 0.22, 0.22, 0.1, '#e8e5d9', true],
-    [0.30, 1.9, 0.32, 0.22, 0.22, 0.1, '#e8e5d9', true],
     [0, 1.04, 0.32, 0.72, 0.3, 0.1, lookDoorPanel(area), false],
     [0, 0.4, 0.34, 1.5, 0.2, 0.25, '#1a202b']
-  ]);
+  ];
+  if (area.id === 'area-psi-salud-publica') {
+    /* Territorio: ramas, raíces y copa viva sobre la puerta. */
+    b.push(
+      [-1.55, 0.45, 0, 0.3, 0.9, 0.75, '#384832'],
+      [1.55, 0.45, 0, 0.3, 0.9, 0.75, '#384832'],
+      [-1.68, 1.35, 0, 0.2, 1.5, 0.5, '#2f3c32'],
+      [1.68, 1.35, 0, 0.2, 1.5, 0.5, '#2f3c32'],
+      [-0.92, 3.38, 0, 0.22, 0.72, 0.3, '#3f5638'],
+      [0.92, 3.38, 0, 0.22, 0.72, 0.3, '#3f5638'],
+      [-0.56, 3.76, 0, 0.52, 0.18, 0.36, CLEAN_COLOR ? CLEAN_COLOR.teal : '#69d3c1', true],
+      [0.56, 3.76, 0, 0.52, 0.18, 0.36, CLEAN_COLOR ? CLEAN_COLOR.teal : '#69d3c1', true],
+      [0, 3.96, 0, 0.3, 0.28, 0.3, CLEAN_COLOR ? CLEAN_COLOR.lime : '#b8d46a', true],
+      [-1.45, 2.2, 0.25, 0.18, 0.52, 0.1, CLEAN_COLOR ? CLEAN_COLOR.teal : '#69d3c1', true],
+      [1.45, 2.2, 0.25, 0.18, 0.52, 0.1, CLEAN_COLOR ? CLEAN_COLOR.teal : '#69d3c1', true]
+    );
+  } else if (area.id === 'area-psi-cuidado-integral') {
+    /* Cuidado: arco redondeado, linterna y luz cálida. */
+    b.push(
+      [-1.38, 3.04, 0, 0.56, 0.34, 0.56, '#526a8f'],
+      [1.38, 3.04, 0, 0.56, 0.34, 0.56, '#526a8f'],
+      [-0.72, 3.4, 0, 0.5, 0.24, 0.52, '#6f86a8'],
+      [0.72, 3.4, 0, 0.5, 0.24, 0.52, '#6f86a8'],
+      [0, 3.58, 0, 0.56, 0.22, 0.52, '#8ea7c6'],
+      [0, 2.98, 0, 0.9, 0.1, 0.52, CLEAN_COLOR ? CLEAN_COLOR.blue : '#7aa2ff', true],
+      [0, 2.46, 0, 0.1, 0.46, 0.1, gold],
+      [0, 2.2, 0, 0.36, 0.34, 0.36, '#f3b562', true],
+      [-1.58, 1.55, 0, 0.18, 1.35, 0.32, '#44536d'],
+      [1.58, 1.55, 0, 0.18, 1.35, 0.32, '#44536d']
+    );
+  } else if (area.id === 'area-psi-etica') {
+    /* Ética: balanza, fiel y espejo del criterio. */
+    b.push(
+      [0, 2.5, 0.12, 0.16, 2.3, 0.16, '#6e5a3a'],
+      [-0.95, 3.52, 0, 0.12, 0.12, 0.12, gold],
+      [0.95, 3.52, 0, 0.12, 0.12, 0.12, gold],
+      [0, 3.52, 0, 1.95, 0.1, 0.1, '#b7a06a'],
+      [-0.95, 3.18, 0, 0.05, 0.62, 0.05, gold],
+      [0.95, 3.18, 0, 0.05, 0.62, 0.05, gold],
+      [-0.95, 2.92, 0, 0.58, 0.08, 0.42, '#7b6a4a'],
+      [0.95, 2.92, 0, 0.58, 0.08, 0.42, '#7b6a4a'],
+      [0, 2.08, 0.32, 0.54, 0.54, 0.05, CLEAN_COLOR ? CLEAN_COLOR.violet : '#c49bff', true],
+      [-1.45, 1.1, 0, 0.2, 1.85, 0.3, '#4b3f2d'],
+      [1.45, 1.1, 0, 0.2, 1.85, 0.3, '#4b3f2d']
+    );
+  } else if (area.id === 'area-psi-investigacion') {
+    /* Investigación: prisma, lente y evidencia suspendida. */
+    b.push(
+      [-1.52, 1.15, 0, 0.2, 2.25, 0.36, '#3a4732'],
+      [1.52, 1.15, 0, 0.2, 2.25, 0.36, '#3a4732'],
+      [-0.9, 3.24, 0, 0.42, 0.26, 0.42, '#556b3d'],
+      [0.9, 3.24, 0, 0.42, 0.26, 0.42, '#556b3d'],
+      [-0.42, 3.54, 0, 0.42, 0.26, 0.42, '#6f8a4b'],
+      [0.42, 3.54, 0, 0.42, 0.26, 0.42, '#6f8a4b'],
+      [0, 3.82, 0, 0.36, 0.26, 0.36, CLEAN_COLOR ? CLEAN_COLOR.lime : '#b8d46a', true],
+      [-0.58, 2.08, 0.28, 0.07, 0.07, 0.07, CLEAN_COLOR ? CLEAN_COLOR.lime : '#b8d46a'],
+      [0.58, 2.08, 0.28, 0.07, 0.07, 0.07, CLEAN_COLOR ? CLEAN_COLOR.lime : '#b8d46a']
+    );
+  } else {
+    /* Gestión: engranajes, planos y estructura de servicio. */
+    b.push(
+      [-1.58, 1.2, 0, 0.24, 2.2, 0.42, '#4a4034'],
+      [1.58, 1.2, 0, 0.24, 2.2, 0.42, '#4a4034'],
+      [0, 3.42, 0, 2.55, 0.26, 0.5, '#5a4a39'],
+      [-0.78, 3.15, 0, 0.08, 0.08, 0.08, gold],
+      [0.78, 3.15, 0, 0.08, 0.08, 0.08, gold],
+      [-1.12, 2.0, 0.3, 0.46, 0.62, 0.04, '#222b3d'],
+      [1.12, 2.0, 0.3, 0.46, 0.62, 0.04, '#222b3d'],
+      [-1.12, 2.22, 0.33, 0.3, 0.04, 0.02, gold, true],
+      [1.12, 2.22, 0.33, 0.3, 0.04, 0.02, gold, true]
+    );
+  }
+  var group = new THREE.Group();
+  group.add(mergedVoxels(b));
+  if (area.id === 'area-psi-cuidado-integral') {
+    var lantern = makeGlowSprite('#f3b562', 1.5, 0.32);
+    lantern.position.set(0, 2.2, 0.45);
+    group.add(lantern);
+  } else if (area.id === 'area-psi-investigacion') {
+    var lens = new THREE.Mesh(new THREE.TorusGeometry(0.56, 0.055, 6, 24), new THREE.MeshBasicMaterial({ color: color(accent), transparent: true, opacity: 0.82 }));
+    lens.position.set(0, 2.08, 0.38);
+    lens.renderOrder = 3;
+    group.add(lens);
+    var prism = new THREE.Mesh(new THREE.OctahedronGeometry(0.26, 0), new THREE.MeshLambertMaterial({ color: color('#d9f7a8'), emissive: color('#b8d46a'), emissiveIntensity: 0.5 }));
+    prism.position.set(0, 2.62, 0.2);
+    group.add(prism);
+  } else if (area.id === 'area-psi-gestion') {
+    [-1.0, 1.0].forEach(function (gx) {
+      var gear = new THREE.Group();
+      var core = new THREE.Mesh(new THREE.CylinderGeometry(0.34, 0.34, 0.12, 12), new THREE.MeshLambertMaterial({ color: color('#c69a5b') }));
+      core.rotation.x = Math.PI / 2;
+      gear.add(core);
+      for (var t = 0; t < 8; t++) {
+        var tooth = new THREE.Mesh(new THREE.BoxGeometry(0.11, 0.11, 0.1), new THREE.MeshLambertMaterial({ color: color('#8a6b43') }));
+        var a = t / 8 * Math.PI * 2;
+        tooth.position.set(Math.cos(a) * 0.4, Math.sin(a) * 0.4, 0);
+        gear.add(tooth);
+      }
+      gear.position.set(gx, 2.9, 0.24);
+      group.add(gear);
+    });
+  }
+  return group;
+}
+CAMP.areas.forEach(function (area, index) {
+  var angle = GATE_ANGLES[index];
+  var gx = Math.cos(angle) * 7.1;
+  var gz = Math.sin(angle) * 7.1;
+  var gate = new THREE.Group();
+  gate.position.set(gx, 0, gz);
+  gate.rotation.y = Math.atan2(-gx, -gz);
+  var accent = area.accent;
+  var arch = buildGateArch(area, index);
   gate.add(arch);
   var glow = makeGlowSprite(accent, 4.8, 0.22);
   glow.position.set(0, 1.8, -0.15);
@@ -1398,8 +1843,9 @@ CAMP.areas.forEach(function (area, index) {
   var beacon = new THREE.Mesh(new THREE.BoxGeometry(0.2, 0.2, 0.2), new THREE.MeshBasicMaterial({ color: color(accent) }));
   beacon.position.y = 3.55;
   gate.add(beacon);
-  var label = addLabelSprite(area.short, index + 1 + '/4 rutas · ' + area.blurb.split('.')[0], accent, 3.15);
-  label.position.y = 4.15;
+  var label = addLabelSprite(area.short, GATE_ROLES[area.id] || 'Ruta del observatorio', accent, 2.2);
+  label.position.set(0, 3.12 + (index % 2) * 0.14, 0.2);
+  label.userData.v22Label = true;
   gate.add(label);
   var light = new THREE.PointLight(accent, 0.8, 6, 2);
   light.position.set(0, 2.2, 0.4);
@@ -1497,6 +1943,9 @@ function buildDistantIsland(x, y, z, size, colorHex) {
   var glow = makeGlowSprite(colorHex, 2.2, 0.2);
   glow.position.y = 1.1;
   g.add(glow);
+  /* V2.2: el atrio prioriza las cinco puertas; las islas exteriores quedan
+     como siluetas solo en el mapa/cielo y no compiten con las etiquetas. */
+  g.visible = false;
   hubGroup.add(g);
   return g;
 }
@@ -1634,6 +2083,7 @@ function walkableAt(x, z) {
 }
 function updateHub(dt) {
   if (screen !== 'hub') { hubHero.moving = false; return; }
+  if (V2.call('world', 'isOpen')) { hubHero.moving = false; return; }
   var input = readInput();
   var dx = input.x, dz = input.z;
   var mag = Math.hypot(dx, dz);
@@ -1683,6 +2133,8 @@ function updateInteract() {
       if (!best || d < best.dist) { best = { type: 'gate', gate: g, dist: d }; selectedGate = i; }
     }
   });
+  var v2Best = V2.call('world', 'nearest', hubHero.x, hubHero.z);
+  if (v2Best && (!best || v2Best.dist < best.dist)) best = { type: 'v2', v2: v2Best, dist: v2Best.dist };
   var dCenter = Math.hypot(hubHero.x, hubHero.z);
   if (dCenter < 2.45 && (!best || dCenter < best.dist)) best = { type: 'oracle', dist: dCenter };
   currentInteract = best;
@@ -1691,7 +2143,9 @@ function updateInteract() {
       EL.prompt.classList.remove('hidden');
       EL.prompt.querySelector('span').innerHTML = best.type === 'oracle'
         ? '<b>Consultar la bitácora</b> · cinco rutas'
-        : 'Abrir ruta de <b>' + esc(best.gate.area.short) + '</b>';
+        : best.type === 'v2'
+          ? '<b>' + esc(best.v2.label || 'Interactuar') + '</b>' + (best.v2.prompt ? ' · ' + esc(best.v2.prompt) : '')
+          : 'Abrir ruta de <b>' + esc(best.gate.area.short) + '</b>';
       EL.touchAction.classList.remove('hidden');
     } else {
       EL.prompt.classList.add('hidden');
@@ -1715,6 +2169,10 @@ function activateInteract() {
   if (!currentInteract) {
     // En el centro del observatorio sin objetivo: abre la bitácora como acceso rápido.
     openJournal(selectedAreaId);
+    return;
+  }
+  if (currentInteract.type === 'v2') {
+    V2.call('world', 'interact', currentInteract.v2.id);
     return;
   }
   if (currentInteract.type === 'oracle') openJournal(selectedAreaId);
@@ -2194,6 +2652,8 @@ function beginDuelStage(areaId) {
   duelCamIntro = 0;
   cameraMode = 'duel';
   view = 'duel';
+  V2.call('combat', 'onDuelStart', area.id);
+  V2.call('assets', 'applyArenaVariant', area.id);
 }
 function endDuelStage() {
   clearCombatEffects();
@@ -2212,6 +2672,8 @@ function endDuelStage() {
   view = 'hub';
   cameraShake = 0;
   bolt.visible = false;
+  V2.call('combat', 'onDuelEnd');
+  V2.call('assets', 'clearArenaVariant');
 }
 function placeCamera(dt, time) {
   if (!renderer) return;
@@ -2340,7 +2802,7 @@ function renderHeroPortrait(id, size, outfitOverride) {
   var box = new THREE.Box3().setFromObject(avatar.root);
   var center = box.getCenter(new THREE.Vector3());
   var extent = box.getSize(new THREE.Vector3());
-  var cam = new THREE.PerspectiveCamera(25, 1, 0.1, 100);
+  var cam = new THREE.PerspectiveCamera(25, 1, 0.2, 30);
   var dist = Math.max(extent.y / (2 * Math.tan(12.5 * Math.PI / 180)), extent.x * 1.35) * 1.12;
   cam.position.set(center.x + dist * 0.3, center.y + extent.y * 0.1, center.z + dist * 1.02);
   cam.lookAt(center.x, center.y - extent.y * 0.01, center.z);

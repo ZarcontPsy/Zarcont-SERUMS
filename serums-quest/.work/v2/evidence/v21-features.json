@@ -1,0 +1,161 @@
+{
+  "settings": {
+    "before": {
+      "fb": "end",
+      "only": false
+    },
+    "after": {
+      "fb": "each",
+      "only": true,
+      "allowedFlash": false,
+      "allowedCampaign": true
+    },
+    "persisted": {
+      "fb": "each",
+      "only": true
+    }
+  },
+  "feedbackDefault": {
+    "fb": "end",
+    "inline": false,
+    "delay": 900
+  },
+  "generated": {
+    "chip": "Generada · ficha",
+    "body": "✦\nSALUD PÚBLICA · CUSTODIO DEL TERRITORIO · 1/5\nRonda comunitaria\n999\nRONDA COMUNITARIA · SALUD PÚBLICA\nGenerada · ficha\nDifícil\nFavorita\n\nSegún la ficha «Barreras de acceso a los servicios de salud», ¿cuál de estas ideas clave le corresponde?\n\nA\nIndicador de proceso: mide ejecución, cobertura y calidad de las actividades.\nB\nSeguridad alimentaria: disponibilidad, acceso, utilización adecuada y est"
+  },
+  "restoration": {
+    "mastery": {
+      "area-psi-salud-publica": 0,
+      "area-psi-cuidado-integral": 0,
+      "area-psi-etica": 3,
+      "area-psi-investigacion": 0,
+      "area-psi-gestion": 0
+    },
+    "lowAfter": {
+      "area-psi-salud-publica": 0,
+      "area-psi-cuidado-integral": 0,
+      "area-psi-etica": 0,
+      "area-psi-investigacion": 0,
+      "area-psi-gestion": 0
+    }
+  },
+  "perf": {
+    "version": "2.1.0-perf",
+    "quality": "alto",
+    "reducedMotion": false,
+    "shadow": {
+      "available": true,
+      "applied": true,
+      "type": 1,
+      "name": "PCFShadowMap",
+      "enabled": true,
+      "warningFree": true,
+      "legacyType": false,
+      "mapSize": 1024,
+      "bias": -0.0006,
+      "normalBias": 0.028,
+      "fixes": 0,
+      "source": "part9-perf"
+    },
+    "bank": {
+      "onlyOriginalBank": false,
+      "rule": "source === 'campaign'",
+      "total": 951,
+      "campaign": 111,
+      "dashboard": 210,
+      "flashcards": 630,
+      "other": 0,
+      "generated": 420,
+      "allowed": 951,
+      "filtered": 0
+    },
+    "culling": {
+      "installed": true,
+      "hooks": true,
+      "quality": "alto",
+      "hubVisible": true,
+      "allMissionsComplete": true,
+      "missionTotals": {
+        "done": 18,
+        "total": 18,
+        "areas": 5
+      },
+      "completedAreas": [
+        "area-psi-salud-publica",
+        "area-psi-cuidado-integral",
+        "area-psi-etica",
+        "area-psi-investigacion",
+        "area-psi-gestion"
+      ],
+      "hero": {
+        "x": 0,
+        "z": 3.3
+      },
+      "cullRadius": 8.8,
+      "targets": 16,
+      "visible": 7,
+      "hidden": 9,
+      "drawCallsTotal": 31,
+      "drawCallsVisible": 9,
+      "drawCallsSaved": 22,
+      "savedPercent": 71,
+      "vegetation": {
+        "total": 90,
+        "drawn": 28
+      },
+      "dust": {
+        "total": 80,
+        "drawn": 44
+      },
+      "vertices": {
+        "total": 14265,
+        "drawn": 4856,
+        "saved": 9409,
+        "savedPercent": 66
+      },
+      "lastTick": 1793986001041
+    },
+    "settings": {
+      "onlyOriginalBank": false,
+      "effectsQuality": "alto",
+      "reducedMotion": false
+    },
+    "errors": []
+  },
+  "worldStats": {
+    "levels": {
+      "area-psi-salud-publica": 3,
+      "area-psi-cuidado-integral": 3,
+      "area-psi-etica": 3,
+      "area-psi-investigacion": 3,
+      "area-psi-gestion": 3
+    },
+    "saved": {
+      "area-psi-salud-publica": 3,
+      "area-psi-cuidado-integral": 3,
+      "area-psi-etica": 3,
+      "area-psi-investigacion": 3,
+      "area-psi-gestion": 3
+    },
+    "calculated": {
+      "area-psi-salud-publica": 3,
+      "area-psi-cuidado-integral": 3,
+      "area-psi-etica": 3,
+      "area-psi-investigacion": 3,
+      "area-psi-gestion": 3
+    },
+    "persists": true,
+    "maxLevel": 3,
+    "total": 15,
+    "maxLevels": 15,
+    "visuals": {
+      "vegetation": 30,
+      "runes": 10,
+      "crystals": 15,
+      "columns": 10,
+      "halos": 10
+    }
+  },
+  "errors": []
+}

@@ -1,0 +1,159 @@
+{
+  "dueStats": {
+    "active": 1,
+    "dueTotal": 3,
+    "byArea": {
+      "area-psi-salud-publica": 3
+    },
+    "list": [
+      {
+        "id": "v2w-shadow-salud-publica",
+        "areaId": "area-psi-salud-publica",
+        "count": 3,
+        "active": true,
+        "x": -6.356,
+        "z": -1.582
+      },
+      {
+        "id": "v2w-shadow-cuidado-integral",
+        "areaId": "area-psi-cuidado-integral",
+        "count": 0,
+        "active": false,
+        "x": -0.459,
+        "z": -6.534
+      },
+      {
+        "id": "v2w-shadow-etica",
+        "areaId": "area-psi-etica",
+        "count": 0,
+        "active": false,
+        "x": 6.072,
+        "z": -2.456
+      },
+      {
+        "id": "v2w-shadow-investigacion",
+        "areaId": "area-psi-investigacion",
+        "count": 0,
+        "active": false,
+        "x": 4.212,
+        "z": 5.016
+      },
+      {
+        "id": "v2w-shadow-gestion",
+        "areaId": "area-psi-gestion",
+        "count": 0,
+        "active": false,
+        "x": -3.469,
+        "z": 5.556
+      }
+    ]
+  },
+  "shadowPanel": {
+    "open": true,
+    "text": "◈\nSERUMS\nOBSERVATORIO\nNoa Iturbe\nNv 11\nBachiller\n6.200 XP\nOBSERVATORIO DE LAS CINCO RUTAS\nObservatorio\n999\n3\nMAPA\nMEMORIA EN ESPERA\nTu repaso está listo.\n\n3 preguntas vuelven hoy. Un repaso breve consolida lo que falló.\n\nRepasar 3\n18/18 nodos completados\nrepasos · 83% precisión\nE\nTelescopio del repaso · 3 por repasar\nWASD\nmover\nE\ninteractuar\nM\nbitácora\nR\nrepaso\nEsc\npausa\nE\n\nERRORES VENCIDOS · SALU"
+  },
+  "afterReviewOpen": {
+    "screen": "review",
+    "text": "REPETICIÓN ESPACIADA\nVolver a mirar también es avanzar.\n\nCada fallo entra en un calendario de repaso. La primera cita es a los 20 minutos; después, 1, 3, 7, 14 y 30 días. Recuperar una pregunta no inventa dominio: lo demuestra.\n\n3 por repasar\n3\nPENDIENTES\n3\nLISTAS AHORA\n0\nRECUPERADAS\n0\nCON 2 REPASOS\nMarcadas\n0\n\nMarca una pregunta como difícil o favorita desde cualquier pregunta o desde este errorario. Aparecerá aquí para volver a ella.\n\nTu errorario\n3 preguntas\n¿Cuál es el rol básico de todo age"
+  },
+  "reviewResult": true,
+  "shadowsAfter": {
+    "active": 0,
+    "dueTotal": 0,
+    "byArea": {},
+    "list": [
+      {
+        "id": "v2w-shadow-salud-publica",
+        "areaId": "area-psi-salud-publica",
+        "count": 0,
+        "active": false,
+        "x": -6.356,
+        "z": -1.582
+      },
+      {
+        "id": "v2w-shadow-cuidado-integral",
+        "areaId": "area-psi-cuidado-integral",
+        "count": 0,
+        "active": false,
+        "x": -0.459,
+        "z": -6.534
+      },
+      {
+        "id": "v2w-shadow-etica",
+        "areaId": "area-psi-etica",
+        "count": 0,
+        "active": false,
+        "x": 6.072,
+        "z": -2.456
+      },
+      {
+        "id": "v2w-shadow-investigacion",
+        "areaId": "area-psi-investigacion",
+        "count": 0,
+        "active": false,
+        "x": 4.212,
+        "z": 5.016
+      },
+      {
+        "id": "v2w-shadow-gestion",
+        "areaId": "area-psi-gestion",
+        "count": 0,
+        "active": false,
+        "x": -3.469,
+        "z": 5.556
+      }
+    ]
+  },
+  "dueErrorsAfter": 3,
+  "lowRestoration": {
+    "levels": {
+      "area-psi-salud-publica": 0,
+      "area-psi-cuidado-integral": 0,
+      "area-psi-etica": 0,
+      "area-psi-investigacion": 0,
+      "area-psi-gestion": 0
+    },
+    "total": 0,
+    "maxLevels": 15,
+    "visuals": {
+      "vegetation": 0,
+      "runes": 0,
+      "crystals": 0,
+      "columns": 0,
+      "halos": 0
+    }
+  },
+  "masteryRestoration": {
+    "levels": {
+      "area-psi-salud-publica": 0,
+      "area-psi-cuidado-integral": 0,
+      "area-psi-etica": 3,
+      "area-psi-investigacion": 0,
+      "area-psi-gestion": 0
+    },
+    "total": 3,
+    "maxLevels": 15,
+    "visuals": {
+      "vegetation": 6,
+      "runes": 2,
+      "crystals": 3,
+      "columns": 2,
+      "halos": 2
+    }
+  },
+  "chestRepeat": {
+    "coins1": 1004,
+    "coins2": 1004,
+    "stillOpenButton": false
+  },
+  "keyboardInteract": {
+    "open": true,
+    "title": "Telescopio del repaso"
+  },
+  "guideRepeat": {
+    "xp1": 6205,
+    "xp2": 6205
+  },
+  "errors": [],
+  "network": []
+}

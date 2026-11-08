@@ -5,7 +5,9 @@
 **Versión:** 64 · «Versión final completa» · compilada el 2026-11-06.  
 **Sin conexión, sin cuentas y sin recursos externos.** Incluye 111 preguntas con sus claves.
 
-> **Nota de migración (6 de noviembre de 2026).** Este informe describe la versión 64. La versión vigente es la **65** («Proyecto principal · migración de nombre»): el contenido es el mismo, con el título «SERUMS QUEST» y el proyecto en `serums-quest/`. La exportación vigente es `export/serums-quest.html`; `export/serums-quest-final.html` se conserva como entrega 64. La versión anterior del juego está archivada en `../serums-quest-legacy/`.
+> **Nota de migración (6 de noviembre de 2026).** Este informe describe la versión 64. La versión vigente es la **66** («Snapshot de nivel y XP para el HUB»): el contenido es el mismo, con el título «SERUMS QUEST», el proyecto en `serums-quest/` y la clave `serumsquest:snapshot:v1` que alimenta el panel «Nivel y XP» del HUB. La exportación vigente es `export/serums-quest.html`; `export/serums-quest-final.html` se conserva como entrega 64. La versión anterior del juego está archivada en `../serums-quest-legacy/`.
+
+> **V2 · Final (6 de noviembre de 2026).** La entrega vigente es [`README.md`](README.md) y [`docs/V2-FINAL.md`](docs/V2-FINAL.md): 951 preguntas, selector de héroes, feedback por respuesta y mundo interactivo (cofres, fragmentos, guías, telescopio, biblioteca, sombras y restauración). La exportación única es [`export/serums-quest.html`](export/serums-quest.html), 3.173.871 B. Este documento se conserva como historia de la versión 64.
 
 ## Abrir
 

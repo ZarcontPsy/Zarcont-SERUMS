@@ -34,6 +34,36 @@ function decorateRarity(group, c, y) {
 }
 function addAnim(anim, spec) { anim.push(spec); }
 function buildBoxGroup(boxes) { return mergedVoxels(boxes); }
+
+/*  Capas de cosméticos sobre la prenda base.
+    · setVoxelDepthLayer (part2) desempata caras coplanares entre mallas.
+    · Un desplazamiento mínimo en +Z separa placas apoyadas en el torso, el
+      peinado sobre la cabeza y las calzas sobre las piernas. Se mide en
+      unidades voxel (~0,4-0,5 cm a escala de héroe de ~1,9 m). */
+var COSMETIC_DEPTH_LAYER = {
+  cabeza: 12, peinado: 11, accesorios: 10, torso: 9, piernas: 8, extras: 7,
+  amuletos: 6, efectos: 5, mascota: 4, estela: 3, marcos: 2
+};
+var COSMETIC_Z_LIFT = { cabeza: 0.005, peinado: 0.004, torso: 0.004, piernas: 0.004, accesorios: 0.004, extras: 0.004, amuletos: 0.004 };
+/* Tocado que cubre el cráneo: ahí el pelo base debe ocultarse. */
+var HEAD_COSMETIC_HIDES_HAIR = { 'c-cabeza-casco': 1, 'c-cabeza-gorro': 1 };
+
+function cosmeticBaseParts(avatar) {
+  return avatar && avatar.head && avatar.head.userData ? avatar.head.userData : {};
+}
+function setBaseGroupsVisible(groups, visible) {
+  if (!groups) return;
+  groups.forEach(function (group) { if (group) group.visible = visible; });
+}
+function applyCosmeticLayering(group, slot) {
+  if (!group) return group;
+  if (typeof setVoxelDepthLayer === 'function') {
+    setVoxelDepthLayer(group, COSMETIC_DEPTH_LAYER[slot] || 3);
+  }
+  var lift = COSMETIC_Z_LIFT[slot];
+  if (lift) group.position.z += lift;
+  return group;
+}
 function buildHeadPiece(c, qf) {
   var g = new THREE.Group();
   var id = c.id;
@@ -97,6 +127,21 @@ function buildHeadPiece(c, qf) {
       [-0.1, 0.78, 0.05, 0.05, 0.05, 0.05, CLEAN_COLOR.bone, true],
       [0.1, 0.78, 0.05, 0.05, 0.05, 0.05, CLEAN_COLOR.bone, true]
     ];
+    /* V2.2 · Motivo propio por área: la silueta cambia, no solo el color. */
+    if (id.indexOf('salud') !== -1) {
+      boxes.push([-0.18, 0.96, 0.02, 0.16, 0.2, 0.1, '#b8d46a', true], [0.18, 0.96, 0.02, 0.16, 0.2, 0.1, '#b8d46a', true], [0, 1.08, 0.02, 0.34, 0.12, 0.12, areaColor, true]);
+    } else if (id.indexOf('cuidado') !== -1) {
+      boxes.push([-0.16, 0.98, 0.02, 0.18, 0.18, 0.12, areaColor, true], [0.16, 0.98, 0.02, 0.18, 0.18, 0.12, areaColor, true], [0, 0.94, 0.04, 0.28, 0.3, 0.1, areaColor, true]);
+    } else if (id.indexOf('etica') !== -1) {
+      boxes.push([0, 1.0, 0.02, 0.48, 0.06, 0.08, gold ? CLEAN_COLOR.gold : CLEAN_COLOR.violet], [-0.18, 0.92, 0.02, 0.08, 0.2, 0.08, areaColor, true], [0.18, 0.92, 0.02, 0.08, 0.2, 0.08, areaColor, true]);
+    } else if (id.indexOf('investigacion') !== -1) {
+      boxes.push([0, 1.02, 0.02, 0.18, 0.26, 0.14, areaColor, true], [-0.16, 0.94, 0.02, 0.1, 0.12, 0.08, '#f5f7d9', true], [0.16, 0.94, 0.02, 0.1, 0.12, 0.08, '#f5f7d9', true]);
+    } else {
+      boxes.push([0, 0.98, 0.02, 0.34, 0.1, 0.34, areaColor, true], [0, 1.08, 0.02, 0.2, 0.12, 0.2, gold ? CLEAN_COLOR.gold : areaColor, true], [-0.2, 1.02, 0.02, 0.08, 0.08, 0.08, CLEAN_COLOR.gold, true], [0.2, 1.02, 0.02, 0.08, 0.08, 0.08, CLEAN_COLOR.gold, true]);
+    }
+    if (gold) {
+      boxes.push([-0.3, 1.02, 0.02, 0.05, 0.18, 0.05, CLEAN_COLOR.gold, true], [0.3, 1.02, 0.02, 0.05, 0.18, 0.05, CLEAN_COLOR.gold, true]);
+    }
     addAnim(g.userData.anim = [], { type: 'orbit-stars', color: gem, radius: 0.5, count: qCount(gold ? 4 : 2) });
   } else {
     boxes = [
@@ -223,6 +268,9 @@ function buildTorsoPiece(c, qf) {
       [0, 0.58, 0.25, 0.5, 0.12, 0.06, CLEAN_COLOR.gold]
     ];
   }
+  /* Prendas que tapan la espalda: la capa nativa queda debajo y debe ocultarse. */
+  g.userData.coversBack = id === 'c-torso-manto' || id === 'c-torso-poncho' ||
+    id === 'c-torso-abrigo' || id === 'c-torso-bata' || id === 'x-capa-errorario';
   addPartBoxes(g, boxes);
   decorateRarity(g, c, 0.5);
   return g;
@@ -242,7 +290,17 @@ function buildLegPair(c, qf, avatar) {
     addAnim(g.userData.anim = [], { type: 'cloth', phase: 0.4 });
     var native = new THREE.Group(); native.add(g); decorateRarity(g, c, 0.6); return [{ parent: avatar.body, group: g }];
   }
-  var boxes = id === 'c-piernas-grebas' ? [
+  var boxes;
+  if (id === 'c-piernas-ruta') {
+    boxes = [
+      [-0.02, 0.58, 0.02, 0.3, 0.2, 0.3, '#5a4632'],
+      [0.03, 0.42, 0.06, 0.25, 0.12, 0.26, '#7a5a3a'],
+      [0, 0.29, 0.06, 0.3, 0.2, 0.3, '#2f3b4a'],
+      [0, 0.31, 0.22, 0.14, 0.06, 0.03, CLEAN_COLOR.teal, true],
+      [0, 0.13, 0.08, 0.32, 0.14, 0.36, '#1c232e'],
+      [0, 0.47, 0.18, 0.1, 0.16, 0.04, CLEAN_COLOR.gold, true]
+    ];
+  } else boxes = id === 'c-piernas-grebas' ? [
     [-0.1, 0.55, 0.0, 0.34, 0.18, 0.35, '#75808e'],
     [0, 0.32, 0.06, 0.29, 0.45, 0.34, '#aeb6c8'],
     [0, 0.08, 0.08, 0.3, 0.16, 0.4, '#4a5563'],
@@ -300,6 +358,17 @@ function buildAmulet(c, qf) {
       [-0.08, 0.44, 0.255, 0.2, 0.11, 0.04, '#b4a09d'],
       [0.06, 0.34, 0.255, 0.14, 0.2, 0.04, '#8f7d84'],
       [0, 0.42, 0.285, 0.08, 0.07, 0.018, CLEAN_COLOR.rose, true]
+    ]);
+  } else if (id === 'c-amuleto-criterio') {
+    addPartBoxes(g, [
+      [0, 0.57, 0.235, 0.3, 0.025, 0.02, CLEAN_COLOR.gold],
+      [0, 0.47, 0.255, 0.14, 0.14, 0.04, '#d8af67'],
+      [0, 0.45, 0.28, 0.08, 0.08, 0.02, CLEAN_COLOR.violet, true],
+      [0, 0.35, 0.255, 0.06, 0.2, 0.04, '#d8af67'],
+      [-0.04, 0.3, 0.255, 0.14, 0.05, 0.04, '#d8af67'],
+      [-0.11, 0.29, 0.255, 0.05, 0.1, 0.04, '#d8af67'],
+      [0.11, 0.38, 0.255, 0.05, 0.12, 0.04, '#d8af67'],
+      [0, 0.42, 0.285, 0.03, 0.12, 0.01, '#f4e6c2', true]
     ]);
   } else {
     addPartBoxes(g, [
@@ -384,16 +453,30 @@ function buildEffectPiece(c, qf, avatar) {
       p.position.set((wi % 2 ? 0.16 : -0.16), 0.35 + wi * 0.16, 0.09);
       g.add(p);
     }
+    /* V2.2 · cada efecto de arma tiene una silueta propia, no solo color. */
+    if (id === 'x-arma-destello') {
+      addPartBoxes(g, [[0, 0.92, 0.12, 0.055, 0.95, 0.055, wc], [0, 1.42, 0.12, 0.18, 0.18, 0.06, '#f5f7d9', true], [-0.18, 1.18, 0.12, 0.2, 0.05, 0.04, CLEAN_COLOR.gold, true]]);
+    } else if (id === 'x-arma-marea') {
+      addPartBoxes(g, [[0, 0.82, 0.12, 0.12, 0.85, 0.06, wc], [-0.2, 1.22, 0.12, 0.13, 0.13, 0.05, wc], [0.2, 1.22, 0.12, 0.13, 0.13, 0.05, wc], [0, 1.36, 0.12, 0.13, 0.16, 0.05, '#dff2ff', true]]);
+    } else if (id === 'x-arma-sello') {
+      addPartBoxes(g, [[0, 0.9, 0.12, 0.34, 0.34, 0.08, wc], [0, 0.9, 0.17, 0.18, 0.18, 0.04, '#f5f7d9', true], [0, 1.22, 0.12, 0.08, 0.22, 0.05, CLEAN_COLOR.gold]]);
+    } else if (id === 'x-arma-prisma') {
+      addPartBoxes(g, [[0, 0.9, 0.12, 0.22, 0.55, 0.12, wc], [0, 1.2, 0.12, 0.34, 0.1, 0.14, '#f5f7d9', true], [0, 0.62, 0.12, 0.3, 0.06, 0.1, CLEAN_COLOR.gold]]);
+    } else {
+      addPartBoxes(g, [[0, 0.92, 0.12, 0.44, 0.07, 0.1, wc], [-0.24, 0.92, 0.12, 0.07, 0.42, 0.08, wc], [0.24, 0.92, 0.12, 0.07, 0.42, 0.08, wc], [0, 1.18, 0.12, 0.1, 0.1, 0.1, CLEAN_COLOR.gold, true]]);
+    }
     addAnim(g.userData.anim = [], { type: 'weapon-motes', color: wc, count: n });
     return g;
   }
   if (id === 'c-efecto-aura' || id === 'x-aura-amanecer') {
     var aura = makeGlowSprite(colorHex, id === 'x-aura-amanecer' ? 2.8 : 2.2, 0.2);
     aura.position.y = 1.1;
+    aura.renderOrder = 1;
     g.add(aura);
-    var ring = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.018, 4, 28), new THREE.MeshBasicMaterial({ color: color(colorHex), transparent: true, opacity: 0.38 }));
+    var ring = new THREE.Mesh(new THREE.TorusGeometry(0.75, 0.018, 4, 28), new THREE.MeshBasicMaterial({ color: color(colorHex), transparent: true, opacity: 0.38, depthWrite: false }));
     ring.rotation.x = Math.PI / 2;
     ring.position.y = 0.04;
+    ring.renderOrder = 1;
     g.add(ring);
     addAnim(g.userData.anim = [], { type: 'aura', color: colorHex, ring: ring, baseY: 1.1 });
   } else if (id === 'c-efecto-chispas') {
@@ -410,6 +493,9 @@ function buildEffectPiece(c, qf, avatar) {
       var mist = new THREE.Sprite(new THREE.SpriteMaterial({ map: SOFT_GLOW, color: color(colorHex), transparent: true, opacity: 0.12, depthWrite: false }));
       mist.scale.set(1.6 + (mi % 2) * 0.5, 0.7, 1);
       mist.position.set(-1.0 + (mi % 4) * 0.65, 0.15 + Math.floor(mi / 4) * 0.1, -0.2 + (mi % 3) * 0.25);
+      /* Orden fijo: la bruma usa blending normal y el orden por distancia
+         cambiaba con la cámara (parpadeo de transparencias). */
+      mist.renderOrder = 10 + mi;
       g.add(mist);
     }
     addAnim(g.userData.anim = [], { type: 'mist', color: colorHex });
@@ -442,21 +528,42 @@ function buildFramePiece(c, qf, avatar) {
   var bottom = top.clone(); bottom.position.y = -h / 2;
   var left = new THREE.Mesh(new THREE.BoxGeometry(t, h, t), mat); left.position.x = -w / 2;
   var right = left.clone(); right.position.x = w / 2;
+  top.renderOrder = 1; bottom.renderOrder = 1; left.renderOrder = 1; right.renderOrder = 1;
   frame.add(top, bottom, left, right);
   frame.position.set(0, 1.35, -0.68);
   g.add(frame);
   var glow = makeGlowSprite(colorHex, 2.6, 0.13);
   glow.position.set(0, 1.35, -0.72);
+  glow.renderOrder = 2;
   g.add(glow);
+  if (id === 'c-marco-bronce') {
+    addPartBoxes(g, [
+      [-0.69, 2.63, 0, 0.17, 0.17, 0.12, '#d8a25c', true],
+      [0.69, 2.63, 0, 0.17, 0.17, 0.12, '#d8a25c', true],
+      [-0.69, 0.07, 0, 0.17, 0.17, 0.12, '#d8a25c', true],
+      [0.69, 0.07, 0, 0.17, 0.17, 0.12, '#d8a25c', true],
+      [0, 2.78, 0, 0.28, 0.12, 0.1, CLEAN_COLOR.gold, true]
+    ]);
+  } else if (id === 'c-marco-platino') {
+    addPartBoxes(g, [
+      [-0.56, 1.35, 0, 0.035, 2.28, 0.035, '#f2f7ff', true],
+      [0.56, 1.35, 0, 0.035, 2.28, 0.035, '#f2f7ff', true],
+      [0, 2.49, 0, 1.15, 0.035, 0.035, '#f2f7ff', true],
+      [0, 0.21, 0, 1.15, 0.035, 0.035, '#f2f7ff', true],
+      [0, 2.66, 0, 0.18, 0.22, 0.08, '#dfe9ff', true]
+    ]);
+  }
   if (id === 'c-marco-constelacion') {
     for (var i = 0; i < qCount(6); i++) {
       var st = makeGlowSprite(CLEAN_COLOR.gold, 0.24, 0.65);
       st.position.set((Math.random() - 0.5) * 1.7, 0.2 + Math.random() * 2.3, -0.62);
+      st.renderOrder = 2;
       g.add(st);
     }
   } else if (id === 'c-marco-vacio') {
     var voidGlow = makeGlowSprite(CLEAN_COLOR.violet, 3.0, 0.16);
     voidGlow.position.set(0, 1.4, -0.7);
+    voidGlow.renderOrder = 2;
     g.add(voidGlow);
   }
   addAnim(g.userData.anim = [], { type: 'frame', baseY: 1.35, color: colorHex });
@@ -479,8 +586,8 @@ function buildPetPiece(c, qf, avatar) {
     ]);
     if (stage >= 2) addPartBoxes(g, [[0, -0.18, 0, 0.1, 0.1, 0.1, CLEAN_COLOR.gold, true]]);
     if (stage >= 3) {
-      var halo = new THREE.Mesh(new THREE.TorusGeometry(0.35, 0.012, 4, 20), new THREE.MeshBasicMaterial({ color: color(CLEAN_COLOR.gold), transparent: true, opacity: 0.7 }));
-      halo.rotation.x = Math.PI / 2; halo.position.y = 0.18; g.add(halo);
+      var halo = new THREE.Mesh(new THREE.TorusGeometry(0.35, 0.012, 4, 20), new THREE.MeshBasicMaterial({ color: color(CLEAN_COLOR.gold), transparent: true, opacity: 0.7, depthWrite: false }));
+      halo.rotation.x = Math.PI / 2; halo.position.y = 0.18; halo.renderOrder = 2; g.add(halo);
     }
     addAnim(g.userData.anim = [], { type: 'pet', baseY: 1.4, baseX: -0.64, baseZ: 0.12, phase: 0.2, orbit: 0.2, speed: 0.7, glowColor: petColor });
   } else if (id === 'x-buho-cometa') {
@@ -497,6 +604,22 @@ function buildPetPiece(c, qf, avatar) {
     ]);
     g.scale.setScalar(scale * 1.24);
     addAnim(g.userData.anim = [], { type: 'pet', baseY: 1.42, baseX: -0.62, baseZ: 0.16, phase: 1.4, orbit: 0.23, speed: 0.55, glowColor: petColor });
+  } else if (id === 'x-zorro-tinta') {
+    addPartBoxes(g, [
+      [-0.14, 0, 0, 0.3, 0.24, 0.24, '#3a3148'],
+      [0, 0.15, 0.02, 0.34, 0.28, 0.28, '#4a3d5c'],
+      [-0.12, 0.34, 0, 0.1, 0.18, 0.1, '#2a2335'],
+      [0.12, 0.34, 0, 0.1, 0.18, 0.1, '#2a2335'],
+      [-0.06, 0.22, 0.17, 0.045, 0.045, 0.02, '#e8d9b0', true],
+      [0.06, 0.22, 0.17, 0.045, 0.045, 0.02, '#e8d9b0', true],
+      [-0.28, 0.02, -0.05, 0.18, 0.14, 0.38, '#4a3d5c'],
+      [0.02, 0.05, -0.26, 0.13, 0.1, 0.34, '#3a3148'],
+      [0, 0.08, -0.44, 0.22, 0.06, 0.14, '#d8c7a0']
+    ]);
+    if (stage >= 2) addPartBoxes(g, [[0, 0.1, 0.15, 0.24, 0.06, 0.05, CLEAN_COLOR.violet, true]]);
+    if (stage >= 3) addPartBoxes(g, [[-0.14, 0.22, 0.19, 0.06, 0.14, 0.04, CLEAN_COLOR.gold, true]]);
+    g.scale.setScalar(1.16);
+    addAnim(g.userData.anim = [], { type: 'pet', baseY: 1.4, baseX: -0.62, baseZ: 0.14, phase: 2.2, orbit: 0.27, speed: 0.5, glowColor: '#8f7ad8' });
   } else {
     addPartBoxes(g, [
       [-0.12, 0, 0, 0.28, 0.22, 0.22, '#8b4f36'],
@@ -536,6 +659,7 @@ function buildTrailPiece(c, qf, avatar) {
   var ribbon = new THREE.Mesh(new THREE.TorusGeometry(0.64, 0.018, 4, 30), new THREE.MeshBasicMaterial({ color: color(colorHex), transparent: true, opacity: 0.55, depthWrite: false, blending: THREE.AdditiveBlending }));
   ribbon.rotation.x = Math.PI / 2;
   ribbon.position.set(0, 0.04, 0.1);
+  ribbon.renderOrder = 2;
   g.add(ribbon);
   addAnim(g.userData.anim = [], { type: 'trail', color: colorHex, stage: stage, ribbon: ribbon });
   return g;
@@ -565,6 +689,8 @@ function chooseAnchorForCosmetic(c, avatar) {
 }
 function addPieceGroup(avatar, parent, group, c, animList, slot) {
   parent.add(group);
+  applyCosmeticLayering(group, slot);
+  group.name = 'cosmetic-' + slot + '-' + c.id;
   avatar.cosmetics.groups.push(group);
   group.userData.cosmeticId = c.id;
   group.userData.slot = slot;
@@ -594,20 +720,27 @@ function clearAvatarCosmetics(avatar) {
     });
   }
   avatar.cosmetics = { groups: [], animated: [], slots: {}, title: null, frame: null };
-  if (avatar.head && avatar.head.userData && avatar.head.userData.baseHatGroups) {
-    avatar.head.userData.baseHatGroups.forEach(function (g) { g.visible = true; });
-  }
+  var parts = cosmeticBaseParts(avatar);
+  setBaseGroupsVisible(parts.baseHatGroups, true);
+  setBaseGroupsVisible(parts.baseHairGroups, true);
   if (avatar.hairTail) avatar.hairTail.visible = true;
+  if (avatar.cape) avatar.cape.visible = true;
 }
 function applyOutfitToAvatar(avatar, characterId, outfitOverride) {
   if (!avatar) return;
   clearAvatarCosmetics(avatar);
   var outfit = outfitOverride !== undefined ? (outfitOverride || {}) : getCharacterOutfit(characterId);
+  var parts = cosmeticBaseParts(avatar);
   var hasHeadOrHair = !!(outfit.cabeza || outfit.peinado);
-  if (hasHeadOrHair && avatar.head && avatar.head.userData && avatar.head.userData.baseHatGroups) {
-    avatar.head.userData.baseHatGroups.forEach(function (g) { g.visible = false; });
+  /* Un tocado o un peinado sustituyen el sombrero base. */
+  if (hasHeadOrHair) setBaseGroupsVisible(parts.baseHatGroups, false);
+  /* Un peinado sustituye TODO el pelo base (antes solo se ocultaba la cola). */
+  if (outfit.peinado) {
+    setBaseGroupsVisible(parts.baseHairGroups, false);
+    if (avatar.hairTail) avatar.hairTail.visible = false;
+  } else if (outfit.cabeza && HEAD_COSMETIC_HIDES_HAIR[outfit.cabeza]) {
+    setBaseGroupsVisible(parts.baseHairGroups, false);
   }
-  if (outfit.peinado && avatar.hairTail) avatar.hairTail.visible = false;
   var animated = [];
   var qf = effectQualityFactor();
   COSMETIC_SLOT_ORDER.forEach(function (slot) {
@@ -634,6 +767,8 @@ function applyOutfitToAvatar(avatar, characterId, outfitOverride) {
       var parent = chooseAnchorForCosmetic(c, avatar);
       if (slot === 'extras') parent = avatar.body;
       addPieceGroup(avatar, parent, group, c, animated, slot);
+      /* La prenda que cubre la espalda oculta la capa nativa del héroe. */
+      if (slot === 'torso' && group.userData.coversBack && avatar.cape) avatar.cape.visible = false;
       avatar.cosmetics.slots[slot] = c.id;
     }
   });

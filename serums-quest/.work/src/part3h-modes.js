@@ -16,7 +16,7 @@ var MODE_DEFS = {
   },
   timed: {
     id: 'timed', label: 'Contrarreloj', short: 'Contrarreloj',
-    description: 'Precisión bajo tiempo. Sin retroalimentación hasta el final. La velocidad no compensa un fallo.',
+    description: 'Precisión bajo tiempo. Feedback tras cada respuesta: el reloj se detiene mientras lees. La velocidad no compensa un fallo.',
     durations: [180, 300, 480], questionByDuration: { 180: 8, 300: 12, 480: 18 },
     defaultSeconds: 300, minAnswered: 8, pass: 0.7, rewardXp: 25, rewardCoins: 6
   },
@@ -27,7 +27,13 @@ var MODE_DEFS = {
     rewardXp: 70, rewardCoins: 20
   }
 };
-function modeArrayQuestions() { return Object.keys(CAMP.questions).map(function (id) { return CAMP.questions[id]; }).filter(function (q) { return q && q.options && q.answer; }); }
+function modeArrayQuestions() {
+  return Object.keys(CAMP.questions).map(function (id) { return CAMP.questions[id]; }).filter(function (q) {
+    if (!q || !q.options || !q.answer) return false;
+    if (state.settings.onlyOriginalBank && q.source !== 'campaign') return false;
+    return true;
+  });
+}
 function modeSeedRandom(seed) {
   var h = 2166136261;
   String(seed).split('').forEach(function (ch) { h ^= ch.charCodeAt(0); h = Math.imul(h, 16777619); });
@@ -155,6 +161,13 @@ function startMode(mode, options) {
   if (mode === 'timed' && MODE_DEFS.timed.durations.indexOf(seconds) === -1) seconds = MODE_DEFS.timed.defaultSeconds;
   var qs = modeBuildQuestions(mode, seconds);
   if (!qs.length) { toast('No hay preguntas disponibles para este modo.', 'warn'); return; }
+  var mixedModeIds = V2.call('feedback', 'mixModeQuestions', mode, qs.map(function (q) { return q.id; }));
+  if (Array.isArray(mixedModeIds) && mixedModeIds.length) {
+    var mixedModeQuestions = mixedModeIds.map(function (id) { return QUESTION_BY_ID[id]; }).filter(function (q) {
+      return q && (!state.settings.onlyOriginalBank || q.source === 'campaign');
+    });
+    if (mixedModeQuestions.length === qs.length) qs = mixedModeQuestions;
+  }
   var tiers = modeTiersFor(mode, qs);
   var questionTiers = {};
   qs.forEach(function (q, i) { questionTiers[q.id] = tiers[i]; });
@@ -213,13 +226,27 @@ function modeTimeoutCurrent() {
   session.orders.push(q.id);
   session.hearts = Math.max(0, session.hearts - 1);
   lastFeedback = { correct: false, chosen: null, answer: q.answer, answerText: answerOption ? answerOption.text : '', xp: 0, coins: 0, reason: 'Sin respuesta dentro del tiempo.', timeout: true, shownAt: performance.now() };
-  guardianAttackVisual();
-  triggerHeroHurt();
+  var v2TimeoutAttack = V2.call('combat', 'guardianAttack', q, null, session);
+  if (!v2TimeoutAttack) {
+    guardianAttackVisual();
+    triggerHeroHurt();
+  }
+  V2.call('combat', 'onHeartsChanged', session, q);
   persist();
   renderScreen();
+  V2.call('duel', 'onAttack', false);
+  V2.call('feedback', 'onAnswer', q, lastFeedback, session);
+  var autoDelay = V2.call('feedback', 'autoAdvanceDelay', session);
+  if (autoDelay > 0) {
+    var autoToken = lastFeedback;
+    window.setTimeout(function () {
+      if (screen === 'duel' && session && lastFeedback === autoToken && !session.finishing) nextQuestion();
+    }, autoDelay);
+  }
 }
 function updateModeClock() {
   if (!session || screen !== 'duel') return;
+  if (V2.call('feedback', 'isOpen')) return;
   var el = document.querySelector('[data-mode-timer]');
   var remaining = modeTimerRemaining(session);
   if (el) {

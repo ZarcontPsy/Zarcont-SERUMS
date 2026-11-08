@@ -1,0 +1,735 @@
+{
+  "label": "probe-layers",
+  "probe": {
+    "probe": "layers-teo",
+    "meshes": [
+      {
+        "mesh": "voxels-lambert",
+        "parent": "hero-leg-left",
+        "chain": "(sin nombre) < hero-leg-left < hero-body < hero:teo",
+        "layer": 0,
+        "material": "c30de47f"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "hero-leg-right",
+        "chain": "(sin nombre) < hero-leg-right < hero-body < hero:teo",
+        "layer": 0,
+        "material": "2c5b6237"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "hero-torso",
+        "chain": "(sin nombre) < hero-torso < hero-body < hero:teo",
+        "layer": 0,
+        "material": "805c8009"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "hero-torso",
+        "chain": "(sin nombre) < hero-torso < hero-body < hero:teo",
+        "layer": -1,
+        "material": "7cbe54fc"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-torso-details",
+        "chain": "base-torso-details < hero-torso < hero-body < hero:teo",
+        "layer": -1,
+        "material": "4650f11a"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "base-torso-details",
+        "chain": "base-torso-details < hero-torso < hero-body < hero:teo",
+        "layer": -1,
+        "material": "2a3a365b"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:torso:c-torso-manto",
+        "chain": "(sin nombre) < cosmetic:torso:c-torso-manto < hero-torso < hero-body",
+        "layer": -4,
+        "material": "69a7104f"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:torso:c-torso-manto",
+        "chain": "(sin nombre) < cosmetic:torso:c-torso-manto < hero-torso < hero-body",
+        "layer": -4,
+        "material": "e6b129be"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:torso:c-torso-manto",
+        "chain": "cosmetic:torso:c-torso-manto < hero-torso < hero-body < hero:teo",
+        "layer": -4,
+        "material": "25853855"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:amuletos:c-amuleto-enfoque",
+        "chain": "(sin nombre) < cosmetic:amuletos:c-amuleto-enfoque < hero-torso < hero-body",
+        "layer": -4,
+        "material": "5b5aae72"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:amuletos:c-amuleto-enfoque",
+        "chain": "(sin nombre) < cosmetic:amuletos:c-amuleto-enfoque < hero-torso < hero-body",
+        "layer": -4,
+        "material": "18bb8160"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-head",
+        "chain": "base-head < hero-head < hero-body < hero:teo",
+        "layer": 0,
+        "material": "ca4eee43"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "base-head",
+        "chain": "base-head < hero-head < hero-body < hero:teo",
+        "layer": -1,
+        "material": "de14117d"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-hair-0",
+        "chain": "(sin nombre) < base-hair-0 < hero-head < hero-body",
+        "layer": -1,
+        "material": "bf6d8d77"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-head-details-0",
+        "chain": "(sin nombre) < base-head-details-0 < hero-head < hero-body",
+        "layer": -3,
+        "material": "96b63856"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "base-head-details-0",
+        "chain": "(sin nombre) < base-head-details-0 < hero-head < hero-body",
+        "layer": -3,
+        "material": "dbfe7870"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-hair-tail",
+        "chain": "(sin nombre) < base-hair-tail < hero-head < hero-body",
+        "layer": -1,
+        "material": "e4e964e2"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:cabeza:c-cabeza-corona",
+        "chain": "(sin nombre) < cosmetic:cabeza:c-cabeza-corona < hero-head < hero-body",
+        "layer": -6,
+        "material": "51affe28"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:cabeza:c-cabeza-corona",
+        "chain": "(sin nombre) < cosmetic:cabeza:c-cabeza-corona < hero-head < hero-body",
+        "layer": -6,
+        "material": "2948bc6b"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:cabeza:c-cabeza-corona",
+        "chain": "cosmetic:cabeza:c-cabeza-corona < hero-head < hero-body < hero:teo",
+        "layer": -6,
+        "material": "f8e757e6"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:peinado:c-peinado-coleta",
+        "chain": "(sin nombre) < cosmetic:peinado:c-peinado-coleta < hero-head < hero-body",
+        "layer": -5,
+        "material": "84ca5fc6"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:peinado:c-peinado-coleta",
+        "chain": "(sin nombre) < cosmetic:peinado:c-peinado-coleta < hero-head < hero-body",
+        "layer": -5,
+        "material": "1350aa42"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:accesorios:c-accesorios-gafas",
+        "chain": "(sin nombre) < cosmetic:accesorios:c-accesorios-gafas < hero-head < hero-body",
+        "layer": -5,
+        "material": "dc762241"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:accesorios:c-accesorios-gafas",
+        "chain": "(sin nombre) < cosmetic:accesorios:c-accesorios-gafas < hero-head < hero-body",
+        "layer": -5,
+        "material": "061ee35c"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "hero-arm-left",
+        "chain": "(sin nombre) < hero-arm-left < hero-body < hero:teo",
+        "layer": 0,
+        "material": "052e6377"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "hero-arm-right",
+        "chain": "(sin nombre) < hero-arm-right < hero-body < hero:teo",
+        "layer": 0,
+        "material": "21c653b9"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-weapon",
+        "chain": "base-weapon < hero-weapon < hero-arm-right < hero-body",
+        "layer": -1,
+        "material": "06eeb2f1"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "base-weapon",
+        "chain": "base-weapon < hero-weapon < hero-arm-right < hero-body",
+        "layer": -1,
+        "material": "4dc2ebe2"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "base-body-details",
+        "chain": "base-body-details < hero-body < hero:teo < models",
+        "layer": -1,
+        "material": "adef2573"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:extras:x-trofeo-salud",
+        "chain": "(sin nombre) < cosmetic:extras:x-trofeo-salud < hero-body < hero:teo",
+        "layer": -4,
+        "material": "647ba69f"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:extras:x-trofeo-salud",
+        "chain": "(sin nombre) < cosmetic:extras:x-trofeo-salud < hero-body < hero:teo",
+        "layer": -4,
+        "material": "212617d9"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:piernas:c-piernas-falda",
+        "chain": "(sin nombre) < cosmetic:piernas:c-piernas-falda < hero-body < hero:teo",
+        "layer": -4,
+        "material": "8f15b1cd"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:piernas:c-piernas-falda",
+        "chain": "(sin nombre) < cosmetic:piernas:c-piernas-falda < hero-body < hero:teo",
+        "layer": -4,
+        "material": "180dbfd5"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:efectos:c-efecto-aura",
+        "chain": "cosmetic:efectos:c-efecto-aura < hero:teo < models < stage",
+        "layer": -3,
+        "material": "db0848d5"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:marcos:c-marco-constelacion",
+        "chain": "(sin nombre) < cosmetic:marcos:c-marco-constelacion < hero:teo < models",
+        "layer": -2,
+        "material": "4cdad3e9"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:marcos:c-marco-constelacion",
+        "chain": "(sin nombre) < cosmetic:marcos:c-marco-constelacion < hero:teo < models",
+        "layer": -2,
+        "material": "4cdad3e9"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:marcos:c-marco-constelacion",
+        "chain": "(sin nombre) < cosmetic:marcos:c-marco-constelacion < hero:teo < models",
+        "layer": -2,
+        "material": "4cdad3e9"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:marcos:c-marco-constelacion",
+        "chain": "(sin nombre) < cosmetic:marcos:c-marco-constelacion < hero:teo < models",
+        "layer": -2,
+        "material": "4cdad3e9"
+      },
+      {
+        "mesh": "voxels-lambert",
+        "parent": "cosmetic:mascota:x-luciernaga-observatorio",
+        "chain": "(sin nombre) < cosmetic:mascota:x-luciernaga-observatorio < hero:teo < models",
+        "layer": -3,
+        "material": "936b5bfe"
+      },
+      {
+        "mesh": "voxels-glow",
+        "parent": "cosmetic:estela:x-estela-racha",
+        "chain": "(sin nombre) < cosmetic:estela:x-estela-racha < hero:teo < models",
+        "layer": -3,
+        "material": "cead430c"
+      },
+      {
+        "mesh": "",
+        "parent": "cosmetic:estela:x-estela-racha",
+        "chain": "cosmetic:estela:x-estela-racha < hero:teo < models < stage",
+        "layer": -3,
+        "material": "5d676eef"
+      }
+    ],
+    "audit": {
+      "triangles": 1208,
+      "pairs": 645,
+      "sameMesh": 633,
+      "crossMesh": 12,
+      "colorPairs": 26,
+      "exactColorPairs": 26,
+      "crossColorPairs": 12,
+      "crossExactColorPairs": 12,
+      "sameMeshColorPairs": 14,
+      "sameMeshExactColorPairs": 14,
+      "unresolvedCrossColorPairs": 4,
+      "unresolvedColorPairs": 18,
+      "exactUnresolvedColorPairs": 18,
+      "samples": [
+        {
+          "pair": "base-torso-details <> hero-torso",
+          "sameMesh": false,
+          "layer": -1,
+          "axis": 2,
+          "plane": 0.259,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.175,
+            0.117,
+            0.262
+          ],
+          "centroidA": [
+            0.088,
+            1.72,
+            -0.257
+          ],
+          "centroidB": [
+            0.189,
+            1.687,
+            -0.255
+          ]
+        },
+        {
+          "pair": "base-torso-details <> hero-torso",
+          "sameMesh": false,
+          "layer": -1,
+          "axis": 2,
+          "plane": 0.259,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.175,
+            0.117,
+            0.262
+          ],
+          "centroidA": [
+            0.088,
+            1.72,
+            -0.257
+          ],
+          "centroidB": [
+            -0.178,
+            1.606,
+            -0.263
+          ]
+        },
+        {
+          "pair": "base-torso-details <> hero-torso",
+          "sameMesh": false,
+          "layer": -1,
+          "axis": 2,
+          "plane": 0.259,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.175,
+            0.117,
+            0.262
+          ],
+          "centroidA": [
+            -0.078,
+            1.693,
+            -0.261
+          ],
+          "centroidB": [
+            0.189,
+            1.687,
+            -0.255
+          ]
+        },
+        {
+          "pair": "base-torso-details <> hero-torso",
+          "sameMesh": false,
+          "layer": -1,
+          "axis": 2,
+          "plane": 0.259,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.175,
+            0.117,
+            0.262
+          ],
+          "centroidA": [
+            -0.078,
+            1.693,
+            -0.261
+          ],
+          "centroidB": [
+            -0.178,
+            1.606,
+            -0.263
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.354,
+            2.136,
+            -0.409
+          ],
+          "centroidB": [
+            0.357,
+            2.114,
+            -0.372
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.354,
+            2.136,
+            -0.409
+          ],
+          "centroidB": [
+            0.354,
+            2.072,
+            -0.382
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.352,
+            2.117,
+            -0.423
+          ],
+          "centroidB": [
+            0.357,
+            2.114,
+            -0.372
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.352,
+            2.117,
+            -0.423
+          ],
+          "centroidB": [
+            0.354,
+            2.072,
+            -0.382
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.365,
+            2.136,
+            -0.303
+          ],
+          "centroidB": [
+            0.357,
+            2.114,
+            -0.372
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.365,
+            2.136,
+            -0.303
+          ],
+          "centroidB": [
+            0.354,
+            2.072,
+            -0.382
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.361,
+            2.117,
+            -0.332
+          ],
+          "centroidB": [
+            0.357,
+            2.114,
+            -0.372
+          ]
+        },
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "sameMesh": true,
+          "layer": -5,
+          "axis": 0,
+          "plane": 0.305,
+          "colorA": [
+            0.776,
+            0.527,
+            0.195
+          ],
+          "colorB": [
+            0.141,
+            0.651,
+            0.533
+          ],
+          "centroidA": [
+            0.361,
+            2.117,
+            -0.332
+          ],
+          "centroidB": [
+            0.354,
+            2.072,
+            -0.382
+          ]
+        },
+        {
+          "pair": "base-weapon <> base-weapon · misma malla",
+          "sameMesh": true,
+          "layer": -1,
+          "axis": 1,
+          "plane": 2.446,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.694,
+            0.468,
+            0.175
+          ],
+          "centroidA": [
+            1.115,
+            2.375,
+            0.104
+          ],
+          "centroidB": [
+            0.91,
+            2.397,
+            0.117
+          ]
+        },
+        {
+          "pair": "base-weapon <> base-weapon · misma malla",
+          "sameMesh": true,
+          "layer": -1,
+          "axis": 1,
+          "plane": 2.446,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.694,
+            0.468,
+            0.175
+          ],
+          "centroidA": [
+            1.115,
+            2.375,
+            0.104
+          ],
+          "centroidB": [
+            0.92,
+            2.396,
+            0.124
+          ]
+        },
+        {
+          "pair": "base-weapon <> base-weapon · misma malla",
+          "sameMesh": true,
+          "layer": -1,
+          "axis": 1,
+          "plane": -2.203,
+          "colorA": [
+            0.552,
+            0.328,
+            1
+          ],
+          "colorB": [
+            0.694,
+            0.468,
+            0.175
+          ],
+          "centroidA": [
+            0.988,
+            2.145,
+            0.133
+          ],
+          "centroidB": [
+            0.883,
+            2.158,
+            0.154
+          ]
+        }
+      ],
+      "top": [
+        {
+          "pair": "cosmetic:peinado:c-peinado-coleta <> cosmetic:peinado:c-peinado-coleta · misma malla",
+          "count": 8
+        },
+        {
+          "pair": "base-body-details <> cosmetic:piernas:c-piernas-falda",
+          "count": 8
+        },
+        {
+          "pair": "base-weapon <> base-weapon · misma malla",
+          "count": 6
+        },
+        {
+          "pair": "base-torso-details <> hero-torso",
+          "count": 4
+        }
+      ]
+    }
+  }
+}
