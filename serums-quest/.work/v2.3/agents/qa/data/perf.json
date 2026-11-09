@@ -1,0 +1,666 @@
+{
+ "startedAt": "2026-11-08T21:23:34.817Z",
+ "size": "1308x662",
+ "fps": {
+  "title": {
+   "samples": 22,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "titleRaf": {
+   "frames": 151,
+   "ms": 2013,
+   "fps": 75
+  },
+  "titleVisor": 0,
+  "tutorial": {
+   "samples": 22,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "tutorialRaf": {
+   "frames": 151,
+   "ms": 2014,
+   "fps": 75
+  },
+  "shop": {
+   "samples": 21,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "shopRaf": {
+   "frames": 150,
+   "ms": 2000,
+   "fps": 75
+  },
+  "shopVisor": 74.8,
+  "quality-bajo": {
+   "samples": 13,
+   "min": 73,
+   "median": 75,
+   "max": 75
+  },
+  "quality-medio": {
+   "samples": 13,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "quality-alto": {
+   "samples": 13,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "wardrobe": {
+   "samples": 22,
+   "min": 75,
+   "median": 75,
+   "max": 75
+  },
+  "wardrobeRaf": {
+   "frames": 151,
+   "ms": 2007,
+   "fps": 75.3
+  },
+  "wardrobeVisor": 75.1
+ },
+ "quality": {
+  "bajo": {
+   "setting": "bajo",
+   "state": {
+    "version": "2.3.0-phase1",
+    "screen": "shop",
+    "tutorial": {
+     "active": false,
+     "step": 0,
+     "total": 5
+    },
+    "selectedCharacterId": "noa",
+    "ownedCosmetics": 69,
+    "coins": 5000,
+    "fps": 75,
+    "canvasCount": 2,
+    "previewHero": "noa",
+    "quality": "bajo",
+    "reducedMotion": false,
+    "storageEnabled": true,
+    "renderCount": 2
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.422,
+     "y": 0.166,
+     "w": 0.176,
+     "h": 0.591,
+     "coverage": 0.1041,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 1962,
+     "coverage": 0.015473,
+     "avgDelta": 120.6,
+     "maxDelta": 336,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 153,
+      "y": 99,
+      "w": 98,
+      "h": 167
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 647,
+    "coverage": 0.005103,
+    "avgDelta": 118.9,
+    "maxDelta": 338,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 186,
+     "y": 95,
+     "w": 57,
+     "h": 168
+    }
+   },
+   "doc": "1308x662",
+   "fps": 75,
+   "errors": [],
+   "shot": ".work/v2.3/agents/qa/shots/calidad-bajo-1308x662.png"
+  },
+  "medio": {
+   "setting": "medio",
+   "state": {
+    "version": "2.3.0-phase1",
+    "screen": "shop",
+    "tutorial": {
+     "active": false,
+     "step": 0,
+     "total": 5
+    },
+    "selectedCharacterId": "noa",
+    "ownedCosmetics": 69,
+    "coins": 5000,
+    "fps": 75,
+    "canvasCount": 2,
+    "previewHero": "noa",
+    "quality": "medio",
+    "reducedMotion": false,
+    "storageEnabled": true,
+    "renderCount": 3
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.371,
+     "y": 0.145,
+     "w": 0.19,
+     "h": 0.569,
+     "coverage": 0.1081,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 647,
+     "coverage": 0.005103,
+     "avgDelta": 118.9,
+     "maxDelta": 338,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 186,
+      "y": 95,
+      "w": 57,
+      "h": 168
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 1267,
+    "coverage": 0.009992,
+    "avgDelta": 115.7,
+    "maxDelta": 334,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 155,
+     "y": 98,
+     "w": 69,
+     "h": 170
+    }
+   },
+   "doc": "1308x662",
+   "fps": 75,
+   "errors": [],
+   "shot": ".work/v2.3/agents/qa/shots/calidad-medio-1308x662.png"
+  },
+  "alto": {
+   "setting": "alto",
+   "state": {
+    "version": "2.3.0-phase1",
+    "screen": "shop",
+    "tutorial": {
+     "active": false,
+     "step": 0,
+     "total": 5
+    },
+    "selectedCharacterId": "noa",
+    "ownedCosmetics": 69,
+    "coins": 5000,
+    "fps": 75,
+    "canvasCount": 2,
+    "previewHero": "noa",
+    "quality": "alto",
+    "reducedMotion": false,
+    "storageEnabled": true,
+    "renderCount": 4
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.366,
+     "y": 0.231,
+     "w": 0.284,
+     "h": 0.53,
+     "coverage": 0.1503,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 1267,
+     "coverage": 0.009992,
+     "avgDelta": 115.7,
+     "maxDelta": 334,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 155,
+      "y": 98,
+      "w": 69,
+      "h": 170
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 1920,
+    "coverage": 0.015142,
+    "avgDelta": 113.7,
+    "maxDelta": 336,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 151,
+     "y": 84,
+     "w": 103,
+     "h": 158
+    }
+   },
+   "doc": "1308x662",
+   "fps": 75,
+   "errors": [],
+   "shot": ".work/v2.3/agents/qa/shots/calidad-alto-1308x662.png"
+  }
+ },
+ "reducedMotion": {
+  "state": {
+   "bodyClass": true,
+   "reducedMotionSetting": true,
+   "visorActive": true,
+   "counts": {
+    "total": 15,
+    "visible": 15,
+    "fullyVisible": 12
+   }
+  },
+  "measure1": {
+   "visible": false,
+   "reason": "sin-pieza",
+   "pixels": 0,
+   "coverage": 0
+  },
+  "measure2": {
+   "visible": false,
+   "reason": "sin-pieza",
+   "pixels": 0,
+   "coverage": 0
+  },
+  "measureStable": true,
+  "wardrobeShot": ".work/v2.3/agents/qa/shots/reduced-motion-inventario-1308x662.png",
+  "css": {
+   "bodyClass": true,
+   "bg": {
+    "animationName": "none",
+    "animationDuration": "0s",
+    "transitionDuration": "0s"
+   },
+   "hero": {
+    "animationName": "none",
+    "animationDuration": "1e-06s",
+    "transitionDuration": "1e-06s"
+   },
+   "halo": {
+    "animationName": "none",
+    "animationDuration": "1e-06s",
+    "transitionDuration": "1e-06s"
+   },
+   "aura": {
+    "animationName": "none",
+    "animationDuration": "1e-06s",
+    "transitionDuration": "1e-06s"
+   },
+   "ctas": {
+    "animationName": "none",
+    "animationDuration": "1e-06s",
+    "transitionDuration": "1e-06s"
+   }
+  },
+  "tutorial": {
+   "open": true,
+   "panel": {
+    "animationName": "none",
+    "transitionDuration": "0s"
+   },
+   "body": {
+    "animationName": "none",
+    "transitionDuration": "1e-06s"
+   }
+  },
+  "afterOff": {
+   "bodyClass": false,
+   "setting": false,
+   "bg": "v23wDrift"
+  }
+ },
+ "errors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 36,
+  "dataRequests": 34,
+  "nonLocal": []
+ },
+ "fatal": null,
+ "shopInfo": {
+  "info": {
+   "version": "2.3.1-a2",
+   "screen": "shop",
+   "mode": "shop",
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "rendererAlive": true,
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "heroId": "noa",
+   "heroName": "Noa Iturbe",
+   "heroes": [
+    {
+     "id": "ilan",
+     "name": "Ilan Vega"
+    },
+    {
+     "id": "mara",
+     "name": "Mara Solís"
+    },
+    {
+     "id": "noa",
+     "name": "Noa Iturbe"
+    },
+    {
+     "id": "teo",
+     "name": "Teo Alcázar"
+    },
+    {
+     "id": "lia",
+     "name": "Lía Márquez"
+    },
+    {
+     "id": "kian",
+     "name": "Kian Ferro"
+    },
+    {
+     "id": "amaru",
+     "name": "Amaru Cielo"
+    },
+    {
+     "id": "ona",
+     "name": "Ona Beltrán"
+    },
+    {
+     "id": "iris",
+     "name": "Iris Calderón"
+    },
+    {
+     "id": "zenon",
+     "name": "Zenón Atlas"
+    }
+   ],
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "pieceId": "c-efecto-chispas",
+   "pieceName": "Chispas de racha",
+   "rarity": "poco_comun",
+   "zoom": 1,
+   "rotation": -0.3,
+   "autoFrame": true,
+   "camera": {
+    "distance": 7.007,
+    "target": [
+     0.068,
+     1.233,
+     0.009
+    ],
+    "fov": 26,
+    "aspect": 1.262,
+    "fit": {
+     "halfW": 0.586,
+     "halfH": 1.298,
+     "dMax": 0.547,
+     "dMin": -0.578,
+     "pad": 1.2
+    },
+    "focus": {
+     "min": [
+      -0.46,
+      -0.03,
+      -0.35
+     ],
+     "max": [
+      0.59,
+      2.5,
+      0.37
+     ]
+    },
+    "box": {
+     "min": [
+      -0.46,
+      0.03,
+      -0.31
+     ],
+     "max": [
+      0.59,
+      2.5,
+      0.37
+     ]
+    }
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.358,
+     "y": 0.145,
+     "w": 0.277,
+     "h": 0.561,
+     "coverage": 0.1553,
+     "inside": true
+    },
+    "measured": null
+   },
+   "fps": 75,
+   "frames": 492,
+   "error": null
+  },
+  "measure": {
+   "visible": true,
+   "pixels": 1962,
+   "coverage": 0.015473,
+   "avgDelta": 120.6,
+   "maxDelta": 336,
+   "w": 400,
+   "h": 317,
+   "bbox": {
+    "x": 153,
+    "y": 99,
+    "w": 98,
+    "h": 167
+   }
+  }
+ },
+ "wardrobeInfo": {
+  "info": {
+   "version": "2.3.1-a2",
+   "screen": "wardrobe",
+   "mode": "wardrobe",
+   "mounted": true,
+   "mountId": "wardrobePreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "rendererAlive": true,
+   "canvas": {
+    "bufferW": 380,
+    "bufferH": 393,
+    "cssW": 380,
+    "cssH": 393
+   },
+   "heroId": "noa",
+   "heroName": "Noa Iturbe",
+   "heroes": [
+    {
+     "id": "ilan",
+     "name": "Ilan Vega"
+    },
+    {
+     "id": "mara",
+     "name": "Mara Solís"
+    },
+    {
+     "id": "noa",
+     "name": "Noa Iturbe"
+    },
+    {
+     "id": "teo",
+     "name": "Teo Alcázar"
+    },
+    {
+     "id": "lia",
+     "name": "Lía Márquez"
+    },
+    {
+     "id": "kian",
+     "name": "Kian Ferro"
+    },
+    {
+     "id": "amaru",
+     "name": "Amaru Cielo"
+    },
+    {
+     "id": "ona",
+     "name": "Ona Beltrán"
+    },
+    {
+     "id": "iris",
+     "name": "Iris Calderón"
+    },
+    {
+     "id": "zenon",
+     "name": "Zenón Atlas"
+    }
+   ],
+   "category": "cabeza",
+   "slotLabel": "Cabeza",
+   "pieceId": null,
+   "pieceName": null,
+   "rarity": null,
+   "zoom": 1,
+   "rotation": -0.3,
+   "autoFrame": true,
+   "camera": {
+    "distance": 2.963,
+    "target": [
+     -0.01,
+     2.004,
+     -0.011
+    ],
+    "fov": 26,
+    "aspect": 0.967,
+    "fit": {
+     "halfW": 0.464,
+     "halfH": 0.542,
+     "dMax": 0.388,
+     "dMin": -0.43,
+     "pad": 1.12
+    },
+    "focus": {
+     "min": [
+      -0.46,
+      1.5,
+      -0.31
+     ],
+     "max": [
+      0.44,
+      2.51,
+      0.29
+     ]
+    },
+    "box": {
+     "min": [
+      -0.46,
+      0.04,
+      -0.31
+     ],
+     "max": [
+      0.5,
+      2.51,
+      0.37
+     ]
+    }
+   },
+   "effect": {
+    "visible": false,
+    "projected": null,
+    "measured": {
+     "visible": true,
+     "pixels": 1920,
+     "coverage": 0.015142,
+     "avgDelta": 113.7,
+     "maxDelta": 336,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 151,
+      "y": 84,
+      "w": 103,
+      "h": 158
+     }
+    }
+   },
+   "fps": 75,
+   "frames": 1632,
+   "error": null
+  },
+  "counts": {
+   "total": 15,
+   "visible": 15,
+   "fullyVisible": 12
+  },
+  "canvas": {
+   "w": 380,
+   "h": 393,
+   "same": true,
+   "canvasCount": 2
+  }
+ },
+ "final": {
+  "screen": "title",
+  "nav": 1,
+  "docGen": 2,
+  "renderCount": 8,
+  "quality": "alto",
+  "reducedMotion": false,
+  "shopErrors": []
+ },
+ "navs": [],
+ "sessionErrors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 36,
+  "dataRequests": 34,
+  "nonLocal": []
+ }
+}

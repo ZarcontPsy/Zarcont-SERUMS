@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 const fs = require('fs');
 const path = require('path');
 const { execFileSync } = require('child_process');
@@ -12,7 +12,16 @@ const modes = JSON.parse(fs.readFileSync(path.join(project, 'src', 'modes.json')
 campaign.achievements = campaign.achievements.concat(modes.achievements);
 campaign.meta.achievementCount = campaign.achievements.length;
 
+const v23CssCandidates = ['part11-v23-anchors.css', 'part12-v23-visor.css', 'part13-v23-shop.css', 'part14-v23-welcome.css', 'part15-v23-integration.css', 'part16-v23b-cinema.css'];
+const v23CssOnly = (process.env.GAME_CSS_ONLY || '').split(',').map((s) => s.trim()).filter(Boolean);
+function allowV23(name) {
+  if (!/^part1[1-5]-v23(?:-|\.)/.test(name)) return true;
+  if (!v23CssOnly.length) return true;
+  return v23CssOnly.some((only) => name.indexOf(only) === 0);
+}
 const optionalCss = ['part5-heroes.css', 'part5-feedback.css', 'part5-assets.css', 'part6-world.css', 'part7-duel.css', 'part8-summary.css', 'part9-perf.css', 'part10-v22.css']
+  .concat(v23CssCandidates)
+  .filter((name) => allowV23(name))
   .map((name) => path.join(src, name))
   .filter((file) => fs.existsSync(file));
 const css = [
@@ -148,7 +157,14 @@ const partCandidates = [
   'part2-world.js',
   'part3-ui.js',
   'part3b-cosmetics-core.js',
+  'part17a-v23c-core.js',
   'part3c-cosmetics-models.js',
+  'part17b-v23c-auras.js',
+  'part17c-v23c-motion.js',
+  'part17d-v23c-frames.js',
+  'part17e-v23c-clothing.js',
+  'part17f-v23c-accessories.js',
+  'part17g-v23c-gate.js',
   'part3d-cosmetics-ui.js',
   'part3f-map.js',
   'part3h-modes.js',
@@ -163,9 +179,23 @@ const partCandidates = [
   'part8-summary.js',
   'part9-perf.js',
   'part4-flow.js',
-  'part10-v22.js'
+  'part10-v22.js',
+  'part10b-v23-core.js',
+  'part11-v23-anchors.js',
+  'part12-v23-visor.js',
+  'part13-v23-shop.js',
+  'part14-v23-welcome.js',
+  'part15-v23-integration.js',
+  'part16-v23b-cinema.js'
 ];
+const v23JsOnly = (process.env.GAME_PARTS_ONLY || '').split(',').map((s) => s.trim()).filter(Boolean);
+function allowV23Js(name) {
+  if (!/^part1[1-5]-v23(?:-|\.)/.test(name)) return true;
+  if (!v23JsOnly.length) return true;
+  return v23JsOnly.some((only) => name.indexOf(only) === 0);
+}
 const parts = partCandidates
+  .filter((name) => allowV23Js(name))
   .filter((name) => fs.existsSync(path.join(src, name)))
   .map((name) => ({ name: name, code: fs.readFileSync(path.join(src, name), 'utf8') }));
 
@@ -177,7 +207,7 @@ function safeJson(value) {
 }
 
 const header = '/* SERUMS QUEST â€” OBSERVATORIO DE LAS CINCO RUTAS\n' +
-  '   V2 Â· Checkpoint 1 Â· combate, selector de hÃ©roes, mundo visual y feedback.\n' +
+  '   V2.3 Â· Fase 2 Â· cosmÃ©ticos con estÃ¡ndar reforzado.\n' +
   '   Generado desde src/campaign.json, src/extras.json, src/content-v2.json y .work/src.\n' +
   '   No editar a mano: cambia las fuentes y ejecuta .work/build-game.js. */\n' +
   'var CAMPAIGN_DATA = ' + safeJson(campaign) + ';\n' +
@@ -185,13 +215,16 @@ const header = '/* SERUMS QUEST â€” OBSERVATORIO DE LAS CINCO RUTAS\n' +
   '(function () {\n\'use strict\';\n';
 const footer = '\n})();\n';
 const code = header + parts.map((part) => part.code).join('\n') + footer;
-fs.writeFileSync(path.join(project, 'game.js'), code);
+const outFile = process.env.GAME_OUT ? path.resolve(process.env.GAME_OUT) : path.join(project, 'game.js');
+fs.mkdirSync(path.dirname(outFile), { recursive: true });
+fs.writeFileSync(outFile, code);
 console.log('game.js bytes:', Buffer.byteLength(code));
+console.log('out:', outFile);
 console.log('parts:', parts.map((p) => p.name).join(', '));
 console.log('questions:', campaign.meta.questionCount, JSON.stringify(sourceCounts), 'added', addedQuestions, 'skipped', skippedQuestions);
 console.log('explanations generated:', campaign.meta.v2.generatedExplanations);
 try {
-  execFileSync(process.execPath, ['--check', path.join(project, 'game.js')], { stdio: 'inherit' });
+  execFileSync(process.execPath, ['--check', outFile], { stdio: 'inherit' });
   console.log('node --check: OK');
 } catch (error) {
   process.exitCode = 1;

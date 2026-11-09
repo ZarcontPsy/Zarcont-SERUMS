@@ -1,0 +1,385 @@
+{
+ "startedAt": "2026-11-08T21:15:39.525Z",
+ "allowed": {
+  "withTutorialSeen": {
+   "screen": "title",
+   "tutorialOpen": false,
+   "tutorialState": {
+    "active": false,
+    "step": 0,
+    "total": 5,
+    "seenThisSession": false,
+    "returnScreen": "title"
+   },
+   "title": true,
+   "titlePaints": 1,
+   "docGen": 2,
+   "nav": 1,
+   "cta": "Continuar\nVolver al observatorio",
+   "ctas": 2,
+   "routes": 5
+  },
+  "autoOpen": {
+   "opened": true,
+   "state": {
+    "active": true,
+    "step": 0,
+    "total": 5,
+    "seenThisSession": true,
+    "returnScreen": "title"
+   },
+   "screen": "title"
+  },
+  "steps": [
+   {
+    "phase": "step1",
+    "step": 0,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 1 de 5",
+    "stepTitle": "Muévete por el atrio.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": null,
+    "titleNodeClass": "titleScreen v23w"
+   },
+   {
+    "step": 1,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 2 de 5",
+    "stepTitle": "Cinco islas, dieciocho nodos.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": null,
+    "titleNodeClass": "titleScreen v23w",
+    "phase": "after-next-1"
+   },
+   {
+    "step": 2,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 3 de 5",
+    "stepTitle": "Cada fallo vuelve a tu encuentro.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": null,
+    "titleNodeClass": "titleScreen v23w",
+    "phase": "after-next-2"
+   },
+   {
+    "step": 3,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 4 de 5",
+    "stepTitle": "Tu observatorio, tu atuendo.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": null,
+    "titleNodeClass": "titleScreen v23w",
+    "phase": "after-next-3"
+   },
+   {
+    "step": 4,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 5 de 5",
+    "stepTitle": "Guardar también es avanzar.",
+    "nextLabel": "Terminar ",
+    "recovery": false,
+    "storageBannerText": null,
+    "titleNodeClass": "titleScreen v23w",
+    "phase": "after-next-4"
+   }
+  ],
+  "step1Shot": ".work/v2.3/agents/qa/shots/tutorial-step1-1280x720.png",
+  "step5Shot": ".work/v2.3/agents/qa/shots/tutorial-step5-1280x720.png",
+  "afterSteps": {
+   "step": 4,
+   "active": true,
+   "total": 5,
+   "sameTitle": true,
+   "sameCanvas": true,
+   "sameOverlay": true,
+   "titleConnected": true,
+   "overlayOpen": true,
+   "screen": "title",
+   "renderCount": 0,
+   "renderDelta": 0,
+   "titlePaints": 1,
+   "titlePaintDelta": 0,
+   "screenMutations": 0,
+   "progress": "Paso 5 de 5",
+   "stepTitle": "Guardar también es avanzar.",
+   "nextLabel": "Terminar ",
+   "recovery": false,
+   "storageBannerText": null,
+   "titleNodeClass": "titleScreen v23w"
+  },
+  "afterClose": {
+   "open": false,
+   "hidden": true,
+   "state": {
+    "active": false,
+    "step": 4,
+    "total": 5,
+    "seenThisSession": true,
+    "returnScreen": "title"
+   },
+   "tutorialSeen": true,
+   "screen": "title",
+   "title": true
+  },
+  "afterReload": {
+   "tutorialOpen": false,
+   "screen": "title",
+   "title": true,
+   "tutorialSeen": true,
+   "docGen": 4,
+   "nav": 1,
+   "docGenBefore": 3
+  },
+  "errors": {
+   "errors": [],
+   "errorCount": 0,
+   "warnings": [],
+   "warningCount": 0,
+   "requests": [
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+   ],
+   "requestCount": 16,
+   "dataRequests": 12,
+   "nonLocal": []
+  },
+  "cdpNavigations": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "final": {
+   "screen": "title",
+   "nav": 1,
+   "docGen": 4,
+   "renderCount": 0
+  },
+  "sessionErrors": {
+   "errors": [],
+   "errorCount": 0,
+   "warnings": [],
+   "warningCount": 0,
+   "requests": [
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+   ],
+   "requestCount": 16,
+   "dataRequests": 12,
+   "nonLocal": []
+  }
+ },
+ "blocked": {
+  "initial": {
+   "autoOpened": true,
+   "storage": "throws",
+   "tutorialOpen": true,
+   "tutorialState": {
+    "active": true,
+    "step": 0,
+    "total": 5,
+    "seenThisSession": true,
+    "returnScreen": "title"
+   },
+   "welcome": true,
+   "recovery": false,
+   "recoveryText": false,
+   "storageBanner": true,
+   "storageBannerText": "El navegador bloquea el guardado local.\nEl progreso de esta sesión no se conservará al cerrar. Exporta un respaldo cuando termines un nivel.\nExportar",
+   "cta": "Comenzar\nEntrar al observatorio",
+   "ctas": 2,
+   "routes": 5,
+   "storageInfo": {
+    "storageEnabled": false,
+    "corrupt": false,
+    "lock": false
+   },
+   "screen": "title",
+   "docGen": 1,
+   "nav": 1,
+   "corrupt": false
+  },
+  "welcomeShot": ".work/v2.3/agents/qa/shots/blocked-welcome-1280x720.png",
+  "step1Shot": ".work/v2.3/agents/qa/shots/blocked-tutorial-step1-1280x720.png",
+  "steps": [
+   {
+    "phase": "step1",
+    "step": 0,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 1 de 5",
+    "stepTitle": "Muévete por el atrio.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": "El navegador bloquea el guardado local. El progreso de esta sesión no se conservará al cerrar. Exporta un respaldo cuando termines un nivel.Exportar",
+    "titleNodeClass": "titleScreen v23w"
+   },
+   {
+    "phase": "after-next-1",
+    "step": 1,
+    "active": true,
+    "total": 5,
+    "sameTitle": true,
+    "sameCanvas": true,
+    "sameOverlay": true,
+    "titleConnected": true,
+    "overlayOpen": true,
+    "screen": "title",
+    "renderCount": 0,
+    "renderDelta": 0,
+    "titlePaints": 1,
+    "titlePaintDelta": 0,
+    "screenMutations": 0,
+    "progress": "Paso 2 de 5",
+    "stepTitle": "Cinco islas, dieciocho nodos.",
+    "nextLabel": "Siguiente ",
+    "recovery": false,
+    "storageBannerText": "El navegador bloquea el guardado local. El progreso de esta sesión no se conservará al cerrar. Exporta un respaldo cuando termines un nivel.Exportar",
+    "titleNodeClass": "titleScreen v23w"
+   }
+  ],
+  "step2Shot": ".work/v2.3/agents/qa/shots/blocked-tutorial-step2-1280x720.png",
+  "afterStep": {
+   "step": 1,
+   "recovery": false,
+   "banner": "El navegador bloquea el guardado local.\nEl progreso de esta sesión no se conservará al cerrar. Exporta un respaldo cuando termines un nivel.\nExportar"
+  },
+  "afterReload": {
+   "tutorialOpen": true,
+   "screen": "title",
+   "welcome": true,
+   "recovery": false,
+   "storageBanner": true,
+   "tutorialSeen": "throws",
+   "docGen": 2,
+   "docGenBefore": 1,
+   "tutorialReopened": true
+  },
+  "reloadShot": ".work/v2.3/agents/qa/shots/blocked-reload-1280x720.png",
+  "errors": {
+   "errors": [],
+   "errorCount": 0,
+   "warnings": [
+    {
+     "kind": "warning",
+     "text": "No se pudo cargar el guardado local. Error: localStorage blocked by QA\n    at get (<anonymous>:1:109)\n    at loadState (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4833:18)\n    at file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4853"
+    },
+    {
+     "kind": "warning",
+     "text": "No se pudo cargar el guardado local. Error: localStorage blocked by QA\n    at get (<anonymous>:1:109)\n    at loadState (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4833:18)\n    at file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4853"
+    }
+   ],
+   "warningCount": 2,
+   "requests": [
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+   ],
+   "requestCount": 8,
+   "dataRequests": 6,
+   "nonLocal": []
+  },
+  "cdpNavigations": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "sessionErrors": {
+   "errors": [],
+   "errorCount": 0,
+   "warnings": [
+    {
+     "kind": "warning",
+     "text": "No se pudo cargar el guardado local. Error: localStorage blocked by QA\n    at get (<anonymous>:1:109)\n    at loadState (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4833:18)\n    at file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4853"
+    },
+    {
+     "kind": "warning",
+     "text": "No se pudo cargar el guardado local. Error: localStorage blocked by QA\n    at get (<anonymous>:1:109)\n    at loadState (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4833:18)\n    at file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html:4853"
+    }
+   ],
+   "warningCount": 2,
+   "requests": [
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+    "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+   ],
+   "requestCount": 8,
+   "dataRequests": 6,
+   "nonLocal": []
+  }
+ },
+ "checks": {}
+}

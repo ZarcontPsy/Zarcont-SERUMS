@@ -1,0 +1,2452 @@
+{
+ "mode": "after",
+ "startedAt": "2026-11-09T01:25:21.573Z",
+ "pieces": [
+  {
+   "hero": "ilan",
+   "id": "c-torso-bata",
+   "slot": "torso",
+   "label": "Bata de evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-torso-bata.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-torso-bata",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.13,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.268,
+      "y": 0.361,
+      "w": 0.399,
+      "h": 0.534,
+      "coverage": 0.2129,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-piernas-falda",
+   "slot": "piernas",
+   "label": "Falda de mapas",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-piernas-falda.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-piernas-falda",
+    "category": "piernas",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.815,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.32,
+      "y": 0.582,
+      "w": 0.346,
+      "h": 0.259,
+      "coverage": 0.0896,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-torso-manto",
+   "slot": "torso",
+   "label": "Manto de constelaciones",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-torso-manto.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-torso-manto",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.128,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.259,
+      "y": 0.275,
+      "w": 0.461,
+      "h": 0.636,
+      "coverage": 0.2932,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-peinado-mecha",
+   "slot": "peinado",
+   "label": "Mecha violeta",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-peinado-mecha.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-peinado-mecha",
+    "category": "peinado",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.93,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.273,
+      "y": 0.13,
+      "w": 0.487,
+      "h": 0.697,
+      "coverage": 0.3396,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-cabeza-casco",
+   "slot": "cabeza",
+   "label": "Casco de vigía",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-cabeza-casco.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-cabeza-casco",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.715,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.29,
+      "y": 0.102,
+      "w": 0.396,
+      "h": 0.55,
+      "coverage": 0.218,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-cabeza-diadema",
+   "slot": "cabeza",
+   "label": "Diadema de circuitos",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-cabeza-diadema.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-cabeza-diadema",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.782,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.291,
+      "y": 0.111,
+      "w": 0.385,
+      "h": 0.226,
+      "coverage": 0.0871,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-accesorios-bolso",
+   "slot": "extras",
+   "label": "Bolso de campo",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-accesorios-bolso.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-accesorios-bolso",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.148,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.532,
+      "y": 0.489,
+      "w": 0.219,
+      "h": 0.389,
+      "coverage": 0.0853,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-accesorios-brujula",
+   "slot": "accesorios",
+   "label": "Brújula de muñeca",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-c-accesorios-brujula.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-accesorios-brujula",
+    "category": "accesorios",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.11,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.286,
+      "y": 0.597,
+      "w": 0.167,
+      "h": 0.272,
+      "coverage": 0.0455,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-cuaderno-orbital",
+   "slot": "extras",
+   "label": "Cuaderno orbital",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-x-cuaderno-orbital.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-cuaderno-orbital",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.1,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.127,
+      "y": 0.38,
+      "w": 0.355,
+      "h": 0.411,
+      "coverage": 0.1458,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-luciernaga-observatorio",
+   "slot": "mascota",
+   "label": "Luciérnaga del observatorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-x-luciernaga-observatorio.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-luciernaga-observatorio",
+    "category": "mascota",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.776,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.121,
+      "y": 0.292,
+      "w": 0.151,
+      "h": 0.25,
+      "coverage": 0.0377,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-trofeo-salud",
+   "slot": "extras",
+   "label": "Trofeo del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-ilan-x-trofeo-salud.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-trofeo-salud",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.163,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.667,
+      "y": 0.379,
+      "w": 0.175,
+      "h": 0.453,
+      "coverage": 0.0791,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-torso-bata",
+   "slot": "torso",
+   "label": "Bata de evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-torso-bata.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-torso-bata",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.105,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.175,
+      "y": 0.367,
+      "w": 0.554,
+      "h": 0.522,
+      "coverage": 0.2896,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-piernas-falda",
+   "slot": "piernas",
+   "label": "Falda de mapas",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-piernas-falda.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-piernas-falda",
+    "category": "piernas",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.861,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.236,
+      "y": 0.563,
+      "w": 0.469,
+      "h": 0.281,
+      "coverage": 0.1316,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-torso-manto",
+   "slot": "torso",
+   "label": "Manto de constelaciones",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-torso-manto.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-torso-manto",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.103,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.209,
+      "y": 0.278,
+      "w": 0.57,
+      "h": 0.605,
+      "coverage": 0.3449,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-peinado-mecha",
+   "slot": "peinado",
+   "label": "Mecha violeta",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-peinado-mecha.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-peinado-mecha",
+    "category": "peinado",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.515,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.279,
+      "y": 0.264,
+      "w": 0.469,
+      "h": 0.501,
+      "coverage": 0.235,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-cabeza-casco",
+   "slot": "cabeza",
+   "label": "Casco de vigía",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-cabeza-casco.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-cabeza-casco",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.717,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.233,
+      "y": 0.161,
+      "w": 0.479,
+      "h": 0.516,
+      "coverage": 0.2476,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-cabeza-diadema",
+   "slot": "cabeza",
+   "label": "Diadema de circuitos",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-cabeza-diadema.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-cabeza-diadema",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.565,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.259,
+      "y": 0.249,
+      "w": 0.425,
+      "h": 0.191,
+      "coverage": 0.0813,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-accesorios-bolso",
+   "slot": "extras",
+   "label": "Bolso de campo",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-accesorios-bolso.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-accesorios-bolso",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.107,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.595,
+      "y": 0.492,
+      "w": 0.273,
+      "h": 0.374,
+      "coverage": 0.102,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-accesorios-brujula",
+   "slot": "accesorios",
+   "label": "Brújula de muñeca",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-c-accesorios-brujula.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-accesorios-brujula",
+    "category": "accesorios",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.114,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.188,
+      "y": 0.575,
+      "w": 0.211,
+      "h": 0.259,
+      "coverage": 0.0546,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-cuaderno-orbital",
+   "slot": "extras",
+   "label": "Cuaderno orbital",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-x-cuaderno-orbital.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-cuaderno-orbital",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.885,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.023,
+      "y": 0.436,
+      "w": 0.387,
+      "h": 0.346,
+      "coverage": 0.134,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-luciernaga-observatorio",
+   "slot": "mascota",
+   "label": "Luciérnaga del observatorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-x-luciernaga-observatorio.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-luciernaga-observatorio",
+    "category": "mascota",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.443,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.147,
+      "y": 0.358,
+      "w": 0.113,
+      "h": 0.143,
+      "coverage": 0.016,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-trofeo-salud",
+   "slot": "extras",
+   "label": "Trofeo del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-kian-x-trofeo-salud.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-trofeo-salud",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.921,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.708,
+      "y": 0.371,
+      "w": 0.181,
+      "h": 0.359,
+      "coverage": 0.0649,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-torso-bata",
+   "slot": "torso",
+   "label": "Bata de evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-torso-bata.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-torso-bata",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.124,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.301,
+      "y": 0.353,
+      "w": 0.353,
+      "h": 0.535,
+      "coverage": 0.1891,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-piernas-falda",
+   "slot": "piernas",
+   "label": "Falda de mapas",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-piernas-falda.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-piernas-falda",
+    "category": "piernas",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.81,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.342,
+      "y": 0.587,
+      "w": 0.306,
+      "h": 0.255,
+      "coverage": 0.078,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-torso-manto",
+   "slot": "torso",
+   "label": "Manto de constelaciones",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-torso-manto.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-torso-manto",
+    "category": "torso",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.124,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.286,
+      "y": 0.264,
+      "w": 0.41,
+      "h": 0.64,
+      "coverage": 0.2624,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-peinado-mecha",
+   "slot": "peinado",
+   "label": "Mecha violeta",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-peinado-mecha.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-peinado-mecha",
+    "category": "peinado",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.949,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.31,
+      "y": 0.108,
+      "w": 0.419,
+      "h": 0.676,
+      "coverage": 0.2831,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-cabeza-casco",
+   "slot": "cabeza",
+   "label": "Casco de vigía",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-cabeza-casco.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-cabeza-casco",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.712,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.324,
+      "y": 0.078,
+      "w": 0.338,
+      "h": 0.536,
+      "coverage": 0.1808,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-cabeza-diadema",
+   "slot": "cabeza",
+   "label": "Diadema de circuitos",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-cabeza-diadema.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-cabeza-diadema",
+    "category": "cabeza",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.808,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.323,
+      "y": 0.083,
+      "w": 0.329,
+      "h": 0.223,
+      "coverage": 0.0732,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-accesorios-bolso",
+   "slot": "extras",
+   "label": "Bolso de campo",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-accesorios-bolso.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-accesorios-bolso",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.148,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.521,
+      "y": 0.472,
+      "w": 0.195,
+      "h": 0.389,
+      "coverage": 0.0756,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-accesorios-brujula",
+   "slot": "accesorios",
+   "label": "Brújula de muñeca",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-c-accesorios-brujula.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-accesorios-brujula",
+    "category": "accesorios",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.123,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.325,
+      "y": 0.596,
+      "w": 0.149,
+      "h": 0.276,
+      "coverage": 0.0411,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-cuaderno-orbital",
+   "slot": "extras",
+   "label": "Cuaderno orbital",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-x-cuaderno-orbital.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-cuaderno-orbital",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.113,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.157,
+      "y": 0.364,
+      "w": 0.319,
+      "h": 0.426,
+      "coverage": 0.136,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-luciernaga-observatorio",
+   "slot": "mascota",
+   "label": "Luciérnaga del observatorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-x-luciernaga-observatorio.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-luciernaga-observatorio",
+    "category": "mascota",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.786,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.233,
+      "y": 0.216,
+      "w": 0.136,
+      "h": 0.269,
+      "coverage": 0.0365,
+      "inside": true
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-trofeo-salud",
+   "slot": "extras",
+   "label": "Trofeo del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\pieza-noa-x-trofeo-salud.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-trofeo-salud",
+    "category": "extras",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 1.168,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.624,
+      "y": 0.363,
+      "w": 0.156,
+      "h": 0.45,
+      "coverage": 0.0704,
+      "inside": true
+     }
+    }
+   }
+  }
+ ],
+ "effects": [
+  {
+   "hero": "ilan",
+   "id": "c-efecto-aura",
+   "label": "Aura de alba",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-c-efecto-aura.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-efecto-aura",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.684,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.214,
+      "y": 0.09,
+      "w": 0.531,
+      "h": 0.825,
+      "coverage": 0.4386,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 30539,
+      "coverage": 0.240844,
+      "avgDelta": 164.2,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 123,
+       "y": 35,
+       "w": 187,
+       "h": 282
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-aura-amanecer",
+   "label": "Aura del amanecer",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-aura-amanecer.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-aura-amanecer",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.683,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.159,
+      "y": 0.204,
+      "w": 0.594,
+      "h": 0.709,
+      "coverage": 0.4213,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 25493,
+      "coverage": 0.201049,
+      "avgDelta": 165.4,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 117,
+       "y": 37,
+       "w": 204,
+       "h": 241
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-efecto-bruma",
+   "label": "Bruma de estudio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-c-efecto-bruma.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-efecto-bruma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.723,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.116,
+      "y": 0.309,
+      "w": 0.666,
+      "h": 0.626,
+      "coverage": 0.4173,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 16153,
+      "coverage": 0.12739,
+      "avgDelta": 289.6,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 87,
+       "y": 37,
+       "w": 193,
+       "h": 178
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-efecto-constelacion",
+   "label": "Constelación de logros",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-c-efecto-constelacion.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-efecto-constelacion",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.683,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.172,
+      "y": 0.267,
+      "w": 0.594,
+      "h": 0.651,
+      "coverage": 0.3861,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4377,
+      "coverage": 0.034519,
+      "avgDelta": 190,
+      "maxDelta": 739,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 131,
+       "y": 42,
+       "w": 140,
+       "h": 199
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "c-efecto-chispas",
+   "label": "Chispas de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-c-efecto-chispas.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "c-efecto-chispas",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.717,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.243,
+      "y": 0.333,
+      "w": 0.484,
+      "h": 0.592,
+      "coverage": 0.286,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 5431,
+      "coverage": 0.042831,
+      "avgDelta": 178.2,
+      "maxDelta": 751,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 129,
+       "y": 34,
+       "w": 141,
+       "h": 169
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-estela-racha",
+   "label": "Estela de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-estela-racha.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-estela-racha",
+    "category": "estela",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.785,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.28,
+      "y": 0.648,
+      "w": 0.456,
+      "h": 0.308,
+      "coverage": 0.1405,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4336,
+      "coverage": 0.034196,
+      "avgDelta": 340.1,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 141,
+       "y": 31,
+       "w": 131,
+       "h": 75
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-arma-destello",
+   "label": "Destello del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-arma-destello.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-arma-destello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.852,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.455,
+      "y": 0.133,
+      "w": 0.19,
+      "h": 0.496,
+      "coverage": 0.0943,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 3985,
+      "coverage": 0.031427,
+      "avgDelta": 235.1,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 190,
+       "y": 107,
+       "w": 61,
+       "h": 182
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-arma-marea",
+   "label": "Marea del Cuidado",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-arma-marea.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-arma-marea",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.832,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.428,
+      "y": 0.126,
+      "w": 0.232,
+      "h": 0.456,
+      "coverage": 0.1059,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4601,
+      "coverage": 0.036285,
+      "avgDelta": 295.5,
+      "maxDelta": 720,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 178,
+       "y": 141,
+       "w": 71,
+       "h": 133
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-arma-sello",
+   "label": "Sello de la Confianza",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-arma-sello.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-arma-sello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.881,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.466,
+      "y": 0.174,
+      "w": 0.195,
+      "h": 0.314,
+      "coverage": 0.0612,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 5128,
+      "coverage": 0.040442,
+      "avgDelta": 250.5,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 184,
+       "y": 162,
+       "w": 76,
+       "h": 99
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-arma-prisma",
+   "label": "Prisma de la Evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-arma-prisma.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-arma-prisma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.864,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.496,
+      "y": 0.292,
+      "w": 0.175,
+      "h": 0.49,
+      "coverage": 0.086,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 3680,
+      "coverage": 0.029022,
+      "avgDelta": 383.6,
+      "maxDelta": 695,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 216,
+       "y": 37,
+       "w": 38,
+       "h": 180
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "ilan",
+   "id": "x-arma-orbita",
+   "label": "Órbita del Sistema",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-ilan-x-arma-orbita.png",
+   "info": {
+    "heroId": "ilan",
+    "pieceId": "x-arma-orbita",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.861,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.446,
+      "y": 0.204,
+      "w": 0.246,
+      "h": 0.25,
+      "coverage": 0.0616,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 2888,
+      "coverage": 0.022776,
+      "avgDelta": 373.1,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 194,
+       "y": 177,
+       "w": 76,
+       "h": 70
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-efecto-aura",
+   "label": "Aura de alba",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-c-efecto-aura.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-efecto-aura",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.67,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.116,
+      "y": 0.136,
+      "w": 0.735,
+      "h": 0.783,
+      "coverage": 0.5758,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 32956,
+      "coverage": 0.259905,
+      "avgDelta": 143.8,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 104,
+       "y": 38,
+       "w": 233,
+       "h": 279
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-aura-amanecer",
+   "label": "Aura del amanecer",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-aura-amanecer.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-aura-amanecer",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.673,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.038,
+      "y": 0.202,
+      "w": 0.783,
+      "h": 0.747,
+      "coverage": 0.5852,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 26746,
+      "coverage": 0.210931,
+      "avgDelta": 160,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 93,
+       "y": 39,
+       "w": 258,
+       "h": 236
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-efecto-bruma",
+   "label": "Bruma de estudio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-c-efecto-bruma.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-efecto-bruma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.606,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.044,
+      "y": 0.316,
+      "w": 0.763,
+      "h": 0.543,
+      "coverage": 0.414,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 15208,
+      "coverage": 0.119937,
+      "avgDelta": 287,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 78,
+       "y": 58,
+       "w": 210,
+       "h": 154
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-efecto-constelacion",
+   "label": "Constelación de logros",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-c-efecto-constelacion.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-efecto-constelacion",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.655,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.117,
+      "y": 0.273,
+      "w": 0.674,
+      "h": 0.625,
+      "coverage": 0.4216,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 6488,
+      "coverage": 0.051167,
+      "avgDelta": 185.3,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 102,
+       "y": 49,
+       "w": 186,
+       "h": 181
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "c-efecto-chispas",
+   "label": "Chispas de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-c-efecto-chispas.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "c-efecto-chispas",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.727,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.184,
+      "y": 0.325,
+      "w": 0.586,
+      "h": 0.609,
+      "coverage": 0.3565,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 7827,
+      "coverage": 0.061727,
+      "avgDelta": 192.7,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 121,
+       "y": 29,
+       "w": 167,
+       "h": 172
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-estela-racha",
+   "label": "Estela de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-estela-racha.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-estela-racha",
+    "category": "estela",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.834,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.23,
+      "y": 0.614,
+      "w": 0.503,
+      "h": 0.297,
+      "coverage": 0.1496,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4818,
+      "coverage": 0.037997,
+      "avgDelta": 276.5,
+      "maxDelta": 742,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 119,
+       "y": 29,
+       "w": 169,
+       "h": 93
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-arma-destello",
+   "label": "Destello del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-arma-destello.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-arma-destello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.962,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.447,
+      "y": 0.09,
+      "w": 0.279,
+      "h": 0.618,
+      "coverage": 0.1724,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 6884,
+      "coverage": 0.05429,
+      "avgDelta": 220.4,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 191,
+       "y": 93,
+       "w": 92,
+       "h": 216
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-arma-marea",
+   "label": "Marea del Cuidado",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-arma-marea.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-arma-marea",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.9,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.365,
+      "y": 0.086,
+      "w": 0.343,
+      "h": 0.487,
+      "coverage": 0.167,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 6901,
+      "coverage": 0.054424,
+      "avgDelta": 223.5,
+      "maxDelta": 729,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 170,
+       "y": 143,
+       "w": 108,
+       "h": 144
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-arma-sello",
+   "label": "Sello de la Confianza",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-arma-sello.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-arma-sello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.963,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.467,
+      "y": 0.14,
+      "w": 0.267,
+      "h": 0.355,
+      "coverage": 0.0945,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 9220,
+      "coverage": 0.072713,
+      "avgDelta": 152.2,
+      "maxDelta": 704,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 177,
+       "y": 156,
+       "w": 118,
+       "h": 115
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-arma-prisma",
+   "label": "Prisma de la Evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-arma-prisma.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-arma-prisma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.98,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.6,
+      "y": 0.23,
+      "w": 0.241,
+      "h": 0.675,
+      "coverage": 0.1629,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 6586,
+      "coverage": 0.05194,
+      "avgDelta": 376.8,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 259,
+       "y": 49,
+       "w": 68,
+       "h": 194
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "kian",
+   "id": "x-arma-orbita",
+   "label": "Órbita del Sistema",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-kian-x-arma-orbita.png",
+   "info": {
+    "heroId": "kian",
+    "pieceId": "x-arma-orbita",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.906,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.429,
+      "y": 0.126,
+      "w": 0.373,
+      "h": 0.276,
+      "coverage": 0.1032,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4230,
+      "coverage": 0.03336,
+      "avgDelta": 275.9,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 190,
+       "y": 207,
+       "w": 111,
+       "h": 62
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-efecto-aura",
+   "label": "Aura de alba",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-c-efecto-aura.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-efecto-aura",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.691,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.253,
+      "y": 0.12,
+      "w": 0.482,
+      "h": 0.797,
+      "coverage": 0.3845,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 28318,
+      "coverage": 0.223328,
+      "avgDelta": 172.2,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 131,
+       "y": 34,
+       "w": 169,
+       "h": 283
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-aura-amanecer",
+   "label": "Aura del amanecer",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-aura-amanecer.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-aura-amanecer",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.704,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.194,
+      "y": 0.183,
+      "w": 0.589,
+      "h": 0.748,
+      "coverage": 0.4401,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 24970,
+      "coverage": 0.196924,
+      "avgDelta": 143.8,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 128,
+       "y": 35,
+       "w": 182,
+       "h": 250
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-efecto-bruma",
+   "label": "Bruma de estudio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-c-efecto-bruma.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-efecto-bruma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.747,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.118,
+      "y": 0.263,
+      "w": 0.665,
+      "h": 0.694,
+      "coverage": 0.4618,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 14731,
+      "coverage": 0.116175,
+      "avgDelta": 242.1,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 96,
+       "y": 36,
+       "w": 178,
+       "h": 195
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-efecto-constelacion",
+   "label": "Constelación de logros",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-c-efecto-constelacion.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-efecto-constelacion",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.705,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.229,
+      "y": 0.249,
+      "w": 0.49,
+      "h": 0.662,
+      "coverage": 0.3247,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 5332,
+      "coverage": 0.04205,
+      "avgDelta": 162.2,
+      "maxDelta": 720,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 137,
+       "y": 40,
+       "w": 127,
+       "h": 190
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "c-efecto-chispas",
+   "label": "Chispas de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-c-efecto-chispas.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "c-efecto-chispas",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.734,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.323,
+      "y": 0.327,
+      "w": 0.384,
+      "h": 0.588,
+      "coverage": 0.2258,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 5669,
+      "coverage": 0.044708,
+      "avgDelta": 182.8,
+      "maxDelta": 762,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 148,
+       "y": 31,
+       "w": 125,
+       "h": 179
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-estela-racha",
+   "label": "Estela de racha",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-estela-racha.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-estela-racha",
+    "category": "estela",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.791,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.282,
+      "y": 0.638,
+      "w": 0.389,
+      "h": 0.301,
+      "coverage": 0.1171,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 3637,
+      "coverage": 0.028683,
+      "avgDelta": 300.4,
+      "maxDelta": 757,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 130,
+       "y": 28,
+       "w": 126,
+       "h": 82
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-arma-destello",
+   "label": "Destello del Territorio",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-arma-destello.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-arma-destello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.867,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.44,
+      "y": 0.118,
+      "w": 0.168,
+      "h": 0.595,
+      "coverage": 0.1003,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 3607,
+      "coverage": 0.028446,
+      "avgDelta": 142.5,
+      "maxDelta": 760,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 184,
+       "y": 101,
+       "w": 53,
+       "h": 191
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-arma-marea",
+   "label": "Marea del Cuidado",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-arma-marea.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-arma-marea",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.842,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.429,
+      "y": 0.098,
+      "w": 0.206,
+      "h": 0.46,
+      "coverage": 0.0947,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 4247,
+      "coverage": 0.033494,
+      "avgDelta": 215.5,
+      "maxDelta": 745,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 173,
+       "y": 144,
+       "w": 71,
+       "h": 139
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-arma-sello",
+   "label": "Sello de la Confianza",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-arma-sello.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-arma-sello",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.873,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.455,
+      "y": 0.171,
+      "w": 0.155,
+      "h": 0.322,
+      "coverage": 0.0499,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 5154,
+      "coverage": 0.040647,
+      "avgDelta": 105.3,
+      "maxDelta": 722,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 174,
+       "y": 155,
+       "w": 72,
+       "h": 106
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-arma-prisma",
+   "label": "Prisma de la Evidencia",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-arma-prisma.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-arma-prisma",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.874,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.488,
+      "y": 0.336,
+      "w": 0.157,
+      "h": 0.496,
+      "coverage": 0.0777,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 3603,
+      "coverage": 0.028415,
+      "avgDelta": 191.4,
+      "maxDelta": 659,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 205,
+       "y": 14,
+       "w": 35,
+       "h": 198
+      }
+     }
+    }
+   }
+  },
+  {
+   "hero": "noa",
+   "id": "x-arma-orbita",
+   "label": "Órbita del Sistema",
+   "file": ".work\\v2.3\\evidence\\after\\efecto-noa-x-arma-orbita.png",
+   "info": {
+    "heroId": "noa",
+    "pieceId": "x-arma-orbita",
+    "category": "efectos",
+    "canvas": {
+     "bufferW": 400,
+     "bufferH": 317,
+     "cssW": 400,
+     "cssH": 317
+    },
+    "heroHeight": 0.85,
+    "effect": {
+     "visible": true,
+     "projected": {
+      "x": 0.413,
+      "y": 0.189,
+      "w": 0.232,
+      "h": 0.251,
+      "coverage": 0.0584,
+      "inside": true
+     },
+     "measured": {
+      "visible": true,
+      "pixels": 2530,
+      "coverage": 0.019953,
+      "avgDelta": 301.1,
+      "maxDelta": 765,
+      "w": 400,
+      "h": 317,
+      "bbox": {
+       "x": 182,
+       "y": 181,
+       "w": 69,
+       "h": 69
+      }
+     }
+    }
+   }
+  }
+ ],
+ "errors": [],
+ "warnings": []
+}

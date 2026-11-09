@@ -1,0 +1,505 @@
+{
+ "startedAt": "2026-11-08T21:25:55.820Z",
+ "steps": [
+  {
+   "id": "abrir-mapa",
+   "data": {
+    "screen": "map",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": false,
+     "returnScreen": "title"
+    },
+    "help": false,
+    "settings": false,
+    "map": true,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 0,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 2,
+    "renderCount": 1,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "mapa-escape",
+   "data": {
+    "screen": "hub",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": false,
+     "returnScreen": "title"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 0,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 2,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "abrir-ajustes",
+   "data": {
+    "screen": "settings",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": false,
+     "returnScreen": "title"
+    },
+    "help": false,
+    "settings": true,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 4,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "ajustes-escape",
+   "data": {
+    "screen": "title",
+    "title": true,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": false,
+     "returnScreen": "title"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 2,
+    "routes": 5,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 5,
+    "version": "V2.3 · FASE 1",
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "ajustes-repetir-tutorial",
+   "data": {
+    "screen": "settings",
+    "title": false,
+    "tutorials": 1,
+    "tutorialState": {
+     "active": true,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "settings"
+    },
+    "help": false,
+    "settings": true,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 6,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "tutorial-escape-ajustes",
+   "data": {
+    "screen": "settings",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "settings"
+    },
+    "help": false,
+    "settings": true,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 6,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "ajustes-escape-2",
+   "data": {
+    "screen": "title",
+    "title": true,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "settings"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 2,
+    "routes": 5,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 7,
+    "version": "V2.3 · FASE 1",
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "abrir-ayuda",
+   "data": {
+    "screen": "help",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "settings"
+    },
+    "help": true,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 8,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "ayuda-como-jugar",
+   "data": {
+    "screen": "help",
+    "title": false,
+    "tutorials": 1,
+    "tutorialState": {
+     "active": true,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": true,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 8,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "tutorial-escape-ayuda",
+   "data": {
+    "screen": "help",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": true,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 1,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 8,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "ayuda-escape",
+   "data": {
+    "screen": "title",
+    "title": true,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 2,
+    "routes": 5,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 9,
+    "version": "V2.3 · FASE 1",
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "abrir-tienda",
+   "data": {
+    "screen": "shop",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": true,
+    "wardrobe": false,
+    "ctas": 0,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 2,
+    "renderCount": 10,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "cerrar-tienda-escape",
+   "data": {
+    "screen": "title",
+    "title": true,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 2,
+    "routes": 5,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 11,
+    "version": "V2.3 · FASE 1",
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "abrir-inventario",
+   "data": {
+    "screen": "wardrobe",
+    "title": false,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": true,
+    "ctas": 0,
+    "routes": 0,
+    "gameSame": true,
+    "canvasCount": 2,
+    "renderCount": 12,
+    "version": null,
+    "nav": 1,
+    "docGen": 2
+   }
+  },
+  {
+   "id": "cerrar-inventario-escape",
+   "data": {
+    "screen": "title",
+    "title": true,
+    "tutorials": 0,
+    "tutorialState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "help"
+    },
+    "help": false,
+    "settings": false,
+    "map": false,
+    "shop": false,
+    "wardrobe": false,
+    "ctas": 2,
+    "routes": 5,
+    "gameSame": true,
+    "canvasCount": 1,
+    "renderCount": 13,
+    "version": "V2.3 · FASE 1",
+    "nav": 1,
+    "docGen": 2
+   }
+  }
+ ],
+ "checks": {
+  "versionVisible": true,
+  "versionText": "V2.3 · FASE 1",
+  "gameSame": true,
+  "title": true,
+  "ctas": 2,
+  "routes": 5,
+  "tools": 3,
+  "overlap": false,
+  "nav": 1,
+  "docGen": 2,
+  "renderCount": 13,
+  "canvasCount": 1,
+  "shopErrors": [],
+  "screen": "title"
+ },
+ "errors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 40,
+  "dataRequests": 38,
+  "nonLocal": []
+ },
+ "fatal": null,
+ "start": {
+  "screen": "title",
+  "title": true,
+  "tutorials": 0,
+  "tutorialState": {
+   "active": false,
+   "step": 0,
+   "total": 5,
+   "seenThisSession": false,
+   "returnScreen": "title"
+  },
+  "help": false,
+  "settings": false,
+  "map": false,
+  "shop": false,
+  "wardrobe": false,
+  "ctas": 2,
+  "routes": 5,
+  "gameSame": true,
+  "canvasCount": 1,
+  "renderCount": 0,
+  "version": "V2.3 · FASE 1",
+  "nav": 1,
+  "docGen": 2,
+  "versionBox": {
+   "text": "V2.3 · FASE 1",
+   "x": 1168,
+   "y": 31,
+   "w": 69,
+   "h": 11,
+   "inside": true,
+   "display": "block",
+   "visibility": "visible",
+   "opacity": "1"
+  }
+ },
+ "navs": [],
+ "sessionErrors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 40,
+  "dataRequests": 38,
+  "nonLocal": []
+ }
+}

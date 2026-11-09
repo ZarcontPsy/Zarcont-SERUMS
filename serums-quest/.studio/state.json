@@ -5,10 +5,10 @@
   "orientation": "landscape",
   "build": {
     "artifact": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\dist\\index.html",
-    "buildId": "b6ab87f0a86a",
-    "bytes": 3448508,
+    "buildId": "b41b7a7a04db",
+    "bytes": 4051057,
     "title": "SERUMS QUEST",
-    "builtAt": "2026-11-07T20:48:38.221Z"
+    "builtAt": "2026-11-09T01:50:59.389Z"
   },
   "slots": {
     "personaje_ilan": {
@@ -211,96 +211,96 @@
   "jobs": [],
   "versions": [
     {
-      "number": 96,
-      "note": "V2.2 · Tienda 3D e interfaz · final etiquetas",
-      "createdAt": "2026-11-07T20:48:30.567Z",
-      "buildId": "b6ab87f0a86a"
+      "number": 129,
+      "note": "V2.3 · Fase 2 · marco de constelación de vitrina",
+      "createdAt": "2026-11-09T01:49:07.373Z",
+      "buildId": "b41b7a7a04db"
     },
     {
-      "number": 95,
-      "note": "V2.2 · Etiquetas del atrio y restauración limpia",
-      "createdAt": "2026-11-07T20:46:30.712Z",
-      "buildId": "3ff3d9d7c359"
+      "number": 128,
+      "note": "Fase 2 · aro de constelación definitivo",
+      "createdAt": "2026-11-09T01:44:51.475Z",
+      "buildId": "c9e2f1bd26b0"
     },
     {
-      "number": 94,
-      "note": "V2.2 · Tienda 3D e interfaz · final",
-      "createdAt": "2026-11-07T20:44:35.505Z",
-      "buildId": "3966c3d33a56"
+      "number": 127,
+      "note": "Fase 2 · aro de constelación alrededor del héroe",
+      "createdAt": "2026-11-09T01:42:57.888Z",
+      "buildId": "bd8b3cfaa2e6"
     },
     {
-      "number": 93,
-      "note": "V2.2 · Tienda 3D e interfaz",
-      "createdAt": "2026-11-07T20:39:42.867Z",
-      "buildId": "85bad0cb7722"
+      "number": 126,
+      "note": "V2.3 · Fase 2 · cosméticos y efectos con estándar reforzado",
+      "createdAt": "2026-11-09T01:24:55.162Z",
+      "buildId": "8adec5fff6f7"
     },
     {
-      "number": 92,
-      "note": "V2.2 · Tienda 3D e interfaz",
-      "createdAt": "2026-11-07T20:37:47.768Z",
-      "buildId": "3b9183a7472d"
+      "number": 125,
+      "note": "Fase 2 · marco platino sin desplazamiento histórico",
+      "createdAt": "2026-11-09T01:20:32.436Z",
+      "buildId": "a9f53d7cecf9"
     },
     {
-      "number": 91,
-      "note": "V2.2 · tarjetas con miniatura y texto completo",
-      "createdAt": "2026-11-07T20:34:48.625Z",
-      "buildId": "f3d47e163191"
+      "number": 124,
+      "note": "Fase 2 · marco constelación y mascotas corregidos",
+      "createdAt": "2026-11-09T01:18:52.982Z",
+      "buildId": "d092d9f29c3f"
     },
     {
-      "number": 90,
-      "note": "V2.2 · altura mínima de tarjeta",
-      "createdAt": "2026-11-07T20:33:58.165Z",
-      "buildId": "5c038f0cab65"
+      "number": 123,
+      "note": "Fase 2 · manto, capa, brújula, mascotas y marcos",
+      "createdAt": "2026-11-09T01:14:45.635Z",
+      "buildId": "981fcbe70cbf"
     },
     {
-      "number": 89,
-      "note": "V2.2 · tarjetas en bloque con altura propia",
-      "createdAt": "2026-11-07T20:32:56.204Z",
-      "buildId": "4db5bed5ec80"
+      "number": 122,
+      "note": "Fase 2 · ropa, marcos y movimiento afinados",
+      "createdAt": "2026-11-09T01:06:01.855Z",
+      "buildId": "99cd532daf1e"
     },
     {
-      "number": 88,
-      "note": "V2.2 · tarjetas de tienda con miniatura visible",
-      "createdAt": "2026-11-07T20:31:35.898Z",
-      "buildId": "02ee9ba29a87"
+      "number": 121,
+      "note": "Fase 2 · accesorios y corrección de piernas",
+      "createdAt": "2026-11-09T01:03:29.699Z",
+      "buildId": "3588883b1bcd"
     },
     {
-      "number": 87,
-      "note": "V2.2 · armas y marcos con geometría propia",
-      "createdAt": "2026-11-07T20:28:29.633Z",
-      "buildId": "a557d63e29a6"
+      "number": 120,
+      "note": "Fase 2 · auras y modelos completos",
+      "createdAt": "2026-11-09T00:58:37.447Z",
+      "buildId": "783890029666"
     },
     {
-      "number": 86,
-      "note": "V2.2 · miniaturas visibles, halos suaves, firmas de cosméticos",
-      "createdAt": "2026-11-07T20:24:49.347Z",
-      "buildId": "c80bb7d5e139"
+      "number": 119,
+      "note": "Fase 2 · primeros modelos de ropa, accesorios, marcos y movimiento",
+      "createdAt": "2026-11-09T00:56:02.960Z",
+      "buildId": "4ff70ff8c321"
     },
     {
-      "number": 85,
-      "note": "V2.2 · QA hooks, tienda, miniaturas y mapa",
-      "createdAt": "2026-11-07T20:15:21.887Z",
-      "buildId": "9694d42e6195"
+      "number": 118,
+      "note": "Fase 2 · encuadre de efectos por geometría sólida",
+      "createdAt": "2026-11-09T00:53:17.227Z",
+      "buildId": "a2fe03883a5d"
     },
     {
-      "number": 84,
-      "note": "V2.2 · base tienda 3D, miniaturas, duelo/resumen, mapa y avisos",
-      "createdAt": "2026-11-07T20:08:43.516Z",
-      "buildId": "96522dd0da33"
+      "number": 117,
+      "note": "Fase 2 · puerta de calidad de silueta",
+      "createdAt": "2026-11-09T00:43:09.636Z",
+      "buildId": "20794b9f87a7"
     },
     {
-      "number": 83,
-      "note": "V2.1 · contracción del duelo al atacar",
-      "createdAt": "2026-11-07T18:19:14.046Z",
-      "buildId": "ffc4e8ebd3d2"
+      "number": 116,
+      "note": "Fase 2 · núcleo de cosméticos y encuadre de efectos",
+      "createdAt": "2026-11-09T00:35:13.097Z",
+      "buildId": "d6fd7227b698"
     },
     {
-      "number": 82,
-      "note": "V2.1 · Correcciones y pulido · final",
-      "createdAt": "2026-11-06T17:30:05.379Z",
-      "buildId": "c08f590d7972"
+      "number": 115,
+      "note": "Teclas a la derecha del héroe",
+      "createdAt": "2026-11-08T23:44:19.772Z",
+      "buildId": "2edeec6a488f"
     }
   ],
   "share": null,
-  "updatedAt": "2026-11-07T20:48:38.232Z"
+  "updatedAt": "2026-11-09T01:50:59.400Z"
 }

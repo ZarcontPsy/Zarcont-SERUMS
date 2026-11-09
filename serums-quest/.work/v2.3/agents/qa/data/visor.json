@@ -1,0 +1,2022 @@
+{
+ "startedAt": "2026-11-08T21:18:21.583Z",
+ "size": "1308x662",
+ "heroes": [
+  "ilan",
+  "noa",
+  "zenon"
+ ],
+ "pieces": [
+  "c-efecto-aura",
+  "c-efecto-chispas",
+  "c-efecto-bruma",
+  "c-efecto-constelacion",
+  "x-aura-amanecer",
+  "c-marco-bronce",
+  "c-marco-platino",
+  "c-marco-vacio",
+  "c-marco-constelacion"
+ ],
+ "rows": [
+  {
+   "hero": "ilan",
+   "pieceId": "c-efecto-aura",
+   "pieceName": "Aura de alba",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.204,
+     "y": 0.145,
+     "w": 0.554,
+     "h": 0.78,
+     "coverage": 0.432,
+     "inside": true
+    },
+    "measured": null
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 17761,
+    "coverage": 0.140071,
+    "avgDelta": 108.2,
+    "maxDelta": 555,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 112,
+     "y": 53,
+     "w": 173,
+     "h": 194
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-aura",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-ilan-c-efecto-aura-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-efecto-chispas",
+   "pieceName": "Chispas de racha",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "poco_comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.347,
+     "y": 0.222,
+     "w": 0.313,
+     "h": 0.495,
+     "coverage": 0.1551,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 17761,
+     "coverage": 0.140071,
+     "avgDelta": 108.2,
+     "maxDelta": 555,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 112,
+      "y": 53,
+      "w": 173,
+      "h": 194
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 2431,
+    "coverage": 0.019172,
+    "avgDelta": 117.9,
+    "maxDelta": 345,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 164,
+     "y": 95,
+     "w": 93,
+     "h": 150
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-chispas",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-ilan-c-efecto-chispas-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-efecto-bruma",
+   "pieceName": "Bruma de estudio",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.065,
+     "y": 0.566,
+     "w": 0.79,
+     "h": 0.383,
+     "coverage": 0.303,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 2431,
+     "coverage": 0.019172,
+     "avgDelta": 117.9,
+     "maxDelta": 345,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 164,
+      "y": 95,
+      "w": 93,
+      "h": 150
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 12835,
+    "coverage": 0.101222,
+    "avgDelta": 110.1,
+    "maxDelta": 274,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 54,
+     "y": 54,
+     "w": 272,
+     "h": 62
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-bruma",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-ilan-c-efecto-bruma-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-efecto-constelacion",
+   "pieceName": "Constelación de logros",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.339,
+     "y": 0.098,
+     "w": 0.254,
+     "h": 0.774,
+     "coverage": 0.1965,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 12835,
+     "coverage": 0.101222,
+     "avgDelta": 110.1,
+     "maxDelta": 274,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 54,
+      "y": 54,
+      "w": 272,
+      "h": 62
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 3950,
+    "coverage": 0.031151,
+    "avgDelta": 138.4,
+    "maxDelta": 537,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 125,
+     "y": 75,
+     "w": 112,
+     "h": 205
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-constelacion",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-ilan-c-efecto-constelacion-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "x-aura-amanecer",
+   "pieceName": "Aura del amanecer",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.213,
+     "y": 0.136,
+     "w": 0.549,
+     "h": 0.774,
+     "coverage": 0.4248,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 3950,
+     "coverage": 0.031151,
+     "avgDelta": 138.4,
+     "maxDelta": 537,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 125,
+      "y": 75,
+      "w": 112,
+      "h": 205
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 20646,
+    "coverage": 0.162823,
+    "avgDelta": 106.4,
+    "maxDelta": 554,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 109,
+     "y": 60,
+     "w": 178,
+     "h": 194
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "x-aura-amanecer",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-ilan-x-aura-amanecer-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-marco-bronce",
+   "pieceName": "Marco de bronce",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.247,
+     "y": 0.105,
+     "w": 0.505,
+     "h": 0.812,
+     "coverage": 0.4097,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 20646,
+     "coverage": 0.162823,
+     "avgDelta": 106.4,
+     "maxDelta": 554,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 109,
+      "y": 60,
+      "w": 178,
+      "h": 194
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 12833,
+    "coverage": 0.101207,
+    "avgDelta": 181.9,
+    "maxDelta": 694,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 131,
+     "y": 29,
+     "w": 152,
+     "h": 253
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-bronce",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-ilan-c-marco-bronce-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-marco-platino",
+   "pieceName": "Marco de platino",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.25,
+     "y": 0.087,
+     "w": 0.533,
+     "h": 0.826,
+     "coverage": 0.4405,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 12833,
+     "coverage": 0.101207,
+     "avgDelta": 181.9,
+     "maxDelta": 694,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 131,
+      "y": 29,
+      "w": 152,
+      "h": 253
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 16063,
+    "coverage": 0.12668,
+    "avgDelta": 271.6,
+    "maxDelta": 765,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 137,
+     "y": 45,
+     "w": 162,
+     "h": 242
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-platino",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-ilan-c-marco-platino-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-marco-vacio",
+   "pieceName": "Marco del vacío",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.239,
+     "y": 0.079,
+     "w": 0.578,
+     "h": 0.828,
+     "coverage": 0.4787,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 16063,
+     "coverage": 0.12668,
+     "avgDelta": 271.6,
+     "maxDelta": 765,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 137,
+      "y": 45,
+      "w": 162,
+      "h": 242
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 29214,
+    "coverage": 0.230394,
+    "avgDelta": 185.8,
+    "maxDelta": 735,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 102,
+     "y": 46,
+     "w": 213,
+     "h": 232
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-vacio",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-ilan-c-marco-vacio-1308x662.png"
+  },
+  {
+   "hero": "ilan",
+   "pieceId": "c-marco-constelacion",
+   "pieceName": "Marco de constelación",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.261,
+     "y": 0.079,
+     "w": 0.543,
+     "h": 0.826,
+     "coverage": 0.449,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 29214,
+     "coverage": 0.230394,
+     "avgDelta": 185.8,
+     "maxDelta": 735,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 102,
+      "y": 46,
+      "w": 213,
+      "h": 232
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 19028,
+    "coverage": 0.150063,
+    "avgDelta": 199,
+    "maxDelta": 762,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 125,
+     "y": 34,
+     "w": 180,
+     "h": 257
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-constelacion",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-ilan-c-marco-constelacion-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-efecto-aura",
+   "pieceName": "Aura de alba",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.244,
+     "y": 0.132,
+     "w": 0.487,
+     "h": 0.781,
+     "coverage": 0.3801,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 19028,
+     "coverage": 0.150063,
+     "avgDelta": 199,
+     "maxDelta": 762,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 125,
+      "y": 34,
+      "w": 180,
+      "h": 257
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 16551,
+    "coverage": 0.130528,
+    "avgDelta": 107.5,
+    "maxDelta": 549,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 121,
+     "y": 56,
+     "w": 155,
+     "h": 195
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-aura",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-noa-c-efecto-aura-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-efecto-chispas",
+   "pieceName": "Chispas de racha",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "poco_comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.424,
+     "y": 0.189,
+     "w": 0.188,
+     "h": 0.549,
+     "coverage": 0.103,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 16551,
+     "coverage": 0.130528,
+     "avgDelta": 107.5,
+     "maxDelta": 549,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 121,
+      "y": 56,
+      "w": 155,
+      "h": 195
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 2026,
+    "coverage": 0.015978,
+    "avgDelta": 110.8,
+    "maxDelta": 336,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 171,
+     "y": 87,
+     "w": 76,
+     "h": 167
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-chispas",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-noa-c-efecto-chispas-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-efecto-bruma",
+   "pieceName": "Bruma de estudio",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.215,
+     "y": 0.556,
+     "w": 0.446,
+     "h": 0.433,
+     "coverage": 0.1933,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 2026,
+     "coverage": 0.015978,
+     "avgDelta": 110.8,
+     "maxDelta": 336,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 171,
+      "y": 87,
+      "w": 76,
+      "h": 167
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 10412,
+    "coverage": 0.082114,
+    "avgDelta": 113,
+    "maxDelta": 334,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 89,
+     "y": 43,
+     "w": 191,
+     "h": 77
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-bruma",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-noa-c-efecto-bruma-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-efecto-constelacion",
+   "pieceName": "Constelación de logros",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.305,
+     "y": 0.101,
+     "w": 0.421,
+     "h": 0.717,
+     "coverage": 0.302,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 10412,
+     "coverage": 0.082114,
+     "avgDelta": 113,
+     "maxDelta": 334,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 89,
+      "y": 43,
+      "w": 191,
+      "h": 77
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 7179,
+    "coverage": 0.056617,
+    "avgDelta": 153.3,
+    "maxDelta": 688,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 134,
+     "y": 74,
+     "w": 151,
+     "h": 207
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-constelacion",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-noa-c-efecto-constelacion-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "x-aura-amanecer",
+   "pieceName": "Aura del amanecer",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.237,
+     "y": 0.132,
+     "w": 0.499,
+     "h": 0.791,
+     "coverage": 0.395,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 7179,
+     "coverage": 0.056617,
+     "avgDelta": 153.3,
+     "maxDelta": 688,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 134,
+      "y": 74,
+      "w": 151,
+      "h": 207
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 19133,
+    "coverage": 0.150891,
+    "avgDelta": 109.9,
+    "maxDelta": 555,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 118,
+     "y": 56,
+     "w": 160,
+     "h": 199
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "x-aura-amanecer",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-noa-x-aura-amanecer-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-marco-bronce",
+   "pieceName": "Marco de bronce",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.285,
+     "y": 0.105,
+     "w": 0.45,
+     "h": 0.823,
+     "coverage": 0.3702,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 19133,
+     "coverage": 0.150891,
+     "avgDelta": 109.9,
+     "maxDelta": 555,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 118,
+      "y": 56,
+      "w": 160,
+      "h": 199
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 12083,
+    "coverage": 0.095292,
+    "avgDelta": 175.4,
+    "maxDelta": 694,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 141,
+     "y": 25,
+     "w": 138,
+     "h": 257
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-bronce",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-noa-c-marco-bronce-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-marco-platino",
+   "pieceName": "Marco de platino",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.292,
+     "y": 0.099,
+     "w": 0.463,
+     "h": 0.816,
+     "coverage": 0.3779,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 12083,
+     "coverage": 0.095292,
+     "avgDelta": 175.4,
+     "maxDelta": 694,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 141,
+      "y": 25,
+      "w": 138,
+      "h": 257
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 14535,
+    "coverage": 0.114629,
+    "avgDelta": 250.5,
+    "maxDelta": 765,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 149,
+     "y": 42,
+     "w": 141,
+     "h": 242
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-platino",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-noa-c-marco-platino-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-marco-vacio",
+   "pieceName": "Marco del vacío",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.273,
+     "y": 0.083,
+     "w": 0.508,
+     "h": 0.829,
+     "coverage": 0.4211,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 14535,
+     "coverage": 0.114629,
+     "avgDelta": 250.5,
+     "maxDelta": 765,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 149,
+      "y": 42,
+      "w": 141,
+      "h": 242
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 25791,
+    "coverage": 0.203399,
+    "avgDelta": 183,
+    "maxDelta": 735,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 116,
+     "y": 44,
+     "w": 186,
+     "h": 233
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-vacio",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-noa-c-marco-vacio-1308x662.png"
+  },
+  {
+   "hero": "noa",
+   "pieceId": "c-marco-constelacion",
+   "pieceName": "Marco de constelación",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.292,
+     "y": 0.081,
+     "w": 0.476,
+     "h": 0.824,
+     "coverage": 0.3923,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 25791,
+     "coverage": 0.203399,
+     "avgDelta": 183,
+     "maxDelta": 735,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 116,
+      "y": 44,
+      "w": 186,
+      "h": 233
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 16534,
+    "coverage": 0.130394,
+    "avgDelta": 185.9,
+    "maxDelta": 720,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 134,
+     "y": 34,
+     "w": 158,
+     "h": 256
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-constelacion",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-noa-c-marco-constelacion-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-efecto-aura",
+   "pieceName": "Aura de alba",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.178,
+     "y": 0.146,
+     "w": 0.606,
+     "h": 0.76,
+     "coverage": 0.4602,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 16534,
+     "coverage": 0.130394,
+     "avgDelta": 185.9,
+     "maxDelta": 720,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 134,
+      "y": 34,
+      "w": 158,
+      "h": 256
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 16066,
+    "coverage": 0.126703,
+    "avgDelta": 99.9,
+    "maxDelta": 552,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 102,
+     "y": 60,
+     "w": 192,
+     "h": 187
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-aura",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-zenon-c-efecto-aura-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-efecto-chispas",
+   "pieceName": "Chispas de racha",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "poco_comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.303,
+     "y": 0.234,
+     "w": 0.309,
+     "h": 0.509,
+     "coverage": 0.1572,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 16066,
+     "coverage": 0.126703,
+     "avgDelta": 99.9,
+     "maxDelta": 552,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 102,
+      "y": 60,
+      "w": 192,
+      "h": 187
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 2194,
+    "coverage": 0.017303,
+    "avgDelta": 119.5,
+    "maxDelta": 368,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 127,
+     "y": 94,
+     "w": 113,
+     "h": 147
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-chispas",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-zenon-c-efecto-chispas-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-efecto-bruma",
+   "pieceName": "Bruma de estudio",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.139,
+     "y": 0.559,
+     "w": 0.551,
+     "h": 0.428,
+     "coverage": 0.2355,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 2194,
+     "coverage": 0.017303,
+     "avgDelta": 119.5,
+     "maxDelta": 368,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 127,
+      "y": 94,
+      "w": 113,
+      "h": 147
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 9796,
+    "coverage": 0.077256,
+    "avgDelta": 128.6,
+    "maxDelta": 361,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 110,
+     "y": 43,
+     "w": 171,
+     "h": 77
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-bruma",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-zenon-c-efecto-bruma-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-efecto-constelacion",
+   "pieceName": "Constelación de logros",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.329,
+     "y": 0.072,
+     "w": 0.327,
+     "h": 0.779,
+     "coverage": 0.2549,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 9796,
+     "coverage": 0.077256,
+     "avgDelta": 128.6,
+     "maxDelta": 361,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 110,
+      "y": 43,
+      "w": 171,
+      "h": 77
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 6090,
+    "coverage": 0.048028,
+    "avgDelta": 124.6,
+    "maxDelta": 511,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 143,
+     "y": 85,
+     "w": 128,
+     "h": 197
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-efecto-constelacion",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-zenon-c-efecto-constelacion-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "x-aura-amanecer",
+   "pieceName": "Aura del amanecer",
+   "category": "efectos",
+   "slotLabel": "Efecto",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.17,
+     "y": 0.146,
+     "w": 0.622,
+     "h": 0.772,
+     "coverage": 0.4803,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 6090,
+     "coverage": 0.048028,
+     "avgDelta": 124.6,
+     "maxDelta": 511,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 143,
+      "y": 85,
+      "w": 128,
+      "h": 197
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 19748,
+    "coverage": 0.155741,
+    "avgDelta": 101.8,
+    "maxDelta": 558,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 98,
+     "y": 62,
+     "w": 199,
+     "h": 189
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "x-aura-amanecer",
+   "renderCount": 1,
+   "group": "efecto",
+   "file": ".work/v2.3/agents/qa/shots/fx-zenon-x-aura-amanecer-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-marco-bronce",
+   "pieceName": "Marco de bronce",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "comun",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.208,
+     "y": 0.12,
+     "w": 0.564,
+     "h": 0.798,
+     "coverage": 0.4502,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 19748,
+     "coverage": 0.155741,
+     "avgDelta": 101.8,
+     "maxDelta": 558,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 98,
+      "y": 62,
+      "w": 199,
+      "h": 189
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 11845,
+    "coverage": 0.093415,
+    "avgDelta": 198.7,
+    "maxDelta": 762,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 120,
+     "y": 28,
+     "w": 168,
+     "h": 250
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-bronce",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-zenon-c-marco-bronce-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-marco-platino",
+   "pieceName": "Marco de platino",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "raro",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.205,
+     "y": 0.104,
+     "w": 0.598,
+     "h": 0.816,
+     "coverage": 0.4877,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 11845,
+     "coverage": 0.093415,
+     "avgDelta": 198.7,
+     "maxDelta": 762,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 120,
+      "y": 28,
+      "w": 168,
+      "h": 250
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 14502,
+    "coverage": 0.114369,
+    "avgDelta": 300.2,
+    "maxDelta": 765,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 119,
+     "y": 43,
+     "w": 186,
+     "h": 239
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-platino",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-zenon-c-marco-platino-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-marco-vacio",
+   "pieceName": "Marco del vacío",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "epico",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.195,
+     "y": 0.091,
+     "w": 0.653,
+     "h": 0.819,
+     "coverage": 0.5346,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 14502,
+     "coverage": 0.114369,
+     "avgDelta": 300.2,
+     "maxDelta": 765,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 119,
+      "y": 43,
+      "w": 186,
+      "h": 239
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 31235,
+    "coverage": 0.246333,
+    "avgDelta": 174.8,
+    "maxDelta": 737,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 82,
+     "y": 44,
+     "w": 243,
+     "h": 231
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-vacio",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-zenon-c-marco-vacio-1308x662.png"
+  },
+  {
+   "hero": "zenon",
+   "pieceId": "c-marco-constelacion",
+   "pieceName": "Marco de constelación",
+   "category": "marcos",
+   "slotLabel": "Marco",
+   "rarity": "legendario",
+   "zoom": 1,
+   "mounted": true,
+   "mountId": "shopPreviewMount",
+   "canvasId": "v23-vis-1",
+   "canvasIdentity": "v23-vis-1",
+   "canvas": {
+    "bufferW": 400,
+    "bufferH": 317,
+    "cssW": 400,
+    "cssH": 317
+   },
+   "cssRect": {
+    "w": 400,
+    "h": 317
+   },
+   "effect": {
+    "visible": true,
+    "projected": {
+     "x": 0.215,
+     "y": 0.092,
+     "w": 0.61,
+     "h": 0.813,
+     "coverage": 0.4962,
+     "inside": true
+    },
+    "measured": {
+     "visible": true,
+     "pixels": 31235,
+     "coverage": 0.246333,
+     "avgDelta": 174.8,
+     "maxDelta": 737,
+     "w": 400,
+     "h": 317,
+     "bbox": {
+      "x": 82,
+      "y": 44,
+      "w": 243,
+      "h": 231
+     }
+    }
+   },
+   "measure": {
+    "visible": true,
+    "pixels": 16619,
+    "coverage": 0.131065,
+    "avgDelta": 217.9,
+    "maxDelta": 720,
+    "w": 400,
+    "h": 317,
+    "bbox": {
+     "x": 104,
+     "y": 34,
+     "w": 205,
+     "h": 253
+    }
+   },
+   "sameCanvas": true,
+   "selectedId": "c-marco-constelacion",
+   "renderCount": 1,
+   "group": "marco",
+   "file": ".work/v2.3/agents/qa/shots/marco-zenon-c-marco-constelacion-1308x662.png"
+  }
+ ],
+ "checks": {
+  "sameCanvasAll": null,
+  "canvasNowExists": true,
+  "canvasSameNow": true,
+  "canvasId": "v23-vis-1",
+  "rendererAlive": true,
+  "renderCount": 1,
+  "counts": {
+   "total": 69,
+   "visible": 16,
+   "fullyVisible": 12
+  },
+  "shopErrors": [],
+  "nav": 1,
+  "docGen": 2
+ },
+ "errors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 36,
+  "dataRequests": 34,
+  "nonLocal": []
+ },
+ "fatal": null,
+ "initial": {
+  "counts": {
+   "total": 69,
+   "visible": 16,
+   "fullyVisible": 12
+  },
+  "state": {
+   "screen": "shop",
+   "mode": "shop",
+   "filters": {
+    "slot": "todas",
+    "rarity": "todas",
+    "status": "todos",
+    "collection": "todos",
+    "query": "",
+    "sort": "rareza"
+   },
+   "selectedId": "c-efecto-constelacion",
+   "total": 69,
+   "visible": 16,
+   "fullyVisible": 12,
+   "columns": 4,
+   "cardHeight": 136,
+   "grid": {
+    "x": 169,
+    "y": 118,
+    "w": 690,
+    "h": 524,
+    "clientH": 524,
+    "scrollH": 2589,
+    "scrollTop": 0
+   },
+   "headerH": 60,
+   "shell": {
+    "w": 1288,
+    "h": 642
+   },
+   "overflowX": false,
+   "overlayScrollY": 0,
+   "thumbs": {
+    "generated": 28,
+    "cached": 28,
+    "queued": 0
+   },
+   "mounts": {
+    "shop": 1,
+    "wardrobe": 0
+   },
+   "renderCount": 1,
+   "canvas": {
+    "w": 400,
+    "h": 317,
+    "same": true,
+    "canvasCount": 2
+   },
+   "coins": 5000,
+   "ownedCosmetics": 69,
+   "heroId": "noa",
+   "at": 1794172709737
+  },
+  "canvas": {
+   "bufferW": 400,
+   "bufferH": 317,
+   "cssW": 400,
+   "cssH": 317
+  },
+  "canvasId": "v23-vis-1",
+  "mounts": {
+   "shop": 1,
+   "wardrobe": 0
+  },
+  "renderCount": 1,
+  "nav": 1
+ },
+ "summary": {
+  "all": {
+   "total": 54,
+   "effectVisible": 27,
+   "measureVisible": 27,
+   "inside": 27,
+   "sameCanvas": 27,
+   "pixelMin": 2026,
+   "pixelMax": 31235
+  },
+  "byGroup": {
+   "efecto": {
+    "total": 15,
+    "effectVisible": 15,
+    "measureVisible": 15,
+    "inside": 15,
+    "sameCanvas": 15,
+    "pixelMin": 2026,
+    "pixelMax": 20646
+   },
+   "marco": {
+    "total": 12,
+    "effectVisible": 12,
+    "measureVisible": 12,
+    "inside": 12,
+    "sameCanvas": 12,
+    "pixelMin": 11845,
+    "pixelMax": 31235
+   }
+  },
+  "renderCountDelta": 0,
+  "navCount": 0
+ },
+ "navs": [],
+ "sessionErrors": {
+  "errors": [],
+  "errorCount": 0,
+  "warnings": [],
+  "warningCount": 0,
+  "requests": [
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html",
+   "file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/serums-quest/dist/index.html"
+  ],
+  "requestCount": 36,
+  "dataRequests": 34,
+  "nonLocal": []
+ }
+}

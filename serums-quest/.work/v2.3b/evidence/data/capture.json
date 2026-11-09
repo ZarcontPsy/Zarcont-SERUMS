@@ -1,0 +1,4873 @@
+{
+ "generatedAt": "2026-11-08T23:45:20.480Z",
+ "sizes": [
+  {
+   "size": "640x360",
+   "info": {
+    "vw": 640,
+    "vh": 360,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wLogo": {
+      "x": 256,
+      "y": 110,
+      "w": 125,
+      "h": 50,
+      "r": 381,
+      "b": 160
+     },
+     ".v23wGenre": {
+      "x": 256,
+      "y": 165,
+      "w": 259,
+      "h": 10,
+      "r": 515,
+      "b": 175
+     },
+     ".v23wLead": {
+      "x": 256,
+      "y": 179,
+      "w": 252,
+      "h": 27,
+      "r": 508,
+      "b": 206
+     },
+     ".v23wActions": {
+      "x": 256,
+      "y": 212,
+      "w": 372,
+      "h": 34,
+      "r": 628,
+      "b": 246
+     },
+     ".v23wStats": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wFootnote": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wTop": {
+      "x": 12,
+      "y": 7,
+      "w": 616,
+      "h": 28,
+      "r": 628,
+      "b": 35
+     },
+     ".v23wFoot": {
+      "x": 12,
+      "y": 321,
+      "w": 616,
+      "h": 33,
+      "r": 628,
+      "b": 354
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 30.96,
+    "logoHeightRatio": 0.1388888888888889,
+    "fontRatio": 0.08600000000000001,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 406,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 438,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 470,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 502,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 534,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 566,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 598,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 256,
+      "y": 212,
+      "w": 183,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 445,
+      "y": 212,
+      "w": 183,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 12,
+      "y": 326,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 44,
+      "y": 326,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 76,
+      "y": 326,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 117,
+      "y": 331,
+      "w": 99,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 220,
+      "y": 331,
+      "w": 99,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 323,
+      "y": 331,
+      "w": 99,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 426,
+      "y": 331,
+      "w": 99,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 529,
+      "y": 331,
+      "w": 99,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 12,
+     "y": 39,
+     "w": 234,
+     "h": 278,
+     "r": 246,
+     "b": 317
+    },
+    "copy": {
+     "x": 256,
+     "y": 39,
+     "w": 372,
+     "h": 278,
+     "r": 628,
+     "b": 317
+    },
+    "zone": {
+     "x": 12,
+     "y": 39,
+     "w": 234,
+     "h": 278
+    },
+    "margins": {
+     "top": 0.25398269023216,
+     "bottom": 0.24869841212707566,
+     "left": 0.10146024257394581,
+     "right": 0.10500998201133716,
+     "width": 0.793529775414717,
+     "height": 0.4973188976407643
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 3,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 0,
+     "total": 5,
+     "seenThisSession": false,
+     "returnScreen": "title",
+     "stepPaints": 0
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-640x360.png"
+  },
+  {
+   "size": "844x390",
+   "info": {
+    "vw": 844,
+    "vh": 390,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wLogo": {
+      "x": 334,
+      "y": 123,
+      "w": 135,
+      "h": 54,
+      "r": 469,
+      "b": 177
+     },
+     ".v23wGenre": {
+      "x": 334,
+      "y": 182,
+      "w": 259,
+      "h": 10,
+      "r": 593,
+      "b": 192
+     },
+     ".v23wLead": {
+      "x": 334,
+      "y": 196,
+      "w": 252,
+      "h": 27,
+      "r": 586,
+      "b": 223
+     },
+     ".v23wActions": {
+      "x": 334,
+      "y": 229,
+      "w": 498,
+      "h": 34,
+      "r": 832,
+      "b": 263
+     },
+     ".v23wStats": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wFootnote": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wTop": {
+      "x": 12,
+      "y": 7,
+      "w": 820,
+      "h": 28,
+      "r": 832,
+      "b": 35
+     },
+     ".v23wFoot": {
+      "x": 12,
+      "y": 351,
+      "w": 820,
+      "h": 33,
+      "r": 832,
+      "b": 384
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 33.54,
+    "logoHeightRatio": 0.13846153846153847,
+    "fontRatio": 0.086,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 610,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 642,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 674,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 706,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 738,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 770,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 802,
+      "y": 7,
+      "w": 30,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 334,
+      "y": 229,
+      "w": 246,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 586,
+      "y": 229,
+      "w": 246,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 12,
+      "y": 356,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 44,
+      "y": 356,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 76,
+      "y": 356,
+      "w": 28,
+      "h": 28,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 121,
+      "y": 361,
+      "w": 139,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 264,
+      "y": 361,
+      "w": 139,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 407,
+      "y": 361,
+      "w": 139,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 550,
+      "y": 361,
+      "w": 139,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 693,
+      "y": 361,
+      "w": 139,
+      "h": 23,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 12,
+     "y": 39,
+     "w": 312,
+     "h": 308,
+     "r": 324,
+     "b": 347
+    },
+    "copy": {
+     "x": 334,
+     "y": 39,
+     "w": 498,
+     "h": 308,
+     "r": 832,
+     "b": 347
+    },
+    "zone": {
+     "x": 12,
+     "y": 39,
+     "w": 312,
+     "h": 308
+    },
+    "margins": {
+     "top": 0.2014996135151702,
+     "bottom": 0.2010278767150112,
+     "left": 0.10785504187276046,
+     "right": 0.10777975276440677,
+     "width": 0.7843652053628327,
+     "height": 0.5974725097698186
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 5
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-844x390.png"
+  },
+  {
+   "size": "1024x600",
+   "info": {
+    "vw": 1024,
+    "vh": 600,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 485,
+      "y": 145,
+      "w": 239,
+      "h": 11,
+      "r": 724,
+      "b": 156
+     },
+     ".v23wLogo": {
+      "x": 485,
+      "y": 163,
+      "w": 227,
+      "h": 93,
+      "r": 712,
+      "b": 255
+     },
+     ".v23wGenre": {
+      "x": 485,
+      "y": 263,
+      "w": 301,
+      "h": 11,
+      "r": 786,
+      "b": 274
+     },
+     ".v23wLead": {
+      "x": 485,
+      "y": 283,
+      "w": 356,
+      "h": 53,
+      "r": 840,
+      "b": 336
+     },
+     ".v23wActions": {
+      "x": 485,
+      "y": 349,
+      "w": 507,
+      "h": 46,
+      "r": 991,
+      "b": 395
+     },
+     ".v23wStats": {
+      "x": 485,
+      "y": 404,
+      "w": 275,
+      "h": 22,
+      "r": 759,
+      "b": 426
+     },
+     ".v23wFootnote": {
+      "x": 485,
+      "y": 434,
+      "w": 176,
+      "h": 11,
+      "r": 661,
+      "b": 445
+     },
+     ".v23wTop": {
+      "x": 33,
+      "y": 14,
+      "w": 958,
+      "h": 32,
+      "r": 991,
+      "b": 46
+     },
+     ".v23wFoot": {
+      "x": 33,
+      "y": 544,
+      "w": 958,
+      "h": 44,
+      "r": 991,
+      "b": 588
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 56.4,
+    "logoHeightRatio": 0.155,
+    "fontRatio": 0.094,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 769,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 801,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 833,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 865,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 897,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 929,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 961,
+      "y": 15,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 485,
+      "y": 349,
+      "w": 292,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 786,
+      "y": 349,
+      "w": 133,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 71,
+      "y": 558,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 107,
+      "y": 558,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 143,
+      "y": 558,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 193,
+      "y": 552,
+      "w": 155,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 354,
+      "y": 552,
+      "w": 155,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 515,
+      "y": 552,
+      "w": 155,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 675,
+      "y": 552,
+      "w": 155,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 836,
+      "y": 552,
+      "w": 155,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 33,
+     "y": 55,
+     "w": 431,
+     "h": 480,
+     "r": 464,
+     "b": 535
+    },
+    "copy": {
+     "x": 480,
+     "y": 55,
+     "w": 511,
+     "h": 480,
+     "r": 991,
+     "b": 535
+    },
+    "zone": {
+     "x": 33,
+     "y": 55,
+     "w": 431,
+     "h": 480
+    },
+    "margins": {
+     "top": 0.23709699680521307,
+     "bottom": 0.2316134812777963,
+     "left": 0.1022197869287253,
+     "right": 0.10569314020448345,
+     "width": 0.7920870728667913,
+     "height": 0.5312895219169906
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 5
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-1024x600.png"
+  },
+  {
+   "size": "1308x662",
+   "info": {
+    "vw": 1308,
+    "vh": 662,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 619,
+      "y": 169,
+      "w": 246,
+      "h": 11,
+      "r": 865,
+      "b": 180
+     },
+     ".v23wLogo": {
+      "x": 619,
+      "y": 187,
+      "w": 251,
+      "h": 102,
+      "r": 869,
+      "b": 289
+     },
+     ".v23wGenre": {
+      "x": 619,
+      "y": 298,
+      "w": 301,
+      "h": 11,
+      "r": 920,
+      "b": 309
+     },
+     ".v23wLead": {
+      "x": 619,
+      "y": 318,
+      "w": 356,
+      "h": 53,
+      "r": 975,
+      "b": 372
+     },
+     ".v23wActions": {
+      "x": 619,
+      "y": 386,
+      "w": 647,
+      "h": 46,
+      "r": 1266,
+      "b": 432
+     },
+     ".v23wStats": {
+      "x": 619,
+      "y": 442,
+      "w": 275,
+      "h": 22,
+      "r": 894,
+      "b": 464
+     },
+     ".v23wFootnote": {
+      "x": 619,
+      "y": 472,
+      "w": 176,
+      "h": 11,
+      "r": 795,
+      "b": 483
+     },
+     ".v23wTop": {
+      "x": 42,
+      "y": 15,
+      "w": 1224,
+      "h": 32,
+      "r": 1266,
+      "b": 47
+     },
+     ".v23wFoot": {
+      "x": 42,
+      "y": 605,
+      "w": 1224,
+      "h": 45,
+      "r": 1266,
+      "b": 650
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 62.228,
+    "logoHeightRatio": 0.1540785498489426,
+    "fontRatio": 0.094,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 587,
+      "y": 16,
+      "w": 70,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 658,
+      "y": 16,
+      "w": 74,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 734,
+      "y": 16,
+      "w": 76,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 812,
+      "y": 16,
+      "w": 101,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 915,
+      "y": 16,
+      "w": 77,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 994,
+      "y": 16,
+      "w": 90,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 1085,
+      "y": 16,
+      "w": 92,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 619,
+      "y": 386,
+      "w": 292,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 923,
+      "y": 386,
+      "w": 135,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 80,
+      "y": 620,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 116,
+      "y": 620,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 152,
+      "y": 620,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 287,
+      "y": 614,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 485,
+      "y": 614,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 682,
+      "y": 614,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 879,
+      "y": 614,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1076,
+      "y": 614,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 42,
+     "y": 56,
+     "w": 551,
+     "h": 539,
+     "r": 593,
+     "b": 595
+    },
+    "copy": {
+     "x": 614,
+     "y": 56,
+     "w": 652,
+     "h": 539,
+     "r": 1266,
+     "b": 595
+    },
+    "zone": {
+     "x": 42,
+     "y": 56,
+     "w": 551,
+     "h": 539
+    },
+    "margins": {
+     "top": 0.20129613532187302,
+     "bottom": 0.1998714645948304,
+     "left": 0.10668534472503194,
+     "right": 0.10803566810625509,
+     "width": 0.7852789871687129,
+     "height": 0.5988324000832965
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 5
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-1308x662.png"
+  },
+  {
+   "size": "1280x720",
+   "info": {
+    "vw": 1280,
+    "vh": 720,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 606,
+      "y": 188,
+      "w": 245,
+      "h": 11,
+      "r": 851,
+      "b": 199
+     },
+     ".v23wLogo": {
+      "x": 606,
+      "y": 207,
+      "w": 273,
+      "h": 111,
+      "r": 878,
+      "b": 318
+     },
+     ".v23wGenre": {
+      "x": 606,
+      "y": 328,
+      "w": 301,
+      "h": 11,
+      "r": 907,
+      "b": 339
+     },
+     ".v23wLead": {
+      "x": 606,
+      "y": 349,
+      "w": 384,
+      "h": 58,
+      "r": 990,
+      "b": 407
+     },
+     ".v23wActions": {
+      "x": 606,
+      "y": 422,
+      "w": 633,
+      "h": 46,
+      "r": 1239,
+      "b": 468
+     },
+     ".v23wStats": {
+      "x": 606,
+      "y": 479,
+      "w": 275,
+      "h": 22,
+      "r": 880,
+      "b": 501
+     },
+     ".v23wFootnote": {
+      "x": 606,
+      "y": 510,
+      "w": 176,
+      "h": 11,
+      "r": 782,
+      "b": 521
+     },
+     ".v23wTop": {
+      "x": 41,
+      "y": 16,
+      "w": 1198,
+      "h": 32,
+      "r": 1239,
+      "b": 48
+     },
+     ".v23wFoot": {
+      "x": 41,
+      "y": 662,
+      "w": 1198,
+      "h": 45,
+      "r": 1239,
+      "b": 707
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 67.68,
+    "logoHeightRatio": 0.15416666666666667,
+    "fontRatio": 0.09400000000000001,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 562,
+      "y": 17,
+      "w": 69,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 634,
+      "y": 17,
+      "w": 73,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 709,
+      "y": 17,
+      "w": 76,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 787,
+      "y": 17,
+      "w": 100,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 889,
+      "y": 17,
+      "w": 77,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 967,
+      "y": 17,
+      "w": 89,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 1059,
+      "y": 17,
+      "w": 91,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 606,
+      "y": 422,
+      "w": 292,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 909,
+      "y": 422,
+      "w": 134,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 79,
+      "y": 677,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 115,
+      "y": 677,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 151,
+      "y": 677,
+      "w": 30,
+      "h": 30,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 261,
+      "y": 671,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 458,
+      "y": 671,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 655,
+      "y": 671,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 852,
+      "y": 671,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1049,
+      "y": 671,
+      "w": 190,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 41,
+     "y": 59,
+     "w": 539,
+     "h": 592,
+     "r": 580,
+     "b": 651
+    },
+    "copy": {
+     "x": 601,
+     "y": 59,
+     "w": 638,
+     "h": 592,
+     "r": 1239,
+     "b": 651
+    },
+    "zone": {
+     "x": 41,
+     "y": 59,
+     "w": 539,
+     "h": 592
+    },
+    "margins": {
+     "top": 0.23031631453933304,
+     "bottom": 0.23540355541107222,
+     "left": 0.10800247794340184,
+     "right": 0.10627616399618506,
+     "width": 0.7857213580604131,
+     "height": 0.5342801300495947
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 5
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-1280x720.png"
+  },
+  {
+   "size": "1920x1080",
+   "info": {
+    "vw": 1920,
+    "vh": 1080,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 909,
+      "y": 297,
+      "w": 324,
+      "h": 15,
+      "r": 1233,
+      "b": 312
+     },
+     ".v23wLogo": {
+      "x": 909,
+      "y": 324,
+      "w": 409,
+      "h": 166,
+      "r": 1317,
+      "b": 491
+     },
+     ".v23wGenre": {
+      "x": 909,
+      "y": 506,
+      "w": 408,
+      "h": 15,
+      "r": 1317,
+      "b": 521
+     },
+     ".v23wLead": {
+      "x": 909,
+      "y": 536,
+      "w": 576,
+      "h": 87,
+      "r": 1485,
+      "b": 623
+     },
+     ".v23wActions": {
+      "x": 909,
+      "y": 645,
+      "w": 950,
+      "h": 63,
+      "r": 1859,
+      "b": 708
+     },
+     ".v23wStats": {
+      "x": 909,
+      "y": 724,
+      "w": 325,
+      "h": 29,
+      "r": 1233,
+      "b": 753
+     },
+     ".v23wFootnote": {
+      "x": 909,
+      "y": 767,
+      "w": 218,
+      "h": 12,
+      "r": 1127,
+      "b": 779
+     },
+     ".v23wTop": {
+      "x": 61,
+      "y": 24,
+      "w": 1797,
+      "h": 46,
+      "r": 1859,
+      "b": 70
+     },
+     ".v23wFoot": {
+      "x": 61,
+      "y": 1007,
+      "w": 1797,
+      "h": 54,
+      "r": 1859,
+      "b": 1061
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 101.52,
+    "logoHeightRatio": 0.1537037037037037,
+    "fontRatio": 0.094,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 1063,
+      "y": 27,
+      "w": 81,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 1147,
+      "y": 27,
+      "w": 86,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 1235,
+      "y": 27,
+      "w": 89,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 1326,
+      "y": 27,
+      "w": 119,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 1447,
+      "y": 27,
+      "w": 90,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 1540,
+      "y": 27,
+      "w": 106,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 1647,
+      "y": 27,
+      "w": 108,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 909,
+      "y": 645,
+      "w": 292,
+      "h": 63,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 1213,
+      "y": 645,
+      "w": 159,
+      "h": 63,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 106,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 151,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 196,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 873,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1072,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1271,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1470,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1669,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 61,
+     "y": 86,
+     "w": 809,
+     "h": 904,
+     "r": 870,
+     "b": 990
+    },
+    "copy": {
+     "x": 901,
+     "y": 86,
+     "w": 958,
+     "h": 904,
+     "r": 1859,
+     "b": 990
+    },
+    "zone": {
+     "x": 61,
+     "y": 86,
+     "w": 809,
+     "h": 904
+    },
+    "margins": {
+     "top": 0.23537704306046786,
+     "bottom": 0.23516493965565416,
+     "left": 0.10594670215513258,
+     "right": 0.10580531079120936,
+     "width": 0.7882479870536581,
+     "height": 0.529458017283878
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 74.9,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 10
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-1920x1080.png"
+  },
+  {
+   "size": "2560x1080",
+   "info": {
+    "vw": 2560,
+    "vh": 1080,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 1208,
+      "y": 297,
+      "w": 324,
+      "h": 15,
+      "r": 1532,
+      "b": 312
+     },
+     ".v23wLogo": {
+      "x": 1208,
+      "y": 324,
+      "w": 409,
+      "h": 166,
+      "r": 1617,
+      "b": 491
+     },
+     ".v23wGenre": {
+      "x": 1208,
+      "y": 506,
+      "w": 408,
+      "h": 15,
+      "r": 1616,
+      "b": 521
+     },
+     ".v23wLead": {
+      "x": 1208,
+      "y": 536,
+      "w": 576,
+      "h": 87,
+      "r": 1784,
+      "b": 623
+     },
+     ".v23wActions": {
+      "x": 1208,
+      "y": 645,
+      "w": 892,
+      "h": 63,
+      "r": 2100,
+      "b": 708
+     },
+     ".v23wStats": {
+      "x": 1208,
+      "y": 724,
+      "w": 325,
+      "h": 29,
+      "r": 1533,
+      "b": 753
+     },
+     ".v23wFootnote": {
+      "x": 1208,
+      "y": 767,
+      "w": 218,
+      "h": 12,
+      "r": 1426,
+      "b": 779
+     },
+     ".v23wTop": {
+      "x": 312,
+      "y": 24,
+      "w": 1936,
+      "h": 46,
+      "r": 2248,
+      "b": 70
+     },
+     ".v23wFoot": {
+      "x": 312,
+      "y": 1007,
+      "w": 1936,
+      "h": 54,
+      "r": 2248,
+      "b": 1061
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 101.52,
+    "logoHeightRatio": 0.1537037037037037,
+    "fontRatio": 0.094,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 1453,
+      "y": 27,
+      "w": 81,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 1536,
+      "y": 27,
+      "w": 86,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 1624,
+      "y": 27,
+      "w": 89,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 1716,
+      "y": 27,
+      "w": 119,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 1837,
+      "y": 27,
+      "w": 90,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 1929,
+      "y": 27,
+      "w": 106,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 2037,
+      "y": 27,
+      "w": 108,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 1208,
+      "y": 645,
+      "w": 292,
+      "h": 63,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 1512,
+      "y": 645,
+      "w": 159,
+      "h": 63,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 356,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 401,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 446,
+      "y": 1022,
+      "w": 39,
+      "h": 39,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1262,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1461,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1660,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 1859,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 2058,
+      "y": 1019,
+      "w": 190,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 312,
+     "y": 86,
+     "w": 852,
+     "h": 904,
+     "r": 1164,
+     "b": 990
+    },
+    "copy": {
+     "x": 1200,
+     "y": 86,
+     "w": 900,
+     "h": 904,
+     "r": 2100,
+     "b": 990
+    },
+    "zone": {
+     "x": 312,
+     "y": 86,
+     "w": 852,
+     "h": 904
+    },
+    "margins": {
+     "top": 0.22526332173450075,
+     "bottom": 0.21914644204376166,
+     "left": 0.10270673620313459,
+     "right": 0.10631738436520921,
+     "width": 0.7909758794316561,
+     "height": 0.5555902362217375
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 7,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 10
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-2560x1080.png"
+  },
+  {
+   "size": "768x1024",
+   "info": {
+    "vw": 768,
+    "vh": 1024,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 39,
+      "y": 454,
+      "w": 294,
+      "h": 14,
+      "r": 333,
+      "b": 468
+     },
+     ".v23wLogo": {
+      "x": 39,
+      "y": 480,
+      "w": 363,
+      "h": 148,
+      "r": 402,
+      "b": 627
+     },
+     ".v23wGenre": {
+      "x": 39,
+      "y": 642,
+      "w": 389,
+      "h": 15,
+      "r": 428,
+      "b": 657
+     },
+     ".v23wLead": {
+      "x": 39,
+      "y": 671,
+      "w": 479,
+      "h": 77,
+      "r": 518,
+      "b": 748
+     },
+     ".v23wActions": {
+      "x": 39,
+      "y": 770,
+      "w": 690,
+      "h": 59,
+      "r": 729,
+      "b": 829
+     },
+     ".v23wStats": {
+      "x": 39,
+      "y": 844,
+      "w": 321,
+      "h": 28,
+      "r": 360,
+      "b": 873
+     },
+     ".v23wFootnote": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wTop": {
+      "x": 25,
+      "y": 23,
+      "w": 719,
+      "h": 45,
+      "r": 743,
+      "b": 68
+     },
+     ".v23wFoot": {
+      "x": 25,
+      "y": 908,
+      "w": 719,
+      "h": 98,
+      "r": 743,
+      "b": 1006
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 90.112,
+    "logoHeightRatio": 0.14453125,
+    "fontRatio": 0.088,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 465,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 505,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 545,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 585,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 625,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 665,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 705,
+      "y": 25,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 39,
+      "y": 770,
+      "w": 341,
+      "h": 59,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 388,
+      "y": 770,
+      "w": 341,
+      "h": 59,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 69,
+      "y": 969,
+      "w": 37,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 112,
+      "y": 969,
+      "w": 37,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 155,
+      "y": 969,
+      "w": 37,
+      "h": 37,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 25,
+      "y": 920,
+      "w": 140,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 169,
+      "y": 920,
+      "w": 140,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 314,
+      "y": 920,
+      "w": 140,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 458,
+      "y": 920,
+      "w": 140,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 603,
+      "y": 920,
+      "w": 140,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 25,
+     "y": 74,
+     "w": 719,
+     "h": 364,
+     "r": 743,
+     "b": 438
+    },
+    "copy": {
+     "x": 25,
+     "y": 438,
+     "w": 719,
+     "h": 464,
+     "r": 743,
+     "b": 902
+    },
+    "zone": {
+     "x": 25,
+     "y": 74,
+     "w": 719,
+     "h": 364
+    },
+    "margins": {
+     "top": 0.12220402531974917,
+     "bottom": 0.12636350044510797,
+     "left": 0.2463529299804884,
+     "right": 0.2455781629362186,
+     "width": 0.508068907083293,
+     "height": 0.7514324742351428
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 0,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 10
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-768x1024.png"
+  },
+  {
+   "size": "820x1180",
+   "info": {
+    "vw": 820,
+    "vh": 1180,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 42,
+      "y": 524,
+      "w": 313,
+      "h": 15,
+      "r": 355,
+      "b": 539
+     },
+     ".v23wLogo": {
+      "x": 42,
+      "y": 552,
+      "w": 418,
+      "h": 170,
+      "r": 460,
+      "b": 723
+     },
+     ".v23wGenre": {
+      "x": 42,
+      "y": 739,
+      "w": 430,
+      "h": 16,
+      "r": 471,
+      "b": 755
+     },
+     ".v23wLead": {
+      "x": 42,
+      "y": 771,
+      "w": 513,
+      "h": 83,
+      "r": 555,
+      "b": 853
+     },
+     ".v23wActions": {
+      "x": 42,
+      "y": 878,
+      "w": 737,
+      "h": 64,
+      "r": 778,
+      "b": 942
+     },
+     ".v23wStats": {
+      "x": 42,
+      "y": 960,
+      "w": 325,
+      "h": 29,
+      "r": 367,
+      "b": 989
+     },
+     ".v23wFootnote": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wTop": {
+      "x": 26,
+      "y": 26,
+      "w": 768,
+      "h": 46,
+      "r": 794,
+      "b": 72
+     },
+     ".v23wFoot": {
+      "x": 26,
+      "y": 1056,
+      "w": 768,
+      "h": 103,
+      "r": 794,
+      "b": 1159
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 103.84,
+    "logoHeightRatio": 0.1440677966101695,
+    "fontRatio": 0.08800000000000001,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 516,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 556,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 596,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 636,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 676,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 716,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 756,
+      "y": 29,
+      "w": 38,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 42,
+      "y": 878,
+      "w": 364,
+      "h": 64,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 414,
+      "y": 878,
+      "w": 364,
+      "h": 64,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 71,
+      "y": 1119,
+      "w": 40,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 117,
+      "y": 1119,
+      "w": 40,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 163,
+      "y": 1119,
+      "w": 40,
+      "h": 40,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 26,
+      "y": 1070,
+      "w": 150,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 181,
+      "y": 1070,
+      "w": 150,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 335,
+      "y": 1070,
+      "w": 150,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 489,
+      "y": 1070,
+      "w": 150,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 644,
+      "y": 1070,
+      "w": 150,
+      "h": 41,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 26,
+     "y": 78,
+     "w": 768,
+     "h": 428,
+     "r": 794,
+     "b": 506
+    },
+    "copy": {
+     "x": 26,
+     "y": 506,
+     "w": 768,
+     "h": 544,
+     "r": 794,
+     "b": 1050
+    },
+    "zone": {
+     "x": 26,
+     "y": 78,
+     "w": 768,
+     "h": 428
+    },
+    "margins": {
+     "top": 0.12129142058898923,
+     "bottom": 0.12179593530694971,
+     "left": 0.22116526415842697,
+     "right": 0.22009056366676222,
+     "width": 0.5587441721748108,
+     "height": 0.756912644104061
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 75,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 0,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 10
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-820x1180.png"
+  },
+  {
+   "size": "390x844",
+   "info": {
+    "vw": 390,
+    "vh": 844,
+    "screen": "title",
+    "rects": {
+     ".v23wPrelude": {
+      "x": 19,
+      "y": 371,
+      "w": 237,
+      "h": 11,
+      "r": 256,
+      "b": 382
+     },
+     ".v23wLogo": {
+      "x": 19,
+      "y": 389,
+      "w": 289,
+      "h": 118,
+      "r": 308,
+      "b": 507
+     },
+     ".v23wGenre": {
+      "x": 19,
+      "y": 518,
+      "w": 280,
+      "h": 11,
+      "r": 300,
+      "b": 529
+     },
+     ".v23wLead": {
+      "x": 19,
+      "y": 541,
+      "w": 347,
+      "h": 53,
+      "r": 366,
+      "b": 595
+     },
+     ".v23wActions": {
+      "x": 19,
+      "y": 604,
+      "w": 351,
+      "h": 100,
+      "r": 371,
+      "b": 704
+     },
+     ".v23wStats": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wFootnote": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "r": 0,
+      "b": 0
+     },
+     ".v23wTop": {
+      "x": 12,
+      "y": 10,
+      "w": 366,
+      "h": 37,
+      "r": 378,
+      "b": 47
+     },
+     ".v23wFoot": {
+      "x": 12,
+      "y": 751,
+      "w": 366,
+      "h": 83,
+      "r": 378,
+      "b": 834
+     }
+    },
+    "overlaps": [],
+    "allInside": true,
+    "docOverflowX": false,
+    "docOverflowY": false,
+    "logoFont": 71.74,
+    "logoHeightRatio": 0.13981042654028436,
+    "fontRatio": 0.08499999999999999,
+    "controls": [
+     {
+      "action": "open-map",
+      "x": 143,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "enter-arena",
+      "x": 177,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-modes",
+      "x": 211,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-wardrobe",
+      "x": 245,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-shop",
+      "x": 278,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-journal",
+      "x": 312,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-import",
+      "x": 346,
+      "y": 12,
+      "w": 32,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "menu-continue",
+      "x": 19,
+      "y": 604,
+      "w": 351,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-tutorial",
+      "x": 19,
+      "y": 658,
+      "w": 351,
+      "h": 46,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "toggle-sound",
+      "x": 12,
+      "y": 800,
+      "w": 34,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-settings",
+      "x": 52,
+      "y": 800,
+      "w": 34,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "open-help",
+      "x": 92,
+      "y": 800,
+      "w": 34,
+      "h": 34,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 12,
+      "y": 761,
+      "w": 70,
+      "h": 31,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 86,
+      "y": 761,
+      "w": 70,
+      "h": 31,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 160,
+      "y": 761,
+      "w": 70,
+      "h": 31,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 234,
+      "y": 761,
+      "w": 70,
+      "h": 31,
+      "inside": true,
+      "visible": true
+     },
+     {
+      "action": "v23w-route",
+      "x": 308,
+      "y": 761,
+      "w": 70,
+      "h": 31,
+      "inside": true,
+      "visible": true
+     }
+    ],
+    "controlsOut": [],
+    "stage": {
+     "x": 12,
+     "y": 53,
+     "w": 366,
+     "h": 304,
+     "r": 378,
+     "b": 357
+    },
+    "copy": {
+     "x": 12,
+     "y": 357,
+     "w": 366,
+     "h": 387,
+     "r": 378,
+     "b": 745
+    },
+    "zone": {
+     "x": 12,
+     "y": 53,
+     "w": 366,
+     "h": 304
+    },
+    "margins": {
+     "top": 0.1515034052707533,
+     "bottom": 0.1418951831958425,
+     "left": 0.10757224916891767,
+     "right": 0.1107584034086328,
+     "width": 0.7816693474224495,
+     "height": 0.7066014115334043
+    },
+    "cinema": {
+     "ready": true,
+     "mode": "welcome",
+     "active": true,
+     "canvas": true,
+     "fps": 74.9,
+     "stats": {
+      "avatars": 7,
+      "draws": 61,
+      "particles": 1054,
+      "activeParticles": 1010,
+      "clusters": 0,
+      "quality": "alto",
+      "reduced": false,
+      "canvasNode": true
+     },
+     "errors": []
+    },
+    "title": "SERUMS QUEST",
+    "routes": 5,
+    "nav": 7,
+    "tutState": {
+     "active": false,
+     "step": 4,
+     "total": 5,
+     "seenThisSession": true,
+     "returnScreen": "title",
+     "stepPaints": 10
+    }
+   },
+   "file": ".work\\v2.3b\\evidence\\after\\welcome-390x844.png"
+  }
+ ],
+ "tutorials": [
+  {
+   "size": "640x360",
+   "steps": [
+    {
+     "step": 1,
+     "info": {
+      "vw": 640,
+      "vh": 360,
+      "active": {
+       "active": true,
+       "step": 0,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 1
+      },
+      "mode": "tutorial",
+      "step": 0,
+      "zone": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298
+      },
+      "scene": {
+       "x": 14,
+       "y": 7,
+       "w": 304,
+       "h": 346,
+       "r": 318,
+       "b": 353
+      },
+      "stage": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298,
+       "r": 318,
+       "b": 329
+      },
+      "panel": {
+       "x": 326,
+       "y": 58,
+       "w": 300,
+       "h": 244,
+       "r": 626,
+       "b": 302
+      },
+      "title": {
+       "x": 326,
+       "y": 96,
+       "w": 229,
+       "h": 46,
+       "r": 555,
+       "b": 142
+      },
+      "support": {
+       "x": 326,
+       "y": 148,
+       "w": 272,
+       "h": 30,
+       "r": 598,
+       "b": 178
+      },
+      "constel": {
+       "x": 326,
+       "y": 184,
+       "w": 280,
+       "h": 36,
+       "r": 606,
+       "b": 220
+      },
+      "foot": {
+       "x": 326,
+       "y": 228,
+       "w": 300,
+       "h": 38,
+       "r": 626,
+       "b": 266
+      },
+      "aux": {
+       "x": 326,
+       "y": 270,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 300
+      },
+      "head": {
+       "x": 326,
+       "y": 60,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 90
+      },
+      "titleFS": 23.04,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.21976129989635124,
+       "bottom": 0.228497233962849,
+       "left": 0.1260456326150851,
+       "right": 0.10864717273219904,
+       "width": 0.7653071946527159,
+       "height": 0.5517414661407998
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "MUÉVETE POR EL ATRIO",
+      "stepText": "PASO 1 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 0,
+      "linesLit": 0,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-640x360-step1.png"
+    },
+    {
+     "step": 2,
+     "info": {
+      "vw": 640,
+      "vh": 360,
+      "active": {
+       "active": true,
+       "step": 1,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 2
+      },
+      "mode": "tutorial",
+      "step": 1,
+      "zone": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298
+      },
+      "scene": {
+       "x": 14,
+       "y": 7,
+       "w": 304,
+       "h": 346,
+       "r": 318,
+       "b": 353
+      },
+      "stage": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298,
+       "r": 318,
+       "b": 329
+      },
+      "panel": {
+       "x": 326,
+       "y": 66,
+       "w": 300,
+       "h": 229,
+       "r": 626,
+       "b": 294
+      },
+      "title": {
+       "x": 326,
+       "y": 104,
+       "w": 229,
+       "h": 46,
+       "r": 555,
+       "b": 149
+      },
+      "support": {
+       "x": 326,
+       "y": 155,
+       "w": 272,
+       "h": 15,
+       "r": 598,
+       "b": 170
+      },
+      "constel": {
+       "x": 326,
+       "y": 176,
+       "w": 280,
+       "h": 36,
+       "r": 606,
+       "b": 212
+      },
+      "foot": {
+       "x": 326,
+       "y": 220,
+       "w": 300,
+       "h": 38,
+       "r": 626,
+       "b": 258
+      },
+      "aux": {
+       "x": 326,
+       "y": 262,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 292
+      },
+      "head": {
+       "x": 326,
+       "y": 68,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 98
+      },
+      "titleFS": 23.04,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.20420736740467538,
+       "bottom": 0.2087086522704708,
+       "left": 0.10259908877793172,
+       "right": 0.0990008686260469,
+       "width": 0.7984000425960214,
+       "height": 0.5870839803248538
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "DUELA CON CRITERIO",
+      "stepText": "PASO 2 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 1,
+      "linesLit": 1,
+      "panelFont": 16,
+      "fps": 74.9,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-640x360-step2.png"
+    },
+    {
+     "step": 3,
+     "info": {
+      "vw": 640,
+      "vh": 360,
+      "active": {
+       "active": true,
+       "step": 2,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 3
+      },
+      "mode": "tutorial",
+      "step": 2,
+      "zone": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298
+      },
+      "scene": {
+       "x": 14,
+       "y": 7,
+       "w": 304,
+       "h": 346,
+       "r": 318,
+       "b": 353
+      },
+      "stage": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298,
+       "r": 318,
+       "b": 329
+      },
+      "panel": {
+       "x": 326,
+       "y": 66,
+       "w": 300,
+       "h": 229,
+       "r": 626,
+       "b": 294
+      },
+      "title": {
+       "x": 326,
+       "y": 104,
+       "w": 229,
+       "h": 46,
+       "r": 555,
+       "b": 149
+      },
+      "support": {
+       "x": 326,
+       "y": 155,
+       "w": 272,
+       "h": 15,
+       "r": 598,
+       "b": 170
+      },
+      "constel": {
+       "x": 326,
+       "y": 176,
+       "w": 280,
+       "h": 36,
+       "r": 606,
+       "b": 212
+      },
+      "foot": {
+       "x": 326,
+       "y": 220,
+       "w": 300,
+       "h": 38,
+       "r": 626,
+       "b": 258
+      },
+      "aux": {
+       "x": 326,
+       "y": 262,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 292
+      },
+      "head": {
+       "x": 326,
+       "y": 68,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 98
+      },
+      "titleFS": 23.04,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.2791691496868671,
+       "bottom": 0.28022211562578564,
+       "left": 0.10426601186579643,
+       "right": 0.10834566096749576,
+       "width": 0.7873883271667078,
+       "height": 0.4406087346873472
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "REVISA Y RECUERDA",
+      "stepText": "PASO 3 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 2,
+      "linesLit": 2,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-640x360-step3.png"
+    },
+    {
+     "step": 4,
+     "info": {
+      "vw": 640,
+      "vh": 360,
+      "active": {
+       "active": true,
+       "step": 3,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 4
+      },
+      "mode": "tutorial",
+      "step": 3,
+      "zone": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298
+      },
+      "scene": {
+       "x": 14,
+       "y": 7,
+       "w": 304,
+       "h": 346,
+       "r": 318,
+       "b": 353
+      },
+      "stage": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298,
+       "r": 318,
+       "b": 329
+      },
+      "panel": {
+       "x": 326,
+       "y": 77,
+       "w": 300,
+       "h": 206,
+       "r": 626,
+       "b": 283
+      },
+      "title": {
+       "x": 326,
+       "y": 115,
+       "w": 229,
+       "h": 23,
+       "r": 555,
+       "b": 138
+      },
+      "support": {
+       "x": 326,
+       "y": 144,
+       "w": 272,
+       "h": 15,
+       "r": 598,
+       "b": 159
+      },
+      "constel": {
+       "x": 326,
+       "y": 165,
+       "w": 280,
+       "h": 36,
+       "r": 606,
+       "b": 201
+      },
+      "foot": {
+       "x": 326,
+       "y": 209,
+       "w": 300,
+       "h": 38,
+       "r": 626,
+       "b": 247
+      },
+      "aux": {
+       "x": 326,
+       "y": 251,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 281
+      },
+      "head": {
+       "x": 326,
+       "y": 79,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 109
+      },
+      "titleFS": 23.04,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.25554783901415834,
+       "bottom": 0.25074842064462555,
+       "left": 0.11184873974588266,
+       "right": 0.11272804471037035,
+       "width": 0.775423215543747,
+       "height": 0.49370374034121606
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "ABRE CINCO RUTAS",
+      "stepText": "PASO 4 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 3,
+      "linesLit": 3,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-640x360-step4.png"
+    },
+    {
+     "step": 5,
+     "info": {
+      "vw": 640,
+      "vh": 360,
+      "active": {
+       "active": true,
+       "step": 4,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 5
+      },
+      "mode": "tutorial",
+      "step": 4,
+      "zone": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298
+      },
+      "scene": {
+       "x": 14,
+       "y": 7,
+       "w": 304,
+       "h": 346,
+       "r": 318,
+       "b": 353
+      },
+      "stage": {
+       "x": 14,
+       "y": 31,
+       "w": 304,
+       "h": 298,
+       "r": 318,
+       "b": 329
+      },
+      "panel": {
+       "x": 326,
+       "y": 69,
+       "w": 300,
+       "h": 221,
+       "r": 626,
+       "b": 291
+      },
+      "title": {
+       "x": 326,
+       "y": 107,
+       "w": 229,
+       "h": 23,
+       "r": 555,
+       "b": 130
+      },
+      "support": {
+       "x": 326,
+       "y": 136,
+       "w": 272,
+       "h": 30,
+       "r": 598,
+       "b": 167
+      },
+      "constel": {
+       "x": 326,
+       "y": 173,
+       "w": 280,
+       "h": 36,
+       "r": 606,
+       "b": 209
+      },
+      "foot": {
+       "x": 326,
+       "y": 217,
+       "w": 300,
+       "h": 38,
+       "r": 626,
+       "b": 255
+      },
+      "aux": {
+       "x": 326,
+       "y": 259,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 289
+      },
+      "head": {
+       "x": 326,
+       "y": 71,
+       "w": 300,
+       "h": 30,
+       "r": 626,
+       "b": 101
+      },
+      "titleFS": 23.04,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.10442567986271367,
+       "bottom": 0.10330397431597038,
+       "left": 0.09542100090316058,
+       "right": 0.10559504585045709,
+       "width": 0.7989839532463823,
+       "height": 0.792270345821316
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "VISTE TU LEYENDA",
+      "stepText": "PASO 5 DE 5",
+      "primary": "Terminar",
+      "starsActive": 1,
+      "starsDone": 4,
+      "linesLit": 4,
+      "panelFont": 16,
+      "fps": 74.9,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-640x360-step5.png"
+    }
+   ]
+  },
+  {
+   "size": "1280x720",
+   "steps": [
+    {
+     "step": 1,
+     "info": {
+      "vw": 1280,
+      "vh": 720,
+      "active": {
+       "active": true,
+       "step": 0,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 6
+      },
+      "mode": "tutorial",
+      "step": 0,
+      "zone": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594
+      },
+      "scene": {
+       "x": 38,
+       "y": 14,
+       "w": 644,
+       "h": 691,
+       "r": 682,
+       "b": 706
+      },
+      "stage": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594,
+       "r": 682,
+       "b": 657
+      },
+      "panel": {
+       "x": 700,
+       "y": 139,
+       "w": 541,
+       "h": 443,
+       "r": 1242,
+       "b": 581
+      },
+      "title": {
+       "x": 700,
+       "y": 198,
+       "w": 404,
+       "h": 111,
+       "r": 1104,
+       "b": 310
+      },
+      "support": {
+       "x": 700,
+       "y": 324,
+       "w": 311,
+       "h": 37,
+       "r": 1011,
+       "b": 361
+      },
+      "constel": {
+       "x": 700,
+       "y": 380,
+       "w": 390,
+       "h": 53,
+       "r": 1090,
+       "b": 433
+      },
+      "foot": {
+       "x": 700,
+       "y": 453,
+       "w": 541,
+       "h": 46,
+       "r": 1242,
+       "b": 499
+      },
+      "aux": {
+       "x": 700,
+       "y": 514,
+       "w": 541,
+       "h": 35,
+       "r": 1242,
+       "b": 549
+      },
+      "head": {
+       "x": 700,
+       "y": 150,
+       "w": 541,
+       "h": 32,
+       "r": 1242,
+       "b": 182
+      },
+      "titleFS": 56.32,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.2002318149835699,
+       "bottom": 0.20547042889641548,
+       "left": 0.08807952364274863,
+       "right": 0.10543675641876121,
+       "width": 0.8064837199384902,
+       "height": 0.5942977561200147
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "MUÉVETE POR EL ATRIO",
+      "stepText": "PASO 1 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 0,
+      "linesLit": 0,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-1280x720-step1.png"
+    },
+    {
+     "step": 2,
+     "info": {
+      "vw": 1280,
+      "vh": 720,
+      "active": {
+       "active": true,
+       "step": 1,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 7
+      },
+      "mode": "tutorial",
+      "step": 1,
+      "zone": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594
+      },
+      "scene": {
+       "x": 38,
+       "y": 14,
+       "w": 644,
+       "h": 691,
+       "r": 682,
+       "b": 706
+      },
+      "stage": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594,
+       "r": 682,
+       "b": 657
+      },
+      "panel": {
+       "x": 700,
+       "y": 140,
+       "w": 541,
+       "h": 440,
+       "r": 1242,
+       "b": 580
+      },
+      "title": {
+       "x": 700,
+       "y": 199,
+       "w": 404,
+       "h": 111,
+       "r": 1104,
+       "b": 311
+      },
+      "support": {
+       "x": 700,
+       "y": 325,
+       "w": 311,
+       "h": 35,
+       "r": 1011,
+       "b": 360
+      },
+      "constel": {
+       "x": 700,
+       "y": 379,
+       "w": 390,
+       "h": 53,
+       "r": 1090,
+       "b": 432
+      },
+      "foot": {
+       "x": 700,
+       "y": 452,
+       "w": 541,
+       "h": 46,
+       "r": 1242,
+       "b": 498
+      },
+      "aux": {
+       "x": 700,
+       "y": 512,
+       "w": 541,
+       "h": 35,
+       "r": 1242,
+       "b": 548
+      },
+      "head": {
+       "x": 700,
+       "y": 151,
+       "w": 541,
+       "h": 32,
+       "r": 1242,
+       "b": 183
+      },
+      "titleFS": 56.32,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.19267027217197868,
+       "bottom": 0.1909050582103829,
+       "left": 0.10307787105896976,
+       "right": 0.09822609538799687,
+       "width": 0.7986960335530333,
+       "height": 0.6164246696176384
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "DUELA CON CRITERIO",
+      "stepText": "PASO 2 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 1,
+      "linesLit": 1,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-1280x720-step2.png"
+    },
+    {
+     "step": 3,
+     "info": {
+      "vw": 1280,
+      "vh": 720,
+      "active": {
+       "active": true,
+       "step": 2,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 8
+      },
+      "mode": "tutorial",
+      "step": 2,
+      "zone": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594
+      },
+      "scene": {
+       "x": 38,
+       "y": 14,
+       "w": 644,
+       "h": 691,
+       "r": 682,
+       "b": 706
+      },
+      "stage": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594,
+       "r": 682,
+       "b": 657
+      },
+      "panel": {
+       "x": 700,
+       "y": 140,
+       "w": 541,
+       "h": 440,
+       "r": 1242,
+       "b": 580
+      },
+      "title": {
+       "x": 700,
+       "y": 199,
+       "w": 404,
+       "h": 111,
+       "r": 1104,
+       "b": 311
+      },
+      "support": {
+       "x": 700,
+       "y": 325,
+       "w": 311,
+       "h": 35,
+       "r": 1011,
+       "b": 360
+      },
+      "constel": {
+       "x": 700,
+       "y": 379,
+       "w": 390,
+       "h": 53,
+       "r": 1090,
+       "b": 432
+      },
+      "foot": {
+       "x": 700,
+       "y": 452,
+       "w": 541,
+       "h": 46,
+       "r": 1242,
+       "b": 498
+      },
+      "aux": {
+       "x": 700,
+       "y": 512,
+       "w": 541,
+       "h": 35,
+       "r": 1242,
+       "b": 548
+      },
+      "head": {
+       "x": 700,
+       "y": 151,
+       "w": 541,
+       "h": 32,
+       "r": 1242,
+       "b": 183
+      },
+      "titleFS": 56.32,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.26463348895602257,
+       "bottom": 0.26410793823355283,
+       "left": 0.10321398894658895,
+       "right": 0.10327463066204934,
+       "width": 0.7935113803913617,
+       "height": 0.4712585728104246
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "REVISA Y RECUERDA",
+      "stepText": "PASO 3 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 2,
+      "linesLit": 2,
+      "panelFont": 16,
+      "fps": 74.9,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-1280x720-step3.png"
+    },
+    {
+     "step": 4,
+     "info": {
+      "vw": 1280,
+      "vh": 720,
+      "active": {
+       "active": true,
+       "step": 3,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 9
+      },
+      "mode": "tutorial",
+      "step": 3,
+      "zone": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594
+      },
+      "scene": {
+       "x": 38,
+       "y": 14,
+       "w": 644,
+       "h": 691,
+       "r": 682,
+       "b": 706
+      },
+      "stage": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594,
+       "r": 682,
+       "b": 657
+      },
+      "panel": {
+       "x": 700,
+       "y": 140,
+       "w": 541,
+       "h": 440,
+       "r": 1242,
+       "b": 580
+      },
+      "title": {
+       "x": 700,
+       "y": 199,
+       "w": 404,
+       "h": 111,
+       "r": 1104,
+       "b": 311
+      },
+      "support": {
+       "x": 700,
+       "y": 325,
+       "w": 311,
+       "h": 35,
+       "r": 1011,
+       "b": 360
+      },
+      "constel": {
+       "x": 700,
+       "y": 379,
+       "w": 390,
+       "h": 53,
+       "r": 1090,
+       "b": 432
+      },
+      "foot": {
+       "x": 700,
+       "y": 452,
+       "w": 541,
+       "h": 46,
+       "r": 1242,
+       "b": 498
+      },
+      "aux": {
+       "x": 700,
+       "y": 512,
+       "w": 541,
+       "h": 35,
+       "r": 1242,
+       "b": 548
+      },
+      "head": {
+       "x": 700,
+       "y": 151,
+       "w": 541,
+       "h": 32,
+       "r": 1242,
+       "b": 183
+      },
+      "titleFS": 56.32,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.24126628387858767,
+       "bottom": 0.24001233114936488,
+       "left": 0.111807585010257,
+       "right": 0.11589425276742826,
+       "width": 0.7722981622223147,
+       "height": 0.5187213849720475
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "ABRE CINCO RUTAS",
+      "stepText": "PASO 4 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 3,
+      "linesLit": 3,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-1280x720-step4.png"
+    },
+    {
+     "step": 5,
+     "info": {
+      "vw": 1280,
+      "vh": 720,
+      "active": {
+       "active": true,
+       "step": 4,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 10
+      },
+      "mode": "tutorial",
+      "step": 4,
+      "zone": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594
+      },
+      "scene": {
+       "x": 38,
+       "y": 14,
+       "w": 644,
+       "h": 691,
+       "r": 682,
+       "b": 706
+      },
+      "stage": {
+       "x": 38,
+       "y": 63,
+       "w": 644,
+       "h": 594,
+       "r": 682,
+       "b": 657
+      },
+      "panel": {
+       "x": 700,
+       "y": 139,
+       "w": 541,
+       "h": 443,
+       "r": 1242,
+       "b": 581
+      },
+      "title": {
+       "x": 700,
+       "y": 198,
+       "w": 404,
+       "h": 111,
+       "r": 1104,
+       "b": 310
+      },
+      "support": {
+       "x": 700,
+       "y": 324,
+       "w": 311,
+       "h": 37,
+       "r": 1011,
+       "b": 361
+      },
+      "constel": {
+       "x": 700,
+       "y": 380,
+       "w": 390,
+       "h": 53,
+       "r": 1090,
+       "b": 433
+      },
+      "foot": {
+       "x": 700,
+       "y": 453,
+       "w": 541,
+       "h": 46,
+       "r": 1242,
+       "b": 499
+      },
+      "aux": {
+       "x": 700,
+       "y": 514,
+       "w": 541,
+       "h": 35,
+       "r": 1242,
+       "b": 549
+      },
+      "head": {
+       "x": 700,
+       "y": 150,
+       "w": 541,
+       "h": 32,
+       "r": 1242,
+       "b": 182
+      },
+      "titleFS": 56.32,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.11218106746392148,
+       "bottom": 0.11383821617085177,
+       "left": 0.1267302607458315,
+       "right": 0.12997977024485374,
+       "width": 0.7432899690093148,
+       "height": 0.7739807163652268
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "VISTE TU LEYENDA",
+      "stepText": "PASO 5 DE 5",
+      "primary": "Terminar",
+      "starsActive": 1,
+      "starsDone": 4,
+      "linesLit": 4,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-1280x720-step5.png"
+    }
+   ]
+  },
+  {
+   "size": "390x844",
+   "steps": [
+    {
+     "step": 1,
+     "info": {
+      "vw": 390,
+      "vh": 844,
+      "active": {
+       "active": true,
+       "step": 0,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 11
+      },
+      "mode": "tutorial",
+      "step": 0,
+      "zone": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344
+      },
+      "scene": {
+       "x": 12,
+       "y": 10,
+       "w": 366,
+       "h": 354,
+       "r": 378,
+       "b": 364
+      },
+      "stage": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344,
+       "r": 371,
+       "b": 361
+      },
+      "panel": {
+       "x": 12,
+       "y": 364,
+       "w": 366,
+       "h": 470,
+       "r": 378,
+       "b": 834
+      },
+      "title": {
+       "x": 19,
+       "y": 418,
+       "w": 239,
+       "h": 57,
+       "r": 258,
+       "b": 475
+      },
+      "support": {
+       "x": 19,
+       "y": 487,
+       "w": 298,
+       "h": 36,
+       "r": 317,
+       "b": 523
+      },
+      "constel": {
+       "x": 19,
+       "y": 534,
+       "w": 351,
+       "h": 50,
+       "r": 371,
+       "b": 584
+      },
+      "foot": {
+       "x": 19,
+       "y": 597,
+       "w": 351,
+       "h": 88,
+       "r": 371,
+       "b": 685
+      },
+      "aux": {
+       "x": 19,
+       "y": 689,
+       "w": 351,
+       "h": 33,
+       "r": 371,
+       "b": 722
+      },
+      "head": {
+       "x": 19,
+       "y": 376,
+       "w": 351,
+       "h": 30,
+       "r": 371,
+       "b": 406
+      },
+      "titleFS": 28.86,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.2006100518423733,
+       "bottom": 0.2094348746508911,
+       "left": 0.07329595398515998,
+       "right": 0.11040382764303841,
+       "width": 0.8163002183718016,
+       "height": 0.5899550735067356
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "MUÉVETE POR EL ATRIO",
+      "stepText": "PASO 1 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 0,
+      "linesLit": 0,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-390x844-step1.png"
+    },
+    {
+     "step": 2,
+     "info": {
+      "vw": 390,
+      "vh": 844,
+      "active": {
+       "active": true,
+       "step": 1,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 12
+      },
+      "mode": "tutorial",
+      "step": 1,
+      "zone": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344
+      },
+      "scene": {
+       "x": 12,
+       "y": 10,
+       "w": 366,
+       "h": 354,
+       "r": 378,
+       "b": 364
+      },
+      "stage": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344,
+       "r": 371,
+       "b": 361
+      },
+      "panel": {
+       "x": 12,
+       "y": 364,
+       "w": 366,
+       "h": 470,
+       "r": 378,
+       "b": 834
+      },
+      "title": {
+       "x": 19,
+       "y": 418,
+       "w": 239,
+       "h": 57,
+       "r": 258,
+       "b": 475
+      },
+      "support": {
+       "x": 19,
+       "y": 487,
+       "w": 298,
+       "h": 18,
+       "r": 317,
+       "b": 505
+      },
+      "constel": {
+       "x": 19,
+       "y": 517,
+       "w": 351,
+       "h": 50,
+       "r": 371,
+       "b": 567
+      },
+      "foot": {
+       "x": 19,
+       "y": 579,
+       "w": 351,
+       "h": 88,
+       "r": 371,
+       "b": 667
+      },
+      "aux": {
+       "x": 19,
+       "y": 671,
+       "w": 351,
+       "h": 33,
+       "r": 371,
+       "b": 704
+      },
+      "head": {
+       "x": 19,
+       "y": 376,
+       "w": 351,
+       "h": 30,
+       "r": 371,
+       "b": 406
+      },
+      "titleFS": 28.86,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.2123065650935117,
+       "bottom": 0.213043935098563,
+       "left": 0.10474942106688817,
+       "right": 0.10571432257681823,
+       "width": 0.7895362563562935,
+       "height": 0.5746494998079252
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "DUELA CON CRITERIO",
+      "stepText": "PASO 2 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 1,
+      "linesLit": 1,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-390x844-step2.png"
+    },
+    {
+     "step": 3,
+     "info": {
+      "vw": 390,
+      "vh": 844,
+      "active": {
+       "active": true,
+       "step": 2,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 13
+      },
+      "mode": "tutorial",
+      "step": 2,
+      "zone": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344
+      },
+      "scene": {
+       "x": 12,
+       "y": 10,
+       "w": 366,
+       "h": 354,
+       "r": 378,
+       "b": 364
+      },
+      "stage": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344,
+       "r": 371,
+       "b": 361
+      },
+      "panel": {
+       "x": 12,
+       "y": 364,
+       "w": 366,
+       "h": 470,
+       "r": 378,
+       "b": 834
+      },
+      "title": {
+       "x": 19,
+       "y": 418,
+       "w": 239,
+       "h": 57,
+       "r": 258,
+       "b": 475
+      },
+      "support": {
+       "x": 19,
+       "y": 487,
+       "w": 298,
+       "h": 18,
+       "r": 317,
+       "b": 505
+      },
+      "constel": {
+       "x": 19,
+       "y": 517,
+       "w": 351,
+       "h": 50,
+       "r": 371,
+       "b": 567
+      },
+      "foot": {
+       "x": 19,
+       "y": 579,
+       "w": 351,
+       "h": 88,
+       "r": 371,
+       "b": 667
+      },
+      "aux": {
+       "x": 19,
+       "y": 671,
+       "w": 351,
+       "h": 33,
+       "r": 371,
+       "b": 704
+      },
+      "head": {
+       "x": 19,
+       "y": 376,
+       "w": 351,
+       "h": 30,
+       "r": 371,
+       "b": 406
+      },
+      "titleFS": 28.86,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.27756413693914833,
+       "bottom": 0.2767525254239821,
+       "left": 0.10125467072431754,
+       "right": 0.10289298737050662,
+       "width": 0.7958523419051758,
+       "height": 0.4456833376368696
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "REVISA Y RECUERDA",
+      "stepText": "PASO 3 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 2,
+      "linesLit": 2,
+      "panelFont": 16,
+      "fps": 74.9,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-390x844-step3.png"
+    },
+    {
+     "step": 4,
+     "info": {
+      "vw": 390,
+      "vh": 844,
+      "active": {
+       "active": true,
+       "step": 3,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 14
+      },
+      "mode": "tutorial",
+      "step": 3,
+      "zone": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344
+      },
+      "scene": {
+       "x": 12,
+       "y": 10,
+       "w": 366,
+       "h": 354,
+       "r": 378,
+       "b": 364
+      },
+      "stage": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344,
+       "r": 371,
+       "b": 361
+      },
+      "panel": {
+       "x": 12,
+       "y": 364,
+       "w": 366,
+       "h": 470,
+       "r": 378,
+       "b": 834
+      },
+      "title": {
+       "x": 19,
+       "y": 418,
+       "w": 239,
+       "h": 57,
+       "r": 258,
+       "b": 475
+      },
+      "support": {
+       "x": 19,
+       "y": 487,
+       "w": 298,
+       "h": 18,
+       "r": 317,
+       "b": 505
+      },
+      "constel": {
+       "x": 19,
+       "y": 517,
+       "w": 351,
+       "h": 50,
+       "r": 371,
+       "b": 567
+      },
+      "foot": {
+       "x": 19,
+       "y": 579,
+       "w": 351,
+       "h": 88,
+       "r": 371,
+       "b": 667
+      },
+      "aux": {
+       "x": 19,
+       "y": 671,
+       "w": 351,
+       "h": 33,
+       "r": 371,
+       "b": 704
+      },
+      "head": {
+       "x": 19,
+       "y": 376,
+       "w": 351,
+       "h": 30,
+       "r": 371,
+       "b": 406
+      },
+      "titleFS": 28.86,
+      "supportLines": 1,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.2526180212939939,
+       "bottom": 0.2534962260375979,
+       "left": 0.11133594170923572,
+       "right": 0.11231105494696514,
+       "width": 0.7763530033437991,
+       "height": 0.4938857526684082
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "ABRE CINCO RUTAS",
+      "stepText": "PASO 4 DE 5",
+      "primary": "Continuar",
+      "starsActive": 1,
+      "starsDone": 3,
+      "linesLit": 3,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-390x844-step4.png"
+    },
+    {
+     "step": 5,
+     "info": {
+      "vw": 390,
+      "vh": 844,
+      "active": {
+       "active": true,
+       "step": 4,
+       "total": 5,
+       "seenThisSession": true,
+       "returnScreen": "title",
+       "stepPaints": 15
+      },
+      "mode": "tutorial",
+      "step": 4,
+      "zone": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344
+      },
+      "scene": {
+       "x": 12,
+       "y": 10,
+       "w": 366,
+       "h": 354,
+       "r": 378,
+       "b": 364
+      },
+      "stage": {
+       "x": 19,
+       "y": 17,
+       "w": 351,
+       "h": 344,
+       "r": 371,
+       "b": 361
+      },
+      "panel": {
+       "x": 12,
+       "y": 364,
+       "w": 366,
+       "h": 470,
+       "r": 378,
+       "b": 834
+      },
+      "title": {
+       "x": 19,
+       "y": 418,
+       "w": 239,
+       "h": 57,
+       "r": 258,
+       "b": 475
+      },
+      "support": {
+       "x": 19,
+       "y": 487,
+       "w": 298,
+       "h": 36,
+       "r": 317,
+       "b": 523
+      },
+      "constel": {
+       "x": 19,
+       "y": 534,
+       "w": 351,
+       "h": 50,
+       "r": 371,
+       "b": 584
+      },
+      "foot": {
+       "x": 19,
+       "y": 597,
+       "w": 351,
+       "h": 88,
+       "r": 371,
+       "b": 685
+      },
+      "aux": {
+       "x": 19,
+       "y": 689,
+       "w": 351,
+       "h": 33,
+       "r": 371,
+       "b": 722
+      },
+      "head": {
+       "x": 19,
+       "y": 376,
+       "w": 351,
+       "h": 30,
+       "r": 371,
+       "b": 406
+      },
+      "titleFS": 28.86,
+      "supportLines": 2,
+      "panelScroll": 0,
+      "margins": {
+       "top": 0.11423960040969405,
+       "bottom": 0.10819333880590642,
+       "left": 0.11191440294488253,
+       "right": 0.1056033685073956,
+       "width": 0.7824822285477219,
+       "height": 0.7775670607843995
+      },
+      "inViewport": true,
+      "overlapTitleSupport": false,
+      "overlay": true,
+      "sameOverlay": true,
+      "titleText": "VISTE TU LEYENDA",
+      "stepText": "PASO 5 DE 5",
+      "primary": "Terminar",
+      "starsActive": 1,
+      "starsDone": 4,
+      "linesLit": 4,
+      "panelFont": 16,
+      "fps": 75,
+      "errors": []
+     },
+     "file": ".work\\v2.3b\\evidence\\after\\tutorial-390x844-step5.png"
+    }
+   ]
+  }
+ ],
+ "consoleErrors": []
+}

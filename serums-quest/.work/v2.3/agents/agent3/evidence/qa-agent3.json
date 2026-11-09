@@ -1,0 +1,2378 @@
+{
+  "startedAt": "2026-11-08T20:49:38.135Z",
+  "preview": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\integrated.html",
+  "sizes": [
+    {
+      "size": "640x360",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 4,
+          "fullyVisible": 4,
+          "columns": 4,
+          "cardHeight": 104,
+          "grid": {
+            "x": 17,
+            "y": 123,
+            "w": 606,
+            "h": 107,
+            "clientH": 107,
+            "scrollH": 987,
+            "scrollTop": 0
+          },
+          "headerH": 31,
+          "shell": {
+            "w": 620,
+            "h": 340
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 4,
+            "cached": 4,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 192,
+            "h": 40,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794170985869
+        },
+        "headH": 31,
+        "grid": {
+          "x": 17,
+          "y": 123,
+          "w": 606,
+          "h": 107
+        },
+        "card": {
+          "w": 144,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 4,
+        "thumbPlaceholders": 29,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 4,
+        "cached": 4,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "844x390",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 10,
+          "fullyVisible": 5,
+          "columns": 5,
+          "cardHeight": 104,
+          "grid": {
+            "x": 17,
+            "y": 124,
+            "w": 810,
+            "h": 127,
+            "clientH": 127,
+            "scrollH": 767,
+            "scrollTop": 0
+          },
+          "headerH": 32,
+          "shell": {
+            "w": 824,
+            "h": 370
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 10,
+            "cached": 10,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 257,
+            "h": 49,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794170989663
+        },
+        "headH": 32,
+        "grid": {
+          "x": 17,
+          "y": 124,
+          "w": 810,
+          "h": 127
+        },
+        "card": {
+          "w": 154,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 10,
+        "thumbPlaceholders": 23,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 10,
+        "cached": 10,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "1024x600",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 16,
+          "fullyVisible": 12,
+          "columns": 4,
+          "cardHeight": 136,
+          "grid": {
+            "x": 19,
+            "y": 134,
+            "w": 600,
+            "h": 448,
+            "clientH": 448,
+            "scrollH": 1293,
+            "scrollTop": 0
+          },
+          "headerH": 33,
+          "shell": {
+            "w": 1004,
+            "h": 580
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 16,
+            "cached": 16,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 360,
+            "h": 287,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794170993518
+        },
+        "headH": 33,
+        "grid": {
+          "x": 19,
+          "y": 134,
+          "w": 600,
+          "h": 448
+        },
+        "card": {
+          "w": 141,
+          "h": 136
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 16,
+        "thumbPlaceholders": 17,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 16,
+        "cached": 16,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "1308x662",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 16,
+          "fullyVisible": 12,
+          "columns": 4,
+          "cardHeight": 136,
+          "grid": {
+            "x": 169,
+            "y": 118,
+            "w": 690,
+            "h": 524,
+            "clientH": 524,
+            "scrollH": 1293,
+            "scrollTop": 0
+          },
+          "headerH": 60,
+          "shell": {
+            "w": 1288,
+            "h": 642
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 16,
+            "cached": 16,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 400,
+            "h": 317,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794170997439
+        },
+        "headH": 60,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524
+        },
+        "card": {
+          "w": 163,
+          "h": 136
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 16,
+        "thumbPlaceholders": 17,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 16,
+        "cached": 16,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "768x1024",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 20,
+          "fullyVisible": 15,
+          "columns": 5,
+          "cardHeight": 136,
+          "grid": {
+            "x": 21,
+            "y": 157,
+            "w": 726,
+            "h": 539,
+            "clientH": 539,
+            "scrollH": 1005,
+            "scrollTop": 0
+          },
+          "headerH": 53,
+          "shell": {
+            "w": 748,
+            "h": 1004
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 20,
+            "cached": 20,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 233,
+            "h": 190,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171001427
+        },
+        "headH": 53,
+        "grid": {
+          "x": 21,
+          "y": 157,
+          "w": 726,
+          "h": 539
+        },
+        "card": {
+          "w": 136,
+          "h": 136
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 20,
+        "thumbPlaceholders": 13,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 20,
+        "cached": 20,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "1280x720",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 20,
+          "fullyVisible": 16,
+          "columns": 4,
+          "cardHeight": 136,
+          "grid": {
+            "x": 169,
+            "y": 118,
+            "w": 662,
+            "h": 582,
+            "clientH": 582,
+            "scrollH": 1293,
+            "scrollTop": 0
+          },
+          "headerH": 60,
+          "shell": {
+            "w": 1260,
+            "h": 700
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 20,
+            "cached": 20,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 400,
+            "h": 329,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171005828
+        },
+        "headH": 60,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 662,
+          "h": 582
+        },
+        "card": {
+          "w": 156,
+          "h": 136
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 20,
+        "thumbPlaceholders": 13,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 20,
+        "cached": 20,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "1920x1080",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 33,
+          "fullyVisible": 33,
+          "columns": 6,
+          "cardHeight": 136,
+          "grid": {
+            "x": 389,
+            "y": 153,
+            "w": 862,
+            "h": 865,
+            "clientH": 865,
+            "scrollH": 865,
+            "scrollTop": 0
+          },
+          "headerH": 93,
+          "shell": {
+            "w": 1460,
+            "h": 1060
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 33,
+            "cached": 33,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 400,
+            "h": 329,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171009903
+        },
+        "headH": 93,
+        "grid": {
+          "x": 389,
+          "y": 153,
+          "w": 862,
+          "h": 865
+        },
+        "card": {
+          "w": 136,
+          "h": 136
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 33,
+        "thumbPlaceholders": 0,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 33,
+        "cached": 33,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "wardrobe-844x390",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "wardrobe",
+          "mode": "wardrobe",
+          "filters": {
+            "slot": "cabeza",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "todos",
+            "query": "",
+            "sort": "nombre"
+          },
+          "selectedId": null,
+          "total": 15,
+          "visible": 6,
+          "fullyVisible": 3,
+          "columns": 3,
+          "cardHeight": 104,
+          "grid": {
+            "x": 347,
+            "y": 189,
+            "w": 476,
+            "h": 132,
+            "clientH": 132,
+            "scrollH": 547,
+            "scrollTop": 0
+          },
+          "headerH": 32,
+          "shell": {
+            "w": 824,
+            "h": 370
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 6,
+            "cached": 6,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 0,
+            "wardrobe": 1
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 300,
+            "h": 181,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171029172
+        },
+        "headH": 32,
+        "grid": {
+          "x": 347,
+          "y": 189,
+          "w": 476,
+          "h": 132
+        },
+        "card": {
+          "w": 150,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "15 piezas",
+        "cardsRendered": 15,
+        "thumbImgs": 6,
+        "thumbPlaceholders": 9,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 6,
+        "cached": 6,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 0,
+        "wardrobe": 1
+      }
+    },
+    {
+      "size": "wardrobe-640x360",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "wardrobe",
+          "mode": "wardrobe",
+          "filters": {
+            "slot": "cabeza",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "todos",
+            "query": "",
+            "sort": "nombre"
+          },
+          "selectedId": null,
+          "total": 15,
+          "visible": 4,
+          "fullyVisible": 2,
+          "columns": 2,
+          "cardHeight": 104,
+          "grid": {
+            "x": 277,
+            "y": 188,
+            "w": 332,
+            "h": 118,
+            "clientH": 118,
+            "scrollH": 877,
+            "scrollTop": 0
+          },
+          "headerH": 31,
+          "shell": {
+            "w": 620,
+            "h": 340
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 4,
+            "cached": 4,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 0,
+            "wardrobe": 1
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 230,
+            "h": 165,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171032537
+        },
+        "headH": 31,
+        "grid": {
+          "x": 277,
+          "y": 188,
+          "w": 332,
+          "h": 118
+        },
+        "card": {
+          "w": 156,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "15 piezas",
+        "cardsRendered": 15,
+        "thumbImgs": 4,
+        "thumbPlaceholders": 11,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 4,
+        "cached": 4,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 0,
+        "wardrobe": 1
+      }
+    },
+    {
+      "size": "shop-small-844x390",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 10,
+          "fullyVisible": 0,
+          "columns": 5,
+          "cardHeight": 104,
+          "grid": {
+            "x": 17,
+            "y": 124,
+            "w": 810,
+            "h": 127,
+            "clientH": 127,
+            "scrollH": 767,
+            "scrollTop": 180
+          },
+          "headerH": 32,
+          "shell": {
+            "w": 824,
+            "h": 370
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 15,
+            "cached": 15,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 257,
+            "h": 49,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171036120
+        },
+        "headH": 32,
+        "grid": {
+          "x": 17,
+          "y": 124,
+          "w": 810,
+          "h": 127
+        },
+        "card": {
+          "w": 154,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 15,
+        "thumbPlaceholders": 18,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 15,
+        "cached": 15,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    },
+    {
+      "size": "shop-small-640x360",
+      "ok": true,
+      "measure": {
+        "state": {
+          "screen": "shop",
+          "mode": "shop",
+          "filters": {
+            "slot": "todas",
+            "rarity": "todas",
+            "status": "todos",
+            "collection": "originales",
+            "query": "",
+            "sort": "rareza"
+          },
+          "selectedId": "c-efecto-constelacion",
+          "total": 33,
+          "visible": 8,
+          "fullyVisible": 0,
+          "columns": 4,
+          "cardHeight": 104,
+          "grid": {
+            "x": 17,
+            "y": 123,
+            "w": 606,
+            "h": 107,
+            "clientH": 107,
+            "scrollH": 987,
+            "scrollTop": 180
+          },
+          "headerH": 31,
+          "shell": {
+            "w": 620,
+            "h": 340
+          },
+          "overflowX": false,
+          "overlayScrollY": 0,
+          "thumbs": {
+            "generated": 8,
+            "cached": 8,
+            "queued": 0
+          },
+          "mounts": {
+            "shop": 1,
+            "wardrobe": 0
+          },
+          "renderCount": 1,
+          "canvas": {
+            "w": 192,
+            "h": 40,
+            "same": true,
+            "canvasCount": 2
+          },
+          "coins": 500,
+          "ownedCosmetics": 34,
+          "heroId": "noa",
+          "at": 1794171039723
+        },
+        "headH": 31,
+        "grid": {
+          "x": 17,
+          "y": 123,
+          "w": 606,
+          "h": 107
+        },
+        "card": {
+          "w": 144,
+          "h": 104
+        },
+        "navs": 1,
+        "screenOverflowX": 0,
+        "overlayOverflowX": 0,
+        "overlayOverflowY": 0,
+        "bodyScrollX": 0,
+        "countText": "33 resultados",
+        "cardsRendered": 33,
+        "thumbImgs": 8,
+        "thumbPlaceholders": 25,
+        "empty": false
+      },
+      "renderCount": 1,
+      "thumbsAtOpen": {
+        "generated": 8,
+        "cached": 8,
+        "queued": 0
+      },
+      "mounts": {
+        "shop": 1,
+        "wardrobe": 0
+      }
+    }
+  ],
+  "interactions": {
+    "before": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "originales",
+          "query": "",
+          "sort": "rareza"
+        },
+        "selectedId": "c-efecto-constelacion",
+        "total": 33,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 1293,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 16,
+          "cached": 16,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171014167
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "33 resultados",
+      "cardsRendered": 33,
+      "thumbImgs": 16,
+      "thumbPlaceholders": 17,
+      "empty": false
+    },
+    "demoOwned": 13,
+    "scrollBeforeSearch": 280,
+    "searchPending": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "originales",
+          "query": "corona",
+          "sort": "rareza"
+        },
+        "selectedId": "c-efecto-constelacion",
+        "total": 33,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 1293,
+          "scrollTop": 280
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 24,
+          "cached": 24,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171014378
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "33 resultados",
+      "cardsRendered": 33,
+      "thumbImgs": 24,
+      "thumbPlaceholders": 9,
+      "empty": false
+    },
+    "searchApplied": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "originales",
+          "query": "corona",
+          "sort": "rareza"
+        },
+        "selectedId": "c-cabeza-corona",
+        "total": 1,
+        "visible": 1,
+        "fullyVisible": 1,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 524,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 24,
+          "cached": 24,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171014645
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 166,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "1 resultados",
+      "cardsRendered": 1,
+      "thumbImgs": 1,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "search": {
+      "scrollBefore": 280,
+      "pendingTotal": 33,
+      "appliedTotal": 1,
+      "scrollAfter": 0,
+      "renderDelta": 0,
+      "canvasSame": true,
+      "countText": "1 resultados"
+    },
+    "afterClear": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "originales",
+          "query": "",
+          "sort": "rareza"
+        },
+        "selectedId": "c-cabeza-corona",
+        "total": 33,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 1293,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 24,
+          "cached": 24,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171015152
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "33 resultados",
+      "cardsRendered": 33,
+      "thumbImgs": 24,
+      "thumbPlaceholders": 9,
+      "empty": false
+    },
+    "clear": {
+      "total": 33,
+      "query": "",
+      "renderDelta": 0
+    },
+    "sort": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "originales",
+          "query": "",
+          "sort": "precio-asc"
+        },
+        "selectedId": "c-cabeza-corona",
+        "total": 33,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 1293,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 33,
+          "cached": 33,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171015432
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "33 resultados",
+      "cardsRendered": 33,
+      "thumbImgs": 33,
+      "thumbPlaceholders": 0,
+      "empty": false,
+      "renderDelta": 0
+    },
+    "sortPrices": [
+      {
+        "id": "c-accesorios-brujula",
+        "price": "◇85"
+      },
+      {
+        "id": "c-efecto-bruma",
+        "price": "◇90"
+      },
+      {
+        "id": "c-cabeza-gorro",
+        "price": ""
+      },
+      {
+        "id": "c-piernas-ruta",
+        "price": "◇95"
+      },
+      {
+        "id": "c-peinado-coleta",
+        "price": ""
+      },
+      {
+        "id": "c-peinado-mono",
+        "price": "◇110"
+      },
+      {
+        "id": "c-accesorios-bolso",
+        "price": "◇120"
+      },
+      {
+        "id": "c-torso-chaleco",
+        "price": "◇130"
+      }
+    ],
+    "status": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "tienda",
+          "collection": "originales",
+          "query": "",
+          "sort": "precio-asc"
+        },
+        "selectedId": "c-accesorios-brujula",
+        "total": 23,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 861,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 33,
+          "cached": 33,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171015978
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "23 resultados",
+      "cardsRendered": 23,
+      "thumbImgs": 23,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "statusCards": [
+      {
+        "id": "c-accesorios-brujula",
+        "status": "En tienda",
+        "price": "◇85"
+      },
+      {
+        "id": "c-efecto-bruma",
+        "status": "En tienda",
+        "price": "◇90"
+      },
+      {
+        "id": "c-piernas-ruta",
+        "status": "En tienda",
+        "price": "◇95"
+      },
+      {
+        "id": "c-peinado-mono",
+        "status": "En tienda",
+        "price": "◇110"
+      },
+      {
+        "id": "c-accesorios-bolso",
+        "status": "En tienda",
+        "price": "◇120"
+      },
+      {
+        "id": "c-torso-chaleco",
+        "status": "En tienda",
+        "price": "◇130"
+      },
+      {
+        "id": "c-marco-bronce",
+        "status": "En tienda",
+        "price": "◇140"
+      },
+      {
+        "id": "c-amuleto-nudo",
+        "status": "En tienda",
+        "price": "◇170"
+      },
+      {
+        "id": "c-piernas-falda",
+        "status": "En tienda",
+        "price": "◇190"
+      },
+      {
+        "id": "c-efecto-chispas",
+        "status": "En tienda",
+        "price": "◇200"
+      },
+      {
+        "id": "c-accesorios-gafas",
+        "status": "En tienda",
+        "price": "◇210"
+      },
+      {
+        "id": "c-torso-bata",
+        "status": "En tienda",
+        "price": "◇240"
+      },
+      {
+        "id": "c-amuleto-enfoque",
+        "status": "En tienda",
+        "price": "◇300"
+      },
+      {
+        "id": "c-accesorios-pluma",
+        "status": "En tienda",
+        "price": "◇320"
+      },
+      {
+        "id": "c-efecto-aura",
+        "status": "En tienda",
+        "price": "◇330"
+      },
+      {
+        "id": "c-peinado-mecha",
+        "status": "En tienda",
+        "price": "◇340"
+      },
+      {
+        "id": "c-piernas-grebas",
+        "status": "En tienda",
+        "price": "◇350"
+      },
+      {
+        "id": "c-torso-poncho",
+        "status": "En tienda",
+        "price": "◇360"
+      },
+      {
+        "id": "c-torso-abrigo",
+        "status": "En tienda",
+        "price": "◇380"
+      },
+      {
+        "id": "c-marco-platino",
+        "status": "En tienda",
+        "price": "◇400"
+      },
+      {
+        "id": "c-amuleto-sello",
+        "status": "En tienda",
+        "price": "◇540"
+      },
+      {
+        "id": "c-torso-manto",
+        "status": "En tienda",
+        "price": "◇620"
+      },
+      {
+        "id": "c-marco-vacio",
+        "status": "En tienda",
+        "price": "◇650"
+      }
+    ],
+    "statusCheck": {
+      "total": 23,
+      "allEnTienda": true,
+      "renderDelta": 0,
+      "scrollTop": 0
+    },
+    "collection": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "extras",
+          "query": "",
+          "sort": "precio-asc"
+        },
+        "selectedId": "x-aura-amanecer",
+        "total": 36,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 1293,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 42,
+          "cached": 42,
+          "queued": 7
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171016603
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "36 resultados",
+      "cardsRendered": 36,
+      "thumbImgs": 9,
+      "thumbPlaceholders": 27,
+      "empty": false
+    },
+    "collectionCards": [
+      {
+        "id": "x-aura-amanecer",
+        "status": "Poseído"
+      },
+      {
+        "id": "x-buho-cometa",
+        "status": "Poseído"
+      },
+      {
+        "id": "x-capa-errorario",
+        "status": "Poseído"
+      },
+      {
+        "id": "x-titulo-cartografo",
+        "status": "Se gana"
+      },
+      {
+        "id": "x-titulo-circulo-cerrado",
+        "status": "Se gana"
+      },
+      {
+        "id": "x-titulo-criterio",
+        "status": "Se gana"
+      }
+    ],
+    "collectionCheck": {
+      "total": 36,
+      "allExtraIds": true,
+      "statuses": [
+        "Poseído",
+        "Poseído",
+        "Poseído",
+        "Se gana",
+        "Se gana",
+        "Se gana"
+      ],
+      "renderDelta": 0
+    },
+    "empty": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "extras",
+          "query": "zzzz",
+          "sort": "precio-asc"
+        },
+        "selectedId": null,
+        "total": 0,
+        "visible": 0,
+        "fullyVisible": 0,
+        "columns": 4,
+        "cardHeight": 0,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 524,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 49,
+          "cached": 49,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171017113
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": null,
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "0 resultados",
+      "cardsRendered": 0,
+      "thumbImgs": 0,
+      "thumbPlaceholders": 0,
+      "empty": true
+    },
+    "emptyCheck": {
+      "total": 0,
+      "emptyVisible": true,
+      "countText": "0 resultados"
+    },
+    "reset": {
+      "state": {
+        "screen": "shop",
+        "mode": "shop",
+        "filters": {
+          "slot": "todas",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "todos",
+          "query": "",
+          "sort": "rareza"
+        },
+        "selectedId": "c-efecto-constelacion",
+        "total": 69,
+        "visible": 16,
+        "fullyVisible": 12,
+        "columns": 4,
+        "cardHeight": 136,
+        "grid": {
+          "x": 169,
+          "y": 118,
+          "w": 690,
+          "h": 524,
+          "clientH": 524,
+          "scrollH": 2589,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 54,
+          "cached": 54,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 0
+        },
+        "renderCount": 1,
+        "canvas": {
+          "w": 400,
+          "h": 317,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 500,
+        "ownedCosmetics": 34,
+        "heroId": "noa",
+        "at": 1794171017713
+      },
+      "headH": 60,
+      "grid": {
+        "x": 169,
+        "y": 118,
+        "w": 690,
+        "h": 524
+      },
+      "card": {
+        "w": 163,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "69 resultados",
+      "cardsRendered": 69,
+      "thumbImgs": 54,
+      "thumbPlaceholders": 15,
+      "empty": false
+    },
+    "resetCheck": {
+      "total": 69,
+      "filters": {
+        "slot": "todas",
+        "rarity": "todas",
+        "status": "todos",
+        "collection": "todos",
+        "query": "",
+        "sort": "rareza"
+      },
+      "renderDelta": 0
+    },
+    "thumbsBeforeScroll": {
+      "generated": 54,
+      "cached": 54,
+      "queued": 0
+    },
+    "thumbsAfterScroll": {
+      "generated": 54,
+      "cached": 54,
+      "queued": 0
+    },
+    "thumbsCheck": {
+      "generatedAtOpen": 16,
+      "generatedBeforeScroll": 54,
+      "generatedAfterScroll": 54,
+      "cached": 54,
+      "total": 69
+    },
+    "select": {
+      "targetId": "c-torso-poncho",
+      "selectedId": "c-torso-poncho",
+      "detailTitle": "Poncho de viaje",
+      "scrollBefore": 430,
+      "scrollAfter": 430,
+      "renderDelta": 0,
+      "canvasSame": true,
+      "sameNodeCount": 2
+    },
+    "buy": {
+      "id": "c-accesorios-brujula",
+      "price": 85,
+      "confirmVisible": true,
+      "coinsBefore": 500,
+      "coinsAfter": 415,
+      "ownedBefore": 34,
+      "ownedAfter": 35,
+      "selectedId": "c-accesorios-brujula",
+      "cardStatus": "Poseído",
+      "countText": "33 resultados",
+      "coinsChip": "◇415",
+      "renderDelta": 0,
+      "canvasSame": true,
+      "scrollBefore": 430,
+      "scrollAfter": 0
+    },
+    "equip": {
+      "outfit": {
+        "accesorios": "c-accesorios-brujula"
+      },
+      "draft": {},
+      "renderCount": 1,
+      "canvasSame": true,
+      "equippedWith": true,
+      "renderDelta": 0
+    }
+  },
+  "wardrobe": {
+    "before": {
+      "state": {
+        "screen": "wardrobe",
+        "mode": "wardrobe",
+        "filters": {
+          "slot": "cabeza",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "todos",
+          "query": "",
+          "sort": "nombre"
+        },
+        "selectedId": null,
+        "total": 15,
+        "visible": 15,
+        "fullyVisible": 12,
+        "columns": 6,
+        "cardHeight": 136,
+        "grid": {
+          "x": 429,
+          "y": 178,
+          "w": 858,
+          "h": 380,
+          "clientH": 380,
+          "scrollH": 429,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 59,
+          "cached": 59,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 1
+        },
+        "renderCount": 2,
+        "canvas": {
+          "w": 380,
+          "h": 393,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 415,
+        "ownedCosmetics": 35,
+        "heroId": "noa",
+        "at": 1794171023168
+      },
+      "headH": 60,
+      "grid": {
+        "x": 429,
+        "y": 178,
+        "w": 858,
+        "h": 380
+      },
+      "card": {
+        "w": 134,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "15 piezas",
+      "cardsRendered": 15,
+      "thumbImgs": 15,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "mounts": {
+      "preview": true,
+      "canvas": true,
+      "grid": true,
+      "visor": true
+    },
+    "itemIds": [
+      {
+        "id": "c-cabeza-auriculares",
+        "status": "Poseído"
+      },
+      {
+        "id": "c-cabeza-casco",
+        "status": "Poseído"
+      },
+      {
+        "id": "c-cabeza-corona",
+        "status": "Poseído"
+      },
+      {
+        "id": "c-cabeza-diadema",
+        "status": "Poseído"
+      },
+      {
+        "id": "c-cabeza-gorro",
+        "status": "Poseído"
+      }
+    ],
+    "afterSelect": {
+      "state": {
+        "screen": "wardrobe",
+        "mode": "wardrobe",
+        "filters": {
+          "slot": "cabeza",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "todos",
+          "query": "",
+          "sort": "nombre"
+        },
+        "selectedId": "c-cabeza-auriculares",
+        "total": 15,
+        "visible": 15,
+        "fullyVisible": 12,
+        "columns": 6,
+        "cardHeight": 136,
+        "grid": {
+          "x": 429,
+          "y": 178,
+          "w": 858,
+          "h": 336,
+          "clientH": 336,
+          "scrollH": 429,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 59,
+          "cached": 59,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 1
+        },
+        "renderCount": 2,
+        "canvas": {
+          "w": 380,
+          "h": 393,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 415,
+        "ownedCosmetics": 35,
+        "heroId": "noa",
+        "at": 1794171023821
+      },
+      "headH": 60,
+      "grid": {
+        "x": 429,
+        "y": 178,
+        "w": 858,
+        "h": 336
+      },
+      "card": {
+        "w": 134,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "15 piezas",
+      "cardsRendered": 15,
+      "thumbImgs": 15,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "select": {
+      "id": "c-cabeza-auriculares",
+      "selectedId": "c-cabeza-auriculares",
+      "draftKeys": 2,
+      "renderDelta": 0,
+      "canvasSame": true
+    },
+    "slot": {
+      "state": {
+        "screen": "wardrobe",
+        "mode": "wardrobe",
+        "filters": {
+          "slot": "torso",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "todos",
+          "query": "",
+          "sort": "nombre"
+        },
+        "selectedId": null,
+        "total": 6,
+        "visible": 6,
+        "fullyVisible": 6,
+        "columns": 6,
+        "cardHeight": 136,
+        "grid": {
+          "x": 429,
+          "y": 178,
+          "w": 858,
+          "h": 371,
+          "clientH": 371,
+          "scrollH": 371,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 59,
+          "cached": 59,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 1
+        },
+        "renderCount": 2,
+        "canvas": {
+          "w": 380,
+          "h": 393,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 415,
+        "ownedCosmetics": 35,
+        "heroId": "noa",
+        "at": 1794171024461
+      },
+      "headH": 60,
+      "grid": {
+        "x": 429,
+        "y": 178,
+        "w": 858,
+        "h": 371
+      },
+      "card": {
+        "w": 136,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "6 piezas",
+      "cardsRendered": 6,
+      "thumbImgs": 6,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "slotCheck": {
+      "slot": "torso",
+      "renderDelta": 0,
+      "canvasSame": true,
+      "total": 6
+    },
+    "search": {
+      "state": {
+        "screen": "wardrobe",
+        "mode": "wardrobe",
+        "filters": {
+          "slot": "torso",
+          "rarity": "todas",
+          "status": "todos",
+          "collection": "todos",
+          "query": "manto",
+          "sort": "nombre"
+        },
+        "selectedId": null,
+        "total": 1,
+        "visible": 1,
+        "fullyVisible": 1,
+        "columns": 6,
+        "cardHeight": 136,
+        "grid": {
+          "x": 429,
+          "y": 178,
+          "w": 858,
+          "h": 371,
+          "clientH": 371,
+          "scrollH": 371,
+          "scrollTop": 0
+        },
+        "headerH": 60,
+        "shell": {
+          "w": 1288,
+          "h": 642
+        },
+        "overflowX": false,
+        "overlayScrollY": 0,
+        "thumbs": {
+          "generated": 59,
+          "cached": 59,
+          "queued": 0
+        },
+        "mounts": {
+          "shop": 1,
+          "wardrobe": 1
+        },
+        "renderCount": 2,
+        "canvas": {
+          "w": 380,
+          "h": 393,
+          "same": true,
+          "canvasCount": 2
+        },
+        "coins": 415,
+        "ownedCosmetics": 35,
+        "heroId": "noa",
+        "at": 1794171025035
+      },
+      "headH": 60,
+      "grid": {
+        "x": 429,
+        "y": 178,
+        "w": 858,
+        "h": 371
+      },
+      "card": {
+        "w": 136,
+        "h": 136
+      },
+      "navs": 1,
+      "screenOverflowX": 0,
+      "overlayOverflowX": 0,
+      "overlayOverflowY": 0,
+      "bodyScrollX": 0,
+      "countText": "1 piezas",
+      "cardsRendered": 1,
+      "thumbImgs": 1,
+      "thumbPlaceholders": 0,
+      "empty": false
+    },
+    "searchCheck": {
+      "total": 1,
+      "query": "manto",
+      "renderDelta": 0
+    },
+    "saved": {
+      "dirtyBefore": true,
+      "outfit": {
+        "cabeza": "c-cabeza-auriculares",
+        "accesorios": "c-accesorios-brujula"
+      },
+      "renderCount": 2,
+      "renderDelta": 0
+    }
+  },
+  "thumbs": {},
+  "errors": [],
+  "shots": [
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-640x360.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-844x390.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1024x600.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-768x1024.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1280x720.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1920x1080.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-inicial.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-busqueda.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-orden-precio.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-filtro-tienda.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-coleccion-extras.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-sin-resultados.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-scroll.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-compra.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-1308x662-equipado.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-1308x662.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-1308x662-seleccion.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-1308x662-ranura-torso.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-1308x662-guardado.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-844x390.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\wardrobe-640x360.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-small-844x390.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\shots\\shop-small-640x360.png"
+  ],
+  "navs": 1,
+  "finishedAt": "2026-11-08T20:50:39.871Z"
+}

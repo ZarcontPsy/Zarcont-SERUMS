@@ -1,0 +1,44 @@
+{
+  "startedAt": "2026-11-08T20:42:39.266Z",
+  "cases": [
+    {
+      "id": "BEFORE-TUTORIAL-ALLOWED",
+      "data": {
+        "before": {
+          "screen": "tutorial",
+          "overlayMarked": true,
+          "title": false,
+          "step": "Paso 1 de 5",
+          "render": 1
+        },
+        "after": {
+          "screen": "tutorial",
+          "overlayMarked": false,
+          "title": false,
+          "step": "Paso 2 de 5",
+          "render": 2
+        },
+        "overlayRemounted": true,
+        "renderDelta": 1,
+        "titleVisibleBefore": false,
+        "titleVisibleAfter": false
+      },
+      "at": "2026-11-08T20:42:45.208Z"
+    },
+    {
+      "id": "BEFORE-STORAGE-BLOCKED",
+      "data": {
+        "screen": "recovery",
+        "recovery": true,
+        "recoveryTitle": "No he borrado tu partida.",
+        "tutorial": false,
+        "title": false,
+        "storageBanner": true
+      },
+      "at": "2026-11-08T20:42:51.030Z"
+    }
+  ],
+  "shots": [],
+  "errors": [],
+  "finishedAt": "2026-11-08T20:42:51.030Z"
+}

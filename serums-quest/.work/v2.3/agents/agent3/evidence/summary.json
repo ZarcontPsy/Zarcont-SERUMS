@@ -1,0 +1,343 @@
+{
+  "agent": "3 · catálogo de tienda e inventario",
+  "preview": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent3\\integrated.html",
+  "finishedAt": "2026-11-08T20:50:39.871Z",
+  "noFullReloads": true,
+  "navigationCount": 1,
+  "errors": [],
+  "sizes": [
+    {
+      "size": "640x360",
+      "total": 33,
+      "visible": 4,
+      "fullyVisible": 4,
+      "columns": 4,
+      "cardHeight": 104,
+      "headerH": 31,
+      "canvas": "192x40",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 4,
+      "gridH": 107,
+      "scrollable": true
+    },
+    {
+      "size": "844x390",
+      "total": 33,
+      "visible": 10,
+      "fullyVisible": 5,
+      "columns": 5,
+      "cardHeight": 104,
+      "headerH": 32,
+      "canvas": "257x49",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 10,
+      "gridH": 127,
+      "scrollable": true
+    },
+    {
+      "size": "1024x600",
+      "total": 33,
+      "visible": 16,
+      "fullyVisible": 12,
+      "columns": 4,
+      "cardHeight": 136,
+      "headerH": 33,
+      "canvas": "360x287",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 16,
+      "gridH": 448,
+      "scrollable": true
+    },
+    {
+      "size": "1308x662",
+      "total": 33,
+      "visible": 16,
+      "fullyVisible": 12,
+      "columns": 4,
+      "cardHeight": 136,
+      "headerH": 60,
+      "canvas": "400x317",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 16,
+      "gridH": 524,
+      "scrollable": true
+    },
+    {
+      "size": "768x1024",
+      "total": 33,
+      "visible": 20,
+      "fullyVisible": 15,
+      "columns": 5,
+      "cardHeight": 136,
+      "headerH": 53,
+      "canvas": "233x190",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 20,
+      "gridH": 539,
+      "scrollable": true
+    },
+    {
+      "size": "1280x720",
+      "total": 33,
+      "visible": 20,
+      "fullyVisible": 16,
+      "columns": 4,
+      "cardHeight": 136,
+      "headerH": 60,
+      "canvas": "400x329",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 20,
+      "gridH": 582,
+      "scrollable": true
+    },
+    {
+      "size": "1920x1080",
+      "total": 33,
+      "visible": 33,
+      "fullyVisible": 33,
+      "columns": 6,
+      "cardHeight": 136,
+      "headerH": 93,
+      "canvas": "400x329",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 33,
+      "gridH": 865,
+      "scrollable": false
+    },
+    {
+      "size": "wardrobe-844x390",
+      "total": 15,
+      "visible": 6,
+      "fullyVisible": 3,
+      "columns": 3,
+      "cardHeight": 104,
+      "headerH": 32,
+      "canvas": "300x181",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 6,
+      "gridH": 132,
+      "scrollable": true
+    },
+    {
+      "size": "wardrobe-640x360",
+      "total": 15,
+      "visible": 4,
+      "fullyVisible": 2,
+      "columns": 2,
+      "cardHeight": 104,
+      "headerH": 31,
+      "canvas": "230x165",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 4,
+      "gridH": 118,
+      "scrollable": true
+    },
+    {
+      "size": "shop-small-844x390",
+      "total": 33,
+      "visible": 10,
+      "fullyVisible": 0,
+      "columns": 5,
+      "cardHeight": 104,
+      "headerH": 32,
+      "canvas": "257x49",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 15,
+      "gridH": 127,
+      "scrollable": true
+    },
+    {
+      "size": "shop-small-640x360",
+      "total": 33,
+      "visible": 8,
+      "fullyVisible": 0,
+      "columns": 4,
+      "cardHeight": 104,
+      "headerH": 31,
+      "canvas": "192x40",
+      "overflowX": 0,
+      "overlayScrollY": 0,
+      "thumbsAtOpen": 8,
+      "gridH": 107,
+      "scrollable": true
+    }
+  ],
+  "check12At1308x662": {
+    "total": 33,
+    "visibleByViewportIntersection": 16,
+    "fullyVisible": 12,
+    "columns": 4,
+    "cardHeight": 136,
+    "headerH": 60,
+    "viewer": {
+      "w": 400,
+      "h": 317,
+      "same": true,
+      "canvasCount": 2
+    },
+    "verdict": "CUMPLE"
+  },
+  "interactions": {
+    "searchDebounce": {
+      "pendingAt70ms": 33,
+      "appliedTotal": 1,
+      "scrollBefore": 280,
+      "scrollAfter": 0,
+      "renderDelta": 0,
+      "canvasSame": true,
+      "countText": "1 resultados"
+    },
+    "clear": {
+      "total": 33,
+      "query": "",
+      "renderDelta": 0
+    },
+    "sort": {
+      "mode": "precio-asc",
+      "renderDelta": 0,
+      "firstPrices": [
+        "◇85",
+        "◇90",
+        "",
+        "◇95",
+        "",
+        "◇110",
+        "◇120",
+        "◇130"
+      ],
+      "order": [
+        "c-accesorios-brujula",
+        "c-efecto-bruma",
+        "c-cabeza-gorro",
+        "c-piernas-ruta",
+        "c-peinado-coleta",
+        "c-peinado-mono",
+        "c-accesorios-bolso",
+        "c-torso-chaleco"
+      ]
+    },
+    "statusFilter": {
+      "total": 23,
+      "allEnTienda": true,
+      "renderDelta": 0,
+      "scrollTop": 0
+    },
+    "collectionExtras": {
+      "total": 36,
+      "allExtraIds": true,
+      "statuses": [
+        "Poseído",
+        "Poseído",
+        "Poseído",
+        "Se gana",
+        "Se gana",
+        "Se gana"
+      ],
+      "renderDelta": 0
+    },
+    "emptySearch": {
+      "total": 0,
+      "emptyVisible": true,
+      "countText": "0 resultados"
+    },
+    "reset": {
+      "total": 69,
+      "filters": {
+        "slot": "todas",
+        "rarity": "todas",
+        "status": "todos",
+        "collection": "todos",
+        "query": "",
+        "sort": "rareza"
+      },
+      "renderDelta": 0
+    },
+    "selectPreservesScroll": {
+      "selectedId": "c-torso-poncho",
+      "scrollBefore": 430,
+      "scrollAfter": 430,
+      "renderDelta": 0,
+      "canvasSame": true
+    },
+    "thumbsOnDemand": {
+      "atOpen": 16,
+      "afterScroll": 54,
+      "cached": 54
+    },
+    "buy": {
+      "id": "c-accesorios-brujula",
+      "price": 85,
+      "coinsBefore": 500,
+      "coinsAfter": 415,
+      "ownedBefore": 34,
+      "ownedAfter": 35,
+      "cardStatus": "Poseído",
+      "coinsChip": "◇415",
+      "countText": "33 resultados",
+      "renderDelta": 0,
+      "canvasSame": true
+    },
+    "equip": {
+      "outfit": {
+        "accesorios": "c-accesorios-brujula"
+      },
+      "renderDelta": 0,
+      "canvasSame": true
+    }
+  },
+  "wardrobe": {
+    "mounts": {
+      "preview": true,
+      "canvas": true,
+      "grid": true,
+      "visor": true
+    },
+    "size1308": {
+      "total": 15,
+      "visible": 15,
+      "fullyVisible": 12,
+      "columns": 6,
+      "canvas": {
+        "w": 380,
+        "h": 393,
+        "same": true,
+        "canvasCount": 2
+      },
+      "headerH": 60
+    },
+    "select": {
+      "selectedId": "c-cabeza-auriculares",
+      "renderDelta": 0,
+      "canvasSame": true
+    },
+    "slotChange": {
+      "slot": "torso",
+      "total": 6,
+      "renderDelta": 0,
+      "canvasSame": true
+    },
+    "search": {
+      "query": "manto",
+      "total": 1,
+      "renderDelta": 0
+    },
+    "save": {
+      "dirtyBefore": true,
+      "outfit": {
+        "cabeza": "c-cabeza-auriculares",
+        "accesorios": "c-accesorios-brujula"
+      },
+      "renderDelta": 0
+    }
+  }
+}

@@ -694,12 +694,15 @@ function addPieceGroup(avatar, parent, group, c, animList, slot) {
   avatar.cosmetics.groups.push(group);
   group.userData.cosmeticId = c.id;
   group.userData.slot = slot;
-  if (group.userData.anim) {
-    group.userData.anim.forEach(function (spec) {
-      spec.group = group;
+  /* Recoge animaciones del grupo y de sus hijos: las piezas nuevas pueden
+     animar aspas, alas u hojas por separado. */
+  group.traverse(function (node) {
+    if (!node.userData || !node.userData.anim) return;
+    node.userData.anim.forEach(function (spec) {
+      if (!spec.group) spec.group = node;
       animList.push(spec);
     });
-  }
+  });
   return group;
 }
 function clearAvatarCosmetics(avatar) {
@@ -750,7 +753,10 @@ function applyOutfitToAvatar(avatar, characterId, outfitOverride) {
     if (!c) return;
     var stage = cosmeticStage(c);
     var group = null;
-    if (slot === 'cabeza') group = buildHeadPiece(c, qf);
+    var customBuilder = (window.V23C && V23C.pieces && slot !== 'piernas') ? V23C.pieces[id] : null;
+    if (customBuilder) {
+      group = customBuilder(c, qf, avatar, slot);
+    } else if (slot === 'cabeza') group = buildHeadPiece(c, qf);
     else if (slot === 'peinado') group = buildHairPiece(c, qf);
     else if (slot === 'torso') group = buildTorsoPiece(c, qf);
     else if (slot === 'accesorios') group = (c.id === 'c-accesorios-gafas' ? buildHeadAccessory(c, qf) : c.id === 'c-accesorios-brujula' ? buildWristCompass(c, qf) : buildHipExtra(c, qf, avatar));
@@ -764,6 +770,7 @@ function applyOutfitToAvatar(avatar, characterId, outfitOverride) {
     } else if (slot === 'mascota') group = buildPetPiece(c, qf, avatar);
     else if (slot === 'estela') group = buildTrailPiece(c, qf, avatar);
     if (group) {
+      if (slot === 'marcos') avatar.cosmetics.frame = group;
       var parent = chooseAnchorForCosmetic(c, avatar);
       if (slot === 'extras') parent = avatar.body;
       addPieceGroup(avatar, parent, group, c, animated, slot);
@@ -774,7 +781,8 @@ function applyOutfitToAvatar(avatar, characterId, outfitOverride) {
   });
   var pants = outfit.piernas ? COSMETIC_BY_ID[outfit.piernas] : null;
   if (pants) {
-    var pieces = buildLegPair(pants, qf, avatar);
+    var customPants = (window.V23C && V23C.pieces) ? V23C.pieces[pants.id] : null;
+    var pieces = customPants ? customPants(pants, qf, avatar, 'piernas') : buildLegPair(pants, qf, avatar);
     if (Array.isArray(pieces)) {
       pieces.forEach(function (p) {
         addPieceGroup(avatar, p.parent, p.group, pants, animated, 'piernas');
@@ -798,6 +806,11 @@ function buildWristCompass(c, qf) {
 }
 function animateAvatarCosmetics(av, dt, time, running, speedNorm) {
   if (!av || !av.cosmetics) return;
+  /* Reducir movimiento congela también los adornos 3D: no es solo CSS. */
+  try {
+    if (state && state.settings && state.settings.reducedMotion) { dt = 0; time = 0; }
+  } catch (e) {}
+  try { if (window.V23C && V23C.update) V23C.update(av, dt, time, running, speedNorm); } catch (e) {}
   var qf = effectQualityFactor();
   av.cosmetics.animated.forEach(function (a) {
     var g = a.group;

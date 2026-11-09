@@ -1,0 +1,41 @@
+{
+ "startedAt": "2026-11-08T23:49:15.629Z",
+ "matrix": {
+  "total": 690,
+  "pass": 690,
+  "fail": 0,
+  "cases": 690
+ },
+ "anchorsBefore": {
+  "ready": true,
+  "reason": "",
+  "fitted": 630,
+  "errors": [],
+  "errorCount": 0,
+  "qaReady": true,
+  "avatars": 10
+ },
+ "catalog": {
+  "total": 33,
+  "visible": 16,
+  "canvas": {
+   "w": 400,
+   "h": 317,
+   "id": "",
+   "sameNode": false
+  }
+ },
+ "catalogAfter": {
+  "total": 33,
+  "visible": 16,
+  "screen": "shop",
+  "canvas": {
+   "w": 400,
+   "h": 317,
+   "id": "",
+   "sameNode": false
+  }
+ },
+ "errors": [],
+ "warnings": []
+}

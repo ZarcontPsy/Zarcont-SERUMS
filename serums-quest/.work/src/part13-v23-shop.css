@@ -1,0 +1,479 @@
+/* =========================================================================
+   V2.3 · FASE 1 · AGENTE 3 · CATÁLOGO E INVENTARIO
+   -------------------------------------------------------------------------
+   Tres zonas en escritorio (riel de filtros, catálogo, visor+detalle),
+   tarjetas compactas de 136 px, cuadrícula a toda la altura, cabecera
+   comprimible y miniaturas con esqueleto limpio (sin salto de layout).
+   Todo el estilo nuevo va prefijado .v23*; los overrides de V2.2 se aplican
+   solo dentro de .v23Grid / .v23ShopLayout / .v23WardrobeGrid.
+   ========================================================================= */
+
+/* -------------------------------------------------------------------------
+   Marco de la pantalla: el overlay no desplaza y el shell llena el alto
+   ------------------------------------------------------------------------- */
+.overlay.v23Overlay {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  padding: 10px;
+  overflow: hidden;
+}
+.v23Overlay .overlayShell {
+  width: min(1460px, 100%);
+  max-width: 100%;
+  height: calc(100dvh - 20px);
+  max-height: calc(100dvh - 20px);
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+/* -------------------------------------------------------------------------
+   Cabecera comprimible (≤ 80 px a 662 de alto)
+   ------------------------------------------------------------------------- */
+.v23ShopHead,
+.v23WardrobeHead {
+  flex: none;
+  align-items: flex-start;
+  gap: 10px;
+  margin-bottom: 6px;
+  min-height: 0;
+}
+.v23HeadMain { flex: 1 1 320px; min-width: 0; }
+.v23ShopHead .eyebrow,
+.v23WardrobeHead .eyebrow { font-size: 9px; line-height: 1.1; letter-spacing: 0.18em; }
+.v23ShopHead h1,
+.v23WardrobeHead h1 { margin: 3px 0 0; font-size: clamp(18px, 1.9vw, 26px); line-height: 1.12; letter-spacing: -0.02em; overflow: visible; }
+.v23ShopHead p,
+.v23WardrobeHead p { margin: 4px 0 0; max-width: 78ch; font-size: 9.5px; line-height: 1.45; }
+.v23HeadSide { flex: none; display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 6px; padding-top: 1px; }
+.v23HeadSide .chip { min-height: 21px; padding: 3px 7px; font-size: 8.5px; }
+.v23HeadSide .btn--sm { min-height: 26px; padding: 4px 9px; font-size: 9.5px; border-radius: 7px; }
+.v23HeadSide .sheetClose { width: 27px; height: 27px; }
+.v23ShopFoot,
+.v23WardrobeFoot { flex: none; }
+
+/* -------------------------------------------------------------------------
+   Tienda: tres zonas (riel · catálogo · visor+detalle)
+   ------------------------------------------------------------------------- */
+.v23ShopLayout {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  grid-template-columns: 140px minmax(0, 1fr) minmax(320px, 420px);
+  gap: 8px;
+  align-items: stretch;
+}
+.v23ShopRail,
+.v23Catalog,
+.v23Detail {
+  min-width: 0;
+  min-height: 0;
+  padding: 9px 10px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Riel de filtros */
+.v23ShopRail { gap: 5px; overflow: hidden; }
+.v23RailHead { display: flex; flex: none; align-items: center; justify-content: space-between; gap: 4px; }
+.v23LinkBtn {
+  padding: 2px 0;
+  border: 0;
+  background: none;
+  color: var(--dim);
+  font-size: 7.5px;
+  font-weight: 800;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+.v23LinkBtn:hover { color: var(--ink); }
+.v23Filter { display: flex; flex: none; flex-direction: column; gap: 2px; min-width: 0; }
+.v23FilterLabel { color: var(--dim); font-size: 7px; font-weight: 800; letter-spacing: 0.1em; line-height: 1.1; text-transform: uppercase; }
+.v23Select { width: 100%; min-height: 27px; padding: 3px 6px; border-radius: 7px; font-size: 9.5px; }
+/* Bases definidas: un <select> dentro de una columna flex no debe heredar el alto del contenedor. */
+.v23Filter > .v23Select { flex: 0 0 27px; align-self: stretch; }
+.v23RailDivider { flex: none; margin: 4px 0; }
+.v23ShopNote { padding-top: 4px; font-size: 7.8px; line-height: 1.45; }
+.v23ShopNote b { margin-bottom: 2px; font-size: 8.5px; }
+.v23ShopNote p { margin: 0; }
+.v23RailInv { flex: none; min-height: 28px; margin-top: auto; font-size: 9.5px; }
+
+/* Barra de herramientas del catálogo */
+.v23Catalog { overflow: hidden; }
+.v23CatalogHead {
+  flex: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px;
+  padding-bottom: 6px;
+}
+.v23CatTitle { display: flex; flex: none; align-items: center; gap: 6px; }
+.v23CatTitle h2 { margin: 0; font-family: var(--font-serif); font-size: 18px; font-weight: 400; line-height: 1.05; }
+.v23Count { flex: none; }
+.v23Search { position: relative; display: flex; flex: 1 1 150px; min-width: 118px; }
+.v23SearchInput {
+  width: 100%;
+  height: 28px;
+  padding: 0 26px 0 9px;
+  border: 1px solid var(--line);
+  border-radius: 7px;
+  background: #101725;
+  color: var(--ink);
+  font-size: 9.5px;
+}
+.v23SearchInput::placeholder { color: var(--dim); }
+.v23SearchInput::-webkit-search-cancel-button { display: none; }
+.v23SearchInput:focus { outline: none; border-color: color-mix(in srgb, var(--gold) 52%, var(--line)); }
+.v23SearchClear {
+  position: absolute;
+  top: 50%;
+  right: 3px;
+  display: none;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  transform: translateY(-50%);
+  border: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.06);
+  color: var(--muted);
+}
+.v23Search.is-on .v23SearchClear { display: grid; }
+.v23SearchClear:hover { background: rgba(255, 255, 255, 0.12); color: var(--ink); }
+.v23CatalogHead .v23Filter--sort { flex: none; }
+.v23CatalogHead .v23FilterLabel { display: none; }
+.v23CatalogHead .v23Filter--sort .v23Select { width: auto; min-width: 84px; height: 28px; flex-basis: 28px; }
+
+/* Cuadrícula: 4 columnas a 1308, 3–4 a 900–1199 y columnas automáticas siempre */
+.v23Grid {
+  flex: 1 1 auto;
+  min-height: 0;
+  max-height: none;
+  overflow: auto;
+  overscroll-behavior: contain;
+  padding: 1px 3px 4px 1px;
+  align-content: start;
+  grid-template-columns: repeat(auto-fill, minmax(132px, 1fr));
+  gap: 8px;
+}
+.v23Empty { grid-column: 1 / -1; padding: 14px 8px; }
+.v23Empty h3 { margin: 3px 0 2px; font-size: 17px; }
+.v23Empty p { margin: 2px 0 8px; }
+.v23Empty .btn { min-height: 26px; font-size: 9.5px; }
+
+/* -------------------------------------------------------------------------
+   Tarjetas compactas (136 px de alto, miniatura de 82 px)
+   ------------------------------------------------------------------------- */
+.v23Grid .cosmeticCard {
+  display: flex;
+  flex-direction: column;
+  height: 136px;
+  min-height: 136px;
+  padding: 0;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.v23Grid .cosmeticCardThumb {
+  position: relative;
+  display: block;
+  flex: 0 0 82px;
+  width: 100%;
+  height: 82px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--v22-line);
+}
+.v23Grid .cosmeticCardThumb img { position: absolute; inset: 0; display: block; width: 100%; height: 100%; object-fit: contain; }
+.v23CardThumb img { opacity: 0; }
+.v23CardThumb.is-ready img { opacity: 1; transition: opacity 150ms ease; }
+.v23ThumbPh { position: absolute; inset: 0; display: grid; place-items: center; }
+.v23ThumbPh::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  transform: rotate(45deg);
+  border: 1px solid color-mix(in srgb, var(--rarity-color, var(--blue)) 42%, transparent);
+  border-radius: 5px;
+  background: radial-gradient(circle at 40% 35%, color-mix(in srgb, var(--rarity-color, var(--blue)) 20%, transparent), transparent 72%);
+  opacity: 0.55;
+}
+.v23CardBody { display: flex; flex: 1 1 auto; flex-direction: column; gap: 1px; min-width: 0; padding: 4px 7px 0; overflow: hidden; }
+.v23Grid .cosmeticCardName { overflow: hidden; font-size: 10px; font-weight: 650; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.v23CardMeta { display: block; overflow: hidden; color: var(--dim); font-size: 7.2px; line-height: 1.2; text-overflow: ellipsis; white-space: nowrap; }
+.v23CardFoot { display: flex; flex: none; align-items: center; justify-content: space-between; gap: 4px; min-height: 20px; padding: 2px 7px 5px; }
+.v23Grid .cosmeticCardStatus { overflow: hidden; font-size: 6.9px; letter-spacing: 0.055em; text-overflow: ellipsis; white-space: nowrap; }
+.v23Grid .cosmeticCardPrice { flex: none; font-size: 8.5px; }
+.v23Card.is-reward { border-style: dashed; }
+.v23Grid .v23CardReward { color: var(--violet); font-size: 7.4px; letter-spacing: 0.04em; }
+.v23Card.is-selected .cosmeticCardName { color: var(--ink); }
+
+/* -------------------------------------------------------------------------
+   Visor + detalle (visor 280–330 px a 662, ~4:3; detalle con scroll)
+   ------------------------------------------------------------------------- */
+.v23Detail { gap: 6px; padding: 8px; overflow: hidden; }
+.v23PreviewMount {
+  position: relative;
+  flex: 0 0 auto;
+  height: auto;
+  min-height: 300px;
+  margin-bottom: 0;
+  border-radius: 10px;
+}
+.v23PreviewMount .previewHint { bottom: 6px; left: 8px; }
+.v23PreviewMount .previewCorner { top: 7px; left: 9px; }
+.v23PreviewCorner { font-size: 14px; }
+.v23DetailBody { flex: 1 1 auto; min-height: 0; overflow: auto; overscroll-behavior: contain; padding-right: 2px; }
+.v23DetailBody .cosmeticDetailHead { gap: 3px; }
+.v23DetailBody h3 { margin: 4px 0 2px; font-size: 18px; }
+.v23DetailBody .cosmeticDesc { margin: 3px 0 6px; font-size: 9px; line-height: 1.45; }
+.v23DetailBody .cosmeticActions { margin-top: 7px; }
+.v23DetailBody .cosmeticActions .btn { min-height: 30px; font-size: 10px; }
+
+/* -------------------------------------------------------------------------
+   Inventario: dos zonas (visor grande + piezas con filtros y scroll)
+   ------------------------------------------------------------------------- */
+.v23WardrobeHeroBar,
+.v23HeroBar { flex: none; margin-bottom: 6px; }
+.v23HeroTabs { padding: 1px; }
+.v23WardrobeTitle { white-space: nowrap; }
+.v23WardrobeGrid {
+  flex: 1 1 auto;
+  min-height: 0;
+  display: grid;
+  gap: 8px;
+  align-items: stretch;
+}
+/* Especificidad ≥ .wardrobeShell .wardrobeGrid (V2.2) para no heredar las 3 columnas. */
+.v23WardrobeShell .v23WardrobeGrid { grid-template-columns: minmax(300px, 400px) minmax(0, 1fr); }
+.v23WardrobeStage {
+  min-width: 0;
+  min-height: 0;
+  padding: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.v23WardrobeStage .v23PreviewMount { flex: 1 1 auto; height: auto; min-height: 150px; margin-bottom: 6px; }
+.v23StageMeta { flex: none; }
+.v23CompareStrip { margin-top: 0; padding: 5px 7px; }
+.v23WardrobeActions { margin-top: 5px; gap: 4px; }
+.v23WardrobeActions .btn { min-height: 28px; padding: 5px 8px; font-size: 9.5px; }
+.v23WardrobeItems { min-width: 0; min-height: 0; padding: 9px 10px; display: flex; flex-direction: column; overflow: hidden; }
+.v23WardrobeTools { flex: none; display: flex; flex-direction: column; gap: 4px; padding-bottom: 5px; }
+.v23SlotChips { display: flex; gap: 4px; overflow-x: auto; overflow-y: hidden; scrollbar-width: thin; padding-bottom: 1px; }
+.v23SlotChip {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  min-height: 23px;
+  padding: 2px 7px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.025);
+  color: var(--dim);
+  font-size: 8px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.v23SlotChip small { color: var(--dim); font-size: 7px; font-weight: 700; }
+.v23SlotChip:hover { border-color: var(--line-strong); color: var(--ink); }
+.v23SlotChip.is-active { border-color: rgba(196, 155, 255, 0.42); background: rgba(196, 155, 255, 0.12); color: var(--violet); }
+.v23SlotChip.is-active small { color: var(--violet); }
+.v23WardrobeRow { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.v23WardrobeRow .v23Search { flex: 1 1 132px; }
+.v23WardrobeRow .v23Filter { flex: 0 1 auto; }
+.v23WardrobeRow .v23FilterLabel { display: none; }
+.v23WardrobeRow .v23Select { width: auto; min-width: 74px; max-width: 100%; height: 26px; min-height: 26px; padding: 2px 5px; font-size: 8.8px; }
+.v23WardrobeRow .v23SearchInput { height: 26px; font-size: 9px; }
+.v23WardrobeRow .v23SlotChip { min-height: 22px; }
+.v23WardrobeItems .v23Grid { flex: 1 1 auto; min-height: 88px; }
+.v23WardrobeDetail {
+  flex: 0 0 auto;
+  max-height: 31%;
+  margin-top: 6px;
+  padding-top: 6px;
+  overflow: auto;
+  overscroll-behavior: contain;
+}
+.v23WardrobeDetail h3 { margin: 3px 0 2px; font-size: 16px; }
+.v23WardrobeDetail .cosmeticDesc { margin: 3px 0 5px; font-size: 8.8px; }
+.v23WardrobeDetail .cosmeticActions { margin-top: 6px; }
+.v23WardrobeDetail .cosmeticActions .btn { min-height: 28px; font-size: 9.5px; }
+
+/* -------------------------------------------------------------------------
+   Responsive horizontal
+   ------------------------------------------------------------------------- */
+@media (max-width: 1199px) and (min-width: 900px) {
+  .v23ShopLayout {
+    grid-template-columns: minmax(0, 1fr) minmax(300px, 380px);
+    grid-template-rows: auto minmax(0, 1fr);
+    gap: 6px;
+  }
+  .v23ShopRail {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 6px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .v23ShopRail .v23RailHead,
+  .v23ShopRail .v23ShopNote,
+  .v23ShopRail .v23RailInv,
+  .v23ShopRail .v23RailDivider { display: none; }
+  .v23ShopRail .v23Filter { flex: 1 1 110px; }
+  .v23ShopRail .v23FilterLabel { display: none; }
+  .v23ShopRail .v23Select { width: 100%; min-width: 0; height: 27px; min-height: 27px; }
+  .v23Catalog { grid-column: 1; grid-row: 2; }
+  .v23Detail { grid-column: 2; grid-row: 2; }
+  .v23WardrobeShell .v23WardrobeGrid { grid-template-columns: minmax(270px, 360px) minmax(0, 1fr); }
+}
+@media (max-width: 899px) {
+  .v23ShopHead p,
+  .v23WardrobeHead p { display: none; }
+  .v23ShopLayout {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .v23ShopRail {
+    flex: none;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px 8px;
+    gap: 5px;
+    overflow-x: auto;
+    overflow-y: hidden;
+  }
+  .v23ShopRail .v23RailHead,
+  .v23ShopRail .v23ShopNote,
+  .v23ShopRail .v23RailInv,
+  .v23ShopRail .v23RailDivider { display: none; }
+  .v23ShopRail .v23Filter { flex: 1 1 104px; }
+  .v23ShopRail .v23FilterLabel { display: none; }
+  .v23ShopRail .v23Select { width: 100%; min-width: 0; height: 26px; min-height: 26px; }
+  .v23ShopRail .v23Filter > .v23Select { flex-basis: 26px; }
+  .v23Catalog { flex: 1 1 auto; }
+  .v23Detail {
+    flex: 0 0 auto;
+    display: grid;
+    grid-template-columns: minmax(112px, 32%) minmax(0, 1fr);
+    grid-template-rows: minmax(0, 1fr);
+    gap: 6px;
+    max-height: 34dvh;
+    padding: 6px;
+  }
+  .v23PreviewMount { height: 100%; min-height: 0; }
+  .v23Detail .cosmeticPreviewMount.v23VisorMount { height: 100%; min-height: 0; }
+  .v23DetailBody { padding-right: 2px; }
+  .v23WardrobeShell .v23WardrobeGrid { grid-template-columns: minmax(240px, 320px) minmax(0, 1fr); }
+  /* Inventario estrecho: el panel entero se desplaza para que el detalle siga alcanzable. */
+  .v23WardrobeItems { overflow-y: auto; }
+  .v23WardrobeItems .v23Grid { flex: 0 0 auto; max-height: 48%; min-height: 92px; }
+  .v23WardrobeDetail { flex: none; max-height: none; }
+  .v23CompareStrip { display: none; }
+}
+@media (max-width: 640px) {
+  .v23HeadSide .v23HeadAlt { display: none; }
+  .v23CatTitle h2 { font-size: 16px; }
+  .v23ShopHead h1, .v23WardrobeHead h1 { font-size: clamp(15px, 3.4vw, 20px); }
+  .v23WardrobeShell .v23WardrobeGrid { grid-template-columns: minmax(190px, 250px) minmax(0, 1fr); }
+  .v23WardrobeRow .v23Filter--collection { display: none; }
+}
+/* Visor de escritorio: el alto lo pone su contenido (escenario + franja), con suelo de 300 px. */
+@media (min-width: 900px) {
+  .v23Detail .v23PreviewMount { height: auto; min-height: 300px; }
+  .v23Detail .cosmeticPreviewMount.v23VisorMount { height: auto; min-height: 300px; }
+}
+
+/* -------------------------------------------------------------------------
+   Responsive vertical: cabecera y tarjetas se comprimen
+   ------------------------------------------------------------------------- */
+@media (max-height: 720px) {
+  .v23ShopHead p,
+  .v23WardrobeHead p { display: none; }
+  .v23ShopFoot,
+  .v23WardrobeFoot { display: none; }
+  .v23ShopHead,
+  .v23WardrobeHead { margin-bottom: 4px; }
+}
+@media (max-height: 620px) {
+  .v23ShopHead .eyebrow,
+  .v23WardrobeHead .eyebrow { display: none; }
+  .v23ShopHead h1,
+  .v23WardrobeHead h1 { font-size: clamp(17px, 2.2vh, 21px); margin-top: 0; }
+  .v23HeadSide .chip { min-height: 19px; padding: 2px 6px; font-size: 8px; }
+  .v23HeadSide .btn--sm { min-height: 23px; padding: 3px 7px; font-size: 8.8px; }
+  .v23HeadSide .sheetClose { width: 24px; height: 24px; }
+  .v23ShopHead,
+  .v23WardrobeHead { margin-bottom: 3px; }
+  .v23ShopRail,
+  .v23Catalog,
+  .v23Detail { padding: 7px 8px; }
+  .v23ShopRail .v23Filter > .v23Select { flex-basis: 26px; height: 26px; min-height: 26px; }
+  .v23CatalogHead { padding-bottom: 4px; gap: 5px; }
+  .v23WardrobeHeroBar { margin-bottom: 4px; }
+  .v23WardrobeTools { padding-bottom: 4px; gap: 3px; }
+  .v23WardrobeDetail { max-height: 30%; margin-top: 4px; padding-top: 4px; }
+  .v23ShopLayout,
+  .v23WardrobeGrid { gap: 6px; }
+}
+@media (max-height: 520px) {
+  .v23ShopHead h1,
+  .v23WardrobeHead h1 { font-size: clamp(15px, 2vh, 19px); }
+  .v23HeadSide .v23OwnedChip { display: none; }
+  .v23Grid .cosmeticCard { height: 116px; min-height: 116px; }
+  .v23Grid .cosmeticCardThumb { flex-basis: 64px; height: 64px; }
+  .v23CardBody { padding-top: 2px; }
+  .v23Grid .cosmeticCardName { font-size: 9.2px; }
+  .v23CardFoot { min-height: 17px; padding-bottom: 3px; }
+  .v23Grid { gap: 6px; padding-bottom: 2px; }
+  .v23CompareStrip { display: none; }
+  .v23WardrobeDetail { max-height: 27%; }
+  .v23WardrobeStage .v23PreviewMount { min-height: 96px; margin-bottom: 4px; }
+}
+@media (max-height: 420px) {
+  .v23Grid .cosmeticCard { height: 104px; min-height: 104px; }
+  .v23Grid .cosmeticCardThumb { flex-basis: 56px; height: 56px; }
+  .v23CardFoot { min-height: 15px; padding: 1px 6px 3px; }
+  .v23CardBody { padding: 2px 6px 0; }
+  .v23Grid .cosmeticCardStatus { font-size: 6.4px; }
+  .v23Grid .cosmeticCardPrice { font-size: 8px; }
+  .v23WardrobeActions .btn { min-height: 26px; font-size: 9px; }
+  .v23WardrobeDetail { max-height: 30%; }
+  .v23Detail { max-height: 30dvh; }
+  .v23Catalog,
+  .v23Detail { padding: 5px 6px; }
+  .v23CatalogHead { padding-bottom: 3px; }
+  .v23ShopRail { padding: 4px 6px; }
+  .v23ShopRail .v23Select { flex-basis: 24px; height: 24px; min-height: 24px; font-size: 9px; }
+  .v23HeadSide .chip { min-height: 18px; }
+  .v23HeadSide .sheetClose { width: 22px; height: 22px; }
+}
+
+/* -------------------------------------------------------------------------
+   Excepciones sobre reglas de V2.2 que ocultaban cabecera/detalle
+   ------------------------------------------------------------------------- */
+@media (max-width: 480px) and (max-height: 360px) {
+  .v23ShopShell .v23ShopHead,
+  .v23WardrobeShell .v23WardrobeHead { display: flex; }
+  .v23ShopShell .v23Detail { display: grid; }
+  .v23WardrobeGrid { grid-template-columns: minmax(170px, 0.75fr) minmax(0, 1.25fr); }
+}
+
+/* -------------------------------------------------------------------------
+   Accesibilidad y movimiento reducido
+   ------------------------------------------------------------------------- */
+.v23Grid .cosmeticCard:focus-visible { outline: 2px solid var(--teal); outline-offset: 2px; }
+.v23SearchInput:focus-visible { outline: none; }
+@media (prefers-reduced-motion: reduce) {
+  .v23CardThumb img { transition: none !important; }
+}
+body.reduced-motion .v23CardThumb img { transition: none !important; }

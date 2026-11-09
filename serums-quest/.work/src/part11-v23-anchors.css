@@ -1,0 +1,26 @@
+/* V2.3 · Fase 1 · Agente 1 · encaje (propiedad del Agente 1)
+   Sin efecto visual sobre las pantallas del juego. Solo aloja el renderizador
+   fuera de pantalla del QA y oculta ayudas de depuración si se montan. */
+.v23-anchors-qaHost {
+  position: fixed;
+  left: -10000px;
+  top: 0;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  opacity: 0;
+  pointer-events: none;
+  contain: strict;
+}
+.v23-anchors-hidden { display: none !important; }
+.v23-anchors-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font: 600 11px/1 "Bahnschrift", "Segoe UI", sans-serif;
+  color: #aeb8cc;
+  border: 1px solid rgba(174, 184, 204, 0.25);
+  border-radius: 999px;
+  padding: 3px 8px;
+  background: rgba(11, 16, 32, 0.6);
+}

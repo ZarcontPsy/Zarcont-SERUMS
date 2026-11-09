@@ -1,0 +1,122 @@
+{
+  "startedAt": "2026-11-08T20:40:24.632Z",
+  "cases": [
+    {
+      "id": "BLOCKED-STEP1",
+      "data": {
+        "screen": "title",
+        "welcome": true,
+        "tutorial": true,
+        "recovery": false,
+        "recoveryText": false,
+        "storageBanner": true,
+        "storageBannerText": "El navegador bloquea el guardado local. El progreso de esta sesión no se conservará al cerrar. Exporta un respaldo cuando termines un nivel.Exportar",
+        "cta": "Comenzar · Entrar al observatorio",
+        "routes": 5,
+        "state": {
+          "active": true,
+          "step": 0,
+          "total": 5,
+          "seenThisSession": true,
+          "returnScreen": "title"
+        },
+        "recoveryState": {
+          "storageEnabled": false,
+          "corrupt": false,
+          "lock": false
+        },
+        "storedSave": "BLOCKED",
+        "mutations": 0,
+        "stepTitle": "Muévete por el atrio.",
+        "tutorialOpened": true
+      },
+      "at": "2026-11-08T20:40:29.049Z"
+    },
+    {
+      "id": "BLOCKED-STEP2",
+      "data": {
+        "state": {
+          "active": true,
+          "step": 1,
+          "total": 5,
+          "seenThisSession": true,
+          "returnScreen": "title"
+        },
+        "sameOverlay": true,
+        "titleMarked": true,
+        "canvasMarked": true,
+        "titleStill": true,
+        "screen": "title",
+        "recovery": false,
+        "mutations": 0,
+        "stepTitle": "Cinco islas, dieciocho nodos.",
+        "renderCount": 0
+      },
+      "at": "2026-11-08T20:40:29.699Z"
+    },
+    {
+      "id": "BLOCKED-WELCOME",
+      "data": {
+        "tutorialOpen": false,
+        "welcome": true,
+        "recovery": false,
+        "storageBanner": true,
+        "cta": "Comenzar · Entrar al observatorio",
+        "recoveryState": {
+          "storageEnabled": false,
+          "corrupt": false,
+          "lock": false
+        },
+        "tutorialSeenMemory": true
+      },
+      "at": "2026-11-08T20:40:30.546Z"
+    },
+    {
+      "id": "BLOCKED-RELOAD",
+      "data": {
+        "screen": "title",
+        "welcome": true,
+        "tutorial": true,
+        "recovery": false,
+        "storageBanner": true,
+        "recoveryState": {
+          "storageEnabled": false,
+          "corrupt": false,
+          "lock": false
+        },
+        "cta": "Comenzar · Entrar al observatorio"
+      },
+      "at": "2026-11-08T20:40:32.286Z"
+    },
+    {
+      "id": "BLOCKED-640x360",
+      "data": {
+        "tutorial": true,
+        "panel": {
+          "w": 624,
+          "h": 285,
+          "top": 38,
+          "bottom": 322
+        },
+        "scrolls": false,
+        "recovery": false
+      },
+      "at": "2026-11-08T20:40:34.509Z"
+    },
+    {
+      "id": "CONSOLE-ERRORS",
+      "data": [],
+      "at": "2026-11-08T20:40:34.510Z"
+    }
+  ],
+  "shots": [
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-tutorial-step1-1280x720.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-tutorial-step2-1280x720.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-welcome-1280x720.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-reload-tutorial-1280x720.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-welcome-640x360.png",
+    "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\serums-quest\\.work\\v2.3\\agents\\agent4\\evidence\\blocked-tutorial-640x360.png"
+  ],
+  "errors": [],
+  "finishedAt": "2026-11-08T20:40:34.510Z"
+}

@@ -474,6 +474,10 @@ function loadState() {
     return out;
   } catch (e) {
     console.warn('No se pudo cargar el guardado local.', e);
+    /* Si el navegador bloquea el almacenamiento, no hay un guardado corrupto:
+       simplemente no hay guardado accesible. Entrar en recuperación confundiría
+       al jugador y ocultaría la bienvenida. */
+    if (!storageEnabled) return defaultState();
     recoveryInfo.corrupt = true;
     recoveryInfo.raw = raw;
     recoveryLock = true;

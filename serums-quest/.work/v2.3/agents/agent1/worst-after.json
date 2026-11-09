@@ -1,0 +1,66 @@
+[
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-primer-paso",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-en-ruta",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-cartografo",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-criterio",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-primer-custodio",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-semana-completa",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-circulo-cerrado",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ },
+ {
+  "hero": "ilan",
+  "cosmetic": "x-titulo-maestro",
+  "slot": "titulo",
+  "status": "PASS",
+  "areaFull": -1,
+  "areaBust": 0
+ }
+]

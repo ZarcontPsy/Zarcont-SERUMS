@@ -1,0 +1,48 @@
+{
+ "mode": "after",
+ "collections": {
+  "originales": {
+   "generated": 33,
+   "cached": 33,
+   "queued": 0,
+   "failed": []
+  },
+  "extras": {
+   "generated": 69,
+   "cached": 69,
+   "queued": 0,
+   "failed": []
+  }
+ },
+ "keys": {
+  "c-torso-bata": ".work\\v2.3\\evidence\\thumbs-after\\c-torso-bata.png",
+  "c-piernas-falda": ".work\\v2.3\\evidence\\thumbs-after\\c-piernas-falda.png",
+  "c-torso-manto": ".work\\v2.3\\evidence\\thumbs-after\\c-torso-manto.png",
+  "c-peinado-mecha": ".work\\v2.3\\evidence\\thumbs-after\\c-peinado-mecha.png",
+  "c-cabeza-casco": ".work\\v2.3\\evidence\\thumbs-after\\c-cabeza-casco.png",
+  "c-cabeza-diadema": ".work\\v2.3\\evidence\\thumbs-after\\c-cabeza-diadema.png",
+  "c-accesorios-bolso": ".work\\v2.3\\evidence\\thumbs-after\\c-accesorios-bolso.png",
+  "c-accesorios-brujula": ".work\\v2.3\\evidence\\thumbs-after\\c-accesorios-brujula.png",
+  "x-cuaderno-orbital": ".work\\v2.3\\evidence\\thumbs-after\\x-cuaderno-orbital.png",
+  "x-luciernaga-observatorio": ".work\\v2.3\\evidence\\thumbs-after\\x-luciernaga-observatorio.png",
+  "x-trofeo-salud": ".work\\v2.3\\evidence\\thumbs-after\\x-trofeo-salud.png"
+ },
+ "errors": [],
+ "thumbs": {
+  "generated": 69,
+  "cached": 69,
+  "queued": 0,
+  "failed": []
+ },
+ "counts": {
+  "total": 69,
+  "visible": 13,
+  "fullyVisible": 9
+ },
+ "wardrobe": {
+  "generated": 69,
+  "cached": 69,
+  "queued": 0,
+  "failed": []
+ }
+}

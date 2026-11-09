@@ -870,6 +870,11 @@ window.addEventListener('keydown', function (event) {
     return;
   }
   if (screen === 'title') {
+    /* Con el tutorial abierto sus teclas mandan; y si el foco está en un
+       control del título, Enter/Espacio deben activar ese control, no entrar
+       al juego por detrás. */
+    if (V23.tutorial && V23.tutorial.active) return;
+    if (event.target && event.target.closest && event.target.closest('button, a, input, select, textarea, [role="button"]')) return;
     if (event.code === 'Enter' || event.code === 'NumpadEnter' || event.code === 'Space') {
       event.preventDefault();
       enterGame();
@@ -1167,7 +1172,9 @@ function frame(now) {
       V2.call('perf', 'update', dt, now / 1000);
       placeCamera(dt, now / 1000);
       V2.call('duel', 'afterCamera', dt, now / 1000);
-      if (renderer) renderer.render(scene, camera);
+      var v23bCinemaCovers = false;
+      try { v23bCinemaCovers = !!(window.__v23b && window.__v23b.skipWorldRender && window.__v23b.skipWorldRender()); } catch (v23bError) {}
+      if (renderer && !v23bCinemaCovers) renderer.render(scene, camera);
       updateWardrobePreview(dt, now / 1000);
       updateModeClock();
     }

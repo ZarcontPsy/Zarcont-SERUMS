@@ -1,0 +1,25 @@
+{
+  "number": 119,
+  "buildId": "4ff70ff8c321",
+  "createdAt": "2026-11-09T00:56:02.960Z",
+  "note": "Fase 2 · primeros modelos de ropa, accesorios, marcos y movimiento",
+  "title": "SERUMS QUEST",
+  "bytes": 4009083,
+  "files": {
+    "game.js": "f22dec61294b747c8e1ccb0befef68292412105f50176e57c2f1fd80ce7a8fa2",
+    "game.json": "d74e884f7632d6fbe090e5f755977e6c3fe262cd428813658ebbc223499e7b69",
+    "assets/armas_heroes.svg": "5ebe32fc3ce9ac9ee5df5b4b5b77d9bf06846ff3440bf43ab604219f8642222e",
+    "assets/ASSETS.json": "58658dfe488df749107e9f287feab575a7e095aef19c766fe116b60c3c3001ec",
+    "assets/objetos_clave.svg": "99cbd1385ff3e71810b736be9144be8a0127ef4e24b9c83785e2ecf486b6c339",
+    "assets/personaje_amaru.svg": "8859629ff0d1ca427410f75423371d433834ccb4c1078f7ceca7d8d2f7f017ff",
+    "assets/personaje_ilan.svg": "5fab5d471d4a94ff6662e161fe499d2ac79e7928b936204c4ca68c1208a15f49",
+    "assets/personaje_iris.svg": "3d11311bc02e537fe5bb279b50300259e5cc03784389dd2b4346f1f5e4bb6a7e",
+    "assets/personaje_kian.svg": "8706b88f53bf6323369bc8a04507e4f0b9a6546359e7c294b0d3242b7d10accb",
+    "assets/personaje_lia.svg": "ec76ab87e4f1c6d286470516e0ce1b5e72ed34c9077ee80bb3ebd95632c505c6",
+    "assets/personaje_mara.svg": "c819e2bd4ae4723421e1b9db2cd28d8c042545c925be041d3da5d00983298e4b",
+    "assets/personaje_noa.svg": "1d77fd14b4a96f50f90a8a603fac949c984e8e90dc36b601c0e777604aa56cc2",
+    "assets/personaje_ona.svg": "792046151aa773879aff53794dcf10e4c8caa521e910b9aa308304501c531f34",
+    "assets/personaje_teo.svg": "6d22eebf1cc97b8891163df4032cbf002d5cd6a744f6eae4caa62e13cd975da2",
+    "assets/personaje_zenon.svg": "f2d6ffef97b16d80040faf864ec6960e414577a3da7567b5327e00e32e9e5b47"
+  }
+}
