@@ -1,8 +1,0 @@
-﻿Copia de seguridad previa a la migraciÃ³n de SERUMS QUEST
-Fecha: 2026-11-06 (America/Lima)
-
-serums-quest\        copia completa del espacio de trabajo antes de mover nada
-serums-quest-voxel\  copia completa del proyecto voxel antes de mover nada
-SHA256SUMS.txt       hash y ruta de cada archivo, verificado contra el original
-
-Los archivos NO se han modificado: solo se copiaron.

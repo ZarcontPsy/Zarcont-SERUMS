@@ -1,8 +1,0 @@
-{
-  "banner": true,
-  "bannerAfter": false,
-  "recovery": true,
-  "recoveryText": "GUARDADO PROTEGIDO\nNo he borrado tu partida.\nEl archivo local está dañado o incompleto.\n\nConservo el contenido original en memoria y no lo reemplazo automáticamente. Si tienes un respaldo anterior, este es el momento de usarlo.\n\nRecuperar copia local\nImportar un respaldo\nDescargar datos dañados\nEmpezar de cero solo debe ser la última opción. Si eliges esta vía, guardaré antes una copia del contenido dañado en este navegador.\nEmpezar de cero\nSi el navegador bloquea el almacenamiento, descarga tus datos y revisa la configuración del sitio.",
-  "afterReset": true,
-  "errors": []
-}
