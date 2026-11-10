@@ -1,7 +1,9 @@
 # CHANGELOG · Study Dashboard
 
 Formato basado en Keep a Changelog. Las fechas usan `America/Lima`.
-El detalle de cada entrega y sus pruebas vive en `docs/` e `informe/fase0/` + `informe/fase1/`.
+El detalle de cada entrega y sus pruebas vive en `docs/`.
+
+> **Nota de archivo · 2026-11-10.** Los informes de fase (`informe/fase0/` … `informe/fase4/`, con sus capturas y `INFORME-STUDY-DASHBOARD.html/.md/.pdf`) se retiraron del repositorio para no versionar artefactos generados. Se conservan en la cuarentena externa `..\ZARCONT-purga-2026-11-10\cuarentena\study-dashboard\informe\` y son reproducibles con `tools/qa` y `tests/e2e`.
 
 ## [2.3.0] · Estudio activo — en desarrollo
 

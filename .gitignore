@@ -1,29 +1,221 @@
-# Python bytecode / caches (regenerables)
+# ============================================================================
+# ZARCONT SERUMS — .gitignore
+# Actualizado 2026-11-10 tras la purga de artefactos de QA y auditoría.
+#
+# Criterio: se versiona el PRODUCTO (las apps, los datos que cargan en tiempo
+# de ejecución, su documentación de contrato, los tests y el material de
+# origen) y los registros de autoría e integridad. Todo lo generado por
+# agentes, pruebas, navegadores o respaldos vive FUERA del repositorio.
+#
+# Este archivo solo impide que entren archivos NUEVOS: lo que ya estaba
+# rastreado se retiró con `git rm --cached` y está en la cuarentena externa
+# (ver QUE-SE-MOVIO-*.md en ../ZARCONT-purga-2026-11-10/).
+# ============================================================================
+
+# ----------------------------------------------------------------------------
+# 1) ARTEFACTOS DE AGENTES, AUDITORÍAS Y QA
+#    Informes, capturas, run.json, axe.json, consolas y salidas de pruebas.
+# ----------------------------------------------------------------------------
+/_informes/
+/informes/
+/_reportes/
+/reportes/
+/reports/
+/AUDIT/evidencias/
+/AUDIT/agent-*.md
+/study-dashboard/informe/
+/study-data/audit/evidencias/
+/tools/qa/salida/
+capturas/
+screenshots/
+*.trace
+*.har
+*.result.json
+
+# ----------------------------------------------------------------------------
+# 2) PERFILES DE NAVEGADOR Y DATOS DE SESIÓN
+#    Un perfil contiene Cookies, Login Data, historial, Local Storage y la
+#    clave os_crypt.encrypted_key. Nunca se versiona, ni siquiera vacío.
+#
+#    OJO: en serums-quest/.work vive la CADENA DE BUILD del juego y SÍ se
+#    versiona (.work/src, .work/build-game.js, .work/v21/OWNERSHIP.md). Por
+#    eso se ignora el contenido de .work salvo esas tres excepciones.
+# ----------------------------------------------------------------------------
+/serums-quest/.work/*
+!/serums-quest/.work/src/
+!/serums-quest/.work/build-game.js
+!/serums-quest/.work/v21/
+
+# Del Game Studio se versiona el historial de versiones (state.json,
+# versions/, snapshots/, history/, cover.jpg); solo se ignoran las corridas.
+/serums-quest/.studio/playtest/
+/serums-quest/.studio/renders/
+
+**/profiles/
+**/profile-*/
+**/User Data/
+**/Local Storage/
+**/Session Storage/
+**/IndexedDB/
+**/Service Worker/
+**/GPUCache/
+**/ShaderCache/
+**/optimization_guide_model_store/
+Cookies
+Cookies-journal
+Login Data
+Login Data For Account
+Login Data-journal
+Web Data
+Web Data-journal
+Local State
+Secure Preferences
+Preferences
+History
+History-journal
+Favicons
+Bookmarks
+Top Sites
+Visited Links
+Shortcuts
+Current Session
+Current Tabs
+Last Session
+Last Tabs
+Network Action Predictor
+Network Persistent State
+QuotaManager
+TransportSecurity
+Trust Tokens
+Reporting and NEL
+SharedStorage
+*.tflite
+*.binarypb
+*.crdownload
+*.download
+*.partial
+
+# ----------------------------------------------------------------------------
+# 3) TEMPORALES, CACHES Y BASURA DEL SISTEMA OPERATIVO
+# ----------------------------------------------------------------------------
 __pycache__/
 *.py[cod]
-
-# Dependencias instaladas localmente
+*$py.class
 node_modules/
-
-# Entorno local (nunca versionar claves reales)
-.env
-
-# Ruido del sistema operativo
+.npm/
+.pnpm-store/
+.vite/
+.cache/
+.parcel-cache/
+*.tsbuildinfo
 .DS_Store
+._*
 Thumbs.db
+desktop.ini
+*.swp
+*.swo
+*~
+*.bak
+*.orig
+*.rej
+*.tmp
+*.temp
+*.old
+*-copia*
+*-copiar*
+*-backup*
+*.copy
 
-# Perfiles y datos de navegador; secretos y credenciales (auditoría 2026-11-10)
-study-dashboard/study-dashboard-auditoria/
+# ----------------------------------------------------------------------------
+# 4) RESPALDOS Y CUARENTENA
+#    No se ignoran *.zip a propósito: _backups/*.zip es material versionado
+#    y el resto de respaldos vive fuera del repositorio.
+# ----------------------------------------------------------------------------
+/_cuarentena/
+/cuarentena/
+
+# ----------------------------------------------------------------------------
+# 5) SECRETOS Y CREDENCIALES
+#    Si aparece algo de esta lista en `git status`, NO se añade: se mueve a
+#    la cuarentena y se rota la credencial.
+# ----------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+.npmrc
+.netrc
+.git-credentials
+credentials*.json
+**/secrets/
+**/*secret*.json
+
+# ----------------------------------------------------------------------------
+# 6) LOGS Y BASES DE DATOS
+#    Comprobado el 2026-11-10: no hay ningún .log ni .db legítimo fuera de
+#    serums-quest/.work (perfiles) y AUDIT/evidencias (ya ignorado).
+# ----------------------------------------------------------------------------
+*.log
+*.db
+*.db-journal
+*.db-wal
 *.sqlite
 *.sqlite-journal
 *.sqlite-wal
-*.db
-brave-history-*
-*-history-*.json
-*-bookmarks.json
-Cookies
-Login Data
-Local State
-.env.*
-*.pem
-*.key
+
+# ============================================================================
+# LO QUE SÍ SE VERSIONA
+# ----------------------------------------------------------------------------
+# Antes de añadir una regla nueva, comprueba que no capture nada de esta lista.
+#
+#   index.html                         HUB (lanzador de las 5 apps)
+#   serums-chrome.js / .css            shell visual compartido
+#   serums-mobile.css                  estilos móviles
+#   study-dashboard/                   app completa (index.html, app.js, js/, css/, docs/, tests/)
+#   study-flashcards/                  app completa
+#   study-shared/                      base.css, store.js, taxonomy.js, ui.js, icons.js
+#   study-data/temario.js              fuente canónica del contenido
+#   study-data/temario-core.js         núcleo que cargan Dashboard y Flashcards
+#   study-data/content-loader.js       cargador perezoso de chunks
+#   study-data/content-split.json      manifiesto del split
+#   study-data/derived/                índices que pide derived-loader.js
+#   study-data/sections/               chunks por área (content-loader.js)
+#   study-data/fuentes/                los 48 PDF enlazados desde la app
+#   study-data/audit/                  OCR, digests y lotes editoriales irrepetibles
+#   serums-quest/game.js, game.json, index.html, src/, docs/, README*
+#   serums-quest/assets/               SVG + ASSETS.json declarados en game.json
+#   serums-quest/dist/index.html       build que abre el HUB (¡NO ignorar dist/!)
+#   serums-quest/export/               entregas HTML autónomas documentadas
+#   serums-quest/.work/src/            fragmentos fuente del build del juego
+#   serums-quest/.work/build-game.js   script de build citado por game.js
+#   serums-quest/.work/v21/OWNERSHIP.md contrato de API citado por game.js
+#   serums-quest/.studio/              historial de versiones del Game Studio
+#   serums-quest-legacy/               versión archivada del juego
+#   "serums map/"                      app completa + datos_compact/plazas_*.json
+#   "EXAMEN STUDIO/"                   app + datos/banco-oficial.js + documentos/
+#   tests/e2e/                         arnés E2E (solo su SALIDA se ignora)
+#   tools/qa/*.mjs, lib/, vendor/      suite de QA (solo tools/qa/salida/ se ignora)
+#   AUDIT/*.md, AUDIT/a7-tools/, route_audit.py, data-baseline.sha256
+#   INTEGRITY.sha256, verificar_integridad.py
+#   LICENSE, NOTICE.md, AUTORIA.md, DESIGN-SYSTEM.md
+#   .opencode/                         configuración del agente de desarrollo
+#
+# TRAMPAS CONOCIDAS (no añadir estas reglas):
+#   dist/          rompería el HUB: enlaza ./serums-quest/dist/index.html
+#   export/        son las entregas documentadas de QUEST
+#   .work/         (global) rompería la cadena de build del juego
+#   *.json         rompería temario, content-split, derived/ y los datos del mapa
+#   *.png          las apps y los datos usan PNG; solo se ignoran carpetas concretas
+#   *.pdf          study-data/fuentes y EXAMEN STUDIO/documentos son material de origen
+#   *.zip          _backups/*.zip es material versionado
+#   assets/        son los SVG del juego y los recursos de las apps
+# ============================================================================
