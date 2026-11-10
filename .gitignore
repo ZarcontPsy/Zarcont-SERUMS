@@ -11,3 +11,19 @@ node_modules/
 # Ruido del sistema operativo
 .DS_Store
 Thumbs.db
+
+# Perfiles y datos de navegador; secretos y credenciales (auditoría 2026-11-10)
+study-dashboard/study-dashboard-auditoria/
+*.sqlite
+*.sqlite-journal
+*.sqlite-wal
+*.db
+brave-history-*
+*-history-*.json
+*-bookmarks.json
+Cookies
+Login Data
+Local State
+.env.*
+*.pem
+*.key
