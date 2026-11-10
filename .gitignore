@@ -132,10 +132,13 @@ desktop.ini
 *.copy
 
 # ----------------------------------------------------------------------------
-# 4) RESPALDOS Y CUARENTENA
-#    No se ignoran *.zip a propósito: _backups/*.zip es material versionado
-#    y el resto de respaldos vive fuera del repositorio.
+# 4) RESPALDOS, COPIAS LOCALES Y CUARENTENA
+#    Se conservan en el equipo pero NO se versionan: el repositorio no es un
+#    archivo de respaldos ni de juegos de prueba. No se ignoran *.zip en
+#    general a propósito.
 # ----------------------------------------------------------------------------
+/_backups/
+/games/prueba-game-studio/
 /_cuarentena/
 /cuarentena/
 
@@ -221,6 +224,13 @@ credentials*.json
 #   *.json         rompería temario, content-split, derived/ y los datos del mapa
 #   *.png          las apps y los datos usan PNG; solo se ignoran carpetas concretas
 #   *.pdf          study-data/fuentes y EXAMEN STUDIO/documentos son material de origen
-#   *.zip          _backups/*.zip es material versionado
+#   *.zip          no se ignora en general; solo /_backups/ lo está
 #   assets/        son los SVG del juego y los recursos de las apps
+#
+# LO QUE QUEDA FUERA DEL VERSIONADO A PROPÓSITO (existe en el equipo, no en git):
+#   _backups/                        copia pre-migración (188 MB)
+#   games/prueba-game-studio/        juego de prueba del Game Studio
+#   AUDIT/EVOLUCION-*.md             bitácoras de las olas de auditoría
+#   AUDIT/LIMPIEZA-*.md              registro de limpiezas anteriores
+#   INFORME-AUDITORIA-ECOSISTEMA.md  informe de ecosistema
 # ============================================================================
