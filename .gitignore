@@ -23,6 +23,11 @@
 /reports/
 /AUDIT/evidencias/
 /AUDIT/agent-*.md
+# Bitácoras de auditorías y limpiezas de octubre: se conservan en el equipo
+# para consulta, pero no se versionan (no son documentación del producto).
+/AUDIT/EVOLUCION-*.md
+/AUDIT/LIMPIEZA-*.md
+/INFORME-AUDITORIA-ECOSISTEMA.md
 /study-dashboard/informe/
 /study-data/audit/evidencias/
 /tools/qa/salida/
