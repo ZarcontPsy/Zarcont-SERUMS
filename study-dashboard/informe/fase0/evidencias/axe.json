@@ -1,0 +1,3847 @@
+{
+  "generatedAt": "2026-11-10T03:21:51.108Z",
+  "source": "tools/qa/axe-audit.mjs",
+  "axe": {
+    "file": "tools/qa/vendor/axe.min.js",
+    "license": "MPL-2.0 (tools/qa/vendor/axe.LICENSE.txt)",
+    "tags": [
+      "wcag2a",
+      "wcag2aa",
+      "wcag21a",
+      "wcag21aa",
+      "wcag22aa"
+    ]
+  },
+  "environment": {
+    "browser": "Chrome/157.0.8103.39",
+    "server": "http://127.0.0.1:8791",
+    "axe": "local vendor/axe.min.js",
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-axe-zG5Nup"
+  },
+  "summary": {
+    "runs": 24,
+    "violationTypes": [],
+    "violations": 0,
+    "nodes": 0,
+    "pending": 0,
+    "manualContrastChecked": 236,
+    "manualContrastFailures": 0,
+    "reviewRequired": [
+      "aria-valid-attr-value"
+    ],
+    "missingResources": [],
+    "ok": true
+  },
+  "pending": [],
+  "failures": [],
+  "runs": [
+    {
+      "route": "#/",
+      "routeLabel": "Panel",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Study Dashboard · SERUMS",
+      "navigations": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 39,
+          "targets": [
+            ".hero-copy > .s-kicker",
+            "h1",
+            ".hero-copy > p",
+            ".s-btn--lg.s-btn[href$=\"#/biblioteca\"]",
+            ".s-btn--ghost",
+            ".hero-stats > div:nth-child(1) > b",
+            ".hero-stats > div:nth-child(1) > span",
+            "div:nth-child(2) > b",
+            ".hero-stats > div:nth-child(2) > span",
+            ".hero-stats > div:nth-child(3) > span",
+            ".hero-orb-inner > b",
+            ".hero-orb-inner > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 12,
+        "rows": [
+          {
+            "target": ".hero-copy > .s-kicker",
+            "text": "TEMARIO OFICIAL SERUMS 2026-II",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "h1",
+            "text": "Cinco áreas. Un mapa claro.",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-copy > p",
+            "text": "Las cinco áreas oficiales de Psicología ",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--lg.s-btn[href$=\"#/biblioteca\"]",
+            "text": "Explorar el temario",
+            "fg": "#1B1205",
+            "bg": "#E6B566",
+            "ratio": 9.84,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--ghost",
+            "text": "Abrir flashcards",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > b",
+            "text": "0",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > span",
+            "text": "DE 210 FICHAS",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "div:nth-child(2) > b",
+            "text": "0",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > span",
+            "text": "TARJETAS REVISADAS",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(3) > span",
+            "text": "RACHA DE ESTUDIO",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > b",
+            "text": "0%",
+            "fg": "#F4F1E9",
+            "bg": "#0B0B0D",
+            "ratio": 17.42,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > span",
+            "text": "DEL TEMARIO",
+            "fg": "#88837A",
+            "bg": "#0B0B0D",
+            "ratio": 5.22,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 244,
+      "screenshot": null
+    },
+    {
+      "route": "#/",
+      "routeLabel": "Panel",
+      "state": "base",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Study Dashboard · SERUMS",
+      "navigations": 1,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 39,
+          "targets": [
+            ".hero-copy > .s-kicker",
+            "h1",
+            ".hero-copy > p",
+            ".s-btn--lg.s-btn[href$=\"#/biblioteca\"]",
+            ".s-btn--ghost",
+            ".hero-stats > div:nth-child(1) > b",
+            ".hero-stats > div:nth-child(1) > span",
+            "div:nth-child(2) > b",
+            ".hero-stats > div:nth-child(2) > span",
+            ".hero-stats > div:nth-child(3) > span",
+            ".hero-orb-inner > b",
+            ".hero-orb-inner > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 12,
+        "rows": [
+          {
+            "target": ".hero-copy > .s-kicker",
+            "text": "TEMARIO OFICIAL SERUMS 2026-II",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "h1",
+            "text": "Cinco áreas. Un mapa claro.",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-copy > p",
+            "text": "Las cinco áreas oficiales de Psicología ",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--lg.s-btn[href$=\"#/biblioteca\"]",
+            "text": "Explorar el temario",
+            "fg": "#FFF9F0",
+            "bg": "#8F520E",
+            "ratio": 5.93,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--ghost",
+            "text": "Abrir flashcards",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > b",
+            "text": "0",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > span",
+            "text": "DE 210 FICHAS",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "div:nth-child(2) > b",
+            "text": "0",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > span",
+            "text": "TARJETAS REVISADAS",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(3) > span",
+            "text": "RACHA DE ESTUDIO",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > b",
+            "text": "0%",
+            "fg": "#1D1B17",
+            "bg": "#F3F0E8",
+            "ratio": 15.1,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > span",
+            "text": "DEL TEMARIO",
+            "fg": "#6E675C",
+            "bg": "#F3F0E8",
+            "ratio": 4.91,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 140,
+      "screenshot": null
+    },
+    {
+      "route": "#/biblioteca",
+      "routeLabel": "Biblioteca",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Biblioteca · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20,
+          "targets": [
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 198,
+      "screenshot": null
+    },
+    {
+      "route": "#/biblioteca",
+      "routeLabel": "Biblioteca",
+      "state": "base",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Biblioteca · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20,
+          "targets": [
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 178,
+      "screenshot": null
+    },
+    {
+      "route": "#/progreso",
+      "routeLabel": "Progreso",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Mi progreso · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 1,
+          "targets": [
+            "button[data-step=\"-1\"]"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 1,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "button[data-step=\"-1\"]",
+            "text": "−",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 146,
+      "screenshot": null
+    },
+    {
+      "route": "#/progreso",
+      "routeLabel": "Progreso",
+      "state": "base",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Mi progreso · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 1,
+          "targets": [
+            "button[data-step=\"-1\"]"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 1,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "button[data-step=\"-1\"]",
+            "text": "−",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 129,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 9,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block",
+            ".rail-progress > .s-xs.s-muted"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 9,
+        "failures": [],
+        "gradientNodes": 9,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "0/3",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Marcar completada",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-xs.s-muted",
+            "text": "Tu progreso se guarda en este navegador.",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 144,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01",
+      "state": "base",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 9,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block",
+            ".rail-progress > .s-xs.s-muted"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 9,
+        "failures": [],
+        "gradientNodes": 9,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "0/3",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Marcar completada",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-xs.s-muted",
+            "text": "Tu progreso se guarda en este navegador.",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 131,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01 (guardada y completada)",
+      "state": "guardada-completada",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 9,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block",
+            ".rail-progress > .s-xs.s-muted"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 9,
+        "failures": [],
+        "gradientNodes": 9,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#E6B566",
+            "bg": "#2F2921",
+            "ratio": 7.64,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-xs.s-muted",
+            "text": "Tu progreso se guarda en este navegador.",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 134,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01 (guardada y completada)",
+      "state": "guardada-completada",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 9,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block",
+            ".rail-progress > .s-xs.s-muted"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 9,
+        "failures": [],
+        "gradientNodes": 9,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#8F520E",
+            "bg": "#EFE6D8",
+            "ratio": 5.01,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-xs.s-muted",
+            "text": "Tu progreso se guarda en este navegador.",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 137,
+      "screenshot": null
+    },
+    {
+      "route": "#/respaldo",
+      "routeLabel": "Respaldo y datos",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Respaldo y datos · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 12,
+          "targets": [
+            ".data-hero > .data-kicker",
+            "#data-title",
+            ".data-lead",
+            "li:nth-child(1) > span",
+            "li:nth-child(2) > span",
+            "li:nth-child(3) > span",
+            ".data-health > .data-card-head > div > .data-kicker",
+            "#data-health-title",
+            ".data-pill",
+            ".data-health-last > .data-label",
+            "span[data-health-last=\"\"]",
+            ".data-health-advice"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 6,
+        "rows": [
+          {
+            "target": ".data-hero > .data-kicker",
+            "text": "RESPALDO Y DATOS",
+            "fg": "#88837A",
+            "bg": "#0B0B0D",
+            "ratio": 5.22,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-title",
+            "text": "Tus datos, bajo tu control.",
+            "fg": "#F4F1E9",
+            "bg": "#0B0B0D",
+            "ratio": 17.42,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-lead",
+            "text": "Tu progreso vive en este navegador, no e",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(1) > span",
+            "text": "Exportar e importar es local: el archivo",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(2) > span",
+            "text": "Puedes fusionar una copia con lo que ya ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(3) > span",
+            "text": "Borrar progreso pide dos confirmaciones ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health > .data-card-head > div > .data-kicker",
+            "text": "SALUD DEL RESPALDO",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-health-title",
+            "text": "Tu progreso, en una sola copia",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-pill",
+            "text": "SIN COPIA TODAVÍA",
+            "fg": "#E6B566",
+            "bg": "#2F2921",
+            "ratio": 7.64,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-last > .data-label",
+            "text": "ÚLTIMA EXPORTACIÓN",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "span[data-health-last=\"\"]",
+            "text": "Nunca se ha exportado desde este navegad",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-advice",
+            "text": "Todo tu progreso vive en este navegador.",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 121,
+      "screenshot": null
+    },
+    {
+      "route": "#/respaldo",
+      "routeLabel": "Respaldo y datos",
+      "state": "base",
+      "theme": "light",
+      "viewport": "desktop-1440x900",
+      "viewportLabel": "Escritorio 1440×900",
+      "width": 1440,
+      "height": 900,
+      "mobile": false,
+      "pointer": {
+        "coarse": false,
+        "hoverNone": false
+      },
+      "axeVersion": "4.10.2",
+      "title": "Respaldo y datos · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 13,
+          "targets": [
+            ".data-hero > .data-kicker",
+            "#data-title",
+            ".data-lead",
+            "li:nth-child(1) > span",
+            "li:nth-child(2) > span",
+            "li:nth-child(3) > span",
+            ".data-health > .data-card-head > div > .data-kicker",
+            "#data-health-title",
+            ".data-pill",
+            ".data-health-last > .data-label",
+            "span[data-health-last=\"\"]",
+            ".data-health-advice"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 6,
+        "rows": [
+          {
+            "target": ".data-hero > .data-kicker",
+            "text": "RESPALDO Y DATOS",
+            "fg": "#6E675C",
+            "bg": "#F3F0E8",
+            "ratio": 4.91,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-title",
+            "text": "Tus datos, bajo tu control.",
+            "fg": "#1D1B17",
+            "bg": "#F3F0E8",
+            "ratio": 15.1,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-lead",
+            "text": "Tu progreso vive en este navegador, no e",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(1) > span",
+            "text": "Exportar e importar es local: el archivo",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(2) > span",
+            "text": "Puedes fusionar una copia con lo que ya ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(3) > span",
+            "text": "Borrar progreso pide dos confirmaciones ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health > .data-card-head > div > .data-kicker",
+            "text": "SALUD DEL RESPALDO",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-health-title",
+            "text": "Tu progreso, en una sola copia",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-pill",
+            "text": "SIN COPIA TODAVÍA",
+            "fg": "#8F520E",
+            "bg": "#EFE6D8",
+            "ratio": 5.01,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-last > .data-label",
+            "text": "ÚLTIMA EXPORTACIÓN",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "span[data-health-last=\"\"]",
+            "text": "Nunca se ha exportado desde este navegad",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-advice",
+            "text": "Todo tu progreso vive en este navegador.",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [],
+      "resources": [],
+      "elapsedMs": 120,
+      "screenshot": null
+    },
+    {
+      "route": "#/",
+      "routeLabel": "Panel",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Study Dashboard · SERUMS",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 44,
+          "targets": [
+            ".hero-copy > .s-kicker",
+            "h1",
+            ".hero-copy > p",
+            ".s-btn--lg.s-btn[href$=\"#/ficha/sheet-aps-01\"]",
+            ".s-btn--ghost",
+            ".hero-stats > div:nth-child(1) > b",
+            ".hero-stats > div:nth-child(1) > span",
+            ".hero-stats > div:nth-child(2) > b",
+            ".hero-stats > div:nth-child(2) > span",
+            "div:nth-child(3) > b",
+            ".hero-stats > div:nth-child(3) > span",
+            ".hero-orb-inner > b"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 12,
+        "rows": [
+          {
+            "target": ".hero-copy > .s-kicker",
+            "text": "CONTINÚA DONDE LO DEJASTE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "h1",
+            "text": "Aprender también es volver.",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-copy > p",
+            "text": "Tu progreso se construye ficha a ficha. ",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--lg.s-btn[href$=\"#/ficha/sheet-aps-01\"]",
+            "text": "Retomar lectura",
+            "fg": "#1B1205",
+            "bg": "#E6B566",
+            "ratio": 9.84,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--ghost",
+            "text": "Abrir flashcards",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > b",
+            "text": "1",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > span",
+            "text": "DE 210 FICHAS",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > b",
+            "text": "0",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > span",
+            "text": "TARJETAS REVISADAS",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "div:nth-child(3) > b",
+            "text": "1 día",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(3) > span",
+            "text": "RACHA DE ESTUDIO",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > b",
+            "text": "0%",
+            "fg": "#F4F1E9",
+            "bg": "#0B0B0D",
+            "ratio": 17.42,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 127,
+      "screenshot": null
+    },
+    {
+      "route": "#/",
+      "routeLabel": "Panel",
+      "state": "base",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Study Dashboard · SERUMS",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 44,
+          "targets": [
+            ".hero-copy > .s-kicker",
+            "h1",
+            ".hero-copy > p",
+            ".s-btn--lg.s-btn[href$=\"#/ficha/sheet-aps-01\"]",
+            ".s-btn--ghost",
+            ".hero-stats > div:nth-child(1) > b",
+            ".hero-stats > div:nth-child(1) > span",
+            ".hero-stats > div:nth-child(2) > b",
+            ".hero-stats > div:nth-child(2) > span",
+            "div:nth-child(3) > b",
+            ".hero-stats > div:nth-child(3) > span",
+            ".hero-orb-inner > b"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 12,
+        "rows": [
+          {
+            "target": ".hero-copy > .s-kicker",
+            "text": "CONTINÚA DONDE LO DEJASTE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "h1",
+            "text": "Aprender también es volver.",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-copy > p",
+            "text": "Tu progreso se construye ficha a ficha. ",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--lg.s-btn[href$=\"#/ficha/sheet-aps-01\"]",
+            "text": "Retomar lectura",
+            "fg": "#FFF9F0",
+            "bg": "#8F520E",
+            "ratio": 5.93,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--ghost",
+            "text": "Abrir flashcards",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > b",
+            "text": "1",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(1) > span",
+            "text": "DE 210 FICHAS",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > b",
+            "text": "0",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(2) > span",
+            "text": "TARJETAS REVISADAS",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "div:nth-child(3) > b",
+            "text": "1 día",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-stats > div:nth-child(3) > span",
+            "text": "RACHA DE ESTUDIO",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".hero-orb-inner > b",
+            "text": "0%",
+            "fg": "#1D1B17",
+            "bg": "#F3F0E8",
+            "ratio": 15.1,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 126,
+      "screenshot": null
+    },
+    {
+      "route": "#/biblioteca",
+      "routeLabel": "Biblioteca",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Biblioteca · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20,
+          "targets": [
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "1 de 14 completadas",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 202,
+      "screenshot": null
+    },
+    {
+      "route": "#/biblioteca",
+      "routeLabel": "Biblioteca",
+      "state": "base",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Biblioteca · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 20,
+          "targets": [
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 0,
+        "rows": [
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-salud-publica > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "1 de 14 completadas",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(2) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(3) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-cuidado-integral > .category-grid > .category-card[data-nav=\"\"]:nth-child(4) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(5) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(6) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(7) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".category-card[data-nav=\"\"]:nth-child(8) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#area-area-psi-etica > .category-grid > .category-card[data-nav=\"\"]:nth-child(1) > .category-card-foot > span",
+            "text": "Sin empezar",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 168,
+      "screenshot": null
+    },
+    {
+      "route": "#/progreso",
+      "routeLabel": "Progreso",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Mi progreso · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 3,
+          "targets": [
+            ".data-reminder-copy > b",
+            ".data-reminder-copy > span",
+            "button[data-step=\"-1\"]"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 3,
+        "failures": [],
+        "gradientNodes": 2,
+        "rows": [
+          {
+            "target": ".data-reminder-copy > b",
+            "text": "Tu progreso no tiene copia reciente",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-reminder-copy > span",
+            "text": "Todavía no has descargado ninguna copia.",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "button[data-step=\"-1\"]",
+            "text": "−",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 139,
+      "screenshot": null
+    },
+    {
+      "route": "#/progreso",
+      "routeLabel": "Progreso",
+      "state": "base",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Mi progreso · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 3,
+          "targets": [
+            ".data-reminder-copy > b",
+            ".data-reminder-copy > span",
+            "button[data-step=\"-1\"]"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 3,
+        "failures": [],
+        "gradientNodes": 2,
+        "rows": [
+          {
+            "target": ".data-reminder-copy > b",
+            "text": "Tu progreso no tiene copia reciente",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-reminder-copy > span",
+            "text": "Todavía no has descargado ninguna copia.",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "button[data-step=\"-1\"]",
+            "text": "−",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 131,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 13,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            "tr:nth-child(1) > td",
+            "tr:nth-child(2) > td",
+            "tr:nth-child(3) > td",
+            "tr:nth-child(4) > td",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 8,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(1) > td",
+            "text": "¿Puede la persona entrar al sistema con ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(2) > td",
+            "text": "¿Existe una relación personal y continua",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(3) > td",
+            "text": "¿Se responde a las necesidades de salud ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(4) > td",
+            "text": "¿Se articulan primer nivel y especialist",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#E6B566",
+            "bg": "#2F2921",
+            "ratio": 7.64,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 130,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01",
+      "state": "base",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 13,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            "tr:nth-child(1) > td",
+            "tr:nth-child(2) > td",
+            "tr:nth-child(3) > td",
+            "tr:nth-child(4) > td",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 8,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(1) > td",
+            "text": "¿Puede la persona entrar al sistema con ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(2) > td",
+            "text": "¿Existe una relación personal y continua",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(3) > td",
+            "text": "¿Se responde a las necesidades de salud ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(4) > td",
+            "text": "¿Se articulan primer nivel y especialist",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#8F520E",
+            "bg": "#EFE6D8",
+            "ratio": 5.01,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 135,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01 (guardada y completada)",
+      "state": "guardada-completada",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 13,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            "tr:nth-child(1) > td",
+            "tr:nth-child(2) > td",
+            "tr:nth-child(3) > td",
+            "tr:nth-child(4) > td",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 8,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(1) > td",
+            "text": "¿Puede la persona entrar al sistema con ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(2) > td",
+            "text": "¿Existe una relación personal y continua",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(3) > td",
+            "text": "¿Se responde a las necesidades de salud ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(4) > td",
+            "text": "¿Se articulan primer nivel y especialist",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#E6B566",
+            "bg": "#2F2921",
+            "ratio": 7.64,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 168,
+      "screenshot": null
+    },
+    {
+      "route": "#/ficha/sheet-aps-01",
+      "routeLabel": "Ficha sheet-aps-01 (guardada y completada)",
+      "state": "guardada-completada",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 13,
+          "targets": [
+            ".reader-concepts > .s-kicker",
+            "tr:nth-child(1) > td",
+            "tr:nth-child(2) > td",
+            "tr:nth-child(3) > td",
+            "tr:nth-child(4) > td",
+            ".reader-practice-copy > .s-kicker",
+            ".reader-practice-copy > h2",
+            ".reader-practice-copy > p",
+            ".rail-progress > .s-kicker",
+            ".rail-progress-number > b",
+            ".rail-progress-number > span",
+            ".s-btn--block"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 8,
+        "rows": [
+          {
+            "target": ".reader-concepts > .s-kicker",
+            "text": "CONCEPTOS CLAVE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(1) > td",
+            "text": "¿Puede la persona entrar al sistema con ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(2) > td",
+            "text": "¿Existe una relación personal y continua",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(3) > td",
+            "text": "¿Se responde a las necesidades de salud ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "tr:nth-child(4) > td",
+            "text": "¿Se articulan primer nivel y especialist",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > .s-kicker",
+            "text": "RECUPERACIÓN ACTIVA",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > h2",
+            "text": "Practica esta ficha",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".reader-practice-copy > p",
+            "text": "3 tarjetas de esta ficha te esperan en S",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress > .s-kicker",
+            "text": "TU AVANCE",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > b",
+            "text": "1/3",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".rail-progress-number > span",
+            "text": "fichas completadas",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".s-btn--block",
+            "text": "Completada",
+            "fg": "#8F520E",
+            "bg": "#EFE6D8",
+            "ratio": 5.01,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 127,
+      "screenshot": null
+    },
+    {
+      "route": "#/respaldo",
+      "routeLabel": "Respaldo y datos",
+      "state": "base",
+      "theme": "dark",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Respaldo y datos · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 12,
+          "targets": [
+            ".data-hero > .data-kicker",
+            "#data-title",
+            ".data-lead",
+            "li:nth-child(1) > span",
+            "li:nth-child(2) > span",
+            "li:nth-child(3) > span",
+            ".data-health > .data-card-head > div > .data-kicker",
+            "#data-health-title",
+            ".data-pill",
+            ".data-health-last > .data-label",
+            "span[data-health-last=\"\"]",
+            ".data-health-advice"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 6,
+        "rows": [
+          {
+            "target": ".data-hero > .data-kicker",
+            "text": "RESPALDO Y DATOS",
+            "fg": "#88837A",
+            "bg": "#0B0B0D",
+            "ratio": 5.22,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-title",
+            "text": "Tus datos, bajo tu control.",
+            "fg": "#F4F1E9",
+            "bg": "#0B0B0D",
+            "ratio": 17.42,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-lead",
+            "text": "Tu progreso vive en este navegador, no e",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(1) > span",
+            "text": "Exportar e importar es local: el archivo",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(2) > span",
+            "text": "Puedes fusionar una copia con lo que ya ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(3) > span",
+            "text": "Borrar progreso pide dos confirmaciones ",
+            "fg": "#BDB8AE",
+            "bg": "#0B0B0D",
+            "ratio": 9.96,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health > .data-card-head > div > .data-kicker",
+            "text": "SALUD DEL RESPALDO",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-health-title",
+            "text": "Tu progreso, en una sola copia",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-pill",
+            "text": "SIN COPIA TODAVÍA",
+            "fg": "#E6B566",
+            "bg": "#2F2921",
+            "ratio": 7.64,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-last > .data-label",
+            "text": "ÚLTIMA EXPORTACIÓN",
+            "fg": "#88837A",
+            "bg": "#141417",
+            "ratio": 4.88,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "span[data-health-last=\"\"]",
+            "text": "Nunca se ha exportado desde este navegad",
+            "fg": "#F4F1E9",
+            "bg": "#141417",
+            "ratio": 16.29,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-advice",
+            "text": "Todo tu progreso vive en este navegador.",
+            "fg": "#BDB8AE",
+            "bg": "#141417",
+            "ratio": 9.31,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 110,
+      "screenshot": null
+    },
+    {
+      "route": "#/respaldo",
+      "routeLabel": "Respaldo y datos",
+      "state": "base",
+      "theme": "light",
+      "viewport": "movil-390x844",
+      "viewportLabel": "Móvil 390×844",
+      "width": 390,
+      "height": 844,
+      "mobile": true,
+      "pointer": {
+        "coarse": true,
+        "hoverNone": true
+      },
+      "axeVersion": "4.10.2",
+      "title": "Respaldo y datos · Study Dashboard",
+      "navigations": 0,
+      "violations": [],
+      "incomplete": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "help": "ARIA attributes must conform to valid values",
+          "description": "Ensure all ARIA attributes have valid values",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        },
+        {
+          "id": "color-contrast",
+          "impact": "serious",
+          "help": "Elements must meet minimum color contrast ratio thresholds",
+          "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+          "nodes": 12,
+          "targets": [
+            ".data-hero > .data-kicker",
+            "#data-title",
+            ".data-lead",
+            "li:nth-child(1) > span",
+            "li:nth-child(2) > span",
+            "li:nth-child(3) > span",
+            ".data-health > .data-card-head > div > .data-kicker",
+            "#data-health-title",
+            ".data-pill",
+            ".data-health-last > .data-label",
+            "span[data-health-last=\"\"]",
+            ".data-health-advice"
+          ]
+        }
+      ],
+      "manualContrast": {
+        "checked": 12,
+        "failures": [],
+        "gradientNodes": 6,
+        "rows": [
+          {
+            "target": ".data-hero > .data-kicker",
+            "text": "RESPALDO Y DATOS",
+            "fg": "#6E675C",
+            "bg": "#F3F0E8",
+            "ratio": 4.91,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-title",
+            "text": "Tus datos, bajo tu control.",
+            "fg": "#1D1B17",
+            "bg": "#F3F0E8",
+            "ratio": 15.1,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-lead",
+            "text": "Tu progreso vive en este navegador, no e",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(1) > span",
+            "text": "Exportar e importar es local: el archivo",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(2) > span",
+            "text": "Puedes fusionar una copia con lo que ya ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "li:nth-child(3) > span",
+            "text": "Borrar progreso pide dos confirmaciones ",
+            "fg": "#575148",
+            "bg": "#F3F0E8",
+            "ratio": 6.89,
+            "gradient": false,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health > .data-card-head > div > .data-kicker",
+            "text": "SALUD DEL RESPALDO",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "#data-health-title",
+            "text": "Tu progreso, en una sola copia",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-pill",
+            "text": "SIN COPIA TODAVÍA",
+            "fg": "#8F520E",
+            "bg": "#EFE6D8",
+            "ratio": 5.01,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-last > .data-label",
+            "text": "ÚLTIMA EXPORTACIÓN",
+            "fg": "#6E675C",
+            "bg": "#FBF8F1",
+            "ratio": 5.27,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": "span[data-health-last=\"\"]",
+            "text": "Nunca se ha exportado desde este navegad",
+            "fg": "#1D1B17",
+            "bg": "#FBF8F1",
+            "ratio": 16.21,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          },
+          {
+            "target": ".data-health-advice",
+            "text": "Todo tu progreso vive en este navegador.",
+            "fg": "#575148",
+            "bg": "#FBF8F1",
+            "ratio": 7.4,
+            "gradient": true,
+            "min": 4.5,
+            "pass": true
+          }
+        ]
+      },
+      "reviewRequired": [
+        {
+          "id": "aria-valid-attr-value",
+          "impact": "critical",
+          "nodes": 1,
+          "targets": [
+            ".dash-more-btn"
+          ]
+        }
+      ],
+      "resources": [],
+      "elapsedMs": 101,
+      "screenshot": null
+    }
+  ]
+}

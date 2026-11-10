@@ -1,4 +1,5 @@
-/* SERUMS STUDY — utilidades de interfaz compartidas */
+/* SERUMS STUDY — utilidades de interfaz compartidas
+   © 2026 ZARCONT — Todos los derechos reservados. */
 (function () {
   "use strict";
   var THEME_KEY = "study-theme";

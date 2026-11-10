@@ -28,7 +28,11 @@ export const APPS = {
     name: "SERUMS QUEST",
     path: "/serums-quest/index.html",
     title: /SERUMS QUEST/,
-    ready: "!document.getElementById('view').hidden && document.getElementById('view').innerText.trim().length > 20",
+    /* La entrada redirige a dist/index.html, cuyo contenedor es #screen
+       (el antiguo #view ya no existe). El tutorial de primer recorrido se
+       cierra en HUB-06 antes de esperar el contenido. */
+    ready:
+      "(() => { const el = document.getElementById('screen') || document.getElementById('view'); return !!el && !el.hidden && el.innerText.trim().length > 20; })()",
   },
   plazas: {
     id: "plazas",

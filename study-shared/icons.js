@@ -1,4 +1,5 @@
-/* SERUMS STUDY — iconos de línea compartidos */
+/* SERUMS STUDY — iconos de línea compartidos
+   © 2026 ZARCONT — Todos los derechos reservados. */
 (function () {
   "use strict";
   var P = {

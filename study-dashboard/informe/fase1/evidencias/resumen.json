@@ -1,0 +1,122 @@
+{
+  "generatedAt": "2026-11-10T10:36:59.120Z",
+  "source": "tools/qa/run-qa.mjs",
+  "environment": {
+    "node": "v26.13.0",
+    "cwd": "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS",
+    "quick": false
+  },
+  "summary": {
+    "steps": 4,
+    "pass": 4,
+    "fail": 0,
+    "ok": true
+  },
+  "steps": [
+    {
+      "name": "Contraste de tokens",
+      "status": "PASS",
+      "durationMs": 10,
+      "detail": {
+        "total": 100,
+        "pass": 92,
+        "fail": 8,
+        "requiredFailed": 0,
+        "advisoryFailed": 8,
+        "ok": true
+      },
+      "files": [
+        "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\tools\\qa\\salida\\contraste.json"
+      ]
+    },
+    {
+      "name": "Peso de carga y derivados bajo demanda",
+      "status": "PASS",
+      "durationMs": 7869,
+      "detail": {
+        "ok": true,
+        "startupDerived": 0,
+        "notes": [],
+        "startupSearchJson": 0,
+        "baselineDerived": 0,
+        "phase1TransferKb": 3436.2,
+        "baselineTransferKb": 2901,
+        "deltaTransferKb": 535.3,
+        "phase1Requests": 28,
+        "baselineRequests": 13
+      },
+      "files": [
+        "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\tools\\qa\\salida\\peso.json"
+      ]
+    },
+    {
+      "name": "Auditoría axe-core",
+      "status": "PASS",
+      "durationMs": 74184,
+      "detail": {
+        "runs": 66,
+        "violationTypes": [],
+        "violations": 0,
+        "nodes": 0,
+        "pending": 0,
+        "states": [
+          "guardada-completada",
+          "activa",
+          "pausa-recuerdo",
+          "barra-seleccion",
+          "con-datos",
+          "con-actividad",
+          "busqueda-resultados",
+          "paleta",
+          "hoja-indice"
+        ],
+        "manualContrastChecked": 530,
+        "manualContrastFailures": 0,
+        "reviewRequired": [
+          "aria-valid-attr-value"
+        ],
+        "missingResources": [],
+        "ok": true
+      },
+      "files": [
+        "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\tools\\qa\\salida\\axe.json"
+      ]
+    },
+    {
+      "name": "Capturas y métricas",
+      "status": "PASS",
+      "durationMs": 126383,
+      "detail": {
+        "shots": 110,
+        "problems": 0,
+        "pending": 0,
+        "viewports": [
+          "1440x900",
+          "390x844",
+          "360x800",
+          "768x1024",
+          "1024x768",
+          "844x390"
+        ],
+        "states": [
+          "mas-abierto",
+          "ruta-hoy",
+          "con-actividad",
+          "relacionadas",
+          "con-datos",
+          "activa",
+          "pausa",
+          "barra-seleccion",
+          "busqueda",
+          "paleta",
+          "hoja-indice",
+          "reduced-motion"
+        ],
+        "ok": true
+      },
+      "files": [
+        "C:\\Users\\USARIO\\Documents\\ZARCONT SERUMS\\tools\\qa\\salida\\capturas.json"
+      ]
+    }
+  ]
+}

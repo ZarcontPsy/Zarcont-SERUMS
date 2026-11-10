@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!-- © 2026 ZARCONT — Arnés interno de humo; no forma parte de la app. -->
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Respaldo · smoke</title>
+<link rel="stylesheet" href="../../../study-shared/base.css">
+<link rel="stylesheet" href="../../styles.css">
+<link rel="stylesheet" href="../../css/data.css">
+</head>
+<body class="app-study app-dashboard">
+<a class="s-skip" href="#main">Saltar al contenido</a>
+<header class="s-appbar">
+  <div class="s-appbar-inner">
+    <a class="s-brand" href="#/" data-nav aria-label="Study Dashboard, inicio">
+      <span class="s-brand-mark" data-icon="book" data-size="17"></span>
+      <span class="s-brand-copy"><span class="s-brand-name">SERUMS STUDY</span><span class="s-product-name">Dashboard de estudio</span></span>
+    </a>
+  </div>
+</header>
+<main id="main" tabindex="-1">
+  <div id="view-root" class="s-page"></div>
+</main>
+<div id="live" class="s-sr-only" aria-live="polite"></div>
+
+<script src="../../../study-data/temario.js"></script>
+<script src="../../../study-shared/taxonomy.js"></script>
+<script src="../../../study-shared/icons.js"></script>
+<script src="../../../study-shared/ui.js"></script>
+<script src="../../../study-shared/store.js"></script>
+<script>
+/* Arnés de humo: imita el contrato mínimo de StudyApp para probar el módulo
+   sin tocar study-dashboard/app.js ni index.html. */
+(function () {
+  "use strict";
+  var root = document.getElementById("view-root");
+  var live = document.getElementById("live");
+  var currentRoute = { name: "home", path: "#/" };
+  var previousRoute = null;
+  var module = null;
+  var events = { on: function () { return function () {}; }, off: function () {}, once: function () {}, emit: function () {} };
+  function ctx() {
+    return {
+      app: window.StudyApp, store: window.StudyStore, ui: window.StudyUI,
+      content: window.STUDY_CONTENT, taxonomy: window.StudyTaxonomy,
+      route: currentRoute, previousRoute: previousRoute, root: root,
+      isSheet: false, sheet: null, params: [],
+      navigate: window.StudyApp.navigate, refresh: window.StudyApp.refresh,
+      announce: announce
+    };
+  }
+  function announce(text) {
+    if (!live) return;
+    live.textContent = "";
+    window.setTimeout(function () { live.textContent = text; }, 30);
+  }
+  function parse() {
+    return location.hash === "#/respaldo"
+      ? { name: "respaldo", path: "#/respaldo" }
+      : { name: "home", path: "#/" };
+  }
+  function renderRoute(opts) {
+    previousRoute = currentRoute;
+    currentRoute = parse();
+    if (currentRoute.name === "respaldo" && module) {
+      root.innerHTML = module.routes[0].render(ctx());
+      if (typeof module.routes[0].mount === "function") module.routes[0].mount(ctx());
+      document.title = "Respaldo y datos · Smoke";
+    } else if (currentRoute.name === "respaldo") {
+      root.innerHTML = '<div class="s-page"><p>Módulo no registrado</p></div>';
+    } else {
+      root.innerHTML = '<div class="s-page"><h1 tabindex="-1">Panel de prueba</h1><p>Vista de inicio para probar el recordatorio.</p><div data-module-mount="backup-reminder"></div></div>';
+      document.title = "Panel de prueba · Smoke";
+    }
+    if (module && typeof module.onRoute === "function") module.onRoute(ctx());
+    if (opts && opts.focus) {
+      var heading = root.querySelector("h1");
+      if (heading) heading.focus({ preventScroll: true });
+    }
+  }
+  window.StudyApp = {
+    version: "2.3.0",
+    events: events,
+    shortcuts: { register: function () {} },
+    registerModule: function (definition) {
+      module = definition;
+      if (typeof module.init === "function") module.init(ctx());
+      return true;
+    },
+    getRoute: function () { return currentRoute; },
+    navigate: function (hash, opts) {
+      opts = opts || {};
+      if (opts.replace || location.hash === hash) {
+        try { history.replaceState(null, "", hash); } catch (e) { location.hash = hash; }
+        renderRoute(opts);
+      } else {
+        location.hash = hash;
+      }
+      if (opts.announce) announce(opts.announce);
+    },
+    refresh: function (opts) { renderRoute(opts || {}); },
+    announce: announce
+  };
+  window.__smoke = { renderRoute: renderRoute, getRoute: function () { return currentRoute; } };
+  window.addEventListener("hashchange", function () { renderRoute({}); });
+})();
+</script>
+<script src="../../js/data/backup.js"></script>
+<script src="../../js/data/derived-loader.js"></script>
+<script>
+window.StudyStore.init().then(function () {
+  window.StudyDataBackup.register();
+  window.__smoke.renderRoute({});
+});
+</script>
+</body>
+</html>

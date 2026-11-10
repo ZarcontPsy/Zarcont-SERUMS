@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<title>Study Dashboard · Informe técnico y de producto</title>
+<style>
+@page { size: A4; margin: 18mm 16mm 18mm; }
+:root {
+  --ink: #1D1B17; --soft: #575148; --muted: #6E675C;
+  --accent: #9A5B12; --amber: #E6B566; --paper: #FBF8F1;
+  --line: #E3DCCC; --line-strong: #CFC4B0;
+}
+* { box-sizing: border-box; }
+html { print-color-adjust: exact; -webkit-print-color-adjust: exact; }
+body { margin: 0; font-family: "Inter", "Segoe UI", Arial, sans-serif; font-size: 10.2pt; line-height: 1.55; color: var(--ink); }
+a { color: var(--accent); text-decoration: none; }
+p { margin: 0 0 3.2mm; orphans: 3; widows: 3; }
+h2 { page-break-before: auto; break-before: auto; page-break-after: avoid; break-after: avoid; font-size: 22pt; line-height: 1.08; letter-spacing: -0.035em; margin: 13mm 0 5mm; padding-top: 3mm; border-top: 2px solid var(--amber); }
+h2:first-of-type { margin-top: 0; }
+h3 { font-size: 13.5pt; line-height: 1.2; letter-spacing: -0.02em; margin: 7mm 0 2.5mm; page-break-after: avoid; break-after: avoid; }
+h4 { font-size: 11pt; margin: 5mm 0 2mm; page-break-after: avoid; break-after: avoid; }
+strong { font-weight: 650; }
+em { color: var(--soft); }
+ul, ol { margin: 2mm 0 4mm 0; padding-left: 6mm; }
+li { margin-bottom: 1.3mm; }
+li > ul, li > ol { margin: 1mm 0 1.5mm 0; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 6mm 0; }
+blockquote { margin: 4mm 0 5mm; padding: 3.2mm 5mm; border-left: 3px solid var(--amber); background: var(--paper); color: var(--soft); page-break-inside: avoid; break-inside: avoid; }
+blockquote p:last-child { margin-bottom: 0; }
+code { font-family: "Cascadia Mono", Consolas, monospace; font-size: 8.6pt; background: #F1ECE1; padding: 0.2mm 1mm; border-radius: 1.5mm; }
+pre { background: #141417; color: #F4F1E9; padding: 4mm 5mm; border-radius: 2.5mm; font-size: 8pt; line-height: 1.5; overflow: hidden; white-space: pre-wrap; page-break-inside: avoid; break-inside: avoid; }
+pre code { background: none; color: inherit; padding: 0; font-size: inherit; }
+.table-wrap { width: 100%; margin: 4mm 0 6mm; page-break-inside: auto; break-inside: auto; }
+table { width: 100%; border-collapse: collapse; font-size: 8.4pt; line-height: 1.4; }
+tr { break-inside: avoid; page-break-inside: avoid; }
+thead { display: table-header-group; }
+th { background: #F1ECE1; color: var(--ink); text-align: left; vertical-align: top; padding: 2mm 2.2mm; border-bottom: 1px solid var(--line-strong); font-weight: 650; }
+td { padding: 2mm 2.2mm; border-bottom: 1px solid var(--line); vertical-align: top; }
+tbody tr:nth-child(even) td { background: #FBF8F1; }
+figure { margin: 5mm 0 7mm; padding: 2.2mm; border: 1px solid var(--line); border-radius: 2.5mm; background: #FFFFFF; page-break-inside: avoid; break-inside: avoid; }
+figure:has(img[src*="movil"]) { width: 84mm; margin-left: auto; margin-right: auto; }
+figure img { display: block; width: 100%; height: auto; max-height: 132mm; object-fit: contain; border-radius: 1.5mm; }
+figure img[src*="movil"] { width: 100%; max-height: 142mm; margin: 0 auto; }
+figcaption { font-size: 8.3pt; line-height: 1.4; color: var(--muted); padding: 2mm 1mm 0.5mm; }
+.cover { position: relative; height: 261mm; margin: -18mm -16mm 0; padding: 26mm 20mm 20mm; background: #0B0B0D; color: #F4F1E9; page-break-after: always; break-after: page; overflow: hidden; }
+.cover::before { content: ""; position: absolute; inset: 0; opacity: .28; background-image: linear-gradient(rgba(255,255,255,.08) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.08) 1px, transparent 1px); background-size: 22mm 22mm; mask-image: linear-gradient(90deg, black, transparent 75%); }
+.cover > * { position: relative; z-index: 1; }
+.cover .brand { display: flex; align-items: center; gap: 4mm; font-size: 9pt; letter-spacing: .16em; text-transform: uppercase; color: #BDB8AE; }
+.cover .brand .mark { width: 12mm; height: 12mm; border-radius: 3mm; background: linear-gradient(140deg, #E6B566, #DF2531); }
+.cover .kicker { margin-top: 34mm; color: var(--amber); font-size: 8.5pt; letter-spacing: .18em; text-transform: uppercase; font-weight: 650; }
+.cover h1 { font-size: 48pt; line-height: .95; letter-spacing: -0.055em; margin: 7mm 0 6mm; max-width: 165mm; font-weight: 650; }
+.cover .subtitle { font-size: 17pt; line-height: 1.3; color: #BDB8AE; max-width: 150mm; font-weight: 400; }
+.cover .desc { margin-top: 9mm; max-width: 148mm; font-size: 10pt; line-height: 1.6; color: #BDB8AE; }
+.cover .rule { height: 1px; background: rgba(255,255,255,.16); margin: 12mm 0 8mm; }
+.cover .meta { display: grid; grid-template-columns: 1fr 1fr; gap: 5mm 10mm; max-width: 165mm; }
+.cover .meta div { font-size: 9pt; color: #F4F1E9; }
+.cover .meta b { display: block; font-size: 7.6pt; letter-spacing: .14em; text-transform: uppercase; color: #88837A; margin-bottom: 1mm; font-weight: 600; }
+.cover .footer { position: absolute; left: 20mm; right: 20mm; bottom: 14mm; display: flex; justify-content: space-between; font-size: 8pt; color: #88837A; letter-spacing: .04em; }
+.cover .access { position: absolute; right: 20mm; top: 26mm; width: 38mm; height: 38mm; border: 1px solid rgba(230,181,102,.35); border-radius: 50%; display: grid; place-items: center; color: var(--amber); font-size: 8pt; text-align: center; line-height: 1.4; }
+.toc { page-break-after: always; break-after: page; padding-top: 4mm; }
+.toc h2 { page-break-before: auto; break-before: auto; border-top: 2px solid var(--amber); margin-top: 0; }
+.toc ol { list-style: none; padding: 0; margin: 8mm 0 0; columns: 2; column-gap: 14mm; }
+.toc li { break-inside: avoid; margin: 0 0 3.2mm; font-size: 9.4pt; }
+.toc a { color: var(--ink); display: flex; gap: 3mm; align-items: baseline; }
+.toc .toc-num { color: var(--accent); font-size: 7.6pt; font-variant-numeric: tabular-nums; letter-spacing: .06em; min-width: 7mm; }
+.toc-note { margin-top: 14mm; padding: 6mm 7mm; border: 1px solid var(--line); background: var(--paper); border-radius: 3mm; max-width: 154mm; break-inside: avoid; }
+.toc-note b { display: block; font-size: 7.8pt; letter-spacing: .14em; text-transform: uppercase; color: var(--accent); margin-bottom: 2.5mm; }
+.toc-note p { font-size: 9.4pt; line-height: 1.55; color: var(--soft); margin: 0 0 4mm; }
+.toc-stats { display: flex; gap: 9mm; }
+.toc-stats span { font-size: 8pt; color: var(--muted); }
+.toc-stats b { display: block; font-size: 14pt; color: var(--ink); letter-spacing: -.03em; font-weight: 650; }
+.doc-foot { margin-top: 10mm; padding-top: 4mm; border-top: 1px solid var(--line); font-size: 8pt; color: var(--muted); }
+</style>
+</head>
+<body>
+
+<section class="cover">
+  <div class="brand"><span class="mark"></span><span>ZARCONT SERUMS · STUDY</span></div>
+  <span class="access">Informe<br>técnico<br>2026</span>
+  <div class="kicker">Auditoría de producto y tecnología</div>
+  <h1>Study Dashboard</h1>
+  <div class="subtitle">Lectura, organización y progreso del temario SERUMS 2026-II</div>
+  <p class="desc">Qué es, cómo funciona, qué contiene, cómo se comporta en el navegador y qué conviene corregir antes de usarlo a diario.</p>
+  <div class="rule"></div>
+  <div class="meta">
+    <div><b>Aplicación</b>Study Dashboard · SERUMS STUDY</div>
+    <div><b>Ámbito</b>210 fichas · 630 tarjetas · 48 fuentes</div>
+    <div><b>Fecha</b>9 de noviembre de 2026</div>
+    <div><b>Método</b>Código + datos + Chrome headless + axe-core</div>
+    <div><b>Versión observada</b>Contenido 2.5.0 · assets 2.2.x</div>
+    <div><b>Carácter</b>Documento de análisis técnico</div>
+  </div>
+  <div class="footer"><span>ZARCONT SERUMS</span><span>Documento de análisis · 2026</span></div>
+</section>
+
+
+<section class="toc">
+  <h2 id="contenido">Contenido</h2>
+  <ol><li><a href="#1-resumen-ejecutivo"><span class="toc-num">01</span>Resumen ejecutivo</a></li><li><a href="#2-ficha-tecnica"><span class="toc-num">02</span>Ficha técnica</a></li><li><a href="#3-que-es-y-que-no-es"><span class="toc-num">03</span>Qué es y qué no es</a></li><li><a href="#4-la-experiencia-de-uso"><span class="toc-num">04</span>La experiencia de uso</a></li><li><a href="#5-el-contenido"><span class="toc-num">05</span>El contenido</a></li><li><a href="#6-arquitectura"><span class="toc-num">06</span>Arquitectura</a></li><li><a href="#7-diseno-y-responsive"><span class="toc-num">07</span>Diseño y responsive</a></li><li><a href="#8-accesibilidad"><span class="toc-num">08</span>Accesibilidad</a></li><li><a href="#9-rendimiento"><span class="toc-num">09</span>Rendimiento</a></li><li><a href="#10-pruebas-realizadas"><span class="toc-num">10</span>Pruebas realizadas</a></li><li><a href="#11-hallazgos-priorizados"><span class="toc-num">11</span>Hallazgos priorizados</a></li><li><a href="#12-recomendaciones"><span class="toc-num">12</span>Recomendaciones</a></li><li><a href="#13-como-ejecutar-y-desplegar"><span class="toc-num">13</span>Cómo ejecutar y desplegar</a></li><li><a href="#14-mantenimiento-y-versionado"><span class="toc-num">14</span>Mantenimiento y versionado</a></li><li><a href="#15-conclusion"><span class="toc-num">15</span>Conclusión</a></li><li><a href="#anexo-a-mapa-de-archivos"><span class="toc-num">16</span>Anexo A · Mapa de archivos</a></li><li><a href="#anexo-b-rutas-y-parametros"><span class="toc-num">17</span>Anexo B · Rutas y parámetros</a></li><li><a href="#anexo-c-evidencias"><span class="toc-num">18</span>Anexo C · Evidencias</a></li><li><a href="#anexo-d-glosario"><span class="toc-num">19</span>Anexo D · Glosario</a></li></ol>
+  <div class="toc-note">
+    <b>Cómo leer este informe</b>
+    <p>Combina una lectura completa del código con una auditoría real en navegador. Las secciones 1 a 4 explican qué es la app y cómo se usa; las secciones 5 a 10 analizan contenido, arquitectura, diseño, accesibilidad, rendimiento y pruebas; las secciones 11 a 15 priorizan hallazgos, recomendaciones, despliegue y mantenimiento. Las evidencias completas están en la carpeta <code>informe/</code>.</p>
+    <div class="toc-stats">
+      <span><b>19</b>secciones</span>
+      <span><b>19</b>tablas</span>
+      <span><b>7</b>capturas</span>
+      <span><b>210</b>fichas analizadas</span>
+    </div>
+  </div>
+</section>
+
+<h2 id="1-resumen-ejecutivo">1. Resumen ejecutivo</h2>
+<p>Study Dashboard es una aplicación web estática para <strong>organizar, leer y medir el avance</strong> del temario de Psicología del SERUMS 2026-II. No es una app de flashcards ni un banco de preguntas: es la capa de <strong>lectura y progreso</strong> del ecosistema SERUMS STUDY, y se conecta con Study Flashcards para convertir lo leído en recuperación activa.</p>
+<p>La aplicación está construida con JavaScript clásico, sin framework, sin build y sin servidor. Todo el contenido vive en un único archivo de datos de 2,59 MB (<code>study-data/temario.js</code>), y el progreso se guarda en el navegador con IndexedDB y localStorage. Esa decisión la hace muy fácil de ejecutar y de auditar, pero también concentra en el navegador todos los riesgos de pérdida de datos.</p>
+<p><strong>Lo mejor:</strong></p>
+<ul>
+<li>Contenido amplio y bien estructurado: 5 áreas, 20 categorías, 86 módulos, 210 fichas y 630 tarjetas.</li>
+<li>Progreso honesto: fichas vistas, completadas, favoritas, tiempo de lectura, racha y actividad de 14 días; sin métricas inventadas.</li>
+<li>Lector cuidado: modo rápido/completo, conceptos clave, tablas, avisos, fuentes enlazadas al PDF y restauración de la posición de lectura.</li>
+<li>Navegación profunda y tolerante: rutas por hash, enlaces directos a fichas, limpieza de parámetros antiguos y estados 404 con alternativas.</li>
+<li>Integración real con el HUB y con Study Flashcards mediante un almacén compartido y un snapshot de progreso.</li>
+<li>Identidad visual coherente: ámbar sobre negro, tema claro de papel, tipografía Inter/Zen Dots y detalles editoriales.</li>
+<li>Accesibilidad de base por encima de la media: <code>lang</code>, enlace de salto, un <code>h1</code> por vista, <code>aria-current</code>, <code>aria-pressed</code>, <code>aria-live</code>, foco gestionado, <code>prefers-reduced-motion</code> y atajo <code>/</code>.</li>
+</ul>
+<p><strong>Lo que hay que corregir antes de distribuirlo a estudiantes:</strong></p>
+<ol>
+<li><strong>Tema claro con contraste insuficiente</strong> en estados de éxito y aviso: la etiqueta «Completada» mide 1,45:1 y el icono de advertencia 2,16:1. Son colores semánticos pensados para fondo oscuro que no se adaptaron al tema claro.</li>
+<li><strong>Botones del lector sin nombre accesible en móvil:</strong> al ocultar el texto con <code>display:none</code>, «Guardar» y «Marcar completada» quedan como iconos sin <code>aria-label</code>. axe lo marca como crítico.</li>
+<li><strong>Sin exportación ni copia de seguridad del progreso:</strong> borrar los datos del navegador elimina todo el avance. Para una app de estudio de 42 horas de contenido, es el mayor riesgo de producto.</li>
+<li><strong>Peso inicial alto:</strong> 2,47 MiB de JavaScript de contenido (568 KB comprimido) que se descargan y parsean en cada carga fría. En un móvil de gama baja puede notarse.</li>
+<li><strong>Pérdida de la posición al volver a la biblioteca:</strong> el lector restaura su scroll, pero la biblioteca vuelve siempre arriba.</li>
+<li><strong>Detalles de pulido:</strong> objetivo que muestra «3 de 2», 22 fichas cuyo botón «Completo» no cambia nada, una sola recomendación en una rejilla de tres columnas, cabecera duplicada en la página de área y duplicados en el historial.</li>
+</ol>
+<p><strong>Veredicto:</strong> producto sólido y muy bien pensado para uso personal; con las correcciones de accesibilidad y una exportación de progreso quedaría listo para un uso real continuado. No es una plataforma multiusuario ni una app con sincronización entre dispositivos, y no pretende serlo.</p>
+<h3>Valoración orientativa</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Dimensión</th>
+<th>Valoración</th>
+<th>Motivo</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Propósito y enfoque</td>
+<td>Excelente</td>
+<td>Resuelve una necesidad concreta y no intenta ser todo a la vez.</td>
+</tr>
+<tr>
+<td>Contenido y cobertura</td>
+<td>Excelente</td>
+<td>210 fichas, 630 tarjetas y 48 fuentes; estructura verificable.</td>
+</tr>
+<tr>
+<td>Experiencia de lectura</td>
+<td>Muy buena</td>
+<td>Lector claro, modos, fuentes y restauración de posición.</td>
+</tr>
+<tr>
+<td>Navegación</td>
+<td>Buena</td>
+<td>Rutas profundas y búsqueda; pierde scroll al volver a la biblioteca.</td>
+</tr>
+<tr>
+<td>Diseño visual</td>
+<td>Excelente en oscuro / buena en claro</td>
+<td>Identidad fuerte; contraste mejorable en tema claro.</td>
+</tr>
+<tr>
+<td>Accesibilidad</td>
+<td>Buena con fallos corregibles</td>
+<td>Base sólida; 3 tipos de fallo en lector móvil y contraste claro.</td>
+</tr>
+<tr>
+<td>Rendimiento</td>
+<td>Mejorable</td>
+<td>2,47 MiB de contenido en cada carga fría.</td>
+</tr>
+<tr>
+<td>Persistencia</td>
+<td>Buena, pero sin red de seguridad</td>
+<td>IndexedDB + localStorage + merge; falta exportar/importar.</td>
+</tr>
+<tr>
+<td>Integración</td>
+<td>Excelente</td>
+<td>HUB y Flashcards comparten estado y enlaces profundos.</td>
+</tr>
+<tr>
+<td>Documentación y versionado</td>
+<td>Mejorable</td>
+<td>Registro 2.2.0 frente a assets 2.2.1/2.2.2; falta <code>meta author</code>.</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="2-ficha-tecnica">2. Ficha técnica</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Campo</th>
+<th>Valor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Nombre</td>
+<td>Study Dashboard</td>
+</tr>
+<tr>
+<td>Marca</td>
+<td>SERUMS STUDY · ZARCONT</td>
+</tr>
+<tr>
+<td>Tipo</td>
+<td>Aplicación web estática de una sola página (SPA por hash)</td>
+</tr>
+<tr>
+<td>Propósito</td>
+<td>Organizar el temario, leer fichas resumidas y seguir el progreso real</td>
+</tr>
+<tr>
+<td>Público</td>
+<td>Postulantes de Psicología al SERUMS 2026-II; estudio individual</td>
+</tr>
+<tr>
+<td>Idioma</td>
+<td>Español (Perú); fechas con <code>es-PE</code></td>
+</tr>
+<tr>
+<td>Stack</td>
+<td>HTML5, CSS3 y JavaScript ES5/ES2017, sin framework ni dependencias npm</td>
+</tr>
+<tr>
+<td>Build</td>
+<td>No requiere compilación</td>
+</tr>
+<tr>
+<td>Backend</td>
+<td>Ninguno</td>
+</tr>
+<tr>
+<td>Persistencia</td>
+<td>IndexedDB <code>study-serums</code> + localStorage <code>study-state-v1</code></td>
+</tr>
+<tr>
+<td>Datos</td>
+<td><code>study-data/temario.js</code> (2.587.623 bytes)</td>
+</tr>
+<tr>
+<td>Autoría</td>
+<td>ZARCONT; licencia propietaria © 2026</td>
+</tr>
+<tr>
+<td>Versión de contenido</td>
+<td>2.5.0</td>
+</tr>
+<tr>
+<td>Versión de assets</td>
+<td><code>app.js?v=2.2.1</code>, <code>styles.css?v=2.2.2</code></td>
+</tr>
+<tr>
+<td>Versión registrada</td>
+<td><code>AUTORIA.md</code>: Study Dashboard 2.2.0</td>
+</tr>
+<tr>
+<td>Tema</td>
+<td>Oscuro por defecto; claro persistente</td>
+</tr>
+<tr>
+<td>Responsive</td>
+<td>Sí; breakpoints 1150, 940, 760, 620 y 380 px</td>
+</tr>
+<tr>
+<td>Accesibilidad</td>
+<td>Base WCAG orientada a AA; incumplimientos puntuales medidos</td>
+</tr>
+<tr>
+<td>Navegadores objetivo</td>
+<td>Chrome, Edge, Firefox y Safari modernos; probado en Chrome</td>
+</tr>
+<tr>
+<td>Arranque</td>
+<td>Servir la carpeta raíz <code>ZARCONT SERUMS</code> por HTTP</td>
+</tr>
+</tbody></table></div>
+<h3>Archivos principales</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th align="right">Tamaño</th>
+<th align="right">Líneas</th>
+<th>Responsabilidad</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><a href="../index.html"><code>index.html</code></a></td>
+<td align="right">4.618 B</td>
+<td align="right">105</td>
+<td>Estructura, appbar, montaje de iconos y scripts</td>
+</tr>
+<tr>
+<td><a href="../app.js"><code>app.js</code></a></td>
+<td align="right">67.742 B</td>
+<td align="right">1.330</td>
+<td>Router, vistas, eventos, lector y progreso</td>
+</tr>
+<tr>
+<td><a href="../styles.css"><code>styles.css</code></a></td>
+<td align="right">38.510 B</td>
+<td align="right">504</td>
+<td>Panel, biblioteca, lector, progreso y responsive</td>
+</tr>
+<tr>
+<td><a href="../../study-data/temario.js"><code>study-data/temario.js</code></a></td>
+<td align="right">2.587.623 B</td>
+<td align="right">—</td>
+<td>Fuentes, áreas, temas, fichas, tarjetas y metadatos</td>
+</tr>
+<tr>
+<td><a href="../../study-shared/store.js"><code>study-shared/store.js</code></a></td>
+<td align="right">34.865 B</td>
+<td align="right">959</td>
+<td>Estado, persistencia, estadísticas y recomendaciones</td>
+</tr>
+<tr>
+<td><a href="../../study-shared/taxonomy.js"><code>study-shared/taxonomy.js</code></a></td>
+<td align="right">17.359 B</td>
+<td align="right">437</td>
+<td>5 áreas primarias, 20 categorías y mapas derivados</td>
+</tr>
+<tr>
+<td><a href="../../study-shared/base.css"><code>study-shared/base.css</code></a></td>
+<td align="right">16.882 B</td>
+<td align="right">361</td>
+<td>Tokens, componentes y responsive compartido</td>
+</tr>
+<tr>
+<td><a href="../../study-shared/ui.js"><code>study-shared/ui.js</code></a></td>
+<td align="right">6.920 B</td>
+<td align="right">—</td>
+<td>Utilidades de interfaz, formato, toasts y tema</td>
+</tr>
+<tr>
+<td><a href="../../study-shared/icons.js"><code>study-shared/icons.js</code></a></td>
+<td align="right">5.369 B</td>
+<td align="right">—</td>
+<td>Iconos SVG en línea</td>
+</tr>
+<tr>
+<td><a href="../../serums-chrome.js"><code>serums-chrome.js</code></a></td>
+<td align="right">12.494 B</td>
+<td align="right">—</td>
+<td>Controles Inicio, HUB y pantalla completa</td>
+</tr>
+<tr>
+<td><a href="../../serums-chrome.css"><code>serums-chrome.css</code></a></td>
+<td align="right">3.209 B</td>
+<td align="right">—</td>
+<td>Estilos de esos controles</td>
+</tr>
+<tr>
+<td><a href="../../serums-mobile.css"><code>serums-mobile.css</code></a></td>
+<td align="right">10.943 B</td>
+<td align="right">—</td>
+<td>Safe areas y ajustes móviles del ecosistema</td>
+</tr>
+</tbody></table></div>
+<p>Además, la aplicación referencia 48 PDFs en <code>study-data/fuentes/</code> que suman <strong>218.480.775 bytes (≈208 MiB)</strong>. No se cargan al abrir la app; solo cuando el usuario abre una fuente.</p>
+<hr>
+<h2 id="3-que-es-y-que-no-es">3. Qué es y qué no es</h2>
+<p>Study Dashboard es una de las cinco aplicaciones del lanzador SERUMS HUB. La separación es deliberada: cada app resuelve una parte del ciclo de estudio.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Aplicación</th>
+<th>Función</th>
+<th>Relación con Study Dashboard</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>SERUMS HUB</td>
+<td>Lanzador y tarjeta de progreso</td>
+<td>Lee <code>studyhub:snapshot:v1</code> y muestra avance y último punto</td>
+</tr>
+<tr>
+<td>BANQUEO · Examen Studio</td>
+<td>Banco de preguntas y práctica de examen</td>
+<td>Independiente; no comparte el temario de Study</td>
+</tr>
+<tr>
+<td>PLAZAS SERUMS</td>
+<td>Explorador de plazas y adjudicación</td>
+<td>Independiente</td>
+</tr>
+<tr>
+<td><strong>Study Dashboard</strong></td>
+<td><strong>Temario, fichas, lector y progreso de lectura</strong></td>
+<td><strong>App de este informe</strong></td>
+</tr>
+<tr>
+<td>Study Flashcards</td>
+<td>Recuperación activa con 630 tarjetas</td>
+<td>Comparte <code>StudyStore</code>, progreso y enlaces profundos</td>
+</tr>
+<tr>
+<td>SERUMS QUEST</td>
+<td>Capa RPG educativa</td>
+<td>Reutiliza banco y temario por referencia</td>
+</tr>
+</tbody></table></div>
+<p><strong>Es:</strong></p>
+<ul>
+<li>Un mapa navegable del temario oficial de Psicología 2026-II.</li>
+<li>Un lector de fichas resumidas con nivel, duración, conceptos clave, tablas, avisos y fuentes.</li>
+<li>Un registro local de avance: vistas, completadas, favoritas, tiempo, racha y actividad.</li>
+<li>Un puente hacia Study Flashcards para practicar la ficha que se está leyendo.</li>
+</ul>
+<p><strong>No es:</strong></p>
+<ul>
+<li>Un banco de preguntas de examen.</li>
+<li>Un entrenador de flashcards (esa es la otra app).</li>
+<li>Una plataforma con cuentas, nube o sincronización entre dispositivos.</li>
+<li>Un gestor documental: no permite editar fichas ni subir contenido desde la interfaz.</li>
+<li>Un sistema de recomendaciones basado en IA: las recomendaciones son reglas locales y deterministas.</li>
+</ul>
+<hr>
+<h2 id="4-la-experiencia-de-uso">4. La experiencia de uso</h2>
+<h3>4.1 Panel</h3>
+<p>El panel es la portada y el centro de decisión diaria. Se compone de:</p>
+<ul>
+<li><strong>Hero editorial</strong> con dos estados: primera visita («Cinco áreas. Un mapa claro.») y usuario con actividad («Aprender también es volver.»).</li>
+<li><strong>Anillo de progreso</strong> del temario completo y dos notas de contexto: temas iniciados y fichas vistas hoy.</li>
+<li><strong>Tres cifras</strong>: fichas completadas, tarjetas revisadas y racha.</li>
+<li><strong>Cinco tarjetas de área</strong> con color, icono, descripción, categorías, módulos, fichas y barra de progreso.</li>
+<li><strong>Tarjeta de reanudación</strong> con la última ficha, su contexto y tiempo relativo.</li>
+<li><strong>Objetivo diario</strong> ajustable entre 1 y 20 fichas, con anillo, barra y contadores del día.</li>
+<li><strong>Hasta tres recomendaciones</strong> generadas por reglas: repaso pendiente, tema empezado sin completar, tema sin empezar y refuerzo de errores.</li>
+<li><strong>Cita de cierre</strong> sobre estudiar para explicar y aplicar, no para acumular páginas.</li>
+</ul>
+<figure><img src="capturas/fig-panel.png" alt="Panel de inicio en tema oscuro, primera visita"><figcaption>Primera visita: el hero explica el temario y ofrece una acción principal; las cinco áreas aparecen debajo.</figcaption></figure>
+<p>En la primera visita solo hay una recomendación, así que la rejilla de tres columnas deja dos espacios vacíos. Es el primer detalle visual a pulir.</p>
+<p>Con actividad, el panel cambia de narrativa y prioriza «Retomar lectura», el último punto de trabajo y las recomendaciones pendientes.</p>
+<figure><img src="capturas/fig-panel-actividad.png" alt="Panel con actividad y último punto de trabajo"><figcaption>Estado con tres fichas completadas: el hero cambia a «Aprender también es volver» y el acceso principal pasa a «Retomar lectura».</figcaption></figure>
+<h3>4.2 Biblioteca</h3>
+<p>La biblioteca es la vista más profunda. Tiene tres niveles:</p>
+<ol>
+<li><strong>Las cinco áreas</strong> con sus categorías.</li>
+<li><strong>La categoría</strong> con sus módulos o fichas oficiales.</li>
+<li><strong>La ficha</strong> dentro de un módulo plegable.</li>
+</ol>
+<p>Herramientas:</p>
+<ul>
+<li><strong>Búsqueda</strong> por título, resumen, conceptos clave, palabras clave del tema, área y categoría. Atajo <code>/</code> para enfocar el campo.</li>
+<li><strong>Filtros</strong> «Todas», «En curso», «Completadas» y «Favoritas».</li>
+<li><strong>Resumen dinámico</strong> de módulos, fichas, categorías y áreas encontradas.</li>
+<li><strong>Módulos plegables</strong> con estado textual («Sin empezar», «En curso», «Completada») y contador <code>completadas/total</code>.</li>
+<li><strong>Fichas oficiales</strong> que pertenecen a la categoría pero no a un tema concreto, mostradas como grupo aparte.</li>
+<li><strong>Estado vacío</strong> con acción para limpiar filtros o volver al panel.</li>
+</ul>
+<figure><img src="capturas/03-biblioteca.png" alt="Biblioteca: las cinco áreas y sus categorías"><figcaption>La biblioteca agrupa por área y muestra categorías con descripción, número de temas, fichas y progreso. La búsqueda y los filtros quedan siempre a mano.</figcaption></figure>
+<p>La búsqueda no recorre el cuerpo de las fichas: solo título, resumen, conceptos clave, <code>kicker</code>, área y categoría. Para 195.847 palabras de contenido, esa es una limitación importante si el usuario recuerda una frase que solo aparece en un párrafo.</p>
+<h3>4.3 Lector de ficha</h3>
+<p>El lector es la pieza más trabajada. Cada ficha muestra:</p>
+<ul>
+<li><strong>Migas de pan</strong> área → categoría → tema, con chip «Desde flashcards» cuando se entra desde la otra app.</li>
+<li><strong>Título y resumen</strong> con tipografía editorial.</li>
+<li><strong>Metadatos</strong>: minutos, nivel, posición global («Ficha 1 de 210») y estado («Nueva», «Leída» o «Completada»).</li>
+<li><strong>Conceptos clave</strong> numerados en una rejilla de dos columnas.</li>
+<li><strong>Secciones</strong> con párrafos, listas, tablas y avisos. Cada sección se etiqueta como «Esencial» o «Ampliación».</li>
+<li><strong>Modo rápido</strong> (solo secciones <code>core</code>) y <strong>modo completo</strong> (todas). La preferencia se guarda en <code>study-dashboard-mode</code>.</li>
+<li><strong>Práctica con flashcards</strong>: total de tarjetas, pendientes, dominadas y errores de la ficha, con botón a Study Flashcards.</li>
+<li><strong>Fuentes</strong>: cada referencia abre el PDF original en la página indicada, con <code>target=&quot;_blank&quot;</code> y <code>rel=&quot;noopener&quot;</code>.</li>
+<li><strong>Paginador</strong> anterior/siguiente.</li>
+<li><strong>Rail lateral</strong>: progreso del tema, botón de completar, resumen del tema y tipo de contenido.</li>
+<li><strong>Acciones</strong>: favorito, completar, cambiar modo. Los cambios se confirman con un toast y se reflejan al instante en el rail.</li>
+<li><strong>Restauración de lectura</strong>: guarda la posición como ratio, la restaura tras recargar o volver a la ficha y cancela la restauración si el usuario hace scroll.</li>
+</ul>
+<figure><img src="capturas/05-lector.png" alt="Lector de ficha en modo rápido"><figcaption>Lector: conceptos clave, secciones y rail de progreso. El botón «Completo» revela las secciones de ampliación.</figcaption></figure>
+<p>La lectura se registra en bloques: <code>flushReading</code> cada 30 segundos, al cambiar de ruta, al ocultar la pestaña y al cerrar. Solo cuenta bloques de al menos 3 segundos.</p>
+<h3>4.4 Progreso</h3>
+<p>La vista de progreso resume lo que el usuario hizo, sin métricas decorativas:</p>
+<ul>
+<li>Cuatro indicadores: fichas completadas, tarjetas revisadas, días de racha y minutos de lectura.</li>
+<li>Gráfico de actividad de los últimos 14 días, con barras por día y resumen de acciones.</li>
+<li>Objetivo diario con anillo, barra, control de menos/más y contadores del día.</li>
+<li>Historial reciente de fichas abiertas, completadas y sesiones de flashcards.</li>
+<li>Favoritas, con estado vacío y acción para explorar la biblioteca.</li>
+<li>Avance por cada una de las cinco áreas.</li>
+<li>Nota de almacenamiento compartido con Flashcards y modo de guardado.</li>
+</ul>
+<figure><img src="capturas/fig-progreso.png" alt="Vista de progreso con datos de una sesión de prueba"><figcaption>Progreso real de la sesión de auditoría: 3 fichas completadas, 1 minuto de lectura, 13 acciones en 14 días. El objetivo se superó y la interfaz lo muestra como «3 de 2», un detalle de copy a corregir.</figcaption></figure>
+<h3>4.5 Navegación cruzada</h3>
+<p>El flujo de ida y vuelta está bien resuelto:</p>
+<ol>
+<li>Desde una ficha, «Practicar con flashcards» abre <code>study-flashcards/index.html?deck=&lt;sheet&gt;&amp;mode=free&amp;sheet=&lt;sheet&gt;&amp;from=dashboard</code>.</li>
+<li>Study Flashcards guarda el origen en <code>sessionStorage</code> y ofrece «Consultar ficha resumen».</li>
+<li>Al volver al dashboard con <code>?sheet=&lt;id&gt;&amp;from=flashcards&amp;deck=&lt;id&gt;</code>, la app limpia la query, la convierte en <code>#/ficha/&lt;id&gt;</code>, muestra el chip «Desde flashcards» y cambia el botón de volver a «Volver a flashcards».</li>
+<li>El HUB lee el snapshot y muestra el progreso y el último punto, sin cargar el temario completo.</li>
+</ol>
+<p>Ese contrato está bien pensado y se verificó en ejecución: la query se limpia, el hash queda canónico y el botón de vuelta apunta al mazo correcto.</p>
+<hr>
+<h2 id="5-el-contenido">5. El contenido</h2>
+<h3>5.1 Estructura</h3>
+<p>El temario se organiza en cinco áreas oficiales de Psicología, veinte categorías y ochenta y seis módulos. La jerarquía real es:</p>
+<pre><code>fuente (48)
+  └── tema / módulo (86: 85 temas + 1 contenedor)
+        └── ficha (210)
+              ├── sección (1.392)
+              ├── concepto clave (1.231)
+              └── tarjeta (630: 210 concepto + 210 múltiple + 210 aplicación)
+</code></pre>
+<p>Cada ficha pertenece a un tema; cada tema, a una categoría; cada categoría, a una de las cinco áreas primarias. Las 18 áreas heredadas del contenido original se usan como alias y se remapean a las cinco áreas oficiales; la interfaz solo muestra cinco.</p>
+<h3>5.2 Cobertura por área</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Área</th>
+<th align="right">Categorías</th>
+<th align="right">Módulos (UI)</th>
+<th align="right">Fichas</th>
+<th align="right">% del total</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I · Salud pública</td>
+<td align="right">3</td>
+<td align="right">15</td>
+<td align="right">43</td>
+<td align="right">20,5 %</td>
+</tr>
+<tr>
+<td>II · Cuidado integral de salud</td>
+<td align="right">8</td>
+<td align="right">62</td>
+<td align="right">135</td>
+<td align="right">64,3 %</td>
+</tr>
+<tr>
+<td>III · Ética e interculturalidad</td>
+<td align="right">2</td>
+<td align="right">2</td>
+<td align="right">9</td>
+<td align="right">4,3 %</td>
+</tr>
+<tr>
+<td>IV · Investigación</td>
+<td align="right">3</td>
+<td align="right">3</td>
+<td align="right">7</td>
+<td align="right">3,3 %</td>
+</tr>
+<tr>
+<td>V · Gestión de servicios de salud</td>
+<td align="right">4</td>
+<td align="right">4</td>
+<td align="right">16</td>
+<td align="right">7,6 %</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td align="right"><strong>20</strong></td>
+<td align="right"><strong>86</strong></td>
+<td align="right"><strong>210</strong></td>
+<td align="right"><strong>100 %</strong></td>
+</tr>
+</tbody></table></div>
+<blockquote>
+<p><strong>Matiz de conteo:</strong> los 86 «módulos» de la interfaz incluyen un tema contenedor (<code>topic-psi-ci-2</code>) con 22 fichas oficiales. Si se cuentan solo temas con contenido propio, son <strong>85 temas</strong>; el contenedor aporta las 22 fichas que la biblioteca muestra como «Fichas oficiales del temario». El Área II muestra 62 módulos porque suma sus 61 temas + el contenedor.</p>
+</blockquote>
+<p>La distribución es desigual: el Área II concentra casi dos tercios de las fichas. Es coherente con el peso de cuidado integral, salud mental y curso de vida en el temario, pero conviene tenerlo presente al planificar: no es un temario de cinco bloques equivalentes.</p>
+<h3>5.3 Categorías</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Área</th>
+<th>Categoría</th>
+<th align="right">Temas</th>
+<th align="right">Fichas</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>I</td>
+<td>Métodos y análisis de salud pública</td>
+<td align="right">1</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Salud comunitaria y determinantes ambientales</td>
+<td align="right">6</td>
+<td align="right">19</td>
+</tr>
+<tr>
+<td>I</td>
+<td>Promoción de la salud y prevención del daño</td>
+<td align="right">8</td>
+<td align="right">11</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Atención primaria y modelo de cuidado</td>
+<td align="right">7</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Evaluación y clínica psicológica</td>
+<td align="right">1</td>
+<td align="right">8</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Salud mental, consumo y violencias</td>
+<td align="right">16</td>
+<td align="right">32</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Gestación, infancia y adolescencia</td>
+<td align="right">13</td>
+<td align="right">26</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Adultez, vejez, crónicas y nutrición</td>
+<td align="right">12</td>
+<td align="right">26</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Prevención y detección temprana</td>
+<td align="right">0</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>II</td>
+<td>ITS, VIH, hepatitis y transmisión vertical</td>
+<td align="right">8</td>
+<td align="right">16</td>
+</tr>
+<tr>
+<td>II</td>
+<td>Seguridad del paciente e IAAS</td>
+<td align="right">4</td>
+<td align="right">9</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Ética y bioética</td>
+<td align="right">1</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>III</td>
+<td>Atención intercultural en salud</td>
+<td align="right">1</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Conceptos y clasificación</td>
+<td align="right">1</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Metodología</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>IV</td>
+<td>Ejecución y comunicación</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Planificación y presupuesto</td>
+<td align="right">1</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Organización de los servicios</td>
+<td align="right">1</td>
+<td align="right">7</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Administración de los servicios</td>
+<td align="right">1</td>
+<td align="right">4</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Sistema de gestión de la calidad</td>
+<td align="right">1</td>
+<td align="right">2</td>
+</tr>
+</tbody></table></div>
+<p>«Prevención y detección temprana» no tiene temas propios: sus 4 fichas son oficiales y se muestran como grupo aparte. Es una consecuencia del diseño del temario, no un error de datos; la interfaz lo resuelve bien.</p>
+<h3>5.4 Volumen y esfuerzo</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Métrica</th>
+<th align="right">Valor</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Fuentes declaradas</td>
+<td align="right">48</td>
+</tr>
+<tr>
+<td>Referencias de fuente en fichas</td>
+<td align="right">254</td>
+</tr>
+<tr>
+<td>Temas / módulos</td>
+<td align="right">86 (85 + 1 contenedor)</td>
+</tr>
+<tr>
+<td>Fichas</td>
+<td align="right">210</td>
+</tr>
+<tr>
+<td>Tarjetas</td>
+<td align="right">630</td>
+</tr>
+<tr>
+<td>Secciones</td>
+<td align="right">1.392</td>
+</tr>
+<tr>
+<td>Secciones esenciales (<code>core</code>)</td>
+<td align="right">879</td>
+</tr>
+<tr>
+<td>Secciones de ampliación (<code>full</code>)</td>
+<td align="right">513</td>
+</tr>
+<tr>
+<td>Conceptos clave</td>
+<td align="right">1.231</td>
+</tr>
+<tr>
+<td>Palabras (título, resumen, conceptos, secciones, tablas y avisos)</td>
+<td align="right">195.847</td>
+</tr>
+<tr>
+<td>Minutos declarados de lectura</td>
+<td align="right">2.524 (≈ 42 h 4 min)</td>
+</tr>
+<tr>
+<td>Media por ficha</td>
+<td align="right">933 palabras · 12 min · 6,6 secciones · 5,9 conceptos</td>
+</tr>
+<tr>
+<td>Ficha más corta / más larga</td>
+<td align="right">223 / 4.492 palabras; 5 / 22 min</td>
+</tr>
+<tr>
+<td>Niveles</td>
+<td align="right">80 Base · 92 Intermedio · 38 Avanzado</td>
+</tr>
+<tr>
+<td>Fichas con tablas</td>
+<td align="right">189 (90 %)</td>
+</tr>
+<tr>
+<td>Fichas con avisos</td>
+<td align="right">210 (100 %)</td>
+</tr>
+<tr>
+<td>Fichas con aviso de advertencia (<code>warn</code>)</td>
+<td align="right">72 (34 %)</td>
+</tr>
+<tr>
+<td>Fichas solo con secciones esenciales</td>
+<td align="right">22 (10,5 %)</td>
+</tr>
+</tbody></table></div>
+<p>A 30 minutos diarios, el temario completo son unas <strong>12 semanas</strong> de lectura; a 60 minutos, unas <strong>6 semanas</strong>. Son cifras útiles para planificar, pero no incluyen el tiempo de repaso con flashcards.</p>
+<h3>5.5 Fuentes</h3>
+<p>Las 48 fuentes son, en su mayoría, documentos técnicos y normativos del MINSA, guías de práctica clínica, normas técnicas, leyes y un artículo académico. También hay cinco documentos de síntesis del temario de Psicología.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Tipo</th>
+<th align="right">Cantidad</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Normas técnicas</td>
+<td align="right">14</td>
+</tr>
+<tr>
+<td>Guías de práctica clínica y guías técnicas</td>
+<td align="right">13</td>
+</tr>
+<tr>
+<td>Documentos técnicos</td>
+<td align="right">6</td>
+</tr>
+<tr>
+<td>Material de estudio / síntesis</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td>Manuales</td>
+<td align="right">2</td>
+</tr>
+<tr>
+<td>Leyes y reglamentos</td>
+<td align="right">3</td>
+</tr>
+<tr>
+<td>Artículo, declaración, política, directiva y temario</td>
+<td align="right">5</td>
+</tr>
+<tr>
+<td><strong>Total</strong></td>
+<td align="right"><strong>48</strong></td>
+</tr>
+</tbody></table></div>
+<p>Dos fuentes no están referenciadas por ninguna ficha:</p>
+<ul>
+<li><code>src-psico-temario</code>: el PDF del temario oficial de Psicología 2026-II. Se usa para estructurar el contenido, pero ninguna ficha lo cita.</li>
+<li><code>src-nutricion-ninos-anterior</code>: una versión anterior de la guía de nutrición infantil.</li>
+</ul>
+<p>Las cinco síntesis de Psicología sí se citan: salud pública (31 fichas), cuidado integral (30), gestión (16), ética (9) e investigación (7).</p>
+<h3>5.6 Integridad de los datos</h3>
+<p>La comprobación programática no encontró errores estructurales:</p>
+<ul>
+<li><strong>0 IDs duplicados</strong> entre fuentes, temas, fichas y tarjetas.</li>
+<li><strong>0 fichas sin tema</strong> y <strong>0 temas sin fichas</strong>.</li>
+<li><strong>0 fichas sin tarjetas</strong>; las 210 tienen exactamente 3.</li>
+<li><strong>0 fichas sin categoría</strong> y <strong>0 incidencias de taxonomía</strong>.</li>
+<li><strong>210 de 210 fichas</strong> asignadas a un área primaria.</li>
+<li><strong>48 PDFs existentes</strong> y accesibles; ninguno roto.</li>
+<li><strong>46 de 48 fuentes</strong> referenciadas directamente.</li>
+</ul>
+<p>La calidad estructural es alta. La calidad <em>editorial</em> es más desigual: hay fichas de 2 secciones y 223 palabras junto a fichas de 19 secciones y 4.492 palabras. No es un defecto grave —el temario tiene temas de distinta densidad—, pero el usuario percibe saltos de esfuerzo entre fichas.</p>
+<hr>
+<h2 id="6-arquitectura">6. Arquitectura</h2>
+<h3>6.1 Vista general</h3>
+<pre><code>study-data/temario.js
+   └── window.STUDY_CONTENT
+          │
+          ├── study-shared/taxonomy.js  → áreas, categorías, mapas, alias
+          ├── study-shared/store.js     → estado, estadísticas, persistencia
+          ├── study-shared/ui.js        → escapeHTML, iconos, toasts, tema
+          ├── study-shared/icons.js     → SVG inline
+          └── study-dashboard/app.js    → router + vistas + eventos
+                    │
+                    ├── localStorage  study-state-v1
+                    ├── IndexedDB     study-serums / state / main
+                    └── localStorage  studyhub:snapshot:v1  → HUB
+</code></pre>
+<p>Study Flashcards lee y escribe el mismo <code>StudyStore</code>; el HUB solo lee el snapshot. <code>serums-chrome.js</code> monta los controles de Inicio, HUB y pantalla completa en la appbar existente.</p>
+<h3>6.2 Modelo de ejecución</h3>
+<ul>
+<li><strong>Scripts clásicos</strong>, sin módulos ES ni bundler. El orden de carga importa: contenido → taxonomía → iconos → UI → store → chrome → app.</li>
+<li><strong>Sin framework</strong>: las vistas son funciones que devuelven cadenas HTML; se asignan con <code>innerHTML</code>.</li>
+<li><strong>Delegación de eventos</strong> global en <code>document</code> para clics, <code>input</code> y teclado; un listener de <code>hashchange</code> para rutas.</li>
+<li><strong>Estado de interfaz</strong> en un objeto <code>state</code> de <code>app.js</code>; estado persistente en <code>StudyStore</code>.</li>
+<li><strong>Render completo por ruta</strong>: no hay DOM virtual ni reconciliación. Es simple y suficiente para 210 fichas.</li>
+<li><strong>Carga única del contenido</strong>: 2,59 MB de JS se evalúan al inicio; no hay carga diferida por área.</li>
+</ul>
+<h3>6.3 Rutas</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Ruta</th>
+<th>Vista</th>
+<th>Notas</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>#/</code></td>
+<td>Panel</td>
+<td>Portada; estado inicial o con actividad</td>
+</tr>
+<tr>
+<td><code>#/biblioteca</code></td>
+<td>Biblioteca completa</td>
+<td>Cinco áreas y veinte categorías</td>
+</tr>
+<tr>
+<td><code>#/biblioteca/:area</code></td>
+<td>Área</td>
+<td>Categorías y progreso del área</td>
+</tr>
+<tr>
+<td><code>#/biblioteca/:area/:categoria</code></td>
+<td>Categoría</td>
+<td>Módulos plegables y fichas oficiales</td>
+</tr>
+<tr>
+<td><code>#/ficha/:sheetId</code></td>
+<td>Lector</td>
+<td>Ficha concreta; restaura posición</td>
+</tr>
+<tr>
+<td><code>#/progreso</code></td>
+<td>Progreso</td>
+<td>KPIs, actividad, historial, favoritas</td>
+</tr>
+<tr>
+<td>Otra ruta</td>
+<td>404</td>
+<td>Estado vacío con alternativas</td>
+</tr>
+</tbody></table></div>
+<p>Parámetros de entrada:</p>
+<ul>
+<li><code>?sheet=&lt;id&gt;</code>: abre una ficha concreta y limpia la query.</li>
+<li><code>?from=flashcards</code>: marca el origen y cambia el botón de vuelta.</li>
+<li><code>?deck=&lt;id&gt;</code>: mazo de Flashcards al que volver.</li>
+</ul>
+<p>La app canonicaliza áreas heredadas y categorías mal combinadas con <code>history.replaceState</code>; si el enlace mezcla un área y una categoría que no le corresponden, muestra un 404 explicativo.</p>
+<h3>6.4 Persistencia</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Clave</th>
+<th>Almacén</th>
+<th>Función</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>study-state-v1</code></td>
+<td>localStorage</td>
+<td>Estado completo, respaldo y merge entre pestañas</td>
+</tr>
+<tr>
+<td><code>study-serums</code> / <code>state</code> / <code>main</code></td>
+<td>IndexedDB</td>
+<td>Estado primario</td>
+</tr>
+<tr>
+<td><code>studyhub:snapshot:v1</code></td>
+<td>localStorage</td>
+<td>Snapshot ligero para el HUB</td>
+</tr>
+<tr>
+<td><code>study-theme</code></td>
+<td>localStorage</td>
+<td>Tema oscuro/claro</td>
+</tr>
+<tr>
+<td><code>study-dashboard-mode</code></td>
+<td>localStorage</td>
+<td>Modo rápido/completo</td>
+</tr>
+</tbody></table></div>
+<p>El estado guarda:</p>
+<ul>
+<li><code>sheets</code>: por ficha, vistas, primera vista, última apertura, completada, favorita, scroll y segundos de lectura.</li>
+<li><code>cards</code>: por tarjeta, caja, vencimiento, último repaso, resultado, aciertos, fallos y lapsos.</li>
+<li><code>sessions</code>: hasta 100 sesiones de Flashcards.</li>
+<li><code>activity</code>: por día, vistas, completadas, repasos, aciertos, fallos y segundos.</li>
+<li><code>goals.dailySheets</code>, <code>history</code> (máximo 60), <code>last.dashboard</code>, <code>last.flashcards</code> y <code>flashSession</code>.</li>
+</ul>
+<p>El guardado es defensivo:</p>
+<ul>
+<li><code>pickNewer</code> elige el estado con <code>updatedAt</code> más reciente entre IndexedDB y localStorage.</li>
+<li><code>mergeStates</code> combina fichas, tarjetas, sesiones, actividad, historial, objetivos y último punto.</li>
+<li>Los contadores de actividad usan <code>Math.max</code> para no duplicar entre pestañas.</li>
+<li><code>storage</code> sincroniza entre pestañas; <code>visibilitychange</code> y <code>pageshow</code> recuperan estados de bfcache.</li>
+<li>Si IndexedDB no está disponible, cae a localStorage y lo informa en Progreso.</li>
+</ul>
+<p><strong>Lo que falta:</strong> exportar/importar el estado, borrar el progreso desde la interfaz y una política de poda de datos obsoletos. El estado no se sincroniza entre dispositivos.</p>
+<h3>6.5 Errores y degradación</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Situación</th>
+<th>Comportamiento</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Falta el contenido</td>
+<td>Estado de error con reintento e ir al HUB</td>
+</tr>
+<tr>
+<td>Faltan módulos compartidos</td>
+<td>Estado de error (con una dependencia frágil: el propio error usa <code>StudyUI</code>)</td>
+</tr>
+<tr>
+<td>Falla IndexedDB</td>
+<td>Respaldo en localStorage; la app sigue leyendo</td>
+</tr>
+<tr>
+<td>Falla el almacenamiento por completo</td>
+<td>Aviso, pero el render posterior puede reemplazarlo (ver hallazgos)</td>
+</tr>
+<tr>
+<td>Temario vacío</td>
+<td>Estado vacío con enlaces a Flashcards y HUB</td>
+</tr>
+<tr>
+<td>Ficha inexistente</td>
+<td>404 con tres fichas alternativas</td>
+</tr>
+<tr>
+<td>Área/categoría inválida</td>
+<td>404 explicativo</td>
+</tr>
+<tr>
+<td>Enlace antiguo <code>?sheet</code></td>
+<td>Redirección al panel con aviso</td>
+</tr>
+<tr>
+<td>Falta <code>StudyTaxonomy</code></td>
+<td>Degradación silenciosa a 23 áreas heredadas, sin categorías (no se comprueba)</td>
+</tr>
+</tbody></table></div>
+<h3>6.6 Seguridad y privacidad</h3>
+<ul>
+<li><strong>Todo es local</strong>: no hay backend, cuentas, cookies de sesión ni analítica.</li>
+<li><strong>Única petición externa</strong>: Google Fonts (Inter y Zen Dots). El resto es local.</li>
+<li><strong>Escape sistemático</strong> con <code>UI.escapeHTML</code> en títulos, resúmenes, secciones, tablas, avisos, fuentes y búsqueda.</li>
+<li><strong>PDFs</strong> con <code>target=&quot;_blank&quot;</code> y <code>rel=&quot;noopener&quot;</code>.</li>
+<li><strong>Sin <code>eval</code></strong> en el código de la app; el archivo de datos es un script local de confianza.</li>
+<li><strong>Riesgo principal</strong>: pérdida de progreso al limpiar datos del navegador o cambiar de dispositivo.</li>
+<li><strong>Dependencia de mismo origen</strong>: para compartir estado con Flashcards, ambas apps deben servirse desde el mismo origen HTTP. Abrir <code>index.html</code> con <code>file://</code> puede aislar el almacenamiento.</li>
+<li><strong>CSP</strong>: no hay; sería una mejora de defensa en profundidad, con permiso para Google Fonts.</li>
+</ul>
+<hr>
+<h2 id="7-diseno-y-responsive">7. Diseño y responsive</h2>
+<h3>7.1 Identidad visual</h3>
+<ul>
+<li><strong>Tema oscuro por defecto</strong>: fondo <code>#0B0B0D</code>, superficie <code>#141417</code>, texto <code>#F4F1E9</code>.</li>
+<li><strong>Acento ámbar</strong>: <code>#E6B566</code> en oscuro y <code>#9A5B12</code> en claro.</li>
+<li><strong>Tema claro de papel</strong>: fondo <code>#F3F0E8</code>, superficie <code>#FBF8F1</code>, texto <code>#1D1B17</code>.</li>
+<li><strong>Rojo de marca</strong>: <code>#DF2531</code>; verde de éxito <code>#8FD3B0</code>; rojo de peligro <code>#F07A7A</code>.</li>
+<li><strong>Tipografía</strong>: Inter 400–800 para interfaz y lectura; Zen Dots para la marca.</li>
+<li><strong>Detalles editoriales</strong>: rejilla sutil en el hero, anillos cónicos de progreso, bordes finos, mayúsculas espaciadas y tarjetas de papel.</li>
+</ul>
+<figure><img src="capturas/09-panel-claro.png" alt="Tema claro"><figcaption>Tema claro: la identidad se mantiene, pero los colores semánticos de éxito y aviso no se adaptaron (ver Accesibilidad).</figcaption></figure>
+<h3>7.2 Composición</h3>
+<ul>
+<li>Ancho máximo de página: 1400 px.</li>
+<li>Panel: hero a dos columnas, cinco tarjetas de área, rejilla de reanudación/objetivo y tres recomendaciones.</li>
+<li>Biblioteca: cabecera de 860 px, barra de búsqueda/filtros, índice de áreas y rejilla de categorías a dos columnas.</li>
+<li>Lector: columna de lectura de hasta 790 px + rail de 292 px; en pantallas menores, el rail pasa debajo.</li>
+<li>Progreso: cuatro KPIs, gráfico de 14 días + objetivo, historial + favoritas, avance por área.</li>
+<li>La jerarquía es clara: una acción principal por estado, navegación activa visible y estados vacíos con salida.</li>
+</ul>
+<h3>7.3 Responsive</h3>
+<p>Se probaron seis viewports: 360×640, 390×844, 768×1024, 1024×768, 1440×900 y 844×390.</p>
+<ul>
+<li><strong>Sin scroll horizontal</strong> en ninguno; <code>scrollWidth === innerWidth</code>.</li>
+<li>Appbar de 59 px en móvil y 65 px en escritorio.</li>
+<li>En móvil se ocultan las etiquetas de navegación y el nombre de marca; quedan los iconos con <code>aria-label</code>.</li>
+<li>El lector apila el rail, oculta el texto de los botones de acción y colapsa el paginador a una columna.</li>
+<li>Las tablas se desplazan horizontalmente dentro de su contenedor.</li>
+<li>Safe areas (<code>--sat</code>, <code>--sab</code>, <code>--sal</code>, <code>--sar</code>) están contempladas.</li>
+</ul>
+<figure><img src="capturas/11-movil-lector.png" alt="Lector en móvil"><figcaption>Lector a 390 px: la jerarquía se mantiene, pero los botones de guardar/completar quedan como iconos sin nombre accesible y el objetivo visual de toque baja a 35–40 px.</figcaption></figure>
+<p><strong>Observación de diseño móvil:</strong> la appbar concentra nueve controles (marca, tres destinos, Flashcards, Inicio, HUB, pantalla completa y tema). Cabe, pero es densa y algunos objetivos son de 35 px. En un dispositivo real, conviene probar si la tasa de error al tocar es aceptable.</p>
+<h3>7.4 Movimiento y temas</h3>
+<ul>
+<li>Animación de entrada <code>dash-in</code> de 320 ms; duración y curvas en tokens (<code>140 ms</code>, <code>220 ms</code>, <code>420 ms</code>).</li>
+<li><code>prefers-reduced-motion: reduce</code> desactiva animaciones, transiciones y scroll suave.</li>
+<li>El tema se aplica antes del primer pintado con un script inline; evita el flash de tema incorrecto.</li>
+<li><code>meta[name=&quot;theme-color&quot;]</code> se actualiza al cambiar de tema.</li>
+<li>El tema y el modo de lectura persisten entre sesiones.</li>
+</ul>
+<hr>
+<h2 id="8-accesibilidad">8. Accesibilidad</h2>
+<h3>8.1 Lo que funciona</h3>
+<ul>
+<li><code>lang=&quot;es&quot;</code>, un <code>h1</code> por vista, landmarks (<code>header</code>, <code>main</code>, <code>footer</code>, <code>nav</code>), enlace «Saltar al contenido» y <code>main</code> enfocable.</li>
+<li><code>aria-current=&quot;page&quot;</code> en la navegación; <code>aria-pressed</code> en filtros, modos y acciones de estado.</li>
+<li><code>aria-live</code> para anuncios y toasts; foco al <code>h1</code> en cambios de ruta con <code>preventScroll</code>.</li>
+<li><code>&lt;details&gt;/&lt;summary&gt;</code> nativos para los módulos; el estado abierto se conserva en la sesión.</li>
+<li>Atajo <code>/</code> para buscar; foco visible con <code>:focus-visible</code>.</li>
+<li>Contraste correcto en tema oscuro (texto principal 17,4:1; atenuado 4,9–8,8:1).</li>
+<li><code>prefers-reduced-motion</code>, <code>color-scheme</code>, <code>interactive-widget=resizes-content</code> y safe areas.</li>
+<li>Enlaces de fuentes con texto y <code>title</code>; PDFs en pestaña nueva con <code>noopener</code>.</li>
+</ul>
+<h3>8.2 Hallazgos medidos con axe-core</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Página / estado</th>
+<th>Regla</th>
+<th>Impacto</th>
+<th align="right">Nodos</th>
+<th>Detalle</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Panel, Biblioteca, Lector, Progreso (oscuro, escritorio)</td>
+<td><code>label-content-name-mismatch</code></td>
+<td>Serio</td>
+<td align="right">1</td>
+<td><code>.s-brand</code>: el <code>aria-label</code> «Study Dashboard, inicio» no contiene el texto visible «SERUMS STUDY Dashboard de estudio»</td>
+</tr>
+<tr>
+<td>Lector móvil (claro)</td>
+<td><code>button-name</code></td>
+<td>Crítico</td>
+<td align="right">2</td>
+<td>Botones «Guardar» y «Marcar completada» sin nombre accesible al ocultar su texto en móvil</td>
+</tr>
+<tr>
+<td>Lector móvil (claro)</td>
+<td><code>color-contrast</code></td>
+<td>Serio</td>
+<td align="right">7</td>
+<td>Chip «Completada», números de concepto y badges «Ampliación»/fuente</td>
+</tr>
+<tr>
+<td>Lector móvil (claro)</td>
+<td><code>scrollable-region-focusable</code></td>
+<td>Serio</td>
+<td align="right">1</td>
+<td><code>.reader-table-wrap</code> se desplaza horizontalmente pero no es enfocable por teclado</td>
+</tr>
+</tbody></table></div>
+<p>No se detectaron violaciones en las vistas de escritorio en tema oscuro salvo la marca. Eso indica una base sólida, no una accesibilidad completa: axe no evalúa la experiencia real con lector de pantalla.</p>
+<h3>8.3 Contraste exacto</h3>
+<p>Medición con composición de fondos translúcidos y luminancia relativa:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Tema</th>
+<th>Color / fondo efectivo</th>
+<th>Ratio</th>
+<th align="right">Mínimo</th>
+<th align="right">Resultado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Chip «Completada»</td>
+<td>Claro</td>
+<td><code>#8FD3B0</code> sobre <code>#E7EDE1</code></td>
+<td><strong>1,45:1</strong></td>
+<td align="right">4,5:1</td>
+<td align="right">Falla</td>
+</tr>
+<tr>
+<td>Icono de advertencia</td>
+<td>Claro</td>
+<td><code>#F07A7A</code> sobre <code>#F3E3DC</code></td>
+<td><strong>2,16:1</strong></td>
+<td align="right">3,0:1 (gráfico)</td>
+<td align="right">Falla</td>
+</tr>
+<tr>
+<td>Badge «Ampliación» / fuente</td>
+<td>Claro</td>
+<td><code>#9A5B12</code> sobre <code>#E9E0D0</code></td>
+<td><strong>4,13:1</strong></td>
+<td align="right">4,5:1</td>
+<td align="right">Falla por poco</td>
+</tr>
+<tr>
+<td>Número de concepto</td>
+<td>Claro</td>
+<td><code>#9A5B12</code> sobre <code>#ECE8DE</code></td>
+<td><strong>4,42:1</strong></td>
+<td align="right">4,5:1</td>
+<td align="right">Falla por poco</td>
+</tr>
+<tr>
+<td>Texto atenuado</td>
+<td>Claro</td>
+<td><code>#6E675C</code> sobre <code>#FBF8F1</code></td>
+<td>5,27:1</td>
+<td align="right">4,5:1</td>
+<td align="right">Pasa</td>
+</tr>
+<tr>
+<td>Texto principal</td>
+<td>Claro</td>
+<td><code>#1D1B17</code> sobre <code>#F3F0E8</code></td>
+<td>15,1:1</td>
+<td align="right">4,5:1</td>
+<td align="right">Pasa</td>
+</tr>
+<tr>
+<td>Chip «Completada»</td>
+<td>Oscuro</td>
+<td><code>#8FD3B0</code> sobre <code>#1B2321</code></td>
+<td>9,26:1</td>
+<td align="right">4,5:1</td>
+<td align="right">Pasa</td>
+</tr>
+<tr>
+<td>Icono de advertencia</td>
+<td>Oscuro</td>
+<td><code>#F07A7A</code> sobre <code>#241719</code></td>
+<td>6,40:1</td>
+<td align="right">3,0:1</td>
+<td align="right">Pasa</td>
+</tr>
+</tbody></table></div>
+<p>La causa es clara: <code>--green</code>, <code>--green-soft</code>, <code>--danger</code> y <code>--danger-soft</code> se definen en <code>:root</code> para el tema oscuro, pero el bloque <code>html[data-theme=&quot;light&quot;]</code> no los redefine. El «verde menta» y el «rojo claro» están pensados para fondo negro.</p>
+<h3>8.4 Recomendaciones de accesibilidad</h3>
+<ol>
+<li><strong>Tokens semánticos para tema claro</strong>: definir <code>--green</code>, <code>--green-soft</code>, <code>--danger</code> y <code>--danger-soft</code> con variantes oscuras que alcancen 4,5:1 (texto) y 3:1 (iconos). Verificar con un script de contraste, no a ojo.</li>
+<li><strong>Nombres accesibles en el lector móvil</strong>: añadir <code>aria-label</code> dinámico a los botones de favorito y completar, o mantener un texto visualmente oculto en lugar de <code>display:none</code>. Actualizarlo al cambiar de estado («Guardar ficha» / «Quitar de favoritas», «Marcar como completada» / «Marcar como pendiente»).</li>
+<li><strong>Tabla enfocable</strong>: añadir <code>tabindex=&quot;0&quot;</code>, <code>role=&quot;region&quot;</code> y <code>aria-label</code> al contenedor de tablas desplazables; comprobar que se puede recorrer con teclado.</li>
+<li><strong>Marca</strong>: cambiar el <code>aria-label</code> a algo que incluya el texto visible, por ejemplo «SERUMS STUDY, Study Dashboard, inicio», o retirar el <code>aria-label</code> y añadir un texto solo para lectores.</li>
+<li><strong>Números decorativos</strong>: marcar los <code>01</code>, <code>02</code>… como <code>aria-hidden=&quot;true&quot;</code> si no aportan información, o subir su contraste.</li>
+<li><strong>Objetivos táctiles</strong>: subir tema y acciones del lector a 44 px en puntero grueso, o como mínimo a 40 px; el mínimo WCAG 2.2 de 24 px ya se cumple, pero 44 px es la referencia de comodidad.</li>
+<li><strong>Prueba manual</strong>: NVDA o VoiceOver en lector y biblioteca; teclado completo en la tabla y en los <code>&lt;details&gt;</code>; zoom al 200 % y reflow a 320 px.</li>
+</ol>
+<hr>
+<h2 id="9-rendimiento">9. Rendimiento</h2>
+<h3>9.1 Peso</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Recurso</th>
+<th align="right">Sin comprimir</th>
+<th align="right">Gzip</th>
+<th align="right">Ratio</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>study-data/temario.js</code></td>
+<td align="right">2.587.623 B (2,47 MiB)</td>
+<td align="right">567.859 B</td>
+<td align="right">21,9 %</td>
+</tr>
+<tr>
+<td><code>study-dashboard/app.js</code></td>
+<td align="right">67.742 B</td>
+<td align="right">16.644 B</td>
+<td align="right">24,6 %</td>
+</tr>
+<tr>
+<td><code>study-dashboard/styles.css</code></td>
+<td align="right">38.510 B</td>
+<td align="right">6.864 B</td>
+<td align="right">17,8 %</td>
+</tr>
+<tr>
+<td><code>study-shared/store.js</code></td>
+<td align="right">34.865 B</td>
+<td align="right">8.508 B</td>
+<td align="right">24,4 %</td>
+</tr>
+<tr>
+<td><code>study-shared/taxonomy.js</code></td>
+<td align="right">17.359 B</td>
+<td align="right">4.388 B</td>
+<td align="right">25,3 %</td>
+</tr>
+<tr>
+<td>CSS compartido + chrome + mobile</td>
+<td align="right">≈ 69,5 KB</td>
+<td align="right">≈ 15 KB</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>JavaScript total (estimado)</td>
+<td align="right">≈ 2,8 MB</td>
+<td align="right">≈ 600 KB</td>
+<td align="right">—</td>
+</tr>
+<tr>
+<td>PDFs (bajo demanda)</td>
+<td align="right">218.480.775 B</td>
+<td align="right">—</td>
+<td align="right">—</td>
+</tr>
+</tbody></table></div>
+<h3>9.2 Lo que se midió</h3>
+<ul>
+<li>En la auditoría, la carga inicial con la espera de asentamiento de la prueba fue de <strong>1,43 s</strong>; <code>DOMContentLoaded</code> se midió en <strong>74 ms</strong> en la pasada con caché. Son cifras locales y no representan una red real.</li>
+<li>DOM del panel: <strong>310 nodos</strong>; no se renderizan las 210 fichas a la vez.</li>
+<li><strong>0 errores de consola, 0 excepciones y 0 peticiones fallidas</strong> en toda la auditoría.</li>
+<li>Sin imágenes de contenido: todos los iconos son SVG en línea.</li>
+<li>La vista de biblioteca completa renderiza 5 áreas y 20 tarjetas de categoría; las fichas aparecen al abrir una categoría, no todas de golpe.</li>
+</ul>
+<h3>9.3 Diagnóstico</h3>
+<p>El coste dominante es el archivo de contenido: <strong>2,47 MiB</strong> que se descargan, se descomprimen y se parsean en cada carga fría. Gzip lo reduce a <strong>568 KB</strong>, una cifra razonable para una conexión normal, pero el parseo de un objeto JavaScript de ese tamaño en un móvil de gama baja puede añadir cientos de milisegundos. La app no minifica ni divide el contenido.</p>
+<p>No hay service worker ni manifest: no es instalable como PWA y no funciona offline salvo que el navegador tenga los archivos en caché. Las fuentes de Google son la única dependencia externa.</p>
+<h3>9.4 Recomendaciones</h3>
+<ol>
+<li><strong>Dividir el contenido por área o categoría</strong> y cargar solo el índice inicial (IDs, títulos, contadores) para el panel y la biblioteca; cargar el cuerpo de las fichas al abrirlas. El panel necesita estadísticas, no los 195.847 palabras.</li>
+<li><strong>Minificar y comprimir</strong> en el servidor (Brotli/Gzip) y usar nombres con hash o versiones en la query para cachear de forma agresiva.</li>
+<li><strong>Self-hosting de Inter y Zen Dots</strong> para eliminar la petición a Google, mejorar privacidad y evitar el bloqueo de fuentes.</li>
+<li><strong>Service worker + manifest</strong> si se quiere uso offline e instalación; cachear el shell y el contenido bajo demanda.</li>
+<li><strong>Medir en un móvil real</strong> con Lighthouse/WebPageTest; el dato local de 1,4 s no representa una red 4G real.</li>
+</ol>
+<hr>
+<h2 id="10-pruebas-realizadas">10. Pruebas realizadas</h2>
+<h3>10.1 Matriz ejecutada</h3>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Prueba</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Carga directa del panel</td>
+<td>Correcta; sin errores de consola</td>
+</tr>
+<tr>
+<td>Navegación Panel → Biblioteca → Área → Categoría → Ficha</td>
+<td>Correcta; sin recargas de documento</td>
+</tr>
+<tr>
+<td>Rutas directas a área, categoría y ficha</td>
+<td>Correctas</td>
+</tr>
+<tr>
+<td>Ficha inexistente / ruta inexistente</td>
+<td>404 con alternativas</td>
+</tr>
+<tr>
+<td>Búsqueda «vacun»</td>
+<td>5 módulos, 10 fichas, 5 categorías, 1 área</td>
+</tr>
+<tr>
+<td>Atajo <code>/</code></td>
+<td>Enfoca el campo de búsqueda</td>
+</tr>
+<tr>
+<td>Filtros Todas/En curso/Completadas/Favoritas</td>
+<td>Correctos; <code>aria-pressed</code> actualizado</td>
+</tr>
+<tr>
+<td>Modo rápido → completo</td>
+<td>2 → 3 secciones en la ficha de prueba</td>
+</tr>
+<tr>
+<td>Marcar completada + favorita</td>
+<td>Persistido en localStorage e IndexedDB; snapshot escrito</td>
+</tr>
+<tr>
+<td>Restauración de scroll</td>
+<td>0,45 → 0,45 tras salir y volver</td>
+</tr>
+<tr>
+<td>Enlace profundo desde Flashcards</td>
+<td>Query limpiada; chip y botón «Volver a flashcards» correctos</td>
+</tr>
+<tr>
+<td>Tema claro/oscuro</td>
+<td>Persistido; <code>theme-color</code> actualizado</td>
+</tr>
+<tr>
+<td>6 viewports (360 → 1440, incluido landscape)</td>
+<td>Sin scroll horizontal; appbar 59/65 px</td>
+</tr>
+<tr>
+<td>axe-core</td>
+<td>1 violación en escritorio oscuro; 3 tipos en lector móvil claro</td>
+</tr>
+<tr>
+<td>Consola / excepciones / peticiones fallidas</td>
+<td>0 / 0 / 0</td>
+</tr>
+</tbody></table></div>
+<h3>10.2 Pruebas que ya existen en el repositorio</h3>
+<p>El repositorio incluye un arnés E2E sin dependencias (<code>tests/e2e/</code>) con una suite específica de Study:</p>
+<ul>
+<li><code>DASH-01</code>: carga directa, 210 fichas y sin errores de producto.</li>
+<li><code>DASH-02</code>: Inicio → Biblioteca → Área → Ficha sin recargar.</li>
+<li><code>DASH-03</code>: Ficha → Panel y Ficha → HUB con los controles compartidos.</li>
+<li><code>DASH-04</code>: URL directa a una ficha.</li>
+<li><code>DASH-05</code>: Atrás/adelante entre biblioteca y ficha.</li>
+<li><code>DASH-06</code>: persistencia de ficha completada tras refrescar.</li>
+<li><code>DASH-07</code>: persistencia del tema tras refrescar.</li>
+<li><code>DASH-08</code>: sin recargas al filtrar y cambiar de tema.</li>
+<li><code>DASH-09</code>: pantalla completa con gesto real.</li>
+<li><code>FLASH-01</code> a <code>FLASH-09</code>: suite de Study Flashcards.</li>
+</ul>
+<p>No ejecuté esa matriz en esta auditoría; la cito como cobertura existente, no como resultado validado aquí. Mi verificación fue independiente y se centró en rutas, persistencia, accesibilidad, contraste y comportamiento responsive.</p>
+<h3>10.3 Límites de este informe</h3>
+<ul>
+<li>Probado en <strong>Chrome headless en Windows</strong>; no en Safari, Firefox, iOS o Android reales.</li>
+<li>El progreso usado en las capturas es <strong>sintético</strong>, generado por la auditoría; no hay datos de un usuario real.</li>
+<li>No se hizo prueba de carga, estrés de almacenamiento ni auditoría de seguridad ofensiva.</li>
+<li>axe-core es automatizado; no sustituye una prueba con lector de pantalla ni con usuarios.</li>
+<li>No se evaluó la calidad clínica del contenido; el informe es técnico y de producto.</li>
+</ul>
+<hr>
+<h2 id="11-hallazgos-priorizados">11. Hallazgos priorizados</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>ID</th>
+<th>Severidad</th>
+<th>Hallazgo</th>
+<th>Evidencia</th>
+<th>Corrección sugerida</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>H1</td>
+<td>Alta</td>
+<td>Colores semánticos sin adaptar al tema claro</td>
+<td>«Completada» 1,45:1; icono de aviso 2,16:1</td>
+<td>Redefinir <code>--green</code>/<code>--danger</code> en tema claro</td>
+</tr>
+<tr>
+<td>H2</td>
+<td>Alta</td>
+<td>Botones del lector sin nombre accesible en móvil</td>
+<td>axe: 2 nodos críticos</td>
+<td><code>aria-label</code> dinámico o texto sr-only</td>
+</tr>
+<tr>
+<td>H3</td>
+<td>Alta</td>
+<td>Sin exportación/copia de seguridad del progreso</td>
+<td>Solo localStorage/IndexedDB; no hay UI de backup</td>
+<td>Exportar/importar JSON versionado</td>
+</tr>
+<tr>
+<td>H4</td>
+<td>Alta</td>
+<td>Carga inicial de 2,47 MiB de contenido</td>
+<td>568 KB gzip; parseo en cada carga</td>
+<td>Dividir por área y cargar bajo demanda</td>
+</tr>
+<tr>
+<td>H5</td>
+<td>Media</td>
+<td>Tabla desplazable no enfocable</td>
+<td>axe: <code>scrollable-region-focusable</code></td>
+<td><code>tabindex=&quot;0&quot;</code> + rol/etiqueta</td>
+</tr>
+<tr>
+<td>H6</td>
+<td>Media</td>
+<td>Biblioteca pierde la posición al volver</td>
+<td>1200 px → 0 px</td>
+<td>Guardar scroll por ruta</td>
+</tr>
+<tr>
+<td>H7</td>
+<td>Media</td>
+<td>Objetivo superado muestra «3 de 2»</td>
+<td>Captura de Progreso</td>
+<td>Limitar texto o decir «objetivo superado»</td>
+</tr>
+<tr>
+<td>H8</td>
+<td>Media</td>
+<td>22 fichas sin secciones de ampliación</td>
+<td>3 secciones en ambos modos</td>
+<td>Ocultar el toggle o añadir ampliación</td>
+</tr>
+<tr>
+<td>H9</td>
+<td>Media</td>
+<td><code>aria-label</code> de marca no coincide con el texto visible</td>
+<td>axe: <code>label-content-name-mismatch</code></td>
+<td>Incluir el texto visible en el label</td>
+</tr>
+<tr>
+<td>H10</td>
+<td>Media</td>
+<td>Búsqueda solo en metadatos, no en el cuerpo</td>
+<td><code>sheetSearchText</code> no recorre secciones</td>
+<td>Indexar cuerpo y mostrar fragmento</td>
+</tr>
+<tr>
+<td>H11</td>
+<td>Baja</td>
+<td>Una recomendación en rejilla de tres</td>
+<td>Captura inicial</td>
+<td><code>auto-fit</code> o tarjeta de ancho completo</td>
+</tr>
+<tr>
+<td>H12</td>
+<td>Baja</td>
+<td>Cabecera de área duplicada</td>
+<td>Título y métricas repetidos</td>
+<td>Omitir la cabecera del índice en esa ruta</td>
+</tr>
+<tr>
+<td>H13</td>
+<td>Baja</td>
+<td>Historial con entradas duplicadas</td>
+<td>Misma ficha repetida</td>
+<td>Mover al top en lugar de duplicar</td>
+</tr>
+<tr>
+<td>H14</td>
+<td>Baja</td>
+<td>Pista <code>/</code> visible mientras se escribe</td>
+<td>Captura de búsqueda</td>
+<td>Ocultar con <code>:placeholder-shown</code></td>
+</tr>
+<tr>
+<td>H15</td>
+<td>Baja</td>
+<td>Versiones y metadatos desalineados</td>
+<td>2.2.0 vs 2.2.1/2.2.2; sin <code>meta author</code></td>
+<td>Sincronizar <code>AUTORIA.md</code>, query y metadatos</td>
+</tr>
+<tr>
+<td>H16</td>
+<td>Baja</td>
+<td>Appbar móvil densa y targets de 35 px</td>
+<td>9 controles; tema 35×35</td>
+<td>Menú compacto o 40–44 px</td>
+</tr>
+<tr>
+<td>H17</td>
+<td>Info</td>
+<td>«86 módulos» incluye 1 contenedor</td>
+<td>85 temas + 22 fichas oficiales</td>
+<td>Etiquetar «85 temas + 22 fichas oficiales»</td>
+</tr>
+<tr>
+<td>H18</td>
+<td>Info</td>
+<td>2 fuentes declaradas sin citar</td>
+<td>46/48 referenciadas</td>
+<td>Citar o retirar del catálogo</td>
+</tr>
+<tr>
+<td>H19</td>
+<td>Info</td>
+<td>Error de almacenamiento reemplazado por el render</td>
+<td><code>showError</code> y luego <code>renderRoute</code></td>
+<td>Detener el arranque o mostrar aviso persistente</td>
+</tr>
+<tr>
+<td>H20</td>
+<td>Info</td>
+<td>Foco del <code>h1</code> con contorno ámbar al navegar con teclado</td>
+<td>Solo <code>:focus-visible</code></td>
+<td>Estilo específico si se considera ruido visual</td>
+</tr>
+</tbody></table></div>
+<hr>
+<h2 id="12-recomendaciones">12. Recomendaciones</h2>
+<h3>Fase 0 · Victorias rápidas (menos de un día)</h3>
+<ol>
+<li>Tokens de tema claro para verde y peligro; prueba de contraste automatizada.</li>
+<li><code>aria-label</code> en los botones de favorito/completar del lector.</li>
+<li><code>tabindex=&quot;0&quot;</code> y etiqueta en <code>.reader-table-wrap</code>.</li>
+<li>Corregir el <code>aria-label</code> de la marca.</li>
+<li>Cambiar «3 de 2» por «3 de 2 (objetivo superado)» o limitar el texto a «Objetivo cumplido».</li>
+<li>Ocultar la pista <code>/</code> cuando el campo tenga valor.</li>
+<li>Rejilla de recomendaciones con <code>auto-fit</code> o tarjeta de ancho completo cuando hay una sola.</li>
+<li>Omitir la cabecera duplicada del área cuando ya hay cabecera de página.</li>
+</ol>
+<h3>Fase 1 · Fiabilidad y experiencia (2–4 días)</h3>
+<ol start="9">
+<li><strong>Exportar/importar progreso</strong> en JSON con versión, validación y confirmación; añadir «Borrar progreso» con doble confirmación.</li>
+<li><strong>Preservar el scroll de la biblioteca y del progreso</strong> por ruta, igual que ya se hace en el lector.</li>
+<li><strong>Ocultar el selector de modo</strong> cuando la ficha no tiene secciones <code>full</code>, o completar esas 22 fichas.</li>
+<li><strong>Deduplicar el historial</strong> moviendo la entrada repetida al principio.</li>
+<li><strong>Sincronizar versiones y documentación</strong>: <code>AUTORIA.md</code>, query strings, <code>meta author</code>, aviso de copyright y <code>INTEGRITY.sha256</code>.</li>
+<li><strong>Búsqueda en el cuerpo</strong> de las fichas, con fragmento y resaltado; es la mejora funcional con más impacto para 195.847 palabras.</li>
+</ol>
+<h3>Fase 2 · Rendimiento y distribución (1–2 semanas)</h3>
+<ol start="15">
+<li>Dividir el contenido por área/categoría y cargar el cuerpo bajo demanda; mantener un índice para el panel.</li>
+<li>Minificar, comprimir con Brotli y cachear con versiones; self-hosting de fuentes.</li>
+<li>Manifest + service worker para instalación y offline.</li>
+<li>Pruebas reales en iPhone/Safari y Android/Chrome; NVDA/VoiceOver; zoom 200 %.</li>
+</ol>
+<h3>Fase 3 · Producto (opcional)</h3>
+<ol start="19">
+<li>Plan diario que combine fichas pendientes y tarjetas vencidas en una sola «ruta de hoy».</li>
+<li>Notas o marcadores por ficha, sin convertirlo en un editor complejo.</li>
+<li>Exportación de un informe de progreso en PDF/CSV para el estudiante.</li>
+<li>Sincronización opcional (solo si se acepta el coste de privacidad y backend).</li>
+</ol>
+<hr>
+<h2 id="13-como-ejecutar-y-desplegar">13. Cómo ejecutar y desplegar</h2>
+<h3>Ejecución local</h3>
+<p>Desde la carpeta raíz del repositorio, no desde <code>study-dashboard/</code>:</p>
+<pre><code class="language-powershell">cd &quot;C:\Users\USARIO\Documents\ZARCONT SERUMS&quot;
+python -m http.server 8787
+</code></pre>
+<p>Abrir:</p>
+<pre><code>http://127.0.0.1:8787/study-dashboard/
+</code></pre>
+<p>No abrir <code>study-dashboard/index.html</code> con doble clic si se quiere que Flashcards comparta el progreso: el almacenamiento de <code>file://</code> puede estar aislado por archivo. La app lo advierte en Progreso: «Para compartirlo entre aplicaciones, ábrelas desde el mismo origen HTTP».</p>
+<h3>Publicación estática</h3>
+<p>Subir el repositorio completo conservando la estructura relativa:</p>
+<ul>
+<li><code>index.html</code> (HUB)</li>
+<li><code>study-dashboard/</code></li>
+<li><code>study-flashcards/</code></li>
+<li><code>study-shared/</code></li>
+<li><code>study-data/</code> (incluye <code>temario.js</code> y <code>fuentes/</code>)</li>
+<li><code>serums-chrome.js</code>, <code>serums-chrome.css</code>, <code>serums-mobile.css</code></li>
+</ul>
+<p>Si solo se publica <code>study-dashboard/</code>, se rompen las rutas <code>../study-shared</code>, <code>../study-data</code> y <code>../study-flashcards</code>. Configurar Gzip/Brotli para JS/CSS y cache largo para los assets versionados. Los 208 MiB de PDFs conviene servirlos aparte o con cache agresiva.</p>
+<hr>
+<h2 id="14-mantenimiento-y-versionado">14. Mantenimiento y versionado</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Elemento</th>
+<th>Valor observado</th>
+<th>Observación</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Contenido</td>
+<td>2.5.0</td>
+<td>Declarado en <code>temario.js</code></td>
+</tr>
+<tr>
+<td><code>app.js</code></td>
+<td><code>?v=2.2.1</code></td>
+<td>Query del HTML</td>
+</tr>
+<tr>
+<td><code>styles.css</code></td>
+<td><code>?v=2.2.2</code></td>
+<td>Query del HTML</td>
+</tr>
+<tr>
+<td><code>AUTORIA.md</code></td>
+<td>2.2.0</td>
+<td>No coincide con los assets</td>
+</tr>
+<tr>
+<td><code>study-shared</code></td>
+<td>2.0.0 en AUTORIA; 2.0.1/2.0.2 en HTML</td>
+<td>Drift de documentación</td>
+</tr>
+<tr>
+<td><code>Sistema de diseño</code></td>
+<td>2.3</td>
+<td>Documento aparte</td>
+</tr>
+<tr>
+<td><code>INTEGRITY.sha256</code></td>
+<td>Incluye app, index y styles</td>
+<td>Regenerar tras cambios</td>
+</tr>
+<tr>
+<td><code>meta name=&quot;author&quot;</code></td>
+<td>Ausente</td>
+<td>AUTORIA dice que está en las interfaces</td>
+</tr>
+<tr>
+<td>Aviso <code>© 2026 ZARCONT</code></td>
+<td>Ausente en los tres archivos de la app</td>
+<td>AUTORIA dice que cada archivo propio lo incluye</td>
+</tr>
+</tbody></table></div>
+<p>No hay un <code>CHANGELOG</code> específico del dashboard. El historial git muestra pocos commits (<code>V0.2</code> a <code>V1.1.2</code>) para esta carpeta, mientras el repositorio global va por <code>V10.3.4</code>; conviene no confundir el versionado del HUB con el de la app.</p>
+<hr>
+<h2 id="15-conclusion">15. Conclusión</h2>
+<p>Study Dashboard es una aplicación <strong>muy por encima de la media</strong> para lo que suele encontrarse en proyectos de estudio personales: tiene una identidad clara, un modelo de contenido rico y verificable, un lector bien resuelto y una integración real con el resto del ecosistema. La decisión de mantenerla estática, sin backend y con progreso local es coherente con su propósito y con la privacidad del estudiante.</p>
+<p>Sus debilidades no son de concepto, sino de acabado y de red de seguridad:</p>
+<ul>
+<li>El tema claro necesita una pasada de contraste.</li>
+<li>El lector móvil necesita nombres accesibles en sus acciones.</li>
+<li>La tabla necesita acceso por teclado.</li>
+<li>El progreso necesita exportación/importación.</li>
+<li>El contenido necesita dividirse para no cargar 2,47 MiB en cada visita.</li>
+<li>La biblioteca necesita recordar dónde estaba el usuario.</li>
+</ul>
+<p>Ninguna de esas correcciones exige reescribir la app. La mayoría son cambios pequeños y localizados. Con ellas, Study Dashboard pasaría de «muy buen proyecto personal» a «herramienta fiable para estudiantes reales».</p>
+<p><strong>Recomendación final:</strong> conservar el enfoque local-first, corregir primero accesibilidad y backup, y abordar después el rendimiento. No añadir cuentas ni nube hasta que el usuario lo pida: la simplicidad es una de las mejores cualidades de esta aplicación.</p>
+<hr>
+<h2 id="anexo-a-mapa-de-archivos">Anexo A · Mapa de archivos</h2>
+<pre><code>ZARCONT SERUMS/
+├── index.html                     HUB (tarjeta y snapshot)
+├── serums-chrome.js/.css          Controles Inicio/HUB/pantalla completa
+├── serums-mobile.css              Safe areas y ajustes móviles
+├── study-dashboard/
+│   ├── index.html                 Shell de la app
+│   ├── app.js                     Router, vistas, eventos
+│   ├── styles.css                 Estilos propios
+│   └── informe/                   Este informe y capturas
+├── study-shared/
+│   ├── base.css                   Tokens y componentes
+│   ├── store.js                   Estado y persistencia
+│   ├── taxonomy.js                Áreas y categorías
+│   ├── ui.js                      Utilidades
+│   └── icons.js                   SVG
+├── study-data/
+│   ├── temario.js                 Contenido (2,59 MB)
+│   └── fuentes/                   48 PDFs (208 MiB)
+├── study-flashcards/              App de tarjetas
+└── tests/e2e/                     Arnés E2E (DASH-01…09)
+</code></pre>
+<h2 id="anexo-b-rutas-y-parametros">Anexo B · Rutas y parámetros</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>URL</th>
+<th>Resultado</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>#/</code></td>
+<td>Panel</td>
+</tr>
+<tr>
+<td><code>#/biblioteca</code></td>
+<td>Biblioteca completa</td>
+</tr>
+<tr>
+<td><code>#/biblioteca/area-psi-salud-publica</code></td>
+<td>Área I</td>
+</tr>
+<tr>
+<td><code>#/biblioteca/area-psi-cuidado-integral/cat-ci-mental</code></td>
+<td>Salud mental</td>
+</tr>
+<tr>
+<td><code>#/ficha/sheet-aps-01</code></td>
+<td>Ficha «Una APS fuerte no es un consultorio de segunda»</td>
+</tr>
+<tr>
+<td><code>#/progreso</code></td>
+<td>Progreso</td>
+</tr>
+<tr>
+<td><code>?sheet=sheet-aps-01</code></td>
+<td>Abre la ficha y limpia la query</td>
+</tr>
+<tr>
+<td><code>?sheet=...&amp;from=flashcards&amp;deck=...</code></td>
+<td>Abre la ficha marcando origen Flashcards</td>
+</tr>
+<tr>
+<td>Ruta desconocida</td>
+<td>404 con alternativas</td>
+</tr>
+</tbody></table></div>
+<h2 id="anexo-c-evidencias">Anexo C · Evidencias</h2>
+<p>Los archivos de evidencia están en <code>informe/</code>:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Archivo</th>
+<th>Contenido</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>resultados-tecnicos.json</code></td>
+<td>Rutas, axe, persistencia, viewports y rendimiento de la auditoría principal</td>
+</tr>
+<tr>
+<td><code>detalles-ui.json</code></td>
+<td>Contraste, nombres accesibles, IDs duplicados y desbordes</td>
+</tr>
+<tr>
+<td><code>contraste.json</code></td>
+<td>Ratios exactos por tema y elemento</td>
+</tr>
+<tr>
+<td><code>comportamiento.json</code></td>
+<td>Scroll de biblioteca, objetivo, modo sin ampliación, pista <code>/</code>, marca e historial</td>
+</tr>
+<tr>
+<td><code>capturas/fig-panel.png</code></td>
+<td>Panel completo en oscuro, primera visita</td>
+</tr>
+<tr>
+<td><code>capturas/02-hero.png</code></td>
+<td>Hero en viewport</td>
+</tr>
+<tr>
+<td><code>capturas/03-biblioteca.png</code></td>
+<td>Biblioteca completa</td>
+</tr>
+<tr>
+<td><code>capturas/04-area.png</code></td>
+<td>Área II</td>
+</tr>
+<tr>
+<td><code>capturas/05-lector.png</code></td>
+<td>Lector arriba</td>
+</tr>
+<tr>
+<td><code>capturas/06-lector-cuerpo.png</code></td>
+<td>Lector en el cuerpo</td>
+</tr>
+<tr>
+<td><code>capturas/fig-progreso.png</code></td>
+<td>Progreso con datos</td>
+</tr>
+<tr>
+<td><code>capturas/fig-panel-actividad.png</code></td>
+<td>Panel con actividad</td>
+</tr>
+<tr>
+<td><code>capturas/09-panel-claro.png</code></td>
+<td>Tema claro</td>
+</tr>
+<tr>
+<td><code>capturas/10-movil-panel.png</code></td>
+<td>Panel móvil completo</td>
+</tr>
+<tr>
+<td><code>capturas/11-movil-lector.png</code></td>
+<td>Lector móvil</td>
+</tr>
+<tr>
+<td><code>capturas/12-movil-busqueda.png</code></td>
+<td>Búsqueda móvil</td>
+</tr>
+</tbody></table></div>
+<h2 id="anexo-d-glosario">Anexo D · Glosario</h2>
+<ul>
+<li><strong>SPA</strong>: aplicación de una sola página; la navegación ocurre sin recargar el documento.</li>
+<li><strong>Hash router</strong>: rutas después de <code>#/</code>, compatibles con hospedaje estático.</li>
+<li><strong>Snapshot</strong>: resumen ligero del progreso que el HUB lee sin cargar el temario.</li>
+<li><strong>IndexedDB</strong>: base de datos local del navegador; almacén primario del estado.</li>
+<li><strong>localStorage</strong>: almacén clave-valor del navegador; respaldo y snapshot.</li>
+<li><strong>axe-core</strong>: motor automatizado de reglas de accesibilidad.</li>
+<li><strong>Gzip/Brotli</strong>: compresión HTTP que reduce el peso de texto.</li>
+<li><strong>Core / full</strong>: secciones esenciales frente a secciones de ampliación del lector.</li>
+<li><strong>Contenedor</strong>: tema especial que agrupa 22 fichas oficiales sin categoría de tema propia.</li>
+</ul>
+<hr>
+<p><em>Informe elaborado el 9 de noviembre de 2026 a partir de la copia local del proyecto. Las cifras de contenido se calcularon con Node.js sobre <code>study-data/temario.js</code>; las de interfaz y accesibilidad, con Chrome headless, Playwright y axe-core.</em></p>
+
+</body>
+</html>

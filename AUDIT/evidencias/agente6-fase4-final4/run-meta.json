@@ -1,0 +1,264 @@
+{
+  "startedAt": "2026-11-10T14:53:29.486Z",
+  "finishedAt": "2026-11-10T15:00:47.786Z",
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/157.0.8103.39",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-IFcjcX"
+  },
+  "repo": {
+    "git": {
+      "head": "12bf819",
+      "status": [
+        " M AUTORIA.md",
+        " M INTEGRITY.sha256",
+        " M NOTICE.md",
+        " M index.html",
+        " M study-dashboard/app.js",
+        " M study-dashboard/index.html",
+        " M study-dashboard/styles.css",
+        " M study-flashcards/index.html",
+        " M study-shared/base.css",
+        " M study-shared/icons.js",
+        " M study-shared/store.js",
+        " M study-shared/ui.js",
+        " M tests/e2e/README.md",
+        " M tests/e2e/lib/apps.mjs",
+        " M tests/e2e/run.mjs",
+        " M tests/e2e/suites/hub.mjs",
+        " M tests/e2e/suites/study.mjs",
+        "?? AUDIT/evidencias/agente6-axe-fase4-console.txt",
+        "?? AUDIT/evidencias/agente6-baseline/",
+        "?? AUDIT/evidencias/agente6-capturas-fase1-console.txt",
+        "?? AUDIT/evidencias/agente6-capturas-fase1-final-console.txt",
+        "?? AUDIT/evidencias/agente6-capturas-fase1-final3-console.txt",
+        "?? AUDIT/evidencias/agente6-capturas-fase2-console.txt",
+        "?? AUDIT/evidencias/agente6-capturas-fase4-console.txt",
+        "?? AUDIT/evidencias/agente6-fase1-final-console.txt",
+        "?? AUDIT/evidencias/agente6-fase1-final/",
+        "?? AUDIT/evidencias/agente6-fase1-final2-console.txt",
+        "?? AUDIT/evidencias/agente6-fase1-final2/",
+        "?? AUDIT/evidencias/agente6-fase1-final3-console.txt",
+        "?? AUDIT/evidencias/agente6-fase1-final3/",
+        "?? AUDIT/evidencias/agente6-fase1-final4-console.txt",
+        "?? AUDIT/evidencias/agente6-fase1-final4/",
+        "?? AUDIT/evidencias/agente6-fase2-dev-console.txt",
+        "?? AUDIT/evidencias/agente6-fase2-dev2-console.txt",
+        "?? AUDIT/evidencias/agente6-fase2-final3/",
+        "?? AUDIT/evidencias/agente6-fase2-recheck-console.txt",
+        "?? AUDIT/evidencias/agente6-fase2-recheck/",
+        "?? AUDIT/evidencias/agente6-fase3-pre/",
+        "?? AUDIT/evidencias/agente6-fase3-recheck-console.txt",
+        "?? AUDIT/evidencias/agente6-fase3-recheck/",
+        "?? AUDIT/evidencias/agente6-fase4-final-console.txt",
+        "?? AUDIT/evidencias/agente6-fase4-final/",
+        "?? AUDIT/evidencias/agente6-fase4-final2-console.txt",
+        "?? AUDIT/evidencias/agente6-fase4-final2/",
+        "?? AUDIT/evidencias/agente6-fase4-final3-console.txt",
+        "?? AUDIT/evidencias/agente6-fase4-final3/",
+        "?? AUDIT/evidencias/agente6-fase4-probe-console.txt",
+        "?? AUDIT/evidencias/agente6-fase4-probe/",
+        "?? AUDIT/evidencias/agente6-final-v2/",
+        "?? AUDIT/evidencias/agente6-hub-recheck-console.txt",
+        "?? AUDIT/evidencias/agente6-hub-recheck/",
+        "?? AUDIT/evidencias/agente6-hub-recheck2-console.txt",
+        "?? AUDIT/evidencias/agente6-hub-recheck2/",
+        "?? AUDIT/evidencias/agente6-hub-recheck3-console.txt",
+        "?? AUDIT/evidencias/agente6-hub-recheck3/",
+        "?? AUDIT/evidencias/agente6-peso-apps-console.txt",
+        "?? AUDIT/evidencias/agente6-phase1-dev-console.txt",
+        "?? AUDIT/evidencias/agente6-phase1-dev/",
+        "?? AUDIT/evidencias/agente6-phase1-run2-console.txt",
+        "?? AUDIT/evidencias/agente6-phase1-run2/",
+        "?? AUDIT/evidencias/agente6-runqa-fase1-console.txt",
+        "?? AUDIT/evidencias/agente6-runqa-fase2-console.txt",
+        "?? AUDIT/evidencias/phase0-baseline/",
+        "?? AUDIT/evidencias/phase0-final-stable/",
+        "?? AUDIT/evidencias/phase0-hub-check/",
+        "?? AUDIT/evidencias/phase1-release/",
+        "?? AUDIT/evidencias/phase3-release2/",
+        "?? AUDIT/evidencias/quest-probe.mjs",
+        "?? study-dashboard/CHANGELOG.md",
+        "?? study-dashboard/css/",
+        "?? study-dashboard/docs/",
+        "?? study-dashboard/informe/",
+        "?? study-dashboard/js/",
+        "?? study-dashboard/tests/",
+        "?? study-data/content-loader.js",
+        "?? study-data/content-split.json",
+        "?? study-data/derived/",
+        "?? study-data/sections/",
+        "?? study-data/temario-core.js",
+        "?? tests/e2e/probe-fase3-deep.mjs",
+        "?? tests/e2e/probe-fase4.mjs",
+        "?? tests/e2e/suites/dash-fase0.mjs",
+        "?? tests/e2e/suites/dash-fase1.mjs",
+        "?? tests/e2e/suites/dash-fase2.mjs",
+        "?? tests/e2e/suites/dash-fase3.mjs",
+        "?? tests/e2e/suites/dash-fase4.mjs",
+        "?? tools/build-content-split.js",
+        "?? tools/build-derived.js",
+        "?? tools/qa/"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 101828,
+        "mtimeMs": 1794319412400,
+        "sha1ish": "396af1ee8d76722be44b8e82d8ca5f3249ec6c1c"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 15845,
+        "mtimeMs": 1794319305265,
+        "sha1ish": "ba1c489f22be08e57c565c0bdabd152170e1e90e"
+      },
+      "study-dashboard/app.js": {
+        "size": 93533,
+        "mtimeMs": 1794319853620,
+        "sha1ish": "9cd756c8fa935a6961a83305adf22579b267284e"
+      },
+      "study-flashcards/index.html": {
+        "size": 4639,
+        "mtimeMs": 1794319305217,
+        "sha1ish": "ad3b78fd269e8440a14cbd10e3072735a505995a"
+      },
+      "study-flashcards/app.js": {
+        "size": 85373,
+        "mtimeMs": 1793320229441,
+        "sha1ish": "945451c49dea410e0665bfcb42807cc8969cee33"
+      },
+      "study-shared/store.js": {
+        "size": 99907,
+        "mtimeMs": 1794319801627,
+        "sha1ish": "c9631c0879020279f9d1b11a4f28c9fc9888a60b"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6974,
+        "mtimeMs": 1794279980856,
+        "sha1ish": "32a1484b5e779ee658d91d8997be42ec298b33d2"
+      },
+      "study-shared/base.css": {
+        "size": 22059,
+        "mtimeMs": 1794281583523,
+        "sha1ish": "65fc60b453f20750174e5f702389075a3f9ebcd4"
+      },
+      "study-data/temario.js": {
+        "size": 2587623,
+        "mtimeMs": 1792895474631,
+        "sha1ish": "815ad698f52fb2d71490c021357e2aa14c6808b9"
+      },
+      "study-data/temario-core.js": {
+        "size": 842784,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "380703c84fbed02ebf13a81b09527753c2b178ba"
+      },
+      "study-data/content-loader.js": {
+        "size": 7497,
+        "mtimeMs": 1794319372201,
+        "sha1ish": "7b6a1a5b68fa11a12b948be0d5915555f59feab8"
+      },
+      "study-data/content-split.json": {
+        "size": 2735,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "ba22685d036e7867f41ed86515ade7d7f7d99552"
+      },
+      "study-data/sections/area-psi-salud-publica.js": {
+        "size": 343858,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "2d35657c731b63033c304f1ad87eacc3d1a8def9"
+      },
+      "study-data/sections/area-psi-cuidado-integral.js": {
+        "size": 536556,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "76b8f078ebb9e80a3eec3bfd4dbffe27c3e6cf53"
+      },
+      "study-data/sections/area-psi-etica.js": {
+        "size": 101327,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "af03df590fe73d7bda7cc10e58c4a5614353fe3b"
+      },
+      "study-data/sections/area-psi-investigacion.js": {
+        "size": 70256,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "c27f42a60f2f2b459e235ab8f353ca5466b0763a"
+      },
+      "study-data/sections/area-psi-gestion.js": {
+        "size": 163366,
+        "mtimeMs": 1794319642575,
+        "sha1ish": "d9e8f4fd86caee184d35635b6a5846a045d10785"
+      },
+      "serums-quest/index.html": {
+        "size": 2262,
+        "mtimeMs": 1793963840733,
+        "sha1ish": "c753af5832c75b42d1eb384a45d35dde8979e1e5"
+      },
+      "serums-quest/js/app.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/store.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/characters.js": {
+        "error": "ENOENT"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2529,
+        "mtimeMs": 1793308543043,
+        "sha1ish": "bdc13a9ac55e6f8a8fff5c092a706b9b9490e3cf"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 151145,
+        "mtimeMs": 1793317347652,
+        "sha1ish": "e57c79c4ba93dd019bc7fe2e608bb008b0102925"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 29377,
+        "mtimeMs": 1793316425387,
+        "sha1ish": "676352815024e966543ef13a954360a0a991ed59"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 71012,
+        "mtimeMs": 1793318335352,
+        "sha1ish": "6c51c9782ce0093252e9f5ae4d5ab404d7cca504"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 45489,
+        "mtimeMs": 1793316676155,
+        "sha1ish": "2e5d7b1d2d3827b0fefd3a671fb5496fb246f190"
+      }
+    },
+    "changedDuringRun": []
+  }
+}

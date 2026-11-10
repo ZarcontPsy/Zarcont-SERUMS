@@ -1,0 +1,981 @@
+{
+  "format": "serums-study-glossary",
+  "version": 1,
+  "contentVersion": "2.5.0",
+  "generatedAt": "2026-10-25T02:31:14.630Z",
+  "total": 57,
+  "entries": [
+    {
+      "id": "gloss-1",
+      "term": "MCI",
+      "definition": "un conjunto de estrategias, normas, procedimientos, herramientas y recursos que, al complementarse, responden a las necesidades de salud de las personas, las familias y la comunidad.",
+      "sheetId": "sheet-mci-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Qué es el MCI",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-2",
+      "term": "consejo simple",
+      "definition": "una intervención breve, de baja intensidad, centrada en reducir el consumo de riesgo.",
+      "sheetId": "sheet-audit-04",
+      "sectionIndex": 1,
+      "sectionTitle": "Qué significa “consejo simple”",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-3",
+      "term": "continuidad de cuidados",
+      "definition": "el proceso de atención de salud continuo, intensivo y personalizado que recibe la persona usuaria y su cuidador, con participación activa de ambos.",
+      "sheetId": "sheet-mental-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Una definición que ordena la práctica",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-4",
+      "term": "IAAS",
+      "definition": "una condición local o sistémica resultante de una reacción adversa a la presencia de un agente infeccioso o de sus toxinas.",
+      "sheetId": "sheet-iaas-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué es una IAAS",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-5",
+      "term": "Selectiva",
+      "definition": "Se concentra en pacientes hospitalizados y en eventos priorizados por su importancia y posibilidad de prevención.",
+      "sheetId": "sheet-iaas-01",
+      "sectionIndex": 2,
+      "sectionTitle": "Características de la vigilancia",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Característica",
+        "Significado"
+      ],
+      "notes": []
+    },
+    {
+      "id": "gloss-6",
+      "term": "Focalizada",
+      "definition": "Prioriza los servicios con mayor uso de dispositivos, procedimientos y cirugías seleccionadas.",
+      "sheetId": "sheet-iaas-01",
+      "sectionIndex": 2,
+      "sectionTitle": "Características de la vigilancia",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Característica",
+        "Significado"
+      ],
+      "notes": []
+    },
+    {
+      "id": "gloss-7",
+      "term": "Activa",
+      "definition": "Búsqueda intencional de casos que cumplen la definición.",
+      "sheetId": "sheet-iaas-01",
+      "sectionIndex": 2,
+      "sectionTitle": "Características de la vigilancia",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Característica",
+        "Significado"
+      ],
+      "notes": []
+    },
+    {
+      "id": "gloss-8",
+      "term": "Permanente",
+      "definition": "El personal responsable dispone del tiempo necesario para la búsqueda.",
+      "sheetId": "sheet-iaas-01",
+      "sectionIndex": 2,
+      "sectionTitle": "Características de la vigilancia",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Característica",
+        "Significado"
+      ],
+      "notes": []
+    },
+    {
+      "id": "gloss-9",
+      "term": "municipio saludable",
+      "definition": "un espacio territorial donde las políticas públicas han consolidado entornos y comportamientos saludables para personas, familias y comunidades.",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué es un municipio saludable",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-10",
+      "term": "agua de consumo humano",
+      "definition": "aquella apta para beber y para todo uso doméstico habitual, incluida la higiene personal.",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué significa agua apta",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-11",
+      "term": "atención respetuosa de la maternidad",
+      "definition": "la atención organizada para todas las mujeres de manera que mantenga su dignidad, privacidad y confidencialidad, asegure la integridad física y el trato adecuado, y permita decisiones informadas y apoyo continuo durante el trabajo de parto y el parto.",
+      "sheetId": "sheet-parto-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué significa atención respetuosa",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-12",
+      "term": "climaterio",
+      "definition": "la transición hacia la menopausia y el periodo posterior, debido al declive de la función ovárica.",
+      "sheetId": "sheet-climaterio-01",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué es y cómo se reconoce",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-13",
+      "term": "servicio de calidad",
+      "definition": "efectivo (basado en evidencia), seguro (minimiza eventos adversos), centrado en las personas (respeta preferencias y valores), oportuno (evita retrasos), equitativo (elimina barreras evitables), integrado (coordina la atención) y eficiente (evita desperdicio).",
+      "sheetId": "sheet-mci-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué significa calidad",
+      "paragraphIndex": 0,
+      "source": "paragraph"
+    },
+    {
+      "id": "gloss-14",
+      "term": "Modelo unicausal",
+      "definition": "Una causa específica se plantea como explicación directa del efecto.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "Se nombra un agente y se atribuye el daño sin analizar condiciones del huésped"
+      ]
+    },
+    {
+      "id": "gloss-15",
+      "term": "Modelo multicausal",
+      "definition": "Varios factores interactúan de manera probabilística.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "Se describen factores personales, ambientales y sociales en conjunto"
+      ]
+    },
+    {
+      "id": "gloss-16",
+      "term": "Tríada epidemiológica",
+      "definition": "Agente, huésped y ambiente interactúan.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "El análisis separa las tres dimensiones y las relaciona"
+      ]
+    },
+    {
+      "id": "gloss-17",
+      "term": "Causa suficiente",
+      "definition": "Conjunto completo de componentes que produce el desenlace.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "Se describe un mecanismo completo y se reconocen otros posibles"
+      ]
+    },
+    {
+      "id": "gloss-18",
+      "term": "Causa componente",
+      "definition": "Factor que integra un mecanismo pero no basta solo.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "Se identifica una pieza cuya remoción interrumpe ese mecanismo"
+      ]
+    },
+    {
+      "id": "gloss-19",
+      "term": "Causa necesaria",
+      "definition": "Factor presente en todos los mecanismos del daño.",
+      "sheetId": "sheet-psi-sp-1-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Modelos de causalidad y piezas de Rothman",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Cómo se reconoce en un informe"
+      ],
+      "notes": [
+        "Sin ese factor el desenlace no ocurre en ningún caso conocido"
+      ]
+    },
+    {
+      "id": "gloss-20",
+      "term": "Brote",
+      "definition": "Agrupación vinculada en un lugar y periodo.",
+      "sheetId": "sheet-psi-sp-1-8",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Término",
+        "Referencia de comparación",
+        "Extensión o grupo",
+        "Consecuencia operativa"
+      ],
+      "notes": [
+        "Localizada",
+        "Investigación de campo y control inmediato"
+      ]
+    },
+    {
+      "id": "gloss-21",
+      "term": "Epidemia",
+      "definition": "Casos por encima del esperado.",
+      "sheetId": "sheet-psi-sp-1-8",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Término",
+        "Referencia de comparación",
+        "Extensión o grupo",
+        "Consecuencia operativa"
+      ],
+      "notes": [
+        "Población y periodo definidos",
+        "Respuesta organizada y vigilancia intensificada"
+      ]
+    },
+    {
+      "id": "gloss-22",
+      "term": "Endemia",
+      "definition": "Presencia habitual o esperada.",
+      "sheetId": "sheet-psi-sp-1-8",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Término",
+        "Referencia de comparación",
+        "Extensión o grupo",
+        "Consecuencia operativa"
+      ],
+      "notes": [
+        "Área con transmisión sostenida",
+        "Control permanente y vigilancia de tendencia"
+      ]
+    },
+    {
+      "id": "gloss-23",
+      "term": "Epizootia",
+      "definition": "Aumento inusual en animales.",
+      "sheetId": "sheet-psi-sp-1-8",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Término",
+        "Referencia de comparación",
+        "Extensión o grupo",
+        "Consecuencia operativa"
+      ],
+      "notes": [
+        "Población animal",
+        "Alerta zoonótica y coordinación intersectorial"
+      ]
+    },
+    {
+      "id": "gloss-24",
+      "term": "Pandemia",
+      "definition": "Epidemia de amplia extensión.",
+      "sheetId": "sheet-psi-sp-1-8",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Término",
+        "Referencia de comparación",
+        "Extensión o grupo",
+        "Consecuencia operativa"
+      ],
+      "notes": [
+        "Varios países o continentes",
+        "Coordinación internacional y medidas sostenidas"
+      ]
+    },
+    {
+      "id": "gloss-25",
+      "term": "Peligro",
+      "definition": "Condición del entorno capaz de causar daño.",
+      "sheetId": "sheet-psi-sp-2-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Peligro, riesgo y exposición",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Error que se comete"
+      ],
+      "notes": [
+        "Se declara riesgo sin evaluar la exposición"
+      ]
+    },
+    {
+      "id": "gloss-26",
+      "term": "Exposición",
+      "definition": "Contacto efectivo por una vía, con intensidad y duración.",
+      "sheetId": "sheet-psi-sp-2-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Peligro, riesgo y exposición",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Error que se comete"
+      ],
+      "notes": [
+        "Se supone contacto por cercanía a la fuente"
+      ]
+    },
+    {
+      "id": "gloss-27",
+      "term": "Dosis",
+      "definition": "Cantidad que llega al organismo en un tiempo determinado.",
+      "sheetId": "sheet-psi-sp-2-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Peligro, riesgo y exposición",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Error que se comete"
+      ],
+      "notes": [
+        "Se iguala presencia del agente con dosis dañina"
+      ]
+    },
+    {
+      "id": "gloss-28",
+      "term": "Vulnerabilidad",
+      "definition": "Condición que amplifica el efecto de la misma exposición.",
+      "sheetId": "sheet-psi-sp-2-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Peligro, riesgo y exposición",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Error que se comete"
+      ],
+      "notes": [
+        "Se evalúa el riesgo sin mirar a quién afecta"
+      ]
+    },
+    {
+      "id": "gloss-29",
+      "term": "Riesgo",
+      "definition": "Probabilidad de daño según peligro, exposición y vulnerabilidad.",
+      "sheetId": "sheet-psi-sp-2-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Peligro, riesgo y exposición",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Definición operativa",
+        "Error que se comete"
+      ],
+      "notes": [
+        "Se confunde con la simple existencia del peligro"
+      ]
+    },
+    {
+      "id": "gloss-30",
+      "term": "APS",
+      "definition": "Estrategia de organización de todo el sistema.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Cómo se organiza el sistema para cuidar con equidad y continuidad?",
+        "Reducirla a un puesto o centro de salud"
+      ]
+    },
+    {
+      "id": "gloss-31",
+      "term": "Primer nivel",
+      "definition": "Nivel asistencial de puerta de entrada.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Dónde se resuelve lo frecuente y se articula la red?",
+        "Suponer que solo atiende problemas simples"
+      ]
+    },
+    {
+      "id": "gloss-32",
+      "term": "Promoción",
+      "definition": "Acción sobre condiciones, entornos y capacidades.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Cómo se generan condiciones para la salud?",
+        "Confundirla con charlas o campañas"
+      ]
+    },
+    {
+      "id": "gloss-33",
+      "term": "Prevención",
+      "definition": "Acción sobre riesgos y daños específicos.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Cómo se evita o detecta temprano un problema?",
+        "Llamar prevención a toda educación"
+      ]
+    },
+    {
+      "id": "gloss-34",
+      "term": "Atención integral",
+      "definition": "Cuidados de promoción, prevención, recuperación y rehabilitación.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Se cubren las necesidades de la persona y su contexto?",
+        "Sumar prestaciones sin continuidad"
+      ]
+    },
+    {
+      "id": "gloss-35",
+      "term": "Nivel de complejidad",
+      "definition": "Capacidad resolutiva del establecimiento.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 3,
+      "sectionTitle": "APS, primer nivel, promoción, prevención y atención integral",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Concepto",
+        "Qué designa",
+        "Pregunta que responde",
+        "Error típico"
+      ],
+      "notes": [
+        "¿Qué puede resolver y cuándo debe referir?",
+        "Asociar complejidad con calidad"
+      ]
+    },
+    {
+      "id": "gloss-36",
+      "term": "APS",
+      "definition": "Atención Primaria de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Estrategia de organización del sistema"
+      ]
+    },
+    {
+      "id": "gloss-37",
+      "term": "MAIS-BFC",
+      "definition": "Modelo de Atención Integral de Salud Basado en Familia y Comunidad.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Modelo peruano de 2011, antecedente del MCI"
+      ]
+    },
+    {
+      "id": "gloss-38",
+      "term": "MCI",
+      "definition": "Modelo de Cuidado Integral de Salud por Curso de Vida.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Modelo peruano vigente desde 2020"
+      ]
+    },
+    {
+      "id": "gloss-39",
+      "term": "RIS",
+      "definition": "Redes Integradas de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Organización territorial de servicios (Ley 30885)"
+      ]
+    },
+    {
+      "id": "gloss-40",
+      "term": "IPRESS",
+      "definition": "Institución Prestadora de Servicios de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Establecimiento que presta servicios"
+      ]
+    },
+    {
+      "id": "gloss-41",
+      "term": "UPSS",
+      "definition": "Unidad Productora de Servicios de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Unidad organizada para producir una prestación"
+      ]
+    },
+    {
+      "id": "gloss-42",
+      "term": "IAFAS",
+      "definition": "Institución Administradora de Fondos de Aseguramiento en Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Financia prestaciones"
+      ]
+    },
+    {
+      "id": "gloss-43",
+      "term": "ASIS",
+      "definition": "Análisis de Situación de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Diagnóstico territorial para priorizar"
+      ]
+    },
+    {
+      "id": "gloss-44",
+      "term": "DSS",
+      "definition": "Determinantes Sociales de la Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Condiciones estructurales e intermedias"
+      ]
+    },
+    {
+      "id": "gloss-45",
+      "term": "ODS",
+      "definition": "Objetivos de Desarrollo Sostenible.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Agenda 2030; ODS 3 salud y bienestar"
+      ]
+    },
+    {
+      "id": "gloss-46",
+      "term": "CSU",
+      "definition": "Cobertura Universal de Salud.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Acceso a servicios sin dificultad financiera"
+      ]
+    },
+    {
+      "id": "gloss-47",
+      "term": "CSMC",
+      "definition": "Centro de Salud Mental Comunitaria.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Dispositivo comunitario especializado"
+      ]
+    },
+    {
+      "id": "gloss-48",
+      "term": "APOC",
+      "definition": "Atención Primaria Orientada a la Comunidad.",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ],
+      "notes": [
+        "Combina clínica preventiva y acción comunitaria"
+      ]
+    },
+    {
+      "id": "gloss-49",
+      "term": "Estrés percibido",
+      "definition": "Valoración de demanda superior a los recursos disponibles.",
+      "sheetId": "sheet-psi-in-1-1",
+      "sectionIndex": 4,
+      "sectionTitle": "Operacionalización de variables",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Variable",
+        "Definición conceptual",
+        "Indicador y escala",
+        "Fuente y registro"
+      ],
+      "notes": [
+        "Puntaje total de escala validada, razón",
+        "Cuestionario aplicado en el servicio"
+      ]
+    },
+    {
+      "id": "gloss-50",
+      "term": "Horas de sueño",
+      "definition": "Tiempo efectivo de descanso nocturno.",
+      "sheetId": "sheet-psi-in-1-1",
+      "sectionIndex": 4,
+      "sectionTitle": "Operacionalización de variables",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Variable",
+        "Definición conceptual",
+        "Indicador y escala",
+        "Fuente y registro"
+      ],
+      "notes": [
+        "Promedio de horas por noche, razón",
+        "Autorregistro de siete días"
+      ]
+    },
+    {
+      "id": "gloss-51",
+      "term": "Adherencia a citas",
+      "definition": "Asistencia efectiva al control programado.",
+      "sheetId": "sheet-psi-in-1-1",
+      "sectionIndex": 4,
+      "sectionTitle": "Operacionalización de variables",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Variable",
+        "Definición conceptual",
+        "Indicador y escala",
+        "Fuente y registro"
+      ],
+      "notes": [
+        "Citas asistidas sobre citas programadas, razón",
+        "Registro del servicio"
+      ]
+    },
+    {
+      "id": "gloss-52",
+      "term": "Severidad del cuadro",
+      "definition": "Intensidad clínica valorada por criterio profesional.",
+      "sheetId": "sheet-psi-in-1-1",
+      "sectionIndex": 4,
+      "sectionTitle": "Operacionalización de variables",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Variable",
+        "Definición conceptual",
+        "Indicador y escala",
+        "Fuente y registro"
+      ],
+      "notes": [
+        "Leve, moderado o severo, ordinal",
+        "Historia clínica"
+      ]
+    },
+    {
+      "id": "gloss-53",
+      "term": "Fabricación",
+      "definition": "Inventar datos, participantes o resultados y presentarlos como reales.",
+      "sheetId": "sheet-psi-in-3-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Integridad científica: conductas y límites",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Conducta",
+        "Qué significa en el estudio",
+        "Cómo se previene"
+      ],
+      "notes": [
+        "Registro primario auditable y supervisión del ingreso"
+      ]
+    },
+    {
+      "id": "gloss-54",
+      "term": "Falsificación",
+      "definition": "Manipular datos o excluirlos para distorsionar lo ocurrido.",
+      "sheetId": "sheet-psi-in-3-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Integridad científica: conductas y límites",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Conducta",
+        "Qué significa en el estudio",
+        "Cómo se previene"
+      ],
+      "notes": [
+        "Base original conservada y trazabilidad de cambios"
+      ]
+    },
+    {
+      "id": "gloss-55",
+      "term": "Plagio",
+      "definition": "Presentar aportes ajenos como propios sin reconocimiento.",
+      "sheetId": "sheet-psi-in-3-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Integridad científica: conductas y límites",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Conducta",
+        "Qué significa en el estudio",
+        "Cómo se previene"
+      ],
+      "notes": [
+        "Citas verificadas y revisión de similitud"
+      ]
+    },
+    {
+      "id": "gloss-56",
+      "term": "Reporte selectivo",
+      "definition": "Ocultar resultados o análisis por conveniencia.",
+      "sheetId": "sheet-psi-in-3-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Integridad científica: conductas y límites",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Conducta",
+        "Qué significa en el estudio",
+        "Cómo se previene"
+      ],
+      "notes": [
+        "Registro previo del plan y reporte de desenlaces"
+      ]
+    },
+    {
+      "id": "gloss-57",
+      "term": "Conflicto de intereses",
+      "definition": "Relaciones que puedan influir en decisiones del estudio.",
+      "sheetId": "sheet-psi-in-3-2",
+      "sectionIndex": 3,
+      "sectionTitle": "Integridad científica: conductas y límites",
+      "paragraphIndex": -1,
+      "source": "table",
+      "tableHeaders": [
+        "Conducta",
+        "Qué significa en el estudio",
+        "Cómo se previene"
+      ],
+      "notes": [
+        "Declaración y gestión antes de publicar"
+      ]
+    }
+  ]
+}

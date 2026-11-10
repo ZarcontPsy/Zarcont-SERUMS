@@ -1,0 +1,726 @@
+{
+  "startedAt": "2026-11-10T03:28:31.706Z",
+  "finishedAt": "2026-11-10T03:30:52.650Z",
+  "total": 22,
+  "counts": {
+    "PASS": 19,
+    "FAIL": 3,
+    "SKIP": 0
+  },
+  "results": [
+    {
+      "id": "CONTENT-01",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Study: 5 áreas, 20 categorías, 86 módulos, 210 fichas, 630 tarjetas e IDs únicos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1029,
+      "observations": {
+        "version": "2.5.0",
+        "primaryAreas": 5,
+        "categories": 20,
+        "topics": 86,
+        "sheets": 210,
+        "cards": 630,
+        "sources": 48,
+        "uniqueAreas": 5,
+        "uniqueCategories": 20,
+        "uniqueTopics": 86,
+        "uniqueSheets": 210,
+        "uniqueCards": 630,
+        "duplicateSheetIds": [],
+        "duplicateCardIds": [],
+        "cardsPerSheetMin": 3,
+        "cardsPerSheetMax": 3,
+        "firstSheet": "sheet-aps-01",
+        "lastSheet": "sheet-psi-ge-4-2",
+        "firstCard": "card-aps-01-1",
+        "lastCard": "card-psi-ge-4-2-3"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:28:32.334Z"
+    },
+    {
+      "id": "CONTENT-02",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Banqueo: 51 exámenes, 5.100 preguntas, 5.100 claves, 17 profesiones",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 851,
+      "observations": {
+        "version": "1.0.0",
+        "totals": {
+          "professions": 17,
+          "exams": 51,
+          "questions": 5100,
+          "validAnswers": 5100,
+          "duplicateGroups": 580,
+          "duplicateQuestions": 2695
+        },
+        "professions": 17,
+        "examList": 51,
+        "allQuestionsValid": true,
+        "sampleExam": {
+          "id": "2025-i-biologia",
+          "file": "7084225-biologia.pdf"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:28:33.364Z"
+    },
+    {
+      "id": "CONTENT-03",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Plazas: 7.323 plazas y 7.297 registros de adjudicación, sin pérdida",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2037,
+      "observations": {
+        "plazas": 7323,
+        "cols": 20,
+        "adjudicados": 7297,
+        "geoPuntos": 1,
+        "badge": "7,323 registros · 6,971 con coordenadas · oficial 2026-I",
+        "recPill": "7,323 plazas"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:28:34.215Z"
+    },
+    {
+      "id": "CONTENT-04",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "QUEST: 10 personajes, 33 cosméticos, 9 ranuras y 300 preguntas mapeadas",
+      "severity": "alta",
+      "status": "FAIL",
+      "durationMs": 27713,
+      "observations": null,
+      "error": "Error: waitFor agotado — arranque de SERUMS QUEST: (() => { try { return !!(!document.getElementById('view').hidden && document.getElementById('view').innerText.trim().length > 20); } catch (e) { return false; } })() (último: false) |     at Page.waitFor (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/cdp.mjs:532:11) |     at async waitApp (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/apps.mjs:59:3) |     at async gotoApp (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/apps.mjs:66:3) |     at async h.test.severity (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/suites/content.mjs:112:7) |     at async Harness.test (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/harness.mjs:73:28)",
+      "evidence": [],
+      "at": "2026-11-10T03:28:36.252Z"
+    },
+    {
+      "id": "CONTENT-05",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Catálogo de claves de almacenamiento: presentes y sin renombrar",
+      "severity": "alta",
+      "status": "FAIL",
+      "durationMs": 2451,
+      "observations": null,
+      "error": "Error: ASSERT: claves requeridas ausentes: serumsquest:state:v1, serumsquest:snapshot:v1, serumsquest:theme = 3; esperado 0 |     at assertEq (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/harness.mjs:16:34) |     at h.test.severity (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/suites/content.mjs:146:7) |     at async Harness.test (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/harness.mjs:73:28) |     at async runContent (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/suites/content.mjs:135:3) |     at async main (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/run.mjs:153:28)",
+      "evidence": [],
+      "at": "2026-11-10T03:29:03.966Z"
+    },
+    {
+      "id": "CONTENT-06",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "IndexedDB: bases study-serums y examenstudio declaradas (sin borrar datos)",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1,
+      "observations": {
+        "databases": [
+          {
+            "name": "examenstudio",
+            "version": 2
+          },
+          {
+            "name": "serumsdb",
+            "version": 1
+          },
+          {
+            "name": "study-serums",
+            "version": 1
+          }
+        ],
+        "names": [
+          "examenstudio",
+          "serumsdb",
+          "study-serums"
+        ]
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:06.417Z"
+    },
+    {
+      "id": "CONTENT-07",
+      "app": "Contenido",
+      "suite": "Contenido",
+      "description": "Fuentes y dependencias externas: PDF.js/Tesseract/Google Maps solo por CDN",
+      "severity": "baja",
+      "status": "PASS",
+      "durationMs": 2357,
+      "observations": {
+        "pdfjs": [
+          "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"
+        ],
+        "mapKey": "configurada"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:06.418Z"
+    },
+    {
+      "id": "HUB-01",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Carga inicial: 5 tarjetas, carrusel y sin errores de producto",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1106,
+      "observations": {
+        "title": "SERUMS HUB — Centro de aplicaciones",
+        "cards": [
+          {
+            "id": "banqueo",
+            "href": "./EXAMEN STUDIO/Examen Studio.html?v=2.1.6",
+            "active": true
+          },
+          {
+            "id": "plazas",
+            "href": "./serums map/serums-map-explorer/index.html",
+            "active": false
+          },
+          {
+            "id": "dashboard",
+            "href": "./study-dashboard/index.html",
+            "active": false
+          },
+          {
+            "id": "flashcards",
+            "href": "./study-flashcards/index.html",
+            "active": false
+          },
+          {
+            "id": "quest",
+            "href": "./serums-quest/dist/index.html",
+            "active": false
+          }
+        ],
+        "pos": "1 / 5",
+        "now": "BANQUEO",
+        "dots": 5,
+        "dock": false,
+        "version": "v2.3.0",
+        "fsEnabled": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:08.775Z"
+    },
+    {
+      "id": "HUB-02",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Selección con flechas y puntos: cambia tarjeta sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1812,
+      "observations": {
+        "start": "banqueo",
+        "afterArrow": "plazas",
+        "afterPrev": "banqueo",
+        "afterDot": "flashcards",
+        "dotCount": 5,
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:09.881Z"
+    },
+    {
+      "id": "HUB-03",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → BANQUEO (Abrir) y URL/título correctos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8186,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/EXAMEN%20STUDIO/Examen%20Studio.html?v=2.1.6#hub",
+        "title": "Banqueo · Examen Studio"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:11.693Z"
+    },
+    {
+      "id": "HUB-04",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → Study Dashboard (Abrir) y portada de la app",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8133,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+        "h1": "Cinco áreas. Un mapa claro."
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:19.879Z"
+    },
+    {
+      "id": "HUB-05",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → Study Flashcards (Abrir) y portada de la app",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5190,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/study-flashcards/index.html#/",
+        "h1": "Recupera lo que sabes."
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:29:28.012Z"
+    },
+    {
+      "id": "HUB-06",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → SERUMS QUEST (Abrir)",
+      "severity": "alta",
+      "status": "FAIL",
+      "durationMs": 31065,
+      "observations": null,
+      "error": "Error: waitFor agotado — arranque de SERUMS QUEST: (() => { try { return !!(!document.getElementById('view').hidden && document.getElementById('view').innerText.trim().length > 20); } catch (e) { return false; } })() (último: false) |     at Page.waitFor (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/cdp.mjs:532:11) |     at async waitApp (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/apps.mjs:59:3) |     at async h.test.severity (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/suites/hub.mjs:156:7) |     at async Harness.test (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/lib/harness.mjs:73:28) |     at async runHub (file:///C:/Users/USARIO/Documents/ZARCONT%20SERUMS/tests/e2e/suites/hub.mjs:149:3)",
+      "evidence": [
+        "AUDIT/evidencias/phase0-hub-check/img/fail-hub-06.png"
+      ],
+      "at": "2026-11-10T03:29:33.202Z"
+    },
+    {
+      "id": "HUB-07",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "HUB → PLAZAS SERUMS (Abrir) y carga de datos",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 8556,
+      "observations": {
+        "click": "#openCurrent",
+        "url": "http://127.0.0.1:8790/serums%20map/serums-map-explorer/index.html",
+        "badge": "7,323 registros · 6,971 con coordenadas · oficial 2026-I"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:04.267Z"
+    },
+    {
+      "id": "HUB-08",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Modales de atajos y Acerca de: abren, cierran con Esc y devuelven el foco",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1268,
+      "observations": {
+        "helpText": "Atajos de teclado\n1\n2\n3\n4\n5\nAbrir una aplicación\n←\n→\nGirar el carrusel\nEnter\nAbrir la aplicación central\nEsc\nCerrar este",
+        "aboutText": "Acerca de\nZARCONT\nSERUMS HUB · v2.3.0\nAutoría\nZARCONT\nLicencia\nPropietaria — todos los derechos reservados\nIdentificador\nZARCONT-SRH-2.3.0\n\nInterfaz Premium Gla"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:12.823Z"
+    },
+    {
+      "id": "HUB-09",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Pantalla completa del HUB con gesto real (headless)",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2087,
+      "observations": {
+        "element": false,
+        "enabled": true,
+        "aria": "Pantalla completa",
+        "cls": "icon-btn",
+        "limitation": "requestFullscreen no concedió fullscreen en headless (se documenta como limitación del entorno)"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:14.091Z"
+    },
+    {
+      "id": "HUB-10",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Responsive: 360×640, 390×844, 768×1024, 1024×768, 1440×900 y landscape",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 5859,
+      "observations": [
+        {
+          "label": "360x640",
+          "innerWidth": 360,
+          "innerHeight": 640,
+          "scrollWidth": 360,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 68,
+            "w": 336,
+            "h": 456
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-360x640.png"
+        },
+        {
+          "label": "390x844",
+          "innerWidth": 390,
+          "innerHeight": 844,
+          "scrollWidth": 390,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 78,
+            "w": 366,
+            "h": 640
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-390x844.png"
+        },
+        {
+          "label": "768x1024",
+          "innerWidth": 768,
+          "innerHeight": 1024,
+          "scrollWidth": 768,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 160,
+            "y": 162,
+            "w": 448,
+            "h": 640
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-768x1024.png"
+        },
+        {
+          "label": "1024x768",
+          "innerWidth": 1024,
+          "innerHeight": 768,
+          "scrollWidth": 1024,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 337,
+            "y": 97,
+            "w": 350,
+            "h": 520
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-1024x768.png"
+        },
+        {
+          "label": "1440x900",
+          "innerWidth": 1440,
+          "innerHeight": 900,
+          "scrollWidth": 1440,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 496,
+            "y": 113,
+            "w": 448,
+            "h": 620
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-1440x900.png"
+        },
+        {
+          "label": "844x390-landscape",
+          "innerWidth": 1144,
+          "innerHeight": 529,
+          "scrollWidth": 1144,
+          "overflowX": 0,
+          "activeVisible": true,
+          "activeRect": {
+            "x": 12,
+            "y": 58,
+            "w": 820,
+            "h": 232
+          },
+          "topbarVisible": true,
+          "shot": "AUDIT/evidencias/phase0-hub-check/img/hub-844x390-landscape.png"
+        }
+      ],
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:16.178Z"
+    },
+    {
+      "id": "HUB-11",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Persistencia de la tarjeta activa del carrusel entre recargas",
+      "severity": "baja",
+      "status": "PASS",
+      "durationMs": 2126,
+      "observations": {
+        "before": "plazas",
+        "after": "plazas"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:22.037Z"
+    },
+    {
+      "id": "HUB-12",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "App → HUB con control compartido y URL directa al HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 895,
+      "observations": {
+        "click": "[data-serums-chrome=\"hub\"]",
+        "url": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:24.163Z"
+    },
+    {
+      "id": "HUB-13",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Decisión D2: dock eliminado y navegación del carrusel conservada",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1110,
+      "observations": {
+        "dock": false,
+        "carousel": true,
+        "bar": true,
+        "dots": 5,
+        "arrows": true,
+        "keys": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:25.058Z"
+    },
+    {
+      "id": "HUB-14",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Decisión D1: con snapshot sembrado, las tarjetas Study siguen abriendo portada",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 11189,
+      "observations": {
+        "hrefs": {
+          "dashboard": "./study-dashboard/index.html",
+          "flashcards": "./study-flashcards/index.html"
+        },
+        "dash": {
+          "hash": "#/",
+          "path": "/study-dashboard/index.html"
+        },
+        "flash": {
+          "hash": "#/",
+          "path": "/study-flashcards/index.html"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:26.168Z"
+    },
+    {
+      "id": "HUB-15",
+      "app": "Hub",
+      "suite": "HUB",
+      "description": "Continuar: el botón inferior reanuda el último punto sin cambiar el href de la tarjeta",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 14111,
+      "observations": {
+        "cardHref": "./study-dashboard/index.html",
+        "label": "Continuar",
+        "aria": "Continuar en STUDY DASHBOARD",
+        "continuation": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T03:30:37.357Z"
+    }
+  ],
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/157.0.8103.39",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-FiwLDI"
+  },
+  "repo": {
+    "git": {
+      "head": "12bf819",
+      "status": [
+        " M AUTORIA.md",
+        " M NOTICE.md",
+        " M study-dashboard/app.js",
+        " M study-dashboard/index.html",
+        " M study-dashboard/styles.css",
+        " M study-flashcards/index.html",
+        " M study-shared/base.css",
+        " M study-shared/icons.js",
+        " M study-shared/store.js",
+        " M study-shared/ui.js",
+        " M tests/e2e/README.md",
+        " M tests/e2e/run.mjs",
+        " M tests/e2e/suites/study.mjs",
+        "?? AUDIT/evidencias/agente6-baseline/",
+        "?? AUDIT/evidencias/agente6-final-v2/",
+        "?? AUDIT/evidencias/phase0-baseline/",
+        "?? AUDIT/evidencias/phase0-final-stable/",
+        "?? study-dashboard/CHANGELOG.md",
+        "?? study-dashboard/css/",
+        "?? study-dashboard/docs/",
+        "?? study-dashboard/informe/",
+        "?? study-dashboard/js/",
+        "?? study-dashboard/tests/",
+        "?? study-data/derived/",
+        "?? tests/e2e/suites/dash-fase0.mjs",
+        "?? tools/build-derived.js",
+        "?? tools/qa/"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 101790,
+        "mtimeMs": 1793966151554,
+        "sha1ish": "add45df1277ccc76c7588b99f5667fb9e609e737"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 8415,
+        "mtimeMs": 1794278668893,
+        "sha1ish": "d54a77ac06bb796acf26b687da9705a4e14d859c"
+      },
+      "study-dashboard/app.js": {
+        "size": 87551,
+        "mtimeMs": 1794280563088,
+        "sha1ish": "9b8a7a380847b1a02221dba8337bf8c93ea4cfa4"
+      },
+      "study-flashcards/index.html": {
+        "size": 4634,
+        "mtimeMs": 1794280643446,
+        "sha1ish": "03910c7bd29ec0c8547cb8c064a39d7b52df7d00"
+      },
+      "study-flashcards/app.js": {
+        "size": 85373,
+        "mtimeMs": 1793320229441,
+        "sha1ish": "945451c49dea410e0665bfcb42807cc8969cee33"
+      },
+      "study-shared/store.js": {
+        "size": 92555,
+        "mtimeMs": 1794280486026,
+        "sha1ish": "2b84e2f413349e41f3785a71b816ad27dc25b6a2"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6974,
+        "mtimeMs": 1794279980856,
+        "sha1ish": "32a1484b5e779ee658d91d8997be42ec298b33d2"
+      },
+      "study-shared/base.css": {
+        "size": 22060,
+        "mtimeMs": 1794278603045,
+        "sha1ish": "46770e57d8353e0a4876c92e24918c39746cf848"
+      },
+      "serums-quest/index.html": {
+        "size": 2262,
+        "mtimeMs": 1793963840733,
+        "sha1ish": "c753af5832c75b42d1eb384a45d35dde8979e1e5"
+      },
+      "serums-quest/js/app.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/store.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/characters.js": {
+        "error": "ENOENT"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2529,
+        "mtimeMs": 1793308543043,
+        "sha1ish": "bdc13a9ac55e6f8a8fff5c092a706b9b9490e3cf"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 151145,
+        "mtimeMs": 1793317347652,
+        "sha1ish": "e57c79c4ba93dd019bc7fe2e608bb008b0102925"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 29377,
+        "mtimeMs": 1793316425387,
+        "sha1ish": "676352815024e966543ef13a954360a0a991ed59"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 71012,
+        "mtimeMs": 1793318335352,
+        "sha1ish": "6c51c9782ce0093252e9f5ae4d5ab404d7cca504"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 45489,
+        "mtimeMs": 1793316676155,
+        "sha1ish": "2e5d7b1d2d3827b0fefd3a671fb5496fb246f190"
+      }
+    },
+    "changedDuringRun": []
+  },
+  "stable": true
+}

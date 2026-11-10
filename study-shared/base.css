@@ -2,6 +2,10 @@
    SERUMS STUDY — base compartida
    Identidad SERUMS HUB: negro, papel, rojo de marca y acentos
    de estudio. Dashboard = ámbar; Flashcards = verde menta.
+
+   © 2026 ZARCONT — Todos los derechos reservados.
+   Tokens de diseño 2.3 (CONTRATOS §7). Los valores semánticos y de
+   subrayado se verifican con `node tools/qa/contraste.mjs`.
    ============================================================ */
 :root {
   color-scheme: dark;
@@ -21,10 +25,41 @@
   --accent-line: rgba(230, 181, 102, .34);
   --red: #DF2531;
   --red-soft: rgba(223, 37, 49, .14);
+  /* Semánticos de éxito y peligro. En oscuro ya pasan 4,5:1; en claro se
+     redefinen más abajo (H1). `-line` es borde decorativo, no informativo. */
   --green: #8FD3B0;
   --green-soft: rgba(143, 211, 176, .12);
+  --green-line: rgba(143, 211, 176, .34);
   --danger: #F07A7A;
   --danger-soft: rgba(240, 122, 122, .11);
+  --danger-line: rgba(240, 122, 122, .32);
+  /* Subrayados de lectura activa (CONTRATOS §7). El color principal es para
+     iconos, puntos y bordes; `-ink` es el texto sobre `-bg` compuesto. Nunca
+     dependen solo del color: llevan etiqueta textual. */
+  --mark-important: #E6B566;
+  --mark-important-bg: rgba(230, 181, 102, .18);
+  --mark-important-line: rgba(230, 181, 102, .60);
+  --mark-important-ink: #FFE7B8;
+  --mark-understand: #8FD3B0;
+  --mark-understand-bg: rgba(143, 211, 176, .18);
+  --mark-understand-line: rgba(143, 211, 176, .60);
+  --mark-understand-ink: #D6F5E4;
+  --mark-review: #8FBDF5;
+  --mark-review-bg: rgba(143, 189, 245, .18);
+  --mark-review-line: rgba(143, 189, 245, .60);
+  --mark-review-ink: #D6E6FF;
+  --mark-doubt: #D9A6EC;
+  --mark-doubt-bg: rgba(217, 166, 236, .18);
+  --mark-doubt-line: rgba(217, 166, 236, .60);
+  --mark-doubt-ink: #F0DAFA;
+  /* Objetivo táctil mínimo en puntero grueso (WCAG 2.5.5). */
+  --target-min: 44px;
+  /* Capas: appbar < hoja < popover < modal < toast. */
+  --z-appbar: 50;
+  --z-sheet: 80;
+  --z-popover: 100;
+  --z-modal: 120;
+  --z-toast: 160;
   --bar: rgba(11, 11, 13, .82);
   --selection: rgba(230, 181, 102, .28);
   --shadow-sm: 0 4px 18px rgba(0, 0, 0, .28);
@@ -55,12 +90,36 @@ html[data-theme="light"] {
   --muted: #6E675C;
   --line: rgba(29, 27, 23, .12);
   --line-strong: rgba(29, 27, 23, .22);
-  --accent: #9A5B12;
+  --accent: #8F520E;
   --accent-ink: #FFF9F0;
-  --accent-soft: rgba(154, 91, 18, .11);
-  --accent-line: rgba(154, 91, 18, .28);
+  --accent-soft: rgba(143, 82, 14, .11);
+  --accent-line: rgba(143, 82, 14, .28);
   --bar: rgba(243, 240, 232, .87);
-  --selection: rgba(154, 91, 18, .20);
+  --selection: rgba(143, 82, 14, .20);
+  /* Semánticos adaptados al papel: el verde menta y el rojo claro del tema
+     oscuro fallaban 4,5:1 sobre superficie (informe H1). */
+  --green: #186043;
+  --green-soft: rgba(24, 96, 67, .12);
+  --green-line: rgba(24, 96, 67, .34);
+  --danger: #A92016;
+  --danger-soft: rgba(169, 32, 22, .11);
+  --danger-line: rgba(169, 32, 22, .30);
+  --mark-important: #8F520E;
+  --mark-important-bg: rgba(143, 82, 14, .14);
+  --mark-important-line: rgba(143, 82, 14, .72);
+  --mark-important-ink: #6B3A05;
+  --mark-understand: #186043;
+  --mark-understand-bg: rgba(24, 96, 67, .14);
+  --mark-understand-line: rgba(24, 96, 67, .72);
+  --mark-understand-ink: #0F4A32;
+  --mark-review: #1F5E9C;
+  --mark-review-bg: rgba(31, 94, 156, .14);
+  --mark-review-line: rgba(31, 94, 156, .72);
+  --mark-review-ink: #14406B;
+  --mark-doubt: #7A3E9C;
+  --mark-doubt-bg: rgba(122, 62, 156, .14);
+  --mark-doubt-line: rgba(122, 62, 156, .72);
+  --mark-doubt-ink: #4E2A6B;
   --shadow-sm: 0 4px 18px rgba(48, 38, 22, .08);
   --shadow-md: 0 20px 50px -24px rgba(48, 38, 22, .28);
 }
@@ -99,7 +158,7 @@ hr { border: 0; border-top: 1px solid var(--line); }
   overflow: hidden; clip: rect(0, 0, 0, 0); white-space: nowrap; border: 0;
 }
 .s-skip {
-  position: fixed; top: 8px; left: 8px; z-index: 200;
+  position: fixed; top: 8px; left: 8px; z-index: calc(var(--z-toast) + 40);
   transform: translateY(-160%); padding: 10px 16px; border-radius: var(--r-full);
   background: var(--accent); color: var(--accent-ink); font-size: 13px; font-weight: 600;
 }
@@ -125,7 +184,7 @@ hr { border: 0; border-top: 1px solid var(--line); }
 
 /* Barra superior */
 .s-appbar {
-  position: sticky; top: 0; z-index: 50;
+  position: sticky; top: 0; z-index: var(--z-appbar);
   background: var(--bar);
   border-bottom: 1px solid var(--line);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
@@ -192,7 +251,7 @@ hr { border: 0; border-top: 1px solid var(--line); }
   .s-btn--ghost:hover {background: var(--surface-2);}
 }
 .s-btn--soft { background: var(--accent-soft); border-color: var(--accent-line); color: var(--accent); }
-.s-btn--danger { background: var(--danger-soft); border-color: rgba(240, 122, 122, .25); color: var(--danger); }
+.s-btn--danger { background: var(--danger-soft); border-color: var(--danger-line); color: var(--danger); }
 .s-btn--sm { min-height: 34px; padding: 7px 12px; font-size: 11.5px; }
 .s-btn--lg { min-height: 50px; padding: 13px 22px; font-size: 13.5px; }
 .s-btn--block { width: 100%; }
@@ -211,8 +270,8 @@ hr { border: 0; border-top: 1px solid var(--line); }
 }
 .s-chip svg { width: 13px; height: 13px; }
 .s-chip--accent { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
-.s-chip--danger { color: var(--danger); border-color: rgba(240, 122, 122, .25); background: var(--danger-soft); }
-.s-chip--green { color: var(--green); border-color: rgba(143, 211, 176, .24); background: var(--green-soft); }
+.s-chip--danger { color: var(--danger); border-color: var(--danger-line); background: var(--danger-soft); }
+.s-chip--green { color: var(--green); border-color: var(--green-line); background: var(--green-soft); }
 .s-seg {
   display: inline-flex; align-items: center; gap: 3px; padding: 3px;
   border: 1px solid var(--line); border-radius: var(--r-full); background: var(--surface-2);
@@ -285,12 +344,12 @@ hr { border: 0; border-top: 1px solid var(--line); }
   color: var(--text-soft); font-size: 12.5px;
 }
 .s-alert svg { width: 16px; height: 16px; flex: none; margin-top: 1px; color: var(--accent); }
-.s-alert--warn { border-color: rgba(230, 181, 102, .28); background: var(--accent-soft); }
-.s-alert--danger { border-color: rgba(240, 122, 122, .26); background: var(--danger-soft); }
+.s-alert--warn { border-color: var(--accent-line); background: var(--accent-soft); }
+.s-alert--danger { border-color: var(--danger-line); background: var(--danger-soft); }
 .s-alert--danger svg { color: var(--danger); }
 
 /* Toast */
-.s-toast-stack { position: fixed; z-index: 160; left: 50%; bottom: 22px; transform: translateX(-50%); width: min(420px, calc(100vw - 28px)); pointer-events: none; }
+.s-toast-stack { position: fixed; z-index: var(--z-toast); left: 50%; bottom: 22px; transform: translateX(-50%); width: min(420px, calc(100vw - 28px)); pointer-events: none; }
 .s-toast {
   display: flex; align-items: center; gap: 9px; padding: 11px 14px;
   border: 1px solid var(--line-strong); border-radius: var(--r-full);
@@ -306,7 +365,7 @@ hr { border: 0; border-top: 1px solid var(--line); }
 .s-toast.is-warn .s-toast-dot { background: var(--danger); }
 
 /* Modal */
-.s-modal { position: fixed; inset: 0; z-index: 120; display: grid; place-items: center; padding: 20px; }
+.s-modal { position: fixed; inset: 0; z-index: var(--z-modal); display: grid; place-items: center; padding: 20px; }
 .s-modal::before { content: ""; position: absolute; inset: 0; background: rgba(0, 0, 0, .55); -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px); }
 .s-modal-panel {
   position: relative; z-index: 1; width: min(520px, 100%); max-height: min(700px, 88dvh);
@@ -358,4 +417,70 @@ hr { border: 0; border-top: 1px solid var(--line); }
     animation-duration: .01ms !important; animation-delay: 0ms !important; animation-iteration-count: 1 !important;
     transition-duration: .01ms !important; transition-delay: 0ms !important; scroll-behavior: auto !important;
   }
+}
+
+/* ------------------------------------------------------------------
+   H16 · Puntero grueso: los controles de contenido suben a 44 px.
+   La appbar de Study Dashboard se ajusta en styles.css (su barra móvil
+   queda en 5 controles); aquí solo se tocan componentes de contenido
+   que Study Flashcards comparte sin desbordar su barra.
+   ------------------------------------------------------------------ */
+@media (pointer: coarse) {
+  .s-btn { min-height: var(--target-min); }
+  .s-btn--sm { min-height: var(--target-min); }
+  .s-seg button { min-height: var(--target-min); padding-block: 10px; }
+  .s-seg { padding: 3px; }
+  .s-source { min-height: calc(var(--target-min) - 6px); }
+  .s-modal-head .s-iconbtn,
+  .s-empty-actions .s-btn { min-height: var(--target-min); }
+}
+
+/* ------------------------------------------------------------------
+   Refuerzos de accesibilidad de preferencias del usuario.
+   No cambian la identidad: suben contraste, quitan translucidez y ya
+   respetan reduced-motion arriba.
+   ------------------------------------------------------------------ */
+@media (prefers-contrast: more) {
+  :root {
+    --line: rgba(255, 255, 255, .26);
+    --line-strong: rgba(255, 255, 255, .46);
+    --text-soft: #E7E3DA;
+    --muted: #BEB8AC;
+    --accent-soft: rgba(230, 181, 102, .24);
+    --accent-line: rgba(230, 181, 102, .70);
+    --green-soft: rgba(143, 211, 176, .24);
+    --green-line: rgba(143, 211, 176, .70);
+    --danger-soft: rgba(240, 122, 122, .22);
+    --danger-line: rgba(240, 122, 122, .70);
+    --mark-important-bg: rgba(230, 181, 102, .28);
+    --mark-understand-bg: rgba(143, 211, 176, .28);
+    --mark-review-bg: rgba(143, 189, 245, .28);
+    --mark-doubt-bg: rgba(217, 166, 236, .28);
+  }
+  html[data-theme="light"] {
+    --line: rgba(29, 27, 23, .30);
+    --line-strong: rgba(29, 27, 23, .52);
+    --text-soft: #3E3931;
+    --muted: #4C463D;
+    --accent-soft: rgba(143, 82, 14, .18);
+    --accent-line: rgba(143, 82, 14, .62);
+    --green-soft: rgba(24, 96, 67, .18);
+    --green-line: rgba(24, 96, 67, .62);
+    --danger-soft: rgba(169, 32, 22, .16);
+    --danger-line: rgba(169, 32, 22, .58);
+    --mark-important-bg: rgba(143, 82, 14, .20);
+    --mark-understand-bg: rgba(24, 96, 67, .20);
+    --mark-review-bg: rgba(31, 94, 156, .20);
+    --mark-doubt-bg: rgba(122, 62, 156, .20);
+  }
+  :focus-visible { outline-width: 3px; }
+}
+@media (prefers-reduced-transparency: reduce) {
+  :root { --bar: #0B0B0D; }
+  html[data-theme="light"] { --bar: #F3F0E8; }
+  .s-appbar,
+  .s-modal::before,
+  .s-toast { -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .s-modal::before { background: rgba(0, 0, 0, .72); }
+  .s-empty { background: var(--surface); }
 }

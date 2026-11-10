@@ -1,0 +1,747 @@
+/* SERUMS STUDY — Ruta de hoy completa (#/ruta, Fase 2)
+   Hoja del módulo `plan-ruta`. Solo clases .plan-*; sin selectores globales.
+
+   Piezas:
+     .plan-ruta            página (hero + cuerpo)
+     .plan-ruta-hero       cabecera editorial con enlace al Panel y nav
+     .plan-ruta-status     estado de la ruta (lista/vacía/sin plan/…)
+     .plan-ruta-meter      presupuesto del día
+     .plan-ruta-item       reutiliza .plan-item de css/plan.css
+     .plan-ruta-plan       tarjeta del plan guardado (lateral)
+     .plan-ruta-weekly     resumen semanal al pie
+     .plan-ruta-signals    señales abiertas cuando no hay presupuesto
+     .plan-ruta-loading    esqueleto de carga
+     .plan-ruta-error      error de carga con reintento
+
+   Tokens: --line, --line-strong, --surface, --surface-2/3, --bg-soft,
+   --text, --text-soft, --muted, --accent(-soft/-line), --green(-soft/-line),
+   --danger(-soft/-line), --mark-review, --mark-doubt, --r-xs…--r-full,
+   --t-fast/--t-base/--t-slow, --font-display, --target-min.
+
+   © 2026 ZARCONT */
+
+.plan-ruta {
+  --plan-route-gap: clamp(18px, 2.4vw, 30px);
+  padding: clamp(24px, 4vw, 52px) 0 clamp(40px, 6vw, 72px);
+  min-width: 0;
+}
+.plan-ruta *,
+.plan-ruta *::before,
+.plan-ruta *::after { min-width: 0; }
+
+/* ---------- Cabecera editorial ---------- */
+.plan-ruta-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: clamp(20px, 3vw, 30px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--plan-route-gap);
+}
+.plan-ruta-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 4px 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-decoration: none;
+}
+.plan-ruta-back svg { width: 14px; height: 14px; }
+.plan-ruta-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-ruta-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.plan-ruta-title {
+  max-width: 18ch;
+  margin: 12px 0 12px;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  text-wrap: balance;
+}
+.plan-ruta-lede {
+  max-width: 64ch;
+  color: var(--text-soft);
+  font-size: clamp(13.5px, 1.3vw, 15px);
+  line-height: 1.65;
+}
+.plan-ruta-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 22px;
+}
+.plan-ruta-navlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 34px;
+  padding: 6px 13px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .02em;
+  text-decoration: none;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+.plan-ruta-navlink svg { width: 15px; height: 15px; color: var(--accent); }
+
+/* ---------- Cuerpo ---------- */
+.plan-ruta-body {
+  min-width: 0;
+}
+.plan-ruta-body[aria-busy="true"] { cursor: progress; }
+.plan-ruta-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--plan-route-gap);
+  align-items: start;
+}
+.plan-ruta-main,
+.plan-ruta-side { min-width: 0; }
+
+/* ---------- Estado de la ruta ---------- */
+.plan-ruta-status {
+  padding: 14px 16px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  background: var(--bg-soft);
+}
+.plan-ruta-status[data-status="behind"],
+.plan-ruta-status[data-status="sinPresupuesto"],
+.plan-ruta-status[data-status="sinTiempo"],
+.plan-ruta-status[data-status="sinDatos"],
+.plan-ruta-status[data-status="vacia"] {
+  border-left-color: var(--mark-review);
+}
+.plan-ruta-status[data-status="todoCompletado"] { border-left-color: var(--green); }
+.plan-ruta-status-label {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .14em;
+  text-transform: uppercase;
+}
+.plan-ruta-status-message {
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.55;
+}
+
+/* ---------- Presupuesto ---------- */
+.plan-ruta-meter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px 14px;
+  max-width: 420px;
+  margin-top: 16px;
+}
+.plan-ruta-meter-value {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+.plan-ruta-meter-value i {
+  color: var(--muted);
+  font-family: inherit;
+  font-size: 10px;
+  font-style: normal;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.plan-ruta-meter-track {
+  flex: 1 1 140px;
+  height: 5px;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.plan-ruta-meter-fill {
+  display: block;
+  width: var(--plan-route-fill, 0%);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+}
+.plan-ruta-meter-track.is-over .plan-ruta-meter-fill { background: var(--danger); }
+.plan-ruta-meter-note {
+  flex: 1 1 100%;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+.plan-ruta-meter-note.is-over { color: var(--danger); }
+
+/* ---------- Lista de la ruta ---------- */
+.plan-ruta-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 18px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-ruta .plan-item { min-width: 0; }
+.plan-route-item[data-type="repaso"] { --plan-tone: var(--mark-review); }
+.plan-route-item[data-type="duda"] { --plan-tone: var(--mark-doubt); }
+.plan-route-item[data-type="tarjetas"] { --plan-tone: var(--green); }
+.plan-route-item[data-type="ficha"] { --plan-tone: var(--accent); }
+.plan-route-item .plan-item-kind { text-transform: uppercase; }
+
+/* ---------- Notas, soporte y supuestos ---------- */
+.plan-ruta-aside-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 18px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+.plan-ruta-support {
+  max-width: 70ch;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-ruta-deferred {
+  max-width: 70ch;
+  color: var(--muted);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+.plan-ruta-notes {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-ruta-notes li::before {
+  content: "· ";
+  color: var(--accent);
+}
+.plan-ruta-details {
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-ruta-details summary {
+  cursor: pointer;
+  font-weight: 600;
+  letter-spacing: .02em;
+}
+.plan-ruta-details ul {
+  margin: 6px 0 0;
+  padding-left: 18px;
+}
+
+/* ---------- Estados vacíos ---------- */
+.plan-ruta-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 13px;
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-ruta-empty-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  border: 1px solid var(--accent-line);
+  border-radius: 12px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.plan-ruta-empty-icon svg { width: 20px; height: 20px; }
+.plan-ruta-empty-copy { min-width: 0; }
+.plan-ruta-empty-text {
+  max-width: 62ch;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-ruta-empty-support {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.plan-ruta-empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 13px;
+}
+
+/* ---------- Señales abiertas ---------- */
+.plan-ruta-signals {
+  margin-top: 18px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.plan-ruta-signals-lede {
+  max-width: 62ch;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.55;
+}
+.plan-ruta-signals-list {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 2px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-ruta-signals-list a {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 0;
+  color: var(--text);
+  font-size: 12.5px;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px solid var(--line);
+}
+.plan-ruta-signals-list a svg { color: var(--accent); }
+.plan-ruta-signals-list li:last-child a { border-bottom: 0; }
+
+/* ---------- Tarjeta del plan (lateral) ---------- */
+.plan-ruta-plan {
+  padding: clamp(16px, 2.2vw, 22px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background:
+    radial-gradient(120% 140% at 0% 0%, var(--accent-soft), transparent 58%),
+    var(--surface);
+}
+.plan-ruta-h2 {
+  font-size: clamp(15px, 1.6vw, 18px);
+  font-weight: 600;
+  letter-spacing: -.02em;
+}
+.plan-ruta-band {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 10px;
+  padding: 4px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-full);
+  color: var(--text-soft);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.plan-ruta-band[data-band="ahead"] {
+  color: var(--green);
+  border-color: var(--green-line);
+  background: var(--green-soft);
+}
+.plan-ruta-band[data-band="onTrack"] {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+.plan-ruta-band[data-band="behind"] {
+  color: var(--danger);
+  border-color: var(--danger-line);
+  background: var(--danger-soft);
+}
+.plan-ruta-facts {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  margin: 14px 0 0;
+}
+.plan-ruta-facts > div {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 14px;
+  padding: 9px 0;
+  border-top: 1px solid var(--line);
+}
+.plan-ruta-facts dt {
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-ruta-facts dd {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  text-align: right;
+  overflow-wrap: anywhere;
+}
+.plan-ruta-session {
+  margin-top: 12px;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.plan-ruta-plan-empty {
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-ruta-plan .s-btn,
+.plan-ruta-plan .plan-ruta-cardlink { margin-top: 14px; }
+.plan-ruta-cardlink {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--text);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.plan-ruta-cardlink svg { color: var(--accent); }
+
+/* ---------- Franja «Antes del examen» (Fase 3) ---------- */
+.plan-ruta-before {
+  margin-top: var(--plan-route-gap);
+  padding: clamp(16px, 2.4vw, 22px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-ruta-before-links {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin-top: 12px;
+}
+.plan-ruta-before-link {
+  display: grid;
+  grid-template-columns: 34px minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--surface);
+  color: var(--text);
+  text-decoration: none;
+  transition: border-color var(--t-fast), background var(--t-fast);
+}
+.plan-ruta-before-icon {
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--accent-line);
+  border-radius: 10px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.plan-ruta-before-copy {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+.plan-ruta-before-copy b {
+  font-size: 13px;
+  font-weight: 650;
+  letter-spacing: -.01em;
+}
+.plan-ruta-before-copy small {
+  color: var(--text-soft);
+  font-size: 11px;
+  line-height: 1.45;
+}
+.plan-ruta-before-link > svg { color: var(--accent); }
+@media (hover: hover) and (pointer: fine) {
+  .plan-ruta-before-link:hover {
+    border-color: var(--accent-line);
+    background: var(--surface-2);
+  }
+}
+@media (min-width: 760px) {
+  .plan-ruta-before-links { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* ---------- Resumen semanal ---------- */
+.plan-ruta-weekly {
+  margin-top: var(--plan-route-gap);
+  padding: clamp(18px, 2.6vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--surface);
+}
+.plan-ruta-weekly-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 16px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.plan-ruta-weekly-range {
+  color: var(--muted);
+  font-size: 10.5px;
+  letter-spacing: .04em;
+}
+.plan-ruta-weekly-stats {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px 18px;
+  margin: 16px 0 0;
+}
+.plan-ruta-stat dt {
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.plan-ruta-stat dd {
+  margin-top: 4px;
+  font-family: var(--font-display);
+  font-size: 20px;
+  line-height: 1;
+  color: var(--text);
+}
+.plan-ruta-weekly-message {
+  margin-top: 14px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-ruta-weekly-focus {
+  margin-top: 16px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-ruta-weekly-focus b { color: var(--text); font-weight: 650; }
+.plan-ruta-weekly-priority {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+  counter-reset: plan-ruta-priority;
+}
+.plan-ruta-weekly-priority li {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 10px 12px 10px 34px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--bg-soft);
+  counter-increment: plan-ruta-priority;
+}
+.plan-ruta-weekly-priority li::before {
+  content: counter(plan-ruta-priority, decimal-leading-zero);
+  position: absolute;
+  top: 10px;
+  left: 11px;
+  color: var(--muted);
+  font-family: var(--font-display);
+  font-size: 9px;
+  letter-spacing: .06em;
+}
+.plan-ruta-priority-label {
+  color: var(--text);
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.plan-ruta-priority-reason {
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-ruta-weekly-missing {
+  margin-top: 12px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-ruta-weekly-foot {
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .02em;
+}
+.plan-ruta-weekly-empty {
+  margin-top: 12px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ---------- Carga ---------- */
+.plan-ruta-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-ruta-loading-text {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .04em;
+}
+.plan-ruta-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plan-ruta-skeleton i {
+  display: block;
+  height: 14px;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+  animation: plan-ruta-pulse 1.4s ease-in-out infinite;
+}
+.plan-ruta-skeleton i:nth-child(1) { width: 82%; }
+.plan-ruta-skeleton i:nth-child(2) { width: 64%; animation-delay: .12s; }
+.plan-ruta-skeleton i:nth-child(3) { width: 46%; animation-delay: .24s; }
+@keyframes plan-ruta-pulse {
+  0%, 100% { opacity: .5; }
+  50% { opacity: 1; }
+}
+
+/* ---------- Error ---------- */
+.plan-ruta-error {
+  padding: 18px;
+  border: 1px solid var(--danger-line);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+}
+.plan-ruta-error-text {
+  max-width: 62ch;
+  color: var(--text);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-ruta-error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* ---------- Foco y puntero ---------- */
+.plan-ruta a:focus-visible,
+.plan-ruta button:focus-visible,
+.plan-ruta summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .plan-ruta-navlink:hover {
+    border-color: var(--accent-line);
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  .plan-ruta-back:hover { color: var(--text); }
+  .plan-ruta-cardlink:hover { color: var(--accent); }
+  .plan-ruta-signals-list a:hover { color: var(--accent); }
+}
+
+/* ---------- Adaptación ---------- */
+@media (min-width: 620px) {
+  .plan-ruta-weekly-stats { grid-template-columns: repeat(5, minmax(0, 1fr)); }
+  .plan-ruta-signals-list { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 24px; }
+}
+@media (min-width: 980px) {
+  .plan-ruta-layout {
+    grid-template-columns: minmax(0, 1.55fr) minmax(280px, .72fr);
+    gap: clamp(24px, 3vw, 46px);
+  }
+  .plan-ruta-side { position: sticky; top: 18px; }
+}
+/* En una columna, el plan va antes de la ruta: es el contexto que explica el
+   presupuesto y la sesión (CONTRATOS-FASE2 §4.1). */
+@media (max-width: 979px) {
+  .plan-ruta-layout {
+    display: flex;
+    flex-direction: column;
+    gap: var(--plan-route-gap);
+  }
+  .plan-ruta-side { order: -1; }
+}
+@media (max-width: 480px) {
+  .plan-ruta-title { font-size: clamp(30px, 9vw, 38px); }
+  .plan-ruta-empty { padding: 15px; }
+  .plan-ruta-weekly { padding: 16px; }
+  .plan-ruta-meter-track { flex-basis: 100%; }
+}
+@media (pointer: coarse) {
+  .plan-ruta .s-btn,
+  .plan-ruta .plan-ruta-navlink,
+  .plan-ruta .plan-ruta-cardlink,
+  .plan-ruta .plan-ruta-back,
+  .plan-ruta .plan-ruta-before-link,
+  .plan-ruta .plan-ruta-signals-list a,
+  .plan-ruta .plan-ruta-details summary {
+    min-height: var(--target-min);
+  }
+  .plan-ruta .plan-ruta-navlink { padding-block: 10px; }
+  .plan-ruta .plan-ruta-cardlink { padding-block: 10px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-ruta-skeleton i { animation: none; opacity: .7; }
+  .plan-ruta-navlink { transition: none; }
+}

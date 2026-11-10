@@ -1,0 +1,674 @@
+/* © 2026 ZARCONT — Study Dashboard · Repaso espaciado de fichas (#/repaso, Fase 2)
+   Hoja del módulo `plan-review`. Todo selector vive bajo .plan-review* o
+   .plan-page--review; no se tocan tokens compartidos ni se usan selectores
+   globales. Tokens de study-shared/base.css: superficies, línea, acento,
+   semánticos, --mark-review-*, radios, --t-fast/--t-base, --font-display y
+   --target-min.
+
+   Composición: cabecera editorial · resumen del siguiente repaso · lista por
+   vencimiento con ficha, área, vencimiento, atraso y tres botones de
+   autoevaluación · notas del cálculo. Estados: esqueleto, error con reintento,
+   vacío real y anuncio en vivo del nuevo vencimiento. */
+
+.plan-page--review {
+  --plan-review-gap: clamp(16px, 2.4vw, 28px);
+  padding: clamp(26px, 4.2vw, 54px) 0 clamp(42px, 6vw, 74px);
+  min-width: 0;
+}
+.plan-page--review *,
+.plan-page--review *::before,
+.plan-page--review *::after { min-width: 0; }
+
+/* ---------- Cabecera editorial ---------- */
+.plan-page--review .plan-page-head {
+  position: relative;
+  padding: clamp(22px, 3.6vw, 44px) 0 clamp(20px, 3vw, 34px);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(120% 150% at 0% 0%, var(--mark-review-bg), transparent 58%);
+}
+.plan-page--review .plan-page-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+}
+.plan-page--review .plan-page-panel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color var(--t-fast);
+}
+.plan-page--review .plan-page-panel svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  transition: transform var(--t-fast);
+}
+.plan-page--review .plan-page-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-page--review .plan-page-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--mark-review);
+}
+.plan-page--review .plan-page-title {
+  max-width: 900px;
+  margin: 14px 0 12px;
+  font-size: clamp(34px, 5.4vw, 60px);
+  line-height: .99;
+  letter-spacing: -.055em;
+  font-weight: 600;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.plan-page--review .plan-page-lede {
+  max-width: 74ch;
+  color: var(--text-soft);
+  font-size: clamp(13.5px, 1.3vw, 15.5px);
+  line-height: 1.65;
+}
+.plan-page--review .plan-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.plan-page--review .plan-page-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--surface);
+  color: var(--text-soft);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+.plan-page--review .plan-page-link svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+/* ---------- Cuerpo, estado y esqueleto ---------- */
+.plan-page--review .plan-review-body {
+  margin-top: var(--plan-review-gap);
+  min-width: 0;
+}
+.plan-page--review .plan-review-status {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.55;
+  border-radius: var(--r-sm);
+}
+.plan-page--review .plan-review-status:not(:empty) {
+  margin-bottom: 14px;
+  padding: 10px 13px;
+  border: 1px solid var(--line);
+  background: var(--bg-soft);
+}
+.plan-page--review .plan-review-status.is-ok {
+  border-color: var(--green-line);
+  background: var(--green-soft);
+  color: var(--green);
+}
+.plan-page--review .plan-review-status.is-error {
+  border-color: var(--danger-line);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.plan-page--review .plan-review-content { min-width: 0; }
+.plan-page--review .plan-review-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.plan-page--review .plan-review-skeleton-summary {
+  height: clamp(110px, 14vw, 140px);
+  border-radius: var(--r-lg);
+}
+.plan-page--review .plan-review-skeleton-row {
+  height: clamp(120px, 15vw, 150px);
+  border-radius: var(--r-md);
+}
+
+/* ---------- Resumen del siguiente repaso ---------- */
+.plan-page--review .plan-review-summary {
+  padding: clamp(18px, 2.4vw, 26px);
+  border: 1px solid var(--mark-review-line);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(120% 150% at 0% 0%, var(--mark-review-bg), transparent 58%),
+    var(--surface);
+}
+.plan-page--review .plan-review-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-page--review .plan-review-next-title {
+  margin-top: 8px;
+  max-width: 70ch;
+  font-size: clamp(18px, 2.2vw, 24px);
+  line-height: 1.2;
+  letter-spacing: -.03em;
+  overflow-wrap: anywhere;
+}
+.plan-page--review .plan-review-counts {
+  margin-top: 6px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+
+/* ---------- Lista ---------- */
+.plan-page--review .plan-review-list-title {
+  margin: clamp(22px, 3vw, 32px) 0 0;
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+.plan-page--review .plan-review-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-page--review .plan-review-item {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  padding: clamp(16px, 2.2vw, 22px);
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--line-strong);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  background: var(--surface);
+}
+.plan-page--review .plan-review-item[data-due-state="overdue"] { border-left-color: var(--danger); }
+.plan-page--review .plan-review-item[data-due-state="today"] { border-left-color: var(--accent); }
+.plan-page--review .plan-review-item[data-due-state="future"] { border-left-color: var(--mark-review); }
+.plan-page--review .plan-review-item[data-due-state="unknown"] { border-left-color: var(--line-strong); }
+.plan-page--review .plan-review-item.is-busy { opacity: .72; }
+.plan-page--review .plan-review-item-main { min-width: 0; }
+.plan-page--review .plan-review-item-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.plan-page--review .plan-review-item-title {
+  margin-top: 5px;
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+.plan-page--review .plan-review-open {
+  color: var(--text);
+  text-decoration: none;
+  border-radius: 4px;
+}
+.plan-page--review .plan-review-item-meta {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 4px 8px;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.plan-page--review .plan-review-sep { color: var(--muted); }
+.plan-page--review .plan-review-due {
+  display: inline-flex;
+  align-items: center;
+  margin-top: 8px;
+  padding: 3px 8px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--bg-soft);
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .03em;
+  line-height: 1.3;
+}
+.plan-page--review .plan-review-due.is-overdue {
+  color: var(--danger);
+  border-color: var(--danger-line);
+  background: var(--danger-soft);
+}
+.plan-page--review .plan-review-due.is-today {
+  color: var(--accent);
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+}
+.plan-page--review .plan-review-due.is-future {
+  color: var(--mark-review);
+  border-color: var(--mark-review-line);
+  background: var(--mark-review-bg);
+}
+.plan-page--review .plan-review-due.is-unknown {
+  color: var(--muted);
+  border-color: var(--line);
+  background: var(--surface-2);
+}
+
+/* ---------- Autoevaluación ---------- */
+.plan-page--review .plan-review-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+  min-width: 0;
+}
+.plan-page--review .plan-review-btn {
+  min-width: 0;
+  min-height: 38px;
+  padding: 8px 6px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.25;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color var(--t-fast), background var(--t-fast), color var(--t-fast);
+}
+.plan-page--review .plan-review-btn:hover { color: var(--text); }
+.plan-page--review .plan-review-btn[data-value="weak"]:hover {
+  border-color: var(--danger-line);
+  background: var(--danger-soft);
+  color: var(--danger);
+}
+.plan-page--review .plan-review-btn[data-value="partial"]:hover {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--accent);
+}
+.plan-page--review .plan-review-btn[data-value="solid"]:hover {
+  border-color: var(--green-line);
+  background: var(--green-soft);
+  color: var(--green);
+}
+.plan-page--review .plan-review-btn:disabled {
+  cursor: progress;
+  opacity: .6;
+}
+.plan-page--review .plan-review-btn:disabled:hover {
+  border-color: var(--line-strong);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+}
+
+/* ---------- Fichas leídas sin repaso programado ---------- */
+.plan-page--review .plan-review-candidates {
+  margin-top: clamp(26px, 3.4vw, 38px);
+  min-width: 0;
+}
+.plan-page--review .plan-review-candidates-title {
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.1;
+  letter-spacing: -.035em;
+}
+.plan-page--review .plan-review-candidates-lede {
+  max-width: 76ch;
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-candidate-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 12px 0 0;
+  padding: 0;
+  list-style: none;
+  min-width: 0;
+}
+.plan-page--review .plan-review-candidate {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 12px;
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--mark-review-line);
+  border-radius: 0 var(--r-md) var(--r-md) 0;
+  background: var(--surface);
+}
+.plan-page--review .plan-review-candidate.is-busy { opacity: .72; }
+.plan-page--review .plan-review-candidate-main { min-width: 0; }
+.plan-page--review .plan-review-candidate-title {
+  margin-top: 5px;
+  font-size: clamp(15px, 1.7vw, 17px);
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+.plan-page--review .plan-review-candidate-meta {
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  line-height: 1.5;
+}
+.plan-page--review .plan-review-schedule {
+  justify-self: start;
+  min-height: 38px;
+  padding: 9px 13px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-sm);
+  background: var(--accent-soft);
+  color: var(--accent);
+  font-family: inherit;
+  font-size: 11.5px;
+  font-weight: 650;
+  line-height: 1.2;
+  cursor: pointer;
+  transition: background var(--t-fast), border-color var(--t-fast), color var(--t-fast);
+}
+.plan-page--review .plan-review-schedule:disabled {
+  cursor: progress;
+  opacity: .6;
+}
+.plan-page--review .plan-review-candidates-pending {
+  margin-top: 12px;
+  padding: 14px 16px;
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-page--review .plan-review-candidates-pending-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.plan-page--review .plan-review-candidates-pending > p {
+  max-width: 78ch;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-declare-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px 14px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-page--review .plan-review-declare-link {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px;
+  padding-bottom: 2px;
+  border-bottom: 1px solid var(--line-strong);
+  color: var(--text);
+  font-size: 11.5px;
+  line-height: 1.4;
+  text-decoration: none;
+}
+.plan-page--review .plan-review-declare-link span {
+  color: var(--accent);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .05em;
+  text-transform: uppercase;
+}
+.plan-page--review .plan-review-candidates-more {
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.plan-page--review .plan-review-candidates-empty-text {
+  max-width: 74ch;
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-empty.is-compact {
+  margin-top: 12px;
+  padding: 16px 18px;
+}
+
+/* ---------- Notas ---------- */
+.plan-page--review .plan-review-foot {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  margin-top: 22px;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.plan-page--review .plan-review-foot-text {
+  max-width: 84ch;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-foot-note {
+  max-width: 84ch;
+  color: var(--text-soft);
+  font-size: 11px;
+  line-height: 1.55;
+}
+
+/* ---------- Estado vacío ---------- */
+.plan-page--review .plan-review-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  padding: clamp(18px, 2.6vw, 26px);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-page--review .plan-review-empty-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--mark-review-line);
+  border-radius: 12px;
+  color: var(--mark-review);
+  background: var(--mark-review-bg);
+}
+.plan-page--review .plan-review-empty-icon svg { width: 22px; height: 22px; }
+.plan-page--review .plan-review-empty-copy { min-width: 0; }
+.plan-page--review .plan-review-empty-title {
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.12;
+  letter-spacing: -.03em;
+}
+.plan-page--review .plan-review-empty-text {
+  max-width: 70ch;
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-empty-note {
+  max-width: 70ch;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+.plan-page--review .plan-review-empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* ---------- Error de carga ---------- */
+.plan-page--review .plan-review-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--danger-line);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+}
+.plan-page--review .plan-review-error-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--danger-line);
+  border-radius: 11px;
+  color: var(--danger);
+  background: var(--surface);
+}
+.plan-page--review .plan-review-error-icon svg { width: 20px; height: 20px; }
+.plan-page--review .plan-review-error-copy { min-width: 0; }
+.plan-page--review .plan-review-error-title {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+.plan-page--review .plan-review-error-text {
+  max-width: 70ch;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-page--review .plan-review-error .s-btn { margin-top: 12px; }
+
+/* ---------- Interacción y foco ---------- */
+.plan-page--review a:focus-visible,
+.plan-page--review button:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .plan-page--review .plan-page-panel:hover { color: var(--text); }
+  .plan-page--review .plan-page-panel:hover svg { transform: translateX(-2px); }
+  .plan-page--review .plan-page-link:hover {
+    border-color: var(--line-strong);
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  .plan-page--review .plan-review-open:hover {
+    color: var(--accent);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+  }
+  .plan-page--review .plan-review-schedule:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+  .plan-page--review .plan-review-declare-link:hover {
+    border-bottom-color: var(--accent);
+    color: var(--accent);
+  }
+}
+
+/* ---------- Adaptación ---------- */
+@media (min-width: 760px) {
+  .plan-page--review .plan-review-item {
+    grid-template-columns: minmax(0, 1fr) minmax(230px, 290px);
+    align-items: start;
+    gap: 18px;
+  }
+  .plan-page--review .plan-review-actions {
+    grid-template-columns: minmax(0, 1fr);
+    align-content: start;
+  }
+  .plan-page--review .plan-review-btn { min-height: 40px; }
+  .plan-page--review .plan-review-candidate {
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: center;
+    gap: 18px;
+  }
+  .plan-page--review .plan-review-schedule { justify-self: end; }
+}
+@media (max-width: 520px) {
+  .plan-page--review .plan-page-title { font-size: clamp(30px, 9.4vw, 40px); }
+  .plan-page--review .plan-review-summary { padding: 16px 14px; border-radius: var(--r-md); }
+  .plan-page--review .plan-review-item { padding: 15px 13px 16px; border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+  .plan-page--review .plan-review-empty { flex-direction: column; padding: 16px 14px; }
+  .plan-page--review .plan-review-candidate { padding: 15px 13px 16px; border-radius: 0 var(--r-sm) var(--r-sm) 0; }
+  .plan-page--review .plan-review-schedule {
+    justify-self: stretch;
+    text-align: center;
+  }
+}
+
+/* En puntero grueso todo control mide al menos --target-min (44 px). */
+@media (pointer: coarse) {
+  .plan-page--review .plan-page-panel,
+  .plan-page--review .plan-page-link { min-height: var(--target-min); }
+  .plan-page--review .plan-page-link { padding: 10px 13px; }
+  .plan-page--review .s-btn { min-height: var(--target-min); }
+  .plan-page--review .plan-review-open {
+    display: inline-flex;
+    align-items: center;
+    min-height: var(--target-min);
+  }
+  .plan-page--review .plan-review-btn {
+    min-height: var(--target-min);
+    padding-block: 10px;
+  }
+  .plan-page--review .plan-review-schedule { min-height: var(--target-min); }
+  .plan-page--review .plan-review-declare-link {
+    min-height: var(--target-min);
+    align-items: center;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-page--review .plan-page-panel,
+  .plan-page--review .plan-page-panel svg,
+  .plan-page--review .plan-page-link,
+  .plan-page--review .plan-review-btn,
+  .plan-page--review .plan-review-schedule {
+    transition: none;
+  }
+}

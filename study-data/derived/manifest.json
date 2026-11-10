@@ -1,0 +1,76 @@
+{
+  "format": "serums-derived-manifest",
+  "version": 1,
+  "contentVersion": "2.5.0",
+  "generatedAt": "2026-10-25T02:31:14.630Z",
+  "source": {
+    "path": "study-data/temario.js",
+    "bytes": 2587623,
+    "sha256": "cc9a0885994b43d74d7b7cd09284c9e2b2380ba11fc0b88093635fd729b8c15a",
+    "modifiedAt": "2026-10-25T02:31:14.630Z"
+  },
+  "normalized": "NFD sin diacríticos; español",
+  "fragmentPolicy": "search.f vacío significa que el fragmento se toma de search.t (sin acentos).",
+  "files": [
+    {
+      "name": "search.json",
+      "bytes": 2378627,
+      "sha256": "88b1fe1b1649a6f06ad40a6209b28b420d668f667bc0681a0e1f63b30a89eb21",
+      "entries": 10014
+    },
+    {
+      "name": "glossary.json",
+      "bytes": 29306,
+      "sha256": "64451e539bbecfe57e3ac2884b64befa86c04383e7dc809ce08244151db6dd45",
+      "entries": 57
+    },
+    {
+      "name": "facts.json",
+      "bytes": 100641,
+      "sha256": "af554312e7f00cf5cb568ef5a86691c425682e123b3c4a9bbbdad8a1c14b9e45",
+      "entries": 261
+    },
+    {
+      "name": "warnings.json",
+      "bytes": 188418,
+      "sha256": "780a8f502a148b2635bfbf73cd85221b1e2b3c85572ae93a3146be6116ac625d",
+      "entries": 451
+    },
+    {
+      "name": "related.json",
+      "bytes": 102225,
+      "sha256": "f78701b5be3218e87b49351604c3e6f709b5d6d7d07321024de85e32560787d6"
+    },
+    {
+      "name": "report.json",
+      "bytes": 4524,
+      "sha256": "63f91a2461cbc501e3f4ed2ffa875c2b511d1852c63b818435db79df0c8e9208",
+      "entries": 0
+    }
+  ],
+  "counts": {
+    "sheets": 210,
+    "sections": 1392,
+    "paragraphs": 1336,
+    "bullets": 4135,
+    "tables": 270,
+    "tableRows": 1289,
+    "callouts": 211,
+    "searchEntries": 10014,
+    "glossaryEntries": 57,
+    "factsEntries": 261,
+    "warningsEntries": 451,
+    "relatedLinks": 116
+  },
+  "searchKinds": {
+    "m": 210,
+    "y": 210,
+    "s": 1392,
+    "p": 1336,
+    "b": 4135,
+    "t": 1289,
+    "w": 211,
+    "c": 1231
+  },
+  "totalBytes": 2803741
+}

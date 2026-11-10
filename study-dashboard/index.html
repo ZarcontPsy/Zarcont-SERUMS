@@ -1,9 +1,12 @@
 <!DOCTYPE html>
+<!-- © 2026 ZARCONT — Study Dashboard · Estudio activo 2.3.0 · Documento interno del proyecto. -->
 <html lang="es" data-theme="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
 <meta name="theme-color" content="#0B0B0D">
+<meta name="author" content="ZARCONT">
+<meta name="application-name" content="Study Dashboard">
 <script>
   try {
     var studyTheme = localStorage.getItem("study-theme") === "light" ? "light" : "dark";
@@ -20,8 +23,21 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Zen+Dots&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="../study-shared/base.css?v=2.0.2">
-<link rel="stylesheet" href="styles.css?v=2.2.2">
+<link rel="stylesheet" href="../study-shared/base.css?v=2.3.0">
+<link rel="stylesheet" href="styles.css?v=2.3.0">
+<link rel="stylesheet" href="css/data.css?v=2.3.0">
+<link rel="stylesheet" href="css/active.css?v=2.3.0">
+<link rel="stylesheet" href="css/nav.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-ruta.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-editor.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-mastery.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-review.css?v=2.3.0">
+<link rel="stylesheet" href="css/glossary.css?v=2.3.0">
+<link rel="stylesheet" href="css/facts.css?v=2.3.0">
+<link rel="stylesheet" href="css/traps.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-relampago.css?v=2.3.0">
+<link rel="stylesheet" href="css/plan-lastday.css?v=2.3.0">
 <link rel="stylesheet" href="../serums-chrome.css?v=1.0.0">
 <link rel="stylesheet" href="../serums-mobile.css?v=1.0.0">
 </head>
@@ -30,7 +46,7 @@
 
 <header class="s-appbar">
   <div class="s-appbar-inner">
-    <a class="s-brand" href="#/" data-nav aria-label="Study Dashboard, inicio">
+    <a class="s-brand" href="#/" data-nav aria-label="SERUMS STUDY, Dashboard de estudio, inicio">
       <span class="s-brand-mark" data-icon="book" data-size="17"></span>
       <span class="s-brand-copy">
         <span class="s-brand-name">SERUMS STUDY</span>
@@ -56,9 +72,135 @@
       </a>
       <span data-chrome-mount></span>
       <button class="s-iconbtn" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+
+      <div class="dash-more" data-more-root>
+        <button class="s-iconbtn dash-more-btn" type="button" data-action="more-open" aria-haspopup="dialog" aria-expanded="false" aria-controls="dash-more-panel" aria-label="Más opciones">
+          <span data-icon="menu" data-size="18"></span>
+        </button>
+        <div class="dash-more-scrim" data-action="more-close" hidden></div>
+        <div class="dash-more-panel" id="dash-more-panel" role="dialog" aria-modal="true" aria-labelledby="dash-more-title" hidden>
+          <div class="dash-more-head">
+            <div>
+              <span class="s-kicker"><span class="dot"></span>Navegación secundaria</span>
+              <h2 class="dash-more-title" id="dash-more-title">Más opciones</h2>
+            </div>
+            <button class="s-iconbtn dash-more-close" type="button" data-action="more-close" aria-label="Cerrar Más opciones">
+              <span data-icon="close" data-size="17"></span>
+            </button>
+          </div>
+
+          <nav class="dash-more-group" aria-label="Estudio y datos">
+            <span class="dash-more-label">Estudio y datos</span>
+            <a class="dash-more-item" href="../study-flashcards/index.html">
+              <span class="dash-more-item-icon" data-icon="cards" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Study Flashcards</b><small>Practicar el temario leído</small></span>
+              <span class="dash-more-item-arrow" data-icon="external" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/respaldo" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="loop" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Respaldo y datos</b><small>Exportar, importar o borrar progreso</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+          </nav>
+
+          <div class="dash-more-group" role="group" aria-label="Estudio activo">
+            <span class="dash-more-label">Estudio activo</span>
+            <button class="dash-more-item" type="button" data-action="open-palette" data-navx-open-palette aria-keyshortcuts="Control+K Meta+K">
+              <span class="dash-more-item-icon" data-icon="search" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Buscar o ir a…</b><small>Fichas, vistas y acciones</small></span>
+              <span class="dash-more-kbd"><span class="s-kbd">Ctrl K</span></span>
+            </button>
+            <a class="dash-more-item" href="#/subrayados" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="bookmark" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Mis subrayados</b><small>Marcas y notas de lectura</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/dudas" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="flag" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Bandeja de dudas</b><small>Lo que quedó por resolver</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+          </div>
+
+          <div class="dash-more-group" role="group" aria-label="Planificación">
+            <span class="dash-more-label">Planificación</span>
+            <a class="dash-more-item" href="#/ruta" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="compass" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Ruta de hoy</b><small>Qué toca hoy y por qué</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/plan" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="calendar" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Plan de estudio</b><small>Examen, minutos y prioridades</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/dominio" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="target" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Mapa de dominio</b><small>Fuerzas, huecos y cobertura</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/repaso" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="rotate" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Repaso de fichas</b><small>Vencimientos y autoevaluación</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+          </div>
+
+          <div class="dash-more-group" role="group" aria-label="Última hora">
+            <span class="dash-more-label">Última hora</span>
+            <a class="dash-more-item" href="#/relampago" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="flame" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Repaso relámpago</b><small>Diez preguntas rápidas</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/ultimo-dia" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="calendar" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Hoja de último día</b><small>Lo esencial para imprimir</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/glosario" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="book" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Glosario</b><small>Definiciones del temario</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/datos" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="list" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Datos para memorizar</b><small>Cifras y tablas clave</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+            <a class="dash-more-item" href="#/trampas" data-nav data-more-route>
+              <span class="dash-more-item-icon" data-icon="alert" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Trampas frecuentes</b><small>Avisos y distinciones</small></span>
+              <span class="dash-more-item-arrow" data-icon="chevronRight" data-size="14"></span>
+            </a>
+          </div>
+
+          <div class="dash-more-group">
+            <span class="dash-more-label">Sistema</span>
+            <a class="dash-more-item" href="#/" data-nav>
+              <span class="dash-more-item-icon" data-icon="grid" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Inicio de la app</b><small>Volver al panel</small></span>
+            </a>
+            <a class="dash-more-item" href="../index.html">
+              <span class="dash-more-item-icon" data-icon="external" data-size="17"></span>
+              <span class="dash-more-item-copy"><b>Volver al HUB</b><small>Todas las aplicaciones</small></span>
+            </a>
+            <button class="dash-more-item" type="button" data-action="more-fullscreen">
+              <span class="dash-more-item-icon" data-icon="eye" data-size="17"></span>
+              <span class="dash-more-item-copy"><b data-more-fullscreen-label>Pantalla completa</b><small>Ocultar el navegador</small></span>
+            </button>
+            <button class="dash-more-item" type="button" data-action="more-theme">
+              <span class="dash-more-item-icon" data-icon="sun" data-size="17"></span>
+              <span class="dash-more-item-copy"><b data-more-theme-label>Usar tema claro</b><small>Cambiar la apariencia</small></span>
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </header>
+
+<div class="s-page app-notice-host"><div id="app-notice" class="s-alert s-alert--warn app-notice" role="status" hidden></div></div>
 
 <main id="main" tabindex="-1">
   <div id="boot" class="s-page dash-boot" aria-live="polite">
@@ -77,7 +219,7 @@
 
 <footer class="dash-footer">
   <div class="s-page dash-footer-inner">
-    <span>Study Dashboard · progreso guardado en este navegador</span>
+    <span>© 2026 ZARCONT · Study Dashboard · progreso guardado en este navegador</span>
     <span class="dash-footer-links">
       <a href="../study-flashcards/index.html">Study Flashcards</a>
       <a href="../index.html">HUB</a>
@@ -85,11 +227,12 @@
   </div>
 </footer>
 
-<script src="../study-data/temario.js?v=2.5.0"></script>
-<script src="../study-shared/taxonomy.js?v=1.0.0"></script>
-<script src="../study-shared/icons.js?v=2.0.1"></script>
-<script src="../study-shared/ui.js?v=2.0.1"></script>
-<script src="../study-shared/store.js?v=2.0.1"></script>
+<script src="../study-data/temario-core.js?v=2.5.0"></script>
+<script src="../study-shared/taxonomy.js?v=2.3.0"></script>
+<script src="../study-shared/icons.js?v=2.3.0"></script>
+<script src="../study-shared/ui.js?v=2.3.0"></script>
+<script src="../study-shared/store.js?v=2.3.0"></script>
+<script src="../study-data/content-loader.js?v=2.5.0"></script>
 <script src="../serums-chrome.js?v=1.0.0"></script>
 <script>
   window.SerumsChrome.mount(".s-appbar-actions [data-chrome-mount]", {
@@ -100,6 +243,35 @@
     order: ["home", "hub", "fullscreen"]
   });
 </script>
-<script src="app.js?v=2.2.1"></script>
+<script src="app.js?v=2.3.0"></script>
+<script src="js/data/backup.js?v=2.3.0"></script>
+<script src="js/data/derived-loader.js?v=2.3.0"></script>
+
+<script src="js/active/active.icons.js?v=2.3.0"></script>
+<script src="js/active/active.core.js?v=2.3.0"></script>
+<script src="js/active/active.components.js?v=2.3.0"></script>
+<script src="js/active/active.behavior.js?v=2.3.0"></script>
+<script src="js/active/active.integration.js?v=2.3.0"></script>
+
+<script src="js/nav/core.js?v=2.3.0"></script>
+<script src="js/nav/search.js?v=2.3.0"></script>
+<script src="js/nav/sections.js?v=2.3.0"></script>
+<script src="js/nav/palette.js?v=2.3.0"></script>
+<script src="js/nav/nav.integration.js?v=2.3.0"></script>
+
+<script src="js/nav/reference.js?v=2.3.0"></script>
+<script src="js/nav/glossary.integration.js?v=2.3.0"></script>
+<script src="js/nav/facts.integration.js?v=2.3.0"></script>
+<script src="js/nav/traps.integration.js?v=2.3.0"></script>
+
+<script src="js/plan/plan.runtime.js?v=2.3.0"></script>
+<script src="js/plan/plan.ruta.js?v=2.3.0"></script>
+<script src="js/plan/plan.editor.js?v=2.3.0"></script>
+<script src="js/plan/plan.mastery.js?v=2.3.0"></script>
+<script src="js/plan/plan.review.js?v=2.3.0"></script>
+<script src="js/plan/plan.relampago.js?v=2.3.0"></script>
+<script src="js/plan/plan.lastday.js?v=2.3.0"></script>
+
+<script src="js/plan/today.integration.js?v=2.3.0"></script>
 </body>
 </html>

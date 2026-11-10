@@ -1,0 +1,726 @@
+/* © 2026 ZARCONT — Study Dashboard · Mapa de dominio (#/dominio, Fase 2)
+   Hoja del módulo `plan-mastery`. Todo selector vive bajo .plan-mastery* o
+   .plan-page--mastery; no se tocan tokens compartidos ni se usan selectores
+   globales. Tokens de study-shared/base.css: superficies, línea, acento,
+   semánticos, radios, --t-fast/--t-base, --font-display y --target-min.
+
+   Composición: cabecera editorial · puntaje global con banda textual y
+   cobertura · punto más flojo · áreas con sus categorías (medidor + banda) ·
+   notas de cálculo. Estados: esqueleto, error con reintento y vacío honesto. */
+
+.plan-page--mastery {
+  --plan-mastery-gap: clamp(16px, 2.4vw, 28px);
+  padding: clamp(26px, 4.2vw, 54px) 0 clamp(42px, 6vw, 74px);
+  min-width: 0;
+}
+.plan-page--mastery *,
+.plan-page--mastery *::before,
+.plan-page--mastery *::after { min-width: 0; }
+
+/* ---------- Cabecera editorial ---------- */
+.plan-page--mastery .plan-page-head {
+  position: relative;
+  padding: clamp(22px, 3.6vw, 44px) 0 clamp(20px, 3vw, 34px);
+  border-bottom: 1px solid var(--line);
+  background:
+    radial-gradient(120% 150% at 0% 0%, var(--accent-soft), transparent 58%);
+}
+.plan-page--mastery .plan-page-topline {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px 18px;
+}
+.plan-page--mastery .plan-page-panel {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 32px;
+  color: var(--text-soft);
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: .01em;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: color var(--t-fast);
+}
+.plan-page--mastery .plan-page-panel svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+  transition: transform var(--t-fast);
+}
+.plan-page--mastery .plan-page-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-page-dot {
+  flex: none;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.plan-page--mastery .plan-page-title {
+  max-width: 900px;
+  margin: 14px 0 12px;
+  font-size: clamp(34px, 5.4vw, 60px);
+  line-height: .99;
+  letter-spacing: -.055em;
+  font-weight: 600;
+  text-wrap: balance;
+  overflow-wrap: anywhere;
+}
+.plan-page--mastery .plan-page-lede {
+  max-width: 74ch;
+  color: var(--text-soft);
+  font-size: clamp(13.5px, 1.3vw, 15.5px);
+  line-height: 1.65;
+}
+.plan-page--mastery .plan-page-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 18px;
+}
+.plan-page--mastery .plan-page-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 34px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--surface);
+  color: var(--text-soft);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+}
+.plan-page--mastery .plan-page-link svg {
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+
+/* ---------- Cuerpo y esqueleto ---------- */
+.plan-page--mastery .plan-mastery-body {
+  margin-top: var(--plan-mastery-gap);
+  min-width: 0;
+}
+.plan-page--mastery .plan-mastery-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+.plan-page--mastery .plan-mastery-skeleton-global {
+  height: clamp(190px, 24vw, 250px);
+  border-radius: var(--r-lg);
+}
+.plan-page--mastery .plan-mastery-skeleton-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px;
+}
+.plan-page--mastery .plan-mastery-skeleton-card {
+  height: clamp(180px, 20vw, 230px);
+  border-radius: var(--r-lg);
+}
+
+/* ---------- Puntaje global ---------- */
+.plan-page--mastery .plan-mastery-global {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(18px, 3vw, 32px);
+  padding: clamp(20px, 3vw, 34px);
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-lg);
+  background:
+    radial-gradient(120% 160% at 0% 0%, var(--accent-soft), transparent 58%),
+    var(--surface);
+}
+.plan-page--mastery .plan-mastery-global.is-empty {
+  border-color: var(--line-strong);
+  border-style: dashed;
+  background: var(--bg-soft);
+}
+.plan-page--mastery .plan-mastery-global-main { min-width: 0; }
+.plan-page--mastery .plan-mastery-kicker {
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-score {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 8px 0 12px;
+}
+.plan-page--mastery .plan-mastery-score-value {
+  font-family: var(--font-display);
+  font-size: clamp(46px, 7vw, 68px);
+  font-weight: 400;
+  line-height: .92;
+  letter-spacing: -.01em;
+  color: var(--text);
+}
+.plan-page--mastery .plan-mastery-score-unit {
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-band {
+  display: inline-flex;
+  align-items: center;
+  padding: 5px 11px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--surface-2);
+  color: var(--muted);
+  font-size: 10.5px;
+  font-weight: 700;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+.plan-page--mastery .plan-mastery-band[data-band="solido"] {
+  color: var(--green);
+  background: var(--green-soft);
+  border-color: var(--green-line);
+}
+.plan-page--mastery .plan-mastery-band[data-band="enProgreso"] {
+  color: var(--accent);
+  background: var(--accent-soft);
+  border-color: var(--accent-line);
+}
+.plan-page--mastery .plan-mastery-band[data-band="fragil"] {
+  color: var(--danger);
+  background: var(--danger-soft);
+  border-color: var(--danger-line);
+}
+.plan-page--mastery .plan-mastery-band[data-band="sinDatos"] {
+  color: var(--muted);
+  background: var(--surface-2);
+  border-color: var(--line);
+}
+.plan-page--mastery .plan-mastery-band-note {
+  max-width: 46ch;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-page--mastery .plan-mastery-global-aside { min-width: 0; }
+.plan-page--mastery .plan-mastery-coverage {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+  margin: 0;
+}
+.plan-page--mastery .plan-mastery-coverage-item {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--bg-soft);
+}
+.plan-page--mastery .plan-mastery-coverage-label {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-coverage-value {
+  display: block;
+  margin-top: 6px;
+  font-family: var(--font-display);
+  font-size: 22px;
+  line-height: 1;
+  color: var(--text);
+}
+.plan-page--mastery .plan-mastery-coverage-item p {
+  margin-top: 5px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.45;
+}
+.plan-page--mastery .plan-mastery-signals {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin: 14px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-page--mastery .plan-mastery-signal {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 6px;
+  padding: 4px 9px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-full);
+  background: var(--bg-soft);
+  color: var(--text-soft);
+  font-size: 10px;
+  line-height: 1.3;
+}
+.plan-page--mastery .plan-mastery-signal-name {
+  color: var(--muted);
+  font-weight: 650;
+  letter-spacing: .06em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-signal-value {
+  color: var(--text);
+  font-weight: 650;
+}
+.plan-page--mastery .plan-mastery-signal.is-missing .plan-mastery-signal-value { color: var(--muted); font-weight: 550; }
+.plan-page--mastery .plan-mastery-missing {
+  max-width: 74ch;
+  margin-top: 14px;
+  color: var(--text-soft);
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+/* ---------- Punto más flojo ---------- */
+.plan-page--mastery .plan-mastery-weakest {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  margin-top: var(--plan-mastery-gap);
+  padding: 16px 18px;
+  border: 1px solid var(--line);
+  border-left: 2px solid var(--accent);
+  border-radius: 0 var(--r-sm) var(--r-sm) 0;
+  background: var(--bg-soft);
+}
+.plan-page--mastery .plan-mastery-weakest.is-empty {
+  border-left-color: var(--line-strong);
+}
+.plan-page--mastery .plan-mastery-weakest-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 34px;
+  height: 34px;
+  border: 1px solid var(--accent-line);
+  border-radius: 11px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.plan-page--mastery .plan-mastery-weakest.is-empty .plan-mastery-weakest-icon {
+  color: var(--muted);
+  background: var(--surface-2);
+  border-color: var(--line);
+}
+.plan-page--mastery .plan-mastery-weakest-icon svg { width: 18px; height: 18px; }
+.plan-page--mastery .plan-mastery-weakest-copy { min-width: 0; }
+.plan-page--mastery .plan-mastery-weakest-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-weakest-title {
+  margin-top: 5px;
+  font-size: 15px;
+  line-height: 1.35;
+  letter-spacing: -.02em;
+  overflow-wrap: anywhere;
+}
+.plan-page--mastery .plan-mastery-weakest-meta {
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  line-height: 1.55;
+}
+
+/* ---------- Áreas y categorías ---------- */
+.plan-page--mastery .plan-mastery-section-title {
+  margin: clamp(24px, 3.4vw, 38px) 0 0;
+  font-size: clamp(22px, 2.6vw, 30px);
+  line-height: 1.08;
+  letter-spacing: -.035em;
+}
+.plan-page--mastery .plan-mastery-areas {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 14px;
+}
+.plan-page--mastery .plan-mastery-area {
+  padding: clamp(18px, 2.6vw, 28px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background: var(--surface);
+}
+.plan-page--mastery .plan-mastery-area-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px 18px;
+}
+.plan-page--mastery .plan-mastery-area-heading { min-width: 0; }
+.plan-page--mastery .plan-mastery-area-kicker {
+  display: block;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .13em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-area-title {
+  margin-top: 4px;
+  font-size: clamp(20px, 2.3vw, 25px);
+  line-height: 1.12;
+  letter-spacing: -.035em;
+  overflow-wrap: anywhere;
+}
+.plan-page--mastery .plan-mastery-area-score {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 6px 8px;
+}
+.plan-page--mastery .plan-mastery-area-score-value {
+  font-family: var(--font-display);
+  font-size: clamp(26px, 3vw, 32px);
+  line-height: 1;
+  color: var(--text);
+}
+.plan-page--mastery .plan-mastery-area-score-unit {
+  color: var(--muted);
+  font-size: 9px;
+  font-weight: 650;
+  letter-spacing: .11em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-area .plan-mastery-band { font-size: 9.5px; padding: 4px 9px; }
+.plan-page--mastery .plan-mastery-meter {
+  position: relative;
+  width: 100%;
+  height: 7px;
+  margin-top: 14px;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+  overflow: hidden;
+}
+.plan-page--mastery .plan-mastery-meter.is-empty {
+  background: repeating-linear-gradient(90deg, var(--surface-3) 0 8px, transparent 8px 15px);
+}
+.plan-page--mastery .plan-mastery-meter-fill {
+  display: block;
+  width: var(--plan-meter, 0%);
+  height: 100%;
+  border-radius: inherit;
+  background: var(--accent);
+  transition: width var(--t-base);
+}
+.plan-page--mastery .plan-mastery-area[data-band="solido"] .plan-mastery-meter-fill,
+.plan-page--mastery .plan-mastery-category[data-band="solido"] .plan-mastery-meter-fill { background: var(--green); }
+.plan-page--mastery .plan-mastery-area[data-band="fragil"] .plan-mastery-meter-fill,
+.plan-page--mastery .plan-mastery-category[data-band="fragil"] .plan-mastery-meter-fill { background: var(--danger); }
+.plan-page--mastery .plan-mastery-area[data-band="sinDatos"] .plan-mastery-meter-fill,
+.plan-page--mastery .plan-mastery-category[data-band="sinDatos"] .plan-mastery-meter-fill { background: var(--muted); }
+.plan-page--mastery .plan-mastery-area-meta {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.plan-page--mastery .plan-mastery-area-missing {
+  margin-top: 4px;
+  color: var(--text-soft);
+  font-size: 11px;
+  line-height: 1.5;
+}
+.plan-page--mastery .plan-mastery-categories {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 10px;
+  margin: 16px 0 0;
+  padding: 14px 0 0;
+  border-top: 1px solid var(--line);
+  list-style: none;
+}
+.plan-page--mastery .plan-mastery-category {
+  padding: 12px 14px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-sm);
+  background: var(--bg-soft);
+}
+.plan-page--mastery .plan-mastery-category-head {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 6px 8px;
+}
+.plan-page--mastery .plan-mastery-category-title {
+  flex: 1 1 140px;
+  font-size: 13px;
+  line-height: 1.35;
+  letter-spacing: -.01em;
+  overflow-wrap: anywhere;
+}
+.plan-page--mastery .plan-mastery-category-score {
+  font-family: var(--font-display);
+  font-size: 16px;
+  line-height: 1;
+  color: var(--text);
+}
+.plan-page--mastery .plan-mastery-category-score small {
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 9px;
+  letter-spacing: .02em;
+}
+.plan-page--mastery .plan-mastery-category-score.is-empty {
+  color: var(--muted);
+  font-family: var(--font-ui);
+  font-size: 12px;
+}
+.plan-page--mastery .plan-mastery-category .plan-mastery-band {
+  font-size: 9px;
+  padding: 3px 7px;
+  letter-spacing: .06em;
+}
+.plan-page--mastery .plan-mastery-category .plan-mastery-meter {
+  height: 5px;
+  margin-top: 9px;
+}
+.plan-page--mastery .plan-mastery-category-meta {
+  margin-top: 7px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-page--mastery .plan-mastery-category-missing {
+  margin-top: 3px;
+  color: var(--text-soft);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+
+/* ---------- Notas del cálculo ---------- */
+.plan-page--mastery .plan-mastery-notes {
+  margin-top: var(--plan-mastery-gap);
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
+}
+.plan-page--mastery .plan-mastery-notes-summary {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 32px;
+  color: var(--text-soft);
+  font-size: 11.5px;
+  font-weight: 600;
+  cursor: pointer;
+  list-style: none;
+  border-radius: 4px;
+}
+.plan-page--mastery .plan-mastery-notes-summary::-webkit-details-marker { display: none; }
+.plan-page--mastery .plan-mastery-notes-summary::marker { content: ""; }
+.plan-page--mastery .plan-mastery-notes-summary svg {
+  flex: none;
+  width: 14px;
+  height: 14px;
+  color: var(--accent);
+}
+.plan-page--mastery .plan-mastery-notes-body {
+  max-width: 82ch;
+  margin-top: 10px;
+}
+.plan-page--mastery .plan-mastery-notes-formula {
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.65;
+}
+.plan-page--mastery .plan-mastery-notes-block { margin-top: 12px; }
+.plan-page--mastery .plan-mastery-notes-label {
+  display: block;
+  margin-bottom: 5px;
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-page--mastery .plan-mastery-notes-block ul {
+  margin: 0;
+  padding-left: 16px;
+  color: var(--text-soft);
+  font-size: 11px;
+  line-height: 1.55;
+}
+.plan-page--mastery .plan-mastery-notes-block li + li { margin-top: 4px; }
+.plan-page--mastery .plan-mastery-notes-block b {
+  color: var(--text);
+  font-weight: 650;
+}
+
+/* ---------- Estado vacío ---------- */
+.plan-page--mastery .plan-mastery-empty {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+  margin-top: 16px;
+  padding: clamp(18px, 2.6vw, 26px);
+  border: 1px dashed var(--line-strong);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-page--mastery .plan-mastery-empty-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--accent-line);
+  border-radius: 12px;
+  color: var(--accent);
+  background: var(--accent-soft);
+}
+.plan-page--mastery .plan-mastery-empty-icon svg { width: 22px; height: 22px; }
+.plan-page--mastery .plan-mastery-empty-copy { min-width: 0; }
+.plan-page--mastery .plan-mastery-empty-title {
+  font-size: clamp(20px, 2.4vw, 26px);
+  line-height: 1.12;
+  letter-spacing: -.03em;
+}
+.plan-page--mastery .plan-mastery-empty-text {
+  max-width: 70ch;
+  margin-top: 8px;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-page--mastery .plan-mastery-empty-note {
+  max-width: 70ch;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: 11px;
+  line-height: 1.55;
+}
+.plan-page--mastery .plan-mastery-empty-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* ---------- Error de carga ---------- */
+.plan-page--mastery .plan-mastery-error {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 18px;
+  border: 1px solid var(--danger-line);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+}
+.plan-page--mastery .plan-mastery-error-icon {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  border: 1px solid var(--danger-line);
+  border-radius: 11px;
+  color: var(--danger);
+  background: var(--surface);
+}
+.plan-page--mastery .plan-mastery-error-icon svg { width: 20px; height: 20px; }
+.plan-page--mastery .plan-mastery-error-copy { min-width: 0; }
+.plan-page--mastery .plan-mastery-error-title {
+  font-size: 16px;
+  line-height: 1.2;
+  letter-spacing: -.02em;
+}
+.plan-page--mastery .plan-mastery-error-text {
+  max-width: 70ch;
+  margin-top: 6px;
+  color: var(--text-soft);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-page--mastery .plan-mastery-error .s-btn { margin-top: 12px; }
+
+/* ---------- Interacción y foco ---------- */
+.plan-page--mastery a:focus-visible,
+.plan-page--mastery button:focus-visible,
+.plan-page--mastery summary:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+@media (hover: hover) and (pointer: fine) {
+  .plan-page--mastery .plan-page-panel:hover { color: var(--text); }
+  .plan-page--mastery .plan-page-panel:hover svg { transform: translateX(-2px); }
+  .plan-page--mastery .plan-page-link:hover {
+    border-color: var(--line-strong);
+    color: var(--text);
+    background: var(--surface-2);
+  }
+  .plan-page--mastery .plan-mastery-notes-summary:hover { color: var(--text); }
+}
+
+/* ---------- Adaptación ---------- */
+@media (min-width: 900px) {
+  .plan-page--mastery .plan-mastery-global {
+    grid-template-columns: minmax(0, .72fr) minmax(0, 1fr);
+    align-items: start;
+  }
+  .plan-page--mastery .plan-mastery-categories {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 12px 20px;
+  }
+}
+@media (max-width: 520px) {
+  .plan-page--mastery .plan-page-title { font-size: clamp(30px, 9.4vw, 40px); }
+  .plan-page--mastery .plan-mastery-global { padding: 16px 14px 18px; border-radius: var(--r-md); }
+  .plan-page--mastery .plan-mastery-area { padding: 16px 14px 18px; border-radius: var(--r-md); }
+  .plan-page--mastery .plan-mastery-empty { flex-direction: column; padding: 16px 14px; }
+  .plan-page--mastery .plan-mastery-weakest { padding: 14px; }
+  .plan-page--mastery .plan-mastery-score-value { font-size: 46px; }
+  .plan-page--mastery .plan-mastery-category { padding: 11px 12px; }
+}
+
+/* En puntero grueso todo control mide al menos --target-min (44 px). */
+@media (pointer: coarse) {
+  .plan-page--mastery .plan-page-panel,
+  .plan-page--mastery .plan-page-link {
+    min-height: var(--target-min);
+  }
+  .plan-page--mastery .plan-page-link { padding: 10px 13px; }
+  .plan-page--mastery .s-btn { min-height: var(--target-min); }
+  .plan-page--mastery .plan-mastery-notes-summary {
+    min-height: var(--target-min);
+    padding: 4px 0;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-page--mastery .plan-page-panel,
+  .plan-page--mastery .plan-page-panel svg,
+  .plan-page--mastery .plan-page-link,
+  .plan-page--mastery .plan-mastery-meter-fill {
+    transition: none;
+  }
+}

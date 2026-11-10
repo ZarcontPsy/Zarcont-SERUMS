@@ -1,0 +1,85 @@
+{
+  "version": 1,
+  "createdAt": "2026-10-25T22:04:40.633Z",
+  "updatedAt": "2026-10-25T22:06:07.641Z",
+  "sheets": {
+    "sheet-aps-02": {
+      "views": 4,
+      "viewedAt": "2026-10-25T22:04:40.633Z",
+      "lastOpenedAt": "2026-10-25T22:04:48.317Z",
+      "completedAt": null,
+      "favorite": false,
+      "scroll": 0,
+      "readSeconds": 0,
+      "topicId": "topic-aps-atributos"
+    }
+  },
+  "cards": {
+    "card-aps-01-1": {
+      "box": 0,
+      "dueAt": "2026-10-25T22:16:07.639Z",
+      "lastReviewAt": "2026-10-25T22:06:07.639Z",
+      "lastResult": "again",
+      "reviews": 1,
+      "correct": 0,
+      "wrong": 1,
+      "lapses": 1
+    }
+  },
+  "sessions": [],
+  "activity": {
+    "2026-10-25": {
+      "sheetViews": 1,
+      "sheetCompletions": 0,
+      "cardReviews": 1,
+      "correct": 0,
+      "wrong": 1,
+      "seconds": 0
+    }
+  },
+  "goals": {
+    "dailySheets": 2
+  },
+  "history": [],
+  "last": {
+    "dashboard": {
+      "sheetId": "sheet-aps-02",
+      "topicId": "topic-aps-atributos",
+      "title": "Accesibilidad y longitudinalidad: entrar y permanecer",
+      "context": "Los cuatro atributos de la APS",
+      "at": "2026-10-25T22:04:48.317Z",
+      "url": "http://127.0.0.1:8772/study-dashboard/index.html?sheet=sheet-aps-02&topic=topic-aps-atributos"
+    },
+    "flashcards": {
+      "deckId": "topic-aps-atributos",
+      "topicId": "topic-aps-atributos",
+      "title": "Los cuatro atributos de la APS",
+      "at": "2026-10-25T22:06:07.640Z",
+      "url": "http://127.0.0.1:8772/study-flashcards/index.html?deck=topic-aps-atributos"
+    }
+  },
+  "flashSession": {
+    "id": "session-1792965965453",
+    "mode": "free",
+    "deckId": "sheet-aps-01",
+    "queue": [
+      "card-aps-01-1",
+      "card-aps-01-2",
+      "card-aps-01-3"
+    ],
+    "index": 1,
+    "answers": {
+      "card-aps-01-1": {
+        "correct": false,
+        "rating": "again",
+        "selected": null,
+        "at": "2026-10-25T22:06:07.639Z"
+      }
+    },
+    "correct": 0,
+    "wrong": 1,
+    "status": "active",
+    "startedAt": "2026-10-25T22:06:05.453Z",
+    "updatedAt": "2026-10-25T22:06:07.641Z"
+  }
+}

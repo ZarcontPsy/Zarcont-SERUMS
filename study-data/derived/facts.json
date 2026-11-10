@@ -1,0 +1,3557 @@
+{
+  "format": "serums-study-facts",
+  "version": 1,
+  "contentVersion": "2.5.0",
+  "generatedAt": "2026-10-25T02:31:14.630Z",
+  "total": 261,
+  "entries": [
+    {
+      "id": "fact-1",
+      "sheetId": "sheet-audit-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Los tres dominios",
+      "rowIndex": 0,
+      "term": "1-3",
+      "detail": "Consumo · Frecuencia, cantidad habitual y episodios intensos.",
+      "headers": [
+        "Preguntas",
+        "Dominio",
+        "Qué explora"
+      ]
+    },
+    {
+      "id": "fact-2",
+      "sheetId": "sheet-audit-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Los tres dominios",
+      "rowIndex": 1,
+      "term": "4-6",
+      "detail": "Dependencia · Control, interferencia con obligaciones y necesidad de beber al despertar.",
+      "headers": [
+        "Preguntas",
+        "Dominio",
+        "Qué explora"
+      ]
+    },
+    {
+      "id": "fact-3",
+      "sheetId": "sheet-audit-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Los tres dominios",
+      "rowIndex": 2,
+      "term": "7-10",
+      "detail": "Consecuencias · Culpa, lagunas, lesiones y preocupación de otras personas.",
+      "headers": [
+        "Preguntas",
+        "Dominio",
+        "Qué explora"
+      ]
+    },
+    {
+      "id": "fact-4",
+      "sheetId": "sheet-audit-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Ajustes por población",
+      "rowIndex": 0,
+      "term": "0-7",
+      "detail": "Bajo riesgo o abstinencia; reforzar hábitos saludables.",
+      "headers": [
+        "Puntuación",
+        "Lectura orientativa"
+      ]
+    },
+    {
+      "id": "fact-5",
+      "sheetId": "sheet-audit-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Ajustes por población",
+      "rowIndex": 1,
+      "term": "8-15",
+      "detail": "Consumo de riesgo; consejo simple y educación.",
+      "headers": [
+        "Puntuación",
+        "Lectura orientativa"
+      ]
+    },
+    {
+      "id": "fact-6",
+      "sheetId": "sheet-audit-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Ajustes por población",
+      "rowIndex": 2,
+      "term": "16-19",
+      "detail": "Terapia breve y monitorización continuada.",
+      "headers": [
+        "Puntuación",
+        "Lectura orientativa"
+      ]
+    },
+    {
+      "id": "fact-7",
+      "sheetId": "sheet-audit-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Ajustes por población",
+      "rowIndex": 3,
+      "term": "20 o más",
+      "detail": "Evaluación diagnóstica especializada.",
+      "headers": [
+        "Puntuación",
+        "Lectura orientativa"
+      ]
+    },
+    {
+      "id": "fact-8",
+      "sheetId": "sheet-audit-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Las cuatro zonas",
+      "rowIndex": 0,
+      "term": "I",
+      "detail": "0-7 · Educación sobre alcohol y hábitos de bajo riesgo.",
+      "headers": [
+        "Zona",
+        "Puntuación",
+        "Respuesta orientativa"
+      ]
+    },
+    {
+      "id": "fact-9",
+      "sheetId": "sheet-audit-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Las cuatro zonas",
+      "rowIndex": 1,
+      "term": "II",
+      "detail": "8-15 · Consejo simple, feedback y materiales educativos.",
+      "headers": [
+        "Zona",
+        "Puntuación",
+        "Respuesta orientativa"
+      ]
+    },
+    {
+      "id": "fact-10",
+      "sheetId": "sheet-audit-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Las cuatro zonas",
+      "rowIndex": 2,
+      "term": "III",
+      "detail": "16-19 · Terapia breve y monitorización continuada.",
+      "headers": [
+        "Zona",
+        "Puntuación",
+        "Respuesta orientativa"
+      ]
+    },
+    {
+      "id": "fact-11",
+      "sheetId": "sheet-audit-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Las cuatro zonas",
+      "rowIndex": 3,
+      "term": "IV",
+      "detail": "20-40 · Derivación a especialista para evaluación y tratamiento.",
+      "headers": [
+        "Zona",
+        "Puntuación",
+        "Respuesta orientativa"
+      ]
+    },
+    {
+      "id": "fact-12",
+      "sheetId": "sheet-materna-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Frecuencia y suplementación",
+      "rowIndex": 0,
+      "term": "Antes de las 14 semanas",
+      "detail": "Confirmar embarazo, evaluar riesgo, ácido fólico, laboratorio inicial.",
+      "headers": [
+        "Momento",
+        "Énfasis"
+      ]
+    },
+    {
+      "id": "fact-13",
+      "sheetId": "sheet-materna-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Frecuencia y suplementación",
+      "rowIndex": 1,
+      "term": "14-27 semanas",
+      "detail": "Crecimiento fetal, suplementación, tamizajes, educación.",
+      "headers": [
+        "Momento",
+        "Énfasis"
+      ]
+    },
+    {
+      "id": "fact-14",
+      "sheetId": "sheet-materna-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Frecuencia y suplementación",
+      "rowIndex": 2,
+      "term": "28-36 semanas",
+      "detail": "Control de crecimiento, preparación para el parto, alarmas.",
+      "headers": [
+        "Momento",
+        "Énfasis"
+      ]
+    },
+    {
+      "id": "fact-15",
+      "sheetId": "sheet-materna-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Frecuencia y suplementación",
+      "rowIndex": 3,
+      "term": "37 semanas al parto",
+      "detail": "Plan de parto, signos de trabajo de parto, referencia oportuna.",
+      "headers": [
+        "Momento",
+        "Énfasis"
+      ]
+    },
+    {
+      "id": "fact-16",
+      "sheetId": "sheet-materna-06",
+      "sectionIndex": 1,
+      "sectionTitle": "Control puerperal y visita domiciliaria",
+      "rowIndex": 0,
+      "term": "Primeras 24 horas",
+      "detail": "Sangrado, signos vitales, lactancia, vínculo, seguridad.",
+      "headers": [
+        "Momento",
+        "Qué observar"
+      ]
+    },
+    {
+      "id": "fact-17",
+      "sheetId": "sheet-materna-06",
+      "sectionIndex": 1,
+      "sectionTitle": "Control puerperal y visita domiciliaria",
+      "rowIndex": 2,
+      "term": "Hasta los 42 días",
+      "detail": "Control puerperal, planificación, seguimiento del recién nacido.",
+      "headers": [
+        "Momento",
+        "Qué observar"
+      ]
+    },
+    {
+      "id": "fact-18",
+      "sheetId": "sheet-adulto-03",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué se mide y por qué",
+      "rowIndex": 1,
+      "term": "Perímetro abdominal",
+      "detail": "Se relaciona con diabetes tipo 2, hipertensión y enfermedad cardiovascular.",
+      "headers": [
+        "Medición",
+        "Interpretación clínica"
+      ]
+    },
+    {
+      "id": "fact-19",
+      "sheetId": "sheet-adulto-04",
+      "sectionIndex": 1,
+      "sectionTitle": "Prevención organizada por riesgos",
+      "rowIndex": 2,
+      "term": "Salud mental",
+      "detail": "PHQ-9, AUDIT y tamizaje de violencia.",
+      "headers": [
+        "Componente",
+        "Ejemplos del paquete"
+      ]
+    },
+    {
+      "id": "fact-20",
+      "sheetId": "sheet-adulto-06",
+      "sectionIndex": 0,
+      "sectionTitle": "Tres tamizajes, tres preguntas",
+      "rowIndex": 0,
+      "term": "Depresión",
+      "detail": "Síntomas depresivos mediante observación, entrevista y PHQ-9.",
+      "headers": [
+        "Tamizaje",
+        "Qué explora"
+      ]
+    },
+    {
+      "id": "fact-21",
+      "sheetId": "sheet-adulto-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Quién hace qué",
+      "rowIndex": 0,
+      "term": "I-1 e I-2",
+      "detail": "Paquete priorizado según capacidad resolutiva.",
+      "headers": [
+        "Nivel",
+        "Responsabilidad"
+      ]
+    },
+    {
+      "id": "fact-22",
+      "sheetId": "sheet-adulto-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Quién hace qué",
+      "rowIndex": 1,
+      "term": "I-3 e I-4",
+      "detail": "Paquete completo con equipo de salud.",
+      "headers": [
+        "Nivel",
+        "Responsabilidad"
+      ]
+    },
+    {
+      "id": "fact-23",
+      "sheetId": "sheet-depresion-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Cómo interpretar el PHQ-9",
+      "rowIndex": 0,
+      "term": "0 a 9",
+      "detail": "Tamizaje negativo.",
+      "headers": [
+        "Puntaje",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-24",
+      "sheetId": "sheet-depresion-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Cómo interpretar el PHQ-9",
+      "rowIndex": 1,
+      "term": "10 a 14",
+      "detail": "Episodio depresivo leve.",
+      "headers": [
+        "Puntaje",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-25",
+      "sheetId": "sheet-depresion-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Cómo interpretar el PHQ-9",
+      "rowIndex": 2,
+      "term": "15 a 19",
+      "detail": "Episodio depresivo moderado.",
+      "headers": [
+        "Puntaje",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-26",
+      "sheetId": "sheet-depresion-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Cómo interpretar el PHQ-9",
+      "rowIndex": 3,
+      "term": "20 a 27",
+      "detail": "Episodio depresivo severo.",
+      "headers": [
+        "Puntaje",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-27",
+      "sheetId": "sheet-depresion-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Bipolaridad: dos pistas temporales",
+      "rowIndex": 0,
+      "term": "Hipomanía",
+      "detail": "4 días o más · Elevación leve y persistente del ánimo, aumento de energía y actividad.",
+      "headers": [
+        "Episodio",
+        "Duración mínima",
+        "Qué se observa"
+      ]
+    },
+    {
+      "id": "fact-28",
+      "sheetId": "sheet-depresion-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Bipolaridad: dos pistas temporales",
+      "rowIndex": 1,
+      "term": "Manía",
+      "detail": "1 semana o más · Humor elevado sin relación con las circunstancias, excitación, menor necesidad de sueño.",
+      "headers": [
+        "Episodio",
+        "Duración mínima",
+        "Qué se observa"
+      ]
+    },
+    {
+      "id": "fact-29",
+      "sheetId": "sheet-depresion-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Bandas de severidad",
+      "rowIndex": 0,
+      "term": "10 a 14",
+      "detail": "Leve · Manejo en primer nivel según preferencias y recursos.",
+      "headers": [
+        "PHQ-9",
+        "Severidad",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-30",
+      "sheetId": "sheet-depresion-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Bandas de severidad",
+      "rowIndex": 1,
+      "term": "15 a 19",
+      "detail": "Moderado · Referir al psiquiatra.",
+      "headers": [
+        "PHQ-9",
+        "Severidad",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-31",
+      "sheetId": "sheet-depresion-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Bandas de severidad",
+      "rowIndex": 2,
+      "term": "20 a 27",
+      "detail": "Severo · Referir al psiquiatra.",
+      "headers": [
+        "PHQ-9",
+        "Severidad",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-32",
+      "sheetId": "sheet-depresion-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Dosis y seguimiento",
+      "rowIndex": 0,
+      "term": "Duración",
+      "detail": "8 a 20 sesiones.",
+      "headers": [
+        "Elemento",
+        "Indicación"
+      ]
+    },
+    {
+      "id": "fact-33",
+      "sheetId": "sheet-depresion-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Dosis y seguimiento",
+      "rowIndex": 1,
+      "term": "Frecuencia",
+      "detail": "1 a 2 veces por semana.",
+      "headers": [
+        "Elemento",
+        "Indicación"
+      ]
+    },
+    {
+      "id": "fact-34",
+      "sheetId": "sheet-depresion-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Dosis y seguimiento",
+      "rowIndex": 2,
+      "term": "Línea base",
+      "detail": "PHQ-9 antes de iniciar.",
+      "headers": [
+        "Elemento",
+        "Indicación"
+      ]
+    },
+    {
+      "id": "fact-35",
+      "sheetId": "sheet-depresion-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Dosis y seguimiento",
+      "rowIndex": 3,
+      "term": "Control",
+      "detail": "PHQ-9 al menos en la sexta sesión.",
+      "headers": [
+        "Elemento",
+        "Indicación"
+      ]
+    },
+    {
+      "id": "fact-36",
+      "sheetId": "sheet-depresion-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Dosis y seguimiento",
+      "rowIndex": 4,
+      "term": "Respuesta",
+      "detail": "Reducción de 50% o más del puntaje basal.",
+      "headers": [
+        "Elemento",
+        "Indicación"
+      ]
+    },
+    {
+      "id": "fact-37",
+      "sheetId": "sheet-depresion-06",
+      "sectionIndex": 0,
+      "sectionTitle": "Tres formas de leer el cambio",
+      "rowIndex": 0,
+      "term": "Respuesta",
+      "detail": "Disminución de 50% o más.",
+      "headers": [
+        "Categoría",
+        "Cambio en PHQ-9"
+      ]
+    },
+    {
+      "id": "fact-38",
+      "sheetId": "sheet-depresion-06",
+      "sectionIndex": 0,
+      "sectionTitle": "Tres formas de leer el cambio",
+      "rowIndex": 1,
+      "term": "Respuesta parcial",
+      "detail": "Disminución de 20% a 49%.",
+      "headers": [
+        "Categoría",
+        "Cambio en PHQ-9"
+      ]
+    },
+    {
+      "id": "fact-39",
+      "sheetId": "sheet-depresion-06",
+      "sectionIndex": 0,
+      "sectionTitle": "Tres formas de leer el cambio",
+      "rowIndex": 2,
+      "term": "No respuesta",
+      "detail": "Disminución de 19% o menos.",
+      "headers": [
+        "Categoría",
+        "Cambio en PHQ-9"
+      ]
+    },
+    {
+      "id": "fact-40",
+      "sheetId": "sheet-depresion-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Monitoreo",
+      "rowIndex": 0,
+      "term": "Antes de iniciar",
+      "detail": "PHQ-9 basal y evaluación clínica.",
+      "headers": [
+        "Momento",
+        "Qué hacer"
+      ]
+    },
+    {
+      "id": "fact-41",
+      "sheetId": "sheet-depresion-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Monitoreo",
+      "rowIndex": 1,
+      "term": "Semana 4 a 6",
+      "detail": "Medir respuesta; mantener o incrementar dosis.",
+      "headers": [
+        "Momento",
+        "Qué hacer"
+      ]
+    },
+    {
+      "id": "fact-42",
+      "sheetId": "sheet-depresion-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Monitoreo",
+      "rowIndex": 2,
+      "term": "Semana 8 a 12",
+      "detail": "Reevaluar respuesta y remisión.",
+      "headers": [
+        "Momento",
+        "Qué hacer"
+      ]
+    },
+    {
+      "id": "fact-43",
+      "sheetId": "sheet-depresion-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué hacer en cada control",
+      "rowIndex": 0,
+      "term": "Respuesta en semana 4 a 6",
+      "detail": "Mantener dosis y continuar.",
+      "headers": [
+        "Escenario",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-44",
+      "sheetId": "sheet-depresion-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué hacer en cada control",
+      "rowIndex": 1,
+      "term": "Sin respuesta en semana 4 a 6",
+      "detail": "Incrementar dosis y continuar.",
+      "headers": [
+        "Escenario",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-45",
+      "sheetId": "sheet-depresion-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Qué hacer en cada control",
+      "rowIndex": 2,
+      "term": "Respuesta en semana 8 a 12",
+      "detail": "Mantener dosis y evaluar remisión tres semanas después.",
+      "headers": [
+        "Escenario",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-46",
+      "sheetId": "sheet-perinatal-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Tres instrumentos, tres riesgos distintos",
+      "rowIndex": 0,
+      "term": "PHQ-9",
+      "detail": "Síntomas depresivos en las últimas 2 semanas; 9 ítems, 0 a 27. · Positivo desde 5. Bandas: 5–9 leve, 10–14 moderado, 15–19 moderadamente severo, 20–27 severo.",
+      "headers": [
+        "Instrumento",
+        "Qué explora",
+        "Puntaje y punto de corte"
+      ]
+    },
+    {
+      "id": "fact-47",
+      "sheetId": "sheet-perinatal-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Tres instrumentos, tres riesgos distintos",
+      "rowIndex": 1,
+      "term": "WAST",
+      "detail": "Violencia en la relación de pareja; 8 ítems, 8 a 24. · Positivo con 15 o más. Los ítems 4, 6 y 7 pueden confirmar violencia aunque el total sea menor.",
+      "headers": [
+        "Instrumento",
+        "Qué explora",
+        "Puntaje y punto de corte"
+      ]
+    },
+    {
+      "id": "fact-48",
+      "sheetId": "sheet-perinatal-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Tres instrumentos, tres riesgos distintos",
+      "rowIndex": 2,
+      "term": "AUDIT-C",
+      "detail": "Consumo de alcohol; 3 ítems, 0 a 12. · Positivo con 3 o más. En el embarazo, cualquier respuesta de consumo nocivo exige intervención.",
+      "headers": [
+        "Instrumento",
+        "Qué explora",
+        "Puntaje y punto de corte"
+      ]
+    },
+    {
+      "id": "fact-49",
+      "sheetId": "sheet-perinatal-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PHQ-9: del puntaje a la conducta",
+      "rowIndex": 0,
+      "term": "5–9",
+      "detail": "Depresión leve · Manejo en el establecimiento, intervención psicosocial y seguimiento cercano.",
+      "headers": [
+        "Resultado",
+        "Interpretación",
+        "Conducta general"
+      ]
+    },
+    {
+      "id": "fact-50",
+      "sheetId": "sheet-perinatal-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PHQ-9: del puntaje a la conducta",
+      "rowIndex": 1,
+      "term": "10–14",
+      "detail": "Depresión moderada · Evaluación por salud mental; manejo conjunto o referencia al CSMC según riesgo y recursos.",
+      "headers": [
+        "Resultado",
+        "Interpretación",
+        "Conducta general"
+      ]
+    },
+    {
+      "id": "fact-51",
+      "sheetId": "sheet-perinatal-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PHQ-9: del puntaje a la conducta",
+      "rowIndex": 2,
+      "term": "15–19",
+      "detail": "Moderadamente severa · Referencia al CSMC; valorar urgencia y apoyo familiar.",
+      "headers": [
+        "Resultado",
+        "Interpretación",
+        "Conducta general"
+      ]
+    },
+    {
+      "id": "fact-52",
+      "sheetId": "sheet-perinatal-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PHQ-9: del puntaje a la conducta",
+      "rowIndex": 3,
+      "term": "20–27",
+      "detail": "Severa · Referencia prioritaria; descartar psicosis, riesgo suicida y necesidad de hospitalización.",
+      "headers": [
+        "Resultado",
+        "Interpretación",
+        "Conducta general"
+      ]
+    },
+    {
+      "id": "fact-53",
+      "sheetId": "sheet-violencia-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Medidas de protección",
+      "rowIndex": 0,
+      "term": "Leve o moderado",
+      "detail": "48 horas · Audiencia y medidas acordes al caso.",
+      "headers": [
+        "Riesgo",
+        "Plazo máximo",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-54",
+      "sheetId": "sheet-violencia-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Medidas de protección",
+      "rowIndex": 1,
+      "term": "Severo",
+      "detail": "24 horas · Medidas inmediatas; puede prescindirse de audiencia.",
+      "headers": [
+        "Riesgo",
+        "Plazo máximo",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-55",
+      "sheetId": "sheet-violencia-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Medidas de protección",
+      "rowIndex": 2,
+      "term": "No determinable",
+      "detail": "72 horas · Evaluación y resolución en audiencia.",
+      "headers": [
+        "Riesgo",
+        "Plazo máximo",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-56",
+      "sheetId": "sheet-violencia-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Niveles y respuesta",
+      "rowIndex": 0,
+      "term": "0–7",
+      "detail": "Leve · Orientación, primera acogida, plan de seguridad y seguimiento.",
+      "headers": [
+        "Puntaje",
+        "Nivel",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-57",
+      "sheetId": "sheet-violencia-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Niveles y respuesta",
+      "rowIndex": 1,
+      "term": "8–13",
+      "detail": "Moderado · Plan reforzado, coordinación con CEM/PNP y seguimiento cercano.",
+      "headers": [
+        "Puntaje",
+        "Nivel",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-58",
+      "sheetId": "sheet-violencia-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Niveles y respuesta",
+      "rowIndex": 2,
+      "term": "14–17",
+      "detail": "Severo 1 · Protección inmediata y reevaluación frecuente.",
+      "headers": [
+        "Puntaje",
+        "Nivel",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-59",
+      "sheetId": "sheet-violencia-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Niveles y respuesta",
+      "rowIndex": 3,
+      "term": "18–37",
+      "detail": "Severo 2 / extremo · Respuesta urgente y articulación con justicia y emergencia.",
+      "headers": [
+        "Puntaje",
+        "Nivel",
+        "Respuesta"
+      ]
+    },
+    {
+      "id": "fact-60",
+      "sheetId": "sheet-violencia-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Consentimiento y evidencia",
+      "rowIndex": 1,
+      "term": "Vulvar o vaginal",
+      "detail": "Hasta 5 días.",
+      "headers": [
+        "Muestra",
+        "Ventana orientativa"
+      ]
+    },
+    {
+      "id": "fact-61",
+      "sheetId": "sheet-violencia-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Consentimiento y evidencia",
+      "rowIndex": 2,
+      "term": "Cervical",
+      "detail": "Después de 48 horas y hasta 5 días.",
+      "headers": [
+        "Muestra",
+        "Ventana orientativa"
+      ]
+    },
+    {
+      "id": "fact-62",
+      "sheetId": "sheet-violencia-07",
+      "sectionIndex": 1,
+      "sectionTitle": "Consentimiento y evidencia",
+      "rowIndex": 3,
+      "term": "Anal o rectal",
+      "detail": "Hasta 3 días.",
+      "headers": [
+        "Muestra",
+        "Ventana orientativa"
+      ]
+    },
+    {
+      "id": "fact-63",
+      "sheetId": "sheet-violencia-08",
+      "sectionIndex": 0,
+      "sectionTitle": "Profilaxis",
+      "rowIndex": 0,
+      "term": "VIH",
+      "detail": "Iniciar dentro de 72 horas; 28 días si no se conoce el estado del agresor.",
+      "headers": [
+        "Riesgo",
+        "Intervención"
+      ]
+    },
+    {
+      "id": "fact-64",
+      "sheetId": "sheet-its-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas de primera línea",
+      "rowIndex": 0,
+      "term": "Descarga uretral, rectal o cervicitis",
+      "detail": "Ceftriaxona 1 g IM dosis única + doxiciclina 100 mg VO cada 12 h por 7 días. Alternativa: azitromicina 500 mg, 2 tabletas VO dosis única. · 60 días.",
+      "headers": [
+        "Síndrome",
+        "Tratamiento inicial",
+        "Pareja"
+      ]
+    },
+    {
+      "id": "fact-65",
+      "sheetId": "sheet-its-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas de primera línea",
+      "rowIndex": 1,
+      "term": "Úlcera genital",
+      "detail": "Penicilina benzatínica 2.4 millones UI IM dosis única + aciclovir 400 mg VO cada 12 h por 5 días. Alternativa: doxiciclina 100 mg cada 12 h por 14 días + aciclovir. · 90 días.",
+      "headers": [
+        "Síndrome",
+        "Tratamiento inicial",
+        "Pareja"
+      ]
+    },
+    {
+      "id": "fact-66",
+      "sheetId": "sheet-its-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas de primera línea",
+      "rowIndex": 2,
+      "term": "Flujo vaginal",
+      "detail": "Metronidazol 500 mg, 4 tabletas VO dosis única + fluconazol 150 mg VO dosis única. Alternativa: metronidazol 500 mg cada 12 h por 7 días + clotrimazol 500 mg vaginal dosis única. · Según el agente y el caso.",
+      "headers": [
+        "Síndrome",
+        "Tratamiento inicial",
+        "Pareja"
+      ]
+    },
+    {
+      "id": "fact-67",
+      "sheetId": "sheet-its-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas de primera línea",
+      "rowIndex": 3,
+      "term": "Dolor abdominal bajo",
+      "detail": "Ceftriaxona 1 g IM + doxiciclina 100 mg cada 12 h + metronidazol 500 mg cada 12 h, todos por 14 días. · 60 días.",
+      "headers": [
+        "Síndrome",
+        "Tratamiento inicial",
+        "Pareja"
+      ]
+    },
+    {
+      "id": "fact-68",
+      "sheetId": "sheet-vih-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PrEP: criterios y modalidades",
+      "rowIndex": 1,
+      "term": "Exposición de riesgo en las últimas 72 horas",
+      "detail": "No iniciar PrEP; evaluar PPE.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-69",
+      "sheetId": "sheet-vih-02",
+      "sectionIndex": 0,
+      "sectionTitle": "PrEP: criterios y modalidades",
+      "rowIndex": 2,
+      "term": "Depuración de creatinina <60 ml/min",
+      "detail": "No iniciar PrEP.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-70",
+      "sheetId": "sheet-vih-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Primera línea y alternativas",
+      "rowIndex": 0,
+      "term": "Primera línea",
+      "detail": "TDF/3TC/DTG 300/300/50 mg, una tableta al día.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-71",
+      "sheetId": "sheet-vih-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Primera línea y alternativas",
+      "rowIndex": 1,
+      "term": "Contraindicación o intolerancia a DTG",
+      "detail": "TDF/3TC/EFV 400 mg o TDF/FTC/EFV 600 mg.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-72",
+      "sheetId": "sheet-vih-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Primera línea y alternativas",
+      "rowIndex": 2,
+      "term": "Contraindicación de TDF",
+      "detail": "Abacavir, previa prueba HLA-B*5701 negativa.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-73",
+      "sheetId": "sheet-vih-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Frecuencia de controles",
+      "rowIndex": 0,
+      "term": "Consulta médica",
+      "detail": "Mensual los primeros 3 meses; cada 3 meses hasta los 2 años; cada 6 meses desde el tercer año.",
+      "headers": [
+        "Control",
+        "Frecuencia"
+      ]
+    },
+    {
+      "id": "fact-74",
+      "sheetId": "sheet-vih-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Frecuencia de controles",
+      "rowIndex": 1,
+      "term": "Carga viral",
+      "detail": "A los 3 meses del inicio; cada 6 meses el primer año; luego anual.",
+      "headers": [
+        "Control",
+        "Frecuencia"
+      ]
+    },
+    {
+      "id": "fact-75",
+      "sheetId": "sheet-vih-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Frecuencia de controles",
+      "rowIndex": 2,
+      "term": "CD4",
+      "detail": "Al diagnóstico; cada 6 meses el primer año; luego anual. Puede espaciarse si CD4 >500 y carga viral suprimida.",
+      "headers": [
+        "Control",
+        "Frecuencia"
+      ]
+    },
+    {
+      "id": "fact-76",
+      "sheetId": "sheet-hepatitis-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Cuándo iniciar tratamiento",
+      "rowIndex": 1,
+      "term": "Sin cirrosis, ALT elevada",
+      "detail": "Carga viral >2000 UI/ml y ALT ≥2 veces el límite superior o persistentemente anormal.",
+      "headers": [
+        "Escenario",
+        "Criterio"
+      ]
+    },
+    {
+      "id": "fact-77",
+      "sheetId": "sheet-hepatitis-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Cuándo iniciar tratamiento",
+      "rowIndex": 2,
+      "term": "Sin cirrosis, ALT normal",
+      "detail": "Edad ≥30 años, HBeAg positivo y carga viral >2000 UI/ml.",
+      "headers": [
+        "Escenario",
+        "Criterio"
+      ]
+    },
+    {
+      "id": "fact-78",
+      "sheetId": "sheet-hepatitis-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas",
+      "rowIndex": 0,
+      "term": "Sin cirrosis o cirrosis compensada",
+      "detail": "Sofosbuvir/velpatasvir 400/100 mg, 1 tableta/día por 12 semanas.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-79",
+      "sheetId": "sheet-hepatitis-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas",
+      "rowIndex": 1,
+      "term": "Alternativa",
+      "detail": "Sofosbuvir/daclatasvir 400/60 mg, 1 tableta/día por 12 semanas.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-80",
+      "sheetId": "sheet-hepatitis-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas",
+      "rowIndex": 2,
+      "term": "Cirrosis compensada",
+      "detail": "Sofosbuvir/velpatasvir por 24 semanas.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-81",
+      "sheetId": "sheet-hepatitis-04",
+      "sectionIndex": 0,
+      "sectionTitle": "Esquemas",
+      "rowIndex": 3,
+      "term": "Enfermedad renal crónica 4–5",
+      "detail": "Glecaprevir/pibrentasvir 100/40 mg, 3 tabletas/día por 8 semanas; 12 semanas si hay cirrosis.",
+      "headers": [
+        "Situación",
+        "Esquema"
+      ]
+    },
+    {
+      "id": "fact-82",
+      "sheetId": "sheet-higiene-manos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cinco momentos",
+      "rowIndex": 0,
+      "term": "1",
+      "detail": "Antes del contacto directo con el paciente. · Proteger al paciente de los gérmenes del área de asistencia.",
+      "headers": [
+        "Momento",
+        "Cuándo",
+        "Propósito"
+      ]
+    },
+    {
+      "id": "fact-83",
+      "sheetId": "sheet-higiene-manos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cinco momentos",
+      "rowIndex": 1,
+      "term": "2",
+      "detail": "Antes de una tarea limpia o aséptica. · Evitar la inoculación al paciente o el paso de gérmenes de un punto a otro del cuerpo.",
+      "headers": [
+        "Momento",
+        "Cuándo",
+        "Propósito"
+      ]
+    },
+    {
+      "id": "fact-84",
+      "sheetId": "sheet-higiene-manos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cinco momentos",
+      "rowIndex": 2,
+      "term": "3",
+      "detail": "Después del riesgo de exposición a fluidos corporales. · Proteger al profesional y al entorno de la contaminación.",
+      "headers": [
+        "Momento",
+        "Cuándo",
+        "Propósito"
+      ]
+    },
+    {
+      "id": "fact-85",
+      "sheetId": "sheet-higiene-manos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cinco momentos",
+      "rowIndex": 3,
+      "term": "4",
+      "detail": "Después del contacto con el paciente. · Proteger al profesional y al área de asistencia de los gérmenes del paciente.",
+      "headers": [
+        "Momento",
+        "Cuándo",
+        "Propósito"
+      ]
+    },
+    {
+      "id": "fact-86",
+      "sheetId": "sheet-higiene-manos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cinco momentos",
+      "rowIndex": 4,
+      "term": "5",
+      "detail": "Después del contacto con el entorno del paciente. · Proteger al profesional y al entorno cuando no se tocó al paciente.",
+      "headers": [
+        "Momento",
+        "Cuándo",
+        "Propósito"
+      ]
+    },
+    {
+      "id": "fact-87",
+      "sheetId": "sheet-higiene-manos-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Fórmula y estándares",
+      "rowIndex": 0,
+      "term": "Cumplimiento",
+      "detail": "(Acciones realizadas / Oportunidades) × 100",
+      "headers": [
+        "Elemento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-88",
+      "sheetId": "sheet-higiene-manos-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Fórmula y estándares",
+      "rowIndex": 1,
+      "term": "Oportunidades por periodo y unidad",
+      "detail": "200",
+      "headers": [
+        "Elemento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-89",
+      "sheetId": "sheet-higiene-manos-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Fórmula y estándares",
+      "rowIndex": 2,
+      "term": "Duración de la sesión",
+      "detail": "20 minutos (±10)",
+      "headers": [
+        "Elemento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-90",
+      "sheetId": "sheet-higiene-manos-03",
+      "sectionIndex": 1,
+      "sectionTitle": "Fórmula y estándares",
+      "rowIndex": 3,
+      "term": "Profesionales observados a la vez",
+      "detail": "No más de 3",
+      "headers": [
+        "Elemento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-91",
+      "sheetId": "sheet-iaas-02",
+      "sectionIndex": 2,
+      "sectionTitle": "Indicadores y periodicidad",
+      "rowIndex": 0,
+      "term": "Local (IPRESS)",
+      "detail": "Reportes mensuales de tasas; informes trimestrales, mínimo 4 al año.",
+      "headers": [
+        "Nivel",
+        "Reportes y análisis"
+      ]
+    },
+    {
+      "id": "fact-92",
+      "sheetId": "sheet-iaas-02",
+      "sectionIndex": 2,
+      "sectionTitle": "Indicadores y periodicidad",
+      "rowIndex": 1,
+      "term": "Regional",
+      "detail": "Reportes mensuales; informes semestrales y anuales, mínimo 2 al año.",
+      "headers": [
+        "Nivel",
+        "Reportes y análisis"
+      ]
+    },
+    {
+      "id": "fact-93",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Indicadores que corresponden",
+      "rowIndex": 1,
+      "term": "Menores de 5 años",
+      "detail": "P/E, P/T, T/E y PC/E · Distingue desnutrición aguda, crónica y crecimiento cerebral",
+      "headers": [
+        "Grupo de edad",
+        "Indicadores",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-94",
+      "sheetId": "sheet-nutricion-ninos-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Indicadores que corresponden",
+      "rowIndex": 2,
+      "term": "De 5 a 11 años",
+      "detail": "IMC/E, T/E y PAB/E · Evalúa delgadez, sobrepeso, obesidad y riesgo cardiometabólico",
+      "headers": [
+        "Grupo de edad",
+        "Indicadores",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-95",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 0,
+      "term": "P/T",
+      "detail": "> 3 DE · Obesidad",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-96",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 1,
+      "term": "P/T",
+      "detail": "> 2 DE a 3 DE · Sobrepeso",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-97",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 2,
+      "term": "P/T",
+      "detail": "2 DE a -2 DE · Normal",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-98",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 3,
+      "term": "P/T",
+      "detail": "< -2 DE a -3 DE · Bajo peso / emaciado",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-99",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 4,
+      "term": "P/T",
+      "detail": "< -3 DE · Bajo peso severo",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-100",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 5,
+      "term": "T/E",
+      "detail": "< -2 DE a -3 DE · Talla baja",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-101",
+      "sheetId": "sheet-nutricion-ninos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Peso para la talla y talla para la edad",
+      "rowIndex": 6,
+      "term": "T/E",
+      "detail": "< -3 DE · Talla baja severa",
+      "headers": [
+        "Indicador",
+        "Punto de corte",
+        "Clasificación"
+      ]
+    },
+    {
+      "id": "fact-102",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 0,
+      "term": "1",
+      "detail": "Elegir la gráfica según el sexo y el indicador",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-103",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 1,
+      "term": "2",
+      "detail": "Ubicar la edad y el valor medido en los ejes",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-104",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 2,
+      "term": "3",
+      "detail": "Marcar el punto en la intersección",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-105",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 3,
+      "term": "4",
+      "detail": "Unir el punto con el control anterior",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-106",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 4,
+      "term": "5",
+      "detail": "Interpretar el canal y la tendencia",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-107",
+      "sheetId": "sheet-nutricion-ninos-03",
+      "sectionIndex": 2,
+      "sectionTitle": "Cómo graficar y qué registrar",
+      "rowIndex": 5,
+      "term": "6",
+      "detail": "Registrar la tendencia y las indicaciones en la historia clínica",
+      "headers": [
+        "Paso",
+        "Acción"
+      ]
+    },
+    {
+      "id": "fact-108",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 0,
+      "term": "1",
+      "detail": "Conocer el estado de salud y nutrición",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-109",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 1,
+      "term": "2",
+      "detail": "Anamnesis alimentaria y diagnóstico nutricional",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-110",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 2,
+      "term": "3",
+      "detail": "Estimar los requerimientos de energía",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-111",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 3,
+      "term": "4",
+      "detail": "Establecer metas",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-112",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 4,
+      "term": "5",
+      "detail": "Prescribir la alimentación",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-113",
+      "sheetId": "sheet-nutricion-ninos-05",
+      "sectionIndex": 1,
+      "sectionTitle": "Los seis pasos de la consulta nutricional",
+      "rowIndex": 5,
+      "term": "6",
+      "detail": "Registrar y hacer seguimiento",
+      "headers": [
+        "Paso",
+        "Contenido"
+      ]
+    },
+    {
+      "id": "fact-114",
+      "sheetId": "sheet-nutricion-adultos-01",
+      "sectionIndex": 2,
+      "sectionTitle": "Perímetro abdominal",
+      "rowIndex": 0,
+      "term": "Posición",
+      "detail": "De pie, torso descubierto, brazos relajados y pies separados de 25 a 30 cm",
+      "headers": [
+        "Paso",
+        "Cómo se hace"
+      ]
+    },
+    {
+      "id": "fact-115",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 0,
+      "term": "Delgadez grado III",
+      "detail": "< 16",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-116",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 1,
+      "term": "Delgadez grado II",
+      "detail": "16 a < 17",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-117",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 2,
+      "term": "Delgadez grado I",
+      "detail": "17 a < 18,5",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-118",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 3,
+      "term": "Normal",
+      "detail": "18,5 a < 25",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-119",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 4,
+      "term": "Sobrepeso",
+      "detail": "25 a < 30",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-120",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 5,
+      "term": "Obesidad grado I",
+      "detail": "30 a < 35",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-121",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 6,
+      "term": "Obesidad grado II",
+      "detail": "35 a < 40",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-122",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Clasificación por IMC",
+      "rowIndex": 7,
+      "term": "Obesidad grado III",
+      "detail": "≥ 40",
+      "headers": [
+        "Clasificación",
+        "IMC (kg/m²)"
+      ]
+    },
+    {
+      "id": "fact-123",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Perímetro abdominal",
+      "rowIndex": 0,
+      "term": "Hombre",
+      "detail": "< 94 cm · ≥ 94 cm · ≥ 102 cm",
+      "headers": [
+        "Sexo",
+        "Riesgo bajo",
+        "Riesgo alto",
+        "Riesgo muy alto"
+      ]
+    },
+    {
+      "id": "fact-124",
+      "sheetId": "sheet-nutricion-adultos-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Perímetro abdominal",
+      "rowIndex": 1,
+      "term": "Mujer",
+      "detail": "< 80 cm · ≥ 80 cm · ≥ 88 cm",
+      "headers": [
+        "Sexo",
+        "Riesgo bajo",
+        "Riesgo alto",
+        "Riesgo muy alto"
+      ]
+    },
+    {
+      "id": "fact-125",
+      "sheetId": "sheet-lactancia-02",
+      "sectionIndex": 2,
+      "sectionTitle": "Frecuencia y señales de hambre",
+      "rowIndex": 0,
+      "term": "Frecuencia",
+      "detail": "8 a 12 mamadas en 24 horas, en promedio",
+      "headers": [
+        "Aspecto",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-126",
+      "sheetId": "sheet-lactancia-02",
+      "sectionIndex": 2,
+      "sectionTitle": "Frecuencia y señales de hambre",
+      "rowIndex": 2,
+      "term": "Duración",
+      "detail": "Variable: puede bastar 10 minutos o requerir 30 o más",
+      "headers": [
+        "Aspecto",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-127",
+      "sheetId": "sheet-lactancia-02",
+      "sectionIndex": 2,
+      "sectionTitle": "Frecuencia y señales de hambre",
+      "rowIndex": 4,
+      "term": "Suficiencia",
+      "detail": "Queda tranquilo, gana peso y orina de 4 a 6 veces al día desde los 3 días",
+      "headers": [
+        "Aspecto",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-128",
+      "sheetId": "sheet-lactancia-04",
+      "sectionIndex": 1,
+      "sectionTitle": "Conservación",
+      "rowIndex": 0,
+      "term": "A temperatura ambiente",
+      "detail": "6 a 8 horas, excepto en zonas muy calurosas, donde hay que refrigerar",
+      "headers": [
+        "Lugar",
+        "Tiempo de duración"
+      ]
+    },
+    {
+      "id": "fact-129",
+      "sheetId": "sheet-lactancia-04",
+      "sectionIndex": 1,
+      "sectionTitle": "Conservación",
+      "rowIndex": 1,
+      "term": "Refrigerada",
+      "detail": "72 horas",
+      "headers": [
+        "Lugar",
+        "Tiempo de duración"
+      ]
+    },
+    {
+      "id": "fact-130",
+      "sheetId": "sheet-promocion-politica-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cuatro lineamientos",
+      "rowIndex": 0,
+      "term": "1. Salud como eje de todas las políticas",
+      "detail": "Incorporar la salud en la agenda de todos los sectores y niveles de gobierno.",
+      "headers": [
+        "Lineamiento",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-131",
+      "sheetId": "sheet-promocion-politica-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cuatro lineamientos",
+      "rowIndex": 1,
+      "term": "2. Persona, familia y comunidad en el centro",
+      "detail": "Gestión territorial con participación y decisión local.",
+      "headers": [
+        "Lineamiento",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-132",
+      "sheetId": "sheet-promocion-politica-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cuatro lineamientos",
+      "rowIndex": 2,
+      "term": "3. Abordaje de determinantes para cerrar brechas",
+      "detail": "Articular educación, vivienda, trabajo, ambiente y protección social.",
+      "headers": [
+        "Lineamiento",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-133",
+      "sheetId": "sheet-promocion-politica-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Los cuatro lineamientos",
+      "rowIndex": 3,
+      "term": "4. Empoderamiento y participación social",
+      "detail": "Fortalecer capacidades y control ciudadano sobre las decisiones.",
+      "headers": [
+        "Lineamiento",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-134",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Las cinco fases",
+      "rowIndex": 0,
+      "term": "1. Sensibilización",
+      "detail": "Identificar el municipio, capacitar al personal y lograr el acta de compromiso.",
+      "headers": [
+        "Fase",
+        "Producto o sentido"
+      ]
+    },
+    {
+      "id": "fact-135",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Las cinco fases",
+      "rowIndex": 1,
+      "term": "2. Organización",
+      "detail": "Conformar el comité multisectorial distrital o provincial.",
+      "headers": [
+        "Fase",
+        "Producto o sentido"
+      ]
+    },
+    {
+      "id": "fact-136",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Las cinco fases",
+      "rowIndex": 2,
+      "term": "3. Planificación participativa",
+      "detail": "Elaborar y aprobar el plan de acción con los actores locales.",
+      "headers": [
+        "Fase",
+        "Producto o sentido"
+      ]
+    },
+    {
+      "id": "fact-137",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Las cinco fases",
+      "rowIndex": 3,
+      "term": "4. Ejecución",
+      "detail": "Implementar las acciones y proyectos priorizados.",
+      "headers": [
+        "Fase",
+        "Producto o sentido"
+      ]
+    },
+    {
+      "id": "fact-138",
+      "sheetId": "sheet-municipios-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Las cinco fases",
+      "rowIndex": 4,
+      "term": "5. Seguimiento y evaluación participativa",
+      "detail": "Revisar avances y ajustar; acompaña todo el proceso.",
+      "headers": [
+        "Fase",
+        "Producto o sentido"
+      ]
+    },
+    {
+      "id": "fact-139",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 0,
+      "term": "Coliformes totales, termotolerantes y E. coli",
+      "detail": "0 UFC/100 mL",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-140",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 1,
+      "term": "Bacterias heterotróficas",
+      "detail": "menos de 500 UFC/mL a 35 °C",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-141",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 2,
+      "term": "Cloro residual libre",
+      "detail": "no menos de 0,5 mg/L en la red",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-142",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 3,
+      "term": "pH",
+      "detail": "6,5 a 8,5",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-143",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 4,
+      "term": "Turbiedad",
+      "detail": "5 UNT",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-144",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 5,
+      "term": "Arsénico",
+      "detail": "0,010 mg/L",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-145",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 6,
+      "term": "Plomo",
+      "detail": "0,010 mg/L",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-146",
+      "sheetId": "sheet-agua-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Límites que importan en la práctica",
+      "rowIndex": 7,
+      "term": "Mercurio",
+      "detail": "0,001 mg/L",
+      "headers": [
+        "Parámetro",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-147",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 0,
+      "term": "1. Agua de consumo humano",
+      "detail": "Vigilancia y fiscalización sanitaria; tecnologías intradomiciliarias en zonas dispersas.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-148",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 1,
+      "term": "2. Inocuidad de alimentos",
+      "detail": "Producción, comercio y control sanitario; referencia al Codex Alimentarius.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-149",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 2,
+      "term": "3. Calidad del aire",
+      "detail": "Estándares, estudios de costo-efectividad e intervenciones.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-150",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 3,
+      "term": "4. Peligros y alertas",
+      "detail": "Recursos hídricos, residuos, químicos, vectores y zoonosis.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-151",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 4,
+      "term": "5. Descentralización",
+      "detail": "Fortalecer capacidades regionales y locales.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-152",
+      "sheetId": "sheet-ambiental-politica-02",
+      "sectionIndex": 0,
+      "sectionTitle": "Las seis políticas",
+      "rowIndex": 5,
+      "term": "6. Emergencias y desastres",
+      "detail": "Planes de respuesta del sector salud.",
+      "headers": [
+        "Política",
+        "Foco"
+      ]
+    },
+    {
+      "id": "fact-153",
+      "sheetId": "sheet-metales-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Plazos y productos",
+      "rowIndex": 1,
+      "term": "Informe preliminar de investigación",
+      "detail": "Dentro de 72 horas",
+      "headers": [
+        "Producto",
+        "Plazo"
+      ]
+    },
+    {
+      "id": "fact-154",
+      "sheetId": "sheet-parto-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Fases y tiempos que conviene conocer",
+      "rowIndex": 0,
+      "term": "Fase latente",
+      "detail": "Contracciones dolorosas con cambios variables del cuello; progresión lenta hasta 5 cm.",
+      "headers": [
+        "Momento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-155",
+      "sheetId": "sheet-parto-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Fases y tiempos que conviene conocer",
+      "rowIndex": 1,
+      "term": "Fase activa",
+      "detail": "Desde 5 cm hasta dilatación total; suele durar ≤12 h en primeros partos y ≤10 h en posteriores.",
+      "headers": [
+        "Momento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-156",
+      "sheetId": "sheet-parto-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Fases y tiempos que conviene conocer",
+      "rowIndex": 2,
+      "term": "Período expulsivo",
+      "detail": "Desde dilatación total hasta el nacimiento; normalmente 3 h en primíparas y 2 h en multíparas.",
+      "headers": [
+        "Momento",
+        "Referencia"
+      ]
+    },
+    {
+      "id": "fact-157",
+      "sheetId": "sheet-neonatal-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Signos de alarma",
+      "rowIndex": 2,
+      "term": "Ictericia en las primeras 24 h",
+      "detail": "Hemólisis o infección; requiere laboratorio.",
+      "headers": [
+        "Signo",
+        "Qué puede indicar"
+      ]
+    },
+    {
+      "id": "fact-158",
+      "sheetId": "sheet-neonatal-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Signos de alarma",
+      "rowIndex": 3,
+      "term": "Hipotermia <36,5 °C",
+      "detail": "Sepsis, prematurez, ambiente frío.",
+      "headers": [
+        "Signo",
+        "Qué puede indicar"
+      ]
+    },
+    {
+      "id": "fact-159",
+      "sheetId": "sheet-neonatal-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Signos de alarma",
+      "rowIndex": 4,
+      "term": "Fiebre >38 °C",
+      "detail": "Infección.",
+      "headers": [
+        "Signo",
+        "Qué puede indicar"
+      ]
+    },
+    {
+      "id": "fact-160",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 0,
+      "term": "Glucemia en ayunas",
+      "detail": "70-130 mg/dL",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-161",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 1,
+      "term": "Glucemia postprandial",
+      "detail": "<180 mg/dL",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-162",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 2,
+      "term": "Hemoglobina glucosilada",
+      "detail": "<7%",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-163",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 3,
+      "term": "Colesterol LDL",
+      "detail": "<100 mg/dL",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-164",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 4,
+      "term": "Colesterol HDL",
+      "detail": ">50 mg/dL",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-165",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 5,
+      "term": "Triglicéridos",
+      "detail": "<150 mg/dL",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-166",
+      "sheetId": "sheet-dm2-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Metas de control cardiometabólico",
+      "rowIndex": 6,
+      "term": "Presión arterial",
+      "detail": "<140/80 mmHg",
+      "headers": [
+        "Indicador",
+        "Meta"
+      ]
+    },
+    {
+      "id": "fact-167",
+      "sheetId": "sheet-dm2-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Efectos adversos y alternativas",
+      "rowIndex": 2,
+      "term": "Glimepirida",
+      "detail": "Uso en mayores de 65 años o enfermedad renal leve-moderada; inicio por especialista.",
+      "headers": [
+        "Fármaco",
+        "Puntos clave"
+      ]
+    },
+    {
+      "id": "fact-168",
+      "sheetId": "sheet-hta-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Cuándo iniciar fármacos",
+      "rowIndex": 0,
+      "term": "Riesgo bajo",
+      "detail": "Estilos de vida 3-6 meses; si no alcanza la meta, iniciar fármaco.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-169",
+      "sheetId": "sheet-hta-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Cuándo iniciar fármacos",
+      "rowIndex": 1,
+      "term": "PA ≥160/100",
+      "detail": "Iniciar tratamiento farmacológico independientemente de otros parámetros.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-170",
+      "sheetId": "sheet-hta-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Cuándo iniciar fármacos",
+      "rowIndex": 3,
+      "term": "Diabetes",
+      "detail": "Meta <140/80; considerar combinación según riesgo.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-171",
+      "sheetId": "sheet-hta-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Cuándo iniciar fármacos",
+      "rowIndex": 4,
+      "term": "Proteinuria",
+      "detail": "Meta <130/80.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-172",
+      "sheetId": "sheet-hta-02",
+      "sectionIndex": 1,
+      "sectionTitle": "Cuándo iniciar fármacos",
+      "rowIndex": 5,
+      "term": "Octogenario",
+      "detail": "Mantener PAS entre 140 y 150.",
+      "headers": [
+        "Situación",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-173",
+      "sheetId": "sheet-climaterio-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Escala MRS y orientación",
+      "rowIndex": 0,
+      "term": "Total ≥15",
+      "detail": "Terapia hormonal muy recomendable; tratar según intensidad.",
+      "headers": [
+        "Puntaje MRS",
+        "Orientación"
+      ]
+    },
+    {
+      "id": "fact-174",
+      "sheetId": "sheet-climaterio-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Escala MRS y orientación",
+      "rowIndex": 1,
+      "term": "Total ≥8, somático ≥8 o psicológico ≥6",
+      "detail": "Cualquier terapia hormonal según evaluación individual.",
+      "headers": [
+        "Puntaje MRS",
+        "Orientación"
+      ]
+    },
+    {
+      "id": "fact-175",
+      "sheetId": "sheet-climaterio-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Escala MRS y orientación",
+      "rowIndex": 2,
+      "term": "Urogenital ≥3",
+      "detail": "Considerar terapia local o sistémica según caso.",
+      "headers": [
+        "Puntaje MRS",
+        "Orientación"
+      ]
+    },
+    {
+      "id": "fact-176",
+      "sheetId": "sheet-nino-expuesto-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Diagnóstico y alimentación",
+      "rowIndex": 0,
+      "term": "PCR al nacer",
+      "detail": "En alto riesgo: madre sin control prenatal, sin TAR, infección aguda o carga viral ≥1000.",
+      "headers": [
+        "Aspecto",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-177",
+      "sheetId": "sheet-nino-expuesto-01",
+      "sectionIndex": 1,
+      "sectionTitle": "Diagnóstico y alimentación",
+      "rowIndex": 1,
+      "term": "PCR a los 1 y 3 meses",
+      "detail": "Seguimiento habitual del niño expuesto.",
+      "headers": [
+        "Aspecto",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-178",
+      "sheetId": "sheet-vih-navv-01",
+      "sectionIndex": 1,
+      "sectionTitle": "TAR y monitoreo",
+      "rowIndex": 0,
+      "term": "Antes del TAR",
+      "detail": "Carga viral, CD4 y genotipificación basales; no retrasar el inicio por esperar resultados.",
+      "headers": [
+        "Momento",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-179",
+      "sheetId": "sheet-vih-navv-01",
+      "sectionIndex": 1,
+      "sectionTitle": "TAR y monitoreo",
+      "rowIndex": 1,
+      "term": "Control",
+      "detail": "Carga viral a los 3, 6 y 12 meses; luego semestral.",
+      "headers": [
+        "Momento",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-180",
+      "sheetId": "sheet-vih-navv-01",
+      "sectionIndex": 1,
+      "sectionTitle": "TAR y monitoreo",
+      "rowIndex": 2,
+      "term": "CD4",
+      "detail": "A los 6 y 12 meses; luego anual si la carga viral es indetectable.",
+      "headers": [
+        "Momento",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-181",
+      "sheetId": "sheet-vih-navv-01",
+      "sectionIndex": 1,
+      "sectionTitle": "TAR y monitoreo",
+      "rowIndex": 3,
+      "term": "Falla virológica",
+      "detail": "Carga viral >1000 copias/mL en dos determinaciones separadas por 4 semanas.",
+      "headers": [
+        "Momento",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-182",
+      "sheetId": "sheet-psi-sp-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 1,
+      "term": "Fecundidad general",
+      "detail": "Nacidos vivos sobre mujeres de 15 a 49 años, por mil · Intensidad reproductiva en edad fértil · La fecundidad de cada grupo de edad",
+      "headers": [
+        "Indicador",
+        "Cómo se calcula",
+        "Qué informa",
+        "Qué no permite concluir"
+      ]
+    },
+    {
+      "id": "fact-183",
+      "sheetId": "sheet-psi-sp-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 3,
+      "term": "Dependencia",
+      "detail": "Grupos de 0 a 14 y de 65 a más sobre 15 a 64 años · Carga demográfica potencial · La carga real de cuidado ni el empleo",
+      "headers": [
+        "Indicador",
+        "Cómo se calcula",
+        "Qué informa",
+        "Qué no permite concluir"
+      ]
+    },
+    {
+      "id": "fact-184",
+      "sheetId": "sheet-psi-sp-2-10",
+      "sectionIndex": 2,
+      "sectionTitle": "Clases, colores y cuidados",
+      "rowIndex": 0,
+      "term": "Biocontaminado",
+      "detail": "ROJO · bolsa · Gasas con sangre, cultivos y material contaminado · Cerrar al llegar a 3/4; no compactar",
+      "headers": [
+        "Clase",
+        "Color o recipiente",
+        "Ejemplos",
+        "Cuidado principal"
+      ]
+    },
+    {
+      "id": "fact-185",
+      "sheetId": "sheet-psi-sp-3-1",
+      "sectionIndex": 10,
+      "sectionTitle": "Ottawa, Yakarta, Astaná y APS",
+      "rowIndex": 0,
+      "term": "Alma-Ata",
+      "detail": "1978 · APS como estrategia para Salud para Todos · No es una declaración de promoción",
+      "headers": [
+        "Hito",
+        "Año",
+        "Aporte",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-186",
+      "sheetId": "sheet-psi-sp-3-1",
+      "sectionIndex": 10,
+      "sectionTitle": "Ottawa, Yakarta, Astaná y APS",
+      "rowIndex": 1,
+      "term": "Ottawa",
+      "detail": "1986 · Cinco campos de acción de promoción · No es lo mismo que prevención",
+      "headers": [
+        "Hito",
+        "Año",
+        "Aporte",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-187",
+      "sheetId": "sheet-psi-sp-3-1",
+      "sectionIndex": 10,
+      "sectionTitle": "Ottawa, Yakarta, Astaná y APS",
+      "rowIndex": 2,
+      "term": "Yakarta",
+      "detail": "1997 · Prioridades de promoción para el siglo XXI · No reemplaza a Ottawa",
+      "headers": [
+        "Hito",
+        "Año",
+        "Aporte",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-188",
+      "sheetId": "sheet-psi-sp-3-1",
+      "sectionIndex": 10,
+      "sectionTitle": "Ottawa, Yakarta, Astaná y APS",
+      "rowIndex": 3,
+      "term": "Agenda 2030",
+      "detail": "2015 · 17 ODS y 169 metas; ODS 3 · No es un tratado de APS",
+      "headers": [
+        "Hito",
+        "Año",
+        "Aporte",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-189",
+      "sheetId": "sheet-psi-sp-3-1",
+      "sectionIndex": 10,
+      "sectionTitle": "Ottawa, Yakarta, Astaná y APS",
+      "rowIndex": 4,
+      "term": "Astaná",
+      "detail": "2018 · APS como base de la cobertura universal · Hito de APS, no de promoción",
+      "headers": [
+        "Hito",
+        "Año",
+        "Aporte",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-190",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de prioridad",
+      "rowIndex": 1,
+      "term": "II",
+      "detail": "Emergencia con amenaza potencial para la vida, inestabilidad fisiológica o dolor muy intenso. · Hasta 10 minutos.",
+      "headers": [
+        "Nivel",
+        "Criterio",
+        "Tiempo de atención"
+      ]
+    },
+    {
+      "id": "fact-191",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de prioridad",
+      "rowIndex": 2,
+      "term": "III",
+      "detail": "Urgencia sin riesgo potencial de muerte o secuelas invalidantes. · Hasta 30 minutos.",
+      "headers": [
+        "Nivel",
+        "Criterio",
+        "Tiempo de atención"
+      ]
+    },
+    {
+      "id": "fact-192",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de prioridad",
+      "rowIndex": 3,
+      "term": "IV",
+      "detail": "Urgencia menor sin compromiso del estado general ni riesgo evidente. · Hasta 60 minutos.",
+      "headers": [
+        "Nivel",
+        "Criterio",
+        "Tiempo de atención"
+      ]
+    },
+    {
+      "id": "fact-193",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de prioridad",
+      "rowIndex": 4,
+      "term": "V",
+      "detail": "Problema agudo o crónico no urgente. · Hasta 120 minutos.",
+      "headers": [
+        "Nivel",
+        "Criterio",
+        "Tiempo de atención"
+      ]
+    },
+    {
+      "id": "fact-194",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 3,
+      "sectionTitle": "Instrumentos de tamizaje",
+      "rowIndex": 0,
+      "term": "PHQ-9",
+      "detail": "Personas adultas. · Síntomas depresivos de las últimas dos semanas y seguimiento de intensidad. · No confirma diagnóstico ni reemplaza la entrevista.",
+      "headers": [
+        "Instrumento",
+        "Población",
+        "Qué aporta",
+        "Límite"
+      ]
+    },
+    {
+      "id": "fact-195",
+      "sheetId": "sheet-psi-ci-1-4",
+      "sectionIndex": 3,
+      "sectionTitle": "Instrumentos de tamizaje",
+      "rowIndex": 1,
+      "term": "GDS-15",
+      "detail": "Personas adultas mayores. · Explora depresión con quince preguntas. · Exige valorar audición, comprensión y condiciones de aplicación.",
+      "headers": [
+        "Instrumento",
+        "Población",
+        "Qué aporta",
+        "Límite"
+      ]
+    },
+    {
+      "id": "fact-196",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 0,
+      "term": "1978",
+      "detail": "Alma-Ata, 6-12 de septiembre; declaración del 12/09 · APS como estrategia para “Salud para Todos”; equidad, participación, intersectorialidad y tecnología apropiada · “APS = primer nivel” o “APS solo para países pobres”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-197",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 1,
+      "term": "1986",
+      "detail": "Ottawa, 17-21 de noviembre; Carta del 21/11 · Promoción de la salud; cinco campos de acción; salud como recurso de la vida cotidiana · “Promoción = prevención” o “solo campañas”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-198",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 2,
+      "term": "1997",
+      "detail": "Yakarta, 21-25 de julio · Prioridades de promoción para el siglo XXI; determinantes, alianzas y participación · “Declaración vinculante” o “reemplaza a Ottawa”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-199",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 3,
+      "term": "2008",
+      "detail": "Informe mundial de la OMS: APS, más necesaria que nunca · APS renovada; reformas de cobertura, servicios, políticas y liderazgo · “APS renovada = paquete selectivo”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-200",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 4,
+      "term": "2015",
+      "detail": "Agenda 2030, 25 de septiembre · 17 ODS y 169 metas; ODS 3 (salud y bienestar) y cobertura universal · “Agenda 2030 = Alma-Ata” o “ODS solo de salud”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-201",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 1,
+      "sectionTitle": "Línea de tiempo global: de Alma-Ata a Astaná",
+      "rowIndex": 5,
+      "term": "2018",
+      "detail": "Astaná, 25-26 de octubre · APS como base de la cobertura universal; cuatro compromisos de los Estados · “Astaná creó la APS” o “es solo simbólica”",
+      "headers": [
+        "Año",
+        "Hito",
+        "Aporte principal",
+        "Confusión frecuente"
+      ]
+    },
+    {
+      "id": "fact-202",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 0,
+      "term": "1997",
+      "detail": "Ley 26842, Ley General de Salud (15/07; publicada 20/07) · Marco del derecho a la salud y de los deberes del Estado · Vigente con modificatorias",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-203",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 1,
+      "term": "2003",
+      "detail": "RM 729-2003-SA/DM, MAIS · Atención integral por etapas de vida y cuidados esenciales · Dejado sin efecto por RM 464-2011",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-204",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 2,
+      "term": "2009",
+      "detail": "Ley 29344, Aseguramiento Universal en Salud (09/04) · Aseguramiento, PEAS y acceso progresivo · Vigente con modificatorias",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-205",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 3,
+      "term": "2011",
+      "detail": "RM 464-2011/MINSA, MAIS-BFC (14/06; publicada 16/06) · Familia y comunidad como eje; cuatro enfoques: derechos humanos, equidad de género, interculturalidad y territorialidad · Derogado por RM 030-2020",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-206",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 4,
+      "term": "2012",
+      "detail": "Ley 29889 (publicada 24/06) · Derechos de personas con problemas de salud mental; enfoque comunitario · Modificó la Ley 26842",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-207",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 5,
+      "term": "2018",
+      "detail": "Ley 30885, RIS (19/12; vigente 20/12) · Marco de las Redes Integradas de Salud · Vigente; reglamento actualizado en 2024",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-208",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 6,
+      "term": "2019",
+      "detail": "Ley 30947, Ley de Salud Mental (23/05; vigente 24/05) · Modelo comunitario, derechos y continuidad de cuidados · Vigente; reglamento DS 007-2020-SA",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-209",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 7,
+      "term": "2020",
+      "detail": "RM 030-2020/MINSA, MCI (27/01; publicada 28/01) · Modelo de cuidado integral por curso de vida; cuatro componentes · Vigente",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-210",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 8,
+      "term": "2021",
+      "detail": "RM 220-2021/MINSA, Manual MCI (12/02; publicada 15/02) · Implementación, equipos, territorio y PAIFAM · Instrumento de implementación, no un modelo",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-211",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 2,
+      "sectionTitle": "Hitos peruanos y marco normativo",
+      "rowIndex": 9,
+      "term": "2024",
+      "detail": "DS 019-2024-SA (19/10) · Nuevo Reglamento de la Ley 30885; deroga el DS 019-2020-SA · Vigente",
+      "headers": [
+        "Año",
+        "Norma o hito",
+        "Qué aporta",
+        "Vigencia o alcance"
+      ]
+    },
+    {
+      "id": "fact-212",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 6,
+      "sectionTitle": "MAIS, MAIS-BFC y MCI: qué cambió y qué se mantiene",
+      "rowIndex": 0,
+      "term": "MAIS",
+      "detail": "RM 729-2003-SA/DM (2003) · Etapas de vida y cuidados esenciales · Primer marco de atención integral por etapas; dejado sin efecto",
+      "headers": [
+        "Modelo",
+        "Norma y fecha",
+        "Eje",
+        "Aporte diferencial"
+      ]
+    },
+    {
+      "id": "fact-213",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 6,
+      "sectionTitle": "MAIS, MAIS-BFC y MCI: qué cambió y qué se mantiene",
+      "rowIndex": 1,
+      "term": "MAIS-BFC",
+      "detail": "RM 464-2011/MINSA (14/06/2011) · Familia y comunidad · Dimensiones política y operativa; cuatro enfoques: derechos humanos, equidad de género, interculturalidad y territorialidad; derogado por RM 030-2020",
+      "headers": [
+        "Modelo",
+        "Norma y fecha",
+        "Eje",
+        "Aporte diferencial"
+      ]
+    },
+    {
+      "id": "fact-214",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 6,
+      "sectionTitle": "MAIS, MAIS-BFC y MCI: qué cambió y qué se mantiene",
+      "rowIndex": 2,
+      "term": "MCI",
+      "detail": "RM 030-2020/MINSA (27/01/2020) · Curso de vida, persona-familia-comunidad · Determinantes, territorio, RIS y equipos multidisciplinarios",
+      "headers": [
+        "Modelo",
+        "Norma y fecha",
+        "Eje",
+        "Aporte diferencial"
+      ]
+    },
+    {
+      "id": "fact-215",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 6,
+      "sectionTitle": "MAIS, MAIS-BFC y MCI: qué cambió y qué se mantiene",
+      "rowIndex": 3,
+      "term": "Manual MCI",
+      "detail": "RM 220-2021/MINSA (12/02/2021) · Implementación · PAIFAM, organización territorial y herramientas operativas",
+      "headers": [
+        "Modelo",
+        "Norma y fecha",
+        "Eje",
+        "Aporte diferencial"
+      ]
+    },
+    {
+      "id": "fact-216",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "rowIndex": 1,
+      "term": "MAIS-BFC",
+      "detail": "Modelo de Atención Integral de Salud Basado en Familia y Comunidad · Modelo peruano de 2011, antecedente del MCI",
+      "headers": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ]
+    },
+    {
+      "id": "fact-217",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "rowIndex": 2,
+      "term": "MCI",
+      "detail": "Modelo de Cuidado Integral de Salud por Curso de Vida · Modelo peruano vigente desde 2020",
+      "headers": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ]
+    },
+    {
+      "id": "fact-218",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "rowIndex": 3,
+      "term": "RIS",
+      "detail": "Redes Integradas de Salud · Organización territorial de servicios (Ley 30885)",
+      "headers": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ]
+    },
+    {
+      "id": "fact-219",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 11,
+      "sectionTitle": "Siglas y conceptos imprescindibles",
+      "rowIndex": 9,
+      "term": "ODS",
+      "detail": "Objetivos de Desarrollo Sostenible · Agenda 2030; ODS 3 salud y bienestar",
+      "headers": [
+        "Sigla",
+        "Desarrollo",
+        "Uso correcto"
+      ]
+    },
+    {
+      "id": "fact-220",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 13,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 2,
+      "term": "¿Qué norma aprueba el MCI?",
+      "detail": "RM 030-2020/MINSA, del 27/01/2020. · RM 464-2011/MINSA (MAIS-BFC)",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-221",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 13,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 3,
+      "term": "¿Qué ley crea las RIS?",
+      "detail": "Ley 30885, publicada el 19/12/2018. · Ley 29344 (AUS) o Ley 26842 (Ley General de Salud)",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-222",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 13,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 4,
+      "term": "¿Qué reglamento RIS está vigente?",
+      "detail": "DS 019-2024-SA, publicado el 19/10/2024. · DS 019-2020-SA, derogado",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-223",
+      "sheetId": "sheet-psi-ci-2-1",
+      "sectionIndex": 13,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 5,
+      "term": "¿Alma-Ata y Astaná son lo mismo?",
+      "detail": "No. Alma-Ata 1978 definió la APS; Astaná 2018 la reafirmó para la cobertura universal. · “Astaná creó la APS”",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-224",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 1,
+      "sectionTitle": "Antecedentes y marco normativo",
+      "rowIndex": 0,
+      "term": "MAIS",
+      "detail": "RM 729-2003-SA/DM (2003) · Atención integral por etapas; dejado sin efecto por RM 464-2011",
+      "headers": [
+        "Hito",
+        "Norma y fecha",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-225",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 1,
+      "sectionTitle": "Antecedentes y marco normativo",
+      "rowIndex": 1,
+      "term": "MAIS-BFC",
+      "detail": "RM 464-2011/MINSA (14/06/2011) · Familia y comunidad; derogado por RM 030-2020",
+      "headers": [
+        "Hito",
+        "Norma y fecha",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-226",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 1,
+      "sectionTitle": "Antecedentes y marco normativo",
+      "rowIndex": 2,
+      "term": "MCI",
+      "detail": "RM 030-2020/MINSA (27/01/2020) · Curso de vida, determinantes, territorio y cuatro componentes",
+      "headers": [
+        "Hito",
+        "Norma y fecha",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-227",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 1,
+      "sectionTitle": "Antecedentes y marco normativo",
+      "rowIndex": 3,
+      "term": "Manual MCI",
+      "detail": "RM 220-2021/MINSA (12/02/2021) · Implementación, PAIFAM, equipos y gestión territorial",
+      "headers": [
+        "Hito",
+        "Norma y fecha",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-228",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 1,
+      "sectionTitle": "Antecedentes y marco normativo",
+      "rowIndex": 4,
+      "term": "RIS",
+      "detail": "Ley 30885 (19/12/2018); DS 019-2024-SA (19/10/2024) · Organización territorial y continuidad entre niveles",
+      "headers": [
+        "Hito",
+        "Norma y fecha",
+        "Qué aporta"
+      ]
+    },
+    {
+      "id": "fact-229",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 11,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 3,
+      "term": "¿Qué norma aprueba el MCI?",
+      "detail": "RM 030-2020/MINSA, 27/01/2020. · RM 464-2011/MINSA (MAIS-BFC)",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-230",
+      "sheetId": "sheet-psi-ci-2-2",
+      "sectionIndex": 11,
+      "sectionTitle": "Preguntas tipo examen",
+      "rowIndex": 6,
+      "term": "¿Qué reglamento RIS está vigente?",
+      "detail": "DS 019-2024-SA. · DS 019-2020-SA, derogado",
+      "headers": [
+        "Pregunta",
+        "Respuesta clave",
+        "Distractor típico"
+      ]
+    },
+    {
+      "id": "fact-231",
+      "sheetId": "sheet-psi-ci-2-3",
+      "sectionIndex": 3,
+      "sectionTitle": "Paquete de cuidado prenatal: componentes y momentos",
+      "rowIndex": 2,
+      "term": "Consejería en lactancia",
+      "detail": "Importancia, manejo y secuencia de la leche humana: calostro, transición y madura · Primera consejería registrada en el HIS y guía para gestantes de 32 semanas o más",
+      "headers": [
+        "Componente",
+        "Qué incluye",
+        "Criterio de verificación"
+      ]
+    },
+    {
+      "id": "fact-232",
+      "sheetId": "sheet-psi-ci-2-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Interpretación del M-CHAT-R/F",
+      "rowIndex": 0,
+      "term": "0-2",
+      "detail": "Probabilidad baja; continuar vigilancia y repetir a los 24 meses si aún no los cumple",
+      "headers": [
+        "Puntaje",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-233",
+      "sheetId": "sheet-psi-ci-2-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Interpretación del M-CHAT-R/F",
+      "rowIndex": 1,
+      "term": "3-7",
+      "detail": "Realizar la entrevista de seguimiento de las respuestas de probabilidad elevada. Resultado final de 2 a más: tamizaje positivo, derivar a evaluación diagnóstica y valoración para intervención temprana; 0-1: continuar vigilancia",
+      "headers": [
+        "Puntaje",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-234",
+      "sheetId": "sheet-psi-ci-2-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Interpretación del M-CHAT-R/F",
+      "rowIndex": 2,
+      "term": "8-20",
+      "detail": "Probabilidad alta; puede omitirse el seguimiento y derivarse directamente a evaluación diagnóstica y valoración para intervención temprana. Un puntaje de 10 pertenece a este grupo",
+      "headers": [
+        "Puntaje",
+        "Conducta"
+      ]
+    },
+    {
+      "id": "fact-235",
+      "sheetId": "sheet-psi-ci-2-8b",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación de las modalidades de la VACAM",
+      "rowIndex": 0,
+      "term": "VACAM breve",
+      "detail": "Dimensiones funcional, mental, nutricional y social · Principalmente I-1",
+      "headers": [
+        "Modalidad o concepto",
+        "Qué valora o añade",
+        "Dónde corresponde"
+      ]
+    },
+    {
+      "id": "fact-236",
+      "sheetId": "sheet-psi-ci-2-8b",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación de las modalidades de la VACAM",
+      "rowIndex": 1,
+      "term": "VACAM corta",
+      "detail": "Fragilidad, valoración sociofamiliar, salud bucal, comorbilidades y síndromes geriátricos · I-2, I-3 e I-4",
+      "headers": [
+        "Modalidad o concepto",
+        "Qué valora o añade",
+        "Dónde corresponde"
+      ]
+    },
+    {
+      "id": "fact-237",
+      "sheetId": "sheet-psi-ci-2-10",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 0,
+      "term": "Sintomático respiratorio",
+      "detail": "Persona con tos y flema durante 15 días o más, según la NTS 221. Orienta la búsqueda, pero no confirma el diagnóstico. · Contactos, personas vulnerables o con otros hallazgos compatibles pueden requerir evaluación antes de cumplir ese tiempo.",
+      "headers": [
+        "Concepto",
+        "Cómo reconocerlo",
+        "No confundir"
+      ]
+    },
+    {
+      "id": "fact-238",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 1,
+      "term": "2 meses",
+      "detail": "Hexavalente 1 + rotavirus 1 + neumococo 1 · Comienza las tres series",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-239",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 2,
+      "term": "4 meses",
+      "detail": "Hexavalente 2 + rotavirus 2 + neumococo 2 · Repite el bloque de los 2 meses",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-240",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 3,
+      "term": "6 meses",
+      "detail": "Hexavalente 3 + influenza 1 · Cierra hexavalente; inicia influenza",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-241",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 4,
+      "term": "7 meses",
+      "detail": "Influenza 2 · Segunda dosis un mes después",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-242",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 5,
+      "term": "12 meses",
+      "detail": "SPR 1 + neumococo 3 + varicela + influenza anual · Cuatro hitos al cumplir un año",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-243",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 2,
+      "sectionTitle": "Esquema del nacimiento y el primer año",
+      "rowIndex": 6,
+      "term": "13 y 15 meses",
+      "detail": "Meningococo: dosis 1 y 2 en menores con VIH · Esquema especial para VIH",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-244",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 0,
+      "term": "15 meses",
+      "detail": "Fiebre amarilla + hepatitis A · Dos vacunas en el mes 15",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-245",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 1,
+      "term": "18 meses",
+      "detail": "DPT + IPV o hexavalente: 1.er refuerzo; SPR: segunda dosis · Refuerzo DPT/polio + segunda SPR",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-246",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 2,
+      "term": "4 años",
+      "detail": "DPT 2.º refuerzo + polio oral 2.º refuerzo · Segundo refuerzo doble",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-247",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 3,
+      "term": "9 a 18 años",
+      "detail": "VPH en dosis única · Casos especiales: revisar pauta propia",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-248",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 4,
+      "term": "Gestante",
+      "detail": "Influenza en cualquier trimestre + Tdap 20-36 sem. + VRS 32-36 sem. · Revisar en cada embarazo",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-249",
+      "sheetId": "sheet-psi-ci-2-11",
+      "sectionIndex": 3,
+      "sectionTitle": "Esquema del segundo año, adolescencia y adultez",
+      "rowIndex": 6,
+      "term": "60 años a más",
+      "detail": "Influenza anual + una dosis de neumococo · Influenza cada año; neumococo una vez",
+      "headers": [
+        "Edad o grupo",
+        "Vacunas o protección",
+        "Regla para memorizar"
+      ]
+    },
+    {
+      "id": "fact-250",
+      "sheetId": "sheet-psi-ci-2-16",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 0,
+      "term": "Diabetes tipo 2",
+      "detail": "Alteración del metabolismo de la glucosa asociada a obesidad y sedentarismo · Adherencia, alimentación, monitoreo y manejo del estrés",
+      "headers": [
+        "Condición",
+        "Factor o mecanismo",
+        "Foco psicosocial"
+      ]
+    },
+    {
+      "id": "fact-251",
+      "sheetId": "sheet-psi-et-2-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 0,
+      "term": "Norma de adecuación del parto vertical, 2005",
+      "detail": "Impulsó la adecuación para poblaciones altoandinas y amazónicas; quedó sin efecto. · Se reconoce como antecedente histórico cuando la pregunta lo menciona de modo expreso.",
+      "headers": [
+        "Marco",
+        "Alcance",
+        "Uso en la decisión"
+      ]
+    },
+    {
+      "id": "fact-252",
+      "sheetId": "sheet-psi-et-2-4",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 1,
+      "term": "Norma técnica vigente, 2016",
+      "detail": "Regula la atención del parto vertical con pertinencia intercultural para gestantes urbanas, urbano-marginales y rurales. · Es el marco que se aplica y el que define el ámbito sin restricción étnica ni regional.",
+      "headers": [
+        "Marco",
+        "Alcance",
+        "Uso en la decisión"
+      ]
+    },
+    {
+      "id": "fact-253",
+      "sheetId": "sheet-psi-in-2-2",
+      "sectionIndex": 6,
+      "sectionTitle": "Lectura del forest plot",
+      "rowIndex": 0,
+      "term": "Estudio A",
+      "detail": "0,60 (0,40 a 0,90) · El intervalo no incluye el valor nulo y respalda un menor riesgo con el programa",
+      "headers": [
+        "Estudio",
+        "Riesgo relativo (intervalo)",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-254",
+      "sheetId": "sheet-psi-in-2-2",
+      "sectionIndex": 6,
+      "sectionTitle": "Lectura del forest plot",
+      "rowIndex": 1,
+      "term": "Estudio B",
+      "detail": "0,90 (0,60 a 1,35) · El intervalo cruza el valor nulo y admite tanto disminución como aumento del riesgo",
+      "headers": [
+        "Estudio",
+        "Riesgo relativo (intervalo)",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-255",
+      "sheetId": "sheet-psi-in-2-2",
+      "sectionIndex": 6,
+      "sectionTitle": "Lectura del forest plot",
+      "rowIndex": 2,
+      "term": "Estudio C",
+      "detail": "0,75 (0,50 a 1,13) · La estimación sugiere beneficio, pero el intervalo también incluye el valor nulo",
+      "headers": [
+        "Estudio",
+        "Riesgo relativo (intervalo)",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-256",
+      "sheetId": "sheet-psi-in-2-2",
+      "sectionIndex": 6,
+      "sectionTitle": "Lectura del forest plot",
+      "rowIndex": 3,
+      "term": "Combinado",
+      "detail": "0,74 (0,59 a 0,94) · La síntesis excluye el valor nulo, aunque no resuelve la calidad de los estudios incluidos",
+      "headers": [
+        "Estudio",
+        "Riesgo relativo (intervalo)",
+        "Lectura"
+      ]
+    },
+    {
+      "id": "fact-257",
+      "sheetId": "sheet-psi-ge-2-2",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 0,
+      "term": "Primer nivel, I-1 a I-4",
+      "detail": "Respuesta a necesidades frecuentes y de baja complejidad; el I-4 añade internamiento como Sub UPSS · Puerta de entrada y referencia oportuna; consulta externa mínima de seis horas desde I-2",
+      "headers": [
+        "Nivel y categoría",
+        "Criterio que la define",
+        "Consecuencia organizativa"
+      ]
+    },
+    {
+      "id": "fact-258",
+      "sheetId": "sheet-psi-ge-2-2",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 1,
+      "term": "Segundo nivel general, II-1",
+      "detail": "Cuatro especialidades básicas y servicios críticos permanentes · Emergencia, hospitalización, parto y cirugía con continuidad de 24 horas",
+      "headers": [
+        "Nivel y categoría",
+        "Criterio que la define",
+        "Consecuencia organizativa"
+      ]
+    },
+    {
+      "id": "fact-259",
+      "sheetId": "sheet-psi-ge-2-2",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 2,
+      "term": "Segundo nivel general, II-2",
+      "detail": "Añade UCI general, cuidados intermedios y anatomía patológica · Soporte crítico y especialidades adicionales para casos que superan al II-1",
+      "headers": [
+        "Nivel y categoría",
+        "Criterio que la define",
+        "Consecuencia organizativa"
+      ]
+    },
+    {
+      "id": "fact-260",
+      "sheetId": "sheet-psi-ge-2-2",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 4,
+      "term": "Tercer nivel general, III-1",
+      "detail": "Añade hemodiálisis y otros servicios de alta complejidad; la UCI ya está en II-2 · Alta complejidad con servicios críticos permanentes",
+      "headers": [
+        "Nivel y categoría",
+        "Criterio que la define",
+        "Consecuencia organizativa"
+      ]
+    },
+    {
+      "id": "fact-261",
+      "sheetId": "sheet-psi-ge-2-2",
+      "sectionIndex": 2,
+      "sectionTitle": "Clasificación y criterios de aplicación",
+      "rowIndex": 5,
+      "term": "Tercer nivel especializado, III-E y III-2",
+      "detail": "Subespecialidades del campo; el III-2 añade investigación y docencia · Referencia de máxima complejidad y formación de recursos",
+      "headers": [
+        "Nivel y categoría",
+        "Criterio que la define",
+        "Consecuencia organizativa"
+      ]
+    }
+  ]
+}

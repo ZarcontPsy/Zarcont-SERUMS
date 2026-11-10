@@ -1,6 +1,7 @@
 /* © 2026 ZARCONT — Suite del HUB (Agente 8). */
 import { assert, assertEq, assertIncludes, skip } from "../lib/harness.mjs";
 import { APPS, appURL, gotoApp, waitApp, firstVisible, clickFirst, explainErrors } from "../lib/apps.mjs";
+import { sleep } from "../lib/cdp.mjs";
 
 const APP_NAMES = {
   banqueo: /BANQUEO/,
@@ -153,9 +154,25 @@ export async function runHub({ h, page, baseURL }) {
       await gotoHub(page, baseURL);
       await selectCard(page, "quest");
       const nav = await openSelected(page);
+      /* SERUMS QUEST abre su tutorial de primer recorrido en un perfil limpio.
+         No es un fallo de la app: se cierra una vez y se comprueba la portada. */
+      const gate = await page.waitFor(`(() => {
+        const view = document.getElementById("view");
+        if (view && !view.hidden && view.innerText.trim().length > 20) return "app";
+        if (document.querySelector('[data-action="tutorial-skip"], [data-action="tutorial-close"]')) return "tutorial";
+        return false;
+      })()`, { timeout: 20000, message: "portada o tutorial de SERUMS QUEST" }).catch(() => null);
+      if (gate === "tutorial") {
+        const skipTutorial = await firstVisible(page, ['[data-action="tutorial-skip"]', '[data-action="tutorial-close"]']);
+        if (skipTutorial) {
+          await page.click(skipTutorial);
+          await sleep(500);
+        }
+      }
       await waitApp(page, "quest");
-      assertIncludes(nav.url, "serums-quest/index.html");
-      return { ...nav, h1: await page.eval(`document.querySelector('#view h1')?.innerText || document.title`) };
+      // La entrada de Quest redirige a dist/index.html; ambas rutas son válidas.
+      assert(/\/serums-quest\/(?:dist\/)?index\.html/.test(nav.url), `URL de SERUMS QUEST inesperada: ${nav.url}`);
+      return { ...nav, tutorial: gate === "tutorial", h1: await page.eval(`document.querySelector('#view h1')?.innerText || document.title`) };
     },
     { severity: "alta", page },
   );

@@ -1,0 +1,340 @@
+{
+  "console": [],
+  "pageErrors": [],
+  "failedRequests": [],
+  "routes": {},
+  "axe": {
+    "home": [
+      {
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "nodes": 1,
+        "targets": [
+          ".s-brand"
+        ]
+      }
+    ],
+    "library": [
+      {
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "nodes": 1,
+        "targets": [
+          ".s-brand"
+        ]
+      }
+    ],
+    "reader": [
+      {
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "nodes": 1,
+        "targets": [
+          ".s-brand"
+        ]
+      }
+    ],
+    "progress": [
+      {
+        "id": "label-content-name-mismatch",
+        "impact": "serious",
+        "help": "Elements must have their visible text as part of their accessible name",
+        "nodes": 1,
+        "targets": [
+          ".s-brand"
+        ]
+      }
+    ],
+    "mobileReader": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "help": "Buttons must have discernible text",
+        "nodes": 2,
+        "targets": [
+          ".s-btn--ghost",
+          ".reader-tools > .s-btn--soft.s-btn--sm[data-action=\"toggle-complete\"]"
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "nodes": 7,
+        "targets": [
+          ".s-chip--green",
+          ".concept-item:nth-child(1) > span",
+          ".concept-item:nth-child(2) > span",
+          ".concept-item:nth-child(3) > span",
+          ".concept-item:nth-child(4) > span",
+          ".is-full"
+        ]
+      },
+      {
+        "id": "scrollable-region-focusable",
+        "impact": "serious",
+        "help": "Scrollable region must have keyboard access",
+        "nodes": 1,
+        "targets": [
+          ".reader-table-wrap"
+        ]
+      }
+    ]
+  },
+  "checks": {
+    "home": {
+      "title": "Study Dashboard · SERUMS",
+      "h1": 1,
+      "h1Text": "Cinco áreas. Un mapa claro.",
+      "areas": 5,
+      "recs": 1,
+      "totalTopics": 86,
+      "totalSheets": 210,
+      "totalCards": 630,
+      "taxonomyIssues": [],
+      "storeMode": "indexeddb",
+      "theme": "dark",
+      "navActive": "Panel",
+      "domNodes": 310,
+      "htmlScrollWidth": 1440,
+      "innerWidth": 1440
+    },
+    "library": {
+      "title": "Biblioteca · Study Dashboard",
+      "areas": 5,
+      "categories": 20,
+      "summary": "86 módulos · 210 fichas 20 categorías · 5 áreas",
+      "navActive": "Biblioteca"
+    },
+    "area": {
+      "title": "Área II · Cuidado integral de salud · Study Dashboard",
+      "h1": "Área II · Cuidado integral de salud",
+      "categoryCards": 8,
+      "topicBlocks": 0,
+      "summary": "62 módulos · 135 fichas 8 categorías · 1 área"
+    },
+    "search": {
+      "shortcutFocused": "library-search",
+      "summary": "5 módulos · 10 fichas 5 categorías · 1 área · Buscando “vacun”",
+      "rows": 10,
+      "categories": 5,
+      "shortcutWorked": true
+    },
+    "reader": {
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard",
+      "h1": "Una APS fuerte no es un consultorio de segunda",
+      "sectionsQuick": 2,
+      "fullHiddenNote": true,
+      "concepts": 4,
+      "sources": 1,
+      "chips": [
+        "6 min",
+        "Base",
+        "Ficha 1 de 210",
+        "Leída",
+        "3 total",
+        "3 pendientes",
+        "0 dominadas",
+        "0 errores"
+      ],
+      "rail": 3
+    },
+    "readerFull": {
+      "sectionsFull": 3,
+      "quickNote": false,
+      "pressedFull": "true"
+    },
+    "persisted": {
+      "completedAt": true,
+      "favorite": true,
+      "localStorageBytes": 1219,
+      "snapshot": true,
+      "mode": "indexeddb"
+    },
+    "scrollRestore": {
+      "beforeRatio": 0.45,
+      "afterY": 6678,
+      "afterRatio": 0.45,
+      "ok": true
+    },
+    "deeplink": {
+      "hash": "#/ficha/sheet-aps-01",
+      "search": "",
+      "backLabel": "Volver a flashcards",
+      "chip": true,
+      "title": "Una APS fuerte no es un consultorio de segunda · Study Dashboard"
+    },
+    "progress": {
+      "title": "Mi progreso · Study Dashboard",
+      "stats": [
+        "3",
+        "0",
+        "1",
+        "0"
+      ],
+      "chartBars": 14,
+      "history": 11,
+      "areas": 5,
+      "favorites": 1,
+      "storageMode": "Modo de guardado: almacenamiento local del navegador."
+    },
+    "theme": {
+      "theme": "light",
+      "stored": "light",
+      "metaColor": "#F3F0E8"
+    },
+    "notFound": {
+      "title": "Página no encontrada · Study Dashboard",
+      "text": "No encontramos esta página"
+    },
+    "mobileHome": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "heroFont": "44.85px",
+      "navVisible": "flex",
+      "tapTargets": [
+        {
+          "text": "",
+          "w": 40,
+          "h": 40
+        },
+        {
+          "text": "",
+          "w": 40,
+          "h": 40
+        },
+        {
+          "text": "",
+          "w": 40,
+          "h": 40
+        },
+        {
+          "text": "",
+          "w": 38,
+          "h": 40
+        },
+        {
+          "text": "",
+          "w": 35,
+          "h": 35
+        },
+        {
+          "text": "Retomar lectura",
+          "w": 324,
+          "h": 41
+        },
+        {
+          "text": "Abrir flashcards",
+          "w": 324,
+          "h": 41
+        }
+      ]
+    },
+    "mobileReader": {
+      "scrollWidth": 390,
+      "innerWidth": 390,
+      "overflow": false,
+      "tools": [
+        36,
+        36
+      ],
+      "railCards": 3
+    }
+  },
+  "perf": {
+    "loadMs": 1427,
+    "resources": {
+      "totalTransfer": 1960,
+      "byType": {
+        "link": {
+          "count": 5,
+          "bytes": 980
+        },
+        "script": {
+          "count": 7,
+          "bytes": 0
+        },
+        "css": {
+          "count": 2,
+          "bytes": 0
+        },
+        "xmlhttprequest": {
+          "count": 1,
+          "bytes": 980
+        }
+      },
+      "domContentLoaded": 74,
+      "loadEvent": 74,
+      "largestResources": [
+        {
+          "name": "fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Zen+Dots&display=swap",
+          "bytes": 980,
+          "ms": 58
+        },
+        {
+          "name": "fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Zen+Dots&display=swap",
+          "bytes": 980,
+          "ms": 59
+        },
+        {
+          "name": "study-shared/base.css?v=2.0.2",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "study-dashboard/styles.css?v=2.2.2",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "127.0.0.1:8787/serums-chrome.css?v=1.0.0",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "127.0.0.1:8787/serums-mobile.css?v=1.0.0",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "study-data/temario.js?v=2.5.0",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "study-shared/taxonomy.js?v=1.0.0",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "study-shared/icons.js?v=2.0.1",
+          "bytes": 0,
+          "ms": 0
+        },
+        {
+          "name": "study-shared/ui.js?v=2.0.1",
+          "bytes": 0,
+          "ms": 0
+        }
+      ]
+    },
+    "content": {
+      "scriptBytes": 2587623,
+      "cssBytes": 69544,
+      "appJsBytes": 67742,
+      "sheets": 210,
+      "cards": 630,
+      "storeKeys": [
+        "study-state-v1",
+        "studyhub:snapshot:v1",
+        "study-theme",
+        "study-dashboard-mode"
+      ],
+      "stateBytes": 3912
+    }
+  }
+}

@@ -1,0 +1,566 @@
+{
+  "startedAt": "2026-11-10T02:25:50.197Z",
+  "finishedAt": "2026-11-10T02:26:22.385Z",
+  "total": 18,
+  "counts": {
+    "PASS": 18,
+    "FAIL": 0,
+    "SKIP": 0
+  },
+  "results": [
+    {
+      "id": "DASH-01",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Carga directa de la portada, 210 fichas y sin errores de producto",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1143,
+      "observations": {
+        "url": "http://127.0.0.1:8790/study-dashboard/index.html#/",
+        "title": "Study Dashboard · SERUMS",
+        "navigations": 1,
+        "hash": "#/",
+        "totalVisible": true,
+        "hero": true,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:50.860Z"
+    },
+    {
+      "id": "DASH-02",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Inicio → Biblioteca → área → ficha, sin recargar el documento",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1014,
+      "observations": {
+        "libraryTitle": "Las cinco áreas del temario",
+        "areaLink": "#/biblioteca/area-psi-salud-publica/cat-sp-metodos",
+        "sheetHref": "#/ficha/sheet-psi-sp-1-1",
+        "sheet": {
+          "hash": "#/ficha/sheet-psi-sp-1-1",
+          "h1": "Métodos y análisis de salud pública",
+          "text": "Saltar al contenido\nSERUMS STUDY\nDashboard de estudio\nPanel\nBiblioteca\nProgreso\nFlashcards\nÁREA I · SALUD PÚBLICA\nMétodos y análisis de salud pública\n\nFundamentos, epidemiología, medición, causalidad, demografía, vigilancia y análisis de si"
+        },
+        "navigations": 0,
+        "lastAreaError": ""
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:52.003Z"
+    },
+    {
+      "id": "DASH-03",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Ficha → Inicio (Panel) y ficha → HUB (control compartido)",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2263,
+      "observations": {
+        "homeHash": "#/",
+        "hubUrl": "http://127.0.0.1:8790/index.html",
+        "navigations": 1
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:53.017Z"
+    },
+    {
+      "id": "DASH-04",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "URL directa a una ficha concreta",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1095,
+      "observations": {
+        "hash": "#/ficha/sheet-aps-01",
+        "h1": "Una APS fuerte no es un consultorio de segunda",
+        "hasArticle": true
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:55.280Z"
+    },
+    {
+      "id": "DASH-05",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Atrás/adelante del navegador entre biblioteca y ficha",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 869,
+      "observations": {
+        "backHash": "#/biblioteca",
+        "forwardHash": "#/ficha/sheet-aps-01",
+        "sheetHref": "#/ficha/sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:56.375Z"
+    },
+    {
+      "id": "DASH-06",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Persistencia: marcar ficha completada, refrescar y conservar progreso",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2352,
+      "observations": {
+        "marked": {
+          "click": "[data-action=\"toggle-complete\"]",
+          "before": {
+            "totalSheets": 210,
+            "completedSheets": 0,
+            "viewedSheets": 2,
+            "startedTopics": 2,
+            "completedTopics": 0,
+            "percent": 0,
+            "last": {
+              "sheetId": "sheet-aps-01",
+              "topicId": "topic-aps-atributos",
+              "title": "Una APS fuerte no es un consultorio de segunda",
+              "context": "Los cuatro atributos de la APS",
+              "at": "2026-11-10T02:25:57.344Z",
+              "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+            },
+            "todayCompleted": 0,
+            "goal": 2,
+            "streak": 1
+          },
+          "after": {
+            "totalSheets": 210,
+            "completedSheets": 1,
+            "viewedSheets": 2,
+            "startedTopics": 2,
+            "completedTopics": 0,
+            "percent": 0,
+            "last": {
+              "sheetId": "sheet-aps-01",
+              "topicId": "topic-aps-atributos",
+              "title": "Una APS fuerte no es un consultorio de segunda",
+              "context": "Los cuatro atributos de la APS",
+              "at": "2026-11-10T02:25:57.344Z",
+              "url": "http://127.0.0.1:8790/study-dashboard/index.html?sheet=sheet-aps-01&topic=topic-aps-atributos"
+            },
+            "todayCompleted": 1,
+            "goal": 2,
+            "streak": 1
+          }
+        },
+        "afterRefresh": {
+          "completedSheets": 1,
+          "lastSheet": "sheet-aps-01",
+          "aria": "true",
+          "hash": "#/ficha/sheet-aps-01"
+        },
+        "shot": "AUDIT/evidencias/phase0-baseline/img/dash-progreso-refresh.png"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:57.244Z"
+    },
+    {
+      "id": "DASH-07",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Persistencia: tema claro/oscuro tras refrescar",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1540,
+      "observations": {
+        "before": {
+          "theme": "dark",
+          "stored": "dark"
+        },
+        "toggled": {
+          "theme": "light",
+          "stored": "light"
+        },
+        "after": {
+          "theme": "light",
+          "stored": "light"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:25:59.596Z"
+    },
+    {
+      "id": "DASH-08",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Sin recargas al filtrar la biblioteca y al cambiar de tema",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1865,
+      "observations": {
+        "filter": "all",
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:01.137Z"
+    },
+    {
+      "id": "DASH-09",
+      "app": "Study Dashboard",
+      "suite": "Study Dashboard",
+      "description": "Pantalla completa del Dashboard con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1614,
+      "observations": {
+        "element": false,
+        "pressed": "false",
+        "label": "Pantalla completa",
+        "limitation": "headless no concedió fullscreen"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:03.003Z"
+    },
+    {
+      "id": "FLASH-01",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Carga directa de la biblioteca, 630 tarjetas y sin errores",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 816,
+      "observations": {
+        "title": "Biblioteca de mazos · Study Flashcards",
+        "hash": "#/",
+        "has630": true,
+        "decks": 1,
+        "chrome": true,
+        "errors": {
+          "productErrorCount": 0,
+          "exceptions": [],
+          "consoleErrors": [],
+          "logErrors": [],
+          "networkFailures": []
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:04.618Z"
+    },
+    {
+      "id": "FLASH-02",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Biblioteca → mazo → sesión sin recargar, con revelado y calificación",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1811,
+      "observations": {
+        "deckHref": "#/mazo/sheet-aps-01",
+        "deck": {
+          "hash": "#/mazo/sheet-aps-01",
+          "h1": "Una APS fuerte no es un consultorio de segunda",
+          "modes": 4
+        },
+        "session": {
+          "hash": "#/sesion",
+          "hasReveal": true,
+          "hasOption": false
+        },
+        "interaction": "concepto:revelar+calificar",
+        "after": {
+          "hash": "#/sesion",
+          "reviewed": 1,
+          "lastDeck": "sheet-aps-01"
+        },
+        "navigations": 0
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:05.434Z"
+    },
+    {
+      "id": "FLASH-03",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Sesión → Inicio de la app y sesión → HUB",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1769,
+      "observations": {
+        "home": "#/",
+        "hubUrl": "http://127.0.0.1:8790/index.html"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:07.245Z"
+    },
+    {
+      "id": "FLASH-04",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "URL directa a un mazo",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 1086,
+      "observations": {
+        "hash": "#/mazo/sheet-aps-01",
+        "h1": "Una APS fuerte no es un consultorio de segunda",
+        "modes": 4
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:09.014Z"
+    },
+    {
+      "id": "FLASH-05",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Atrás/adelante del navegador entre biblioteca y mazo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 877,
+      "observations": {
+        "back": "#/",
+        "forward": "#/mazo/sheet-aps-01"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:10.100Z"
+    },
+    {
+      "id": "FLASH-06",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Persistencia: sesión en curso sobrevive a refresh",
+      "severity": "alta",
+      "status": "PASS",
+      "durationMs": 2977,
+      "observations": {
+        "before": {},
+        "after": {
+          "hash": "#/sesion",
+          "text": "Volver al mazo\nBiblioteca\nEstudio libre\nUna APS fuerte no es un consultorio de segunda\nTerminar\nTarjeta 2 de 3\n0 correctas · 1 por reforzar\nOPCIÓN MÚLTIPLE\nLos "
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:10.977Z"
+    },
+    {
+      "id": "FLASH-07",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Reanudación por ruta directa (?deck=…&resume=1) conserva el último mazo",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 2200,
+      "observations": {
+        "snapshotLast": {
+          "deckId": "sheet-aps-01",
+          "topicId": "topic-aps-atributos",
+          "sheetId": "sheet-aps-01",
+          "title": "Una APS fuerte no es un consultorio de segunda",
+          "at": "2026-11-10T02:26:12.371Z",
+          "url": "http://127.0.0.1:8790/study-flashcards/index.html?deck=sheet-aps-01&resume=1"
+        },
+        "deckId": "sheet-aps-01",
+        "resume": {
+          "url": "http://127.0.0.1:8790/study-flashcards/index.html#/sesion",
+          "hash": "#/sesion",
+          "text": "Volver al mazo\nBiblioteca\nEstudio libre\nUna APS fuerte no es un consultorio de segunda\nTerminar\nTarjeta 2 de 3\n0 correctas · 1 por reforzar\nOPCIÓN MÚLTIPLE\nLos cuatro atributos de la APS · 2/3\n¿Qué atributo de la APS se ",
+          "modes": 0,
+          "session": true
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:13.955Z"
+    },
+    {
+      "id": "FLASH-08",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Pantalla completa de Flashcards con gesto real",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 1614,
+      "observations": {
+        "element": false,
+        "pressed": "false",
+        "limitation": "headless no concedió fullscreen"
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:16.155Z"
+    },
+    {
+      "id": "FLASH-09",
+      "app": "Study Flashcards",
+      "suite": "Study Flashcards",
+      "description": "Terminar una sesión incompleta pide confirmación y permite seguir",
+      "severity": "media",
+      "status": "PASS",
+      "durationMs": 3442,
+      "observations": {
+        "confirm": {
+          "text": "Quedan 2 tarjetas. El resumen incluirá solo lo que ya respondiste.\nSeguir\nTerminar ahora",
+          "headerEnd": false,
+          "focus": "cancel-end"
+        },
+        "resumed": {
+          "confirm": false,
+          "end": true,
+          "hash": "#/sesion"
+        },
+        "summary": {
+          "summary": true,
+          "text": "Volver al mazo\nBiblioteca\nSESIÓN COMPLETADA\n1/1\n100% de acierto\nESTUDIO LIBRE\nBuen trabajo.\n\nUna APS fuerte no es un con"
+        }
+      },
+      "error": null,
+      "evidence": [],
+      "at": "2026-11-10T02:26:17.769Z"
+    }
+  ],
+  "environment": {
+    "node": "v24.21.0",
+    "chrome": "Chrome/157.0.8103.39",
+    "server": "http://127.0.0.1:8790",
+    "cdpPort": 9390,
+    "profileRoot": "C:\\Users\\USARIO\\AppData\\Local\\Temp\\zarcont-qa-Y5XTHi"
+  },
+  "repo": {
+    "git": {
+      "head": "12bf819",
+      "status": [
+        "?? study-dashboard/informe/"
+      ]
+    },
+    "watchedFiles": {
+      "index.html": {
+        "size": 101790,
+        "mtimeMs": 1793966151554,
+        "sha1ish": "add45df1277ccc76c7588b99f5667fb9e609e737"
+      },
+      "serums-chrome.js": {
+        "size": 12494,
+        "mtimeMs": 1792966152112,
+        "sha1ish": "045419bbe198f0274f855add79bb3836da857c61"
+      },
+      "serums-chrome.css": {
+        "size": 3209,
+        "mtimeMs": 1792966887175,
+        "sha1ish": "08fb2f6e22e44d40518ac51391b2c771d5d7aacc"
+      },
+      "study-dashboard/index.html": {
+        "size": 4618,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "8a5ea0226a8c744e052d3d3aa256a165083026d8"
+      },
+      "study-dashboard/app.js": {
+        "size": 67742,
+        "mtimeMs": 1792966998192,
+        "sha1ish": "7e9e0c707aae339d55561c4c4e05ef479e01018a"
+      },
+      "study-flashcards/index.html": {
+        "size": 4634,
+        "mtimeMs": 1793308543044,
+        "sha1ish": "cb20a702ceb531ba7cbbe9250884c2af7a2a6343"
+      },
+      "study-flashcards/app.js": {
+        "size": 85373,
+        "mtimeMs": 1793320229441,
+        "sha1ish": "945451c49dea410e0665bfcb42807cc8969cee33"
+      },
+      "study-shared/store.js": {
+        "size": 34865,
+        "mtimeMs": 1792966553500,
+        "sha1ish": "f4902e5dd2de423ef54f6cfe4904c7b233d46a99"
+      },
+      "study-shared/taxonomy.js": {
+        "size": 17359,
+        "mtimeMs": 1792901589196,
+        "sha1ish": "add52b3679969e9c420c62f137c750469565cc3f"
+      },
+      "study-shared/ui.js": {
+        "size": 6920,
+        "mtimeMs": 1793300449858,
+        "sha1ish": "f9799d2bcb4e1f44c378a8bff9ab0b4adc250918"
+      },
+      "study-shared/base.css": {
+        "size": 16882,
+        "mtimeMs": 1793308704330,
+        "sha1ish": "b41961a0db43d18fdb33a471dce12f10b70ed57d"
+      },
+      "serums-quest/index.html": {
+        "size": 2262,
+        "mtimeMs": 1793963840733,
+        "sha1ish": "c753af5832c75b42d1eb384a45d35dde8979e1e5"
+      },
+      "serums-quest/js/app.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/store.js": {
+        "error": "ENOENT"
+      },
+      "serums-quest/js/characters.js": {
+        "error": "ENOENT"
+      },
+      "EXAMEN STUDIO/Examen Studio.html": {
+        "size": 2529,
+        "mtimeMs": 1793308543043,
+        "sha1ish": "bdc13a9ac55e6f8a8fff5c092a706b9b9490e3cf"
+      },
+      "EXAMEN STUDIO/js/app.js": {
+        "size": 151145,
+        "mtimeMs": 1793317347652,
+        "sha1ish": "e57c79c4ba93dd019bc7fe2e608bb008b0102925"
+      },
+      "EXAMEN STUDIO/js/store.js": {
+        "size": 36369,
+        "mtimeMs": 1792966846195,
+        "sha1ish": "29ae2a093b46f31a19344253c1c56b29ffbdd75e"
+      },
+      "EXAMEN STUDIO/js/parser.js": {
+        "size": 34805,
+        "mtimeMs": 1792476378645,
+        "sha1ish": "fa9d9058af41a5016e80bd5e74f3ca46e4fd3d3d"
+      },
+      "serums map/serums-map-explorer/index.html": {
+        "size": 29377,
+        "mtimeMs": 1793316425387,
+        "sha1ish": "676352815024e966543ef13a954360a0a991ed59"
+      },
+      "serums map/serums-map-explorer/js/app.js": {
+        "size": 71012,
+        "mtimeMs": 1793318335352,
+        "sha1ish": "6c51c9782ce0093252e9f5ae4d5ab404d7cca504"
+      },
+      "serums map/serums-map-explorer/js/services.js": {
+        "size": 12995,
+        "mtimeMs": 1792966585519,
+        "sha1ish": "c41eae327650eb66944b2cd2d35d5ced1d0cd579"
+      },
+      "serums map/serums-map-explorer/styles.css": {
+        "size": 45489,
+        "mtimeMs": 1793316676155,
+        "sha1ish": "2e5d7b1d2d3827b0fefd3a671fb5496fb246f190"
+      }
+    },
+    "changedDuringRun": []
+  },
+  "stable": true
+}

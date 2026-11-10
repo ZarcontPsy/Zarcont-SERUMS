@@ -3,6 +3,7 @@
  * Uso:
  *   node tests/e2e/run.mjs
  *   node tests/e2e/run.mjs --suite=hub,study
+ *   node tests/e2e/run.mjs --suite=fase4     # Dashboard (01..48) + Flashcards (01..09) + HUB completos
  *   node tests/e2e/run.mjs --quick
  *
  * Requisitos: Node 24, Python 3.13, Chrome. Ver tests/e2e/README.md.
@@ -17,6 +18,11 @@ import { Harness, fmt, skip } from "./lib/harness.mjs";
 import { runContent } from "./suites/content.mjs";
 import { runHub } from "./suites/hub.mjs";
 import { runDashboard, runFlashcards } from "./suites/study.mjs";
+import { runDashboardFase0 } from "./suites/dash-fase0.mjs";
+import { runDashboardFase1 } from "./suites/dash-fase1.mjs";
+import { runDashboardFase2 } from "./suites/dash-fase2.mjs";
+import { runDashboardFase3 } from "./suites/dash-fase3.mjs";
+import { runDashboardFase4 } from "./suites/dash-fase4.mjs";
 import { runQuest } from "./suites/quest.mjs";
 import { runPlazas } from "./suites/plazas.mjs";
 import { runBanqueo } from "./suites/banqueo.mjs";
@@ -42,6 +48,7 @@ const EVIDENCE_NAME = args.has("out") ? String(args.get("out")) : "agent8-baseli
 const EVIDENCE = path.join(ROOT, "AUDIT", "evidencias", EVIDENCE_NAME);
 const only = args.has("suite") ? String(args.get("suite")).split(",").map((s) => s.trim().toLowerCase()) : null;
 const quick = args.has("quick");
+const fase4 = Boolean(only && only.some((name) => name.toLowerCase().includes("fase4")));
 
 function wanted(name) {
   if (!only) return true;
@@ -75,6 +82,15 @@ const WATCHED_FILES = [
   "study-shared/taxonomy.js",
   "study-shared/ui.js",
   "study-shared/base.css",
+  "study-data/temario.js",
+  "study-data/temario-core.js",
+  "study-data/content-loader.js",
+  "study-data/content-split.json",
+  "study-data/sections/area-psi-salud-publica.js",
+  "study-data/sections/area-psi-cuidado-integral.js",
+  "study-data/sections/area-psi-etica.js",
+  "study-data/sections/area-psi-investigacion.js",
+  "study-data/sections/area-psi-gestion.js",
   "serums-quest/index.html",
   "serums-quest/js/app.js",
   "serums-quest/js/store.js",
@@ -150,9 +166,14 @@ async function main() {
     await page.viewport(1440, 900);
 
     if (wanted("content")) await runContent({ h, page, baseURL: server.baseURL });
-    if (wanted("hub")) await runHub({ h, page, baseURL: server.baseURL });
-    if (wanted("dash") || wanted("study")) await runDashboard({ h, page, baseURL: server.baseURL });
-    if (wanted("flash") || wanted("study")) await runFlashcards({ h, page, baseURL: server.baseURL });
+    if (wanted("hub") || fase4) await runHub({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || fase4) await runDashboard({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || fase4) await runDashboardFase0({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || fase4 || wanted("fase1")) await runDashboardFase1({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || fase4 || wanted("fase2")) await runDashboardFase2({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || wanted("fase3") || fase4) await runDashboardFase3({ h, page, baseURL: server.baseURL });
+    if (wanted("dash") || wanted("study") || fase4) await runDashboardFase4({ h, page, baseURL: server.baseURL });
+    if (wanted("flash") || wanted("study") || fase4) await runFlashcards({ h, page, baseURL: server.baseURL });
     if (wanted("quest") || wanted("serum")) await runQuest({ h, page, baseURL: server.baseURL });
     if (wanted("plaza") || wanted("map") || wanted("serum")) await runPlazas({ h, page, baseURL: server.baseURL });
     if (wanted("banq") || wanted("examen")) await runBanqueo({ h, page, baseURL: server.baseURL });

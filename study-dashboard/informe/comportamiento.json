@@ -1,0 +1,51 @@
+{
+  "libraryBackScroll": {
+    "before": 1200,
+    "after": 0,
+    "max": 1392,
+    "lost": true
+  },
+  "noFullSections": {
+    "quick": {
+      "sections": 3,
+      "quickNote": false,
+      "toggleVisible": true
+    },
+    "full": {
+      "sections": 3,
+      "pressed": "true"
+    },
+    "changed": false
+  },
+  "goalOvershoot": {
+    "goalTitle": "2 de 1 fichas",
+    "percent": "100%",
+    "note": "Objetivo cumplido. Puedes seguir leyendo o practicar."
+  },
+  "searchKbd": {
+    "display": "flex",
+    "opacity": "0.65",
+    "width": 22,
+    "height": 22.5,
+    "visible": true
+  },
+  "brand": {
+    "ariaLabel": "Study Dashboard, inicio",
+    "innerText": "SERUMS STUDY Dashboard de estudio"
+  },
+  "focusMouse": {
+    "tag": "H1",
+    "text": "Métodos y análisis de salud pública",
+    "focusVisible": false,
+    "outline": "none 3px"
+  },
+  "firstTab": "INPUT:",
+  "history": [
+    "Accesibilidad y longitudinalidad: entrar y permanecer",
+    "Accesibilidad y longitudinalidad: entrar y permanecer",
+    "Una APS fuerte no es un consultorio de segunda",
+    "Una APS fuerte no es un consultorio de segunda",
+    "Signos de alarma y tamizajes que abren la puerta",
+    "Tres patrones que conviene distinguir"
+  ]
+}

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<!-- © 2026 ZARCONT — Previsualizador interno de navegación (Fase 0). No enlazado desde la app. -->
+<html lang="es" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, interactive-widget=resizes-content">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#0B0B0D">
+<script>
+  try {
+    var studyTheme = localStorage.getItem("study-theme") === "light" ? "light" : "dark";
+    document.documentElement.dataset.theme = studyTheme;
+    if (studyTheme === "light") {
+      var studyMeta = document.querySelector('meta[name="theme-color"]');
+      if (studyMeta) studyMeta.setAttribute("content", "#F3F0E8");
+    }
+  } catch (e) {}
+</script>
+<meta name="description" content="Previsualizador interno de la biblioteca de navegación del Study Dashboard (Fase 0). No está enlazado desde la app.">
+<title>Previsualizador de navegación · interno · Study Dashboard</title>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%230a0a0a'/%3E%3Crect x='11' y='13' width='18' height='38' rx='7' fill='%23E6B566'/%3E%3Crect x='35' y='13' width='18' height='38' rx='7' fill='%23F2F2F2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400..800&family=Zen+Dots&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../../study-shared/base.css">
+<link rel="stylesheet" href="../css/nav.css">
+<style>
+  /* Solo previsualizador interno. No forma parte de la app ni de nav.css. */
+  .navp-body { overflow-x: hidden; }
+  .navp-header { border-bottom: 1px solid var(--line); background: var(--bg-soft); }
+  .navp-header-inner {
+    width: min(1280px, calc(100vw - 40px)); margin: 0 auto;
+    min-height: 68px; display: flex; align-items: center; justify-content: space-between; gap: 14px;
+  }
+  .navp-brand { display: inline-flex; align-items: center; gap: 11px; min-width: 0; }
+  .navp-brand-mark {
+    width: 35px; height: 35px; flex: none; display: grid; place-items: center;
+    border-radius: 11px; color: var(--accent-ink);
+    background: linear-gradient(140deg, var(--accent), color-mix(in srgb, var(--accent) 54%, var(--red)));
+    font-family: var(--font-display); font-size: 13px;
+    box-shadow: inset 0 1px 0 rgba(255,255,255,.25), 0 8px 20px -12px var(--accent);
+  }
+  .navp-brand-copy { display: flex; flex-direction: column; gap: 1px; min-width: 0; }
+  .navp-brand-name { font-family: var(--font-display); font-size: 9px; letter-spacing: .14em; white-space: nowrap; }
+  .navp-brand-product { color: var(--text-soft); font-size: 11px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+  .navp-header-actions { display: flex; align-items: center; gap: 7px; flex: none; }
+  .navp-version { color: var(--muted); font-size: 9px; white-space: nowrap; }
+  .navp-main { width: min(1280px, calc(100vw - 40px)); margin: 0 auto; padding: 0 0 70px; }
+  .navp-intro { padding: clamp(34px, 5vw, 68px) 0 clamp(24px, 3.4vw, 38px); border-bottom: 1px solid var(--line); }
+  .navp-intro h1 { max-width: 900px; margin: 12px 0 14px; font-size: clamp(38px, 5.6vw, 72px); line-height: .99; letter-spacing: -.058em; }
+  .navp-intro > p { max-width: 760px; color: var(--text-soft); font-size: 14px; line-height: 1.7; }
+  .navp-badges { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 18px; }
+  .navp-block { padding-top: clamp(34px, 4.8vw, 58px); }
+  .navp-block-head { display: flex; align-items: flex-end; justify-content: space-between; gap: 18px; margin-bottom: 17px; }
+  .navp-block-head h2 { margin: 6px 0 5px; font-size: clamp(25px, 3.2vw, 37px); letter-spacing: -.045em; }
+  .navp-block-head p { max-width: 710px; color: var(--text-soft); font-size: 13px; line-height: 1.6; }
+  .navp-status-chip {
+    flex: none; padding: 5px 9px; border: 1px solid var(--accent-line); border-radius: var(--r-full);
+    background: var(--accent-soft); color: var(--accent);
+    font-size: 9px; font-weight: 600; letter-spacing: .04em; white-space: nowrap;
+  }
+  .navp-surface {
+    padding: clamp(14px, 2vw, 22px); border: 1px solid var(--line);
+    border-radius: var(--r-lg); background: var(--surface);
+  }
+  .navp-demo-row { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; margin-top: 13px; padding-top: 12px; border-top: 1px solid var(--line); }
+  .navp-demo-row > span { color: var(--muted); font-size: 9px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; margin-right: 3px; }
+  .navp-demo-row button {
+    min-height: 32px; padding: 5px 10px; border: 1px solid var(--line);
+    border-radius: var(--r-full); background: var(--bg-soft); color: var(--text-soft);
+    font: inherit; font-size: 10.5px; transition: border-color var(--t-fast), color var(--t-fast), background var(--t-fast);
+  }
+  .navp-demo-row button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  @media (hover: hover) and (pointer: fine) {
+    .navp-demo-row button:hover { color: var(--text); border-color: var(--line-strong); background: var(--surface-2); }
+  }
+  .navp-reader-toolbar {
+    display: flex; align-items: center; flex-wrap: wrap; gap: 9px 12px;
+    margin-bottom: 18px; padding: 11px 13px;
+    border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface);
+  }
+  .navp-reader-toolbar label { color: var(--muted); font-size: 9px; font-weight: 650; letter-spacing: .12em; text-transform: uppercase; }
+  .navp-reader-toolbar select {
+    min-width: 0; max-width: min(430px, 100%); flex: 1 1 260px;
+    min-height: 38px; padding: 7px 9px;
+    border: 1px solid var(--line-strong); border-radius: var(--r-sm);
+    background: var(--bg-soft); color: var(--text); font: inherit; font-size: 11.5px;
+  }
+  .navp-sheet-meta { color: var(--muted); font-size: 10px; min-width: 0; }
+  .navp-reader-toolbar .s-btn { margin-left: auto; }
+  .navp-reader-layout {
+    display: grid; grid-template-columns: minmax(0, 1fr) 300px;
+    gap: clamp(24px, 4vw, 44px); align-items: start;
+  }
+  .navp-article { min-width: 0; max-width: 790px; }
+  .navp-breadcrumb { display: flex; flex-wrap: wrap; align-items: center; gap: 7px; color: var(--muted); font-size: 10px; }
+  .navp-reader-head h1 { margin: 12px 0 11px; font-size: clamp(33px, 4.8vw, 58px); line-height: 1.01; letter-spacing: -.055em; }
+  .navp-reader-summary { max-width: 720px; color: var(--text-soft); font-size: 14.5px; line-height: 1.68; }
+  .navp-reader-meta { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 15px; }
+  .navp-concepts {
+    margin-top: 25px; padding: clamp(16px, 2.4vw, 24px);
+    border: 1px solid var(--accent-line); border-radius: var(--r-lg);
+    background: linear-gradient(135deg, var(--accent-soft), transparent 66%), var(--surface);
+  }
+  .navp-concept-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; margin-top: 12px; }
+  .navp-concept { display: flex; gap: 8px; padding: 9px 10px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--bg-soft); }
+  .navp-concept > span { flex: none; color: var(--accent); font-family: var(--font-display); font-size: 8px; padding-top: 2px; }
+  .navp-concept p { color: var(--text-soft); font-size: 11.5px; line-height: 1.5; }
+  .navp-reader-section { padding: clamp(22px, 3.3vw, 34px) 0; border-bottom: 1px solid var(--line); scroll-margin-top: 24px; }
+  .navp-reader-section:last-child { border-bottom: 0; }
+  .navp-reader-section-head { display: flex; align-items: flex-start; gap: 11px; margin-bottom: 12px; }
+  .navp-section-index { flex: none; color: var(--accent); opacity: .7; font-family: var(--font-display); font-size: 10px; padding-top: 5px; }
+  .navp-reader-section h2 { font-size: clamp(20px, 2.4vw, 26px); letter-spacing: -.035em; }
+  .section-depth {
+    display: inline-flex; margin-top: 6px; padding: 3px 7px;
+    border: 1px solid var(--line); border-radius: var(--r-full);
+    color: var(--muted); font-size: 8px; letter-spacing: .09em; text-transform: uppercase;
+  }
+  .section-depth.is-full { color: var(--accent); border-color: var(--accent-line); background: var(--accent-soft); }
+  .navp-reader-section p { color: var(--text-soft); font-size: 14px; line-height: 1.78; }
+  .navp-reader-section p + p { margin-top: 11px; }
+  .navp-reader-section ul { margin-top: 12px; padding-left: 0; list-style: none; display: flex; flex-direction: column; gap: 6px; }
+  .navp-reader-section li { position: relative; padding-left: 16px; color: var(--text-soft); font-size: 13.5px; line-height: 1.65; }
+  .navp-reader-section li::before { content: ""; position: absolute; left: 0; top: .62em; width: 6px; height: 6px; border-radius: 50%; background: var(--accent); }
+  .navp-table-wrap { margin-top: 15px; overflow-x: auto; border: 1px solid var(--line); border-radius: var(--r-sm); }
+  .navp-table-wrap:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+  .navp-table { width: 100%; min-width: 480px; border-collapse: collapse; font-size: 11.5px; }
+  .navp-table th, .navp-table td { padding: 9px 11px; text-align: left; vertical-align: top; border-bottom: 1px solid var(--line); }
+  .navp-table thead th { background: var(--surface-2); color: var(--text); font-size: 9px; letter-spacing: .08em; text-transform: uppercase; }
+  .navp-table tbody th { width: 33%; color: var(--text); font-weight: 550; }
+  .navp-table tbody td { color: var(--text-soft); }
+  .navp-table tbody tr:last-child th, .navp-table tbody tr:last-child td { border-bottom: 0; }
+  .navp-callout { display: flex; flex-direction: column; gap: 3px; margin-top: 15px; padding: 12px 14px; border: 1px solid var(--accent-line); border-radius: var(--r-sm); background: var(--accent-soft); }
+  .navp-callout.is-warn { border-color: color-mix(in srgb, var(--danger) 30%, transparent); background: var(--danger-soft); }
+  .navp-callout b { font-size: 11.5px; }
+  .navp-callout p { font-size: 11.5px; line-height: 1.55; }
+  .navp-aside { min-width: 0; display: flex; flex-direction: column; gap: 14px; align-self: start; position: sticky; top: 84px; }
+  .navp-aside-note { color: var(--muted); font-size: 9.5px; line-height: 1.55; padding: 0 3px; }
+  .navp-glossary-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; }
+  .navp-gloss-item { min-width: 0; padding: 16px; border: 1px solid var(--line); border-radius: var(--r-md); background: var(--surface); }
+  .navp-gloss-item h3 { margin: 7px 0 7px; font-size: 18px; letter-spacing: -.03em; }
+  .navp-gloss-item blockquote { color: var(--text-soft); font-size: 12.5px; line-height: 1.66; border-left: 2px solid var(--accent-line); padding-left: 11px; }
+  .navp-source-line { margin-top: 10px; color: var(--muted); font-size: 9.5px; line-height: 1.5; }
+  .navp-source-line a { color: var(--accent); text-decoration: underline; text-underline-offset: 3px; }
+  .navp-palette-card {
+    display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px;
+    padding: clamp(19px, 3vw, 29px);
+    border: 1px solid var(--accent-line); border-radius: var(--r-lg);
+    background: radial-gradient(560px 220px at 100% 0, var(--accent-soft), transparent 72%), var(--surface);
+  }
+  .navp-palette-card h2 { margin: 6px 0 5px; font-size: clamp(24px, 3vw, 34px); letter-spacing: -.045em; }
+  .navp-palette-card p { max-width: 620px; color: var(--text-soft); font-size: 12.5px; line-height: 1.6; }
+  .navp-palette-actions { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+  .navp-kbd-hint { display: inline-flex; align-items: center; gap: 3px; color: var(--muted); font-size: 9px; }
+  .navp-kbd-hint kbd { display: inline-flex; align-items: center; justify-content: center; min-width: 22px; height: 22px; padding: 0 5px; border: 1px solid var(--line-strong); border-bottom-width: 2px; border-radius: 5px; background: var(--surface-2); color: var(--text-soft); font-family: ui-monospace, SFMono-Regular, Menlo, monospace; font-size: 9px; }
+  .navp-list { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; margin-top: 12px; padding: 0; list-style: none; }
+  .navp-list li { padding: 13px 14px; border: 1px solid var(--line); border-radius: var(--r-sm); background: var(--surface); color: var(--text-soft); font-size: 11px; line-height: 1.55; }
+  .navp-list b { display: block; color: var(--text); font-size: 11.5px; margin-bottom: 2px; }
+  .navp-note { color: var(--muted); font-size: 10.5px; line-height: 1.6; }
+  .navp-footer { border-top: 1px solid var(--line); margin-top: 30px; padding: 20px 0 30px; }
+  .navp-footer-inner { width: min(1280px, calc(100vw - 40px)); margin: 0 auto; display: flex; align-items: center; justify-content: space-between; gap: 14px; color: var(--muted); font-size: 10px; }
+  .navp-fatal { padding: 60px 0; }
+  .navp-fatal h1 { font-size: 32px; margin-bottom: 10px; }
+  .navp-fatal p { color: var(--text-soft); }
+  @media (max-width: 1180px) {
+    .navp-reader-layout { grid-template-columns: minmax(0, 1fr) 280px; gap: 26px; }
+    .navp-glossary-list { grid-template-columns: 1fr 1fr; }
+  }
+  @media (max-width: 980px) {
+    .navp-reader-layout { grid-template-columns: minmax(0, 1fr); }
+    .navp-aside { display: flex; position: static; }
+    .navp-article { max-width: none; }
+    .navp-main { padding-bottom: 120px; }
+  }
+  @media (max-width: 900px) {
+    .navp-block-head { align-items: flex-start; flex-direction: column; gap: 8px; }
+    .navp-status-chip { align-self: flex-start; }
+    .navp-list { grid-template-columns: 1fr; }
+    .navp-glossary-list { grid-template-columns: 1fr; }
+    .navp-reader-toolbar .s-btn { margin-left: 0; }
+    .navp-article { padding-bottom: 72px; }
+  }
+  @media (max-width: 620px) {
+    .navp-header-inner, .navp-main, .navp-footer-inner { width: calc(100vw - 24px); }
+    .navp-version { display: none; }
+    .navp-intro h1 { font-size: 40px; }
+    .navp-intro > p { font-size: 13px; }
+    .navp-reader-head h1 { font-size: 34px; }
+    .navp-concept-grid { grid-template-columns: 1fr; }
+    .navp-palette-card { align-items: flex-start; flex-direction: column; }
+    .navp-palette-actions { width: 100%; }
+    .navp-palette-actions .s-btn { flex: 1 1 auto; }
+    .navp-footer-inner { flex-direction: column; align-items: flex-start; gap: 4px; }
+  }
+  @media (max-width: 380px) {
+    .navp-header-inner, .navp-main, .navp-footer-inner { width: calc(100vw - 18px); }
+    .navp-intro h1 { font-size: 35px; }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .navp-body { scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body class="navp-body">
+<a class="s-skip" href="#navp-main">Saltar al contenido</a>
+
+<header class="navp-header">
+  <div class="navp-header-inner">
+    <a class="navp-brand" href="./preview-nav.html" aria-label="Previsualizador de navegación, recargar">
+      <span class="navp-brand-mark" aria-hidden="true">N</span>
+      <span class="navp-brand-copy">
+        <span class="navp-brand-name">SERUMS STUDY · INTERNO</span>
+        <span class="navp-brand-product">Navegación · previsualizador de componentes</span>
+      </span>
+    </a>
+    <div class="navp-header-actions">
+      <span class="navp-version" id="navp-content-version">Temario real</span>
+      <a class="s-btn s-btn--ghost s-btn--sm" href="../index.html" target="_blank" rel="noopener">Abrir la app</a>
+      <button class="s-iconbtn" type="button" data-theme-toggle aria-label="Cambiar tema"></button>
+    </div>
+  </div>
+</header>
+
+<main id="navp-main" class="navp-main">
+  <section class="navp-intro" aria-labelledby="navp-title">
+    <span class="s-kicker"><span class="dot"></span>Fase 0 · biblioteca de componentes</span>
+    <h1 id="navp-title">Navegar sin perder el hilo.</h1>
+    <p>Búsqueda en el cuerpo real del temario, índice de secciones, paleta de comandos, glosario y fuentes PDF. Este documento es material interno de revisión: no está enlazado desde la app, no carga en producción y usa el contenido real de <code>study-data/temario.js</code>.</p>
+    <div class="navp-badges">
+      <span class="s-chip s-chip--accent">Índice de búsqueda al enfocar</span>
+      <span class="s-chip">Ranking título &gt; conceptos &gt; cuerpo</span>
+      <span class="s-chip">Sin acentos</span>
+      <span class="s-chip">Ctrl+K · no usa /</span>
+      <span class="s-chip">Ambos temas</span>
+      <span class="s-chip">360 → 1440 px</span>
+    </div>
+  </section>
+
+  <section class="navp-block" id="busqueda" aria-labelledby="busqueda-title">
+    <div class="navp-block-head">
+      <div>
+        <span class="s-kicker"><span class="dot"></span>01 · Búsqueda editorial</span>
+        <h2 id="busqueda-title">El cuerpo también cuenta.</h2>
+        <p>El índice recorre títulos, resumen, conceptos, párrafos, viñetas y tablas de las 210 fichas. No se construye al cargar la página: se activa al enfocar el campo. El fragmento se escapa y solo el término lleva <code>&lt;mark&gt;</code>.</p>
+      </div>
+      <span class="navp-status-chip">índice perezoso</span>
+    </div>
+    <div class="navp-surface">
+      <div id="navp-search"></div>
+      <div class="navp-demo-row" aria-label="Búsquedas de ejemplo">
+        <span>Prueba</span>
+        <button type="button" data-navp-query="vacunación">vacunación</button>
+        <button type="button" data-navp-query="longitudinalidad">longitudinalidad</button>
+        <button type="button" data-navp-query="determinantes sociales">determinantes sociales</button>
+        <button type="button" data-navp-query="riesgo cardiovascular">riesgo cardiovascular</button>
+      </div>
+      <div class="navp-demo-row" aria-label="Estados de la búsqueda para control de calidad">
+        <span>Estados (QA)</span>
+        <button type="button" data-navp-state="loading">Cargando</button>
+        <button type="button" data-navp-state="error">Error</button>
+        <button type="button" data-navp-state="empty">Sin resultados</button>
+        <button type="button" data-navp-state="normal">Normal</button>
+      </div>
+    </div>
+  </section>
+
+  <section class="navp-block" id="lector" aria-labelledby="lector-title">
+    <div class="navp-block-head">
+      <div>
+        <span class="s-kicker"><span class="dot"></span>02 · Lector de muestra</span>
+        <h2 id="lector-title">Índice, glosario y fuentes, en contexto.</h2>
+        <p>Una ficha real del temario. El índice observa las secciones con <code>IntersectionObserver</code>; la primera aparición de cada término del glosario se subraya de forma discreta. Las fuentes PDF se abren en una pestaña nueva.</p>
+      </div>
+      <span class="navp-status-chip">contenido real</span>
+    </div>
+    <div class="navp-reader-toolbar">
+      <label for="navp-sheet-select">Ficha real</label>
+      <select id="navp-sheet-select" aria-label="Elegir una ficha real del temario"></select>
+      <span class="navp-sheet-meta" id="navp-sheet-meta"></span>
+      <a class="s-btn s-btn--ghost s-btn--sm" id="navp-open-app" href="../index.html" target="_blank" rel="noopener">Abrir en la app</a>
+    </div>
+    <div class="navp-reader-layout">
+      <article id="navp-article" class="navp-article" aria-label="Ficha de muestra del temario"></article>
+      <aside class="navp-aside" aria-label="Componentes del lector">
+        <div id="navp-sections"></div>
+        <div id="navp-sources"></div>
+        <p class="navp-aside-note">El índice no cambia el hash ni genera scroll horizontal. En móvil se abre como hoja inferior y se cierra con Esc o con el botón visible.</p>
+      </aside>
+    </div>
+  </section>
+
+  <section class="navp-block" id="glosario" aria-labelledby="glosario-title">
+    <div class="navp-block-head">
+      <div>
+        <span class="s-kicker"><span class="dot"></span>03 · Glosario emergente</span>
+        <h2 id="glosario-title">Definiciones que están en el texto.</h2>
+        <p>Las definiciones de esta muestra se extraen literalmente del temario: no se redactó contenido clínico nuevo. En el lector, cada término se activa con click, Enter o tap; solo hay una definición visible y el foco vuelve al término al cerrar.</p>
+      </div>
+      <span class="navp-status-chip">extracción literal</span>
+    </div>
+    <div id="navp-glossary-list" class="navp-glossary-list"></div>
+    <p class="navp-note" style="margin-top: 10px;">La decoración subraya únicamente la primera aparición de cada término por sección (<code>oncePerSection</code>); la definición y su ficha de origen se muestran en el popover.</p>
+  </section>
+
+  <section class="navp-block" id="paleta" aria-labelledby="paleta-title">
+    <div class="navp-palette-card">
+      <div>
+        <span class="s-kicker"><span class="dot"></span>04 · Paleta de comandos</span>
+        <h2 id="paleta-title">Todo a un atajo.</h2>
+        <p>Fichas, áreas, categorías, vistas existentes y acciones reales agrupadas en un combobox. Navega con ↑/↓, abre con Enter, cierra con Esc y recupera el foco del disparador. En móvil se ofrece como hoja inferior; no depende de gestos.</p>
+      </div>
+      <div class="navp-palette-actions">
+        <button class="s-btn" type="button" id="navp-palette-open">Abrir paleta</button>
+        <span class="navp-kbd-hint"><kbd>Ctrl</kbd><kbd>K</kbd> o <kbd>⌘</kbd><kbd>K</kbd></span>
+      </div>
+    </div>
+    <ul class="navp-list">
+      <li><b>Fichas</b>Búsqueda en el cuerpo con la misma relevancia del índice.</li>
+      <li><b>Áreas y categorías</b>Navegación directa a la ruta real de la biblioteca.</li>
+      <li><b>Vistas y acciones</b>Panel, Biblioteca, Progreso, tema y respaldo JSON.</li>
+    </ul>
+  </section>
+</main>
+
+<footer class="navp-footer">
+  <div class="navp-footer-inner">
+    <span>Material interno de Fase 0 · no enlazado desde la app · <span id="navp-content-version-footer">temario real</span></span>
+    <span>Study Dashboard 2.3 · Navegación 0.1.0</span>
+  </div>
+</footer>
+
+<div id="navp-live" class="s-sr-only" aria-live="polite" aria-atomic="true"></div>
+
+<script src="../../study-data/temario.js?v=2.5.0"></script>
+<script src="../../study-shared/taxonomy.js?v=1.0.0"></script>
+<script src="../../study-shared/icons.js?v=2.0.1"></script>
+<script src="../../study-shared/ui.js?v=2.0.1"></script>
+<script src="../../study-shared/store.js?v=2.0.1"></script>
+<script src="../js/nav/core.js?v=0.1.0"></script>
+<script src="../js/nav/search.js?v=0.1.0"></script>
+<script src="../js/nav/sections.js?v=0.1.0"></script>
+<script src="../js/nav/palette.js?v=0.1.0"></script>
+<script src="../js/nav/glossary.js?v=0.1.0"></script>
+<script src="../js/nav/sources.js?v=0.1.0"></script>
+<script src="../js/nav/preview.js?v=0.1.0"></script>
+</body>
+</html>

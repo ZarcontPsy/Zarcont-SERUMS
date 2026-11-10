@@ -1,0 +1,593 @@
+{
+  "light": {
+    "bodyBg": "rgb(243, 240, 232)",
+    "bodyColor": "rgb(29, 27, 23)",
+    "chipGreen": null,
+    "conceptNum": {
+      "text": "01",
+      "color": "rgb(154, 91, 18)",
+      "bg": "rgb(236, 232, 222)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "400"
+    },
+    "fullBadge": {
+      "text": "AMPLIACIÓN",
+      "color": "rgb(154, 91, 18)",
+      "bg": "rgba(154, 91, 18, 0.11)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "400"
+    },
+    "muted": {
+      "text": "6 min",
+      "color": "rgb(87, 81, 72)",
+      "bg": "rgb(241, 236, 225)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "550"
+    },
+    "sourceBadge": {
+      "text": "APS",
+      "color": "rgb(154, 91, 18)",
+      "bg": "rgba(154, 91, 18, 0.11)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "600"
+    },
+    "accentKicker": {
+      "text": "CONCEPTOS CLAVE",
+      "color": "rgb(110, 103, 92)",
+      "bg": "rgb(251, 248, 241)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "600"
+    },
+    "tocChip": {
+      "text": "6 min",
+      "color": "rgb(87, 81, 72)",
+      "bg": "rgb(241, 236, 225)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "550"
+    },
+    "ratios": {
+      "conceptNum": 4.42,
+      "fullBadge": 1,
+      "muted": 6.66,
+      "sourceBadge": 1,
+      "accentKicker": 5.27,
+      "tocChip": 6.66
+    }
+  },
+  "dark": {
+    "bodyBg": "rgb(11, 11, 13)",
+    "bodyColor": "rgb(244, 241, 233)",
+    "chipGreen": null,
+    "conceptNum": {
+      "text": "01",
+      "color": "rgb(230, 181, 102)",
+      "bg": "rgb(14, 14, 17)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "400"
+    },
+    "fullBadge": {
+      "text": "AMPLIACIÓN",
+      "color": "rgb(230, 181, 102)",
+      "bg": "rgba(230, 181, 102, 0.13)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "400"
+    },
+    "muted": {
+      "text": "6 min",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(26, 26, 30)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "550"
+    },
+    "sourceBadge": {
+      "text": "APS",
+      "color": "rgb(230, 181, 102)",
+      "bg": "rgba(230, 181, 102, 0.13)",
+      "opacity": "1",
+      "fontSize": "8.5px",
+      "fontWeight": "600"
+    },
+    "accentKicker": {
+      "text": "CONCEPTOS CLAVE",
+      "color": "rgb(136, 131, 122)",
+      "bg": "rgb(20, 20, 23)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "600"
+    },
+    "tocChip": {
+      "text": "6 min",
+      "color": "rgb(189, 184, 174)",
+      "bg": "rgb(26, 26, 30)",
+      "opacity": "1",
+      "fontSize": "10.5px",
+      "fontWeight": "550"
+    },
+    "ratios": {
+      "conceptNum": 10.25,
+      "fullBadge": 1,
+      "muted": 8.78,
+      "sourceBadge": 1,
+      "accentKicker": 4.88,
+      "tocChip": 8.78
+    }
+  },
+  "markup": {
+    "desktopTools": "<div class=\"reader-tools\"><div class=\"s-seg\" role=\"group\" aria-label=\"Modo de lectura\"><button type=\"button\" data-action=\"reader-mode\" data-mode=\"quick\" aria-pressed=\"true\">Rápido</button><button type=\"button\" data-action=\"reader-mode\" data-mode=\"full\" aria-pressed=\"false\">Completo</button></div><button class=\"s-btn s-btn--ghost s-btn--sm\" type=\"button\" data-action=\"toggle-favorite\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z\"></path></svg> <span class=\"reader-tool-text\">Guardar</span></button><button class=\"s-btn  s-btn--sm\" type=\"button\" data-action=\"toggle-complete\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m5 12 4 4L19 6\"></path></svg> <span class=\"reader-tool-text\">Marcar completada</span></button></div>",
+    "mobileTools": "<div class=\"reader-tools\"><div class=\"s-seg\" role=\"group\" aria-label=\"Modo de lectura\"><button type=\"button\" data-action=\"reader-mode\" data-mode=\"quick\" aria-pressed=\"true\">Rápido</button><button type=\"button\" data-action=\"reader-mode\" data-mode=\"full\" aria-pressed=\"false\">Completo</button></div><button class=\"s-btn s-btn--ghost s-btn--sm\" type=\"button\" data-action=\"toggle-favorite\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.7l-1.1-1.1a5.5 5.5 0 0 0-7.8 7.8l1.1 1.1L12 21l7.8-7.5 1.1-1.1a5.5 5.5 0 0 0-.1-7.8Z\"></path></svg> <span class=\"reader-tool-text\">Guardar</span></button><button class=\"s-btn  s-btn--sm\" type=\"button\" data-action=\"toggle-complete\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.7\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\" focusable=\"false\"><path d=\"m5 12 4 4L19 6\"></path></svg> <span class=\"reader-tool-text\">Marcar completada</span></button></div>"
+  },
+  "overflow": [
+    {
+      "width": 360,
+      "height": 640,
+      "home": {
+        "w": 360,
+        "h": 640,
+        "scrollW": 360,
+        "bodyScrollW": 360,
+        "overflow": false,
+        "appbarH": 59,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Biblioteca",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Progreso",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 35,
+            "h": 35
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 294,
+            "h": 41
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 294,
+            "h": 41
+          },
+          {
+            "t": "Bajar el objetiv",
+            "w": 29,
+            "h": 29
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 360,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 500,
+            "clientW": 330,
+            "tabindex": null
+          }
+        ]
+      }
+    },
+    {
+      "width": 390,
+      "height": 844,
+      "home": {
+        "w": 390,
+        "h": 844,
+        "scrollW": 390,
+        "bodyScrollW": 390,
+        "overflow": false,
+        "appbarH": 59,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Biblioteca",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Progreso",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Abrir Study Flas",
+            "w": 38,
+            "h": 40
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 35,
+            "h": 35
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 324,
+            "h": 41
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 324,
+            "h": 41
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 390,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 500,
+            "clientW": 360,
+            "tabindex": null
+          }
+        ]
+      }
+    },
+    {
+      "width": 768,
+      "height": 1024,
+      "home": {
+        "w": 768,
+        "h": 1024,
+        "scrollW": 768,
+        "bodyScrollW": 768,
+        "overflow": false,
+        "appbarH": 59,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Biblioteca",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Progreso",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Abrir Study Flas",
+            "w": 113,
+            "h": 34
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 38,
+            "h": 38
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 176,
+            "h": 50
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 178,
+            "h": 50
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 768,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 718,
+            "clientW": 718,
+            "tabindex": null
+          }
+        ]
+      }
+    },
+    {
+      "width": 1024,
+      "height": 768,
+      "home": {
+        "w": 1024,
+        "h": 768,
+        "scrollW": 1024,
+        "bodyScrollW": 1024,
+        "overflow": false,
+        "appbarH": 65,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 79,
+            "h": 37
+          },
+          {
+            "t": "Biblioteca",
+            "w": 105,
+            "h": 37
+          },
+          {
+            "t": "Progreso",
+            "w": 100,
+            "h": 37
+          },
+          {
+            "t": "Abrir Study Flas",
+            "w": 113,
+            "h": 34
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 38,
+            "h": 38
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 176,
+            "h": 50
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 178,
+            "h": 50
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 1024,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 681,
+            "clientW": 681,
+            "tabindex": null
+          }
+        ]
+      }
+    },
+    {
+      "width": 1440,
+      "height": 900,
+      "home": {
+        "w": 1440,
+        "h": 900,
+        "scrollW": 1440,
+        "bodyScrollW": 1440,
+        "overflow": false,
+        "appbarH": 65,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 79,
+            "h": 37
+          },
+          {
+            "t": "Biblioteca",
+            "w": 105,
+            "h": 37
+          },
+          {
+            "t": "Progreso",
+            "w": 100,
+            "h": 37
+          },
+          {
+            "t": "Abrir Study Flas",
+            "w": 113,
+            "h": 34
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 38,
+            "h": 38
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 176,
+            "h": 50
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 178,
+            "h": 50
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 1440,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 788,
+            "clientW": 788,
+            "tabindex": null
+          }
+        ]
+      }
+    },
+    {
+      "width": 844,
+      "height": 390,
+      "home": {
+        "w": 844,
+        "h": 390,
+        "scrollW": 844,
+        "bodyScrollW": 844,
+        "overflow": false,
+        "appbarH": 59,
+        "targets": [
+          {
+            "t": "Panel",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Biblioteca",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Progreso",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Abrir Study Flas",
+            "w": 113,
+            "h": 34
+          },
+          {
+            "t": "Volver al inicio",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Volver al HUB",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Pantalla complet",
+            "w": 40,
+            "h": 40
+          },
+          {
+            "t": "Usar tema claro",
+            "w": 38,
+            "h": 38
+          },
+          {
+            "t": "Retomar lectura",
+            "w": 176,
+            "h": 50
+          },
+          {
+            "t": "Abrir flashcards",
+            "w": 178,
+            "h": 50
+          }
+        ]
+      },
+      "sheet": {
+        "scrollW": 844,
+        "overflow": false,
+        "tableWraps": [
+          {
+            "scrollW": 794,
+            "clientW": 794,
+            "tabindex": null
+          }
+        ]
+      }
+    }
+  ],
+  "ids": [],
+  "names": [
+    {
+      "tag": "BUTTON",
+      "cls": "s-btn s-btn--ghost s-btn--sm",
+      "html": "<button class=\"s-btn s-btn--ghost s-btn--sm\" type=\"button\" data-action=\"toggle-favorite\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"cu"
+    },
+    {
+      "tag": "BUTTON",
+      "cls": "s-btn  s-btn--sm",
+      "html": "<button class=\"s-btn  s-btn--sm\" type=\"button\" data-action=\"toggle-complete\" aria-pressed=\"false\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" "
+    }
+  ]
+}

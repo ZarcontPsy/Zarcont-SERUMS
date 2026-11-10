@@ -1,0 +1,473 @@
+/* SERUMS STUDY — Hoja de último día (#/ultimo-dia, Fase 3)
+   Hoja del módulo `plan-lastday`. Solo clases .plan-* en pantalla.
+
+   IMPRESIÓN: el bloque @media print al final de este archivo usa selectores
+   globales (body, #main, #view-root, .s-toast-stack) para dejar solo la hoja.
+   Es la excepción que permite el contrato §4.5: esos selectores existen
+   únicamente dentro de @media print, no afectan a la pantalla y son necesarios
+   porque la app tiene appbar, avisos y footer fuera de la vista.
+
+   Piezas:
+     .plan-lastday            página
+     .plan-lastday-hero       cabecera con fecha de examen, área e impresión
+     .plan-lastday-sheet      hoja (papel) con los tres bloques
+     .plan-lastday-block      datos | definiciones | avisos
+     .plan-lastday-toolbar    filtro de área y botón de imprimir (no se imprime)
+     .plan-lastday-loading    esqueleto
+     .plan-lastday-error      error con reintento
+
+   Tokens: --line, --line-strong, --surface, --surface-2/3, --bg-soft,
+   --text, --text-soft, --muted, --accent(-soft/-line), --green, --danger,
+   --mark-review, --mark-doubt, --r-xs…--r-full, --t-fast, --font-display,
+   --target-min.
+
+   © 2026 ZARCONT */
+
+.plan-lastday {
+  --plan-sheet-gap: clamp(14px, 2vw, 22px);
+  padding: clamp(24px, 4vw, 52px) 0 clamp(40px, 6vw, 72px);
+  min-width: 0;
+}
+.plan-lastday *,
+.plan-lastday *::before,
+.plan-lastday *::after { min-width: 0; }
+
+/* ---------- Cabecera ---------- */
+.plan-lastday-hero {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-bottom: clamp(18px, 2.6vw, 26px);
+  border-bottom: 1px solid var(--line);
+  margin-bottom: var(--plan-sheet-gap);
+}
+.plan-lastday-back {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 16px;
+  padding: 4px 0;
+  color: var(--muted);
+  font-size: 11.5px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.plan-lastday-back svg { width: 14px; height: 14px; }
+.plan-lastday-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  color: var(--muted);
+  font-size: 10px;
+  font-weight: 650;
+  letter-spacing: .15em;
+  text-transform: uppercase;
+}
+.plan-lastday-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--accent);
+}
+.plan-lastday-title {
+  max-width: 20ch;
+  margin: 12px 0;
+  font-size: clamp(34px, 5vw, 56px);
+  line-height: 1;
+  font-weight: 600;
+  letter-spacing: -.05em;
+  text-wrap: balance;
+}
+.plan-lastday-lede {
+  max-width: 62ch;
+  color: var(--text-soft);
+  font-size: clamp(13.5px, 1.3vw, 15px);
+  line-height: 1.65;
+}
+.plan-lastday-exam {
+  margin-top: 14px;
+  padding: 8px 13px;
+  border: 1px solid var(--accent-line);
+  border-radius: var(--r-full);
+  background: var(--accent-soft);
+  color: var(--text);
+  font-size: 12px;
+  line-height: 1.5;
+}
+.plan-lastday-exam b { font-weight: 650; }
+.plan-lastday-exam a { color: var(--accent); font-weight: 600; }
+.plan-lastday-toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: 12px 16px;
+  margin-top: 18px;
+}
+.plan-lastday-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 200px;
+}
+.plan-lastday-field > span {
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-lastday-field select {
+  min-height: 38px;
+  padding: 6px 10px;
+  border: 1px solid var(--line-strong);
+  border-radius: var(--r-sm);
+  background: var(--bg-soft);
+  color: var(--text);
+  font: inherit;
+  font-size: 12.5px;
+}
+
+/* ---------- Hoja ---------- */
+.plan-lastday-sheet {
+  padding: clamp(16px, 2.4vw, 26px);
+  border: 1px solid var(--line);
+  border-radius: var(--r-lg);
+  background:
+    linear-gradient(var(--line) 1px, transparent 1px) 0 0 / 100% 34px,
+    var(--surface);
+  box-shadow: 0 1px 0 var(--line);
+}
+.plan-lastday-sheet-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+  padding-bottom: 10px;
+  margin-bottom: 12px;
+  border-bottom: 1px solid var(--line);
+}
+.plan-lastday-sheet-scope {
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 650;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+.plan-lastday-sheet-date {
+  color: var(--muted);
+  font-size: 10px;
+  letter-spacing: .06em;
+}
+.plan-lastday-columns {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: clamp(16px, 2.4vw, 28px);
+}
+.plan-lastday-block { min-width: 0; }
+.plan-lastday-block-head {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 10px;
+  padding-bottom: 6px;
+  border-bottom: 1px solid var(--line);
+}
+.plan-lastday-h2 {
+  font-size: 12.5px;
+  font-weight: 650;
+  letter-spacing: .02em;
+}
+.plan-lastday-count {
+  color: var(--muted);
+  font-size: 9.5px;
+  font-weight: 650;
+  letter-spacing: .08em;
+  text-transform: uppercase;
+}
+.plan-lastday-facts,
+.plan-lastday-glossary,
+.plan-lastday-traps {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  margin: 10px 0 0;
+  padding: 0;
+  list-style: none;
+}
+.plan-lastday-fact {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 9px;
+  border-left: 2px solid var(--accent-line);
+}
+.plan-lastday-term {
+  color: var(--text);
+  font-size: 11px;
+  font-weight: 650;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+.plan-lastday-detail {
+  color: var(--text-soft);
+  font-size: 10.5px;
+  line-height: 1.45;
+  overflow-wrap: anywhere;
+}
+.plan-lastday-meta {
+  color: var(--muted);
+  font-size: 9px;
+  letter-spacing: .03em;
+}
+.plan-lastday-def {
+  padding-left: 9px;
+  border-left: 2px solid var(--mark-review-line);
+}
+.plan-lastday-def dd { margin: 2px 0 0; }
+.plan-lastday-trap {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding: 7px 8px 7px 10px;
+  border-left: 2px solid var(--mark-doubt);
+  background: var(--bg-soft);
+  border-radius: 0 var(--r-xs) var(--r-xs) 0;
+}
+.plan-lastday-trap[data-source="bullet"] { border-left-color: var(--mark-review); }
+.plan-lastday-trap-label {
+  color: var(--muted);
+  font-size: 8.5px;
+  font-weight: 650;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+}
+.plan-lastday-trap-title {
+  color: var(--text);
+  font-size: 10.5px;
+  font-weight: 650;
+  line-height: 1.35;
+}
+.plan-lastday-empty {
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: 10.5px;
+  line-height: 1.5;
+}
+.plan-lastday-foot {
+  margin-top: 16px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 9px;
+  line-height: 1.5;
+}
+
+/* ---------- Carga y error ---------- */
+.plan-lastday-loading {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 18px;
+  border: 1px solid var(--line);
+  border-radius: var(--r-md);
+  background: var(--bg-soft);
+}
+.plan-lastday-loading-text {
+  color: var(--muted);
+  font-size: 11px;
+  letter-spacing: .04em;
+}
+.plan-lastday-skeleton {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.plan-lastday-skeleton i {
+  display: block;
+  height: 14px;
+  border-radius: var(--r-full);
+  background: var(--surface-3);
+  animation: plan-lastday-pulse 1.4s ease-in-out infinite;
+}
+.plan-lastday-skeleton i:nth-child(1) { width: 76%; }
+.plan-lastday-skeleton i:nth-child(2) { width: 54%; animation-delay: .12s; }
+.plan-lastday-skeleton i:nth-child(3) { width: 38%; animation-delay: .24s; }
+@keyframes plan-lastday-pulse {
+  0%, 100% { opacity: .5; }
+  50% { opacity: 1; }
+}
+.plan-lastday-error {
+  padding: 18px;
+  border: 1px solid var(--danger-line);
+  border-radius: var(--r-md);
+  background: var(--danger-soft);
+}
+.plan-lastday-error-text {
+  max-width: 62ch;
+  color: var(--text);
+  font-size: 12.5px;
+  line-height: 1.6;
+}
+.plan-lastday-error-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 14px;
+}
+
+/* ---------- Foco y adaptación ---------- */
+.plan-lastday a:focus-visible,
+.plan-lastday button:focus-visible,
+.plan-lastday select:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+@media (min-width: 760px) {
+  .plan-lastday-sheet { padding: clamp(20px, 3vw, 32px); }
+}
+@media (min-width: 1020px) {
+  .plan-lastday-columns {
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr) minmax(0, 1fr);
+    gap: clamp(18px, 2.6vw, 30px);
+  }
+}
+@media (max-width: 480px) {
+  .plan-lastday-title { font-size: clamp(30px, 9vw, 38px); }
+  .plan-lastday-sheet { padding: 14px 12px; }
+}
+@media (pointer: coarse) {
+  .plan-lastday .s-btn,
+  .plan-lastday .plan-lastday-back,
+  .plan-lastday .plan-lastday-field select {
+    min-height: var(--target-min);
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .plan-lastday-skeleton i { animation: none; opacity: .7; }
+}
+
+/* ==================================================================
+   IMPRESIÓN — solo se imprime la hoja.
+   Los selectores globales de este bloque (body, #main, #view-root,
+   .s-toast-stack) existen únicamente dentro de @media print: en
+   pantalla este archivo no toca nada fuera de .plan-*. Son necesarios
+   porque la appbar, los avisos y el footer viven fuera de la vista.
+   ================================================================== */
+@media print {
+  @page { size: A4 portrait; margin: 10mm; }
+  body,
+  #main,
+  #view-root {
+    margin: 0 !important;
+    padding: 0 !important;
+    background: #fff !important;
+  }
+  body > *:not(main) { display: none !important; }
+  #main > *:not(#view-root) { display: none !important; }
+  #view-root > *:not(.plan-lastday) { display: none !important; }
+  .s-toast-stack { display: none !important; }
+
+  .plan-lastday {
+    --text: #111;
+    --text-soft: #333;
+    --muted: #555;
+    --line: #d2d2d2;
+    --line-strong: #b9b9b9;
+    --surface: #fff;
+    --surface-2: #f6f4f0;
+    --surface-3: #e8e4dc;
+    --bg-soft: #faf9f6;
+    --accent: #7a4a12;
+    --accent-soft: transparent;
+    --accent-line: #c9a97f;
+    --mark-doubt: #7a3b3b;
+    --mark-review: #2f5d8a;
+    color: #111;
+    background: #fff;
+    padding: 0;
+    font-size: 8.5pt;
+    line-height: 1.35;
+  }
+  .plan-lastday-back,
+  .plan-lastday-toolbar,
+  .plan-lastday-lede { display: none !important; }
+  .plan-lastday-hero {
+    padding-bottom: 3mm;
+    margin-bottom: 4mm;
+    border-bottom: 1px solid #999;
+  }
+  .plan-lastday-kicker {
+    color: #444;
+    font-size: 7pt;
+    letter-spacing: .12em;
+  }
+  .plan-lastday-title {
+    margin: 2mm 0;
+    font-size: 17pt;
+    letter-spacing: -.02em;
+  }
+  .plan-lastday-exam {
+    margin-top: 2mm;
+    padding: 2mm 3mm;
+    border: 1px solid #bbb;
+    border-radius: 0;
+    background: #fff;
+    color: #111;
+    font-size: 8.5pt;
+  }
+  .plan-lastday-exam a { color: #111; text-decoration: none; }
+  .plan-lastday-sheet {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: #fff;
+    box-shadow: none;
+  }
+  .plan-lastday-sheet-head {
+    padding-bottom: 2mm;
+    margin-bottom: 3mm;
+    border-bottom: 1px solid #999;
+  }
+  .plan-lastday-sheet-scope { font-size: 7.5pt; }
+  .plan-lastday-sheet-date { color: #444; font-size: 7pt; }
+  .plan-lastday-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 4mm;
+  }
+  .plan-lastday-block { break-inside: avoid; }
+  .plan-lastday-block-head {
+    padding-bottom: 1mm;
+    margin-bottom: 1.2mm;
+    border-bottom: 1px solid #999;
+  }
+  .plan-lastday-h2 { font-size: 8pt; }
+  .plan-lastday-count { color: #444; font-size: 6.2pt; }
+  .plan-lastday-facts,
+  .plan-lastday-glossary,
+  .plan-lastday-traps {
+    gap: 1.1mm;
+    margin-top: 1.2mm;
+  }
+  .plan-lastday-fact,
+  .plan-lastday-def { break-inside: avoid; }
+  .plan-lastday-term { font-size: 7pt; line-height: 1.25; }
+  .plan-lastday-detail { font-size: 6.6pt; line-height: 1.3; color: #222; }
+  .plan-lastday-meta { font-size: 5.9pt; color: #555; }
+  .plan-lastday-trap { padding: 1mm 1.4mm; background: #f7f7f7; }
+  .plan-lastday-trap-label { font-size: 5.8pt; color: #555; }
+  .plan-lastday-trap-title { font-size: 6.9pt; line-height: 1.25; }
+  .plan-lastday-empty { font-size: 7pt; color: #555; }
+  .plan-lastday-foot {
+    margin-top: 4mm;
+    padding-top: 2mm;
+    border-top: 1px solid #999;
+    color: #555;
+    font-size: 6.4pt;
+  }
+  .plan-lastday a { color: #111; text-decoration: none; }
+  .plan-lastday .s-btn { display: none !important; }
+}

@@ -21,6 +21,12 @@ React, Vite, TypeScript, Tailwind CSS, Recharts y el resto de dependencias decla
 `package.json` (MIT / Apache-2.0) se usan solo como base de desarrollo: la aplicación
 funciona sin compilación, abriendo `index.html`.
 
+- **axe-core 4.10.2** (`tools/qa/vendor/axe.min.js`, MPL-2.0; licencia en
+  `tools/qa/vendor/axe.LICENSE.txt`): se usa únicamente en las auditorías locales de
+  accesibilidad. No se carga en la aplicación distribuida ni en Study Flashcards.
+- **Google Chrome / Chrome DevTools Protocol**: navegador instalado en el equipo de QA,
+  no distribuido con el proyecto; se usa para la matriz E2E y las capturas.
+
 ## Utilidades de prueba (Python)
 
 Los scripts de `tests/` pueden usar utilidades de terceros (p. ej. `pyjsparser`, MIT)

@@ -82,17 +82,29 @@ export async function runDashboard({ h, page, baseURL }) {
       }
       const areaHash = await page.eval("location.hash");
       assert(areaHash.startsWith(areaLink), `ruta de área: ${areaHash}`);
+      /* El hash cambia antes de que el router pinte el destino: dos rAF + un
+         margen evitan leer la biblioteca anterior (carrera detectada en Fase 0). */
+      await page.eval(`new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+      await sleep(220);
       // IA del temario: área → categoría (tarjetas) → tema (<details>) → ficha.
       const hasTopics = await page.eval(`document.querySelectorAll('details.topic-block').length > 0`);
       if (!hasTopics) {
+        await page.waitFor(`(() => Array.from(document.querySelectorAll('a[href*="#/biblioteca/"]')).some(a => /\\/cat-/.test(a.getAttribute('href') || '')))()`, { timeout: 8000, message: "categorías del área" }).catch(() => {});
         const categoryHref = await page.eval(`(() => {
           const links = Array.from(document.querySelectorAll('a[href*="#/biblioteca/"]'));
           const target = links.find(a => /\\/cat-/.test(a.getAttribute('href') || ''));
           return target ? target.getAttribute('href') : null;
         })()`);
         if (categoryHref) {
-          await page.click(`a[href="${categoryHref}"]`);
+          try {
+            await page.click(`a[href="${categoryHref}"]`, { timeout: 6000 });
+          } catch (err) {
+            // El nodo pudo re-renderizarse entre la lectura y el clic: mismo destino por hash.
+            await page.eval(`location.hash = ${JSON.stringify(categoryHref)}, true`);
+          }
           await page.waitFor(`location.hash === ${JSON.stringify(categoryHref)}`, { timeout: 6000 });
+          await page.eval(`new Promise((resolve) => requestAnimationFrame(() => requestAnimationFrame(resolve)))`);
+          await sleep(220);
         }
       }
       await page.waitFor(`document.querySelectorAll('details.topic-block').length > 0`, { timeout: 10000, message: "temas/categorías del área" });
@@ -281,6 +293,26 @@ export async function runFlashcards({ h, page, baseURL }) {
     "Biblioteca → mazo → sesión sin recargar, con revelado y calificación",
     async () => {
       await gotoApp(page, baseURL, "flashcards");
+      // La portada agrupa los mazos por área y genera el contenido al abrirla:
+      // hay que desplegar un área para que existan los enlaces a mazos.
+      await page.waitFor(`document.querySelectorAll("details.lib-area").length > 0`, {
+        timeout: 12000,
+        message: "áreas de la portada de Flashcards",
+      }).catch(() => {});
+      if ((await page.eval(`document.querySelectorAll('a[href^="#/mazo/"]').length`)) === 0) {
+        await page.eval(`(() => {
+          const details = document.querySelector("details.lib-area");
+          const summary = details && details.querySelector("summary");
+          if (summary) summary.click();
+          return !!summary;
+        })()`);
+      }
+      // La portada de Flashcards puede pintar la cabecera antes de la rejilla de
+      // mazos: se espera al primer enlace real (robustez, sin relajar la aserción).
+      await page.waitFor(`document.querySelectorAll('a[href^="#/mazo/"]').length > 0`, {
+        timeout: 10000,
+        message: "enlaces a mazos en la portada de Flashcards",
+      });
       const before = page.navCount();
       const deckHref = await page.eval(`(() => { const a = document.querySelector('a[href^="#/mazo/"]'); return a ? a.getAttribute('href') : null; })()`);
       assert(deckHref, "enlace a mazo");
